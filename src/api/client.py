@@ -1,24 +1,69 @@
-"""
-Generic SportRadar API client.
-"""
+"""Generic SportRadar API client."""
+
+from __future__ import annotations
+
+from typing import Any
 
 import requests
 
-from src.utils.config import BASE_URL, HEADERS
+from src.utils.config import (
+    REQUEST_TIMEOUT_SECONDS,
+    SPORTRADAR_API_KEY,
+    SPORTRADAR_BASE_URL,
+)
 
 
-def get(endpoint: str) -> dict:
+class SportRadarAPIError(RuntimeError):
+    """Raised when a SportRadar request fails."""
+
+
+def get_json(endpoint: str) -> dict[str, Any]:
     """
-    Send a GET request to the SportRadar API.
+    Request one SportRadar endpoint and return decoded JSON.
 
-    Example:
-        get("games/2025/REG/schedule.json")
+    Example
+    -------
+    get_json("games/2025/REG/schedule.json")
     """
 
-    url = f"{BASE_URL}/{endpoint}"
+    if not SPORTRADAR_API_KEY:
+        raise SportRadarAPIError(
+            "SPORTRADAR_API_KEY is missing. Add it to your .env file."
+        )
 
-    response = requests.get(url, headers=HEADERS)
+    endpoint = endpoint.lstrip("/")
+    url = f"{SPORTRADAR_BASE_URL}/{endpoint}"
 
-    response.raise_for_status()
+    try:
+        response = requests.get(
+            url,
+            headers={
+                "accept": "application/json",
+                "x-api-key": SPORTRADAR_API_KEY,
+            },
+            timeout=REQUEST_TIMEOUT_SECONDS,
+        )
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        status = getattr(exc.response, "status_code", None)
+        body = getattr(exc.response, "text", "")
 
-    return response.json()
+        raise SportRadarAPIError(
+            f"SportRadar request failed. "
+            f"status={status}, endpoint={endpoint}, body={body[:500]}"
+        ) from exc
+
+    try:
+        data = response.json()
+    except ValueError as exc:
+        raise SportRadarAPIError(
+            f"SportRadar returned invalid JSON for {endpoint}."
+        ) from exc
+
+    if not isinstance(data, dict):
+        raise SportRadarAPIError(
+            f"Expected a JSON object from {endpoint}, "
+            f"received {type(data).__name__}."
+        )
+
+    return data

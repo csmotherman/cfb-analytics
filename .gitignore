@@ -2,41 +2,33 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
+.pytest_cache/
 
-# Virtual environments
+# Virtual environment
 .venv/
 venv/
 
-# Environment variables
+# Secrets
 .env
+
+# macOS / editors
+.DS_Store
+.vscode/
+
+# Generated logs and cache
+data/logs/
+data/cache/
+*.log
+
+# Raw and processed data
+data/raw/
+data/parquet/
+data/exports/
+
+# DuckDB files
+database/*.duckdb
+database/*.duckdb.wal
+database/backups/
 
 # Jupyter
 .ipynb_checkpoints/
-
-# macOS
-.DS_Store
-
-# VS Code
-.vscode/
-
-# Logs
-data/logs/
-*.log
-
-# Cache
-data/cache/
-
-# Raw SportRadar downloads
-data/raw/
-
-# Database backups
-database/backups/
-
-# Pytest
-.pytest_cache/
-
-# Mypy
-.mypy_cache/
-
-# Ruff
-.ruff_cache/
