@@ -1,4 +1,4 @@
-"""SportRadar season schedule functions."""
+"""CollegeFootballData game schedule functions."""
 
 from __future__ import annotations
 
@@ -7,61 +7,66 @@ import pandas as pd
 from src.api.client import get_json
 
 
+def _season_type(value: str) -> str:
+    normalized = value.strip().lower()
+    aliases = {
+        "reg": "regular",
+        "regular": "regular",
+        "post": "postseason",
+        "postseason": "postseason",
+    }
+    if normalized not in aliases:
+        raise ValueError("season_type must be REG, regular, POST, or postseason")
+    return aliases[normalized]
+
+
 def get_schedule(
     season: int,
-    season_type: str = "REG",
+    season_type: str = "regular",
 ) -> pd.DataFrame:
-    """Return one row per game in a SportRadar season schedule."""
+    """Return one row per game in a CFBD season schedule."""
 
-    season_type = season_type.upper()
-
+    normalized_type = _season_type(season_type)
     data = get_json(
-        f"games/{season}/{season_type}/schedule.json"
+        "games",
+        params={
+            "year": season,
+            "seasonType": normalized_type,
+        },
     )
+
+    if not isinstance(data, list):
+        raise TypeError("CFBD /games response must be a JSON array")
 
     rows: list[dict] = []
 
-    for week in data.get("weeks", []):
-        week_number = week.get("sequence")
-        week_id = week.get("id")
-        week_title = week.get("title")
+    for game in data:
+        if not isinstance(game, dict):
+            continue
 
-        for game in week.get("games", []):
-            home = game.get("home") or {}
-            away = game.get("away") or {}
+        row = dict(game)
+        row["game_id"] = row.pop("id", None)
+        row["season"] = row.get("season", season)
+        row["season_type"] = row.pop("seasonType", normalized_type)
+        row["scheduled"] = row.pop("startDate", None)
+        row["status"] = row.pop("status", None)
+        row["home_id"] = row.pop("homeId", None)
+        row["home_name"] = row.pop("homeTeam", None)
+        row["away_id"] = row.pop("awayId", None)
+        row["away_name"] = row.pop("awayTeam", None)
+        row["conference_game"] = row.pop("conferenceGame", None)
+        row["neutral_site"] = row.pop("neutralSite", None)
 
-            row = {
-                "season": season,
-                "season_type": season_type,
-                "week": week_number,
-                "week_id": week_id,
-                "week_title": week_title,
-                "game_id": game.get("id"),
-                "scheduled": game.get("scheduled"),
-                "status": game.get("status"),
-                "game_type": game.get("game_type"),
-                "conference_game": game.get("conference_game"),
-                "neutral_site": game.get("neutral_site"),
-                "home_id": home.get("id"),
-                "home_alias": home.get("alias"),
-                "home_market": home.get("market"),
-                "home_name": home.get("name"),
-                "away_id": away.get("id"),
-                "away_alias": away.get("alias"),
-                "away_market": away.get("market"),
-                "away_name": away.get("name"),
-            }
-
-            rows.append(row)
+        rows.append(row)
 
     return pd.DataFrame(rows)
 
 
 def get_game_ids(
     season: int,
-    season_type: str = "REG",
+    season_type: str = "regular",
 ) -> list[str]:
-    """Return every non-null game ID from a season schedule."""
+    """Return every non-null CFBD game ID from a season schedule."""
 
     schedule = get_schedule(season, season_type)
 
@@ -79,30 +84,41 @@ def get_game_ids(
 
 def get_team_schedule(
     season: int,
-    team_alias: str,
-    season_type: str = "REG",
+    team: str,
+    season_type: str = "regular",
 ) -> pd.DataFrame:
-    """Return schedule rows involving one team alias."""
+    """Return schedule rows involving one team name."""
 
-    schedule = get_schedule(season, season_type)
+    normalized_type = _season_type(season_type)
+    data = get_json(
+        "games",
+        params={
+            "year": season,
+            "seasonType": normalized_type,
+            "team": team,
+        },
+    )
+
+    if not isinstance(data, list):
+        raise TypeError("CFBD /games response must be a JSON array")
+
+    schedule = get_schedule(season, normalized_type)
 
     if schedule.empty:
         return schedule
 
-    alias = team_alias.upper()
-
+    team_lower = team.casefold()
     mask = (
-        schedule["home_alias"].eq(alias)
-        | schedule["away_alias"].eq(alias)
+        schedule["home_name"].fillna("").str.casefold().eq(team_lower)
+        | schedule["away_name"].fillna("").str.casefold().eq(team_lower)
     )
-
     return schedule.loc[mask].reset_index(drop=True)
 
 
 def get_multi_season_schedule(
     start_season: int,
     end_season: int,
-    season_type: str = "REG",
+    season_type: str = "regular",
 ) -> pd.DataFrame:
     """Return schedules for an inclusive range of seasons."""
 
@@ -113,10 +129,5 @@ def get_multi_season_schedule(
         get_schedule(season, season_type)
         for season in range(start_season, end_season + 1)
     ]
-
     nonempty = [frame for frame in frames if not frame.empty]
-
-    if not nonempty:
-        return pd.DataFrame()
-
-    return pd.concat(nonempty, ignore_index=True)
+    return pd.concat(nonempty, ignore_index=True) if nonempty else pd.DataFrame()

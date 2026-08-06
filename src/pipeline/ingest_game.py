@@ -1,4 +1,4 @@
-"""End-to-end ingestion for one SportRadar game."""
+"""End-to-end ingestion for one CollegeFootballData game."""
 
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def save_raw_game(
     season: int,
     game_id: str,
 ) -> Path:
-    """Save the original API response without transformation."""
+    """Save the original CFBD response bundle without transformation."""
 
     path = raw_game_path(season, game_id)
 
@@ -52,7 +52,7 @@ def load_raw_game(
     season: int,
     game_id: str,
 ) -> dict[str, Any]:
-    """Load a previously saved raw game response."""
+    """Load a previously saved raw CFBD response bundle."""
 
     path = raw_game_path(season, game_id)
 
@@ -72,32 +72,22 @@ def ingest_game(
     write_parquet: bool = True,
     write_duckdb: bool = True,
 ) -> dict[str, pd.DataFrame]:
-    """
-    Download, save, parse, validate, and store one game.
+    """Download, save, parse, validate, and store one CFBD game."""
 
-    Reuses saved raw JSON unless force_download=True.
-    """
-
-    path = raw_game_path(season, game_id)
+    game_id_text = str(game_id)
+    path = raw_game_path(season, game_id_text)
 
     if path.exists() and not force_download:
-        game_json = load_raw_game(
-            season,
-            game_id,
-        )
+        game_json = load_raw_game(season, game_id_text)
     else:
-        game_json = get_game_pbp(game_id)
-        save_raw_game(
-            game_json,
-            season,
-            game_id,
-        )
+        game_json = get_game_pbp(game_id_text)
+        save_raw_game(game_json, season, game_id_text)
 
-    returned_game_id = game_json.get("id")
+    returned_game_id = str(game_json.get("id"))
 
-    if returned_game_id != game_id:
+    if returned_game_id != game_id_text:
         raise ValueError(
-            f"Requested game {game_id}, "
+            f"Requested game {game_id_text}, "
             f"but API returned {returned_game_id}"
         )
 
@@ -105,11 +95,7 @@ def ingest_game(
     validate_game_tables(tables)
 
     if write_parquet:
-        write_game_tables(
-            tables,
-            season,
-            game_id,
-        )
+        write_game_tables(tables, season, game_id_text)
 
     if write_duckdb:
         insert_tables(tables)
