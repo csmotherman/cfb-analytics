@@ -1,4 +1,4 @@
-"""Ingest one week of a season."""
+"""Ingest one week of a CollegeFootballData season."""
 
 from __future__ import annotations
 
@@ -11,26 +11,19 @@ from src.pipeline.ingest_game import ingest_game
 def ingest_week(
     season: int,
     week: int,
-    season_type: str = "REG",
+    season_type: str = "regular",
     force_download: bool = False,
 ) -> pd.DataFrame:
     """Ingest every scheduled game in one week."""
 
-    schedule = get_schedule(
-        season,
-        season_type,
-    )
-
-    games = schedule.loc[
-        schedule["week"].eq(week)
-    ]
-
+    schedule = get_schedule(season, season_type)
+    games = schedule.loc[schedule["week"].eq(week)]
     results: list[dict] = []
 
     for game in games.itertuples(index=False):
         try:
             tables = ingest_game(
-                game_id=game.game_id,
+                game_id=str(game.game_id),
                 season=season,
                 force_download=force_download,
             )
