@@ -1,43 +1,29 @@
-from src.api.download_season import download_season
+import pandas as pd
 
-# ============================================================
-# SEASONS TO BUILD
-# ============================================================
+games = pd.read_parquet("data/raw/2025/games.parquet")
 
-SEASONS = [
-    2023,
-    2024,
-]
-
-# ============================================================
-# BUILD SEASONS
-# ============================================================
-
-for season in SEASONS:
-
-    print()
-    print("=" * 80)
-    print(f"BUILDING {season}")
-    print("=" * 80)
-
-    (
-        games_df,
-        drives_df,
-        plays_df,
-        plays_clean
-    ) = download_season(season)
-
-    print()
-    print("-" * 60)
-    print(f"{season} SUMMARY")
-    print("-" * 60)
-
-    print(f"Games       : {len(games_df):,}")
-    print(f"Drives      : {len(drives_df):,}")
-    print(f"Raw Plays   : {len(plays_df):,}")
-    print(f"Clean Plays : {len(plays_clean):,}")
-
+print(games.columns.tolist())
 print()
-print("=" * 80)
-print("ALL SEASONS COMPLETE")
-print("=" * 80)
+print(games.head())
+
+import pandas as pd
+
+plays = pd.read_parquet("data/cleaned/2025/plays_clean.parquet")
+
+offenses = (
+    plays[
+        plays["isOffensivePlay"]
+    ]
+    .groupby("gameId")["offense"]
+    .nunique()
+)
+
+print(offenses.value_counts())
+
+games = pd.read_parquet("data/raw/2025/games.parquet")
+
+print(games[[
+    "id",
+    "homeTeam",
+    "awayTeam"
+]].head())
