@@ -1,0 +1,36 @@
+name: Raw data smoke test
+
+on:
+  workflow_dispatch:
+    inputs:
+      season:
+        description: Season
+        required: true
+        default: '2025'
+      week:
+        description: Week
+        required: true
+        default: '1'
+      season_type:
+        description: Season type
+        required: true
+        default: regular
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e '.[dev]'
+      - run: pytest
+      - name: Acquire one raw partition
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: cfb-raw week --season ${{ inputs.season }} --season-type ${{ inputs.season_type }} --week ${{ inputs.week }}
+      - name: Summarize files
+        run: find data/raw -type f -maxdepth 8 -print
