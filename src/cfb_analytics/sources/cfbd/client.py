@@ -12,6 +12,7 @@ from typing import Any
 import httpx
 
 BASE_URL = "https://api.collegefootballdata.com"
+CLASSIFICATION = "fbs"
 
 
 class CfbdError(RuntimeError):
@@ -79,10 +80,19 @@ class CfbdClient:
         return self.get_json("/calendar", {"year": season})
 
     def games(self, season: int, week: int, season_type: str) -> CfbdResponse:
-        return self.get_json("/games", {"year": season, "week": week, "seasonType": season_type})
+        return self.get_json(
+            "/games",
+            {"year": season, "week": week, "seasonType": season_type, "classification": CLASSIFICATION},
+        )
 
     def drives(self, season: int, week: int, season_type: str) -> CfbdResponse:
-        return self.get_json("/drives", {"year": season, "week": week, "seasonType": season_type})
+        return self.get_json(
+            "/drives",
+            {"year": season, "week": week, "seasonType": season_type, "classification": CLASSIFICATION},
+        )
 
     def plays(self, season: int, week: int, season_type: str) -> CfbdResponse:
-        return self.get_json("/plays", {"year": season, "week": week, "seasonType": season_type})
+        return self.get_json(
+            "/plays",
+            {"year": season, "week": week, "seasonType": season_type, "classification": CLASSIFICATION},
+        )
