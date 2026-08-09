@@ -1,25 +1,22 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cfb-analytics"
-version = "0.1.0"
-description = "Validated college football data foundation for SOAR analytics."
+version = "0.0.1"
 requires-python = ">=3.12"
 dependencies = [
-  "pandas>=2.2",
-  "pyarrow>=16",
-  "python-dotenv>=1.0",
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "python-dotenv>=1.0",
 ]
 
 [project.optional-dependencies]
-api = ["cfbd>=5.13"]
-dev = ["pytest>=8.0"]
-
-[tool.setuptools.packages.find]
-where = ["src"]
+dev = [
+    "pytest>=8",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-q"
+pythonpath = ["src"]

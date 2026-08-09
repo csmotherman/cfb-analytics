@@ -1,21 +1,16 @@
-# Secrets
 .env
-
-# Python
+.venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.venv/
-venv/
-
-# Local data and databases
-data/
-database/
-output/
-*.duckdb
-*.duckdb.wal
-
-# Editors / OS
+.mypy_cache/
+.ruff_cache/
 .DS_Store
 .vscode/
 .idea/
+
+data/
+output/
+database/
+*.duckdb
+*.duckdb.wal

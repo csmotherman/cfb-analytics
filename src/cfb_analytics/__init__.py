@@ -1,3 +1,5 @@
-"""CFB Analytics data foundation."""
+"""CFB Analytics.
 
-__version__ = "0.1.0"
+No data transformations are implemented yet. The project is intentionally
+waiting on source-data validation before defining canonical cleaning logic.
+"""

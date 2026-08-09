@@ -1,59 +1,31 @@
 # CFB Analytics
 
-A clean, validated data foundation for college-football analytics.
+This repository is intentionally starting from zero.
 
-The project intentionally starts with **data correctness before advanced metrics**. Raw API responses are stored unchanged, then games, drives, and play-by-play are cleaned independently into canonical schemas. Validation is a required gate before any downstream team-game, season, opponent-adjusted, or SOAR rating dataset is built.
+## Current objective
 
-## Data lineage
+Establish a trustworthy college-football data foundation before calculating any derived or advanced statistic.
 
-```text
-CFBD API
-  -> data/raw/{season}/games.parquet
-  -> data/raw/{season}/drives.parquet
-  -> data/raw/{season}/plays.parquet
+We will validate the source data and its relationships in this order:
 
-raw games  -> clean games  ----\
-raw drives -> clean drives -----+-> derived team-game -> season -> adjusted -> ratings
-raw plays  -> clean plays  ----/
-```
+1. Games
+2. Drives
+3. Play-by-play
+4. Cross-table relationships
+5. Clean canonical datasets
+6. Team-game data
+7. Season data
+8. Advanced metrics and ratings
 
-## Canonical grains
+No derived football logic belongs in this repository until the underlying raw data has been inspected and validated against real games.
 
-- `games`: one row per game. Primary key: `game_id`.
-- `drives`: one row per drive. Primary key: `drive_id`; foreign key: `game_id`.
-- `plays`: one row per play. Primary key: `play_id`; foreign keys: `game_id`, `drive_id`.
-- `team_game` (future): one row per team per game. Exactly two rows for every eligible game.
-- `team_season` (future): one row per team per season.
+## Principles
 
-## Current scope
+- Raw source data is preserved without transformation.
+- A transformation is not accepted because it "looks right"; it must be defined and tested.
+- Games, drives, and plays each have an explicit grain and primary key.
+- Every cleaned field must trace back to source fields or a documented derivation.
+- Structural validation must fail loudly.
+- Advanced metrics are downstream consumers, never part of ingestion or cleaning.
 
-The current rebuild implements and tests the foundation only:
-
-1. Canonical column normalization for games, drives, and plays.
-2. Deterministic play classification and context flags.
-3. Success-rate and explosive-play flags with explicit definitions.
-4. Drive outcome flags.
-5. Structural, range, and cross-table validation.
-6. A pipeline that refuses to publish cleaned data when validation fails.
-
-Advanced metrics are intentionally not implemented until this layer is trusted.
-
-## Local setup
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -e '.[dev,api]'
-cp .env.example .env
-pytest
-```
-
-## Build cleaned season data
-
-After raw Parquet files exist under `data/raw/<season>/`:
-
-```bash
-python -m cfb_analytics.pipeline.build_clean --season 2025
-```
-
-See `docs/data-model.md` and `docs/cleaning-rules.md` before adding new derived fields.
+See `docs/rebuild-plan.md` for the development sequence and `docs/source-audit.md` for the first validation work.
