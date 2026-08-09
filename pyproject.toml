@@ -5,18 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cfb-analytics"
 version = "0.0.1"
-requires-python = ">=3.12"
-dependencies = [
-    "pandas>=2.2",
-    "pyarrow>=16",
-    "python-dotenv>=1.0",
-]
+description = "Reliability-first college football data and intelligence platform"
+requires-python = ">=3.11"
+dependencies = []
 
-[project.optional-dependencies]
-dev = [
-    "pytest>=8",
-]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["src"]
+[tool.setuptools.packages.find]
+where = ["src"]

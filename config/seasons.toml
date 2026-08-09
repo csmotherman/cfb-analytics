@@ -1,0 +1,6 @@
+# Historical acquisition scope.
+# 2020 is intentionally excluded from the initial corpus.
+
+seasons = [2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025]
+source = "cfbd"
+entities = ["games", "drives", "plays"]
