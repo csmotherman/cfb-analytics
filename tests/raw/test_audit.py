@@ -12,7 +12,14 @@ def _response(payload):
 
 
 def test_audit_valid_partition(tmp_path: Path):
-    games = [{"id": 1, "homeClassification": "fbs", "awayClassification": "fbs"}]
+    games = [{
+        "id": 1,
+        "season": 2025,
+        "week": 1,
+        "seasonType": "regular",
+        "homeClassification": "fbs",
+        "awayClassification": "fbs",
+    }]
     drives = [{"id": 10, "gameId": 1}]
     plays = [{"id": 100, "gameId": 1, "driveId": 10}]
     for entity, payload in (("games", games), ("drives", drives), ("plays", plays)):
@@ -20,5 +27,6 @@ def test_audit_valid_partition(tmp_path: Path):
     result = audit_partition(tmp_path, 2025, "regular", 1)
     assert result["status"] == "PASS"
     assert result["checks"]["fbs_vs_fbs_only"]
+    assert result["checks"]["game_partition_metadata_matches"]
     assert result["coverage"]["games_without_plays"] == 0
     assert result["orphans"]["play_drive_ids_missing_from_drives"] == []
