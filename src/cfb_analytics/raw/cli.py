@@ -1,5 +1,4 @@
-"""CLI for raw CFBD acquisition."""
-
+"""CLI for raw CFBD acquisition and integrity auditing."""
 from __future__ import annotations
 
 import argparse
@@ -7,6 +6,7 @@ import json
 from pathlib import Path
 
 from cfb_analytics.raw.acquire import acquire_season, acquire_week, calendar_partitions, get_calendar
+from cfb_analytics.raw.audit import audit_partition
 from cfb_analytics.sources.cfbd.client import CfbdClient
 
 DEFAULT_ROOT = Path("data/raw")
@@ -27,6 +27,11 @@ def parser() -> argparse.ArgumentParser:
     week.add_argument("--week", type=int, required=True)
     week.add_argument("--refresh", action="store_true")
 
+    audit = sub.add_parser("audit")
+    audit.add_argument("--season", type=int, required=True)
+    audit.add_argument("--season-type", required=True)
+    audit.add_argument("--week", type=int, required=True)
+
     season = sub.add_parser("season")
     season.add_argument("--season", type=int, required=True)
     season.add_argument("--refresh", action="store_true")
@@ -38,6 +43,10 @@ def parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = parser().parse_args()
+    if args.command == "audit":
+        print(json.dumps(audit_partition(args.root, args.season, args.season_type, args.week), indent=2))
+        return
+
     with CfbdClient() as client:
         if args.command == "calendar":
             calendar = get_calendar(client, args.season)
