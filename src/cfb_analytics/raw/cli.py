@@ -1,9 +1,10 @@
-"""CLI for raw CFBD acquisition and integrity auditing."""
+"""CLI for raw CFBD acquisition, auditing, and source census."""
 from __future__ import annotations
 import argparse, json
 from pathlib import Path
 from cfb_analytics.raw.acquire import acquire_season, acquire_week, calendar_partitions, get_calendar
 from cfb_analytics.raw.audit import audit_partition, audit_season, audit_corpus
+from cfb_analytics.raw.census import raw_census, concise_census
 from cfb_analytics.sources.cfbd.client import CfbdClient
 
 DEFAULT_ROOT=Path("data/raw")
@@ -16,6 +17,7 @@ def parser():
     audit=sub.add_parser("audit"); audit.add_argument("--season",type=int,required=True); audit.add_argument("--season-type",required=True); audit.add_argument("--week",type=int,required=True)
     sa=sub.add_parser("audit-season"); sa.add_argument("--season",type=int,required=True); sa.add_argument("--json",action="store_true",dest="as_json")
     ca=sub.add_parser("audit-corpus"); ca.add_argument("--json",action="store_true",dest="as_json")
+    census=sub.add_parser("census"); census.add_argument("--season",type=int); census.add_argument("--json",action="store_true",dest="as_json"); census.add_argument("--top",type=int,default=25)
     season=sub.add_parser("season"); season.add_argument("--season",type=int,required=True); season.add_argument("--refresh",action="store_true")
     backfill=sub.add_parser("backfill"); backfill.add_argument("--refresh",action="store_true")
     return p
@@ -42,6 +44,10 @@ def main():
         r=audit_season(args.root,args.season); print(json.dumps(r,indent=2) if args.as_json else "",end="" if args.as_json else ""); _print_season(r) if not args.as_json else None; return
     if args.command=="audit-corpus":
         r=audit_corpus(args.root); print(json.dumps(r,indent=2) if args.as_json else "",end="" if args.as_json else ""); _print_corpus(r) if not args.as_json else None; return
+    if args.command=="census":
+        seasons=(args.season,) if args.season else SEASONS
+        r=raw_census(args.root,seasons=seasons)
+        print(json.dumps(r,indent=2) if args.as_json else concise_census(r,args.top)); return
     with CfbdClient() as client:
         if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
         if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
