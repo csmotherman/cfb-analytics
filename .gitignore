@@ -1,22 +1,21 @@
-# Virtual environment
-.venv/
-
-# Environment variables
+# Secrets
 .env
-
-# Local data
-data/
-
-# Generated outputs
-output/
 
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
+.pytest_cache/
+.venv/
+venv/
 
-# macOS
+# Local data and databases
+data/
+database/
+output/
+*.duckdb
+*.duckdb.wal
+
+# Editors / OS
 .DS_Store
-
-# VS Code
 .vscode/
+.idea/
