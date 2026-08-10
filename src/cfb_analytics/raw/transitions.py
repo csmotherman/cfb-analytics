@@ -1,7 +1,8 @@
 """Cross-play state transition diagnostics.
 
 This module does not mutate or correct raw CFBD records. It asks whether
-plausible structured values reconcile with the next chronological play.
+plausible structured values reconcile with the next chronological play and
+profiles penalty context around every mismatch.
 """
 from __future__ import annotations
 
@@ -29,6 +30,34 @@ def _context(play: dict[str, Any]) -> dict[str, Any]:
         "offenseScore", "defenseScore", "period", "clock", "down", "distance",
         "yardsToGoal", "yardsGained", "scoring", "playType", "playText",
     )}
+
+
+def _penalty_signal(play: dict[str, Any]) -> str | None:
+    """Describe how a play exposes penalty semantics, if at all."""
+    play_type = str(play.get("playType") or "").lower()
+    play_text = str(play.get("playText") or "").lower()
+    type_hit = "penalty" in play_type
+    text_hit = "penalty" in play_text
+    if type_hit and text_hit:
+        return "playtype_and_text"
+    if type_hit:
+        return "playtype_only"
+    if text_hit:
+        return "text_only"
+    return None
+
+
+def _penalty_context(a: dict[str, Any], b: dict[str, Any]) -> dict[str, Any]:
+    a_signal, b_signal = _penalty_signal(a), _penalty_signal(b)
+    if a_signal and b_signal:
+        location = "both"
+    elif a_signal:
+        location = "previous"
+    elif b_signal:
+        location = "next"
+    else:
+        location = "none"
+    return {"location": location, "previous_signal": a_signal, "next_signal": b_signal}
 
 
 def _audit_pair(a: dict[str, Any], b: dict[str, Any]) -> list[str]:
@@ -69,9 +98,6 @@ def _audit_pair(a: dict[str, Any], b: dict[str, Any]) -> list[str]:
             if down_b != 1:
                 flags.append("expected_first_down_mismatch")
 
-    # Distance-to-go only has a deterministic carry-forward interpretation when
-    # the next down itself reconciles with the expected state. Otherwise one bad
-    # transition can cascade into misleading secondary flags.
     if expected_down is not None and down_b == expected_down and all(isinstance(x, (int, float)) for x in (dist_a, dist_b, gained)):
         if gained < dist_a and down_a < 4:
             expected_dist = dist_a - gained
@@ -88,7 +114,12 @@ def _audit_pair(a: dict[str, Any], b: dict[str, Any]) -> list[str]:
 def transition_audit(root: Path, seasons: Iterable[int], examples: int = 10) -> dict[str, Any]:
     counts = Counter(); by_season: dict[int, Counter] = defaultdict(Counter)
     samples: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    penalty_by_flag: dict[str, Counter] = defaultdict(Counter)
+    penalty_signal_by_flag: dict[str, Counter] = defaultdict(Counter)
     games = pairs = conservative_pairs = 0
+    flagged_pairs: set[tuple[str, str, str]] = set()
+    flagged_pairs_with_penalty: set[tuple[str, str, str]] = set()
+
     for season in seasons:
         for season_type, week in discover_partitions(root, season):
             d = partition_dir(root, season, season_type, week)
@@ -103,41 +134,72 @@ def transition_audit(root: Path, seasons: Iterable[int], examples: int = 10) -> 
                     pairs += 1
                     if a.get("driveId") == b.get("driveId") and a.get("offense") == b.get("offense") and _scrimmage(a) and _scrimmage(b):
                         conservative_pairs += 1
-                    for flag in _audit_pair(a, b):
+                    flags = _audit_pair(a, b)
+                    if not flags:
+                        continue
+                    penalty = _penalty_context(a, b)
+                    pair_key = (gid, str(a.get("id")), str(b.get("id")))
+                    flagged_pairs.add(pair_key)
+                    if penalty["location"] != "none":
+                        flagged_pairs_with_penalty.add(pair_key)
+                    for flag in flags:
                         counts[flag] += 1; by_season[season][flag] += 1
+                        penalty_by_flag[flag][penalty["location"]] += 1
+                        for side in ("previous_signal", "next_signal"):
+                            signal = penalty[side]
+                            if signal:
+                                penalty_signal_by_flag[flag][f"{side}:{signal}"] += 1
                         if len(samples[flag]) < examples:
                             g = game_rows.get(gid, {})
                             samples[flag].append({
                                 "season": season, "season_type": season_type, "week": week,
                                 "gameId": gid, "game": f"{g.get('awayTeam')} @ {g.get('homeTeam')}",
+                                "penalty_context": penalty,
                                 "previous": _context(a), "next": _context(b),
                             })
     return {
         "candidate_order": ["gameId", "driveNumber", "playNumber"],
         "games_scanned": games, "adjacent_pairs": pairs,
         "conservative_scrimmage_pairs": conservative_pairs,
+        "flagged_unique_pairs": len(flagged_pairs),
+        "flagged_unique_pairs_with_penalty_context": len(flagged_pairs_with_penalty),
         "counts": dict(counts),
+        "penalty_context_by_flag": {k: dict(v) for k, v in penalty_by_flag.items()},
+        "penalty_signal_by_flag": {k: dict(v) for k, v in penalty_signal_by_flag.items()},
         "by_season": {str(s): dict(c) for s, c in by_season.items()},
         "examples": dict(samples),
-        "note": "Flags are reconciliation failures, not automatic corrections.",
+        "note": "Flags are reconciliation failures, not automatic corrections. Penalty context checks both adjacent plays by playType and playText.",
     }
 
 
 def concise_transitions(r: dict[str, Any]) -> str:
     c = r["counts"]
+    labels = (
+        ("expected_next_down_mismatch", "expected next-down mismatch"),
+        ("expected_first_down_mismatch", "expected first-down mismatch"),
+        ("distance_transition_mismatch", "distance transition mismatch"),
+        ("field_position_transition_mismatch", "field-position transition mismatch"),
+        ("same_team_offense_score_decrease", "same-team offense-score decrease"),
+        ("same_team_defense_score_decrease", "same-team defense-score decrease"),
+    )
     lines = [
         "PLAY STATE TRANSITION AUDIT",
         f"Games scanned: {r['games_scanned']:,}",
         f"Adjacent candidate-ordered pairs: {r['adjacent_pairs']:,}",
-        f"Conservative scrimmage pairs: {r['conservative_scrimmage_pairs']:,}", "",
+        f"Conservative scrimmage pairs: {r['conservative_scrimmage_pairs']:,}",
+        f"Unique flagged pairs: {r['flagged_unique_pairs']:,}",
+        f"Flagged pairs with penalty context: {r['flagged_unique_pairs_with_penalty_context']:,}", "",
         "Reconciliation flags:",
-        f"  expected next-down mismatch ............ {c.get('expected_next_down_mismatch',0):,}",
-        f"  expected first-down mismatch ........... {c.get('expected_first_down_mismatch',0):,}",
-        f"  distance transition mismatch ........... {c.get('distance_transition_mismatch',0):,}",
-        f"  field-position transition mismatch ..... {c.get('field_position_transition_mismatch',0):,}",
-        f"  same-team offense-score decrease ....... {c.get('same_team_offense_score_decrease',0):,}",
-        f"  same-team defense-score decrease ....... {c.get('same_team_defense_score_decrease',0):,}",
-        "", "These are diagnostic flags, not corrections.",
-        "Use --json --examples N to inspect contextual pairs.",
     ]
+    for key, label in labels:
+        total = c.get(key, 0)
+        pc = r["penalty_context_by_flag"].get(key, {})
+        penalty = total - pc.get("none", 0)
+        pct = (100 * penalty / total) if total else 0
+        lines.append(f"  {label:.<40} {total:>7,}  penalty-nearby={penalty:>6,} ({pct:5.1f}%)")
+    lines.extend([
+        "", "Penalty-nearby means either adjacent record contains 'penalty' in playType or playText.",
+        "These remain diagnostic flags, not corrections.",
+        "Use --json --examples N for previous/next penalty location and detection source.",
+    ])
     return "\n".join(lines)
