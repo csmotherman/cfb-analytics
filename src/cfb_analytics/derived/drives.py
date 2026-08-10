@@ -1,8 +1,9 @@
 """Derive drive-level records from canonical play-by-play.
 
-Canonical plays are the analytical source of truth. Raw drive data is not used
-to construct derived drives. Drive IDs already present on plays define grouping;
-inconsistencies are surfaced in validation fields rather than silently repaired.
+Canonical plays are the analytical source of truth. Drive IDs already present on
+plays define grouping. Drive ownership is inferred only from clean offensive
+plays; special-teams, turnover-return, scoring/admin, and other contextual rows
+remain drive members but do not vote on possession ownership.
 """
 from __future__ import annotations
 
@@ -17,7 +18,7 @@ from cfb_analytics.canonical.materialize import canonical_partition_dir
 from cfb_analytics.raw.audit import discover_partitions
 from cfb_analytics.raw.sequence import _candidate_sort_key
 
-DRIVE_SCHEMA_VERSION = "drive-v1"
+DRIVE_SCHEMA_VERSION = "drive-v2"
 
 
 def derived_drive_partition_dir(root: Path, season: int, season_type: str, week: int) -> Path:
@@ -40,27 +41,35 @@ def _mode(values: list[Any]) -> Any:
     if not clean:
         return None
     counts = Counter(clean)
-    top = counts.most_common()
-    best = top[0][1]
-    winners = {value for value, count in top if count == best}
-    for value in clean:
-        if value in winners:
-            return value
-    return clean[0]
+    best = counts.most_common(1)[0][1]
+    winners = {value for value, count in counts.items() if count == best}
+    return next(value for value in clean if value in winners)
 
 
 def _num(value: Any) -> bool:
     return isinstance(value, (int, float)) and not isinstance(value, bool)
 
 
+def _ownership_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Rows allowed to establish drive possession ownership."""
+    return [
+        r for r in rows
+        if r.get("isOffensivePlay") is True
+        and r.get("isScrimmagePlay") is True
+        and not r.get("hasNoPlayContext", False)
+    ]
+
+
 def derive_drive(game_id: str, drive_id: str, rows: list[dict[str, Any]], season: int, season_type: str, week: int) -> dict[str, Any]:
     ordered = sorted(rows, key=_candidate_sort_key)
     first, last = ordered[0], ordered[-1]
-    offenses = [r.get("offense") for r in ordered if r.get("offense") is not None]
-    defenses = [r.get("defense") for r in ordered if r.get("defense") is not None]
     drive_numbers = [r.get("driveNumber") for r in ordered if r.get("driveNumber") is not None]
-    offense_set, defense_set = set(offenses), set(defenses)
     drive_number_set = set(drive_numbers)
+
+    ownership = _ownership_rows(ordered)
+    ownership_offenses = [r.get("offense") for r in ownership if r.get("offense") is not None]
+    ownership_defenses = [r.get("defense") for r in ownership if r.get("defense") is not None]
+    offense_set, defense_set = set(ownership_offenses), set(ownership_defenses)
 
     offensive = [r for r in ordered if r.get("isOffensivePlay") is True and not r.get("hasNoPlayContext", False)]
     scrimmage = [r for r in ordered if r.get("isScrimmagePlay") is True and not r.get("hasNoPlayContext", False)]
@@ -68,11 +77,11 @@ def derive_drive(game_id: str, drive_id: str, rows: list[dict[str, Any]], season
     yards = [r.get("analyticsYardsGained") for r in offensive if _num(r.get("analyticsYardsGained"))]
 
     issues = []
-    if len(offense_set) > 1: issues.append("MULTIPLE_OFFENSES")
-    if len(defense_set) > 1: issues.append("MULTIPLE_DEFENSES")
+    if len(offense_set) > 1: issues.append("MULTIPLE_OWNERSHIP_OFFENSES")
+    if len(defense_set) > 1: issues.append("MULTIPLE_OWNERSHIP_DEFENSES")
     if len(drive_number_set) > 1: issues.append("MULTIPLE_DRIVE_NUMBERS")
-    if not offenses: issues.append("MISSING_OFFENSE")
-    if not defenses: issues.append("MISSING_DEFENSE")
+    if not ownership_offenses: issues.append("MISSING_OWNERSHIP_OFFENSE")
+    if not ownership_defenses: issues.append("MISSING_OWNERSHIP_DEFENSE")
 
     return {
         "season": season,
@@ -81,8 +90,9 @@ def derive_drive(game_id: str, drive_id: str, rows: list[dict[str, Any]], season
         "gameId": game_id,
         "driveId": drive_id,
         "driveNumber": _mode(drive_numbers),
-        "offense": _mode(offenses),
-        "defense": _mode(defenses),
+        "offense": _mode(ownership_offenses),
+        "defense": _mode(ownership_defenses),
+        "ownershipEvidencePlayCount": len(ownership),
         "playCount": len(ordered),
         "offensivePlayCount": len(offensive),
         "scrimmagePlayCount": len(scrimmage),
@@ -105,6 +115,7 @@ def derive_drive(game_id: str, drive_id: str, rows: list[dict[str, Any]], season
         "firstPlayId": first.get("id"),
         "lastPlayId": last.get("id"),
         "driveSchemaVersion": DRIVE_SCHEMA_VERSION,
+        "driveOwnershipSource": "clean_offensive_scrimmage_plays",
         "driveValidationStatus": "PASS" if not issues else "REVIEW",
         "driveValidationIssues": issues,
     }
@@ -179,8 +190,8 @@ def drive_corpus_audit(raw_root: Path, processed_root: Path, seasons: Iterable[i
     checks={
         "all_drives_unique": duplicate_keys==0,
         "play_membership_reconciles": totals["assigned_plays"]==expected_assigned,
-        "no_multiple_offense_drives": issues["MULTIPLE_OFFENSES"]==0,
-        "no_multiple_defense_drives": issues["MULTIPLE_DEFENSES"]==0,
+        "no_multiple_ownership_offense_drives": issues["MULTIPLE_OWNERSHIP_OFFENSES"]==0,
+        "no_multiple_ownership_defense_drives": issues["MULTIPLE_OWNERSHIP_DEFENSES"]==0,
         "no_multiple_drive_number_drives": issues["MULTIPLE_DRIVE_NUMBERS"]==0,
     }
     return {"status":"PASS" if all(checks.values()) else "REVIEW","partitions":partitions,"games_with_drives":len(games),"totals":dict(totals),"issues":dict(issues),"duplicate_drive_keys":duplicate_keys,"checks":checks}
