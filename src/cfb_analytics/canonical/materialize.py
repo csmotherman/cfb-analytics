@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 from typing import Iterable
 
+from cfb_analytics.canonical.play_text_normalizer import TEXT_PARSE_VERSION
 from cfb_analytics.canonical.play_types import RULES
 from cfb_analytics.canonical.plays import normalize_play
 from cfb_analytics.raw.audit import discover_partitions, partition_dir
@@ -18,18 +19,21 @@ def canonical_partition_dir(root: Path, season: int, season_type: str, week: int
 
 def _taxonomy_fingerprint() -> str:
     payload = {
-        name: {
-            "category": rule.category,
-            "subtype": rule.subtype,
-            "is_scrimmage": rule.is_scrimmage,
-            "is_offensive_play": rule.is_offensive_play,
-            "is_administrative": rule.is_administrative,
-            "is_special_teams": rule.is_special_teams,
-            "is_penalty": rule.is_penalty,
-            "is_turnover": rule.is_turnover,
-            "force_analytics_yards_zero": rule.force_analytics_yards_zero,
-        }
-        for name, rule in sorted(RULES.items())
+        "play_text_parse_version": TEXT_PARSE_VERSION,
+        "play_type_rules": {
+            name: {
+                "category": rule.category,
+                "subtype": rule.subtype,
+                "is_scrimmage": rule.is_scrimmage,
+                "is_offensive_play": rule.is_offensive_play,
+                "is_administrative": rule.is_administrative,
+                "is_special_teams": rule.is_special_teams,
+                "is_penalty": rule.is_penalty,
+                "is_turnover": rule.is_turnover,
+                "force_analytics_yards_zero": rule.force_analytics_yards_zero,
+            }
+            for name, rule in sorted(RULES.items())
+        },
     }
     raw = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode()
     return hashlib.sha256(raw).hexdigest()
@@ -80,6 +84,7 @@ def materialize_partition(raw_root: Path, processed_root: Path, season: int, sea
         "source_sha256": source_sha,
         "canonical_sha256": canonical_sha,
         "taxonomy_sha256": taxonomy_sha,
+        "play_text_parse_version": TEXT_PARSE_VERSION,
         "format": "json",
         "raw_immutable": True,
     }
@@ -116,6 +121,7 @@ def verify_canonical_partition(raw_root: Path, processed_root: Path, season: int
             "source_hash_matches": manifest.get("source_sha256") == _sha256_bytes(source_path.read_bytes()),
             "canonical_hash_matches": manifest.get("canonical_sha256") == _sha256_bytes(target_path.read_bytes()),
             "taxonomy_hash_matches": manifest.get("taxonomy_sha256") == _taxonomy_fingerprint(),
+            "play_text_parse_version_matches": manifest.get("play_text_parse_version") == TEXT_PARSE_VERSION,
             "all_source_ids_preserved": [str(x.get("id")) for x in source_rows] == [str(x.get("id")) for x in canonical_rows],
         })
     return {"season": season, "season_type": season_type, "week": week, "status": "PASS" if checks and all(checks.values()) else "REVIEW", "checks": checks}
