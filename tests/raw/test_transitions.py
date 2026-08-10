@@ -13,11 +13,18 @@ def test_clean_scrimmage_transition():
     assert _audit_pair(a, b) == []
 
 
-def test_detects_subtle_transition_mismatch():
+def test_detects_wrong_next_down_without_cascading_distance_flag():
     a = play()
-    b = play(down=3, distance=7, yardsToGoal=65)
+    b = play(down=3, distance=7, yardsToGoal=66)
     flags = set(_audit_pair(a, b))
     assert "expected_next_down_mismatch" in flags
+    assert "distance_transition_mismatch" not in flags
+
+
+def test_detects_distance_and_field_position_mismatch_when_down_reconciles():
+    a = play()
+    b = play(down=2, distance=8, yardsToGoal=65)
+    flags = set(_audit_pair(a, b))
     assert "distance_transition_mismatch" in flags
     assert "field_position_transition_mismatch" in flags
 
