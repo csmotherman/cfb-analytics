@@ -1,4 +1,4 @@
-"""CLI for raw acquisition, audits, and canonical play processing."""
+"""CLI for raw acquisition, audits, canonical processing, and derived entities."""
 from __future__ import annotations
 import argparse, json
 from pathlib import Path
@@ -20,6 +20,7 @@ from cfb_analytics.canonical.play_text_forensics import play_text_forensics, con
 from cfb_analytics.canonical.play_text_normalization_audit import play_text_normalization_audit, concise_play_text_normalization_audit
 from cfb_analytics.canonical.evidence import evidence_adjudication_audit, concise_evidence_adjudication, correction_candidate_review, concise_correction_candidate_review
 from cfb_analytics.canonical.correction_audit import yardage_correction_audit, concise_yardage_correction_audit
+from cfb_analytics.derived.drives import materialize_drive_corpus, drive_corpus_audit, concise_drive_audit
 from cfb_analytics.sources.cfbd.client import CfbdClient
 DEFAULT_ROOT=Path("data/raw"); DEFAULT_PROCESSED_ROOT=Path("data/processed")
 SEASONS=(2014,2015,2016,2017,2018,2019,2021,2022,2023,2024,2025)
@@ -52,6 +53,8 @@ def parser():
  ea=sub.add_parser("evidence-adjudication-audit"); ea.add_argument("--season",type=int); ea.add_argument("--examples",type=int,default=5); ea.add_argument("--json",action="store_true",dest="as_json")
  cr=sub.add_parser("yardage-correction-review"); cr.add_argument("--season",type=int); cr.add_argument("--examples",type=int,default=2); cr.add_argument("--json",action="store_true",dest="as_json")
  ya=sub.add_parser("yardage-correction-audit"); ya.add_argument("--season",type=int); ya.add_argument("--json",action="store_true",dest="as_json")
+ dm=sub.add_parser("derived-drives"); dm.add_argument("--season",type=int); dm.add_argument("--refresh",action="store_true")
+ da=sub.add_parser("derived-drive-audit"); da.add_argument("--season",type=int); da.add_argument("--json",action="store_true",dest="as_json")
  season=sub.add_parser("season"); season.add_argument("--season",type=int,required=True); season.add_argument("--refresh",action="store_true")
  backfill=sub.add_parser("backfill"); backfill.add_argument("--refresh",action="store_true")
  return p
@@ -59,10 +62,8 @@ def parser():
 def main():
  args=parser().parse_args(); seasons=(getattr(args,"season",None),) if getattr(args,"season",None) else SEASONS
  if args.command=="audit": print(json.dumps(audit_partition(args.root,args.season,args.season_type,args.week),indent=2)); return
- if args.command=="audit-season":
-  r=audit_season(args.root,args.season); print(json.dumps(r,indent=2) if args.as_json else f"{r['season']} RAW SEASON AUDIT: {r['status']}\nPartitions: {r['partition_count']}\nTotals: {r['totals']}\nChecks: {r['checks']}"); return
- if args.command=="audit-corpus":
-  r=audit_corpus(args.root); print(json.dumps(r,indent=2) if args.as_json else "\n".join([f"RAW CORPUS AUDIT: {r['status']}"]+[f"{s['season']} {s['status']} {s['totals']}" for s in r['seasons']])); return
+ if args.command=="audit-season": r=audit_season(args.root,args.season); print(json.dumps(r,indent=2) if args.as_json else f"{r['season']} RAW SEASON AUDIT: {r['status']}\nPartitions: {r['partition_count']}\nTotals: {r['totals']}\nChecks: {r['checks']}"); return
+ if args.command=="audit-corpus": r=audit_corpus(args.root); print(json.dumps(r,indent=2) if args.as_json else "\n".join([f"RAW CORPUS AUDIT: {r['status']}"]+[f"{s['season']} {s['status']} {s['totals']}" for s in r['seasons']])); return
  if args.command=="census": r=raw_census(args.root,seasons=seasons); print(json.dumps(r,indent=2) if args.as_json else concise_census(r,args.top)); return
  if args.command=="anomalies": r=anomaly_report(args.root,seasons,args.rule,args.examples); print(json.dumps(r,indent=2) if args.as_json or args.rule else concise_anomalies(r)); return
  if args.command=="sequence-audit": r=sequence_audit(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_sequence(r)); return
@@ -92,6 +93,10 @@ def main():
  if args.command=="evidence-adjudication-audit": r=evidence_adjudication_audit(args.processed_root,args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_evidence_adjudication(r)); return
  if args.command=="yardage-correction-review": r=correction_candidate_review(args.processed_root,args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_correction_candidate_review(r)); return
  if args.command=="yardage-correction-audit": r=yardage_correction_audit(args.processed_root,args.root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_yardage_correction_audit(r)); return
+ if args.command=="derived-drives":
+  results=materialize_drive_corpus(args.root,args.processed_root,seasons,args.refresh); written=sum(x['status']=='WRITTEN' for x in results); reused=sum(x['status']=='REUSED' for x in results); drives=sum(x['drive_count'] for x in results); review=sum(x['review_drive_count'] for x in results)
+  print(f"DERIVED DRIVES MATERIALIZATION: PASS\nPartitions: {len(results)}\nWritten: {written}\nReused: {reused}\nDrives: {drives:,}\nReview drives: {review:,}\nOutput: {args.processed_root / 'derived' / 'drives'}"); return
+ if args.command=="derived-drive-audit": r=drive_corpus_audit(args.root,args.processed_root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_drive_audit(r)); return
  with CfbdClient() as client:
   if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
   if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
