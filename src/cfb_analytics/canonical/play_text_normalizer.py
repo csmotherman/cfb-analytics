@@ -2,7 +2,7 @@
 
 V1 targets dominant rushing/passing formats and common penalty/result grammar.
 It never mutates the source record and deliberately returns AMBIGUOUS when
-multiple yardage or destination phrases make extraction unsafe.
+multiple play/result/enforcement yardage or destination phrases make extraction unsafe.
 """
 from __future__ import annotations
 
@@ -29,6 +29,7 @@ PENALTY_TYPE_RE = re.compile(
     r"illegal formation|illegal motion|illegal shift|illegal block|illegal substitution|targeting)\b",
     re.I,
 )
+GENERIC_YARD_TOKEN_RE = re.compile(r"(?<!\w)(?P<yards>\d+)\s+(?:yd|yds|yard|yards)\b", re.I)
 
 
 def _clean(text: Any) -> str:
@@ -39,7 +40,6 @@ def _penalty_status(profile: dict[str, Any]) -> str | None:
     if not profile["has_penalty"]:
         return None
     statuses=set(profile["statuses"])
-    # More consequential statuses take precedence over generic enforcement words.
     for status in ("NO_PLAY","OFFSETTING","DECLINED","ACCEPTED","HALF_DISTANCE"):
         if status in statuses:
             return status
@@ -53,8 +53,6 @@ def _safe_yards(text: str) -> tuple[int | None, bool, int]:
         return values[0], False, 1
     if not values:
         return None, False, 0
-    # Repeated identical textual yardage is still semantically ambiguous: it may
-    # describe both play result and enforcement, so don't silently choose it.
     return None, True, len(values)
 
 
@@ -107,7 +105,20 @@ def normalize_play_text(play: dict[str, Any]) -> dict[str, Any]:
     pp=_penalty_profile(text)
     penalty=_penalty_details(text,pp)
     ambiguous_reasons=[]
-    if yards_ambiguous: ambiguous_reasons.append("MULTIPLE_YARDAGE_PHRASES")
+
+    # _yardage_profile intentionally targets football-result phrases. Penalty
+    # enforcement is a separate grammar (e.g. "run for 8 yds ... penalty 10 yards").
+    # If both a result yardage and a distinct penalty-yardage token exist, the
+    # normalized representation must remain ambiguous rather than pretending
+    # there is only one yardage quantity in the text.
+    generic_yard_values=[int(m.group("yards")) for m in GENERIC_YARD_TOKEN_RE.finditer(text)]
+    penalty_yards=penalty.get("textPenaltyYards")
+    has_result_and_penalty_yardage = (
+        yards_count > 0 and penalty_yards is not None and
+        (len(generic_yard_values) > yards_count or penalty_yards not in [abs(v) for v in (_yardage_profile(text)["values"] or [])])
+    )
+
+    if yards_ambiguous or has_result_and_penalty_yardage: ambiguous_reasons.append("MULTIPLE_YARDAGE_PHRASES")
     if dest_ambiguous: ambiguous_reasons.append("MULTIPLE_DESTINATIONS")
     if pp["penalty_count"]>1: ambiguous_reasons.append("MULTIPLE_PENALTY_TOKENS")
     if not text: ambiguous_reasons.append("MISSING_PLAY_TEXT")
@@ -116,13 +127,13 @@ def normalize_play_text(play: dict[str, Any]) -> dict[str, Any]:
         "textParseVersion":TEXT_PARSE_VERSION,
         "sourcePlayText":play.get("playText"),
         "textPlayType":semantic,
-        "textYardsGained":yards,
+        "textYardsGained":None if has_result_and_penalty_yardage else yards,
         "textDestinationTeam":team,
         "textDestinationYardLine":yardline,
         "textFirstDown":bool(FIRST_DOWN_RE.search(text)),
         "textTouchdown":bool(TOUCHDOWN_RE.search(text)),
         "textNoPlay":bool(NO_PLAY_RE.search(text)),
-        "textYardagePhraseCount":yards_count,
+        "textYardagePhraseCount":max(yards_count, len(generic_yard_values)) if has_result_and_penalty_yardage else yards_count,
         "textDestinationCount":dest_count,
         "textPenaltyTokenCount":pp["penalty_count"],
         **penalty,
