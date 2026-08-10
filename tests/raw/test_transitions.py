@@ -23,7 +23,7 @@ def test_detects_wrong_next_down_without_cascading_distance_flag():
 
 def test_detects_distance_and_field_position_mismatch_when_down_reconciles():
     a = play()
-    b = play(down=2, distance=8, yardsToGoal=65)
+    b = play(down=2, distance=8, yardsToGoal=63)
     flags = set(_audit_pair(a, b))
     assert "distance_transition_mismatch" in flags
     assert "field_position_transition_mismatch" in flags
