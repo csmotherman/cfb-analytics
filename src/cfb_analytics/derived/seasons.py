@@ -1,11 +1,11 @@
 """Derive one analytics row per team and season from validated team-game rows."""
 from __future__ import annotations
-import hashlib, json, os
+import hashlib,json,os
 from collections import defaultdict
 from pathlib import Path
 from cfb_analytics.raw.audit import discover_partitions
 from cfb_analytics.derived.games import derived_game_partition_dir
-SEASON_SCHEMA_VERSION="team-season-v2-success"
+SEASON_SCHEMA_VERSION="team-season-v3-explosiveness"
 def derived_season_dir(root:Path,season:int)->Path:return root/"derived"/"seasons"/f"season={season}"
 def _atomic(path:Path,data:bytes):path.parent.mkdir(parents=True,exist_ok=True);tmp=path.with_suffix(path.suffix+".tmp");tmp.write_bytes(data);os.replace(tmp,path)
 def _sha(b:bytes)->str:return hashlib.sha256(b).hexdigest()
@@ -19,13 +19,17 @@ def derive_team_seasons(team_games,season):
  for team,rows in sorted(grouped.items()):
   games=len(rows);poss=_sum(rows,"validatedPossessions");dposs=_sum(rows,"validatedDefensivePossessions");plays=_sum(rows,"offensivePlays");dplays=_sum(rows,"defensivePlays");yards=_sum(rows,"offensiveYards");dyards=_sum(rows,"defensiveYardsAllowed");review=_sum(rows,"reviewPossessionGroups");review_games=sum(r.get("gameValidationStatus")!="PASS" for r in rows)
   row={"season":season,"team":team,"games":games,"validatedPossessions":poss,"validatedDefensivePossessions":dposs,"offensivePlays":plays,"defensivePlays":dplays,"offensiveYards":yards,"defensiveYardsAllowed":dyards,"yardsPerGame":_rate(yards,games),"yardsAllowedPerGame":_rate(dyards,games),"yardsPerPlay":_rate(yards,plays),"yardsAllowedPerPlay":_rate(dyards,dplays),"yardsPerPossession":_rate(yards,poss),"yardsAllowedPerPossession":_rate(dyards,dposs),"possessionsPerGame":_rate(poss,games),"defensivePossessionsPerGame":_rate(dposs,games),"reviewPossessionGroups":review,"reviewGames":review_games,"seasonValidationStatus":"PASS" if review_games==0 else "REVIEW","seasonSchemaVersion":SEASON_SCHEMA_VERSION}
-  pairs=[("successEligiblePlays","successfulPlays","successRate"),("successEligiblePlaysAllowed","successfulPlaysAllowed","successRateAllowed")]
-  for prefix in ("rush","pass"):
-   pairs += [(f"{prefix}SuccessEligiblePlays",f"{prefix}SuccessfulPlays",f"{prefix}SuccessRate"),(f"{prefix}SuccessEligiblePlaysAllowed",f"{prefix}SuccessfulPlaysAllowed",f"{prefix}SuccessRateAllowed")]
-  for d in (1,2,3,4):pairs += [(f"down{d}SuccessEligiblePlays",f"down{d}SuccessfulPlays",f"down{d}SuccessRate"),(f"down{d}SuccessEligiblePlaysAllowed",f"down{d}SuccessfulPlaysAllowed",f"down{d}SuccessRateAllowed")]
-  for eligible,successful,rate in pairs:
-   e=_sum(rows,eligible);s=_sum(rows,successful);row[eligible]=e;row[successful]=s;row[rate]=_rate(s,e)
-  row["successDefinitionVersion"]=next((r.get("successDefinitionVersion") for r in rows if r.get("successDefinitionVersion")),None);out.append(row)
+  success_pairs=[("successEligiblePlays","successfulPlays","successRate"),("successEligiblePlaysAllowed","successfulPlaysAllowed","successRateAllowed")]
+  for fam in ("rush","pass"):success_pairs += [(f"{fam}SuccessEligiblePlays",f"{fam}SuccessfulPlays",f"{fam}SuccessRate"),(f"{fam}SuccessEligiblePlaysAllowed",f"{fam}SuccessfulPlaysAllowed",f"{fam}SuccessRateAllowed")]
+  for d in (1,2,3,4):success_pairs += [(f"down{d}SuccessEligiblePlays",f"down{d}SuccessfulPlays",f"down{d}SuccessRate"),(f"down{d}SuccessEligiblePlaysAllowed",f"down{d}SuccessfulPlaysAllowed",f"down{d}SuccessRateAllowed")]
+  for eligible,successful,rate in success_pairs:e=_sum(rows,eligible);s=_sum(rows,successful);row[eligible]=e;row[successful]=s;row[rate]=_rate(s,e)
+  explosive_pairs=[("explosiveEligiblePlays","explosivePlays","explosivePlayRate"),("explosiveEligiblePlaysAllowed","explosivePlaysAllowed","explosivePlayRateAllowed")]
+  for fam in ("rush","pass"):explosive_pairs += [(f"{fam}ExplosiveEligiblePlays",f"{fam}ExplosivePlays",f"{fam}ExplosivePlayRate"),(f"{fam}ExplosiveEligiblePlaysAllowed",f"{fam}ExplosivePlaysAllowed",f"{fam}ExplosivePlayRateAllowed")]
+  for eligible,explosive,rate in explosive_pairs:e=_sum(rows,eligible);x=_sum(rows,explosive);row[eligible]=e;row[explosive]=x;row[rate]=_rate(x,e)
+  for fam in ("", "rush", "pass"):
+   cap=fam.title() if fam else "";yards_key=f"{fam}SuccessfulPlayYards" if fam else "successfulPlayYards";success_key=f"{fam}SuccessfulPlays" if fam else "successfulPlays";rate_key=f"{fam}YardsPerSuccessfulPlay" if fam else "yardsPerSuccessfulPlay";row[yards_key]=_sum(rows,yards_key);row[rate_key]=_rate(row[yards_key],row[success_key])
+   ay=f"{fam}SuccessfulPlayYardsAllowed" if fam else "successfulPlayYardsAllowed";as_=f"{fam}SuccessfulPlaysAllowed" if fam else "successfulPlaysAllowed";ar=f"{fam}YardsPerSuccessfulPlayAllowed" if fam else "yardsPerSuccessfulPlayAllowed";row[ay]=_sum(rows,ay);row[ar]=_rate(row[ay],row[as_])
+  row["successDefinitionVersion"]=next((r.get("successDefinitionVersion") for r in rows if r.get("successDefinitionVersion")),None);row["explosivenessDefinitionVersion"]=next((r.get("explosivenessDefinitionVersion") for r in rows if r.get("explosivenessDefinitionVersion")),None);out.append(row)
  return out
 def _load_season_games(raw_root,processed_root,season):
  rows=[];payloads=[]
@@ -44,10 +48,10 @@ def materialize_season_corpus(raw_root,processed_root,seasons,refresh=False):ret
 def season_corpus_audit(raw_root,processed_root,seasons):
  records=[];game_rows=[]
  for s in seasons:
-  p=derived_season_dir(processed_root,s)/"team_seasons.json";records.extend(json.loads(p.read_text()));gr,_=_load_season_games(raw_root,processed_root,s);game_rows.extend(gr)
+  records.extend(json.loads((derived_season_dir(processed_root,s)/"team_seasons.json").read_text()));gr,_=_load_season_games(raw_root,processed_root,s);game_rows.extend(gr)
  keys={(r['season'],r['team']) for r in records};expected={(r['season'],r['team']) for r in game_rows};game_counts=defaultdict(int)
  for r in game_rows:game_counts[(r['season'],r['team'])]+=1
- checks={"unique_team_season_rows":len(keys)==len(records),"all_team_games_represented":keys==expected,"games_played_reconciles":all(r['games']==game_counts[(r['season'],r['team'])] for r in records),"offense_defense_possessions_reconcile":sum(r['validatedPossessions'] for r in records)==sum(r['validatedDefensivePossessions'] for r in records),"offense_defense_yards_reconcile":sum(r['offensiveYards'] for r in records)==sum(r['defensiveYardsAllowed'] for r in records),"success_counts_reconcile_to_games":sum(r['successEligiblePlays'] for r in records)==sum(r.get('successEligiblePlays',0) for r in game_rows) and sum(r['successfulPlays'] for r in records)==sum(r.get('successfulPlays',0) for r in game_rows),"success_offense_defense_reconcile":sum(r['successEligiblePlays'] for r in records)==sum(r['successEligiblePlaysAllowed'] for r in records) and sum(r['successfulPlays'] for r in records)==sum(r['successfulPlaysAllowed'] for r in records)}
- return {"status":"PASS" if all(checks.values()) else "REVIEW","team_season_rows":len(records),"team_game_rows":len(game_rows),"seasons":len(seasons),"review_rows":sum(r['seasonValidationStatus']!='PASS' for r in records),"success_eligible_plays":sum(r.get('successEligiblePlays',0) for r in records),"successful_plays":sum(r.get('successfulPlays',0) for r in records),"checks":checks}
+ checks={"unique_team_season_rows":len(keys)==len(records),"all_team_games_represented":keys==expected,"games_played_reconciles":all(r['games']==game_counts[(r['season'],r['team'])] for r in records),"offense_defense_possessions_reconcile":_sum(records,'validatedPossessions')==_sum(records,'validatedDefensivePossessions'),"offense_defense_yards_reconcile":_sum(records,'offensiveYards')==_sum(records,'defensiveYardsAllowed'),"success_counts_reconcile_to_games":_sum(records,'successEligiblePlays')==_sum(game_rows,'successEligiblePlays') and _sum(records,'successfulPlays')==_sum(game_rows,'successfulPlays'),"success_offense_defense_reconcile":_sum(records,'successEligiblePlays')==_sum(records,'successEligiblePlaysAllowed') and _sum(records,'successfulPlays')==_sum(records,'successfulPlaysAllowed'),"explosive_counts_reconcile_to_games":_sum(records,'explosiveEligiblePlays')==_sum(game_rows,'explosiveEligiblePlays') and _sum(records,'explosivePlays')==_sum(game_rows,'explosivePlays'),"explosive_offense_defense_reconcile":_sum(records,'explosiveEligiblePlays')==_sum(records,'explosiveEligiblePlaysAllowed') and _sum(records,'explosivePlays')==_sum(records,'explosivePlaysAllowed'),"successful_yards_reconcile_to_games":_sum(records,'successfulPlayYards')==_sum(game_rows,'successfulPlayYards'),"successful_yards_offense_defense_reconcile":_sum(records,'successfulPlayYards')==_sum(records,'successfulPlayYardsAllowed')}
+ return {"status":"PASS" if all(checks.values()) else "REVIEW","team_season_rows":len(records),"team_game_rows":len(game_rows),"seasons":len(seasons),"review_rows":sum(r['seasonValidationStatus']!='PASS' for r in records),"success_eligible_plays":_sum(records,'successEligiblePlays'),"successful_plays":_sum(records,'successfulPlays'),"explosive_eligible_plays":_sum(records,'explosiveEligiblePlays'),"explosive_plays":_sum(records,'explosivePlays'),"successful_play_yards":_sum(records,'successfulPlayYards'),"checks":checks}
 def concise_season_audit(r):
- lines=[f"DERIVED TEAM-SEASON CORPUS AUDIT: {r['status']}",f"Seasons: {r['seasons']:,}",f"Team-game rows aggregated: {r['team_game_rows']:,}",f"Team-season rows: {r['team_season_rows']:,}",f"Review rows: {r['review_rows']:,}",f"Success eligible plays: {r['success_eligible_plays']:,}",f"Successful plays: {r['successful_plays']:,}","","Checks:"];lines += [f"{'PASS' if v else 'FAIL'} {k}" for k,v in r['checks'].items()];return "\n".join(lines)
+ lines=[f"DERIVED TEAM-SEASON CORPUS AUDIT: {r['status']}",f"Seasons: {r['seasons']:,}",f"Team-game rows aggregated: {r['team_game_rows']:,}",f"Team-season rows: {r['team_season_rows']:,}",f"Review rows: {r['review_rows']:,}",f"Success eligible plays: {r['success_eligible_plays']:,}",f"Successful plays: {r['successful_plays']:,}",f"Explosive eligible plays: {r['explosive_eligible_plays']:,}",f"Explosive plays: {r['explosive_plays']:,}",f"Successful-play yards: {r['successful_play_yards']:,.0f}","","Checks:"]+[f"{'PASS' if v else 'FAIL'} {k}" for k,v in r['checks'].items()];return "\n".join(lines)
