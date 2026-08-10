@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 from typing import Iterable
 
+from cfb_analytics.canonical.corrections import CORRECTION_VERSION, promote_partition_yardage
 from cfb_analytics.canonical.play_text_normalizer import TEXT_PARSE_VERSION
 from cfb_analytics.canonical.play_types import RULES
 from cfb_analytics.canonical.plays import normalize_play
@@ -20,6 +21,7 @@ def canonical_partition_dir(root: Path, season: int, season_type: str, week: int
 def _taxonomy_fingerprint() -> str:
     payload = {
         "play_text_parse_version": TEXT_PARSE_VERSION,
+        "yardage_correction_version": CORRECTION_VERSION,
         "play_type_rules": {
             name: {
                 "category": rule.category,
@@ -70,8 +72,10 @@ def materialize_partition(raw_root: Path, processed_root: Path, season: int, sea
 
     source_rows = json.loads(source_bytes)
     canonical_rows = [normalize_play(row) for row in source_rows]
+    canonical_rows = promote_partition_yardage(canonical_rows)
     canonical_bytes = json.dumps(canonical_rows, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     canonical_sha = _sha256_bytes(canonical_bytes)
+    corrected_count = sum(bool(row.get("analyticsYardsWasCorrected")) for row in canonical_rows)
     manifest = {
         "entity": "plays",
         "layer": "canonical",
@@ -85,6 +89,8 @@ def materialize_partition(raw_root: Path, processed_root: Path, season: int, sea
         "canonical_sha256": canonical_sha,
         "taxonomy_sha256": taxonomy_sha,
         "play_text_parse_version": TEXT_PARSE_VERSION,
+        "yardage_correction_version": CORRECTION_VERSION,
+        "yardage_corrections_applied": corrected_count,
         "format": "json",
         "raw_immutable": True,
     }
@@ -115,6 +121,7 @@ def verify_canonical_partition(raw_root: Path, processed_root: Path, season: int
     if all(checks.values()):
         source_rows = json.loads(source_path.read_text())
         canonical_rows = json.loads(target_path.read_text())
+        corrected_count = sum(bool(row.get("analyticsYardsWasCorrected")) for row in canonical_rows)
         checks.update({
             "record_count_matches_source": len(source_rows) == len(canonical_rows),
             "manifest_record_count_matches": manifest.get("record_count") == len(canonical_rows),
@@ -122,6 +129,8 @@ def verify_canonical_partition(raw_root: Path, processed_root: Path, season: int
             "canonical_hash_matches": manifest.get("canonical_sha256") == _sha256_bytes(target_path.read_bytes()),
             "taxonomy_hash_matches": manifest.get("taxonomy_sha256") == _taxonomy_fingerprint(),
             "play_text_parse_version_matches": manifest.get("play_text_parse_version") == TEXT_PARSE_VERSION,
+            "yardage_correction_version_matches": manifest.get("yardage_correction_version") == CORRECTION_VERSION,
+            "yardage_correction_count_matches": manifest.get("yardage_corrections_applied") == corrected_count,
             "all_source_ids_preserved": [str(x.get("id")) for x in source_rows] == [str(x.get("id")) for x in canonical_rows],
         })
     return {"season": season, "season_type": season_type, "week": week, "status": "PASS" if checks and all(checks.values()) else "REVIEW", "checks": checks}
