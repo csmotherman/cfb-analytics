@@ -16,6 +16,7 @@ dev = ["pytest>=8,<9"]
 
 [project.scripts]
 cfb-raw = "cfb_analytics.raw.cli:main"
+cfb-drive-forensics = "cfb_analytics.derived.drive_forensics_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
