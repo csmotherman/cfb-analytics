@@ -24,13 +24,17 @@ def test_drive_aggregates_canonical_play_membership():
 
 
 def test_non_scrimmage_team_flip_does_not_change_drive_ownership():
-    rows=[
-        play(),
-        play(id="p2",isOffensivePlay=False,isScrimmagePlay=False,offense="B",defense="A"),
-    ]
+    rows=[play(),play(id="p2",isOffensivePlay=False,isScrimmagePlay=False,offense="B",defense="A")]
     d=derive_drive("g1","d1",rows,2025,"regular",1)
     assert d["offense"]=="A" and d["defense"]=="B"
     assert d["driveValidationStatus"]=="PASS"
+
+
+def test_other_offensive_play_can_fallback_when_no_scrimmage_evidence():
+    rows=[play(isScrimmagePlay=False)]
+    d=derive_drive("g1","d1",rows,2025,"regular",1)
+    assert d["offense"]=="A" and d["defense"]=="B"
+    assert d["driveOwnershipSource"]=="other_offensive_plays"
 
 
 def test_drive_surfaces_conflicting_offensive_scrimmage_ownership():
@@ -41,11 +45,17 @@ def test_drive_surfaces_conflicting_offensive_scrimmage_ownership():
     assert "MULTIPLE_OWNERSHIP_DEFENSES" in d["driveValidationIssues"]
 
 
-def test_drive_without_offensive_scrimmage_evidence_is_review():
-    rows=[play(isOffensivePlay=False,isScrimmagePlay=False)]
-    d=derive_drive("g1","d1",rows,2025,"regular",1)
-    assert d["offense"] is None and d["defense"] is None
-    assert "MISSING_OWNERSHIP_OFFENSE" in d["driveValidationIssues"]
+def test_neighbor_resolution_fills_empty_middle_drive():
+    rows=[
+        play(id="a1",driveId="d1",driveNumber=1,offense="A",defense="B"),
+        play(id="m1",driveId="d2",driveNumber=2,isOffensivePlay=False,isScrimmagePlay=False,offense=None,defense=None),
+        play(id="b1",driveId="d3",driveNumber=3,offense="A",defense="B"),
+    ]
+    drives,_=derive_partition_drives(rows,2025,"regular",1)
+    middle=[d for d in drives if d["driveId"]=="d2"][0]
+    assert middle["offense"]=="B" and middle["defense"]=="A"
+    assert middle["driveOwnershipSource"]=="neighbor_drive_inference"
+    assert middle["driveValidationStatus"]=="PASS"
 
 
 def test_partition_skips_only_plays_without_drive_id():
