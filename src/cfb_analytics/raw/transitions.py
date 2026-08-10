@@ -37,7 +37,6 @@ def _audit_pair(a: dict[str, Any], b: dict[str, Any]) -> list[str]:
     same_drive = a.get("driveId") is not None and a.get("driveId") == b.get("driveId")
     same_offense = a.get("offense") is not None and a.get("offense") == b.get("offense")
 
-    # Scores should not decrease for the same team across adjacent records.
     if same_offense:
         aos, bos = a.get("offenseScore"), b.get("offenseScore")
         ads, bds = a.get("defenseScore"), b.get("defenseScore")
@@ -46,9 +45,6 @@ def _audit_pair(a: dict[str, Any], b: dict[str, Any]) -> list[str]:
         if all(isinstance(x, (int, float)) and x >= 0 for x in (ads, bds)) and bds < ads:
             flags.append("same_team_defense_score_decrease")
 
-    # Only infer down/distance/field-position transitions in the conservative case:
-    # same CFBD drive, same offense, consecutive scrimmage downs, non-scoring play,
-    # no obvious turnover/penalty/sack administrative semantics.
     if not (same_drive and same_offense and _scrimmage(a) and _scrimmage(b)):
         return flags
     if a.get("scoring") or b.get("scoring"):
@@ -62,21 +58,30 @@ def _audit_pair(a: dict[str, Any], b: dict[str, Any]) -> list[str]:
     dist_a, dist_b = a.get("distance"), b.get("distance")
     ytg_a, ytg_b, gained = a.get("yardsToGoal"), b.get("yardsToGoal"), a.get("yardsGained")
 
+    expected_down: int | None = None
     if all(isinstance(x, (int, float)) for x in (dist_a, gained)):
-        if gained < dist_a and down_a < 4 and down_b != down_a + 1:
-            flags.append("expected_next_down_mismatch")
-        if gained >= dist_a and down_b != 1:
-            flags.append("expected_first_down_mismatch")
+        if gained < dist_a and down_a < 4:
+            expected_down = down_a + 1
+            if down_b != expected_down:
+                flags.append("expected_next_down_mismatch")
+        elif gained >= dist_a:
+            expected_down = 1
+            if down_b != 1:
+                flags.append("expected_first_down_mismatch")
+
+    # Distance-to-go only has a deterministic carry-forward interpretation when
+    # the next down itself reconciles with the expected state. Otherwise one bad
+    # transition can cascade into misleading secondary flags.
+    if expected_down is not None and down_b == expected_down and all(isinstance(x, (int, float)) for x in (dist_a, dist_b, gained)):
+        if gained < dist_a and down_a < 4:
+            expected_dist = dist_a - gained
+            if expected_dist >= 0 and abs(dist_b - expected_dist) > 1:
+                flags.append("distance_transition_mismatch")
 
     if all(isinstance(x, (int, float)) for x in (ytg_a, ytg_b, gained)) and 0 <= ytg_a <= 100 and 0 <= ytg_b <= 100 and -100 <= gained <= 100:
         expected = ytg_a - gained
         if expected >= 0 and abs(ytg_b - expected) > 1:
             flags.append("field_position_transition_mismatch")
-
-    if all(isinstance(x, (int, float)) for x in (dist_a, dist_b, gained)) and gained < dist_a and down_a < 4:
-        expected_dist = dist_a - gained
-        if expected_dist >= 0 and abs(dist_b - expected_dist) > 1:
-            flags.append("distance_transition_mismatch")
     return flags
 
 
