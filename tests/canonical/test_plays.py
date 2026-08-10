@@ -55,6 +55,35 @@ def test_no_play_context_detected():
     assert out["hasStateTransitionModifier"] is True
 
 
+def test_play_text_evidence_is_materialized_without_overwriting_structured_yards():
+    source={
+        "playType":"Rush",
+        "yardsGained":9,
+        "playText":"Runner run for 4 yds to the MICH 36",
+    }
+    out=normalize_play(source)
+    assert out["sourceYardsGained"]==9
+    assert out["analyticsYardsGained"]==9
+    assert out["textYardsGained"]==4
+    assert out["textDestinationTeam"]=="MICH"
+    assert out["textDestinationYardLine"]==36
+    assert out["textParseVersion"]=="v1"
+    assert out["textParseConfidence"]=="HIGH"
+    assert source["yardsGained"]==9
+
+
+def test_ambiguous_text_evidence_is_persisted_but_not_promoted():
+    out=normalize_play({
+        "playType":"Rush",
+        "yardsGained":8,
+        "playText":"Runner run for 8 yds to the MICH 35, PENALTY holding 10 yards",
+    })
+    assert out["analyticsYardsGained"]==8
+    assert out["textAmbiguous"] is True
+    assert "MULTIPLE_YARDAGE_PHRASES" in out["textAmbiguityReasons"]
+    assert out["textYardsGained"] is None
+
+
 def test_unclassified_play_type_fails_closed():
     with pytest.raises(KeyError):
         classify_play_type("Made Up Play Type")
