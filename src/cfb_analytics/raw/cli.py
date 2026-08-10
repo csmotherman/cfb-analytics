@@ -16,6 +16,7 @@ from cfb_analytics.canonical.failure_classification import failure_classificatio
 from cfb_analytics.canonical.ambiguous import ambiguous_state_audit, concise_ambiguous_state
 from cfb_analytics.canonical.counterfactual import counterfactual_repair_audit, concise_counterfactual
 from cfb_analytics.canonical.play_text_census import play_text_census, concise_play_text_census
+from cfb_analytics.canonical.play_text_forensics import play_text_forensics, concise_play_text_forensics
 from cfb_analytics.sources.cfbd.client import CfbdClient
 DEFAULT_ROOT=Path("data/raw"); DEFAULT_PROCESSED_ROOT=Path("data/processed")
 SEASONS=(2014,2015,2016,2017,2018,2019,2021,2022,2023,2024,2025)
@@ -43,6 +44,7 @@ def parser():
  amb=sub.add_parser("ambiguous-state-audit"); amb.add_argument("--season",type=int); amb.add_argument("--examples",type=int,default=3); amb.add_argument("--json",action="store_true",dest="as_json")
  ctr=sub.add_parser("counterfactual-repair-audit"); ctr.add_argument("--season",type=int); ctr.add_argument("--examples",type=int,default=3); ctr.add_argument("--json",action="store_true",dest="as_json")
  pt=sub.add_parser("play-text-census"); pt.add_argument("--season",type=int); pt.add_argument("--top",type=int,default=8); pt.add_argument("--examples",type=int,default=3); pt.add_argument("--json",action="store_true",dest="as_json")
+ pf=sub.add_parser("play-text-forensics"); pf.add_argument("--season",type=int); pf.add_argument("--examples",type=int,default=3); pf.add_argument("--json",action="store_true",dest="as_json")
  season=sub.add_parser("season"); season.add_argument("--season",type=int,required=True); season.add_argument("--refresh",action="store_true")
  backfill=sub.add_parser("backfill"); backfill.add_argument("--refresh",action="store_true")
  return p
@@ -78,6 +80,7 @@ def main():
  if args.command=="ambiguous-state-audit": r=ambiguous_state_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_ambiguous_state(r)); return
  if args.command=="counterfactual-repair-audit": r=counterfactual_repair_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_counterfactual(r)); return
  if args.command=="play-text-census": r=play_text_census(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_play_text_census(r,args.top)); return
+ if args.command=="play-text-forensics": r=play_text_forensics(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_play_text_forensics(r)); return
  with CfbdClient() as client:
   if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
   if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
