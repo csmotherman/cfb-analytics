@@ -17,16 +17,35 @@ def test_drive_aggregates_canonical_play_membership():
     d=derive_drive("g1","d1",rows,2025,"regular",1)
     assert d["playCount"]==2
     assert d["offensivePlayCount"]==2
+    assert d["ownershipEvidencePlayCount"]==2
     assert d["analyticsYardsGained"]==10
     assert d["offense"]=="A" and d["defense"]=="B"
     assert d["driveValidationStatus"]=="PASS"
 
 
-def test_drive_surfaces_multiple_offense_inconsistency():
-    rows=[play(),play(id="p2",offense="C")]
+def test_non_scrimmage_team_flip_does_not_change_drive_ownership():
+    rows=[
+        play(),
+        play(id="p2",isOffensivePlay=False,isScrimmagePlay=False,offense="B",defense="A"),
+    ]
+    d=derive_drive("g1","d1",rows,2025,"regular",1)
+    assert d["offense"]=="A" and d["defense"]=="B"
+    assert d["driveValidationStatus"]=="PASS"
+
+
+def test_drive_surfaces_conflicting_offensive_scrimmage_ownership():
+    rows=[play(),play(id="p2",offense="C",defense="D")]
     d=derive_drive("g1","d1",rows,2025,"regular",1)
     assert d["driveValidationStatus"]=="REVIEW"
-    assert "MULTIPLE_OFFENSES" in d["driveValidationIssues"]
+    assert "MULTIPLE_OWNERSHIP_OFFENSES" in d["driveValidationIssues"]
+    assert "MULTIPLE_OWNERSHIP_DEFENSES" in d["driveValidationIssues"]
+
+
+def test_drive_without_offensive_scrimmage_evidence_is_review():
+    rows=[play(isOffensivePlay=False,isScrimmagePlay=False)]
+    d=derive_drive("g1","d1",rows,2025,"regular",1)
+    assert d["offense"] is None and d["defense"] is None
+    assert "MISSING_OWNERSHIP_OFFENSE" in d["driveValidationIssues"]
 
 
 def test_partition_skips_only_plays_without_drive_id():
