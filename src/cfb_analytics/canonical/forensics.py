@@ -17,10 +17,15 @@ def _clock_seconds(clock):
         m,s=clock.get("minutes"),clock.get("seconds")
         if _num(m) and _num(s): return int(m)*60+int(s)
     if isinstance(clock,str) and ":" in clock:
-        try:
-            m,s=clock.split(":",1); return int(m)*60+int(float(s))
+        try: m,s=clock.split(":",1); return int(m)*60+int(float(s))
         except ValueError: return None
     return None
+
+def _clock_text(clock):
+    if isinstance(clock,dict):
+        m,s=clock.get("minutes"),clock.get("seconds")
+        if _num(m) and _num(s): return f"{int(m)}:{int(s):02d}"
+    return str(clock or "?")
 
 def _field_error(a,b):
     vals=(a.get("yardsToGoal"),b.get("yardsToGoal"),a.get("analyticsYardsGained"))
@@ -73,12 +78,28 @@ def transition_forensics(raw_root:Path,processed_root:Path,seasons:Iterable[int]
                         severe.append({"season":season,"season_type":st,"week":wk,"gameId":gid,"game":f"{game.get('awayTeam')} @ {game.get('homeTeam')}","flags":flags,"field_position_error":fe,"distance_error":de,"ordering_signals":signals,"previous":_ctx(a),"next":_ctx(b),"context":context})
     return {"games_scanned":games_scanned,"severe_pair_count":sum(severe_types.values()),"criteria":{"field_position_error_abs_gt":20,"distance_error_abs_gt":10},"ordering_signal_failures":dict(signal_failures),"top_severe_play_type_pairs":dict(severe_types.most_common()),"examples":severe,"note":"Diagnostic only. Severe pairs are not automatically corrected."}
 
+def _short_play(label,p):
+    text=str(p.get("playText") or "").replace("\n"," ").strip()
+    if len(text)>120: text=text[:117]+"..."
+    return (f"  {label}: Q{p.get('period','?')} {_clock_text(p.get('clock'))} | "
+            f"{p.get('down','?')}&{p.get('distance','?')} | YTG={p.get('yardsToGoal','?')} | "
+            f"gain={p.get('analyticsYardsGained','?')} | {p.get('playType','?')}\n"
+            f"       {text}")
+
 def concise_forensics(r):
     lines=["CANONICAL TRANSITION FORENSICS",f"Games scanned: {r['games_scanned']:,}",f"Severe flagged pairs: {r['severe_pair_count']:,}","Criteria: |field-position error| >20 OR |distance error| >10","","Ordering-signal failures among severe pairs:"]
     if r["ordering_signal_failures"]:
         for k,v in sorted(r["ordering_signal_failures"].items(),key=lambda x:-x[1]): lines.append(f"  {k:.<44} {v:>6,}")
     else: lines.append("  None detected")
     lines += ["","Top severe play-type pairs:"]
-    for k,v in list(r["top_severe_play_type_pairs"].items())[:12]: lines.append(f"  {k[:50]:.<52} {v:>6,}")
-    lines += ["",f"Context examples included: {len(r['examples'])}","Use --json --examples N --window N to inspect surrounding plays.","No raw or canonical values are modified."]
+    for k,v in list(r["top_severe_play_type_pairs"].items())[:8]: lines.append(f"  {k[:50]:.<52} {v:>6,}")
+    if r["examples"]:
+        lines += ["","FORENSIC SAMPLE"]
+        for n,e in enumerate(r["examples"][:5],1):
+            errors=[]
+            if e.get("field_position_error") is not None: errors.append(f"field error={e['field_position_error']:+g}")
+            if e.get("distance_error") is not None: errors.append(f"distance error={e['distance_error']:+g}")
+            failed=[k for k,v in e.get("ordering_signals",{}).items() if v is False]
+            lines += ["",f"CASE {n}: {e['season']} W{e['week']:02d} {e['game']}",f"  {', '.join(errors)} | ordering failures: {', '.join(failed) if failed else 'none'}",_short_play("PREV",e["previous"]),_short_play("NEXT",e["next"])]
+    lines += ["","No raw or canonical values are modified.","Use --json only when machine-readable detail is needed."]
     return "\n".join(lines)
