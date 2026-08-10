@@ -1,4 +1,4 @@
-from cfb_analytics.raw.transitions import _audit_pair
+from cfb_analytics.raw.transitions import _audit_pair, _penalty_context, _penalty_signal
 
 
 def play(**kw):
@@ -33,3 +33,19 @@ def test_penalty_is_not_naively_reconstructed():
     a = play(playType="Penalty", playText="Penalty on A, holding")
     b = play(down=1, distance=20, yardsToGoal=80)
     assert _audit_pair(a, b) == []
+
+
+def test_penalty_signal_distinguishes_type_and_text():
+    assert _penalty_signal(play(playType="Penalty", playText="Holding")) == "playtype_only"
+    assert _penalty_signal(play(playType="Rush", playText="Runner gains 8, PENALTY holding")) == "text_only"
+    assert _penalty_signal(play(playType="Penalty", playText="Penalty on A")) == "playtype_and_text"
+    assert _penalty_signal(play()) is None
+
+
+def test_penalty_context_checks_both_sides_of_flagged_pair():
+    a = play()
+    b = play(playType="Penalty", playText="Penalty on B, offside")
+    context = _penalty_context(a, b)
+    assert context["location"] == "next"
+    assert context["previous_signal"] is None
+    assert context["next_signal"] == "playtype_and_text"
