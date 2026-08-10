@@ -11,6 +11,7 @@ from cfb_analytics.raw.transitions import transition_audit, concise_transitions
 from cfb_analytics.canonical.audit import play_type_coverage, concise_play_type_coverage, canonical_play_audit, concise_canonical_play_audit
 from cfb_analytics.canonical.materialize import materialize_corpus, verify_canonical_partition
 from cfb_analytics.canonical.transitions import canonical_transition_audit, concise_canonical_transitions
+from cfb_analytics.canonical.forensics import transition_forensics, concise_forensics
 from cfb_analytics.sources.cfbd.client import CfbdClient
 DEFAULT_ROOT=Path("data/raw"); DEFAULT_PROCESSED_ROOT=Path("data/processed")
 SEASONS=(2014,2015,2016,2017,2018,2019,2021,2022,2023,2024,2025)
@@ -33,6 +34,7 @@ def parser():
  mat=sub.add_parser("canonical-plays"); mat.add_argument("--season",type=int); mat.add_argument("--refresh",action="store_true")
  ver=sub.add_parser("verify-canonical-plays"); ver.add_argument("--season",type=int)
  ct=sub.add_parser("canonical-transition-audit"); ct.add_argument("--season",type=int); ct.add_argument("--examples",type=int,default=10); ct.add_argument("--json",action="store_true",dest="as_json")
+ cf=sub.add_parser("canonical-transition-forensics"); cf.add_argument("--season",type=int); cf.add_argument("--examples",type=int,default=12); cf.add_argument("--window",type=int,default=3); cf.add_argument("--json",action="store_true",dest="as_json")
  season=sub.add_parser("season"); season.add_argument("--season",type=int,required=True); season.add_argument("--refresh",action="store_true")
  backfill=sub.add_parser("backfill"); backfill.add_argument("--refresh",action="store_true")
  return p
@@ -64,6 +66,8 @@ def main():
   return
  if args.command=="canonical-transition-audit":
   r=canonical_transition_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_canonical_transitions(r)); return
+ if args.command=="canonical-transition-forensics":
+  r=transition_forensics(args.root,args.processed_root,seasons,args.examples,args.window); print(json.dumps(r,indent=2) if args.as_json else concise_forensics(r)); return
  with CfbdClient() as client:
   if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
   if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
