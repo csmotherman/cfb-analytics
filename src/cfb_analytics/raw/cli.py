@@ -10,6 +10,7 @@ from cfb_analytics.raw.sequence import sequence_audit, concise_sequence, chronol
 from cfb_analytics.raw.transitions import transition_audit, concise_transitions
 from cfb_analytics.canonical.audit import play_type_coverage, concise_play_type_coverage, canonical_play_audit, concise_canonical_play_audit
 from cfb_analytics.canonical.materialize import materialize_corpus, verify_canonical_partition
+from cfb_analytics.canonical.transitions import canonical_transition_audit, concise_canonical_transitions
 from cfb_analytics.sources.cfbd.client import CfbdClient
 DEFAULT_ROOT=Path("data/raw"); DEFAULT_PROCESSED_ROOT=Path("data/processed")
 SEASONS=(2014,2015,2016,2017,2018,2019,2021,2022,2023,2024,2025)
@@ -31,6 +32,7 @@ def parser():
  cpa=sub.add_parser("canonical-play-audit"); cpa.add_argument("--season",type=int); cpa.add_argument("--examples",type=int,default=5); cpa.add_argument("--json",action="store_true",dest="as_json")
  mat=sub.add_parser("canonical-plays"); mat.add_argument("--season",type=int); mat.add_argument("--refresh",action="store_true")
  ver=sub.add_parser("verify-canonical-plays"); ver.add_argument("--season",type=int)
+ ct=sub.add_parser("canonical-transition-audit"); ct.add_argument("--season",type=int); ct.add_argument("--examples",type=int,default=10); ct.add_argument("--json",action="store_true",dest="as_json")
  season=sub.add_parser("season"); season.add_argument("--season",type=int,required=True); season.add_argument("--refresh",action="store_true")
  backfill=sub.add_parser("backfill"); backfill.add_argument("--refresh",action="store_true")
  return p
@@ -60,6 +62,8 @@ def main():
   failed=[r for r in results if r['status']!='PASS']; print(f"CANONICAL PLAYS VERIFICATION: {'PASS' if not failed else 'REVIEW'}\nPartitions: {len(results)}\nPassed: {len(results)-len(failed)}\nFailed: {len(failed)}")
   for r in failed[:20]: print(f"  {r['season']} {r['season_type']} W{r['week']:02d}: "+", ".join(k for k,v in r['checks'].items() if not v))
   return
+ if args.command=="canonical-transition-audit":
+  r=canonical_transition_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_canonical_transitions(r)); return
  with CfbdClient() as client:
   if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
   if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
