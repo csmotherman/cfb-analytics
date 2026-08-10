@@ -5,6 +5,8 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 
-# Raw football data is local/object-storage data, never source control.
+# Football data is local/object-storage data, never source control.
 data/raw/**
 !data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
