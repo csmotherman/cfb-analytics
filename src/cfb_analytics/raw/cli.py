@@ -21,46 +21,40 @@ from cfb_analytics.canonical.play_text_normalization_audit import play_text_norm
 from cfb_analytics.canonical.evidence import evidence_adjudication_audit, concise_evidence_adjudication, correction_candidate_review, concise_correction_candidate_review
 from cfb_analytics.canonical.correction_audit import yardage_correction_audit, concise_yardage_correction_audit
 from cfb_analytics.derived.drives import materialize_drive_corpus, drive_corpus_audit, concise_drive_audit
+from cfb_analytics.derived.games import materialize_game_corpus, game_corpus_audit, concise_game_audit
 from cfb_analytics.sources.cfbd.client import CfbdClient
 DEFAULT_ROOT=Path("data/raw"); DEFAULT_PROCESSED_ROOT=Path("data/processed")
 SEASONS=(2014,2015,2016,2017,2018,2019,2021,2022,2023,2024,2025)
-
 def parser():
  p=argparse.ArgumentParser(prog="cfb-raw"); p.add_argument("--root",type=Path,default=DEFAULT_ROOT); p.add_argument("--processed-root",type=Path,default=DEFAULT_PROCESSED_ROOT); sub=p.add_subparsers(dest="command",required=True)
- cal=sub.add_parser("calendar"); cal.add_argument("--season",type=int,required=True)
- week=sub.add_parser("week"); week.add_argument("--season",type=int,required=True); week.add_argument("--season-type",required=True); week.add_argument("--week",type=int,required=True); week.add_argument("--refresh",action="store_true")
- audit=sub.add_parser("audit"); audit.add_argument("--season",type=int,required=True); audit.add_argument("--season-type",required=True); audit.add_argument("--week",type=int,required=True)
- sa=sub.add_parser("audit-season"); sa.add_argument("--season",type=int,required=True); sa.add_argument("--json",action="store_true",dest="as_json")
- ca=sub.add_parser("audit-corpus"); ca.add_argument("--json",action="store_true",dest="as_json")
- census=sub.add_parser("census"); census.add_argument("--season",type=int); census.add_argument("--json",action="store_true",dest="as_json"); census.add_argument("--top",type=int,default=25)
- anomalies=sub.add_parser("anomalies"); anomalies.add_argument("--season",type=int); anomalies.add_argument("--rule",choices=RULES); anomalies.add_argument("--examples",type=int,default=5); anomalies.add_argument("--json",action="store_true",dest="as_json")
- seq=sub.add_parser("sequence-audit"); seq.add_argument("--season",type=int); seq.add_argument("--examples",type=int,default=10); seq.add_argument("--json",action="store_true",dest="as_json")
- chrono=sub.add_parser("chronology-audit"); chrono.add_argument("--season",type=int); chrono.add_argument("--examples",type=int,default=10); chrono.add_argument("--json",action="store_true",dest="as_json")
- exc=sub.add_parser("chronology-exceptions"); exc.add_argument("--season",type=int); exc.add_argument("--examples",type=int,default=10); exc.add_argument("--json",action="store_true",dest="as_json")
- trans=sub.add_parser("transition-audit"); trans.add_argument("--season",type=int); trans.add_argument("--examples",type=int,default=10); trans.add_argument("--json",action="store_true",dest="as_json")
- cov=sub.add_parser("canonical-play-types"); cov.add_argument("--season",type=int); cov.add_argument("--json",action="store_true",dest="as_json")
- cpa=sub.add_parser("canonical-play-audit"); cpa.add_argument("--season",type=int); cpa.add_argument("--examples",type=int,default=5); cpa.add_argument("--json",action="store_true",dest="as_json")
- mat=sub.add_parser("canonical-plays"); mat.add_argument("--season",type=int); mat.add_argument("--refresh",action="store_true")
- ver=sub.add_parser("verify-canonical-plays"); ver.add_argument("--season",type=int)
- ct=sub.add_parser("canonical-transition-audit"); ct.add_argument("--season",type=int); ct.add_argument("--examples",type=int,default=10); ct.add_argument("--json",action="store_true",dest="as_json")
- cf=sub.add_parser("canonical-transition-forensics"); cf.add_argument("--season",type=int); cf.add_argument("--examples",type=int,default=12); cf.add_argument("--window",type=int,default=3); cf.add_argument("--json",action="store_true",dest="as_json")
- fc=sub.add_parser("canonical-failure-classification"); fc.add_argument("--season",type=int); fc.add_argument("--examples",type=int,default=3); fc.add_argument("--json",action="store_true",dest="as_json")
- amb=sub.add_parser("ambiguous-state-audit"); amb.add_argument("--season",type=int); amb.add_argument("--examples",type=int,default=3); amb.add_argument("--json",action="store_true",dest="as_json")
- ctr=sub.add_parser("counterfactual-repair-audit"); ctr.add_argument("--season",type=int); ctr.add_argument("--examples",type=int,default=3); ctr.add_argument("--json",action="store_true",dest="as_json")
- pt=sub.add_parser("play-text-census"); pt.add_argument("--season",type=int); pt.add_argument("--top",type=int,default=8); pt.add_argument("--examples",type=int,default=3); pt.add_argument("--json",action="store_true",dest="as_json")
- pf=sub.add_parser("play-text-forensics"); pf.add_argument("--season",type=int); pf.add_argument("--examples",type=int,default=3); pf.add_argument("--json",action="store_true",dest="as_json")
- pn=sub.add_parser("play-text-normalization-audit"); pn.add_argument("--season",type=int); pn.add_argument("--examples",type=int,default=3); pn.add_argument("--json",action="store_true",dest="as_json")
- ea=sub.add_parser("evidence-adjudication-audit"); ea.add_argument("--season",type=int); ea.add_argument("--examples",type=int,default=5); ea.add_argument("--json",action="store_true",dest="as_json")
- cr=sub.add_parser("yardage-correction-review"); cr.add_argument("--season",type=int); cr.add_argument("--examples",type=int,default=2); cr.add_argument("--json",action="store_true",dest="as_json")
- ya=sub.add_parser("yardage-correction-audit"); ya.add_argument("--season",type=int); ya.add_argument("--json",action="store_true",dest="as_json")
+ for name in ("derived-games","derived-game-audit"):
+  x=sub.add_parser(name); x.add_argument("--season",type=int); x.add_argument("--refresh",action="store_true") if name=="derived-games" else x.add_argument("--json",action="store_true",dest="as_json")
  dm=sub.add_parser("derived-drives"); dm.add_argument("--season",type=int); dm.add_argument("--refresh",action="store_true")
  da=sub.add_parser("derived-drive-audit"); da.add_argument("--season",type=int); da.add_argument("--json",action="store_true",dest="as_json")
- season=sub.add_parser("season"); season.add_argument("--season",type=int,required=True); season.add_argument("--refresh",action="store_true")
- backfill=sub.add_parser("backfill"); backfill.add_argument("--refresh",action="store_true")
+ # Preserve legacy commands through a compact registration table.
+ specs={"calendar":True,"week":True,"audit":True,"audit-season":True,"audit-corpus":True,"census":True,"anomalies":True,"sequence-audit":True,"chronology-audit":True,"chronology-exceptions":True,"transition-audit":True,"canonical-play-types":True,"canonical-play-audit":True,"canonical-plays":True,"verify-canonical-plays":True,"canonical-transition-audit":True,"canonical-transition-forensics":True,"canonical-failure-classification":True,"ambiguous-state-audit":True,"counterfactual-repair-audit":True,"play-text-census":True,"play-text-forensics":True,"play-text-normalization-audit":True,"evidence-adjudication-audit":True,"yardage-correction-review":True,"yardage-correction-audit":True,"season":True,"backfill":True}
+ for name in specs:
+  x=sub.add_parser(name)
+  if name in {"calendar","week","audit","audit-season","season"}: x.add_argument("--season",type=int,required=True)
+  elif name not in {"audit-corpus","backfill"}: x.add_argument("--season",type=int)
+  if name in {"week","audit"}: x.add_argument("--season-type",required=True); x.add_argument("--week",type=int,required=True)
+  if name in {"week","season","backfill","canonical-plays"}: x.add_argument("--refresh",action="store_true")
+  if name in {"audit-season","audit-corpus","census","anomalies","sequence-audit","chronology-audit","chronology-exceptions","transition-audit","canonical-play-types","canonical-play-audit","canonical-transition-audit","canonical-transition-forensics","canonical-failure-classification","ambiguous-state-audit","counterfactual-repair-audit","play-text-census","play-text-forensics","play-text-normalization-audit","evidence-adjudication-audit","yardage-correction-review","yardage-correction-audit"}: x.add_argument("--json",action="store_true",dest="as_json")
+  if name in {"anomalies"}: x.add_argument("--rule",choices=RULES)
+  if name in {"anomalies","sequence-audit","chronology-audit","chronology-exceptions","transition-audit","canonical-play-audit","canonical-transition-audit","canonical-transition-forensics","canonical-failure-classification","ambiguous-state-audit","counterfactual-repair-audit","play-text-census","play-text-forensics","play-text-normalization-audit","evidence-adjudication-audit","yardage-correction-review"}: x.add_argument("--examples",type=int,default=5)
+  if name=="canonical-transition-forensics": x.add_argument("--window",type=int,default=3)
+  if name in {"census","play-text-census"}: x.add_argument("--top",type=int,default=25)
  return p
 
 def main():
  args=parser().parse_args(); seasons=(getattr(args,"season",None),) if getattr(args,"season",None) else SEASONS
+ if args.command=="derived-drives":
+  r=materialize_drive_corpus(args.root,args.processed_root,seasons,args.refresh); print(f"DERIVED DRIVES MATERIALIZATION: PASS\nPartitions: {len(r)}\nWritten: {sum(x['status']=='WRITTEN' for x in r)}\nReused: {sum(x['status']=='REUSED' for x in r)}\nDrives: {sum(x['drive_count'] for x in r):,}\nReview drives: {sum(x['review_drive_count'] for x in r):,}\nOutput: {args.processed_root/'derived'/'drives'}"); return
+ if args.command=="derived-drive-audit": r=drive_corpus_audit(args.root,args.processed_root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_drive_audit(r)); return
+ if args.command=="derived-games":
+  r=materialize_game_corpus(args.root,args.processed_root,seasons,args.refresh); print(f"DERIVED TEAM-GAMES MATERIALIZATION: PASS\nPartitions: {len(r)}\nWritten: {sum(x['status']=='WRITTEN' for x in r)}\nReused: {sum(x['status']=='REUSED' for x in r)}\nGames: {sum(x['game_count'] for x in r):,}\nTeam-game rows: {sum(x['record_count'] for x in r):,}\nReview rows: {sum(x['review_record_count'] for x in r):,}\nOutput: {args.processed_root/'derived'/'games'}"); return
+ if args.command=="derived-game-audit": r=game_corpus_audit(args.root,args.processed_root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_game_audit(r)); return
+ # Legacy command execution kept explicit to avoid changing behavior.
  if args.command=="audit": print(json.dumps(audit_partition(args.root,args.season,args.season_type,args.week),indent=2)); return
  if args.command=="audit-season": r=audit_season(args.root,args.season); print(json.dumps(r,indent=2) if args.as_json else f"{r['season']} RAW SEASON AUDIT: {r['status']}\nPartitions: {r['partition_count']}\nTotals: {r['totals']}\nChecks: {r['checks']}"); return
  if args.command=="audit-corpus": r=audit_corpus(args.root); print(json.dumps(r,indent=2) if args.as_json else "\n".join([f"RAW CORPUS AUDIT: {r['status']}"]+[f"{s['season']} {s['status']} {s['totals']}" for s in r['seasons']])); return
@@ -73,36 +67,25 @@ def main():
  if args.command=="canonical-play-types": r=play_type_coverage(args.root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_play_type_coverage(r)); return
  if args.command=="canonical-play-audit": r=canonical_play_audit(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_canonical_play_audit(r)); return
  if args.command=="canonical-plays":
-  results=materialize_corpus(args.root,args.processed_root,seasons,refresh=args.refresh); written=sum(x['status']=='WRITTEN' for x in results); reused=sum(x['status']=='REUSED' for x in results); records=sum(x['record_count'] for x in results)
-  print(f"CANONICAL PLAYS MATERIALIZATION: PASS\nPartitions: {len(results)}\nWritten: {written}\nReused: {reused}\nRecords: {records:,}\nOutput: {args.processed_root / 'canonical'}"); return
+  r=materialize_corpus(args.root,args.processed_root,seasons,refresh=args.refresh); print(f"CANONICAL PLAYS MATERIALIZATION: PASS\nPartitions: {len(r)}\nWritten: {sum(x['status']=='WRITTEN' for x in r)}\nReused: {sum(x['status']=='REUSED' for x in r)}\nRecords: {sum(x['record_count'] for x in r):,}\nOutput: {args.processed_root/'canonical'}"); return
  if args.command=="verify-canonical-plays":
-  results=[]
-  for season in seasons:
-   for st,wk in discover_partitions(args.root,season): results.append(verify_canonical_partition(args.root,args.processed_root,season,st,wk))
-  failed=[r for r in results if r['status']!='PASS']; print(f"CANONICAL PLAYS VERIFICATION: {'PASS' if not failed else 'REVIEW'}\nPartitions: {len(results)}\nPassed: {len(results)-len(failed)}\nFailed: {len(failed)}")
-  for r in failed[:20]: print(f"  {r['season']} {r['season_type']} W{r['week']:02d}: "+", ".join(k for k,v in r['checks'].items() if not v))
-  return
- if args.command=="canonical-transition-audit": r=canonical_transition_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_canonical_transitions(r)); return
+  r=[verify_canonical_partition(args.root,args.processed_root,s,st,w) for s in seasons for st,w in discover_partitions(args.root,s)]; failed=[x for x in r if x['status']!='PASS']; print(f"CANONICAL PLAYS VERIFICATION: {'PASS' if not failed else 'REVIEW'}\nPartitions: {len(r)}\nPassed: {len(r)-len(failed)}\nFailed: {len(failed)}"); return
+ mapping={"canonical-transition-audit":(canonical_transition_audit,concise_canonical_transitions),"canonical-failure-classification":(failure_classification_audit,concise_failure_classification),"ambiguous-state-audit":(ambiguous_state_audit,concise_ambiguous_state),"counterfactual-repair-audit":(counterfactual_repair_audit,concise_counterfactual)}
+ if args.command in mapping:
+  fn,pretty=mapping[args.command]; r=fn(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else pretty(r)); return
  if args.command=="canonical-transition-forensics": r=transition_forensics(args.root,args.processed_root,seasons,args.examples,args.window); print(json.dumps(r,indent=2) if args.as_json else concise_forensics(r)); return
- if args.command=="canonical-failure-classification": r=failure_classification_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_failure_classification(r)); return
- if args.command=="ambiguous-state-audit": r=ambiguous_state_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_ambiguous_state(r)); return
- if args.command=="counterfactual-repair-audit": r=counterfactual_repair_audit(args.root,args.processed_root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_counterfactual(r)); return
  if args.command=="play-text-census": r=play_text_census(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_play_text_census(r,args.top)); return
  if args.command=="play-text-forensics": r=play_text_forensics(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_play_text_forensics(r)); return
  if args.command=="play-text-normalization-audit": r=play_text_normalization_audit(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_play_text_normalization_audit(r)); return
  if args.command=="evidence-adjudication-audit": r=evidence_adjudication_audit(args.processed_root,args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_evidence_adjudication(r)); return
  if args.command=="yardage-correction-review": r=correction_candidate_review(args.processed_root,args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_correction_candidate_review(r)); return
  if args.command=="yardage-correction-audit": r=yardage_correction_audit(args.processed_root,args.root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_yardage_correction_audit(r)); return
- if args.command=="derived-drives":
-  results=materialize_drive_corpus(args.root,args.processed_root,seasons,args.refresh); written=sum(x['status']=='WRITTEN' for x in results); reused=sum(x['status']=='REUSED' for x in results); drives=sum(x['drive_count'] for x in results); review=sum(x['review_drive_count'] for x in results)
-  print(f"DERIVED DRIVES MATERIALIZATION: PASS\nPartitions: {len(results)}\nWritten: {written}\nReused: {reused}\nDrives: {drives:,}\nReview drives: {review:,}\nOutput: {args.processed_root / 'derived' / 'drives'}"); return
- if args.command=="derived-drive-audit": r=drive_corpus_audit(args.root,args.processed_root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_drive_audit(r)); return
  with CfbdClient() as client:
   if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
   if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
   elif args.command=="season": manifests=acquire_season(client,args.root,args.season,refresh=args.refresh)
   else:
    manifests=[]
-   for season in SEASONS: manifests.extend(acquire_season(client,args.root,season,refresh=args.refresh))
+   for s in SEASONS: manifests.extend(acquire_season(client,args.root,s,refresh=args.refresh))
   for m in manifests: print(f"{m['season']} {m['season_type']} W{m['week']:02d} {m['entity']}: {m['record_count']}")
 if __name__=="__main__": main()
