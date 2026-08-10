@@ -54,27 +54,21 @@ def _candidate_repairs(a,b,c):
     text_yards=_play_text_yards(b)
     if text_yards is not None and _num(b.get("analyticsYardsGained")) and text_yards!=b.get("analyticsYardsGained"):
         candidates.append(("analyticsYardsGained",text_yards,"B playText stated yardage"))
-    # C can back-solve B's field position from B's gain when B->C is same series.
     if _same_series(b,c) and _num(c.get("yardsToGoal")) and _num(b.get("analyticsYardsGained")):
         back=c["yardsToGoal"]+b["analyticsYardsGained"]
         if 0<=back<=100 and b.get("yardsToGoal")!=back:
             candidates.append(("yardsToGoal",back,"C state back-solved through B analyticsYardsGained"))
     return candidates
 
-def _score(a,b,c):
-    return len(_audit_pair(a,b))+len(_audit_pair(b,c))
+def _score(a,b,c): return len(_audit_pair(a,b))+len(_audit_pair(b,c))
 
 def counterfactual_triplet(a,b,c):
     flags=_audit_pair(a,b)
     base=classify_failure(a,b,flags) if flags else {"classification":"CLEAN"}
-    if base["classification"]!="AMBIGUOUS_STATE_SUSPECT":
-        return {"classification":"NOT_AMBIGUOUS","confidence":"LOW","baseline_flags":0,"best_flags":0,"repairs":[]}
-    if c is None or not _same_series(b,c):
-        return {"classification":"NO_VALID_LOOKAHEAD","confidence":"LOW","baseline_flags":len(flags),"best_flags":len(flags),"repairs":[]}
-    if any(v is False for v in _ordering_signals(a,b).values()) or any(v is False for v in _ordering_signals(b,c).values()):
-        return {"classification":"ORDERING_CONFOUNDED","confidence":"LOW","baseline_flags":_score(a,b,c),"best_flags":_score(a,b,c),"repairs":[]}
-    baseline=_score(a,b,c); results=[]
-    seen=set()
+    if base["classification"]!="AMBIGUOUS_STATE_SUSPECT": return {"classification":"NOT_AMBIGUOUS","confidence":"LOW","baseline_flags":0,"best_flags":0,"repairs":[]}
+    if c is None or not _same_series(b,c): return {"classification":"NO_VALID_LOOKAHEAD","confidence":"LOW","baseline_flags":len(flags),"best_flags":len(flags),"repairs":[]}
+    if any(v is False for v in _ordering_signals(a,b).values()) or any(v is False for v in _ordering_signals(b,c).values()): return {"classification":"ORDERING_CONFOUNDED","confidence":"LOW","baseline_flags":_score(a,b,c),"best_flags":_score(a,b,c),"repairs":[]}
+    baseline=_score(a,b,c); results=[]; seen=set()
     for field,value,source in _candidate_repairs(a,b,c):
         key=(field,value)
         if key in seen: continue
@@ -82,18 +76,17 @@ def counterfactual_triplet(a,b,c):
         score=_score(a,trial,c)
         results.append({"field":field,"original":b.get(field),"candidate":value,"evidence":source,"remaining_flags":score,"improvement":baseline-score})
     results.sort(key=lambda x:(x["remaining_flags"],-x["improvement"],x["field"]))
-    if not results:
-        return {"classification":"NO_SINGLE_FIELD_CANDIDATE","confidence":"LOW","baseline_flags":baseline,"best_flags":baseline,"repairs":[]}
+    if not results: return {"classification":"NO_SINGLE_FIELD_CANDIDATE","confidence":"LOW","baseline_flags":baseline,"best_flags":baseline,"repairs":[]}
     best_score=results[0]["remaining_flags"]; best=[r for r in results if r["remaining_flags"]==best_score]
-    if best_score==0 and len(best)==1:
-        return {"classification":"UNIQUE_SINGLE_FIELD_REPAIR","confidence":"HIGH","baseline_flags":baseline,"best_flags":0,"repairs":best}
-    if best_score==0:
-        return {"classification":"MULTIPLE_FULL_REPAIRS","confidence":"MEDIUM","baseline_flags":baseline,"best_flags":0,"repairs":best}
-    if best_score<baseline and len(best)==1:
-        return {"classification":"PARTIAL_SINGLE_FIELD_REPAIR","confidence":"MEDIUM","baseline_flags":baseline,"best_flags":best_score,"repairs":best}
-    if best_score<baseline:
-        return {"classification":"PARTIAL_MULTI_CANDIDATE","confidence":"LOW","baseline_flags":baseline,"best_flags":best_score,"repairs":best}
+    if best_score==0 and len(best)==1: return {"classification":"UNIQUE_SINGLE_FIELD_REPAIR","confidence":"HIGH","baseline_flags":baseline,"best_flags":0,"repairs":best}
+    if best_score==0: return {"classification":"MULTIPLE_FULL_REPAIRS","confidence":"MEDIUM","baseline_flags":baseline,"best_flags":0,"repairs":best}
+    if best_score<baseline and len(best)==1: return {"classification":"PARTIAL_SINGLE_FIELD_REPAIR","confidence":"MEDIUM","baseline_flags":baseline,"best_flags":best_score,"repairs":best}
+    if best_score<baseline: return {"classification":"PARTIAL_MULTI_CANDIDATE","confidence":"LOW","baseline_flags":baseline,"best_flags":best_score,"repairs":best}
     return {"classification":"NO_SINGLE_FIELD_IMPROVEMENT","confidence":"LOW","baseline_flags":baseline,"best_flags":best_score,"repairs":best[:3]}
+
+def _mini_play(p):
+    if p is None: return None
+    return {k:p.get(k) for k in ("id","period","clock","down","distance","yardsToGoal","analyticsYardsGained","sourcePlayType","playText")}
 
 def counterfactual_repair_audit(raw_root:Path,processed_root:Path,seasons:Iterable[int],examples:int=3)->dict[str,Any]:
     counts=Counter(); conf=Counter(); repair_fields=Counter(); evidence=Counter(); samples=defaultdict(list); total=0
@@ -114,8 +107,21 @@ def counterfactual_repair_audit(raw_root:Path,processed_root:Path,seasons:Iterab
                     if cls=="UNIQUE_SINGLE_FIELD_REPAIR" and result["repairs"]:
                         r=result["repairs"][0]; repair_fields[r["field"]]+=1; evidence[r["evidence"]]+=1
                     if len(samples[cls])<examples:
-                        samples[cls].append({"season":season,"season_type":st,"week":wk,"gameId":gid,**result})
+                        samples[cls].append({"season":season,"season_type":st,"week":wk,"gameId":gid,"A":_mini_play(a),"B":_mini_play(b),"C":_mini_play(c),**result})
     return {"ambiguous_pairs":total,"classification_counts":dict(counts),"confidence_counts":dict(conf),"unique_repair_fields":dict(repair_fields),"unique_repair_evidence":dict(evidence),"examples":dict(samples),"note":"Counterfactual only. No canonical or raw values are modified."}
+
+def _clock_text(clock):
+    if isinstance(clock,dict) and _num(clock.get("minutes")) and _num(clock.get("seconds")):
+        return f"{int(clock['minutes'])}:{int(clock['seconds']):02d}"
+    return str(clock or "?")
+
+def _play_line(label,p):
+    if not p: return f"  {label}: <none>"
+    text=str(p.get("playText") or "").replace("\n"," ").strip()
+    if len(text)>100: text=text[:97]+"..."
+    return (f"  {label}: Q{p.get('period','?')} {_clock_text(p.get('clock'))} | {p.get('down','?')}&{p.get('distance','?')} | "
+            f"YTG={p.get('yardsToGoal','?')} | gain={p.get('analyticsYardsGained','?')} | {p.get('sourcePlayType','?')}\n"
+            f"       {text}")
 
 def concise_counterfactual(r):
     total=r["ambiguous_pairs"]
@@ -130,5 +136,17 @@ def concise_counterfactual(r):
     for k in ("HIGH","MEDIUM","LOW"):
         n=r["confidence_counts"].get(k,0); pct=100*n/total if total else 0
         lines.append(f"  {k:.<12} {n:>6,} ({pct:5.1f}%)")
+    focus=("PARTIAL_SINGLE_FIELD_REPAIR","PARTIAL_MULTI_CANDIDATE","NO_SINGLE_FIELD_IMPROVEMENT","ORDERING_CONFOUNDED")
+    lines += ["","TARGETED EXAMPLES"]
+    for cls in focus:
+        rows=r.get("examples",{}).get(cls,[])[:3]
+        if not rows: continue
+        lines += ["",cls]
+        for i,e in enumerate(rows,1):
+            lines.append(f"  Case {i}: {e['season']} W{e['week']:02d} gameId={e['gameId']} | flags {e['baseline_flags']} -> {e['best_flags']}")
+            if e.get("repairs"):
+                desc="; ".join(f"{x['field']} {x['original']}→{x['candidate']} ({x['evidence']})" for x in e['repairs'][:2])
+                lines.append(f"    candidate: {desc}")
+            lines.append(_play_line("A",e.get("A"))); lines.append(_play_line("B",e.get("B"))); lines.append(_play_line("C",e.get("C")))
     lines += ["","No data is modified; candidates are tested in memory only."]
     return "\n".join(lines)
