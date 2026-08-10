@@ -22,6 +22,7 @@ from cfb_analytics.canonical.evidence import evidence_adjudication_audit, concis
 from cfb_analytics.canonical.correction_audit import yardage_correction_audit, concise_yardage_correction_audit
 from cfb_analytics.derived.drives import materialize_drive_corpus, drive_corpus_audit, concise_drive_audit
 from cfb_analytics.derived.games import materialize_game_corpus, game_corpus_audit, concise_game_audit
+from cfb_analytics.analytics.success import success_audit, concise_success_audit
 from cfb_analytics.sources.cfbd.client import CfbdClient
 DEFAULT_ROOT=Path("data/raw"); DEFAULT_PROCESSED_ROOT=Path("data/processed")
 SEASONS=(2014,2015,2016,2017,2018,2019,2021,2022,2023,2024,2025)
@@ -31,7 +32,7 @@ def parser():
   x=sub.add_parser(name); x.add_argument("--season",type=int); x.add_argument("--refresh",action="store_true") if name=="derived-games" else x.add_argument("--json",action="store_true",dest="as_json")
  dm=sub.add_parser("derived-drives"); dm.add_argument("--season",type=int); dm.add_argument("--refresh",action="store_true")
  da=sub.add_parser("derived-drive-audit"); da.add_argument("--season",type=int); da.add_argument("--json",action="store_true",dest="as_json")
- # Preserve legacy commands through a compact registration table.
+ sa=sub.add_parser("success-rate-audit"); sa.add_argument("--season",type=int); sa.add_argument("--json",action="store_true",dest="as_json")
  specs={"calendar":True,"week":True,"audit":True,"audit-season":True,"audit-corpus":True,"census":True,"anomalies":True,"sequence-audit":True,"chronology-audit":True,"chronology-exceptions":True,"transition-audit":True,"canonical-play-types":True,"canonical-play-audit":True,"canonical-plays":True,"verify-canonical-plays":True,"canonical-transition-audit":True,"canonical-transition-forensics":True,"canonical-failure-classification":True,"ambiguous-state-audit":True,"counterfactual-repair-audit":True,"play-text-census":True,"play-text-forensics":True,"play-text-normalization-audit":True,"evidence-adjudication-audit":True,"yardage-correction-review":True,"yardage-correction-audit":True,"season":True,"backfill":True}
  for name in specs:
   x=sub.add_parser(name)
@@ -48,13 +49,13 @@ def parser():
 
 def main():
  args=parser().parse_args(); seasons=(getattr(args,"season",None),) if getattr(args,"season",None) else SEASONS
+ if args.command=="success-rate-audit": r=success_audit(args.root,args.processed_root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_success_audit(r)); return
  if args.command=="derived-drives":
   r=materialize_drive_corpus(args.root,args.processed_root,seasons,args.refresh); print(f"DERIVED DRIVES MATERIALIZATION: PASS\nPartitions: {len(r)}\nWritten: {sum(x['status']=='WRITTEN' for x in r)}\nReused: {sum(x['status']=='REUSED' for x in r)}\nDrives: {sum(x['drive_count'] for x in r):,}\nReview drives: {sum(x['review_drive_count'] for x in r):,}\nOutput: {args.processed_root/'derived'/'drives'}"); return
  if args.command=="derived-drive-audit": r=drive_corpus_audit(args.root,args.processed_root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_drive_audit(r)); return
  if args.command=="derived-games":
   r=materialize_game_corpus(args.root,args.processed_root,seasons,args.refresh); print(f"DERIVED TEAM-GAMES MATERIALIZATION: PASS\nPartitions: {len(r)}\nWritten: {sum(x['status']=='WRITTEN' for x in r)}\nReused: {sum(x['status']=='REUSED' for x in r)}\nGames: {sum(x['game_count'] for x in r):,}\nTeam-game rows: {sum(x['record_count'] for x in r):,}\nReview rows: {sum(x['review_record_count'] for x in r):,}\nOutput: {args.processed_root/'derived'/'games'}"); return
  if args.command=="derived-game-audit": r=game_corpus_audit(args.root,args.processed_root,seasons); print(json.dumps(r,indent=2) if args.as_json else concise_game_audit(r)); return
- # Legacy command execution kept explicit to avoid changing behavior.
  if args.command=="audit": print(json.dumps(audit_partition(args.root,args.season,args.season_type,args.week),indent=2)); return
  if args.command=="audit-season": r=audit_season(args.root,args.season); print(json.dumps(r,indent=2) if args.as_json else f"{r['season']} RAW SEASON AUDIT: {r['status']}\nPartitions: {r['partition_count']}\nTotals: {r['totals']}\nChecks: {r['checks']}"); return
  if args.command=="audit-corpus": r=audit_corpus(args.root); print(json.dumps(r,indent=2) if args.as_json else "\n".join([f"RAW CORPUS AUDIT: {r['status']}"]+[f"{s['season']} {s['status']} {s['totals']}" for s in r['seasons']])); return
