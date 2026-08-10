@@ -4,12 +4,17 @@ Canonical records preserve source values and add analytics-safe fields. Raw
 records are never modified in place. Base event taxonomy and contextual
 modifiers are intentionally separate: a rush can also contain a penalty,
 review, fumble, or no-play context without losing its underlying play type.
+
+Versioned play-text interpretation is persisted alongside the canonical record
+as evidence only. Text-derived fields never overwrite source or analytics
+state fields here.
 """
 from __future__ import annotations
 
 import re
 from typing import Any
 
+from cfb_analytics.canonical.play_text_normalizer import normalize_play_text
 from cfb_analytics.canonical.play_types import classify_play_type
 
 
@@ -42,6 +47,7 @@ def normalize_play(source: dict[str, Any]) -> dict[str, Any]:
     source_yards = source.get("yardsGained")
     analytics_yards = 0 if rule.force_analytics_yards_zero else source_yards
     modifiers = _context_modifiers(source)
+    text_evidence = normalize_play_text(source)
 
     result = dict(source)
     result.update({
@@ -59,5 +65,8 @@ def normalize_play(source: dict[str, Any]) -> dict[str, Any]:
         "sourceYardsGained": source_yards,
         "analyticsYardsGained": analytics_yards,
         "yardsGainedWasNormalized": analytics_yards != source_yards,
+        # Evidence derived from playText. These fields are intentionally
+        # additive: disagreement is preserved for later trust/correction logic.
+        **text_evidence,
     })
     return result
