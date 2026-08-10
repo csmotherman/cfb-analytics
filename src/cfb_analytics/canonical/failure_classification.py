@@ -34,17 +34,23 @@ def _play_text_yards(play: dict[str, Any]) -> int | None:
     import re
     text = str(play.get("playText") or "").lower()
     patterns = (
-        r"for a gain of (\d+) yards?",
-        r"for (\d+) yds?",
-        r"for (\d+) yards?",
-        r"gain of (\d+) yards?",
-        r"loss of (\d+) yards?",
+        (r"for a loss of (\d+) yards?", -1),
+        (r"for a loss of (\d+) yds?", -1),
+        (r"loss of (\d+) yards?", -1),
+        (r"loss of (\d+) yds?", -1),
+        (r"for a gain of (\d+) yards?", 1),
+        (r"for a gain of (\d+) yds?", 1),
+        (r"gain of (\d+) yards?", 1),
+        (r"gain of (\d+) yds?", 1),
+        (r"for (\d+) yards?", 1),
+        (r"for (\d+) yds?", 1),
+        (r"gains? (\d+) yards?", 1),
+        (r"gains? (\d+) yds?", 1),
     )
-    for pat in patterns:
+    for pat, sign in patterns:
         m = re.search(pat, text)
         if m:
-            value = int(m.group(1))
-            return -value if "loss of" in m.group(0) else value
+            return sign * int(m.group(1))
     if "for no gain" in text or "no gain" in text:
         return 0
     return None
@@ -68,16 +74,12 @@ def classify_failure(a: dict[str, Any], b: dict[str, Any], flags: list[str]) -> 
         if fe is not None or de is not None:
             return {"classification": "YARDS_GAINED_SUSPECT", "confidence": "HIGH", "reasons": reasons, "field_error": fe, "distance_error": de}
 
-    # Field-state suspect: down progression is plausible, but location does not
-    # reconcile and the discrepancy is materially larger than tolerance.
     down_flags = {"expected_next_down_mismatch", "expected_first_down_mismatch"}
     if fe is not None and abs(fe) > 1 and not any(f in flags for f in down_flags):
         reasons.append(f"field_position_error={fe:+g} with no down-progression flag")
         if de is None or abs(de) <= 1:
             return {"classification": "FIELD_POSITION_SUSPECT", "confidence": "HIGH", "reasons": reasons, "field_error": fe, "distance_error": de}
 
-    # Distance/down suspect: ball location is consistent (or unavailable), while
-    # down/distance itself fails to reconcile.
     if de is not None and abs(de) > 1 and (fe is None or abs(fe) <= 1):
         reasons.append(f"distance_error={de:+g} while field position reconciles")
         return {"classification": "DOWN_DISTANCE_SUSPECT", "confidence": "HIGH", "reasons": reasons, "field_error": fe, "distance_error": de}
@@ -85,8 +87,6 @@ def classify_failure(a: dict[str, Any], b: dict[str, Any], flags: list[str]) -> 
         reasons.append("down progression fails while field position is consistent")
         return {"classification": "DOWN_DISTANCE_SUSPECT", "confidence": "MEDIUM", "reasons": reasons, "field_error": fe, "distance_error": de}
 
-    # A very large spatial jump with otherwise monotonic chronology is evidence
-    # that an intermediate football state may be absent from the structured PBP.
     ca, cb = _clock_seconds(a.get("clock")), _clock_seconds(b.get("clock"))
     clock_gap = (ca - cb) if ca is not None and cb is not None and a.get("period") == b.get("period") else None
     if fe is not None and abs(fe) > 20:
@@ -96,8 +96,6 @@ def classify_failure(a: dict[str, Any], b: dict[str, Any], flags: list[str]) -> 
         reasons.append(f"large unexplained field jump {fe:+g}")
         return {"classification": "FIELD_POSITION_SUSPECT", "confidence": "MEDIUM", "reasons": reasons, "field_error": fe, "distance_error": de}
 
-    # Both field and distance disagree without an ordering failure. We cannot
-    # safely identify one source field as the culprit yet.
     if fe is not None and abs(fe) > 1 and de is not None and abs(de) > 1:
         reasons.append(f"field_error={fe:+g} and distance_error={de:+g} both disagree")
         return {"classification": "AMBIGUOUS_STATE_SUSPECT", "confidence": "LOW", "reasons": reasons, "field_error": fe, "distance_error": de}
