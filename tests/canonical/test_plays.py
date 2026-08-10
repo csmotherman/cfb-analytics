@@ -33,6 +33,28 @@ def test_kickoff_is_not_blanket_zeroed():
     assert out["isSpecialTeams"] is True
 
 
+def test_scrimmage_penalty_keeps_base_type_and_adds_modifier():
+    out=normalize_play({"playType":"Rush","yardsGained":6,"playText":"Runner gains 6 yards. MICHIGAN Penalty, Offensive Holding (10 Yards)."})
+    assert out["eventCategory"]=="SCRIMMAGE"
+    assert out["isScrimmagePlay"] is True
+    assert out["hasPenaltyContext"] is True
+    assert out["hasStateTransitionModifier"] is True
+
+
+def test_context_modifiers_are_independent():
+    out=normalize_play({"playType":"Pass Reception","playText":"Pass complete, fumbled; play reviewed. Penalty declined."})
+    assert out["hasPenaltyContext"] is True
+    assert out["hasReviewContext"] is True
+    assert out["hasFumbleContext"] is True
+    assert out["hasInterceptionContext"] is False
+
+
+def test_no_play_context_detected():
+    out=normalize_play({"playType":"Rush","playText":"False start, no play"})
+    assert out["hasNoPlayContext"] is True
+    assert out["hasStateTransitionModifier"] is True
+
+
 def test_unclassified_play_type_fails_closed():
     with pytest.raises(KeyError):
         classify_play_type("Made Up Play Type")
