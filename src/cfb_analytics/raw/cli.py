@@ -58,7 +58,8 @@ def main():
   for season in seasons:
    for st,wk in discover_partitions(args.root,season): results.append(verify_canonical_partition(args.root,args.processed_root,season,st,wk))
   failed=[r for r in results if r['status']!='PASS']; print(f"CANONICAL PLAYS VERIFICATION: {'PASS' if not failed else 'REVIEW'}\nPartitions: {len(results)}\nPassed: {len(results)-len(failed)}\nFailed: {len(failed)}")
-  for r in failed[:20]: print(f"  {r['season']} {r['season_type']} W{r['week']:02d}: "+", ".join(k for k,v in r['checks'].items() if not v)); return
+  for r in failed[:20]: print(f"  {r['season']} {r['season_type']} W{r['week']:02d}: "+", ".join(k for k,v in r['checks'].items() if not v))
+  return
  with CfbdClient() as client:
   if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
   if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
