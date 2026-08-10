@@ -1,4 +1,4 @@
-"""CLI for raw CFBD acquisition, auditing, census, and anomaly investigation."""
+"""CLI for raw CFBD acquisition, auditing, census, anomalies, and sequencing."""
 from __future__ import annotations
 import argparse, json
 from pathlib import Path
@@ -6,6 +6,7 @@ from cfb_analytics.raw.acquire import acquire_season, acquire_week, calendar_par
 from cfb_analytics.raw.audit import audit_partition, audit_season, audit_corpus
 from cfb_analytics.raw.census import raw_census, concise_census
 from cfb_analytics.raw.anomalies import anomaly_report, concise_anomalies, RULES
+from cfb_analytics.raw.sequence import sequence_audit, concise_sequence
 from cfb_analytics.sources.cfbd.client import CfbdClient
 
 DEFAULT_ROOT=Path("data/raw")
@@ -20,6 +21,7 @@ def parser():
     ca=sub.add_parser("audit-corpus"); ca.add_argument("--json",action="store_true",dest="as_json")
     census=sub.add_parser("census"); census.add_argument("--season",type=int); census.add_argument("--json",action="store_true",dest="as_json"); census.add_argument("--top",type=int,default=25)
     anomalies=sub.add_parser("anomalies"); anomalies.add_argument("--season",type=int); anomalies.add_argument("--rule",choices=RULES); anomalies.add_argument("--examples",type=int,default=5); anomalies.add_argument("--json",action="store_true",dest="as_json")
+    seq=sub.add_parser("sequence-audit"); seq.add_argument("--season",type=int); seq.add_argument("--examples",type=int,default=10); seq.add_argument("--json",action="store_true",dest="as_json")
     season=sub.add_parser("season"); season.add_argument("--season",type=int,required=True); season.add_argument("--refresh",action="store_true")
     backfill=sub.add_parser("backfill"); backfill.add_argument("--refresh",action="store_true")
     return p
@@ -53,6 +55,8 @@ def main():
         if args.as_json or args.rule: print(json.dumps(r,indent=2))
         else: print(concise_anomalies(r))
         return
+    if args.command=="sequence-audit":
+        seasons=(args.season,) if args.season else SEASONS; r=sequence_audit(args.root,seasons,args.examples); print(json.dumps(r,indent=2) if args.as_json else concise_sequence(r)); return
     with CfbdClient() as client:
         if args.command=="calendar": print(json.dumps({"season":args.season,"partitions":calendar_partitions(get_calendar(client,args.season))},indent=2)); return
         if args.command=="week": manifests=acquire_week(client,args.root,args.season,args.season_type,args.week,refresh=args.refresh)
