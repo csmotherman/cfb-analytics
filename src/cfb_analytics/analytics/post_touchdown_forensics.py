@@ -13,10 +13,12 @@ from cfb_analytics.canonical.materialize import canonical_partition_dir
 
 TD_SUBTYPES={"RUSH_TD","PASS_TD"}
 TWO_POINT_SUBTYPES={"TWO_POINT_PASS","TWO_POINT_RUSH","DEFENSIVE_TWO_POINT"}
-PAT_GOOD=re.compile(r"\b(?:kick|pat|extra point)\b.*\b(?:good|is good)\b",re.I)
+# Failure patterns must be evaluated before success patterns. In particular,
+# "PAT no good" contains the token "good" but is a failed try.
 PAT_MISS=re.compile(r"\b(?:kick|pat|extra point)\b.*\b(?:missed|no good|blocked|failed)\b",re.I)
-TWO_GOOD=re.compile(r"\b(?:two[- ]point|2[- ]point|conversion)\b.*\b(?:good|successful|succeeds)\b",re.I)
+PAT_GOOD=re.compile(r"\b(?:kick|pat|extra point)\b.*\b(?<!no )good\b",re.I)
 TWO_FAIL=re.compile(r"\b(?:two[- ]point|2[- ]point|conversion)\b.*\b(?:failed|fails|no good|unsuccessful)\b",re.I)
+TWO_GOOD=re.compile(r"\b(?:two[- ]point|2[- ]point|conversion)\b.*\b(?:good|successful|succeeds)\b",re.I)
 
 def _text(p): return str(p.get("playText") or "")
 def _clock_seconds(p):
@@ -30,10 +32,10 @@ def _conversion_signal(p):
  st=str(p.get("eventSubtype") or "");txt=_text(p)
  if st in {"TWO_POINT_PASS","TWO_POINT_RUSH"}: return "TWO_POINT_ATTEMPT"
  if st=="DEFENSIVE_TWO_POINT": return "DEFENSIVE_TWO_POINT"
- if PAT_GOOD.search(txt): return "PAT_GOOD_TEXT"
  if PAT_MISS.search(txt): return "PAT_FAILED_TEXT"
- if TWO_GOOD.search(txt): return "TWO_POINT_GOOD_TEXT"
+ if PAT_GOOD.search(txt): return "PAT_GOOD_TEXT"
  if TWO_FAIL.search(txt): return "TWO_POINT_FAILED_TEXT"
+ if TWO_GOOD.search(txt): return "TWO_POINT_GOOD_TEXT"
  return None
 
 def audit_post_touchdowns(raw_root:Path,processed_root:Path,seasons,examples=12):
@@ -46,7 +48,6 @@ def audit_post_touchdowns(raw_root:Path,processed_root:Path,seasons,examples=12)
     for i,p in enumerate(rows):
      if p.get("eventSubtype") not in TD_SUBTYPES: continue
      totals["touchdowns"]+=1;found=[]
-     # Inspect TD text itself plus a small following source window. Do not assume drive grouping.
      for offset,q in enumerate(rows[i:i+5]):
       sig=_conversion_signal(q)
       if sig: found.append((offset,sig,q))
