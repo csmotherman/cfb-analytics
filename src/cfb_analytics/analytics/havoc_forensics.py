@@ -1,8 +1,8 @@
 """Havoc v1 forensic census.
 
-Diagnostic only. Before defining production havoc, inventory the canonical play
-signals for sacks, tackles for loss, interceptions and fumbles. We intentionally
-do not assume that a negative rush is a TFL or that every fumble is forced.
+Diagnostic only. Before defining production havoc, inventory canonical play
+signals for sacks, tackles for loss, interceptions and fumbles. Do not assume
+a negative rush is a TFL or that every fumble is forced.
 """
 from __future__ import annotations
 from collections import Counter
@@ -13,9 +13,9 @@ TFL_PATTERNS=(re.compile(r"\btackle(?:d)? for (?:a )?loss\b",re.I),re.compile(r"
 FORCED_FUMBLE_PATTERNS=(re.compile(r"\bforced fumble\b",re.I),re.compile(r"\bfumble forced by\b",re.I),re.compile(r"\bforced by\b",re.I))
 
 def _text(p):return str(p.get("normalizedPlayText") or p.get("playText") or "")
-def _is_scrimmage(p):return p.get("canonicalCategory")=="SCRIMMAGE"
-def _is_sack(p):return p.get("eventSubtype")=="SACK" or str(p.get("playType") or "").lower()=="sack"
-def _is_int(p):return p.get("eventSubtype") in {"INTERCEPTION","INTERCEPTION_RETURN","INTERCEPTION_RETURN_TD"}
+def _is_scrimmage(p):return bool(p.get("isScrimmagePlay")) or p.get("eventCategory")=="SCRIMMAGE"
+def _is_sack(p):return p.get("eventSubtype")=="SACK" or str(p.get("sourcePlayType") or p.get("playType") or "").lower()=="sack"
+def _is_int(p):return p.get("eventSubtype") in {"INTERCEPTION","INTERCEPTION_RETURN","INTERCEPTION_RETURN_TD"} or bool(p.get("hasInterceptionContext"))
 def _is_fumble(p):return bool(p.get("hasFumbleContext")) or p.get("eventSubtype") in {"FUMBLE","FUMBLE_RECOVERY_OWN","FUMBLE_RECOVERY_OPPONENT","FUMBLE_RETURN_TD"}
 def _tfl_text(p):return any(x.search(_text(p)) for x in TFL_PATTERNS)
 def _forced_fumble_text(p):return any(x.search(_text(p)) for x in FORCED_FUMBLE_PATTERNS)
@@ -25,7 +25,7 @@ def havoc_forensics(plays):
  for p in plays:
   if not _is_scrimmage(p):continue
   c["scrimmage_plays"]+=1
-  sack=_is_sack(p);intr=_is_int(p);fum=_is_fumble(p);tfl=_tfl_text(p);ff=_forced_fumble_text(p);yards=p.get("analyticsYards",p.get("yardsGained"));negative=isinstance(yards,(int,float)) and yards<0
+  sack=_is_sack(p);intr=_is_int(p);fum=_is_fumble(p);tfl=_tfl_text(p);ff=_forced_fumble_text(p);yards=p.get("analyticsYardsGained",p.get("yardsGained"));negative=isinstance(yards,(int,float)) and yards<0
   if sack:c["sack_records"]+=1
   if intr:c["interception_signal_records"]+=1
   if fum:c["fumble_context_records"]+=1
