@@ -49,13 +49,21 @@ def finishing_drives_audit(raw_root:Path,processed_root:Path,seasons):
  totals=Counter();points=0
  for season in seasons:
   for st,w in discover_partitions(raw_root,season):
-   plays=json.loads((canonical_partition_dir(processed_root,season,st,w)/"plays.json").read_text());drives=json.loads((derived_drive_partition_dir(processed_root,season,st,w)/"drives.json").read_text());teams={d.get("offense") for d in drives if d.get("offense")}
+   plays=json.loads((canonical_partition_dir(processed_root,season,st,w)/"plays.json").read_text());drives=json.loads((derived_drive_partition_dir(processed_root,season,st,w)/"drives.json").read_text())
+   plays_by_game=defaultdict(list);drives_by_game=defaultdict(list)
+   for p in plays:plays_by_game[str(p.get("gameId"))].append(p)
+   for d in drives:drives_by_game[str(d.get("gameId"))].append(d)
    totals["validated_possessions"]+=sum(d.get("isPossessionDrive") is True and d.get("driveValidationStatus")=="PASS" for d in drives)
-   for team in teams:
-    m=team_finishing_metrics(team,drives,plays);totals["opportunities"]+=m["scoringOpportunities"];totals["TOUCHDOWN"]+=m["opportunityTouchdowns"];totals["FIELD_GOAL"]+=m["opportunityFieldGoals"];totals["EMPTY"]+=m["emptyOpportunities"];totals["OTHER_SCORING"]+=m["otherScoringOpportunities"];totals["resolved"]+=m["resolvedPointOpportunities"];totals["unresolved"]+=m["unresolvedPointOpportunities"];points+=m["opportunityPoints"]
+   # Critical: touchdown score adjudication must be scoped to one game. Passing
+   # a full week/partition can mix scoreboard states across games and is also
+   # dramatically slower because every TD repeatedly sorts the whole partition.
+   for gid,game_drives in drives_by_game.items():
+    game_plays=plays_by_game.get(gid,[]);teams={d.get("offense") for d in game_drives if d.get("offense")}
+    for team in teams:
+     m=team_finishing_metrics(team,game_drives,game_plays);totals["opportunities"]+=m["scoringOpportunities"];totals["TOUCHDOWN"]+=m["opportunityTouchdowns"];totals["FIELD_GOAL"]+=m["opportunityFieldGoals"];totals["EMPTY"]+=m["emptyOpportunities"];totals["OTHER_SCORING"]+=m["otherScoringOpportunities"];totals["resolved"]+=m["resolvedPointOpportunities"];totals["unresolved"]+=m["unresolvedPointOpportunities"];points+=m["opportunityPoints"]
  opp=totals["opportunities"]
  return {"validated_possessions":totals["validated_possessions"],"opportunities":opp,"opportunity_rate":opp/totals["validated_possessions"] if totals["validated_possessions"] else None,"outcomes":{k:totals[k] for k in ("TOUCHDOWN","FIELD_GOAL","EMPTY","OTHER_SCORING")},"resolved_point_opportunities":totals["resolved"],"unresolved_point_opportunities":totals["unresolved"],"opportunity_points":points,"points_per_resolved_opportunity":points/totals["resolved"] if totals["resolved"] else None,"version":FINISHING_DRIVES_VERSION}
 def concise_finishing_drives_audit(r):
  o=r["outcomes"];opp=r["opportunities"]
- lines=["FINISHING DRIVES AUDIT (v2)",f"Validated possession drives: {r['validated_possessions']:,}",f"Scoring opportunities: {opp:,}",f"Opportunity rate: {r['opportunity_rate']:.2%}" if r['opportunity_rate'] is not None else "Opportunity rate: N/A","",f"Touchdowns: {o.get('TOUCHDOWN',0):,}",f"Field goals: {o.get('FIELD_GOAL',0):,}",f"Empty: {o.get('EMPTY',0):,}",f"Other scoring: {o.get('OTHER_SCORING',0):,}","",f"Point-resolved opportunities: {r['resolved_point_opportunities']:,}",f"Unresolved point opportunities: {r['unresolved_point_opportunities']:,}",f"Adjudicated opportunity points: {r['opportunity_points']:,}",f"Points per resolved opportunity: {r['points_per_resolved_opportunity']:.3f}" if r['points_per_resolved_opportunity'] is not None else "Points per resolved opportunity: N/A","","TD points use only adjudicated +6/+7/+8 scoreboard evidence; unresolved TDs remain unresolved."]
+ lines=["FINISHING DRIVES AUDIT (v2)",f"Validated possession drives: {r['validated_possessions']:,}",f"Scoring opportunities: {opp:,}",f"Opportunity rate: {r['opportunity_rate']:.2%}" if r['opportunity_rate'] is not None else "Opportunity rate: N/A","",f"Touchdowns: {o.get('TOUCHDOWN',0):,}",f"Field goals: {o.get('FIELD_GOAL',0):,}",f"Empty: {o.get('EMPTY',0):,}",f"Other scoring: {o.get('OTHER_SCORING',0):,}","",f"Point-resolved opportunities: {r['resolved_point_opportunities']:,}",f"Unresolved point opportunities: {r['unresolved_point_opportunities']:,}",f"Adjudicated opportunity points: {r['opportunity_points']:,}",f"Points per resolved opportunity: {r['points_per_resolved_opportunity']:.3f}" if r['points_per_resolved_opportunity'] is not None else "Points per resolved opportunity: N/A","","TD points use only adjudicated +6/+7/+8 scoreboard evidence; empty opportunities are resolved 0-point possessions."]
  return "\n".join(lines)
