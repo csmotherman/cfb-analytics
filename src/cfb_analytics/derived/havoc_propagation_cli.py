@@ -1,6 +1,7 @@
-"""Propagate locked Havoc v1 metrics into materialized team-game/team-season rows.
+"""Propagate locked Havoc v1 metrics efficiently into materialized rows.
 
-This command augments existing derived JSON after their normal materialization.
+Each partition computes kneels, turnover anchors, and Havoc classifications
+once, then updates every team-game row from that shared result.
 """
 from __future__ import annotations
 import argparse,json,os
@@ -11,7 +12,7 @@ from cfb_analytics.canonical.materialize import canonical_partition_dir
 from cfb_analytics.derived.drives import derived_drive_partition_dir
 from cfb_analytics.derived.games import derived_game_partition_dir
 from cfb_analytics.derived.seasons import derived_season_dir
-from cfb_analytics.analytics.havoc_team_metrics import team_havoc_metrics
+from cfb_analytics.analytics.havoc_team_metrics import partition_team_havoc_metrics
 from cfb_analytics.analytics.havoc import HAVOC_VERSION
 SEASONS=(2014,2015,2016,2017,2018,2019,2021,2022,2023,2024,2025)
 COUNT_KEYS=("havocEligiblePlays","havocPlaysAllowed","havocEligiblePlaysFaced","havocPlays","havocTflsAllowed","havocSacksAllowed","havocTurnoversCommitted","havocTfls","havocSacks","havocTakeaways")
@@ -24,7 +25,8 @@ def propagate(raw_root,processed_root,seasons):
  for s in seasons:
   for st,w in discover_partitions(raw_root,s):
    plays=json.loads((canonical_partition_dir(processed_root,s,st,w)/"plays.json").read_text());drives=json.loads((derived_drive_partition_dir(processed_root,s,st,w)/"drives.json").read_text());path=derived_game_partition_dir(processed_root,s,st,w)/"team_games.json";rows=json.loads(path.read_text())
-   for r in rows:r.update(team_havoc_metrics(r["team"],plays,drives))
+   metrics=partition_team_havoc_metrics(plays,drives)
+   for r in rows:r.update(metrics.get(r["team"],{}))
    _atomic(path,rows);game_rows+=len(rows)
  season_rows=0
  for s in seasons:
