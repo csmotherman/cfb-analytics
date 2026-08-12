@@ -9,8 +9,9 @@ Diagnostic only. No production metric is emitted.
 """
 from __future__ import annotations
 from collections import Counter,defaultdict
-from cfb_analytics.analytics.three_and_out_forensics import classify_possession,_clean_scrimmage,_chronology_key
+from cfb_analytics.analytics.three_and_out_forensics import classify_possession,_clean_scrimmage
 from cfb_analytics.analytics.finishing_drives import possession_outcome
+from cfb_analytics.raw.sequence import _candidate_sort_key
 
 def _clock_seconds(p):
  c=p.get("clock")
@@ -24,9 +25,8 @@ def audit_partition(drives,plays):
  for p in plays:by_drive[(str(p.get("gameId")),str(p.get("driveId")))].append(p);by_game[str(p.get("gameId"))].append(p)
  for d in drives:
   if not (d.get("isPossessionDrive") is True and d.get("driveValidationStatus")=="PASS" and d.get("offense")):continue
-  gid=str(d.get("gameId"));did=str(d.get("driveId"));rows=sorted(by_drive[(gid,did)],key=_chronology_key);snaps=_clean_scrimmage(rows);x=classify_possession(d,rows,by_game[gid]);out=possession_outcome(d,rows,by_game[gid]);downs=[p.get("down") for p in snaps]
+  gid=str(d.get("gameId"));did=str(d.get("driveId"));rows=sorted(by_drive[(gid,did)],key=_candidate_sort_key);snaps=_clean_scrimmage(rows);x=classify_possession(d,rows,by_game[gid]);out=possession_outcome(d,rows,by_game[gid]);downs=[p.get("down") for p in snaps]
   if not snaps:continue
-  # Family 1: structurally eligible by first-down start, but <3 clean snaps.
   if downs[0]==1 and len(snaps)<3:
    c["short"]+=1;c[f"short_{len(snaps)}_snaps"]+=1
    score=out.get("outcome") in {"TOUCHDOWN","FIELD_GOAL","OTHER_SCORING"};turn=x["turnover"]
@@ -36,7 +36,6 @@ def audit_partition(drives,plays):
    if period in (2,4):c["short_q2_q4"]+=1
    if period in (2,4) and sec is not None and sec<=120:c["short_final_2_q2_q4"]+=1
    if len(examples["short"])<25:examples["short"].append({"season":d.get("season"),"gameId":d.get("gameId"),"driveId":d.get("driveId"),"downs":downs,"outcome":out.get("outcome"),"turnover":turn,"punt":x["punt"],"period":period,"clock":last.get("clock")})
-  # Family 2: chronology-corrected clean 1-2-3 residual.
   if x["residual"]:
    c["residual"]+=1;last=x["snaps"][-1];dist=last.get("distance");yards=last.get("analyticsYardsGained")
    if isinstance(dist,(int,float)) and isinstance(yards,(int,float)):c["residual_conversion" if yards>=dist else "residual_failed"]+=1
@@ -44,10 +43,9 @@ def audit_partition(drives,plays):
    if period in (2,4):c["residual_q2_q4"]+=1
    if period in (2,4) and sec is not None and sec<=120:c["residual_final_2_q2_q4"]+=1
    if len(examples["residual"])<25:examples["residual"].append({"season":d.get("season"),"gameId":d.get("gameId"),"driveId":d.get("driveId"),"distance":dist,"yards":yards,"period":period,"clock":last.get("clock"),"outcome":out.get("outcome")})
-  # Family 3: remaining abnormal chronology-ordered starts.
   if downs[0]!=1:
    c["abnormal_start"]+=1;c[f"abnormal_down_{downs[0]}"]+=1
-   prior=[p for p in rows if _chronology_key(p)<_chronology_key(snaps[0])]
+   first_key=_candidate_sort_key(snaps[0]);prior=[p for p in rows if _candidate_sort_key(p)<first_key]
    c["abnormal_has_prior_record"]+=int(bool(prior));c["abnormal_prior_scrimmage"]+=int(any(p.get("isScrimmagePlay") is True for p in prior));c["abnormal_prior_offensive"]+=int(any(p.get("isOffensivePlay") is True for p in prior));c["abnormal_prior_no_play"]+=int(any(p.get("hasNoPlayContext",False) for p in prior))
    if len(examples["abnormal_start"])<25:examples["abnormal_start"].append({"season":d.get("season"),"gameId":d.get("gameId"),"driveId":d.get("driveId"),"firstDown":downs[0],"downs":downs[:5],"priorCount":len(prior),"startDown":d.get("startDown")})
  return c,examples
