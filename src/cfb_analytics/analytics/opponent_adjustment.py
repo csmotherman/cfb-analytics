@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse,json,math
 from collections import defaultdict
 from pathlib import Path
-from typing import Any
 from cfb_analytics.derived.pregame import build_pregame_snapshots,build_matchup_features,build_model_dataset,game_contexts,load_team_games,_pk
 
 OPPONENT_ADJUSTMENT_VERSION="opponent-adjustment-v1"
@@ -66,7 +65,7 @@ def build_adjusted_model_dataset(base_rows,adjusted_snapshots,season):
  return out
 
 def adjusted_dataset_audit(team_games,snapshots,adjusted,rows,season):
- adj_keys={(str(r.get("gameId")),r.get("team")) for r in adjusted};snap_keys={(str(r.get("gameId")),r.get("team")) for r in snapshots if r.get("season")==season};checks={"one_adjusted_snapshot_per_team_game":len(adjusted)==len([r for r in team_games if r.get("season")==season]),"adjusted_keys_match_snapshots":adj_keys==snap_keys,"version_present":all(r.get("opponentAdjustmentVersion")==OPPONENT_ADJUSTMENT_VERSION for r in adjusted),"model_rows_preserved":len(rows)==len({str(s.get('gameId')) for s in snapshots if s.get('season')==season})//2,"targets_unchanged":all(_num(r.get("target_margin")) and r.get("target_homeWin") in (0,1,None) for r in rows)}
+ adj_keys={(str(r.get("gameId")),r.get("team")) for r in adjusted};snap_keys={(str(r.get("gameId")),r.get("team")) for r in snapshots if r.get("season")==season};expected_games={str(s.get("gameId")) for s in snapshots if s.get("season")==season};checks={"one_adjusted_snapshot_per_team_game":len(adjusted)==len([r for r in team_games if r.get("season")==season]),"adjusted_keys_match_snapshots":adj_keys==snap_keys,"version_present":all(r.get("opponentAdjustmentVersion")==OPPONENT_ADJUSTMENT_VERSION for r in adjusted),"model_rows_preserved":len(rows)==len(expected_games),"targets_unchanged":all(_num(r.get("target_margin")) and r.get("target_homeWin") in (0,1,None) for r in rows)}
  return {"status":"PASS" if all(checks.values()) else "REVIEW","season":season,"adjusted_snapshot_rows":len(adjusted),"model_rows":len(rows),"rows_with_all_adjusted_features":sum(all(_num(r.get(k)) for k in ADJUSTED_FEATURES) for r in rows),"checks":checks}
 
 def concise(r):
