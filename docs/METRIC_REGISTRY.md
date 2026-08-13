@@ -94,6 +94,24 @@ Eligible plays require usable canonical analytics yardage. Modified/no-play cont
 
 **Production-lock audit guarantees:** team-game corpus is **17,020 rows**; team-season corpus is **1,438 rows**; all locked corpus totals above reproduce exactly; offense/defense mirrors reconcile for plays, yards, rush attempts, rush yards, dropbacks, net pass yards, and recovered interception dropbacks; team-season totals reconcile to team-game totals; and definition-version fields are present at both levels.
 
+### Dropbacks / Sack Rate v1
+
+**Status:** LOCKED  
+**Level:** Play/validated interception possession -> team-game -> team-season  
+**Definition version:** `dropbacks-v1`
+
+**Definition:** a Dropbacks-v1 event is a canonical `PASS_COMPLETION`, `PASS_INCOMPLETE`, `PASS_TD`, `INTERCEPTION`, or `SACK`, plus exactly one recovered interception attempt for a validated interception possession with zero standard dropback evidence and explicit interception source text. No-play and two-point contexts are excluded, and `PASS_UNSPECIFIED` is not promoted.
+
+**Locked corpus:**
+- Dropbacks: **553,899**
+- Sacks: **33,368**
+- Corpus sack rate: **6.02%**
+- Recovered residual interception dropbacks: **1,854**
+
+**Production family includes:** `dropbacks`, `sacksAllowed`, `sackRate`, `defensiveDropbacks`, `sacks`, `defensiveSackRate`, and `dropbacksDefinitionVersion`.
+
+**Production-lock audit guarantees:** team-game and team-season corpus sizes match shared production invariants; dropbacks and sacks reproduce the locked corpus; offense/defense counts reconcile; team-season counts reconcile exactly to team-game counts; offensive and defensive sack rates recompute from stored counts at both levels; zero denominators produce null rates; and the definition version is present everywhere.
+
 ### Standard vs Passing Downs
 
 **Status:** LOCKED  
@@ -148,18 +166,20 @@ Field-position eligibility is `1 <= yardsToGoal <= 100`; `yardsToGoal=0` is excl
 
 ## Turnover metrics
 
-### Validated Turnovers
+### Team-Facing Turnovers v1
 
-**Status:** PARTIAL  
-**Level:** Possession/event foundation already used in Havoc and derived corpus
+**Status:** LOCKED  
+**Level:** Possession/event -> team-game -> team-season
 
-**Locked corpus:** giveaways **15,532**; takeaways **15,532**; interceptions **10,875**; fumbles lost **4,657**; turnover-unresolved possessions **2,489**.
+**Locked corpus:** giveaways **15,532**; takeaways **15,532**; interceptions **10,875**; fumbles lost **4,657**; turnover-unresolved possessions **2,489**; resolved turnover-classification possessions **206,236**.
 
-**Current production fields:** `giveaways`, `interceptionsThrown`, `fumblesLost`, `turnoverResolvedPossessions`, `turnoverUnresolvedPossessions`, `takeaways`, `interceptionsMade`, `fumblesRecovered`, `takeawayResolvedPossessions`, `takeawayUnresolvedPossessions`, `turnoverMargin`, plus `turnoversDefinitionVersion`.
+**Production fields:** `giveaways`, `interceptionsThrown`, `fumblesLost`, `turnoverResolvedPossessions`, `turnoverUnresolvedPossessions`, `takeaways`, `interceptionsMade`, `fumblesRecovered`, `takeawayResolvedPossessions`, `takeawayUnresolvedPossessions`, `turnoverMargin`, plus `turnoversDefinitionVersion`.
 
-**Current definition:** direct interceptions and interception-return-only possessions are giveaways; opponent fumble recoveries/fumble-return TDs are fumbles lost; own recoveries are not giveaways; modified/nullified turnover contexts are excluded; unresolved fumble/miscellaneous/multiple-signal records remain unresolved rather than coerced.
+**Definition:** direct interceptions and interception-return-only possessions are giveaways; opponent fumble recoveries/fumble-return TDs are fumbles lost; own recoveries are not giveaways; modified/nullified turnover contexts are excluded; unresolved fumble/miscellaneous/multiple-signal records remain unresolved rather than coerced.
 
-**Still needed:** dedicated current-corpus propagation audit of team-game/team-season counts and margins. Any turnover rate must have a separately documented denominator; unresolved possessions must not be silently counted as non-turnovers in a rate denominator without an explicit policy.
+**Production-lock audit guarantees:** giveaways/takeaways, interceptions, fumbles, and unresolved counts match the locked corpus; offense/defense mirrors reconcile; team-season totals reconcile exactly to team-game totals; aggregate turnover margin sums to zero; and each team-game/team-season row recomputes `turnoverMargin` exactly as `takeaways - giveaways`.
+
+**Rate policy:** no turnover rate is locked by this family. Any future turnover-rate metric must document and independently validate its denominator; unresolved possessions must not be silently counted as non-turnovers.
 
 ---
 
@@ -231,17 +251,11 @@ These totals may support future registry entries but are not automatically produ
 
 ## Remaining core roadmap
 
-### Team-Facing Turnover Metrics
-**Status:** PARTIAL — next checkpoint. Audit existing team-game/team-season giveaway/takeaway/INT/fumble/margin fields against the locked event corpus before adding rates.
-
-### Sack / Dropback Metrics
-**Status:** PARTIAL. Dropbacks v1 denominator semantics are now production-backed through Basic Yardage v1 (**553,899 dropbacks**, including **1,854** recovered residual interception attempts), and validated sacks remain **33,368**. A dedicated sack/dropback family can now be locked by auditing and propagating sack-rate fields against this denominator.
-
 ### Situational / Short-Yardage Metrics
 Potential families: early-down success, stuff rate, power/short-yardage success, field-position starts, plays per possession, drive duration if clock state is sufficiently reliable.
 
 ### Deferred Rate Denominators
-**FORENSIC ONLY:** three-and-out rate and first-down generation rate.
+**FORENSIC ONLY:** three-and-out rate, first-down generation rate, and turnover rates without an independently validated opportunity denominator.
 
 ### EPA Layer
 **NOT STARTED.** Treat EPA as a later modeling project requiring trustworthy field position, down, distance, clock, score state, and game context.
