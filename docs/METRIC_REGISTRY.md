@@ -63,6 +63,37 @@ Eligible plays require usable canonical analytics yardage. Modified/no-play cont
 
 **Production-lock audit guarantees:** overall and rush/pass locked corpus totals match materialized team-game output; rush + pass reconciles to overall; offense/defense mirrors reconcile; team-season counts reconcile to team-game counts; and all team-game/team-season offensive and defensive rates recompute exactly from their stored counts.
 
+### Basic Yardage Efficiency v1
+
+**Status:** LOCKED  
+**Level:** Play -> team-game -> team-season  
+**Definition version:** `basic-yardage-v1`
+
+**Definition:** Basic Yardage v1 measures classified offensive scrimmage efficiency using the union of validated rush attempts and locked Dropbacks v1. Clean standalone source-artifact records that are not part of either family are excluded rather than silently entering the denominator.
+
+**Locked corpus:**
+- Basic Yardage plays: **1,146,848**
+- Basic Yardage yards: **6,739,101**
+- Corpus yards/play: **5.876**
+- Rush attempts: **592,949**
+- Rush yards: **3,061,968**
+- Rush yards/attempt: **5.164**
+- Dropbacks: **553,899**
+- Net pass yards: **3,677,133**
+- Net pass yards/dropback: **6.639**
+- Recovered residual interception dropbacks: **1,854**
+
+**Recovered interception policy:** validated residual interception possessions with zero standard Dropbacks-v1 evidence contribute one recovered interception dropback when explicit interception evidence exists. These recovered attempts are **denominator-only** for passing-yard efficiency. Their source `yardsGained` values represent interception-return movement, not validated offensive passing yardage, and therefore contribute **zero** yards to the passing numerator.
+
+**Explicit exclusions:**
+- **74** standalone `FUMBLE` scrimmage records totaling **465 yards** are excluded from rush/pass classification.
+- **20** `TWO_POINT_PASS` records and **3** `PASS_UNSPECIFIED` records totaling **7 yards** are excluded from Dropbacks v1.
+- Modified/no-play contexts remain excluded according to the underlying clean-play rules.
+
+**Production family includes:** overall Basic Yardage plays/yards/yards-per-play, rush attempts/yards/yards-per-attempt, dropbacks/net-pass-yards/net-pass-yards-per-dropback, recovered interception dropback counts, and offense/defense allowed mirrors.
+
+**Production-lock audit guarantees:** team-game corpus is **17,020 rows**; team-season corpus is **1,438 rows**; all locked corpus totals above reproduce exactly; offense/defense mirrors reconcile for plays, yards, rush attempts, rush yards, dropbacks, net pass yards, and recovered interception dropbacks; team-season totals reconcile to team-game totals; and definition-version fields are present at both levels.
+
 ### Standard vs Passing Downs
 
 **Status:** LOCKED  
@@ -204,10 +235,7 @@ These totals may support future registry entries but are not automatically produ
 **Status:** PARTIAL — next checkpoint. Audit existing team-game/team-season giveaway/takeaway/INT/fumble/margin fields against the locked event corpus before adding rates.
 
 ### Sack / Dropback Metrics
-**Status:** NOT FULLY LOCKED AS A FAMILY. Validated sacks already exist (**33,368**); denominator semantics require a validated dropback definition.
-
-### Basic Yardage Efficiency
-**Status:** NEEDS CHECKPOINT REVIEW. Review existing yards/play and rush/pass efficiency fields before adding duplicates.
+**Status:** PARTIAL. Dropbacks v1 denominator semantics are now production-backed through Basic Yardage v1 (**553,899 dropbacks**, including **1,854** recovered residual interception attempts), and validated sacks remain **33,368**. A dedicated sack/dropback family can now be locked by auditing and propagating sack-rate fields against this denominator.
 
 ### Situational / Short-Yardage Metrics
 Potential families: early-down success, stuff rate, power/short-yardage success, field-position starts, plays per possession, drive duration if clock state is sufficiently reliable.
