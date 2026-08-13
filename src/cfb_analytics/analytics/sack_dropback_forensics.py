@@ -2,66 +2,85 @@
 
 The sack numerator is already validated by Havoc v1. This audit investigates a
 production-safe pass-attempt/dropback denominator before any sack-rate fields
-are created. No data is modified or propagated.
+are created. It deliberately reuses the canonical eventSubtype semantics that
+already drive the locked Explosiveness v1 RUSH/PASS family split rather than
+inventing nonexistent playFamily/isPass flags. No data is modified.
 """
 from __future__ import annotations
 from collections import Counter
 
 
 def _clean(p):
-    return (bool(p.get("isScrimmagePlay")) or p.get("eventCategory")=="SCRIMMAGE") and not bool(p.get("hasNoPlayContext") or p.get("isModifiedContext") or p.get("isNoPlay"))
+    return bool(p.get("isScrimmagePlay")) and bool(p.get("isOffensivePlay")) and not bool(p.get("hasStateTransitionModifier") or p.get("hasNoPlayContext"))
 
-def _text(p):
-    return " ".join(str(p.get(k) or "") for k in ("eventCategory","eventSubtype","sourcePlayType","playType")).upper()
+def _subtype(p):
+    return str(p.get("eventSubtype") or "").strip().upper()
+
+def _source(p):
+    return str(p.get("sourcePlayType") or p.get("playType") or "").strip().upper()
+
+def _pass_family(p):
+    """Same family semantics as locked Explosiveness v1: subtype contains pass/sack."""
+    s=_subtype(p).lower()
+    return any(x in s for x in ("pass","sack"))
 
 def is_sack(p):
-    return _clean(p) and (p.get("eventSubtype")=="SACK" or str(p.get("sourcePlayType") or p.get("playType") or "").lower()=="sack")
+    return _clean(p) and (_subtype(p)=="SACK" or _source(p)=="SACK")
+
+def _attempt_kind(p):
+    """Conservative diagnostic classification within canonical PASS family."""
+    s=_subtype(p);src=_source(p);text=f"{s} {src}"
+    if is_sack(p): return "SACK"
+    if "INTERCEPTION" in text: return "INTERCEPTION"
+    if "INCOMPLETE" in text or "INCOMPLETION" in text: return "INCOMPLETE"
+    # Reception/completion/touchdown pass records represent completed attempts.
+    if "RECEPTION" in text or "COMPLETE" in text or "PASSING TOUCHDOWN" in text or "PASS TOUCHDOWN" in text: return "COMPLETE"
+    return "OTHER_PASS_FAMILY"
 
 def audit(plays):
-    c=Counter()
-    examples=[]
+    c=Counter();examples=[]
     for p in plays:
-        if not _clean(p):continue
-        c["clean_scrimmage"]+=1
-        text=_text(p)
-        sack=is_sack(p)
-        if sack:c["sacks"]+=1
-        # Existing canonical pass-family signals are inspected rather than assumed.
-        pass_flag=p.get("playFamily")=="PASS" or p.get("isPassPlay") is True or p.get("isPass") is True
-        pass_text=any(x in text for x in ("PASS","INTERCEPTION","SACK"))
-        if pass_flag:c["canonical_pass_flag"]+=1
-        if pass_text:c["text_pass_signal"]+=1
-        if pass_flag or pass_text:c["broad_dropback_candidate"]+=1
-        if sack and not pass_flag:c["sack_missing_canonical_pass_flag"]+=1
-        if pass_flag and not pass_text:c["canonical_pass_without_text_signal"]+=1
-        if pass_text and not pass_flag:c["text_signal_without_canonical_pass"]+=1
-        if (sack and not pass_flag) or (pass_flag != pass_text):
-            if len(examples)<40:
-                examples.append({k:p.get(k) for k in ("season","gameId","driveId","id","playNumber","sourcePlayType","playType","eventCategory","eventSubtype","playFamily","isPassPlay","isPass","isOffensivePlay","analyticsYardsGained","down","distance")})
+        if not _clean(p): continue
+        c["clean_offensive_scrimmage"]+=1
+        if not _pass_family(p): continue
+        c["pass_family"]+=1
+        kind=_attempt_kind(p);c[kind.lower()]+=1
+        if kind=="SACK": c["sacks"]+=1
+        else: c["non_sack_pass_family"]+=1
+        if kind in ("COMPLETE","INCOMPLETE","INTERCEPTION"): c["explicit_pass_attempt"]+=1
+        if kind=="OTHER_PASS_FAMILY":
+            if len(examples)<60:
+                examples.append({k:p.get(k) for k in ("season","gameId","driveId","id","playNumber","sourcePlayType","playType","eventCategory","eventSubtype","isOffensivePlay","isScrimmagePlay","analyticsYardsGained","down","distance")})
+    # Candidate dropbacks are explicit attempts + sacks. OTHER remains excluded until understood.
+    c["candidate_dropbacks"]=c["explicit_pass_attempt"]+c["sacks"]
     return {"counts":dict(c),"examples":examples}
 
 def merge(results):
     c=Counter();examples=[]
     for r in results:
-        c.update(r["counts"]);examples.extend(r["examples"][:max(0,40-len(examples))])
+        c.update(r["counts"]);examples.extend(r["examples"][:max(0,60-len(examples))])
+    # candidate_dropbacks was partition-level derived; recompute from merged primitives.
+    c["candidate_dropbacks"]=c["explicit_pass_attempt"]+c["sacks"]
     return {"counts":dict(c),"examples":examples}
 
 def concise(r):
-    c=r["counts"]
-    broad=c.get("broad_dropback_candidate",0)
+    c=r["counts"];db=c.get("candidate_dropbacks",0)
     return "\n".join([
-        "SACK / DROPBACK DENOMINATOR FORENSICS (v1)",
-        f"Clean scrimmage plays: {c.get('clean_scrimmage',0):,}",
-        f"Validated sack candidates: {c.get('sacks',0):,}",
-        f"Canonical pass-family flagged plays: {c.get('canonical_pass_flag',0):,}",
-        f"Text-derived pass/sack/interception signal: {c.get('text_pass_signal',0):,}",
-        f"Broad dropback candidate union: {broad:,}",
-        f"Candidate sack rate: {c.get('sacks',0)/broad:.2%}" if broad else "Candidate sack rate: n/a",
+        "SACK / DROPBACK DENOMINATOR FORENSICS (v2 CANONICAL-SUBTYPE)",
+        f"Clean offensive scrimmage plays: {c.get('clean_offensive_scrimmage',0):,}",
+        f"Canonical PASS-family plays: {c.get('pass_family',0):,}",
         "",
-        f"Sacks missing canonical pass flag: {c.get('sack_missing_canonical_pass_flag',0):,}",
-        f"Canonical pass flag without text signal: {c.get('canonical_pass_without_text_signal',0):,}",
-        f"Text signal without canonical pass flag: {c.get('text_signal_without_canonical_pass',0):,}",
+        f"Completed pass-attempt records: {c.get('complete',0):,}",
+        f"Incomplete pass-attempt records: {c.get('incomplete',0):,}",
+        f"Interception records: {c.get('interception',0):,}",
+        f"Validated sacks: {c.get('sacks',0):,}",
+        f"Other PASS-family records: {c.get('other_pass_family',0):,}",
         "",
-        "Diagnostic only. The denominator is not locked until canonical pass-family semantics and disagreement populations are understood.",
-        "Use --json for representative disagreement examples."
+        f"Explicit pass attempts: {c.get('explicit_pass_attempt',0):,}",
+        f"Candidate dropbacks (attempts + sacks): {db:,}",
+        f"Candidate sack rate: {c.get('sacks',0)/db:.2%}" if db else "Candidate sack rate: n/a",
+        "",
+        f"PASS-family reconciliation: {c.get('complete',0)+c.get('incomplete',0)+c.get('interception',0)+c.get('sacks',0)+c.get('other_pass_family',0):,} / {c.get('pass_family',0):,}",
+        "Diagnostic only. OTHER_PASS_FAMILY must be understood before the denominator can be locked.",
+        "Use --json to inspect representative OTHER_PASS_FAMILY records."
     ])
