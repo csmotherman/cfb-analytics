@@ -57,14 +57,33 @@ def fit_metric_ratings(
     rows: list[dict[str, Any]],
     spec: tuple[str, str, str],
     shrinkage: float = 50.0,
-    damping: float = 0.65,
-    tolerance: float = 1e-8,
-    max_iterations: int = 500,
+    damping: float = 1.0,
+    tolerance: float = 1e-7,
+    max_iterations: int = 2000,
 ) -> dict[str, Any]:
-    """Fit y = mean + offense(team) - defense(opponent) by alternating updates."""
+    """Fit y = mean + offense(team) - defense(opponent) by block coordinate descent.
+
+    Shrinkage makes the offense/defense solution identifiable and stabilizes sparse
+    schedules. Ratings are centered only after convergence; the intercept is shifted
+    by the same amount so fitted game values are unchanged.
+    """
+    if shrinkage < 0:
+        raise ValueError("shrinkage must be nonnegative")
+    if not 0 < damping <= 1:
+        raise ValueError("damping must be in (0, 1]")
+    if tolerance <= 0 or max_iterations < 1:
+        raise ValueError("tolerance and max_iterations must be positive")
+
     obs = _observations(rows, spec)
     if not obs:
-        return {"leagueMean": None, "offense": {}, "defense": {}, "iterations": 0, "converged": True, "maxDelta": 0.0}
+        return {
+            "leagueMean": None,
+            "offense": {},
+            "defense": {},
+            "iterations": 0,
+            "converged": True,
+            "maxDelta": 0.0,
+        }
 
     total_weight = sum(weight for *_, weight in obs)
     league_mean = sum(value * weight for _, _, value, weight in obs) / total_weight
@@ -95,10 +114,6 @@ def fit_metric_ratings(
             target = raw / (weight + shrinkage)
             new_defense[team] = defense[team] + damping * (target - defense[team])
 
-        off_mean = sum(new_offense.values()) / len(new_offense)
-        def_mean = sum(new_defense.values()) / len(new_defense)
-        new_offense = {team: value - off_mean for team, value in new_offense.items()}
-        new_defense = {team: value - def_mean for team, value in new_defense.items()}
         max_delta = max(
             max(abs(new_offense[t] - offense[t]) for t in teams),
             max(abs(new_defense[t] - defense[t]) for t in teams),
@@ -107,6 +122,14 @@ def fit_metric_ratings(
         if max_delta <= tolerance:
             converged = True
             break
+
+    # Center once after fitting. Shift the intercept to preserve every fitted value:
+    # mean + off - def == adjusted_mean + centered_off - centered_def.
+    off_mean = sum(offense.values()) / len(offense)
+    def_mean = sum(defense.values()) / len(defense)
+    offense = {team: value - off_mean for team, value in offense.items()}
+    defense = {team: value - def_mean for team, value in defense.items()}
+    league_mean = league_mean + off_mean - def_mean
 
     return {
         "leagueMean": league_mean,
@@ -152,6 +175,7 @@ def build_iterative_rating_snapshots(team_games: list[dict[str, Any]], season: i
                 snap[f"iterative{name}LeagueMean"] = result.get("leagueMean")
                 snap[f"iterative{name}Converged"] = bool(result.get("converged", True))
                 snap[f"iterative{name}Iterations"] = int(result.get("iterations", 0))
+                snap[f"iterative{name}MaxDelta"] = float(result.get("maxDelta", 0.0))
             out.append(snap)
         for game in partitions[key]:
             games_played[str(game.get("team"))] += 1
@@ -208,6 +232,12 @@ def iterative_ratings_audit(team_games: list[dict[str, Any]], rating_snapshots: 
     games = [r for r in team_games if r.get("season") == season]
     expected_keys = {(str(r.get("gameId")), r.get("team")) for r in games}
     actual_keys = {(str(r.get("gameId")), r.get("team")) for r in rating_snapshots}
+    nonconverged = [
+        (r.get("gameId"), r.get("team"), name, r.get(f"iterative{name}Iterations"), r.get(f"iterative{name}MaxDelta"))
+        for r in rating_snapshots
+        for name, *_ in SPECS
+        if r.get(f"iterative{name}Converged") is not True
+    ]
     checks = {
         "one_rating_snapshot_per_team_game": len(rating_snapshots) == len(games),
         "rating_keys_match_team_games": actual_keys == expected_keys,
@@ -217,9 +247,7 @@ def iterative_ratings_audit(team_games: list[dict[str, Any]], rating_snapshots: 
             == sum(1 for g in games if g.get("team") == r.get("team") and _pk(g) < _pk(r))
             for r in rating_snapshots
         ),
-        "all_reported_solvers_converged": all(
-            r.get(f"iterative{name}Converged") is True for r in rating_snapshots for name, *_ in SPECS
-        ),
+        "all_reported_solvers_converged": not nonconverged,
         "model_rows_preserved": len(model_rows) == len({str(r.get("gameId")) for r in games}),
     }
     return {
@@ -229,6 +257,8 @@ def iterative_ratings_audit(team_games: list[dict[str, Any]], rating_snapshots: 
         "model_rows": len(model_rows),
         "eligible_min3": sum(eligible_iterative_row(r, 3) for r in model_rows),
         "eligible_min4": sum(eligible_iterative_row(r, 4) for r in model_rows),
+        "nonconverged_solver_snapshots": len(nonconverged),
+        "worst_nonconverged": max(nonconverged, key=lambda x: float(x[4] or 0.0), default=None),
         "checks": checks,
     }
 
@@ -241,10 +271,13 @@ def concise(result: dict[str, Any]) -> str:
         f"Model rows: {result['model_rows']:,}",
         f"Eligible (3+ prior games each): {result['eligible_min3']:,}",
         f"Eligible (4+ prior games each): {result['eligible_min4']:,}",
+        f"Non-converged solver snapshots: {result['nonconverged_solver_snapshots']:,}",
         "",
         "Checks:",
     ]
     lines += [f"{name}: {'PASS' if ok else 'FAIL'}" for name, ok in result["checks"].items()]
+    if result.get("worst_nonconverged") is not None:
+        lines += ["", f"Worst non-converged: {result['worst_nonconverged']}"]
     return "\n".join(lines)
 
 
