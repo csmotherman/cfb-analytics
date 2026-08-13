@@ -35,13 +35,33 @@ It exists to prevent metric semantics from being reconstructed later from implem
 
 **Definition:** Existing Success-v1 clean-play definition used throughout the repository. Success is evaluated from down, distance, and canonical analytics yardage using the repository's locked success rules.
 
-**Production family includes:**
-- overall success rate
-- rush success rate
-- pass success rate
-- offense and defense/allowed mirrors
+**Production family includes:** overall, rush, pass, and offense/defense allowed mirrors.
 
 **Reconciliation:** offense and defense eligible/successful counts reconcile at team-game and team-season levels.
+
+### Explosiveness v1
+
+**Status:** LOCKED  
+**Level:** Play -> team-game -> team-season
+
+**Definition:** eligible canonical offensive scrimmage play is explosive when:
+- rush gains **10+ yards**; or
+- pass gains **20+ yards**.
+
+Eligible plays require usable canonical analytics yardage. Modified/no-play contexts are excluded. Sacks remain in the pass family but cannot satisfy the positive-yard explosive threshold.
+
+**Locked corpus:**
+- Explosive-eligible plays: **1,123,371**
+- Explosive plays: **135,981**
+- Corpus explosive-play rate: **12.10%**
+- Rush eligible: **584,220**
+- Rush explosive: **83,353** (**14.27%**)
+- Pass eligible: **539,151**
+- Pass explosive: **52,628** (**9.76%**)
+
+**Production family includes:** overall/rush/pass eligible counts, explosive counts, rates, and offense/defense allowed mirrors.
+
+**Production-lock audit guarantees:** overall and rush/pass locked corpus totals match materialized team-game output; rush + pass reconciles to overall; offense/defense mirrors reconcile; team-season counts reconcile to team-game counts; and all team-game/team-season offensive and defensive rates recompute exactly from their stored counts.
 
 ### Standard vs Passing Downs
 
@@ -49,18 +69,9 @@ It exists to prevent metric semantics from being reconstructed later from implem
 **Level:** Play -> team-game -> team-season  
 **Parent corpus:** Success-v1 eligible plays
 
-**Definition:**
-- Standard down = 1st down; 2nd-and-7 or less; 3rd/4th-and-4 or less.
-- Passing down = 2nd-and-8+; 3rd/4th-and-5+.
+**Definition:** Standard down = 1st down; 2nd-and-7 or less; 3rd/4th-and-4 or less. Passing down = 2nd-and-8+; 3rd/4th-and-5+.
 
-**Locked corpus:**
-- Standard downs: **771,009**
-- Standard-down successes: **369,375**
-- Passing downs: **351,978**
-- Passing-down successes: **109,140**
-- Unclassified eligible plays: **0**
-
-**Reconciliation:** standard + passing = Success-v1 eligible corpus exactly.
+**Locked corpus:** standard **771,009** / successes **369,375**; passing **351,978** / successes **109,140**; unclassified **0**.
 
 ### Third/Fourth-Down Conversions
 
@@ -69,33 +80,16 @@ It exists to prevent metric semantics from being reconstructed later from implem
 
 **Definition:** clean Success-v1 eligible 3rd/4th-down attempt converts when canonical yardage reaches/exceeds distance OR the offensive play is a touchdown.
 
-**Locked corpus:**
-- Third-down attempts: **227,848**
-- Third-down conversions: **92,882**
-- Fourth-down attempts: **28,189**
-- Fourth-down conversions: **15,408**
-
-**Known adjudication:** 24 late-down touchdowns had recorded yards below distance; forensic review supported treating offensive TD as a conversion.
+**Locked corpus:** third attempts **227,848**, conversions **92,882**; fourth attempts **28,189**, conversions **15,408**.
 
 ### Red-Zone / Goal-to-Go Play Efficiency
 
 **Status:** LOCKED  
-**Level:** Play -> team-game -> team-season  
-**Parent corpus:** Success-v1 eligible plays
+**Level:** Play -> team-game -> team-season
 
-**Field-position eligibility:** `1 <= yardsToGoal <= 100`. `yardsToGoal=0` is treated as a source-state artifact for field-position-dependent metrics only.
+Field-position eligibility is `1 <= yardsToGoal <= 100`; `yardsToGoal=0` is excluded as a source-state artifact for field-position metrics.
 
-**Definitions:**
-- Red zone = `1 <= yardsToGoal <= 20`.
-- Goal-to-go = red-zone snap with `distance >= yardsToGoal`.
-
-**Locked corpus:**
-- Field-position eligible plays: **1,122,857**
-- Field-state exclusions: **130**
-- Red-zone plays: **160,523**
-- Red-zone successes: **71,057**
-- Goal-to-go plays: **65,962**
-- Goal-to-go successes: **30,780**
+**Locked corpus:** field-position eligible **1,122,857**; exclusions **130**; red-zone plays **160,523**, successes **71,057**; goal-to-go plays **65,962**, successes **30,780**.
 
 ---
 
@@ -106,44 +100,18 @@ It exists to prevent metric semantics from being reconstructed later from implem
 **Status:** LOCKED  
 **Level:** Play -> team-game -> team-season
 
-**Definition:** clean negative rush or completed-pass play, excluding sacks and excluding only high-confidence structural kneels.
+**Definition:** clean negative rush or completed-pass play, excluding sacks and only high-confidence structural kneels.
 
-**Locked corpus:**
-- Structural TFL candidates: **69,544**
-- High-confidence kneels excluded: **1,089**
-- Production non-sack TFLs: **68,455**
-- Rush TFLs: **57,429**
-- Completed-pass TFLs: **11,026**
-
-**Kneel policy:** only HIGH-confidence sequence-supported kneels are excluded. Medium-confidence and terminal-only candidates remain TFL candidates unless stronger evidence exists.
+**Locked corpus:** candidates **69,544**; kneels excluded **1,089**; production TFLs **68,455**; rush **57,429**; completed-pass **11,026**.
 
 ### Havoc v1
 
 **Status:** LOCKED  
 **Level:** Play -> team-game -> team-season
 
-**Definition:** unique clean scrimmage play containing at least one of:
-- non-sack TFL
-- sack
-- validated interception
-- validated fumble lost
+**Definition:** unique clean scrimmage play containing non-sack TFL, sack, validated interception, or validated fumble lost. Turnovers are anchored to the possession-ending offensive scrimmage snap and each play counts once.
 
-Validated turnover events are anchored to the possession-ending offensive scrimmage snap. Each canonical play counts at most once.
-
-**Locked corpus:**
-- Eligible scrimmage plays: **1,145,091**
-- Unique havoc plays: **115,877**
-- Corpus havoc rate: **10.12%**
-- Non-sack TFL component: **68,455**
-- Sack component: **33,368**
-- Validated turnover component: **15,532**
-  - interceptions: **10,875**
-  - fumbles lost: **4,657**
-- Multi-component overlap plays: **1,478**
-- Unresolved turnover anchors: **0**
-- Turnover anchor collisions: **0**
-
-**Important:** component raw sums may exceed unique havoc plays because overlapping components count once in Havoc.
+**Locked corpus:** eligible **1,145,091**; havoc **115,877** (**10.12%**); TFL **68,455**; sacks **33,368**; validated turnovers **15,532** (INT **10,875**, fumbles lost **4,657**); multi-component overlaps **1,478**; unresolved anchors **0**; collisions **0**.
 
 ---
 
@@ -154,16 +122,13 @@ Validated turnover events are anchored to the possession-ending offensive scrimm
 **Status:** PARTIAL  
 **Level:** Possession/event foundation already used in Havoc and derived corpus
 
-**Locked corpus:**
-- Giveaways: **15,532**
-- Takeaways: **15,532**
-- Interceptions: **10,875**
-- Fumbles lost: **4,657**
-- Turnover-unresolved possessions: **2,489**
+**Locked corpus:** giveaways **15,532**; takeaways **15,532**; interceptions **10,875**; fumbles lost **4,657**; turnover-unresolved possessions **2,489**.
 
-**Production guarantees already present:** giveaway/takeaway reconciliation, interception reconciliation, fumble reconciliation, and turnover-margin sum-to-zero checks.
+**Current production fields:** `giveaways`, `interceptionsThrown`, `fumblesLost`, `turnoverResolvedPossessions`, `turnoverUnresolvedPossessions`, `takeaways`, `interceptionsMade`, `fumblesRecovered`, `takeawayResolvedPossessions`, `takeawayUnresolvedPossessions`, `turnoverMargin`, plus `turnoversDefinitionVersion`.
 
-**Still needed:** explicit registry/production review of exposed team-facing turnover rate fields and any per-possession denominator semantics.
+**Current definition:** direct interceptions and interception-return-only possessions are giveaways; opponent fumble recoveries/fumble-return TDs are fumbles lost; own recoveries are not giveaways; modified/nullified turnover contexts are excluded; unresolved fumble/miscellaneous/multiple-signal records remain unresolved rather than coerced.
+
+**Still needed:** dedicated current-corpus propagation audit of team-game/team-season counts and margins. Any turnover rate must have a separately documented denominator; unresolved possessions must not be silently counted as non-turnovers in a rate denominator without an explicit policy.
 
 ---
 
@@ -174,63 +139,28 @@ Validated turnover events are anchored to the possession-ending offensive scrimm
 **Status:** LOCKED FOUNDATION  
 **Validated possessions:** **208,725**
 
-This corpus underpins drive efficiency, red-zone possession efficiency, field position, turnover attribution, possession yardage, and other possession-level metrics.
-
 ### Drive Efficiency v1
 
 **Status:** LOCKED  
 **Level:** Possession -> team-game -> team-season
 
-**Locked corpus:**
-- Possessions: **208,725**
-- Touchdowns: **54,626**
-- Field goals: **19,673**
-- Empty possessions: **134,139**
-- Other scoring: **287**
-- Point-resolved possessions: **208,046**
-- Unresolved point possessions: **679**
-  - unresolved TD score: **392**
-  - ambiguous safety: **287**
-- Adjudicated possession points: **436,613**
-- Corpus points per resolved possession: **2.099**
-
-**Rate semantics:** TD/scoring rates use all validated possessions. Points per possession uses only point-resolved possessions unless unresolved points can be adjudicated without coercion.
+**Locked corpus:** possessions **208,725**; TD **54,626**; FG **19,673**; empty **134,139**; other scoring **287**; resolved **208,046**; unresolved **679**; adjudicated points **436,613**; points/resolved possession **2.099**.
 
 ### Red-Zone Possession Efficiency v1
 
 **Status:** LOCKED  
 **Level:** Possession -> team-game -> team-season
 
-**Definition:** validated possession that reaches opponent field position `1..20`, using locked Finishing Drives v2 outcome/point adjudication.
-
-**Locked corpus:**
-- Red-zone possessions: **62,740**
-- Touchdowns: **37,622**
-- Field goals: **14,118**
-- Empty: **10,997**
-- Other scoring: **3**
-- TD rate: **59.96%**
-- Scoring rate: **82.47%**
-- Point-resolved red-zone possessions: **62,491**
-- Unresolved point possessions: **249**
-- Adjudicated red-zone points: **302,507**
-- Points per resolved red-zone possession: **4.841**
+**Locked corpus:** red-zone possessions **62,740**; TD **37,622**; FG **14,118**; empty **10,997**; other **3**; TD rate **59.96%**; scoring rate **82.47%**; point-resolved **62,491**; unresolved **249**; points **302,507**; points/resolved RZ possession **4.841**.
 
 ### Possession Yardage v1
 
 **Status:** LOCKED  
 **Level:** Possession -> team-game -> team-season
 
-**Definition:** sum of clean canonical `isOffensivePlay` analytics yardage within each validated possession, attributed to the adjudicated drive offense. This is **not** net physical field-position advancement.
+**Definition:** sum of clean canonical `isOffensivePlay` analytics yardage within each validated possession, attributed to adjudicated drive offense; not net physical field-position advancement.
 
-**Locked corpus:**
-- Yardage possessions: **208,725**
-- Offensive possession-play yards: **6,730,747**
-- Corpus yards per possession: **32.247**
-- Exact drive-to-builder reconciliations: **208,725**
-- Drive-to-builder mismatches: **0**
-
-**Known source-label discrepancy:** raw offense-label-aligned yards differ from adjudicated-drive attribution by **1,045 yards** across **97 drives / 198 plays**. Production follows the validated drive-builder attribution.
+**Locked corpus:** possessions **208,725**; yards **6,730,747**; yards/possession **32.247**; exact builder reconciliations **208,725**; mismatches **0**.
 
 ---
 
@@ -241,121 +171,52 @@ This corpus underpins drive efficiency, red-zone possession efficiency, field po
 **Status:** COUNT ONLY  
 **Level:** Possession -> team-game -> team-season
 
-**Chronology:** canonical `driveNumber -> playNumber -> play ID` ordering is mandatory.
+**Strict event definition:** validated possession with exactly three clean offensive scrimmage snaps, exact `1 -> 2 -> 3`, no first-down reset, affirmative punt evidence, no turnover, and no scoring outcome.
 
-**Strict event definition:** validated possession with exactly three clean offensive scrimmage snaps, exact down sequence `1 -> 2 -> 3`, no first-down reset, affirmative punt evidence, no turnover, and no scoring outcome.
-
-**Locked corpus count:** **42,782**
-
-**Production fields:**
-- `threeAndOuts`
-- `threeAndOutsForced`
-
-**Intentionally not produced:** three-and-out rate.
-
-**Reason:** no denominator is production-locked. Start-first-down possession eligibility is contaminated by short possessions, end-of-period/game state, scoring/turnover terminations, and incomplete possession-exit evidence. The positive event count is safe; an inferred opportunity denominator is not.
+**Locked count:** **42,782**. Production fields: `threeAndOuts`, `threeAndOutsForced`. Rate intentionally absent because no opportunity denominator is locked.
 
 ### First-Down Generation v1
 
 **Status:** COUNT ONLY  
 **Level:** Play event -> team-game -> team-season
 
-**Chronology:** canonical chronology required for the reset-evidence branch.
+**Definition:** clean offensive scrimmage snap generates a first down when canonical yardage reaches/exceeds distance, OR it is an offensive TD, OR the chronology-locked next clean offensive snap resets to down 1.
 
-**Event definition:** a clean offensive scrimmage snap generates a first down when **any** of the following are true:
-1. canonical analytics yardage reaches/exceeds pre-snap distance;
-2. the play is an offensive touchdown;
-3. the chronology-locked next clean offensive snap resets to down 1.
-
-**Locked corpus count:** **364,597**
-
-**Evidence audit totals:**
-- Structural line-to-gain evidence: **345,475**
-- Touchdown evidence: **54,642**
-- Observed next-snap first-down reset: **299,359**
-- Multiple evidence signals: **334,546**
-- Structural-only events: **10,932**
-- Reset-only events: **19,045**
-- TD-only events: **74**
-
-**Production fields:**
-- `firstDownsGenerated`
-- `firstDownsAllowed`
-
-**Intentionally not produced:** first-down generation rate.
-
-**Reason:** the numerator is locked, but the denominator has not been separately defined and audited. Possible interpretations such as all plays, series opportunities, or another exposure measure are not interchangeable and must not be selected implicitly.
+**Locked count:** **364,597**. Production fields: `firstDownsGenerated`, `firstDownsAllowed`. Rate intentionally absent because denominator semantics are not locked.
 
 ---
 
-## Other locked derived corpus totals
+## Other reconciled derived corpus totals
 
-These totals are already reconciled in the derived team-game and team-season corpus and may support additional production metrics or future registry entries.
+These totals may support future registry entries but are not automatically production-locked metric families:
 
-- Explosive eligible plays: **1,123,371**
-- Explosive plays: **135,981**
 - Successful-play yards: **5,948,558**
 - Scoring opportunities: **104,648**
 - Adjudicated opportunity points: **383,991**
 - Unresolved point opportunities: **338**
 - Field-position eligible possessions: **208,725**
 
-**Checkpoint note:** the presence of reconciled corpus totals does not automatically mean every associated team-facing metric family is fully documented or production-complete. Those families should receive explicit registry entries as they are reviewed.
-
 ---
 
 ## Remaining core roadmap
 
-### Explosiveness
-
-**Status:** PARTIAL / NEEDS CHECKPOINT REVIEW
-
-The derived corpus already reconciles **1,123,371 explosive-eligible plays** and **135,981 explosive plays**, so explosiveness is not truly "not started." Before adding new logic, review the existing explosive definition, thresholds, rush/pass splits, allowed mirrors, and exposed team-game/team-season fields. If the current definition is satisfactory, document and lock it rather than rebuilding it.
-
 ### Team-Facing Turnover Metrics
-
-**Status:** PARTIAL
-
-The turnover event foundation is strong. Review what is already exposed in team-game/team-season outputs and lock useful fields such as giveaways, takeaways, interceptions, fumbles lost, and turnover margin. Define rate denominators separately if rates are desired.
+**Status:** PARTIAL — next checkpoint. Audit existing team-game/team-season giveaway/takeaway/INT/fumble/margin fields against the locked event corpus before adding rates.
 
 ### Sack / Dropback Metrics
-
-**Status:** NOT FULLY LOCKED AS A FAMILY
-
-Validated sacks already exist as a Havoc component (**33,368**). Needed work is denominator semantics: sacks, sacks allowed, and sack rates should use a validated dropback denominator rather than all pass plays unless explicitly defined otherwise.
+**Status:** NOT FULLY LOCKED AS A FAMILY. Validated sacks already exist (**33,368**); denominator semantics require a validated dropback definition.
 
 ### Basic Yardage Efficiency
-
-**Status:** NEEDS CHECKPOINT REVIEW
-
-Review current team-game/team-season fields for yards/play, rush yards/play, pass yards/play, and allowed mirrors before implementing duplicates. Any rates must be tied to a documented eligible-play denominator.
+**Status:** NEEDS CHECKPOINT REVIEW. Review existing yards/play and rush/pass efficiency fields before adding duplicates.
 
 ### Situational / Short-Yardage Metrics
-
-**Status:** NOT STARTED OR NOT YET REGISTRY-LOCKED
-
-Potential families:
-- early-down success
-- stuff rate
-- power/short-yardage success
-- field-position starts
-- plays per possession
-- drive duration, only if clock state is sufficiently reliable
+Potential families: early-down success, stuff rate, power/short-yardage success, field-position starts, plays per possession, drive duration if clock state is sufficiently reliable.
 
 ### Deferred Rate Denominators
-
-**Status:** FORENSIC ONLY
-
-- three-and-out rate
-- first-down generation rate
-
-Do not add these until the opportunity denominator is explicitly defined and independently audited.
+**FORENSIC ONLY:** three-and-out rate and first-down generation rate.
 
 ### EPA Layer
-
-**Status:** NOT STARTED
-
-EPA should come only after the non-EPA production corpus is stable. It requires an expected-points model with trustworthy field position, down, distance, clock, score state, and game context. EPA should be treated as a modeling project, not a simple derived column.
+**NOT STARTED.** Treat EPA as a later modeling project requiring trustworthy field position, down, distance, clock, score state, and game context.
 
 ---
 
@@ -363,13 +224,13 @@ EPA should come only after the non-EPA production corpus is stable. It requires 
 
 Whenever a production metric is added or its definition changes:
 
-1. Run a forensic audit before propagation when the source semantics are not trivially safe.
+1. Run a forensic audit before propagation when source semantics are not trivially safe.
 2. Lock the corpus total or denominator where appropriate.
 3. Propagate to team-game and team-season.
 4. Require offense/defense reconciliation when applicable.
 5. Require team-season totals to reconcile to team-game totals.
-6. Record the metric's definition version in output where practical.
+6. Record the metric definition version where practical.
 7. Update this registry in the same change set or immediately afterward.
 8. Never silently change a denominator or semantic definition under an existing version label.
 
-This file is a checkpoint contract, not a wishlist. A metric marked LOCKED should be reproducible from the repository and should retain its documented meaning until deliberately versioned.
+This file is a checkpoint contract, not a wishlist. A metric marked LOCKED should be reproducible from the repository and retain its documented meaning until deliberately versioned.
