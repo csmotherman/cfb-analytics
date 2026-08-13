@@ -2,10 +2,13 @@ import pytest
 
 from cfb_analytics.analytics.iterative_ratings import (
     ITERATIVE_FEATURES,
+    SRS_VERSION,
     build_iterative_model_dataset,
     build_iterative_rating_snapshots,
+    build_srs_model_dataset,
     eligible_iterative_row,
     fit_metric_ratings,
+    fit_srs,
 )
 
 
@@ -19,6 +22,19 @@ def _game(team, opponent, week, game_id, made, attempts):
         "opponent": opponent,
         "successfulPlays": made,
         "successEligiblePlays": attempts,
+    }
+
+
+def _result(home, away, week, game_id, margin):
+    return {
+        "season": 2025,
+        "seasonType": "regular",
+        "week": week,
+        "gameId": game_id,
+        "homeTeam": home,
+        "awayTeam": away,
+        "target_margin": float(margin),
+        "target_homeWin": 1 if margin > 0 else 0 if margin < 0 else None,
     }
 
 
@@ -117,3 +133,52 @@ def test_model_edges_use_offense_minus_opposing_defensive_strength():
     assert rows[0]["home_iterativeSuccessEdge"] == pytest.approx(0.04)
     assert rows[0]["away_iterativeSuccessEdge"] == pytest.approx(-0.05)
     assert rows[0]["target_margin"] == 7.0
+
+
+def test_srs_three_team_least_squares_example():
+    rows = [
+        _result("MICH", "OSU", 1, "g1", 10),
+        _result("MICH", "PSU", 2, "g2", 4),
+        _result("OSU", "PSU", 3, "g3", 2),
+    ]
+    result = fit_srs(rows)
+    ratings = result["ratings"]
+    assert result["version"] == SRS_VERSION
+    assert sum(ratings.values()) == pytest.approx(0.0, abs=1e-8)
+    assert ratings["MICH"] == pytest.approx(14 / 3, abs=1e-6)
+    assert ratings["OSU"] == pytest.approx(-8 / 3, abs=1e-6)
+    assert ratings["PSU"] == pytest.approx(-2.0, abs=1e-6)
+    assert ratings["MICH"] > ratings["PSU"] > ratings["OSU"]
+
+
+def test_srs_same_week_isolation_and_edge_contract():
+    rows = [
+        _result("A", "B", 1, "g1", 10),
+        _result("A", "C", 2, "g2", 4),
+        _result("B", "C", 2, "g3", 2),
+        _result("A", "B", 3, "g4", 1),
+    ]
+    out = build_srs_model_dataset(rows, 2025)
+    week2 = [r for r in out if r["week"] == 2]
+    assert len(week2) == 2
+    assert all(r["srsGamesBefore"] == 1 for r in week2)
+    week3 = next(r for r in out if r["gameId"] == "g4")
+    assert week3["srsVersion"] == SRS_VERSION
+    assert week3["srsEdge"] == pytest.approx(week3["homeSrs"] - week3["awaySrs"])
+
+
+def test_future_result_does_not_change_prior_srs_snapshot():
+    base = [
+        _result("A", "B", 1, "g1", 7),
+        _result("A", "C", 2, "g2", 3),
+        _result("B", "C", 2, "g3", 1),
+        _result("A", "B", 3, "g4", 0),
+    ]
+    future = base + [_result("C", "A", 4, "g5", 40)]
+    first = build_srs_model_dataset(base, 2025)
+    second = build_srs_model_dataset(future, 2025)
+    g4_first = next(r for r in first if r["gameId"] == "g4")
+    g4_second = next(r for r in second if r["gameId"] == "g4")
+    assert g4_first["homeSrs"] == pytest.approx(g4_second["homeSrs"])
+    assert g4_first["awaySrs"] == pytest.approx(g4_second["awaySrs"])
+    assert g4_first["srsEdge"] == pytest.approx(g4_second["srsEdge"])
