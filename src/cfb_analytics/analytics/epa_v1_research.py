@@ -1,18 +1,10 @@
-"""Independent Expected Points / EPA v1 research model.
+"""Independent Expected Points / EPA research models.
 
-This module deliberately does not use CFBD ``ppa`` for training. PPA is an
-external benchmark only.
+CFBD ``ppa`` is never used for training. It is an external benchmark only.
 
-EPA v1 research scope:
-- regulation only (periods 1-4)
-- state = down, distance, yards to goal, seconds remaining in half
-- target = realized net points for the current offense from the recorded state
-  through the end of the half
-- expected points = hierarchical empirical mean with minimum-sample backoff
-- play EPA = scoreboard change + signed next-state EP - current-state EP
-
-Score timing (whether a play row describes the state before or after the play)
-must be audited from the local corpus before play-level PPA comparison is trusted.
+v1 uses realized net points through the end of the half as the EP target.
+v2 uses the next observed scoring value before halftime and aligns score changes
+with the scoring play row, based on the corpus score-timing audit.
 """
 from __future__ import annotations
 from collections import defaultdict
@@ -22,6 +14,7 @@ from typing import Any
 from cfb_analytics.raw.sequence import _candidate_sort_key
 
 EPA_RESEARCH_VERSION = "epa-v1-research-empirical"
+EPA_V2_RESEARCH_VERSION = "epa-v2-research-next-score"
 
 
 def _num(v: Any) -> bool:
@@ -115,7 +108,7 @@ def _game_groups(plays):
 
 
 def training_examples(plays):
-    """Yield (play, realized future net points to end of half)."""
+    """Yield v1 ``(play, realized future net points to end of half)``."""
     for rows in _game_groups(plays).values():
         finals = {}
         for p in rows:
@@ -171,7 +164,7 @@ def scoreboard_delta(a, b, offense):
 
 
 def transition_epa(start, end, model):
-    """EPA for a start->end recorded-state transition, from start offense view."""
+    """v1 EPA for a recorded-state transition, from start offense view."""
     ep0, ep1 = model.predict(start), model.predict(end)
     if ep0 is None or ep1 is None:
         return None
@@ -224,6 +217,7 @@ def pearson(xs, ys):
 
 
 def compare_to_ppa(train_plays, validation_plays, score_timing="pre", min_count=50):
+    """Benchmark v1 against CFBD PPA."""
     model = EmpiricalExpectedPoints(min_count=min_count).fit(train_plays)
     ours, source = [], []
     for rows in _game_groups(validation_plays).values():
@@ -254,3 +248,166 @@ def compare_to_ppa(train_plays, validation_plays, score_timing="pre", min_count=
         "mean_epa": sum(ours) / n if n else None,
         "mean_ppa": sum(source) / n if n else None,
     }
+
+
+# EPA v2: next-score target and scoring-row point alignment.
+
+def _same_half(a: dict[str, Any], b: dict[str, Any]) -> bool:
+    ha, hb = half_number(a), half_number(b)
+    return ha is not None and ha == hb
+
+
+def _score_delta_for_offense(a: dict[str, Any], b: dict[str, Any], offense: Any) -> float | None:
+    sa, sb = oriented_score(a), oriented_score(b)
+    if sa is None or sb is None:
+        return None
+    hd, ad = sb[0] - sa[0], sb[1] - sa[1]
+    home, away = b.get("home"), b.get("away")
+    if offense == home:
+        return float(hd - ad)
+    if offense == away:
+        return float(ad - hd)
+    return None
+
+
+def next_score_examples(plays):
+    """Yield v2 ``(play, next scoring value before end of half)``.
+
+    Score changes entering a row are treated as belonging to that row because
+    the full-corpus timing audit overwhelmingly supports that alignment.
+    """
+    for rows in _game_groups(plays).values():
+        states = [p for p in rows if state_eligible(p)]
+        for i, play in enumerate(states):
+            offense = play.get("offense")
+            if i > 0 and _same_half(states[i - 1], play):
+                entering = _score_delta_for_offense(states[i - 1], play, offense)
+                if entering:
+                    yield play, float(entering)
+                    continue
+            target = 0.0
+            for j in range(i + 1, len(states)):
+                nxt = states[j]
+                if not _same_half(play, nxt):
+                    break
+                delta = _score_delta_for_offense(states[j - 1], nxt, offense)
+                if delta:
+                    target = float(delta)
+                    break
+            yield play, target
+
+
+class NextScoreExpectedPoints:
+    def __init__(self, min_count: int = 50):
+        self.min_count = min_count
+        self.stats = defaultdict(lambda: [0, 0.0])
+
+    def fit(self, plays):
+        for p, target in next_score_examples(plays):
+            for key in state_keys(p):
+                self.stats[key][0] += 1
+                self.stats[key][1] += target
+        return self
+
+    def predict(self, play):
+        if not state_eligible(play):
+            return None
+        keys = state_keys(play)
+        for i, key in enumerate(keys):
+            n, total = self.stats.get(key, (0, 0.0))
+            if n >= self.min_count or (i == len(keys) - 1 and n):
+                return total / n
+        return None
+
+
+def play_epa_v2(previous, play, next_play, model):
+    """EPA v2 for ``play`` using scoring-row point alignment."""
+    ep0, ep1 = model.predict(play), model.predict(next_play)
+    if ep0 is None or ep1 is None:
+        return None
+    offense = play.get("offense")
+    points = 0.0
+    if previous is not None and _same_half(previous, play):
+        observed = _score_delta_for_offense(previous, play, offense)
+        if observed is not None:
+            points = observed
+    sign = 1.0 if next_play.get("offense") == offense else -1.0
+    return points + sign * ep1 - ep0
+
+
+def compare_v2_to_ppa(train_plays, validation_plays, min_count=50):
+    model = NextScoreExpectedPoints(min_count=min_count).fit(train_plays)
+    ours, source = [], []
+    for rows in _game_groups(validation_plays).values():
+        states = [p for p in rows if state_eligible(p)]
+        for i in range(len(states) - 1):
+            play = states[i]
+            if play.get("isScrimmagePlay") is not True or play.get("isOffensivePlay") is not True or play.get("hasNoPlayContext"):
+                continue
+            if not _num(play.get("ppa")):
+                continue
+            previous = states[i - 1] if i > 0 else None
+            epa = play_epa_v2(previous, play, states[i + 1], model)
+            if epa is None:
+                continue
+            ours.append(float(epa)); source.append(float(play["ppa"]))
+    n = len(ours)
+    return {
+        "version": EPA_V2_RESEARCH_VERSION,
+        "comparison_plays": n,
+        "correlation": pearson(ours, source),
+        "mae": sum(abs(a - b) for a, b in zip(ours, source)) / n if n else None,
+        "mean_epa": sum(ours) / n if n else None,
+        "mean_ppa": sum(source) / n if n else None,
+    }
+
+
+def main(argv=None):
+    import argparse
+    import json
+    from pathlib import Path
+    from cfb_analytics.raw.audit import discover_partitions
+    from cfb_analytics.canonical.materialize import canonical_partition_dir
+
+    parser = argparse.ArgumentParser(description="Independent EPA research benchmarks")
+    parser.add_argument("command", choices=("compare",))
+    parser.add_argument("--validation-season", type=int, default=2025)
+    parser.add_argument("--min-count", type=int, default=50)
+    parser.add_argument("--raw-root", type=Path, default=Path("data/raw"))
+    parser.add_argument("--processed-root", type=Path, default=Path("data/processed"))
+    args = parser.parse_args(argv)
+
+    seasons = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
+
+    def load(selected):
+        out = []
+        for season in selected:
+            for st, w in discover_partitions(args.raw_root, season):
+                path = canonical_partition_dir(args.processed_root, season, st, w) / "plays.json"
+                out.extend(json.loads(path.read_text()))
+        return out
+
+    validation = load((args.validation_season,))
+    train = load(tuple(s for s in seasons if s != args.validation_season))
+    v1 = compare_to_ppa(train, validation, "pre", args.min_count)
+    v2 = compare_v2_to_ppa(train, validation, args.min_count)
+
+    print(f"EPA RESEARCH HOLDOUT COMPARISON: {args.validation_season}")
+    print()
+    for label, result in (("V1 END-HALF", v1), ("V2 NEXT-SCORE", v2)):
+        print(label)
+        print(f"Version: {result['version']}")
+        print(f"Comparison plays: {result['comparison_plays']:,}")
+        print(f"Correlation vs PPA: {result['correlation']:.6f}")
+        print(f"MAE vs PPA: {result['mae']:.6f}")
+        print(f"Mean EPA: {result['mean_epa']:.6f}")
+        print(f"Mean PPA: {result['mean_ppa']:.6f}")
+        print()
+    if v1["correlation"] is not None and v2["correlation"] is not None:
+        print(f"Correlation delta (v2-v1): {v2['correlation'] - v1['correlation']:+.6f}")
+    if v1["mae"] is not None and v2["mae"] is not None:
+        print(f"MAE delta (v2-v1): {v2['mae'] - v1['mae']:+.6f}")
+
+
+if __name__ == "__main__":
+    main()
