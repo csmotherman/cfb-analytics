@@ -95,11 +95,10 @@ def _oriented_score(p):
  if off==away:return float(ds),float(os)
  return None
 
-def game_contexts(processed_root,season):
+def game_contexts(raw_root,processed_root,season):
  out={}
- for st,w in discover_partitions(Path("data/raw"),season):
-  path=canonical_partition_dir(processed_root,season,st,w)/"plays.json"
-  rows=json.loads(path.read_text());by=defaultdict(list)
+ for st,w in discover_partitions(raw_root,season):
+  path=canonical_partition_dir(processed_root,season,st,w)/"plays.json";rows=json.loads(path.read_text());by=defaultdict(list)
   for p in rows:by[str(p.get("gameId"))].append(p)
   for gid,gp in by.items():
    gp=sorted(gp,key=_candidate_sort_key);home=next((p.get("home") for p in gp if p.get("home")),None);away=next((p.get("away") for p in gp if p.get("away")),None);score=None
@@ -140,7 +139,7 @@ def materialize_pregame_season(raw_root,processed_root,season):
 def materialize_matchup_season(raw_root,processed_root,season):
  games=load_team_games(raw_root,processed_root,season);snaps=build_pregame_snapshots(games,season);rows=build_matchup_features(snaps,season);p=processed_root/"derived"/"matchups"/f"season={season}"/"game_matchups.json";p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(rows,ensure_ascii=False,separators=(",",":")));return {**matchup_feature_audit(snaps,rows,season),"path":str(p)}
 def materialize_model_dataset(raw_root,processed_root,season):
- games=load_team_games(raw_root,processed_root,season);snaps=build_pregame_snapshots(games,season);matchups=build_matchup_features(snaps,season);contexts=game_contexts(processed_root,season);rows=build_model_dataset(matchups,contexts,season);p=processed_root/"derived"/"model"/f"season={season}"/"games.json";p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(rows,ensure_ascii=False,separators=(",",":")));return {**model_dataset_audit(matchups,contexts,rows,season),"path":str(p)}
+ games=load_team_games(raw_root,processed_root,season);snaps=build_pregame_snapshots(games,season);matchups=build_matchup_features(snaps,season);contexts=game_contexts(raw_root,processed_root,season);rows=build_model_dataset(matchups,contexts,season);p=processed_root/"derived"/"model"/f"season={season}"/"games.json";p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(rows,ensure_ascii=False,separators=(",",":")));return {**model_dataset_audit(matchups,contexts,rows,season),"path":str(p)}
 def main():
  import argparse;p=argparse.ArgumentParser();p.add_argument("command",choices=("pregame","matchups","model"),nargs="?",default="pregame");p.add_argument("--season",type=int,default=2025);p.add_argument("--raw-root",type=Path,default=Path("data/raw"));p.add_argument("--processed-root",type=Path,default=Path("data/processed"));a=p.parse_args();r=materialize_model_dataset(a.raw_root,a.processed_root,a.season) if a.command=="model" else materialize_matchup_season(a.raw_root,a.processed_root,a.season) if a.command=="matchups" else materialize_pregame_season(a.raw_root,a.processed_root,a.season);print(concise_model_dataset_audit(r) if a.command=="model" else concise_matchup_feature_audit(r) if a.command=="matchups" else concise_pregame_snapshot_audit(r))
 if __name__=="__main__":main()
