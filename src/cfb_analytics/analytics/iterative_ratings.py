@@ -1,4 +1,4 @@
-"""Leakage-safe iterative offense/defense ratings over the pregame schedule graph."""
+"""Leakage-safe schedule-graph ratings and least-squares SRS features."""
 from __future__ import annotations
 
 import argparse
@@ -19,6 +19,8 @@ from cfb_analytics.derived.pregame import (
 )
 
 ITERATIVE_RATINGS_VERSION = "iterative-ratings-v2-directional"
+SRS_VERSION = "srs-v1-least-squares"
+SRS_FEATURES = ("srsEdge",)
 
 SPECS = (
     ("Success", "successfulPlays", "successEligiblePlays"),
@@ -38,6 +40,97 @@ ITERATIVE_FEATURES = tuple(
 
 def _num(value: Any) -> bool:
     return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(float(value))
+
+
+def _solve_linear(a: list[list[float]], b: list[float]) -> list[float] | None:
+    """Dependency-free Gaussian elimination with partial pivoting."""
+    n = len(b)
+    matrix = [list(map(float, a[i])) + [float(b[i])] for i in range(n)]
+    for col in range(n):
+        pivot = max(range(col, n), key=lambda i: abs(matrix[i][col]))
+        if abs(matrix[pivot][col]) < 1e-12:
+            return None
+        matrix[col], matrix[pivot] = matrix[pivot], matrix[col]
+        divisor = matrix[col][col]
+        matrix[col] = [value / divisor for value in matrix[col]]
+        for row in range(n):
+            if row == col:
+                continue
+            factor = matrix[row][col]
+            if factor:
+                matrix[row] = [
+                    matrix[row][j] - factor * matrix[col][j]
+                    for j in range(n + 1)
+                ]
+    return [matrix[i][-1] for i in range(n)]
+
+
+def fit_srs(rows: list[dict[str, Any]], ridge: float = 1e-8) -> dict[str, Any]:
+    """Fit team ratings from completed home-minus-away margins by least squares.
+
+    Each game contributes +1 for the home team and -1 for the away team. A tiny
+    ridge term makes disconnected early-season schedule components numerically
+    identifiable; ratings are centered to mean zero after fitting.
+    """
+    if ridge < 0:
+        raise ValueError("ridge must be nonnegative")
+    games = [
+        row for row in rows
+        if row.get("homeTeam") and row.get("awayTeam") and _num(row.get("target_margin"))
+    ]
+    teams = sorted({str(r["homeTeam"]) for r in games} | {str(r["awayTeam"]) for r in games})
+    if not games or not teams:
+        return {"ratings": {}, "games": 0, "teams": 0, "version": SRS_VERSION}
+
+    index = {team: i for i, team in enumerate(teams)}
+    n = len(teams)
+    ata = [[0.0] * n for _ in range(n)]
+    atb = [0.0] * n
+    for game in games:
+        home = index[str(game["homeTeam"])]
+        away = index[str(game["awayTeam"])]
+        margin = float(game["target_margin"])
+        ata[home][home] += 1.0
+        ata[away][away] += 1.0
+        ata[home][away] -= 1.0
+        ata[away][home] -= 1.0
+        atb[home] += margin
+        atb[away] -= margin
+    for i in range(n):
+        ata[i][i] += ridge
+
+    solved = _solve_linear(ata, atb)
+    if solved is None:
+        return {"ratings": {}, "games": len(games), "teams": n, "version": SRS_VERSION}
+    mean = sum(solved) / n
+    ratings = {team: solved[index[team]] - mean for team in teams}
+    return {"ratings": ratings, "games": len(games), "teams": n, "version": SRS_VERSION}
+
+
+def build_srs_model_dataset(base_rows: list[dict[str, Any]], season: int, ridge: float = 1e-8) -> list[dict[str, Any]]:
+    """Attach pregame SRS ratings using only partitions strictly before each game."""
+    rows = [r for r in base_rows if r.get("season") == season]
+    partitions: dict[tuple[int, int], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        partitions[_pk(row)].append(row)
+
+    history: list[dict[str, Any]] = []
+    out: list[dict[str, Any]] = []
+    for key in sorted(partitions):
+        fitted = fit_srs(history, ridge=ridge)
+        ratings = fitted["ratings"]
+        for base in partitions[key]:
+            row = dict(base)
+            home = ratings.get(str(base.get("homeTeam")))
+            away = ratings.get(str(base.get("awayTeam")))
+            row["srsVersion"] = SRS_VERSION
+            row["homeSrs"] = home
+            row["awaySrs"] = away
+            row["srsEdge"] = float(home) - float(away) if _num(home) and _num(away) else None
+            row["srsGamesBefore"] = len(history)
+            out.append(row)
+        history.extend(partitions[key])
+    return out
 
 
 def _observations(rows: list[dict[str, Any]], spec: tuple[str, str, str]) -> list[tuple[str, str, float, float]]:
@@ -62,12 +155,7 @@ def fit_metric_ratings(
     tolerance: float = 1e-7,
     max_iterations: int = 2000,
 ) -> dict[str, Any]:
-    """Fit y = mean + offense(team) - defense(opponent) by block coordinate descent.
-
-    Shrinkage makes the offense/defense solution identifiable and stabilizes sparse
-    schedules. Ratings are centered only after convergence; the intercept is shifted
-    by the same amount so fitted game values are unchanged.
-    """
+    """Fit y = mean + offense(team) - defense(opponent) by block coordinate descent."""
     if shrinkage < 0:
         raise ValueError("shrinkage must be nonnegative")
     if not 0 < damping <= 1:
@@ -248,6 +336,7 @@ def iterative_ratings_audit(team_games: list[dict[str, Any]], rating_snapshots: 
         ),
         "all_reported_solvers_converged": not nonconverged,
         "model_rows_preserved": len(model_rows) == len({str(r.get("gameId")) for r in games}),
+        "srs_version_present": all(r.get("srsVersion") == SRS_VERSION for r in model_rows),
     }
     return {
         "status": "PASS" if all(checks.values()) else "REVIEW",
@@ -256,6 +345,7 @@ def iterative_ratings_audit(team_games: list[dict[str, Any]], rating_snapshots: 
         "model_rows": len(model_rows),
         "eligible_min3": sum(eligible_iterative_row(r, 3) for r in model_rows),
         "eligible_min4": sum(eligible_iterative_row(r, 4) for r in model_rows),
+        "srs_available_rows": sum(_num(r.get("srsEdge")) for r in model_rows),
         "nonconverged_solver_snapshots": len(nonconverged),
         "worst_nonconverged": max(nonconverged, key=lambda x: float(x[4] or 0.0), default=None),
         "checks": checks,
@@ -264,12 +354,13 @@ def iterative_ratings_audit(team_games: list[dict[str, Any]], rating_snapshots: 
 
 def concise(result: dict[str, Any]) -> str:
     lines = [
-        f"ITERATIVE RATINGS v2 DIRECTIONAL AUDIT: {result['status']}",
+        f"ITERATIVE RATINGS v2 + SRS v1 AUDIT: {result['status']}",
         f"Season: {result['season']}",
         f"Rating snapshot rows: {result['rating_snapshot_rows']:,}",
         f"Model rows: {result['model_rows']:,}",
         f"Eligible (3+ prior games each): {result['eligible_min3']:,}",
         f"Eligible (4+ prior games each): {result['eligible_min4']:,}",
+        f"Rows with SRS edge: {result['srs_available_rows']:,}",
         f"Non-converged solver snapshots: {result['nonconverged_solver_snapshots']:,}",
         "",
         "Checks:",
@@ -285,8 +376,9 @@ def materialize_iterative_model_dataset(raw_root: Path, processed_root: Path, se
     pregame = build_pregame_snapshots(games, season)
     matchups = build_matchup_features(pregame, season)
     base = build_model_dataset(matchups, game_contexts(raw_root, processed_root, season), season)
+    base_with_srs = build_srs_model_dataset(base, season)
     ratings = build_iterative_rating_snapshots(games, season)
-    rows = build_iterative_model_dataset(base, ratings, season)
+    rows = build_iterative_model_dataset(base_with_srs, ratings, season)
     path = processed_root / "derived" / "iterative_ratings" / f"season={season}" / "games.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(rows, ensure_ascii=False, separators=(",", ":")))
