@@ -1,18 +1,24 @@
 """Deterministic Dropback v1 production-candidate classifier.
 
-Evidence classes:
+Standard play-record evidence:
 - PASS_COMPLETION
 - PASS_INCOMPLETE
 - PASS_TD
 - SACK
-- exactly one explicit INTERCEPTION attempt per validated interception possession
+- canonical eligible INTERCEPTION
 
-The interception rule is possession-adjudicated because standalone explicit
-INTERCEPTION source records are not reliably marked offensive/scrimmage and may
-also exist outside validated interception possessions. They therefore must not
-be counted globally as ordinary canonical play records.
+Validated interception possessions that already contain any standard dropback
+evidence are not altered: their intercepted throw may be represented by a
+canonical pass-family record and possession-level turnover anchors are not
+literal play-attempt identifiers.
 
-No-play and two-point contexts are excluded. PASS_UNSPECIFIED is not promoted.
+Recovery is intentionally narrow. Only validated interception possessions with
+ZERO standard taxonomy evidence are eligible for one synthetic/recovered INT
+attempt, and only when an explicit INTERCEPTION-text source record exists in
+that same drive. This is the exact residual population established by the
+missing-interception forensic.
+
+No-play/two-point contexts remain excluded. PASS_UNSPECIFIED is not promoted.
 Candidate only; no propagation here.
 """
 from __future__ import annotations
@@ -21,24 +27,19 @@ from cfb_analytics.analytics.dropback_taxonomy_forensics import _text,evidence_c
 from cfb_analytics.analytics.havoc import turnover_play_ids
 
 DROPBACK_VERSION="dropback-v1-candidate"
+VALID_CLASSES=("PASS_COMPLETION","PASS_INCOMPLETE","PASS_TD","INTERCEPTION","SACK")
 
 def _two_point(p):
     t=_text(p)
     return "TWO_POINT" in t or "TWO POINT" in t or "2PT" in t
 
-def _explicit_interception_record(p):
-    # State-transition-modified interception records are valid evidence just as
-    # modified completions/incompletions/sacks are retained in the candidate.
-    # Only true no-play/nullified and two-point contexts are excluded.
+def _explicit_interception_text(p):
     if p.get("hasNoPlayContext") or p.get("isNoPlay") or _two_point(p): return False
-    s=str(p.get("eventSubtype") or "").upper();src=str(p.get("sourcePlayType") or p.get("playType") or "").upper()
-    return s=="INTERCEPTION" or src=="INTERCEPTION"
+    return "INTERCEPTION" in _text(p)
 
 def classify_standard_dropback(p):
     cls=evidence_class(p)
-    # INTERCEPTION is intentionally excluded from global play-record counting.
-    # It is counted once per validated interception possession below.
-    return cls if cls in ("PASS_COMPLETION","PASS_INCOMPLETE","PASS_TD","SACK") else None
+    return cls if cls in VALID_CLASSES else None
 
 def audit_candidate(plays,drives):
     c=Counter();by_drive=defaultdict(list)
@@ -54,31 +55,39 @@ def audit_candidate(plays,drives):
         rows=by_drive[(str(d.get("gameId")),str(d.get("driveId")))]
         if not any(id(p) in turn_ids and outcomes.get(id(p))=="INTERCEPTION" for p in rows):continue
         c["validated_interception_possessions"]+=1
-        explicit=[p for p in rows if _explicit_interception_record(p)]
+        standard=[p for p in rows if classify_standard_dropback(p) in VALID_CLASSES]
+        if standard:
+            c["validated_int_possessions_with_standard_evidence"]+=1
+            continue
+        c["validated_int_residual_possessions"]+=1
+        explicit=[p for p in rows if _explicit_interception_text(p)]
         if explicit:
-            # Exactly one interception attempt per validated interception possession.
-            # Chronology is not needed for the count; duplicates are surfaced.
-            chosen=explicit[-1];recovered_ids.add(id(chosen));c["interception_attempts"]+=1
+            c["residual_possessions_with_explicit_int"]+=1
+            c["recovered_interception_attempts"]+=1
+            recovered_ids.add(id(explicit[-1]))
             if len(explicit)>1:c["duplicate_interception_record_possessions"]+=1
         else:
-            c["validated_int_without_explicit_record"]+=1
-    c["candidate_dropbacks"]=c["standard_dropbacks"]+c["interception_attempts"]
+            c["validated_int_residual_without_explicit_record"]+=1
+    c["candidate_dropbacks"]=c["standard_dropbacks"]+c["recovered_interception_attempts"]
+    c["candidate_interceptions"]=c["interception"]+c["recovered_interception_attempts"]
     c["turnover_anchor_unresolved"]=unresolved;c["turnover_anchor_collisions"]=collisions
     return {"counts":dict(c),"recovered_ids":recovered_ids}
 
 def merge(results):
     c=Counter();ids=set()
     for r in results:c.update(r["counts"]);ids.update(r["recovered_ids"])
-    c["candidate_dropbacks"]=c["standard_dropbacks"]+c["interception_attempts"]
+    c["candidate_dropbacks"]=c["standard_dropbacks"]+c["recovered_interception_attempts"]
+    c["candidate_interceptions"]=c["interception"]+c["recovered_interception_attempts"]
     return {"counts":dict(c),"recovered_ids":ids}
 
 def concise(r):
     c=r["counts"];db=c.get("candidate_dropbacks",0)
     checks={
-      "validated_interceptions_all_have_explicit_evidence":c.get("validated_int_without_explicit_record",0)==0,
-      "interception_attempts_match_validated_possessions":c.get("interception_attempts",0)==c.get("validated_interception_possessions",0),
+      "validated_interception_partition_reconciles":c.get("validated_interception_possessions",0)==c.get("validated_int_possessions_with_standard_evidence",0)+c.get("validated_int_residual_possessions",0),
+      "all_residual_int_possessions_have_explicit_evidence":c.get("validated_int_residual_without_explicit_record",0)==0,
+      "recovered_attempts_match_residual_population":c.get("recovered_interception_attempts",0)==c.get("validated_int_residual_possessions",0),
       "sacks_match_locked_havoc_corpus":c.get("sack",0)==33368,
-      "dropback_components_reconcile":db==c.get("pass_completion",0)+c.get("pass_incomplete",0)+c.get("pass_td",0)+c.get("sack",0)+c.get("interception_attempts",0),
+      "dropback_components_reconcile":db==c.get("pass_completion",0)+c.get("pass_incomplete",0)+c.get("pass_td",0)+c.get("interception",0)+c.get("sack",0)+c.get("recovered_interception_attempts",0),
     }
     lines=[
       f"DROPBACK v1 PRODUCTION-CANDIDATE AUDIT: {'PASS' if all(checks.values()) else 'REVIEW'}",
@@ -86,15 +95,20 @@ def concise(r):
       f"  PASS_COMPLETION: {c.get('pass_completion',0):,}",
       f"  PASS_INCOMPLETE: {c.get('pass_incomplete',0):,}",
       f"  PASS_TD: {c.get('pass_td',0):,}",
-      f"  INTERCEPTION attempts (validated possessions): {c.get('interception_attempts',0):,}",
+      f"  canonical INTERCEPTION records: {c.get('interception',0):,}",
+      f"  recovered residual INT attempts: {c.get('recovered_interception_attempts',0):,}",
+      f"  total classified INT attempts: {c.get('candidate_interceptions',0):,}",
       f"  SACK: {c.get('sack',0):,}",
       f"Validated interception possessions: {c.get('validated_interception_possessions',0):,}",
-      f"Duplicate-INT-record possessions deduplicated: {c.get('duplicate_interception_record_possessions',0):,}",
-      f"Validated INT possessions still without explicit INT record: {c.get('validated_int_without_explicit_record',0):,}",
+      f"  with standard dropback evidence: {c.get('validated_int_possessions_with_standard_evidence',0):,}",
+      f"  zero-standard-evidence residual: {c.get('validated_int_residual_possessions',0):,}",
+      f"  residual with explicit INT evidence: {c.get('residual_possessions_with_explicit_int',0):,}",
+      f"  residual without explicit INT evidence: {c.get('validated_int_residual_without_explicit_record',0):,}",
+      f"Duplicate residual INT-record possessions deduplicated: {c.get('duplicate_interception_record_possessions',0):,}",
       f"Candidate sack rate: {c.get('sack',0)/db:.2%}" if db else "Candidate sack rate: n/a",
       "",
       "Checks:",
     ]
     lines.extend(f"{'PASS' if ok else 'FAIL'} {name}" for name,ok in checks.items())
-    lines += ["","PASS_UNSPECIFIED remains excluded. Candidate only; no propagation yet."]
+    lines += ["","Recovery applies only to the proven zero-standard-evidence interception residual. PASS_UNSPECIFIED remains excluded. Candidate only; no propagation yet."]
     return "\n".join(lines)
