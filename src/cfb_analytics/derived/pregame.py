@@ -9,15 +9,16 @@ from cfb_analytics.raw.sequence import _candidate_sort_key
 from cfb_analytics.canonical.materialize import canonical_partition_dir
 from cfb_analytics.derived.games import derived_game_partition_dir
 from cfb_analytics.derived.seasons import derive_team_seasons
+from cfb_analytics.analytics.model_feature_contract import raw_matchup_value
 
 PREGAME_SNAPSHOT_VERSION="pregame-snapshot-v1"
-MATCHUP_FEATURE_VERSION="matchup-features-v1"
-MODEL_DATASET_VERSION="model-dataset-v1"
+MATCHUP_FEATURE_VERSION="matchup-features-v2-directional"
+MODEL_DATASET_VERSION="model-dataset-v2-directional"
 
 def _pk(r):
  st=str(r.get("seasonType") or "regular").lower();return (0 if st in {"regular","regular_season"} else 1,int(r.get("week") or 0))
 def _num(v):return isinstance(v,(int,float)) and not isinstance(v,bool)
-def _edge(a,b,ak,bk):return float(a[ak])-float(b[bk]) if _num(a.get(ak)) and _num(b.get(bk)) else None
+def _edge(a,b,ak,bk):return raw_matchup_value(a[ak],b[bk]) if _num(a.get(ak)) and _num(b.get(bk)) else None
 
 def build_pregame_snapshots(team_games,season):
  rows=[r for r in team_games if r.get("season")==season];parts=defaultdict(list)
@@ -86,7 +87,7 @@ def matchup_feature_audit(snapshots,matchups,season):
  return {"status":"PASS" if all(checks.values()) else "REVIEW","season":season,"snapshot_rows":len(ss),"two_team_games":len(exp),"matchup_rows":len(matchups),"rows_with_both_histories":sum(r.get("team1HistoryAvailable") and r.get("team2HistoryAvailable") for r in matchups),"checks":checks}
 
 def concise_matchup_feature_audit(r):
- lines=[f"MATCHUP FEATURES v1 AUDIT: {r['status']}",f"Season: {r['season']}",f"Snapshot rows: {r['snapshot_rows']:,}",f"Two-team games: {r['two_team_games']:,}",f"Matchup rows: {r['matchup_rows']:,}",f"Rows with both histories: {r['rows_with_both_histories']:,}","","Checks:"]+[f"{k}: {'PASS' if v else 'FAIL'}" for k,v in r["checks"].items()];return "\n".join(lines)
+ lines=[f"MATCHUP FEATURES v2 DIRECTIONAL AUDIT: {r['status']}",f"Season: {r['season']}",f"Snapshot rows: {r['snapshot_rows']:,}",f"Two-team games: {r['two_team_games']:,}",f"Matchup rows: {r['matchup_rows']:,}",f"Rows with both histories: {r['rows_with_both_histories']:,}","","Checks:"]+[f"{k}: {'PASS' if v else 'FAIL'}" for k,v in r["checks"].items()];return "\n".join(lines)
 
 def _oriented_score(p):
  off,home,away=p.get("offense"),p.get("home"),p.get("away");os,ds=p.get("offenseScore"),p.get("defenseScore")
@@ -127,7 +128,7 @@ def model_dataset_audit(matchups,contexts,rows,season):
  expected=sum(m.get("season")==season and str(m.get("gameId")) in contexts for m in matchups);checks={"one_oriented_row_per_context_matchup":len(rows)==expected,"home_away_match_context":all({r.get("homeTeam"),r.get("awayTeam")}=={m.get("team1"),m.get("team2")} for r in rows for m in matchups if str(m.get("gameId"))==str(r.get("gameId"))),"targets_reconcile":all(r.get("target_margin")==r.get("target_homeScore")-r.get("target_awayScore") and r.get("target_homeWin")== (1 if r.get("target_margin")>0 else 0 if r.get("target_margin")<0 else None) for r in rows),"target_fields_excluded_from_features":all(not any(k.startswith("target_") for k in model_feature_names(r)) for r in rows),"version_present":all(r.get("modelDatasetVersion")==MODEL_DATASET_VERSION for r in rows)}
  return {"status":"PASS" if all(checks.values()) else "REVIEW","season":season,"matchup_rows":len([m for m in matchups if m.get("season")==season]),"context_games":len(contexts),"model_rows":len(rows),"rows_with_both_histories":sum(r.get("homeHistoryAvailable") and r.get("awayHistoryAvailable") for r in rows),"checks":checks}
 def concise_model_dataset_audit(r):
- lines=[f"MODEL DATASET v1 AUDIT: {r['status']}",f"Season: {r['season']}",f"Matchup rows: {r['matchup_rows']:,}",f"Context games: {r['context_games']:,}",f"Model rows: {r['model_rows']:,}",f"Rows with both histories: {r['rows_with_both_histories']:,}","","Checks:"]+[f"{k}: {'PASS' if v else 'FAIL'}" for k,v in r["checks"].items()];return "\n".join(lines)
+ lines=[f"MODEL DATASET v2 DIRECTIONAL AUDIT: {r['status']}",f"Season: {r['season']}",f"Matchup rows: {r['matchup_rows']:,}",f"Context games: {r['context_games']:,}",f"Model rows: {r['model_rows']:,}",f"Rows with both histories: {r['rows_with_both_histories']:,}","","Checks:"]+[f"{k}: {'PASS' if v else 'FAIL'}" for k,v in r["checks"].items()];return "\n".join(lines)
 
 def load_team_games(raw_root:Path,processed_root:Path,season:int):
  rows=[]
