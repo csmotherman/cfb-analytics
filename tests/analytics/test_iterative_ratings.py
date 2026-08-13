@@ -1,12 +1,15 @@
 import pytest
 
 from cfb_analytics.analytics.iterative_ratings import (
+    ENRICHED_DATASET_VERSION,
     ITERATIVE_FEATURES,
+    ITERATIVE_RATINGS_VERSION,
     SRS_VERSION,
     build_iterative_model_dataset,
     build_iterative_rating_snapshots,
     build_srs_model_dataset,
     eligible_iterative_row,
+    enriched_rows_audit,
     fit_metric_ratings,
     fit_srs,
     fit_srs_direct_reference,
@@ -118,13 +121,8 @@ def test_model_edges_use_offense_minus_opposing_defensive_strength():
 
 
 def test_srs_three_team_least_squares_example():
-    rows = [
-        _result("MICH", "OSU", 1, "g1", 10),
-        _result("MICH", "PSU", 2, "g2", 4),
-        _result("OSU", "PSU", 3, "g3", 2),
-    ]
-    result = fit_srs(rows)
-    ratings = result["ratings"]
+    rows = [_result("MICH", "OSU", 1, "g1", 10), _result("MICH", "PSU", 2, "g2", 4), _result("OSU", "PSU", 3, "g3", 2)]
+    result = fit_srs(rows);ratings = result["ratings"]
     assert result["version"] == SRS_VERSION
     assert result["converged"] is True
     assert result["components"] == 1
@@ -139,28 +137,19 @@ def test_srs_three_team_least_squares_example():
 
 def test_fast_srs_matches_explicit_least_squares_matrix():
     rows = [
-        _result("A", "B", 1, "g1", 17),
-        _result("A", "C", 1, "g2", -3),
-        _result("B", "C", 2, "g3", 7),
-        _result("C", "D", 2, "g4", 10),
-        _result("D", "A", 3, "g5", 1),
-        _result("B", "D", 3, "g6", -6),
+        _result("A", "B", 1, "g1", 17), _result("A", "C", 1, "g2", -3),
+        _result("B", "C", 2, "g3", 7), _result("C", "D", 2, "g4", 10),
+        _result("D", "A", 3, "g5", 1), _result("B", "D", 3, "g6", -6),
     ]
-    fast = fit_srs(rows)
-    direct = fit_srs_direct_reference(rows)
+    fast = fit_srs(rows);direct = fit_srs_direct_reference(rows)
     assert fast["converged"] is True
     assert fast["maxNormalResidual"] < 1e-7
     assert set(fast["ratings"]) == set(direct["ratings"])
-    for team in direct["ratings"]:
-        assert fast["ratings"][team] == pytest.approx(direct["ratings"][team], abs=1e-6)
+    for team in direct["ratings"]:assert fast["ratings"][team] == pytest.approx(direct["ratings"][team], abs=1e-6)
 
 
 def test_srs_disconnected_components_are_centered_independently():
-    rows = [
-        _result("A", "B", 1, "g1", 10),
-        _result("C", "D", 1, "g2", 6),
-    ]
-    result = fit_srs(rows)
+    result = fit_srs([_result("A", "B", 1, "g1", 10), _result("C", "D", 1, "g2", 6)])
     assert result["components"] == 2
     assert result["converged"] is True
     assert result["ratings"]["A"] + result["ratings"]["B"] == pytest.approx(0.0, abs=1e-9)
@@ -169,20 +158,14 @@ def test_srs_disconnected_components_are_centered_independently():
 
 
 def test_srs_duplicate_game_id_is_not_double_counted():
-    game = _result("A", "B", 1, "g1", 10)
-    result = fit_srs([game, dict(game)])
+    game = _result("A", "B", 1, "g1", 10);result = fit_srs([game, dict(game)])
     assert result["games"] == 1
     assert result["ratings"]["A"] == pytest.approx(5.0, abs=1e-6)
     assert result["ratings"]["B"] == pytest.approx(-5.0, abs=1e-6)
 
 
 def test_srs_same_week_isolation_and_edge_contract():
-    rows = [
-        _result("A", "B", 1, "g1", 10),
-        _result("A", "C", 2, "g2", 4),
-        _result("B", "C", 2, "g3", 2),
-        _result("A", "B", 3, "g4", 1),
-    ]
+    rows = [_result("A", "B", 1, "g1", 10), _result("A", "C", 2, "g2", 4), _result("B", "C", 2, "g3", 2), _result("A", "B", 3, "g4", 1)]
     out = build_srs_model_dataset(rows, 2025)
     week2 = [r for r in out if r["week"] == 2]
     assert len(week2) == 2
@@ -195,17 +178,44 @@ def test_srs_same_week_isolation_and_edge_contract():
 
 
 def test_future_result_does_not_change_prior_srs_snapshot():
-    base = [
-        _result("A", "B", 1, "g1", 7),
-        _result("A", "C", 2, "g2", 3),
-        _result("B", "C", 2, "g3", 1),
-        _result("A", "B", 3, "g4", 0),
-    ]
+    base = [_result("A", "B", 1, "g1", 7), _result("A", "C", 2, "g2", 3), _result("B", "C", 2, "g3", 1), _result("A", "B", 3, "g4", 0)]
     future = base + [_result("C", "A", 4, "g5", 40)]
-    first = build_srs_model_dataset(base, 2025)
-    second = build_srs_model_dataset(future, 2025)
-    g4_first = next(r for r in first if r["gameId"] == "g4")
-    g4_second = next(r for r in second if r["gameId"] == "g4")
+    first = build_srs_model_dataset(base, 2025);second = build_srs_model_dataset(future, 2025)
+    g4_first = next(r for r in first if r["gameId"] == "g4");g4_second = next(r for r in second if r["gameId"] == "g4")
     assert g4_first["homeSrs"] == pytest.approx(g4_second["homeSrs"])
     assert g4_first["awaySrs"] == pytest.approx(g4_second["awaySrs"])
     assert g4_first["srsEdge"] == pytest.approx(g4_second["srsEdge"])
+
+
+def _audit_fixture():
+    games=[]
+    for gid,week,home,away in (("g1",1,"A","B"),("g2",2,"A","B")):
+        games += [
+            {"season":2025,"seasonType":"regular","week":week,"gameId":gid,"team":home,"opponent":away},
+            {"season":2025,"seasonType":"regular","week":week,"gameId":gid,"team":away,"opponent":home},
+        ]
+    common={
+        "season":2025,"seasonType":"regular","enrichedDatasetVersion":ENRICHED_DATASET_VERSION,
+        "iterativeRatingsVersion":ITERATIVE_RATINGS_VERSION,"srsVersion":SRS_VERSION,
+        "iterativeAllSolversConverged":True,"iterativeWorstMaxDelta":0.0,
+        "srsConverged":True,"srsMaxNormalResidual":0.0,"srsMaxComponentMeanAbs":0.0,
+    }
+    rows=[
+        {**common,"week":1,"gameId":"g1","homeTeam":"A","awayTeam":"B","target_margin":7.0,"target_homeWin":1,"srsGamesBefore":0,"homeSrs":None,"awaySrs":None,"srsEdge":None,"homeIterativeGamesPlayedBefore":0,"awayIterativeGamesPlayedBefore":0},
+        {**common,"week":2,"gameId":"g2","homeTeam":"A","awayTeam":"B","target_margin":3.0,"target_homeWin":1,"srsGamesBefore":1,"homeSrs":3.5,"awaySrs":-3.5,"srsEdge":7.0,"homeIterativeGamesPlayedBefore":1,"awayIterativeGamesPlayedBefore":1},
+    ]
+    return games,rows
+
+
+def test_enriched_rows_audit_accepts_consistent_cached_rows():
+    games,rows=_audit_fixture();result=enriched_rows_audit(games,rows,2025)
+    assert result["status"] == "PASS"
+    assert all(result["checks"].values())
+
+
+def test_enriched_rows_audit_rejects_corrupt_srs_edge_and_leakage_count():
+    games,rows=_audit_fixture();rows[1]["srsEdge"]=99.0;rows[1]["srsGamesBefore"]=2
+    result=enriched_rows_audit(games,rows,2025)
+    assert result["status"] == "REVIEW"
+    assert result["checks"]["srs_edge_reconciles"] is False
+    assert result["checks"]["srs_prior_game_count"] is False
