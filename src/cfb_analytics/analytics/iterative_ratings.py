@@ -8,6 +8,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
+from cfb_analytics.analytics.model_feature_contract import iterative_matchup_value
 from cfb_analytics.derived.pregame import (
     _pk,
     build_matchup_features,
@@ -17,7 +18,7 @@ from cfb_analytics.derived.pregame import (
     load_team_games,
 )
 
-ITERATIVE_RATINGS_VERSION = "iterative-ratings-v1"
+ITERATIVE_RATINGS_VERSION = "iterative-ratings-v2-directional"
 
 SPECS = (
     ("Success", "successfulPlays", "successEligiblePlays"),
@@ -123,8 +124,6 @@ def fit_metric_ratings(
             converged = True
             break
 
-    # Center once after fitting. Shift the intercept to preserve every fitted value:
-    # mean + off - def == adjusted_mean + centered_off - centered_def.
     off_mean = sum(offense.values()) / len(offense)
     def_mean = sum(defense.values()) / len(defense)
     offense = {team: value - off_mean for team, value in offense.items()}
@@ -212,8 +211,8 @@ def build_iterative_model_dataset(base_rows: list[dict[str, Any]], rating_snapsh
             row[f"home_iterative{name}Defense"] = hd
             row[f"away_iterative{name}Offense"] = ao
             row[f"away_iterative{name}Defense"] = ad
-            row[f"home_iterative{name}Edge"] = float(ho) + float(ad) if _num(ho) and _num(ad) else None
-            row[f"away_iterative{name}Edge"] = float(ao) + float(hd) if _num(ao) and _num(hd) else None
+            row[f"home_iterative{name}Edge"] = iterative_matchup_value(ho, ad) if _num(ho) and _num(ad) else None
+            row[f"away_iterative{name}Edge"] = iterative_matchup_value(ao, hd) if _num(ao) and _num(hd) else None
         out.append(row)
     return out
 
@@ -265,7 +264,7 @@ def iterative_ratings_audit(team_games: list[dict[str, Any]], rating_snapshots: 
 
 def concise(result: dict[str, Any]) -> str:
     lines = [
-        f"ITERATIVE RATINGS v1 AUDIT: {result['status']}",
+        f"ITERATIVE RATINGS v2 DIRECTIONAL AUDIT: {result['status']}",
         f"Season: {result['season']}",
         f"Rating snapshot rows: {result['rating_snapshot_rows']:,}",
         f"Model rows: {result['model_rows']:,}",
