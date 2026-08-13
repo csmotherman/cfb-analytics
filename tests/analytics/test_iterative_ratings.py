@@ -107,13 +107,13 @@ def test_three_and_four_game_eligibility_gates():
     assert eligible_iterative_row(row, 4) is True
 
 
-def test_model_edges_use_offense_plus_opposing_defense():
+def test_model_edges_use_offense_minus_opposing_defensive_strength():
     base = [{"season": 2025, "gameId": "g1", "homeTeam": "A", "awayTeam": "B", "target_margin": 7.0, "target_homeWin": 1}]
     snaps = [
         {"season": 2025, "gameId": "g1", "team": "A", "gamesPlayedBefore": 3, "iterativeSuccessOffense": 0.08, "iterativeSuccessDefense": 0.03},
         {"season": 2025, "gameId": "g1", "team": "B", "gamesPlayedBefore": 4, "iterativeSuccessOffense": -0.02, "iterativeSuccessDefense": 0.04},
     ]
     rows = build_iterative_model_dataset(base, snaps, 2025)
-    assert rows[0]["home_iterativeSuccessEdge"] == pytest.approx(0.12)
-    assert rows[0]["away_iterativeSuccessEdge"] == pytest.approx(0.01)
+    assert rows[0]["home_iterativeSuccessEdge"] == pytest.approx(0.04)
+    assert rows[0]["away_iterativeSuccessEdge"] == pytest.approx(-0.05)
     assert rows[0]["target_margin"] == 7.0
