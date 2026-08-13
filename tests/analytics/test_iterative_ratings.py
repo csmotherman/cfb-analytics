@@ -39,6 +39,23 @@ def test_iterative_solver_converges_and_centers_ratings():
     assert result["offense"]["A"] > result["offense"]["B"]
 
 
+def test_centered_ratings_preserve_fitted_game_values():
+    rows = [
+        _game("A", "B", 1, "g1", 8, 10),
+        _game("B", "A", 1, "g1", 2, 10),
+        _game("A", "C", 2, "g2", 7, 10),
+        _game("C", "A", 2, "g2", 3, 10),
+        _game("B", "C", 3, "g3", 6, 10),
+        _game("C", "B", 3, "g3", 4, 10),
+    ]
+    result = fit_metric_ratings(rows, ("Success", "successfulPlays", "successEligiblePlays"), shrinkage=2.0)
+    fitted = result["leagueMean"] + result["offense"]["A"] - result["defense"]["B"]
+    assert result["converged"] is True
+    assert 0.0 < fitted < 1.0
+    assert sum(result["offense"].values()) == pytest.approx(0.0, abs=1e-10)
+    assert sum(result["defense"].values()) == pytest.approx(0.0, abs=1e-10)
+
+
 def test_same_partition_is_not_used_in_rating_snapshot():
     rows = [
         _game("A", "B", 1, "g1", 7, 10),
