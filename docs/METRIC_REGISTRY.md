@@ -10,6 +10,7 @@ It exists to prevent metric semantics from being reconstructed later from implem
 - **COUNT ONLY** — positive event count is production-safe, but no rate denominator is locked.
 - **PARTIAL** — some production components exist, but the metric family is not complete.
 - **FORENSIC ONLY** — investigated but intentionally not propagated.
+- **RESEARCH ONLY** — implemented and benchmarked for analytical/modeling work, but intentionally not part of the production metric contract.
 - **NOT STARTED** — planned but not yet implemented.
 
 ## Shared production invariants
@@ -20,7 +21,7 @@ It exists to prevent metric semantics from being reconstructed later from implem
 - Team-game offense and defense mirrors must reconcile when a metric has both sides.
 - Team-season counts must reconcile exactly to team-game counts.
 - Source ambiguity is not coerced into a production value when evidence is insufficient.
-- `yardsToGoal=0` is excluded only from field-position-dependent metrics; it does not alter Success-v1 eligibility.
+- `yardsToGoal=0` is excluded only from field-position-dependent play metrics; it does not alter Success-v1 eligibility.
 
 ---
 
@@ -136,7 +137,7 @@ Eligible plays require usable canonical analytics yardage. Modified/no-play cont
 **Status:** LOCKED  
 **Level:** Play -> team-game -> team-season
 
-Field-position eligibility is `1 <= yardsToGoal <= 100`; `yardsToGoal=0` is excluded as a source-state artifact for field-position metrics.
+Field-position eligibility is `1 <= yardsToGoal <= 100`; `yardsToGoal=0` is excluded as a source-state artifact for field-position-dependent play metrics.
 
 **Locked corpus:** field-position eligible **1,122,857**; exclusions **130**; red-zone plays **160,523**, successes **71,057**; goal-to-go plays **65,962**, successes **30,780**.
 
@@ -213,6 +214,46 @@ Field-position eligibility is `1 <= yardsToGoal <= 100`; `yardsToGoal=0` is excl
 
 **Locked corpus:** possessions **208,725**; yards **6,730,747**; yards/possession **32.247**; exact builder reconciliations **208,725**; mismatches **0**.
 
+### Field Position v1
+
+**Status:** LOCKED  
+**Level:** Validated possession start -> team-game -> team-season  
+**Definition version:** `field-position-v1`
+
+**Definition:** every validated possession with numeric `startYardsToGoal` in `[0,100]` contributes one starting-field-position observation. Lower `startYardsToGoal` is better offensive field position. The production family also exposes starting own-yard-line position as `100 - startYardsToGoal`.
+
+**Locked corpus:**
+- Field-position eligible possessions: **208,725**
+- Average start yards to goal: **66.277**
+- Average starting own-yard line: **33.723**
+
+**Production family includes:** `fieldPositionPossessions`, `startYardsToGoalTotal`, `averageStartYardsToGoal`, `startOwnYardLineTotal`, `averageStartOwnYardLine`, corresponding `Allowed` mirrors, and `fieldPositionDefinitionVersion`.
+
+**Production-lock audit guarantees:** offense/defense possession counts, yards-to-goal totals, and own-yard-line totals reconcile at team-game and team-season levels; team-season totals reconcile exactly to team-game totals; the locked possession corpus equals **208,725**; and the definition version is present on all team-game and team-season rows.
+
+### Finishing Drives v2
+
+**Status:** LOCKED  
+**Level:** Validated possession/scoring opportunity -> team-game -> team-season  
+**Definition version:** `finishing-drives-v2`
+
+**Definition:** a scoring opportunity is a validated possession whose offense reaches `0 <= yardsToGoal <= 40`. Opportunity outcomes are touchdown, made field goal, empty, or other scoring. Touchdown points use adjudicated scoreboard evidence; unresolved touchdown/safety point states remain unresolved instead of being coerced.
+
+**Locked corpus:**
+- Scoring opportunities: **104,648**
+- Touchdowns: **47,022**
+- Field goals: **19,653**
+- Empty opportunities: **37,967**
+- Other scoring: **6**
+- Resolved point opportunities: **104,310**
+- Unresolved point opportunities: **338**
+- Adjudicated opportunity points: **383,991**
+- Points per resolved opportunity: **3.681**
+
+**Production family includes:** opportunity counts by outcome, resolved/unresolved point opportunities, adjudicated opportunity points, points per opportunity, TD/FG/empty rates, offense/defense allowed mirrors, and `finishingDrivesDefinitionVersion`.
+
+**Production-lock audit guarantees:** offense/defense mirrors reconcile at team-game and team-season levels; team-season counts and points reconcile exactly to team-game output; outcome counts sum to scoring opportunities; resolved plus unresolved point opportunities equal scoring opportunities; locked opportunity, point, and unresolved totals reproduce exactly; and the definition version is present on every team-game and team-season row.
+
 ---
 
 ## Possession sequence metrics
@@ -237,28 +278,63 @@ Field-position eligibility is `1 <= yardsToGoal <= 100`; `yardsToGoal=0` is excl
 
 ---
 
-## Other reconciled derived corpus totals
+## EPA / play-value research
 
-These totals may support future registry entries but are not automatically production-locked metric families:
+### EPA v2 research model
 
-- Successful-play yards: **5,948,558**
-- Scoring opportunities: **104,648**
-- Adjudicated opportunity points: **383,991**
-- Unresolved point opportunities: **338**
-- Field-position eligible possessions: **208,725**
+**Status:** RESEARCH ONLY  
+**Definition version:** `epa-v2-research-next-score`
+
+**Purpose:** independent expected-points/play-value research. CFBD `ppa` is an external benchmark only and is never used as an EPA training feature or target.
+
+**State:** regulation down, distance, yards to goal, and seconds remaining in the half. Expected points use a hierarchical empirical model with minimum-sample backoff.
+
+**Target:** next observed scoring value before halftime from the current offense's perspective. Score changes are aligned with the scoring-play row according to the corpus score-timing audit.
+
+**Score-timing audit:**
+- Source-marked scoring rows: **79,420**
+- Score changes entering the scoring row: **78,609**
+- Score changes leaving the scoring row: **5,311**
+
+This strongly supports treating the recorded scoring row as post-score state for scoreboard alignment while calculating the value of that scoring play from the immediately preceding state.
+
+**2025 held-out PPA comparison:**
+- Comparison plays: **104,516**
+- EPA v2 / PPA correlation: **0.775883**
+- MAE vs PPA: **0.637773**
+- Mean EPA: **0.116162**
+- Mean PPA: **0.214368**
+
+The previous end-of-half empirical EPA v1 baseline produced correlation **0.318122** and MAE **1.207120** on the same held-out comparison set; v2 materially improved state-value semantics.
+
+**2025 leakage-safe future-outcome benchmark:** both EPA v2 and CFBD PPA were converted to prior-game offense/defense ratings using the same matched plays and the same expanding-history protocol.
+- Eligible pregame prediction games: **573**
+- EPA v2 pregame edge vs final margin correlation: **0.508752**
+- PPA pregame edge vs final margin correlation: **0.515199**
+- EPA v2 winner accuracy: **67.13%**
+- PPA winner accuracy: **66.26%**
+- EPA v2 calibrated margin MAE: **13.597939**
+- PPA calibrated margin MAE: **13.614858**
+- EPA v2 calibrated margin RMSE: **16.831841**
+- PPA calibrated margin RMSE: **16.805950**
+
+**Interpretation:** EPA v2 is competitive with CFBD PPA for this one-season future-outcome benchmark, but neither metric demonstrates a meaningful overall advantage yet. EPA remains research-only until broader walk-forward feature ablation demonstrates incremental predictive value and the metric is deliberately propagated into production team-game/team-season schemas.
 
 ---
 
-## Remaining core roadmap
-
-### Situational / Short-Yardage Metrics
-Potential families: early-down success, stuff rate, power/short-yardage success, field-position starts, plays per possession, drive duration if clock state is sufficiently reliable.
+## Deferred / future work
 
 ### Deferred Rate Denominators
+
 **FORENSIC ONLY:** three-and-out rate, first-down generation rate, and turnover rates without an independently validated opportunity denominator.
 
-### EPA Layer
-**NOT STARTED.** Treat EPA as a later modeling project requiring trustworthy field position, down, distance, clock, score state, and game context.
+### Pregame prediction layer
+
+**NOT STARTED:** leakage-safe pregame snapshots, matchup features, opponent adjustment, and walk-forward predictive models. These should consume production-safe raw metrics first, with EPA/PPA introduced as research features through explicit feature-ablation experiments rather than silently entering the production metric contract.
+
+### Optional Situational / Short-Yardage Metrics
+
+Potential future families include early-down success, stuff rate, power/short-yardage success, plays per possession, and drive duration if clock state is sufficiently reliable. These are not prerequisites for the first Raw Metrics v1 predictive baseline.
 
 ---
 
@@ -274,5 +350,7 @@ Whenever a production metric is added or its definition changes:
 6. Record the metric definition version where practical.
 7. Update this registry in the same change set or immediately afterward.
 8. Never silently change a denominator or semantic definition under an existing version label.
+
+Research-only metrics must remain clearly separated from production-locked metrics until their definitions, propagation, and intended downstream use are deliberately promoted.
 
 This file is a checkpoint contract, not a wishlist. A metric marked LOCKED should be reproducible from the repository and retain its documented meaning until deliberately versioned.
