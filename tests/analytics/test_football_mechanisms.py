@@ -25,7 +25,10 @@ def test_orient_matchup_direction_and_usage_interactions():
     })
     x=orient_matchup(m,"Home","Away")
     assert x is not None
-    assert x["netYardsPerPossessionEdge"]==4.0
+    # Home offense has +1.0 yards/possession versus Away defense, while
+    # Away offense also has +1.0 versus Home defense, so the net matchup
+    # advantage is exactly zero.
+    assert x["netYardsPerPossessionEdge"]==0.0
     assert x["netTurnoverPressureEdge"]>0
     assert x["netRushMatchupImpact"]>0
     assert x["expectedPossessionsPerTeam"]==11.5
