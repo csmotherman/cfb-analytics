@@ -13,6 +13,10 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<9"]
+models = [
+  "numpy>=2,<3",
+  "scikit-learn>=1.6,<2",
+]
 
 [project.scripts]
 cfb-raw = "cfb_analytics.raw.cli:main"
