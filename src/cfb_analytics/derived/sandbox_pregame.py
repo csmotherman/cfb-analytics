@@ -1,6 +1,6 @@
 """Leakage-safe pregame snapshots and matchup edges for aligned Sandbox systems."""
 from __future__ import annotations
-import argparse,json
+import argparse,hashlib,json
 from collections import defaultdict
 from pathlib import Path
 from cfb_analytics.analytics.cfb_sandbox_systems_aligned import SANDBOX_SYSTEMS_VERSION,compute_systems
@@ -11,14 +11,25 @@ from cfb_analytics.raw.audit import discover_partitions
 
 PREGAME_VERSION="cfb-sandbox-pregame-v1"
 MATCHUP_VERSION="cfb-sandbox-matchups-v1"
+CACHE_VERSION="cfb-sandbox-pregame-cache-v1"
 SYSTEMS=("MWDR","ECI","SMR","DDR","GPI")
 
 def _pk(st,w):
  s=str(st or "regular").lower();return (0 if s in {"regular","regular_season"} else 1,int(w or 0))
 def _num(v):return isinstance(v,(int,float)) and not isinstance(v,bool)
+def _paths(root,season,st,w):
+ return (canonical_partition_dir(root,season,st,w)/"plays.json",derived_drive_partition_dir(root,season,st,w)/"drives.json",derived_game_partition_dir(root,season,st,w)/"team_games.json")
 def _load(root,season,st,w):
- p=canonical_partition_dir(root,season,st,w)/"plays.json";d=derived_drive_partition_dir(root,season,st,w)/"drives.json";g=derived_game_partition_dir(root,season,st,w)/"team_games.json"
- return json.loads(p.read_text()),json.loads(d.read_text()),json.loads(g.read_text())
+ p,d,g=_paths(root,season,st,w);return json.loads(p.read_text()),json.loads(d.read_text()),json.loads(g.read_text())
+def _load_games(root,season,st,w):
+ return json.loads(_paths(root,season,st,w)[2].read_text())
+def _source_signature(raw_root,processed_root,season):
+ h=hashlib.sha256();h.update(f"{season}|{SANDBOX_SYSTEMS_VERSION}|{PREGAME_VERSION}|{MATCHUP_VERSION}|{CACHE_VERSION}".encode())
+ for st,w in sorted(discover_partitions(raw_root,season),key=lambda x:_pk(*x)):
+  h.update(f"{st}|{w}".encode())
+  for p in _paths(processed_root,season,st,w):
+   s=p.stat();h.update(f"|{p.name}|{s.st_size}|{s.st_mtime_ns}".encode())
+ return h.hexdigest()
 
 def build_pregame(raw_root:Path,processed_root:Path,season:int):
  hp=[];hd=[];games_before=defaultdict(int);out=[]
@@ -55,7 +66,7 @@ def build_matchups(snaps,season):
 def audit_pregame(raw_root,processed_root,season,snaps):
  prior=defaultdict(int);expected=[]
  for st,w in sorted(discover_partitions(raw_root,season),key=lambda x:_pk(*x)):
-  _,_,games=_load(processed_root,season,st,w)
+  games=_load_games(processed_root,season,st,w)
   for g in games:expected.append((str(g.get("gameId")),g.get("team"),prior[g.get("team")]))
   for g in games:prior[g.get("team")]+=1
  actual={(str(r.get("gameId")),r.get("team")):r for r in snaps}
@@ -73,6 +84,14 @@ def audit_matchups(snaps,rows):
  checks={"one_row_per_game":len(rows)==len(exp),"unique_game_rows":len(ids)==len(set(ids)),"game_ids_match":set(ids)==exp,"edges_reconcile":edge_ok,"versions_present":all(r.get("sandboxMatchupVersion")==MATCHUP_VERSION for r in rows)}
  return {"status":"PASS" if all(checks.values()) else "REVIEW","matchups":len(rows),"bothHistories":sum(r.get("team1HistoryAvailable") and r.get("team2HistoryAvailable") for r in rows),"checks":checks}
 
+def materialize_sandbox_pregame(raw_root:Path,processed_root:Path,season:int,refresh=False):
+ root=processed_root/"derived"/"sandbox_pregame"/f"season={season}";snap_path=root/"team_pregame.json";match_path=root/"game_matchups.json";manifest_path=root/"manifest.json";sig=_source_signature(raw_root,processed_root,season)
+ if not refresh and snap_path.exists() and match_path.exists() and manifest_path.exists():
+  m=json.loads(manifest_path.read_text())
+  if m.get("sourceSignature")==sig and m.get("cacheVersion")==CACHE_VERSION and m.get("sandboxSystemsVersion")==SANDBOX_SYSTEMS_VERSION and m.get("pregameVersion")==PREGAME_VERSION and m.get("matchupVersion")==MATCHUP_VERSION:
+   snaps=json.loads(snap_path.read_text());rows=json.loads(match_path.read_text());return {"cache_status":"REUSED","snapshots":snaps,"matchups":rows}
+ snaps=build_pregame(raw_root,processed_root,season);rows=build_matchups(snaps,season);root.mkdir(parents=True,exist_ok=True);snap_path.write_text(json.dumps(snaps,ensure_ascii=False,separators=(",",":")));match_path.write_text(json.dumps(rows,ensure_ascii=False,separators=(",",":")));manifest_path.write_text(json.dumps({"season":season,"sourceSignature":sig,"cacheVersion":CACHE_VERSION,"sandboxSystemsVersion":SANDBOX_SYSTEMS_VERSION,"pregameVersion":PREGAME_VERSION,"matchupVersion":MATCHUP_VERSION,"snapshotCount":len(snaps),"matchupCount":len(rows)},indent=2,sort_keys=True));return {"cache_status":"WRITTEN","snapshots":snaps,"matchups":rows}
+
 def _print(label,r):
  print(f"{label}: {r['status']}")
  for k in ("snapshots","zeroHistory","eligible3","eligible4","matchups","bothHistories"):
@@ -80,9 +99,5 @@ def _print(label,r):
  for k,v in r["checks"].items():print(f"{k}: {'PASS' if v else 'FAIL'}")
 
 def main():
- p=argparse.ArgumentParser();p.add_argument("--season",type=int,default=2025);p.add_argument("--raw-root",type=Path,default=Path("data/raw"));p.add_argument("--processed-root",type=Path,default=Path("data/processed"));p.add_argument("--write",action="store_true");a=p.parse_args()
- snaps=build_pregame(a.raw_root,a.processed_root,a.season);rows=build_matchups(snaps,a.season)
- if a.write:
-  root=a.processed_root/"derived"/"sandbox_pregame"/f"season={a.season}";root.mkdir(parents=True,exist_ok=True);(root/"team_pregame.json").write_text(json.dumps(snaps,ensure_ascii=False,separators=(",",":")));(root/"game_matchups.json").write_text(json.dumps(rows,ensure_ascii=False,separators=(",",":")))
- _print("CFB SANDBOX PREGAME v1 AUDIT",audit_pregame(a.raw_root,a.processed_root,a.season,snaps));print();_print("CFB SANDBOX MATCHUPS v1 AUDIT",audit_matchups(snaps,rows))
+ p=argparse.ArgumentParser();p.add_argument("--season",type=int,default=2025);p.add_argument("--raw-root",type=Path,default=Path("data/raw"));p.add_argument("--processed-root",type=Path,default=Path("data/processed"));p.add_argument("--refresh",action="store_true");a=p.parse_args();x=materialize_sandbox_pregame(a.raw_root,a.processed_root,a.season,a.refresh);snaps=x["snapshots"];rows=x["matchups"];print(f"Cache: {x['cache_status']}");_print("CFB SANDBOX PREGAME v1 AUDIT",audit_pregame(a.raw_root,a.processed_root,a.season,snaps));print();_print("CFB SANDBOX MATCHUPS v1 AUDIT",audit_matchups(snaps,rows))
 if __name__=="__main__":main()
