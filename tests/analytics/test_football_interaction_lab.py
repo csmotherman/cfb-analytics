@@ -1,7 +1,16 @@
+import importlib.util
+from pathlib import Path
+
 import pytest
 
 from cfb_analytics.analytics.football_mechanisms import TEAM_FIELDS,orient_matchup
-from tests.analytics.football_interaction_lab_harness import add_lab_features
+
+_HARNESS_PATH=Path(__file__).with_name("football_interaction_lab_harness.py")
+_SPEC=importlib.util.spec_from_file_location("football_interaction_lab_harness",_HARNESS_PATH)
+_MODULE=importlib.util.module_from_spec(_SPEC)
+assert _SPEC is not None and _SPEC.loader is not None
+_SPEC.loader.exec_module(_MODULE)
+add_lab_features=_MODULE.add_lab_features
 
 
 def _team(prefix):
