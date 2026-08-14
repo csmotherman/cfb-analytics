@@ -1,0 +1,3 @@
+[console_scripts]
+cfb-drive-forensics = cfb_analytics.derived.drive_forensics_cli:main
+cfb-raw = cfb_analytics.raw.cli:main
