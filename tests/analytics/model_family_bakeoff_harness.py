@@ -4,7 +4,7 @@ import json, math
 try:
     import numpy as np
     from sklearn.ensemble import ExtraTreesRegressor, GradientBoostingRegressor, RandomForestRegressor
-    from sklearn.linear_model import HuberRegressor, Ridge
+    from sklearn.linear_model import HuberRegressor, LinearRegression, Ridge
     from sklearn.pipeline import make_pipeline
     from sklearn.preprocessing import StandardScaler
 except ImportError as exc:
@@ -80,6 +80,7 @@ def xy(rows, features):
 
 def model_factories():
     return {
+        "OLS": lambda: make_pipeline(StandardScaler(), LinearRegression()),
         "RIDGE": lambda: make_pipeline(StandardScaler(), Ridge(alpha=10.0)),
         "HUBER": lambda: make_pipeline(StandardScaler(), HuberRegressor(epsilon=1.35, alpha=0.0001, max_iter=500)),
         "RANDOM_FOREST": lambda: RandomForestRegressor(
@@ -133,12 +134,8 @@ def summarize(rows):
 def main():
     data = load_all()
     results = {}
-    reference_rows = {}
 
     for min_games in (3, 4):
-        stable_elig = {
-            s: [r for r in data[s] if eligible(r, min_games, STABLE)] for s in DEFAULT_SEASONS
-        }
         volume_elig = {
             s: [r for r in data[s] if eligible(r, min_games, STABLE + VOLUME)] for s in DEFAULT_SEASONS
         }
@@ -148,8 +145,6 @@ def main():
             if len(prior) < 4:
                 continue
 
-            # Reference ridge uses the common VOLUME-eligible sample so every model/feature set
-            # is compared on exactly the same rows for this holdout.
             train_ref = [r for s in prior for r in volume_elig[s]]
             test_ref = volume_elig[test_season]
             if not train_ref or not test_ref:
@@ -157,10 +152,9 @@ def main():
 
             xtr, ytr, _ = xy(train_ref, STABLE)
             xte, yte, wins = xy(test_ref, STABLE)
-            ref_model = model_factories()["RIDGE"]()
+            ref_model = model_factories()["OLS"]()
             ref_model.fit(xtr, ytr)
             ref_score = score_predictions(ref_model.predict(xte), yte, wins)
-            reference_rows[(min_games, test_season)] = ref_score
 
             for feature_name, features in FEATURE_SETS.items():
                 train = [r for s in prior for r in volume_elig[s]]
@@ -192,9 +186,9 @@ def main():
     ranked.sort(key=lambda r: (r["mae"], r["rmse"], -r["mae_wins"]))
 
     print("MODEL FAMILY BAKEOFF — DECISION REPORT")
-    print("Reference: STABLE_RIDGE on the common VOLUME-eligible sample")
+    print("Reference: STABLE_OLS on the common VOLUME-eligible sample")
     print("Feature sets: STABLE and STABLE + Volume Engine")
-    print("Models: Ridge, Huber, Random Forest, Extra Trees, Gradient Boosting")
+    print("Models: OLS, Ridge, Huber, Random Forest, Extra Trees, Gradient Boosting")
     print("All models use identical walk-forward holdouts and target_margin; negative MAE/RMSE is better.\n")
 
     print("TOP 10 ACROSS ALL HOLDOUTS:")
@@ -211,7 +205,7 @@ def main():
     print(f"BEST 2023-2025: {recent_ranked[0]['name']} — MAE {recent_ranked[0]['recent_mae']:+.4f} | RMSE {recent_ranked[0]['recent_rmse']:+.4f}")
 
     print("\nMODEL-FAMILY BESTS:")
-    for family in ("RIDGE", "HUBER", "RANDOM_FOREST", "EXTRA_TREES", "GRADIENT_BOOSTING"):
+    for family in ("OLS", "RIDGE", "HUBER", "RANDOM_FOREST", "EXTRA_TREES", "GRADIENT_BOOSTING"):
         subset = [r for r in ranked if r["name"].endswith(family)]
         b = min(subset, key=lambda r: (r["mae"], r["rmse"]))
         print(f" {family}: {b['name']} | MAE {b['mae']:+.4f} | RMSE {b['rmse']:+.4f} | Winner {b['winner']:+.2f} pp")
