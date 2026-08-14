@@ -75,7 +75,7 @@ def load_all():
    if x is None:continue
    z=add_lab_features(r,m,x)
    if z is not None:rows.append(z)
-  data[season]=rows;print(f"LOAD {season}: base={len(base):,} mechanisms={len(match):,} merged={len(rows):,}")
+  data[season]=rows
  return data
 
 
@@ -115,6 +115,23 @@ def score(model,rows):
  n=len(rows);return {"mae":sum(ae)/n,"rmse":math.sqrt(sum(se)/n),"winner":correct/n,"n":n}
 
 
+def _mean(values):return sum(values)/len(values) if values else 0.0
+
+
+def _summarize(results,benchmark_name):
+ names=[name for name in results[0]["scores"] if name not in {"BASE",benchmark_name,"CURRENT_FULL"}]
+ out=[]
+ for name in names:
+  maes=[];rmses=[];wins=[];mae_better=0;rmse_better=0;winner_better=0
+  for season_result in results:
+   q=season_result["scores"][name];b=season_result["scores"][benchmark_name]
+   dm=q["mae"]-b["mae"];dr=q["rmse"]-b["rmse"];dw=(q["winner"]-b["winner"])*100
+   maes.append(dm);rmses.append(dr);wins.append(dw)
+   mae_better+=int(dm<0);rmse_better+=int(dr<0);winner_better+=int(dw>0)
+  out.append({"name":name,"mae":_mean(maes),"rmse":_mean(rmses),"winner":_mean(wins),"mae_better":mae_better,"rmse_better":rmse_better,"winner_better":winner_better})
+ return sorted(out,key=lambda q:(q["mae"],q["rmse"],-q["mae_better"]))
+
+
 def main():
  data=load_all();stable=BASE+MWDR+("mwdrXExpectedPossessions",);current_full=stable+FINISHING
  models={
@@ -139,26 +156,29 @@ def main():
   "STABLE_PLUS_VOLUME_ENGINE":stable+("successVolumeEdge","explosiveVolumeEdge","turnoverVolumeEdge"),
   "STABLE_PLUS_SCORING_AND_VOLUME":stable+("expectedScoringPpdEdge","expectedTdDriveEdge","successVolumeEdge","explosiveVolumeEdge","turnoverVolumeEdge"),
  }
- print("FOOTBALL INTERACTION LAB")
- print("Baseline: ITERATIVE + SRS")
- print("Current stable: BASE + MWDR + MWDR x EXPECTED POSSESSIONS")
- print("All features use prior-game information only; common sample across every model: YES")
+ print("FOOTBALL INTERACTION LAB — DECISION REPORT")
+ print("Benchmark: CURRENT_STABLE = ITERATIVE + SRS + MWDR + MWDR x EXPECTED POSSESSIONS")
+ print("Ranking: average out-of-sample MAE delta vs current stable across 2023-2025")
+ print("Negative MAE/RMSE is better; positive Winner pp is better.")
  for min_games in (3,4):
-  elig={s:[r for r in data[s] if eligible(r,min_games)] for s in DEFAULT_SEASONS};print(f"\nMINIMUM PRIOR GAMES PER TEAM: {min_games}")
+  elig={s:[r for r in data[s] if eligible(r,min_games)] for s in DEFAULT_SEASONS};results=[]
   for test_season in TEST_SEASONS:
    train=[r for s in DEFAULT_SEASONS if s<test_season for r in elig[s]];test=elig[test_season];stats=prepare(train)
-   print(f"\nTEST {test_season}")
-   print(f"COMMON SAMPLE: train={len(train):,} test={len(test):,}")
-   print(f"HOME-ONLY WINNER BASELINE: {home_only(test):.2%}")
-   scored={name:score(fit(stats,features),test) for name,features in models.items()};base=scored["BASE"];st=scored["CURRENT_STABLE"]
-   for name,q in scored.items():print(f"{name}: n={q['n']:,} MAE={q['mae']:.3f} RMSE={q['rmse']:.3f} WinnerFromMargin={q['winner']:.2%}")
-   print("DELTAS VS BASE:")
-   for name,q in scored.items():
-    if name=="BASE":continue
-    print(f"  {name}: MAE {q['mae']-base['mae']:+.3f}, RMSE {q['rmse']-base['rmse']:+.3f}, Winner {(q['winner']-base['winner'])*100:+.2f} pp")
-   print("INCREMENTAL VS CURRENT_STABLE:")
-   for name,q in scored.items():
-    if not name.startswith("STABLE_PLUS_"):continue
-    print(f"  {name}: MAE {q['mae']-st['mae']:+.3f}, RMSE {q['rmse']-st['rmse']:+.3f}, Winner {(q['winner']-st['winner'])*100:+.2f} pp")
+   scores={name:score(fit(stats,features),test) for name,features in models.items()}
+   results.append({"season":test_season,"train":len(train),"test":len(test),"scores":scores})
+  stable_rows=[r["scores"]["CURRENT_STABLE"] for r in results]
+  print(f"\nMINIMUM PRIOR GAMES: {min_games}")
+  print(f"CURRENT_STABLE avg: MAE={_mean([q['mae'] for q in stable_rows]):.3f} RMSE={_mean([q['rmse'] for q in stable_rows]):.3f} Winner={_mean([q['winner'] for q in stable_rows]):.2%}")
+  ranked=_summarize(results,"CURRENT_STABLE")[:10]
+  print("TOP 10 EXPERIMENTS VS CURRENT_STABLE:")
+  for i,q in enumerate(ranked,1):
+   print(f" {i:>2}. {q['name']}: MAE {q['mae']:+.3f} | RMSE {q['rmse']:+.3f} | Winner {q['winner']:+.2f} pp | MAE better {q['mae_better']}/3 | RMSE better {q['rmse_better']}/3")
+  best=ranked[0]
+  verdict="PROMISING" if best["mae"]<0 and best["mae_better"]>=2 else "NO CLEAR UPGRADE"
+  print(f"BEST: {best['name']} — {verdict}")
+  print("SEASON CHECK:")
+  for r in results:
+   q=r["scores"][best["name"]];b=r["scores"]["CURRENT_STABLE"]
+   print(f" {r['season']}: MAE {q['mae']-b['mae']:+.3f} | RMSE {q['rmse']-b['rmse']:+.3f} | Winner {(q['winner']-b['winner'])*100:+.2f} pp | n={q['n']:,}")
 
 if __name__=="__main__":main()
