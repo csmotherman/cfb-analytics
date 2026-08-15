@@ -3,11 +3,10 @@
 The matcher is descriptive and post-partition. It scores every eligible v3
 snapshot from 2014-2024 against the catalog and keeps the closest candidates.
 
-v2 matching is intentionally root-first: a flashy modifier cannot rescue a bad
-football-family fit. Candidate variants are blended with the score of their
-unmodified root, contradictions against extreme target traits are penalized,
-and top-N results contain distinct root identities so modifier variants cannot
-crowd out other plausible football builds.
+v3 matching is root-first and salience-aware. A narrow trait can be an excellent
+secondary descriptor without becoming the team's headline identity merely
+because it matches two fields almost perfectly. Primary roots are rewarded for
+explaining the strongest deviations in the team's whole profile.
 """
 from __future__ import annotations
 
@@ -21,7 +20,7 @@ from typing import Any
 
 from .archetype_catalog import CATALOG, CATALOG_VERSION, ArchetypeCandidate
 
-MATCH_VERSION = "historical-archetype-match-v2-root-first-2014-2024"
+MATCH_VERSION = "historical-archetype-match-v3-salience-2014-2024"
 DEFAULT_SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024)
 SIGNED_FIELDS = {
     "identity_explosive_vs_methodical",
@@ -31,6 +30,28 @@ SIGNED_FIELDS = {
     "identity_playcalling_fit",
 }
 ROOTS_BY_NAME = {x.root_name: x for x in CATALOG if x.modifier is None}
+
+# Profile-coverage weights intentionally span quality, style and scheme. They are
+# not prediction weights; they only stop a sparse two-field template from
+# becoming the headline when it ignores more distinctive parts of the profile.
+SALIENCE_WEIGHTS: dict[str, float] = {
+    "identity_rushing_attack": 1.00,
+    "identity_passing_attack": 1.00,
+    "identity_rushing_defense": 0.90,
+    "identity_passing_defense": 0.90,
+    "identity_offense_quality": 0.80,
+    "identity_defense_quality": 0.80,
+    "rush_rate": 1.00,
+    "plays_per_possession": 0.55,
+    "identity_explosive_vs_methodical": 0.65,
+    "identity_offense_vs_defense": 0.55,
+    "identity_run_vs_pass_off": 0.75,
+    "identity_run_vs_pass_def": 0.55,
+    "identity_predictability": 0.55,
+    "identity_one_dimensionality": 0.55,
+    "identity_playcalling_fit": 0.40,
+    "identity_scheme_constraint": 0.55,
+}
 
 
 def _value(row: dict[str, Any], key: str) -> float | None:
@@ -43,9 +64,38 @@ def _value(row: dict[str, Any], key: str) -> float | None:
     return float(raw) if isinstance(raw, (int, float)) and not isinstance(raw, bool) else None
 
 
+def _neutral(key: str) -> float:
+    return 0.0 if key in SIGNED_FIELDS else 50.0
+
+
+def _salience(key: str, actual: float) -> float:
+    scale = 100.0 if key in SIGNED_FIELDS else 50.0
+    return SALIENCE_WEIGHTS.get(key, 0.0) * min(1.0, abs(actual - _neutral(key)) / scale)
+
+
+def _profile_coverage(row: dict[str, Any], target_keys: set[str]) -> float:
+    total = 0.0
+    covered = 0.0
+    for key, weight in SALIENCE_WEIGHTS.items():
+        actual = _value(row, key)
+        if actual is None:
+            continue
+        contribution = _salience(key, actual)
+        total += contribution
+        if key in target_keys:
+            covered += contribution
+    if total <= 1e-12:
+        return 0.0
+    return min(1.0, covered / total)
+
+
+def _specificity_factor(dimensions: int) -> float:
+    # Sparse roots remain valid, but must explain a very salient slice of the
+    # profile to beat a richer identity. Five or more fields receive no penalty.
+    return min(1.0, 0.60 + 0.08 * max(0, dimensions))
+
+
 def _tolerance(key: str) -> float:
-    # A 20-25 percentile miss should matter. Signed contrasts naturally span
-    # roughly twice the range, so they get a wider tolerance.
     return 36.0 if key in SIGNED_FIELDS else 24.0
 
 
@@ -87,11 +137,15 @@ def score_candidate(
         return None
 
     rms = math.sqrt(weighted_sq / weight_sum)
-    # Gaussian-like similarity gives the score real separation: a one-tolerance
-    # RMS miss is ~61 rather than the ~95 produced by the old full-range scale.
-    similarity = 100.0 * math.exp(-0.5 * rms * rms)
+    fit_similarity = 100.0 * math.exp(-0.5 * rms * rms)
     if contradictions:
-        similarity *= 0.72 ** contradictions
+        fit_similarity *= 0.72 ** contradictions
+
+    coverage = _profile_coverage(row, {x["attribute"] for x in used})
+    specificity = _specificity_factor(len(used))
+    # A perfect local fit is not a perfect team identity unless it explains a
+    # meaningful share of what is distinctive about the whole team state.
+    identity_similarity = fit_similarity * (0.45 + 0.55 * coverage) * specificity
 
     used.sort(key=lambda x: abs(x["standardizedDelta"]))
     return {
@@ -100,7 +154,10 @@ def score_candidate(
         "family": candidate.family,
         "rootName": candidate.root_name,
         "modifier": candidate.modifier,
-        "similarity": similarity,
+        "similarity": identity_similarity,
+        "localFitSimilarity": fit_similarity,
+        "profileCoverage": coverage,
+        "specificityFactor": specificity,
         "dimensionsUsed": len(used),
         "contradictions": contradictions,
         "closestAttributes": used[:4],
@@ -109,41 +166,40 @@ def score_candidate(
 
 
 def match_snapshot(row: dict[str, Any], *, top_n: int = 5, min_dimensions: int = 3) -> list[dict[str, Any]]:
-    # Score roots separately. A modified label may sharpen a valid root, but it
-    # cannot turn the wrong football family into the best answer.
-    root_scores: dict[str, float] = {}
+    root_scores: dict[str, dict[str, Any]] = {}
     for root_name, root in ROOTS_BY_NAME.items():
         score = score_candidate(row, root, min_dimensions=min(2, min_dimensions))
         if score is not None:
-            root_scores[root_name] = float(score["similarity"])
+            root_scores[root_name] = score
 
     scored = []
     for candidate in CATALOG:
         score = score_candidate(row, candidate, min_dimensions=min_dimensions)
         if score is None:
             continue
-        root_similarity = root_scores.get(candidate.root_name)
-        if root_similarity is None:
+        root = root_scores.get(candidate.root_name)
+        if root is None:
             continue
+        root_similarity = float(root["similarity"])
         variant_similarity = float(score["similarity"])
-        # Root semantics dominate; modifiers provide refinement.
-        blended = 0.72 * root_similarity + 0.28 * variant_similarity
+        # Root identity dominates. Modifier refinements can improve presentation,
+        # but they cannot turn a weak root into the headline identity.
+        blended = 0.82 * root_similarity + 0.18 * variant_similarity
         score["variantSimilarity"] = variant_similarity
         score["rootSimilarity"] = root_similarity
+        score["rootLocalFitSimilarity"] = root["localFitSimilarity"]
+        score["rootProfileCoverage"] = root["profileCoverage"]
         score["similarity"] = blended
         scored.append(score)
 
-    scored.sort(key=lambda x: (-x["similarity"], x["contradictions"], -x["dimensionsUsed"], x["id"]))
+    scored.sort(key=lambda x: (-x["similarity"], x["contradictions"], -x["rootProfileCoverage"], -x["dimensionsUsed"], x["id"]))
 
-    # Top-N is a list of competing football identities, not a list of cosmetic
-    # variants. Keep only the best-scoring variant for each root so one root
-    # cannot occupy every result slot with Elite/Strong/Defense-Led/etc labels.
     best_by_root: dict[str, dict[str, Any]] = {}
     for score in scored:
         best_by_root.setdefault(str(score["rootName"]), score)
     distinct = sorted(
         best_by_root.values(),
-        key=lambda x: (-x["similarity"], x["contradictions"], -x["dimensionsUsed"], x["id"]),
+        key=lambda x: (-x["similarity"], x["contradictions"], -x["rootProfileCoverage"], -x["dimensionsUsed"], x["id"]),
     )
     return distinct[:top_n]
 
@@ -237,7 +293,8 @@ def concise(report: dict[str, Any], *, examples: int = 20) -> str:
         a = x["bestDominantRootVariant"]
         lines.append(
             f"{x['season']} {x['team']} | root={x['dominantRootName']} "
-            f"({x['dominantRootShare']:.0%}) | build={a['name']} | sim={a['similarity']:.1f}"
+            f"({x['dominantRootShare']:.0%}) | build={a['name']} | "
+            f"score={a['similarity']:.1f} | coverage={a['rootProfileCoverage']:.0%}"
         )
     return "\n".join(lines)
 
