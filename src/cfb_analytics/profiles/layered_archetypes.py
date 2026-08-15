@@ -6,10 +6,11 @@ Only names supported by fields that actually exist in the current profile are
 eligible for presentation. The full 2,000-name catalog remains a research
 vocabulary for future metrics.
 
-v4 is root-first inside every lane: canonical football roots compete using their
-own evidence before any modifier is considered. Modifiers may refine the winning
-root but cannot make a weaker root win. Weak scores are reported as NO CLEAR
-MATCH rather than being presented as confident archetype assignments.
+v5 keeps the root-first matching contract from v4, but fixes the definition of a
+team-season identity. Historical season pages now represent the team's FINAL
+available in-season/postseason snapshot rather than the average of every
+intermediate snapshot. Earlier snapshots remain useful for trajectory, but they
+must not dilute the identity of the finished team.
 """
 from __future__ import annotations
 
@@ -23,7 +24,7 @@ from typing import Any
 from .archetype_catalog import CATALOG
 from .match_archetypes import DEFAULT_SEASONS, PROFILE_FIELDS, _profile_row, score_candidate
 
-LAYERED_VERSION = "historical-archetype-layers-v4-root-first-confidence-2014-2024"
+LAYERED_VERSION = "historical-archetype-layers-v5-final-state-root-first-2014-2024"
 
 LANE_FAMILIES = {
     "team": {"whole_team", "survival"},
@@ -32,9 +33,6 @@ LANE_FAMILIES = {
     "scheme": {"scheme"},
 }
 
-# Research presentation thresholds on the current salience-aware score scale.
-# These do not change the ranking or underlying stats; they only prevent weak
-# nearest-neighbor results from being presented as actual assignments.
 LANE_ASSIGNMENT_THRESHOLDS = {
     "team": 45.0,
     "offense": 50.0,
@@ -68,7 +66,6 @@ EVIDENCE_ROOTS = {
     },
 }
 
-# Root-specific modifier vocabulary. None means the canonical root name itself.
 ROOT_MODIFIERS: dict[str, set[str | None]] = {
     "Complete Team": {None, "Elite", "Strong"},
     "Offense First": {None, "Strong", "Elite", "Offense-Led"},
@@ -136,12 +133,34 @@ def _value(row: dict[str, Any], key: str) -> float | None:
 
 
 def season_profile(rows: list[dict[str, Any]]) -> dict[str, float | None]:
+    """Legacy average-snapshot profile, retained for research comparisons only."""
     out: dict[str, float | None] = {}
     for key in PROFILE_FIELDS:
         vals = [_value(r, key) for r in rows]
         vals = [float(v) for v in vals if isinstance(v, (int, float))]
         out[key] = mean(vals) if vals else None
     return out
+
+
+def _snapshot_order(row: dict[str, Any]) -> tuple[int, int, int, str]:
+    season_type = str(row.get("seasonType") or "regular").lower()
+    phase = 1 if season_type == "postseason" else 0
+    games = int(row.get("gamesPlayed") or 0)
+    week = int(row.get("week") or 0)
+    game_id = str(row.get("throughGameId") or "")
+    return (games, phase, week, game_id)
+
+
+def final_snapshot(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    if not rows:
+        raise ValueError("final_snapshot requires at least one snapshot")
+    return max(rows, key=_snapshot_order)
+
+
+def final_snapshot_profile(rows: list[dict[str, Any]]) -> dict[str, float | None]:
+    """Profile of the finished team-season using its latest available snapshot."""
+    row = final_snapshot(rows)
+    return {key: _value(row, key) for key in PROFILE_FIELDS}
 
 
 def _lane_candidates(lane: str):
@@ -175,7 +194,6 @@ def match_lane(profile: dict[str, float | None], lane: str, *, top_n: int = 3) -
     for candidate in candidates:
         by_root[candidate.root_name].append(candidate)
 
-    # Step 1: canonical roots compete without modifiers.
     roots_ranked: list[tuple[str, dict[str, Any]]] = []
     for root_name, root_candidates in by_root.items():
         canonical = next((c for c in root_candidates if c.modifier is None), None)
@@ -194,7 +212,6 @@ def match_lane(profile: dict[str, float | None], lane: str, *, top_n: int = 3) -
         )
     )
 
-    # Step 2: only after a root is ranked do its legal modifiers compete.
     out: list[dict[str, Any]] = []
     threshold = LANE_ASSIGNMENT_THRESHOLDS[lane]
     for root_name, root_score in roots_ranked[:top_n]:
@@ -216,7 +233,6 @@ def match_lane(profile: dict[str, float | None], lane: str, *, top_n: int = 3) -
             )
         )
         best = variants[0] if variants else dict(root_score)
-        # Modifier quality refines presentation but cannot alter root ranking.
         best["similarity"] = 0.90 * float(root_score["similarity"]) + 0.10 * float(best.get("variantSimilarity", root_score["similarity"]))
         best["assignmentThreshold"] = threshold
         best["confidence"] = _confidence(float(root_score["similarity"]), threshold)
@@ -229,12 +245,18 @@ def match_team_season(rows: list[dict[str, Any]], *, season: int, team: str, top
     selected = [r for r in rows if int(r.get("season", -1)) == int(season) and str(r.get("team")) == team]
     if not selected:
         return {"season": season, "team": team, "status": "NO_DATA"}
-    profile = season_profile(selected)
+    final = final_snapshot(selected)
+    profile = final_snapshot_profile(selected)
     return {
         "season": season,
         "team": team,
         "status": "OK",
         "snapshotCount": len(selected),
+        "profileBasis": "FINAL_SNAPSHOT",
+        "finalGamesPlayed": int(final.get("gamesPlayed") or 0),
+        "finalSeasonType": final.get("seasonType"),
+        "finalWeek": final.get("week"),
+        "finalThroughGameId": final.get("throughGameId"),
         "profile": profile,
         "lanes": {lane: match_lane(profile, lane, top_n=top_n) for lane in LANE_FAMILIES},
     }
@@ -250,16 +272,23 @@ def match_history(rows: list[dict[str, Any]], *, seasons: tuple[int, ...] = DEFA
             groups[(season, team)].append(row)
     items = []
     for (season, team), selected in sorted(groups.items()):
-        profile = season_profile(selected)
+        final = final_snapshot(selected)
+        profile = final_snapshot_profile(selected)
         items.append({
             "season": season,
             "team": team,
             "snapshotCount": len(selected),
+            "profileBasis": "FINAL_SNAPSHOT",
+            "finalGamesPlayed": int(final.get("gamesPlayed") or 0),
+            "finalSeasonType": final.get("seasonType"),
+            "finalWeek": final.get("week"),
+            "finalThroughGameId": final.get("throughGameId"),
             "profile": profile,
             "lanes": {lane: match_lane(profile, lane, top_n=top_n) for lane in LANE_FAMILIES},
         })
     return {
         "version": LAYERED_VERSION,
+        "profileBasis": "FINAL_SNAPSHOT",
         "seasons": sorted(wanted),
         "teamSeasonCount": len(items),
         "eligibleRootCounts": {lane: len(EVIDENCE_ROOTS[lane]) for lane in EVIDENCE_ROOTS},
@@ -289,16 +318,17 @@ def _match_text(items: list[dict[str, Any]]) -> str:
 
 def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
-        "HISTORICAL ARCHETYPE LAYERS — ROOT FIRST + CONFIDENCE",
+        "HISTORICAL ARCHETYPE LAYERS — FINAL TEAM STATE",
         f"Seasons: {report['seasons'][0]}-{report['seasons'][-1]} (2020 absent by corpus design)",
         f"Team-seasons: {report['teamSeasonCount']:,}",
+        "Profile basis: FINAL snapshot for each finished team-season; earlier snapshots remain trajectory only.",
         "Eligible roots: " + ", ".join(f"{k}={v}" for k, v in report["eligibleRootCounts"].items()),
         "Assignment thresholds: " + ", ".join(f"{k}={v:.0f}" for k, v in report["assignmentThresholds"].items()),
         "",
     ]
     for x in report["teamSeasons"][:examples]:
         p = x["profile"]
-        lines.append(f"{x['season']} {x['team']}")
+        lines.append(f"{x['season']} {x['team']} | games={x.get('finalGamesPlayed')} {x.get('finalSeasonType')} week={x.get('finalWeek')}")
         lines.append(
             "  STATS | "
             f"RushAtk={_fmt(p.get('identity_rushing_attack'))} PassAtk={_fmt(p.get('identity_passing_attack'))} "
