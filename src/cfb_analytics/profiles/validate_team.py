@@ -21,27 +21,16 @@ from .grades import grade_percentile
 DEFAULT_SEASONS = (2021, 2022, 2023, 2024, 2025)
 
 QUALITY_FIELDS = (
-    "oa_run_efficiency_off",
-    "oa_pass_efficiency_off",
-    "oa_success_off",
-    "oa_explosiveness_off",
-    "oa_third_down_off",
-    "oa_finishing_off",
-    "oa_run_efficiency_def",
-    "oa_pass_efficiency_def",
-    "oa_success_def",
-    "oa_explosiveness_def",
-    "oa_third_down_def",
-    "oa_finishing_def",
+    "oa_run_efficiency_off", "oa_pass_efficiency_off", "oa_success_off",
+    "oa_explosiveness_off", "oa_third_down_off", "oa_finishing_off",
+    "oa_run_efficiency_def", "oa_pass_efficiency_def", "oa_success_def",
+    "oa_explosiveness_def", "oa_third_down_def", "oa_finishing_def",
 )
 STYLE_FIELDS = ("rush_rate", "pass_rate", "plays_per_possession")
 SHAPE_FIELDS = (
-    "identity_run_vs_pass_off",
-    "identity_run_vs_pass_def",
-    "identity_explosive_vs_methodical",
-    "identity_finishing_vs_foundation",
-    "identity_offense_vs_defense",
-    "identity_rush_vs_pass_tendency",
+    "identity_run_vs_pass_off", "identity_run_vs_pass_def",
+    "identity_explosive_vs_methodical", "identity_finishing_vs_foundation",
+    "identity_offense_vs_defense", "identity_rush_vs_pass_tendency",
 )
 
 
@@ -56,12 +45,6 @@ def _pct(row: dict[str, Any], key: str) -> float | None:
 
 
 def provisional_name(row: dict[str, Any]) -> tuple[str, str]:
-    """Return a calibration-only nickname from one opponent-adjusted snapshot.
-
-    The rules are intentionally simple and ordered. They are not production
-    archetype definitions; they exist so domain/fan feedback can validate whether
-    the analytical shapes feel like the football that was actually played.
-    """
     run_o = _pct(row, "oa_run_efficiency_off") or 50.0
     pass_o = _pct(row, "oa_pass_efficiency_off") or 50.0
     success_o = _pct(row, "oa_success_off") or 50.0
@@ -74,7 +57,6 @@ def provisional_name(row: dict[str, Any]) -> tuple[str, str]:
     rush = _pct(row, "rush_rate") or 50.0
     pass_rate = _pct(row, "pass_rate") or 50.0
     drive_len = _pct(row, "plays_per_possession") or 50.0
-
     off_quality = mean((run_o, pass_o, success_o, explosive_o, finish_o))
     def_quality = mean((run_d, pass_d, success_d, explosive_d))
     run_pass_gap = run_o - pass_o
@@ -119,27 +101,46 @@ def _cluster_lookup(report: dict[str, Any]) -> dict[str, dict[str, Any]]:
     return out
 
 
-def validate_team(
-    snapshots: list[dict[str, Any]],
-    discovery: dict[str, Any],
-    *,
-    team: str,
-    seasons: tuple[int, ...] = DEFAULT_SEASONS,
-) -> dict[str, Any]:
+def _resolve_team(snapshots: list[dict[str, Any]], requested: str) -> str:
+    names = sorted({str(r.get("team")) for r in snapshots if r.get("team")})
+    exact = [n for n in names if n == requested]
+    if exact:
+        return exact[0]
+    ci = [n for n in names if n.lower() == requested.lower()]
+    if len(ci) == 1:
+        return ci[0]
+    contains = [n for n in names if requested.lower() in n.lower()]
+    if len(contains) == 1:
+        return contains[0]
+    return requested
+
+
+def validate_team(snapshots: list[dict[str, Any]], discovery: dict[str, Any], *, team: str, seasons: tuple[int, ...] = DEFAULT_SEASONS) -> dict[str, Any]:
     wanted = {int(s) for s in seasons}
-    snap_index = {
-        (int(r["season"]), str(r["team"]), str(r.get("throughGameId"))): r
-        for r in snapshots
-        if int(r.get("season", -1)) in wanted and str(r.get("team")) == team
+    resolved_team = _resolve_team(snapshots, team)
+    team_snaps = [
+        r for r in snapshots
+        if int(r.get("season", -1)) in wanted and str(r.get("team")) == resolved_team
+    ]
+    by_full = {
+        (int(r["season"]), str(r.get("throughGameId"))): r
+        for r in team_snaps if r.get("throughGameId") is not None
+    }
+    by_fallback = {
+        (int(r["season"]), int(r.get("week") or 0), int(r.get("gamesPlayed") or 0)): r
+        for r in team_snaps
     }
     assignments = [
         a for a in discovery.get("assignments", [])
-        if int(a.get("season", -1)) in wanted and str(a.get("team")) == team
+        if int(a.get("season", -1)) in wanted and str(a.get("team")) == resolved_team
     ]
     by_season: dict[int, list[tuple[dict[str, Any], dict[str, Any]]]] = defaultdict(list)
     for a in assignments:
-        key = (int(a["season"]), team, str(a.get("throughGameId")))
-        snap = snap_index.get(key)
+        snap = None
+        if a.get("throughGameId") is not None:
+            snap = by_full.get((int(a["season"]), str(a.get("throughGameId"))))
+        if snap is None:
+            snap = by_fallback.get((int(a["season"]), int(a.get("week") or 0), int(a.get("gamesPlayed") or 0)))
         if snap is not None:
             by_season[int(a["season"])].append((a, snap))
 
@@ -155,7 +156,6 @@ def validate_team(
         dominant_name, dominant_count = name_counts.most_common(1)[0]
         cluster_counts = Counter(str(a.get("archetype")) for a, _ in pairs)
         dominant_cluster, cluster_count = cluster_counts.most_common(1)[0]
-
         summary: dict[str, Any] = {}
         for key in QUALITY_FIELDS + STYLE_FIELDS:
             summary[key] = _avg([s for _, s in pairs], f"current_{key}_percentile")
@@ -167,66 +167,36 @@ def validate_team(
         last = None
         for a, snap in pairs:
             name, why = provisional_name(snap)
-            state = {
-                "week": snap.get("week"),
-                "gamesPlayed": snap.get("gamesPlayed"),
-                "archetype": a.get("archetype"),
-                "candidateName": name,
-                "why": why,
-            }
+            state = {"week": snap.get("week"), "gamesPlayed": snap.get("gamesPlayed"), "archetype": a.get("archetype"), "candidateName": name, "why": why}
             if last != (a.get("archetype"), name):
                 timeline.append(state)
                 last = (a.get("archetype"), name)
 
         cluster_info = clusters.get(dominant_cluster, {})
         seasons_out.append({
-            "season": season,
-            "status": "OK",
-            "snapshotCount": len(pairs),
-            "dominantCandidateName": dominant_name,
-            "dominantCandidateShare": dominant_count / len(pairs),
-            "dominantCluster": dominant_cluster,
-            "dominantClusterShare": cluster_count / len(pairs),
-            "candidateNameCounts": dict(name_counts),
-            "clusterCounts": dict(cluster_counts),
-            "summary": summary,
-            "timeline": timeline,
-            "clusterExemplars": cluster_info.get("exemplars", [])[:4],
+            "season": season, "status": "OK", "snapshotCount": len(pairs),
+            "dominantCandidateName": dominant_name, "dominantCandidateShare": dominant_count / len(pairs),
+            "dominantCluster": dominant_cluster, "dominantClusterShare": cluster_count / len(pairs),
+            "candidateNameCounts": dict(name_counts), "clusterCounts": dict(cluster_counts),
+            "summary": summary, "timeline": timeline, "clusterExemplars": cluster_info.get("exemplars", [])[:4],
         })
-    return {"team": team, "seasons": seasons_out, "labelStatus": "CALIBRATION_ONLY"}
+    return {"team": resolved_team, "requestedTeam": team, "seasons": seasons_out, "labelStatus": "CALIBRATION_ONLY"}
 
 
 def concise(report: dict[str, Any]) -> str:
-    lines = [f"TEAM ARCHETYPE VALIDATION — {report['team']}", "Labels are calibration-only, not production archetype names.", ""]
+    title = f"TEAM ARCHETYPE VALIDATION — {report['team']}"
+    if report.get("requestedTeam") != report.get("team"):
+        title += f" (matched from {report['requestedTeam']})"
+    lines = [title, "Labels are calibration-only, not production archetype names.", ""]
     for season in report["seasons"]:
         if season["status"] != "OK":
             lines.append(f"{season['season']}: NO DATA")
             continue
         s = season["summary"]
-        lines.append(
-            f"{season['season']}: {season['dominantCandidateName']} "
-            f"({season['dominantCandidateShare']:.0%} of snapshots) | cluster {season['dominantCluster']} "
-            f"({season['dominantClusterShare']:.0%})"
-        )
-        lines.append(
-            "  OA grades: "
-            f"Run O {s['oa_run_efficiency_off_grade']} ({s['oa_run_efficiency_off']:.0f}) | "
-            f"Pass O {s['oa_pass_efficiency_off_grade']} ({s['oa_pass_efficiency_off']:.0f}) | "
-            f"Success O {s['oa_success_off_grade']} ({s['oa_success_off']:.0f}) | "
-            f"Run D {s['oa_run_efficiency_def_grade']} ({s['oa_run_efficiency_def']:.0f}) | "
-            f"Pass D {s['oa_pass_efficiency_def_grade']} ({s['oa_pass_efficiency_def']:.0f})"
-        )
-        lines.append(
-            "  Style: "
-            f"Rush tendency {s['rush_rate']:.0f} | Pass tendency {s['pass_rate']:.0f} | "
-            f"Drive length {s['plays_per_possession']:.0f}"
-        )
-        lines.append(
-            "  Shape: "
-            f"Run-vs-pass O {s['identity_run_vs_pass_off']:+.0f} | "
-            f"Offense-vs-defense {s['identity_offense_vs_defense']:+.0f} | "
-            f"Explosive-vs-methodical {s['identity_explosive_vs_methodical']:+.0f}"
-        )
+        lines.append(f"{season['season']}: {season['dominantCandidateName']} ({season['dominantCandidateShare']:.0%} of snapshots) | cluster {season['dominantCluster']} ({season['dominantClusterShare']:.0%})")
+        lines.append("  OA grades: " f"Run O {s['oa_run_efficiency_off_grade']} ({s['oa_run_efficiency_off']:.0f}) | " f"Pass O {s['oa_pass_efficiency_off_grade']} ({s['oa_pass_efficiency_off']:.0f}) | " f"Success O {s['oa_success_off_grade']} ({s['oa_success_off']:.0f}) | " f"Run D {s['oa_run_efficiency_def_grade']} ({s['oa_run_efficiency_def']:.0f}) | " f"Pass D {s['oa_pass_efficiency_def_grade']} ({s['oa_pass_efficiency_def']:.0f})")
+        lines.append("  Style: " f"Rush tendency {s['rush_rate']:.0f} | Pass tendency {s['pass_rate']:.0f} | " f"Drive length {s['plays_per_possession']:.0f}")
+        lines.append("  Shape: " f"Run-vs-pass O {s['identity_run_vs_pass_off']:+.0f} | " f"Offense-vs-defense {s['identity_offense_vs_defense']:+.0f} | " f"Explosive-vs-methodical {s['identity_explosive_vs_methodical']:+.0f}")
         if season["timeline"]:
             changes = " -> ".join(f"W{x['week']} {x['candidateName']} [{x['archetype']}]" for x in season["timeline"])
             lines.append(f"  Timeline: {changes}")
@@ -243,19 +213,12 @@ def main() -> None:
     p.add_argument("--team", default="Michigan")
     p.add_argument("--seasons", nargs="+", type=int, default=list(DEFAULT_SEASONS))
     args = p.parse_args()
-
     profile_root = args.processed_root / "derived" / "profiles"
     snapshot_path = profile_root / "identity_snapshots_v2_oa.json"
     discovery_path = profile_root / "archetype_discovery_v2_oa.json"
     if not snapshot_path.exists() or not discovery_path.exists():
         raise FileNotFoundError("build OA snapshots and archetype discovery before validation")
-
-    report = validate_team(
-        json.loads(snapshot_path.read_text()),
-        json.loads(discovery_path.read_text()),
-        team=args.team,
-        seasons=tuple(args.seasons),
-    )
+    report = validate_team(json.loads(snapshot_path.read_text()), json.loads(discovery_path.read_text()), team=args.team, seasons=tuple(args.seasons))
     print(concise(report))
 
 
