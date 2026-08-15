@@ -15,7 +15,28 @@ from .layered_archetypes import (
 )
 from .snapshots import DEFAULT_SEASONS
 
-OUTPUT_VERSION = "dynamic-team-profiles-v2-full-corpus"
+OUTPUT_VERSION = "dynamic-team-profiles-v3-style-mechanism"
+
+STYLE_METRIC_MAP = {
+    "identity_success_quality": "oa_success_off",
+    "identity_explosiveness_quality": "oa_explosiveness_off",
+    "identity_finishing_quality": "oa_finishing_off",
+    "identity_third_down_quality": "oa_third_down_off",
+}
+
+
+def _enrich_style_metrics(
+    profile: dict[str, float | None],
+    snapshot: dict[str, Any],
+    *,
+    prefix: str,
+) -> dict[str, float | None]:
+    """Attach direct percentile evidence used to distinguish offensive mechanisms."""
+    out = dict(profile)
+    for target, source in STYLE_METRIC_MAP.items():
+        value = snapshot.get(f"{prefix}_{source}_percentile")
+        out[target] = float(value) if isinstance(value, (int, float)) and not isinstance(value, bool) else None
+    return out
 
 
 def build_dynamic_profiles(
@@ -41,9 +62,12 @@ def build_dynamic_profiles(
             )
         )
         final = final_snapshot(selected)
-        season_profiles = [_season_identity_from_snapshot(row) for row in selected]
+        season_profiles = [
+            _enrich_style_metrics(_season_identity_from_snapshot(row), row, prefix="baseline")
+            for row in selected
+        ]
         profile = season_profiles[-1]
-        closing = closing_form_profile(selected)
+        closing = _enrich_style_metrics(closing_form_profile(selected), final, prefix="current")
         identity = build_dynamic_identity(
             profile,
             closing_form=closing,
@@ -56,6 +80,7 @@ def build_dynamic_profiles(
                 "identityName": identity["name"],
                 "identityTags": identity["tags"],
                 "identitySummary": identity["summary"],
+                "identityStyle": identity["style"],
                 "identityVersion": identity["version"],
                 "profileBasis": "FINAL_SEASON_TO_DATE_BASELINE",
                 "closingFormBasis": "RECENT_FOUR_GAMES",
@@ -73,7 +98,7 @@ def build_dynamic_profiles(
     return {
         "version": OUTPUT_VERSION,
         "identityVersion": DYNAMIC_IDENTITY_VERSION,
-        "namingBasis": "DYNAMIC_COMPOSITION_NOT_FIXED_ARCHETYPE_DATABASE",
+        "namingBasis": "STYLE_FIRST_DYNAMIC_COMPOSITION_NOT_FIXED_ARCHETYPE_DATABASE",
         "seasons": sorted(wanted),
         "teamSeasonCount": len(items),
         "teamSeasons": items,
@@ -82,16 +107,19 @@ def build_dynamic_profiles(
 
 def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
-        "DYNAMIC TEAM IDENTITIES",
+        "DYNAMIC TEAM IDENTITIES — STYLE FIRST",
         f"Team-seasons: {report['teamSeasonCount']:,}",
         f"Seasons: {', '.join(str(x) for x in report['seasons'])}",
-        "Names: composed from quality + tendencies + interactions + consistency + trajectory.",
-        "Tags: supporting profile traits for fan-facing display.",
+        "Names: how they play first; quality, structure, consistency, and trajectory modify the style.",
+        "Tags: supporting mechanism and quality traits for fan-facing display.",
         "",
     ]
     for item in report["teamSeasons"][:examples]:
         tags = " · ".join(item.get("identityTags") or []) or "No strong tags"
+        style = item.get("identityStyle") or {}
+        style_text = " / ".join(str(style.get(k)) for k in ("usage", "method", "efficiencyShape", "attackBalance", "teamStructure"))
         lines.append(f"{item['season']} {item['team']} — {item['identityName']}")
+        lines.append(f"  STYLE: {style_text}")
         lines.append(f"  {tags}")
         lines.append(f"  {item['identitySummary']}")
         lines.append("")
