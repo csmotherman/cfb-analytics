@@ -13,9 +13,9 @@ from .layered_archetypes import (
     closing_form_profile,
     final_snapshot,
 )
-from .match_archetypes import DEFAULT_SEASONS
+from .snapshots import DEFAULT_SEASONS
 
-OUTPUT_VERSION = "dynamic-team-profiles-v1"
+OUTPUT_VERSION = "dynamic-team-profiles-v2-full-corpus"
 
 
 def build_dynamic_profiles(
@@ -84,6 +84,7 @@ def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
         "DYNAMIC TEAM IDENTITIES",
         f"Team-seasons: {report['teamSeasonCount']:,}",
+        f"Seasons: {', '.join(str(x) for x in report['seasons'])}",
         "Names: composed from quality + tendencies + interactions + consistency + trajectory.",
         "Tags: supporting profile traits for fan-facing display.",
         "",
