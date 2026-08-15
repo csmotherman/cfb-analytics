@@ -1,7 +1,7 @@
 from cfb_analytics.profiles.layered_archetypes import (
-    ALLOWED_MODIFIERS,
     EVIDENCE_ROOTS,
     LANE_FAMILIES,
+    ROOT_MODIFIERS,
     match_lane,
 )
 
@@ -37,13 +37,13 @@ def test_each_lane_only_returns_its_allowed_families():
         assert all(x["family"] in families for x in matches)
 
 
-def test_each_lane_only_returns_evidence_backed_roots_and_modifiers():
+def test_each_lane_only_returns_evidence_backed_roots_and_root_valid_modifiers():
     profile = _profile()
     for lane in LANE_FAMILIES:
         matches = match_lane(profile, lane, top_n=20)
         assert matches
         assert all(x["rootName"] in EVIDENCE_ROOTS[lane] for x in matches)
-        assert all(x["modifier"] in ALLOWED_MODIFIERS[lane] for x in matches)
+        assert all(x["modifier"] in ROOT_MODIFIERS[x["rootName"]] for x in matches)
 
 
 def test_offense_lane_does_not_return_defensive_funnel_label():
@@ -59,8 +59,18 @@ def test_unmeasured_concepts_are_not_assignable():
     assert not ({x["rootName"] for x in all_matches} & forbidden)
 
 
-def test_defense_lane_does_not_use_offensive_style_modifiers():
-    matches = match_lane(_profile(), "defense", top_n=20)
-    assert matches
-    forbidden = {"Finesse", "Run-Leaning", "Pass-Leaning", "One-Dimensional", "Possession"}
-    assert all(x["modifier"] not in forbidden for x in matches)
+def test_known_semantic_contradictions_are_forbidden_by_root():
+    assert "Strong" not in ROOT_MODIFIERS["Open Skies"]
+    assert "Strong" not in ROOT_MODIFIERS["Open Highway"]
+    assert "Strong" not in ROOT_MODIFIERS["Paper Wall"]
+    assert "Broken" not in ROOT_MODIFIERS["Complete Team"]
+    assert "Defense-Led" not in ROOT_MODIFIERS["Offense First"]
+    assert "Offense-Led" not in ROOT_MODIFIERS["Defense First"]
+    assert "Stable" not in ROOT_MODIFIERS["Identity Crisis"]
+    assert "Well-Fit" not in ROOT_MODIFIERS["Playcalling Prison"]
+
+
+def test_positive_defensive_roots_allow_positive_strength_modifiers():
+    assert "Elite" in ROOT_MODIFIERS["Run Wall"]
+    assert "Strong" in ROOT_MODIFIERS["No Fly Zone"]
+    assert "Elite" in ROOT_MODIFIERS["Brick Wall"]
