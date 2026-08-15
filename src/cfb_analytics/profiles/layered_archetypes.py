@@ -5,6 +5,10 @@ separately against whole-team, offense, defense, and scheme/style vocabularies.
 Only names supported by fields that actually exist in the current profile are
 eligible for presentation. The full 2,000-name catalog remains a research
 vocabulary for future metrics.
+
+v3 also makes modifiers root-specific. A modifier can refine a football identity
+only when the resulting phrase is semantically coherent (for example, Strong
+Run Wall is valid, while Strong Open Skies is not).
 """
 from __future__ import annotations
 
@@ -18,7 +22,7 @@ from typing import Any
 from .archetype_catalog import CATALOG
 from .match_archetypes import DEFAULT_SEASONS, PROFILE_FIELDS, _profile_row, score_candidate
 
-LAYERED_VERSION = "historical-archetype-layers-v2-evidence-backed-2014-2024"
+LAYERED_VERSION = "historical-archetype-layers-v3-root-modifiers-2014-2024"
 
 LANE_FAMILIES = {
     "team": {"whole_team", "survival"},
@@ -27,10 +31,6 @@ LANE_FAMILIES = {
     "scheme": {"scheme"},
 }
 
-# These names are eligible because every concept in the label is supported by
-# fields presently available in the profile. Names requiring YAC, personnel,
-# front structure, route concepts, talent, or coaching intent remain in the 2K
-# research vocabulary but cannot be assigned yet.
 EVIDENCE_ROOTS = {
     "team": {
         "Complete Team", "Offense First", "Defense First", "Defense or Bust",
@@ -57,18 +57,66 @@ EVIDENCE_ROOTS = {
     },
 }
 
-# Modifier semantics are lane-specific. This prevents nonsense combinations such
-# as "Finesse Complete Team" or "One-Dimensional Open Skies".
-ALLOWED_MODIFIERS = {
-    "team": {None, "Elite", "Strong", "Limited", "Broken", "Defense-Led", "Offense-Led"},
-    "offense": {
-        None, "Elite", "Strong", "Limited", "Broken", "Explosive", "Methodical",
-        "Volatile", "Stable", "Predictable", "Adaptive", "Run-Leaning",
-        "Pass-Leaning", "Possession", "Control", "One-Dimensional",
-        "Run-Dependent", "Pass-Dependent",
-    },
-    "defense": {None, "Elite", "Strong", "Limited", "Broken"},
-    "scheme": {None, "Predictable", "Adaptive", "Stable", "Miscast", "Well-Fit", "One-Dimensional"},
+# Root-specific modifier vocabulary. None means the canonical root name itself.
+ROOT_MODIFIERS: dict[str, set[str | None]] = {
+    # Whole-team identities.
+    "Complete Team": {None, "Elite", "Strong"},
+    "Offense First": {None, "Strong", "Elite", "Offense-Led"},
+    "Defense First": {None, "Strong", "Elite", "Defense-Led"},
+    "Defense or Bust": {None, "Defense-Led"},
+    "Outscore the Problem": {None, "Offense-Led", "Explosive"},
+    "Paper Tiger": {None, "Offense-Led"},
+    "One-Sided Contender": {None, "Offense-Led", "Defense-Led"},
+    "Searching for Answers": {None, "Limited", "Broken"},
+    "Low Ceiling": {None, "Limited"},
+    "Ugly but Effective": {None, "Strong", "Defense-Led", "Possession"},
+
+    # Run-centric offense.
+    "Ground & Pound": {None, "Elite", "Strong", "Run-Leaning", "Run-Dependent", "Predictable", "Possession", "Methodical"},
+    "Run or Die": {None, "Elite", "Strong", "Predictable", "One-Dimensional", "Run-Dependent", "Possession"},
+    "Possession Vampire": {None, "Elite", "Strong", "Run-Leaning", "Possession", "Methodical", "Control"},
+    "Three Yards and a Cloud": {None, "Run-Leaning", "Run-Dependent", "Predictable", "Methodical", "Limited"},
+    "Run Into a Wall": {None, "Broken", "Limited", "Run-Dependent", "Predictable", "One-Dimensional"},
+
+    # Pass-centric offense.
+    "Air It Out": {None, "Elite", "Strong", "Pass-Leaning", "Pass-Dependent", "Explosive", "Volatile"},
+    "Bombs Away": {None, "Elite", "Strong", "Pass-Leaning", "Pass-Dependent", "Explosive", "Volatile"},
+    "Pass to Control": {None, "Elite", "Strong", "Pass-Leaning", "Pass-Dependent", "Methodical", "Control", "Possession"},
+    "Sling and Pray": {None, "Broken", "Limited", "Pass-Leaning", "Pass-Dependent", "Predictable", "One-Dimensional", "Volatile"},
+    "Broken Passing Game": {None, "Broken", "Limited", "One-Dimensional", "Run-Dependent"},
+
+    # Offensive shape / tempo.
+    "Death by a Thousand Cuts": {None, "Elite", "Strong", "Methodical", "Possession", "Control"},
+    "Metronome": {None, "Elite", "Strong", "Methodical", "Stable", "Control"},
+    "Home Run Hunter": {None, "Elite", "Strong", "Explosive", "Volatile"},
+    "Boom or Bust": {None, "Explosive", "Volatile", "Predictable"},
+    "Efficient but Toothless": {None, "Methodical", "Stable"},
+    "Pretty but Empty": {None, "Explosive", "Volatile", "Limited"},
+    "Stuck in Mud": {None, "Broken", "Limited", "Methodical"},
+    "Three-and-Out Factory": {None, "Broken", "Limited", "Predictable"},
+    "All Gas": {None, "Elite", "Strong", "Explosive", "Volatile", "Adaptive"},
+    "Slow Cooker": {None, "Strong", "Methodical", "Possession", "Control"},
+    "Clock Eater": {None, "Strong", "Run-Leaning", "Possession", "Control", "Methodical"},
+    "Possession Roulette": {None, "Volatile", "Broken", "Limited"},
+
+    # Defense.
+    "Run Wall": {None, "Elite", "Strong"},
+    "Run Funnel": {None},
+    "Open Highway": {None, "Limited", "Broken"},
+    "No Fly Zone": {None, "Elite", "Strong"},
+    "Coverage Blanket": {None, "Elite", "Strong"},
+    "Pass Funnel": {None},
+    "Open Skies": {None, "Limited", "Broken"},
+    "Brick Wall": {None, "Elite", "Strong"},
+    "Paper Wall": {None, "Limited", "Broken"},
+    "Defense in Name Only": {None, "Broken"},
+
+    # Scheme / behavior.
+    "Predictable Grinder": {None, "Predictable", "One-Dimensional"},
+    "Constraint Master": {None, "Adaptive", "Well-Fit"},
+    "Tendency Breaker": {None, "Adaptive", "Well-Fit"},
+    "Playcalling Prison": {None, "Predictable", "Miscast", "One-Dimensional"},
+    "Identity Crisis": {None, "Miscast", "One-Dimensional"},
 }
 
 
@@ -94,12 +142,11 @@ def season_profile(rows: list[dict[str, Any]]) -> dict[str, float | None]:
 def _lane_candidates(lane: str):
     families = LANE_FAMILIES[lane]
     roots = EVIDENCE_ROOTS[lane]
-    modifiers = ALLOWED_MODIFIERS[lane]
     return [
         c for c in CATALOG
         if c.family in families
         and c.root_name in roots
-        and c.modifier in modifiers
+        and c.modifier in ROOT_MODIFIERS.get(c.root_name, {None})
     ]
 
 
@@ -174,7 +221,7 @@ def _match_text(items: list[dict[str, Any]]) -> str:
 
 def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
-        "HISTORICAL ARCHETYPE LAYERS — EVIDENCE BACKED",
+        "HISTORICAL ARCHETYPE LAYERS — ROOT-SPECIFIC MODIFIERS",
         f"Seasons: {report['seasons'][0]}-{report['seasons'][-1]} (2020 absent by corpus design)",
         f"Team-seasons: {report['teamSeasonCount']:,}",
         "Eligible roots: " + ", ".join(f"{k}={v}" for k, v in report["eligibleRootCounts"].items()),
