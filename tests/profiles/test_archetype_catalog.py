@@ -54,3 +54,28 @@ def test_historical_matcher_excludes_2025_when_default_seasons_are_requested():
     assert report["snapshotCount"] == 1
     assert report["matches"][0]["season"] == 2024
     assert 2025 not in report["seasons"]
+
+
+def test_team_season_summary_exposes_actual_averaged_profile_before_match():
+    base = {
+        "season": 2024,
+        "team": "Example",
+        "seasonType": "regular",
+        "identity_rushing_attack": 80.0,
+        "identity_passing_attack": 20.0,
+        "identity_offense_quality": 55.0,
+        "identity_defense_quality": 60.0,
+        "current_rush_rate_percentile": 90.0,
+        "current_plays_per_possession_percentile": 65.0,
+        "identity_one_dimensionality": 60.0,
+        "identity_scheme_constraint": 65.0,
+    }
+    rows = [
+        dict(base, week=4, gamesPlayed=4, throughGameId="g4"),
+        dict(base, week=5, gamesPlayed=5, throughGameId="g5", identity_rushing_attack=70.0),
+    ]
+    report = match_history(rows, seasons=(2024,))
+    summary = report["teamSeasonSummaries"][0]
+    assert summary["profile"]["identity_rushing_attack"] == 75.0
+    assert summary["profile"]["identity_passing_attack"] == 20.0
+    assert summary["seasonProfileMatches"]
