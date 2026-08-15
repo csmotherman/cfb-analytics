@@ -1,57 +1,85 @@
 from cfb_analytics.profiles.snapshots import add_context_percentiles, build_identity_snapshots
 from cfb_analytics.profiles.discovery import discover_archetypes
+from cfb_analytics.profiles.opponent_adjustment import METRIC_SPECS, fit_context
 
 
-def game(week, team, rush_s, pass_s, *, opponent="B"):
+def game(week, team, rush_s, pass_s, *, opponent="B", game_id=None):
     return {
-        "season": 2025, "seasonType": "regular", "week": week, "gameId": f"g{week}-{team}",
+        "season": 2025, "seasonType": "regular", "week": week, "gameId": game_id or f"g{week}-{team}",
         "team": team, "opponent": opponent, "gameValidationStatus": "PASS",
         "rushSuccessEligiblePlays": 20, "rushSuccessfulPlays": rush_s,
         "passSuccessEligiblePlays": 20, "passSuccessfulPlays": pass_s,
         "successEligiblePlays": 40, "successfulPlays": rush_s + pass_s,
-        "explosiveEligiblePlays": 40, "explosivePlays": 4,
-        "rushSuccessEligiblePlaysAllowed": 20, "rushSuccessfulPlaysAllowed": 8,
-        "passSuccessEligiblePlaysAllowed": 20, "passSuccessfulPlaysAllowed": 8,
-        "explosiveEligiblePlaysAllowed": 40, "explosivePlaysAllowed": 4,
-        "down3SuccessEligiblePlays": 10, "down3SuccessfulPlays": 4,
-        "down3SuccessEligiblePlaysAllowed": 10, "down3SuccessfulPlaysAllowed": 4,
-        "resolvedPointOpportunities": 4, "opportunityPoints": 14,
-        "resolvedPointOpportunitiesAllowed": 4, "opportunityPointsAllowed": 14,
+        "explosiveEligiblePlays": 40, "explosivePlays": max(1, pass_s // 2),
+        "down3SuccessEligiblePlays": 10, "down3SuccessfulPlays": max(1, (rush_s + pass_s) // 4),
+        "resolvedPointOpportunities": 4, "opportunityPoints": float(rush_s + pass_s),
         "validatedPossessions": 10, "offensivePlays": 65,
     }
 
 
+def paired_week(week, a_rush, a_pass, b_rush=8, b_pass=8):
+    gid=f"g{week}"
+    return [game(week,"A",a_rush,a_pass,opponent="B",game_id=gid), game(week,"B",b_rush,b_pass,opponent="A",game_id=gid)]
+
+
 def test_snapshots_capture_recent_state_separately_from_full_season():
-    rows = [game(w, "A", 8 if w <= 4 else 16, 8 if w <= 4 else 16) for w in range(1, 9)]
-    snaps = build_identity_snapshots(rows, min_games=4, recent_games=4)
-    assert len(snaps) == 5
-    last = snaps[-1]
+    rows=[]
+    for w in range(1,9): rows += paired_week(w,8 if w<=4 else 16,8 if w<=4 else 16)
+    snaps=build_identity_snapshots(rows,min_games=4,recent_games=4)
+    last=next(r for r in reversed(snaps) if r["team"]=="A")
     assert last["current_success_off"] > last["baseline_success_off"]
     assert last["gamesPlayed"] == 8
     assert last["recentGames"] == 4
+    assert "current_oa_success_off" in last
 
 
-def test_context_percentiles_compare_same_week_states():
-    rows = []
-    for team, successes in (("A", 16), ("B", 8), ("C", 12)):
-        rows.extend(game(w, team, successes, successes, opponent="X") for w in range(1, 5))
-    enriched = add_context_percentiles(build_identity_snapshots(rows, min_games=4, recent_games=4))
-    a = next(r for r in enriched if r["team"] == "A")
-    b = next(r for r in enriched if r["team"] == "B")
-    assert a["current_success_off_percentile"] > b["current_success_off_percentile"]
+def test_opponent_adjustment_rewards_same_output_against_stronger_defense():
+    rows=[]
+    for w in range(1,5):
+        rows += [
+            game(w,"A",12,12,opponent="X",game_id=f"ax{w}"), game(w,"X",16,16,opponent="A",game_id=f"ax{w}"),
+            game(w,"B",12,12,opponent="Y",game_id=f"by{w}"), game(w,"Y",4,4,opponent="B",game_id=f"by{w}"),
+        ]
+    fit=fit_context(rows)["success"]
+    assert fit["defense"]["Y"] > fit["defense"]["X"]
 
 
-def test_unsupervised_discovery_finds_recurring_shapes():
-    rows = []
-    for i in range(60):
-        high = i < 30
-        row = {"season": 2025, "team": f"T{i}", "week": 8, "gamesPlayed": 8}
-        for key in ("success_off", "explosiveness_off", "run_efficiency_off", "pass_efficiency_off", "run_efficiency_def", "pass_efficiency_def"):
-            row[f"current_{key}_percentile"] = (85.0 + (i % 3)) if high else (15.0 + (i % 3))
-            row[f"trend_{key}"] = 0.0
-        rows.append(row)
-    report = discover_archetypes(rows, k_min=2, k_max=3, min_coverage=0.9, include_trend=False)
-    assert report["selectedK"] in (2, 3)
-    assert report["snapshotCount"] == 60
-    assert len(report["clusters"]) == report["selectedK"]
-    assert all(cluster["fanName"] is None for cluster in report["clusters"])
+def test_context_percentiles_are_built_for_oa_quality_and_style():
+    rows=[]
+    for w in range(1,5): rows += paired_week(w,16,14,8,6)
+    enriched=add_context_percentiles(build_identity_snapshots(rows,min_games=4,recent_games=4))
+    a=next(r for r in enriched if r["team"]=="A")
+    b=next(r for r in enriched if r["team"]=="B")
+    assert a["current_oa_success_off_percentile"] > b["current_oa_success_off_percentile"]
+    assert "identity_run_vs_pass_off" in a
+    assert "identity_offense_vs_defense" in a
+
+
+def test_hierarchical_discovery_produces_more_than_broad_families():
+    rows=[]
+    for i in range(360):
+        r={"season":2025-(i%3),"team":f"T{i}","week":8,"gamesPlayed":8}
+        group=i%12
+        base=10.0 + group*7.0
+        fields=(
+            "current_oa_run_efficiency_off_percentile","current_oa_pass_efficiency_off_percentile",
+            "current_oa_success_off_percentile","current_oa_explosiveness_off_percentile",
+            "current_oa_third_down_off_percentile","current_oa_finishing_off_percentile",
+            "current_oa_run_efficiency_def_percentile","current_oa_pass_efficiency_def_percentile",
+            "current_oa_success_def_percentile","current_oa_explosiveness_def_percentile",
+            "current_oa_third_down_def_percentile","current_oa_finishing_def_percentile",
+            "current_rush_rate_percentile","current_pass_rate_percentile","current_plays_per_possession_percentile",
+        )
+        for j,f in enumerate(fields): r[f]=max(1.0,min(99.0,base + ((j%4)-1.5)*3 + (i%3)))
+        r["identity_run_vs_pass_off"]=r["current_oa_run_efficiency_off_percentile"]-r["current_oa_pass_efficiency_off_percentile"]
+        r["identity_run_vs_pass_def"]=r["current_oa_run_efficiency_def_percentile"]-r["current_oa_pass_efficiency_def_percentile"]
+        r["identity_explosive_vs_methodical"]=r["current_oa_explosiveness_off_percentile"]-r["current_oa_success_off_percentile"]
+        r["identity_finishing_vs_foundation"]=r["current_oa_finishing_off_percentile"]-r["current_oa_success_off_percentile"]
+        r["identity_offense_vs_defense"]=r["current_oa_success_off_percentile"]-r["current_oa_success_def_percentile"]
+        r["identity_rush_vs_pass_tendency"]=r["current_rush_rate_percentile"]-r["current_pass_rate_percentile"]
+        rows.append(r)
+    report=discover_archetypes(rows,family_k=3,sub_k_min=2,sub_k_max=3,min_coverage=.9,min_cluster=20)
+    assert report["familyCount"] == 3
+    assert report["archetypeCount"] >= 6
+    assert all(a["fanName"] is None for f in report["families"] for a in f["archetypes"])
+    assert report["qualityPolicy"].startswith("quality dimensions opponent-adjusted")
