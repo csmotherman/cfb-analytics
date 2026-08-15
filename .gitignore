@@ -11,3 +11,9 @@ data/raw/**
 !data/raw/.gitkeep
 data/processed/**
 !data/processed/.gitkeep
+
+# Pilot website local/build artifacts.
+website/node_modules/
+website/.next/
+website/.turbo/
+website/npm-debug.log*
