@@ -200,28 +200,55 @@ def _tags(
         elif rush <= 25 and run - pas >= 15:
             tags.append("Pass-Committed")
 
-    def_stability = consistency.get("identity_defense_quality", {}).get("stabilityScore")
-    off_stability = consistency.get("identity_offense_quality", {}).get("stabilityScore")
-    if isinstance(def_stability, (int, float)) and def_stability >= 75 and defense is not None and defense >= 75:
-        tags.append("Stable Defense")
-    if isinstance(off_stability, (int, float)) and off_stability >= 75 and off is not None and off >= 60:
-        tags.append("Stable Offense")
-
+    closing_off = None
+    closing_def = None
+    off_trajectory = None
+    def_trajectory = None
     if closing_form:
         closing_off = _number(closing_form.get("identity_offense_quality"))
         closing_def = _number(closing_form.get("identity_defense_quality"))
         if off is not None and closing_off is not None:
             if closing_off <= off - 12:
-                tags.append("Offense Faded Late")
+                off_trajectory = "Offense Faded Late"
             elif closing_off >= off + 12:
-                tags.append("Offense Surged Late")
+                off_trajectory = "Offense Surged Late"
         if defense is not None and closing_def is not None:
             if closing_def <= defense - 12:
-                tags.append("Defense Faded Late")
+                def_trajectory = "Defense Faded Late"
             elif closing_def >= defense + 12:
-                tags.append("Defense Surged Late")
+                def_trajectory = "Defense Surged Late"
 
-    # Preserve order while preventing duplicate labels.
+    # Trajectory is more informative than generic stability on a fan-facing
+    # profile. Add it first, and suppress a unit's "Stable" tag when that unit
+    # materially changed late. Stability still remains available numerically in
+    # the consistency payload.
+    if off_trajectory:
+        tags.append(off_trajectory)
+    if def_trajectory:
+        tags.append(def_trajectory)
+
+    def_stability = consistency.get("identity_defense_quality", {}).get("stabilityScore")
+    off_stability = consistency.get("identity_offense_quality", {}).get("stabilityScore")
+    if (
+        not def_trajectory
+        and isinstance(def_stability, (int, float))
+        and def_stability >= 75
+        and defense is not None
+        and defense >= 75
+    ):
+        tags.append("Stable Defense")
+    if (
+        not off_trajectory
+        and isinstance(off_stability, (int, float))
+        and off_stability >= 75
+        and off is not None
+        and off >= 60
+    ):
+        tags.append("Stable Offense")
+
+    # Preserve order while preventing duplicate labels. Eight concise tags is
+    # enough for the profile header; detailed consistency remains available in
+    # the structured output below it.
     return list(dict.fromkeys(tags))[:8]
 
 
