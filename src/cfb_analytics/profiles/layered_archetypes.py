@@ -6,9 +6,10 @@ Only names supported by fields that actually exist in the current profile are
 eligible for presentation. The full 2,000-name catalog remains a research
 vocabulary for future metrics.
 
-v3 also makes modifiers root-specific. A modifier can refine a football identity
-only when the resulting phrase is semantically coherent (for example, Strong
-Run Wall is valid, while Strong Open Skies is not).
+v4 is root-first inside every lane: canonical football roots compete using their
+own evidence before any modifier is considered. Modifiers may refine the winning
+root but cannot make a weaker root win. Weak scores are reported as NO CLEAR
+MATCH rather than being presented as confident archetype assignments.
 """
 from __future__ import annotations
 
@@ -22,13 +23,23 @@ from typing import Any
 from .archetype_catalog import CATALOG
 from .match_archetypes import DEFAULT_SEASONS, PROFILE_FIELDS, _profile_row, score_candidate
 
-LAYERED_VERSION = "historical-archetype-layers-v3-root-modifiers-2014-2024"
+LAYERED_VERSION = "historical-archetype-layers-v4-root-first-confidence-2014-2024"
 
 LANE_FAMILIES = {
     "team": {"whole_team", "survival"},
     "offense": {"run_offense", "pass_offense", "offensive_shape", "tempo"},
     "defense": {"run_defense", "pass_defense", "defense"},
     "scheme": {"scheme"},
+}
+
+# Research presentation thresholds on the current salience-aware score scale.
+# These do not change the ranking or underlying stats; they only prevent weak
+# nearest-neighbor results from being presented as actual assignments.
+LANE_ASSIGNMENT_THRESHOLDS = {
+    "team": 45.0,
+    "offense": 50.0,
+    "defense": 50.0,
+    "scheme": 45.0,
 }
 
 EVIDENCE_ROOTS = {
@@ -59,7 +70,6 @@ EVIDENCE_ROOTS = {
 
 # Root-specific modifier vocabulary. None means the canonical root name itself.
 ROOT_MODIFIERS: dict[str, set[str | None]] = {
-    # Whole-team identities.
     "Complete Team": {None, "Elite", "Strong"},
     "Offense First": {None, "Strong", "Elite", "Offense-Led"},
     "Defense First": {None, "Strong", "Elite", "Defense-Led"},
@@ -71,21 +81,18 @@ ROOT_MODIFIERS: dict[str, set[str | None]] = {
     "Low Ceiling": {None, "Limited"},
     "Ugly but Effective": {None, "Strong", "Defense-Led", "Possession"},
 
-    # Run-centric offense.
     "Ground & Pound": {None, "Elite", "Strong", "Run-Leaning", "Run-Dependent", "Predictable", "Possession", "Methodical"},
     "Run or Die": {None, "Elite", "Strong", "Predictable", "One-Dimensional", "Run-Dependent", "Possession"},
     "Possession Vampire": {None, "Elite", "Strong", "Run-Leaning", "Possession", "Methodical", "Control"},
     "Three Yards and a Cloud": {None, "Run-Leaning", "Run-Dependent", "Predictable", "Methodical", "Limited"},
     "Run Into a Wall": {None, "Broken", "Limited", "Run-Dependent", "Predictable", "One-Dimensional"},
 
-    # Pass-centric offense.
     "Air It Out": {None, "Elite", "Strong", "Pass-Leaning", "Pass-Dependent", "Explosive", "Volatile"},
     "Bombs Away": {None, "Elite", "Strong", "Pass-Leaning", "Pass-Dependent", "Explosive", "Volatile"},
     "Pass to Control": {None, "Elite", "Strong", "Pass-Leaning", "Pass-Dependent", "Methodical", "Control", "Possession"},
     "Sling and Pray": {None, "Broken", "Limited", "Pass-Leaning", "Pass-Dependent", "Predictable", "One-Dimensional", "Volatile"},
     "Broken Passing Game": {None, "Broken", "Limited", "One-Dimensional", "Run-Dependent"},
 
-    # Offensive shape / tempo.
     "Death by a Thousand Cuts": {None, "Elite", "Strong", "Methodical", "Possession", "Control"},
     "Metronome": {None, "Elite", "Strong", "Methodical", "Stable", "Control"},
     "Home Run Hunter": {None, "Elite", "Strong", "Explosive", "Volatile"},
@@ -99,7 +106,6 @@ ROOT_MODIFIERS: dict[str, set[str | None]] = {
     "Clock Eater": {None, "Strong", "Run-Leaning", "Possession", "Control", "Methodical"},
     "Possession Roulette": {None, "Volatile", "Broken", "Limited"},
 
-    # Defense.
     "Run Wall": {None, "Elite", "Strong"},
     "Run Funnel": {None},
     "Open Highway": {None, "Limited", "Broken"},
@@ -111,7 +117,6 @@ ROOT_MODIFIERS: dict[str, set[str | None]] = {
     "Paper Wall": {None, "Limited", "Broken"},
     "Defense in Name Only": {None, "Broken"},
 
-    # Scheme / behavior.
     "Predictable Grinder": {None, "Predictable", "One-Dimensional"},
     "Constraint Master": {None, "Adaptive", "Well-Fit"},
     "Tendency Breaker": {None, "Adaptive", "Well-Fit"},
@@ -150,20 +155,74 @@ def _lane_candidates(lane: str):
     ]
 
 
+def _confidence(score: float, threshold: float) -> str:
+    if score >= max(65.0, threshold + 15.0):
+        return "HIGH"
+    if score >= max(55.0, threshold + 5.0):
+        return "MODERATE"
+    if score >= threshold:
+        return "LOW"
+    return "NO_CLEAR_MATCH"
+
+
 def match_lane(profile: dict[str, float | None], lane: str, *, top_n: int = 3) -> list[dict[str, Any]]:
     if lane not in LANE_FAMILIES:
         raise ValueError(f"unknown lane: {lane}")
     row = _profile_row(profile)
-    scored = []
-    for candidate in _lane_candidates(lane):
-        score = score_candidate(row, candidate, min_dimensions=2)
-        if score is not None:
-            scored.append(score)
-    scored.sort(key=lambda x: (-x["similarity"], x["contradictions"], -x["profileCoverage"], -x["dimensionsUsed"], x["id"]))
-    best_by_root: dict[str, dict[str, Any]] = {}
-    for score in scored:
-        best_by_root.setdefault(str(score["rootName"]), score)
-    return list(best_by_root.values())[:top_n]
+    candidates = _lane_candidates(lane)
+
+    by_root: dict[str, list[Any]] = defaultdict(list)
+    for candidate in candidates:
+        by_root[candidate.root_name].append(candidate)
+
+    # Step 1: canonical roots compete without modifiers.
+    roots_ranked: list[tuple[str, dict[str, Any]]] = []
+    for root_name, root_candidates in by_root.items():
+        canonical = next((c for c in root_candidates if c.modifier is None), None)
+        if canonical is None:
+            continue
+        root_score = score_candidate(row, canonical, min_dimensions=2)
+        if root_score is not None:
+            roots_ranked.append((root_name, root_score))
+    roots_ranked.sort(
+        key=lambda item: (
+            -item[1]["similarity"],
+            item[1]["contradictions"],
+            -item[1]["profileCoverage"],
+            -item[1]["dimensionsUsed"],
+            item[0],
+        )
+    )
+
+    # Step 2: only after a root is ranked do its legal modifiers compete.
+    out: list[dict[str, Any]] = []
+    threshold = LANE_ASSIGNMENT_THRESHOLDS[lane]
+    for root_name, root_score in roots_ranked[:top_n]:
+        variants: list[dict[str, Any]] = []
+        for candidate in by_root[root_name]:
+            variant = score_candidate(row, candidate, min_dimensions=2)
+            if variant is None:
+                continue
+            variant["variantSimilarity"] = float(variant["similarity"])
+            variant["rootSimilarity"] = float(root_score["similarity"])
+            variants.append(variant)
+        variants.sort(
+            key=lambda x: (
+                -x["variantSimilarity"],
+                x["contradictions"],
+                -x["profileCoverage"],
+                -x["dimensionsUsed"],
+                x["id"],
+            )
+        )
+        best = variants[0] if variants else dict(root_score)
+        # Modifier quality refines presentation but cannot alter root ranking.
+        best["similarity"] = 0.90 * float(root_score["similarity"]) + 0.10 * float(best.get("variantSimilarity", root_score["similarity"]))
+        best["assignmentThreshold"] = threshold
+        best["confidence"] = _confidence(float(root_score["similarity"]), threshold)
+        best["isClearMatch"] = float(root_score["similarity"]) >= threshold
+        out.append(best)
+    return out
 
 
 def match_team_season(rows: list[dict[str, Any]], *, season: int, team: str, top_n: int = 3) -> dict[str, Any]:
@@ -204,6 +263,7 @@ def match_history(rows: list[dict[str, Any]], *, seasons: tuple[int, ...] = DEFA
         "seasons": sorted(wanted),
         "teamSeasonCount": len(items),
         "eligibleRootCounts": {lane: len(EVIDENCE_ROOTS[lane]) for lane in EVIDENCE_ROOTS},
+        "assignmentThresholds": dict(LANE_ASSIGNMENT_THRESHOLDS),
         "teamSeasons": items,
     }
 
@@ -216,15 +276,24 @@ def _match_text(items: list[dict[str, Any]]) -> str:
     if not items:
         return "NO MATCH"
     x = items[0]
-    return f"{x['name']} (root={x['rootName']}, score={x['similarity']:.1f})"
+    if not x.get("isClearMatch"):
+        return (
+            f"NO CLEAR MATCH | best={x['rootName']} "
+            f"rootScore={x['rootSimilarity']:.1f} confidence={x['confidence']}"
+        )
+    return (
+        f"{x['name']} (root={x['rootName']}, rootScore={x['rootSimilarity']:.1f}, "
+        f"confidence={x['confidence']})"
+    )
 
 
 def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
-        "HISTORICAL ARCHETYPE LAYERS — ROOT-SPECIFIC MODIFIERS",
+        "HISTORICAL ARCHETYPE LAYERS — ROOT FIRST + CONFIDENCE",
         f"Seasons: {report['seasons'][0]}-{report['seasons'][-1]} (2020 absent by corpus design)",
         f"Team-seasons: {report['teamSeasonCount']:,}",
         "Eligible roots: " + ", ".join(f"{k}={v}" for k, v in report["eligibleRootCounts"].items()),
+        "Assignment thresholds: " + ", ".join(f"{k}={v:.0f}" for k, v in report["assignmentThresholds"].items()),
         "",
     ]
     for x in report["teamSeasons"][:examples]:
