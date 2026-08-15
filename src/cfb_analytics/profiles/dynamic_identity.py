@@ -10,7 +10,7 @@ import math
 from statistics import mean
 from typing import Any
 
-DYNAMIC_IDENTITY_VERSION = "dynamic-team-identity-v1"
+DYNAMIC_IDENTITY_VERSION = "dynamic-team-identity-v2-quality-gated-grammar"
 
 CORE_SERIES_FIELDS = (
     "identity_offense_quality",
@@ -53,6 +53,15 @@ def _quality_word(value: float | None) -> str:
     return "Poor"
 
 
+def _article(word: str) -> str:
+    return "an" if word[:1].lower() in {"a", "e", "i", "o", "u"} else "a"
+
+
+def _quality_phrase(value: float, noun: str) -> str:
+    word = _quality_word(value).lower()
+    return f"{_article(word)} {word} {noun}"
+
+
 def _series_stats(values: list[float]) -> dict[str, float | None]:
     if not values:
         return {
@@ -77,8 +86,6 @@ def _series_stats(values: list[float]) -> dict[str, float | None]:
         intercept = avg - slope * xbar
         residuals = [v - (intercept + slope * i) for i, v in enumerate(values)]
         residual_sd = math.sqrt(sum(r * r for r in residuals) / n)
-    # Residual movement is treated as noise; smooth directional movement is
-    # trajectory rather than instability. A 20-point residual SD maps near 0.
     stability = _clip(100.0 - 5.0 * residual_sd)
     return {
         "count": n,
@@ -104,56 +111,125 @@ def season_consistency(profiles: list[dict[str, float | None]]) -> dict[str, dic
     return out
 
 
-def _style_word(profile: dict[str, float | None]) -> str:
-    method = _number(profile.get("identity_explosive_vs_methodical"))
+def _usage(profile: dict[str, float | None]) -> str:
     rush = _number(profile.get("rush_rate"))
-    if method is not None and method <= -18:
-        return "Control"
-    if method is not None and method >= 18:
-        return "Attack"
-    if rush is not None and rush >= 80:
-        return "Ground Control"
-    if rush is not None and rush <= 20:
-        return "Air Attack"
-    return "Balance"
+    if rush is None:
+        return "Balanced"
+    if rush >= 80:
+        return "Run-First"
+    if rush <= 20:
+        return "Pass-First"
+    return "Balanced"
+
+
+def _method(profile: dict[str, float | None]) -> str:
+    value = _number(profile.get("identity_explosive_vs_methodical"))
+    if value is None:
+        return "Neutral"
+    if value <= -18:
+        return "Methodical"
+    if value >= 18:
+        return "Explosive"
+    return "Neutral"
+
+
+def _low_quality_name(profile: dict[str, float | None], off: float, defense: float) -> str:
+    usage = _usage(profile)
+    method = _method(profile)
+    if max(off, defense) < 30:
+        if method == "Explosive" and off >= 25:
+            return "Explosive but Inefficient"
+        if usage == "Run-First":
+            return "Run-First Struggler"
+        if usage == "Pass-First":
+            return "Pass-First Struggler"
+        return "Searching for Answers"
+    if method == "Explosive" and off < 45:
+        return "Explosive but Inefficient"
+    if method == "Methodical" and defense >= off + 10:
+        return "Methodical Survival"
+    if usage == "Run-First":
+        return "Run-First Survival"
+    if usage == "Pass-First":
+        return "Pass-First Survival"
+    return "Limited Balance"
 
 
 def _identity_name(profile: dict[str, float | None]) -> str:
     off = _number(profile.get("identity_offense_quality"))
     defense = _number(profile.get("identity_defense_quality"))
-    method = _number(profile.get("identity_explosive_vs_methodical"))
+    method_value = _number(profile.get("identity_explosive_vs_methodical"))
     rush = _number(profile.get("rush_rate"))
     if off is None or defense is None:
         return "Unresolved Team Identity"
 
     gap = defense - off
-    style = _style_word(profile)
+    method = _method(profile)
 
+    # Do not turn relative differences between two weak units into impressive-
+    # sounding identities. Weak teams are named from their actual style/limits.
+    if max(off, defense) < 45:
+        return _low_quality_name(profile, off, defense)
+
+    # Truly elite two-way teams get the cleanest top-level identity.
+    if off >= 85 and defense >= 80:
+        if min(off, defense) >= 90:
+            return "Elite Two-Way Power"
+        return "Two-Way Power"
+
+    # Elite/strong defense paired with a competent offense. Control requires
+    # methodical style; otherwise the team is simply defense-powered.
     if defense >= 85 and off >= 60:
-        base = "Defensive Control" if method is not None and method <= -15 else "Defensive Power"
         prefix = "Elite" if defense >= 90 else "Strong"
-        return f"{prefix} {base}"
+        return f"{prefix} Defensive Control" if method == "Methodical" else f"{prefix} Defensive Power"
+
+    # Elite defense with a weak offense is survival, not control/power.
     if defense >= 85 and off < 60:
         return "Elite Defensive Survival" if defense >= 90 else "Defensive Survival"
-    if off >= 85 and defense >= 80:
-        return "Elite Two-Way Power" if min(off, defense) >= 90 else "Two-Way Power"
+
+    # Elite offense with a clearly weak defense can legitimately be pressure-
+    # oriented because offensive quality is itself a major strength.
     if off >= 85 and defense < 60:
         return "Elite Offensive Pressure" if off >= 90 else "Offensive Pressure"
-    if gap >= 18:
-        prefix = "Elite" if defense >= 90 else "Defense-Led"
-        return f"{prefix} {style}"
-    if gap <= -18:
-        prefix = "Elite" if off >= 90 else "Offense-Led"
-        return f"{prefix} {style}"
-    if rush is not None and rush >= 80 and method is not None and method <= -15:
+
+    # "Led" labels require the leading unit to be at least genuinely good.
+    if gap >= 18 and defense >= 60:
+        if method == "Methodical":
+            return "Defense-Led Control"
+        if method == "Explosive" and off >= 55:
+            return "Defense-Led Counterpunch"
+        return "Defense-Led Balance"
+
+    if gap <= -18 and off >= 60:
+        if method == "Explosive":
+            return "Offense-Led Attack"
+        if method == "Methodical":
+            return "Offense-Led Control"
+        return "Offense-Led Balance"
+
+    # Style-specific names require enough offensive quality to make the style a
+    # strength rather than merely a tendency.
+    if rush is not None and rush >= 80 and method == "Methodical" and off >= 55:
         return "Methodical Ground Control"
-    if rush is not None and rush <= 20 and method is not None and method >= 10:
+    if rush is not None and rush <= 20 and method == "Explosive" and off >= 60:
         return "Explosive Air Attack"
+    if method == "Explosive" and off >= 70:
+        return "Explosive Offensive Power"
+    if method == "Methodical" and min(off, defense) >= 55:
+        return "Methodical Control"
+
     if min(off, defense) >= 70:
         return "Balanced Two-Way Power"
-    if max(off, defense) < 45:
-        return "Searching for an Identity"
-    return f"{_quality_word(max(off, defense))} {style}"
+
+    if max(off, defense) < 60:
+        return _low_quality_name(profile, off, defense)
+
+    stronger = max(off, defense)
+    if off >= defense and off >= 60:
+        return f"{_quality_word(stronger)} Offensive Balance"
+    if defense > off and defense >= 60:
+        return f"{_quality_word(stronger)} Defensive Balance"
+    return "Balanced Team"
 
 
 def _tags(
@@ -174,10 +250,14 @@ def _tags(
         tags.append("Elite Defense")
     elif defense is not None and defense >= 75:
         tags.append("Strong Defense")
+    elif defense is not None and defense < 30:
+        tags.append("Poor Defense")
     if off is not None and off >= 80:
         tags.append("High-Level Offense")
     elif off is not None and off >= 60:
         tags.append("Good Offense")
+    elif off is not None and off < 30:
+        tags.append("Poor Offense")
 
     if rush is not None:
         if rush >= 80:
@@ -200,8 +280,6 @@ def _tags(
         elif rush <= 25 and run - pas >= 15:
             tags.append("Pass-Committed")
 
-    closing_off = None
-    closing_def = None
     off_trajectory = None
     def_trajectory = None
     if closing_form:
@@ -218,10 +296,6 @@ def _tags(
             elif closing_def >= defense + 12:
                 def_trajectory = "Defense Surged Late"
 
-    # Trajectory is more informative than generic stability on a fan-facing
-    # profile. Add it first, and suppress a unit's "Stable" tag when that unit
-    # materially changed late. Stability still remains available numerically in
-    # the consistency payload.
     if off_trajectory:
         tags.append(off_trajectory)
     if def_trajectory:
@@ -246,9 +320,6 @@ def _tags(
     ):
         tags.append("Stable Offense")
 
-    # Preserve order while preventing duplicate labels. Eight concise tags is
-    # enough for the profile header; detailed consistency remains available in
-    # the structured output below it.
     return list(dict.fromkeys(tags))[:8]
 
 
@@ -268,9 +339,9 @@ def _summary(
     parts: list[str] = []
     if off is not None and defense is not None:
         if defense - off >= 12:
-            parts.append(f"a {_quality_word(defense).lower()} defense paired with a {_quality_word(off).lower()} offense")
+            parts.append(f"{_quality_phrase(defense, 'defense')} paired with {_quality_phrase(off, 'offense')}")
         elif off - defense >= 12:
-            parts.append(f"a {_quality_word(off).lower()} offense carrying a {_quality_word(defense).lower()} defense")
+            parts.append(f"{_quality_phrase(off, 'offense')} paired with {_quality_phrase(defense, 'defense')}")
         else:
             parts.append(f"{_quality_word(off).lower()} offense and {_quality_word(defense).lower()} defense")
     if rush is not None and rush >= 80:
