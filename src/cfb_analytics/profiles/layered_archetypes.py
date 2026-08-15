@@ -1,9 +1,10 @@
 """Stats-first layered archetype matching for historical team profiles.
 
-A team is not forced into one label.  The same measured profile is compared
+A team is not forced into one label. The same measured profile is compared
 separately against whole-team, offense, defense, and scheme/style vocabularies.
-This prevents a narrow defensive trait from becoming the headline identity of
-an offense-driven team (or vice versa).
+Only names supported by fields that actually exist in the current profile are
+eligible for presentation. The full 2,000-name catalog remains a research
+vocabulary for future metrics.
 """
 from __future__ import annotations
 
@@ -15,15 +16,59 @@ from statistics import mean
 from typing import Any
 
 from .archetype_catalog import CATALOG
-from .match_archetypes import DEFAULT_SEASONS, PROFILE_FIELDS, PROFILE_LABELS, _profile_row, score_candidate
+from .match_archetypes import DEFAULT_SEASONS, PROFILE_FIELDS, _profile_row, score_candidate
 
-LAYERED_VERSION = "historical-archetype-layers-v1-stats-first-2014-2024"
+LAYERED_VERSION = "historical-archetype-layers-v2-evidence-backed-2014-2024"
 
 LANE_FAMILIES = {
     "team": {"whole_team", "survival"},
     "offense": {"run_offense", "pass_offense", "offensive_shape", "tempo"},
     "defense": {"run_defense", "pass_defense", "defense"},
     "scheme": {"scheme"},
+}
+
+# These names are eligible because every concept in the label is supported by
+# fields presently available in the profile. Names requiring YAC, personnel,
+# front structure, route concepts, talent, or coaching intent remain in the 2K
+# research vocabulary but cannot be assigned yet.
+EVIDENCE_ROOTS = {
+    "team": {
+        "Complete Team", "Offense First", "Defense First", "Defense or Bust",
+        "Outscore the Problem", "Paper Tiger", "One-Sided Contender",
+        "Searching for Answers", "Low Ceiling", "Ugly but Effective",
+    },
+    "offense": {
+        "Ground & Pound", "Run or Die", "Possession Vampire",
+        "Three Yards and a Cloud", "Run Into a Wall", "Air It Out",
+        "Bombs Away", "Pass to Control", "Sling and Pray",
+        "Broken Passing Game", "Death by a Thousand Cuts", "Metronome",
+        "Home Run Hunter", "Boom or Bust", "Efficient but Toothless",
+        "Pretty but Empty", "Stuck in Mud", "Three-and-Out Factory",
+        "All Gas", "Slow Cooker", "Clock Eater", "Possession Roulette",
+    },
+    "defense": {
+        "Run Wall", "Run Funnel", "Open Highway", "No Fly Zone",
+        "Coverage Blanket", "Pass Funnel", "Open Skies", "Brick Wall",
+        "Paper Wall", "Defense in Name Only",
+    },
+    "scheme": {
+        "Predictable Grinder", "Constraint Master", "Tendency Breaker",
+        "Playcalling Prison", "Identity Crisis",
+    },
+}
+
+# Modifier semantics are lane-specific. This prevents nonsense combinations such
+# as "Finesse Complete Team" or "One-Dimensional Open Skies".
+ALLOWED_MODIFIERS = {
+    "team": {None, "Elite", "Strong", "Limited", "Broken", "Defense-Led", "Offense-Led"},
+    "offense": {
+        None, "Elite", "Strong", "Limited", "Broken", "Explosive", "Methodical",
+        "Volatile", "Stable", "Predictable", "Adaptive", "Run-Leaning",
+        "Pass-Leaning", "Possession", "Control", "One-Dimensional",
+        "Run-Dependent", "Pass-Dependent",
+    },
+    "defense": {None, "Elite", "Strong", "Limited", "Broken"},
+    "scheme": {None, "Predictable", "Adaptive", "Stable", "Miscast", "Well-Fit", "One-Dimensional"},
 }
 
 
@@ -48,7 +93,14 @@ def season_profile(rows: list[dict[str, Any]]) -> dict[str, float | None]:
 
 def _lane_candidates(lane: str):
     families = LANE_FAMILIES[lane]
-    return [c for c in CATALOG if c.family in families]
+    roots = EVIDENCE_ROOTS[lane]
+    modifiers = ALLOWED_MODIFIERS[lane]
+    return [
+        c for c in CATALOG
+        if c.family in families
+        and c.root_name in roots
+        and c.modifier in modifiers
+    ]
 
 
 def match_lane(profile: dict[str, float | None], lane: str, *, top_n: int = 3) -> list[dict[str, Any]]:
@@ -104,6 +156,7 @@ def match_history(rows: list[dict[str, Any]], *, seasons: tuple[int, ...] = DEFA
         "version": LAYERED_VERSION,
         "seasons": sorted(wanted),
         "teamSeasonCount": len(items),
+        "eligibleRootCounts": {lane: len(EVIDENCE_ROOTS[lane]) for lane in EVIDENCE_ROOTS},
         "teamSeasons": items,
     }
 
@@ -121,9 +174,10 @@ def _match_text(items: list[dict[str, Any]]) -> str:
 
 def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
-        "HISTORICAL ARCHETYPE LAYERS — STATS FIRST",
+        "HISTORICAL ARCHETYPE LAYERS — EVIDENCE BACKED",
         f"Seasons: {report['seasons'][0]}-{report['seasons'][-1]} (2020 absent by corpus design)",
         f"Team-seasons: {report['teamSeasonCount']:,}",
+        "Eligible roots: " + ", ".join(f"{k}={v}" for k, v in report["eligibleRootCounts"].items()),
         "",
     ]
     for x in report["teamSeasons"][:examples]:
