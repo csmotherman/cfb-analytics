@@ -4,6 +4,7 @@ import path from "node:path";
 export type PowerRow = {
   season:number;
   team:string;
+  allTimeSimRank?:number;
   allTimeRank?:number;
   fieldWinPct?:number;
   averageNeutralMargin?:number;
@@ -72,7 +73,7 @@ export function avgMargin(row:any):number|null{
 }
 
 export function rankOf(row:any):number|null{
-  for(const key of ["allTimeRank","rank","powerRank"]){const v=Number(row?.[key]);if(Number.isFinite(v))return v;}
+  for(const key of ["allTimeSimRank","allTimeRank","rank","powerRank"]){const v=Number(row?.[key]);if(Number.isFinite(v))return v;}
   return null;
 }
 
