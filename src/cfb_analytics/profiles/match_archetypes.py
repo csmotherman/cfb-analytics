@@ -5,7 +5,9 @@ snapshot from 2014-2024 against the catalog and keeps the closest candidates.
 
 v2 matching is intentionally root-first: a flashy modifier cannot rescue a bad
 football-family fit. Candidate variants are blended with the score of their
-unmodified root, and contradictions against extreme target traits are penalized.
+unmodified root, contradictions against extreme target traits are penalized,
+and top-N results contain distinct root identities so modifier variants cannot
+crowd out other plausible football builds.
 """
 from __future__ import annotations
 
@@ -132,7 +134,18 @@ def match_snapshot(row: dict[str, Any], *, top_n: int = 5, min_dimensions: int =
         scored.append(score)
 
     scored.sort(key=lambda x: (-x["similarity"], x["contradictions"], -x["dimensionsUsed"], x["id"]))
-    return scored[:top_n]
+
+    # Top-N is a list of competing football identities, not a list of cosmetic
+    # variants. Keep only the best-scoring variant for each root so one root
+    # cannot occupy every result slot with Elite/Strong/Defense-Led/etc labels.
+    best_by_root: dict[str, dict[str, Any]] = {}
+    for score in scored:
+        best_by_root.setdefault(str(score["rootName"]), score)
+    distinct = sorted(
+        best_by_root.values(),
+        key=lambda x: (-x["similarity"], x["contradictions"], -x["dimensionsUsed"], x["id"]),
+    )
+    return distinct[:top_n]
 
 
 def match_history(
