@@ -6,7 +6,9 @@ Profiles separate four concepts:
 - style/scheme: descriptive behavior and whether usage fits actual strengths;
 - form: recent four-game state versus season-to-date baseline.
 
-Snapshots are descriptive after each played partition, not pregame predictors.
+Snapshots are descriptive after each played game-time context, not pregame
+predictors. Raw CFBD game ``startDate`` is the chronology source of truth;
+seasonType/week remain descriptive labels and percentile cohorts only.
 """
 from __future__ import annotations
 
@@ -21,7 +23,7 @@ from cfb_analytics.raw.audit import discover_partitions
 from .grades import grade_percentile, percentile_rank
 from .opponent_adjustment import METRIC_SPECS, fit_context, quality_keys, team_quality
 
-SNAPSHOT_VERSION = "team-identity-snapshots-v3-attack-scheme-research"
+SNAPSHOT_VERSION = "team-identity-snapshots-v4-game-chronology-research"
 DEFAULT_SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 ORDER = {"regular": 0, "postseason": 1}
 
@@ -51,6 +53,7 @@ def _raw_metrics(rows: list[dict[str, Any]]) -> dict[str, float | None]:
         "plays_per_possession": _rate(plays, poss),
     }
 
+
 STYLE_KEYS = ("rush_rate", "pass_rate", "plays_per_possession")
 RAW_DIAGNOSTIC_KEYS = ("run_efficiency_off", "pass_efficiency_off", "success_off", "explosiveness_off")
 DISCOVERY_DIRECTIONS = {**{k: True for k in quality_keys()}, **{k: True for k in STYLE_KEYS}}
@@ -58,6 +61,25 @@ DISCOVERY_DIRECTIONS = {**{k: True for k in quality_keys()}, **{k: True for k in
 
 def _partition_key(row: dict[str, Any]) -> tuple[int, int]:
     return (ORDER.get(str(row.get("seasonType") or "regular").lower(), 9), int(row.get("week") or 0))
+
+
+def _context_key(row: dict[str, Any]) -> tuple[str, str]:
+    """Return the played-game context used for opponent-adjusted history.
+
+    Production rows loaded by ``load_team_games`` always carry startDate. The
+    partition fallback exists only so small synthetic/unit-test rows remain
+    usable without raw game metadata.
+    """
+    start = row.get("startDate")
+    if isinstance(start, str) and start:
+        return ("startDate", start)
+    phase, week = _partition_key(row)
+    return ("partition", f"{phase:02d}:{week:03d}")
+
+
+def _chronology_key(row: dict[str, Any]) -> tuple[str, str, str]:
+    kind, value = _context_key(row)
+    return (kind, value, str(row.get("gameId") or ""))
 
 
 def _game_value(row: dict[str, Any], spec) -> tuple[float, float] | None:
@@ -98,34 +120,35 @@ def build_identity_snapshots(team_games: list[dict[str, Any]], *, min_games: int
         raise ValueError("min_games and recent_games must be positive")
     valid = [r for r in team_games if r.get("gameValidationStatus") in (None, "PASS")]
     by_team: dict[tuple[int, str], list[dict[str, Any]]] = defaultdict(list)
-    by_season_partition: dict[tuple[int, tuple[int, int]], list[dict[str, Any]]] = defaultdict(list)
+    by_season_context: dict[tuple[int, tuple[str, str]], list[dict[str, Any]]] = defaultdict(list)
     game_rows = {(str(r.get("gameId")), str(r.get("team"))): r for r in valid}
     for row in valid:
         season = int(row["season"]); team = str(row["team"])
         by_team[(season, team)].append(row)
-        by_season_partition[(season, _partition_key(row))].append(row)
+        by_season_context[(season, _context_key(row))].append(row)
     for games in by_team.values():
-        games.sort(key=lambda r: (_partition_key(r), str(r.get("gameId"))))
+        games.sort(key=_chronology_key)
 
-    fits_by_context: dict[tuple[int, tuple[int, int]], dict[str, dict[str, Any]]] = {}
+    fits_by_context: dict[tuple[int, tuple[str, str]], dict[str, dict[str, Any]]] = {}
     for season in sorted({int(r["season"]) for r in valid}):
         history: list[dict[str, Any]] = []
-        parts = sorted(p for s, p in by_season_partition if s == season)
-        for part in parts:
-            history.extend(by_season_partition[(season, part)])
-            fits_by_context[(season, part)] = fit_context(history)
+        contexts = sorted(context for s, context in by_season_context if s == season)
+        for context in contexts:
+            history.extend(by_season_context[(season, context)])
+            fits_by_context[(season, context)] = fit_context(history)
 
     out: list[dict[str, Any]] = []
     for (season, team), games in sorted(by_team.items()):
         for i in range(min_games - 1, len(games)):
             through, recent = games[:i+1], games[max(0, i+1-recent_games):i+1]
-            current_game = games[i]; part = _partition_key(current_game); fits = fits_by_context[(season, part)]
+            current_game = games[i]; context = _context_key(current_game); fits = fits_by_context[(season, context)]
             baseline_oa = team_quality(fits, team); current_oa = _recent_oa(team, recent, fits, game_rows)
             baseline_raw = _raw_metrics(through); current_raw = _raw_metrics(recent)
             row: dict[str, Any] = {
                 "season": season, "team": team, "seasonType": current_game.get("seasonType"),
-                "week": current_game.get("week"), "throughGameId": current_game.get("gameId"),
-                "gamesPlayed": len(through), "recentGames": len(recent), "snapshotVersion": SNAPSHOT_VERSION,
+                "week": current_game.get("week"), "startDate": current_game.get("startDate"),
+                "throughGameId": current_game.get("gameId"), "gamesPlayed": len(through),
+                "recentGames": len(recent), "snapshotVersion": SNAPSHOT_VERSION,
             }
             for key in quality_keys():
                 row[f"baseline_{key}"] = baseline_oa.get(key); row[f"current_{key}"] = current_oa.get(key)
@@ -193,6 +216,8 @@ def _identity_shape(enriched: dict[str, Any]) -> None:
 
 
 def add_context_percentiles(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    # Keep broad week/season-type cross-sections for percentile ranking. Game
+    # chronology is handled independently by startDate in build_identity_snapshots.
     groups: dict[tuple[int, str, int], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         groups[(int(row["season"]), str(row.get("seasonType") or "regular"), int(row.get("week") or 0))].append(row)
@@ -211,12 +236,42 @@ def add_context_percentiles(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return out
 
 
+def _raw_game_start_dates(raw_root: Path, seasons: tuple[int, ...]) -> dict[str, str]:
+    dates: dict[str, str] = {}
+    for season in seasons:
+        for season_type, week in discover_partitions(raw_root, season):
+            path = raw_root / "cfbd" / f"season={season}" / f"season_type={season_type}" / f"week={week:02d}" / "games.json"
+            games = json.loads(path.read_text())
+            for game in games:
+                gid = str(game.get("id"))
+                start = game.get("startDate")
+                if not isinstance(start, str) or not start:
+                    raise ValueError(f"missing startDate for raw game {gid} in {path}")
+                previous = dates.get(gid)
+                if previous is not None and previous != start:
+                    raise ValueError(f"conflicting startDate for raw game {gid}: {previous} != {start}")
+                dates[gid] = start
+    return dates
+
+
 def load_team_games(processed_root: Path, seasons: tuple[int, ...] = DEFAULT_SEASONS) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []; raw_root = processed_root.parent / "raw"
     for season in seasons:
         for season_type, week in discover_partitions(raw_root, season):
             path = derived_game_partition_dir(processed_root, season, season_type, week) / "team_games.json"
             if path.exists(): rows.extend(json.loads(path.read_text()))
+    dates = _raw_game_start_dates(raw_root, seasons)
+    missing: set[str] = set()
+    for row in rows:
+        gid = str(row.get("gameId"))
+        start = row.get("startDate") or dates.get(gid)
+        if not isinstance(start, str) or not start:
+            missing.add(gid)
+        else:
+            row["startDate"] = start
+    if missing:
+        sample = ", ".join(sorted(missing)[:10])
+        raise ValueError(f"missing startDate for {len(missing)} derived games; sample={sample}")
     return rows
 
 
