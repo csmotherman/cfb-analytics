@@ -28,6 +28,10 @@ class MetricSpec:
 METRIC_SPECS = (
     MetricSpec("run_efficiency", "rushSuccessfulPlays", "rushSuccessEligiblePlays", 80.0),
     MetricSpec("pass_efficiency", "passSuccessfulPlays", "passSuccessEligiblePlays", 80.0),
+    MetricSpec("run_explosiveness", "rushExplosivePlays", "rushExplosiveEligiblePlays", 80.0),
+    MetricSpec("pass_explosiveness", "passExplosivePlays", "passExplosiveEligiblePlays", 80.0),
+    MetricSpec("run_success_yards", "rushSuccessfulPlayYards", "rushSuccessfulPlays", 80.0),
+    MetricSpec("pass_success_yards", "passSuccessfulPlayYards", "passSuccessfulPlays", 80.0),
     MetricSpec("success", "successfulPlays", "successEligiblePlays", 150.0),
     MetricSpec("explosiveness", "explosivePlays", "explosiveEligiblePlays", 150.0),
     MetricSpec("third_down", "down3SuccessfulPlays", "down3SuccessEligiblePlays", 40.0),
