@@ -3,14 +3,9 @@
 Uses the same full-season states and leading margin model as the cross-era
 historical tournament, but exposes one explicit home/away matchup.
 
-The leading model determines expected home margin and win probability. Expected
-points are anchored to each team's full-season points-per-possession offense and
-defense plus the matchup's expected possession count. The displayed score is
-then reconciled to the leading-model margin so the score line and spread cannot
-contradict one another.
-
-Monte Carlo game margins are sampled from the fitted historical margin residual
-SD. This is a research simulator, not a calibrated betting model.
+Interactive calls reuse a persistent prepared simulator bundle. The expensive
+model fit and historical-state construction happen only when the cache is first
+built or explicitly refreshed.
 """
 from __future__ import annotations
 
@@ -23,8 +18,10 @@ from statistics import mean, median
 from typing import Any
 
 from cfb_analytics.analytics.sandbox_components import materialize_components
+from cfb_analytics.profiles.game_simulator_cache import DEFAULT_CACHE_PATH, load_or_build
 from cfb_analytics.profiles.historical_tournament import (
     DEFAULT_SEASONS,
+    TOURNAMENT_VERSION,
     _num,
     _training_rows,
     build_final_states,
@@ -34,7 +31,7 @@ from cfb_analytics.profiles.historical_tournament import (
     predict_margin,
 )
 
-SIMULATOR_VERSION = "historical-game-simulator-v1-leading-model"
+SIMULATOR_VERSION = "historical-game-simulator-v2-cached-leading-model"
 
 
 def _rate(n: float, d: float) -> float | None:
@@ -150,8 +147,6 @@ def simulate_matchup(
     ordered = sorted(margins)
     med_margin = median(ordered)
 
-    # Score samples preserve the matchup's expected total while allowing the
-    # empirically observed margin uncertainty to move the result around it.
     score_samples = [reconcile_score(float(total), m) for m in margins]
     home_scores = [h for h, _ in score_samples]
     away_scores = [a for _, a in score_samples]
@@ -179,10 +174,10 @@ def simulate_matchup(
     }
 
 
-def build_simulator(
+def _build_uncached(
     raw_root: Path,
     processed_root: Path,
-    seasons: tuple[int, ...] = DEFAULT_SEASONS,
+    seasons: tuple[int, ...],
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     training = _training_rows(processed_root, seasons)
     model = fit_leading_model(training)
@@ -191,7 +186,26 @@ def build_simulator(
     return model, states
 
 
-def concise(result: dict[str, Any]) -> str:
+def build_simulator(
+    raw_root: Path,
+    processed_root: Path,
+    seasons: tuple[int, ...] = DEFAULT_SEASONS,
+    *,
+    cache_path: Path | None = None,
+    refresh: bool = False,
+) -> tuple[dict[str, Any], list[dict[str, Any]], str]:
+    path = cache_path or (processed_root / "derived" / "profiles" / DEFAULT_CACHE_PATH.name)
+    return load_or_build(
+        path,
+        simulator_version=SIMULATOR_VERSION,
+        tournament_version=TOURNAMENT_VERSION,
+        seasons=seasons,
+        builder=lambda: _build_uncached(raw_root, processed_root, seasons),
+        refresh=refresh,
+    )
+
+
+def concise(result: dict[str, Any], cache_status: str | None = None) -> str:
     h = result["home"]
     a = result["away"]
     hp = result["homeWinProbability"] * 100.0
@@ -199,8 +213,10 @@ def concise(result: dict[str, Any]) -> str:
     margin = result["expectedMarginHome"]
     favorite = f"{h['season']} {h['team']}" if margin >= 0 else f"{a['season']} {a['team']}"
     spread = abs(margin)
-    return "\n".join([
-        "HISTORICAL HEAD-TO-HEAD GAME SIMULATION",
+    lines = ["HISTORICAL HEAD-TO-HEAD GAME SIMULATION"]
+    if cache_status:
+        lines.append(f"Simulator cache: {cache_status}")
+    lines.extend([
         f"HOME: {h['season']} {h['team']}",
         f"AWAY: {a['season']} {a['team']}",
         f"Simulations: {result['simulations']:,} | seed={result['seed']}",
@@ -214,25 +230,39 @@ def concise(result: dict[str, Any]) -> str:
         f"MARGIN DISTRIBUTION (home perspective): P10 {result['marginP10']:+.1f} | median {result['medianMarginHome']:+.1f} | P90 {result['marginP90']:+.1f}",
         f"Historical model residual SD: {result['residualSd']:.2f} points",
     ])
+    return "\n".join(lines)
 
 
 def main() -> None:
     p = argparse.ArgumentParser()
-    p.add_argument("--home-year", type=int, required=True)
-    p.add_argument("--home-team", required=True)
-    p.add_argument("--away-year", type=int, required=True)
-    p.add_argument("--away-team", required=True)
+    p.add_argument("--home-year", type=int)
+    p.add_argument("--home-team")
+    p.add_argument("--away-year", type=int)
+    p.add_argument("--away-team")
     p.add_argument("--sims", type=int, default=10000)
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--raw-root", type=Path, default=Path("data/raw"))
     p.add_argument("--processed-root", type=Path, default=Path("data/processed"))
+    p.add_argument("--refresh-cache", action="store_true")
+    p.add_argument("--prepare", action="store_true", help="Build/refresh simulator cache and exit")
     args = p.parse_args()
 
-    model, states = build_simulator(args.raw_root, args.processed_root)
+    if not args.prepare and not all((args.home_year, args.home_team, args.away_year, args.away_team)):
+        p.error("provide home/away year+team, or use --prepare")
+
+    model, states, cache_status = build_simulator(
+        args.raw_root,
+        args.processed_root,
+        refresh=args.refresh_cache,
+    )
+    if args.prepare:
+        print(f"HISTORICAL GAME SIMULATOR CACHE: {cache_status} | states={len(states):,} | trainingRows={model.get('trainingRows', 0):,}")
+        return
+
     home = _lookup(states, args.home_year, args.home_team)
     away = _lookup(states, args.away_year, args.away_team)
     result = simulate_matchup(model, home, away, simulations=args.sims, seed=args.seed)
-    print(concise(result))
+    print(concise(result, cache_status))
 
 
 if __name__ == "__main__":
