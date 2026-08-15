@@ -1,13 +1,11 @@
-"""Build in-season team identity snapshots from derived team-game rows.
+"""Build opponent-adjusted in-season team identity snapshots.
 
-Archetype discovery must see how teams evolve, not only final-season averages.
-For every team appearance after ``min_games`` this module builds two views:
+Profiles separate three concepts:
+- quality: opponent-adjusted offense/defense performance;
+- style: descriptive behavior such as run/pass tendency and drive length;
+- form: recent four-game state versus season-to-date baseline.
 
-* baseline: season-to-date through the current game;
-* current: rolling recent-game window (default four games).
-
-Percentiles are computed against teams observed in the same season/partition so
-early-season states are never compared directly with final-season states.
+Snapshots are descriptive after each played partition, not pregame predictors.
 """
 from __future__ import annotations
 
@@ -20,9 +18,11 @@ from typing import Any
 from cfb_analytics.derived.games import derived_game_partition_dir
 from cfb_analytics.raw.audit import discover_partitions
 from .grades import grade_percentile, percentile_rank
+from .opponent_adjustment import METRIC_SPECS, fit_context, quality_keys, team_quality
 
-SNAPSHOT_VERSION = "team-identity-snapshots-v1-research"
+SNAPSHOT_VERSION = "team-identity-snapshots-v2-oa-research"
 DEFAULT_SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
+ORDER = {"regular": 0, "postseason": 1}
 
 
 def _rate(n: float, d: float) -> float | None:
@@ -33,82 +33,133 @@ def _sum(rows: list[dict[str, Any]], key: str) -> float:
     return sum(float(r.get(key) or 0.0) for r in rows)
 
 
-def _profile_metrics(rows: list[dict[str, Any]]) -> dict[str, float | None]:
-    """Aggregate only dimensions with explicit, reconstructable denominators."""
+def _raw_metrics(rows: list[dict[str, Any]]) -> dict[str, float | None]:
     rush_e, rush_s = _sum(rows, "rushSuccessEligiblePlays"), _sum(rows, "rushSuccessfulPlays")
     pass_e, pass_s = _sum(rows, "passSuccessEligiblePlays"), _sum(rows, "passSuccessfulPlays")
     succ_e, succ_s = _sum(rows, "successEligiblePlays"), _sum(rows, "successfulPlays")
     exp_e, exp_n = _sum(rows, "explosiveEligiblePlays"), _sum(rows, "explosivePlays")
-    rush_e_a, rush_s_a = _sum(rows, "rushSuccessEligiblePlaysAllowed"), _sum(rows, "rushSuccessfulPlaysAllowed")
-    pass_e_a, pass_s_a = _sum(rows, "passSuccessEligiblePlaysAllowed"), _sum(rows, "passSuccessfulPlaysAllowed")
-    exp_e_a, exp_n_a = _sum(rows, "explosiveEligiblePlaysAllowed"), _sum(rows, "explosivePlaysAllowed")
-    third_e, third_s = _sum(rows, "down3SuccessEligiblePlays"), _sum(rows, "down3SuccessfulPlays")
-    third_e_a, third_s_a = _sum(rows, "down3SuccessEligiblePlaysAllowed"), _sum(rows, "down3SuccessfulPlaysAllowed")
-    opp_r, opp_p = _sum(rows, "resolvedPointOpportunities"), _sum(rows, "opportunityPoints")
-    opp_r_a, opp_p_a = _sum(rows, "resolvedPointOpportunitiesAllowed"), _sum(rows, "opportunityPointsAllowed")
     poss, plays = _sum(rows, "validatedPossessions"), _sum(rows, "offensivePlays")
-    style_denom = rush_e + pass_e
+    denom = rush_e + pass_e
     return {
         "run_efficiency_off": _rate(rush_s, rush_e),
         "pass_efficiency_off": _rate(pass_s, pass_e),
         "success_off": _rate(succ_s, succ_e),
         "explosiveness_off": _rate(exp_n, exp_e),
-        "finishing_off": _rate(opp_p, opp_r),
-        "third_down_off": _rate(third_s, third_e),
-        "run_efficiency_def": (1.0 - _rate(rush_s_a, rush_e_a)) if rush_e_a else None,
-        "pass_efficiency_def": (1.0 - _rate(pass_s_a, pass_e_a)) if pass_e_a else None,
-        "explosive_prevention": (1.0 - _rate(exp_n_a, exp_e_a)) if exp_e_a else None,
-        "finishing_def": (-_rate(opp_p_a, opp_r_a)) if opp_r_a else None,
-        "third_down_def": (1.0 - _rate(third_s_a, third_e_a)) if third_e_a else None,
-        "rush_rate": _rate(rush_e, style_denom),
-        "pass_rate": _rate(pass_e, style_denom),
+        "rush_rate": _rate(rush_e, denom),
+        "pass_rate": _rate(pass_e, denom),
         "plays_per_possession": _rate(plays, poss),
     }
 
+STYLE_KEYS = ("rush_rate", "pass_rate", "plays_per_possession")
+RAW_DIAGNOSTIC_KEYS = ("run_efficiency_off", "pass_efficiency_off", "success_off", "explosiveness_off")
+DISCOVERY_DIRECTIONS = {**{k: True for k in quality_keys()}, **{k: True for k in STYLE_KEYS}}
 
-DISCOVERY_DIRECTIONS = {key: True for key in _profile_metrics([])}
+
+def _partition_key(row: dict[str, Any]) -> tuple[int, int]:
+    return (ORDER.get(str(row.get("seasonType") or "regular").lower(), 9), int(row.get("week") or 0))
 
 
-def build_identity_snapshots(
-    team_games: list[dict[str, Any]], *, min_games: int = 4, recent_games: int = 4
-) -> list[dict[str, Any]]:
+def _game_value(row: dict[str, Any], spec) -> tuple[float, float] | None:
+    n, d = row.get(spec.numerator), row.get(spec.denominator)
+    if isinstance(n, (int, float)) and isinstance(d, (int, float)) and not isinstance(n, bool) and not isinstance(d, bool) and float(d) > 0:
+        return float(n) / float(d), float(d)
+    return None
+
+
+def _recent_oa(team: str, recent: list[dict[str, Any]], fits: dict[str, dict[str, Any]], game_rows: dict[tuple[str, str], dict[str, Any]]) -> dict[str, float | None]:
+    out: dict[str, float | None] = {}
+    for spec in METRIC_SPECS:
+        fit = fits[spec.key]
+        mean = fit.get("mean")
+        off_num = off_den = def_num = def_den = 0.0
+        for row in recent:
+            gv = _game_value(row, spec)
+            opp = str(row.get("opponent") or "")
+            if gv and isinstance(mean, (int, float)):
+                value, weight = gv
+                opp_def = fit.get("defense", {}).get(opp)
+                if isinstance(opp_def, (int, float)):
+                    off_num += weight * (value - float(mean) + float(opp_def)); off_den += weight
+            opp_row = game_rows.get((str(row.get("gameId")), opp))
+            ogv = _game_value(opp_row, spec) if opp_row else None
+            if ogv and isinstance(mean, (int, float)):
+                value, weight = ogv
+                opp_off = fit.get("offense", {}).get(opp)
+                if isinstance(opp_off, (int, float)):
+                    def_num += weight * (float(mean) + float(opp_off) - value); def_den += weight
+        out[f"oa_{spec.key}_off"] = off_num / off_den if off_den else None
+        out[f"oa_{spec.key}_def"] = def_num / def_den if def_den else None
+    return out
+
+
+def build_identity_snapshots(team_games: list[dict[str, Any]], *, min_games: int = 4, recent_games: int = 4) -> list[dict[str, Any]]:
     if min_games < 1 or recent_games < 1:
         raise ValueError("min_games and recent_games must be positive")
+    valid = [r for r in team_games if r.get("gameValidationStatus") in (None, "PASS")]
     by_team: dict[tuple[int, str], list[dict[str, Any]]] = defaultdict(list)
-    for row in team_games:
-        if row.get("gameValidationStatus") not in (None, "PASS"):
-            continue
-        by_team[(int(row["season"]), str(row["team"]))].append(row)
+    by_season_partition: dict[tuple[int, tuple[int, int]], list[dict[str, Any]]] = defaultdict(list)
+    game_rows = {(str(r.get("gameId")), str(r.get("team"))): r for r in valid}
+    for row in valid:
+        season = int(row["season"]); team = str(row["team"])
+        by_team[(season, team)].append(row)
+        by_season_partition[(season, _partition_key(row))].append(row)
+    for games in by_team.values():
+        games.sort(key=lambda r: (_partition_key(r), str(r.get("gameId"))))
+
+    fits_by_context: dict[tuple[int, tuple[int, int]], dict[str, dict[str, Any]]] = {}
+    for season in sorted({int(r["season"]) for r in valid}):
+        history: list[dict[str, Any]] = []
+        parts = sorted(p for s, p in by_season_partition if s == season)
+        for part in parts:
+            history.extend(by_season_partition[(season, part)])
+            fits_by_context[(season, part)] = fit_context(history)
 
     out: list[dict[str, Any]] = []
-    order = {"regular": 0, "postseason": 1}
     for (season, team), games in sorted(by_team.items()):
-        games.sort(key=lambda r: (order.get(str(r.get("seasonType", "regular")).lower(), 9), int(r.get("week") or 0), str(r.get("gameId"))))
         for i in range(min_games - 1, len(games)):
-            through = games[: i + 1]
-            recent = through[-recent_games:]
-            current_game = games[i]
-            baseline = _profile_metrics(through)
-            current = _profile_metrics(recent)
+            through, recent = games[:i+1], games[max(0, i+1-recent_games):i+1]
+            current_game = games[i]; part = _partition_key(current_game); fits = fits_by_context[(season, part)]
+            baseline_oa = team_quality(fits, team); current_oa = _recent_oa(team, recent, fits, game_rows)
+            baseline_raw = _raw_metrics(through); current_raw = _raw_metrics(recent)
             row: dict[str, Any] = {
-                "season": season,
-                "team": team,
-                "seasonType": current_game.get("seasonType"),
-                "week": current_game.get("week"),
-                "throughGameId": current_game.get("gameId"),
-                "gamesPlayed": len(through),
-                "recentGames": len(recent),
-                "snapshotVersion": SNAPSHOT_VERSION,
+                "season": season, "team": team, "seasonType": current_game.get("seasonType"),
+                "week": current_game.get("week"), "throughGameId": current_game.get("gameId"),
+                "gamesPlayed": len(through), "recentGames": len(recent), "snapshotVersion": SNAPSHOT_VERSION,
             }
-            for key in DISCOVERY_DIRECTIONS:
-                row[f"baseline_{key}"] = baseline.get(key)
-                row[f"current_{key}"] = current.get(key)
+            for key in quality_keys():
+                row[f"baseline_{key}"] = baseline_oa.get(key); row[f"current_{key}"] = current_oa.get(key)
+            for key in STYLE_KEYS:
+                row[f"baseline_{key}"] = baseline_raw.get(key); row[f"current_{key}"] = current_raw.get(key)
+            for key in RAW_DIAGNOSTIC_KEYS:
+                row[f"raw_baseline_{key}"] = baseline_raw.get(key); row[f"raw_current_{key}"] = current_raw.get(key)
+                # backwards-compatible diagnostics only; discovery does not use these raw quality fields.
+                row[f"baseline_{key}"] = baseline_raw.get(key); row[f"current_{key}"] = current_raw.get(key)
             out.append(row)
     return out
 
 
+def _identity_shape(enriched: dict[str, Any]) -> None:
+    def pct(key: str) -> float | None:
+        v = enriched.get(f"current_{key}_percentile")
+        return float(v) if isinstance(v, (int, float)) else None
+    def gap(a: str, b: str) -> float | None:
+        x, y = pct(a), pct(b)
+        return x - y if x is not None and y is not None else None
+    offense = [pct("oa_run_efficiency_off"), pct("oa_pass_efficiency_off"), pct("oa_success_off"), pct("oa_explosiveness_off"), pct("oa_third_down_off"), pct("oa_finishing_off")]
+    defense = [pct("oa_run_efficiency_def"), pct("oa_pass_efficiency_def"), pct("oa_success_def"), pct("oa_explosiveness_def"), pct("oa_third_down_def"), pct("oa_finishing_def")]
+    off_vals = [x for x in offense if x is not None]; def_vals = [x for x in defense if x is not None]
+    off_q = sum(off_vals)/len(off_vals) if off_vals else None; def_q = sum(def_vals)/len(def_vals) if def_vals else None
+    enriched["identity_run_vs_pass_off"] = gap("oa_run_efficiency_off", "oa_pass_efficiency_off")
+    enriched["identity_run_vs_pass_def"] = gap("oa_run_efficiency_def", "oa_pass_efficiency_def")
+    enriched["identity_explosive_vs_methodical"] = gap("oa_explosiveness_off", "oa_success_off")
+    enriched["identity_finishing_vs_foundation"] = (pct("oa_finishing_off") - off_q) if pct("oa_finishing_off") is not None and off_q is not None else None
+    enriched["identity_offense_vs_defense"] = (off_q - def_q) if off_q is not None and def_q is not None else None
+    enriched["identity_rush_vs_pass_tendency"] = gap("rush_rate", "pass_rate")
+    enriched["identity_offense_quality"] = off_q
+    enriched["identity_defense_quality"] = def_q
+
+
 def add_context_percentiles(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Normalize current/baseline states within season + partition."""
     groups: dict[tuple[int, str, int], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         groups[(int(row["season"]), str(row.get("seasonType") or "regular"), int(row.get("week") or 0))].append(row)
@@ -118,46 +169,34 @@ def add_context_percentiles(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
             enriched = dict(row)
             for key, higher in DISCOVERY_DIRECTIONS.items():
                 for prefix in ("baseline", "current"):
-                    field = f"{prefix}_{key}"
-                    pop = [x.get(field) for x in group if isinstance(x.get(field), (int, float))]
-                    pct = percentile_rank(row.get(field), pop, higher_is_better=higher)
-                    enriched[f"{field}_percentile"] = pct
-                    enriched[f"{field}_grade"] = grade_percentile(pct)
-                a = enriched.get(f"current_{key}_percentile")
-                b = enriched.get(f"baseline_{key}_percentile")
-                enriched[f"trend_{key}"] = (a - b) if isinstance(a, (int, float)) and isinstance(b, (int, float)) else None
-            out.append(enriched)
+                    field = f"{prefix}_{key}"; pop = [x.get(field) for x in group if isinstance(x.get(field), (int, float))]
+                    p = percentile_rank(row.get(field), pop, higher_is_better=higher)
+                    enriched[f"{field}_percentile"] = p; enriched[f"{field}_grade"] = grade_percentile(p)
+                a, b = enriched.get(f"current_{key}_percentile"), enriched.get(f"baseline_{key}_percentile")
+                enriched[f"trend_{key}"] = (a-b) if isinstance(a,(int,float)) and isinstance(b,(int,float)) else None
+            _identity_shape(enriched); out.append(enriched)
     return out
 
 
 def load_team_games(processed_root: Path, seasons: tuple[int, ...] = DEFAULT_SEASONS) -> list[dict[str, Any]]:
-    rows: list[dict[str, Any]] = []
-    raw_root = processed_root.parent / "raw"
+    rows: list[dict[str, Any]] = []; raw_root = processed_root.parent / "raw"
     for season in seasons:
         for season_type, week in discover_partitions(raw_root, season):
             path = derived_game_partition_dir(processed_root, season, season_type, week) / "team_games.json"
-            if path.exists():
-                rows.extend(json.loads(path.read_text()))
+            if path.exists(): rows.extend(json.loads(path.read_text()))
     return rows
 
 
 def materialize_identity_snapshots(processed_root: Path, *, min_games: int = 4, recent_games: int = 4) -> Path:
     rows = add_context_percentiles(build_identity_snapshots(load_team_games(processed_root), min_games=min_games, recent_games=recent_games))
-    target = processed_root / "derived" / "profiles" / "identity_snapshots_v1.json"
-    target.parent.mkdir(parents=True, exist_ok=True)
+    target = processed_root / "derived" / "profiles" / "identity_snapshots_v2_oa.json"; target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(rows, separators=(",", ":")))
-    print(f"IDENTITY SNAPSHOTS: {len(rows):,} states | seasons={len({r['season'] for r in rows})} | teams={len({(r['season'],r['team']) for r in rows})}")
+    print(f"OA IDENTITY SNAPSHOTS: {len(rows):,} states | seasons={len({r['season'] for r in rows})} | teams={len({(r['season'],r['team']) for r in rows})}")
     return target
 
 
 def main() -> None:
-    p = argparse.ArgumentParser()
-    p.add_argument("--processed-root", type=Path, default=Path("data/processed"))
-    p.add_argument("--min-games", type=int, default=4)
-    p.add_argument("--recent-games", type=int, default=4)
-    args = p.parse_args()
-    materialize_identity_snapshots(args.processed_root, min_games=args.min_games, recent_games=args.recent_games)
+    p=argparse.ArgumentParser(); p.add_argument("--processed-root",type=Path,default=Path("data/processed")); p.add_argument("--min-games",type=int,default=4); p.add_argument("--recent-games",type=int,default=4); a=p.parse_args()
+    materialize_identity_snapshots(a.processed_root,min_games=a.min_games,recent_games=a.recent_games)
 
-
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": main()
