@@ -1,5 +1,6 @@
 from cfb_analytics.profiles.layered_archetypes import (
     EVIDENCE_ROOTS,
+    LANE_ASSIGNMENT_THRESHOLDS,
     LANE_FAMILIES,
     ROOT_MODIFIERS,
     match_lane,
@@ -74,3 +75,50 @@ def test_positive_defensive_roots_allow_positive_strength_modifiers():
     assert "Elite" in ROOT_MODIFIERS["Run Wall"]
     assert "Strong" in ROOT_MODIFIERS["No Fly Zone"]
     assert "Elite" in ROOT_MODIFIERS["Brick Wall"]
+
+
+def test_complete_team_profile_selects_complete_team_root_before_modifier_refinement():
+    profile = _profile(
+        identity_offense_quality=82.0,
+        identity_defense_quality=82.0,
+        identity_offense_vs_defense=0.0,
+        identity_rushing_attack=72.0,
+        identity_passing_attack=78.0,
+        identity_rushing_defense=80.0,
+        identity_passing_defense=78.0,
+    )
+    matches = match_lane(profile, "team", top_n=3)
+    assert matches
+    assert matches[0]["rootName"] == "Complete Team"
+
+
+def test_weak_lane_match_is_marked_no_clear_match_instead_of_forced_assignment():
+    profile = _profile(
+        identity_offense_quality=50.0,
+        identity_defense_quality=50.0,
+        identity_offense_vs_defense=0.0,
+        identity_rushing_attack=50.0,
+        identity_passing_attack=50.0,
+        identity_rushing_defense=50.0,
+        identity_passing_defense=50.0,
+        rush_rate=50.0,
+        plays_per_possession=50.0,
+        identity_explosive_vs_methodical=0.0,
+        identity_predictability=50.0,
+        identity_scheme_constraint=50.0,
+    )
+    matches = match_lane(profile, "team", top_n=3)
+    assert matches
+    assert matches[0]["assignmentThreshold"] == LANE_ASSIGNMENT_THRESHOLDS["team"]
+    assert isinstance(matches[0]["isClearMatch"], bool)
+
+
+def test_root_score_controls_ranking_not_modifier_score():
+    profile = _profile(
+        identity_offense_quality=82.0,
+        identity_defense_quality=82.0,
+        identity_offense_vs_defense=0.0,
+    )
+    matches = match_lane(profile, "team", top_n=5)
+    root_scores = [x["rootSimilarity"] for x in matches]
+    assert root_scores == sorted(root_scores, reverse=True)
