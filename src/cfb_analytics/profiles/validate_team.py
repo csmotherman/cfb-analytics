@@ -55,14 +55,71 @@ def _shape(row: dict[str, Any], key: str, fallback: float = 50.0) -> float:
     return float(value) if isinstance(value, (int, float)) else fallback
 
 
+def _mean_available(*values: float | None, fallback: float = 50.0) -> float:
+    vals = [float(v) for v in values if isinstance(v, (int, float))]
+    return mean(vals) if vals else fallback
+
+
 def provisional_name(row: dict[str, Any]) -> tuple[str, str]:
-    rush_attack = _shape(row, "identity_rushing_attack")
-    pass_attack = _shape(row, "identity_passing_attack")
-    off_quality = _shape(row, "identity_offense_quality")
-    def_quality = _shape(row, "identity_defense_quality")
+    """Return a calibration-only nickname with v2-compatible fallbacks.
+
+    Real v3 snapshots provide composite rushing/passing attack and defense fields.
+    Older synthetic fixtures and saved validation data may not. In that case,
+    derive the composite from the available opponent-adjusted component
+    percentiles rather than silently defaulting the whole concept to average.
+    """
+    run_eff = _pct(row, "oa_run_efficiency_off")
+    pass_eff = _pct(row, "oa_pass_efficiency_off")
+    run_exp = _pct(row, "oa_run_explosiveness_off")
+    pass_exp = _pct(row, "oa_pass_explosiveness_off")
+    run_yards = _pct(row, "oa_run_success_yards_off")
+    pass_yards = _pct(row, "oa_pass_success_yards_off")
+
+    rush_attack = _shape(
+        row,
+        "identity_rushing_attack",
+        _mean_available(run_eff, run_exp, run_yards),
+    )
+    pass_attack = _shape(
+        row,
+        "identity_passing_attack",
+        _mean_available(pass_eff, pass_exp, pass_yards),
+    )
+
+    run_def_eff = _pct(row, "oa_run_efficiency_def")
+    pass_def_eff = _pct(row, "oa_pass_efficiency_def")
+    run_def_exp = _pct(row, "oa_run_explosiveness_def")
+    pass_def_exp = _pct(row, "oa_pass_explosiveness_def")
+    run_def_yards = _pct(row, "oa_run_success_yards_def")
+    pass_def_yards = _pct(row, "oa_pass_success_yards_def")
+    rush_defense = _shape(
+        row,
+        "identity_rushing_defense",
+        _mean_available(run_def_eff, run_def_exp, run_def_yards),
+    )
+    pass_defense = _shape(
+        row,
+        "identity_passing_defense",
+        _mean_available(pass_def_eff, pass_def_exp, pass_def_yards),
+    )
+
     success_o = _pct(row, "oa_success_off") or 50.0
     explosive_o = _pct(row, "oa_explosiveness_off") or 50.0
     finish_o = _pct(row, "oa_finishing_off") or 50.0
+    success_d = _pct(row, "oa_success_def")
+    explosive_d = _pct(row, "oa_explosiveness_def")
+
+    off_quality = _shape(
+        row,
+        "identity_offense_quality",
+        _mean_available(rush_attack, pass_attack, success_o, explosive_o, finish_o),
+    )
+    def_quality = _shape(
+        row,
+        "identity_defense_quality",
+        _mean_available(rush_defense, pass_defense, success_d, explosive_d),
+    )
+
     rush = _pct(row, "rush_rate") or 50.0
     pass_rate = _pct(row, "pass_rate") or 50.0
     drive_len = _pct(row, "plays_per_possession") or 50.0
@@ -75,7 +132,7 @@ def provisional_name(row: dict[str, Any]) -> tuple[str, str]:
         return "Defense or Bust", "Defense is the clear strength while a severely limited passing attack constrains the offense."
     if rush >= 75 and rush_attack >= 58 and pass_attack <= 35 and attack_gap >= 25:
         return "Run or Die", "The offense is strongly run-dependent because the rushing attack is far more functional than the passing attack."
-    if def_quality >= 82 and _shape(row, "identity_rushing_defense") >= 75 and _shape(row, "identity_passing_defense") >= 75:
+    if def_quality >= 82 and rush_defense >= 75 and pass_defense >= 75:
         return "Brick Wall", "High-end opponent-adjusted defense with few obvious ways for opponents to attack it."
     if rush >= 72 and rush_attack >= 65 and drive_len >= 65:
         return "Possession Vampire", "Run-leaning, efficient and built to stack plays and possessions."
