@@ -1,8 +1,9 @@
-"""Unsupervised discovery of recurring historical team identities.
+"""Hierarchical discovery of recurring historical football identities.
 
-Clusters are analytical shapes first and fan names second.  The algorithm never
-uses the hand-authored archetype rules to create clusters; those rules can be
-compared later after the historical shapes are inspected.
+Stage 1 finds broad families. Stage 2 splits each family into sub-archetypes.
+Identity clustering uses opponent-adjusted quality plus style/shape contrasts so
+bad, one-dimensional, defense-only and otherwise unusual teams can form real
+archetypes instead of collapsing into generic low-quality clusters.
 """
 from __future__ import annotations
 
@@ -16,144 +17,121 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
 
-from .snapshots import DISCOVERY_DIRECTIONS
-
-DISCOVERY_VERSION = "historical-archetype-discovery-v1-research"
-
-
-def _candidate_features(rows: list[dict[str, Any]], min_coverage: float) -> list[str]:
-    n = len(rows)
-    fields = []
-    for key in DISCOVERY_DIRECTIONS:
-        field = f"current_{key}_percentile"
-        coverage = sum(isinstance(r.get(field), (int, float)) for r in rows) / n if n else 0.0
-        if coverage >= min_coverage:
-            fields.append(field)
-    return fields
-
-
-def _matrix(rows: list[dict[str, Any]], features: list[str], include_trend: bool, trend_weight: float):
-    kept, vectors = [], []
-    for row in rows:
-        vals = [row.get(f) for f in features]
-        if not all(isinstance(v, (int, float)) for v in vals):
-            continue
-        vector = [float(v) for v in vals]
-        if include_trend:
-            for field in features:
-                key = field.removeprefix("current_").removesuffix("_percentile")
-                value = row.get(f"trend_{key}")
-                vector.append(float(value) * trend_weight if isinstance(value, (int, float)) else 0.0)
-        vectors.append(vector)
-        kept.append(row)
-    return kept, np.asarray(vectors, dtype=float)
+DISCOVERY_VERSION = "historical-archetype-discovery-v2-hierarchical-oa"
+QUALITY_FIELDS = (
+    "current_oa_run_efficiency_off_percentile", "current_oa_pass_efficiency_off_percentile",
+    "current_oa_success_off_percentile", "current_oa_explosiveness_off_percentile",
+    "current_oa_third_down_off_percentile", "current_oa_finishing_off_percentile",
+    "current_oa_run_efficiency_def_percentile", "current_oa_pass_efficiency_def_percentile",
+    "current_oa_success_def_percentile", "current_oa_explosiveness_def_percentile",
+    "current_oa_third_down_def_percentile", "current_oa_finishing_def_percentile",
+)
+STYLE_FIELDS = (
+    "current_rush_rate_percentile", "current_pass_rate_percentile", "current_plays_per_possession_percentile",
+)
+SHAPE_FIELDS = (
+    "identity_run_vs_pass_off", "identity_run_vs_pass_def", "identity_explosive_vs_methodical",
+    "identity_finishing_vs_foundation", "identity_offense_vs_defense", "identity_rush_vs_pass_tendency",
+)
 
 
-def discover_archetypes(
-    rows: list[dict[str, Any]], *, k_min: int = 6, k_max: int = 24,
-    min_coverage: float = 0.85, include_trend: bool = True,
-    trend_weight: float = 0.35, random_state: int = 20260815,
-) -> dict[str, Any]:
-    features = _candidate_features(rows, min_coverage)
-    kept, x = _matrix(rows, features, include_trend, trend_weight)
-    if len(features) < 4:
-        raise ValueError("fewer than four sufficiently complete profile dimensions")
-    if len(kept) < max(50, k_max * 5):
-        raise ValueError("not enough complete historical snapshots for clustering")
-
-    scaler = StandardScaler()
-    z = scaler.fit_transform(x)
-    trials = []
-    upper = min(k_max, len(kept) - 1)
-    for k in range(k_min, upper + 1):
-        model = KMeans(n_clusters=k, n_init=20, random_state=random_state)
-        labels = model.fit_predict(z)
-        score = silhouette_score(z, labels, sample_size=min(5000, len(z)), random_state=random_state)
-        counts = np.bincount(labels, minlength=k)
-        trials.append({"k": k, "silhouette": float(score), "smallestCluster": int(counts.min()), "largestCluster": int(counts.max())})
-
-    best_k = max(trials, key=lambda r: r["silhouette"])["k"]
-    model = KMeans(n_clusters=best_k, n_init=50, random_state=random_state)
-    labels = model.fit_predict(z)
-    distances = model.transform(z)
-
-    centers = []
-    current_feature_count = len(features)
-    for cluster in range(best_k):
-        idx = np.flatnonzero(labels == cluster)
-        center_z = model.cluster_centers_[cluster]
-        center_raw = scaler.inverse_transform(center_z.reshape(1, -1))[0]
-        center = {features[i].removeprefix("current_").removesuffix("_percentile"): float(center_raw[i]) for i in range(current_feature_count)}
-        traits = sorted(center.items(), key=lambda kv: abs(kv[1] - 50.0), reverse=True)[:6]
-        exemplar_idx = idx[np.argsort(distances[idx, cluster])[:5]]
-        exemplars = [{"season": int(kept[i]["season"]), "team": kept[i]["team"], "week": kept[i].get("week"), "gamesPlayed": kept[i].get("gamesPlayed"), "distance": float(distances[i, cluster])} for i in exemplar_idx]
-        centers.append({
-            "cluster": cluster,
-            "snapshotCount": int(len(idx)),
-            "share": float(len(idx) / len(kept)),
-            "centerPercentiles": center,
-            "signatureTraits": [{"metric": k, "percentile": v} for k, v in traits],
-            "exemplars": exemplars,
-            "fanName": None,
-            "fanDescription": None,
-        })
-
-    assignments = []
-    for i, row in enumerate(kept):
-        assignments.append({
-            "season": row["season"], "team": row["team"], "seasonType": row.get("seasonType"),
-            "week": row.get("week"), "throughGameId": row.get("throughGameId"),
-            "gamesPlayed": row.get("gamesPlayed"), "cluster": int(labels[i]),
-            "distanceToCenter": float(distances[i, labels[i]]),
-        })
-
-    return {
-        "version": DISCOVERY_VERSION,
-        "snapshotCount": len(kept),
-        "availableSnapshotCount": len(rows),
-        "features": features,
-        "includeTrend": include_trend,
-        "trendWeight": trend_weight,
-        "minCoverage": min_coverage,
-        "kTrials": trials,
-        "selectedK": int(best_k),
-        "clusters": centers,
-        "assignments": assignments,
-    }
+def _coverage(rows: list[dict[str, Any]], field: str) -> float:
+    return sum(isinstance(r.get(field), (int, float)) for r in rows) / len(rows) if rows else 0.0
 
 
-def concise(report: dict[str, Any]) -> str:
-    lines = [
-        "HISTORICAL ARCHETYPE DISCOVERY",
-        f"Snapshots used: {report['snapshotCount']:,}/{report['availableSnapshotCount']:,}",
-        f"Dimensions: {len(report['features'])}",
-        f"Selected clusters: {report['selectedK']}",
-        "",
-    ]
-    for cluster in report["clusters"]:
-        traits = ", ".join(f"{x['metric']}={x['percentile']:.0f}" for x in cluster["signatureTraits"][:4])
-        examples = "; ".join(f"{x['season']} {x['team']} W{x['week']}" for x in cluster["exemplars"][:3])
-        lines.append(f"C{cluster['cluster']:02d} | {cluster['share']:.1%} | {traits} | {examples}")
+def _features(rows: list[dict[str, Any]], min_coverage: float) -> list[str]:
+    ordered = list(QUALITY_FIELDS + STYLE_FIELDS + SHAPE_FIELDS)
+    return [f for f in ordered if _coverage(rows, f) >= min_coverage]
+
+
+def _matrix(rows: list[dict[str, Any]], features: list[str]):
+    kept, x = [], []
+    for r in rows:
+        vals = [r.get(f) for f in features]
+        if all(isinstance(v, (int, float)) for v in vals):
+            kept.append(r); x.append([float(v) for v in vals])
+    return kept, np.asarray(x, dtype=float)
+
+
+def _team_season_weights(rows: list[dict[str, Any]]) -> np.ndarray:
+    counts: dict[tuple[int, str], int] = {}
+    for r in rows:
+        key=(int(r["season"]),str(r["team"])); counts[key]=counts.get(key,0)+1
+    return np.asarray([1.0/counts[(int(r["season"]),str(r["team"]))] for r in rows],dtype=float)
+
+
+def _best_k(z: np.ndarray, k_values: range, *, random_state: int, min_cluster: int) -> tuple[int, list[dict[str, Any]]]:
+    trials=[]
+    for k in k_values:
+        if k >= len(z): break
+        labels=KMeans(n_clusters=k,n_init=20,random_state=random_state).fit_predict(z)
+        counts=np.bincount(labels,minlength=k)
+        sil=silhouette_score(z,labels,sample_size=min(5000,len(z)),random_state=random_state)
+        small=int(counts.min())
+        penalty=max(0.0,(min_cluster-small)/max(1,min_cluster))*0.08
+        # Small complexity reward prevents silhouette from always collapsing to the coarsest answer.
+        score=float(sil)-penalty+0.003*k
+        trials.append({"k":k,"silhouette":float(sil),"smallestCluster":small,"score":score})
+    if not trials: raise ValueError("no valid cluster counts")
+    return max(trials,key=lambda x:x["score"])["k"],trials
+
+
+def _describe_cluster(cluster_id: str, idx: np.ndarray, rows: list[dict[str, Any]], features: list[str], center_raw: np.ndarray, distances: np.ndarray) -> dict[str, Any]:
+    center={features[i]:float(center_raw[i]) for i in range(len(features))}
+    traits=sorted(center.items(),key=lambda kv:abs(kv[1]-50.0),reverse=True)[:10]
+    nearest=idx[np.argsort(distances[idx])[:6]]
+    exemplars=[{"season":int(rows[i]["season"]),"team":rows[i]["team"],"week":rows[i].get("week"),"gamesPlayed":rows[i].get("gamesPlayed"),"distance":float(distances[i])} for i in nearest]
+    return {"id":cluster_id,"snapshotCount":int(len(idx)),"signatureTraits":[{"metric":k,"value":v} for k,v in traits],"exemplars":exemplars,"fanName":None,"fanDescription":None}
+
+
+def discover_archetypes(rows: list[dict[str, Any]], *, family_k: int = 6, sub_k_min: int = 2, sub_k_max: int = 5, min_coverage: float = 0.82, min_cluster: int = 120, random_state: int = 20260815) -> dict[str, Any]:
+    features=_features(rows,min_coverage); kept,x=_matrix(rows,features)
+    if len(features)<8: raise ValueError("insufficient opponent-adjusted identity dimensions")
+    if len(kept)<500: raise ValueError("not enough historical snapshots")
+    scaler=StandardScaler(); z=scaler.fit_transform(x)
+    weights=_team_season_weights(kept)
+
+    family_model=KMeans(n_clusters=family_k,n_init=50,random_state=random_state)
+    family_labels=family_model.fit_predict(z,sample_weight=weights)
+    assignments=[]; families=[]; total_archetypes=0
+    for family in range(family_k):
+        idx=np.flatnonzero(family_labels==family); family_z=z[idx]
+        max_sub=min(sub_k_max,max(sub_k_min,len(idx)//max(1,min_cluster)))
+        candidate=range(sub_k_min,max_sub+1)
+        sub_k,trials=_best_k(family_z,candidate,random_state=random_state+family,min_cluster=max(20,min_cluster//family_k))
+        sub_model=KMeans(n_clusters=sub_k,n_init=40,random_state=random_state+100+family)
+        sub_labels=sub_model.fit_predict(family_z,sample_weight=weights[idx])
+        centers=[]
+        for sub in range(sub_k):
+            local=np.flatnonzero(sub_labels==sub); global_idx=idx[local]
+            center_z=sub_model.cluster_centers_[sub]; center_raw=scaler.inverse_transform(center_z.reshape(1,-1))[0]
+            dist=np.linalg.norm(z-center_z,axis=1)
+            cid=f"F{family:02d}-A{sub:02d}"
+            desc=_describe_cluster(cid,global_idx,kept,features,center_raw,dist)
+            desc["share"]=float(len(global_idx)/len(kept)); centers.append(desc); total_archetypes+=1
+            for gi in global_idx:
+                assignments.append({"season":kept[gi]["season"],"team":kept[gi]["team"],"seasonType":kept[gi].get("seasonType"),"week":kept[gi].get("week"),"gamesPlayed":kept[gi].get("gamesPlayed"),"family":family,"archetype":cid})
+        families.append({"family":family,"snapshotCount":int(len(idx)),"share":float(len(idx)/len(kept)),"selectedSubclusters":sub_k,"subclusterTrials":trials,"archetypes":centers})
+
+    return {"version":DISCOVERY_VERSION,"snapshotCount":len(kept),"availableSnapshotCount":len(rows),"features":features,"familyCount":family_k,"archetypeCount":total_archetypes,"families":families,"assignments":assignments,"weighting":"equal total weight per team-season","qualityPolicy":"quality dimensions opponent-adjusted; style dimensions descriptive; identity includes quality contrasts"}
+
+
+def concise(r: dict[str, Any]) -> str:
+    lines=["HISTORICAL ARCHETYPE DISCOVERY v2",f"Snapshots used: {r['snapshotCount']:,}/{r['availableSnapshotCount']:,}",f"Dimensions: {len(r['features'])}",f"Broad families: {r['familyCount']}",f"Final archetypes: {r['archetypeCount']}",""]
+    for fam in r["families"]:
+        lines.append(f"F{fam['family']:02d} | {fam['share']:.1%} | sub-archetypes={fam['selectedSubclusters']}")
+        for a in fam["archetypes"]:
+            traits=", ".join(f"{x['metric'].replace('current_','').replace('_percentile','')}={x['value']:.0f}" for x in a["signatureTraits"][:5])
+            ex="; ".join(f"{x['season']} {x['team']} W{x['week']}" for x in a["exemplars"][:3])
+            lines.append(f"  {a['id']} | {a['share']:.1%} | {traits} | {ex}")
     return "\n".join(lines)
 
 
 def main() -> None:
-    p = argparse.ArgumentParser()
-    p.add_argument("--processed-root", type=Path, default=Path("data/processed"))
-    p.add_argument("--k-min", type=int, default=6)
-    p.add_argument("--k-max", type=int, default=24)
-    p.add_argument("--min-coverage", type=float, default=0.85)
-    p.add_argument("--no-trend", action="store_true")
-    args = p.parse_args()
-    source = args.processed_root / "derived" / "profiles" / "identity_snapshots_v1.json"
-    if not source.exists():
-        raise FileNotFoundError("build identity snapshots first: python -m cfb_analytics.profiles.snapshots")
-    rows = json.loads(source.read_text())
-    report = discover_archetypes(rows, k_min=args.k_min, k_max=args.k_max, min_coverage=args.min_coverage, include_trend=not args.no_trend)
-    target = args.processed_root / "derived" / "profiles" / "archetype_discovery_v1.json"
-    target.write_text(json.dumps(report, indent=2))
-    print(concise(report))
+    p=argparse.ArgumentParser(); p.add_argument("--processed-root",type=Path,default=Path("data/processed")); p.add_argument("--family-k",type=int,default=6); p.add_argument("--sub-k-min",type=int,default=2); p.add_argument("--sub-k-max",type=int,default=5); p.add_argument("--min-coverage",type=float,default=0.82); a=p.parse_args()
+    source=a.processed_root/"derived"/"profiles"/"identity_snapshots_v2_oa.json"
+    if not source.exists(): raise FileNotFoundError("build OA identity snapshots first: python -m cfb_analytics.profiles.snapshots")
+    report=discover_archetypes(json.loads(source.read_text()),family_k=a.family_k,sub_k_min=a.sub_k_min,sub_k_max=a.sub_k_max,min_coverage=a.min_coverage)
+    target=a.processed_root/"derived"/"profiles"/"archetype_discovery_v2_oa.json"; target.write_text(json.dumps(report,indent=2)); print(concise(report))
 
-
-if __name__ == "__main__":
-    main()
+if __name__=="__main__": main()
