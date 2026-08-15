@@ -8,8 +8,14 @@ from .archetypes import classify_archetypes
 from .archetype_catalog import CATALOG, CATALOG_VERSION
 from .contract import PROFILE_METRICS, PROFILE_VERSION
 from .grades import grade_percentile, percentile_rank
-from .match_archetypes import match_snapshot
 from .similarity import historical_comparables
+
+
+def match_snapshot(*args, **kwargs):
+    """Lazy wrapper that avoids importing the CLI module during package init."""
+    from .match_archetypes import match_snapshot as _match_snapshot
+    return _match_snapshot(*args, **kwargs)
+
 
 __all__ = [
     "CATALOG",
