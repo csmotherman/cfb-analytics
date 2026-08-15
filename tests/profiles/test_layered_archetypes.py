@@ -3,6 +3,9 @@ from cfb_analytics.profiles.layered_archetypes import (
     LANE_ASSIGNMENT_THRESHOLDS,
     LANE_FAMILIES,
     ROOT_MODIFIERS,
+    final_snapshot,
+    final_snapshot_profile,
+    match_history,
     match_lane,
 )
 
@@ -122,3 +125,51 @@ def test_root_score_controls_ranking_not_modifier_score():
     matches = match_lane(profile, "team", top_n=5)
     root_scores = [x["rootSimilarity"] for x in matches]
     assert root_scores == sorted(root_scores, reverse=True)
+
+
+def test_final_snapshot_profile_uses_finished_team_not_average_of_season_states():
+    early = {
+        "season": 2023,
+        "team": "Michigan",
+        "seasonType": "regular",
+        "week": 4,
+        "gamesPlayed": 4,
+        "throughGameId": "early",
+        "identity_offense_quality": 42.0,
+        "identity_defense_quality": 55.0,
+    }
+    final = {
+        "season": 2023,
+        "team": "Michigan",
+        "seasonType": "postseason",
+        "week": 16,
+        "gamesPlayed": 15,
+        "throughGameId": "title",
+        "identity_offense_quality": 82.0,
+        "identity_defense_quality": 91.0,
+    }
+    rows = [final, early]
+    assert final_snapshot(rows)["throughGameId"] == "title"
+    profile = final_snapshot_profile(rows)
+    assert profile["identity_offense_quality"] == 82.0
+    assert profile["identity_defense_quality"] == 91.0
+
+
+def test_historical_output_declares_final_snapshot_basis():
+    row = {
+        "season": 2023,
+        "team": "Michigan",
+        "seasonType": "postseason",
+        "week": 16,
+        "gamesPlayed": 15,
+        "throughGameId": "title",
+        **_profile(
+            identity_offense_quality=82.0,
+            identity_defense_quality=82.0,
+            identity_offense_vs_defense=0.0,
+        ),
+    }
+    report = match_history([row], seasons=(2023,))
+    assert report["profileBasis"] == "FINAL_SNAPSHOT"
+    assert report["teamSeasons"][0]["profileBasis"] == "FINAL_SNAPSHOT"
+    assert report["teamSeasons"][0]["finalGamesPlayed"] == 15
