@@ -1,8 +1,9 @@
 """Build opponent-adjusted in-season team identity snapshots.
 
-Profiles separate three concepts:
+Profiles separate four concepts:
 - quality: opponent-adjusted offense/defense performance;
-- style: descriptive behavior such as run/pass tendency and drive length;
+- attack composites: broader rushing/passing quality beyond success rate alone;
+- style/scheme: descriptive behavior and whether usage fits actual strengths;
 - form: recent four-game state versus season-to-date baseline.
 
 Snapshots are descriptive after each played partition, not pregame predictors.
@@ -20,7 +21,7 @@ from cfb_analytics.raw.audit import discover_partitions
 from .grades import grade_percentile, percentile_rank
 from .opponent_adjustment import METRIC_SPECS, fit_context, quality_keys, team_quality
 
-SNAPSHOT_VERSION = "team-identity-snapshots-v2-oa-research"
+SNAPSHOT_VERSION = "team-identity-snapshots-v3-attack-scheme-research"
 DEFAULT_SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 ORDER = {"regular": 0, "postseason": 1}
 
@@ -132,10 +133,14 @@ def build_identity_snapshots(team_games: list[dict[str, Any]], *, min_games: int
                 row[f"baseline_{key}"] = baseline_raw.get(key); row[f"current_{key}"] = current_raw.get(key)
             for key in RAW_DIAGNOSTIC_KEYS:
                 row[f"raw_baseline_{key}"] = baseline_raw.get(key); row[f"raw_current_{key}"] = current_raw.get(key)
-                # backwards-compatible diagnostics only; discovery does not use these raw quality fields.
                 row[f"baseline_{key}"] = baseline_raw.get(key); row[f"current_{key}"] = current_raw.get(key)
             out.append(row)
     return out
+
+
+def _mean_present(values: list[float | None]) -> float | None:
+    vals = [float(x) for x in values if isinstance(x, (int, float))]
+    return sum(vals) / len(vals) if vals else None
 
 
 def _identity_shape(enriched: dict[str, Any]) -> None:
@@ -145,18 +150,46 @@ def _identity_shape(enriched: dict[str, Any]) -> None:
     def gap(a: str, b: str) -> float | None:
         x, y = pct(a), pct(b)
         return x - y if x is not None and y is not None else None
-    offense = [pct("oa_run_efficiency_off"), pct("oa_pass_efficiency_off"), pct("oa_success_off"), pct("oa_explosiveness_off"), pct("oa_third_down_off"), pct("oa_finishing_off")]
-    defense = [pct("oa_run_efficiency_def"), pct("oa_pass_efficiency_def"), pct("oa_success_def"), pct("oa_explosiveness_def"), pct("oa_third_down_def"), pct("oa_finishing_def")]
-    off_vals = [x for x in offense if x is not None]; def_vals = [x for x in defense if x is not None]
-    off_q = sum(off_vals)/len(off_vals) if off_vals else None; def_q = sum(def_vals)/len(def_vals) if def_vals else None
-    enriched["identity_run_vs_pass_off"] = gap("oa_run_efficiency_off", "oa_pass_efficiency_off")
-    enriched["identity_run_vs_pass_def"] = gap("oa_run_efficiency_def", "oa_pass_efficiency_def")
+
+    rushing_attack = _mean_present([
+        pct("oa_run_efficiency_off"), pct("oa_run_explosiveness_off"), pct("oa_run_success_yards_off")
+    ])
+    passing_attack = _mean_present([
+        pct("oa_pass_efficiency_off"), pct("oa_pass_explosiveness_off"), pct("oa_pass_success_yards_off")
+    ])
+    rushing_defense = _mean_present([
+        pct("oa_run_efficiency_def"), pct("oa_run_explosiveness_def"), pct("oa_run_success_yards_def")
+    ])
+    passing_defense = _mean_present([
+        pct("oa_pass_efficiency_def"), pct("oa_pass_explosiveness_def"), pct("oa_pass_success_yards_def")
+    ])
+    offense = [rushing_attack, passing_attack, pct("oa_success_off"), pct("oa_explosiveness_off"), pct("oa_third_down_off"), pct("oa_finishing_off")]
+    defense = [rushing_defense, passing_defense, pct("oa_success_def"), pct("oa_explosiveness_def"), pct("oa_third_down_def"), pct("oa_finishing_def")]
+    off_q = _mean_present(offense); def_q = _mean_present(defense)
+    rush_tendency, pass_tendency = pct("rush_rate"), pct("pass_rate")
+    tendency_gap = (rush_tendency - pass_tendency) if rush_tendency is not None and pass_tendency is not None else None
+    attack_gap = (rushing_attack - passing_attack) if rushing_attack is not None and passing_attack is not None else None
+
+    enriched["identity_rushing_attack"] = rushing_attack
+    enriched["identity_passing_attack"] = passing_attack
+    enriched["identity_rushing_defense"] = rushing_defense
+    enriched["identity_passing_defense"] = passing_defense
+    enriched["identity_run_vs_pass_off"] = attack_gap
+    enriched["identity_run_vs_pass_def"] = (rushing_defense - passing_defense) if rushing_defense is not None and passing_defense is not None else None
     enriched["identity_explosive_vs_methodical"] = gap("oa_explosiveness_off", "oa_success_off")
     enriched["identity_finishing_vs_foundation"] = (pct("oa_finishing_off") - off_q) if pct("oa_finishing_off") is not None and off_q is not None else None
     enriched["identity_offense_vs_defense"] = (off_q - def_q) if off_q is not None and def_q is not None else None
-    enriched["identity_rush_vs_pass_tendency"] = gap("rush_rate", "pass_rate")
+    enriched["identity_rush_vs_pass_tendency"] = tendency_gap
     enriched["identity_offense_quality"] = off_q
     enriched["identity_defense_quality"] = def_q
+    enriched["identity_predictability"] = abs(tendency_gap) if tendency_gap is not None else None
+    enriched["identity_one_dimensionality"] = abs(attack_gap) if attack_gap is not None else None
+    enriched["identity_playcalling_fit"] = (tendency_gap * attack_gap / 100.0) if tendency_gap is not None and attack_gap is not None else None
+    weak_attack = min(rushing_attack, passing_attack) if rushing_attack is not None and passing_attack is not None else None
+    enriched["identity_scheme_constraint"] = (
+        abs(tendency_gap) * (100.0 - weak_attack) / 100.0
+        if tendency_gap is not None and weak_attack is not None else None
+    )
 
 
 def add_context_percentiles(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -189,9 +222,9 @@ def load_team_games(processed_root: Path, seasons: tuple[int, ...] = DEFAULT_SEA
 
 def materialize_identity_snapshots(processed_root: Path, *, min_games: int = 4, recent_games: int = 4) -> Path:
     rows = add_context_percentiles(build_identity_snapshots(load_team_games(processed_root), min_games=min_games, recent_games=recent_games))
-    target = processed_root / "derived" / "profiles" / "identity_snapshots_v2_oa.json"; target.parent.mkdir(parents=True, exist_ok=True)
+    target = processed_root / "derived" / "profiles" / "identity_snapshots_v3_attack_scheme.json"; target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(rows, separators=(",", ":")))
-    print(f"OA IDENTITY SNAPSHOTS: {len(rows):,} states | seasons={len({r['season'] for r in rows})} | teams={len({(r['season'],r['team']) for r in rows})}")
+    print(f"ATTACK/SCHEME SNAPSHOTS: {len(rows):,} states | seasons={len({r['season'] for r in rows})} | teams={len({(r['season'],r['team']) for r in rows})}")
     return target
 
 
