@@ -8,6 +8,11 @@ The benchmark deliberately uses a transparent regularized multinomial logistic
 model before any hierarchical/tree simulator is attempted. Evaluation is by
 held-out season with all earlier available seasons used for training.
 
+Rows whose raw drive result cannot be mapped to a semantic football outcome are
+retained in the research corpus but treated as unresolved targets, not as a
+football class. They are reported as coverage loss and excluded from proper-score
+model evaluation. Missing predictor values are never a reason to drop a test row.
+
 Research only. Prediction v1 and the existing historical simulator are unchanged.
 """
 from __future__ import annotations
@@ -28,7 +33,7 @@ from cfb_analytics.analytics.drive_state_research import (
 )
 from cfb_analytics.analytics.situational_pregame import SEASONS
 
-DRIVE_OUTCOME_MODEL_VERSION = "drive-outcome-multinomial-v1-expanding-season"
+DRIVE_OUTCOME_MODEL_VERSION = "drive-outcome-multinomial-v1-semantic-expanding-season"
 DEFAULT_TEST_SEASONS = (2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 OUTCOME_CLASSES = (
     "TOUCHDOWN",
@@ -40,13 +45,12 @@ OUTCOME_CLASSES = (
     "PERIOD_END",
     "RETURN_TOUCHDOWN",
     "SAFETY",
-    "OTHER",
 )
 EPS = 1e-12
 
-# A few CFBD seasons use semantically equivalent driveResult spellings. The
-# source v2 rows retain the exact raw label, so the model can normalize these
-# without requiring another expensive corpus rebuild.
+# CFBD changed some driveResult spellings across seasons. Because v2 preserves
+# targetDriveResult exactly, these aliases can be normalized at model load time
+# without rebuilding the saved drive-state corpus.
 _RESULT_ALIASES = {
     "RUSHING TD": "TOUCHDOWN",
     "PASSING TD": "TOUCHDOWN",
@@ -89,6 +93,11 @@ def load_season_rows(processed_root: Path, season: int) -> list[dict[str, Any]]:
     return out
 
 
+def semantic_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Rows with a resolved football outcome target."""
+    return [row for row in rows if row.get("modelOutcomeFamily") in OUTCOME_CLASSES]
+
+
 def fit_quality_means(rows: list[dict[str, Any]]) -> dict[str, float]:
     """Training-only imputation means for pregame quality fields."""
     means: dict[str, float] = {}
@@ -115,9 +124,7 @@ def state_feature_dict(row: dict[str, Any]) -> dict[str, Any]:
         "inside_20_depth": max(0.0, 20.0 - ytg) / 20.0,
         "long_field_depth": max(0.0, ytg - 80.0) / 20.0,
         "clock_fraction": clock / 900.0,
-        "half_end_pressure": (
-            max(0.0, 180.0 - clock) / 180.0 if period in (2, 4) else 0.0
-        ),
+        "half_end_pressure": max(0.0, 180.0 - clock) / 180.0 if period in (2, 4) else 0.0,
         "score_margin": margin / 14.0,
         "absolute_score_margin": abs(margin) / 14.0,
         "home_offense": 1.0 if row.get("isHomeOffense") is True else 0.0,
@@ -166,10 +173,7 @@ def _fit_model(
         raise RuntimeError('Drive outcome modeling requires pip install -e ".[models]"') from exc
 
     quality_means = fit_quality_means(rows) if include_quality else None
-    features = [
-        model_feature_dict(row, quality_means, include_quality=include_quality)
-        for row in rows
-    ]
+    features = [model_feature_dict(row, quality_means, include_quality=include_quality) for row in rows]
     targets = [str(row["modelOutcomeFamily"]) for row in rows]
 
     vectorizer = DictVectorizer(sparse=True)
@@ -193,10 +197,7 @@ def _predict_model(
     include_quality: bool,
 ) -> list[list[float]]:
     vectorizer, scaler, model, quality_means = fitted
-    features = [
-        model_feature_dict(row, quality_means, include_quality=include_quality)
-        for row in rows
-    ]
+    features = [model_feature_dict(row, quality_means, include_quality=include_quality) for row in rows]
     x = scaler.transform(vectorizer.transform(features))
     raw = model.predict_proba(x)
     index = {str(label): i for i, label in enumerate(model.classes_)}
@@ -261,23 +262,20 @@ def evaluate_outer_season(
     prior = [s for s in SEASONS if s < season and s in all_rows]
     if not prior:
         raise ValueError(f"No prior training seasons before {season}")
-    train = [row for s in prior for row in all_rows[s]]
-    test = all_rows[season]
+
+    raw_train = [row for s in prior for row in all_rows[s]]
+    raw_test = all_rows[season]
+    train = semantic_rows(raw_train)
+    test = semantic_rows(raw_test)
 
     global_p = global_class_probabilities(train)
     global_metrics = multiclass_metrics(test, constant_probabilities(global_p, len(test)))
 
     state_fit = _fit_model(train, include_quality=False)
-    state_metrics = multiclass_metrics(
-        test,
-        _predict_model(state_fit, test, include_quality=False),
-    )
+    state_metrics = multiclass_metrics(test, _predict_model(state_fit, test, include_quality=False))
 
     full_fit = _fit_model(train, include_quality=True)
-    full_metrics = multiclass_metrics(
-        test,
-        _predict_model(full_fit, test, include_quality=True),
-    )
+    full_metrics = multiclass_metrics(test, _predict_model(full_fit, test, include_quality=True))
 
     for metrics, reference in ((state_metrics, global_metrics), (full_metrics, state_metrics)):
         metrics["deltaLogLoss"] = metrics["logLoss"] - reference["logLoss"]
@@ -286,13 +284,18 @@ def evaluate_outer_season(
 
     alias_relabels = sum(
         str(row.get("targetOutcomeFamily")) != str(row.get("modelOutcomeFamily"))
-        for row in test
+        for row in raw_test
     )
+    unresolved_test = len(raw_test) - len(test)
     return {
         "season": season,
         "trainSeasons": tuple(prior),
+        "rawTrainRows": len(raw_train),
         "trainRows": len(train),
+        "rawTestRows": len(raw_test),
         "testRows": len(test),
+        "unresolvedTestRows": unresolved_test,
+        "semanticTargetCoverage": len(test) / len(raw_test) if raw_test else 0.0,
         "aliasRelabels": alias_relabels,
         "global": global_metrics,
         "state": state_metrics,
@@ -331,7 +334,8 @@ def run_evaluation(
     print("GLOBAL = training class frequencies")
     print("STATE  = possession-start state only")
     print("FULL   = STATE + training-imputed pregame offense/defense quality")
-    print("Negative LogLoss/Brier deltas are better. No test rows are dropped.\n")
+    print("Unresolved OTHER targets are reported as coverage loss, not modeled as football outcomes.")
+    print("Negative LogLoss/Brier deltas are better. Missing predictors never drop test rows.\n")
 
     reports: list[dict[str, Any]] = []
     for season in test_seasons:
@@ -339,7 +343,9 @@ def run_evaluation(
         reports.append(report)
         g, s, f = report["global"], report["state"], report["full"]
         print(
-            f" {season}: train={report['trainRows']:,} test={report['testRows']:,} "
+            f" {season}: train={report['trainRows']:,}/{report['rawTrainRows']:,} semantic | "
+            f"test={report['testRows']:,}/{report['rawTestRows']:,} semantic "
+            f"({report['semanticTargetCoverage']*100:.2f}%) | unresolved={report['unresolvedTestRows']:,} | "
             f"alias-normalized={report['aliasRelabels']:,}"
         )
         print(
@@ -378,7 +384,10 @@ def run_evaluation(
     for label in OUTCOME_CLASSES:
         observed = pooled_full["observed"].get(label, 0) / n
         predicted = pooled_full["predictedSums"].get(label, 0.0) / n
-        print(f" {label:20s}: observed {observed*100:6.2f}% | predicted {predicted*100:6.2f}% | gap {(predicted-observed)*100:+.2f} pp")
+        print(
+            f" {label:20s}: observed {observed*100:6.2f}% | "
+            f"predicted {predicted*100:6.2f}% | gap {(predicted-observed)*100:+.2f} pp"
+        )
 
     print(
         "\nInterpretation: STATE must first beat class frequencies; FULL must then beat STATE. "
