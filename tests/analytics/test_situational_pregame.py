@@ -4,6 +4,7 @@ from cfb_analytics.analytics.situational_pregame import (
     BUCKETS,
     add_rows,
     bucket_names,
+    partition_sort_key,
     snapshot_before_partition,
 )
 
@@ -46,6 +47,16 @@ def test_bucket_names_are_broad_and_stable():
         "red_zone",
         "second_half",
     )
+
+
+def test_partition_order_is_regular_then_postseason_even_with_overlapping_weeks():
+    partitions = [("postseason", 1), ("regular", 2), ("regular", 1), ("postseason", 2)]
+    assert sorted(partitions, key=partition_sort_key) == [
+        ("regular", 1),
+        ("regular", 2),
+        ("postseason", 1),
+        ("postseason", 2),
+    ]
 
 
 def test_snapshot_is_taken_before_current_partition_is_added():
