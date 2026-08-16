@@ -18,6 +18,8 @@ from .layered_archetypes import (
 from .snapshots import DEFAULT_SEASONS
 
 OUTPUT_VERSION = "dynamic-team-profiles-v6-website-grades"
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_PROCESSED_ROOT = PROJECT_ROOT / "data" / "processed"
 
 STYLE_METRIC_MAP = {
     "identity_success_quality": "oa_success_off",
@@ -232,7 +234,9 @@ def materialize(
 ) -> Path:
     source = processed_root / "derived" / "profiles" / "identity_snapshots_v3_attack_scheme.json"
     if not source.exists():
-        raise FileNotFoundError("build snapshots first: python -m cfb_analytics.profiles.snapshots")
+        raise FileNotFoundError(
+            f"identity snapshots not found at {source}; run python -m cfb_analytics.profiles.snapshots from any directory"
+        )
     rows = json.loads(source.read_text())
     report = build_dynamic_profiles(rows, seasons=seasons)
     target = processed_root / "derived" / "profiles" / "dynamic_team_identities.json"
@@ -243,7 +247,7 @@ def materialize(
 
 def main() -> None:
     p = argparse.ArgumentParser()
-    p.add_argument("--processed-root", type=Path, default=Path("data/processed"))
+    p.add_argument("--processed-root", type=Path, default=DEFAULT_PROCESSED_ROOT)
     p.add_argument("--seasons", nargs="+", type=int, default=list(DEFAULT_SEASONS))
     p.add_argument("--examples", type=int, default=20)
     args = p.parse_args()
