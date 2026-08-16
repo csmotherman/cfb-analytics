@@ -8,7 +8,7 @@ export function Nav(){
     <Link href="/rankings">Rankings</Link>
     <Link href="/compare">Compare</Link>
     <Link href="/simulator">Simulator</Link>
-    <Link href="/archetypes">Archetypes</Link>
+    <Link href="/archetypes">Identity Explorer</Link>
     <Link href="/metrics">Metrics</Link>
   </nav>;
 }
