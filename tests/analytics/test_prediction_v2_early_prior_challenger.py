@@ -22,6 +22,13 @@ def test_blend_value_reverts_to_current_after_four_games():
     assert blend_value(10.0, None, 0) == 10.0
 
 
+def test_missing_current_component_keeps_prior_before_four_games():
+    assert blend_value(10.0, None, 1) == 10.0
+    assert blend_value(10.0, None, 2) == 10.0
+    assert blend_value(10.0, None, 3) == 10.0
+    assert blend_value(10.0, None, 4) is None
+
+
 def test_early_scope_is_regular_week_four_or_earlier():
     assert is_early_regular({"seasonType": "regular", "week": 0})
     assert is_early_regular({"seasonType": "regular", "week": 4})
