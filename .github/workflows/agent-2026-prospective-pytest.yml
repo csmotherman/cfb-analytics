@@ -1,0 +1,26 @@
+name: Prospective 2026 branch pytest
+
+on:
+  push:
+    branches:
+      - agent/2026-prospective-pipeline
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e '.[dev]'
+      - name: Prospective 2026 contract tests
+        run: >-
+          pytest
+          tests/analytics/test_prediction_v2_2026_freeze.py
+          tests/analytics/test_prediction_v2_2026_features.py
+          tests/analytics/test_prediction_v2_2026_pipeline.py
+      - name: Full test suite
+        run: pytest
