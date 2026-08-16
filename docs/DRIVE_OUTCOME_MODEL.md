@@ -1,7 +1,7 @@
 # Drive Outcome Probability Benchmark
 
 **Status:** RESEARCH ONLY  
-**Version:** `drive-outcome-multinomial-v1-expanding-season`
+**Version:** `drive-outcome-multinomial-v1-semantic-expanding-season`
 
 ## Purpose
 
@@ -11,7 +11,7 @@ Drive State Research v2 established a trustworthy possession-level contract:
 raw drive-start state + leakage-safe pregame team quality -> categorical driveResult
 ```
 
-The first model benchmark asks two separate questions:
+The first model benchmark asks two questions:
 
 1. Does possession-start football state predict the eventual drive outcome better than unconditional class frequencies?
 2. After controlling for that state, does pregame offense/defense quality add stable out-of-sample probability information?
@@ -20,15 +20,28 @@ Prediction v1 and the existing historical simulator remain unchanged.
 
 ## Full-corpus audit
 
-The regulation-only v2 materialization covers 2014-2019 and 2021-2025. Across those seasons the saved corpus contains about 207k drive rows. Start yards-to-goal, score margin, and clock have complete coverage in every audited season. Pregame quality coverage is about 91% because Week 1 and other zero-history states intentionally remain missing rather than leaking future information.
+The regulation-only v2 materialization covers 2014-2019 and 2021-2025 and contains about 207k drive rows. Start yards-to-goal, score margin, and clock have complete coverage in every audited season. Pregame quality coverage is about 91% because Week 1 and other zero-history states intentionally remain missing rather than leaking future information.
 
-Raw `driveResult` spellings are not perfectly stable across CFBD seasons. For example, 2021 contains `RUSHING TD`, `PASSING TD`, `FG GOOD`, `FG MISSED`, and `INT RETURN TOUCH`. The benchmark normalizes these exact raw labels at load time to their semantic v2 families. It does not require rewriting the saved drive-state files and does not drop those rows.
+Raw `driveResult` spellings are not perfectly stable across CFBD seasons. The benchmark therefore normalizes known semantic aliases at load time, including:
 
-`Uncategorized` and other genuinely unresolved source outcomes remain `OTHER` rather than being silently forced into a football class.
+- `RUSHING TD`, `PASSING TD`, `END OF HALF TD`, `END OF GAME TD` -> `TOUCHDOWN`;
+- `FG GOOD` -> `FIELD_GOAL`;
+- `FG MISSED` -> `MISSED_FIELD_GOAL`;
+- `INT RETURN TOUCH` -> `RETURN_TOUCHDOWN`.
 
-## Outcome classes
+This uses the exact preserved raw label and does not require regenerating the saved drive-state corpus.
 
-The benchmark predicts the following fixed probability vector:
+## Unresolved targets
+
+`Uncategorized` and other genuinely unresolved raw outcomes are not a football outcome class. They stay preserved in the research corpus, but are excluded from model fitting and proper-score evaluation and are reported explicitly as semantic-target coverage loss.
+
+This matters because unresolved labels are not stationary across seasons: for example, 2018 contains a much larger `Uncategorized` block than most seasons. Treating that source-quality artifact as a football class would distort log loss and Brier score.
+
+Missing **predictors** are handled differently: no test row with a resolved outcome is dropped because of missing pregame quality.
+
+## Modeled outcome classes
+
+The fixed probability vector is:
 
 ```text
 TOUCHDOWN
@@ -40,20 +53,19 @@ MISSED_FIELD_GOAL
 PERIOD_END
 RETURN_TOUCHDOWN
 SAFETY
-OTHER
 ```
 
-Rare classes are retained. No class-weighting is used in the first benchmark because the primary goal is calibrated probability estimation, not balanced classification accuracy.
+Rare but valid football outcomes are retained. No class weighting is used in the first benchmark because the primary goal is calibrated probability estimation, not balanced classification accuracy.
 
 ## Models
 
 ### GLOBAL
 
-Training-set class frequencies with light Dirichlet smoothing. This is the minimum probability benchmark.
+Training-set class frequencies with light Dirichlet smoothing.
 
 ### STATE
 
-Regularized multinomial logistic regression using only information available when the possession begins:
+Regularized multinomial logistic regression using only information known at possession start:
 
 - period;
 - start clock;
@@ -65,7 +77,7 @@ Regularized multinomial logistic regression using only information available whe
 
 ### FULL
 
-`STATE` plus leakage-safe pregame team quality:
+`STATE` plus leakage-safe pregame team quality.
 
 Offense:
 
@@ -87,7 +99,7 @@ Defense:
 - early-down success allowed;
 - takeaway rate.
 
-Missing pregame quality is imputed using **training-only** field means. A missingness indicator is added for every imputed field, and games played before the current partition are retained so the model can distinguish zero-history/early-season states. No test row is dropped for missing pregame quality.
+Missing pregame quality is imputed using **training-only** field means. A missingness indicator is added for every imputed field, and games played before the current partition are retained so the model can distinguish early-season states.
 
 ## Validation
 
@@ -99,8 +111,6 @@ Default outer seasons:
 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025
 ```
 
-This gives multiple historical regime tests instead of optimizing only against the most recently inspected seasons. The 2020 season remains absent under the repository corpus contract.
-
 Primary metrics:
 
 - multiclass log loss;
@@ -109,7 +119,9 @@ Primary metrics:
 Secondary diagnostics:
 
 - top-class accuracy;
-- pooled observed versus predicted frequency for every outcome class.
+- semantic target coverage;
+- alias normalization counts;
+- pooled observed versus predicted frequency for every modeled outcome class.
 
 Promotion logic is sequential:
 
@@ -143,7 +155,7 @@ pip install -e ".[models]"
 
 ## What comes next
 
-If the transparent multinomial benchmark works, the next challenger should exploit football structure rather than immediately jumping to a black-box model. A natural hierarchy is:
+If the transparent multinomial benchmark works, the next challenger should exploit football structure rather than immediately jumping to a black-box model:
 
 ```text
 possession outcome family
