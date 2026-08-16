@@ -1,161 +1,147 @@
 # Prediction v1 Symmetric Net Challenger
 
-**Status:** RESEARCH CHALLENGER — FIXED STRUCTURAL REPARAMETERIZATION  
+**Status:** SCREENED — NOT PROMOTED  
 **Version:** `prediction-v1-symmetric-net-v1`
 
-## Why this test exists
+## Purpose
 
-The corrected Prediction v1 integrity audit showed that several paired Iterative features are strongly correlated:
+After the authoritative target repair and corrected-SRS rebuild, the Prediction v1 stability audit showed substantial redundancy among the paired home/away Iterative features and the MWDR family. A development-selected LEAN deletion experiment failed recent validation, so the next test used a fixed structural reparameterization rather than more holdout-driven pruning.
 
-```text
-home YPP <> home yards/possession       r ~= 0.85
-away YPP <> away yards/possession       r ~= 0.85
-home success <> home yards/possession   r ~= 0.83
-away success <> away yards/possession   r ~= 0.83
-```
-
-The MWDR family is also highly collinear with its expected-possession interaction:
-
-```text
-home MWDR defense <> MWDR x possessions r ~= 0.90
-home MWDR offense <> MWDR x possessions r ~= 0.89
-```
-
-A development-selected four-feature LEAN model failed recent validation, so the project will not continue tuning arbitrary prune combinations against inspected holdouts.
-
-This challenger instead asks a structural question:
+The challenger asked:
 
 > Can Prediction v1 represent the same football information with fewer redundant degrees of freedom by using net matchup edges?
 
 ## Fixed transformation
 
-The six paired Iterative families are transformed from separate home and away matchup edges into one net edge each:
+The six paired Iterative families were transformed from separate home and away matchup edges into one net edge each:
 
 ```text
 netIterativeSuccessEdge
-  = home_iterativeSuccessEdge
-  - away_iterativeSuccessEdge
+  = home_iterativeSuccessEdge - away_iterativeSuccessEdge
 
 netIterativeExplosiveEdge
-  = home_iterativeExplosiveEdge
-  - away_iterativeExplosiveEdge
+  = home_iterativeExplosiveEdge - away_iterativeExplosiveEdge
 
 netIterativeYardsPerPlayEdge
-  = home_iterativeYardsPerPlayEdge
-  - away_iterativeYardsPerPlayEdge
+  = home_iterativeYardsPerPlayEdge - away_iterativeYardsPerPlayEdge
 
 netIterativeYardsPerPossessionEdge
-  = home_iterativeYardsPerPossessionEdge
-  - away_iterativeYardsPerPossessionEdge
+  = home_iterativeYardsPerPossessionEdge - away_iterativeYardsPerPossessionEdge
 
 netIterativeFinishingEdge
-  = home_iterativeFinishingEdge
-  - away_iterativeFinishingEdge
+  = home_iterativeFinishingEdge - away_iterativeFinishingEdge
 
 netIterativeFieldPositionEdge
-  = home_iterativeFieldPositionEdge
-  - away_iterativeFieldPositionEdge
+  = home_iterativeFieldPositionEdge - away_iterativeFieldPositionEdge
 ```
 
-Higher net values favor the home team under the existing Iterative matchup-direction contract.
-
-MWDR is collapsed from two raw matchup edges into one net home advantage:
+MWDR was collapsed to:
 
 ```text
 netMwdrEdge
-  = home_MWDR_OffenseEdge
-  + home_MWDR_DefenseEdge
+  = home_MWDR_OffenseEdge + home_MWDR_DefenseEdge
 ```
 
-The already-supported possessions interaction remains:
+The candidate retained:
 
 ```text
-mwdrXExpectedPossessions
-```
-
-The volume engine is retained unchanged because corrected FULL revalidated against STABLE on recent mean MAE and RMSE.
-
-## Candidate feature contract
-
-```text
-6 net Iterative matchup edges
 srsEdge
-netMwdrEdge
 mwdrXExpectedPossessions
 successVolumeEdge
 explosiveVolumeEdge
 turnoverVolumeEdge
 ```
 
-Total:
+Feature count:
 
 ```text
-FULL       19 features
-SYMMETRIC  12 features
+FULL       19
+SYMMETRIC  12
 ```
 
-No feature selection, hyperparameter search, or holdout-driven combination search is performed.
+No feature selection or hyperparameter search was performed.
 
 ## Evaluation protocol
 
-The challenger uses the corrected authoritative-target feature stores and identical FULL-eligible game rows.
+The challenger used the corrected authoritative-target feature stores and the exact FULL-eligible game rows.
 
-Estimator and walk-forward protocol remain unchanged:
+Estimator and walk-forward protocol remained unchanged:
 
 - OLS;
 - equal game weights;
 - all prior available seasons for each holdout;
-- min-prior-games 3 and 4;
-- same signed home-margin target;
-- same corrected SRS;
-- same 2020 omission;
-- same season-reset behavior.
+- minimum-prior-games 3 and 4;
+- authoritative signed home-margin target;
+- corrected leakage-safe SRS;
+- 2020 omitted;
+- season reset preserved.
 
-Outer evaluation seasons:
+Outer seasons were 2018, 2019, 2021, 2022, 2023, 2024, and 2025 at min3/min4, for 14 folds total. The recent subset was 2023–2025 at min3/min4, for 6 folds.
+
+## Predeclared promotion gate
+
+SYMMETRIC required all of the following:
+
+1. lower mean MAE across all 14 folds;
+2. lower mean RMSE across all 14 folds;
+3. at least 8/14 MAE wins;
+4. at least 8/14 RMSE wins;
+5. lower recent mean MAE;
+6. lower recent mean RMSE;
+7. at least 4/6 recent MAE wins;
+8. at least 4/6 recent RMSE wins.
+
+Winner accuracy was secondary context.
+
+## Result
 
 ```text
-2018
-2019
-2021
-2022
-2023
-2024
-2025
+ALL 14
+  mean MAE delta     -0.0246
+  mean RMSE delta    -0.0143
+  winner delta       +0.13 pp
+  MAE better          10/14
+  RMSE better          7/14
+
+RECENT 6
+  mean MAE delta     -0.0141
+  mean RMSE delta    -0.0108
+  winner delta       +0.50 pp
+  MAE better           4/6
+  RMSE better          3/6
 ```
 
-at min3 and min4, for 14 folds.
+The candidate improved pooled average MAE and RMSE, including the recent pooled averages, but failed the stability gate because RMSE improved in only 7/14 overall folds and 3/6 recent folds. Both 2025 MAE folds were worse under SYMMETRIC.
 
-The recent forward-facing subset is 2023–2025 at min3/min4, for 6 folds.
+## Coefficient / correlation diagnostic
 
-## Promotion gate
+Most net Iterative features had cleaner directional coefficient behavior than the original paired parameterization. However, MWDR remained structurally redundant:
 
-SYMMETRIC advances only if all of the following hold:
-
-1. mean MAE vs FULL improves across all 14 folds;
-2. mean RMSE vs FULL improves across all 14 folds;
-3. MAE improves in at least 8 of 14 folds;
-4. RMSE improves in at least 8 of 14 folds;
-5. mean MAE improves on the 6 recent folds;
-6. mean RMSE improves on the 6 recent folds;
-7. MAE improves in at least 4 of 6 recent folds;
-8. RMSE improves in at least 4 of 6 recent folds.
-
-Winner accuracy is secondary context.
-
-The script also reports standardized coefficient sign stability for the 12 symmetric features and pairwise correlation diagnostics. These are interpretability/stability diagnostics, not substitutes for OOS error improvement.
-
-## Runtime
-
-This is a saved-data-only linear-model experiment. It does not rebuild PBP, profiles, sandbox components, drive models, or feature stores.
-
-Run:
-
-```bash
-python -m cfb_analytics.analytics.prediction_v1_symmetric_challenger
+```text
+netMwdrEdge <> mwdrXExpectedPossessions
+r = +0.997
 ```
 
-## Interpretation
+The coefficient on `netMwdrEdge` was negative in 13/14 folds while the interaction was positive in 14/14 folds. Given their near-perfect correlation, those individual signs are not interpreted causally.
 
-If SYMMETRIC passes, it becomes a strong Prediction-v2 candidate because it would improve OOS accuracy while reducing the model from 19 to 12 terms and making the matchup structure more interpretable.
+## Decision
 
-If it fails, retain corrected FULL and stop trying to solve the remaining error with algebraic reshuffling of the same information. The next research step should introduce a genuinely different information source, with home-field/neutral-site context and early-season priors among the highest-priority candidates.
+**SYMMETRIC is not promoted.**
+
+The corrected FULL VOLUME + OLS architecture remains the incumbent candidate.
+
+Do not tune alternate net definitions, relax the gate, or search combinations against the already-inspected holdouts. The symmetric experiment was useful because it showed that algebraic compression can improve pooled error while still failing year-to-year stability. That is not enough evidence for a benchmark replacement.
+
+## Next direction
+
+Stop rearranging the same information. The next challenger should add a genuinely different pregame information source.
+
+The first candidate is site context:
+
+```text
+home-field game
+vs
+neutral-site game
+```
+
+Before fitting a site-aware model, audit the actual raw CFBD `games.json` schema and historical neutral-site coverage. If coverage is adequate, the preferred next test is a leakage-safe site-aware SRS / home-field model rather than merely adding another arbitrary feature to the final OLS.
