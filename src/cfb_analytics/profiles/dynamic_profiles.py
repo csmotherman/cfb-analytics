@@ -7,9 +7,9 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
-from .contract import PROFILE_METRICS
+from .contract import PROFILE_BY_KEY, PROFILE_METRICS
 from .dynamic_identity import DYNAMIC_IDENTITY_VERSION, build_dynamic_identity
-from .grades import grade_percentile
+from .grades import grade_percentile, percentile_rank
 from .layered_archetypes import (
     _season_identity_from_snapshot,
     closing_form_profile,
@@ -17,7 +17,7 @@ from .layered_archetypes import (
 )
 from .snapshots import DEFAULT_SEASONS
 
-OUTPUT_VERSION = "dynamic-team-profiles-v6-website-grades"
+OUTPUT_VERSION = "dynamic-team-profiles-v7-website-complete-grades"
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_PROCESSED_ROOT = PROJECT_ROOT / "data" / "processed"
 
@@ -29,15 +29,27 @@ STYLE_METRIC_MAP = {
 }
 
 # Composite identity fields are already expressed on a 0-100 season-relative
-# percentile scale. Direct OA/style metrics retain their explicit baseline
-# percentile/grade fields from the final descriptive snapshot.
+# scale because they combine season-relative component percentiles.
 COMPOSITE_GRADE_FIELDS = {
     "identity_rushing_attack": ("offense", "Rushing Attack"),
     "identity_passing_attack": ("offense", "Passing Attack"),
-    "identity_offense_quality": ("offense", "Overall Offense"),
+    "identity_offense_quality": ("offense", "Offensive Quality"),
     "identity_rushing_defense": ("defense", "Rushing Defense"),
     "identity_passing_defense": ("defense", "Passing Defense"),
-    "identity_defense_quality": ("defense", "Overall Defense"),
+    "identity_defense_quality": ("defense", "Defensive Quality"),
+}
+
+# Derived scheme values are useful profile scores, but they are not themselves
+# percentiles. Rank them across each season before assigning a letter grade.
+DERIVED_PROFILE_GRADE_DIRECTIONS = {
+    "identity_predictability": False,
+    "identity_one_dimensionality": False,
+    "identity_playcalling_fit": True,
+    "identity_scheme_constraint": False,
+}
+
+DISPLAY_LABEL_OVERRIDES = {
+    "oa_success_def": "Overall Success Defense",
 }
 
 # These metrics are available in snapshots even where the older profile contract
@@ -106,7 +118,7 @@ def _gradebook(profile: dict[str, float | None], final: dict[str, Any]) -> list[
         rows.append(_grade_row(
             key=metric.key,
             section=metric.section,
-            label=metric.label,
+            label=DISPLAY_LABEL_OVERRIDES.get(metric.key, metric.label),
             status=metric.status,
             percentile=percentile,
             grade=str(grade) if isinstance(grade, str) else None,
@@ -128,6 +140,42 @@ def _gradebook(profile: dict[str, float | None], final: dict[str, Any]) -> list[
         seen.add(key)
 
     return rows
+
+
+def _attach_derived_profile_grades(items: list[dict[str, Any]]) -> None:
+    """Grade derived scheme fields against each season's team population."""
+    by_season: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    for item in items:
+        by_season[int(item["season"])].append(item)
+
+    for season_items in by_season.values():
+        populations = {
+            key: [
+                value
+                for item in season_items
+                if (value := _number((item.get("profile") or {}).get(key))) is not None
+            ]
+            for key in DERIVED_PROFILE_GRADE_DIRECTIONS
+        }
+        for item in season_items:
+            grade_rows = {str(row.get("key")): row for row in item.get("grades") or []}
+            profile = item.get("profile") or {}
+            for key, higher_is_better in DERIVED_PROFILE_GRADE_DIRECTIONS.items():
+                value = _number(profile.get(key))
+                pct = percentile_rank(value, populations[key], higher_is_better=higher_is_better)
+                metric = PROFILE_BY_KEY[key]
+                replacement = _grade_row(
+                    key=key,
+                    section=metric.section,
+                    label=metric.label,
+                    status=metric.status,
+                    percentile=pct,
+                    description=metric.description,
+                )
+                if key in grade_rows:
+                    grade_rows[key].update(replacement)
+                else:
+                    item.setdefault("grades", []).append(replacement)
 
 
 def build_dynamic_profiles(
@@ -187,6 +235,8 @@ def build_dynamic_profiles(
                 "grades": _gradebook(profile, final),
             }
         )
+
+    _attach_derived_profile_grades(items)
 
     return {
         "version": OUTPUT_VERSION,
