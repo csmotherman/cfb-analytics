@@ -53,8 +53,9 @@ from cfb_analytics.analytics.model_feature_store import (
 )
 from cfb_analytics.analytics.walk_forward_baseline import DEFAULT_SEASONS, _solve
 
-MECHANISTIC_MARGIN_BRIDGE_VERSION = "mechanistic-margin-bridge-v1-neutral-drive-stack"
-DEFAULT_TEST_SEASONS = (2023, 2024, 2025)
+MECHANISTIC_MARGIN_BRIDGE_VERSION = "mechanistic-margin-bridge-v1-neutral-drive-stack-batched"
+ALLOWED_TEST_SEASONS = (2023, 2024, 2025)
+DEFAULT_TEST_SEASONS = (2023, 2024)
 DEFAULT_MIN_GAMES = (3, 4)
 
 # Production Field Position v1 corpus mean: average possession start own 33.723,
@@ -248,9 +249,9 @@ def materialize_outer_season(
 
     game_rows = load_saved_feature_store(processed_root, season)
     matchups = _load_matchups(processed_root, season)
-    out: list[dict[str, Any]] = []
+    pending: list[dict[str, Any]] = []
+    synthetic_rows: list[dict[str, Any]] = []
     missing_matchup = 0
-    missing_possessions = 0
 
     for game in game_rows:
         gid = str(game.get("gameId"))
@@ -265,7 +266,6 @@ def materialize_outer_season(
         if oriented is None:
             missing_matchup += 1
             continue
-        poss = oriented.get("expectedPossessionsPerTeam")
 
         home_row = neutral_drive_row(matchup, home, away, is_home_offense=True)
         away_row = neutral_drive_row(matchup, away, home, is_home_offense=False)
@@ -273,13 +273,32 @@ def materialize_outer_season(
             missing_matchup += 1
             continue
 
-        home_probs, away_probs = predict_drive_outcomes(
-            fitted,
-            [home_row, away_row],
-            include_quality=True,
+        pending.append(
+            {
+                "gameId": gid,
+                "homeTeam": home,
+                "awayTeam": away,
+                "expectedPossessionsPerTeam": oriented.get("expectedPossessionsPerTeam"),
+            }
         )
+        synthetic_rows.extend((home_row, away_row))
+
+    print(
+        f"BRIDGE {season}: scoring {len(synthetic_rows):,} standardized possessions in one batch...",
+        flush=True,
+    )
+    probabilities = predict_drive_outcomes(fitted, synthetic_rows, include_quality=True)
+    if len(probabilities) != len(synthetic_rows):
+        raise RuntimeError("drive model prediction count does not match synthetic rows")
+
+    out: list[dict[str, Any]] = []
+    missing_possessions = 0
+    for i, game in enumerate(pending):
+        home_probs = probabilities[2 * i]
+        away_probs = probabilities[2 * i + 1]
         home_drive = expected_points_from_probabilities(home_probs)
         away_drive = expected_points_from_probabilities(away_probs)
+        poss = game.get("expectedPossessionsPerTeam")
 
         game_values: dict[str, Any]
         if _num(poss) and float(poss) > 0.0:
@@ -298,9 +317,9 @@ def materialize_outer_season(
             {
                 "version": MECHANISTIC_MARGIN_BRIDGE_VERSION,
                 "season": int(season),
-                "gameId": gid,
-                "homeTeam": home,
-                "awayTeam": away,
+                "gameId": game["gameId"],
+                "homeTeam": game["homeTeam"],
+                "awayTeam": game["awayTeam"],
                 **game_values,
                 "neutralStartYardsToGoal": NEUTRAL_START_YARDS_TO_GOAL,
                 "neutralStartPeriod": NEUTRAL_START_PERIOD,
@@ -606,7 +625,7 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    seasons = _parse_ints(args.test_seasons, allowed=DEFAULT_TEST_SEASONS)
+    seasons = _parse_ints(args.test_seasons, allowed=ALLOWED_TEST_SEASONS)
     min_games = _parse_ints(args.min_games, allowed=DEFAULT_MIN_GAMES)
 
     if args.prepare_only:
