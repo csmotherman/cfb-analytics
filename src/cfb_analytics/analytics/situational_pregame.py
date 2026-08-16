@@ -21,7 +21,7 @@ from cfb_analytics.canonical.materialize import canonical_partition_dir
 from cfb_analytics.derived.drives import derived_drive_partition_dir
 from cfb_analytics.raw.audit import discover_partitions
 
-SITUATIONAL_PREGAME_VERSION = "situational-pregame-v1-broad-buckets"
+SITUATIONAL_PREGAME_VERSION = "situational-pregame-v2-chronology-safe-broad-buckets"
 SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_RAW_ROOT = PROJECT_ROOT / "data" / "raw"
@@ -66,6 +66,20 @@ def _atomic(path: Path, payload: Any) -> None:
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
     os.replace(tmp, path)
+
+
+def partition_sort_key(partition: tuple[str, int]) -> tuple[int, int, str]:
+    """Order a season in football chronology, not alphabetically by season type.
+
+    Raw partition discovery is intentionally generic and sorts by the season-type
+    string. For prediction research that is unsafe because ``postseason`` sorts
+    before ``regular`` alphabetically. We explicitly place regular-season weeks
+    first and postseason partitions afterward, preserving week order within each.
+    """
+    season_type, week = partition
+    normalized = str(season_type).strip().lower()
+    phase = 0 if normalized == "regular" else 1 if normalized == "postseason" else 2
+    return phase, int(week), normalized
 
 
 def bucket_names(row: dict[str, Any]) -> tuple[str, ...]:
@@ -198,7 +212,7 @@ def season_output_path(processed_root: Path, season: int) -> Path:
 
 
 def materialize_season(raw_root: Path, processed_root: Path, season: int):
-    partitions = list(discover_partitions(raw_root, season))
+    partitions = sorted(discover_partitions(raw_root, season), key=partition_sort_key)
     if not partitions:
         raise RuntimeError(f"No raw partitions discovered for season {season} under {raw_root}")
 
