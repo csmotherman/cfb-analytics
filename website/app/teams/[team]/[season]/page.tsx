@@ -17,9 +17,19 @@ type GradeRow={
   description?:string|null;
 };
 
+function ordinal(n:number){
+  const value=Math.round(n);
+  const mod100=value%100;
+  if(mod100>=11&&mod100<=13) return `${value}th`;
+  if(value%10===1) return `${value}st`;
+  if(value%10===2) return `${value}nd`;
+  if(value%10===3) return `${value}rd`;
+  return `${value}th`;
+}
+
 function pctText(value:unknown){
   const n=Number(value);
-  return Number.isFinite(n)?`${Math.round(n)}th percentile`:"Not yet available";
+  return Number.isFinite(n)?`${ordinal(n)} percentile`:"Not yet available";
 }
 
 function gradeClass(grade:unknown){
