@@ -100,12 +100,16 @@ export default function SituationalExplorer({team,season,rows}:Props){
   const defensive=side==="defense";
   const performanceMetrics=useMemo(()=>[
     {key:"successRate",label:defensive?"Success allowed":"Success rate",value:c?.successRate,format:"pct" as const},
-    {key:"conversionRate",label:defensive?"Conversion allowed":"Conversion rate",value:c?.conversionRate,format:"pct" as const},
+    down>=3
+      ?{key:"conversionRate",label:defensive?"Conversion allowed":"Conversion rate",value:c?.conversionRate,format:"pct" as const}
+      :{key:"firstDownRate",label:defensive?"1st downs allowed":"1st-down rate",value:c?.firstDownRate,format:"pct" as const},
     {key:"yardsPerPlay",label:defensive?"Yards/play allowed":"Yards/play",value:c?.yardsPerPlay,format:"num" as const},
     {key:"explosiveRate",label:defensive?"Explosive plays allowed":"Explosive rate",value:c?.explosiveRate,format:"pct" as const},
     {key:"runSuccessRate",label:defensive?"Run success allowed":"Run success",value:c?.runSuccessRate,format:"pct" as const},
     {key:"passSuccessRate",label:defensive?"Pass success allowed":"Pass success",value:c?.passSuccessRate,format:"pct" as const},
-  ],[c,defensive]);
+  ],[c,defensive,down]);
+
+  if(!rows.length)return null;
 
   return <section className="panel situational-explorer">
     <div className="muted">SITUATIONAL EXPLORER</div>
@@ -152,12 +156,12 @@ export default function SituationalExplorer({team,season,rows}:Props){
     <div className="tendency-row">
       <div><span>{defensive?"Opponent run rate":"Run rate"}</span><strong>{pct(c?.runRate)}</strong></div>
       <div><span>{defensive?"Opponent pass rate":"Pass rate"}</span><strong>{pct(c?.passRate)}</strong></div>
-      <div><span>{defensive?"1st downs allowed":"1st-down rate"}</span><strong>{pct(c?.firstDownRate)}</strong></div>
+      <div><span>Sample size</span><strong>{(c?.plays||0).toLocaleString()}</strong></div>
     </div>
 
     <div className="leaderboard-panel">
       <div className="leaderboard-title-row">
-        <div><div className="muted">TOP 10 NATIONALLY</div><h3>{down>=3?"Best conversion performance":"Best success-rate performance"}</h3></div>
+        <div><div className="muted">TOP 10 IN THE COUNTRY</div><h3>{down>=3?"Best conversion performance":"Best success-rate performance"}</h3></div>
         <small>Minimum {data?.sampleMinimum??10} plays · {data?.eligibleTeams??0} teams eligible</small>
       </div>
       <div className="situation-leaderboard">
