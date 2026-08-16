@@ -1,17 +1,17 @@
 # Prediction v2 Early-Season Prior Challenger
 
-**Status:** PREDECLARED DEVELOPMENT CHALLENGER  
+**Status:** FROZEN 2026 PROSPECTIVE CANDIDATE  
 **Version:** `prediction-v2-early-prior-four-game-linear-v1`
 
-This document freezes the first previous-season carryover experiment **before any game-margin results from the challenger are inspected**.
+This document freezes the first previous-season carryover experiment. The carryover rule and promotion gate were declared before its game-margin results were inspected. The historical gate subsequently passed in full. The exact rule is now frozen for prospective 2026 use; do not retune the weights against 2026 outcomes.
 
-The feasibility audit showed that immediately adjacent prior seasons provide complete Iterative, Football Mechanisms, MWDR, and site-aware SRS state for 1,754 of 1,781 historical regular-season games through Week 4 (98.5%). That is sufficient to test a full-family prior rather than a partial workaround.
+The feasibility audit showed that immediately adjacent prior seasons provide complete Iterative, Football Mechanisms, MWDR, and site-aware SRS state for 1,754 of 1,781 historical regular-season games through Week 4 (98.5%). That is sufficient to use a full-family prior rather than a partial workaround.
 
 ## Scope
 
 The challenger is used only for regular-season games through Week 4 in seasons with an immediately adjacent historical season.
 
-Valid carryovers are:
+Valid historical carryovers were:
 
 ```text
 2015 <- 2014
@@ -26,6 +26,8 @@ Valid carryovers are:
 ```
 
 There is no 2021 prior because 2020 is absent from the project corpus. The experiment must not silently reach back to 2019.
+
+For prospective 2026 use, the adjacent prior is 2025.
 
 ## Fixed carryover rule
 
@@ -42,7 +44,7 @@ current games played before matchup   prior weight   current-season weight
 
 The weight is applied independently to each team based on that team's current-season games played before the matchup.
 
-The value `4` is not selected from outcome testing. It is tied to the existing Prediction-v2 min4 stability benchmark so the prior disappears completely once the current team state reaches that established threshold.
+The value `4` was not selected from outcome testing. It is tied to the existing Prediction-v2 min4 stability benchmark so the prior disappears completely once the current team state reaches that established threshold.
 
 No additional shrinkage coefficient is tuned. The early-season OLS fit is responsible for calibrating the predictive strength of the carried state.
 
@@ -71,11 +73,19 @@ The final feature vector remains the same 19-feature Prediction-v2 architecture.
 
 For every row where both teams have at least four current-season games, the reconstructed challenger feature vector must match Prediction v2 to numerical tolerance.
 
-This is a structural requirement, not a predictive result. If it fails, the challenger is invalid regardless of MAE/RMSE.
+Historical audit result:
 
-## Outer-season evaluation
+```text
+late v2 reversion rows = 4,462
+mismatches             = 0
+max absolute difference= 0.000e+00
+```
 
-Primary held-out development seasons are:
+This structural requirement passed exactly.
+
+## Historical outer-season evaluation
+
+Held-out development seasons:
 
 ```text
 2018
@@ -86,72 +96,114 @@ Primary held-out development seasons are:
 2025
 ```
 
-For each held-out season, train only on eligible early-prior rows from chronologically earlier seasons. The missing 2020 season remains missing.
+For each held-out season, training used only eligible early-prior rows from chronologically earlier seasons. The missing 2020 season remained missing.
 
-The 2023-2025 folds are already heavily used development evidence elsewhere in the project. They are retained here for consistency/stability diagnostics, but a historical pass makes this only a **candidate to freeze for prospective 2026 validation**.
+The 2023-2025 folds were already heavily used development evidence elsewhere in the project. They are retained here for consistency/stability diagnostics, but this historical pass is therefore a **freeze candidate for prospective 2026 validation**, not pristine unseen confirmation.
 
-## Predeclared comparisons
+## Predeclared comparisons and observed results
 
-### 1. FOUR-GAME BLEND vs PRIOR-ONLY
+Negative deltas are improvements for MAE/RMSE.
 
-Use the exact same train and test game IDs. The prior-only ablation keeps the previous-season state at 100% through the full early window and ignores current-season state.
+### FOUR-GAME BLEND vs PRIOR-ONLY
 
-This tests whether the fixed decay successfully incorporates new-season evidence instead of merely benefiting from stale prior-year strength.
+Exact same train and test game IDs.
 
-### 2. FOUR-GAME BLEND vs CURRENT-ONLY
+```text
+ALL 6 FOLDS
+mean delta MAE   -0.2207
+mean delta RMSE  -0.2789
+MAE better         6/6
+RMSE better        4/6
 
-Use the exact common sample where the normal current-season Prediction-v2 feature vector is already finite. Fit both early models on the exact same historical common rows.
+RECENT 2023-2025
+mean delta MAE   -0.2111
+mean delta RMSE  -0.1651
+MAE better         3/3
+RMSE better        2/3
+```
 
-This tests whether adding the previous-season information improves on simply trusting one to three current-season games.
+### FOUR-GAME BLEND vs CURRENT-ONLY
 
-### 3. FOUR-GAME BLEND vs SITE/HFA BASELINE
+Exact common sample where normal current-season Prediction-v2 features were finite.
 
-Fit a simple early-game baseline using only intercept plus non-neutral home-site status.
+```text
+ALL 6 FOLDS
+mean delta MAE   -2.1493
+mean delta RMSE  -2.4220
 
-This is a sanity check that the 19-feature early model adds meaningful team-strength information.
+RECENT 2023-2025
+mean delta MAE   -1.2744
+mean delta RMSE  -1.7578
+```
+
+### FOUR-GAME BLEND vs SITE/HFA BASELINE
+
+```text
+ALL 6 FOLDS
+mean delta MAE   -4.4971
+mean delta RMSE  -5.5563
+
+RECENT 2023-2025
+mean delta MAE   -4.3290
+mean delta RMSE  -5.2736
+```
+
+## Week-band diagnostic
+
+This diagnostic was predeclared as descriptive, not a tuning target.
+
+```text
+Weeks 0-2 vs PRIOR-ONLY
+  delta MAE   -0.0033
+  delta RMSE  +0.0441
+
+Weeks 3-4 vs PRIOR-ONLY
+  delta MAE   -0.4073
+  delta RMSE  -0.5591
+```
+
+Interpretation: the fixed blend is essentially tied with prior-only in Weeks 0-2, while most of its historical advantage appears in Weeks 3-4 as current-season evidence accumulates. Do not use this observation to retune the frozen weights against the same historical folds.
 
 ## Predeclared promotion gate
 
-The four-game blend is a **2026 freeze candidate** only if every condition below passes:
+Every predeclared condition passed:
 
 ```text
 STRUCTURAL
-  challenger reverts exactly to Prediction v2 once both teams have 4+ games
+  exact reversion to Prediction v2 after both teams have 4+ games        PASS
 
 VS PRIOR-ONLY — all six outer folds
-  mean delta MAE < 0
-  mean delta RMSE < 0
-  MAE better in at least 4 of 6 folds
-  RMSE better in at least 4 of 6 folds
+  mean delta MAE < 0                                                     PASS
+  mean delta RMSE < 0                                                    PASS
+  MAE better in at least 4 of 6 folds                                   PASS (6/6)
+  RMSE better in at least 4 of 6 folds                                  PASS (4/6)
 
-VS PRIOR-ONLY — recent 2023-2025 folds
-  mean delta MAE <= 0
-  mean delta RMSE <= 0
+VS PRIOR-ONLY — recent 2023-2025
+  mean delta MAE <= 0                                                    PASS
+  mean delta RMSE <= 0                                                   PASS
 
 VS CURRENT-ONLY — exact common sample, all six folds
-  mean delta MAE < 0
-  mean delta RMSE < 0
+  mean delta MAE < 0                                                     PASS
+  mean delta RMSE < 0                                                    PASS
 
 VS CURRENT-ONLY — recent 2023-2025 common sample
-  mean delta MAE <= 0
-  mean delta RMSE <= 0
+  mean delta MAE <= 0                                                    PASS
+  mean delta RMSE <= 0                                                   PASS
 
 VS SITE/HFA BASELINE — all six folds
-  mean delta MAE < 0
-  mean delta RMSE < 0
+  mean delta MAE < 0                                                     PASS
+  mean delta RMSE < 0                                                    PASS
 ```
 
-Negative deltas are improvements.
+## Decision
 
-Week 0-2 and Week 3-4 results are reported separately as stability diagnostics. They are not additional tuning targets for this first fixed challenger.
+`PASS_2026_FREEZE_CANDIDATE`
 
-## Interpretation policy
+Freeze this exact rule and architecture before observing 2026 outcomes. Do not tune the `1.00/0.75/0.50/0.25/0.00` carryover weights against 2026 if 2026 is being used as prospective validation.
 
-If the gate passes, do not tune the weights further. Freeze this exact rule and architecture before observing 2026 outcomes.
+Prediction v2 remains the locked mature-season research benchmark. This early-season extension is not renamed Prediction v3 until it receives genuinely prospective evidence or a separate promotion decision.
 
-If the gate fails, do not alter `1.00/0.75/0.50/0.25/0.00` after looking at the same holdouts and call the retuned version independent evidence. A follow-up must be a materially new, explicitly predeclared hypothesis.
-
-The command is saved-data-only:
+Historical evaluation command:
 
 ```bash
 python -m cfb_analytics.analytics.prediction_v2_early_prior_challenger
