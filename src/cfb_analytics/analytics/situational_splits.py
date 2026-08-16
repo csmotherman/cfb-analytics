@@ -2,7 +2,7 @@
 
 The output is intentionally granular by exact down, exact distance, and half so
 the website can aggregate arbitrary distance sliders/buckets without replaying
-play-by-play data.  Rows are emitted for both offense and defense.
+play-by-play data. Rows are emitted for both offense and defense.
 """
 from __future__ import annotations
 
@@ -60,11 +60,13 @@ def _touchdown(play):
     return "TOUCHDOWN" in text
 
 
-def _clean(play):
+def _chronology_clean(play):
+    # Match First-Down Generation v1 chronology semantics: the next clean snap
+    # may carry other contextual modifiers, but explicit no-play rows do not
+    # establish a real down reset.
     return (
         play.get("isScrimmagePlay") is True
         and play.get("isOffensivePlay") is True
-        and not play.get("hasStateTransitionModifier", False)
         and not play.get("hasNoPlayContext", False)
     )
 
@@ -79,7 +81,7 @@ def _first_down_flags(plays, valid_drive_keys):
 
     flags = {}
     for rows in by_drive.values():
-        clean = [p for p in sorted(rows, key=_candidate_sort_key) if _clean(p)]
+        clean = [p for p in sorted(rows, key=_candidate_sort_key) if _chronology_clean(p)]
         for i, play in enumerate(clean):
             distance = play.get("distance")
             yards = play.get("analyticsYardsGained")
@@ -214,7 +216,6 @@ def materialize_season(raw_root: Path, processed_root: Path, season: int):
             raise FileNotFoundError(f"Missing canonical plays or derived drives for {season} {season_type} week {week}")
         rows.extend(build_situational_rows(json.loads(play_path.read_text()), json.loads(drive_path.read_text()), season))
 
-    # Partition-level rows are additive, so combine identical season/team/situation keys.
     merged = defaultdict(lambda: defaultdict(float))
     for row in rows:
         key = (row["team"], row["side"], row["half"], row["down"], float(row["distance"]))
