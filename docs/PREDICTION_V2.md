@@ -172,4 +172,6 @@ The most important remaining product/model limitation is early-season coverage. 
 
 The next major research family should therefore be **previous-season / preseason priors with controlled decay into current-season evidence**, evaluated separately for Weeks 1–2, Weeks 3–4, and Week 5+.
 
+Before choosing a carryover strength, run the saved-data-only feasibility audit in `docs/PREDICTION_V2_EARLY_PRIOR_AUDIT.md`. It reconstructs final previous-season Iterative, Football Mechanisms, MWDR, and site-aware SRS state and measures actual early-game coverage. Only immediately adjacent historical seasons are allowed; 2021 does not silently reach across the missing 2020 season to use 2019.
+
 That work must be treated as a new information-source challenger to Prediction v2, not as hidden retuning of the site-aware benchmark.
