@@ -1,6 +1,5 @@
 import Link from "next/link";
-import SituationalExplorer from "../../../../components/SituationalExplorer";
-import { avgMargin, fieldWinPct, findDynamicIdentity, findPowerRow, rankOf, situationalRows, tournamentRows } from "../../../../lib/data";
+import { avgMargin, fieldWinPct, findDynamicIdentity, findPowerRow, rankOf, tournamentRows } from "../../../../lib/data";
 
 function label(value:unknown){
   if(value===null||value===undefined||value==="") return "—";
@@ -68,7 +67,7 @@ function GradeSection({title,rows}:{title:string;rows:GradeRow[]}){
 
 export default async function TeamSeason({params}:{params:Promise<{team:string;season:string}>}){
   const p=await params; const team=decodeURIComponent(p.team); const season=Number(p.season);
-  const power=findPowerRow(team,season); const identity=findDynamicIdentity(team,season); const situations=situationalRows(team,season);
+  const power=findPowerRow(team,season); const identity=findDynamicIdentity(team,season);
   const total=tournamentRows().length;
   const rank=power?rankOf(power):null;
   const win=power?fieldWinPct(power):null;
@@ -116,8 +115,6 @@ export default async function TeamSeason({params}:{params:Promise<{team:string;s
       {identity?.identitySummary?<p style={{fontSize:17,lineHeight:1.6}}>{identity.identitySummary}</p>:null}
       {!identity?<div className="notice">No dynamic identity found for this team-season. Generate it with <code>python -m cfb_analytics.profiles.dynamic_profiles</code>.</div>:null}
     </section>
-
-    {situations.length?<SituationalExplorer team={team} season={season} rows={situations}/>:<section className="panel"><div className="notice">Situational data is not generated for this team-season yet.</div></section>}
 
     {identity?<section className="panel">
       <div className="muted">SEASON-RELATIVE GRADES</div>
