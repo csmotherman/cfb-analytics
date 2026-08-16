@@ -1,0 +1,22 @@
+name: Agent prospective equivalence audit validation
+
+on:
+  push:
+    branches:
+      - agent/2026-prospective-pipeline
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e '.[dev,models]'
+      - name: Focused prospective audit tests
+        run: pytest -q tests/analytics/test_prediction_v2_2026_equivalence_audit.py tests/analytics/test_prediction_v2_2026_features.py tests/analytics/test_prediction_v2_2026_freeze.py tests/analytics/test_prediction_v2_2026_pipeline.py
+      - name: Full test suite
+        run: pytest -q
