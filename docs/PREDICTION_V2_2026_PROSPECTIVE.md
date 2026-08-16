@@ -3,7 +3,8 @@
 **Status:** PRESEASON DEPLOYMENT CONTRACT  
 **Frozen early-prior rule:** `prediction-v2-early-prior-four-game-linear-v1`  
 **Prospective feature version:** `prediction-v2-2026-outcome-free-features-v1`  
-**Freeze artifact version:** `prediction-v2-2026-prospective-freeze-v1`
+**Freeze artifact version:** `prediction-v2-2026-prospective-freeze-v1`  
+**Guarded pipeline version:** `prediction-v2-2026-prospective-pipeline-v1`
 
 The historical early-season challenger has already passed its predeclared gate. The next job is not more tuning. The job is to preserve a genuinely prospective 2026 test.
 
@@ -20,7 +21,7 @@ The historical challenger is an evaluation program. It refits models inside walk
 
 The prospective path therefore does **not** pass fake targets through the historical evaluator. It reconstructs current-season state from strictly earlier completed partitions, takes the upcoming matchup identity/site from the raw games schedule, and applies the already-frozen early-prior blend without consulting a 2026 outcome field.
 
-## 1. Freeze the coefficient artifact
+## 1. Freeze the coefficient artifact once
 
 A prospective season needs one final coefficient set. The 2026 freeze fits the already-selected 19-feature architecture once on the complete eligible early-prior corpus from:
 
@@ -51,71 +52,66 @@ If the output already exists, the command fails. There is intentionally no overw
 
 `data/processed/**` is gitignored. The recommended `prospective/2026/` path is outside that ignored tree so the freeze artifact can be committed and timestamped in Git. That commit is the evidentiary boundary for the coefficient set.
 
-## 2. Materialize outcome-free weekly features
+## 2. Run the guarded weekly pipeline
 
-Before any game in the target partition has a result, materialize the upcoming feature rows:
+The recommended production entrypoint is the guarded wrapper, not the lower-level feature/scoring commands.
+
+After completed prior-week data and normal derived artifacts are updated, but before any game in the target partition has a result, run:
 
 ```bash
-python -m cfb_analytics.analytics.prediction_v2_2026_features \
+python -m cfb_analytics.analytics.prediction_v2_2026_pipeline \
+  --model prospective/2026/prediction-v2-2026-frozen.json \
   --week 1 \
   --as-of 2026-08-29T09:00:00-04:00 \
-  --output prospective/2026/features/week-01.json
+  --features-output prospective/2026/features/week-01.json \
+  --audit-output prospective/2026/audits/week-01.json \
+  --predictions-output prospective/2026/predictions/week-01.json
 ```
 
-The materializer uses:
+The guarded pipeline first proves that the raw scored-game history used for current-season site-aware SRS/HFA is the exact same game set as the completed two-team derived history. A raw final score that exists without the corresponding completed derived game—or a derived game without the matching raw final score—causes a hard failure rather than silently changing the SRS sample.
 
-- raw 2026 games schedule rows for target `gameId`, home/away orientation, and neutral-site status;
-- saved derived team-game rows from partitions strictly before the target week for current Iterative and Football Mechanisms state;
-- saved Sandbox component rows from partitions strictly before the target week for current MWDR state;
-- authoritative raw final scores and site flags from strictly earlier partitions for current site-aware SRS/HFA state;
-- final 2025 state for the frozen adjacent-season prior.
+It then materializes the 19-feature rows and scores them with the already-frozen coefficient artifact. All validation and prediction computation happens before the first output file is written.
 
-It then applies the unchanged four-game blend at team-state level and reconstructs the same 19 Prediction-v2 matchup features.
+The pipeline fails closed if:
 
-The target partition is rejected if its raw games file already contains a numeric score. This is intentional: a weekly snapshot created after outcomes begin is not prospective evidence.
-
-The feature file is created once using exclusive-create semantics. A companion `week-01.audit.json` records schedule coverage, prior-history row counts, and exclusions. Games without the complete frozen feature vector are excluded explicitly rather than receiving invented zero values.
-
-A unit-level equivalence contract compares the outcome-free builder with the historical frozen `_build_variant_row` on the same synthetic state and requires all 19 feature values to match to numerical tolerance. The only intended difference is that prospective rows contain no target fields.
-
-## 3. Score and freeze the weekly predictions
-
-Score the just-created feature rows with the already-frozen coefficient artifact:
-
-```bash
-python -m cfb_analytics.analytics.prediction_v2_2026_freeze score \
-  --model prospective/2026/prediction-v2-2026-frozen.json \
-  --features prospective/2026/features/week-01.json \
-  --output prospective/2026/predictions/week-01.json \
-  --week 1 \
-  --as-of 2026-08-29T09:00:00-04:00
-```
-
-The scorer fails if:
-
-- a row is not season 2026;
-- any target/outcome field has a non-null value;
+- the target raw schedule partition already contains a numeric score;
+- prior raw score history and completed two-team derived history do not match exactly;
+- the model manifest does not match the frozen version, feature list, prior weights, or training-season contract;
+- any prospective row contains an outcome-bearing target value;
 - any of the 19 frozen features is missing or non-finite;
+- a row carries the wrong prospective feature version or `as-of` timestamp;
 - a game ID is missing or duplicated;
-- a row belongs to a different week than the requested snapshot;
-- the model manifest does not match the exact frozen version/features/weights;
-- the output snapshot path already exists.
+- a row belongs to a different week;
+- any feature, audit, or prediction output path already exists.
 
-The output contains predicted margin and winner only. It does **not** manufacture a win probability from an uncalibrated margin regression.
+The prediction output contains predicted margin and winner only. It does **not** manufacture a win probability from an uncalibrated margin regression.
 
-Commit the feature audit and prediction snapshot before the games it covers. Do not regenerate a snapshot after outcomes are observed. Corrections, if ever necessary, should be additive and explicitly documented rather than replacing the original evidence.
+Games without a complete frozen feature vector are excluded explicitly rather than receiving invented zero values. Inspect every exclusion before treating the snapshot as official.
+
+## Lower-level diagnostic commands
+
+`prediction_v2_2026_features` and the `score` subcommand of `prediction_v2_2026_freeze` remain available for unit tests and forensic debugging. They are not the preferred weekly production entrypoint because the guarded wrapper adds the cross-source history-alignment check and preflights all three immutable outputs together.
 
 ## Weekly operating sequence
 
 ```text
 1. Update/download the raw schedule and completed prior-week data.
 2. Rebuild the normal saved derived artifacts for completed partitions only.
-3. Materialize the target week's outcome-free feature file + audit.
-4. Score with the frozen 2026 coefficient artifact.
-5. Inspect exclusions and row counts.
-6. Commit/push the feature audit and prediction snapshot before kickoff.
-7. Do not refit or overwrite anything after results arrive.
+3. Run prediction_v2_2026_pipeline for the target week.
+4. Inspect the history-alignment result, exclusions, and row counts.
+5. Commit/push the feature, audit, and prediction artifacts before kickoff.
+6. Do not refit or overwrite anything after results arrive.
 ```
+
+## Validation contract
+
+The prospective implementation has three dedicated test modules covering:
+
+- the one-time freeze/training-season/model-manifest contract;
+- exact 19-feature equivalence between the outcome-free builder and frozen historical blend math on the same state;
+- target leakage rejection, immutable writes, offset-aware timestamps, and exact history-sample alignment.
+
+Before creating the official freeze artifact in a new environment, run the dedicated tests and then the full suite with both development and model dependencies installed.
 
 ## Non-negotiable 2026 rules
 
