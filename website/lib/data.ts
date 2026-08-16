@@ -84,9 +84,13 @@ export function findDynamicIdentity(team:string,season:number):DynamicIdentityRo
   return dynamicIdentityRows().find(r=>Number(r.season)===Number(season)&&String(r.team||"").toLowerCase()===team.toLowerCase())||null;
 }
 
-export function situationalRows(team:string,season:number):SituationalRow[]{
+export function seasonSituationalRows(season:number):SituationalRow[]{
   const payload=readJson(`data/processed/derived/situational_splits/season=${season}/situational_splits.json`);
-  return (asRows(payload) as SituationalRow[]).filter(r=>String(r.team||"").toLowerCase()===team.toLowerCase());
+  return asRows(payload) as SituationalRow[];
+}
+
+export function situationalRows(team:string,season:number):SituationalRow[]{
+  return seasonSituationalRows(season).filter(r=>String(r.team||"").toLowerCase()===team.toLowerCase());
 }
 
 export function archetypeRows():any[]{
