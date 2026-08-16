@@ -15,7 +15,7 @@ from .layered_archetypes import (
 )
 from .snapshots import DEFAULT_SEASONS
 
-OUTPUT_VERSION = "dynamic-team-profiles-v3-style-mechanism"
+OUTPUT_VERSION = "dynamic-team-profiles-v4-neutral-style-earned-effectiveness"
 
 STYLE_METRIC_MAP = {
     "identity_success_quality": "oa_success_off",
@@ -98,7 +98,7 @@ def build_dynamic_profiles(
     return {
         "version": OUTPUT_VERSION,
         "identityVersion": DYNAMIC_IDENTITY_VERSION,
-        "namingBasis": "STYLE_FIRST_DYNAMIC_COMPOSITION_NOT_FIXED_ARCHETYPE_DATABASE",
+        "namingBasis": "NEUTRAL_STYLE_PLUS_MECHANISM_PLUS_EARNED_EFFECTIVENESS",
         "seasons": sorted(wanted),
         "teamSeasonCount": len(items),
         "teamSeasons": items,
@@ -107,20 +107,25 @@ def build_dynamic_profiles(
 
 def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
-        "DYNAMIC TEAM IDENTITIES — STYLE FIRST",
+        "DYNAMIC TEAM IDENTITIES — STYLE + MECHANISM + EFFECTIVENESS",
         f"Team-seasons: {report['teamSeasonCount']:,}",
         f"Seasons: {', '.join(str(x) for x in report['seasons'])}",
-        "Names: how they play first; quality, structure, consistency, and trajectory modify the style.",
-        "Tags: supporting mechanism and quality traits for fan-facing display.",
+        "Neutral style describes behavior; strength words are earned by quality.",
+        "Tags expose supporting tendencies, mechanisms, quality, consistency, and trajectory.",
         "",
     ]
     for item in report["teamSeasons"][:examples]:
         tags = " · ".join(item.get("identityTags") or []) or "No strong tags"
         style = item.get("identityStyle") or {}
-        style_text = " / ".join(str(style.get(k)) for k in ("usage", "method", "efficiencyShape", "attackBalance", "teamStructure"))
         lines.append(f"{item['season']} {item['team']} — {item['identityName']}")
-        lines.append(f"  STYLE: {style_text}")
-        lines.append(f"  {tags}")
+        lines.append(
+            "  STYLE | "
+            f"usage={style.get('usage')} | method={style.get('method')} | pace={style.get('paceShape')} | "
+            f"efficiency={style.get('efficiencyShape')} | driver={style.get('attackDriver')} | "
+            f"commitment={style.get('commitment')} | structure={style.get('teamStructure')} | "
+            f"effectiveness={style.get('effectiveness')}"
+        )
+        lines.append(f"  TAGS  | {tags}")
         lines.append(f"  {item['identitySummary']}")
         lines.append("")
     return "\n".join(lines)
