@@ -1,6 +1,9 @@
 import math
 
 from cfb_analytics.analytics.drive_outcome_model import (
+    LOGISTIC_MAX_ITER,
+    LOGISTIC_SOLVER,
+    LOGISTIC_TOL,
     OUTCOME_CLASSES,
     fit_quality_means,
     global_class_probabilities,
@@ -89,3 +92,9 @@ def test_multiclass_metrics_reward_perfect_predictions():
     assert metrics["logLoss"] < 1e-9
     assert metrics["brier"] < 1e-9
     assert metrics["accuracy"] == 1.0
+
+
+def test_optimizer_contract_uses_multinomial_newton_solver():
+    assert LOGISTIC_SOLVER == "newton-cholesky"
+    assert LOGISTIC_MAX_ITER >= 100
+    assert LOGISTIC_TOL <= 1e-6
