@@ -64,6 +64,43 @@ It must be evaluated against this exact benchmark using:
 
 If a challenger earns promotion, create a new version rather than silently mutating Prediction v1.
 
+## Integrity re-audit before Prediction v2 work
+
+Recent drive-state forensics exposed two dependencies that must be quantified before adding more model complexity:
+
+1. current stored game targets were originally oriented from canonical play score state, while raw CFBD `games.json` contains the authoritative final game result;
+2. MWDR ultimately depends on the legacy derived-drive `_points(d)` score-delta helper.
+
+This does **not** invalidate Prediction v1. It creates a mandatory diagnostic gate before future promotion work.
+
+Run:
+
+```bash
+python -m cfb_analytics.analytics.prediction_v1_integrity_audit
+```
+
+The audit is saved-data only and performs three steps:
+
+```text
+TARGET INTEGRITY
+  raw CFBD final score
+  vs stored model home/away score + margin
+
+MWDR DEPENDENCY
+  CURRENT FULL
+  vs NO_MWDR
+  vs MWDR_NO_INTERACTION
+
+FEATURE STABILITY
+  standardized coefficient signs
+  + leave-one-feature-out OOS deltas
+  + largest pairwise feature correlations
+```
+
+The target gate is strict: every stored model row must match raw home team, away team, home score, away score, and final margin before the default command proceeds to feature diagnostics.
+
+See `docs/PREDICTION_V1_INTEGRITY_AUDIT.md` for the full contract and interpretation rules.
+
 ## Drive PPD status
 
 Opponent-adjusted Drive PPD remains **RESEARCH ONLY**. Initial ablation shows useful incremental signal in some formulations, but season-by-season stability is not yet sufficient to add it to the locked benchmark.
