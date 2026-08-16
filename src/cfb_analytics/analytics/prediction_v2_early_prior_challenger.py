@@ -11,8 +11,10 @@ margin results are inspected:
                   4+-> prior weight 0.00
 
 The previous season is treated as the missing share of a four-game evidence
-window. Team state is blended before matchup edges are constructed. No PBP replay
-is performed; the command reads saved derived/model artifacts only.
+window. Team state is blended before matchup edges are constructed. Before four
+games, a component with no finite current-season estimate keeps its finite prior
+value rather than inventing zero evidence. At four or more games there is no prior
+fallback. No PBP replay is performed; the command reads saved artifacts only.
 
 This is a development challenger, not Prediction v3. Historical success makes it
 a candidate to freeze prospectively for 2026 rather than permission to retune the
@@ -24,7 +26,7 @@ import json
 import math
 from collections import Counter, defaultdict
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 from cfb_analytics.analytics.football_mechanisms import _state, _sum_into, orient_matchup
 from cfb_analytics.analytics.iterative_ratings import SPECS, fit_all_ratings
@@ -78,10 +80,10 @@ def blend_value(prior: Any, current: Any, games_before: int) -> float | None:
     weight = prior_weight(games_before)
     if weight <= 0.0:
         return float(current) if finite(current) else None
-    if weight >= 1.0:
-        return float(prior) if finite(prior) else None
-    if not finite(prior) or not finite(current):
+    if not finite(prior):
         return None
+    if weight >= 1.0 or not finite(current):
+        return float(prior)
     return weight * float(prior) + (1.0 - weight) * float(current)
 
 
@@ -307,7 +309,7 @@ def _build_variant_row(
         elif finite(current_hfa):
             hfa = weight * float(prior["hfa"]) + (1.0 - weight) * float(current_hfa)
         else:
-            return None
+            hfa = float(prior["hfa"])
     edge = float(home_srs) - float(away_srs)
     out["siteAwareSrsMargin"] = site_aware_margin(edge, hfa, current.get("isNeutralSite"))
     if not finite(out.get("siteAwareSrsMargin")):
@@ -474,13 +476,6 @@ def _common_rows(
     return left_out, right_out
 
 
-def _fit_score(train: list[dict[str, Any]], test: list[dict[str, Any]], features: tuple[str, ...]) -> dict[str, float]:
-    if not train or not test:
-        raise ValueError("Empty train/test sample in early-prior evaluation")
-    model = fit_generic(prepare_generic(train, features))
-    return score_generic(model, test)
-
-
 def _fit_model(train: list[dict[str, Any]], features: tuple[str, ...]) -> dict[str, Any]:
     if not train:
         raise ValueError("Empty training sample in early-prior evaluation")
@@ -616,8 +611,8 @@ def promotion_gate(datasets: dict[str, Any], results: list[dict[str, Any]]) -> d
         "late_features_revert_to_v2": datasets["lateReversionRows"] > 0 and datasets["lateReversionMismatches"] == 0,
         "all_mae_better_than_prior_only": all_summary["deltaMaeVsPrior"] < 0.0,
         "all_rmse_better_than_prior_only": all_summary["deltaRmseVsPrior"] < 0.0,
-        "prior_only_mae_wins_at_least_4_of_6": all_summary["priorMaeWins"] >= 4,
-        "prior_only_rmse_wins_at_least_4_of_6": all_summary["priorRmseWins"] >= 4,
+        "blend_mae_wins_vs_prior_at_least_4_of_6": all_summary["priorMaeWins"] >= 4,
+        "blend_rmse_wins_vs_prior_at_least_4_of_6": all_summary["priorRmseWins"] >= 4,
         "recent_mae_not_worse_than_prior_only": recent_summary["deltaMaeVsPrior"] <= 0.0,
         "recent_rmse_not_worse_than_prior_only": recent_summary["deltaRmseVsPrior"] <= 0.0,
         "all_mae_better_than_current_only_common": all_summary["deltaMaeVsCurrent"] < 0.0,
@@ -650,6 +645,7 @@ def main() -> None:
     print(f"Version: {CHALLENGER_VERSION}")
     print("Predeclared rule: four-game linear prior decay")
     print("  games before 0/1/2/3/4+ -> prior weight 1.00/0.75/0.50/0.25/0.00")
+    print("  missing current component before Game 4 -> retain finite prior component")
     print("  adjacent season only; no 2019 -> 2021 bridge across missing 2020")
     print("  team state blended before matchup construction; HFA uses mean home/away prior weight")
 
