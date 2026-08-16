@@ -9,6 +9,12 @@ Profiles separate four concepts:
 Snapshots are descriptive after each played game-time context, not pregame
 predictors. Raw CFBD game ``startDate`` is the chronology source of truth;
 seasonType/week remain descriptive labels and percentile cohorts only.
+
+The full historical snapshot build is intentionally expensive because it refits
+opponent-adjusted ratings at every chronological context. The materializer is
+therefore cache-aware: when the existing artifact matches ``SNAPSHOT_VERSION``
+and is newer than all raw/derived source partitions, it is reused. Use
+``--force`` only when an explicit full rebuild is required.
 """
 from __future__ import annotations
 
@@ -26,6 +32,10 @@ from .opponent_adjustment import METRIC_SPECS, fit_context, quality_keys, team_q
 SNAPSHOT_VERSION = "team-identity-snapshots-v4-game-chronology-research"
 DEFAULT_SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 ORDER = {"regular": 0, "postseason": 1}
+DEFAULT_MIN_GAMES = 4
+DEFAULT_RECENT_GAMES = 4
+SNAPSHOT_FILENAME = "identity_snapshots_v3_attack_scheme.json"
+SNAPSHOT_CACHE_FILENAME = "identity_snapshots_v3_attack_scheme.cache.json"
 
 
 def _rate(n: float, d: float) -> float | None:
@@ -115,7 +125,7 @@ def _recent_oa(team: str, recent: list[dict[str, Any]], fits: dict[str, dict[str
     return out
 
 
-def build_identity_snapshots(team_games: list[dict[str, Any]], *, min_games: int = 4, recent_games: int = 4) -> list[dict[str, Any]]:
+def build_identity_snapshots(team_games: list[dict[str, Any]], *, min_games: int = DEFAULT_MIN_GAMES, recent_games: int = DEFAULT_RECENT_GAMES) -> list[dict[str, Any]]:
     if min_games < 1 or recent_games < 1:
         raise ValueError("min_games and recent_games must be positive")
     valid = [r for r in team_games if r.get("gameValidationStatus") in (None, "PASS")]
@@ -275,16 +285,150 @@ def load_team_games(processed_root: Path, seasons: tuple[int, ...] = DEFAULT_SEA
     return rows
 
 
-def materialize_identity_snapshots(processed_root: Path, *, min_games: int = 4, recent_games: int = 4) -> Path:
-    rows = add_context_percentiles(build_identity_snapshots(load_team_games(processed_root), min_games=min_games, recent_games=recent_games))
-    target = processed_root / "derived" / "profiles" / "identity_snapshots_v3_attack_scheme.json"; target.parent.mkdir(parents=True, exist_ok=True)
+def _snapshot_target(processed_root: Path) -> Path:
+    return processed_root / "derived" / "profiles" / SNAPSHOT_FILENAME
+
+
+def _snapshot_cache_path(processed_root: Path) -> Path:
+    return processed_root / "derived" / "profiles" / SNAPSHOT_CACHE_FILENAME
+
+
+def _snapshot_source_files(processed_root: Path, seasons: tuple[int, ...] = DEFAULT_SEASONS) -> list[Path]:
+    """Return the inexpensive dependency set used to invalidate the snapshot cache."""
+    raw_root = processed_root.parent / "raw"
+    files: list[Path] = []
+    for season in seasons:
+        for season_type, week in discover_partitions(raw_root, season):
+            raw_games = raw_root / "cfbd" / f"season={season}" / f"season_type={season_type}" / f"week={week:02d}" / "games.json"
+            if raw_games.exists():
+                files.append(raw_games)
+            team_games = derived_game_partition_dir(processed_root, season, season_type, week) / "team_games.json"
+            if team_games.exists():
+                files.append(team_games)
+    return files
+
+
+def _cache_manifest(processed_root: Path, *, min_games: int, recent_games: int) -> dict[str, Any]:
+    sources = _snapshot_source_files(processed_root)
+    newest_source_mtime_ns = max((p.stat().st_mtime_ns for p in sources), default=0)
+    return {
+        "snapshotVersion": SNAPSHOT_VERSION,
+        "minGames": min_games,
+        "recentGames": recent_games,
+        "newestSourceMtimeNs": newest_source_mtime_ns,
+        "sourceFileCount": len(sources),
+    }
+
+
+def _artifact_matches_version(target: Path) -> tuple[bool, list[dict[str, Any]] | None]:
+    if not target.exists():
+        return False, None
+    try:
+        rows = json.loads(target.read_text())
+    except (OSError, json.JSONDecodeError):
+        return False, None
+    if not isinstance(rows, list) or not rows:
+        return False, None
+    first = rows[0]
+    if not isinstance(first, dict) or first.get("snapshotVersion") != SNAPSHOT_VERSION:
+        return False, None
+    return True, rows
+
+
+def _can_reuse_snapshots(processed_root: Path, *, min_games: int, recent_games: int) -> tuple[bool, list[dict[str, Any]] | None]:
+    target = _snapshot_target(processed_root)
+    matches, rows = _artifact_matches_version(target)
+    if not matches or rows is None:
+        return False, None
+
+    expected = _cache_manifest(processed_root, min_games=min_games, recent_games=recent_games)
+    cache_path = _snapshot_cache_path(processed_root)
+    cached: dict[str, Any] | None = None
+    if cache_path.exists():
+        try:
+            loaded = json.loads(cache_path.read_text())
+            cached = loaded if isinstance(loaded, dict) else None
+        except (OSError, json.JSONDecodeError):
+            cached = None
+
+    if cached is not None:
+        reusable = all(cached.get(k) == expected.get(k) for k in expected)
+        return reusable, rows if reusable else None
+
+    # Backward-compatible bootstrap for the artifact produced before the sidecar
+    # cache existed. Historical snapshots have always used the default 4/4
+    # parameters. If source data is older than the artifact and the embedded
+    # snapshot version matches, safely adopt it without a 10–15 minute rebuild.
+    if min_games != DEFAULT_MIN_GAMES or recent_games != DEFAULT_RECENT_GAMES:
+        return False, None
+    if target.stat().st_mtime_ns < int(expected["newestSourceMtimeNs"]):
+        return False, None
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(json.dumps(expected, separators=(",", ":")))
+    return True, rows
+
+
+def _print_snapshot_summary(rows: list[dict[str, Any]], *, reused: bool) -> None:
+    prefix = "ATTACK/SCHEME SNAPSHOTS REUSED" if reused else "ATTACK/SCHEME SNAPSHOTS"
+    print(
+        f"{prefix}: {len(rows):,} states | "
+        f"seasons={len({r['season'] for r in rows})} | "
+        f"teams={len({(r['season'], r['team']) for r in rows})}"
+    )
+
+
+def materialize_identity_snapshots(
+    processed_root: Path,
+    *,
+    min_games: int = DEFAULT_MIN_GAMES,
+    recent_games: int = DEFAULT_RECENT_GAMES,
+    force: bool = False,
+) -> Path:
+    target = _snapshot_target(processed_root)
+    target.parent.mkdir(parents=True, exist_ok=True)
+
+    if not force:
+        reusable, cached_rows = _can_reuse_snapshots(
+            processed_root,
+            min_games=min_games,
+            recent_games=recent_games,
+        )
+        if reusable and cached_rows is not None:
+            _print_snapshot_summary(cached_rows, reused=True)
+            return target
+
+    rows = add_context_percentiles(
+        build_identity_snapshots(
+            load_team_games(processed_root),
+            min_games=min_games,
+            recent_games=recent_games,
+        )
+    )
     target.write_text(json.dumps(rows, separators=(",", ":")))
-    print(f"ATTACK/SCHEME SNAPSHOTS: {len(rows):,} states | seasons={len({r['season'] for r in rows})} | teams={len({(r['season'],r['team']) for r in rows})}")
+    manifest = _cache_manifest(processed_root, min_games=min_games, recent_games=recent_games)
+    _snapshot_cache_path(processed_root).write_text(json.dumps(manifest, separators=(",", ":")))
+    _print_snapshot_summary(rows, reused=False)
     return target
 
 
 def main() -> None:
-    p=argparse.ArgumentParser(); p.add_argument("--processed-root",type=Path,default=Path("data/processed")); p.add_argument("--min-games",type=int,default=4); p.add_argument("--recent-games",type=int,default=4); a=p.parse_args()
-    materialize_identity_snapshots(a.processed_root,min_games=a.min_games,recent_games=a.recent_games)
+    p = argparse.ArgumentParser()
+    p.add_argument("--processed-root", type=Path, default=Path("data/processed"))
+    p.add_argument("--min-games", type=int, default=DEFAULT_MIN_GAMES)
+    p.add_argument("--recent-games", type=int, default=DEFAULT_RECENT_GAMES)
+    p.add_argument(
+        "--force",
+        action="store_true",
+        help="rebuild all historical snapshots even when the cache is current",
+    )
+    a = p.parse_args()
+    materialize_identity_snapshots(
+        a.processed_root,
+        min_games=a.min_games,
+        recent_games=a.recent_games,
+        force=a.force,
+    )
 
-if __name__ == "__main__": main()
+
+if __name__ == "__main__":
+    main()
