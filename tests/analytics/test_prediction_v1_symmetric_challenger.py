@@ -1,3 +1,5 @@
+import pytest
+
 from cfb_analytics.analytics.prediction_v1_symmetric_challenger import (
     SYMMETRIC,
     add_symmetric_features,
@@ -23,13 +25,13 @@ def test_add_symmetric_features_builds_net_iterative_and_mwdr_edges():
         "home_MWDR_DefenseEdge": 0.25,
     }
     out = add_symmetric_features(row)
-    assert out["netIterativeSuccessEdge"] == 0.20
-    assert out["netIterativeExplosiveEdge"] == 0.25
-    assert out["netIterativeYardsPerPlayEdge"] == 0.7
-    assert out["netIterativeYardsPerPossessionEdge"] == 2.5
-    assert out["netIterativeFinishingEdge"] == 0.6
-    assert out["netIterativeFieldPositionEdge"] == 1.5
-    assert out["netMwdrEdge"] == 0.60
+    assert out["netIterativeSuccessEdge"] == pytest.approx(0.20)
+    assert out["netIterativeExplosiveEdge"] == pytest.approx(0.25)
+    assert out["netIterativeYardsPerPlayEdge"] == pytest.approx(0.7)
+    assert out["netIterativeYardsPerPossessionEdge"] == pytest.approx(2.5)
+    assert out["netIterativeFinishingEdge"] == pytest.approx(0.6)
+    assert out["netIterativeFieldPositionEdge"] == pytest.approx(1.5)
+    assert out["netMwdrEdge"] == pytest.approx(0.60)
 
 
 def test_symmetric_contract_reduces_feature_count_without_duplicates():
