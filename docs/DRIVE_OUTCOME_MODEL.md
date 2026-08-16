@@ -1,7 +1,7 @@
 # Drive Outcome Probability Benchmark
 
 **Status:** RESEARCH ONLY  
-**Version:** `drive-outcome-multinomial-v1-semantic-expanding-season`
+**Version:** `drive-outcome-multinomial-v1-convergence-verified`
 
 ## Purpose
 
@@ -101,6 +101,43 @@ Defense:
 
 Missing pregame quality is imputed using **training-only** field means. A missingness indicator is added for every imputed field, and games played before the current partition are retained so the model can distinguish early-season states.
 
+## Optimizer and convergence contract
+
+The first full walk-forward execution used `lbfgs` with sparse standardization and hit the configured 1,200-iteration ceiling for every STATE and FULL fit. The resulting outer-season signal was directionally strong, but those exact scores are not eligible for promotion because the optimizer explicitly failed to converge.
+
+The benchmark now uses:
+
+```text
+solver = newton-cholesky
+C = 1.0
+max_iter = 200
+tol = 1e-7
+```
+
+The repository model dependency requires scikit-learn >=1.6, where `newton-cholesky` supports the full multinomial objective. This dataset has many more observations than encoded feature-by-class parameters, which makes that solver appropriate for the benchmark geometry.
+
+Any `ConvergenceWarning` is now fatal. The benchmark stops instead of printing proper scores from an unconverged model.
+
+The optimizer change is a verification step, not a hyperparameter search. `C=1.0`, features, outer seasons, imputation logic, and evaluation metrics remain unchanged so the rerun can determine whether the earlier signal survives a converged fit.
+
+## Preliminary unconverged run
+
+The first execution produced the following directional outer-season result before convergence verification was added:
+
+```text
+STATE vs GLOBAL
+  pooled LogLoss delta = -0.218756
+  pooled Brier delta   = -0.070116
+  better seasons       = 8/8 on both primary metrics
+
+FULL vs STATE
+  pooled LogLoss delta = -0.009659
+  pooled Brier delta   = -0.006081
+  better seasons       = 8/8 on both primary metrics
+```
+
+Pooled FULL class-frequency calibration was also close in aggregate, with the largest displayed gap about +1.03 percentage points for PUNT. These results are promising but remain **preliminary/unpromoted** until reproduced by converged fits.
+
 ## Validation
 
 Evaluation is expanding-season walk-forward. For each outer test season, every earlier available season is training data and the entire outer season is untouched test data.
@@ -131,7 +168,7 @@ then
 FULL must beat STATE
 ```
 
-Negative metric deltas are improvements. Pregame team quality should not enter the mechanistic simulator unless FULL produces stable proper-score gains across outer seasons and in the pooled result.
+Negative metric deltas are improvements. Pregame team quality should not enter the mechanistic simulator unless FULL produces stable proper-score gains across outer seasons and in the pooled result **from converged fits**.
 
 ## Command
 
@@ -155,7 +192,7 @@ pip install -e ".[models]"
 
 ## What comes next
 
-If the transparent multinomial benchmark works, the next challenger should exploit football structure rather than immediately jumping to a black-box model:
+If the converged transparent multinomial benchmark reproduces the signal, the next challenger should exploit football structure rather than immediately jumping to a black-box model:
 
 ```text
 possession outcome family
