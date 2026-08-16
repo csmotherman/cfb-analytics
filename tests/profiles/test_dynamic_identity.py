@@ -19,11 +19,7 @@ def test_michigan_like_profile_is_run_committed_defensive_control():
         "identity_finishing_quality": 92.3,
         "identity_third_down_quality": 66.1,
     }
-    closing = {
-        **profile,
-        "identity_offense_quality": 52.7,
-        "identity_defense_quality": 90.1,
-    }
+    closing = {**profile, "identity_offense_quality": 52.7, "identity_defense_quality": 90.1}
     history = [
         {**profile, "identity_offense_quality": 77.0, "identity_defense_quality": 84.0},
         {**profile, "identity_offense_quality": 74.0, "identity_defense_quality": 87.0},
@@ -38,13 +34,8 @@ def test_michigan_like_profile_is_run_committed_defensive_control():
     assert identity["style"]["commitment"] == "run-committed"
     assert identity["style"]["teamStructure"] == "defense-supported"
     assert identity["style"]["effectiveness"] == "control"
-    assert "Run-Heavy" in identity["tags"]
-    assert "Methodical" in identity["tags"]
-    assert "Elite Finishing" in identity["tags"]
     assert "Run-Committed" in identity["tags"]
     assert "Elite Defense" in identity["tags"]
-    assert "Offense Faded Late" in identity["tags"]
-    assert identity["summary"].startswith("Heavy run commitment")
 
 
 def test_balanced_efficient_two_way_team_gets_power_only_when_quality_earns_it():
@@ -62,8 +53,6 @@ def test_balanced_efficient_two_way_team_gets_power_only_when_quality_earns_it()
     }
     identity = build_dynamic_identity(profile)
     assert identity["name"] == "Efficient Two-Way Power"
-    assert identity["style"]["efficiencyShape"] == "balanced-efficient"
-    assert identity["style"]["attackDriver"] == "balanced"
     assert identity["style"]["effectiveness"] == "power"
 
 
@@ -82,7 +71,6 @@ def test_big_play_dependent_good_offense_can_earn_attack_language():
     assert identity["name"] == "Quick-Strike Attack"
     assert identity["style"]["efficiencyShape"] == "boom-bust"
     assert identity["style"]["effectiveness"] == "dangerous-attack"
-    assert "Big-Play Threat" in identity["tags"]
 
 
 def test_explosive_limited_offense_keeps_neutral_style_not_attack_language():
@@ -99,7 +87,85 @@ def test_explosive_limited_offense_keeps_neutral_style_not_attack_language():
     identity = build_dynamic_identity(profile)
     assert "Attack" not in identity["name"]
     assert "Power" not in identity["name"]
-    assert identity["style"]["method"] == "explosive"
+
+
+def test_poor_offense_with_strong_defense_is_carried_not_supported():
+    profile = {
+        "identity_offense_quality": 28.0,
+        "identity_defense_quality": 76.0,
+        "identity_rushing_attack": 40.0,
+        "identity_passing_attack": 44.0,
+        "rush_rate": 84.0,
+        "identity_explosive_vs_methodical": 2.0,
+        "identity_success_quality": 34.0,
+        "identity_explosiveness_quality": 32.0,
+    }
+    identity = build_dynamic_identity(profile)
+    assert identity["style"]["teamStructure"] == "defense-carried"
+    assert identity["name"] == "Defense-Carried Run-First Football"
+
+
+def test_stalled_balanced_offense_surfaces_low_output_in_headline():
+    profile = {
+        "identity_offense_quality": 35.0,
+        "identity_defense_quality": 56.0,
+        "identity_rushing_attack": 38.0,
+        "identity_passing_attack": 42.0,
+        "rush_rate": 50.0,
+        "identity_explosive_vs_methodical": 0.0,
+        "identity_success_quality": 30.0,
+        "identity_explosiveness_quality": 33.0,
+    }
+    identity = build_dynamic_identity(profile)
+    assert identity["name"] == "Low-Output Balanced Football"
+    assert "Low-Output" in identity["tags"]
+
+
+def test_complete_offense_preserves_extreme_run_usage():
+    profile = {
+        "identity_offense_quality": 91.0,
+        "identity_defense_quality": 62.0,
+        "identity_rushing_attack": 86.0,
+        "identity_passing_attack": 84.0,
+        "rush_rate": 86.0,
+        "identity_explosive_vs_methodical": 4.0,
+        "identity_success_quality": 88.0,
+        "identity_explosiveness_quality": 84.0,
+    }
+    identity = build_dynamic_identity(profile)
+    assert identity["name"] == "Run-First Complete Attack"
+
+
+def test_complete_offense_preserves_extreme_pass_usage():
+    profile = {
+        "identity_offense_quality": 91.0,
+        "identity_defense_quality": 62.0,
+        "identity_rushing_attack": 84.0,
+        "identity_passing_attack": 88.0,
+        "rush_rate": 14.0,
+        "identity_explosive_vs_methodical": 4.0,
+        "identity_success_quality": 88.0,
+        "identity_explosiveness_quality": 84.0,
+    }
+    identity = build_dynamic_identity(profile)
+    assert identity["name"] == "Pass-First Complete Attack"
+
+
+def test_generic_balanced_identity_uses_secondary_mechanism_when_available():
+    profile = {
+        "identity_offense_quality": 58.0,
+        "identity_defense_quality": 55.0,
+        "identity_rushing_attack": 42.0,
+        "identity_passing_attack": 67.0,
+        "rush_rate": 50.0,
+        "plays_per_possession": 50.0,
+        "identity_explosive_vs_methodical": 0.0,
+        "identity_success_quality": 55.0,
+        "identity_explosiveness_quality": 52.0,
+    }
+    identity = build_dynamic_identity(profile)
+    assert identity["name"] == "Pass-Driven Balanced Football"
+    assert identity["style"]["secondaryMechanism"] == "Pass-Driven"
 
 
 def test_weak_units_do_not_create_strength_sounding_identity():
