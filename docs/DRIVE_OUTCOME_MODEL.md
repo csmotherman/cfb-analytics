@@ -208,18 +208,51 @@ Optional outer-season override:
 python -m cfb_analytics.analytics.drive_outcome_model --test-seasons 2021,2022,2023,2024,2025
 ```
 
-## What comes next
+## Game-level bridge before full simulation
 
-Do not spend more compute re-proving the selected drive-outcome classifier. Move to the simulator mechanisms that are still missing:
+The selected drive model now feeds a cached research bridge before any full possession sequencer is built:
 
 ```text
-FLAT FULL drive probabilities
-  -> football-valid points assignment
-  -> possession sequencing / next possession state
+standardized pregame drive state
++ matchup offense/defense quality
+-> FLAT FULL drive probabilities
+-> football-valid expected points/possession
+-> expected possessions
+-> mechanistic expected game margin
+```
+
+That signal is tested against Prediction v1 using leakage-safe recent-outer stacking. The comparison is `STACK vs RECAL`, where RECAL is Prediction v1 margin recalibrated using prior out-of-sample seasons and STACK adds the mechanistic margin. This isolates incremental information from simple temporal recalibration.
+
+The default quick screen fits only 2023 and 2024 drive models, batches all synthetic possession predictions, and caches the resulting per-game features:
+
+```bash
+python -m cfb_analytics.analytics.mechanistic_margin_bridge
+```
+
+If useful, extend to 2025; the first two seasons are reused from cache:
+
+```bash
+python -m cfb_analytics.analytics.mechanistic_margin_bridge --test-seasons 2023,2024,2025
+```
+
+See `docs/MECHANISTIC_MARGIN_BRIDGE.md` for the full contract.
+
+## What comes next
+
+Do not change Prediction v1 merely because the possession model is valid. First require game-level incremental value from the bridge.
+
+If the bridge passes:
+
+```text
+broader leakage-safe mechanistic history
+  -> full same-sample Prediction-v1 ablation
+  -> only then consider a Prediction v2 feature
+  -> possession sequencing / next field position
   -> period endings and clock handling
   -> regulation game simulation
   -> separate overtime treatment
-  -> game-level walk-forward validation against Prediction v1
 ```
 
-Research tooling should increasingly cache/reuse transformed feature matrices, fitted baseline artifacts, and outer-season predictions so future experiments do not repeatedly pay the full fitting cost.
+If the bridge fails, keep Prediction v1 as the margin model and continue using the drive model only for explanatory/simulation research where it provides value.
+
+Research tooling should increasingly cache/reuse fitted or transformed artifacts so future experiments do not repeatedly pay the full fitting cost.
