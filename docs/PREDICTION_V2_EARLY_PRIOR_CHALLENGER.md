@@ -46,6 +46,12 @@ The value `4` is not selected from outcome testing. It is tied to the existing P
 
 No additional shrinkage coefficient is tuned. The early-season OLS fit is responsible for calibrating the predictive strength of the carried state.
 
+### Missing current-season component rule
+
+Before a team has four current-season games, an individual component can legitimately remain undefined because its denominator or state has not occurred yet. In that case, if the adjacent-season prior component is finite, the challenger keeps that prior component unchanged. Missing current evidence is **not** treated as zero and does not cause an otherwise coverable game to be discarded.
+
+Once a team has four or more current-season games, there is no prior fallback: the component must come from the current-season Prediction-v2 state. This exception is therefore an early-sample missing-evidence rule, not a permanent carryover mechanism.
+
 ## What is blended
 
 The blend occurs at team-state level **before** matchup edges are reconstructed.
@@ -57,7 +63,7 @@ The challenger carries:
 - MWDR offense and defense ratings;
 - the Football Mechanisms state required for Success, Explosive, Turnover, and expected-possession volume terms.
 
-The site-aware HFA coefficient is blended using the mean of the home and away prior weights. At zero current games this is the prior-season final HFA. Once both teams have four current games, the HFA and all team-state inputs are current-season Prediction v2 values.
+The site-aware HFA coefficient is blended using the mean of the home and away prior weights. At zero current games this is the prior-season final HFA. If the current-season HFA is not yet estimable before Game 4, the finite prior HFA remains in place. Once both teams have four current games, the HFA and all team-state inputs are current-season Prediction v2 values.
 
 The final feature vector remains the same 19-feature Prediction-v2 architecture.
 
