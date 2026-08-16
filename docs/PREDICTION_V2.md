@@ -166,14 +166,39 @@ Historical 2023–2025 folds have now been inspected repeatedly during developme
 
 For 2026, freeze Prediction v2 before evaluating outcomes and save each weekly pregame prediction. Do not retune v2 against 2026 results during the season if the goal is to use 2026 as a prospective validation year.
 
-## Next research priority
+## Early-season 2026 freeze candidate
 
-The most important remaining product/model limitation is early-season coverage. Current benchmark evaluation requires 3 or 4 prior games for both teams.
+The adjacent-season feasibility audit passed: complete prior state was available for 1,754 of 1,781 historical regular-season games through Week 4 (98.5%). The first outcome-bearing challenger then used the predeclared four-game carryover:
 
-The next major research family is therefore **previous-season / preseason priors with controlled decay into current-season evidence**.
+```text
+0 current games -> prior weight 1.00
+1 current game  -> prior weight 0.75
+2 current games -> prior weight 0.50
+3 current games -> prior weight 0.25
+4+ games        -> prior weight 0.00
+```
 
-The saved-data feasibility audit in `docs/PREDICTION_V2_EARLY_PRIOR_AUDIT.md` passed: immediately adjacent prior seasons provide complete full-family state for 1,754 of 1,781 historical regular-season games through Week 4 (98.5%). Only immediately adjacent seasons are allowed; 2021 does not silently reach across the missing 2020 season to use 2019.
+The historical challenger passed every predeclared gate and is now frozen as `prediction-v2-early-prior-four-game-linear-v1` for prospective 2026 use. It is documented in `docs/PREDICTION_V2_EARLY_PRIOR_CHALLENGER.md`.
 
-The first outcome-bearing experiment is now predeclared in `docs/PREDICTION_V2_EARLY_PRIOR_CHALLENGER.md`. It uses a fixed four-game linear carryover (`1.00, 0.75, 0.50, 0.25, 0.00` prior weight after 0, 1, 2, 3, and 4+ current games respectively), blends team state before matchup construction, and must mechanically revert to Prediction v2 after both teams reach four games. Before Game 4, a component that remains non-finite because current-season evidence has not produced its denominator retains its finite adjacent-season prior value; missing evidence is not converted to zero. At 4+ games there is no prior fallback.
+Key historical results:
 
-That experiment is a development challenger, not a silent mutation of Prediction v2. A historical pass makes it a candidate to freeze prospectively for 2026 rather than permission to retune against already-inspected seasons.
+```text
+VS PRIOR-ONLY — ALL 6
+  mean delta MAE   -0.2207
+  mean delta RMSE  -0.2789
+  MAE wins            6/6
+  RMSE wins           4/6
+
+VS CURRENT-ONLY — COMMON SAMPLE
+  mean delta MAE   -2.1493
+  mean delta RMSE  -2.4220
+
+EXACT MATURE-SEASON REVERSION
+  4,462 rows checked
+  0 mismatches
+  max abs diff 0.000e+00
+```
+
+Week-band diagnostics showed essentially no advantage over prior-only in Weeks 0-2 (`MAE -0.0033`, `RMSE +0.0441`) and a clearer advantage in Weeks 3-4 (`MAE -0.4073`, `RMSE -0.5591`). Those diagnostics are descriptive only; the frozen weights must not be retuned against the same historical folds.
+
+This does **not** rename the model Prediction v3. Prediction v2 remains the locked mature-season benchmark, while the early-prior rule is a frozen 2026 prospective extension. A future Prediction-v3 decision should require genuinely prospective evidence or a separate predeclared promotion decision.
