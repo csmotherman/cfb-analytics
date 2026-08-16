@@ -21,6 +21,9 @@ from cfb_analytics.raw.sequence import _candidate_sort_key
 
 SITUATIONAL_SPLITS_VERSION = "situational-splits-v1-down-distance-half"
 SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_RAW_ROOT = PROJECT_ROOT / "data" / "raw"
+DEFAULT_PROCESSED_ROOT = PROJECT_ROOT / "data" / "processed"
 
 
 def _rate(n, d):
@@ -61,9 +64,6 @@ def _touchdown(play):
 
 
 def _chronology_clean(play):
-    # Match First-Down Generation v1 chronology semantics: the next clean snap
-    # may carry other contextual modifiers, but explicit no-play rows do not
-    # establish a real down reset.
     return (
         play.get("isScrimmagePlay") is True
         and play.get("isOffensivePlay") is True
@@ -72,7 +72,6 @@ def _chronology_clean(play):
 
 
 def _first_down_flags(plays, valid_drive_keys):
-    """Return evidence-union first-down generation flags by in-memory play id."""
     by_drive = defaultdict(list)
     for play in plays:
         key = (str(play.get("gameId")), str(play.get("driveId")))
@@ -165,7 +164,7 @@ def build_situational_rows(plays, drives, season):
         pass_n = int(c["passPlays"])
         exp_n = int(c["explosiveEligiblePlays"])
         conv_att = int(c["conversionAttempts"])
-        row = {
+        out.append({
             "version": SITUATIONAL_SPLITS_VERSION,
             "season": season,
             "team": team,
@@ -198,8 +197,7 @@ def build_situational_rows(plays, drives, season):
             "conversionAttempts": conv_att,
             "conversions": int(c["conversions"]),
             "conversionRate": _rate(c["conversions"], conv_att),
-        }
-        out.append(row)
+        })
     return out
 
 
@@ -208,8 +206,12 @@ def season_output_path(processed_root: Path, season: int) -> Path:
 
 
 def materialize_season(raw_root: Path, processed_root: Path, season: int):
+    partitions = list(discover_partitions(raw_root, season))
+    if not partitions:
+        raise RuntimeError(f"No raw partitions discovered for season {season} under {raw_root}")
+
     rows = []
-    for season_type, week in discover_partitions(raw_root, season):
+    for season_type, week in partitions:
         play_path = canonical_partition_dir(processed_root, season, season_type, week) / "plays.json"
         drive_path = derived_drive_partition_dir(processed_root, season, season_type, week) / "drives.json"
         if not play_path.exists() or not drive_path.exists():
@@ -271,6 +273,9 @@ def materialize_season(raw_root: Path, processed_root: Path, season: int):
             "conversionRate": _rate(c["conversions"], conv_att),
         })
 
+    if not final:
+        raise RuntimeError(f"Situational splits produced zero rows for season {season}")
+
     path = season_output_path(processed_root, season)
     _atomic(path, final)
     return path, final
@@ -280,8 +285,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--season", type=int)
     parser.add_argument("--all", action="store_true")
-    parser.add_argument("--root", type=Path, default=Path("data/raw"))
-    parser.add_argument("--processed-root", type=Path, default=Path("data/processed"))
+    parser.add_argument("--root", type=Path, default=DEFAULT_RAW_ROOT)
+    parser.add_argument("--processed-root", type=Path, default=DEFAULT_PROCESSED_ROOT)
     args = parser.parse_args()
     seasons = SEASONS if args.all else ((args.season,) if args.season else ())
     if not seasons:
