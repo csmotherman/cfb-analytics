@@ -1,11 +1,11 @@
 # Hierarchical Drive Outcome Challenger
 
-**Status:** RESEARCH ONLY  
+**Status:** SCREENED — NOT PROMOTED  
 **Version:** `drive-outcome-hierarchy-v1-full-features`
 
 ## Why this exists
 
-The converged flat FULL drive-outcome model is now a validated research baseline. Across outer seasons 2017, 2018, 2019, 2021, 2022, 2023, 2024, and 2025:
+The converged flat FULL drive-outcome model is a validated research baseline. Across outer seasons 2017, 2018, 2019, 2021, 2022, 2023, 2024, and 2025:
 
 ```text
 STATE vs GLOBAL
@@ -21,9 +21,9 @@ FULL vs STATE
 
 That establishes two things: possession-start state is strongly predictive, and leakage-safe pregame offense/defense quality adds stable incremental information.
 
-The next question is structural:
+The hierarchy asked a narrower structural question:
 
-> Does explicitly modeling football outcome families improve probability estimation beyond one flat 9-class multinomial model?
+> Does explicitly modeling football outcome families improve probability estimation enough to justify replacing one flat 9-class multinomial model?
 
 ## Hierarchy
 
@@ -36,7 +36,7 @@ OPPONENT_SCORE
 PERIOD_END
 ```
 
-Conditional branches then predict:
+Conditional branches predict:
 
 ```text
 OFFENSIVE_SCORE
@@ -57,22 +57,19 @@ PERIOD_END
   -> PERIOD_END
 ```
 
-Final leaf probabilities are products of the root and conditional probabilities. For example:
+Final leaf probabilities are products of root and conditional probabilities. For example:
 
 ```text
 P(TD) = P(OFFENSIVE_SCORE) * P(TD | OFFENSIVE_SCORE)
 ```
 
-The resulting vector is evaluated in the exact same 9-class order as the flat baseline.
-
 ## Fair comparison contract
 
-The hierarchy is not allowed a richer information set or tuned regularization.
+The hierarchy was not allowed a richer information set or tuned regularization.
 
 Both FLAT and HIER use:
 
 - identical semantic target rows;
-- identical outer seasons;
 - identical expanding-season training windows;
 - identical possession-start features;
 - identical pregame offense/defense quality fields;
@@ -82,56 +79,84 @@ Both FLAT and HIER use:
 - identical `newton-cholesky` solver contract;
 - fatal convergence warnings.
 
-This makes the experiment a test of **factorization/football structure**, not a feature or hyperparameter search.
+This makes the experiment a test of factorization/football structure, not a feature or hyperparameter search.
 
-## Why the hierarchy might help
+## Screening result
 
-The flat model must estimate all nine outcomes simultaneously even though some outcomes are naturally conditional on a higher-level event.
+A full eight-season hierarchy run is computationally expensive because each outer season fits the flat baseline plus four hierarchy classifiers. Rather than spend that cost before establishing useful effect size, the experiment used an early-era and late-era screen.
 
-The hierarchy can share statistical structure at the family level and can give rare outcomes a more sensible conditional problem. For example, `SAFETY` is extremely rare unconditionally, but the opponent-score branch only needs to distinguish safety from return touchdown after the root has already estimated the probability of an opponent score.
-
-The hierarchy is not assumed to be better. If the factorization introduces avoidable error, the validated flat FULL model remains the baseline.
-
-## Evaluation
-
-Primary metrics:
-
-- multiclass log loss;
-- multiclass Brier score.
-
-Secondary diagnostics:
-
-- top-class accuracy;
-- outer-season win counts;
-- pooled class-frequency calibration.
-
-Promotion rule:
+### 2017
 
 ```text
-HIER must improve pooled LogLoss and pooled Brier versus FLAT FULL,
-with gains that are not driven by one isolated outer season.
+FLAT
+  LogLoss 1.42700
+  Brier   0.67392
+  Accuracy 47.47%
+
+HIER
+  LogLoss 1.42677
+  delta   -0.000239
+  Brier   0.67367
+  delta   -0.000244
+  Accuracy 47.56%
+  delta   +0.10 pp
 ```
 
-A negative HIER-minus-FLAT delta is better.
+### 2025
+
+```text
+FLAT
+  LogLoss 1.47602
+  Brier   0.69406
+  Accuracy 45.11%
+
+HIER
+  LogLoss 1.47593
+  delta   -0.000087
+  Brier   0.69389
+  delta   -0.000171
+  Accuracy 45.12%
+  delta   +0.02 pp
+```
+
+Both screens are directionally positive, but the gains are microscopic relative to the already-validated FULL-vs-STATE improvement and do not justify the extra model complexity or repeated training cost.
+
+The hierarchy therefore is **not promoted**. This is not evidence that football factorization is wrong; it is evidence that, with this feature set and logistic specification, the structural decomposition adds too little operational value to replace the simpler flat FULL model.
+
+No additional outer-season hierarchy runs are required unless the implementation is later made substantially cheaper or the hierarchy changes in a scientifically meaningful way.
+
+## Decision
+
+The selected possession-outcome probability engine remains:
+
+```text
+FLAT FULL 9-class multinomial logistic regression
+```
+
+The hierarchy remains useful as a documented research branch and may be revisited later if the simulator gains richer state, branch-specific features, or cached model matrices. It should not block simulator development now.
 
 ## Command
 
-The benchmark reads the already-materialized Drive State v2 files. No PBP replay, profile rebuild, or drive-state regeneration is required.
+The existing research command remains available:
 
 ```bash
-python -m cfb_analytics.analytics.drive_outcome_hierarchy
+python -m cfb_analytics.analytics.drive_outcome_hierarchy --test-seasons 2017
 ```
 
-Optional recent-season subset:
+or any explicit subset of outer seasons. A full eight-season run is not part of the current required workflow.
 
-```bash
-python -m cfb_analytics.analytics.drive_outcome_hierarchy --test-seasons 2021,2022,2023,2024,2025
+## What comes next
+
+Move to the missing simulator mechanisms using the validated flat FULL probability engine:
+
+```text
+selected drive-outcome probabilities
+  -> points assignment
+  -> possession sequencing / next possession state
+  -> period endings and game clock handling
+  -> regulation game simulation
+  -> separate overtime treatment
+  -> game-level validation against Prediction v1
 ```
 
-## What comes after this
-
-If HIER beats the flat baseline, it becomes the preferred possession-outcome probability engine for the simulator research path.
-
-If HIER does not beat FLAT, that is still useful evidence: keep the simpler validated flat FULL model and move on to the next missing simulator mechanism rather than forcing football structure that does not improve out-of-sample probabilities.
-
-Only after the possession-outcome engine is selected should the project translate these probabilities into game simulation, including possession sequencing, points assignment, period endings, and a separate overtime treatment.
+Future experiments should prefer cached/reused transformed matrices and baseline predictions so research iterations do not repeatedly pay the full fitting cost.
