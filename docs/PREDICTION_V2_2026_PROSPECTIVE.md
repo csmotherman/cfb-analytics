@@ -52,7 +52,30 @@ If the output already exists, the command fails. There is intentionally no overw
 
 `data/processed/**` is gitignored. The recommended `prospective/2026/` path is outside that ignored tree so the freeze artifact can be committed and timestamped in Git. That commit is the evidentiary boundary for the coefficient set.
 
-## 2. Run the guarded weekly pipeline
+## 2. Prove the prospective reconstruction path against the historical corpus
+
+Before the branch is promoted to `main`, run the corpus-backed equivalence audit once against the saved historical corpus:
+
+```bash
+python -m cfb_analytics.analytics.prediction_v2_2026_equivalence_audit \
+  --output prospective/2026/prediction-v2-2026-equivalence-audit.json
+```
+
+This audit does not replay PBP and does not tune anything. It loads the already-frozen historical challenger rows, then treats each historical regular-season partition through Week 4 as if it were still upcoming. For each partition it reconstructs current-season state from strictly earlier saved partitions using the same state helpers as the 2026 production materializer, applies the adjacent prior season, and compares the resulting feature rows with the frozen historical blend rows.
+
+The audit requires:
+
+- the exact frozen training-season set;
+- exact raw-score/derived-history game-set alignment for every reconstructed partition;
+- exact expected/reconstructed game-ID sets;
+- zero target-bearing values in reconstructed rows;
+- exact prior weights;
+- the correct early-prior and prospective feature versions;
+- all 19 feature differences to be at or below `1e-10`.
+
+A PASS artifact is exclusive-created only after the complete audit passes. A failure exits nonzero and does not write a passing artifact. Do not loosen the tolerance or change model semantics merely to obtain a PASS; investigate any discrepancy as a possible implementation or saved-corpus issue.
+
+## 3. Run the guarded weekly pipeline
 
 The recommended production entrypoint is the guarded wrapper, not the lower-level feature/scoring commands.
 
@@ -105,11 +128,12 @@ Games without a complete frozen feature vector are excluded explicitly rather th
 
 ## Validation contract
 
-The prospective implementation has three dedicated test modules covering:
+The prospective implementation has four dedicated test modules covering:
 
 - the one-time freeze/training-season/model-manifest contract;
 - exact 19-feature equivalence between the outcome-free builder and frozen historical blend math on the same state;
-- target leakage rejection, immutable writes, offset-aware timestamps, and exact history-sample alignment.
+- target leakage rejection, immutable writes, offset-aware timestamps, and exact history-sample alignment;
+- corpus-backed equivalence comparison rules, target-field whitelisting, prior-weight/version checks, and fail-closed ID/feature drift detection.
 
 Before creating the official freeze artifact in a new environment, run the dedicated tests and then the full suite with both development and model dependencies installed.
 
