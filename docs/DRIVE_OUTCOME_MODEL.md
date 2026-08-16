@@ -1,6 +1,6 @@
 # Drive Outcome Probability Benchmark
 
-**Status:** VALIDATED RESEARCH BASELINE  
+**Status:** VALIDATED RESEARCH BASELINE — SELECTED ENGINE  
 **Version:** `drive-outcome-multinomial-v1-convergence-verified`
 
 ## Purpose
@@ -16,7 +16,7 @@ This benchmark asks two sequential questions:
 1. Does possession-start football state predict the eventual drive outcome better than unconditional class frequencies?
 2. After controlling for that state, does pregame offense/defense quality add stable out-of-sample probability information?
 
-Prediction v1 and the existing historical simulator remain unchanged. This model is a validated **research baseline** for the new mechanistic simulator, not a production-locked game model.
+Prediction v1 and the existing historical simulator remain unchanged. This model is a validated research baseline for the new mechanistic simulator, not a production-locked game model.
 
 ## Corpus and target contract
 
@@ -29,7 +29,7 @@ Known cross-season raw `driveResult` aliases are normalized at model load time, 
 - `FG MISSED` -> `MISSED_FIELD_GOAL`;
 - `INT RETURN TOUCH` -> `RETURN_TOUCHDOWN`.
 
-`Uncategorized` and other genuinely unresolved raw outcomes remain preserved in the research corpus but are excluded from model fitting and proper-score evaluation. Missing **predictors** are handled differently: no row with a resolved target is dropped for missing pregame quality.
+`Uncategorized` and other genuinely unresolved raw outcomes remain preserved in the research corpus but are excluded from model fitting and proper-score evaluation. Missing predictors are handled differently: no row with a resolved target is dropped for missing pregame quality.
 
 ## Modeled outcome classes
 
@@ -89,7 +89,7 @@ Defense:
 - early-down success allowed;
 - takeaway rate.
 
-Missing quality is imputed using **training-only** field means. A missingness indicator is added for every imputed field, and games played before the current partition are retained so the model can distinguish early-season states.
+Missing quality is imputed using training-only field means. A missingness indicator is added for every imputed field, and games played before the current partition are retained so the model can distinguish early-season states.
 
 ## Optimizer and convergence contract
 
@@ -102,7 +102,7 @@ max_iter = 200
 tol = 1e-7
 ```
 
-The repository model dependency requires scikit-learn >=1.6. Any `ConvergenceWarning` is fatal; proper scores are never reported from an explicitly unconverged fit.
+Any `ConvergenceWarning` is fatal; proper scores are never reported from an explicitly unconverged fit.
 
 The earlier `lbfgs` execution hit its iteration ceiling and was treated as preliminary only. The converged rerun reproduced the same signal essentially unchanged.
 
@@ -168,6 +168,34 @@ SAFETY             observed  0.15% | predicted  0.17% | gap +0.02 pp
 
 These are aggregate calibration checks, not a substitute for conditional calibration diagnostics later.
 
+## Hierarchy screening decision
+
+A football-structured hierarchy was screened against this flat FULL model using the same features, training rows, regularization, and convergence contract.
+
+Two era-separated outer seasons were used as an efficient effect-size screen before paying for a full eight-season hierarchy run:
+
+```text
+2017 HIER vs FLAT
+  LogLoss delta = -0.000239
+  Brier delta   = -0.000244
+  Accuracy      = +0.10 pp
+
+2025 HIER vs FLAT
+  LogLoss delta = -0.000087
+  Brier delta   = -0.000171
+  Accuracy      = +0.02 pp
+```
+
+The direction is positive in both screens, but the gains are microscopic relative to FULL-vs-STATE and do not justify four additional branch classifiers, substantially longer research runs, or replacing the simpler model.
+
+Therefore the selected possession-outcome engine for the next simulator stage is:
+
+```text
+FLAT FULL 9-class multinomial logistic regression
+```
+
+The hierarchy remains documented research and can be revisited if the implementation becomes much cheaper or if future branch-specific features create a materially different scientific question.
+
 ## Command
 
 ```bash
@@ -182,19 +210,16 @@ python -m cfb_analytics.analytics.drive_outcome_model --test-seasons 2021,2022,2
 
 ## What comes next
 
-The flat FULL multinomial model is now the baseline to beat. The next challenger exploits football structure without changing the information set or tuning regularization:
+Do not spend more compute re-proving the selected drive-outcome classifier. Move to the simulator mechanisms that are still missing:
 
 ```text
-root
-  -> offensive score
-  -> non-scoring end
-  -> opponent score
-  -> period end
-
-conditional branches
-  offensive score -> TD vs FG
-  non-scoring end -> punt vs turnover vs downs vs missed FG
-  opponent score  -> return TD vs safety
+FLAT FULL drive probabilities
+  -> football-valid points assignment
+  -> possession sequencing / next possession state
+  -> period endings and clock handling
+  -> regulation game simulation
+  -> separate overtime treatment
+  -> game-level walk-forward validation against Prediction v1
 ```
 
-The hierarchical model must beat the **same flat FULL baseline on the same outer-season rows** using log loss and Brier score. If it does not, the flat model remains the mechanistic probability baseline.
+Research tooling should increasingly cache/reuse transformed feature matrices, fitted baseline artifacts, and outer-season predictions so future experiments do not repeatedly pay the full fitting cost.
