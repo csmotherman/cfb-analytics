@@ -1,7 +1,7 @@
 # Mechanistic Margin Bridge
 
 **Status:** RESEARCH ONLY  
-**Version:** `mechanistic-margin-bridge-v1-neutral-drive-stack`
+**Version:** `mechanistic-margin-bridge-v1-neutral-drive-stack-batched`
 
 ## Purpose
 
@@ -64,7 +64,9 @@ This is a standardized pregame bridge, not yet a full state-transition simulator
 
 Runtime is intentionally bounded.
 
-For each requested outer season, the module fits exactly **one** converged FULL drive-outcome model using only earlier seasons. The resulting per-game mechanistic features are cached under:
+For each requested outer season, the module fits exactly **one** converged FULL drive-outcome model using only earlier seasons. All standardized home/away possession rows for that season are then scored in one batched `predict_proba` call rather than game-by-game.
+
+The resulting per-game mechanistic features are cached under:
 
 ```text
 data/processed/derived/mechanistic_margin_bridge/season=YYYY/
@@ -111,13 +113,19 @@ not STACK vs raw BASE. This prevents simple temporal recalibration of Prediction
 
 ## Fast screening workflow
 
-Start with two outer seasons so only two drive models are fit:
+The CLI defaults to the two-season quick screen, so this is enough:
+
+```bash
+python -m cfb_analytics.analytics.mechanistic_margin_bridge
+```
+
+Equivalent explicit command:
 
 ```bash
 python -m cfb_analytics.analytics.mechanistic_margin_bridge --test-seasons 2023,2024
 ```
 
-That produces one stacking holdout (2024) for minimum-prior-games 3 and 4.
+That fits only two drive models and produces one stacking holdout (2024) for minimum-prior-games 3 and 4.
 
 If the mechanistic signal looks useful, extend to 2025:
 
