@@ -1,47 +1,37 @@
 # Drive Outcome Probability Benchmark
 
-**Status:** RESEARCH ONLY  
+**Status:** VALIDATED RESEARCH BASELINE  
 **Version:** `drive-outcome-multinomial-v1-convergence-verified`
 
 ## Purpose
 
-Drive State Research v2 established a trustworthy possession-level contract:
+Drive State Research v2 established a possession-level contract:
 
 ```text
 raw drive-start state + leakage-safe pregame team quality -> categorical driveResult
 ```
 
-The first model benchmark asks two questions:
+This benchmark asks two sequential questions:
 
 1. Does possession-start football state predict the eventual drive outcome better than unconditional class frequencies?
 2. After controlling for that state, does pregame offense/defense quality add stable out-of-sample probability information?
 
-Prediction v1 and the existing historical simulator remain unchanged.
+Prediction v1 and the existing historical simulator remain unchanged. This model is a validated **research baseline** for the new mechanistic simulator, not a production-locked game model.
 
-## Full-corpus audit
+## Corpus and target contract
 
 The regulation-only v2 materialization covers 2014-2019 and 2021-2025 and contains about 207k drive rows. Start yards-to-goal, score margin, and clock have complete coverage in every audited season. Pregame quality coverage is about 91% because Week 1 and other zero-history states intentionally remain missing rather than leaking future information.
 
-Raw `driveResult` spellings are not perfectly stable across CFBD seasons. The benchmark therefore normalizes known semantic aliases at load time, including:
+Known cross-season raw `driveResult` aliases are normalized at model load time, including:
 
 - `RUSHING TD`, `PASSING TD`, `END OF HALF TD`, `END OF GAME TD` -> `TOUCHDOWN`;
 - `FG GOOD` -> `FIELD_GOAL`;
 - `FG MISSED` -> `MISSED_FIELD_GOAL`;
 - `INT RETURN TOUCH` -> `RETURN_TOUCHDOWN`.
 
-This uses the exact preserved raw label and does not require regenerating the saved drive-state corpus.
-
-## Unresolved targets
-
-`Uncategorized` and other genuinely unresolved raw outcomes are not a football outcome class. They stay preserved in the research corpus, but are excluded from model fitting and proper-score evaluation and are reported explicitly as semantic-target coverage loss.
-
-This matters because unresolved labels are not stationary across seasons: for example, 2018 contains a much larger `Uncategorized` block than most seasons. Treating that source-quality artifact as a football class would distort log loss and Brier score.
-
-Missing **predictors** are handled differently: no test row with a resolved outcome is dropped because of missing pregame quality.
+`Uncategorized` and other genuinely unresolved raw outcomes remain preserved in the research corpus but are excluded from model fitting and proper-score evaluation. Missing **predictors** are handled differently: no row with a resolved target is dropped for missing pregame quality.
 
 ## Modeled outcome classes
-
-The fixed probability vector is:
 
 ```text
 TOUCHDOWN
@@ -55,7 +45,7 @@ RETURN_TOUCHDOWN
 SAFETY
 ```
 
-Rare but valid football outcomes are retained. No class weighting is used in the first benchmark because the primary goal is calibrated probability estimation, not balanced classification accuracy.
+Rare but valid football outcomes are retained. No class weighting is used because the goal is calibrated probability estimation rather than balanced classification accuracy.
 
 ## Models
 
@@ -69,7 +59,7 @@ Regularized multinomial logistic regression using only information known at poss
 
 - period;
 - start clock;
-- yards to goal with simple nonlinear field-position basis terms;
+- yards to goal with nonlinear field-position basis terms;
 - offense-minus-defense score margin;
 - leading/tied/trailing state;
 - home-offense indicator;
@@ -99,13 +89,11 @@ Defense:
 - early-down success allowed;
 - takeaway rate.
 
-Missing pregame quality is imputed using **training-only** field means. A missingness indicator is added for every imputed field, and games played before the current partition are retained so the model can distinguish early-season states.
+Missing quality is imputed using **training-only** field means. A missingness indicator is added for every imputed field, and games played before the current partition are retained so the model can distinguish early-season states.
 
 ## Optimizer and convergence contract
 
-The first full walk-forward execution used `lbfgs` with sparse standardization and hit the configured 1,200-iteration ceiling for every STATE and FULL fit. The resulting outer-season signal was directionally strong, but those exact scores are not eligible for promotion because the optimizer explicitly failed to converge.
-
-The benchmark now uses:
+The verified benchmark uses:
 
 ```text
 solver = newton-cholesky
@@ -114,35 +102,15 @@ max_iter = 200
 tol = 1e-7
 ```
 
-The repository model dependency requires scikit-learn >=1.6, where `newton-cholesky` supports the full multinomial objective. This dataset has many more observations than encoded feature-by-class parameters, which makes that solver appropriate for the benchmark geometry.
+The repository model dependency requires scikit-learn >=1.6. Any `ConvergenceWarning` is fatal; proper scores are never reported from an explicitly unconverged fit.
 
-Any `ConvergenceWarning` is now fatal. The benchmark stops instead of printing proper scores from an unconverged model.
+The earlier `lbfgs` execution hit its iteration ceiling and was treated as preliminary only. The converged rerun reproduced the same signal essentially unchanged.
 
-The optimizer change is a verification step, not a hyperparameter search. `C=1.0`, features, outer seasons, imputation logic, and evaluation metrics remain unchanged so the rerun can determine whether the earlier signal survives a converged fit.
-
-## Preliminary unconverged run
-
-The first execution produced the following directional outer-season result before convergence verification was added:
-
-```text
-STATE vs GLOBAL
-  pooled LogLoss delta = -0.218756
-  pooled Brier delta   = -0.070116
-  better seasons       = 8/8 on both primary metrics
-
-FULL vs STATE
-  pooled LogLoss delta = -0.009659
-  pooled Brier delta   = -0.006081
-  better seasons       = 8/8 on both primary metrics
-```
-
-Pooled FULL class-frequency calibration was also close in aggregate, with the largest displayed gap about +1.03 percentage points for PUNT. These results are promising but remain **preliminary/unpromoted** until reproduced by converged fits.
-
-## Validation
+## Validation design
 
 Evaluation is expanding-season walk-forward. For each outer test season, every earlier available season is training data and the entire outer season is untouched test data.
 
-Default outer seasons:
+Outer seasons:
 
 ```text
 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025
@@ -158,21 +126,49 @@ Secondary diagnostics:
 - top-class accuracy;
 - semantic target coverage;
 - alias normalization counts;
-- pooled observed versus predicted frequency for every modeled outcome class.
+- pooled observed versus predicted frequency by class.
 
-Promotion logic is sequential:
+## Converged walk-forward result
+
+The verified run passed the sequential promotion test in every outer season.
 
 ```text
-STATE must beat GLOBAL
-then
-FULL must beat STATE
+STATE vs GLOBAL
+  pooled LogLoss delta = -0.218779
+  pooled Brier delta   = -0.070117
+  better seasons       = 8/8 on LogLoss
+  better seasons       = 8/8 on Brier
+
+FULL vs STATE
+  pooled LogLoss delta = -0.009612
+  pooled Brier delta   = -0.006070
+  better seasons       = 8/8 on LogLoss
+  better seasons       = 8/8 on Brier
 ```
 
-Negative metric deltas are improvements. Pregame team quality should not enter the mechanistic simulator unless FULL produces stable proper-score gains across outer seasons and in the pooled result **from converged fits**.
+Interpretation:
+
+- possession-start state contains large, repeatable probability information;
+- broad leakage-safe offense/defense quality adds smaller but highly consistent incremental information after state is controlled;
+- pregame team quality is therefore justified in the mechanistic drive model.
+
+The FULL model's pooled class-frequency calibration was also close:
+
+```text
+TOUCHDOWN          observed 26.67% | predicted 26.34% | gap -0.33 pp
+FIELD_GOAL         observed  9.53% | predicted  8.72% | gap -0.81 pp
+PUNT               observed 37.30% | predicted 38.34% | gap +1.03 pp
+TURNOVER           observed  9.20% | predicted  9.52% | gap +0.32 pp
+DOWNS              observed  6.76% | predicted  5.96% | gap -0.80 pp
+MISSED_FIELD_GOAL  observed  3.04% | predicted  2.99% | gap -0.04 pp
+PERIOD_END         observed  6.26% | predicted  6.72% | gap +0.46 pp
+RETURN_TOUCHDOWN   observed  1.09% | predicted  1.23% | gap +0.14 pp
+SAFETY             observed  0.15% | predicted  0.17% | gap +0.02 pp
+```
+
+These are aggregate calibration checks, not a substitute for conditional calibration diagnostics later.
 
 ## Command
-
-The benchmark reads the already-materialized drive-state corpus. It does not replay play-by-play, regenerate profiles, or rebuild snapshots.
 
 ```bash
 python -m cfb_analytics.analytics.drive_outcome_model
@@ -184,22 +180,21 @@ Optional outer-season override:
 python -m cfb_analytics.analytics.drive_outcome_model --test-seasons 2021,2022,2023,2024,2025
 ```
 
-The optional model dependencies are required:
-
-```bash
-pip install -e ".[models]"
-```
-
 ## What comes next
 
-If the converged transparent multinomial benchmark reproduces the signal, the next challenger should exploit football structure rather than immediately jumping to a black-box model:
+The flat FULL multinomial model is now the baseline to beat. The next challenger exploits football structure without changing the information set or tuning regularization:
 
 ```text
-possession outcome family
-  -> offensive score vs non-score vs opponent score vs period end
-  -> TD vs FG conditional on offensive score
-  -> punt vs turnover vs downs vs missed FG conditional on non-score
-  -> return TD vs safety conditional on opponent score
+root
+  -> offensive score
+  -> non-scoring end
+  -> opponent score
+  -> period end
+
+conditional branches
+  offensive score -> TD vs FG
+  non-scoring end -> punt vs turnover vs downs vs missed FG
+  opponent score  -> return TD vs safety
 ```
 
-That hierarchy is promoted only if it improves walk-forward probability scores and calibration. Game simulation comes after the drive probability model itself is validated.
+The hierarchical model must beat the **same flat FULL baseline on the same outer-season rows** using log loss and Brier score. If it does not, the flat model remains the mechanistic probability baseline.
