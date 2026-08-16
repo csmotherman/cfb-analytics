@@ -1,11 +1,11 @@
 # Prediction Model v1 Benchmark Contract
 
-**Status:** REVALIDATION REQUIRED — AUTHORITATIVE TARGET FIX  
-**Purpose:** preserve the current VOLUME + OLS architecture as the reference candidate while rebuilding its historical targets and SRS from authoritative CFBD game results.
+**Status:** CORRECTED FULL INCUMBENT — CHALLENGER REVALIDATION ACTIVE  
+**Purpose:** preserve the corrected VOLUME + OLS architecture as the current reference while evaluating predeclared challengers on authoritative targets and corrected SRS.
 
 ## Model
 
-Prediction v1 is the current **VOLUME + OLS** research leader architecture.
+Prediction v1 is the current **VOLUME + OLS** incumbent architecture.
 
 Feature groups:
 
@@ -36,39 +36,18 @@ turnoverVolumeEdge
 
 Estimator:
 
-- ordinary least squares
-- signed final margin target
-- equal training weight by game
-- all prior available seasons in each walk-forward holdout
-- identical common sample for ablations
-- no current/future game information in pregame features
+- ordinary least squares;
+- signed final margin target;
+- equal training weight by game;
+- all prior available seasons in each walk-forward holdout;
+- identical common sample for ablations;
+- no current/future game information in pregame features.
 
-## Why the architecture was frozen
-
-Research had already tested linear regularization, robust losses, median regression and blends, tree ensembles, recency weighting, rolling windows, two-stage win/magnitude architectures, and multiple mechanism families. None established a sufficiently stable recent-era advantage to replace VOLUME + OLS.
-
-That justified freezing the architecture as the reference benchmark. It did **not** exempt the underlying data contract from future forensic review.
-
-## Challenger policy
-
-A new predictive feature or architecture does **not** enter Prediction v1 merely because it is football-plausible or improves one season.
-
-It must be evaluated against this exact architecture using:
-
-1. identical leakage-safe walk-forward samples;
-2. paired MAE and RMSE as primary metrics;
-3. winner accuracy as secondary context;
-4. per-holdout results, not only pooled averages;
-5. special attention to recent holdouts for forward use;
-6. no promotion based on tuning against the test holdout.
-
-If a challenger earns promotion after the corrected benchmark is revalidated, create a new version rather than silently mutating Prediction v1.
-
-## Authoritative target finding
+## Authoritative target repair
 
 The integrity audit found that the historical model targets were not always equal to the authoritative CFBD game result.
 
-Observed on the 2014–2019 and 2021–2025 corpus:
+Original finding on the 2014–2019 and 2021–2025 corpus:
 
 ```text
 model rows             8,510
@@ -77,14 +56,14 @@ exact final margins    8,218
 margin mismatches        292
 ```
 
-The problem came from using final score state reconstructed from canonical play records. That score state is not authoritative enough for a final-game target.
+The problem came from using final score state reconstructed from canonical play records. That score state was not authoritative enough for a final-game target.
 
-This matters twice:
+This mattered twice:
 
 1. the regression target itself was wrong for affected games;
 2. SRS was fit from those same historical margins, so a model input was also contaminated.
 
-The non-score Iterative rating families remain reusable because they do not consume final score.
+The non-score Iterative rating families remained reusable because they do not consume final score.
 
 ## Corrected target contract
 
@@ -97,37 +76,120 @@ target_margin
 target_homeWin
 ```
 
-The feature-store rebuild reuses cached Iterative football ratings, applies authoritative game targets, and recomputes SRS from the corrected margins. It does not require a PBP replay or expensive drive-outcome refit.
+The corrected feature-store rebuild reuses cached Iterative football ratings, applies authoritative game targets, and recomputes SRS from corrected margins.
 
-Rebuild once:
-
-```bash
-python -m cfb_analytics.analytics.model_feature_store --all
-```
-
-Then rerun the integrity/stability gate:
-
-```bash
-python -m cfb_analytics.analytics.prediction_v1_integrity_audit
-```
-
-The target gate is strict: every stored model row must match raw home team, away team, home score, away score, and final margin before model diagnostics proceed.
-
-## Revalidation sequence
-
-Do not quote the old Prediction-v1 benchmark metrics as current until this sequence is complete:
+The post-rebuild integrity audit passed:
 
 ```text
-1. rebuild authoritative-target model feature stores
-2. require TARGET INTEGRITY = PASS
-3. rerun Prediction-v1 / volume benchmark on corrected targets + corrected SRS
-4. rerun MWDR dependency and feature-stability diagnostics
-5. decide whether the same VOLUME + OLS architecture remains the leader
+model rows              8,510
+home/away team matches  8,510 / 8,510
+exact final scores      8,510 / 8,510
+exact final margins     8,510 / 8,510
 ```
 
-The architecture remains the incumbent candidate during revalidation; its old numeric benchmark results are superseded until reproduced on the corrected data.
+## Corrected MWDR / feature stability finding
 
-See `docs/PREDICTION_V1_INTEGRITY_AUDIT.md` for the audit contract and interpretation rules.
+On the corrected data:
+
+- SRS was the strongest drop-one feature;
+- removing the entire MWDR family worsened recent MAE in all 6 min3/min4 2023–2025 folds;
+- `mwdrXExpectedPossessions` was strongly supported by the 14-fold drop-one screen;
+- several individual terms looked redundant, but that did not imply that they could be removed together safely.
+
+The MWDR family remains in the incumbent. Individual MWDR coefficient signs are not interpreted causally because the raw MWDR edges are highly collinear with `mwdrXExpectedPossessions`.
+
+## Volume-engine revalidation
+
+Corrected FULL was rechecked against STABLE on the six recent 2023–2025 min3/min4 folds.
+
+```text
+STABLE - FULL
+mean MAE delta   +0.0053
+mean RMSE delta  +0.0067
+STABLE MAE wins   2/6
+STABLE RMSE wins  1/6
+```
+
+Positive `STABLE - FULL` deltas mean FULL was better. The volume block therefore survived corrected-target revalidation and remains in the incumbent architecture. The effect is small and should not be overstated.
+
+## Challengers screened after correction
+
+### LEAN feature-pruning challenger
+
+A development-only rule selected four features for removal using 2018–2022 folds, then froze that 15-feature model for 2023–2025 validation.
+
+```text
+LEAN - FULL recent 6
+mean MAE delta   +0.0205
+mean RMSE delta  +0.0217
+MAE better        2/6
+RMSE better       1/6
+```
+
+**Decision:** not promoted.
+
+### SYMMETRIC / net reparameterization
+
+A fixed 12-feature net-edge model reduced redundant home/away degrees of freedom.
+
+```text
+ALL 14
+mean MAE delta   -0.0246
+mean RMSE delta  -0.0143
+MAE better       10/14
+RMSE better       7/14
+
+RECENT 6
+mean MAE delta   -0.0141
+mean RMSE delta  -0.0108
+MAE better        4/6
+RMSE better       3/6
+```
+
+Pooled errors improved, but the predeclared fold-stability gate failed.
+
+**Decision:** not promoted.
+
+Do not continue tuning prune sets or alternate net formulas against these already-inspected holdouts.
+
+## Current next challenger: site-aware SRS / HFA
+
+A raw CFBD site-context audit found complete coverage:
+
+```text
+model rows            8,510
+parseable site rows   8,510 (100.00%)
+neutral-site games      685
+non-neutral games     7,825
+field                 neutralSite
+```
+
+The next fixed challenger estimates season-local home-field advantage leakage-safely from prior partitions:
+
+```text
+margin ~= rating(home)
+          - rating(away)
+          + HFA * nonNeutral
+```
+
+and replaces only `srsEdge` with the site-aware SRS expected margin. All other FULL features and eligible rows remain unchanged.
+
+See `docs/PREDICTION_V1_SITE_AWARE_CHALLENGER.md`.
+
+## Challenger policy
+
+A new predictive feature or architecture does **not** enter the incumbent merely because it is football-plausible, improves pooled averages, or improves one season.
+
+It must be evaluated using:
+
+1. identical leakage-safe walk-forward samples;
+2. paired MAE and RMSE as primary metrics;
+3. winner accuracy as secondary context;
+4. per-holdout results, not only pooled averages;
+5. special attention to recent holdouts;
+6. no promotion based on tuning against a failed test holdout.
+
+If a challenger earns promotion, create a new model version rather than silently mutating Prediction v1.
 
 ## Drive PPD status
 
