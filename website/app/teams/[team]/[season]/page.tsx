@@ -1,47 +1,20 @@
 import Link from "next/link";
-import { archetypeRows, avgMargin, fieldWinPct, findPowerRow, rankOf, tournamentRows } from "../../../../lib/data";
+import { avgMargin, fieldWinPct, findDynamicIdentity, findPowerRow, rankOf, tournamentRows } from "../../../../lib/data";
 
-function archetypeFor(team:string,season:number){
-  return archetypeRows().find((r:any)=>Number(r.season)===season&&String(r.team||r.Team||"").toLowerCase()===team.toLowerCase())||null;
-}
-
-function laneTop(arch:any,lane:string){
-  return arch?.lanes?.[lane]?.[0]||null;
-}
-
-function fanConfidence(value:any){
-  const v=String(value||"").toUpperCase();
-  if(v==="HIGH") return "High confidence";
-  if(v==="MODERATE") return "Moderate confidence";
-  if(v==="LOW") return "Low confidence";
-  return null;
-}
-
-function lanePresentation(arch:any,lane:string){
-  const top=laneTop(arch,lane);
-  if(!top) return {label:"—",note:null};
-  const root=String(top.rootName||top.name||"Closest profile");
-  if(top.isClearMatch===false){
-    return {label:`Closest fit: ${root}`,note:"No strong single identity"};
-  }
-  const full=String(top.name||root);
-  const modifier=full!==root ? full.replace(root,"").trim() : "";
-  const confidence=fanConfidence(top.confidence);
-  const note=[modifier||null,confidence].filter(Boolean).join(" · ")||null;
-  return {label:root,note};
+function label(value:unknown){
+  if(value===null||value===undefined||value==="") return "—";
+  return String(value).replaceAll("-"," ").replace(/\b\w/g,c=>c.toUpperCase());
 }
 
 export default async function TeamSeason({params}:{params:Promise<{team:string;season:string}>}){
   const p=await params; const team=decodeURIComponent(p.team); const season=Number(p.season);
-  const power=findPowerRow(team,season); const arch=archetypeFor(team,season);
-  const teamIdentity=arch?lanePresentation(arch,"team"):{label:"—",note:null};
-  const offense=arch?lanePresentation(arch,"offense"):{label:"—",note:null};
-  const defense=arch?lanePresentation(arch,"defense"):{label:"—",note:null};
-  const scheme=arch?lanePresentation(arch,"scheme"):{label:"—",note:null};
+  const power=findPowerRow(team,season); const identity=findDynamicIdentity(team,season);
   const total=tournamentRows().length;
   const rank=power?rankOf(power):null;
   const win=power?fieldWinPct(power):null;
   const margin=power?avgMargin(power):null;
+  const style=identity?.identityStyle||{};
+  const tags=Array.isArray(identity?.identityTags)?identity.identityTags:[];
 
   return <>
     <section className="hero">
@@ -71,34 +44,32 @@ export default async function TeamSeason({params}:{params:Promise<{team:string;s
     </section>
 
     <section className="panel">
-      <h2>What kind of team were they?</h2>
-      {arch?<div className="grid">
-        <div>
-          <div className="muted">Team identity</div>
-          <h3>{teamIdentity.label}</h3>
-          {teamIdentity.note?<div className="muted">{teamIdentity.note}</div>:null}
-        </div>
-        <div>
-          <div className="muted">Offensive identity</div>
-          <h3>{offense.label}</h3>
-          {offense.note?<div className="muted">{offense.note}</div>:null}
-        </div>
-        <div>
-          <div className="muted">Defensive identity</div>
-          <h3>{defense.label}</h3>
-          {defense.note?<div className="muted">{defense.note}</div>:null}
-        </div>
-        <div>
-          <div className="muted">Scheme / style</div>
-          <h3>{scheme.label}</h3>
-          {scheme.note?<div className="muted">{scheme.note}</div>:null}
-        </div>
-      </div>:<div className="notice">No archetype row found for this team-season. That is expected for 2025 if the current archetype file only covers 2014–2024.</div>}
+      <div className="muted">TEAM IDENTITY</div>
+      <h2 style={{marginBottom:8}}>{identity?.identityName||"—"}</h2>
+      {tags.length?<div style={{marginBottom:14}}>{tags.map(tag=><span className="pill" key={tag}>{tag}</span>)}</div>:null}
+      {identity?.identitySummary?<p style={{fontSize:17,lineHeight:1.6}}>{identity.identitySummary}</p>:null}
+      {!identity?<div className="notice">No dynamic identity found for this team-season. Generate it with <code>python -m cfb_analytics.profiles.dynamic_profiles</code>.</div>:null}
     </section>
+
+    {identity?<section className="panel">
+      <h2>How did they play?</h2>
+      <div className="grid">
+        <div><div className="muted">Usage</div><h3>{label(style.usage)}</h3></div>
+        <div><div className="muted">Method</div><h3>{label(style.method)}</h3></div>
+        <div><div className="muted">Drive shape</div><h3>{label(style.paceShape)}</h3></div>
+        <div><div className="muted">Efficiency shape</div><h3>{label(style.efficiencyShape)}</h3></div>
+        <div><div className="muted">Attack driver</div><h3>{label(style.attackDriver)}</h3></div>
+        <div><div className="muted">Commitment</div><h3>{label(style.commitment)}</h3></div>
+        <div><div className="muted">Team structure</div><h3>{label(style.teamStructure)}</h3></div>
+        <div><div className="muted">Effectiveness</div><h3>{label(style.effectiveness)}</h3></div>
+        <div><div className="muted">Offense consistency</div><h3>{label(style.offenseConsistency)}</h3></div>
+        <div><div className="muted">Defense consistency</div><h3>{label(style.defenseConsistency)}</h3></div>
+      </div>
+    </section>:null}
 
     <section className="panel">
       <h2>What should a fan know?</h2>
-      <p>This pilot is validating the data flow first. Next this section will answer the useful football questions directly: biggest strength, biggest weakness, how they win, what can beat them, offense/defense grades, style, trajectory, and historical similarity.</p>
+      <p>The identity above is season-wide. Tags add the strongest supporting tendencies, quality signals, consistency, and late-season trajectory without replacing the team&apos;s full-season identity.</p>
     </section>
   </>;
 }
