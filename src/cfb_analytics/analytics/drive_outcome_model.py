@@ -13,6 +13,9 @@ retained in the research corpus but treated as unresolved targets, not as a
 football class. They are reported as coverage loss and excluded from proper-score
 model evaluation. Missing predictor values are never a reason to drop a test row.
 
+Optimizer convergence is part of the research contract. A model fit that raises
+a scikit-learn ConvergenceWarning is rejected rather than scored.
+
 Research only. Prediction v1 and the existing historical simulator are unchanged.
 """
 from __future__ import annotations
@@ -20,6 +23,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import warnings
 from collections import Counter
 from pathlib import Path
 from typing import Any
@@ -33,7 +37,7 @@ from cfb_analytics.analytics.drive_state_research import (
 )
 from cfb_analytics.analytics.situational_pregame import SEASONS
 
-DRIVE_OUTCOME_MODEL_VERSION = "drive-outcome-multinomial-v1-semantic-expanding-season"
+DRIVE_OUTCOME_MODEL_VERSION = "drive-outcome-multinomial-v1-convergence-verified"
 DEFAULT_TEST_SEASONS = (2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 OUTCOME_CLASSES = (
     "TOUCHDOWN",
@@ -47,6 +51,15 @@ OUTCOME_CLASSES = (
     "SAFETY",
 )
 EPS = 1e-12
+
+# This corpus has many more rows than encoded features/classes, including rare
+# one-hot categories. scikit-learn >=1.6 supports the full multinomial loss with
+# newton-cholesky, which is a better fit for this geometry than repeatedly
+# accepting lbfgs iteration-cap warnings.
+LOGISTIC_SOLVER = "newton-cholesky"
+LOGISTIC_C = 1.0
+LOGISTIC_MAX_ITER = 200
+LOGISTIC_TOL = 1e-7
 
 # CFBD changed some driveResult spellings across seasons. Because v2 preserves
 # targetDriveResult exactly, these aliases can be normalized at model load time
@@ -164,8 +177,13 @@ def _fit_model(
     *,
     include_quality: bool,
 ) -> tuple[Any, Any, Any, dict[str, float] | None]:
-    """Fit DictVectorizer -> sparse standardization -> multinomial logistic."""
+    """Fit DictVectorizer -> sparse standardization -> multinomial logistic.
+
+    Convergence warnings are fatal. A reliability benchmark should never report
+    proper scores from an optimizer that explicitly says it has not converged.
+    """
     try:
+        from sklearn.exceptions import ConvergenceWarning
         from sklearn.feature_extraction import DictVectorizer
         from sklearn.linear_model import LogisticRegression
         from sklearn.preprocessing import StandardScaler
@@ -181,12 +199,23 @@ def _fit_model(
     scaler = StandardScaler(with_mean=False)
     x = scaler.fit_transform(x)
     model = LogisticRegression(
-        solver="lbfgs",
-        C=1.0,
-        max_iter=1200,
-        tol=1e-6,
+        solver=LOGISTIC_SOLVER,
+        C=LOGISTIC_C,
+        max_iter=LOGISTIC_MAX_ITER,
+        tol=LOGISTIC_TOL,
     )
-    model.fit(x, targets)
+
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always", ConvergenceWarning)
+        model.fit(x, targets)
+    convergence = [w for w in caught if issubclass(w.category, ConvergenceWarning)]
+    if convergence:
+        details = " | ".join(str(w.message) for w in convergence)
+        raise RuntimeError(
+            f"Drive outcome optimizer did not converge with solver={LOGISTIC_SOLVER}, "
+            f"max_iter={LOGISTIC_MAX_ITER}, tol={LOGISTIC_TOL}: {details}"
+        )
+
     return vectorizer, scaler, model, quality_means
 
 
@@ -335,7 +364,11 @@ def run_evaluation(
     print("STATE  = possession-start state only")
     print("FULL   = STATE + training-imputed pregame offense/defense quality")
     print("Unresolved OTHER targets are reported as coverage loss, not modeled as football outcomes.")
-    print("Negative LogLoss/Brier deltas are better. Missing predictors never drop test rows.\n")
+    print("Negative LogLoss/Brier deltas are better. Missing predictors never drop test rows.")
+    print(
+        f"Optimizer = {LOGISTIC_SOLVER}, C={LOGISTIC_C:g}, max_iter={LOGISTIC_MAX_ITER}, "
+        f"tol={LOGISTIC_TOL:g}; convergence warnings are fatal.\n"
+    )
 
     reports: list[dict[str, Any]] = []
     for season in test_seasons:
@@ -391,7 +424,8 @@ def run_evaluation(
 
     print(
         "\nInterpretation: STATE must first beat class frequencies; FULL must then beat STATE. "
-        "Only stable proper-score improvement justifies carrying pregame team quality into the mechanistic drive simulator."
+        "Only stable proper-score improvement from converged fits justifies carrying pregame team quality "
+        "into the mechanistic drive simulator."
     )
     return reports
 
