@@ -1,16 +1,16 @@
 # Prediction v1 Site-Aware SRS / HFA Challenger
 
-**Status:** RESEARCH CHALLENGER — FIXED NEW-INFORMATION TEST  
+**Status:** PASSED — PROMOTED TO PREDICTION V2 RESEARCH BENCHMARK  
 **Version:** `prediction-v1-site-aware-srs-hfa-v1`
 
-## Why this test exists
+## Purpose
 
 After the authoritative target repair, corrected FULL VOLUME + OLS remained the incumbent. Two attempts to improve stability by reorganizing the same information did not earn promotion:
 
 - a development-selected LEAN pruning challenger failed recent validation;
 - a fixed 19-to-12 symmetric/net reparameterization improved pooled error but failed the predeclared fold-stability gate.
 
-The project therefore stopped rearranging the same predictors and moved to a genuinely different pregame information source: **game site**.
+The next challenger therefore introduced a genuinely different pregame information source: **game site**.
 
 ## Site-context audit
 
@@ -26,18 +26,6 @@ neutral field         neutralSite
 ```
 
 Every historical season in the 2014–2019 and 2021–2025 corpus has both neutral and non-neutral examples. No model row is dropped for missing site context.
-
-## Current SRS limitation
-
-Current SRS models game margin as:
-
-```text
-margin ~= rating(home) - rating(away)
-```
-
-It does not explicitly distinguish a true home game from a neutral-site game.
-
-The final OLS intercept can absorb an average home effect, but that does not prevent home-field advantage from bleeding into team ratings, and the same intercept applies to neutral games.
 
 ## Site-aware SRS model
 
@@ -56,9 +44,9 @@ nonNeutral = 1 for a non-neutral game
 nonNeutral = 0 for a neutral-site game
 ```
 
-Team ratings are centered within each disconnected schedule component, matching the current SRS identifiability convention. A single HFA coefficient is estimated from the supplied season history.
+Team ratings are centered within each disconnected schedule component. A single HFA coefficient is estimated from the supplied season history.
 
-The solver uses the same least-squares objective as SRS and jointly iterates the team-rating normal equations and the closed-form HFA update until convergence.
+The solver uses the same least-squares objective as SRS and jointly solves team ratings and HFA. Regression tests verify both a balanced synthetic HFA case and agreement with an explicit constrained least-squares reference solve.
 
 ## Leakage contract
 
@@ -74,13 +62,11 @@ score current partition
 add current partition to history
 ```
 
-Current-game margin is never used in its own rating or HFA estimate.
+Current-game margin is never used in its own rating or HFA estimate. Season reset and regular-before-postseason ordering are preserved.
 
-The season reset and regular-before-postseason ordering are preserved.
+## Feature contract
 
-## Challenger feature contract
-
-The final Prediction-v1 challenger changes exactly one of the 19 FULL features:
+The challenger changes exactly one of the 19 corrected FULL features:
 
 ```text
 REMOVE
@@ -101,26 +87,15 @@ siteAwareSrsMargin
     + siteAwareSrsHfaBefore * nonNeutral
 ```
 
-All other corrected FULL features remain unchanged:
-
-```text
-12 Iterative matchup terms
-2 raw MWDR edges
-mwdrXExpectedPossessions
-successVolumeEdge
-explosiveVolumeEdge
-turnoverVolumeEdge
-```
-
-Feature count remains **19 vs 19**.
+All other corrected FULL features remain unchanged. Feature count remains **19 vs 19**.
 
 ## Same-sample requirement
 
-The challenger requires the exact same FULL-eligible game IDs at min-prior-games 3 and 4. If any FULL-eligible row lacks a converged site-aware SRS margin, the script fails rather than silently changing the comparison sample.
+The challenger requires the exact same FULL-eligible game IDs at min-prior-games 3 and 4. If any FULL-eligible row lacks a converged site-aware SRS margin, the script fails instead of changing the comparison sample.
 
 ## Evaluation protocol
 
-Estimator and outer protocol remain unchanged:
+Estimator and outer protocol remained unchanged:
 
 - OLS;
 - equal game weights;
@@ -130,33 +105,11 @@ Estimator and outer protocol remain unchanged:
 - 2020 omitted;
 - identical game sample.
 
-Outer seasons:
-
-```text
-2018
-2019
-2021
-2022
-2023
-2024
-2025
-```
-
-for 14 min3/min4 folds.
-
-Recent subset:
-
-```text
-2023
-2024
-2025
-```
-
-for 6 folds.
+Outer seasons were 2018, 2019, 2021, 2022, 2023, 2024, and 2025 at min3/min4, for 14 folds. The recent subset was 2023–2025 at min3/min4, for 6 folds.
 
 ## Predeclared promotion gate
 
-SITE-AWARE advances only if all of the following hold:
+SITE-AWARE required all of the following:
 
 1. mean MAE improves across all 14 folds;
 2. mean RMSE improves across all 14 folds;
@@ -167,30 +120,70 @@ SITE-AWARE advances only if all of the following hold:
 7. recent MAE improves in at least 4 of 6 folds;
 8. recent RMSE improves in at least 4 of 6 folds.
 
-Winner accuracy is secondary context.
+Winner accuracy was secondary context.
 
-The command also reports recent neutral and non-neutral error slices. Those slices are mechanism diagnostics, not alternate promotion criteria.
+## Result
 
-## HFA diagnostic
+```text
+ALL 14
+  mean MAE delta     -0.0021
+  mean RMSE delta    -0.0024
+  winner delta       +0.13 pp
+  MAE better           8/14
+  RMSE better          8/14
 
-The command prints the mean leakage-safe pregame HFA and the final observed pregame HFA for each outer season. These values should be interpreted as diagnostics of the fitted site mechanism, not as independently tuned constants.
-
-No HFA value is hard-coded or tuned against a test season.
-
-## Runtime
-
-This experiment reads saved corrected model rows and raw game-site flags. It recomputes only a lightweight season-local SRS/HFA system.
-
-It does **not** replay PBP, rebuild profiles, regenerate sandbox metrics, refit drive-outcome models, or rebuild the model feature store.
-
-Run:
-
-```bash
-python -m cfb_analytics.analytics.prediction_v1_site_aware_challenger
+RECENT 6
+  mean MAE delta     -0.0035
+  mean RMSE delta    -0.0174
+  winner delta       +0.38 pp
+  MAE better           4/6
+  RMSE better          6/6
 ```
 
-## Interpretation
+Negative deltas are better. SITE-AWARE cleared every predeclared promotion condition.
 
-If SITE-AWARE passes, it is a strong Prediction-v2 candidate because it adds real pregame context with no increase in final feature count and corrects a structural limitation of current SRS.
+The effect size is modest, especially in pooled MAE, and must not be exaggerated. The strongest evidence is the recent RMSE stability: site-aware SRS improved RMSE in all six 2023–2025 min3/min4 folds while preserving the same model size and exact comparison sample.
 
-If it fails, retain corrected FULL and do not tune alternate HFA constants or site formulas against the inspected holdouts. The next major direction should be another genuinely different information source, with early-season priors / previous-season carryover among the highest-priority candidates.
+## Recent site slices
+
+```text
+neutral fold-observations
+  n=348
+  MAE delta   +0.0190
+  RMSE delta  -0.0521
+
+non-neutral fold-observations
+  n=2,938
+  MAE delta   -0.0060
+  RMSE delta  -0.0129
+```
+
+The slices are mechanism diagnostics, not alternate promotion gates. Neutral-game MAE was slightly worse while neutral RMSE improved materially; non-neutral games improved both metrics.
+
+## Leakage-safe HFA diagnostic
+
+For min3-eligible rows, mean pregame HFA estimates were:
+
+```text
+2018  +2.442
+2019  +3.031
+2021  +1.892
+2022  +2.323
+2023  +2.244
+2024  +2.540
+2025  +3.134
+```
+
+These values are learned from prior partitions only. No HFA constant is hard-coded or tuned against a test season.
+
+## Decision
+
+**SITE-AWARE is promoted.**
+
+The promoted research benchmark is named **Prediction v2** and uses the exact same corrected FULL VOLUME + OLS contract except for replacing `srsEdge` with `siteAwareSrsMargin`.
+
+Do not continue tuning HFA constants, alternate neutral-site formulas, LEAN subsets, or symmetric parameterizations against the already-inspected holdouts.
+
+Prediction v1 remains preserved as the corrected predecessor benchmark. Prediction v2 becomes the forward research reference.
+
+See `docs/PREDICTION_V2.md`.
