@@ -15,7 +15,7 @@ from .layered_archetypes import (
 )
 from .snapshots import DEFAULT_SEASONS
 
-OUTPUT_VERSION = "dynamic-team-profiles-v4-neutral-style-earned-effectiveness"
+OUTPUT_VERSION = "dynamic-team-profiles-v5-website-ready-consistency"
 
 STYLE_METRIC_MAP = {
     "identity_success_quality": "oa_success_off",
@@ -98,7 +98,7 @@ def build_dynamic_profiles(
     return {
         "version": OUTPUT_VERSION,
         "identityVersion": DYNAMIC_IDENTITY_VERSION,
-        "namingBasis": "NEUTRAL_STYLE_PLUS_MECHANISM_PLUS_EARNED_EFFECTIVENESS",
+        "namingBasis": "NEUTRAL_STYLE_PLUS_MECHANISM_PLUS_EARNED_EFFECTIVENESS_PLUS_CONSISTENCY",
         "seasons": sorted(wanted),
         "teamSeasonCount": len(items),
         "teamSeasons": items,
@@ -107,11 +107,11 @@ def build_dynamic_profiles(
 
 def concise(report: dict[str, Any], *, examples: int = 20) -> str:
     lines = [
-        "DYNAMIC TEAM IDENTITIES — STYLE + MECHANISM + EFFECTIVENESS",
+        "DYNAMIC TEAM IDENTITIES — WEBSITE-READY",
         f"Team-seasons: {report['teamSeasonCount']:,}",
         f"Seasons: {', '.join(str(x) for x in report['seasons'])}",
         "Neutral style describes behavior; strength words are earned by quality.",
-        "Tags expose supporting tendencies, mechanisms, quality, consistency, and trajectory.",
+        "Commitment, consistency, and volatility use shared structured classifiers.",
         "",
     ]
     for item in report["teamSeasons"][:examples]:
@@ -123,7 +123,8 @@ def concise(report: dict[str, Any], *, examples: int = 20) -> str:
             f"usage={style.get('usage')} | method={style.get('method')} | pace={style.get('paceShape')} | "
             f"efficiency={style.get('efficiencyShape')} | driver={style.get('attackDriver')} | "
             f"commitment={style.get('commitment')} | structure={style.get('teamStructure')} | "
-            f"effectiveness={style.get('effectiveness')}"
+            f"effectiveness={style.get('effectiveness')} | "
+            f"offConsistency={style.get('offenseConsistency')} | defConsistency={style.get('defenseConsistency')}"
         )
         lines.append(f"  TAGS  | {tags}")
         lines.append(f"  {item['identitySummary']}")
