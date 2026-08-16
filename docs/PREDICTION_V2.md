@@ -170,8 +170,10 @@ For 2026, freeze Prediction v2 before evaluating outcomes and save each weekly p
 
 The most important remaining product/model limitation is early-season coverage. Current benchmark evaluation requires 3 or 4 prior games for both teams.
 
-The next major research family should therefore be **previous-season / preseason priors with controlled decay into current-season evidence**, evaluated separately for Weeks 1–2, Weeks 3–4, and Week 5+.
+The next major research family is therefore **previous-season / preseason priors with controlled decay into current-season evidence**.
 
-Before choosing a carryover strength, run the saved-data-only feasibility audit in `docs/PREDICTION_V2_EARLY_PRIOR_AUDIT.md`. It reconstructs final previous-season Iterative, Football Mechanisms, MWDR, and site-aware SRS state and measures actual early-game coverage. Only immediately adjacent historical seasons are allowed; 2021 does not silently reach across the missing 2020 season to use 2019.
+The saved-data feasibility audit in `docs/PREDICTION_V2_EARLY_PRIOR_AUDIT.md` passed: immediately adjacent prior seasons provide complete full-family state for 1,754 of 1,781 historical regular-season games through Week 4 (98.5%). Only immediately adjacent seasons are allowed; 2021 does not silently reach across the missing 2020 season to use 2019.
 
-That work must be treated as a new information-source challenger to Prediction v2, not as hidden retuning of the site-aware benchmark.
+The first outcome-bearing experiment is now predeclared in `docs/PREDICTION_V2_EARLY_PRIOR_CHALLENGER.md`. It uses a fixed four-game linear carryover (`1.00, 0.75, 0.50, 0.25, 0.00` prior weight after 0, 1, 2, 3, and 4+ current games respectively), blends team state before matchup construction, and must mechanically revert to Prediction v2 after both teams reach four games.
+
+That experiment is a development challenger, not a silent mutation of Prediction v2. A historical pass makes it a candidate to freeze prospectively for 2026 rather than permission to retune against already-inspected seasons.
