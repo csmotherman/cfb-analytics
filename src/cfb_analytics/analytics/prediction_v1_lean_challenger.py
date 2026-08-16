@@ -10,12 +10,15 @@ mean MAE and mean RMSE on the eight development folds, and improves each metric
 in at least five of those eight folds. All qualifying removals are then combined
 into one frozen LEAN challenger and evaluated once on the six recent folds.
 
-The script reads saved corrected feature stores only. It performs no PBP replay,
-profile rebuild, sandbox regeneration, or drive-outcome fitting.
+The script reads saved corrected feature stores only. Each fold's standardized
+cross-products and FULL score are prepared once and reused across drop-one fits.
+It performs no PBP replay, profile rebuild, sandbox regeneration, or expensive
+drive-outcome fitting.
 """
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 from cfb_analytics.analytics.prediction_v1_integrity_audit import (
@@ -43,6 +46,16 @@ STABLE = BASE + MWDR + MWDR_INTERACTION
 
 
 @dataclass(frozen=True)
+class FoldCache:
+    min_games: int
+    season: int
+    n: int
+    test: list[dict[str, Any]]
+    stats: dict[str, Any]
+    full_score: dict[str, float]
+
+
+@dataclass(frozen=True)
 class FoldResult:
     min_games: int
     season: int
@@ -67,7 +80,11 @@ class FoldResult:
         return (self.challenger_winner - self.full_winner) * 100.0
 
 
-def fold_rows(data: dict[int, list[dict[str, Any]]], min_games: int, test_season: int) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+def fold_rows(
+    data: dict[int, list[dict[str, Any]]],
+    min_games: int,
+    test_season: int,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     eligible = {
         season: [row for row in data[season] if eligible_full(row, min_games)]
         for season in DEFAULT_SEASONS
@@ -81,31 +98,46 @@ def fold_rows(data: dict[int, list[dict[str, Any]]], min_games: int, test_season
     return train, eligible[test_season]
 
 
-def compare_to_full(
+def build_fold_cache(
     data: dict[int, list[dict[str, Any]]],
-    features: tuple[str, ...],
     test_seasons: tuple[int, ...],
-) -> list[FoldResult]:
-    out: list[FoldResult] = []
+) -> list[FoldCache]:
+    out: list[FoldCache] = []
     for min_games in MIN_GAMES_VALUES:
         for test_season in test_seasons:
             train, test = fold_rows(data, min_games, test_season)
             stats = prepare(train)
             full_score = score(fit(stats, FULL), test)
-            challenger_score = score(fit(stats, features), test)
             out.append(
-                FoldResult(
+                FoldCache(
                     min_games=min_games,
                     season=test_season,
                     n=len(test),
-                    full_mae=full_score["mae"],
-                    full_rmse=full_score["rmse"],
-                    full_winner=full_score["winner"],
-                    challenger_mae=challenger_score["mae"],
-                    challenger_rmse=challenger_score["rmse"],
-                    challenger_winner=challenger_score["winner"],
+                    test=test,
+                    stats=stats,
+                    full_score=full_score,
                 )
             )
+    return out
+
+
+def compare_on_cache(cache: list[FoldCache], features: tuple[str, ...]) -> list[FoldResult]:
+    out: list[FoldResult] = []
+    for fold in cache:
+        challenger_score = score(fit(fold.stats, features), fold.test)
+        out.append(
+            FoldResult(
+                min_games=fold.min_games,
+                season=fold.season,
+                n=fold.n,
+                full_mae=fold.full_score["mae"],
+                full_rmse=fold.full_score["rmse"],
+                full_winner=fold.full_score["winner"],
+                challenger_mae=challenger_score["mae"],
+                challenger_rmse=challenger_score["rmse"],
+                challenger_winner=challenger_score["winner"],
+            )
+        )
     return out
 
 
@@ -123,12 +155,11 @@ def summarize(rows: list[FoldResult]) -> dict[str, float | int]:
     }
 
 
-def development_drop_summary(data: dict[int, list[dict[str, Any]]]) -> list[dict[str, Any]]:
+def development_drop_summary(cache: list[FoldCache]) -> list[dict[str, Any]]:
     summaries: list[dict[str, Any]] = []
     for feature in FULL:
         reduced = tuple(item for item in FULL if item != feature)
-        rows = compare_to_full(data, reduced, DEVELOPMENT_TEST_SEASONS)
-        summary = summarize(rows)
+        summary = summarize(compare_on_cache(cache, reduced))
         summaries.append({"feature": feature, **summary})
     summaries.sort(key=lambda row: (row["meanDeltaMae"], row["meanDeltaRmse"]))
     return summaries
@@ -181,7 +212,8 @@ def print_summary(label: str, summary: dict[str, float | int]) -> None:
 
 
 def main() -> None:
-    data = load_all_prediction_rows(__import__("pathlib").Path(__file__).resolve().parents[3] / "data" / "processed")
+    processed_root = Path(__file__).resolve().parents[3] / "data" / "processed"
+    data = load_all_prediction_rows(processed_root)
 
     print("PREDICTION V1 LEAN CHALLENGER — DEVELOPMENT/VALIDATION SPLIT")
     print(f"Version: {CHALLENGER_VERSION}")
@@ -189,9 +221,13 @@ def main() -> None:
     print("Recent validation: 2023-2025 only (6 min3/min4 folds)")
     print("Negative MAE/RMSE deltas are better.\n")
 
-    print("INCUMBENT VOLUME-ENGINE REVALIDATION — STABLE vs FULL")
-    stable_recent = compare_to_full(data, STABLE, VALIDATION_TEST_SEASONS)
-    # compare_to_full reports STABLE - FULL. Positive deltas therefore mean FULL is better.
+    print("Preparing fold caches once...", flush=True)
+    dev_cache = build_fold_cache(data, DEVELOPMENT_TEST_SEASONS)
+    recent_cache = build_fold_cache(data, VALIDATION_TEST_SEASONS)
+
+    print("\nINCUMBENT VOLUME-ENGINE REVALIDATION — STABLE vs FULL")
+    stable_recent = compare_on_cache(recent_cache, STABLE)
+    # compare_on_cache reports STABLE - FULL. Positive deltas mean FULL is better.
     print_rows("STABLE relative to FULL:", stable_recent)
     stable_summary = summarize(stable_recent)
     print_summary("STABLE - FULL", stable_summary)
@@ -199,15 +235,16 @@ def main() -> None:
     print(f"FULL volume engine revalidated on recent mean MAE+RMSE: {'YES' if full_beats_stable else 'NO'}\n")
 
     print("DEVELOPMENT-ONLY DROP-ONE SELECTION")
-    dev = development_drop_summary(data)
+    dev = development_drop_summary(dev_cache)
+    prunes = select_prunes(dev)
+    prune_set = set(prunes)
     for row in dev:
-        flag = "  SELECT" if row["feature"] in select_prunes(dev) else ""
+        flag = "  SELECT" if row["feature"] in prune_set else ""
         print(
             f" {row['feature']}: drop MAE {row['meanDeltaMae']:+.4f} ({row['maeWins']}/{row['folds']} better) | "
             f"drop RMSE {row['meanDeltaRmse']:+.4f} ({row['rmseWins']}/{row['folds']} better){flag}"
         )
 
-    prunes = select_prunes(dev)
     print("\nFROZEN PRUNE SET:")
     if not prunes:
         print(" None — development rule selected no features. Keep FULL; recent lean validation skipped.")
@@ -215,20 +252,26 @@ def main() -> None:
     for feature in prunes:
         print(f" - {feature}")
 
-    lean = tuple(feature for feature in FULL if feature not in prunes)
+    lean = tuple(feature for feature in FULL if feature not in prune_set)
     print(f"LEAN feature count: {len(lean)} vs FULL {len(FULL)}")
     print("Recent folds are now used only for one frozen validation comparison.\n")
 
-    recent = compare_to_full(data, lean, VALIDATION_TEST_SEASONS)
+    recent = compare_on_cache(recent_cache, lean)
     print_rows("LEAN vs FULL — RECENT VALIDATION", recent)
     recent_summary = summarize(recent)
     print_summary("LEAN - FULL", recent_summary)
     print("\nDECISION")
     print(f"LEAN promotion eligible: {'YES' if promotion_eligible(recent_summary) else 'NO'}")
     if promotion_eligible(recent_summary):
-        print("Interpretation: the development-selected simplification survived the recent validation gate. It may advance to a formal corrected-benchmark comparison; do not silently mutate Prediction v1.")
+        print(
+            "Interpretation: the development-selected simplification survived the recent validation gate. "
+            "It may advance to a formal corrected-benchmark comparison; do not silently mutate Prediction v1."
+        )
     else:
-        print("Interpretation: the development-selected simplification did not clear the recent stability gate. Keep the corrected FULL architecture as the incumbent candidate.")
+        print(
+            "Interpretation: the development-selected simplification did not clear the recent stability gate. "
+            "Keep the corrected FULL architecture as the incumbent candidate."
+        )
 
 
 if __name__ == "__main__":
