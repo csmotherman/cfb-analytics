@@ -7,7 +7,9 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
+from .contract import PROFILE_METRICS
 from .dynamic_identity import DYNAMIC_IDENTITY_VERSION, build_dynamic_identity
+from .grades import grade_percentile
 from .layered_archetypes import (
     _season_identity_from_snapshot,
     closing_form_profile,
@@ -15,7 +17,7 @@ from .layered_archetypes import (
 )
 from .snapshots import DEFAULT_SEASONS
 
-OUTPUT_VERSION = "dynamic-team-profiles-v5-website-ready-consistency"
+OUTPUT_VERSION = "dynamic-team-profiles-v6-website-grades"
 
 STYLE_METRIC_MAP = {
     "identity_success_quality": "oa_success_off",
@@ -23,6 +25,27 @@ STYLE_METRIC_MAP = {
     "identity_finishing_quality": "oa_finishing_off",
     "identity_third_down_quality": "oa_third_down_off",
 }
+
+# Composite identity fields are already expressed on a 0-100 season-relative
+# percentile scale. Direct OA/style metrics retain their explicit baseline
+# percentile/grade fields from the final descriptive snapshot.
+COMPOSITE_GRADE_FIELDS = {
+    "identity_rushing_attack": ("offense", "Rushing Attack"),
+    "identity_passing_attack": ("offense", "Passing Attack"),
+    "identity_offense_quality": ("offense", "Overall Offense"),
+    "identity_rushing_defense": ("defense", "Rushing Defense"),
+    "identity_passing_defense": ("defense", "Passing Defense"),
+    "identity_defense_quality": ("defense", "Overall Defense"),
+}
+
+# These metrics are available in snapshots even where the older profile contract
+# only exposed the broader composite. They are useful fan-facing split grades.
+EXTRA_GRADE_METRICS = (
+    ("oa_run_explosiveness_def", "defense", "Run Explosive Prevention", "RESEARCH"),
+    ("oa_pass_explosiveness_def", "defense", "Pass Explosive Prevention", "RESEARCH"),
+    ("oa_run_success_yards_def", "defense", "Run Successful-Play Suppression", "RESEARCH"),
+    ("oa_pass_success_yards_def", "defense", "Pass Successful-Play Suppression", "RESEARCH"),
+)
 
 
 def _enrich_style_metrics(
@@ -37,6 +60,72 @@ def _enrich_style_metrics(
         value = snapshot.get(f"{prefix}_{source}_percentile")
         out[target] = float(value) if isinstance(value, (int, float)) and not isinstance(value, bool) else None
     return out
+
+
+def _number(value: Any) -> float | None:
+    return float(value) if isinstance(value, (int, float)) and not isinstance(value, bool) else None
+
+
+def _grade_row(
+    *, key: str, section: str, label: str, status: str,
+    percentile: float | None, grade: str | None = None,
+    description: str | None = None,
+) -> dict[str, Any]:
+    return {
+        "key": key,
+        "section": section,
+        "label": label,
+        "status": status,
+        "percentile": percentile,
+        "grade": grade if grade is not None else grade_percentile(percentile),
+        "available": percentile is not None,
+        "description": description,
+    }
+
+
+def _gradebook(profile: dict[str, float | None], final: dict[str, Any]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    seen: set[str] = set()
+
+    for key, (section, label) in COMPOSITE_GRADE_FIELDS.items():
+        percentile = _number(profile.get(key))
+        rows.append(_grade_row(
+            key=key, section=section, label=label, status="RESEARCH",
+            percentile=percentile,
+            description="Season-relative composite percentile used by the team identity model.",
+        ))
+        seen.add(key)
+
+    for metric in PROFILE_METRICS:
+        if metric.key in seen:
+            continue
+        percentile = _number(final.get(f"baseline_{metric.key}_percentile"))
+        grade = final.get(f"baseline_{metric.key}_grade")
+        rows.append(_grade_row(
+            key=metric.key,
+            section=metric.section,
+            label=metric.label,
+            status=metric.status,
+            percentile=percentile,
+            grade=str(grade) if isinstance(grade, str) else None,
+            description=metric.description,
+        ))
+        seen.add(metric.key)
+
+    for key, section, label, status in EXTRA_GRADE_METRICS:
+        if key in seen:
+            continue
+        percentile = _number(final.get(f"baseline_{key}_percentile"))
+        grade = final.get(f"baseline_{key}_grade")
+        rows.append(_grade_row(
+            key=key, section=section, label=label, status=status,
+            percentile=percentile,
+            grade=str(grade) if isinstance(grade, str) else None,
+            description="Season-relative opponent-adjusted split grade.",
+        ))
+        seen.add(key)
+
+    return rows
 
 
 def build_dynamic_profiles(
@@ -84,6 +173,7 @@ def build_dynamic_profiles(
                 "identityVersion": identity["version"],
                 "profileBasis": "FINAL_SEASON_TO_DATE_BASELINE",
                 "closingFormBasis": "RECENT_FOUR_GAMES",
+                "gradeBasis": "SEASON_RELATIVE_FINAL_BASELINE_PERCENTILES",
                 "finalGamesPlayed": int(final.get("gamesPlayed") or 0),
                 "finalSeasonType": final.get("seasonType"),
                 "finalWeek": final.get("week"),
@@ -92,6 +182,7 @@ def build_dynamic_profiles(
                 "profile": profile,
                 "closingFormProfile": closing,
                 "consistency": identity["consistency"],
+                "grades": _gradebook(profile, final),
             }
         )
 
@@ -99,6 +190,7 @@ def build_dynamic_profiles(
         "version": OUTPUT_VERSION,
         "identityVersion": DYNAMIC_IDENTITY_VERSION,
         "namingBasis": "NEUTRAL_STYLE_PLUS_MECHANISM_PLUS_EARNED_EFFECTIVENESS_PLUS_CONSISTENCY",
+        "gradeBasis": "SEASON_RELATIVE_FINAL_BASELINE_PERCENTILES",
         "seasons": sorted(wanted),
         "teamSeasonCount": len(items),
         "teamSeasons": items,
@@ -112,6 +204,7 @@ def concise(report: dict[str, Any], *, examples: int = 20) -> str:
         f"Seasons: {', '.join(str(x) for x in report['seasons'])}",
         "Neutral style describes behavior; strength words are earned by quality.",
         "Commitment, consistency, and volatility use shared structured classifiers.",
+        "Grades are season-relative percentiles with A+ through F letter grades.",
         "",
     ]
     for item in report["teamSeasons"][:examples]:
