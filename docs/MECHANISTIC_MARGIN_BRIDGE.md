@@ -1,15 +1,15 @@
 # Mechanistic Margin Bridge
 
-**Status:** RESEARCH ONLY  
+**Status:** SCREENED — NOT PROMOTED TO PREDICTION  
 **Version:** `mechanistic-margin-bridge-v1-neutral-drive-stack-batched`
 
 ## Purpose
 
-The selected possession-outcome engine is the validated FLAT FULL 9-class drive model. The next question is not whether it predicts possessions well; that has already been established. The next question is whether the drive model carries useful **game-level matchup information** beyond Prediction v1.
+The selected possession-outcome engine is the validated FLAT FULL 9-class drive model. This bridge tested whether those drive probabilities carry useful **game-level matchup information** beyond Prediction v1.
 
-This module is deliberately cheaper than a full possession-by-possession simulator. It builds a standardized, leakage-safe pregame drive signal first, then performs a recent-outer stacking screen before the project pays for more simulator mechanics.
+The bridge was intentionally cheaper than a full possession-by-possession simulator: standardized pregame drive probabilities were converted to football-valid expected points, scaled by leakage-safe expected possessions, and then evaluated as a recent-outer stacking signal.
 
-Prediction v1 remains unchanged.
+Prediction v1 remained unchanged throughout the experiment.
 
 ## Neutral possession bridge
 
@@ -49,7 +49,7 @@ net expected points = expected home offensive points
 
 The away possession is symmetric.
 
-The game bridge then uses the existing leakage-safe expected possessions per team from Football Mechanisms:
+The game bridge then uses the existing leakage-safe expected possessions per team from Football Mechanisms to create:
 
 ```text
 mechanistic expected home score
@@ -58,13 +58,11 @@ mechanistic expected home margin
 mechanistic expected total
 ```
 
-This is a standardized pregame bridge, not yet a full state-transition simulator.
+This is a standardized pregame bridge, not a full state-transition simulator.
 
 ## Runtime / cache contract
 
-Runtime is intentionally bounded.
-
-For each requested outer season, the module fits exactly **one** converged FULL drive-outcome model using only earlier seasons. All standardized home/away possession rows for that season are then scored in one batched `predict_proba` call rather than game-by-game.
+For each requested outer season, the module fits exactly one converged FULL drive-outcome model using only earlier seasons. All standardized home/away possession rows for that season are scored in one batched `predict_proba` call.
 
 The resulting per-game mechanistic features are cached under:
 
@@ -73,8 +71,6 @@ data/processed/derived/mechanistic_margin_bridge/season=YYYY/
 ```
 
 Later runs reuse the cached game features unless `--refresh-bridge` is passed.
-
-The cache is invalidated by the bridge version, drive-outcome model version, Drive State Research version, Football Mechanisms version, or model-feature-store version.
 
 No profile rebuild, snapshot rebuild, PBP replay, or hierarchy fitting is required.
 
@@ -91,11 +87,7 @@ explosive volume edge
 turnover volume edge
 ```
 
-For each recent outer season, Prediction v1 is refit on all prior eligible seasons exactly as in the existing research harness.
-
-The bridge does **not** immediately append the mechanistic margin to that same all-history OLS, because doing that properly would require leakage-safe mechanistic features for every earlier training season and therefore many additional expensive drive-model fits.
-
-Instead, the first incremental test uses leakage-safe stacking across already-out-of-sample recent seasons:
+The incremental test uses leakage-safe stacking across already-out-of-sample recent seasons:
 
 ```text
 BASE  = Prediction v1 margin
@@ -103,56 +95,60 @@ RECAL = prior outer-season BASE margin recalibration
 STACK = RECAL + mechanistic margin
 ```
 
-The scientific comparison is:
+The scientific comparison is `STACK vs RECAL`, not STACK vs raw BASE. This prevents simple temporal recalibration of Prediction v1 from being incorrectly credited to the mechanistic signal.
+
+## Quick-screen result
+
+The two-season bridge materialization created cached 2023 and 2024 mechanistic game features. The stacking holdout was 2024, evaluated at both minimum-prior-games thresholds used by Prediction v1 research.
 
 ```text
-STACK vs RECAL
+min3 2024
+  BASE MAE        12.228
+  RECAL MAE       12.220
+  STACK MAE       12.252   (+0.033 vs RECAL)
+  RMSE delta                +0.010
+  Winner delta              -0.17 pp
+  MECH standalone MAE       12.804
+
+min4 2024
+  BASE MAE        12.377
+  RECAL MAE       12.388
+  STACK MAE       12.412   (+0.025 vs RECAL)
+  RMSE delta                +0.012
+  Winner delta              +0.79 pp
+  MECH standalone MAE       12.911
+
+SCREEN DECISION
+  STACK vs RECAL MAE better   0/2
+  STACK vs RECAL RMSE better  0/2
+  mean MAE delta             +0.0288
+  mean RMSE delta            +0.0110
 ```
 
-not STACK vs raw BASE. This prevents simple temporal recalibration of Prediction v1 from being incorrectly credited to the mechanistic signal.
+The mechanistic margin failed the predeclared gate: it worsened both MAE and RMSE in both min-games screens. The standalone mechanistic margin was also clearly weaker than Prediction v1 on this holdout.
 
-## Fast screening workflow
+## Decision
 
-The CLI defaults to the two-season quick screen, so this is enough:
+Do **not** add the mechanistic neutral-drive margin to Prediction v1 and do not spend additional compute extending this exact bridge to 2025 or to a broader historical stack.
 
-```bash
-python -m cfb_analytics.analytics.mechanistic_margin_bridge
+The result does not invalidate the possession-level drive model. The FLAT FULL drive-outcome model remains a validated possession-probability research engine. What failed is the specific attempt to collapse one standardized neutral-drive expectation into an incremental pregame game-margin feature.
+
+Current modeling decision:
+
+```text
+MAIN GAME MARGIN MODEL
+  -> keep Prediction v1 unchanged
+
+DRIVE OUTCOME MODEL
+  -> keep for possession-level probability research
+  -> keep available for explanatory / simulator work
+  -> do not use this neutral-drive bridge as a Prediction-v2 feature
 ```
 
-Equivalent explicit command:
+## What comes next
 
-```bash
-python -m cfb_analytics.analytics.mechanistic_margin_bridge --test-seasons 2023,2024
-```
+Do not force a full regulation simulator merely to rescue the failed stacking feature. Future simulator work should have a distinct purpose such as calibrated score distributions, game-flow explanation, or state-dependent scenario analysis.
 
-That fits only two drive models and produces one stacking holdout (2024) for minimum-prior-games 3 and 4.
+If the project revisits game-level mechanistic prediction, it should be a materially different experiment rather than more tuning of this neutral-state bridge. Examples include explicitly integrating distributions over starting field position/state or modeling true possession transitions, with a new predeclared validation gate.
 
-If the mechanistic signal looks useful, extend to 2025:
-
-```bash
-python -m cfb_analytics.analytics.mechanistic_margin_bridge --test-seasons 2023,2024,2025
-```
-
-The 2023 and 2024 bridge features are reused from cache, so only the new 2025 drive model must be fit.
-
-To precompute/reuse bridge features without running the stack:
-
-```bash
-python -m cfb_analytics.analytics.mechanistic_margin_bridge --test-seasons 2023,2024 --prepare-only
-```
-
-## Promotion rule
-
-This is a screen, not a Prediction v2 lock.
-
-A mechanistic game signal earns broader historical integration only if `STACK` improves both MAE and RMSE versus `RECAL` with stable direction across the available recent outer tests. Winner accuracy is secondary.
-
-If the signal fails this screen, keep Prediction v1 as the margin model and use the drive model only for future explanatory/simulation work.
-
-If the signal passes, the next step is to materialize a broader leakage-safe mechanistic feature history and perform a full same-sample Prediction-v1 ablation before changing the main prediction contract.
-
-## What this is not
-
-This is not yet a full regulation simulator. It does not sequence possessions, sample next field position, decrement the game clock, or model overtime.
-
-Those mechanisms should be built only after the cheap game-level bridge shows that the validated drive probabilities contain useful information at the game level.
+The cached 2023/2024 bridge files can remain as reproducible research artifacts; there is no need to regenerate them.
