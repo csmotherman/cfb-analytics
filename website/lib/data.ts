@@ -12,6 +12,18 @@ export type PowerRow = {
   [key:string]:unknown;
 };
 
+export type DynamicIdentityRow = {
+  season:number;
+  team:string;
+  identityName?:string;
+  identityTags?:string[];
+  identitySummary?:string;
+  identityStyle?:Record<string,unknown>;
+  identityVersion?:string;
+  consistency?:Record<string,unknown>;
+  [key:string]:unknown;
+};
+
 const PROJECT_ROOT = path.resolve(process.cwd(), "..");
 
 function readJson(relative:string):any|null{
@@ -33,6 +45,15 @@ export function tournamentRows():PowerRow[]{
   return asRows(payload) as PowerRow[];
 }
 
+export function dynamicIdentityRows():DynamicIdentityRow[]{
+  const payload = readJson("data/processed/derived/profiles/dynamic_team_identities.json");
+  return asRows(payload) as DynamicIdentityRow[];
+}
+
+export function findDynamicIdentity(team:string,season:number):DynamicIdentityRow|null{
+  return dynamicIdentityRows().find(r=>Number(r.season)===Number(season)&&String(r.team||"").toLowerCase()===team.toLowerCase())||null;
+}
+
 export function archetypeRows():any[]{
   const payload = readJson("data/processed/derived/profiles/historical_archetype_layers_2014_2024.json");
   return asRows(payload);
@@ -42,7 +63,7 @@ export function datasetStatus(){
   const files = [
     ["Cross-era rankings","data/processed/derived/profiles/historical_cross_era_tournament_2014_2025.json"],
     ["Simulator cache","data/processed/derived/profiles/historical_game_simulator_cache.json"],
-    ["Archetype layers","data/processed/derived/profiles/historical_archetype_layers_2014_2024.json"],
+    ["Dynamic team identities","data/processed/derived/profiles/dynamic_team_identities.json"],
   ] as const;
   return files.map(([label,relative])=>({label,relative,ready:fs.existsSync(path.join(PROJECT_ROOT,relative))}));
 }
