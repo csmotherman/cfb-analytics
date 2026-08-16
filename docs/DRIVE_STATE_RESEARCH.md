@@ -1,40 +1,69 @@
 # Drive-State Research Contract
 
 **Status:** RESEARCH ONLY  
-**Version:** `drive-state-research-v1-pregame-context-contract`
+**Version:** `drive-state-research-v2-raw-drive-outcomes-regulation`
 
 ## Why this exists
 
-The third-down residual experiments found that special team-specific third-down skill is either absent or too small/unstable to justify carrying as a permanent simulator rating. The strongest nested diagnostic selected heavy shrinkage and produced only microscopic proper-score gains.
+The third-down residual experiments found that special team-specific third-down skill is either absent or too small/unstable to justify carrying as a permanent simulator rating. Situational football state still matters, but it should first enter the simulator as part of the possession mechanism rather than as a collection of noisy permanent team ratings.
 
-That does **not** mean situational football state is unimportant. It means situational context should first be modeled as part of the football mechanism itself rather than converted into many noisy team-specific ratings.
+The first drive-state prototype exposed two important source-contract failures:
 
-This module establishes the next research layer:
+1. derived drive `start*` fields were based on the first source event in a drive group, which was often a kickoff, return, timeout, or penalty rather than the first offensive state;
+2. subtracting derived or raw start/end offense-score fields did not reconcile cleanly enough to define possession points.
+
+The dedicated raw CFBD drive endpoint was substantially cleaner for possession identity and start state, and its direct `driveResult` label tracked football outcomes much better than reconstructed score deltas.
+
+Version 2 therefore models:
 
 ```text
-drive-start state + pregame team quality -> realized drive points
+raw drive-start state + pregame team quality -> categorical drive outcome
 ```
 
-It deliberately stops at a validated research dataset and audit. The statistical outcome model is chosen only after the target and context distributions are inspected.
+## 2023 forensic evidence that motivated v2
+
+The 2023 raw-drive audit found:
+
+- 19,060 raw drive rows and 19,060 derived drive rows;
+- every derived drive ID matched a raw drive ID;
+- all 18,828 validated derived possessions matched a raw drive;
+- only 51 validated possessions disagreed on raw vs derived ownership;
+- raw drive score deltas had no negatives, but game-level reconstruction still matched final scores in only 70.14% of regulation-only games;
+- `driveResult` was highly coherent with football semantics: PUNT was overwhelmingly `(0,0)`, TD overwhelmingly `(7,0)/(6,0)/(8,0)`, FG overwhelmingly `(3,0)`, INT/FUMBLE overwhelmingly no offensive score, and return-touchdown labels overwhelmingly opponent scores.
+
+The conclusion is deliberately conservative: use raw drive **start state and direct outcome label**, but do not use raw score deltas as a training target.
 
 ## Leakage contract
 
-Each research row is one validated possession drive with a resolvable point outcome.
+Each research row is one derived-validated possession whose raw and derived offense/defense identities agree.
 
 Predictors may use only:
 
-- information known at the **start of that drive**;
-- team-quality states that were snapshotted **before the current weekly partition**.
+- information present on the raw drive record at the start of that possession;
+- team-quality states snapshotted before the current weekly partition.
 
-Current-drive outcomes, later plays, later drives, final score, and future partitions are not predictors.
+Current-drive outcomes, later drives, game-final scores, and future partitions are never predictors.
 
-The realized drive points are the target only.
+## Possession eligibility
 
-## Pregame team-quality source
+A v2 row requires:
 
-The materializer reuses the saved `football_mechanisms/.../matchups.json` files. Those team states are cumulative through the prior partition only.
+- derived `isPossessionDrive == True`;
+- derived `driveValidationStatus == PASS`;
+- non-null offense and defense;
+- exact raw/derived offense agreement;
+- exact raw/derived defense agreement;
+- a matching pregame football-mechanism matchup row.
 
-The initial compact quality set includes:
+The default v2 corpus excludes overtime possessions. College overtime is structurally different enough that it should receive a separate model later rather than be mixed into the regulation possession process.
+
+`--include-overtime` exists only for research inspection.
+
+## Pregame team quality
+
+The materializer reuses saved `football_mechanisms/.../matchups.json` files. Those states are cumulative through the prior partition only.
+
+For the offense, v2 retains only offensive quality:
 
 - yards per possession;
 - success rate;
@@ -42,71 +71,97 @@ The initial compact quality set includes:
 - scoring-opportunity rate;
 - points per opportunity;
 - early-down success;
-- giveaway/takeaway rates;
+- giveaway rate.
 
-for both the offense and opponent defense.
+For the opposing defense, v2 retains only defensive quality:
 
-These are broad ability/context controls, not special situational ratings.
+- yards per possession allowed;
+- success rate allowed;
+- explosive rate allowed;
+- scoring-opportunity rate allowed;
+- points per opportunity allowed;
+- early-down success allowed;
+- takeaway rate.
 
-## Drive-start state
+This avoids feeding irrelevant same-team defensive fields into an offensive possession model.
 
-The first contract retains:
+## Raw drive-start state
+
+The authoritative start state now comes directly from the raw CFBD drive record:
 
 - start period;
+- start clock seconds;
 - start yards to goal;
-- start down;
-- start distance;
-- start score margin;
-- start score state;
-- overtime indicator.
+- start offense-minus-defense score margin;
+- start score state (leading/tied/trailing);
+- home/away offense indicator.
 
-The audit will determine whether every field has sufficient coverage and whether some drive-start values are structurally unusual enough to need separate treatment.
+`startDown` and `startDistance` are intentionally removed from the drive-level contract. They were artifacts of trying to recover the first offensive snap and are not necessary for the initial possession-outcome model.
 
 ## Target
 
-The target uses the existing resolved-drive point definition already used in the sandbox component system:
+The target is the raw drive `driveResult`, retained exactly as `targetDriveResult` and also collapsed into `targetOutcomeFamily`:
 
 ```text
-points = clamp(end offense score observed - start offense score, 0, 8)
+TOUCHDOWN
+FIELD_GOAL
+PUNT
+TURNOVER
+DOWNS
+MISSED_FIELD_GOAL
+PERIOD_END
+RETURN_TOUCHDOWN
+SAFETY
+OTHER
 ```
 
-No interpretation is imposed yet. The materializer records the exact point outcome bucket (`0` through `8`, or `other`) so the corpus can tell us what the correct statistical target family should be.
+Examples:
 
-For example, we should not assume the derived-drive scoring representation is simply `{0, 3, 7}` until the audit confirms the actual distribution.
+- `TD` -> `TOUCHDOWN`
+- `FG` -> `FIELD_GOAL`
+- `INT`, `FUMBLE` -> `TURNOVER`
+- `MISSED FG`, `BLOCKED FG` -> `MISSED_FIELD_GOAL`
+- `INT TD`, `FUMBLE RETURN TD`, `PUNT RETURN TD`, etc. -> `RETURN_TOUCHDOWN`
+- `SF` -> `SAFETY`
 
-## Why dataset first
+Raw start/end score deltas are deliberately omitted from the v2 research rows so they cannot accidentally be reused as labels.
 
-A drive simulator can be built in several ways:
+## Why categorical outcomes first
 
-1. regression on drive points;
-2. hurdle model: score/no-score, then points conditional on scoring;
-3. multinomial drive-outcome model;
-4. state-transition model within drives.
+The raw-drive forensic table showed that drive-result categories carry much cleaner football meaning than reconstructed numeric score deltas. The natural next statistical challengers are therefore categorical possession-outcome models rather than ordinary least squares on drive points.
 
-Choosing among them before inspecting the actual drive target distribution would be premature. The reliability-first workflow is therefore:
+The immediate workflow is:
 
 ```text
-materialize -> audit -> choose target model -> walk-forward validate -> simulator
+materialize v2 -> audit class/coverage distribution -> choose model -> walk-forward validate -> aggregate possessions into games -> compare with Prediction v1
 ```
 
-## Command
+Likely first challengers include multinomial logistic regression and a tree-based probability model, evaluated with proper scoring rules and calibration. No model is promoted without leakage-safe out-of-sample evidence.
 
-Start with one season:
+## Commands
+
+Validate one season first:
 
 ```bash
 python -m cfb_analytics.analytics.drive_state_research --season 2023
 ```
 
-The command reads existing derived drives and existing pregame football-mechanism matchups. It does not regenerate profiles, snapshots, or play-by-play metrics.
-
-After the schema/distribution audit passes, the full corpus can be materialized with:
+After that schema/audit is accepted:
 
 ```bash
 python -m cfb_analytics.analytics.drive_state_research --all
 ```
 
+Optional overtime inspection:
+
+```bash
+python -m cfb_analytics.analytics.drive_state_research --season 2023 --include-overtime
+```
+
+This materializer reads existing raw drives, existing derived drive validation, and existing pregame football-mechanism matchups. It does not regenerate profiles, snapshots, or canonical play-by-play.
+
 ## Prediction v1 and current simulator
 
 Prediction v1 remains locked and unchanged.
 
-The existing historical simulator also remains unchanged. This research layer is intended to become an independent mechanistic challenger, which can later be compared against the macro margin model and potentially blended only if out-of-sample evidence supports it.
+The existing historical simulator remains unchanged. Drive-state v2 is an independent mechanistic research challenger. It may eventually replace the simulator's crude points-per-possession layer only if it demonstrates stable out-of-sample value.
