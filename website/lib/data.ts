@@ -24,6 +24,36 @@ export type DynamicIdentityRow = {
   [key:string]:unknown;
 };
 
+export type SituationalRow = {
+  version:string;
+  season:number;
+  team:string;
+  side:"offense"|"defense";
+  quarter:number|"OT";
+  half:number|"OT";
+  down:number;
+  distance:number;
+  fieldPositionBucket:string;
+  redZone:boolean;
+  goalToGo:boolean;
+  scoreState:string;
+  plays:number;
+  successes:number;
+  yards:number;
+  firstDowns:number;
+  rushPlays:number;
+  passPlays:number;
+  rushSuccesses:number;
+  passSuccesses:number;
+  rushYards:number;
+  passYards:number;
+  explosiveEligiblePlays:number;
+  explosivePlays:number;
+  conversionAttempts:number;
+  conversions:number;
+  [key:string]:unknown;
+};
+
 const PROJECT_ROOT = path.resolve(process.cwd(), "..");
 
 function readJson(relative:string):any|null{
@@ -52,6 +82,11 @@ export function dynamicIdentityRows():DynamicIdentityRow[]{
 
 export function findDynamicIdentity(team:string,season:number):DynamicIdentityRow|null{
   return dynamicIdentityRows().find(r=>Number(r.season)===Number(season)&&String(r.team||"").toLowerCase()===team.toLowerCase())||null;
+}
+
+export function situationalRows(team:string,season:number):SituationalRow[]{
+  const payload=readJson(`data/processed/derived/situational_splits/season=${season}/situational_splits.json`);
+  return (asRows(payload) as SituationalRow[]).filter(r=>String(r.team||"").toLowerCase()===team.toLowerCase());
 }
 
 export function archetypeRows():any[]{
