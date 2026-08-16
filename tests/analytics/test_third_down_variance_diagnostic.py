@@ -29,7 +29,9 @@ def test_offense_only_fit_does_not_manufacture_defense_effects():
 
     assert offense["A"] > 0
     assert offense["B"] < 0
-    assert defense == {}
+    # defaultdict lookups can materialize disabled-side keys at exactly zero.
+    # The invariant that matters is that no nonzero defense effect was fit.
+    assert all(value == 0.0 for value in defense.values())
 
 
 def test_defense_only_fit_does_not_manufacture_offense_effects():
@@ -48,7 +50,7 @@ def test_defense_only_fit_does_not_manufacture_offense_effects():
         fit_defense=True,
     )
 
-    assert offense == {}
+    assert all(value == 0.0 for value in offense.values())
     assert defense["X"] > 0
     assert defense["Y"] < 0
 
