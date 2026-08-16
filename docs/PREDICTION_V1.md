@@ -1,11 +1,11 @@
 # Prediction Model v1 Benchmark Contract
 
-**Status:** CORRECTED FULL INCUMBENT — CHALLENGER REVALIDATION ACTIVE  
-**Purpose:** preserve the corrected VOLUME + OLS architecture as the current reference while evaluating predeclared challengers on authoritative targets and corrected SRS.
+**Status:** SUPERSEDED BY PREDICTION V2 RESEARCH BENCHMARK  
+**Purpose:** preserve the corrected VOLUME + OLS predecessor benchmark and its post-repair research history.
 
 ## Model
 
-Prediction v1 is the current **VOLUME + OLS** incumbent architecture.
+Prediction v1 is the corrected **VOLUME + OLS** predecessor architecture.
 
 Feature groups:
 
@@ -96,7 +96,7 @@ On the corrected data:
 - `mwdrXExpectedPossessions` was strongly supported by the 14-fold drop-one screen;
 - several individual terms looked redundant, but that did not imply that they could be removed together safely.
 
-The MWDR family remains in the incumbent. Individual MWDR coefficient signs are not interpreted causally because the raw MWDR edges are highly collinear with `mwdrXExpectedPossessions`.
+The MWDR family remained in v1. Individual MWDR coefficient signs are not interpreted causally because the raw MWDR edges are highly collinear with `mwdrXExpectedPossessions`.
 
 ## Volume-engine revalidation
 
@@ -110,7 +110,7 @@ STABLE MAE wins   2/6
 STABLE RMSE wins  1/6
 ```
 
-Positive `STABLE - FULL` deltas mean FULL was better. The volume block therefore survived corrected-target revalidation and remains in the incumbent architecture. The effect is small and should not be overstated.
+Positive `STABLE - FULL` deltas mean FULL was better. The volume block therefore survived corrected-target revalidation.
 
 ## Challengers screened after correction
 
@@ -150,9 +150,7 @@ Pooled errors improved, but the predeclared fold-stability gate failed.
 
 **Decision:** not promoted.
 
-Do not continue tuning prune sets or alternate net formulas against these already-inspected holdouts.
-
-## Current next challenger: site-aware SRS / HFA
+### SITE-AWARE SRS / HFA challenger
 
 A raw CFBD site-context audit found complete coverage:
 
@@ -164,7 +162,7 @@ non-neutral games     7,825
 field                 neutralSite
 ```
 
-The next fixed challenger estimates season-local home-field advantage leakage-safely from prior partitions:
+The fixed challenger estimated season-local home-field advantage leakage-safely from prior partitions:
 
 ```text
 margin ~= rating(home)
@@ -172,27 +170,47 @@ margin ~= rating(home)
           + HFA * nonNeutral
 ```
 
-and replaces only `srsEdge` with the site-aware SRS expected margin. All other FULL features and eligible rows remain unchanged.
+and replaced only `srsEdge` with `siteAwareSrsMargin`.
 
-See `docs/PREDICTION_V1_SITE_AWARE_CHALLENGER.md`.
+Result:
+
+```text
+ALL 14
+mean MAE delta   -0.0021
+mean RMSE delta  -0.0024
+MAE better        8/14
+RMSE better       8/14
+
+RECENT 6
+mean MAE delta   -0.0035
+mean RMSE delta  -0.0174
+MAE better        4/6
+RMSE better       6/6
+```
+
+The challenger passed every predeclared promotion condition.
+
+**Decision:** promoted as **Prediction v2**.
+
+Prediction v1 remains preserved as the corrected predecessor benchmark. New game-margin research should compare against Prediction v2 rather than v1.
+
+See `docs/PREDICTION_V2.md` and `docs/PREDICTION_V1_SITE_AWARE_CHALLENGER.md`.
 
 ## Challenger policy
 
-A new predictive feature or architecture does **not** enter the incumbent merely because it is football-plausible, improves pooled averages, or improves one season.
+The history of v1 established the project rule that a new predictive feature or architecture does not enter the benchmark merely because it is football-plausible, improves pooled averages, or improves one season.
 
-It must be evaluated using:
+Future work should continue using:
 
 1. identical leakage-safe walk-forward samples;
 2. paired MAE and RMSE as primary metrics;
 3. winner accuracy as secondary context;
 4. per-holdout results, not only pooled averages;
 5. special attention to recent holdouts;
-6. no promotion based on tuning against a failed test holdout.
-
-If a challenger earns promotion, create a new model version rather than silently mutating Prediction v1.
+6. predeclared promotion rules before inspecting challenger results.
 
 ## Drive PPD status
 
 Opponent-adjusted Drive PPD remains **RESEARCH ONLY**. Initial ablation showed useful incremental signal in some formulations, but season-by-season stability was not sufficient to add it to the benchmark.
 
-PPD remains available for team profiles, drive grades, diagnostics, and future prediction challenges without changing the reference architecture.
+PPD remains available for team profiles, drive grades, diagnostics, and future prediction challenges without changing the benchmark.
