@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./archive.css";
@@ -36,16 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="shell site-main">{children}</main>
         <footer className="site-footer">
           <div className="shell footer-inner">
-            <div>
-              <strong>BEAT THE MODEL</strong>
-              <span>Pick winners. Face The Model. Keep the receipts.</span>
-            </div>
-            <div className="footer-links">
-              <Link href="/play">Play</Link>
-              <Link href="/rankings">Rankings</Link>
-              <Link href="/archive">Archive</Link>
-              <Link href="/about">How it works</Link>
-            </div>
+            <strong>BEAT THE MODEL</strong>
+            <span>Pick winners. Face The Model. Keep the receipts.</span>
           </div>
         </footer>
       </body>
