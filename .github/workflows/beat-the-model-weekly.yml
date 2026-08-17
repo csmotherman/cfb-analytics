@@ -51,15 +51,15 @@ jobs:
           set -euo pipefail
           SEASON="${INPUT_SEASON:-2026}"
           if [[ -n "${INPUT_WEEK:-}" ]]; then
-            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v3 \
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v4 \
               --season "$SEASON" \
               --week "$INPUT_WEEK"
           elif [[ "$EVENT_NAME" == "schedule" ]]; then
-            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v3 \
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v4 \
               --season "$SEASON" \
               --advance
           else
-            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v3 \
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v4 \
               --season "$SEASON"
           fi
 
@@ -76,9 +76,10 @@ jobs:
           assert len(games) <= int(payload.get("slateSize", 15))
           assert len({str(g["id"]) for g in games}) == len(games), "duplicate game IDs"
           assert all(g.get("homeTeam") and g.get("awayTeam") for g in games)
+          logo_games = sum(bool(g.get("homeLogo")) and bool(g.get("awayLogo")) for g in games)
           print(
               f"BTM DATA PASS {payload['season']} W{payload['week']} "
-              f"games={len(games)} status={payload['status']}"
+              f"games={len(games)} status={payload['status']} logos={logo_games}/{len(games)}"
           )
           PY
 
