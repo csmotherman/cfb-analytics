@@ -1,14 +1,19 @@
 import Link from "next/link";
 
-export function Nav(){
-  return <nav className="nav">
-    <strong>CFB Analytics Pilot</strong>
-    <Link href="/">Home</Link>
-    <Link href="/teams">Teams</Link>
-    <Link href="/rankings">Rankings</Link>
-    <Link href="/compare">Compare</Link>
-    <Link href="/simulator">Simulator</Link>
-    <Link href="/archetypes">Identity Explorer</Link>
-    <Link href="/metrics">Metrics</Link>
-  </nav>;
+export function Nav() {
+  return (
+    <header className="site-header">
+      <nav className="nav shell" aria-label="Primary navigation">
+        <Link className="brand" href="/" aria-label="CFB Model home">
+          <span className="brand-mark">C</span>
+          <span>CFB MODEL</span>
+        </Link>
+        <div className="nav-links">
+          <Link href="/predictions">Predictions</Link>
+          <Link href="/results">Results</Link>
+          <Link href="/about">How it works</Link>
+        </div>
+      </nav>
+    </header>
+  );
 }
