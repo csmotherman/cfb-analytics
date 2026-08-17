@@ -74,15 +74,36 @@ export type ArchiveIndexEntry = {
   weeks: number[];
 };
 
+type PublishedManifestSeason = {
+  season: number;
+  weeks: number[];
+  games?: number;
+  marketGames?: number;
+  modelGames?: number;
+};
+
+type PublishedManifest = {
+  seasons?: PublishedManifestSeason[];
+};
+
 const PROJECT_ROOT = path.resolve(process.cwd(), "..");
 
 function archiveCandidates(season: number, week: number): string[] {
   return [
     path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`, `week=${week}.json`),
+    path.join(PROJECT_ROOT, "website", "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "data", "archive", String(season), `week-${week}.json`),
     path.join(process.cwd(), "website", "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "website", "data", "archive", String(season), `week-${week}.json`),
+  ];
+}
+
+function manifestCandidates(): string[] {
+  return [
+    path.join(PROJECT_ROOT, "website", "data", "archive", "index.json"),
+    path.join(process.cwd(), "data", "archive", "index.json"),
+    path.join(process.cwd(), "website", "data", "archive", "index.json"),
   ];
 }
 
@@ -131,11 +152,39 @@ function discoverWeeksInDirectory(directory: string): number[] {
   }
 }
 
+function publishedManifestIndex(): ArchiveIndexEntry[] | null {
+  const file = manifestCandidates().find((candidate) => fs.existsSync(candidate));
+  if (!file) return null;
+  try {
+    const manifest = JSON.parse(fs.readFileSync(file, "utf8")) as PublishedManifest;
+    if (!Array.isArray(manifest.seasons)) return null;
+    const bySeason = new Map<number, number[]>();
+    for (const entry of manifest.seasons) {
+      const season = Number(entry.season);
+      if (!ARCHIVE_SEASONS.includes(season) || !Array.isArray(entry.weeks)) continue;
+      const weeks = entry.weeks
+        .map(Number)
+        .filter((week) => Number.isInteger(week) && week >= 0 && week <= 20)
+        .sort((a, b) => a - b);
+      if (weeks.length) bySeason.set(season, weeks);
+    }
+    if (!bySeason.size) return null;
+    return ARCHIVE_SEASONS.map((season) => ({ season, weeks: bySeason.get(season) ?? [] }))
+      .filter((entry) => entry.weeks.length > 0);
+  } catch {
+    return null;
+  }
+}
+
 export function getArchiveIndex(): ArchiveIndexEntry[] {
+  const published = publishedManifestIndex();
+  if (published) return published;
+
   return ARCHIVE_SEASONS.map((season) => {
     const weeks = new Set<number>();
     for (const directory of [
       path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`),
+      path.join(PROJECT_ROOT, "website", "data", "archive", `season=${season}`),
       path.join(process.cwd(), "data", "archive", `season=${season}`),
       path.join(process.cwd(), "data", "archive", String(season)),
       path.join(process.cwd(), "website", "data", "archive", `season=${season}`),
