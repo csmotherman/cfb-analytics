@@ -11,6 +11,18 @@ export type BeatTheModelGame = {
   awayTeam: string;
   homeRank: number;
   awayRank: number;
+  homeTeamId?: number | string | null;
+  awayTeamId?: number | string | null;
+  homeAbbreviation?: string | null;
+  awayAbbreviation?: string | null;
+  homeConference?: string | null;
+  awayConference?: string | null;
+  homeColor?: string | null;
+  awayColor?: string | null;
+  homeAlternateColor?: string | null;
+  awayAlternateColor?: string | null;
+  homeLogo?: string | null;
+  awayLogo?: string | null;
   homePowerRating?: number | null;
   awayPowerRating?: number | null;
   matchupScore?: number | null;
@@ -59,6 +71,12 @@ export type BeatTheModelRanking = {
   rank: number;
   team: string;
   rating: number;
+  teamId?: number | string | null;
+  abbreviation?: string | null;
+  conference?: string | null;
+  color?: string | null;
+  alternateColor?: string | null;
+  logo?: string | null;
   sourceSeason?: number | null;
   gamesBefore?: number | null;
 };
@@ -69,6 +87,8 @@ export type BeatTheModelRankings = {
   sourceSeason: number | null;
   rankingVersion: string;
   method?: string;
+  teamMetadataSource?: string | null;
+  teamMetadataStatus?: string | null;
   teams: BeatTheModelRanking[];
 };
 
@@ -79,7 +99,7 @@ const EMPTY_DATASET: BeatTheModelDataset = {
   status: "awaiting-slate",
   slateSize: 15,
   rankingVersion: "btm-site-aware-srs-four-game-carryover-v1",
-  selectionVersion: "btm-top-15-ranked-market-matchups-v2",
+  selectionVersion: "btm-close-ranked-market-matchups-v3",
   modelVersion: "prediction-v2-2026-prospective-freeze-v1",
   modelReady: false,
   selectionFrozen: false,
@@ -141,6 +161,8 @@ export function getBeatTheModelRankings(season: number, week: number): BeatTheMo
       week,
       sourceSeason: week === 1 ? season - 1 : null,
       rankingVersion: EMPTY_DATASET.rankingVersion,
+      teamMetadataSource: null,
+      teamMetadataStatus: null,
       teams: [],
     };
   }
@@ -152,6 +174,8 @@ export function getBeatTheModelRankings(season: number, week: number): BeatTheMo
       sourceSeason: typeof parsed.sourceSeason === "number" ? parsed.sourceSeason : null,
       rankingVersion: String(parsed.rankingVersion ?? EMPTY_DATASET.rankingVersion),
       method: typeof parsed.method === "string" ? parsed.method : undefined,
+      teamMetadataSource: typeof parsed.teamMetadataSource === "string" ? parsed.teamMetadataSource : null,
+      teamMetadataStatus: typeof parsed.teamMetadataStatus === "string" ? parsed.teamMetadataStatus : null,
       teams: Array.isArray(parsed.teams) ? parsed.teams : [],
     };
   } catch {
@@ -160,6 +184,8 @@ export function getBeatTheModelRankings(season: number, week: number): BeatTheMo
       week,
       sourceSeason: null,
       rankingVersion: EMPTY_DATASET.rankingVersion,
+      teamMetadataSource: null,
+      teamMetadataStatus: null,
       teams: [],
     };
   }
