@@ -45,7 +45,9 @@ const PROJECT_ROOT = path.resolve(process.cwd(), "..");
 function archiveCandidates(season: number, week: number): string[] {
   return [
     path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`, `week=${week}.json`),
+    path.join(process.cwd(), "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "data", "archive", String(season), `week-${week}.json`),
+    path.join(process.cwd(), "website", "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "website", "data", "archive", String(season), `week-${week}.json`),
   ];
 }
@@ -97,17 +99,11 @@ function discoverWeeksInDirectory(directory: string): number[] {
 export function getArchiveIndex(): ArchiveIndexEntry[] {
   return ARCHIVE_SEASONS.map((season) => {
     const weeks = new Set<number>();
-    const processedDir = path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`);
-    if (fs.existsSync(processedDir)) {
-      try {
-        for (const name of fs.readdirSync(processedDir)) {
-          const match = name.match(/^week=(\d+)\.json$/) ?? name.match(/^week-(\d+)\.json$/) ?? name.match(/^week=(\d+)$/);
-          if (match) weeks.add(Number(match[1]));
-        }
-      } catch {}
-    }
     for (const directory of [
+      path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`),
+      path.join(process.cwd(), "data", "archive", `season=${season}`),
       path.join(process.cwd(), "data", "archive", String(season)),
+      path.join(process.cwd(), "website", "data", "archive", `season=${season}`),
       path.join(process.cwd(), "website", "data", "archive", String(season)),
     ]) {
       for (const week of discoverWeeksInDirectory(directory)) weeks.add(week);
