@@ -27,16 +27,14 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
   }
 
   return (
-    <section className="archive-browser" aria-labelledby="archive-heading">
-      <div className="archive-browser-copy">
-        <span className="eyebrow">BEAT THE MODEL ARCHIVE</span>
-        <div>
-          <h2 id="archive-heading">Choose a season and week.</h2>
-          <p>See the Official 15, the rankings attached to each matchup, and how The Model actually finished.</p>
-        </div>
+    <section className="fan-archive-browser" aria-labelledby="archive-heading">
+      <div className="fan-archive-browser-copy">
+        <span className="fan-kicker">FIND A WEEK</span>
+        <h2 id="archive-heading">Choose a season and week.</h2>
+        <p>Every published Official 15 stays available with the attached rankings, model picks, and results.</p>
       </div>
 
-      <div className="archive-picker">
+      <div className="fan-archive-picker">
         <label>
           <span>Season</span>
           <select value={season} onChange={(event) => changeSeason(Number(event.target.value))}>
@@ -54,7 +52,7 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
         </button>
       </div>
 
-      <p className="archive-browser-note">The game archive uses the same comparable-season contract as the model. 2020 remains intentionally excluded.</p>
+      <small className="fan-archive-note">2020 is intentionally excluded from the comparable model archive.</small>
     </section>
   );
 }
