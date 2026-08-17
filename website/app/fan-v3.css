@@ -1,0 +1,325 @@
+/* Beat the Model fan experience v3 — challenge-first home + validation archive */
+
+/* Challenge-first homepage */
+.fan-challenge-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, .75fr);
+  gap: 36px;
+  align-items: center;
+  padding: 34px 0 46px;
+}
+.fan-challenge-copy { max-width: 790px; }
+.fan-challenge-kicker { margin-top: 24px; }
+.fan-challenge-copy h1 {
+  max-width: 800px;
+  margin: 9px 0 17px;
+  font-size: clamp(52px, 7.3vw, 88px);
+  line-height: .93;
+  letter-spacing: -.064em;
+  font-weight: 950;
+}
+.fan-challenge-copy > p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--btm-muted);
+  font-size: 18px;
+  line-height: 1.62;
+}
+.fan-primary-challenge-cta { min-width: 168px; }
+.fan-challenge-rules {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 28px;
+}
+.fan-challenge-rules > div {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 13px;
+  border: 1px solid var(--btm-border);
+  border-radius: 13px;
+  background: rgba(255,255,255,.018);
+}
+.fan-challenge-rules strong {
+  color: var(--btm-cyan);
+  font: 900 10px/1.4 var(--font-jetbrains-mono), monospace;
+}
+.fan-challenge-rules span {
+  color: var(--btm-muted);
+  font-size: 10px;
+  line-height: 1.45;
+}
+.fan-challenge-card {
+  overflow: hidden;
+  border: 1px solid rgba(74,212,235,.17);
+  border-radius: 22px;
+  background: linear-gradient(155deg, rgba(21,31,44,.98), rgba(10,16,24,.98));
+  box-shadow: var(--btm-shadow);
+}
+.fan-challenge-card > .fan-kicker { padding: 20px 20px 0; }
+.fan-challenge-card-week {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 20px 18px;
+  border-bottom: 1px solid var(--btm-border);
+}
+.fan-challenge-card-week strong { font-size: 27px; letter-spacing: -.035em; }
+.fan-challenge-card-week span { color: var(--btm-muted); font-size: 10px; }
+.fan-challenge-versus {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 25px 20px;
+}
+.fan-challenge-versus > div { text-align: center; }
+.fan-challenge-versus span,
+.fan-challenge-versus small { display: block; }
+.fan-challenge-versus span { color: var(--btm-faint); font-size: 9px; font-weight: 900; letter-spacing: .1em; }
+.fan-challenge-versus strong {
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  margin: 9px auto;
+  border: 1px solid var(--btm-border-strong);
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  color: var(--btm-text);
+  font: 900 25px/1 var(--font-jetbrains-mono), monospace;
+}
+.fan-challenge-versus > div:last-child strong { color: var(--btm-cyan); border-color: rgba(74,212,235,.22); background: rgba(74,212,235,.07); }
+.fan-challenge-versus small { color: var(--btm-muted); font-size: 9px; }
+.fan-challenge-versus em { color: var(--btm-faint); font-size: 9px; font-style: normal; font-weight: 900; }
+.fan-challenge-card > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-top: 1px solid var(--btm-border);
+  color: var(--btm-text);
+  font-size: 12px;
+  font-weight: 850;
+  text-decoration: none;
+  background: rgba(54,213,156,.045);
+}
+.fan-challenge-card > a span { color: var(--btm-mint); font-size: 18px; }
+
+.fan-proof-section {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(380px, 1.08fr);
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid var(--btm-border);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(16,24,34,.9), rgba(9,15,23,.86));
+}
+.fan-proof-copy { align-self: center; padding: 8px; }
+.fan-proof-copy h2 { margin: 7px 0 10px; font-size: 34px; letter-spacing: -.045em; }
+.fan-proof-copy p { max-width: 590px; margin: 0 0 18px; color: var(--btm-muted); font-size: 13px; line-height: 1.65; }
+.fan-proof-record {
+  padding: 20px;
+  border: 1px solid rgba(74,212,235,.14);
+  border-radius: 16px;
+  background: rgba(7,11,17,.48);
+}
+.fan-proof-record-main span,
+.fan-proof-record-main small { display: block; }
+.fan-proof-record-main span { color: var(--btm-faint); font-size: 9px; font-weight: 900; letter-spacing: .1em; }
+.fan-proof-record-main strong { display: block; margin: 7px 0 2px; font: 900 42px/1 var(--font-jetbrains-mono), monospace; letter-spacing: -.05em; }
+.fan-proof-record-main small { color: var(--btm-mint); font-size: 11px; }
+.fan-proof-record-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 20px; }
+.fan-proof-record-grid > div { padding: 12px; border: 1px solid var(--btm-border); border-radius: 11px; background: rgba(255,255,255,.02); }
+.fan-proof-record-grid strong,
+.fan-proof-record-grid span { display: block; }
+.fan-proof-record-grid strong { font: 850 17px/1.2 var(--font-jetbrains-mono), monospace; }
+.fan-proof-record-grid span { margin-top: 5px; color: var(--btm-muted); font-size: 8px; line-height: 1.35; text-transform: uppercase; letter-spacing: .05em; }
+
+/* Archive home */
+.fan-archive-hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 30px 0 28px;
+}
+.fan-archive-hero > div { max-width: 840px; }
+.fan-archive-hero h1 { margin: 8px 0 12px; font-size: clamp(44px, 6.6vw, 76px); line-height: .97; letter-spacing: -.055em; }
+.fan-archive-hero p { max-width: 760px; margin: 0; color: var(--btm-muted); font-size: 16px; line-height: 1.62; }
+.fan-all-time-record {
+  display: grid;
+  grid-template-columns: minmax(270px, .72fr) minmax(0, 1.28fr);
+  gap: 20px;
+  align-items: stretch;
+  padding: 22px;
+  border: 1px solid rgba(54,213,156,.2);
+  border-radius: 19px;
+  background: linear-gradient(145deg, rgba(19,31,38,.88), rgba(11,18,27,.94));
+}
+.fan-all-time-copy { padding: 6px; }
+.fan-all-time-copy h2 { margin: 8px 0 6px; font: 900 48px/1 var(--font-jetbrains-mono), monospace; letter-spacing: -.055em; }
+.fan-all-time-copy p { margin: 0; color: var(--btm-muted); font-size: 11px; line-height: 1.55; }
+.fan-all-time-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.fan-all-time-stats > div { display: flex; flex-direction: column; justify-content: center; min-height: 112px; padding: 15px; border: 1px solid var(--btm-border); border-radius: 13px; background: rgba(7,11,17,.38); }
+.fan-all-time-stats span { color: var(--btm-muted); font-size: 8px; text-transform: uppercase; letter-spacing: .07em; }
+.fan-all-time-stats strong { margin-top: 8px; font: 850 23px/1 var(--font-jetbrains-mono), monospace; }
+.fan-archive-honesty-note {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 12px 0 20px;
+  padding: 12px 14px;
+  border-left: 2px solid var(--btm-amber);
+  background: rgba(245,182,75,.045);
+  color: var(--btm-muted);
+  font-size: 10px;
+  line-height: 1.55;
+}
+.fan-archive-honesty-note strong { flex: 0 0 auto; color: var(--btm-text); }
+
+.fan-archive-browser-compact { margin-bottom: 18px; }
+.fan-archive-browser-compact .fan-archive-picker { margin-top: 0; }
+
+.fan-season-record-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.fan-season-record-card {
+  display: block;
+  padding: 16px;
+  border: 1px solid var(--btm-border);
+  border-radius: 14px;
+  background: rgba(16,24,34,.7);
+  color: var(--btm-text);
+  text-decoration: none;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.fan-season-record-card:hover { transform: translateY(-2px); border-color: rgba(74,212,235,.24); background: rgba(18,28,40,.86); }
+.fan-season-record-card header { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.fan-season-record-card header strong { font-size: 18px; }
+.fan-season-record-card header span { color: var(--btm-faint); font-size: 8px; text-transform: uppercase; letter-spacing: .06em; }
+.fan-season-record-main { display: flex; justify-content: space-between; gap: 12px; align-items: flex-end; margin: 20px 0 16px; }
+.fan-season-record-main strong { font: 850 24px/1 var(--font-jetbrains-mono), monospace; }
+.fan-season-record-main span { color: var(--btm-mint); font: 800 12px/1 var(--font-jetbrains-mono), monospace; }
+.fan-season-record-card footer { display: flex; justify-content: space-between; gap: 8px; padding-top: 11px; border-top: 1px solid var(--btm-border); color: var(--btm-muted); font-size: 9px; }
+.fan-season-record-card footer span { color: var(--btm-cyan); font-size: 14px; }
+
+/* Weekly validation archive */
+.fan-history-week { margin-top: 22px; }
+.fan-history-week-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+.fan-history-week-head h2 { margin: 6px 0 7px; font-size: 32px; letter-spacing: -.04em; }
+.fan-history-week-head p { max-width: 720px; margin: 0; color: var(--btm-muted); font-size: 11px; line-height: 1.55; }
+.fan-history-week-record { min-width: 180px; padding: 13px 15px; border: 1px solid var(--btm-border); border-radius: 13px; background: rgba(16,24,34,.72); }
+.fan-history-week-record span,
+.fan-history-week-record small { display: block; }
+.fan-history-week-record span { color: var(--btm-faint); font-size: 8px; text-transform: uppercase; letter-spacing: .08em; }
+.fan-history-week-record strong { display: block; margin: 5px 0 3px; font: 850 22px/1 var(--font-jetbrains-mono), monospace; }
+.fan-history-week-record small { color: var(--btm-mint); font-size: 9px; }
+.fan-history-stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); overflow: hidden; border: 1px solid var(--btm-border); border-radius: 14px; background: rgba(16,24,34,.6); }
+.fan-history-stats > div { padding: 13px 15px; border-right: 1px solid var(--btm-border); }
+.fan-history-stats > div:last-child { border-right: 0; }
+.fan-history-stats span { display: block; color: var(--btm-faint); font-size: 8px; text-transform: uppercase; letter-spacing: .07em; }
+.fan-history-stats strong { display: block; margin-top: 5px; font: 800 17px/1 var(--font-jetbrains-mono), monospace; }
+.fan-history-filters { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 12px; }
+.fan-history-filters button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--btm-border);
+  border-radius: 9px;
+  background: rgba(255,255,255,.02);
+  color: var(--btm-muted);
+  font-size: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.fan-history-filters button span { margin-left: 5px; color: var(--btm-faint); font-family: var(--font-jetbrains-mono), monospace; }
+.fan-history-filters button.active { color: var(--btm-text); border-color: rgba(74,212,235,.25); background: rgba(74,212,235,.075); }
+.fan-history-game-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.fan-history-game-card { overflow: hidden; border: 1px solid var(--btm-border); border-radius: 14px; background: rgba(16,24,34,.76); }
+.fan-history-game-card > header { display: flex; justify-content: space-between; gap: 10px; align-items: center; min-height: 39px; padding: 8px 12px; border-bottom: 1px solid var(--btm-border); }
+.fan-history-game-card > header > div { display: flex; gap: 7px; align-items: center; color: var(--btm-faint); font-size: 8px; text-transform: uppercase; letter-spacing: .06em; }
+.fan-history-official { padding: 4px 6px; border-radius: 999px; background: rgba(74,212,235,.075); color: var(--btm-cyan); font-weight: 900; }
+.fan-archive-result { display: inline-flex; align-items: center; min-height: 24px; padding: 0 8px; border-radius: 999px; border: 1px solid var(--btm-border); font-size: 8px; font-weight: 900; text-transform: uppercase; letter-spacing: .06em; }
+.fan-archive-result-win { color: var(--btm-mint); border-color: rgba(54,213,156,.22); background: rgba(54,213,156,.07); }
+.fan-archive-result-loss { color: var(--btm-red); border-color: rgba(251,107,127,.2); background: rgba(251,107,127,.06); }
+.fan-archive-result-neutral { color: var(--btm-muted); background: rgba(255,255,255,.02); }
+.fan-history-scoreboard { padding: 8px 12px; }
+.fan-history-scoreboard > div { display: grid; grid-template-columns: 52px minmax(0,1fr) auto; gap: 10px; align-items: center; min-height: 39px; border-bottom: 1px solid rgba(255,255,255,.045); }
+.fan-history-scoreboard > div:last-child { border-bottom: 0; }
+.fan-history-scoreboard span { color: var(--btm-faint); font: 800 9px/1 var(--font-jetbrains-mono), monospace; }
+.fan-history-scoreboard strong { overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.fan-history-scoreboard em { min-width: 28px; text-align: right; font: 850 17px/1 var(--font-jetbrains-mono), monospace; font-style: normal; }
+.fan-history-scoreboard .winner strong,
+.fan-history-scoreboard .winner em { color: var(--btm-text); }
+.fan-history-game-card > footer { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 10px; align-items: center; padding: 11px 12px; border-top: 1px solid var(--btm-border); background: rgba(7,11,17,.32); }
+.fan-history-game-card > footer span { color: var(--btm-cyan); font-size: 8px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.fan-history-game-card > footer strong { overflow: hidden; text-align: right; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.fan-history-game-card > footer .fan-history-no-call { color: var(--btm-muted); font-weight: 700; }
+.fan-history-footnote { margin: 13px 0 0; color: var(--btm-faint); font-size: 9px; line-height: 1.5; }
+
+@media (max-width: 980px) {
+  .fan-challenge-hero { grid-template-columns: 1fr; gap: 20px; padding-top: 25px; }
+  .fan-challenge-card { max-width: 680px; }
+  .fan-proof-section { grid-template-columns: 1fr; }
+  .fan-all-time-record { grid-template-columns: 1fr; }
+  .fan-season-record-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 760px) {
+  .fan-challenge-copy h1 { font-size: clamp(44px, 13.5vw, 62px); }
+  .fan-challenge-copy > p { font-size: 15px; }
+  .fan-challenge-rules { grid-template-columns: 1fr; }
+  .fan-challenge-rules > div { min-height: 58px; }
+  .fan-challenge-versus { padding-inline: 14px; }
+  .fan-proof-record-grid { grid-template-columns: 1fr 1fr 1fr; }
+
+  .fan-archive-hero { display: block; }
+  .fan-archive-hero .fan-button { width: 100%; margin-top: 20px; }
+  .fan-all-time-stats { grid-template-columns: 1fr 1fr; }
+  .fan-season-record-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fan-history-week-head { align-items: stretch; flex-direction: column; }
+  .fan-history-week-record { min-width: 0; }
+  .fan-history-stats { grid-template-columns: 1fr 1fr; }
+  .fan-history-stats > div:nth-child(2) { border-right: 0; }
+  .fan-history-stats > div:nth-child(-n+2) { border-bottom: 1px solid var(--btm-border); }
+  .fan-history-game-grid { grid-template-columns: 1fr; }
+  .fan-archive-honesty-note { display: block; }
+  .fan-archive-honesty-note strong { display: block; margin-bottom: 4px; }
+}
+
+@media (max-width: 520px) {
+  .fan-challenge-hero { padding-top: 18px; }
+  .fan-challenge-kicker { margin-top: 18px; }
+  .fan-challenge-copy h1 { font-size: 45px; }
+  .fan-challenge-copy .fan-hero-actions { display: grid; grid-template-columns: 1fr; }
+  .fan-challenge-copy .fan-button { width: 100%; }
+  .fan-challenge-card-week strong { font-size: 23px; }
+  .fan-challenge-versus strong { width: 56px; height: 56px; border-radius: 16px; }
+  .fan-proof-section { padding: 16px; }
+  .fan-proof-copy { padding: 2px; }
+  .fan-proof-copy h2 { font-size: 29px; }
+  .fan-proof-record { padding: 15px; }
+  .fan-proof-record-main strong { font-size: 34px; }
+  .fan-proof-record-grid { grid-template-columns: 1fr; }
+
+  .fan-archive-hero h1 { font-size: 45px; }
+  .fan-all-time-record { padding: 16px; }
+  .fan-all-time-copy h2 { font-size: 39px; }
+  .fan-all-time-stats { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .fan-all-time-stats > div { min-height: 88px; padding: 11px; }
+  .fan-all-time-stats strong { font-size: 19px; }
+  .fan-season-record-grid { grid-template-columns: 1fr; }
+  .fan-history-filters { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .fan-history-filters button { width: 100%; }
+  .fan-history-scoreboard > div { grid-template-columns: 42px minmax(0,1fr) auto; }
+}
