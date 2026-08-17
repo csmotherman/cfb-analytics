@@ -10,6 +10,7 @@ export function Nav() {
         </Link>
         <div className="nav-links">
           <Link href="/predictions">Predictions</Link>
+          <Link href="/archive">Archive</Link>
           <Link href="/results">Results</Link>
           <Link href="/about">How it works</Link>
         </div>
