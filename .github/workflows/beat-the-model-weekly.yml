@@ -2,9 +2,11 @@ name: Publish Beat the Model weekly slate
 
 on:
   schedule:
-    # Monday morning during the CFB season. GitHub cron is UTC: this is
-    # approximately 9am ET during daylight time and 8am ET after DST ends.
-    - cron: "0 13 * 8-12,1 1"
+    # Monday morning during the regular college-football season.
+    # Use an explicit timezone so daylight-saving changes do not move publication.
+    # :15 avoids the highest GitHub Actions load at the top of the hour.
+    - cron: "15 9 * 8-12 1"
+      timezone: "America/Detroit"
   workflow_dispatch:
     inputs:
       season:
