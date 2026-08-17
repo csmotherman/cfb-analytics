@@ -65,10 +65,10 @@ Each generated week is a table with:
 
 - year
 - week
-- home team
-- away team
+- home team with its final score immediately to the left of the team name
+- away team with its final score immediately to the right of the team name
 - historical CFBD reference spread, formatted with the favored team (for example `Michigan -5`)
-- Prediction-v2 model line
+- Prediction-v2 model line when a supported OOS model call exists
 - ATS correct indicator
 - winner correct indicator
 - an amber `BET` marker when the previously selected FULL ATS logistic min3/.575 model recommended that game
@@ -84,7 +84,7 @@ Units use the same research convention as the ATS audits: flat **1 unit risked a
 
 ### Archive sources
 
-The exporter reads:
+The publisher reads the existing frozen/local research artifacts:
 
 ```text
 data/processed/market_benchmark/prediction-v2-vs-clean-market-games.json
@@ -94,35 +94,56 @@ data/processed/market_benchmark/full-ats-meta-gate-games.json
 
 The last source is used only for its exact `FULL_BASELINE` rows—the 495 historical FULL ATS logistic min3/.575 recommendations. The experimental meta-gate decisions are not used by the website. If that file is unavailable, the exporter can fall back to `ats-logistic-deep-audit-games.json` and apply the already-fixed `.575` threshold.
 
-The archive loader checks generated files at:
+The market source is the historical CFBD **reference spread** selected by the frozen first-parseable `formattedSpread` provider rule. It is not relabeled as a closing consensus line. If CFBD has no usable source line for a historical game, the website says `No market line`; it never invents a spread.
 
-```text
-data/processed/website/prediction_archive/season=YYYY/week=N.json
-```
+### Publish the actual deployable archive
 
-It also accepts deployable copies at:
-
-```text
-website/data/archive/season=YYYY/week=N.json
-website/data/archive/YYYY/week-N.json
-```
-
-Generate the deployable archive from the repository root with:
+Use the guarded publisher from the repository root:
 
 ```bash
-python -m cfb_analytics.analytics.website_prediction_archive \
-  --output-root website/data/archive \
-  --overwrite
+python -m cfb_analytics.analytics.publish_website_archive
 ```
 
-The exporter never manufactures a historical model pick, ATS recommendation, or explanation after seeing the result. Early seasons can still show the historical slate and market line even when no official Prediction-v2 OOS call exists.
+It writes directly to:
+
+```text
+website/data/archive/
+```
+
+and fails closed unless the local source universe contains exactly:
+
+```text
+8,510 historical games
+3,977 official Prediction-v2 minGames=3 OOS model calls
+12,666 clean CFBD market rows
+495 selected FULL ATS recommendations
+```
+
+The publisher also writes:
+
+```text
+website/data/archive/index.json
+website/data/archive/missing-market-lines.json
+```
+
+`index.json` is the deployable archive manifest and drives the season/week picker. `missing-market-lines.json` is an explicit audit of games for which the frozen CFBD source has no usable reference line. The generated `website/data/archive/**` files are deployable website data and should be committed with the website when the archive is published.
+
+After publishing:
+
+```bash
+git add website/data/archive
+git commit -m "data: publish historical website archive"
+git push origin agent/website-predictions-clean
+```
+
+The publisher never manufactures a historical model pick, ATS recommendation, spread, or explanation after seeing the result. Early seasons can still show every reconstructed historical game and final score even when no official Prediction-v2 OOS call exists.
 
 ## Product rules
 
 - Never fabricate a prediction to make the UI look populated.
 - Live predictions lock before kickoff.
 - The original prediction remains visible after the game.
-- Historical pages never invent a missing prediction or post-hoc recommendation.
+- Historical pages never invent a missing prediction, market spread, or post-hoc recommendation.
 - 2020 stays excluded because the COVID-disrupted season is outside the comparable archive/model contract.
 - Advanced metrics stay under the hood unless they make the prediction easier to understand.
 - Archive is part of the same prediction → explanation → result product, not a second analytics dashboard.
@@ -130,9 +151,7 @@ The exporter never manufactures a historical model pick, ATS recommendation, or 
 ## Run locally
 
 ```bash
-python -m cfb_analytics.analytics.website_prediction_archive \
-  --output-root website/data/archive \
-  --overwrite
+python -m cfb_analytics.analytics.publish_website_archive
 cd website
 npm install
 npm run typecheck
