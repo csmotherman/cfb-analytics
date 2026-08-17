@@ -1,8 +1,9 @@
 """Publish the validated historical archive directly into the deployable website.
 
 This is intentionally a packaging step, not a new model experiment. It consumes
-existing frozen/local artifacts, validates the expected historical universe, and
-writes the static JSON files used by the Next.js archive.
+existing frozen/local artifacts, reconstructs the frozen early-prior OOS supplement,
+validates the expected historical universe, and writes the static JSON files used
+by the Next.js archive.
 """
 from __future__ import annotations
 
@@ -22,7 +23,7 @@ from cfb_analytics.analytics.website_prediction_archive import (
 )
 
 EXPECTED_HISTORICAL_GAMES = 8_510
-EXPECTED_OFFICIAL_OOS_MODEL_GAMES = 3_977
+EXPECTED_STORED_MATURE_OOS_MODEL_GAMES = 3_977
 EXPECTED_CLEAN_MARKET_ROWS = 12_666
 EXPECTED_RECOMMENDED_BETS = 495
 
@@ -58,18 +59,56 @@ def _week_files(output_root: Path, season: int) -> list[Path]:
     )
 
 
+def _validate_prediction_counts(report: dict[str, Any]) -> None:
+    mature = int(report.get("matureOosModelGames", -1))
+    early_generated = int(report.get("earlyPriorGeneratedGames", -1))
+    early_overlap = int(report.get("earlyPriorOverlapGames", -1))
+    early_supplement = int(report.get("earlyPriorSupplementGames", -1))
+    combined = int(report.get("combinedOosModelGames", -1))
+    attached = int(report.get("officialOosModelGames", -1))
+
+    if mature != EXPECTED_STORED_MATURE_OOS_MODEL_GAMES:
+        raise ValueError(
+            "Stored mature Prediction-v2 benchmark changed: expected "
+            f"{EXPECTED_STORED_MATURE_OOS_MODEL_GAMES:,}, got {mature:,}"
+        )
+    if early_generated <= 0:
+        raise ValueError("Refusing archive publish without reconstructed early-prior OOS predictions")
+    if early_overlap < 0 or early_supplement <= 0:
+        raise ValueError(
+            "Early-prior reconstruction did not fill any previously blank mature OOS games"
+        )
+    if early_overlap + early_supplement != early_generated:
+        raise ValueError(
+            "Early-prior accounting mismatch: generated rows must equal overlap + supplement"
+        )
+    if combined != mature + early_supplement:
+        raise ValueError(
+            "Combined OOS accounting mismatch: combined must equal mature + early supplement"
+        )
+    if attached != combined:
+        raise ValueError(
+            f"Rendered OOS model count mismatch: combined={combined:,} attached={attached:,}"
+        )
+
+    season_rows = {
+        int(row.get("season", -1)): row
+        for row in report.get("seasonSummaries", [])
+        if isinstance(row, dict)
+    }
+    if int(season_rows.get(2025, {}).get("earlyPriorModelGames", 0)) <= 0:
+        raise ValueError(
+            "2025 early-prior supplement is empty; Week 1 should not remain limited to the mature minGames=3 benchmark"
+        )
+
+
 def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[str, Any]:
     if int(report["games"]) != EXPECTED_HISTORICAL_GAMES:
         raise ValueError(
             f"Refusing partial website archive: expected {EXPECTED_HISTORICAL_GAMES:,} "
             f"historical games, got {int(report['games']):,}"
         )
-    if int(report["officialOosModelGames"]) != EXPECTED_OFFICIAL_OOS_MODEL_GAMES:
-        raise ValueError(
-            f"Refusing model-incomplete website archive: expected "
-            f"{EXPECTED_OFFICIAL_OOS_MODEL_GAMES:,} official OOS model games, "
-            f"got {int(report['officialOosModelGames']):,}"
-        )
+    _validate_prediction_counts(report)
     if not report.get("marketSourcePresent"):
         raise ValueError("Refusing archive publish without the frozen clean CFBD market-spread source")
     if int(report["marketRows"]) != EXPECTED_CLEAN_MARKET_ROWS:
@@ -92,6 +131,7 @@ def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[st
         season_games = 0
         season_market = 0
         season_model = 0
+        season_early = 0
         for file in _week_files(output_root, season):
             payload = json.loads(file.read_text())
             week = int(payload["week"])
@@ -117,6 +157,8 @@ def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[st
                     )
                 if isinstance(game.get("modelHomeMargin"), (int, float)):
                     season_model += 1
+                if game.get("predictionSource") == "prediction-v2-early-prior-walk-forward-oos":
+                    season_early += 1
         rendered_games += season_games
         manifest_seasons.append(
             {
@@ -125,6 +167,7 @@ def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[st
                 "games": season_games,
                 "marketGames": season_market,
                 "modelGames": season_model,
+                "earlyPriorModelGames": season_early,
             }
         )
 
@@ -136,15 +179,23 @@ def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[st
 
     market_attached = rendered_games - len(missing_market)
     manifest = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "archiveVersion": report["version"],
         "seasons": manifest_seasons,
         "historicalGames": rendered_games,
         "marketGames": market_attached,
         "missingMarketGames": len(missing_market),
+        "storedMatureOosModelGames": int(report["matureOosModelGames"]),
+        "earlyPriorGeneratedGames": int(report["earlyPriorGeneratedGames"]),
+        "earlyPriorOverlapGames": int(report["earlyPriorOverlapGames"]),
+        "earlyPriorSupplementGames": int(report["earlyPriorSupplementGames"]),
         "officialOosModelGames": int(report["officialOosModelGames"]),
         "recommendedBets": int(report["recommendedBets"]),
         "marketSemantics": "historical CFBD reference spread; first parseable formattedSpread provider in API order",
+        "predictionSemantics": (
+            "stored mature minGames=3 Prediction-v2 OOS calls, supplemented only when missing by the frozen "
+            "early-prior rule reconstructed with earlier-season-only training"
+        ),
     }
     output_root.mkdir(parents=True, exist_ok=True)
     (output_root / "index.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
@@ -213,7 +264,11 @@ def main() -> None:
     print(f"Historical games: {manifest['historicalGames']:,}")
     print(f"Market spreads populated: {manifest['marketGames']:,}/{manifest['historicalGames']:,}")
     print(f"Missing source market lines: {manifest['missingMarketGames']:,}")
-    print(f"Official OOS model calls: {manifest['officialOosModelGames']:,}")
+    print(f"Stored mature OOS model calls: {manifest['storedMatureOosModelGames']:,}")
+    print(f"Early-prior OOS rows generated: {manifest['earlyPriorGeneratedGames']:,}")
+    print(f"Early-prior overlaps preserved as mature: {manifest['earlyPriorOverlapGames']:,}")
+    print(f"Early-prior supplemental calls: {manifest['earlyPriorSupplementGames']:,}")
+    print(f"Combined OOS model calls: {manifest['officialOosModelGames']:,}")
     print(f"Recommended bets: {manifest['recommendedBets']:,}")
     print(f"Bet source: {report['recommendedBetSource']}")
     print(f"Output: {args.output_root}")
