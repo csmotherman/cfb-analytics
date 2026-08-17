@@ -3,12 +3,13 @@
 import { useEffect, useMemo, useState } from "react";
 
 import type { BeatTheModelDataset, BeatTheModelGame } from "../lib/beat-the-model";
+import { TeamLogo } from "./TeamLogo";
 
 type Picks = Record<string, string>;
 type ViewFilter = "all" | "unpicked" | "disagree";
 
 function storageKey(data: BeatTheModelDataset): string {
-  return `beat-the-model:picks:${data.season}:${data.week}`;
+  return `beat-the-model:submitted-picks:v2:${data.season}:${data.week}`;
 }
 
 function formatKickoff(value: string | null | undefined): string | null {
@@ -69,40 +70,43 @@ async function shareDisagreement(game: BeatTheModelGame, pick: string) {
 function PickButton({
   game,
   team,
+  logo,
   rank,
   side,
-  picked,
+  selected,
+  submitted,
   disabled,
   modelPending,
-  pickAlreadyMade,
   onPick,
 }: {
   game: BeatTheModelGame;
   team: string;
+  logo?: string | null;
   rank: number;
   side: "Away" | "Home";
-  picked: boolean;
+  selected: boolean;
+  submitted: boolean;
   disabled: boolean;
   modelPending: boolean;
-  pickAlreadyMade: boolean;
   onPick: () => void;
 }) {
   return (
     <button
       type="button"
-      className={`btm-pick-option${picked ? " selected" : ""}`}
+      className={`btm-pick-option${selected ? " selected" : ""}${submitted ? " submitted" : ""}`}
       disabled={disabled}
       onClick={onPick}
-      aria-pressed={picked}
-      aria-label={`Pick number ${rank} ${team} in ${game.awayTeam} at ${game.homeTeam}`}
+      aria-pressed={selected}
+      aria-label={`${submitted ? "Submitted" : "Select"} number ${rank} ${team} in ${game.awayTeam} at ${game.homeTeam}`}
     >
+      <TeamLogo team={team} src={logo} size="md" className="btm-pick-logo" />
       <span className="btm-rank-chip">#{rank}</span>
       <span className="btm-team-copy">
         <strong>{team}</strong>
         <small>{side}</small>
       </span>
       <span className="btm-pick-action">
-        {picked ? "Locked ✓" : modelPending ? "Not open" : pickAlreadyMade ? "Locked" : disabled ? "Locked" : "Pick"}
+        {submitted && selected ? "Submitted ✓" : selected ? "Selected" : modelPending ? "Not open" : disabled ? "Locked" : "Select"}
       </span>
     </button>
   );
@@ -114,9 +118,11 @@ function ScoreRows({ game }: { game: BeatTheModelGame }) {
   return (
     <div className="btm-live-score" aria-label={`${game.awayTeam} ${game.actualAwayScore}, ${game.homeTeam} ${game.actualHomeScore}`}>
       <div className={winner === game.awayTeam ? "winner" : ""}>
+        <TeamLogo team={game.awayTeam} src={game.awayLogo} size="sm" />
         <span>#{game.awayRank}</span><strong>{game.awayTeam}</strong><em>{game.actualAwayScore}</em>
       </div>
       <div className={winner === game.homeTeam ? "winner" : ""}>
+        <TeamLogo team={game.homeTeam} src={game.homeLogo} size="sm" />
         <span>#{game.homeRank}</span><strong>{game.homeTeam}</strong><em>{game.actualHomeScore}</em>
       </div>
     </div>
@@ -185,11 +191,81 @@ function MarketConsensus({ game }: { game: BeatTheModelGame }) {
   );
 }
 
-function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: string; onPick: (team: string) => void }) {
+function PickConfirmation({
+  game,
+  draftPick,
+  submittedPick,
+  onSubmit,
+}: {
+  game: BeatTheModelGame;
+  draftPick?: string;
+  submittedPick?: string;
+  onSubmit: () => void;
+}) {
+  const locked = isLocked(game);
+  if (!game.modelWinner) return null;
+
+  if (submittedPick) {
+    return (
+      <div className="btm-pick-confirmation submitted" aria-live="polite">
+        <div>
+          <span>PICK SUBMITTED</span>
+          <strong>{submittedPick}</strong>
+          <small>Locked in. The Model is now revealed below.</small>
+        </div>
+        <span className="btm-submit-check" aria-hidden="true">✓</span>
+      </div>
+    );
+  }
+
+  if (locked) {
+    return (
+      <div className="btm-pick-confirmation locked">
+        <div><span>PICKING CLOSED</span><strong>Kickoff has passed</strong></div>
+      </div>
+    );
+  }
+
+  if (!draftPick) {
+    return (
+      <div className="btm-pick-confirmation waiting">
+        <div><span>YOUR PICK</span><strong>Select a team above</strong><small>Nothing is locked until you tap Submit.</small></div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="btm-pick-confirmation ready" aria-live="polite">
+      <div>
+        <span>REVIEW YOUR PICK</span>
+        <strong>{draftPick}</strong>
+        <small>You can switch teams above until you submit.</small>
+      </div>
+      <button type="button" className="btm-submit-pick" onClick={onSubmit}>
+        Submit {draftPick}
+      </button>
+    </div>
+  );
+}
+
+function GameCard({
+  game,
+  pick,
+  draftPick,
+  onSelect,
+  onSubmit,
+}: {
+  game: BeatTheModelGame;
+  pick?: string;
+  draftPick?: string;
+  onSelect: (team: string) => void;
+  onSubmit: () => void;
+}) {
   const locked = isLocked(game);
   const modelAvailable = Boolean(game.modelWinner);
-  const pickAlreadyMade = Boolean(pick);
-  const revealed = modelAvailable && (pickAlreadyMade || locked || game.status === "final" || game.status === "live");
+  const submitted = Boolean(pick);
+  const selectedTeam = pick ?? draftPick;
+  const revealed = modelAvailable && (submitted || locked || game.status === "final" || game.status === "live");
   const winner = actualWinner(game);
   const userCorrect = pick && winner ? pick === winner : null;
   const modelCorrect = winner && game.modelWinner ? game.modelWinner === winner : null;
@@ -197,7 +273,7 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
   const margin = typeof game.modelMargin === "number" ? Math.abs(game.modelMargin).toFixed(1) : null;
 
   return (
-    <article className={`btm-game-card${pick ? " has-pick" : ""}${game.status === "live" ? " live" : ""}${game.status === "final" ? " final" : ""}`}>
+    <article className={`btm-game-card${submitted ? " has-pick" : draftPick ? " has-draft" : ""}${game.status === "live" ? " live" : ""}${game.status === "final" ? " final" : ""}`}>
       <header className="btm-game-topline">
         <div><span className="btm-game-number">{game.slot}</span><strong>Game {game.slot}</strong></div>
         <span className={game.status === "live" ? "btm-live-label" : ""}>{gameStatus(game)}</span>
@@ -211,27 +287,31 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
         <PickButton
           game={game}
           team={game.awayTeam}
+          logo={game.awayLogo}
           rank={game.awayRank}
           side="Away"
-          picked={pick === game.awayTeam}
-          disabled={locked || !modelAvailable || pickAlreadyMade}
+          selected={selectedTeam === game.awayTeam}
+          submitted={submitted}
+          disabled={locked || !modelAvailable || submitted}
           modelPending={!modelAvailable}
-          pickAlreadyMade={pickAlreadyMade}
-          onPick={() => onPick(game.awayTeam)}
+          onPick={() => onSelect(game.awayTeam)}
         />
         <div className="btm-versus" aria-hidden="true">AT</div>
         <PickButton
           game={game}
           team={game.homeTeam}
+          logo={game.homeLogo}
           rank={game.homeRank}
           side="Home"
-          picked={pick === game.homeTeam}
-          disabled={locked || !modelAvailable || pickAlreadyMade}
+          selected={selectedTeam === game.homeTeam}
+          submitted={submitted}
+          disabled={locked || !modelAvailable || submitted}
           modelPending={!modelAvailable}
-          pickAlreadyMade={pickAlreadyMade}
-          onPick={() => onPick(game.homeTeam)}
+          onPick={() => onSelect(game.homeTeam)}
         />
       </div>
+
+      <PickConfirmation game={game} draftPick={draftPick} submittedPick={pick} onSubmit={onSubmit} />
 
       <div className={`btm-model-reveal${revealed ? " revealed" : ""}`}>
         {!modelAvailable ? (
@@ -245,7 +325,7 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
             <div className="btm-model-copy">
               <span>THE MODEL PICKED</span>
               <strong>#{modelRank} {game.modelWinner}{margin ? ` · by ${margin}` : ""}</strong>
-              <small>{pick ? (pick === game.modelWinner ? "You made the same call. Your pick is locked." : `You backed ${pick}. This disagreement is locked.`) : "Revealed after kickoff."}</small>
+              <small>{pick ? (pick === game.modelWinner ? "You made the same call. Your submitted pick is locked." : `You backed ${pick}. This disagreement is locked.`) : "Revealed after kickoff."}</small>
             </div>
 
             {game.status === "final" ? (
@@ -265,8 +345,8 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
         ) : (
           <div className="btm-model-copy btm-model-hidden">
             <span>THE MODEL</span>
-            <strong>Hidden until you pick</strong>
-            <small>Your opinion comes first. Your first pick is final and reveals the opponent.</small>
+            <strong>Hidden until you submit</strong>
+            <small>Select either team, review the choice, then submit. The Model stays hidden until confirmation.</small>
           </div>
         )}
       </div>
@@ -276,6 +356,7 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
 
 export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
   const [picks, setPicks] = useState<Picks>({});
+  const [draftPicks, setDraftPicks] = useState<Picks>({});
   const [hydrated, setHydrated] = useState(false);
   const [filter, setFilter] = useState<ViewFilter>("all");
 
@@ -289,19 +370,34 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
     } catch {
       // Browser storage is optional; the game still works for the current page view.
     }
+    setDraftPicks({});
     setHydrated(true);
   }, [data.season, data.week]);
 
-  function choose(game: BeatTheModelGame, team: string) {
-    if (isLocked(game) || !game.modelWinner) return;
+  function selectDraft(game: BeatTheModelGame, team: string) {
+    if (isLocked(game) || !game.modelWinner || picks[game.id]) return;
+    if (team !== game.homeTeam && team !== game.awayTeam) return;
+    setDraftPicks((current) => ({ ...current, [game.id]: team }));
+  }
+
+  function submitPick(game: BeatTheModelGame) {
+    if (isLocked(game) || !game.modelWinner || picks[game.id]) return;
+    const team = draftPicks[game.id];
+    if (!team || (team !== game.homeTeam && team !== game.awayTeam)) return;
+
     setPicks((current) => {
       if (current[game.id]) return current;
       const next = { ...current, [game.id]: team };
       try {
         window.localStorage.setItem(storageKey(data), JSON.stringify(next));
       } catch {
-        // Keep the in-memory pick if storage is unavailable.
+        // Keep the submitted in-memory pick if storage is unavailable.
       }
+      return next;
+    });
+    setDraftPicks((current) => {
+      const next = { ...current };
+      delete next[game.id];
       return next;
     });
   }
@@ -346,15 +442,15 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
           <p>{data.status === "awaiting-model"
             ? "The card is published. Picking opens automatically after every selected game has a frozen pregame model call."
             : data.status === "final"
-              ? "The week is final. Your saved card is graded beside The Model."
+              ? "The week is final. Your submitted card is graded beside The Model."
               : data.status === "locked"
                 ? "The card is locked. Follow the scores and watch your head-to-head with The Model."
-                : "Use the rankings and market context, then make your call. Your first pick locks and reveals The Model."}</p>
+                : "Select a winner, review it, then submit. Only the submitted pick reveals The Model and becomes final."}</p>
         </div>
 
-        <div className="btm-card-progress" aria-label={`${pickedCount} of ${data.games.length} picks made`}>
+        <div className="btm-card-progress" aria-label={`${pickedCount} of ${data.games.length} picks submitted`}>
           <div>
-            <span>{data.status === "awaiting-model" ? "Games ready" : cardComplete ? "Card complete" : "Your card"}</span>
+            <span>{data.status === "awaiting-model" ? "Games ready" : cardComplete ? "Card complete" : "Submitted"}</span>
             <strong>{data.status === "awaiting-model" ? `${data.games.length}/${data.slateSize}` : hydrated ? `${pickedCount}/${data.games.length}` : "—"}</strong>
           </div>
           {data.status !== "awaiting-model" ? <div className="btm-progress-track" aria-hidden="true"><span style={{ width: `${progress}%` }} /></div> : null}
@@ -364,7 +460,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
       {data.status === "awaiting-model" ? (
         <div className="btm-week-message">
           <div><strong>The matchups are official.</strong><span>Browse all 15, the BTM ranks, and the market consensus.</span></div>
-          <div><strong>The Model is still locking.</strong><span>No picks can be made until the full pregame snapshot is ready.</span></div>
+          <div><strong>The Model is still locking.</strong><span>No picks can be submitted until the full pregame snapshot is ready.</span></div>
         </div>
       ) : finalGames.length || liveGames.length ? (
         <div className="btm-scoreboard">
@@ -378,7 +474,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
         <div className="btm-pick-controls">
           <div className="btm-filter-tabs" role="tablist" aria-label="Filter games">
             <button type="button" className={filter === "all" ? "active" : ""} onClick={() => setFilter("all")}>All <span>{data.games.length}</span></button>
-            <button type="button" className={filter === "unpicked" ? "active" : ""} onClick={() => setFilter("unpicked")}>Unpicked <span>{data.games.length - pickedCount}</span></button>
+            <button type="button" className={filter === "unpicked" ? "active" : ""} onClick={() => setFilter("unpicked")}>Unsubmitted <span>{data.games.length - pickedCount}</span></button>
             <button type="button" className={filter === "disagree" ? "active" : ""} onClick={() => setFilter("disagree")}>Disagreements <span>{disagreements}</span></button>
           </div>
           {cardComplete ? <strong className="btm-card-done">Card complete ✓</strong> : null}
@@ -387,14 +483,21 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
 
       <div className="btm-game-list">
         {visibleGames.map((game) => (
-          <GameCard key={game.id} game={game} pick={picks[game.id]} onPick={(team) => choose(game, team)} />
+          <GameCard
+            key={game.id}
+            game={game}
+            pick={picks[game.id]}
+            draftPick={draftPicks[game.id]}
+            onSelect={(team) => selectDraft(game, team)}
+            onSubmit={() => submitPick(game)}
+          />
         ))}
       </div>
 
       {!visibleGames.length ? (
         <div className="fan-empty-state btm-filter-empty">
-          <h3>{filter === "unpicked" ? "You picked every game." : "No disagreements yet."}</h3>
-          <p>{filter === "unpicked" ? "Your full card is set. Every pick locked when it revealed The Model." : "Make more picks to find out where you and The Model split."}</p>
+          <h3>{filter === "unpicked" ? "You submitted every game." : "No disagreements yet."}</h3>
+          <p>{filter === "unpicked" ? "Your full card is set. Every submitted pick is locked." : "Submit more picks to find out where you and The Model split."}</p>
           <button type="button" className="fan-button fan-button-secondary" onClick={() => setFilter("all")}>Show the full card</button>
         </div>
       ) : null}
