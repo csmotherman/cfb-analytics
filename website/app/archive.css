@@ -21,16 +21,24 @@
 .archive-tabs button.active:first-child{color:var(--cyan)}.archive-tabs button.active:last-child{color:var(--mint)}
 
 .archive-table-shell{background:#0D141F}.archive-table-scroll{overflow:auto;max-width:100%}
-.archive-table{width:100%;min-width:1080px;border-collapse:separate;border-spacing:0}
+.archive-table{width:100%;min-width:1120px;border-collapse:separate;border-spacing:0}
 .archive-table thead th{position:sticky;top:0;z-index:2;padding:11px 14px;border-bottom:1px solid var(--border-strong);background:#111A28;color:var(--steel);font-size:9px;font-weight:900;letter-spacing:.09em;text-align:left;text-transform:uppercase;white-space:nowrap}
 .archive-table tbody td{padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.055);color:var(--text-soft);font-size:12px;vertical-align:middle}
 .archive-table tbody tr:last-child td{border-bottom:0}.archive-table tbody tr:hover td{background:rgba(6,182,212,.028)}
 .archive-table tbody tr.archive-recommended-row td{background:rgba(245,158,11,.025)}.archive-table tbody tr.archive-recommended-row:hover td{background:rgba(245,158,11,.045)}
 .archive-data{font-family:var(--font-data);font-variant-numeric:tabular-nums;color:var(--steel)!important}
-.archive-team-cell{display:grid;gap:3px;min-width:135px}.archive-team-cell strong{color:var(--text);font-size:12px}.archive-team-cell span{color:var(--steel-dim);font-family:var(--font-data);font-size:9px}
+.archive-team-score-cell{display:grid;align-items:center;gap:9px;min-width:155px;color:var(--text-soft)}
+.archive-home-score-cell{grid-template-columns:34px minmax(0,1fr)}
+.archive-away-score-cell{grid-template-columns:minmax(0,1fr) 34px}
+.archive-team-score-cell strong{overflow:hidden;color:var(--text);font-size:12px;font-weight:760;line-height:1.25;text-overflow:ellipsis;white-space:nowrap}
+.archive-home-score-cell strong{text-align:left}.archive-away-score-cell strong{text-align:left}
+.archive-final-score-number{display:inline-grid;place-items:center;min-width:31px;height:29px;padding:0 5px;border:1px solid rgba(255,255,255,.08);border-radius:8px;background:#111A28;color:var(--text-soft);font-family:var(--font-data);font-size:13px;font-weight:850;font-variant-numeric:tabular-nums}
+.archive-team-winner .archive-final-score-number{border-color:rgba(16,185,129,.22);background:rgba(16,185,129,.07);color:var(--mint)}
+.archive-team-winner strong{font-weight:900}
 .archive-line{font-family:var(--font-data);font-variant-numeric:tabular-nums;font-size:11px;font-weight:750;white-space:nowrap}.archive-market-line{color:var(--text-soft)}.archive-model-line{color:var(--cyan)}
 .archive-model-prediction{display:flex;align-items:center;gap:8px}.archive-bet-pill{display:inline-flex;align-items:center;padding:3px 6px;border:1px solid rgba(245,158,11,.3);border-radius:999px;background:rgba(245,158,11,.09);color:var(--amber);font-size:8px;font-weight:950;letter-spacing:.08em}
 .archive-subtext{display:block;margin-top:4px;color:var(--steel-dim);font-size:9px}.archive-bet-subtext{color:#C8A45A}
+.archive-missing-value{display:block;color:var(--steel-dim);font-family:var(--font-data);font-size:10px;font-weight:650;white-space:nowrap}
 .archive-center{text-align:center!important}
 .archive-mark{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:8px;font-family:var(--font-data);font-size:15px;font-weight:900}.archive-mark-win{border:1px solid rgba(16,185,129,.28);background:rgba(16,185,129,.1);color:var(--mint)}.archive-mark-loss{border:1px solid rgba(244,63,94,.28);background:rgba(244,63,94,.1);color:var(--crimson)}.archive-mark-neutral{border:1px solid var(--border);background:rgba(255,255,255,.025);color:var(--steel-dim)}
 
