@@ -3,7 +3,7 @@ import path from "node:path";
 
 import type { PredictionReason } from "./predictions";
 
-export const ARCHIVE_SEASONS = Array.from({ length: 12 }, (_, index) => 2025 - index);
+export const ARCHIVE_SEASONS = [2025, 2024, 2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014];
 
 export type ArchiveGame = {
   id: string;
@@ -109,8 +109,8 @@ export function getArchiveIndex(): ArchiveIndexEntry[] {
       for (const week of discoverWeeksInDirectory(directory)) weeks.add(week);
     }
 
-    // Keep every historical season navigable before generated archive files are
-    // copied into the website. Missing weeks render an explicit empty state.
+    // Keep every supported historical season navigable before generated archive files are
+    // copied into the website. The COVID-disrupted 2020 season is intentionally excluded.
     const discovered = [...weeks].sort((a, b) => a - b);
     return { season, weeks: discovered.length ? discovered : Array.from({ length: 21 }, (_, week) => week) };
   });
