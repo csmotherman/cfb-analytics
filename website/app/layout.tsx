@@ -7,6 +7,7 @@ import "./pools.css";
 import "./fan-ui.css";
 import "./fan-v2.css";
 import "./fan-v3.css";
+import "./market-ui.css";
 import { Nav } from "../components/Nav";
 
 const inter = Inter({
