@@ -1,0 +1,22 @@
+name: Agent notebook SRS validation
+
+on:
+  push:
+    branches:
+      - agent/notebook-srs-elasticnet
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e '.[dev,models]'
+      - name: Notebook model tests
+        run: pytest -q tests/analytics/test_notebook_srs_elasticnet.py
+      - name: Full test suite
+        run: pytest -q
