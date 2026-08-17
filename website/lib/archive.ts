@@ -90,12 +90,14 @@ const PROJECT_ROOT = path.resolve(process.cwd(), "..");
 
 function archiveCandidates(season: number, week: number): string[] {
   return [
-    path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`, `week=${week}.json`),
+    // The deployable published archive is authoritative. Keep development/processed
+    // outputs only as fallbacks so an older local export cannot shadow fresh website data.
     path.join(PROJECT_ROOT, "website", "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "data", "archive", String(season), `week-${week}.json`),
     path.join(process.cwd(), "website", "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "website", "data", "archive", String(season), `week-${week}.json`),
+    path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`, `week=${week}.json`),
   ];
 }
 
@@ -183,12 +185,12 @@ export function getArchiveIndex(): ArchiveIndexEntry[] {
   return ARCHIVE_SEASONS.map((season) => {
     const weeks = new Set<number>();
     for (const directory of [
-      path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`),
       path.join(PROJECT_ROOT, "website", "data", "archive", `season=${season}`),
       path.join(process.cwd(), "data", "archive", `season=${season}`),
       path.join(process.cwd(), "data", "archive", String(season)),
       path.join(process.cwd(), "website", "data", "archive", `season=${season}`),
       path.join(process.cwd(), "website", "data", "archive", String(season)),
+      path.join(PROJECT_ROOT, "data", "processed", "website", "prediction_archive", `season=${season}`),
     ]) {
       for (const week of discoverWeeksInDirectory(directory)) weeks.add(week);
     }
