@@ -5,6 +5,8 @@ import pytest
 from cfb_analytics.analytics.iterative_ratings import SPECS
 from cfb_analytics.analytics.prediction_v2 import PREDICTION_V2_FEATURES
 from cfb_analytics.analytics.prediction_v2_2026_features import (
+    _complete_history_game_ids,
+    _history_site_games,
     _target_schedule,
     build_early_prior_feature_row,
 )
@@ -145,3 +147,82 @@ def test_target_schedule_rejects_partition_after_scores_exist(tmp_path):
     games_path.write_text(json.dumps([{**base, "homePoints": 21, "awayPoints": 17}]))
     with pytest.raises(ValueError, match="already contains scores"):
         _target_schedule(raw_root, 2026, "regular", 1)
+
+
+def test_complete_history_game_ids_requires_exact_two_team_rows():
+    rows = [
+        {"gameId": "1", "team": "A"},
+        {"gameId": "1", "team": "B"},
+        {"gameId": "2", "team": "C"},
+        {"gameId": "2", "team": "D"},
+    ]
+    assert _complete_history_game_ids(rows) == {"1", "2"}
+
+    with pytest.raises(ValueError, match="exactly two team rows"):
+        _complete_history_game_ids(rows[:-1])
+
+
+def test_history_site_games_ignores_raw_finals_outside_derived_sample(tmp_path):
+    raw_root = tmp_path / "raw"
+    history_path = partition_dir(raw_root, 2026, "regular", 1)
+    history_path.mkdir(parents=True)
+    (history_path / "games.json").write_text(
+        json.dumps(
+            [
+                {
+                    "id": 1,
+                    "homeTeam": "A",
+                    "awayTeam": "B",
+                    "homePoints": 24,
+                    "awayPoints": 17,
+                    "neutralSite": False,
+                },
+                {
+                    "id": 2,
+                    "homeTeam": "C",
+                    "awayTeam": "D",
+                    "homePoints": 31,
+                    "awayPoints": 14,
+                    "neutralSite": False,
+                },
+            ]
+        )
+    )
+
+    rows = _history_site_games(
+        raw_root,
+        2026,
+        "regular",
+        2,
+        required_game_ids={"1"},
+    )
+    assert [str(row["gameId"]) for row in rows] == ["1"]
+
+
+def test_history_site_games_requires_raw_final_for_every_derived_game(tmp_path):
+    raw_root = tmp_path / "raw"
+    history_path = partition_dir(raw_root, 2026, "regular", 1)
+    history_path.mkdir(parents=True)
+    (history_path / "games.json").write_text(
+        json.dumps(
+            [
+                {
+                    "id": 1,
+                    "homeTeam": "A",
+                    "awayTeam": "B",
+                    "homePoints": 24,
+                    "awayPoints": 17,
+                    "neutralSite": False,
+                }
+            ]
+        )
+    )
+
+    with pytest.raises(ValueError, match="missing raw final/site"):
+        _history_site_games(
+            raw_root,
+            2026,
+            "regular",
+            2,
+            required_game_ids={"1", "2"},
+        )
