@@ -4,9 +4,11 @@ The website archive is deliberately truthful:
 - every game that can be reconstructed from canonical historical data is exported;
 - the COVID-disrupted 2020 season is intentionally omitted from the comparable archive;
 - market spreads are attached from the frozen CFBD historical reference snapshot when available;
-- a model pick is attached only when a stored historical OOS Prediction-v2 row exists;
+- stored mature minGames=3 Prediction-v2 OOS calls remain authoritative;
+- the frozen early-prior Prediction-v2 rule is reconstructed in chronological folds
+  and used only to fill games that otherwise have no stored mature OOS call;
 - recommended bets come only from the previously selected FULL ATS logistic min3/.575 baseline;
-- no later result is used to manufacture a missing prediction or recommendation.
+- no later result is used to tune or manufacture a missing prediction or recommendation.
 """
 from __future__ import annotations
 
@@ -17,11 +19,16 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
+from cfb_analytics.analytics.historical_prediction_v2_archive import (
+    EARLY_ARCHIVE_SOURCE,
+    build_early_prior_oos_predictions,
+    combine_historical_oos_predictions,
+)
 from cfb_analytics.canonical.materialize import canonical_partition_dir
 from cfb_analytics.derived.pregame import game_contexts
 from cfb_analytics.raw.audit import discover_partitions
 
-ARCHIVE_VERSION = "website-prediction-archive-v2"
+ARCHIVE_VERSION = "website-prediction-archive-v3"
 ARCHIVE_SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 DEFAULT_BENCHMARK = Path("data/processed/market_benchmark/prediction-v2-vs-clean-market-games.json")
 DEFAULT_MARKET_LINES = Path("data/raw/market_lines/cfbd-market-spreads-2014-2025.json")
@@ -50,6 +57,7 @@ def _read_json(path: Path) -> Any:
 
 
 def load_oos_predictions(path: Path) -> dict[str, dict[str, Any]]:
+    """Load the existing stored mature minGames=3 Prediction-v2 OOS benchmark rows."""
     if not path.exists():
         return {}
     payload = _read_json(path)
@@ -67,6 +75,17 @@ def load_oos_predictions(path: Path) -> dict[str, dict[str, Any]]:
             raise ValueError(f"Duplicate min{MIN_GAMES} historical model row for gameId {key}")
         out[key] = row
     return out
+
+
+def load_combined_oos_predictions(
+    raw_root: Path,
+    processed_root: Path,
+    benchmark_path: Path,
+) -> tuple[dict[str, dict[str, Any]], dict[str, int]]:
+    """Load mature OOS calls and supplement missing calls with frozen early-prior OOS rows."""
+    mature = load_oos_predictions(benchmark_path)
+    early = build_early_prior_oos_predictions(raw_root, processed_root)
+    return combine_historical_oos_predictions(mature, early)
 
 
 def load_market_spreads(path: Path) -> dict[str, dict[str, Any]]:
@@ -214,6 +233,10 @@ def archive_record(
                 "correct": winner_correct,
                 "modelAbsoluteError": abs(model_margin - actual_margin),
                 "evidenceStatus": "official-oos",
+                "predictionSource": prediction.get("predictionSource"),
+                "earlyPriorVersion": prediction.get("earlyPriorVersion"),
+                "priorWeightHome": prediction.get("priorWeightHome"),
+                "priorWeightAway": prediction.get("priorWeightAway"),
             }
         )
 
@@ -308,7 +331,7 @@ def export_archive(
     *,
     overwrite: bool,
 ) -> dict[str, Any]:
-    predictions = load_oos_predictions(benchmark_path)
+    predictions, prediction_counts = load_combined_oos_predictions(raw_root, processed_root, benchmark_path)
     market = load_market_spreads(market_lines_path)
     recommended_bets, recommended_source = load_recommended_bets(recommended_bets_path, fallback_bets_path)
     season_summaries: list[dict[str, Any]] = []
@@ -351,7 +374,7 @@ def export_archive(
             destination.write_text(
                 json.dumps(
                     {
-                        "schemaVersion": 2,
+                        "schemaVersion": 3,
                         "archiveVersion": ARCHIVE_VERSION,
                         "season": season,
                         "week": week,
@@ -380,6 +403,11 @@ def export_archive(
                     for games in grouped.values()
                     for row in games
                 ),
+                "earlyPriorModelGames": sum(
+                    row.get("predictionSource") == EARLY_ARCHIVE_SOURCE
+                    for games in grouped.values()
+                    for row in games
+                ),
                 "recommendedBets": sum(
                     row.get("recommendedBet") is True
                     for games in grouped.values()
@@ -394,6 +422,11 @@ def export_archive(
         "seasons": list(ARCHIVE_SEASONS),
         "games": total_games,
         "officialOosModelGames": total_model_games,
+        "matureOosModelGames": prediction_counts["mature"],
+        "earlyPriorGeneratedGames": prediction_counts["earlyGenerated"],
+        "earlyPriorOverlapGames": prediction_counts["earlyOverlap"],
+        "earlyPriorSupplementGames": prediction_counts["earlySupplement"],
+        "combinedOosModelGames": prediction_counts["combined"],
         "benchmarkSourcePresent": benchmark_path.exists(),
         "marketSourcePresent": market_lines_path.exists(),
         "marketRows": len(market),
@@ -428,7 +461,11 @@ def main() -> None:
     print("WEBSITE PREDICTION ARCHIVE: BUILT")
     print(f"Version: {report['version']}")
     print(f"Historical games: {report['games']:,}")
-    print(f"Official OOS model games attached: {report['officialOosModelGames']:,}")
+    print(f"Stored mature OOS model games: {report['matureOosModelGames']:,}")
+    print(f"Early-prior OOS rows generated: {report['earlyPriorGeneratedGames']:,}")
+    print(f"Early-prior overlap with mature OOS: {report['earlyPriorOverlapGames']:,}")
+    print(f"Early-prior supplemental model games: {report['earlyPriorSupplementGames']:,}")
+    print(f"Combined OOS model games attached: {report['officialOosModelGames']:,}")
     print(f"Market rows available: {report['marketRows']:,}")
     print(f"Recommended bets attached: {report['recommendedBets']:,}")
     print(f"Recommended-bet source: {report['recommendedBetSource'] or 'MISSING'}")
@@ -436,7 +473,8 @@ def main() -> None:
         print(
             f" {row['season']}: weeks={row['weeks']:2d} games={row['games']:4d} "
             f"market={row['marketGames']:4d} model={row['officialOosModelGames']:4d} "
-            f"bets={row['recommendedBets']:3d} missing_partition={row['missingPartition']}"
+            f"early={row['earlyPriorModelGames']:3d} bets={row['recommendedBets']:3d} "
+            f"missing_partition={row['missingPartition']}"
         )
     print(f"Archive root: {args.output_root}")
 
