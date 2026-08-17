@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./archive.css";
 import "./beat-the-model.css";
+import "./pools.css";
 import { Nav } from "../components/Nav";
 
 const inter = Inter({
