@@ -3,12 +3,24 @@
 import { useEffect, useMemo, useState } from "react";
 
 import type { BeatTheModelDataset, BeatTheModelGame } from "../lib/beat-the-model";
-import { formatKickoff } from "../lib/beat-the-model";
 
 type Picks = Record<string, string>;
 
 function storageKey(data: BeatTheModelDataset): string {
   return `beat-the-model:picks:${data.season}:${data.week}`;
+}
+
+function formatKickoff(value: string | null | undefined): string | null {
+  if (!value) return null;
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(date);
 }
 
 function actualWinner(game: BeatTheModelGame): string | null {
@@ -183,9 +195,9 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
     return (
       <section className="btm-awaiting">
         <div>
-          <span className="eyebrow">2026 WEEK {data.week}</span>
+          <span className="eyebrow">{data.season} WEEK {data.week}</span>
           <h2>The Official 15 has not been published yet.</h2>
-          <p>Week 1 team rankings are seeded from the final 2025 power ratings. Once the live Week 1 schedule and frozen model predictions are published, the 15 highest-rated eligible matchups will appear here automatically.</p>
+          <p>Week 1 team rankings are seeded from the final {data.season - 1} power ratings. Once the live Week 1 schedule and frozen model predictions are published, the 15 highest-rated eligible matchups will appear here automatically.</p>
         </div>
         <div className="btm-awaiting-rules">
           <span>15 games</span>
@@ -202,7 +214,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
       <div className="btm-slate-header">
         <div>
           <span className="eyebrow">OFFICIAL {data.slateSize}</span>
-          <h2 id="official-slate-heading">2026 Week {data.week}</h2>
+          <h2 id="official-slate-heading">{data.season} Week {data.week}</h2>
           <p>Make your choice first. The Model's pick is revealed only after yours.</p>
         </div>
         <div className="btm-progress-card">
