@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import type { ArchiveIndexEntry } from "../lib/archive";
@@ -32,6 +32,16 @@ export function ArchiveBrowser({
     [index, season],
   );
   const [week, setWeek] = useState(preferredWeek(defaultWeeks, initialWeek));
+
+  useEffect(() => {
+    if (typeof initialSeason !== "number") return;
+    const nextSeason = index.some((entry) => entry.season === initialSeason)
+      ? initialSeason
+      : (index[0]?.season ?? initialSeason);
+    const nextWeeks = index.find((entry) => entry.season === nextSeason)?.weeks ?? [];
+    setSeason(nextSeason);
+    setWeek(preferredWeek(nextWeeks, initialWeek));
+  }, [index, initialSeason, initialWeek]);
 
   function changeSeason(value: number) {
     const nextWeeks = index.find((entry) => entry.season === value)?.weeks ?? [];
