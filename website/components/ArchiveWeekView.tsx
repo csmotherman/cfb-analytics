@@ -9,8 +9,12 @@ function compactNumber(value: number): string {
   return Number.isInteger(rounded) ? rounded.toFixed(0) : rounded.toFixed(1);
 }
 
-function formatTeamLine(homeMargin: number | null | undefined, homeTeam: string, awayTeam: string): string {
-  if (typeof homeMargin !== "number" || !Number.isFinite(homeMargin)) return "—";
+function formatTeamLine(
+  homeMargin: number | null | undefined,
+  homeTeam: string,
+  awayTeam: string,
+): string | null {
+  if (typeof homeMargin !== "number" || !Number.isFinite(homeMargin)) return null;
   if (Math.abs(homeMargin) < 1e-9) return "Pick'em";
   const favorite = homeMargin > 0 ? homeTeam : awayTeam;
   return `${favorite} -${compactNumber(Math.abs(homeMargin))}`;
@@ -38,12 +42,21 @@ function ResultMark({ value, push = false }: { value: boolean | null | undefined
 }
 
 function TeamCell({ game, side }: { game: ArchiveGame; side: "home" | "away" }) {
-  const team = side === "home" ? game.homeTeam : game.awayTeam;
-  const score = side === "home" ? game.actualHomeScore : game.actualAwayScore;
+  const isHome = side === "home";
+  const team = isHome ? game.homeTeam : game.awayTeam;
+  const score = isHome ? game.actualHomeScore : game.actualAwayScore;
+  const otherScore = isHome ? game.actualAwayScore : game.actualHomeScore;
+  const isWinner = typeof score === "number" && typeof otherScore === "number" && score > otherScore;
+
   return (
-    <div className="archive-team-cell">
+    <div className={`archive-team-score-cell ${isHome ? "archive-home-score-cell" : "archive-away-score-cell"}${isWinner ? " archive-team-winner" : ""}`}>
+      {isHome && typeof score === "number" ? (
+        <span className="archive-final-score-number" aria-label={`${team} final score ${score}`}>{score}</span>
+      ) : null}
       <strong>{team}</strong>
-      {typeof score === "number" ? <span>Final: {score}</span> : null}
+      {!isHome && typeof score === "number" ? (
+        <span className="archive-final-score-number" aria-label={`${team} final score ${score}`}>{score}</span>
+      ) : null}
     </div>
   );
 }
@@ -76,24 +89,37 @@ function ArchiveTable({ games }: { games: ArchiveGame[] }) {
                   <td><TeamCell game={game} side="home" /></td>
                   <td><TeamCell game={game} side="away" /></td>
                   <td>
-                    <div className="archive-line archive-market-line">{marketLine}</div>
-                    {game.marketProvider ? <span className="archive-subtext">{game.marketProvider}</span> : null}
+                    {marketLine ? (
+                      <>
+                        <div className="archive-line archive-market-line">{marketLine}</div>
+                        {game.marketProvider ? <span className="archive-subtext">{game.marketProvider}</span> : null}
+                      </>
+                    ) : (
+                      <span className="archive-missing-value">No market line</span>
+                    )}
                   </td>
                   <td>
-                    <div className="archive-model-prediction">
-                      <span className="archive-line archive-model-line">{modelLine}</span>
-                      {game.recommendedBet ? <span className="archive-bet-pill">BET</span> : null}
-                    </div>
-                    {game.recommendedBet && game.recommendedBetTeam ? (
-                      <span className="archive-subtext archive-bet-subtext">
-                        ATS: {game.recommendedBetTeam}
-                        {typeof game.recommendedBetConfidence === "number"
-                          ? ` · ${(game.recommendedBetConfidence * 100).toFixed(1)}%`
-                          : ""}
-                      </span>
-                    ) : game.evidenceStatus !== "official-oos" ? (
-                      <span className="archive-subtext">No official OOS model call</span>
-                    ) : null}
+                    {modelLine ? (
+                      <>
+                        <div className="archive-model-prediction">
+                          <span className="archive-line archive-model-line">{modelLine}</span>
+                          {game.recommendedBet ? <span className="archive-bet-pill">BET</span> : null}
+                        </div>
+                        {game.recommendedBet && game.recommendedBetTeam ? (
+                          <span className="archive-subtext archive-bet-subtext">
+                            ATS: {game.recommendedBetTeam}
+                            {typeof game.recommendedBetConfidence === "number"
+                              ? ` · ${(game.recommendedBetConfidence * 100).toFixed(1)}%`
+                              : ""}
+                          </span>
+                        ) : null}
+                      </>
+                    ) : (
+                      <>
+                        <span className="archive-missing-value">No model call</span>
+                        <span className="archive-subtext">No supported OOS prediction for this game</span>
+                      </>
+                    )}
                   </td>
                   <td className="archive-center">
                     <ResultMark value={game.atsCorrect} push={game.atsResult === "PUSH"} />
@@ -117,7 +143,7 @@ function ResultsPanel({ summary }: { summary?: ArchiveWeekSummary }) {
       <div className="archive-results-empty">
         <span className="eyebrow">RESULTS</span>
         <h3>No official OOS model results for this week.</h3>
-        <p>The historical games and market lines can still be shown, but this season does not have a supported Prediction-v2 out-of-sample record.</p>
+        <p>The historical games, final scores, and available market lines are still shown. A model result only appears when a supported out-of-sample Prediction-v2 call exists.</p>
       </div>
     );
   }
