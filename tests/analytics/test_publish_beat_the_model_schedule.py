@@ -2,8 +2,11 @@ import json
 from pathlib import Path
 from types import SimpleNamespace
 
+import pytest
+
 from cfb_analytics.analytics.publish_beat_the_model_schedule import (
     build_week_rankings,
+    market_consensus,
     select_slate,
 )
 
@@ -63,6 +66,20 @@ def _game(
     }
 
 
+def _schedule_game(game_id: str, home: str, away: str) -> dict:
+    return {
+        "id": game_id,
+        "season": 2026,
+        "week": 1,
+        "homeTeam": home,
+        "awayTeam": away,
+        "kickoff": None,
+        "completed": False,
+        "actualHomeScore": None,
+        "actualAwayScore": None,
+    }
+
+
 def test_week1_rankings_reuse_previous_season_final_seed_exactly(tmp_path):
     expected = _write_week1_seed(tmp_path, [("Alpha", 12.5), ("Beta", 8.0)])
     actual = build_week_rankings(FakeClient({}), tmp_path, season=2026, week=1)
@@ -76,8 +93,6 @@ def test_week2_rankings_blend_numeric_seed_with_completed_current_season_games(t
     _write_week1_seed(tmp_path, [("Alpha", 20.0), ("Beta", 10.0)])
     client = FakeClient(
         {
-            # A large neutral-site result makes the 25% current-season component
-            # easy to distinguish from the Week 1 seed in this two-team fixture.
             1: [_game("g1", "Beta", "Alpha", home_points=90, away_points=10, completed=True, neutral=True)],
         }
     )
@@ -85,11 +100,44 @@ def test_week2_rankings_blend_numeric_seed_with_completed_current_season_games(t
     payload = build_week_rankings(client, tmp_path, season=2026, week=2)
     by_team = {row["team"]: row for row in payload["teams"]}
 
-    # One game played means 75% previous-season rating and 25% current SRS.
     assert by_team["Alpha"]["gamesBefore"] == 1
     assert by_team["Beta"]["gamesBefore"] == 1
     assert by_team["Beta"]["rating"] > by_team["Alpha"]["rating"]
     assert payload["historyGames"] == 1
+
+
+def test_market_consensus_uses_median_spread_and_no_vig_moneyline_probability():
+    payload = market_consensus(
+        {
+            "id": 123,
+            "homeTeam": "Alpha",
+            "awayTeam": "Beta",
+            "lines": [
+                {
+                    "provider": "Book A",
+                    "spread": -2.5,
+                    "formattedSpread": "Alpha -2.5",
+                    "homeMoneyline": -120,
+                    "awayMoneyline": 110,
+                },
+                {
+                    "provider": "Book B",
+                    "spread": -3.0,
+                    "formattedSpread": "Alpha -3",
+                    "homeMoneyline": -130,
+                    "awayMoneyline": 115,
+                },
+            ],
+        }
+    )
+
+    assert payload is not None
+    assert payload["marketProviderCount"] == 2
+    assert payload["marketSpread"] == pytest.approx(2.75)
+    assert payload["marketFavorite"] == "Alpha"
+    assert payload["marketLine"] == "Alpha -2.75"
+    assert payload["marketHomeWinProbability"] > 0.5
+    assert payload["marketHomeWinProbability"] + payload["marketAwayWinProbability"] == pytest.approx(1.0)
 
 
 def test_live_official_15_selection_does_not_require_or_rank_by_model_calls():
@@ -100,22 +148,10 @@ def test_live_official_15_selection_does_not_require_or_rank_by_model_calls():
         ]
     }
     schedule = [
-        {
-            "id": f"g{index}",
-            "season": 2026,
-            "week": 1,
-            "homeTeam": f"T{2 * index - 1}",
-            "awayTeam": f"T{2 * index}",
-            "kickoff": None,
-            "completed": False,
-            "actualHomeScore": None,
-            "actualAwayScore": None,
-        }
+        _schedule_game(f"g{index}", f"T{2 * index - 1}", f"T{2 * index}")
         for index in range(1, 17)
     ]
 
-    # Give only the lowest-ranked matchup a model call. It still must not jump
-    # into the Official 15 because model availability is not a selection input.
     selected = select_slate(
         schedule,
         rankings,
@@ -128,6 +164,47 @@ def test_live_official_15_selection_does_not_require_or_rank_by_model_calls():
     assert all(game["modelWinner"] is None for game in selected)
 
 
+def test_market_competitiveness_keeps_a_big_ranked_mismatch_out_of_official_15():
+    rankings = {
+        "teams": [
+            {"rank": rank, "team": f"T{rank}", "rating": 100 - rank}
+            for rank in range(1, 51)
+        ]
+    }
+    schedule = []
+    market_by_id = {}
+    for index in range(15):
+        home_rank = 2 + index * 2
+        away_rank = home_rank + 1
+        gid = f"close-{index}"
+        schedule.append(_schedule_game(gid, f"T{home_rank}", f"T{away_rank}"))
+        market_by_id[gid] = {
+            "marketProviderCount": 3,
+            "marketSpread": 3.0,
+            "marketFavorite": f"T{home_rank}",
+        }
+
+    schedule.append(_schedule_game("mismatch", "T1", "T50"))
+    market_by_id["mismatch"] = {
+        "marketProviderCount": 3,
+        "marketSpread": 24.0,
+        "marketFavorite": "T1",
+    }
+
+    selected = select_slate(
+        schedule,
+        rankings,
+        existing_current={},
+        model_by_id={"mismatch": {"predictedWinner": "T1", "predictedMargin": 30.0}},
+        market_by_id=market_by_id,
+        market_snapshot_at="2026-08-17T18:48:06+00:00",
+    )
+
+    assert len(selected) == 15
+    assert "mismatch" not in {game["id"] for game in selected}
+    assert all(game["marketSpread"] == 3.0 for game in selected)
+
+
 def test_open_slate_keeps_frozen_game_ids_when_schedule_is_refreshed():
     rankings = {
         "teams": [
@@ -136,17 +213,7 @@ def test_open_slate_keeps_frozen_game_ids_when_schedule_is_refreshed():
         ]
     }
     schedule = [
-        {
-            "id": gid,
-            "season": 2026,
-            "week": 1,
-            "homeTeam": home,
-            "awayTeam": away,
-            "kickoff": None,
-            "completed": False,
-            "actualHomeScore": None,
-            "actualAwayScore": None,
-        }
+        _schedule_game(gid, home, away)
         for gid, home, away in (
             ("top", "T1", "T2"),
             ("frozen-a", "T3", "T4"),
@@ -157,8 +224,24 @@ def test_open_slate_keeps_frozen_game_ids_when_schedule_is_refreshed():
     existing = {
         "status": "open",
         "games": [
-            {"id": "frozen-a", "modelWinner": "T3"},
-            {"id": "frozen-b", "modelWinner": "T5"},
+            {
+                "id": "frozen-a",
+                "modelWinner": "T3",
+                "marketSource": "cfbd-lines-consensus-v1",
+                "marketProviderCount": 2,
+                "marketSpread": 2.5,
+                "marketFavorite": "T3",
+                "marketSnapshotAt": "2026-08-17T18:00:00+00:00",
+            },
+            {
+                "id": "frozen-b",
+                "modelWinner": "T5",
+                "marketSource": "cfbd-lines-consensus-v1",
+                "marketProviderCount": 2,
+                "marketSpread": 4.0,
+                "marketFavorite": "T5",
+                "marketSnapshotAt": "2026-08-17T18:00:00+00:00",
+            },
         ],
     }
 
@@ -167,7 +250,14 @@ def test_open_slate_keeps_frozen_game_ids_when_schedule_is_refreshed():
         rankings,
         existing_current=existing,
         model_by_id={},
+        market_by_id={
+            "frozen-a": {"marketProviderCount": 5, "marketSpread": 8.0, "marketFavorite": "T4"},
+            "frozen-b": {"marketProviderCount": 5, "marketSpread": 9.0, "marketFavorite": "T6"},
+        },
+        market_snapshot_at="2026-08-18T18:00:00+00:00",
     )
 
     assert [game["id"] for game in selected] == ["frozen-a", "frozen-b"]
     assert [game["modelWinner"] for game in selected] == ["T3", "T5"]
+    assert [game["marketSpread"] for game in selected] == [2.5, 4.0]
+    assert all(game["marketSnapshotAt"] == "2026-08-17T18:00:00+00:00" for game in selected)
