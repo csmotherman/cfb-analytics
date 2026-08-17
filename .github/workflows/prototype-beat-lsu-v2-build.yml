@@ -1,0 +1,83 @@
+name: Build playable Beat 2019 LSU dataset
+
+on:
+  push:
+    branches:
+      - agent/beat-2019-lsu-prototype
+    paths:
+      - .github/workflows/prototype-beat-lsu-v2-build.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/beat-2019-lsu-prototype
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install project
+        run: pip install -e '.[dev]'
+      - name: Run prototype tests
+        run: pytest -q tests/prototypes/test_historical_unit_draft.py tests/prototypes/test_historical_unit_draft_v2.py
+      - name: Build playable v2 dataset
+        run: |
+          python -m cfb_analytics.prototypes.historical_unit_draft_v2 \
+            --build \
+            --base data/prototypes/beat-2019-lsu/challenge-v1.json \
+            --output data/prototypes/beat-2019-lsu/challenge-v2.json \
+            --difficulty-sims 10000
+      - name: Validate playability contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/prototypes/beat-2019-lsu/challenge-v2.json')
+          d = json.loads(p.read_text())
+          assert d['challengeVersion'] == 'historical-unit-draft-v2'
+          assert d['status'] == 'data-prototype-playable'
+          assert d['target']['season'] == 2019 and d['target']['team'] == 'LSU'
+          assert d['rules']['requiredUnits'] == 7
+          assert d['rules']['maxSpins'] == 10
+          assert d['rules']['passes'] == 3
+          assert d['wheelEligibility']['topSrsPerSeason'] == 10
+          assert 100 <= len(d['wheelPool']) <= 110
+          assert all(int(row['srsRank']) <= 10 for row in d['wheelPool'])
+          bench = d['difficultyBenchmark']
+          base = bench['aMinusPassBaseline']
+          oracle = bench['perfectForesightUpperBound']
+          assert 0 <= base['winRate'] <= oracle['winRate'] <= 1
+          assert oracle['winRate'] >= 0.03, 'even perfect play is too rarely winnable'
+          assert oracle['winRate'] <= 0.20, 'challenge is no longer difficult enough'
+          assert oracle['maxWinProbability'] > 0.50
+          print('PLAYABLE BEAT 2019 LSU CONTRACT: PASS')
+          print('wheel', len(d['wheelPool']))
+          print('targetSrs', d['target']['srs'])
+          print('baselineWinRate', base['winRate'])
+          print('baselineMeanP', base['meanWinProbability'])
+          print('oracleWinRate', oracle['winRate'])
+          print('oracleMeanP', oracle['meanWinProbability'])
+          print('oracleMaxP', oracle['maxWinProbability'])
+          PY
+      - name: Run sample game
+        run: |
+          python -m cfb_analytics.prototypes.historical_unit_draft_v2 \
+            --demo \
+            --output data/prototypes/beat-2019-lsu/challenge-v2.json \
+            --seed 42
+      - name: Commit v2 dataset
+        run: |
+          git add data/prototypes/beat-2019-lsu/challenge-v2.json
+          if git diff --cached --quiet; then
+            echo 'No v2 data changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'data: add playable Beat 2019 LSU challenge'
+          git push origin HEAD:agent/beat-2019-lsu-prototype
