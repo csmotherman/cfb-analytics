@@ -27,12 +27,13 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
   }
 
   return (
-    <section className="archive-home" aria-labelledby="archive-heading">
-      <div className="archive-home-copy">
-        <span className="eyebrow">PREDICTION ARCHIVE</span>
-        <h2 id="archive-heading">Go back to any week.</h2>
-        <p>Browse the college football slate year by year, week by week, from 2014 through 2025.</p>
-        <p className="archive-note">2020 is intentionally omitted because the COVID-disrupted season is not part of the comparable historical model universe.</p>
+    <section className="archive-browser" aria-labelledby="archive-heading">
+      <div className="archive-browser-copy">
+        <span className="eyebrow">ARCHIVE</span>
+        <div>
+          <h2 id="archive-heading">Choose a season and week.</h2>
+          <p>Historical market lines, model predictions, ATS results, winner results, and weekly performance.</p>
+        </div>
       </div>
 
       <div className="archive-picker">
@@ -49,9 +50,11 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
           </select>
         </label>
         <button type="button" onClick={() => router.push(`/archive/${season}/${week}`)}>
-          Open archive <span aria-hidden="true">→</span>
+          View week <span aria-hidden="true">→</span>
         </button>
       </div>
+
+      <p className="archive-browser-note">2020 is intentionally excluded because the COVID-disrupted season is outside the comparable model universe.</p>
     </section>
   );
 }
