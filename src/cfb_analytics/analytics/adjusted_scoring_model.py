@@ -6,7 +6,7 @@ This model predicts home and away points directly from prior completed games:
 
 The predicted game margin is expectedHomePoints - expectedAwayPoints. It is kept
 separate from Prediction v2 so the two models can be compared head-to-head on the
-same historical OOS game sample.
+same historical outer-season OOS game sample.
 """
 from __future__ import annotations
 
@@ -17,15 +17,24 @@ from pathlib import Path
 from typing import Any
 
 from cfb_analytics.analytics.prediction_v1_integrity_audit import MIN_GAMES_VALUES, load_raw_games
-from cfb_analytics.analytics.prediction_v1_site_aware_challenger import TEST_SEASONS, eligible_site, load_data
+from cfb_analytics.analytics.prediction_v1_site_aware_challenger import (
+    TEST_SEASONS,
+    eligible_site,
+    fit_generic,
+    load_data,
+    predict_generic,
+    prepare_generic,
+)
+from cfb_analytics.analytics.prediction_v2 import PREDICTION_V2_FEATURES
 from cfb_analytics.analytics.prediction_v2_adjusted_scoring_challenger import add_scoring_features
-from cfb_analytics.analytics.prediction_v2_market_benchmark import build_official_oos_predictions
 from cfb_analytics.analytics.walk_forward_baseline import DEFAULT_SEASONS
 
 MODEL_VERSION = "standalone-adjusted-scoring-v1"
+BASE_FEATURES = tuple(PREDICTION_V2_FEATURES)
 
 
 def load_rows(raw_root: Path, processed_root: Path) -> dict[int, list[dict[str, Any]]]:
+    """Load locked v2 rows and attach strictly-pregame adjusted scoring state."""
     base = load_data(raw_root, processed_root)
     out: dict[int, list[dict[str, Any]]] = {}
     for season in DEFAULT_SEASONS:
@@ -37,10 +46,9 @@ def load_rows(raw_root: Path, processed_root: Path) -> dict[int, list[dict[str, 
 
 
 def build_standalone_predictions(
-    raw_root: Path,
-    processed_root: Path,
+    data: dict[int, list[dict[str, Any]]],
 ) -> list[dict[str, Any]]:
-    data = load_rows(raw_root, processed_root)
+    """Use the scoring model's own expected points directly; no second-stage fit."""
     out: list[dict[str, Any]] = []
     for min_games in MIN_GAMES_VALUES:
         for season in TEST_SEASONS:
@@ -65,9 +73,41 @@ def build_standalone_predictions(
                         "homeTeam": row.get("homeTeam"),
                         "awayTeam": row.get("awayTeam"),
                         "actualHomeMargin": float(row["target_margin"]),
+                        "actualHomeWin": bool(row["target_homeWin"]),
                         "predictedHomePoints": float(home_points),
                         "predictedAwayPoints": float(away_points),
                         "predictedHomeMargin": margin,
+                    }
+                )
+    return out
+
+
+def build_prediction_v2_predictions(
+    data: dict[int, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    """Reproduce locked Prediction v2's outer-season OOS fit on the same rows."""
+    out: list[dict[str, Any]] = []
+    for min_games in MIN_GAMES_VALUES:
+        eligible = {
+            season: [row for row in data[season] if eligible_site(row, min_games)]
+            for season in DEFAULT_SEASONS
+        }
+        for test_season in TEST_SEASONS:
+            train = [
+                row
+                for season in DEFAULT_SEASONS
+                if season < test_season
+                for row in eligible[season]
+            ]
+            test = eligible[test_season]
+            model = fit_generic(prepare_generic(train, BASE_FEATURES))
+            for row in test:
+                out.append(
+                    {
+                        "minGames": int(min_games),
+                        "season": int(test_season),
+                        "gameId": str(row["gameId"]),
+                        "predictedHomeMargin": predict_generic(model, row),
                     }
                 )
     return out
@@ -82,9 +122,10 @@ def _metrics(rows: list[dict[str, Any]], prediction_field: str) -> dict[str, flo
         pred = float(row[prediction_field])
         absolute.append(abs(pred - actual))
         squared.append((pred - actual) ** 2)
-        if actual != 0.0:
-            correct += int((pred > 0.0) == (actual > 0.0))
+        correct += int((pred > 0.0) == bool(row["actualHomeWin"]))
     n = len(rows)
+    if n == 0:
+        raise ValueError("Cannot score empty row set")
     return {
         "n": n,
         "mae": sum(absolute) / n,
@@ -97,8 +138,9 @@ def compare_models(
     raw_root: Path,
     processed_root: Path,
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
-    standalone = build_standalone_predictions(raw_root, processed_root)
-    v2 = build_official_oos_predictions(raw_root, processed_root)
+    data = load_rows(raw_root, processed_root)
+    standalone = build_standalone_predictions(data)
+    v2 = build_prediction_v2_predictions(data)
 
     v2_by_key = {
         (int(row["minGames"]), int(row["season"]), str(row["gameId"])): row
@@ -123,9 +165,9 @@ def compare_models(
         joined.append(
             {
                 **s,
-                "predictionV2HomeMargin": float(p["modelHomeMargin"]),
+                "predictionV2HomeMargin": float(p["predictedHomeMargin"]),
                 "standaloneAbsError": abs(float(s["predictedHomeMargin"]) - float(s["actualHomeMargin"])),
-                "predictionV2AbsError": abs(float(p["modelHomeMargin"]) - float(s["actualHomeMargin"])),
+                "predictionV2AbsError": abs(float(p["predictedHomeMargin"]) - float(s["actualHomeMargin"])),
             }
         )
 
@@ -171,6 +213,7 @@ def compare_models(
             "schemaVersion": 1,
             "modelVersion": MODEL_VERSION,
             "comparison": "standalone-adjusted-scoring-vs-prediction-v2",
+            "basePredictionV2Features": list(BASE_FEATURES),
             "testSeasons": list(TEST_SEASONS),
             "summaries": summaries,
         },
