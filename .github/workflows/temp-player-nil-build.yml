@@ -1,5 +1,6 @@
 name: Build historical player NIL challenge
 
+# One-time real-data build and validation for the player/NIL prototype.
 on:
   push:
     branches:
