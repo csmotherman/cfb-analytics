@@ -24,6 +24,11 @@ function formatKickoff(value: string | null | undefined): string | null {
   }).format(date);
 }
 
+function formatMoneyline(value: number | null | undefined): string | null {
+  if (typeof value !== "number" || !Number.isFinite(value)) return null;
+  return value > 0 ? `+${Math.round(value)}` : `${Math.round(value)}`;
+}
+
 function actualWinner(game: BeatTheModelGame): string | null {
   if (typeof game.actualHomeScore !== "number" || typeof game.actualAwayScore !== "number") return null;
   if (game.actualHomeScore === game.actualAwayScore) return null;
@@ -69,6 +74,7 @@ function PickButton({
   picked,
   disabled,
   modelPending,
+  pickAlreadyMade,
   onPick,
 }: {
   game: BeatTheModelGame;
@@ -78,6 +84,7 @@ function PickButton({
   picked: boolean;
   disabled: boolean;
   modelPending: boolean;
+  pickAlreadyMade: boolean;
   onPick: () => void;
 }) {
   return (
@@ -95,7 +102,7 @@ function PickButton({
         <small>{side}</small>
       </span>
       <span className="btm-pick-action">
-        {picked ? "Picked ✓" : modelPending ? "Not open" : disabled ? "Locked" : "Pick"}
+        {picked ? "Locked ✓" : modelPending ? "Not open" : pickAlreadyMade ? "Locked" : disabled ? "Locked" : "Pick"}
       </span>
     </button>
   );
@@ -116,10 +123,73 @@ function ScoreRows({ game }: { game: BeatTheModelGame }) {
   );
 }
 
+function MarketConsensus({ game }: { game: BeatTheModelGame }) {
+  const homeProbability = typeof game.marketHomeWinProbability === "number" ? game.marketHomeWinProbability : null;
+  const awayProbability = typeof game.marketAwayWinProbability === "number" ? game.marketAwayWinProbability : null;
+  const hasProbability = homeProbability != null && awayProbability != null;
+  const awayPercent = hasProbability ? Math.round(awayProbability * 100) : null;
+  const homePercent = hasProbability && awayPercent != null ? 100 - awayPercent : null;
+  const awayMoneyline = formatMoneyline(game.marketAwayMoneyline);
+  const homeMoneyline = formatMoneyline(game.marketHomeMoneyline);
+  const providers = typeof game.marketProviderCount === "number" && game.marketProviderCount > 0
+    ? `${game.marketProviderCount} ${game.marketProviderCount === 1 ? "book" : "books"}`
+    : null;
+
+  if (!game.marketSource && !game.marketLine) {
+    return (
+      <div className="btm-market-consensus pending">
+        <div className="btm-market-heading">
+          <div><span>MARKET CONSENSUS</span><strong>Line not posted yet</strong></div>
+          <small>Market data is supplemental and never enters The Model.</small>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="btm-market-consensus">
+      <div className="btm-market-heading">
+        <div><span>MARKET CONSENSUS</span><strong>{game.marketLine ?? "Market available"}</strong></div>
+        <small>{providers ? `${providers} · ` : ""}No-vig probability when paired moneylines are available</small>
+      </div>
+
+      {hasProbability && awayPercent != null && homePercent != null ? (
+        <>
+          <div className="btm-market-labels">
+            <div className={game.marketFavorite === game.awayTeam ? "favored" : ""}>
+              <strong>{game.awayTeam}</strong>
+              <span>{awayPercent}%{awayMoneyline ? ` · ${awayMoneyline}` : ""}</span>
+            </div>
+            <div className={game.marketFavorite === game.homeTeam ? "favored" : ""}>
+              <strong>{game.homeTeam}</strong>
+              <span>{homePercent}%{homeMoneyline ? ` · ${homeMoneyline}` : ""}</span>
+            </div>
+          </div>
+          <div
+            className="btm-market-track"
+            role="img"
+            aria-label={`Market consensus: ${game.awayTeam} ${awayPercent} percent, ${game.homeTeam} ${homePercent} percent`}
+          >
+            <span className={`away${game.marketFavorite === game.awayTeam ? " favored" : ""}`} style={{ width: `${awayPercent}%` }} />
+            <span className={`home${game.marketFavorite === game.homeTeam ? " favored" : ""}`} style={{ width: `${homePercent}%` }} />
+          </div>
+        </>
+      ) : (
+        <div className="btm-market-direction" aria-label={game.marketFavorite ? `${game.marketFavorite} is the market favorite` : "Market favorite unavailable"}>
+          <span className={game.marketFavorite === game.awayTeam ? "favored" : ""}>{game.awayTeam}{awayMoneyline ? ` ${awayMoneyline}` : ""}</span>
+          <strong>{game.marketFavorite ? `${game.marketFavorite} favored` : "Moneyline consensus pending"}</strong>
+          <span className={game.marketFavorite === game.homeTeam ? "favored" : ""}>{game.homeTeam}{homeMoneyline ? ` ${homeMoneyline}` : ""}</span>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: string; onPick: (team: string) => void }) {
   const locked = isLocked(game);
   const modelAvailable = Boolean(game.modelWinner);
-  const revealed = modelAvailable && (Boolean(pick) || locked || game.status === "final" || game.status === "live");
+  const pickAlreadyMade = Boolean(pick);
+  const revealed = modelAvailable && (pickAlreadyMade || locked || game.status === "final" || game.status === "live");
   const winner = actualWinner(game);
   const userCorrect = pick && winner ? pick === winner : null;
   const modelCorrect = winner && game.modelWinner ? game.modelWinner === winner : null;
@@ -135,6 +205,8 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
 
       {(game.status === "live" || game.status === "final") ? <ScoreRows game={game} /> : null}
 
+      <MarketConsensus game={game} />
+
       <div className="btm-pick-grid">
         <PickButton
           game={game}
@@ -142,8 +214,9 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
           rank={game.awayRank}
           side="Away"
           picked={pick === game.awayTeam}
-          disabled={locked || !modelAvailable}
+          disabled={locked || !modelAvailable || pickAlreadyMade}
           modelPending={!modelAvailable}
+          pickAlreadyMade={pickAlreadyMade}
           onPick={() => onPick(game.awayTeam)}
         />
         <div className="btm-versus" aria-hidden="true">AT</div>
@@ -153,8 +226,9 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
           rank={game.homeRank}
           side="Home"
           picked={pick === game.homeTeam}
-          disabled={locked || !modelAvailable}
+          disabled={locked || !modelAvailable || pickAlreadyMade}
           modelPending={!modelAvailable}
+          pickAlreadyMade={pickAlreadyMade}
           onPick={() => onPick(game.homeTeam)}
         />
       </div>
@@ -171,7 +245,7 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
             <div className="btm-model-copy">
               <span>THE MODEL PICKED</span>
               <strong>#{modelRank} {game.modelWinner}{margin ? ` · by ${margin}` : ""}</strong>
-              <small>{pick ? (pick === game.modelWinner ? "You made the same call." : `You backed ${pick}. This one is a disagreement.`) : "Revealed after kickoff."}</small>
+              <small>{pick ? (pick === game.modelWinner ? "You made the same call. Your pick is locked." : `You backed ${pick}. This disagreement is locked.`) : "Revealed after kickoff."}</small>
             </div>
 
             {game.status === "final" ? (
@@ -192,7 +266,7 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
           <div className="btm-model-copy btm-model-hidden">
             <span>THE MODEL</span>
             <strong>Hidden until you pick</strong>
-            <small>Your opinion comes first. Pick either team to reveal the opponent.</small>
+            <small>Your opinion comes first. Your first pick is final and reveals the opponent.</small>
           </div>
         )}
       </div>
@@ -221,6 +295,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
   function choose(game: BeatTheModelGame, team: string) {
     if (isLocked(game) || !game.modelWinner) return;
     setPicks((current) => {
+      if (current[game.id]) return current;
       const next = { ...current, [game.id]: team };
       try {
         window.localStorage.setItem(storageKey(data), JSON.stringify(next));
@@ -252,7 +327,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
       <section className="fan-empty-state btm-empty-week">
         <span className="fan-status fan-status-steel">{data.season} Week {data.week}</span>
         <h2>The Official {data.slateSize} is not published yet.</h2>
-        <p>The weekly scheduler ranks the FBS slate and publishes the strongest matchups. When the card is ready, it will appear here automatically.</p>
+        <p>The weekly scheduler combines the BTM rankings with market competitiveness to publish the strongest close matchups. When the card is ready, it will appear here automatically.</p>
       </section>
     );
   }
@@ -274,7 +349,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
               ? "The week is final. Your saved card is graded beside The Model."
               : data.status === "locked"
                 ? "The card is locked. Follow the scores and watch your head-to-head with The Model."
-                : "Pick one winner per game. Your pick comes first; then The Model is revealed."}</p>
+                : "Use the rankings and market context, then make your call. Your first pick locks and reveals The Model."}</p>
         </div>
 
         <div className="btm-card-progress" aria-label={`${pickedCount} of ${data.games.length} picks made`}>
@@ -288,7 +363,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
 
       {data.status === "awaiting-model" ? (
         <div className="btm-week-message">
-          <div><strong>The matchups are official.</strong><span>Browse all 15 and see where every team entered the week.</span></div>
+          <div><strong>The matchups are official.</strong><span>Browse all 15, the BTM ranks, and the market consensus.</span></div>
           <div><strong>The Model is still locking.</strong><span>No picks can be made until the full pregame snapshot is ready.</span></div>
         </div>
       ) : finalGames.length || liveGames.length ? (
@@ -319,7 +394,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
       {!visibleGames.length ? (
         <div className="fan-empty-state btm-filter-empty">
           <h3>{filter === "unpicked" ? "You picked every game." : "No disagreements yet."}</h3>
-          <p>{filter === "unpicked" ? "Your full card is set. You can still change a pick until that game kicks off." : "Make more picks to find out where you and The Model split."}</p>
+          <p>{filter === "unpicked" ? "Your full card is set. Every pick locked when it revealed The Model." : "Make more picks to find out where you and The Model split."}</p>
           <button type="button" className="fan-button fan-button-secondary" onClick={() => setFilter("all")}>Show the full card</button>
         </div>
       ) : null}
