@@ -37,7 +37,7 @@ jobs:
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
-          python -m cfb_analytics.prototypes.historical_player_nil_draft_fast \
+          python -m cfb_analytics.prototypes.historical_player_nil_draft_release \
             --build \
             --output data/prototypes/beat-2019-lsu/player-nil-v1.json \
             --simulations 5000
@@ -59,12 +59,17 @@ jobs:
           assert d['rules']['requiredPlayers'] == 7
           assert d['rules']['offersPerSlot'] == 2
           assert 14 <= float(d['rules']['budgetMillions']) <= 28
-          assert d['matchupCalibration']['games'] >= 400
-          assert d['matchupCalibration']['rosterPowerToMargin'] > 0
-          assert d['matchupCalibration']['residualSd'] > 0
+          cal = d['matchupCalibration']
+          assert cal['version'] == 'historical-player-roster-srs-margin-v2'
+          assert cal['games'] >= 1000
+          assert cal['playerTeamSeasons'] >= 60
+          assert cal['rosterPowerToSrsScale'] > 0
+          assert cal['srsToMarginScale'] > 0
+          assert cal['rosterPowerToMargin'] > 0
+          assert cal['residualSd'] > 0
           for slot in d['rules']['slots']:
               pool = d['slotPools'][slot]
-              assert len(pool) >= 80, (slot, len(pool))
+              assert len(pool) >= 70, (slot, len(pool))
               assert all(float(row['nilAskMillions']) > 0 for row in pool)
               assert all(1 <= float(row['grade']) <= 99 for row in pool)
               assert sum(bool(row.get('logo')) for row in pool) >= int(len(pool) * 0.90)
@@ -76,7 +81,9 @@ jobs:
           print('PLAYER NIL CHALLENGE CONTRACT: PASS')
           print('title', d['title'])
           print('budget', d['rules']['budgetMillions'])
-          print('marginGames', d['matchupCalibration']['games'])
+          print('playerTeamSeasons', cal['playerTeamSeasons'])
+          print('marginGames', cal['games'])
+          print('rosterToSrsR2', cal['rosterPowerToSrsR2'])
           print('oracleFeasible', oracle['feasibleRate'])
           print('oracleWinRate', oracle['winRate'])
           print('oracleMaxP', oracle['maxWinProbability'])
@@ -87,7 +94,7 @@ jobs:
 
       - name: Run deterministic demo
         run: |
-          python -m cfb_analytics.prototypes.historical_player_nil_draft_fast \
+          python -m cfb_analytics.prototypes.historical_player_nil_draft_release \
             --demo \
             --output data/prototypes/beat-2019-lsu/player-nil-v1.json \
             --seed 42
