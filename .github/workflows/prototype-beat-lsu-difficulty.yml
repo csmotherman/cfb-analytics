@@ -1,0 +1,42 @@
+name: Benchmark Beat 2019 LSU difficulty
+
+on:
+  push:
+    branches:
+      - agent/beat-2019-lsu-prototype
+    paths:
+      - .github/workflows/prototype-beat-lsu-difficulty.yml
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/beat-2019-lsu-prototype
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install project
+        run: pip install -e .
+      - name: Compare wheel strengths
+        run: |
+          python - <<'PY'
+          import copy
+          import json
+          from pathlib import Path
+          from cfb_analytics.prototypes.historical_unit_draft import benchmark_difficulty
+
+          source = json.loads(Path('data/prototypes/beat-2019-lsu/challenge-v1.json').read_text())
+          full_pool = source['wheelPool']
+          print('DIFFICULTY SWEEP vs 2019 LSU')
+          print('targetSrs', source['target']['srs'])
+          print('topN\tpool\tgreedyWin\toracleWin\tgreedyMeanP\toracleMeanP')
+          for top_n in (3, 5, 8, 10, 12, 15, 20, 25, 35):
+              d = copy.deepcopy(source)
+              d['wheelPool'] = [r for r in full_pool if int(r.get('srsRank') or 9999) <= top_n]
+              b = benchmark_difficulty(d, simulations=5000, seed=1900 + top_n)
+              g = b['greedyVisibleGradeStrategy']
+              o = b['perfectForesightUpperBound']
+              print(f"{top_n}\t{len(d['wheelPool'])}\t{g['winRate']:.4f}\t{o['winRate']:.4f}\t{g['meanWinProbability']:.4f}\t{o['meanWinProbability']:.4f}")
+          PY
