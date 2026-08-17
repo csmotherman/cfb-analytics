@@ -1,4 +1,9 @@
-from cfb_analytics.analytics.website_prediction_archive import archive_record
+from cfb_analytics.analytics.website_prediction_archive import ARCHIVE_SEASONS, archive_record
+
+
+def test_archive_seasons_intentionally_exclude_covid_2020():
+    assert 2020 not in ARCHIVE_SEASONS
+    assert ARCHIVE_SEASONS == (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 
 
 def test_archive_record_keeps_historical_slate_truthful_without_prediction():
