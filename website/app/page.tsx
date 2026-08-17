@@ -1,5 +1,5 @@
-import { PredictionFeed } from "../components/PredictionFeed";
+import { BeatTheModelHome } from "../components/BeatTheModelHome";
 
 export default function Home() {
-  return <PredictionFeed />;
+  return <BeatTheModelHome />;
 }
