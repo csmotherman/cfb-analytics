@@ -8,13 +8,17 @@ export const metadata = {
 
 export default function ArchivePage() {
   const index = getArchiveIndex();
+
   return (
     <>
-      <section className="page-hero compact-hero btm-page-hero">
-        <span className="eyebrow">THE RECEIPTS</span>
-        <h1>Every official slate stays public.</h1>
-        <p>Go back week by week to see which games made the Official 15, where each team was ranked, what The Model picked, and how it finished.</p>
+      <section className="fan-page-intro">
+        <div>
+          <span className="fan-kicker">ARCHIVE</span>
+          <h1>Every week keeps its receipts.</h1>
+          <p>Go back to any published slate to see the Official 15, where each team was ranked, what The Model picked, and how the games finished.</p>
+        </div>
       </section>
+
       <ArchiveBrowser index={index} />
     </>
   );
