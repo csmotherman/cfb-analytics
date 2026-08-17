@@ -19,7 +19,7 @@ export type BeatTheModelGame = {
   modelHomeWinProbability?: number | null;
   modelProjectedHomeScore?: number | null;
   modelProjectedAwayScore?: number | null;
-  status: "upcoming" | "final";
+  status: "upcoming" | "live" | "final";
   actualHomeScore?: number | null;
   actualAwayScore?: number | null;
 };
