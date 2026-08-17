@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 export default function PlayPage() {
   const data = getBeatTheModelDataset();
+  const hasTeamStats = data.games.some((game) => Boolean(game.homePregameStats || game.awayPregameStats));
 
   return (
     <>
@@ -18,13 +19,17 @@ export default function PlayPage() {
         <div>
           <span className="fan-kicker">{data.season} WEEK {data.week}</span>
           <h1>Put your card on it.</h1>
-          <p>Pick one winner in every Official {data.slateSize} matchup. Tap a team, review your choice, then submit it. The Model stays hidden until the pick is confirmed.</p>
+          <p>
+            Pick one winner in every Official {data.slateSize} matchup. Market consensus is there for context. {hasTeamStats
+              ? "Open Matchup Intel to compare pregame team performance, then select, review, and submit your pick."
+              : "Tap a team, review your choice, then submit it. The Model stays hidden until the pick is confirmed."}
+          </p>
         </div>
         <div>
           <div className="fan-rule-row fan-rule-row-intro" aria-label="Beat the Model scoring rules">
             <span><strong>{data.slateSize}</strong> games</span>
             <span><strong>1</strong> point per winner</span>
-            <span><strong>1</strong> submit to lock</span>
+            <span><strong>SU</strong> straight-up picks</span>
           </div>
           <Link className="fan-text-link fan-play-method-link" href="/about">How games are selected →</Link>
         </div>
