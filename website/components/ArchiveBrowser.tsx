@@ -5,20 +5,25 @@ import { useRouter } from "next/navigation";
 
 import type { ArchiveIndexEntry } from "../lib/archive";
 
+function preferredWeek(weeks: number[]): number {
+  return weeks.includes(1) ? 1 : (weeks[0] ?? 1);
+}
+
 export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
   const router = useRouter();
   const defaultSeason = index[0]?.season ?? 2025;
+  const defaultWeeks = index.find((entry) => entry.season === defaultSeason)?.weeks ?? [];
   const [season, setSeason] = useState(defaultSeason);
   const weeks = useMemo(
     () => index.find((entry) => entry.season === season)?.weeks ?? [],
     [index, season],
   );
-  const [week, setWeek] = useState(weeks[0] ?? 1);
+  const [week, setWeek] = useState(preferredWeek(defaultWeeks));
 
   function changeSeason(value: number) {
     setSeason(value);
     const nextWeeks = index.find((entry) => entry.season === value)?.weeks ?? [];
-    setWeek(nextWeeks[0] ?? 1);
+    setWeek(preferredWeek(nextWeeks));
   }
 
   return (
@@ -39,7 +44,7 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
         <label>
           <span>Week</span>
           <select value={week} onChange={(event) => setWeek(Number(event.target.value))}>
-            {weeks.map((value) => <option key={value} value={value}>{value === 0 ? "Preseason" : `Week ${value}`}</option>)}
+            {weeks.map((value) => <option key={value} value={value}>Week {value}</option>)}
           </select>
         </label>
         <button type="button" onClick={() => router.push(`/archive/${season}/${week}`)}>
