@@ -1,15 +1,12 @@
 name: Build historical player NIL challenge
 
-# One-time real-data build and validation for the player/NIL prototype.
+# One-time push build used to publish the already-validated player/NIL dataset.
 on:
   push:
     branches:
       - agent/beat-2019-lsu-nil-players
     paths:
       - .github/workflows/temp-player-nil-build.yml
-  pull_request:
-    branches:
-      - agent/website-fan-experience-v3
 
 permissions:
   contents: write
@@ -52,8 +49,7 @@ jobs:
           d = json.loads(p.read_text())
           assert d['challengeVersion'] == 'historical-player-nil-v1'
           assert d['status'] == 'data-prototype-playable'
-          assert d['target']['season'] == 2019
-          assert d['target']['team'] == 'LSU'
+          assert d['target']['season'] == 2019 and d['target']['team'] == 'LSU'
           assert len(d['target']['lineup']) == 7
           assert len({v['playerSeasonId'] for v in d['target']['lineup'].values()}) == 7
           assert d['rules']['requiredPlayers'] == 7
@@ -100,7 +96,6 @@ jobs:
             --seed 42
 
       - name: Commit generated dataset
-        if: github.event_name == 'push'
         run: |
           git add data/prototypes/beat-2019-lsu/player-nil-v1.json
           if git diff --cached --quiet; then
