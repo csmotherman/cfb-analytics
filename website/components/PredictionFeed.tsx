@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { ArchiveBrowser } from "./ArchiveBrowser";
 import { PredictionCard } from "./PredictionCard";
+import { getArchiveIndex } from "../lib/archive";
 import {
   formatUpdatedAt,
   getPredictionDataset,
@@ -11,6 +13,7 @@ export function PredictionFeed() {
   const record = seasonRecord(data.results);
   const updated = formatUpdatedAt(data.updatedAt);
   const [featured, ...rest] = data.current;
+  const archiveIndex = getArchiveIndex();
 
   return (
     <>
@@ -61,6 +64,8 @@ export function PredictionFeed() {
           </div>
         </section>
       )}
+
+      <ArchiveBrowser index={archiveIndex} />
 
       <section className="accountability-strip">
         <div>
