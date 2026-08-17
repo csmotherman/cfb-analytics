@@ -19,24 +19,68 @@ jobs:
           python-version: "3.12"
       - name: Install project
         run: pip install -e .
-      - name: Compare wheel strengths
+      - name: Compare reroll difficulty options
         run: |
           python - <<'PY'
-          import copy
           import json
+          import random
           from pathlib import Path
-          from cfb_analytics.prototypes.historical_unit_draft import benchmark_difficulty
+          from cfb_analytics.prototypes.historical_unit_draft import (
+              CATEGORY_ORDER,
+              _selection_from_row,
+              evaluate_selections,
+          )
 
           source = json.loads(Path('data/prototypes/beat-2019-lsu/challenge-v1.json').read_text())
           full_pool = source['wheelPool']
-          print('DIFFICULTY SWEEP vs 2019 LSU')
+          weights = source['strengthModel']['categoryWeights']
+
+          def oracle_with_skips(spins):
+              states = {0: (0.0, {})}
+              for spin_idx, row in enumerate(spins):
+                  next_states = dict(states)  # skip this spin
+                  for mask, (score, assignment) in states.items():
+                      for cat_idx, category in enumerate(CATEGORY_ORDER):
+                          bit = 1 << cat_idx
+                          if mask & bit:
+                              continue
+                          z = row.get('categories', {}).get(category, {}).get('z')
+                          if not isinstance(z, (int, float)):
+                              continue
+                          new_mask = mask | bit
+                          new_score = score + float(weights[category]) * float(z)
+                          old = next_states.get(new_mask)
+                          if old is None or new_score > old[0]:
+                              a = dict(assignment)
+                              a[category] = spin_idx
+                              next_states[new_mask] = (new_score, a)
+                  states = next_states
+              full = (1 << len(CATEGORY_ORDER)) - 1
+              if full not in states:
+                  return None
+              assignment = states[full][1]
+              selections = {
+                  category: _selection_from_row(spins[idx], category)
+                  for category, idx in assignment.items()
+              }
+              return evaluate_selections(source, selections)
+
+          print('REROLL / EXTRA-SPIN UPPER-BOUND SWEEP')
           print('targetSrs', source['target']['srs'])
-          print('topN\tpool\tgreedyWin\toracleWin\tgreedyMeanP\toracleMeanP')
-          for top_n in (3, 5, 8, 10, 12, 15, 20, 25, 35):
-              d = copy.deepcopy(source)
-              d['wheelPool'] = [r for r in full_pool if int(r.get('srsRank') or 9999) <= top_n]
-              b = benchmark_difficulty(d, simulations=5000, seed=1900 + top_n)
-              g = b['greedyVisibleGradeStrategy']
-              o = b['perfectForesightUpperBound']
-              print(f"{top_n}\t{len(d['wheelPool'])}\t{g['winRate']:.4f}\t{o['winRate']:.4f}\t{g['meanWinProbability']:.4f}\t{o['meanWinProbability']:.4f}")
+          print('topN\tcandidates\trerolls\tpool\toracleWin\tmeanP')
+          for top_n in (3, 5, 8, 10):
+              pool = [r for r in full_pool if int(r.get('srsRank') or 9999) <= top_n]
+              for candidates in (7, 8, 9, 10, 12, 14):
+                  rng = random.Random(201900 + 100 * top_n + candidates)
+                  wins = 0
+                  probs = []
+                  sims = 3000
+                  for _ in range(sims):
+                      result = oracle_with_skips(rng.sample(pool, candidates))
+                      if result is None:
+                          continue
+                      p = float(result['winProbability'])
+                      probs.append(p)
+                      wins += p > 0.5
+                  print(f"{top_n}\t{candidates}\t{candidates-7}\t{len(pool)}\t{wins/len(probs):.4f}\t{sum(probs)/len(probs):.4f}")
           PY
