@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./archive.css";
 import "./beat-the-model.css";
 import "./pools.css";
+import "./fan-ui.css";
 import { Nav } from "../components/Nav";
 
 const inter = Inter({
@@ -34,8 +36,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="shell site-main">{children}</main>
         <footer className="site-footer">
           <div className="shell footer-inner">
-            <strong>BEAT THE MODEL</strong>
-            <span>Pick winners. Compete with The Model. Keep the receipts.</span>
+            <div>
+              <strong>BEAT THE MODEL</strong>
+              <span>Pick winners. Face The Model. Keep the receipts.</span>
+            </div>
+            <div className="footer-links">
+              <Link href="/play">Play</Link>
+              <Link href="/rankings">Rankings</Link>
+              <Link href="/archive">Archive</Link>
+              <Link href="/about">How it works</Link>
+            </div>
           </div>
         </footer>
       </body>
