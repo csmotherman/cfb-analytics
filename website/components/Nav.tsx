@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const primaryLinks = [
   { href: "/play", label: "Play" },
   { href: "/rankings", label: "Rankings" },
-  { href: "/archive", label: "Archive" },
+  { href: "/archive", label: "Model History" },
   { href: "/about", label: "How it works" },
 ];
 
@@ -42,7 +42,7 @@ export function Nav() {
         <Link href="/" className={active(pathname, "/") ? "active" : ""}><HomeIcon /><span>Home</span></Link>
         <Link href="/play" className={active(pathname, "/play") ? "active" : ""}><PickIcon /><span>Play</span></Link>
         <Link href="/rankings" className={active(pathname, "/rankings") ? "active" : ""}><RankIcon /><span>Rankings</span></Link>
-        <Link href="/archive" className={active(pathname, "/archive") ? "active" : ""}><ArchiveIcon /><span>Archive</span></Link>
+        <Link href="/archive" className={active(pathname, "/archive") ? "active" : ""}><ArchiveIcon /><span>Results</span></Link>
       </nav>
     </>
   );
