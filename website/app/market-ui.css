@@ -1,3 +1,35 @@
+.fan-spotlight-market {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin: 0 18px 16px;
+  padding: 10px 12px;
+  border: 1px solid rgba(138, 161, 187, 0.16);
+  border-radius: 12px;
+  background: rgba(9, 15, 24, 0.62);
+}
+
+.fan-spotlight-market > span {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #8195aa;
+}
+
+.fan-spotlight-market > strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #eef9fc;
+}
+
+.fan-spotlight-market > small {
+  color: #8195aa;
+}
+
 .btm-market-consensus {
   margin: 16px 0 18px;
   padding: 14px 16px 15px;
@@ -152,6 +184,16 @@
 }
 
 @media (max-width: 700px) {
+  .fan-spotlight-market {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    margin: 0 12px 13px;
+  }
+
+  .fan-spotlight-market > small {
+    font-size: 0.7rem;
+  }
+
   .btm-market-consensus {
     margin: 13px 0 15px;
     padding: 12px 13px 13px;
