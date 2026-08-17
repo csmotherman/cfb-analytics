@@ -3,7 +3,7 @@ import { getArchiveIndex } from "../../lib/archive";
 
 export const metadata = {
   title: "College Football Prediction Archive",
-  description: "Browse college football week by week from 2014 through 2025.",
+  description: "Browse historical college football market lines, model predictions, and weekly results from 2014 through 2025, excluding 2020.",
 };
 
 export default function ArchivePage() {
@@ -11,9 +11,9 @@ export default function ArchivePage() {
   return (
     <>
       <section className="page-hero compact-hero">
-        <span className="eyebrow">2014–2025</span>
-        <h1>Prediction archive.</h1>
-        <p>Pick a season and a week. The archive keeps the historical slate and only labels a model prediction when the stored data supports that claim.</p>
+        <span className="eyebrow">PREDICTION ARCHIVE</span>
+        <h1>Every week. One clean record.</h1>
+        <p>Choose a season and week to compare the historical market spread with the model prediction, then check ATS accuracy, winner accuracy, MAE, and recommended-bet results.</p>
       </section>
       <ArchiveBrowser index={index} />
     </>
