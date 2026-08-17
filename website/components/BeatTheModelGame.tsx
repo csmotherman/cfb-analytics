@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import type { BeatTheModelDataset, BeatTheModelGame } from "../lib/beat-the-model";
 import { TeamLogo } from "./TeamLogo";
+import { TeamStatsComparison } from "./TeamStatsComparison";
 
 type Picks = Record<string, string>;
 type ViewFilter = "all" | "unpicked" | "disagree";
@@ -282,6 +283,7 @@ function GameCard({
       {(game.status === "live" || game.status === "final") ? <ScoreRows game={game} /> : null}
 
       <MarketConsensus game={game} />
+      <TeamStatsComparison game={game} />
 
       <div className="btm-pick-grid">
         <PickButton
@@ -445,7 +447,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
               ? "The week is final. Your submitted card is graded beside The Model."
               : data.status === "locked"
                 ? "The card is locked. Follow the scores and watch your head-to-head with The Model."
-                : "Select a winner, review it, then submit. Only the submitted pick reveals The Model and becomes final."}</p>
+                : "Use the market and matchup intel, select a winner, review it, then submit. Only the submitted pick reveals The Model and becomes final."}</p>
         </div>
 
         <div className="btm-card-progress" aria-label={`${pickedCount} of ${data.games.length} picks submitted`}>
@@ -459,7 +461,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
 
       {data.status === "awaiting-model" ? (
         <div className="btm-week-message">
-          <div><strong>The matchups are official.</strong><span>Browse all 15, the BTM ranks, and the market consensus.</span></div>
+          <div><strong>The matchups are official.</strong><span>Browse all 15, the BTM ranks, market consensus, and available pregame team stats.</span></div>
           <div><strong>The Model is still locking.</strong><span>No picks can be submitted until the full pregame snapshot is ready.</span></div>
         </div>
       ) : finalGames.length || liveGames.length ? (
