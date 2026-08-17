@@ -38,6 +38,14 @@ export type ArchiveGame = {
   risk?: string | null;
   lockedAt?: string | null;
   evidenceStatus?: "official-oos" | "historical-slate" | "retrospective" | string;
+  predictionSource?: string | null;
+  homeRank?: number | null;
+  awayRank?: number | null;
+  homePowerRating?: number | null;
+  awayPowerRating?: number | null;
+  matchupScore?: number | null;
+  beatTheModelSelected?: boolean;
+  beatTheModelSlot?: number | null;
 };
 
 export type ArchiveWeekSummary = {
@@ -61,11 +69,26 @@ export type ArchiveWeekSummary = {
   unitsConvention?: string;
 };
 
+export type BeatTheModelArchiveSummary = {
+  version: string;
+  rankingVersion: string;
+  selectionVersion: string;
+  slateSize: number;
+  eligibleGames: number;
+  selectedGames: number;
+  selectedGameIds: string[];
+  modelWins: number;
+  modelLosses: number;
+  modelAccuracy: number | null;
+  modelMae: number | null;
+};
+
 export type ArchiveWeek = {
   season: number;
   week: number;
   label?: string;
   summary?: ArchiveWeekSummary;
+  beatTheModel?: BeatTheModelArchiveSummary;
   games: ArchiveGame[];
 };
 
@@ -90,8 +113,6 @@ const PROJECT_ROOT = path.resolve(process.cwd(), "..");
 
 function archiveCandidates(season: number, week: number): string[] {
   return [
-    // The deployable published archive is authoritative. Keep development/processed
-    // outputs only as fallbacks so an older local export cannot shadow fresh website data.
     path.join(PROJECT_ROOT, "website", "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "data", "archive", `season=${season}`, `week=${week}.json`),
     path.join(process.cwd(), "data", "archive", String(season), `week-${week}.json`),
@@ -119,6 +140,9 @@ function normalizeWeek(payload: unknown, season: number, week: number): ArchiveW
     week: Number(record.week ?? week),
     label: typeof record.label === "string" ? record.label : undefined,
     summary: record.summary && typeof record.summary === "object" ? record.summary as ArchiveWeekSummary : undefined,
+    beatTheModel: record.beatTheModel && typeof record.beatTheModel === "object"
+      ? record.beatTheModel as BeatTheModelArchiveSummary
+      : undefined,
     games: Array.isArray(record.games) ? record.games as ArchiveGame[] : [],
   };
 }
