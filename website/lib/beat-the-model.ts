@@ -1,6 +1,29 @@
 import fs from "node:fs";
 import path from "node:path";
 
+export type TeamPregameStats = {
+  version: string;
+  season: number;
+  throughWeek: number;
+  games: number;
+  wins: number;
+  losses: number;
+  ties: number;
+  pointsPerGame?: number | null;
+  pointsAllowedPerGame?: number | null;
+  offenseSuccessRate?: number | null;
+  defenseSuccessRateAllowed?: number | null;
+  offensePPA?: number | null;
+  defensePPAAllowed?: number | null;
+  offenseExplosiveness?: number | null;
+  defenseExplosivenessAllowed?: number | null;
+  pointsPerOpportunity?: number | null;
+  pointsPerOpportunityAllowed?: number | null;
+  advancedPlays?: number | null;
+  advancedDrives?: number | null;
+  excludeGarbageTime?: boolean;
+};
+
 export type BeatTheModelGame = {
   id: string;
   season: number;
@@ -25,6 +48,8 @@ export type BeatTheModelGame = {
   awayLogo?: string | null;
   homePowerRating?: number | null;
   awayPowerRating?: number | null;
+  homePregameStats?: TeamPregameStats | null;
+  awayPregameStats?: TeamPregameStats | null;
   matchupScore?: number | null;
   selectionTier?: number | null;
   selectionScore?: number | null;
@@ -79,6 +104,7 @@ export type BeatTheModelRanking = {
   logo?: string | null;
   sourceSeason?: number | null;
   gamesBefore?: number | null;
+  pregameStats?: TeamPregameStats | null;
 };
 
 export type BeatTheModelRankings = {
@@ -89,6 +115,10 @@ export type BeatTheModelRankings = {
   method?: string;
   teamMetadataSource?: string | null;
   teamMetadataStatus?: string | null;
+  teamStatsVersion?: string | null;
+  teamStatsStatus?: string | null;
+  teamStatsThroughWeek?: number | null;
+  teamStatsExcludeGarbageTime?: boolean | null;
   teams: BeatTheModelRanking[];
 };
 
@@ -163,6 +193,10 @@ export function getBeatTheModelRankings(season: number, week: number): BeatTheMo
       rankingVersion: EMPTY_DATASET.rankingVersion,
       teamMetadataSource: null,
       teamMetadataStatus: null,
+      teamStatsVersion: null,
+      teamStatsStatus: null,
+      teamStatsThroughWeek: null,
+      teamStatsExcludeGarbageTime: null,
       teams: [],
     };
   }
@@ -176,6 +210,10 @@ export function getBeatTheModelRankings(season: number, week: number): BeatTheMo
       method: typeof parsed.method === "string" ? parsed.method : undefined,
       teamMetadataSource: typeof parsed.teamMetadataSource === "string" ? parsed.teamMetadataSource : null,
       teamMetadataStatus: typeof parsed.teamMetadataStatus === "string" ? parsed.teamMetadataStatus : null,
+      teamStatsVersion: typeof parsed.teamStatsVersion === "string" ? parsed.teamStatsVersion : null,
+      teamStatsStatus: typeof parsed.teamStatsStatus === "string" ? parsed.teamStatsStatus : null,
+      teamStatsThroughWeek: typeof parsed.teamStatsThroughWeek === "number" ? parsed.teamStatsThroughWeek : null,
+      teamStatsExcludeGarbageTime: typeof parsed.teamStatsExcludeGarbageTime === "boolean" ? parsed.teamStatsExcludeGarbageTime : null,
       teams: Array.isArray(parsed.teams) ? parsed.teams : [],
     };
   } catch {
@@ -186,6 +224,10 @@ export function getBeatTheModelRankings(season: number, week: number): BeatTheMo
       rankingVersion: EMPTY_DATASET.rankingVersion,
       teamMetadataSource: null,
       teamMetadataStatus: null,
+      teamStatsVersion: null,
+      teamStatsStatus: null,
+      teamStatsThroughWeek: null,
+      teamStatsExcludeGarbageTime: null,
       teams: [],
     };
   }
