@@ -1,22 +1,26 @@
 # CFB Model Website
 
-The website now has one product promise:
+The website has one product promise:
 
-> See what the model predicts this week, then see exactly why.
+> See what the model predicts, then see exactly why.
 
-The old analytics experiments still exist in the codebase, but they are intentionally removed from the primary navigation. The public product loop is deliberately small:
+The public product loop stays deliberately small:
 
 1. **Predictions** bring users in.
-2. **Why** explains each prediction in three fan-readable reasons.
-3. **Results** keep the model accountable and give users a reason to come back.
+2. **Why** explains each supported prediction in fan-readable language.
+3. **Archive** lets fans go back to any season/week from 2014 through 2025 without changing the product focus.
+4. **Results** keep the model accountable and give users a reason to come back.
 
-Primary navigation is only:
+Primary navigation is:
 
 - Predictions
+- Archive
 - Results
 - How it works
 
-## Prediction data contract
+The archive picker also lives directly on the home screen so a fan can jump from the current slate to any historical season/week in one action.
+
+## Live prediction data contract
 
 The website reads `website/data/predictions.json` (or `data/predictions.json` when the website directory is the deployment root).
 
@@ -31,45 +35,51 @@ The website reads `website/data/predictions.json` (or `data/predictions.json` wh
 }
 ```
 
-Each game should contain:
+Each live game should contain the matchup, projected score, predicted winner, win probability, exactly three reasons, one upset path, and a pre-kickoff lock timestamp.
 
-```json
-{
-  "id": "2026-week-1-away-at-home",
-  "season": 2026,
-  "week": 1,
-  "kickoff": "2026-08-29T19:30:00-04:00",
-  "homeTeam": "Home Team",
-  "awayTeam": "Away Team",
-  "predictedWinner": "Home Team",
-  "homeWinProbability": 0.67,
-  "projectedHomeScore": 31,
-  "projectedAwayScore": 24,
-  "reasons": [
-    {"eyebrow": "EFFICIENCY", "title": "Reason one", "detail": "Fan-readable explanation."},
-    {"eyebrow": "MATCHUP", "title": "Reason two", "detail": "Fan-readable explanation."},
-    {"eyebrow": "STRENGTH", "title": "Reason three", "detail": "Fan-readable explanation."}
-  ],
-  "risk": "The clearest path to the upset.",
-  "lockedAt": "2026-08-29T12:00:00-04:00",
-  "status": "upcoming"
-}
+## Historical archive: 2014-2025
+
+The archive loader checks generated files first at:
+
+```text
+data/processed/website/prediction_archive/season=YYYY/week=N.json
 ```
 
-Final games move into `results` and add `actualHomeScore`, `actualAwayScore`, and `correct`.
+It also accepts deployable copies at:
+
+```text
+website/data/archive/YYYY/week-N.json
+```
+
+Build the historical archive from the repository root with:
+
+```bash
+python -m cfb_analytics.analytics.website_prediction_archive --overwrite
+```
+
+The exporter reconstructs the historical game slate from canonical data for every available season from 2014 through 2025. If this file exists:
+
+```text
+data/processed/market_benchmark/prediction-v2-vs-clean-market-games.json
+```
+
+then stored `minGames=3` official out-of-sample Prediction-v2 calls are attached to the matching historical games. Other games remain labeled as historical slate entries. The exporter never manufactures a model pick, probability, or explanation after seeing the result.
+
+This distinction matters for the early seasons and any season outside the official Prediction-v2 OOS contract: fans can still browse the week, matchup, and final score, but the UI only says “model pick” when a supported historical prediction exists.
 
 ## Product rules
 
 - Never fabricate a prediction to make the UI look populated.
-- Predictions lock before kickoff.
+- Live predictions lock before kickoff.
 - The original prediction remains visible after the game.
-- The fan sees one pick, one probability, three reasons, and one upset path.
+- Historical pages never invent a missing prediction or a post-hoc explanation.
 - Advanced metrics stay under the hood unless they make the explanation clearer.
-- Do not add new homepage modules unless they directly strengthen the prediction → explanation → result loop.
+- Archive is part of the same prediction → explanation → result product, not a second analytics dashboard.
 
 ## Run locally
 
 ```bash
+python -m cfb_analytics.analytics.website_prediction_archive --overwrite
 cd website
 npm install
 npm run typecheck
