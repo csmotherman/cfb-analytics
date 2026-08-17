@@ -29,10 +29,10 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
   return (
     <section className="archive-browser" aria-labelledby="archive-heading">
       <div className="archive-browser-copy">
-        <span className="eyebrow">ARCHIVE</span>
+        <span className="eyebrow">BEAT THE MODEL ARCHIVE</span>
         <div>
           <h2 id="archive-heading">Choose a season and week.</h2>
-          <p>Historical market lines, model predictions, ATS results, winner results, and weekly performance.</p>
+          <p>See the Official 15, the rankings attached to each matchup, and how The Model actually finished.</p>
         </div>
       </div>
 
@@ -54,7 +54,7 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
         </button>
       </div>
 
-      <p className="archive-browser-note">2020 is intentionally excluded because the COVID-disrupted season is outside the comparable model universe.</p>
+      <p className="archive-browser-note">The game archive uses the same comparable-season contract as the model. 2020 remains intentionally excluded.</p>
     </section>
   );
 }
