@@ -1,0 +1,24 @@
+name: Agent ATS logistic deep audit validation
+
+on:
+  push:
+    branches:
+      - agent/market-edge-model-zoo
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e '.[dev,models]'
+      - name: ATS logistic deep-audit tests
+        run: pytest -q tests/analytics/test_ats_logistic_deep_audit.py
+      - name: Market-edge zoo tests
+        run: pytest -q tests/analytics/test_market_edge_model_zoo.py
+      - name: Full test suite
+        run: pytest -q
