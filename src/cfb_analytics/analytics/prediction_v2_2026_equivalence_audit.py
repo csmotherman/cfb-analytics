@@ -12,7 +12,6 @@ The audit is diagnostic only. It must never tune weights or coefficients.
 from __future__ import annotations
 
 import argparse
-import json
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
@@ -20,6 +19,7 @@ from typing import Any
 from cfb_analytics.analytics.prediction_v2 import PREDICTION_V2_FEATURES
 from cfb_analytics.analytics.prediction_v2_2026_features import (
     FEATURE_MATERIALIZER_VERSION,
+    _complete_history_game_ids,
     _current_row,
     _history_components,
     _history_site_games,
@@ -175,6 +175,7 @@ def _reconstruct_partition(
     prior: dict[str, Any],
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     history = _history_team_games(raw_root, processed_root, season, season_type, week)
+    required_history_game_ids = _complete_history_game_ids(history)
     components = _history_components(
         processed_root,
         season,
@@ -182,7 +183,13 @@ def _reconstruct_partition(
         week,
         history_required=bool(history),
     )
-    site_history = _history_site_games(raw_root, season, season_type, week)
+    site_history = _history_site_games(
+        raw_root,
+        season,
+        season_type,
+        week,
+        required_game_ids=required_history_game_ids,
+    )
     alignment = validate_history_alignment(history, site_history)
 
     games_played: Counter[str] = Counter(
