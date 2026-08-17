@@ -1,0 +1,1128 @@
+{
+  "alignmentFailures": [],
+  "auditVersion": "prediction-v2-2026-prospective-equivalence-audit-v1",
+  "expectedBlendRows": 1754,
+  "historicalTargetGames": 1781,
+  "overall": {
+    "actualRows": 1754,
+    "expectedRows": 1754,
+    "extraGameIds": [],
+    "featureMismatches": 0,
+    "firstFeatureMismatches": [],
+    "maxAbsDiff": 0.0,
+    "maxAbsDiffByFeature": {
+      "away_iterativeExplosiveEdge": 0.0,
+      "away_iterativeFieldPositionEdge": 0.0,
+      "away_iterativeFinishingEdge": 0.0,
+      "away_iterativeSuccessEdge": 0.0,
+      "away_iterativeYardsPerPlayEdge": 0.0,
+      "away_iterativeYardsPerPossessionEdge": 0.0,
+      "explosiveVolumeEdge": 0.0,
+      "home_MWDR_DefenseEdge": 0.0,
+      "home_MWDR_OffenseEdge": 0.0,
+      "home_iterativeExplosiveEdge": 0.0,
+      "home_iterativeFieldPositionEdge": 0.0,
+      "home_iterativeFinishingEdge": 0.0,
+      "home_iterativeSuccessEdge": 0.0,
+      "home_iterativeYardsPerPlayEdge": 0.0,
+      "home_iterativeYardsPerPossessionEdge": 0.0,
+      "mwdrXExpectedPossessions": 0.0,
+      "siteAwareSrsMargin": 0.0,
+      "successVolumeEdge": 0.0,
+      "turnoverVolumeEdge": 0.0
+    },
+    "missingGameIds": [],
+    "outcomeBearingRows": [],
+    "priorWeightMismatches": 0,
+    "status": "PASS",
+    "versionMismatches": []
+  },
+  "reconstructedRows": 1754,
+  "schemaVersion": 1,
+  "seasons": [
+    {
+      "comparison": {
+        "actualRows": 190,
+        "expectedRows": 190,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 190,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 37,
+          "season": 2015,
+          "seasonType": "regular",
+          "targetGames": 38,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 38,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 38,
+            "status": "PASS"
+          },
+          "historyComponentRows": 76,
+          "historySiteGames": 38,
+          "historyTeamGameRows": 76,
+          "reconstructedRows": 51,
+          "season": 2015,
+          "seasonType": "regular",
+          "targetGames": 51,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 89,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 89,
+            "status": "PASS"
+          },
+          "historyComponentRows": 178,
+          "historySiteGames": 89,
+          "historyTeamGameRows": 178,
+          "reconstructedRows": 51,
+          "season": 2015,
+          "seasonType": "regular",
+          "targetGames": 52,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 141,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 141,
+            "status": "PASS"
+          },
+          "historyComponentRows": 282,
+          "historySiteGames": 141,
+          "historyTeamGameRows": 282,
+          "reconstructedRows": 51,
+          "season": 2015,
+          "seasonType": "regular",
+          "targetGames": 52,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2014,
+      "reconstructedRows": 190,
+      "season": 2015,
+      "targetGames": 193
+    },
+    {
+      "comparison": {
+        "actualRows": 193,
+        "expectedRows": 193,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 193,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 40,
+          "season": 2016,
+          "seasonType": "regular",
+          "targetGames": 40,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 40,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 40,
+            "status": "PASS"
+          },
+          "historyComponentRows": 80,
+          "historySiteGames": 40,
+          "historyTeamGameRows": 80,
+          "reconstructedRows": 46,
+          "season": 2016,
+          "seasonType": "regular",
+          "targetGames": 46,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 86,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 86,
+            "status": "PASS"
+          },
+          "historyComponentRows": 172,
+          "historySiteGames": 86,
+          "historyTeamGameRows": 172,
+          "reconstructedRows": 55,
+          "season": 2016,
+          "seasonType": "regular",
+          "targetGames": 55,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 141,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 141,
+            "status": "PASS"
+          },
+          "historyComponentRows": 282,
+          "historySiteGames": 141,
+          "historyTeamGameRows": 282,
+          "reconstructedRows": 52,
+          "season": 2016,
+          "seasonType": "regular",
+          "targetGames": 52,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2015,
+      "reconstructedRows": 193,
+      "season": 2016,
+      "targetGames": 193
+    },
+    {
+      "comparison": {
+        "actualRows": 191,
+        "expectedRows": 191,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 191,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 43,
+          "season": 2017,
+          "seasonType": "regular",
+          "targetGames": 44,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 44,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 44,
+            "status": "PASS"
+          },
+          "historyComponentRows": 88,
+          "historySiteGames": 44,
+          "historyTeamGameRows": 88,
+          "reconstructedRows": 43,
+          "season": 2017,
+          "seasonType": "regular",
+          "targetGames": 44,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 88,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 88,
+            "status": "PASS"
+          },
+          "historyComponentRows": 176,
+          "historySiteGames": 88,
+          "historyTeamGameRows": 176,
+          "reconstructedRows": 50,
+          "season": 2017,
+          "seasonType": "regular",
+          "targetGames": 51,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 139,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 139,
+            "status": "PASS"
+          },
+          "historyComponentRows": 278,
+          "historySiteGames": 139,
+          "historyTeamGameRows": 278,
+          "reconstructedRows": 55,
+          "season": 2017,
+          "seasonType": "regular",
+          "targetGames": 56,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2016,
+      "reconstructedRows": 191,
+      "season": 2017,
+      "targetGames": 195
+    },
+    {
+      "comparison": {
+        "actualRows": 195,
+        "expectedRows": 195,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 195,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 44,
+          "season": 2018,
+          "seasonType": "regular",
+          "targetGames": 45,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 45,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 45,
+            "status": "PASS"
+          },
+          "historyComponentRows": 90,
+          "historySiteGames": 45,
+          "historyTeamGameRows": 90,
+          "reconstructedRows": 48,
+          "season": 2018,
+          "seasonType": "regular",
+          "targetGames": 49,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 94,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 94,
+            "status": "PASS"
+          },
+          "historyComponentRows": 188,
+          "historySiteGames": 94,
+          "historyTeamGameRows": 188,
+          "reconstructedRows": 49,
+          "season": 2018,
+          "seasonType": "regular",
+          "targetGames": 49,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 143,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 143,
+            "status": "PASS"
+          },
+          "historyComponentRows": 286,
+          "historySiteGames": 143,
+          "historyTeamGameRows": 286,
+          "reconstructedRows": 54,
+          "season": 2018,
+          "seasonType": "regular",
+          "targetGames": 55,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2017,
+      "reconstructedRows": 195,
+      "season": 2018,
+      "targetGames": 198
+    },
+    {
+      "comparison": {
+        "actualRows": 187,
+        "expectedRows": 187,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 187,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 45,
+          "season": 2019,
+          "seasonType": "regular",
+          "targetGames": 45,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 45,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 45,
+            "status": "PASS"
+          },
+          "historyComponentRows": 90,
+          "historySiteGames": 45,
+          "historyTeamGameRows": 90,
+          "reconstructedRows": 46,
+          "season": 2019,
+          "seasonType": "regular",
+          "targetGames": 46,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 91,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 91,
+            "status": "PASS"
+          },
+          "historyComponentRows": 182,
+          "historySiteGames": 91,
+          "historyTeamGameRows": 182,
+          "reconstructedRows": 48,
+          "season": 2019,
+          "seasonType": "regular",
+          "targetGames": 48,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 139,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 139,
+            "status": "PASS"
+          },
+          "historyComponentRows": 278,
+          "historySiteGames": 139,
+          "historyTeamGameRows": 278,
+          "reconstructedRows": 48,
+          "season": 2019,
+          "seasonType": "regular",
+          "targetGames": 48,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2018,
+      "reconstructedRows": 187,
+      "season": 2019,
+      "targetGames": 187
+    },
+    {
+      "comparison": {
+        "actualRows": 208,
+        "expectedRows": 208,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 208,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 52,
+          "season": 2022,
+          "seasonType": "regular",
+          "targetGames": 53,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 53,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 53,
+            "status": "PASS"
+          },
+          "historyComponentRows": 106,
+          "historySiteGames": 53,
+          "historyTeamGameRows": 106,
+          "reconstructedRows": 47,
+          "season": 2022,
+          "seasonType": "regular",
+          "targetGames": 47,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 100,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 100,
+            "status": "PASS"
+          },
+          "historyComponentRows": 200,
+          "historySiteGames": 100,
+          "historyTeamGameRows": 200,
+          "reconstructedRows": 50,
+          "season": 2022,
+          "seasonType": "regular",
+          "targetGames": 50,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 150,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 150,
+            "status": "PASS"
+          },
+          "historyComponentRows": 300,
+          "historySiteGames": 150,
+          "historyTeamGameRows": 300,
+          "reconstructedRows": 59,
+          "season": 2022,
+          "seasonType": "regular",
+          "targetGames": 60,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2021,
+      "reconstructedRows": 208,
+      "season": 2022,
+      "targetGames": 210
+    },
+    {
+      "comparison": {
+        "actualRows": 210,
+        "expectedRows": 210,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 210,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 50,
+          "season": 2023,
+          "seasonType": "regular",
+          "targetGames": 52,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 52,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 52,
+            "status": "PASS"
+          },
+          "historyComponentRows": 104,
+          "historySiteGames": 52,
+          "historyTeamGameRows": 104,
+          "reconstructedRows": 45,
+          "season": 2023,
+          "seasonType": "regular",
+          "targetGames": 47,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 99,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 99,
+            "status": "PASS"
+          },
+          "historyComponentRows": 198,
+          "historySiteGames": 99,
+          "historyTeamGameRows": 198,
+          "reconstructedRows": 54,
+          "season": 2023,
+          "seasonType": "regular",
+          "targetGames": 54,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 153,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 153,
+            "status": "PASS"
+          },
+          "historyComponentRows": 306,
+          "historySiteGames": 153,
+          "historyTeamGameRows": 306,
+          "reconstructedRows": 61,
+          "season": 2023,
+          "seasonType": "regular",
+          "targetGames": 63,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2022,
+      "reconstructedRows": 210,
+      "season": 2023,
+      "targetGames": 216
+    },
+    {
+      "comparison": {
+        "actualRows": 191,
+        "expectedRows": 191,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 191,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 38,
+          "season": 2024,
+          "seasonType": "regular",
+          "targetGames": 39,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 39,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 39,
+            "status": "PASS"
+          },
+          "historyComponentRows": 78,
+          "historySiteGames": 39,
+          "historyTeamGameRows": 78,
+          "reconstructedRows": 48,
+          "season": 2024,
+          "seasonType": "regular",
+          "targetGames": 49,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 88,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 88,
+            "status": "PASS"
+          },
+          "historyComponentRows": 176,
+          "historySiteGames": 88,
+          "historyTeamGameRows": 176,
+          "reconstructedRows": 51,
+          "season": 2024,
+          "seasonType": "regular",
+          "targetGames": 52,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 140,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 140,
+            "status": "PASS"
+          },
+          "historyComponentRows": 280,
+          "historySiteGames": 140,
+          "historyTeamGameRows": 280,
+          "reconstructedRows": 54,
+          "season": 2024,
+          "seasonType": "regular",
+          "targetGames": 54,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2023,
+      "reconstructedRows": 191,
+      "season": 2024,
+      "targetGames": 194
+    },
+    {
+      "comparison": {
+        "actualRows": 189,
+        "expectedRows": 189,
+        "extraGameIds": [],
+        "featureMismatches": 0,
+        "firstFeatureMismatches": [],
+        "maxAbsDiff": 0.0,
+        "maxAbsDiffByFeature": {
+          "away_iterativeExplosiveEdge": 0.0,
+          "away_iterativeFieldPositionEdge": 0.0,
+          "away_iterativeFinishingEdge": 0.0,
+          "away_iterativeSuccessEdge": 0.0,
+          "away_iterativeYardsPerPlayEdge": 0.0,
+          "away_iterativeYardsPerPossessionEdge": 0.0,
+          "explosiveVolumeEdge": 0.0,
+          "home_MWDR_DefenseEdge": 0.0,
+          "home_MWDR_OffenseEdge": 0.0,
+          "home_iterativeExplosiveEdge": 0.0,
+          "home_iterativeFieldPositionEdge": 0.0,
+          "home_iterativeFinishingEdge": 0.0,
+          "home_iterativeSuccessEdge": 0.0,
+          "home_iterativeYardsPerPlayEdge": 0.0,
+          "home_iterativeYardsPerPossessionEdge": 0.0,
+          "mwdrXExpectedPossessions": 0.0,
+          "siteAwareSrsMargin": 0.0,
+          "successVolumeEdge": 0.0,
+          "turnoverVolumeEdge": 0.0
+        },
+        "missingGameIds": [],
+        "outcomeBearingRows": [],
+        "priorWeightMismatches": 0,
+        "status": "PASS",
+        "versionMismatches": []
+      },
+      "expectedBlendRows": 189,
+      "partitions": [
+        {
+          "historyAlignment": {
+            "derivedGames": 0,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 0,
+            "status": "PASS"
+          },
+          "historyComponentRows": 0,
+          "historySiteGames": 0,
+          "historyTeamGameRows": 0,
+          "reconstructedRows": 47,
+          "season": 2025,
+          "seasonType": "regular",
+          "targetGames": 48,
+          "week": 1
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 48,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 48,
+            "status": "PASS"
+          },
+          "historyComponentRows": 96,
+          "historySiteGames": 48,
+          "historyTeamGameRows": 96,
+          "reconstructedRows": 48,
+          "season": 2025,
+          "seasonType": "regular",
+          "targetGames": 50,
+          "week": 2
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 98,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 98,
+            "status": "PASS"
+          },
+          "historyComponentRows": 196,
+          "historySiteGames": 98,
+          "historyTeamGameRows": 196,
+          "reconstructedRows": 45,
+          "season": 2025,
+          "seasonType": "regular",
+          "targetGames": 47,
+          "week": 3
+        },
+        {
+          "historyAlignment": {
+            "derivedGames": 145,
+            "derivedOnlyGames": 0,
+            "duplicateSiteGames": 0,
+            "malformedDerivedGames": 0,
+            "rawOnlyGames": 0,
+            "siteScoreGames": 145,
+            "status": "PASS"
+          },
+          "historyComponentRows": 290,
+          "historySiteGames": 145,
+          "historyTeamGameRows": 290,
+          "reconstructedRows": 49,
+          "season": 2025,
+          "seasonType": "regular",
+          "targetGames": 50,
+          "week": 4
+        }
+      ],
+      "priorSeason": 2024,
+      "reconstructedRows": 189,
+      "season": 2025,
+      "targetGames": 195
+    }
+  ],
+  "status": "PASS",
+  "tolerance": 1e-10,
+  "trainingSeasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}
