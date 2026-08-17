@@ -42,6 +42,7 @@ function PickButton({
   rank,
   picked,
   disabled,
+  modelPending,
   onPick,
 }: {
   game: BeatTheModelGame;
@@ -49,6 +50,7 @@ function PickButton({
   rank: number;
   picked: boolean;
   disabled: boolean;
+  modelPending: boolean;
   onPick: () => void;
 }) {
   return (
@@ -62,18 +64,19 @@ function PickButton({
     >
       <span className="btm-rank-chip">#{rank}</span>
       <strong>{team}</strong>
-      <span>{picked ? "Your pick" : "Pick"}</span>
+      <span>{picked ? "Your pick" : modelPending ? "Soon" : "Pick"}</span>
     </button>
   );
 }
 
 function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: string; onPick: (team: string) => void }) {
   const locked = isLocked(game);
-  const revealed = Boolean(pick) || locked || game.status === "final";
+  const modelAvailable = Boolean(game.modelWinner);
+  const revealed = modelAvailable && (Boolean(pick) || locked || game.status === "final");
   const winner = actualWinner(game);
   const kickoff = formatKickoff(game.kickoff);
   const userCorrect = pick && winner ? pick === winner : null;
-  const modelCorrect = winner ? game.modelWinner === winner : null;
+  const modelCorrect = winner && game.modelWinner ? game.modelWinner === winner : null;
 
   return (
     <article className={`btm-game-card${game.status === "final" ? " final" : ""}`}>
@@ -97,7 +100,8 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
           team={game.awayTeam}
           rank={game.awayRank}
           picked={pick === game.awayTeam}
-          disabled={locked}
+          disabled={locked || !modelAvailable}
+          modelPending={!modelAvailable}
           onPick={() => onPick(game.awayTeam)}
         />
         <div className="btm-versus">VS</div>
@@ -106,13 +110,22 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
           team={game.homeTeam}
           rank={game.homeRank}
           picked={pick === game.homeTeam}
-          disabled={locked}
+          disabled={locked || !modelAvailable}
+          modelPending={!modelAvailable}
           onPick={() => onPick(game.homeTeam)}
         />
       </div>
 
       <div className={`btm-model-reveal${revealed ? " revealed" : ""}`}>
-        {revealed ? (
+        {!modelAvailable ? (
+          <>
+            <div>
+              <span>THE MODEL</span>
+              <strong>Pregame snapshot pending</strong>
+            </div>
+            <div className="btm-model-lock" aria-hidden="true">NOT OPEN</div>
+          </>
+        ) : revealed ? (
           <>
             <div>
               <span>THE MODEL</span>
@@ -168,7 +181,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
   }, [data.season, data.week]);
 
   function choose(game: BeatTheModelGame, team: string) {
-    if (isLocked(game)) return;
+    if (isLocked(game) || !game.modelWinner) return;
     setPicks((current) => {
       const next = { ...current, [game.id]: team };
       try {
@@ -189,7 +202,8 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
     const winner = actualWinner(game);
     return winner && picks[game.id] === winner;
   }).length;
-  const modelWins = finalGames.filter((game) => actualWinner(game) === game.modelWinner).length;
+  const modelFinalGames = finalGames.filter((game) => Boolean(game.modelWinner));
+  const modelWins = modelFinalGames.filter((game) => actualWinner(game) === game.modelWinner).length;
 
   if (!data.games.length) {
     return (
@@ -197,7 +211,7 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
         <div>
           <span className="eyebrow">{data.season} WEEK {data.week}</span>
           <h2>The Official 15 has not been published yet.</h2>
-          <p>Week 1 team rankings are seeded from the final {data.season - 1} power ratings. Once the live Week 1 schedule and frozen model predictions are published, the 15 highest-rated eligible matchups will appear here automatically.</p>
+          <p>Week 1 team rankings are seeded from the final {data.season - 1} power ratings. The weekly scheduler pulls the live FBS schedule and automatically selects the 15 strongest ranked matchups.</p>
         </div>
         <div className="btm-awaiting-rules">
           <span>15 games</span>
@@ -215,16 +229,24 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
         <div>
           <span className="eyebrow">OFFICIAL {data.slateSize}</span>
           <h2 id="official-slate-heading">{data.season} Week {data.week}</h2>
-          <p>Make your choice first. The Model's pick is revealed only after yours.</p>
+          <p>{data.status === "awaiting-model"
+            ? "The matchups are selected. Picking opens after The Model's frozen pregame snapshot is attached."
+            : "Make your choice first. The Model's pick is revealed only after yours."}</p>
         </div>
         <div className="btm-progress-card">
-          <span>Your card</span>
-          <strong>{hydrated ? `${pickedCount}/${data.games.length}` : "—"}</strong>
-          <small>picks made</small>
+          <span>{data.status === "awaiting-model" ? "Slate" : "Your card"}</span>
+          <strong>{data.status === "awaiting-model" ? `${data.games.length}/${data.slateSize}` : hydrated ? `${pickedCount}/${data.games.length}` : "—"}</strong>
+          <small>{data.status === "awaiting-model" ? "games selected" : "picks made"}</small>
         </div>
       </div>
 
-      {finalGames.length ? (
+      {data.status === "awaiting-model" ? (
+        <div className="btm-scoreboard btm-model-pending-banner">
+          <div><span>Matchups</span><strong>SET</strong></div>
+          <div className="btm-scoreboard-vs">→</div>
+          <div><span>Picking</span><strong>SOON</strong></div>
+        </div>
+      ) : finalGames.length ? (
         <div className="btm-scoreboard">
           <div><span>You</span><strong>{userWins}</strong></div>
           <div className="btm-scoreboard-vs">VS</div>
