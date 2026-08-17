@@ -27,18 +27,17 @@ export default async function ArchiveWeekPage({ params }: { params: Promise<{ se
 
   return (
     <>
-      <Link className="back-link" href="/archive">← Archive</Link>
+      <Link className="back-link" href="/archive">← Back to archive</Link>
 
-      <section className="archive-page-head btm-archive-page-head">
+      <section className="fan-page-intro fan-archive-detail-intro">
         <div>
-          <span className="eyebrow">BEAT THE MODEL ARCHIVE</span>
-          <h1>{season} <span>/</span> Week {week}</h1>
-          <p>The Official 15 and The Model's straight-up result, preserved exactly as a weekly competition.</p>
+          <span className="fan-kicker">ARCHIVE WEEK</span>
+          <h1>{season} Week {week}</h1>
+          <p>The Official 15 and The Model's straight-up result, preserved as the permanent record of that week.</p>
         </div>
-        <div className="archive-page-chip">
-          <span>Scoring</span>
-          <strong>1 point</strong>
-          <small>per correct winner</small>
+        <div className="fan-rule-row fan-rule-row-intro">
+          <span><strong>1</strong> point per winner</span>
+          <span><strong>15</strong> official games</span>
         </div>
       </section>
 
@@ -47,10 +46,10 @@ export default async function ArchiveWeekPage({ params }: { params: Promise<{ se
       {data.games.length ? (
         <ArchiveWeekView data={data} />
       ) : (
-        <section className="empty-panel archive-empty">
-          <span className="eyebrow">NO DATA</span>
-          <h2>This archive week has not been generated on this checkout.</h2>
-          <p>Republish the website data from the repository root. Historical model picks are never fabricated after the result.</p>
+        <section className="fan-empty-state archive-empty">
+          <span className="fan-status fan-status-steel">No published data</span>
+          <h2>This archive week is not available on this checkout.</h2>
+          <p>Historical model picks are only shown when a supported published record exists; they are never fabricated after the result.</p>
         </section>
       )}
     </>
