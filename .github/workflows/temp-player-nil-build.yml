@@ -7,6 +7,9 @@ on:
       - agent/beat-2019-lsu-nil-players
     paths:
       - .github/workflows/temp-player-nil-build.yml
+  pull_request:
+    branches:
+      - agent/website-fan-experience-v3
 
 permissions:
   contents: write
@@ -90,6 +93,7 @@ jobs:
             --seed 42
 
       - name: Commit generated dataset
+        if: github.event_name == 'push'
         run: |
           git add data/prototypes/beat-2019-lsu/player-nil-v1.json
           if git diff --cached --quiet; then
