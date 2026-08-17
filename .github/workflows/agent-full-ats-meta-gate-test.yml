@@ -1,0 +1,24 @@
+name: Agent FULL ATS meta-gate validation
+
+on:
+  push:
+    branches:
+      - agent/full-ats-meta-gate
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e '.[dev,models]'
+      - name: FULL ATS meta-gate tests
+        run: pytest -q tests/analytics/test_full_ats_meta_gate.py
+      - name: Dynamic Bayesian O-D regression tests
+        run: pytest -q tests/analytics/test_dynamic_bayesian_offense_defense.py
+      - name: Full test suite
+        run: pytest -q
