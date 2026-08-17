@@ -37,7 +37,7 @@ jobs:
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
-          python -m cfb_analytics.prototypes.historical_player_nil_draft \
+          python -m cfb_analytics.prototypes.historical_player_nil_draft_fast \
             --build \
             --output data/prototypes/beat-2019-lsu/player-nil-v1.json \
             --simulations 5000
@@ -87,7 +87,7 @@ jobs:
 
       - name: Run deterministic demo
         run: |
-          python -m cfb_analytics.prototypes.historical_player_nil_draft \
+          python -m cfb_analytics.prototypes.historical_player_nil_draft_fast \
             --demo \
             --output data/prototypes/beat-2019-lsu/player-nil-v1.json \
             --seed 42
