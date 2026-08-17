@@ -2,12 +2,25 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { formatKickoff, type BeatTheModelDataset, type BeatTheModelGame } from "../lib/beat-the-model";
+import type { BeatTheModelDataset, BeatTheModelGame } from "../lib/beat-the-model";
 
 type Picks = Record<string, string>;
 
 function storageKey(data: BeatTheModelDataset): string {
   return `beat-the-model:picks:${data.season}:${data.week}`;
+}
+
+function formatKickoff(value: string | null | undefined): string | null {
+  if (!value) return null;
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(date);
 }
 
 function actualWinner(game: BeatTheModelGame): string | null {
