@@ -116,3 +116,41 @@ class CfbdClient:
         responsible for retaining only rows whose classification is ``fbs``.
         """
         return self.get_json("/teams", {})
+
+    def team_season_stats(
+        self,
+        season: int,
+        *,
+        start_week: int | None = None,
+        end_week: int | None = None,
+    ) -> CfbdResponse:
+        """Return FBS team season stats over an explicit week window."""
+        return self.get_json(
+            "/stats/season",
+            {
+                "year": season,
+                "startWeek": start_week,
+                "endWeek": end_week,
+                "classification": CLASSIFICATION,
+            },
+        )
+
+    def team_season_advanced_stats(
+        self,
+        season: int,
+        *,
+        start_week: int | None = None,
+        end_week: int | None = None,
+        exclude_garbage_time: bool = True,
+    ) -> CfbdResponse:
+        """Return FBS advanced team stats over a pregame-safe week window."""
+        return self.get_json(
+            "/stats/season/advanced",
+            {
+                "year": season,
+                "startWeek": start_week,
+                "endWeek": end_week,
+                "classification": CLASSIFICATION,
+                "excludeGarbageTime": exclude_garbage_time,
+            },
+        )
