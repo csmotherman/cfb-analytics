@@ -32,6 +32,7 @@ export function ArchiveBrowser({ index }: { index: ArchiveIndexEntry[] }) {
         <span className="eyebrow">PREDICTION ARCHIVE</span>
         <h2 id="archive-heading">Go back to any week.</h2>
         <p>Browse the college football slate year by year, week by week, from 2014 through 2025.</p>
+        <p className="archive-note">2020 is intentionally omitted because the COVID-disrupted season is not part of the comparable historical model universe.</p>
       </div>
 
       <div className="archive-picker">
