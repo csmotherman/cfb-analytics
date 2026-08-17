@@ -1,0 +1,97 @@
+name: Publish Beat the Model weekly slate
+
+on:
+  schedule:
+    # Monday morning during the CFB season. GitHub cron is UTC: this is
+    # approximately 9am ET during daylight time and 8am ET after DST ends.
+    - cron: "0 13 * 8-12,1 1"
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season"
+        required: true
+        default: "2026"
+      week:
+        description: "Week to publish now (leave blank to refresh/advance automatically)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: beat-the-model-weekly-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project
+        run: pip install -e .
+
+      - name: Publish or advance Official 15
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          INPUT_SEASON: ${{ github.event.inputs.season }}
+          INPUT_WEEK: ${{ github.event.inputs.week }}
+          EVENT_NAME: ${{ github.event_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          SEASON="${INPUT_SEASON:-2026}"
+          if [[ -n "${INPUT_WEEK:-}" ]]; then
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule \
+              --season "$SEASON" \
+              --week "$INPUT_WEEK"
+          elif [[ "$EVENT_NAME" == "schedule" ]]; then
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule \
+              --season "$SEASON" \
+              --advance
+          else
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule \
+              --season "$SEASON"
+          fi
+
+      - name: Validate generated website data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("website/data/beat-the-model/current.json")
+          payload = json.loads(path.read_text())
+          games = payload.get("games", [])
+          assert games, "current Beat the Model slate is empty"
+          assert len(games) <= int(payload.get("slateSize", 15))
+          assert len({str(g["id"]) for g in games}) == len(games), "duplicate game IDs"
+          assert all(g.get("homeTeam") and g.get("awayTeam") for g in games)
+          print(
+              f"BTM DATA PASS {payload['season']} W{payload['week']} "
+              f"games={len(games)} status={payload['status']}"
+          )
+          PY
+
+      - name: Commit published data
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add website/data/beat-the-model
+          if git diff --cached --quiet; then
+            echo "No Beat the Model data changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          SEASON=$(python -c 'import json; print(json.load(open("website/data/beat-the-model/current.json"))["season"])')
+          WEEK=$(python -c 'import json; print(json.load(open("website/data/beat-the-model/current.json"))["week"])')
+          git commit -m "data: publish Beat the Model ${SEASON} week ${WEEK}"
+          git push
