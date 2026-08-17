@@ -2,40 +2,55 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "How it works",
-  description: "How CFB Model turns pregame football data into one prediction and three clear reasons.",
+  description: "How Beat the Model ranks teams, selects the Official 15, and scores the weekly picking game.",
 };
 
 export default function AboutPage() {
   return (
     <>
-      <section className="page-hero compact-hero">
+      <section className="page-hero compact-hero btm-page-hero">
         <span className="eyebrow">HOW IT WORKS</span>
-        <h1>The numbers stay under the hood.</h1>
-        <p>You get the part that matters: who the model likes, how strongly it likes them, and why.</p>
+        <h1>Pick first. Then face The Model.</h1>
+        <p>Beat the Model is a weekly college football picking game. No spreads, no odds, no betting bankroll—just winner picks and a public score.</p>
       </section>
 
-      <section className="method-steps">
+      <section className="method-steps btm-method-steps">
         <article>
           <span>01</span>
-          <h2>Measure the matchup</h2>
-          <p>The model evaluates opponent-adjusted efficiency, explosiveness, field position, finishing drives, strength, and other pregame football signals.</p>
+          <h2>Rank every team</h2>
+          <p>Every FBS team receives a weekly opponent-adjusted power rating. Week 1 starts from the previous season's final rating, then current-season evidence takes over over four games.</p>
         </article>
         <article>
           <span>02</span>
-          <h2>Make one call</h2>
-          <p>Those signals become a projected score and win probability. The site does not bury the answer behind a dashboard.</p>
+          <h2>Choose the Official 15</h2>
+          <p>The 15 strongest eligible regular-season matchups are chosen from those rankings. The Model's prediction, confidence, and historical performance are never used to make the slate easier.</p>
         </article>
         <article>
           <span>03</span>
-          <h2>Lock the receipt</h2>
-          <p>The prediction is timestamped before kickoff. After the game, the original pick stays visible beside the result.</p>
+          <h2>Make your picks</h2>
+          <p>You pick the winner of each game. The Model's answer stays hidden until you make your own choice, so you cannot simply copy it.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h2>Score it straight up</h2>
+          <p>A correct winner is one point. A wrong winner is zero. You and The Model are scored on the exact same 15 games.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h2>Compete</h2>
+          <p>The core game works one-on-one against The Model first. Private friend pools and public pools can use the same locked weekly card without changing the scoring rules.</p>
+        </article>
+        <article>
+          <span>06</span>
+          <h2>Keep the receipts</h2>
+          <p>After the games finish, the original slate and model picks stay in the archive. The Model cannot remove a bad week or rewrite a loss.</p>
         </article>
       </section>
 
-      <section className="principle-card">
-        <span className="eyebrow">THE PRODUCT RULE</span>
-        <h2>Prediction first. Explanation second. Everything else is noise.</h2>
-        <p>Advanced metrics can power the model without forcing fans to learn a new language just to understand a football game.</p>
+      <section className="principle-card btm-principle-card">
+        <span className="eyebrow">THE FAIRNESS RULE</span>
+        <h2>The Model never gets to choose the games it has to predict.</h2>
+        <p>Rankings select the slate first. Prediction v2 then plays the same card as everyone else. That separation is part of the product contract.</p>
       </section>
     </>
   );
