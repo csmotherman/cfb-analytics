@@ -24,7 +24,7 @@ export default async function ArchiveWeekPage({ params }: { params: Promise<{ se
 
   const data = getArchiveWeek(season, week);
   const index = getArchiveIndex();
-  const title = week === 0 ? "Preseason" : `Week ${week}`;
+  const title = `Week ${week}`;
 
   return (
     <>
