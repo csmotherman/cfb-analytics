@@ -10,13 +10,22 @@ export const metadata: Metadata = {
 
 export default function PlayPage() {
   const data = getBeatTheModelDataset();
+
   return (
     <>
-      <section className="page-hero compact-hero btm-page-hero">
-        <span className="eyebrow">BEAT THE MODEL</span>
-        <h1>Make your picks.</h1>
-        <p>One winner per game. One point per correct pick. The Model's answer stays hidden until you choose.</p>
+      <section className="fan-page-intro fan-play-intro">
+        <div>
+          <span className="fan-kicker">PLAY</span>
+          <h1>Make your picks.</h1>
+          <p>Choose a winner in every matchup. You make your call first; then The Model's pick is revealed.</p>
+        </div>
+        <div className="fan-rule-row fan-rule-row-intro" aria-label="Beat the Model scoring rules">
+          <span><strong>{data.slateSize}</strong> games</span>
+          <span><strong>1</strong> point per win</span>
+          <span><strong>No</strong> confidence points</span>
+        </div>
       </section>
+
       <BeatTheModelGameView data={data} />
     </>
   );
