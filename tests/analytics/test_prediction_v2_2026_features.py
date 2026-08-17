@@ -29,6 +29,13 @@ def _mechanism_values(offset=0.0):
     return {field: values[field] + offset for field in REQUIRED_MECHANISM_FIELDS}
 
 
+def _make_discoverable_partition(path, games):
+    path.mkdir(parents=True)
+    (path / "games.json").write_text(json.dumps(games))
+    (path / "drives.json").write_text("[]")
+    (path / "plays.json").write_text("[]")
+
+
 def _fixture():
     home = "Home"
     away = "Away"
@@ -165,28 +172,26 @@ def test_complete_history_game_ids_requires_exact_two_team_rows():
 def test_history_site_games_ignores_raw_finals_outside_derived_sample(tmp_path):
     raw_root = tmp_path / "raw"
     history_path = partition_dir(raw_root, 2026, "regular", 1)
-    history_path.mkdir(parents=True)
-    (history_path / "games.json").write_text(
-        json.dumps(
-            [
-                {
-                    "id": 1,
-                    "homeTeam": "A",
-                    "awayTeam": "B",
-                    "homePoints": 24,
-                    "awayPoints": 17,
-                    "neutralSite": False,
-                },
-                {
-                    "id": 2,
-                    "homeTeam": "C",
-                    "awayTeam": "D",
-                    "homePoints": 31,
-                    "awayPoints": 14,
-                    "neutralSite": False,
-                },
-            ]
-        )
+    _make_discoverable_partition(
+        history_path,
+        [
+            {
+                "id": 1,
+                "homeTeam": "A",
+                "awayTeam": "B",
+                "homePoints": 24,
+                "awayPoints": 17,
+                "neutralSite": False,
+            },
+            {
+                "id": 2,
+                "homeTeam": "C",
+                "awayTeam": "D",
+                "homePoints": 31,
+                "awayPoints": 14,
+                "neutralSite": False,
+            },
+        ],
     )
 
     rows = _history_site_games(
@@ -202,20 +207,18 @@ def test_history_site_games_ignores_raw_finals_outside_derived_sample(tmp_path):
 def test_history_site_games_requires_raw_final_for_every_derived_game(tmp_path):
     raw_root = tmp_path / "raw"
     history_path = partition_dir(raw_root, 2026, "regular", 1)
-    history_path.mkdir(parents=True)
-    (history_path / "games.json").write_text(
-        json.dumps(
-            [
-                {
-                    "id": 1,
-                    "homeTeam": "A",
-                    "awayTeam": "B",
-                    "homePoints": 24,
-                    "awayPoints": 17,
-                    "neutralSite": False,
-                }
-            ]
-        )
+    _make_discoverable_partition(
+        history_path,
+        [
+            {
+                "id": 1,
+                "homeTeam": "A",
+                "awayTeam": "B",
+                "homePoints": 24,
+                "awayPoints": 17,
+                "neutralSite": False,
+            }
+        ],
     )
 
     with pytest.raises(ValueError, match="missing raw final/site"):
