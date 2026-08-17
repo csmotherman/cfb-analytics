@@ -14,6 +14,18 @@ export type BeatTheModelGame = {
   homePowerRating?: number | null;
   awayPowerRating?: number | null;
   matchupScore?: number | null;
+  selectionTier?: number | null;
+  selectionScore?: number | null;
+  marketSource?: string | null;
+  marketProviderCount?: number | null;
+  marketSpread?: number | null;
+  marketFavorite?: string | null;
+  marketLine?: string | null;
+  marketHomeMoneyline?: number | null;
+  marketAwayMoneyline?: number | null;
+  marketHomeWinProbability?: number | null;
+  marketAwayWinProbability?: number | null;
+  marketSnapshotAt?: string | null;
   modelWinner?: string | null;
   modelMargin?: number | null;
   modelHomeWinProbability?: number | null;
@@ -35,6 +47,11 @@ export type BeatTheModelDataset = {
   modelVersion: string;
   modelReady?: boolean;
   selectionFrozen?: boolean;
+  marketSource?: string | null;
+  marketSnapshotAt?: string | null;
+  marketFetchStatus?: string | null;
+  marketAvailableGames?: number | null;
+  marketSelectedGames?: number | null;
   games: BeatTheModelGame[];
 };
 
@@ -62,10 +79,15 @@ const EMPTY_DATASET: BeatTheModelDataset = {
   status: "awaiting-slate",
   slateSize: 15,
   rankingVersion: "btm-site-aware-srs-four-game-carryover-v1",
-  selectionVersion: "btm-top-15-power-matchups-v1",
+  selectionVersion: "btm-top-15-ranked-market-matchups-v2",
   modelVersion: "prediction-v2-2026-prospective-freeze-v1",
   modelReady: false,
   selectionFrozen: false,
+  marketSource: null,
+  marketSnapshotAt: null,
+  marketFetchStatus: null,
+  marketAvailableGames: 0,
+  marketSelectedGames: 0,
   games: [],
 };
 
@@ -99,6 +121,11 @@ export function getBeatTheModelDataset(): BeatTheModelDataset {
       modelVersion: String(parsed.modelVersion ?? EMPTY_DATASET.modelVersion),
       modelReady: typeof parsed.modelReady === "boolean" ? parsed.modelReady : undefined,
       selectionFrozen: typeof parsed.selectionFrozen === "boolean" ? parsed.selectionFrozen : undefined,
+      marketSource: typeof parsed.marketSource === "string" ? parsed.marketSource : null,
+      marketSnapshotAt: typeof parsed.marketSnapshotAt === "string" ? parsed.marketSnapshotAt : null,
+      marketFetchStatus: typeof parsed.marketFetchStatus === "string" ? parsed.marketFetchStatus : null,
+      marketAvailableGames: typeof parsed.marketAvailableGames === "number" ? parsed.marketAvailableGames : null,
+      marketSelectedGames: typeof parsed.marketSelectedGames === "number" ? parsed.marketSelectedGames : null,
       games: Array.isArray(parsed.games) ? parsed.games : [],
     };
   } catch {
