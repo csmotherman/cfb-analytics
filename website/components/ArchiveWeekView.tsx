@@ -1,39 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
-import type { ArchiveGame, ArchiveWeek, ArchiveWeekSummary } from "../lib/archive";
+import type { ArchiveGame, ArchiveWeek, BeatTheModelArchiveSummary } from "../lib/archive";
 
 function compactNumber(value: number): string {
   const rounded = Math.round(value * 10) / 10;
   return Number.isInteger(rounded) ? rounded.toFixed(0) : rounded.toFixed(1);
 }
 
-function formatTeamLine(
-  homeMargin: number | null | undefined,
-  homeTeam: string,
-  awayTeam: string,
-): string | null {
-  if (typeof homeMargin !== "number" || !Number.isFinite(homeMargin)) return null;
-  if (Math.abs(homeMargin) < 1e-9) return "Pick'em";
-  const favorite = homeMargin > 0 ? homeTeam : awayTeam;
-  return `${favorite} -${compactNumber(Math.abs(homeMargin))}`;
-}
-
 function formatPercent(value: number | null | undefined): string {
   return typeof value === "number" && Number.isFinite(value) ? `${(value * 100).toFixed(1)}%` : "—";
 }
 
-function formatUnits(value: number | null | undefined): string {
-  if (typeof value !== "number" || !Number.isFinite(value)) return "—";
-  const sign = value > 0 ? "+" : "";
-  return `${sign}${value.toFixed(2)}u`;
-}
-
-function ResultMark({ value, push = false }: { value: boolean | null | undefined; push?: boolean }) {
-  if (push || value == null) {
-    return <span className="archive-mark archive-mark-neutral" aria-label="Not graded">—</span>;
-  }
+function ResultMark({ value }: { value: boolean | null | undefined }) {
+  if (value == null) return <span className="archive-mark archive-mark-neutral" aria-label="Not graded">—</span>;
   return value ? (
     <span className="archive-mark archive-mark-win" aria-label="Correct">✓</span>
   ) : (
@@ -44,6 +25,7 @@ function ResultMark({ value, push = false }: { value: boolean | null | undefined
 function TeamCell({ game, side }: { game: ArchiveGame; side: "home" | "away" }) {
   const isHome = side === "home";
   const team = isHome ? game.homeTeam : game.awayTeam;
+  const rank = isHome ? game.homeRank : game.awayRank;
   const score = isHome ? game.actualHomeScore : game.actualAwayScore;
   const otherScore = isHome ? game.actualAwayScore : game.actualHomeScore;
   const isWinner = typeof score === "number" && typeof otherScore === "number" && score > otherScore;
@@ -53,7 +35,10 @@ function TeamCell({ game, side }: { game: ArchiveGame; side: "home" | "away" }) 
       {isHome && typeof score === "number" ? (
         <span className="archive-final-score-number" aria-label={`${team} final score ${score}`}>{score}</span>
       ) : null}
-      <strong>{team}</strong>
+      <span className="btm-archive-team-label">
+        {typeof rank === "number" ? <span className="btm-rank-chip">#{rank}</span> : null}
+        <strong>{team}</strong>
+      </span>
       {!isHome && typeof score === "number" ? (
         <span className="archive-final-score-number" aria-label={`${team} final score ${score}`}>{score}</span>
       ) : null}
@@ -63,70 +48,40 @@ function TeamCell({ game, side }: { game: ArchiveGame; side: "home" | "away" }) 
 
 function ArchiveTable({ games }: { games: ArchiveGame[] }) {
   return (
-    <div className="archive-table-shell">
+    <div className="archive-table-shell btm-archive-table-shell">
       <div className="archive-table-scroll">
-        <table className="archive-table">
+        <table className="archive-table btm-archive-table">
           <thead>
             <tr>
-              <th>Year</th>
-              <th>Week</th>
+              <th>Game</th>
               <th>Home team</th>
               <th>Away team</th>
-              <th>Market spread</th>
-              <th>Prediction (model)</th>
-              <th className="archive-center">ATS correct</th>
-              <th className="archive-center">Winner correct</th>
+              <th>Model pick</th>
+              <th className="archive-center">Correct</th>
             </tr>
           </thead>
           <tbody>
-            {games.map((game) => {
-              const modelLine = formatTeamLine(game.modelHomeMargin, game.homeTeam, game.awayTeam);
-              const marketLine = formatTeamLine(game.marketHomeMargin, game.homeTeam, game.awayTeam);
+            {games.map((game, index) => {
+              const winnerRank = game.predictedWinner === game.homeTeam ? game.homeRank : game.awayRank;
               return (
-                <tr key={game.id} className={game.recommendedBet ? "archive-recommended-row" : undefined}>
-                  <td className="archive-data">{game.season}</td>
-                  <td className="archive-data">{game.week}</td>
+                <tr key={game.id}>
+                  <td className="archive-data">{game.beatTheModelSlot ?? index + 1}</td>
                   <td><TeamCell game={game} side="home" /></td>
                   <td><TeamCell game={game} side="away" /></td>
                   <td>
-                    {marketLine ? (
-                      <>
-                        <div className="archive-line archive-market-line">{marketLine}</div>
-                        {game.marketProvider ? <span className="archive-subtext">{game.marketProvider}</span> : null}
-                      </>
-                    ) : (
-                      <span className="archive-missing-value">No market line</span>
-                    )}
-                  </td>
-                  <td>
-                    {modelLine ? (
-                      <>
-                        <div className="archive-model-prediction">
-                          <span className="archive-line archive-model-line">{modelLine}</span>
-                          {game.recommendedBet ? <span className="archive-bet-pill">BET</span> : null}
-                        </div>
-                        {game.recommendedBet && game.recommendedBetTeam ? (
-                          <span className="archive-subtext archive-bet-subtext">
-                            ATS: {game.recommendedBetTeam}
-                            {typeof game.recommendedBetConfidence === "number"
-                              ? ` · ${(game.recommendedBetConfidence * 100).toFixed(1)}%`
-                              : ""}
-                          </span>
+                    {game.predictedWinner ? (
+                      <div className="btm-archive-model-pick">
+                        <span>THE MODEL</span>
+                        <strong>{typeof winnerRank === "number" ? `#${winnerRank} ` : ""}{game.predictedWinner}</strong>
+                        {typeof game.modelHomeMargin === "number" ? (
+                          <small>projected margin {compactNumber(Math.abs(game.modelHomeMargin))}</small>
                         ) : null}
-                      </>
+                      </div>
                     ) : (
-                      <>
-                        <span className="archive-missing-value">No model call</span>
-                        <span className="archive-subtext">No supported OOS prediction for this game</span>
-                      </>
+                      <span className="archive-missing-value">No model call</span>
                     )}
                   </td>
-                  <td className="archive-center">
-                    <ResultMark value={game.atsCorrect} push={game.atsResult === "PUSH"} />
-                  </td>
-                  <td className="archive-center">
-                    <ResultMark value={game.winnerCorrect} />
-                  </td>
+                  <td className="archive-center"><ResultMark value={game.winnerCorrect} /></td>
                 </tr>
               );
             })}
@@ -137,61 +92,37 @@ function ArchiveTable({ games }: { games: ArchiveGame[] }) {
   );
 }
 
-function ResultsPanel({ summary }: { summary?: ArchiveWeekSummary }) {
-  if (!summary || summary.modelGames === 0) {
-    return (
-      <div className="archive-results-empty">
-        <span className="eyebrow">RESULTS</span>
-        <h3>No official OOS model results for this week.</h3>
-        <p>The historical games, final scores, and available market lines are still shown. A model result only appears when a supported out-of-sample Prediction-v2 call exists.</p>
-      </div>
-    );
-  }
-
-  const atsRecord = `${summary.atsWins}-${summary.atsLosses}-${summary.atsPushes}`;
-  const betRecord = `${summary.recommendedBetWins}-${summary.recommendedBetLosses}-${summary.recommendedBetPushes}`;
-  const unitsClass = typeof summary.recommendedBetUnits === "number"
-    ? summary.recommendedBetUnits > 0
-      ? "stat-positive"
-      : summary.recommendedBetUnits < 0
-        ? "stat-negative"
-        : ""
-    : "";
-
+function ResultsPanel({ summary }: { summary: BeatTheModelArchiveSummary }) {
+  const record = `${summary.modelWins}-${summary.modelLosses}`;
   return (
-    <div className="archive-results-panel">
-      <div className="archive-stat-grid">
-        <article className="archive-stat-card stat-cyan">
-          <span>Model MAE</span>
-          <strong>{summary.modelMae == null ? "—" : summary.modelMae.toFixed(2)}</strong>
-          <small>points per game</small>
-        </article>
+    <div className="archive-results-panel btm-results-panel">
+      <div className="archive-stat-grid btm-stat-grid">
         <article className="archive-stat-card stat-mint">
+          <span>Model record</span>
+          <strong>{record}</strong>
+          <small>on the Official {summary.selectedGames}</small>
+        </article>
+        <article className="archive-stat-card stat-cyan">
           <span>Winner %</span>
-          <strong>{formatPercent(summary.winnerAccuracy)}</strong>
-          <small>{summary.winnerWins}-{summary.winnerLosses} straight up</small>
+          <strong>{formatPercent(summary.modelAccuracy)}</strong>
+          <small>straight-up picks</small>
         </article>
         <article className="archive-stat-card stat-amber">
-          <span>ATS record</span>
-          <strong>{atsRecord}</strong>
-          <small>{formatPercent(summary.atsAccuracy)} against the reference spread</small>
+          <span>Model MAE</span>
+          <strong>{summary.modelMae == null ? "—" : summary.modelMae.toFixed(2)}</strong>
+          <small>projected margin error</small>
         </article>
-        <article className={`archive-stat-card stat-units ${unitsClass}`}>
-          <span>Recommended-bet profit</span>
-          <strong>{formatUnits(summary.recommendedBetUnits)}</strong>
-          <small>{summary.recommendedBetSourcePresent ? `${betRecord} · ${summary.recommendedBets} bets` : "Bet source not generated"}</small>
+        <article className="archive-stat-card">
+          <span>Eligible matchups</span>
+          <strong>{summary.eligibleGames}</strong>
+          <small>ranked games with a model call</small>
         </article>
       </div>
 
-      <div className="archive-results-note">
+      <div className="archive-results-note btm-results-note">
         <div>
-          <span className="eyebrow">HOW TO READ THIS</span>
-          <p>ATS record grades the model's predicted margin against the historical CFBD reference spread. Units only use the model's predeclared recommended bets, not every ATS opinion.</p>
-        </div>
-        <div className="archive-results-convention">
-          <span>Units convention</span>
-          <strong>Flat 1u risk · -110</strong>
-          <small>Win +0.909u · Loss -1u · Push 0u</small>
+          <span className="eyebrow">FAIRNESS CONTRACT</span>
+          <p>The Official 15 is selected from the weekly team rankings. The Model's prediction and confidence are not used to choose which games it has to face.</p>
         </div>
       </div>
     </div>
@@ -200,15 +131,36 @@ function ResultsPanel({ summary }: { summary?: ArchiveWeekSummary }) {
 
 export function ArchiveWeekView({ data }: { data: ArchiveWeek }) {
   const [tab, setTab] = useState<"games" | "results">("games");
+  const games = useMemo(
+    () => data.games
+      .filter((game) => game.beatTheModelSelected === true)
+      .sort((a, b) => (a.beatTheModelSlot ?? 999) - (b.beatTheModelSlot ?? 999)),
+    [data.games],
+  );
+  const summary = data.beatTheModel;
+
+  if (!summary || !games.length) {
+    return (
+      <section className="btm-awaiting archive-btm-missing">
+        <div>
+          <span className="eyebrow">BEAT THE MODEL DATA NEEDED</span>
+          <h2>This week has the old research archive, but not an Official 15 yet.</h2>
+          <p>Republish the website data to attach the weekly power rankings and deterministic Beat the Model slate. The public game does not expose the old market/ATS research table.</p>
+        </div>
+        <code>python -m cfb_analytics.analytics.publish_website_archive</code>
+      </section>
+    );
+  }
 
   return (
-    <section className="archive-week-workspace">
+    <section className="archive-week-workspace btm-archive-workspace">
       <div className="archive-workspace-header">
         <div>
-          <span className="eyebrow">{data.label ?? `${data.season} Week ${data.week}`}</span>
-          <h2>{data.games.length} games</h2>
+          <span className="eyebrow">OFFICIAL {summary.slateSize}</span>
+          <h2>{data.season} Week {data.week}</h2>
+          <p className="btm-archive-subtitle">The {summary.selectedGames} highest-rated eligible matchups, selected before considering The Model's pick.</p>
         </div>
-        <div className="archive-tabs" role="tablist" aria-label="Archive view">
+        <div className="archive-tabs" role="tablist" aria-label="Beat the Model archive view">
           <button
             type="button"
             role="tab"
@@ -216,7 +168,7 @@ export function ArchiveWeekView({ data }: { data: ArchiveWeek }) {
             className={tab === "games" ? "active" : ""}
             onClick={() => setTab("games")}
           >
-            Games
+            Official slate
           </button>
           <button
             type="button"
@@ -225,12 +177,12 @@ export function ArchiveWeekView({ data }: { data: ArchiveWeek }) {
             className={tab === "results" ? "active" : ""}
             onClick={() => setTab("results")}
           >
-            Results
+            Model result
           </button>
         </div>
       </div>
 
-      {tab === "games" ? <ArchiveTable games={data.games} /> : <ResultsPanel summary={data.summary} />}
+      {tab === "games" ? <ArchiveTable games={games} /> : <ResultsPanel summary={summary} />}
     </section>
   );
 }
