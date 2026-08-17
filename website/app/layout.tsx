@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./archive.css";
@@ -25,6 +25,13 @@ export const metadata: Metadata = {
     template: "%s | Beat the Model",
   },
   description: "Pick the winners of the 15 biggest college football games each week and see if you can Beat the Model.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#090d14",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
