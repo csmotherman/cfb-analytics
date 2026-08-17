@@ -135,6 +135,28 @@ def _history_team_games(
     return rows
 
 
+def _complete_history_game_ids(history: list[dict[str, Any]]) -> set[str]:
+    """Return the authoritative completed-game sample represented by two team rows.
+
+    The frozen historical model states are built from derived/model games, not every
+    final score present in the raw games endpoint. Raw data supplies authoritative
+    score and site context for this sample; it must not enlarge the sample.
+    """
+    missing_id_rows = sum(row.get("gameId") is None for row in history)
+    if missing_id_rows:
+        raise ValueError(
+            f"Completed derived history contains {missing_id_rows} team row(s) without gameId"
+        )
+    counts: Counter[str] = Counter(str(row["gameId"]) for row in history)
+    malformed = sorted(game_id for game_id, count in counts.items() if count != 2)
+    if malformed:
+        raise ValueError(
+            "Completed derived history must contain exactly two team rows per game; "
+            f"malformed game IDs={malformed[:10]}"
+        )
+    return set(counts)
+
+
 def _history_components(
     processed_root: Path,
     season: int,
@@ -163,8 +185,19 @@ def _history_site_games(
     season: int,
     target_type: str,
     target_week: int,
+    *,
+    required_game_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
+    """Load raw score/site context without letting raw finals enlarge model history.
+
+    When ``required_game_ids`` is supplied, only those completed derived/model games
+    are admitted. Every required game must have exactly one finite raw final and a
+    parseable neutral-site flag. Extra raw finals are intentionally ignored because
+    they were not part of the frozen historical state sample.
+    """
+    required = None if required_game_ids is None else {str(gid) for gid in required_game_ids}
     rows: list[dict[str, Any]] = []
+    seen: Counter[str] = Counter()
     for season_type, week in sorted(
         discover_partitions(raw_root, season),
         key=lambda item: partition_key(*item),
@@ -176,13 +209,17 @@ def _history_site_games(
             game = normalize_authoritative_game(raw)
             if game is None:
                 continue
+            gid = str(game["gameId"])
+            if required is not None and gid not in required:
+                continue
             home_score = game.get("homeScore")
             away_score = game.get("awayScore")
             if not finite(home_score) or not finite(away_score):
                 continue
             _, neutral = extract_neutral_site(raw)
             if not isinstance(neutral, bool):
-                raise ValueError(f"Missing parseable site context for prior game {game.get('gameId')}")
+                raise ValueError(f"Missing parseable site context for prior game {gid}")
+            seen[gid] += 1
             rows.append(
                 {
                     "gameId": game["gameId"],
@@ -191,6 +228,19 @@ def _history_site_games(
                     "target_margin": float(home_score) - float(away_score),
                     "isNeutralSite": neutral,
                 }
+            )
+    if required is not None:
+        missing = sorted(required - set(seen))
+        duplicates = sorted(game_id for game_id, count in seen.items() if count != 1)
+        if missing or duplicates:
+            details: list[str] = []
+            if missing:
+                details.append(f"missing raw final/site games={missing[:10]}")
+            if duplicates:
+                details.append(f"duplicate raw final/site games={duplicates[:10]}")
+            raise ValueError(
+                "Raw score/site history does not exactly cover completed derived game sample; "
+                + "; ".join(details)
             )
     return rows
 
@@ -405,6 +455,7 @@ def materialize_week(
     season_type, resolved_week = _resolve_target_partition(raw_root, season, week)
     schedule = _target_schedule(raw_root, season, season_type, resolved_week)
     history = _history_team_games(raw_root, processed_root, season, season_type, resolved_week)
+    required_history_game_ids = _complete_history_game_ids(history)
     history_components = _history_components(
         processed_root,
         season,
@@ -412,7 +463,13 @@ def materialize_week(
         resolved_week,
         history_required=bool(history),
     )
-    history_site = _history_site_games(raw_root, season, season_type, resolved_week)
+    history_site = _history_site_games(
+        raw_root,
+        season,
+        season_type,
+        resolved_week,
+        required_game_ids=required_history_game_ids,
+    )
 
     games_played: Counter[str] = Counter(
         str(row.get("team")) for row in history if row.get("team")
