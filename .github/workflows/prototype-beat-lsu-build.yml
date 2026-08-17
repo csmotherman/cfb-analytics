@@ -1,5 +1,6 @@
 name: Build Beat 2019 LSU prototype data
 
+# One-time data build/validation workflow for the standalone prototype branch.
 on:
   push:
     branches:
