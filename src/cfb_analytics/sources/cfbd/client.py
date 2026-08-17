@@ -108,3 +108,11 @@ class CfbdClient:
             "/lines",
             {"year": season, "week": week, "seasonType": season_type},
         )
+
+    def teams(self) -> CfbdResponse:
+        """Return CFBD team metadata, including logos and brand fields.
+
+        The endpoint contains teams across classifications. Product callers are
+        responsible for retaining only rows whose classification is ``fbs``.
+        """
+        return self.get_json("/teams", {})
