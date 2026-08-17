@@ -28,11 +28,11 @@ export default function AboutPage() {
         </article>
         <article className="fan-how-card">
           <span>03</span>
-          <div><h2>You pick before The Model</h2><p>Use the rankings and market context, then choose one winner. Your first choice locks immediately and only then reveals The Model’s frozen pregame call.</p></div>
+          <div><h2>Research, choose, submit</h2><p>See the market and, from Week 3 on, open Matchup Intel for pregame team stats. Select either team, review your choice, then submit. Only the submitted pick becomes final and reveals The Model.</p></div>
         </article>
         <article className="fan-how-card">
           <span>04</span>
-          <div><h2>Saturday keeps score</h2><p>Correct winner equals one point. The original weekly card, market snapshot, and model calls stay attached to the final results.</p></div>
+          <div><h2>Saturday keeps score</h2><p>Correct winner equals one point. The original weekly card, market snapshot, submitted picks, and model calls stay tied to the final results.</p></div>
         </article>
       </section>
 
@@ -45,18 +45,29 @@ export default function AboutPage() {
         <article className="fan-principle">
           <span className="fan-kicker">THE SCORING RULE</span>
           <h2>Winner or loser. That’s it.</h2>
-          <p>The market is context, not scoring. No spread points, bankrolls, confidence multipliers, or betting results change the core game. One correct winner is one point.</p>
+          <p>The market and team stats are context, not scoring. No spread points, bankrolls, confidence multipliers, or betting results change the core game. One correct winner is one point.</p>
         </article>
       </section>
 
       <section className="fan-section">
         <div className="fan-section-heading">
-          <div><span className="fan-kicker">THE MARKET BAR</span><h2>See what the market thinks before you pick.</h2></div>
+          <div><span className="fan-kicker">BEFORE YOU PICK</span><h2>See the evidence. Make your own call.</h2></div>
         </div>
         <div className="fan-value-grid">
-          <article><span className="fan-value-number">R</span><h3>Rankings</h3><p>BTM rank tells you how strong each team entered the week.</p></article>
-          <article><span className="fan-value-number">M</span><h3>Market consensus</h3><p>Available sportsbook lines are reduced to one consensus view. Paired moneylines are converted to no-vig win probability for the bar.</p></article>
-          <article><span className="fan-value-number">P</span><h3>Your pick</h3><p>The market is visible, The Model is not. Once you choose, your pick locks and The Model is revealed.</p></article>
+          <article><span className="fan-value-number">R</span><h3>BTM rankings</h3><p>BTM rank tells you how strong each team entered the week.</p></article>
+          <article><span className="fan-value-number">M</span><h3>Market consensus</h3><p>Available sportsbook lines are reduced to one consensus view. Paired moneylines are converted to a no-vig win-probability bar.</p></article>
+          <article><span className="fan-value-number">I</span><h3>Matchup Intel</h3><p>Beginning in Week 3, compare record, scoring, success rate, PPA, and scoring-opportunity efficiency using only games completed before the current week.</p></article>
+        </div>
+      </section>
+
+      <section className="fan-section">
+        <div className="fan-section-heading">
+          <div><span className="fan-kicker">THE PICK FLOW</span><h2>An accidental tap is not a final answer.</h2></div>
+        </div>
+        <div className="fan-value-grid">
+          <article><span className="fan-value-number">1</span><h3>Select</h3><p>Tap either team. You can switch sides as many times as you want while reviewing the matchup.</p></article>
+          <article><span className="fan-value-number">2</span><h3>Submit</h3><p>Confirm the team you actually want. That submitted pick is the one that locks.</p></article>
+          <article><span className="fan-value-number">3</span><h3>Reveal</h3><p>Only after confirmation do you see The Model’s frozen call and whether you agree or disagree.</p></article>
         </div>
       </section>
 
@@ -66,7 +77,7 @@ export default function AboutPage() {
         </div>
         <div className="fan-value-grid">
           <article><span className="fan-value-number">M</span><h3>Monday: new board</h3><p>Fresh rankings, market context, and a new Official 15 create the week’s arguments.</p></article>
-          <article><span className="fan-value-number">P</span><h3>Before kickoff: pick</h3><p>Build your card, discover your disagreements, and share the calls you want to defend.</p></article>
+          <article><span className="fan-value-number">P</span><h3>Before kickoff: pick</h3><p>Study the matchup, submit your card, discover your disagreements, and share the calls you want to defend.</p></article>
           <article><span className="fan-value-number">S</span><h3>Saturday: settle it</h3><p>Follow your head-to-head as games go final, then keep the result in the archive.</p></article>
         </div>
       </section>
