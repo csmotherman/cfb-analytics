@@ -18,20 +18,54 @@ export type ArchiveGame = {
   projectedHomeScore?: number | null;
   projectedAwayScore?: number | null;
   modelHomeMargin?: number | null;
+  modelAbsoluteError?: number | null;
+  marketHomeMargin?: number | null;
+  marketProvider?: string | null;
+  modelAtsSide?: "HOME" | "AWAY" | null;
+  atsCorrect?: boolean | null;
+  atsResult?: "WIN" | "LOSS" | "PUSH" | null;
+  winnerCorrect?: boolean | null;
   actualHomeScore?: number | null;
   actualAwayScore?: number | null;
   actualHomeMargin?: number | null;
   correct?: boolean | null;
+  recommendedBet?: boolean;
+  recommendedBetSide?: "HOME" | "AWAY" | null;
+  recommendedBetTeam?: string | null;
+  recommendedBetConfidence?: number | null;
+  recommendedBetResult?: "WIN" | "LOSS" | "PUSH" | null;
   reasons?: PredictionReason[];
   risk?: string | null;
   lockedAt?: string | null;
   evidenceStatus?: "official-oos" | "historical-slate" | "retrospective" | string;
 };
 
+export type ArchiveWeekSummary = {
+  games: number;
+  modelGames: number;
+  marketGames: number;
+  modelMae: number | null;
+  winnerWins: number;
+  winnerLosses: number;
+  winnerAccuracy: number | null;
+  atsWins: number;
+  atsLosses: number;
+  atsPushes: number;
+  atsAccuracy: number | null;
+  recommendedBetSourcePresent: boolean;
+  recommendedBets: number;
+  recommendedBetWins: number;
+  recommendedBetLosses: number;
+  recommendedBetPushes: number;
+  recommendedBetUnits: number | null;
+  unitsConvention?: string;
+};
+
 export type ArchiveWeek = {
   season: number;
   week: number;
   label?: string;
+  summary?: ArchiveWeekSummary;
   games: ArchiveGame[];
 };
 
@@ -61,6 +95,7 @@ function normalizeWeek(payload: unknown, season: number, week: number): ArchiveW
     season: Number(record.season ?? season),
     week: Number(record.week ?? week),
     label: typeof record.label === "string" ? record.label : undefined,
+    summary: record.summary && typeof record.summary === "object" ? record.summary as ArchiveWeekSummary : undefined,
     games: Array.isArray(record.games) ? record.games as ArchiveGame[] : [],
   };
 }
@@ -109,8 +144,6 @@ export function getArchiveIndex(): ArchiveIndexEntry[] {
       for (const week of discoverWeeksInDirectory(directory)) weeks.add(week);
     }
 
-    // Keep every supported historical season navigable before generated archive files are
-    // copied into the website. The COVID-disrupted 2020 season is intentionally excluded.
     const discovered = [...weeks].sort((a, b) => a - b);
     return { season, weeks: discovered.length ? discovered : Array.from({ length: 21 }, (_, week) => week) };
   });
