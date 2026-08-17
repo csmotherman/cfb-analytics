@@ -129,7 +129,7 @@ Before The Model is attached, the website status is `awaiting-model`: fans can s
 
 ### GitHub Actions schedule
 
-`.github/workflows/beat-the-model-weekly.yml` runs every Monday morning during the college-football season and commits any changed files under `website/data/beat-the-model/`.
+`.github/workflows/beat-the-model-weekly.yml` runs at **9:15 AM America/Detroit every Monday from August through December**. It refreshes or advances the current regular-season slate and commits changed files under `website/data/beat-the-model/`.
 
 Repository Actions must have a secret named:
 
@@ -143,13 +143,12 @@ Do not commit the key. With GitHub CLI, it can be entered securely with:
 gh secret set CFBD_API_KEY
 ```
 
-GitHub scheduled workflows execute from the repository's **default branch**, so the weekly cron becomes operational after this workflow is merged to the default branch. While developing on another branch, use `workflow_dispatch` or run the Python command locally.
+GitHub `schedule` and `workflow_dispatch` triggers require the workflow file to exist on the repository's **default branch**. Therefore the production cron/manual Actions entrypoint becomes available after this workflow is merged to the default branch. Until then, publish Week 1 from the local checkout with the Python command above.
 
-Manual Week 1 workflow dispatch example:
+After the workflow is on the default branch, an explicit manual Week 1 dispatch can use:
 
 ```bash
 gh workflow run beat-the-model-weekly.yml \
-  --ref agent/website-predictions-clean \
   -f season=2026 \
   -f week=1
 ```
