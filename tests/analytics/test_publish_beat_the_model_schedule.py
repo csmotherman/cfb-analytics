@@ -39,7 +39,16 @@ def _write_week1_seed(root: Path, teams: list[tuple[str, float]]) -> dict:
     return payload
 
 
-def _game(game_id: str, home: str, away: str, *, home_points=None, away_points=None, completed=False):
+def _game(
+    game_id: str,
+    home: str,
+    away: str,
+    *,
+    home_points=None,
+    away_points=None,
+    completed=False,
+    neutral=False,
+):
     return {
         "id": game_id,
         "homeTeam": home,
@@ -49,7 +58,7 @@ def _game(game_id: str, home: str, away: str, *, home_points=None, away_points=N
         "homePoints": home_points,
         "awayPoints": away_points,
         "completed": completed,
-        "neutralSite": False,
+        "neutralSite": neutral,
         "startDate": "2026-09-05T16:00:00.000Z",
     }
 
@@ -67,7 +76,9 @@ def test_week2_rankings_blend_numeric_seed_with_completed_current_season_games(t
     _write_week1_seed(tmp_path, [("Alpha", 20.0), ("Beta", 10.0)])
     client = FakeClient(
         {
-            1: [_game("g1", "Beta", "Alpha", home_points=30, away_points=10, completed=True)],
+            # A large neutral-site result makes the 25% current-season component
+            # easy to distinguish from the Week 1 seed in this two-team fixture.
+            1: [_game("g1", "Beta", "Alpha", home_points=90, away_points=10, completed=True, neutral=True)],
         }
     )
 
