@@ -20,6 +20,30 @@ Primary navigation is:
 
 The archive picker also lives directly on the home screen so a fan can jump from the current slate to any supported historical season/week in one action.
 
+## Visual system: Stadium Midnight
+
+The public website uses the **Stadium Midnight** design system: a high-contrast slate canvas, translucent dark cards, subtle glass blur, and restrained neon indicators that make the model feel like a modern research product without turning the page into a noisy dashboard.
+
+Typography:
+
+- UI and headings: `Inter` / `Plus Jakarta Sans` with system sans fallbacks.
+- Scores, probabilities, records, margins, and other numerical data: `JetBrains Mono` with tabular numerals and system monospace fallbacks.
+
+Core color tokens:
+
+```text
+Canvas Background   #0B0F17
+Glass Card Surface  rgba(22, 31, 48, 0.75)
+Card Border         rgba(255, 255, 255, 0.08)
+Neon Mint           #10B981
+Electric Cyan       #06B6D4
+Trophy Amber        #F59E0B
+Stadium Crimson     #F43F5E
+Steel Gray Text     #94A3B8
+```
+
+Semantic use stays consistent: cyan is model/projection information, mint is positive/correct performance, amber is lock/high-attention metadata, crimson is negative/missed/risk information, and steel gray is secondary context.
+
 ## Live prediction data contract
 
 The website reads `website/data/predictions.json` (or `data/predictions.json` when the website directory is the deployment root).
