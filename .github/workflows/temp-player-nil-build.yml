@@ -1,0 +1,101 @@
+name: Build historical player NIL challenge
+
+on:
+  push:
+    branches:
+      - agent/beat-2019-lsu-nil-players
+    paths:
+      - .github/workflows/temp-player-nil-build.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/beat-2019-lsu-nil-players
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project
+        run: pip install -e '.[dev]'
+
+      - name: Run player NIL tests
+        run: pytest -q tests/prototypes/test_historical_player_nil_draft.py
+
+      - name: Build real historical player dataset
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          python -m cfb_analytics.prototypes.historical_player_nil_draft \
+            --build \
+            --output data/prototypes/beat-2019-lsu/player-nil-v1.json \
+            --simulations 5000
+
+      - name: Validate playable contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path('data/prototypes/beat-2019-lsu/player-nil-v1.json')
+          d = json.loads(p.read_text())
+          assert d['challengeVersion'] == 'historical-player-nil-v1'
+          assert d['status'] == 'data-prototype-playable'
+          assert d['target']['season'] == 2019
+          assert d['target']['team'] == 'LSU'
+          assert len(d['target']['lineup']) == 7
+          assert len({v['playerSeasonId'] for v in d['target']['lineup'].values()}) == 7
+          assert d['rules']['requiredPlayers'] == 7
+          assert d['rules']['offersPerSlot'] == 2
+          assert 14 <= float(d['rules']['budgetMillions']) <= 28
+          assert d['matchupCalibration']['games'] >= 400
+          assert d['matchupCalibration']['rosterPowerToMargin'] > 0
+          assert d['matchupCalibration']['residualSd'] > 0
+          for slot in d['rules']['slots']:
+              pool = d['slotPools'][slot]
+              assert len(pool) >= 80, (slot, len(pool))
+              assert all(float(row['nilAskMillions']) > 0 for row in pool)
+              assert all(1 <= float(row['grade']) <= 99 for row in pool)
+              assert sum(bool(row.get('logo')) for row in pool) >= int(len(pool) * 0.90)
+          selected = d['difficultyBenchmark']['selected']
+          oracle = selected['oracle']
+          assert oracle['feasibleRate'] >= 0.85
+          assert oracle['maxWinProbability'] > 0.50
+          assert 0.02 <= oracle['winRate'] <= 0.20
+          print('PLAYER NIL CHALLENGE CONTRACT: PASS')
+          print('title', d['title'])
+          print('budget', d['rules']['budgetMillions'])
+          print('marginGames', d['matchupCalibration']['games'])
+          print('oracleFeasible', oracle['feasibleRate'])
+          print('oracleWinRate', oracle['winRate'])
+          print('oracleMaxP', oracle['maxWinProbability'])
+          print('simpleWinRate', selected['simpleStrategy']['winRate'])
+          for slot in d['rules']['slots']:
+              print(slot, len(d['slotPools'][slot]))
+          PY
+
+      - name: Run deterministic demo
+        run: |
+          python -m cfb_analytics.prototypes.historical_player_nil_draft \
+            --demo \
+            --output data/prototypes/beat-2019-lsu/player-nil-v1.json \
+            --seed 42
+
+      - name: Commit generated dataset
+        run: |
+          git add data/prototypes/beat-2019-lsu/player-nil-v1.json
+          if git diff --cached --quiet; then
+            echo 'No generated data changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'data: add historical player NIL challenge dataset'
+          git push origin HEAD:agent/beat-2019-lsu-nil-players
