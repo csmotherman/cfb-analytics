@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: Promise<{ season: s
   const season = Number(seasonRaw);
   const week = Number(weekRaw);
   return {
-    title: `${season} Week ${week} College Football Archive`,
-    description: `Browse the ${season} college football Week ${week} model archive, market lines, picks, and results.`,
+    title: `${season} Week ${week} Beat the Model Archive`,
+    description: `See the ${season} Week ${week} Beat the Model Official 15 and model result.`,
   };
 }
 
@@ -29,16 +29,16 @@ export default async function ArchiveWeekPage({ params }: { params: Promise<{ se
     <>
       <Link className="back-link" href="/archive">← Archive</Link>
 
-      <section className="archive-page-head">
+      <section className="archive-page-head btm-archive-page-head">
         <div>
-          <span className="eyebrow">PREDICTION ARCHIVE</span>
+          <span className="eyebrow">BEAT THE MODEL ARCHIVE</span>
           <h1>{season} <span>/</span> Week {week}</h1>
-          <p>Historical market line, the model's margin prediction, and the result—kept together in one view.</p>
+          <p>The Official 15 and The Model's straight-up result, preserved exactly as a weekly competition.</p>
         </div>
         <div className="archive-page-chip">
-          <span>Comparable seasons</span>
-          <strong>2014–2025</strong>
-          <small>2020 excluded</small>
+          <span>Scoring</span>
+          <strong>1 point</strong>
+          <small>per correct winner</small>
         </div>
       </section>
 
@@ -50,7 +50,7 @@ export default async function ArchiveWeekPage({ params }: { params: Promise<{ se
         <section className="empty-panel archive-empty">
           <span className="eyebrow">NO DATA</span>
           <h2>This archive week has not been generated on this checkout.</h2>
-          <p>Regenerate the website archive from the repository root. Historical picks are never fabricated to fill an empty table.</p>
+          <p>Republish the website data from the repository root. Historical model picks are never fabricated after the result.</p>
         </section>
       )}
     </>
