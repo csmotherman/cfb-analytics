@@ -6,6 +6,7 @@ import "./beat-the-model.css";
 import "./pools.css";
 import "./fan-ui.css";
 import "./fan-v2.css";
+import "./fan-v3.css";
 import { Nav } from "../components/Nav";
 
 const inter = Inter({
