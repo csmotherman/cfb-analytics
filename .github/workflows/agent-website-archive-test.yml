@@ -1,0 +1,33 @@
+name: Agent website archive validation
+
+on:
+  push:
+    branches:
+      - agent/website-predictions-clean
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Python project
+        run: pip install -e '.[dev,models]'
+      - name: Archive exporter tests
+        run: pytest -q tests/analytics/test_website_prediction_archive.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install website dependencies
+        working-directory: website
+        run: npm install
+      - name: Typecheck website
+        working-directory: website
+        run: npm run typecheck
+      - name: Build website
+        working-directory: website
+        run: npm run build
