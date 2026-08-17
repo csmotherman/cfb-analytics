@@ -15,6 +15,7 @@ from typing import Any
 
 from cfb_analytics.analytics.prediction_v2_2026_features import (
     FEATURE_MATERIALIZER_VERSION,
+    _complete_history_game_ids,
     _history_site_games,
     _history_team_games,
     _resolve_target_partition,
@@ -47,24 +48,28 @@ def validate_history_alignment(
 ) -> dict[str, Any]:
     """Require site-SRS history to equal the two-team derived game history.
 
-    The historical Prediction-v2 path fits site-aware SRS on model games. A raw
-    scored game that lacks the corresponding completed derived two-team rows must
-    therefore never slip into the prospective SRS/HFA fit merely because a final
-    score exists in the raw games endpoint.
+    The historical Prediction-v2 path fits site-aware SRS on model games. Raw
+    score/site data therefore enriches the completed derived game sample but may
+    never enlarge it. A derived game without matching raw final/site context still
+    fails closed.
     """
     derived_ids, counts = _game_ids_from_team_history(team_history)
     malformed = sorted(game_id for game_id, count in counts.items() if count != 2)
-    site_ids = {
+    site_counts: Counter[str] = Counter(
         str(row.get("gameId"))
         for row in site_history
         if row.get("gameId") is not None
-    }
+    )
+    duplicate_site = sorted(game_id for game_id, count in site_counts.items() if count != 1)
+    site_ids = set(site_counts)
     raw_only = sorted(site_ids - derived_ids)
     derived_only = sorted(derived_ids - site_ids)
-    if malformed or raw_only or derived_only:
+    if malformed or duplicate_site or raw_only or derived_only:
         details: list[str] = []
         if malformed:
             details.append(f"non-two-team derived games={malformed[:10]}")
+        if duplicate_site:
+            details.append(f"duplicate raw/site games={duplicate_site[:10]}")
         if raw_only:
             details.append(f"raw-score-only games={raw_only[:10]}")
         if derived_only:
@@ -78,6 +83,7 @@ def validate_history_alignment(
         "derivedGames": len(derived_ids),
         "siteScoreGames": len(site_ids),
         "malformedDerivedGames": 0,
+        "duplicateSiteGames": 0,
         "rawOnlyGames": 0,
         "derivedOnlyGames": 0,
     }
@@ -125,11 +131,13 @@ def run_pipeline(
         season_type,
         resolved_week,
     )
+    required_history_game_ids = _complete_history_game_ids(team_history)
     site_history = _history_site_games(
         raw_root,
         TARGET_SEASON,
         season_type,
         resolved_week,
+        required_game_ids=required_history_game_ids,
     )
     alignment = validate_history_alignment(team_history, site_history)
 
