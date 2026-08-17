@@ -97,6 +97,31 @@ export type ArchiveIndexEntry = {
   weeks: number[];
 };
 
+export type ArchiveSeasonRecord = {
+  season: number;
+  weeks: number;
+  games: number;
+  modelCalls: number;
+  wins: number;
+  losses: number;
+  accuracy: number | null;
+};
+
+export type ArchiveAllTimeSummary = {
+  firstSeason: number | null;
+  lastSeason: number | null;
+  earliestModelSeason: number | null;
+  latestModelSeason: number | null;
+  seasons: number;
+  weeks: number;
+  games: number;
+  modelCalls: number;
+  wins: number;
+  losses: number;
+  accuracy: number | null;
+  seasonRecords: ArchiveSeasonRecord[];
+};
+
 type PublishedManifestSeason = {
   season: number;
   weeks: number[];
@@ -164,6 +189,15 @@ export function getArchiveGame(season: number, week: number, id: string): Archiv
   return getArchiveWeek(season, week).games.find((game) => String(game.id) === id) ?? null;
 }
 
+export function archiveWinnerCorrect(game: ArchiveGame): boolean | null {
+  if (!game.predictedWinner) return null;
+  if (typeof game.winnerCorrect === "boolean") return game.winnerCorrect;
+  if (typeof game.actualHomeScore !== "number" || typeof game.actualAwayScore !== "number") return null;
+  if (game.actualHomeScore === game.actualAwayScore) return null;
+  const actualWinner = game.actualHomeScore > game.actualAwayScore ? game.homeTeam : game.awayTeam;
+  return game.predictedWinner === actualWinner;
+}
+
 function discoverWeeksInDirectory(directory: string): number[] {
   if (!fs.existsSync(directory)) return [];
   try {
@@ -222,6 +256,69 @@ export function getArchiveIndex(): ArchiveIndexEntry[] {
     const discovered = [...weeks].sort((a, b) => a - b);
     return { season, weeks: discovered.length ? discovered : Array.from({ length: 21 }, (_, week) => week) };
   });
+}
+
+export function getArchiveAllTimeSummary(index: ArchiveIndexEntry[] = getArchiveIndex()): ArchiveAllTimeSummary {
+  const seasonRecords: ArchiveSeasonRecord[] = [];
+  let games = 0;
+  let modelCalls = 0;
+  let wins = 0;
+  let losses = 0;
+  let weeks = 0;
+
+  for (const entry of index) {
+    let seasonGames = 0;
+    let seasonCalls = 0;
+    let seasonWins = 0;
+    let seasonLosses = 0;
+
+    for (const week of entry.weeks) {
+      const data = getArchiveWeek(entry.season, week);
+      if (!data.games.length) continue;
+      weeks += 1;
+      seasonGames += data.games.length;
+
+      for (const game of data.games) {
+        const result = archiveWinnerCorrect(game);
+        if (result == null) continue;
+        seasonCalls += 1;
+        if (result) seasonWins += 1;
+        else seasonLosses += 1;
+      }
+    }
+
+    games += seasonGames;
+    modelCalls += seasonCalls;
+    wins += seasonWins;
+    losses += seasonLosses;
+    seasonRecords.push({
+      season: entry.season,
+      weeks: entry.weeks.length,
+      games: seasonGames,
+      modelCalls: seasonCalls,
+      wins: seasonWins,
+      losses: seasonLosses,
+      accuracy: seasonCalls ? seasonWins / seasonCalls : null,
+    });
+  }
+
+  const seasonsWithGames = seasonRecords.filter((record) => record.games > 0).map((record) => record.season);
+  const seasonsWithCalls = seasonRecords.filter((record) => record.modelCalls > 0).map((record) => record.season);
+
+  return {
+    firstSeason: seasonsWithGames.length ? Math.min(...seasonsWithGames) : null,
+    lastSeason: seasonsWithGames.length ? Math.max(...seasonsWithGames) : null,
+    earliestModelSeason: seasonsWithCalls.length ? Math.min(...seasonsWithCalls) : null,
+    latestModelSeason: seasonsWithCalls.length ? Math.max(...seasonsWithCalls) : null,
+    seasons: seasonsWithGames.length,
+    weeks,
+    games,
+    modelCalls,
+    wins,
+    losses,
+    accuracy: modelCalls ? wins / modelCalls : null,
+    seasonRecords,
+  };
 }
 
 export function archiveWeekHref(season: number, week: number): string {

@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: Promise<{ season: s
   const season = Number(seasonRaw);
   const week = Number(weekRaw);
   return {
-    title: `${season} Week ${week} Beat the Model Archive`,
-    description: `See the ${season} Week ${week} Beat the Model Official 15 and model result.`,
+    title: `${season} Week ${week} Model Results`,
+    description: `See the actual games, model picks, and straight-up results from ${season} Week ${week}.`,
   };
 }
 
@@ -27,29 +27,25 @@ export default async function ArchiveWeekPage({ params }: { params: Promise<{ se
 
   return (
     <>
-      <Link className="back-link" href="/archive">← Back to archive</Link>
+      <Link className="back-link" href="/archive">← All-time results</Link>
 
       <section className="fan-page-intro fan-archive-detail-intro">
         <div>
-          <span className="fan-kicker">ARCHIVE WEEK</span>
+          <span className="fan-kicker">MODEL HISTORY</span>
           <h1>{season} Week {week}</h1>
-          <p>The Official 15 and The Model's straight-up result, preserved as the permanent record of that week.</p>
-        </div>
-        <div className="fan-rule-row fan-rule-row-intro">
-          <span><strong>1</strong> point per winner</span>
-          <span><strong>15</strong> official games</span>
+          <p>Actual games from the week, their final scores, The Model’s supported pregame picks, and whether each call was correct.</p>
         </div>
       </section>
 
-      <ArchiveBrowser index={index} />
+      <ArchiveBrowser index={index} initialSeason={season} initialWeek={week} compact />
 
       {data.games.length ? (
         <ArchiveWeekView data={data} />
       ) : (
         <section className="fan-empty-state archive-empty">
           <span className="fan-status fan-status-steel">No published data</span>
-          <h2>This archive week is not available on this checkout.</h2>
-          <p>Historical model picks are only shown when a supported published record exists; they are never fabricated after the result.</p>
+          <h2>This archive week is not available.</h2>
+          <p>Historical games and model calls are only shown when they exist in the published archive; missing predictions are never reconstructed and presented as original calls.</p>
         </section>
       )}
     </>

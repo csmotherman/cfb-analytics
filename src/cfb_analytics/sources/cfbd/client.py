@@ -96,3 +96,61 @@ class CfbdClient:
             "/plays",
             {"year": season, "week": week, "seasonType": season_type, "classification": CLASSIFICATION},
         )
+
+    def lines(self, season: int, week: int, season_type: str = "regular") -> CfbdResponse:
+        """Return the CFBD betting-line feed for one season/week partition.
+
+        The v2 CFBD /lines endpoint does not expose the classification filter used
+        by /games. Callers should join the returned game IDs back to the authoritative
+        FBS-vs-FBS schedule before using market data in a product surface.
+        """
+        return self.get_json(
+            "/lines",
+            {"year": season, "week": week, "seasonType": season_type},
+        )
+
+    def teams(self) -> CfbdResponse:
+        """Return CFBD team metadata, including logos and brand fields.
+
+        The endpoint contains teams across classifications. Product callers are
+        responsible for retaining only rows whose classification is ``fbs``.
+        """
+        return self.get_json("/teams", {})
+
+    def team_season_stats(
+        self,
+        season: int,
+        *,
+        start_week: int | None = None,
+        end_week: int | None = None,
+    ) -> CfbdResponse:
+        """Return FBS team season stats over an explicit week window."""
+        return self.get_json(
+            "/stats/season",
+            {
+                "year": season,
+                "startWeek": start_week,
+                "endWeek": end_week,
+                "classification": CLASSIFICATION,
+            },
+        )
+
+    def team_season_advanced_stats(
+        self,
+        season: int,
+        *,
+        start_week: int | None = None,
+        end_week: int | None = None,
+        exclude_garbage_time: bool = True,
+    ) -> CfbdResponse:
+        """Return FBS advanced team stats over a pregame-safe week window."""
+        return self.get_json(
+            "/stats/season/advanced",
+            {
+                "year": season,
+                "startWeek": start_week,
+                "endWeek": end_week,
+                "classification": CLASSIFICATION,
+                "excludeGarbageTime": exclude_garbage_time,
+            },
+        )

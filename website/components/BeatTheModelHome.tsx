@@ -1,166 +1,158 @@
 import Link from "next/link";
 
+import { FavoriteTeamCard } from "./FavoriteTeamCard";
+import { TeamLogo } from "./TeamLogo";
 import {
   formatKickoff,
   getBeatTheModelDataset,
   getBeatTheModelRankings,
-  modelRecord,
 } from "../lib/beat-the-model";
+import { getArchiveAllTimeSummary } from "../lib/archive";
 
-function statusCopy(status: string): { label: string; tone: string; detail: string } {
-  if (status === "open") {
-    return { label: "Picks are open", tone: "mint", detail: "Make your picks before each game kicks off." };
-  }
-  if (status === "final") {
-    return { label: "Week complete", tone: "mint", detail: "See how you and The Model finished." };
-  }
-  if (status === "awaiting-model") {
-    return { label: "Slate is set", tone: "amber", detail: "The Official 15 is published. Picks open when the pregame model snapshot is ready." };
-  }
-  return { label: "Week is loading", tone: "steel", detail: "The weekly slate will appear here as soon as it is published." };
+function statusCopy(status: string) {
+  if (status === "open") return { label: "Picks open", tone: "mint", cta: "Select my picks" };
+  if (status === "locked") return { label: "Games underway", tone: "cyan", cta: "Follow my card" };
+  if (status === "final") return { label: "Week final", tone: "mint", cta: "See this week’s results" };
+  if (status === "awaiting-model") return { label: "Official 15 set", tone: "amber", cta: "View the 15 matchups" };
+  return { label: "Next week loading", tone: "steel", cta: "See how it works" };
+}
+
+function percent(value: number | null): string {
+  return value == null ? "—" : `${(value * 100).toFixed(1)}%`;
+}
+
+function MatchupSpotlight({ game }: { game: ReturnType<typeof getBeatTheModelDataset>["games"][number] }) {
+  return (
+    <article className="fan-spotlight-card">
+      <header>
+        <div><span className="fan-kicker">BIGGEST MATCHUP</span><strong>Official 15 · Game {game.slot}</strong></div>
+        <span>{formatKickoff(game.kickoff) ?? "Kickoff TBA"}</span>
+      </header>
+      <div className="fan-spotlight-matchup">
+        <div>
+          <TeamLogo team={game.awayTeam} src={game.awayLogo} size="lg" className="fan-spotlight-logo" />
+          <span>#{game.awayRank}</span><strong>{game.awayTeam}</strong><small>Away</small>
+        </div>
+        <em>AT</em>
+        <div>
+          <TeamLogo team={game.homeTeam} src={game.homeLogo} size="lg" className="fan-spotlight-logo" />
+          <span>#{game.homeRank}</span><strong>{game.homeTeam}</strong><small>Home</small>
+        </div>
+      </div>
+      <div className="fan-spotlight-market">
+        <span>MARKET</span>
+        <strong>{game.marketLine ?? "Consensus line pending"}</strong>
+        <small>{game.marketProviderCount ? `${game.marketProviderCount} ${game.marketProviderCount === 1 ? "book" : "books"}` : "Market context appears when available"}</small>
+      </div>
+      <footer>
+        <div><span>THE MODEL</span><strong>{game.modelWinner ? "Hidden until you submit" : "Pregame call locking"}</strong></div>
+        <Link href="/play">Go to this game <span aria-hidden="true">→</span></Link>
+      </footer>
+    </article>
+  );
 }
 
 export function BeatTheModelHome() {
   const data = getBeatTheModelDataset();
   const rankings = getBeatTheModelRankings(data.season, data.week);
-  const record = modelRecord(data.games);
+  const history = getArchiveAllTimeSummary();
   const status = statusCopy(data.status);
-  const previewGames = data.games.slice(0, 4);
+  const biggestGame = data.games[0];
   const topTeams = rankings.teams.slice(0, 5);
+  const primaryHref = data.status === "awaiting-slate" ? "/about" : "/play";
 
   return (
     <>
-      <section className="fan-home-hero">
-        <div className="fan-hero-copy">
-          <span className="fan-kicker">THE WEEKLY COLLEGE FOOTBALL PICK CHALLENGE</span>
-          <h1>Think you know college football?</h1>
-          <p className="fan-hero-lead">Pick the biggest games of the week, lock in your calls, and see whether you can beat a model that has to play the exact same card.</p>
-
-          <div className="fan-hero-actions">
-            <Link className="fan-button fan-button-primary" href="/play">Make my picks</Link>
-            <Link className="fan-button fan-button-secondary" href="/rankings">View rankings</Link>
+      <section className="fan-challenge-hero">
+        <div className="fan-challenge-copy">
+          <div className="fan-live-kicker">
+            <span className={`fan-status fan-status-${status.tone}`}>{status.label}</span>
+            <span>{data.season} · Week {data.week}</span>
           </div>
-
-          <div className="fan-hero-proof" aria-label="Game rules">
-            <span><strong>{data.slateSize}</strong> games</span>
-            <span><strong>1</strong> point per winner</span>
-            <span><strong>0</strong> spreads or odds</span>
+          <span className="fan-kicker fan-challenge-kicker">BEAT THE MODEL</span>
+          <h1>15 big games. Your picks versus the computer.</h1>
+          <p>We find the strongest competitive matchups using BTM power rankings and market consensus. Select a winner, review it, then submit before The Model reveals its frozen call.</p>
+          <div className="fan-hero-actions">
+            <Link className="fan-button fan-button-primary fan-primary-challenge-cta" href={primaryHref}>{status.cta}</Link>
+            <Link className="fan-button fan-button-secondary" href="/archive">See The Model’s history</Link>
+          </div>
+          <div className="fan-challenge-rules">
+            <div><strong>01</strong><span>The Official 15 targets strong teams and close matchups.</span></div>
+            <div><strong>02</strong><span>Select, review, submit. The Model stays hidden until confirmation.</span></div>
+            <div><strong>03</strong><span>Your submitted pick locks. One point per correct winner.</span></div>
           </div>
         </div>
 
-        <aside className="fan-week-card" aria-label={`Current Beat the Model week: ${data.season} Week ${data.week}`}>
-          <div className="fan-week-card-top">
-            <div>
-              <span className="fan-card-label">THIS WEEK</span>
-              <h2>{data.season} Week {data.week}</h2>
-            </div>
-            <span className={`fan-status fan-status-${status.tone}`}>{status.label}</span>
+        <aside className="fan-challenge-card">
+          <span className="fan-kicker">THIS WEEK’S CHALLENGE</span>
+          <div className="fan-challenge-card-week"><strong>Week {data.week}</strong><span>{data.games.length || "—"}/{data.slateSize} matchups</span></div>
+          <div className="fan-challenge-versus">
+            <div><span>YOU</span><strong>?</strong><small>Submit your calls</small></div>
+            <em>VS</em>
+            <div><span>THE MODEL</span><strong>M</strong><small>Same 15 games</small></div>
           </div>
-
-          <div className="fan-week-count">
-            <strong>{data.games.length || "—"}</strong>
-            <span>of {data.slateSize} matchups published</span>
-          </div>
-
-          <p>{status.detail}</p>
-
-          <div className="fan-week-stats">
-            <div><span>The Model</span><strong>{record.games ? `${record.wins}-${record.losses}` : "—"}</strong></div>
-            <div><span>Power rankings</span><strong>{rankings.teams.length || "—"}</strong></div>
-          </div>
-
-          <Link className="fan-week-link" href="/play">Go to this week <span aria-hidden="true">→</span></Link>
+          <Link href={primaryHref}>{status.cta} <span aria-hidden="true">→</span></Link>
         </aside>
       </section>
 
-      <section className="fan-section" aria-labelledby="how-heading">
-        <div className="fan-section-heading">
-          <div>
-            <span className="fan-kicker">HOW TO PLAY</span>
-            <h2 id="how-heading">Three steps. No clutter.</h2>
+      {biggestGame ? (
+        <section className="fan-section fan-section-first" aria-labelledby="biggest-game-heading">
+          <div className="fan-section-heading">
+            <div><span className="fan-kicker">START WITH THE BIG ONE</span><h2 id="biggest-game-heading">This week’s #1 matchup.</h2></div>
+            <Link href="/play">See all {data.slateSize} games <span aria-hidden="true">→</span></Link>
           </div>
-          <Link href="/about">How the system works <span aria-hidden="true">→</span></Link>
-        </div>
+          <MatchupSpotlight game={biggestGame} />
+        </section>
+      ) : null}
 
-        <div className="fan-step-grid">
-          <article>
-            <span>1</span>
-            <div><strong>Pick a winner</strong><p>Choose one team in each Official 15 matchup.</p></div>
-          </article>
-          <article>
-            <span>2</span>
-            <div><strong>Reveal The Model</strong><p>Your choice comes first. The Model stays hidden until you pick.</p></div>
-          </article>
-          <article>
-            <span>3</span>
-            <div><strong>Count the wins</strong><p>Correct winner equals one point. Better record wins the week.</p></div>
-          </article>
+      <section className="fan-proof-section fan-section" aria-labelledby="proof-heading">
+        <div className="fan-proof-copy">
+          <span className="fan-kicker">WHY TRUST THE CHALLENGE?</span>
+          <h2 id="proof-heading">The Model’s misses are public too.</h2>
+          <p>We keep the historical game archive and supported pregame calls on the site so fans can validate the opponent instead of trusting a headline accuracy claim.</p>
+          <Link className="fan-text-link" href="/archive">Open all-time results and weekly picks <span aria-hidden="true">→</span></Link>
+        </div>
+        <div className="fan-proof-record">
+          <div className="fan-proof-record-main"><span>ALL-TIME GRADED CALLS</span><strong>{history.modelCalls ? `${history.wins}-${history.losses}` : "—"}</strong><small>{percent(history.accuracy)} straight-up accuracy</small></div>
+          <div className="fan-proof-record-grid">
+            <div><strong>{history.modelCalls.toLocaleString()}</strong><span>graded picks</span></div>
+            <div><strong>{history.earliestModelSeason ?? "—"}</strong><span>first supported model season</span></div>
+            <div><strong>{history.firstSeason ?? "—"}</strong><span>game archive begins</span></div>
+          </div>
         </div>
       </section>
 
-      <section className="fan-section" aria-labelledby="slate-heading">
-        <div className="fan-section-heading">
-          <div>
-            <span className="fan-kicker">OFFICIAL SLATE</span>
-            <h2 id="slate-heading">This week's card</h2>
-          </div>
-          <Link href="/play">See all {data.slateSize} games <span aria-hidden="true">→</span></Link>
-        </div>
+      <FavoriteTeamCard rankings={rankings.teams} games={data.games} />
 
-        {previewGames.length ? (
-          <div className="fan-slate-preview">
-            {previewGames.map((game) => (
-              <article key={game.id} className="fan-matchup-row">
-                <div className="fan-matchup-number">{game.slot}</div>
-                <div className="fan-matchup-teams">
-                  <div><span>#{game.awayRank}</span><strong>{game.awayTeam}</strong></div>
-                  <small>at</small>
-                  <div><span>#{game.homeRank}</span><strong>{game.homeTeam}</strong></div>
-                </div>
-                <div className="fan-matchup-time">{formatKickoff(game.kickoff) ?? "TBA"}</div>
-              </article>
-            ))}
-          </div>
-        ) : (
-          <div className="fan-empty-state">
-            <span className="fan-status fan-status-steel">Not published yet</span>
-            <h3>The weekly card is on the way.</h3>
-            <p>Once the schedule is published, the 15 strongest ranked matchups will appear here automatically.</p>
-          </div>
-        )}
-      </section>
-
-      <section className="fan-two-column fan-section">
-        <article className="fan-feature-panel">
+      <section className="fan-dashboard-grid fan-section">
+        <article className="fan-feature-panel fan-rankings-panel">
           <div className="fan-section-heading fan-section-heading-tight">
-            <div>
-              <span className="fan-kicker">POWER RANKINGS</span>
-              <h2>Who's strongest right now?</h2>
-            </div>
-            <Link href="/rankings">Full rankings <span aria-hidden="true">→</span></Link>
+            <div><span className="fan-kicker">POWER RANKINGS</span><h2>Who does the system think is strongest?</h2></div>
+            <Link href="/rankings">All teams <span aria-hidden="true">→</span></Link>
           </div>
-
           {topTeams.length ? (
             <div className="fan-ranking-preview">
               {topTeams.map((team) => (
-                <div key={team.team}>
-                  <span>#{team.rank}</span>
-                  <strong>{team.team}</strong>
-                  <em>{team.rating >= 0 ? "+" : ""}{team.rating.toFixed(1)}</em>
+                <div key={team.team} className="fan-ranking-preview-logo-row">
+                  <TeamLogo team={team.team} src={team.logo} size="sm" />
+                  <span>#{team.rank}</span><strong>{team.team}</strong><em>{team.rating >= 0 ? "+" : ""}{team.rating.toFixed(1)}</em>
                 </div>
               ))}
             </div>
-          ) : (
-            <p className="fan-muted">Rankings will appear when the weekly data is published.</p>
-          )}
+          ) : <p className="fan-muted">The weekly rankings have not been published yet.</p>}
         </article>
 
-        <article className="fan-feature-panel fan-receipts-panel">
-          <span className="fan-kicker">THE RECEIPTS</span>
-          <h2>The Model's picks stay public.</h2>
-          <p>Every official slate, every model call, and every result stays in the archive. Good week or bad week, nothing gets rewritten after kickoff.</p>
-          <Link className="fan-text-link" href="/archive">Browse the archive <span aria-hidden="true">→</span></Link>
+        <article className="fan-feature-panel fan-model-panel">
+          <span className="fan-kicker">THE RULE THAT MATTERS</span>
+          <h2>The Model never chooses its opponents.</h2>
+          <p>BTM rankings and market competitiveness choose the weekly 15 first. Only then are The Model’s frozen predictions attached, so it cannot cherry-pick the games it likes.</p>
+          <Link className="fan-text-link" href="/about">See how the challenge works <span aria-hidden="true">→</span></Link>
         </article>
+      </section>
+
+      <section className="fan-final-cta fan-section">
+        <div><span className="fan-kicker">READY?</span><h2>Make the picks before you see the answers.</h2><p>Use the market if you want. Select, review, submit, then see whether you know better than The Model.</p></div>
+        <Link className="fan-button fan-button-primary" href={primaryHref}>{status.cta}</Link>
       </section>
     </>
   );
