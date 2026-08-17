@@ -1,0 +1,52 @@
+{
+  "archiveVersion": "website-prediction-archive-v2",
+  "games": [
+    {
+      "actualAwayScore": 17,
+      "actualHomeMargin": 3.0,
+      "actualHomeScore": 20,
+      "atsCorrect": false,
+      "atsResult": "LOSS",
+      "awayTeam": "Navy",
+      "correct": false,
+      "evidenceStatus": "official-oos",
+      "homeTeam": "Army",
+      "id": "401404145",
+      "marketHomeMargin": -3.0,
+      "marketProvider": "Bovada",
+      "modelAbsoluteError": 7.637375669488089,
+      "modelAtsSide": "AWAY",
+      "modelHomeMargin": -4.637375669488089,
+      "predictedWinner": "Navy",
+      "recommendedBet": false,
+      "season": 2022,
+      "seasonType": "regular",
+      "week": 15,
+      "winnerCorrect": false
+    }
+  ],
+  "label": "2022 Week 15",
+  "schemaVersion": 2,
+  "season": 2022,
+  "summary": {
+    "atsAccuracy": 0.0,
+    "atsLosses": 1,
+    "atsPushes": 0,
+    "atsWins": 0,
+    "games": 1,
+    "marketGames": 1,
+    "modelGames": 1,
+    "modelMae": 7.637375669488089,
+    "recommendedBetLosses": 0,
+    "recommendedBetPushes": 0,
+    "recommendedBetSourcePresent": true,
+    "recommendedBetUnits": 0.0,
+    "recommendedBetWins": 0,
+    "recommendedBets": 0,
+    "unitsConvention": "flat 1u risk at -110; win=+0.9091u loss=-1u push=0u",
+    "winnerAccuracy": 0.0,
+    "winnerLosses": 1,
+    "winnerWins": 0
+  },
+  "week": 15
+}

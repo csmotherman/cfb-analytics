@@ -1,0 +1,52 @@
+{
+  "archiveVersion": "website-prediction-archive-v2",
+  "games": [
+    {
+      "actualAwayScore": 31,
+      "actualHomeMargin": -18.0,
+      "actualHomeScore": 13,
+      "atsCorrect": true,
+      "atsResult": "WIN",
+      "awayTeam": "Navy",
+      "correct": false,
+      "evidenceStatus": "official-oos",
+      "homeTeam": "Army",
+      "id": "401645383",
+      "marketHomeMargin": 6.5,
+      "marketProvider": "DraftKings",
+      "modelAbsoluteError": 20.357216469046154,
+      "modelAtsSide": "AWAY",
+      "modelHomeMargin": 2.357216469046153,
+      "predictedWinner": "Army",
+      "recommendedBet": false,
+      "season": 2024,
+      "seasonType": "regular",
+      "week": 16,
+      "winnerCorrect": false
+    }
+  ],
+  "label": "2024 Week 16",
+  "schemaVersion": 2,
+  "season": 2024,
+  "summary": {
+    "atsAccuracy": 1.0,
+    "atsLosses": 0,
+    "atsPushes": 0,
+    "atsWins": 1,
+    "games": 1,
+    "marketGames": 1,
+    "modelGames": 1,
+    "modelMae": 20.357216469046154,
+    "recommendedBetLosses": 0,
+    "recommendedBetPushes": 0,
+    "recommendedBetSourcePresent": true,
+    "recommendedBetUnits": 0.0,
+    "recommendedBetWins": 0,
+    "recommendedBets": 0,
+    "unitsConvention": "flat 1u risk at -110; win=+0.9091u loss=-1u push=0u",
+    "winnerAccuracy": 0.0,
+    "winnerLosses": 1,
+    "winnerWins": 0
+  },
+  "week": 16
+}

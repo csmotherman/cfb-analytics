@@ -1,0 +1,52 @@
+{
+  "archiveVersion": "website-prediction-archive-v2",
+  "games": [
+    {
+      "actualAwayScore": 16,
+      "actualHomeMargin": 1.0,
+      "actualHomeScore": 17,
+      "atsCorrect": false,
+      "atsResult": "LOSS",
+      "awayTeam": "Army",
+      "correct": true,
+      "evidenceStatus": "official-oos",
+      "homeTeam": "Navy",
+      "id": "401762521",
+      "marketHomeMargin": 6.5,
+      "marketProvider": "DraftKings",
+      "modelAbsoluteError": 11.262644967542691,
+      "modelAtsSide": "HOME",
+      "modelHomeMargin": 12.262644967542691,
+      "predictedWinner": "Navy",
+      "recommendedBet": false,
+      "season": 2025,
+      "seasonType": "regular",
+      "week": 16,
+      "winnerCorrect": true
+    }
+  ],
+  "label": "2025 Week 16",
+  "schemaVersion": 2,
+  "season": 2025,
+  "summary": {
+    "atsAccuracy": 0.0,
+    "atsLosses": 1,
+    "atsPushes": 0,
+    "atsWins": 0,
+    "games": 1,
+    "marketGames": 1,
+    "modelGames": 1,
+    "modelMae": 11.262644967542691,
+    "recommendedBetLosses": 0,
+    "recommendedBetPushes": 0,
+    "recommendedBetSourcePresent": true,
+    "recommendedBetUnits": 0.0,
+    "recommendedBetWins": 0,
+    "recommendedBets": 0,
+    "unitsConvention": "flat 1u risk at -110; win=+0.9091u loss=-1u push=0u",
+    "winnerAccuracy": 1.0,
+    "winnerLosses": 0,
+    "winnerWins": 1
+  },
+  "week": 16
+}

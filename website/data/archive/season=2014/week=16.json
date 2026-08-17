@@ -1,0 +1,44 @@
+{
+  "archiveVersion": "website-prediction-archive-v2",
+  "games": [
+    {
+      "actualAwayScore": 17,
+      "actualHomeMargin": -7.0,
+      "actualHomeScore": 10,
+      "awayTeam": "Navy",
+      "evidenceStatus": "historical-slate",
+      "homeTeam": "Army",
+      "id": "400548461",
+      "marketHomeMargin": -16.5,
+      "marketProvider": "teamrankings",
+      "recommendedBet": false,
+      "season": 2014,
+      "seasonType": "regular",
+      "week": 16
+    }
+  ],
+  "label": "2014 Week 16",
+  "schemaVersion": 2,
+  "season": 2014,
+  "summary": {
+    "atsAccuracy": null,
+    "atsLosses": 0,
+    "atsPushes": 0,
+    "atsWins": 0,
+    "games": 1,
+    "marketGames": 1,
+    "modelGames": 0,
+    "modelMae": null,
+    "recommendedBetLosses": 0,
+    "recommendedBetPushes": 0,
+    "recommendedBetSourcePresent": true,
+    "recommendedBetUnits": 0.0,
+    "recommendedBetWins": 0,
+    "recommendedBets": 0,
+    "unitsConvention": "flat 1u risk at -110; win=+0.9091u loss=-1u push=0u",
+    "winnerAccuracy": null,
+    "winnerLosses": 0,
+    "winnerWins": 0
+  },
+  "week": 16
+}
