@@ -1,29 +1,31 @@
 """Efficient real-data runner for the player/NIL challenge.
 
 The statistical contract lives in :mod:`historical_player_nil_draft`. This runner
-changes only acquisition/assignment mechanics for the one-time historical build:
+keeps acquisition bounded by fetching player stats for the top historical teams in
+each season and uses a two-stage matchup calibration:
 
-* fetch player stats for the top 12 SRS FBS teams in each supported season instead
-  of one enormous unfiltered player-season payload;
-* solve the only overlapping lineup slots (RB/WR/FLEX) exactly while selecting
-  QB/DL/LB/DB independently.
+1. seven-player roster power -> historical team SRS using team-seasons with complete
+   player lineups;
+2. historical SRS difference -> actual FBS game margin using the full completed-game
+   sample.
 
-The public grades, NIL pricing, matchup calibration and difficulty rules remain the
-same as the base module.
+Because only roster-power *differences* enter the final matchup, the intercept from
+stage one cancels. A user roster with the same player power as 2019 LSU is exactly
+50% on a neutral field; stronger player power always improves the expected margin.
 """
 from __future__ import annotations
 
+import math
 from typing import Any
 
 from cfb_analytics.prototypes import historical_player_nil_draft as base
 from cfb_analytics.sources.cfbd.client import CfbdClient
 
-TOP_TEAMS_PER_SEASON = 12
+TOP_TEAMS_PER_SEASON = 10
 
 
 def efficient_best_unique_lineup(candidates: dict[str, list[dict[str, Any]]]) -> dict[str, dict[str, Any]] | None:
     lineup: dict[str, dict[str, Any]] = {}
-
     for slot in ("QB", "DL", "LB", "DB"):
         options = sorted(candidates.get(slot, []), key=lambda p: float(p["powerZ"]), reverse=True)
         if not options:
@@ -56,16 +58,15 @@ def efficient_best_unique_lineup(candidates: dict[str, list[dict[str, Any]]]) ->
                 if score > best_score:
                     best_score = score
                     best_skill = (rb_player, wr_player, flex_player)
-
     if best_skill is None:
         return None
     lineup["RB"], lineup["WR"], lineup["FLEX"] = best_skill
     return lineup
 
 
-def _top_srs_teams(client: CfbdClient, season: int, metadata: dict[str, dict[str, Any]]) -> list[str]:
+def _srs_for_season(client: CfbdClient, season: int, metadata: dict[str, dict[str, Any]]) -> tuple[list[str], dict[str, float]]:
     payload = client.get_json("/ratings/srs", {"year": season}).payload
-    ranked: list[tuple[float, str]] = []
+    ratings: list[tuple[float, str]] = []
     if isinstance(payload, list):
         for raw in payload:
             if not isinstance(raw, dict):
@@ -73,12 +74,90 @@ def _top_srs_teams(client: CfbdClient, season: int, metadata: dict[str, dict[str
             team = str(raw.get("team") or "").strip()
             rating = base._number(raw.get("rating"))
             if team and rating is not None and team in metadata:
-                ranked.append((rating, team))
-    ranked.sort(reverse=True)
-    teams = [team for _, team in ranked[:TOP_TEAMS_PER_SEASON]]
-    if season == base.TARGET_SEASON and base.TARGET_TEAM not in teams:
-        teams = teams[:-1] + [base.TARGET_TEAM]
-    return teams
+                ratings.append((float(rating), team))
+    ratings.sort(reverse=True)
+    top = [team for _, team in ratings[:TOP_TEAMS_PER_SEASON]]
+    if season == base.TARGET_SEASON and base.TARGET_TEAM not in top:
+        top = top[:-1] + [base.TARGET_TEAM]
+    return top, {team: rating for rating, team in ratings}
+
+
+def fit_two_stage_margin_calibration(
+    team_lineups: dict[str, dict[str, Any]],
+    srs_by_key: dict[str, float],
+    games: list[dict[str, Any]],
+) -> dict[str, Any]:
+    pairs: list[tuple[float, float]] = []
+    for key, record in team_lineups.items():
+        srs = srs_by_key.get(key)
+        if srs is not None:
+            pairs.append((float(record["composite"]), float(srs)))
+    if len(pairs) < 60:
+        raise ValueError(f"Not enough player-lineup team-seasons for roster-power calibration: {len(pairs)}")
+
+    mx = sum(x for x, _ in pairs) / len(pairs)
+    my = sum(y for _, y in pairs) / len(pairs)
+    var = sum((x - mx) ** 2 for x, _ in pairs)
+    cov = sum((x - mx) * (y - my) for x, y in pairs)
+    power_to_srs = cov / var if var > 0 else 0.0
+    if power_to_srs <= 0:
+        raise ValueError(f"Player roster power must positively map to SRS, got {power_to_srs}")
+    intercept = my - power_to_srs * mx
+    srs_errors = [y - (intercept + power_to_srs * x) for x, y in pairs]
+    srs_rmse = math.sqrt(sum(e * e for e in srs_errors) / len(srs_errors))
+    ss_tot = sum((y - my) ** 2 for _, y in pairs)
+    ss_res = sum(e * e for e in srs_errors)
+    srs_r2 = 1.0 - ss_res / ss_tot if ss_tot > 0 else 0.0
+
+    margin_rows: list[tuple[float, float, float]] = []
+    for game in games:
+        if not isinstance(game, dict) or not game.get("completed"):
+            continue
+        if str(game.get("homeClassification") or "").casefold() != "fbs" or str(game.get("awayClassification") or "").casefold() != "fbs":
+            continue
+        season = game.get("season")
+        home = game.get("homeTeam")
+        away = game.get("awayTeam")
+        hp = base._number(game.get("homePoints"))
+        ap = base._number(game.get("awayPoints"))
+        if season is None or not home or not away or hp is None or ap is None:
+            continue
+        hs = srs_by_key.get(f"{int(season)}::{home}")
+        aws = srs_by_key.get(f"{int(season)}::{away}")
+        if hs is None or aws is None:
+            continue
+        margin_rows.append((float(hs) - float(aws), 0.0 if bool(game.get("neutralSite")) else 1.0, hp - ap))
+    if len(margin_rows) < 1000:
+        raise ValueError(f"Not enough SRS-backed completed FBS games: {len(margin_rows)}")
+
+    a11 = sum(x1 * x1 for x1, _, _ in margin_rows)
+    a12 = sum(x1 * x2 for x1, x2, _ in margin_rows)
+    a22 = sum(x2 * x2 for _, x2, _ in margin_rows)
+    b1 = sum(x1 * y for x1, _, y in margin_rows)
+    b2 = sum(x2 * y for _, x2, y in margin_rows)
+    solved = base._solve_2x2(a11, a12, a22, b1, b2)
+    if solved is None:
+        raise ValueError("SRS-to-margin calibration is singular")
+    srs_to_margin, hfa = solved
+    if srs_to_margin <= 0:
+        raise ValueError(f"SRS-to-margin scale must be positive, got {srs_to_margin}")
+    residuals = [y - (srs_to_margin * x1 + hfa * x2) for x1, x2, y in margin_rows]
+    residual_sd = math.sqrt(sum(e * e for e in residuals) / len(residuals))
+
+    return {
+        "version": "historical-player-roster-srs-margin-v2",
+        "games": len(margin_rows),
+        "playerTeamSeasons": len(pairs),
+        "rosterPowerToSrsScale": power_to_srs,
+        "rosterPowerToSrsIntercept": intercept,
+        "rosterPowerToSrsRmse": srs_rmse,
+        "rosterPowerToSrsR2": srs_r2,
+        "srsToMarginScale": srs_to_margin,
+        "homeFieldPoints": hfa,
+        "rosterPowerToMargin": power_to_srs * srs_to_margin,
+        "residualSd": residual_sd,
+        "neutralFieldRule": "expected margin = rosterPowerToMargin * (challengerRosterPower - LSU2019RosterPower)",
+    }
 
 
 def targeted_build_dataset(
@@ -91,10 +170,12 @@ def targeted_build_dataset(
     metadata = base._team_metadata(client.teams().payload)
     all_players: list[dict[str, Any]] = []
     all_games: list[dict[str, Any]] = []
+    srs_by_key: dict[str, float] = {}
     source_status: dict[str, Any] = {}
 
     for season in seasons:
-        teams = _top_srs_teams(client, season, metadata)
+        teams, srs_map = _srs_for_season(client, season, metadata)
+        srs_by_key.update({f"{season}::{team}": rating for team, rating in srs_map.items()})
         season_players: list[dict[str, Any]] = []
         raw_rows = 0
         for team in teams:
@@ -106,11 +187,7 @@ def targeted_build_dataset(
                 raw_rows += len(player_payload)
             season_players.extend(base.aggregate_player_stats(season, player_payload, metadata))
 
-        games_payload = base._fetch_optional(
-            client,
-            "/games",
-            {"year": season, "seasonType": "both", "classification": "fbs"},
-        )
+        games_payload = base._fetch_optional(client, "/games", {"year": season, "seasonType": "both", "classification": "fbs"})
         all_players.extend(season_players)
         if isinstance(games_payload, list):
             all_games.extend(game for game in games_payload if isinstance(game, dict))
@@ -119,6 +196,7 @@ def targeted_build_dataset(
             "teamCount": len(teams),
             "playerStatRows": raw_rows,
             "playerSeasons": len(season_players),
+            "srsTeams": len(srs_map),
             "games": len(games_payload) if isinstance(games_payload, list) else 0,
         }
         print(f"season={season} teams={len(teams)} playerRows={raw_rows} players={len(season_players)}", flush=True)
@@ -131,20 +209,10 @@ def targeted_build_dataset(
     if not boss_record:
         raise ValueError("Could not construct complete 2019 LSU seven-player boss roster")
     boss_lineup = boss_record["lineup"]
-    calibration = base.fit_margin_calibration(all_games, team_lineups)
-    difficulty = base.benchmark_budgets(
-        slot_pools,
-        boss_lineup,
-        calibration,
-        simulations=simulations,
-        seed=seed,
-    )
+    calibration = fit_two_stage_margin_calibration(team_lineups, srs_by_key, all_games)
+    difficulty = base.benchmark_budgets(slot_pools, boss_lineup, calibration, simulations=simulations, seed=seed)
     budget = float(difficulty["selectedBudgetMillions"])
 
-    boss_compact = {
-        slot: {**boss_lineup[slot], "bossSlot": slot}
-        for slot in base.SLOT_ORDER
-    }
     return {
         "schemaVersion": 1,
         "challengeVersion": base.CHALLENGE_VERSION,
@@ -157,7 +225,7 @@ def targeted_build_dataset(
             "season": base.TARGET_SEASON,
             "team": base.TARGET_TEAM,
             "rosterPower": boss_record["composite"],
-            "lineup": boss_compact,
+            "lineup": {slot: {**boss_lineup[slot], "bossSlot": slot} for slot in base.SLOT_ORDER},
             "logo": metadata.get(base.TARGET_TEAM, {}).get("logo"),
             "conference": metadata.get(base.TARGET_TEAM, {}).get("conference"),
         },
@@ -189,7 +257,8 @@ def targeted_build_dataset(
         "sourceStatus": source_status,
         "dataNotes": [
             "Only completed historical season production is used.",
-            "The player pool is sourced from the top 12 SRS FBS teams in each supported season to keep the wheel star-focused and the data build bounded.",
+            "The portal pool is sourced from the top 10 SRS FBS teams in each supported season to keep offers star-focused and acquisition bounded.",
+            "Player roster power is first calibrated to team SRS; SRS differences are then calibrated to the full completed FBS game-margin sample.",
             "2020 is excluded to match the existing SOAR historical support policy.",
             "Defensive grades are production-based statistical ratings, not film/scouting grades.",
             "The game is separate from Prediction-v2 and does not alter any prospective model artifact.",
