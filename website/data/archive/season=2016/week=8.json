@@ -1,5 +1,5 @@
 {
-  "archiveVersion": "website-prediction-archive-v2",
+  "archiveVersion": "website-prediction-archive-v3",
   "games": [
     {
       "actualAwayScore": 34,
@@ -783,7 +783,7 @@
     }
   ],
   "label": "2016 Week 8",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "season": 2016,
   "summary": {
     "atsAccuracy": null,

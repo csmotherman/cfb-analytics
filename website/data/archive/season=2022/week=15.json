@@ -1,5 +1,5 @@
 {
-  "archiveVersion": "website-prediction-archive-v2",
+  "archiveVersion": "website-prediction-archive-v3",
   "games": [
     {
       "actualAwayScore": 17,
@@ -9,6 +9,7 @@
       "atsResult": "LOSS",
       "awayTeam": "Navy",
       "correct": false,
+      "earlyPriorVersion": null,
       "evidenceStatus": "official-oos",
       "homeTeam": "Army",
       "id": "401404145",
@@ -18,6 +19,9 @@
       "modelAtsSide": "AWAY",
       "modelHomeMargin": -4.637375669488089,
       "predictedWinner": "Navy",
+      "predictionSource": "prediction-v2-min3-stored-oos",
+      "priorWeightAway": null,
+      "priorWeightHome": null,
       "recommendedBet": false,
       "season": 2022,
       "seasonType": "regular",
@@ -26,7 +30,7 @@
     }
   ],
   "label": "2022 Week 15",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "season": 2022,
   "summary": {
     "atsAccuracy": 0.0,

@@ -1,5 +1,5 @@
 {
-  "archiveVersion": "website-prediction-archive-v2",
+  "archiveVersion": "website-prediction-archive-v3",
   "games": [
     {
       "actualAwayScore": 45,
@@ -678,7 +678,7 @@
     }
   ],
   "label": "2021 Week 2",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "season": 2021,
   "summary": {
     "atsAccuracy": null,

@@ -1,5 +1,5 @@
 {
-  "archiveVersion": "website-prediction-archive-v2",
+  "archiveVersion": "website-prediction-archive-v3",
   "games": [
     {
       "actualAwayScore": 34,
@@ -903,7 +903,7 @@
     }
   ],
   "label": "2017 Week 12",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "season": 2017,
   "summary": {
     "atsAccuracy": null,

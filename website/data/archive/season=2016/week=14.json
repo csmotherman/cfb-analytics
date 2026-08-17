@@ -1,5 +1,5 @@
 {
-  "archiveVersion": "website-prediction-archive-v2",
+  "archiveVersion": "website-prediction-archive-v3",
   "games": [
     {
       "actualAwayScore": 54,
@@ -243,7 +243,7 @@
     }
   ],
   "label": "2016 Week 14",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "season": 2016,
   "summary": {
     "atsAccuracy": null,

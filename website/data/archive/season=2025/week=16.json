@@ -1,5 +1,5 @@
 {
-  "archiveVersion": "website-prediction-archive-v2",
+  "archiveVersion": "website-prediction-archive-v3",
   "games": [
     {
       "actualAwayScore": 16,
@@ -9,6 +9,7 @@
       "atsResult": "LOSS",
       "awayTeam": "Army",
       "correct": true,
+      "earlyPriorVersion": null,
       "evidenceStatus": "official-oos",
       "homeTeam": "Navy",
       "id": "401762521",
@@ -18,6 +19,9 @@
       "modelAtsSide": "HOME",
       "modelHomeMargin": 12.262644967542691,
       "predictedWinner": "Navy",
+      "predictionSource": "prediction-v2-min3-stored-oos",
+      "priorWeightAway": null,
+      "priorWeightHome": null,
       "recommendedBet": false,
       "season": 2025,
       "seasonType": "regular",
@@ -26,7 +30,7 @@
     }
   ],
   "label": "2025 Week 16",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "season": 2025,
   "summary": {
     "atsAccuracy": 0.0,
