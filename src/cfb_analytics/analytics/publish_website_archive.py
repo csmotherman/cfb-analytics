@@ -1,9 +1,9 @@
-"""Publish the validated historical archive directly into the deployable website.
+"""Publish the validated archive and Beat the Model website data.
 
-This is intentionally a packaging step, not a new model experiment. It consumes
-existing frozen/local artifacts, reconstructs the frozen early-prior OOS supplement,
-validates the expected historical universe, and writes the static JSON files used
-by the Next.js archive.
+The historical model/market artifacts remain an internal accountability layer.
+The consumer product generated from them is Beat the Model: weekly power rankings,
+a deterministic Official 15 slate, and a current play dataset where users pick
+before seeing The Model's answer.
 """
 from __future__ import annotations
 
@@ -13,6 +13,7 @@ import shutil
 from pathlib import Path
 from typing import Any
 
+from cfb_analytics.analytics.beat_the_model import publish_beat_the_model
 from cfb_analytics.analytics.website_prediction_archive import (
     ARCHIVE_SEASONS,
     DEFAULT_BENCHMARK,
@@ -37,16 +38,19 @@ def _resolved(root: Path, relative: Path) -> Path:
 
 
 def _clean_generated_seasons(output_root: Path) -> None:
-    if not output_root.exists():
-        return
-    for season in ARCHIVE_SEASONS:
-        directory = output_root / f"season={season}"
-        if directory.exists():
-            shutil.rmtree(directory)
-    for name in ("index.json", "missing-market-lines.json"):
-        path = output_root / name
-        if path.exists():
-            path.unlink()
+    if output_root.exists():
+        for season in ARCHIVE_SEASONS:
+            directory = output_root / f"season={season}"
+            if directory.exists():
+                shutil.rmtree(directory)
+        for name in ("index.json", "missing-market-lines.json"):
+            path = output_root / name
+            if path.exists():
+                path.unlink()
+
+    btm_root = output_root.parent / "beat-the-model"
+    if btm_root.exists():
+        shutil.rmtree(btm_root)
 
 
 def _week_files(output_root: Path, season: int) -> list[Path]:
@@ -75,21 +79,13 @@ def _validate_prediction_counts(report: dict[str, Any]) -> None:
     if early_generated <= 0:
         raise ValueError("Refusing archive publish without reconstructed early-prior OOS predictions")
     if early_overlap < 0 or early_supplement <= 0:
-        raise ValueError(
-            "Early-prior reconstruction did not fill any previously blank mature OOS games"
-        )
+        raise ValueError("Early-prior reconstruction did not fill any previously blank mature OOS games")
     if early_overlap + early_supplement != early_generated:
-        raise ValueError(
-            "Early-prior accounting mismatch: generated rows must equal overlap + supplement"
-        )
+        raise ValueError("Early-prior accounting mismatch: generated rows must equal overlap + supplement")
     if combined != mature + early_supplement:
-        raise ValueError(
-            "Combined OOS accounting mismatch: combined must equal mature + early supplement"
-        )
+        raise ValueError("Combined OOS accounting mismatch: combined must equal mature + early supplement")
     if attached != combined:
-        raise ValueError(
-            f"Rendered OOS model count mismatch: combined={combined:,} attached={attached:,}"
-        )
+        raise ValueError(f"Rendered OOS model count mismatch: combined={combined:,} attached={attached:,}")
 
     season_rows = {
         int(row.get("season", -1)): row
@@ -179,7 +175,7 @@ def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[st
 
     market_attached = rendered_games - len(missing_market)
     manifest = {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "archiveVersion": report["version"],
         "seasons": manifest_seasons,
         "historicalGames": rendered_games,
@@ -191,7 +187,7 @@ def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[st
         "earlyPriorSupplementGames": int(report["earlyPriorSupplementGames"]),
         "officialOosModelGames": int(report["officialOosModelGames"]),
         "recommendedBets": int(report["recommendedBets"]),
-        "marketSemantics": "historical CFBD reference spread; first parseable formattedSpread provider in API order",
+        "marketSemantics": "internal historical CFBD reference spread; retained for audit, not surfaced by Beat the Model",
         "predictionSemantics": (
             "stored mature minGames=3 Prediction-v2 OOS calls, supplemented only when missing by the frozen "
             "early-prior rule reconstructed with earlier-season-only training"
@@ -199,9 +195,7 @@ def _validate_and_manifest(output_root: Path, report: dict[str, Any]) -> dict[st
     }
     output_root.mkdir(parents=True, exist_ok=True)
     (output_root / "index.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
-    (output_root / "missing-market-lines.json").write_text(
-        json.dumps(missing_market, indent=2, sort_keys=True) + "\n"
-    )
+    (output_root / "missing-market-lines.json").write_text(json.dumps(missing_market, indent=2, sort_keys=True) + "\n")
     return manifest
 
 
@@ -240,12 +234,23 @@ def publish(*, output_root: Path, clean: bool) -> tuple[dict[str, Any], dict[str
         overwrite=True,
     )
     manifest = _validate_and_manifest(output_root, report)
+
+    website_data_root = output_root.parent
+    btm_report = publish_beat_the_model(
+        raw_root=raw_root,
+        processed_root=processed_root,
+        archive_root=output_root,
+        website_data_root=website_data_root,
+        target_season=2026,
+    )
+    manifest["beatTheModel"] = btm_report
+    (output_root / "index.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
     return report, manifest
 
 
 def main() -> None:
     root = project_root()
-    parser = argparse.ArgumentParser(description="Publish the complete historical archive into website/data/archive")
+    parser = argparse.ArgumentParser(description="Publish the historical archive and Beat the Model website data")
     parser.add_argument(
         "--output-root",
         type=Path,
@@ -255,25 +260,27 @@ def main() -> None:
     parser.add_argument(
         "--no-clean",
         action="store_true",
-        help="Do not remove previously generated season directories before publishing",
+        help="Do not remove previously generated archive/Beat the Model data before publishing",
     )
     args = parser.parse_args()
 
     report, manifest = publish(output_root=args.output_root, clean=not args.no_clean)
-    print("WEBSITE ARCHIVE: PUBLISHED")
-    print(f"Historical games: {manifest['historicalGames']:,}")
-    print(f"Market spreads populated: {manifest['marketGames']:,}/{manifest['historicalGames']:,}")
-    print(f"Missing source market lines: {manifest['missingMarketGames']:,}")
-    print(f"Stored mature OOS model calls: {manifest['storedMatureOosModelGames']:,}")
-    print(f"Early-prior OOS rows generated: {manifest['earlyPriorGeneratedGames']:,}")
-    print(f"Early-prior overlaps preserved as mature: {manifest['earlyPriorOverlapGames']:,}")
-    print(f"Early-prior supplemental calls: {manifest['earlyPriorSupplementGames']:,}")
-    print(f"Combined OOS model calls: {manifest['officialOosModelGames']:,}")
-    print(f"Recommended bets: {manifest['recommendedBets']:,}")
-    print(f"Bet source: {report['recommendedBetSource']}")
-    print(f"Output: {args.output_root}")
+    btm = manifest["beatTheModel"]
+
+    print("BEAT THE MODEL WEBSITE DATA: PUBLISHED")
+    print(f"Historical games retained for audit: {manifest['historicalGames']:,}")
+    print(f"Combined historical OOS model calls: {manifest['officialOosModelGames']:,}")
+    print(f"Historical BTM slates generated: {btm['historicalSlates']:,}")
+    print(f"Historical BTM games selected: {btm['historicalSelectedGames']:,}")
+    print(f"2026 Week 1 teams ranked from 2025 final ratings: {btm['currentRankedTeams']:,}")
+    print(f"2026 Week 1 Official 15 games currently published: {btm['currentSlateGames']:,}")
+    print(f"Current game status: {btm['currentStatus']}")
+    print(f"Output: {args.output_root.parent}")
+    print("Internal audit sources remain preserved; market/ATS data is not part of the public Beat the Model UI.")
     if manifest["missingMarketGames"]:
-        print(f"Missing-line audit: {args.output_root / 'missing-market-lines.json'}")
+        print(f"Internal missing-line audit: {args.output_root / 'missing-market-lines.json'}")
+    if report.get("recommendedBetSource"):
+        print(f"Internal historical audit source: {report['recommendedBetSource']}")
 
 
 if __name__ == "__main__":
