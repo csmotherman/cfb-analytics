@@ -1,0 +1,372 @@
+.team-logo {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(154, 176, 200, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.team-logo img {
+  display: block;
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+}
+
+.team-logo > span {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #aebed0;
+}
+
+.team-logo-sm { width: 34px; height: 34px; border-radius: 9px; }
+.team-logo-md { width: 46px; height: 46px; }
+.team-logo-lg { width: 62px; height: 62px; border-radius: 15px; }
+
+.btm-pick-option {
+  min-width: 0;
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 11px;
+  text-align: left;
+}
+
+.btm-pick-option .btm-pick-logo {
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.btm-pick-option.selected .btm-pick-logo {
+  transform: scale(1.04);
+  border-color: rgba(83, 200, 234, 0.5);
+  background: rgba(83, 200, 234, 0.08);
+}
+
+.btm-pick-option.selected:not(.submitted) {
+  box-shadow: inset 0 0 0 1px rgba(83, 200, 234, 0.34);
+}
+
+.btm-pick-option.submitted {
+  cursor: default;
+}
+
+.btm-team-copy {
+  min-width: 0;
+}
+
+.btm-team-copy strong {
+  overflow-wrap: anywhere;
+}
+
+.btm-pick-confirmation {
+  margin: 14px 0 16px;
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid rgba(138, 161, 187, 0.18);
+  border-radius: 14px;
+  background: rgba(8, 13, 21, 0.78);
+}
+
+.btm-pick-confirmation > div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.btm-pick-confirmation span:first-child {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #8fa3ba;
+}
+
+.btm-pick-confirmation strong {
+  font-size: 0.96rem;
+  color: #eef7ff;
+}
+
+.btm-pick-confirmation small {
+  line-height: 1.4;
+  color: #8599b0;
+}
+
+.btm-pick-confirmation.ready {
+  border-color: rgba(83, 200, 234, 0.32);
+  background: rgba(24, 69, 86, 0.18);
+}
+
+.btm-pick-confirmation.submitted {
+  border-color: rgba(101, 220, 170, 0.28);
+  background: rgba(29, 85, 62, 0.14);
+}
+
+.btm-pick-confirmation.submitted strong,
+.btm-pick-confirmation.submitted .btm-submit-check {
+  color: #86e6b9;
+}
+
+.btm-pick-confirmation.locked {
+  opacity: 0.76;
+}
+
+.btm-submit-pick {
+  flex: 0 0 auto;
+  min-height: 48px;
+  max-width: 300px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #eaf8ff;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.86rem;
+  font-weight: 900;
+  color: #071018;
+  cursor: pointer;
+}
+
+.btm-submit-pick:hover {
+  filter: brightness(0.96);
+}
+
+.btm-submit-pick:focus-visible {
+  outline: 3px solid rgba(83, 200, 234, 0.48);
+  outline-offset: 3px;
+}
+
+.btm-submit-check {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: rgba(101, 220, 170, 0.1);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.btm-live-score > div {
+  grid-template-columns: auto auto minmax(0, 1fr) auto;
+}
+
+.fan-ranking-team-with-logo {
+  display: flex !important;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.fan-ranking-team-with-logo > span:last-child {
+  display: grid;
+  min-width: 0;
+}
+
+.fan-ranking-leader-logo {
+  margin-bottom: 8px;
+}
+
+.fan-ranking-preview-logo-row {
+  grid-template-columns: auto auto minmax(0, 1fr) auto !important;
+}
+
+.fan-spotlight-matchup > div {
+  position: relative;
+}
+
+.fan-spotlight-logo {
+  margin: 0 auto 9px;
+}
+
+.fan-my-team-title-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fan-team-picker-confirm {
+  min-width: min(100%, 420px);
+}
+
+.fan-team-picker-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 9px;
+}
+
+.fan-team-picker-actions .fan-button {
+  min-height: 44px;
+}
+
+.fan-team-picker-actions .fan-button:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+@media (max-width: 720px) {
+  .btm-game-list {
+    gap: 14px;
+  }
+
+  .btm-game-card {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .btm-game-topline {
+    gap: 10px;
+  }
+
+  .btm-market-consensus {
+    margin-bottom: 13px;
+  }
+
+  .btm-pick-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .btm-versus {
+    width: fit-content;
+    min-width: 42px;
+    margin: -1px auto;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(126, 149, 174, 0.08);
+    font-size: 0.62rem;
+  }
+
+  .btm-pick-option {
+    width: 100%;
+    min-height: 82px;
+    grid-template-columns: auto auto minmax(0, 1fr) auto;
+    gap: 9px;
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .btm-pick-action {
+    min-width: 60px;
+    text-align: right;
+  }
+
+  .btm-pick-confirmation {
+    margin: 10px 0 13px;
+    padding: 12px;
+    display: grid;
+    gap: 11px;
+  }
+
+  .btm-submit-pick {
+    width: 100%;
+    max-width: none;
+    min-height: 52px;
+    font-size: 0.9rem;
+  }
+
+  .btm-submit-check {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .btm-model-reveal {
+    margin-top: 0;
+  }
+
+  .fan-ranking-leaders {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fan-ranking-leaders article.leader {
+    grid-column: 1 / -1;
+  }
+
+  .fan-ranking-row {
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .fan-ranking-team-with-logo {
+    gap: 8px;
+  }
+
+  .fan-spotlight-matchup {
+    align-items: center;
+  }
+
+  .fan-spotlight-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .fan-team-picker-confirm,
+  .fan-team-picker-confirm select {
+    width: 100%;
+  }
+
+  .fan-team-picker-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .fan-team-picker-actions .fan-button {
+    width: 100%;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 430px) {
+  .team-logo-md { width: 42px; height: 42px; border-radius: 11px; }
+  .team-logo-lg { width: 54px; height: 54px; border-radius: 13px; }
+
+  .btm-game-card {
+    padding: 12px;
+  }
+
+  .btm-pick-option {
+    grid-template-columns: auto auto minmax(0, 1fr);
+    min-height: 78px;
+  }
+
+  .btm-pick-action {
+    grid-column: 3;
+    min-width: 0;
+    text-align: left;
+    font-size: 0.68rem;
+  }
+
+  .btm-rank-chip {
+    align-self: center;
+  }
+
+  .btm-market-heading small {
+    display: none;
+  }
+
+  .fan-ranking-leaders {
+    grid-template-columns: 1fr;
+  }
+
+  .fan-ranking-leaders article.leader {
+    grid-column: auto;
+  }
+
+  .fan-my-team-title-logo h2 {
+    width: calc(100% - 78px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btm-pick-option .btm-pick-logo {
+    transition: none;
+  }
+}
