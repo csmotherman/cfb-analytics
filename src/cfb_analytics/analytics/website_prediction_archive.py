@@ -1,12 +1,13 @@
-"""Export the 2014-2025 historical slate for the focused prediction website.
+"""Export the supported 2014-2025 historical slate for the focused prediction website.
 
 The website archive is deliberately truthful:
 - every game that can be reconstructed from canonical historical data is exported;
+- the COVID-disrupted 2020 season is intentionally omitted from the comparable archive;
 - a model pick is attached only when a stored historical OOS Prediction-v2 row exists;
 - seasons/weeks without a supported model prediction remain historical-slate entries;
 - no later result is used to manufacture a missing prediction or explanation.
 
-This lets the website browse every available season/week while preserving the
+This lets the website browse every supported season/week while preserving the
 scientific meaning of the model record.
 """
 from __future__ import annotations
@@ -23,7 +24,7 @@ from cfb_analytics.derived.pregame import game_contexts
 from cfb_analytics.raw.audit import discover_partitions
 
 ARCHIVE_VERSION = "website-prediction-archive-v1"
-ARCHIVE_SEASONS = tuple(range(2014, 2026))
+ARCHIVE_SEASONS = (2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025)
 DEFAULT_BENCHMARK = Path("data/processed/market_benchmark/prediction-v2-vs-clean-market-games.json")
 DEFAULT_OUTPUT_ROOT = Path("data/processed/website/prediction_archive")
 MIN_GAMES = 3
