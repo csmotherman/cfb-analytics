@@ -32,6 +32,11 @@ function MatchupSpotlight({ game }: { game: ReturnType<typeof getBeatTheModelDat
         <em>AT</em>
         <div><span>#{game.homeRank}</span><strong>{game.homeTeam}</strong><small>Home</small></div>
       </div>
+      <div className="fan-spotlight-market">
+        <span>MARKET</span>
+        <strong>{game.marketLine ?? "Consensus line pending"}</strong>
+        <small>{game.marketProviderCount ? `${game.marketProviderCount} ${game.marketProviderCount === 1 ? "book" : "books"}` : "Market context appears when available"}</small>
+      </div>
       <footer>
         <div><span>THE MODEL</span><strong>{game.modelWinner ? "Hidden until you pick" : "Pregame call locking"}</strong></div>
         <Link href="/play">Go to this game <span aria-hidden="true">→</span></Link>
@@ -58,16 +63,16 @@ export function BeatTheModelHome() {
             <span>{data.season} · Week {data.week}</span>
           </div>
           <span className="fan-kicker fan-challenge-kicker">BEAT THE MODEL</span>
-          <h1>15 games. You pick first. Can you beat the computer?</h1>
-          <p>The Model gets the exact same college football matchups you do. Pick every winner before you see its call, then let Saturday decide who knew the week better.</p>
+          <h1>15 big games. Your picks versus the computer.</h1>
+          <p>We find the strongest competitive matchups using BTM power rankings and market consensus. You see the market, make your call, and only then does The Model reveal its frozen pick.</p>
           <div className="fan-hero-actions">
             <Link className="fan-button fan-button-primary fan-primary-challenge-cta" href={primaryHref}>{status.cta}</Link>
             <Link className="fan-button fan-button-secondary" href="/archive">See The Model’s history</Link>
           </div>
           <div className="fan-challenge-rules">
-            <div><strong>01</strong><span>Pick a winner in each of the 15 biggest games.</span></div>
-            <div><strong>02</strong><span>The Model stays hidden until your call is made.</span></div>
-            <div><strong>03</strong><span>One point per correct winner. Better record wins.</span></div>
+            <div><strong>01</strong><span>The Official 15 targets strong teams and close matchups.</span></div>
+            <div><strong>02</strong><span>Market context is visible. The Model stays hidden until you pick.</span></div>
+            <div><strong>03</strong><span>Your first pick locks. One point per correct winner.</span></div>
           </div>
         </div>
 
@@ -128,13 +133,13 @@ export function BeatTheModelHome() {
         <article className="fan-feature-panel fan-model-panel">
           <span className="fan-kicker">THE RULE THAT MATTERS</span>
           <h2>The Model never chooses its opponents.</h2>
-          <p>The rankings choose the weekly 15 first. Only then are The Model’s frozen predictions attached, so it cannot cherry-pick the games it likes.</p>
+          <p>BTM rankings and market competitiveness choose the weekly 15 first. Only then are The Model’s frozen predictions attached, so it cannot cherry-pick the games it likes.</p>
           <Link className="fan-text-link" href="/about">See how the challenge works <span aria-hidden="true">→</span></Link>
         </article>
       </section>
 
       <section className="fan-final-cta fan-section">
-        <div><span className="fan-kicker">READY?</span><h2>Make the picks before you see the answers.</h2><p>Then come back Saturday and see who won the argument.</p></div>
+        <div><span className="fan-kicker">READY?</span><h2>Make the picks before you see the answers.</h2><p>Use the market if you want. Then decide whether you know better than The Model.</p></div>
         <Link className="fan-button fan-button-primary" href={primaryHref}>{status.cta}</Link>
       </section>
     </>
