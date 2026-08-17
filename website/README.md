@@ -1,152 +1,201 @@
-# CFB Model Website
+# Beat the Model Website
 
-The website has one product promise:
+The consumer product is now **Beat the Model**:
 
-> See what the model predicts, then see exactly why.
+> Pick the winners of the 15 biggest college football games of the week, then see if you can beat The Model.
 
-The public product loop stays deliberately small:
+There are no public betting odds, spreads, EV labels, bankrolls, or ATS scorecards. The historical market/ATS artifacts remain in the repository only as internal model-audit evidence.
 
-1. **Predictions** bring users in.
-2. **Why** explains each supported prediction in fan-readable language.
-3. **Archive** lets fans go back to a supported season/week and audit the model against the market.
-4. **Results** keep the model accountable and give users a reason to come back.
+## Product loop
 
-Primary navigation is:
+1. **Rank every FBS team** before the week begins.
+2. **Select the Official 15** biggest eligible matchups from those rankings.
+3. **Users make winner picks** before seeing The Model's answer.
+4. **The Model is revealed** after each user pick.
+5. **Correct winner = 1 point.** User and Model are scored on the same games.
+6. **Archive the slate and result** permanently.
 
-- Predictions
+Primary navigation:
+
+- Play
+- Rankings
 - Archive
-- Results
 - How it works
 
-The archive picker also lives directly on the home screen.
+Private friend pools and public pools can be layered onto this same card later without changing the core scoring rules.
 
-## Stadium Midnight design system
+## Weekly power rankings
 
-The public site uses a restrained dark research/sports theme:
+Power rankings are deliberately separate from Prediction v2.
 
-- Canvas: `#0B0F17`
-- Surfaces: dark slate / translucent `#161F30`
-- Model / projection: `#06B6D4` cyan
-- Positive / correct: `#10B981` mint
-- Recommended-bet attention: `#F59E0B` amber
-- Negative / incorrect: `#F43F5E` crimson
-- Secondary text: `#94A3B8`
-- UI typography: Inter
-- Scores, spreads, percentages, and units: JetBrains Mono with tabular numerals
+They answer:
 
-## Live prediction data contract
+> How strong is this team right now on a neutral field?
 
-The website reads `website/data/predictions.json` (or `data/predictions.json` when the website directory is the deployment root).
+The ranking uses the existing site-aware opponent-adjusted SRS team rating. It is a strength ranking, not a résumé poll.
+
+### Week 1
+
+Week 1 is exactly the previous season's final **numeric power rating** sorted from strongest to weakest.
+
+For 2026 Week 1:
+
+```text
+final 2025 BTM power ratings
+        ↓
+2026 Week 1 BTM rankings
+```
+
+No AP poll, recruiting ranking, transfer ranking, or Prediction-v2 confidence is used.
+
+### First four games
+
+The previous-season power rating fades using the same fixed evidence-window philosophy as the frozen early-season model:
+
+```text
+games played before matchup    previous season    current season
+0                              100%                0%
+1                               75%               25%
+2                               50%               50%
+3                               25%               75%
+4+                               0%              100%
+```
+
+The blend is applied to the **numeric rating**, never to ordinal rank positions. Teams are reranked after the blended rating is calculated.
+
+2020 remains excluded, so 2021 is never silently seeded from 2019.
+
+## Official 15 selection
+
+Normal regular-season weeks target 15 games.
+
+A game is eligible when:
+
+- it is a regular-season game;
+- both teams have a published BTM ranking;
+- Prediction v2 has a valid pregame call so The Model can participate.
+
+The ordering itself never uses the model prediction, confidence, market line, ATS result, or final score.
+
+Current matchup score:
+
+```text
+matchup score = average(home rank, away rank)
+              + 0.25 × absolute rank difference
+```
+
+**Lower is better.**
+
+The 15 lowest-scoring eligible matchups become the Official 15.
+
+This means two strong, closely ranked teams rise above a highly ranked team playing a much weaker opponent.
+
+## Current game data
+
+The website reads:
+
+```text
+website/data/beat-the-model/current.json
+```
+
+Current contract:
 
 ```json
 {
+  "schemaVersion": 1,
+  "version": "beat-the-model-v1",
   "season": 2026,
   "week": 1,
-  "updatedAt": "2026-08-28T16:00:00-04:00",
+  "updatedAt": null,
+  "status": "awaiting-slate",
+  "slateSize": 15,
+  "rankingVersion": "btm-site-aware-srs-four-game-carryover-v1",
+  "selectionVersion": "btm-top-15-power-matchups-v1",
   "modelVersion": "prediction-v2-2026-prospective-freeze-v1",
-  "current": [],
-  "results": []
+  "games": []
 }
 ```
 
-Each live game should contain the matchup, projected score, predicted winner, win probability, exactly three reasons, one upset path, and a pre-kickoff lock timestamp.
+Once `website/data/predictions.json` contains the live frozen Prediction-v2 slate, the publisher joins it to the BTM rankings and writes the top 15 eligible matchups into this file.
 
-## Historical archive: 2014-2025, excluding 2020
+The browser stores solo picks locally for now. The Model's pick is hidden until the user makes their own choice. Pool persistence/accounts can be added later without changing the weekly data contract.
 
-Supported archive seasons are:
+## Rankings data
 
-```text
-2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025
-```
-
-The COVID-disrupted 2020 season is intentionally excluded from the comparable historical archive and model universe.
-
-Each generated week is a table with:
-
-- year
-- week
-- home team with its final score immediately to the left of the team name
-- away team with its final score immediately to the right of the team name
-- historical CFBD reference spread, formatted with the favored team (for example `Michigan -5`)
-- Prediction-v2 model line when a supported OOS model call exists
-- ATS correct indicator
-- winner correct indicator
-- an amber `BET` marker when the previously selected FULL ATS logistic min3/.575 model recommended that game
-
-The **Results** tab for the selected season/week shows:
-
-- model MAE
-- straight-up winner accuracy
-- ATS record and ATS percentage for the model margin versus the reference spread
-- betting units from only the selected FULL ATS recommended bets
-
-Units use the same research convention as the ATS audits: flat **1 unit risked at -110**, so a win is `+0.9091u`, a loss is `-1u`, and a push is `0u`.
-
-### Archive sources
-
-The publisher reads the existing frozen/local research artifacts:
+The publisher writes:
 
 ```text
-data/processed/market_benchmark/prediction-v2-vs-clean-market-games.json
-data/raw/market_lines/cfbd-market-spreads-2014-2025.json
-data/processed/market_benchmark/full-ats-meta-gate-games.json
+website/data/beat-the-model/rankings/season=2026/week=1.json
 ```
 
-The last source is used only for its exact `FULL_BASELINE` rows—the 495 historical FULL ATS logistic min3/.575 recommendations. The experimental meta-gate decisions are not used by the website. If that file is unavailable, the exporter can fall back to `ats-logistic-deep-audit-games.json` and apply the already-fixed `.575` threshold.
+For Week 1, this file is generated directly from the final 2025 power ratings.
 
-The market source is the historical CFBD **reference spread** selected by the frozen first-parseable `formattedSpread` provider rule. It is not relabeled as a closing consensus line. If CFBD has no usable source line for a historical game, the website says `No market line`; it never invents a spread.
+Historical archive weeks are also decorated with:
 
-### Publish the actual deployable archive
+- home rank
+- away rank
+- home/away power rating
+- matchup score
+- Official 15 selection flag
+- Official 15 slot
+- Beat the Model weekly model record/accuracy/MAE
 
-Use the guarded publisher from the repository root:
+The historical raw market and ATS fields can remain inside the generated JSON for internal audit reproducibility, but the public Beat the Model components do not render them.
+
+## Publish website data
+
+From the repository root:
 
 ```bash
 python -m cfb_analytics.analytics.publish_website_archive
 ```
 
-It writes directly to:
+The command still validates the frozen historical research universe, then additionally:
+
+1. builds weekly BTM power rankings;
+2. decorates historical weeks with the Official 15;
+3. writes the 2026 Week 1 rankings from final 2025 ratings;
+4. writes the current Beat the Model game dataset.
+
+Generated deployable data lives under:
 
 ```text
 website/data/archive/
+website/data/beat-the-model/
 ```
-
-and fails closed unless the local source universe contains exactly:
-
-```text
-8,510 historical games
-3,977 official Prediction-v2 minGames=3 OOS model calls
-12,666 clean CFBD market rows
-495 selected FULL ATS recommendations
-```
-
-The publisher also writes:
-
-```text
-website/data/archive/index.json
-website/data/archive/missing-market-lines.json
-```
-
-`index.json` is the deployable archive manifest and drives the season/week picker. `missing-market-lines.json` is an explicit audit of games for which the frozen CFBD source has no usable reference line. The generated `website/data/archive/**` files are deployable website data and should be committed with the website when the archive is published.
 
 After publishing:
 
 ```bash
-git add website/data/archive
-git commit -m "data: publish historical website archive"
+git add website/data/archive website/data/beat-the-model
+git commit -m "data: publish Beat the Model website data"
 git push origin agent/website-predictions-clean
 ```
 
-The publisher never manufactures a historical model pick, ATS recommendation, spread, or explanation after seeing the result. Early seasons can still show every reconstructed historical game and final score even when no official Prediction-v2 OOS call exists.
+## Fairness rules
 
-## Product rules
+- The Model never gets to choose the games it has to predict.
+- Rankings/slate selection happen independently of model confidence or prediction direction.
+- Users pick before seeing The Model's answer.
+- Live model calls lock before kickoff.
+- Correct winner = 1 point; wrong winner = 0.
+- Historical model picks are never reconstructed with future information.
+- 2020 remains excluded from the comparable model/ranking universe.
+- Market/ATS research is internal evidence, not the public game.
 
-- Never fabricate a prediction to make the UI look populated.
-- Live predictions lock before kickoff.
-- The original prediction remains visible after the game.
-- Historical pages never invent a missing prediction, market spread, or post-hoc recommendation.
-- 2020 stays excluded because the COVID-disrupted season is outside the comparable archive/model contract.
-- Advanced metrics stay under the hood unless they make the prediction easier to understand.
-- Archive is part of the same prediction → explanation → result product, not a second analytics dashboard.
+## Stadium Midnight design system
+
+The site keeps the Stadium Midnight palette:
+
+- Canvas `#0B0F17`
+- Dark slate surfaces
+- Cyan for rankings/model identity
+- Mint for correct/success
+- Amber for disagreement/attention
+- Crimson for incorrect results
+- Steel gray secondary text
+- Inter UI type
+- JetBrains Mono scores/ranks/numerics
 
 ## Run locally
 
