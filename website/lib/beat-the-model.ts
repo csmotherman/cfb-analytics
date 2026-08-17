@@ -14,7 +14,8 @@ export type BeatTheModelGame = {
   homePowerRating?: number | null;
   awayPowerRating?: number | null;
   matchupScore?: number | null;
-  modelWinner: string;
+  modelWinner?: string | null;
+  modelMargin?: number | null;
   modelHomeWinProbability?: number | null;
   modelProjectedHomeScore?: number | null;
   modelProjectedAwayScore?: number | null;
@@ -27,11 +28,13 @@ export type BeatTheModelDataset = {
   season: number;
   week: number;
   updatedAt: string | null;
-  status: "awaiting-slate" | "open" | "locked" | "final";
+  status: "awaiting-slate" | "awaiting-model" | "open" | "locked" | "final";
   slateSize: number;
   rankingVersion: string;
   selectionVersion: string;
   modelVersion: string;
+  modelReady?: boolean;
+  selectionFrozen?: boolean;
   games: BeatTheModelGame[];
 };
 
@@ -40,6 +43,7 @@ export type BeatTheModelRanking = {
   team: string;
   rating: number;
   sourceSeason?: number | null;
+  gamesBefore?: number | null;
 };
 
 export type BeatTheModelRankings = {
@@ -60,6 +64,8 @@ const EMPTY_DATASET: BeatTheModelDataset = {
   rankingVersion: "btm-site-aware-srs-four-game-carryover-v1",
   selectionVersion: "btm-top-15-power-matchups-v1",
   modelVersion: "prediction-v2-2026-prospective-freeze-v1",
+  modelReady: false,
+  selectionFrozen: false,
   games: [],
 };
 
@@ -91,6 +97,8 @@ export function getBeatTheModelDataset(): BeatTheModelDataset {
       rankingVersion: String(parsed.rankingVersion ?? EMPTY_DATASET.rankingVersion),
       selectionVersion: String(parsed.selectionVersion ?? EMPTY_DATASET.selectionVersion),
       modelVersion: String(parsed.modelVersion ?? EMPTY_DATASET.modelVersion),
+      modelReady: typeof parsed.modelReady === "boolean" ? parsed.modelReady : undefined,
+      selectionFrozen: typeof parsed.selectionFrozen === "boolean" ? parsed.selectionFrozen : undefined,
       games: Array.isArray(parsed.games) ? parsed.games : [],
     };
   } catch {
@@ -132,7 +140,10 @@ export function getBeatTheModelRankings(season: number, week: number): BeatTheMo
 
 export function modelRecord(games: BeatTheModelGame[]) {
   const finals = games.filter(
-    (game) => game.status === "final" && typeof game.actualHomeScore === "number" && typeof game.actualAwayScore === "number",
+    (game) => game.status === "final"
+      && Boolean(game.modelWinner)
+      && typeof game.actualHomeScore === "number"
+      && typeof game.actualAwayScore === "number",
   );
   let wins = 0;
   for (const game of finals) {
