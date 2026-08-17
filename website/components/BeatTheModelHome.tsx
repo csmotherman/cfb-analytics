@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { FavoriteTeamCard } from "./FavoriteTeamCard";
+import { TeamLogo } from "./TeamLogo";
 import {
   formatKickoff,
   getBeatTheModelDataset,
@@ -28,9 +29,15 @@ function MatchupSpotlight({ game }: { game: ReturnType<typeof getBeatTheModelDat
         <span>{formatKickoff(game.kickoff) ?? "Kickoff TBA"}</span>
       </header>
       <div className="fan-spotlight-matchup">
-        <div><span>#{game.awayRank}</span><strong>{game.awayTeam}</strong><small>Away</small></div>
+        <div>
+          <TeamLogo team={game.awayTeam} src={game.awayLogo} size="lg" className="fan-spotlight-logo" />
+          <span>#{game.awayRank}</span><strong>{game.awayTeam}</strong><small>Away</small>
+        </div>
         <em>AT</em>
-        <div><span>#{game.homeRank}</span><strong>{game.homeTeam}</strong><small>Home</small></div>
+        <div>
+          <TeamLogo team={game.homeTeam} src={game.homeLogo} size="lg" className="fan-spotlight-logo" />
+          <span>#{game.homeRank}</span><strong>{game.homeTeam}</strong><small>Home</small>
+        </div>
       </div>
       <div className="fan-spotlight-market">
         <span>MARKET</span>
@@ -38,7 +45,7 @@ function MatchupSpotlight({ game }: { game: ReturnType<typeof getBeatTheModelDat
         <small>{game.marketProviderCount ? `${game.marketProviderCount} ${game.marketProviderCount === 1 ? "book" : "books"}` : "Market context appears when available"}</small>
       </div>
       <footer>
-        <div><span>THE MODEL</span><strong>{game.modelWinner ? "Hidden until you pick" : "Pregame call locking"}</strong></div>
+        <div><span>THE MODEL</span><strong>{game.modelWinner ? "Hidden until you submit" : "Pregame call locking"}</strong></div>
         <Link href="/play">Go to this game <span aria-hidden="true">→</span></Link>
       </footer>
     </article>
@@ -64,15 +71,15 @@ export function BeatTheModelHome() {
           </div>
           <span className="fan-kicker fan-challenge-kicker">BEAT THE MODEL</span>
           <h1>15 big games. Your picks versus the computer.</h1>
-          <p>We find the strongest competitive matchups using BTM power rankings and market consensus. You see the market, make your call, and only then does The Model reveal its frozen pick.</p>
+          <p>We find the strongest competitive matchups using BTM power rankings and market consensus. Select a winner, review it, then submit before The Model reveals its frozen call.</p>
           <div className="fan-hero-actions">
             <Link className="fan-button fan-button-primary fan-primary-challenge-cta" href={primaryHref}>{status.cta}</Link>
             <Link className="fan-button fan-button-secondary" href="/archive">See The Model’s history</Link>
           </div>
           <div className="fan-challenge-rules">
             <div><strong>01</strong><span>The Official 15 targets strong teams and close matchups.</span></div>
-            <div><strong>02</strong><span>Market context is visible. The Model stays hidden until you pick.</span></div>
-            <div><strong>03</strong><span>Your first pick locks. One point per correct winner.</span></div>
+            <div><strong>02</strong><span>Select, review, submit. The Model stays hidden until confirmation.</span></div>
+            <div><strong>03</strong><span>Your submitted pick locks. One point per correct winner.</span></div>
           </div>
         </div>
 
@@ -80,7 +87,7 @@ export function BeatTheModelHome() {
           <span className="fan-kicker">THIS WEEK’S CHALLENGE</span>
           <div className="fan-challenge-card-week"><strong>Week {data.week}</strong><span>{data.games.length || "—"}/{data.slateSize} matchups</span></div>
           <div className="fan-challenge-versus">
-            <div><span>YOU</span><strong>?</strong><small>Make your calls</small></div>
+            <div><span>YOU</span><strong>?</strong><small>Submit your calls</small></div>
             <em>VS</em>
             <div><span>THE MODEL</span><strong>M</strong><small>Same 15 games</small></div>
           </div>
@@ -125,7 +132,12 @@ export function BeatTheModelHome() {
           </div>
           {topTeams.length ? (
             <div className="fan-ranking-preview">
-              {topTeams.map((team) => <div key={team.team}><span>#{team.rank}</span><strong>{team.team}</strong><em>{team.rating >= 0 ? "+" : ""}{team.rating.toFixed(1)}</em></div>)}
+              {topTeams.map((team) => (
+                <div key={team.team} className="fan-ranking-preview-logo-row">
+                  <TeamLogo team={team.team} src={team.logo} size="sm" />
+                  <span>#{team.rank}</span><strong>{team.team}</strong><em>{team.rating >= 0 ? "+" : ""}{team.rating.toFixed(1)}</em>
+                </div>
+              ))}
             </div>
           ) : <p className="fan-muted">The weekly rankings have not been published yet.</p>}
         </article>
@@ -139,7 +151,7 @@ export function BeatTheModelHome() {
       </section>
 
       <section className="fan-final-cta fan-section">
-        <div><span className="fan-kicker">READY?</span><h2>Make the picks before you see the answers.</h2><p>Use the market if you want. Then decide whether you know better than The Model.</p></div>
+        <div><span className="fan-kicker">READY?</span><h2>Make the picks before you see the answers.</h2><p>Use the market if you want. Select, review, submit, then see whether you know better than The Model.</p></div>
         <Link className="fan-button fan-button-primary" href={primaryHref}>{status.cta}</Link>
       </section>
     </>
