@@ -51,15 +51,15 @@ jobs:
           set -euo pipefail
           SEASON="${INPUT_SEASON:-2026}"
           if [[ -n "${INPUT_WEEK:-}" ]]; then
-            python -m cfb_analytics.analytics.publish_beat_the_model_schedule \
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v3 \
               --season "$SEASON" \
               --week "$INPUT_WEEK"
           elif [[ "$EVENT_NAME" == "schedule" ]]; then
-            python -m cfb_analytics.analytics.publish_beat_the_model_schedule \
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v3 \
               --season "$SEASON" \
               --advance
           else
-            python -m cfb_analytics.analytics.publish_beat_the_model_schedule \
+            python -m cfb_analytics.analytics.publish_beat_the_model_schedule_v3 \
               --season "$SEASON"
           fi
 
