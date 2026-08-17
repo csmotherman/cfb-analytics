@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 import type { BeatTheModelGame, BeatTheModelRanking } from "../lib/beat-the-model";
+import { TeamLogo } from "./TeamLogo";
 
 const STORAGE_KEY = "beat-the-model:favorite-team";
 
@@ -19,12 +20,16 @@ export function FavoriteTeamCard({
   games: BeatTheModelGame[];
 }) {
   const [team, setTeam] = useState("");
+  const [draftTeam, setDraftTeam] = useState("");
   const [editing, setEditing] = useState(false);
 
   useEffect(() => {
     try {
       const saved = window.localStorage.getItem(STORAGE_KEY);
-      if (saved) setTeam(saved);
+      if (saved) {
+        setTeam(saved);
+        setDraftTeam(saved);
+      }
     } catch {
       // Personalization is optional; the rest of the site works without storage.
     }
@@ -39,15 +44,25 @@ export function FavoriteTeamCard({
     [games, team],
   );
 
-  function save(value: string) {
-    setTeam(value);
+  function beginEditing() {
+    setDraftTeam(team);
+    setEditing(true);
+  }
+
+  function save() {
+    if (!draftTeam) return;
+    setTeam(draftTeam);
     setEditing(false);
     try {
-      if (value) window.localStorage.setItem(STORAGE_KEY, value);
-      else window.localStorage.removeItem(STORAGE_KEY);
+      window.localStorage.setItem(STORAGE_KEY, draftTeam);
     } catch {
       // Keep the in-memory preference if storage is unavailable.
     }
+  }
+
+  function cancel() {
+    setDraftTeam(team);
+    setEditing(false);
   }
 
   if (!rankings.length) return null;
@@ -59,11 +74,12 @@ export function FavoriteTeamCard({
         {!ranking ? (
           <>
             <h2>Make the board yours.</h2>
-            <p>Choose your team once. We’ll keep its rank and weekly matchup easy to find on this device.</p>
+            <p>Choose your team, review it, then save. We’ll keep its rank and weekly matchup easy to find on this device.</p>
           </>
         ) : (
           <>
-            <div className="fan-my-team-title">
+            <div className="fan-my-team-title fan-my-team-title-logo">
+              <TeamLogo team={ranking.team} src={ranking.logo} size="lg" />
               <span>#{ranking.rank}</span>
               <h2>{ranking.team}</h2>
             </div>
@@ -76,23 +92,27 @@ export function FavoriteTeamCard({
       </div>
 
       {editing || !ranking ? (
-        <div className="fan-team-picker">
+        <div className="fan-team-picker fan-team-picker-confirm">
           <label htmlFor="favorite-team">Favorite team</label>
           <select
             id="favorite-team"
-            value={team}
-            onChange={(event) => save(event.target.value)}
+            value={draftTeam}
+            onChange={(event) => setDraftTeam(event.target.value)}
           >
             <option value="">Choose a team</option>
             {rankings.map((entry) => (
               <option key={entry.team} value={entry.team}>#{entry.rank} {entry.team}</option>
             ))}
           </select>
+          <div className="fan-team-picker-actions">
+            <button type="button" className="fan-button fan-button-primary" disabled={!draftTeam} onClick={save}>Save team</button>
+            {ranking ? <button type="button" className="fan-button fan-button-secondary" onClick={cancel}>Cancel</button> : null}
+          </div>
         </div>
       ) : (
         <div className="fan-personal-actions">
           {game ? <Link href="/play">Go to matchup <span aria-hidden="true">→</span></Link> : null}
-          <button type="button" onClick={() => setEditing(true)}>Change team</button>
+          <button type="button" onClick={beginEditing}>Change team</button>
         </div>
       )}
     </article>
