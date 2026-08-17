@@ -2,25 +2,12 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import type { BeatTheModelDataset, BeatTheModelGame } from "../lib/beat-the-model";
+import { formatKickoff, type BeatTheModelDataset, type BeatTheModelGame } from "../lib/beat-the-model";
 
 type Picks = Record<string, string>;
 
 function storageKey(data: BeatTheModelDataset): string {
   return `beat-the-model:picks:${data.season}:${data.week}`;
-}
-
-function formatKickoff(value: string | null | undefined): string | null {
-  if (!value) return null;
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat("en-US", {
-    weekday: "short",
-    month: "short",
-    day: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-  }).format(date);
 }
 
 function actualWinner(game: BeatTheModelGame): string | null {
@@ -40,6 +27,7 @@ function PickButton({
   game,
   team,
   rank,
+  side,
   picked,
   disabled,
   modelPending,
@@ -48,6 +36,7 @@ function PickButton({
   game: BeatTheModelGame;
   team: string;
   rank: number;
+  side: "Away" | "Home";
   picked: boolean;
   disabled: boolean;
   modelPending: boolean;
@@ -63,8 +52,11 @@ function PickButton({
       aria-label={`Pick number ${rank} ${team} in ${game.awayTeam} at ${game.homeTeam}`}
     >
       <span className="btm-rank-chip">#{rank}</span>
-      <strong>{team}</strong>
-      <span>{picked ? "Your pick" : modelPending ? "Soon" : "Pick"}</span>
+      <span className="btm-team-copy">
+        <strong>{team}</strong>
+        <small>{side}</small>
+      </span>
+      <span className="btm-pick-action">{picked ? "✓ Picked" : modelPending ? "Waiting" : "Pick"}</span>
     </button>
   );
 }
@@ -79,18 +71,17 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
   const modelCorrect = winner && game.modelWinner ? game.modelWinner === winner : null;
 
   return (
-    <article className={`btm-game-card${game.status === "final" ? " final" : ""}`}>
-      <div className="btm-game-topline">
+    <article className={`btm-game-card${game.status === "final" ? " final" : ""}${pick ? " has-pick" : ""}`}>
+      <header className="btm-game-topline">
         <span>Game {game.slot}</span>
-        <span>{kickoff ?? "Kickoff TBA"}</span>
-      </div>
+        <span>{game.status === "final" ? "Final" : kickoff ?? "Kickoff TBA"}</span>
+      </header>
 
       {game.status === "final" && typeof game.actualHomeScore === "number" && typeof game.actualAwayScore === "number" ? (
         <div className="btm-final-score" aria-label={`${game.awayTeam} ${game.actualAwayScore}, ${game.homeTeam} ${game.actualHomeScore}`}>
-          <span>FINAL</span>
-          <strong>{game.awayTeam} {game.actualAwayScore}</strong>
-          <span>—</span>
-          <strong>{game.homeTeam} {game.actualHomeScore}</strong>
+          <span className={winner === game.awayTeam ? "winner" : ""}>{game.awayTeam} <strong>{game.actualAwayScore}</strong></span>
+          <em>FINAL</em>
+          <span className={winner === game.homeTeam ? "winner" : ""}>{game.homeTeam} <strong>{game.actualHomeScore}</strong></span>
         </div>
       ) : null}
 
@@ -99,16 +90,18 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
           game={game}
           team={game.awayTeam}
           rank={game.awayRank}
+          side="Away"
           picked={pick === game.awayTeam}
           disabled={locked || !modelAvailable}
           modelPending={!modelAvailable}
           onPick={() => onPick(game.awayTeam)}
         />
-        <div className="btm-versus">VS</div>
+        <div className="btm-versus" aria-hidden="true">AT</div>
         <PickButton
           game={game}
           team={game.homeTeam}
           rank={game.homeRank}
+          side="Home"
           picked={pick === game.homeTeam}
           disabled={locked || !modelAvailable}
           modelPending={!modelAvailable}
@@ -119,25 +112,20 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
       <div className={`btm-model-reveal${revealed ? " revealed" : ""}`}>
         {!modelAvailable ? (
           <>
-            <div>
+            <div className="btm-model-copy">
               <span>THE MODEL</span>
-              <strong>Pregame snapshot pending</strong>
+              <strong>Pregame pick pending</strong>
+              <small>The matchup is set, but picking has not opened yet.</small>
             </div>
-            <div className="btm-model-lock" aria-hidden="true">NOT OPEN</div>
+            <span className="btm-model-state">Coming soon</span>
           </>
         ) : revealed ? (
           <>
-            <div>
-              <span>THE MODEL</span>
+            <div className="btm-model-copy">
+              <span>THE MODEL PICKED</span>
               <strong>#{game.modelWinner === game.homeTeam ? game.homeRank : game.awayRank} {game.modelWinner}</strong>
+              {pick ? <small>{pick === game.modelWinner ? "Same pick as you" : "Different from your pick"}</small> : <small>Revealed after lock</small>}
             </div>
-            {pick ? (
-              <div className={`btm-agreement ${pick === game.modelWinner ? "agree" : "disagree"}`}>
-                {pick === game.modelWinner ? "You agree" : "You disagree"}
-              </div>
-            ) : (
-              <div className="btm-agreement locked">Pick locked</div>
-            )}
             {game.status === "final" ? (
               <div className="btm-result-pair">
                 <span className={userCorrect === true ? "correct" : userCorrect === false ? "wrong" : ""}>
@@ -147,15 +135,20 @@ function GameCard({ game, pick, onPick }: { game: BeatTheModelGame; pick?: strin
                   Model {modelCorrect === true ? "✓" : modelCorrect === false ? "×" : "—"}
                 </span>
               </div>
-            ) : null}
+            ) : (
+              <span className={`btm-agreement ${pick === game.modelWinner ? "agree" : "disagree"}`}>
+                {pick === game.modelWinner ? "You agree" : "You disagree"}
+              </span>
+            )}
           </>
         ) : (
           <>
-            <div>
+            <div className="btm-model-copy">
               <span>THE MODEL</span>
               <strong>Hidden until you pick</strong>
+              <small>Make your call without seeing the answer first.</small>
             </div>
-            <div className="btm-model-lock" aria-hidden="true">LOCKED</div>
+            <span className="btm-model-state">Locked</span>
           </>
         )}
       </div>
@@ -204,20 +197,19 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
   }).length;
   const modelFinalGames = finalGames.filter((game) => Boolean(game.modelWinner));
   const modelWins = modelFinalGames.filter((game) => actualWinner(game) === game.modelWinner).length;
+  const progress = data.games.length ? Math.round((pickedCount / data.games.length) * 100) : 0;
+  const cardComplete = data.games.length > 0 && pickedCount === data.games.length;
 
   if (!data.games.length) {
     return (
-      <section className="btm-awaiting">
-        <div>
-          <span className="eyebrow">{data.season} WEEK {data.week}</span>
-          <h2>The Official 15 has not been published yet.</h2>
-          <p>Week 1 team rankings are seeded from the final {data.season - 1} power ratings. The weekly scheduler pulls the live FBS schedule and automatically selects the 15 strongest ranked matchups.</p>
-        </div>
-        <div className="btm-awaiting-rules">
-          <span>15 games</span>
-          <span>1 point per winner</span>
-          <span>Model hidden until you pick</span>
-          <span>No spreads. No odds.</span>
+      <section className="fan-empty-state btm-empty-week">
+        <span className="fan-status fan-status-steel">{data.season} Week {data.week}</span>
+        <h2>The Official {data.slateSize} is not published yet.</h2>
+        <p>The weekly scheduler selects the strongest ranked FBS matchups. As soon as the card is ready, every game will appear here.</p>
+        <div className="fan-rule-row">
+          <span>{data.slateSize} games</span>
+          <span>1 point each</span>
+          <span>Model hidden first</span>
         </div>
       </section>
     );
@@ -225,26 +217,34 @@ export function BeatTheModelGameView({ data }: { data: BeatTheModelDataset }) {
 
   return (
     <section className="btm-play-area" aria-labelledby="official-slate-heading">
-      <div className="btm-slate-header">
-        <div>
-          <span className="eyebrow">OFFICIAL {data.slateSize}</span>
+      <div className="btm-play-toolbar">
+        <div className="btm-play-toolbar-copy">
+          <span className={`fan-status ${data.status === "open" ? "fan-status-mint" : data.status === "awaiting-model" ? "fan-status-amber" : "fan-status-steel"}`}>
+            {data.status === "open" ? "Picks open" : data.status === "awaiting-model" ? "Picks opening soon" : data.status === "final" ? "Week complete" : "Official slate"}
+          </span>
           <h2 id="official-slate-heading">{data.season} Week {data.week}</h2>
           <p>{data.status === "awaiting-model"
-            ? "The matchups are selected. Picking opens after The Model's frozen pregame snapshot is attached."
-            : "Make your choice first. The Model's pick is revealed only after yours."}</p>
+            ? "The matchups are set. Picking opens once The Model's frozen pregame calls are attached."
+            : data.status === "final"
+              ? "The week is final. Your saved picks are scored beside The Model."
+              : "Pick one winner in every game. The Model is revealed only after you choose."}</p>
         </div>
-        <div className="btm-progress-card">
-          <span>{data.status === "awaiting-model" ? "Slate" : "Your card"}</span>
-          <strong>{data.status === "awaiting-model" ? `${data.games.length}/${data.slateSize}` : hydrated ? `${pickedCount}/${data.games.length}` : "—"}</strong>
-          <small>{data.status === "awaiting-model" ? "games selected" : "picks made"}</small>
+
+        <div className="btm-card-progress" aria-label={`${pickedCount} of ${data.games.length} picks made`}>
+          <div>
+            <span>{data.status === "awaiting-model" ? "Slate ready" : cardComplete ? "Card complete" : "Your card"}</span>
+            <strong>{data.status === "awaiting-model" ? `${data.games.length}/${data.slateSize}` : hydrated ? `${pickedCount}/${data.games.length}` : "—"}</strong>
+          </div>
+          {data.status !== "awaiting-model" ? (
+            <div className="btm-progress-track" aria-hidden="true"><span style={{ width: `${progress}%` }} /></div>
+          ) : null}
         </div>
       </div>
 
       {data.status === "awaiting-model" ? (
-        <div className="btm-scoreboard btm-model-pending-banner">
-          <div><span>Matchups</span><strong>SET</strong></div>
-          <div className="btm-scoreboard-vs">→</div>
-          <div><span>Picking</span><strong>SOON</strong></div>
+        <div className="btm-week-message">
+          <div><strong>Matchups are published.</strong><span>You can browse the full card now.</span></div>
+          <div><strong>Picking is still locked.</strong><span>It opens automatically when all model calls are frozen.</span></div>
         </div>
       ) : finalGames.length ? (
         <div className="btm-scoreboard">
