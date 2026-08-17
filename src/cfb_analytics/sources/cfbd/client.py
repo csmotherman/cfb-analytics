@@ -96,3 +96,15 @@ class CfbdClient:
             "/plays",
             {"year": season, "week": week, "seasonType": season_type, "classification": CLASSIFICATION},
         )
+
+    def lines(self, season: int, week: int, season_type: str = "regular") -> CfbdResponse:
+        """Return the CFBD betting-line feed for one season/week partition.
+
+        The v2 CFBD /lines endpoint does not expose the classification filter used
+        by /games. Callers should join the returned game IDs back to the authoritative
+        FBS-vs-FBS schedule before using market data in a product surface.
+        """
+        return self.get_json(
+            "/lines",
+            {"year": season, "week": week, "seasonType": season_type},
+        )
