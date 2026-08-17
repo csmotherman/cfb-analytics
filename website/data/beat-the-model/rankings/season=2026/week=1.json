@@ -1,826 +1,1644 @@
 {
-  "liveScheduleVersion": "beat-the-model-live-schedule-v1",
+  "liveScheduleVersion": "beat-the-model-live-schedule-v4",
   "method": "Week 1 equals the previous season's final site-aware power ratings.",
   "rankingVersion": "btm-site-aware-srs-four-game-carryover-v1",
   "schemaVersion": 1,
   "season": 2026,
   "sourceSeason": 2025,
+  "teamMetadataSource": "cfbd-teams-v1",
+  "teamMetadataStatus": "ok",
   "teams": [
     {
+      "abbreviation": "IU",
+      "alternateColor": "#ffffff",
+      "color": "#990000",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/84.png",
       "rank": 1,
       "rating": 39.930563198908985,
       "sourceSeason": 2025,
-      "team": "Indiana"
+      "team": "Indiana",
+      "teamId": 84
     },
     {
+      "abbreviation": "OSU",
+      "alternateColor": "#a7b1b7",
+      "color": "#ba0c2f",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/194.png",
       "rank": 2,
       "rating": 32.09973264833022,
       "sourceSeason": 2025,
-      "team": "Ohio State"
+      "team": "Ohio State",
+      "teamId": 194
     },
     {
+      "abbreviation": "ORE",
+      "alternateColor": "#fee11a",
+      "color": "#007030",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2483.png",
       "rank": 3,
       "rating": 30.088995416769567,
       "sourceSeason": 2025,
-      "team": "Oregon"
+      "team": "Oregon",
+      "teamId": 2483
     },
     {
+      "abbreviation": "ND",
+      "alternateColor": "#c99700",
+      "color": "#0c2340",
+      "conference": "FBS Independents",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/87.png",
       "rank": 4,
       "rating": 29.990966976383913,
       "sourceSeason": 2025,
-      "team": "Notre Dame"
+      "team": "Notre Dame",
+      "teamId": 87
     },
     {
+      "abbreviation": "TTU",
+      "alternateColor": "#000000",
+      "color": "#c30020",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2641.png",
       "rank": 5,
       "rating": 29.611176726631534,
       "sourceSeason": 2025,
-      "team": "Texas Tech"
+      "team": "Texas Tech",
+      "teamId": 2641
     },
     {
+      "abbreviation": "MIA",
+      "alternateColor": "#005030",
+      "color": "#f47321",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2390.png",
       "rank": 6,
       "rating": 27.25377843308883,
       "sourceSeason": 2025,
-      "team": "Miami"
+      "team": "Miami",
+      "teamId": 2390
     },
     {
+      "abbreviation": "UTAH",
+      "alternateColor": "#ffffff",
+      "color": "#be0000",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/254.png",
       "rank": 7,
       "rating": 25.02631888954033,
       "sourceSeason": 2025,
-      "team": "Utah"
+      "team": "Utah",
+      "teamId": 254
     },
     {
+      "abbreviation": "IOWA",
+      "alternateColor": "#ffcd00",
+      "color": "#000000",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2294.png",
       "rank": 8,
       "rating": 21.6933704458143,
       "sourceSeason": 2025,
-      "team": "Iowa"
+      "team": "Iowa",
+      "teamId": 2294
     },
     {
+      "abbreviation": "UGA",
+      "alternateColor": "#2c2a29",
+      "color": "#ba0c2f",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/61.png",
       "rank": 9,
       "rating": 21.41802797133275,
       "sourceSeason": 2025,
-      "team": "Georgia"
+      "team": "Georgia",
+      "teamId": 61
     },
     {
+      "abbreviation": "MISS",
+      "alternateColor": "#cf142b",
+      "color": "#13294b",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/145.png",
       "rank": 10,
       "rating": 20.75732261873891,
       "sourceSeason": 2025,
-      "team": "Ole Miss"
+      "team": "Ole Miss",
+      "teamId": 145
     },
     {
+      "abbreviation": "USC",
+      "alternateColor": "#ffcc00",
+      "color": "#990000",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/30.png",
       "rank": 11,
       "rating": 20.616945780337947,
       "sourceSeason": 2025,
-      "team": "USC"
+      "team": "USC",
+      "teamId": 30
     },
     {
+      "abbreviation": "VAN",
+      "alternateColor": "#cfae70",
+      "color": "#000000",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/238.png",
       "rank": 12,
       "rating": 20.268348028362624,
       "sourceSeason": 2025,
-      "team": "Vanderbilt"
+      "team": "Vanderbilt",
+      "teamId": 238
     },
     {
+      "abbreviation": "TA&M",
+      "alternateColor": "#ffffff",
+      "color": "#500000",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/245.png",
       "rank": 13,
       "rating": 20.103994834388864,
       "sourceSeason": 2025,
-      "team": "Texas A&M"
+      "team": "Texas A&M",
+      "teamId": 245
     },
     {
+      "abbreviation": "ALA",
+      "alternateColor": "#ffffff",
+      "color": "#9e1b32",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/333.png",
       "rank": 14,
       "rating": 19.99091911192453,
       "sourceSeason": 2025,
-      "team": "Alabama"
+      "team": "Alabama",
+      "teamId": 333
     },
     {
+      "abbreviation": "WASH",
+      "alternateColor": "#e8d3a2",
+      "color": "#33006f",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/264.png",
       "rank": 15,
       "rating": 19.20423951652473,
       "sourceSeason": 2025,
-      "team": "Washington"
+      "team": "Washington",
+      "teamId": 264
     },
     {
+      "abbreviation": "OU",
+      "alternateColor": "#ffffff",
+      "color": "#841617",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/201.png",
       "rank": 16,
       "rating": 17.836067027534803,
       "sourceSeason": 2025,
-      "team": "Oklahoma"
+      "team": "Oklahoma",
+      "teamId": 201
     },
     {
+      "abbreviation": "PSU",
+      "alternateColor": "#ffffff",
+      "color": "#001e44",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/213.png",
       "rank": 17,
       "rating": 17.46325703553107,
       "sourceSeason": 2025,
-      "team": "Penn State"
+      "team": "Penn State",
+      "teamId": 213
     },
     {
+      "abbreviation": "BYU",
+      "alternateColor": "#002e5d",
+      "color": "#003da5",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/252.png",
       "rank": 18,
       "rating": 17.37683709490436,
       "sourceSeason": 2025,
-      "team": "BYU"
+      "team": "BYU",
+      "teamId": 252
     },
     {
+      "abbreviation": "TEX",
+      "alternateColor": "#ffffff",
+      "color": "#bf5700",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/251.png",
       "rank": 19,
       "rating": 16.202076228976043,
       "sourceSeason": 2025,
-      "team": "Texas"
+      "team": "Texas",
+      "teamId": 251
     },
     {
+      "abbreviation": "MICH",
+      "alternateColor": "#ffcb05",
+      "color": "#00274c",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/130.png",
       "rank": 20,
       "rating": 15.723186855220735,
       "sourceSeason": 2025,
-      "team": "Michigan"
+      "team": "Michigan",
+      "teamId": 130
     },
     {
+      "abbreviation": "ILL",
+      "alternateColor": "#13294b",
+      "color": "#ff5f05",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/356.png",
       "rank": 21,
       "rating": 13.802163542974206,
       "sourceSeason": 2025,
-      "team": "Illinois"
+      "team": "Illinois",
+      "teamId": 356
     },
     {
+      "abbreviation": "SMU",
+      "alternateColor": "#0033a1",
+      "color": "#d70000",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2567.png",
       "rank": 22,
       "rating": 13.534052392353237,
       "sourceSeason": 2025,
-      "team": "SMU"
+      "team": "SMU",
+      "teamId": 2567
     },
     {
+      "abbreviation": "ARIZ",
+      "alternateColor": "#003366",
+      "color": "#cc0033",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/12.png",
       "rank": 23,
       "rating": 13.459426704986765,
       "sourceSeason": 2025,
-      "team": "Arizona"
+      "team": "Arizona",
+      "teamId": 12
     },
     {
+      "abbreviation": "USF",
+      "alternateColor": "#cfc493",
+      "color": "#006747",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/58.png",
       "rank": 24,
       "rating": 13.297723356710161,
       "sourceSeason": 2025,
-      "team": "South Florida"
+      "team": "South Florida",
+      "teamId": 58
     },
     {
+      "abbreviation": "MIZ",
+      "alternateColor": "#000000",
+      "color": "#f1b82d",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/142.png",
       "rank": 25,
       "rating": 12.61132733355955,
       "sourceSeason": 2025,
-      "team": "Missouri"
+      "team": "Missouri",
+      "teamId": 142
     },
     {
+      "abbreviation": "JMU",
+      "alternateColor": "#cbb677",
+      "color": "#450084",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/256.png",
       "rank": 26,
       "rating": 12.215804425830989,
       "sourceSeason": 2025,
-      "team": "James Madison"
+      "team": "James Madison",
+      "teamId": 256
     },
     {
+      "abbreviation": "TENN",
+      "alternateColor": "#ffffff",
+      "color": "#ff8200",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2633.png",
       "rank": 27,
       "rating": 12.168470925866547,
       "sourceSeason": 2025,
-      "team": "Tennessee"
+      "team": "Tennessee",
+      "teamId": 2633
     },
     {
+      "abbreviation": "UNT",
+      "alternateColor": "#ffffff",
+      "color": "#00853e",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/249.png",
       "rank": 28,
       "rating": 11.671499278786195,
       "sourceSeason": 2025,
-      "team": "North Texas"
+      "team": "North Texas",
+      "teamId": 249
     },
     {
+      "abbreviation": "FSU",
+      "alternateColor": "#ceb888",
+      "color": "#782f40",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/52.png",
       "rank": 29,
       "rating": 11.283800750602847,
       "sourceSeason": 2025,
-      "team": "Florida State"
+      "team": "Florida State",
+      "teamId": 52
     },
     {
+      "abbreviation": "UVA",
+      "alternateColor": "#f84c1e",
+      "color": "#232d4b",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/258.png",
       "rank": 30,
       "rating": 11.211940543721907,
       "sourceSeason": 2025,
-      "team": "Virginia"
+      "team": "Virginia",
+      "teamId": 258
     },
     {
+      "abbreviation": "LOU",
+      "alternateColor": "#000000",
+      "color": "#c9001f",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/97.png",
       "rank": 31,
       "rating": 10.86413787928331,
       "sourceSeason": 2025,
-      "team": "Louisville"
+      "team": "Louisville",
+      "teamId": 97
     },
     {
+      "abbreviation": "TCU",
+      "alternateColor": "#ffffff",
+      "color": "#4d1979",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2628.png",
       "rank": 32,
       "rating": 10.31020186181896,
       "sourceSeason": 2025,
-      "team": "TCU"
+      "team": "TCU",
+      "teamId": 2628
     },
     {
+      "abbreviation": "AUB",
+      "alternateColor": "#f26522",
+      "color": "#0c2340",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2.png",
       "rank": 33,
       "rating": 10.23533708308619,
       "sourceSeason": 2025,
-      "team": "Auburn"
+      "team": "Auburn",
+      "teamId": 2
     },
     {
+      "abbreviation": "PITT",
+      "alternateColor": "#ffb81c",
+      "color": "#003594",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/221.png",
       "rank": 34,
       "rating": 10.164888037250957,
       "sourceSeason": 2025,
-      "team": "Pittsburgh"
+      "team": "Pittsburgh",
+      "teamId": 221
     },
     {
+      "abbreviation": "KSU",
+      "alternateColor": "#ffffff",
+      "color": "#512888",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2306.png",
       "rank": 35,
       "rating": 9.313433106388498,
       "sourceSeason": 2025,
-      "team": "Kansas State"
+      "team": "Kansas State",
+      "teamId": 2306
     },
     {
+      "abbreviation": "LSU",
+      "alternateColor": "#fdd023",
+      "color": "#461d7c",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/99.png",
       "rank": 36,
       "rating": 9.012996538102591,
       "sourceSeason": 2025,
-      "team": "LSU"
+      "team": "LSU",
+      "teamId": 99
     },
     {
+      "abbreviation": "ISU",
+      "alternateColor": "#f1be48",
+      "color": "#c8102e",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/66.png",
       "rank": 37,
       "rating": 8.547704597446964,
       "sourceSeason": 2025,
-      "team": "Iowa State"
+      "team": "Iowa State",
+      "teamId": 66
     },
     {
+      "abbreviation": "NCSU",
+      "alternateColor": "#ffffff",
+      "color": "#cc0000",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/152.png",
       "rank": 38,
       "rating": 8.109314315340567,
       "sourceSeason": 2025,
-      "team": "NC State"
+      "team": "NC State",
+      "teamId": 152
     },
     {
+      "abbreviation": "CLEM",
+      "alternateColor": "#522d80",
+      "color": "#f56600",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/228.png",
       "rank": 39,
       "rating": 7.968041574641124,
       "sourceSeason": 2025,
-      "team": "Clemson"
+      "team": "Clemson",
+      "teamId": 228
     },
     {
+      "abbreviation": "SC",
+      "alternateColor": "#000000",
+      "color": "#73000a",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2579.png",
       "rank": 40,
       "rating": 7.61350066053369,
       "sourceSeason": 2025,
-      "team": "South Carolina"
+      "team": "South Carolina",
+      "teamId": 2579
     },
     {
+      "abbreviation": "ASU",
+      "alternateColor": "#8c1d40",
+      "color": "#ffc627",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/9.png",
       "rank": 41,
       "rating": 7.322952778538114,
       "sourceSeason": 2025,
-      "team": "Arizona State"
+      "team": "Arizona State",
+      "teamId": 9
     },
     {
+      "abbreviation": "GT",
+      "alternateColor": "#ffffff",
+      "color": "#b3a369",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/59.png",
       "rank": 42,
       "rating": 7.307658796001194,
       "sourceSeason": 2025,
-      "team": "Georgia Tech"
+      "team": "Georgia Tech",
+      "teamId": 59
     },
     {
+      "abbreviation": "NEB",
+      "alternateColor": "#ffffff",
+      "color": "#d00000",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/158.png",
       "rank": 43,
       "rating": 7.198756435605589,
       "sourceSeason": 2025,
-      "team": "Nebraska"
+      "team": "Nebraska",
+      "teamId": 158
     },
     {
+      "abbreviation": "DUKE",
+      "alternateColor": "#ffffff",
+      "color": "#00539b",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/150.png",
       "rank": 44,
       "rating": 7.137729431543994,
       "sourceSeason": 2025,
-      "team": "Duke"
+      "team": "Duke",
+      "teamId": 150
     },
     {
+      "abbreviation": "NU",
+      "alternateColor": "#ffffff",
+      "color": "#582c83",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/77.png",
       "rank": 45,
       "rating": 6.962454588373865,
       "sourceSeason": 2025,
-      "team": "Northwestern"
+      "team": "Northwestern",
+      "teamId": 77
     },
     {
+      "abbreviation": "FLA",
+      "alternateColor": "#fa4616",
+      "color": "#0021a5",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/57.png",
       "rank": 46,
       "rating": 6.731794231164729,
       "sourceSeason": 2025,
-      "team": "Florida"
+      "team": "Florida",
+      "teamId": 57
     },
     {
+      "abbreviation": "ECU",
+      "alternateColor": "#fdc82f",
+      "color": "#592a8a",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/151.png",
       "rank": 47,
       "rating": 6.342528894916702,
       "sourceSeason": 2025,
-      "team": "East Carolina"
+      "team": "East Carolina",
+      "teamId": 151
     },
     {
+      "abbreviation": "ARK",
+      "alternateColor": "#ffffff",
+      "color": "#a32136",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/8.png",
       "rank": 48,
       "rating": 6.052591605466625,
       "sourceSeason": 2025,
-      "team": "Arkansas"
+      "team": "Arkansas",
+      "teamId": 8
     },
     {
+      "abbreviation": "HOU",
+      "alternateColor": "#ffffff",
+      "color": "#c8102e",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/248.png",
       "rank": 49,
       "rating": 5.738619382788235,
       "sourceSeason": 2025,
-      "team": "Houston"
+      "team": "Houston",
+      "teamId": 248
     },
     {
+      "abbreviation": "WSU",
+      "alternateColor": "#4d4d4d",
+      "color": "#a60f2d",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/265.png",
       "rank": 50,
       "rating": 5.334688325324588,
       "sourceSeason": 2025,
-      "team": "Washington State"
+      "team": "Washington State",
+      "teamId": 265
     },
     {
+      "abbreviation": "ODU",
+      "alternateColor": "#98c5ea",
+      "color": "#043657",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/295.png",
       "rank": 51,
       "rating": 5.252180583568746,
       "sourceSeason": 2025,
-      "team": "Old Dominion"
+      "team": "Old Dominion",
+      "teamId": 295
     },
     {
+      "abbreviation": "TOL",
+      "alternateColor": "#ffcd00",
+      "color": "#0b2240",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2649.png",
       "rank": 52,
       "rating": 5.04772664346614,
       "sourceSeason": 2025,
-      "team": "Toledo"
+      "team": "Toledo",
+      "teamId": 2649
     },
     {
+      "abbreviation": "KU",
+      "alternateColor": "#e8000d",
+      "color": "#0051ba",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2305.png",
       "rank": 53,
       "rating": 4.689668463054681,
       "sourceSeason": 2025,
-      "team": "Kansas"
+      "team": "Kansas",
+      "teamId": 2305
     },
     {
+      "abbreviation": "WAKE",
+      "alternateColor": "#2c2a29",
+      "color": "#ceb888",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/154.png",
       "rank": 54,
       "rating": 4.677547921765702,
       "sourceSeason": 2025,
-      "team": "Wake Forest"
+      "team": "Wake Forest",
+      "teamId": 154
     },
     {
+      "abbreviation": "WIS",
+      "alternateColor": "#ffffff",
+      "color": "#a00000",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/275.png",
       "rank": 55,
       "rating": 4.618814043811432,
       "sourceSeason": 2025,
-      "team": "Wisconsin"
+      "team": "Wisconsin",
+      "teamId": 275
     },
     {
+      "abbreviation": "BOIS",
+      "alternateColor": "#d64309",
+      "color": "#0033a0",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/68.png",
       "rank": 56,
       "rating": 4.155375921887945,
       "sourceSeason": 2025,
-      "team": "Boise State"
+      "team": "Boise State",
+      "teamId": 68
     },
     {
+      "abbreviation": "TULN",
+      "alternateColor": "#418fde",
+      "color": "#006747",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2655.png",
       "rank": 57,
       "rating": 3.8072748422161724,
       "sourceSeason": 2025,
-      "team": "Tulane"
+      "team": "Tulane",
+      "teamId": 2655
     },
     {
+      "abbreviation": "SDSU",
+      "alternateColor": "#000000",
+      "color": "#a6192e",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/21.png",
       "rank": 58,
       "rating": 3.7984760921630016,
       "sourceSeason": 2025,
-      "team": "San Diego State"
+      "team": "San Diego State",
+      "teamId": 21
     },
     {
+      "abbreviation": "UK",
+      "alternateColor": "#ffffff",
+      "color": "#0033a0",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/96.png",
       "rank": 59,
       "rating": 3.581436528325483,
       "sourceSeason": 2025,
-      "team": "Kentucky"
+      "team": "Kentucky",
+      "teamId": 96
     },
     {
+      "abbreviation": "CIN",
+      "alternateColor": "#e00122",
+      "color": "#000000",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2132.png",
       "rank": 60,
       "rating": 3.4350213896002764,
       "sourceSeason": 2025,
-      "team": "Cincinnati"
+      "team": "Cincinnati",
+      "teamId": 2132
     },
     {
+      "abbreviation": "MSST",
+      "alternateColor": "#c1c6c8",
+      "color": "#5d1725",
+      "conference": "SEC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/344.png",
       "rank": 61,
       "rating": 2.9701083555510404,
       "sourceSeason": 2025,
-      "team": "Mississippi State"
+      "team": "Mississippi State",
+      "teamId": 344
     },
     {
+      "abbreviation": "MSU",
+      "alternateColor": "#ffffff",
+      "color": "#173f35",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/127.png",
       "rank": 62,
       "rating": 2.9595455635092107,
       "sourceSeason": 2025,
-      "team": "Michigan State"
+      "team": "Michigan State",
+      "teamId": 127
     },
     {
+      "abbreviation": "RUTG",
+      "alternateColor": "#ffffff",
+      "color": "#ce0e2d",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/164.png",
       "rank": 63,
       "rating": 2.9003227050037546,
       "sourceSeason": 2025,
-      "team": "Rutgers"
+      "team": "Rutgers",
+      "teamId": 164
     },
     {
+      "abbreviation": "UTSA",
+      "alternateColor": "#f15a22",
+      "color": "#0c2340",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2636.png",
       "rank": 64,
       "rating": 2.6571489017915466,
       "sourceSeason": 2025,
-      "team": "UTSA"
+      "team": "UTSA",
+      "teamId": 2636
     },
     {
+      "abbreviation": "BAY",
+      "alternateColor": "#ffb81c",
+      "color": "#154734",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/239.png",
       "rank": 65,
       "rating": 2.3083946936356092,
       "sourceSeason": 2025,
-      "team": "Baylor"
+      "team": "Baylor",
+      "teamId": 239
     },
     {
+      "abbreviation": "MEM",
+      "alternateColor": "#9c9ea1",
+      "color": "#00498f",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/235.png",
       "rank": 66,
       "rating": 2.202702267070563,
       "sourceSeason": 2025,
-      "team": "Memphis"
+      "team": "Memphis",
+      "teamId": 235
     },
     {
+      "abbreviation": "MINN",
+      "alternateColor": "#ffcc33",
+      "color": "#7a0019",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/135.png",
       "rank": 67,
       "rating": 1.3196788872005734,
       "sourceSeason": 2025,
-      "team": "Minnesota"
+      "team": "Minnesota",
+      "teamId": 135
     },
     {
+      "abbreviation": "NAVY",
+      "alternateColor": "#b5a67c",
+      "color": "#00225b",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2426.png",
       "rank": 68,
       "rating": 1.1636116807472805,
       "sourceSeason": 2025,
-      "team": "Navy"
+      "team": "Navy",
+      "teamId": 2426
     },
     {
+      "abbreviation": "UNM",
+      "alternateColor": "#a7a8aa",
+      "color": "#ba0c2f",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/167.png",
       "rank": 69,
       "rating": 0.6805877846255596,
       "sourceSeason": 2025,
-      "team": "New Mexico"
+      "team": "New Mexico",
+      "teamId": 167
     },
     {
+      "abbreviation": "MD",
+      "alternateColor": "#ffffff",
+      "color": "#ce1126",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/120.png",
       "rank": 70,
       "rating": 0.39530920342156556,
       "sourceSeason": 2025,
-      "team": "Maryland"
+      "team": "Maryland",
+      "teamId": 120
     },
     {
+      "abbreviation": "UNLV",
+      "alternateColor": "#cac8c8",
+      "color": "#cf0a2c",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2439.png",
       "rank": 71,
       "rating": -0.14022606570980356,
       "sourceSeason": 2025,
-      "team": "UNLV"
+      "team": "UNLV",
+      "teamId": 2439
     },
     {
+      "abbreviation": "ARMY",
+      "alternateColor": "#d3bc8d",
+      "color": "#000000",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/349.png",
       "rank": 72,
       "rating": -0.557248190970632,
       "sourceSeason": 2025,
-      "team": "Army"
+      "team": "Army",
+      "teamId": 349
     },
     {
+      "abbreviation": "UCLA",
+      "alternateColor": "#f2a900",
+      "color": "#2774ae",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/26.png",
       "rank": 73,
       "rating": -0.8835429518068588,
       "sourceSeason": 2025,
-      "team": "UCLA"
+      "team": "UCLA",
+      "teamId": 26
     },
     {
+      "abbreviation": "PUR",
+      "alternateColor": "#000000",
+      "color": "#ceb888",
+      "conference": "Big Ten",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2509.png",
       "rank": 74,
       "rating": -1.5362686608602818,
       "sourceSeason": 2025,
-      "team": "Purdue"
+      "team": "Purdue",
+      "teamId": 2509
     },
     {
+      "abbreviation": "WMU",
+      "alternateColor": "#f1c500",
+      "color": "#532e1f",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2711.png",
       "rank": 75,
       "rating": -1.7901909077436349,
       "sourceSeason": 2025,
-      "team": "Western Michigan"
+      "team": "Western Michigan",
+      "teamId": 2711
     },
     {
+      "abbreviation": "USU",
+      "alternateColor": "#ffffff",
+      "color": "#0f2439",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/328.png",
       "rank": 76,
       "rating": -1.919368421239577,
       "sourceSeason": 2025,
-      "team": "Utah State"
+      "team": "Utah State",
+      "teamId": 328
     },
     {
+      "abbreviation": "UCF",
+      "alternateColor": "#b4a169",
+      "color": "#000000",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2116.png",
       "rank": 77,
       "rating": -2.0485138054344865,
       "sourceSeason": 2025,
-      "team": "UCF"
+      "team": "UCF",
+      "teamId": 2116
     },
     {
+      "abbreviation": "HAW",
+      "alternateColor": "#000000",
+      "color": "#024731",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/62.png",
       "rank": 78,
       "rating": -2.7720377078239964,
       "sourceSeason": 2025,
-      "team": "Hawai'i"
+      "team": "Hawai'i",
+      "teamId": 62
     },
     {
+      "abbreviation": "VT",
+      "alternateColor": "#e87722",
+      "color": "#861f41",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/259.png",
       "rank": 79,
       "rating": -2.98131929529686,
       "sourceSeason": 2025,
-      "team": "Virginia Tech"
+      "team": "Virginia Tech",
+      "teamId": 259
     },
     {
+      "abbreviation": "FRES",
+      "alternateColor": "#13284c",
+      "color": "#c41230",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/278.png",
       "rank": 80,
       "rating": -3.1266434565508647,
       "sourceSeason": 2025,
-      "team": "Fresno State"
+      "team": "Fresno State",
+      "teamId": 278
     },
     {
+      "abbreviation": "STAN",
+      "alternateColor": "#ffffff",
+      "color": "#8c1515",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/24.png",
       "rank": 81,
       "rating": -3.430570685603838,
       "sourceSeason": 2025,
-      "team": "Stanford"
+      "team": "Stanford",
+      "teamId": 24
     },
     {
+      "abbreviation": "CAL",
+      "alternateColor": "#ffc72c",
+      "color": "#041e42",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/25.png",
       "rank": 82,
       "rating": -3.472400246534581,
       "sourceSeason": 2025,
-      "team": "California"
+      "team": "California",
+      "teamId": 25
     },
     {
+      "abbreviation": "OHIO",
+      "alternateColor": "#ffffff",
+      "color": "#024230",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/195.png",
       "rank": 83,
       "rating": -3.6195844487191273,
       "sourceSeason": 2025,
-      "team": "Ohio"
+      "team": "Ohio",
+      "teamId": 195
     },
     {
+      "abbreviation": "TXST",
+      "alternateColor": "#6a5638",
+      "color": "#501214",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/326.png",
       "rank": 84,
       "rating": -3.796679525570522,
       "sourceSeason": 2025,
-      "team": "Texas State"
+      "team": "Texas State",
+      "teamId": 326
     },
     {
+      "abbreviation": "COLO",
+      "alternateColor": "#000000",
+      "color": "#cfb87c",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/38.png",
       "rank": 85,
       "rating": -4.0470175751883115,
       "sourceSeason": 2025,
-      "team": "Colorado"
+      "team": "Colorado",
+      "teamId": 38
     },
     {
+      "abbreviation": "WVU",
+      "alternateColor": "#002855",
+      "color": "#eaaa00",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/277.png",
       "rank": 86,
       "rating": -4.308390239801185,
       "sourceSeason": 2025,
-      "team": "West Virginia"
+      "team": "West Virginia",
+      "teamId": 277
     },
     {
+      "abbreviation": "LT",
+      "alternateColor": "#cb333b",
+      "color": "#003087",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2348.png",
       "rank": 87,
       "rating": -6.478624635685663,
       "sourceSeason": 2025,
-      "team": "Louisiana Tech"
+      "team": "Louisiana Tech",
+      "teamId": 2348
     },
     {
+      "abbreviation": "CONN",
+      "alternateColor": "#ffffff",
+      "color": "#000e2f",
+      "conference": "FBS Independents",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/41.png",
       "rank": 88,
       "rating": -6.554416095471626,
       "sourceSeason": 2025,
-      "team": "UConn"
+      "team": "UConn",
+      "teamId": 41
     },
     {
+      "abbreviation": "KENN",
+      "alternateColor": "#0b1315",
+      "color": "#fdbb30",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/338.png",
       "rank": 89,
       "rating": -7.246641891359722,
       "sourceSeason": 2025,
-      "team": "Kennesaw State"
+      "team": "Kennesaw State",
+      "teamId": 338
     },
     {
+      "abbreviation": "AF",
+      "alternateColor": "#ffffff",
+      "color": "#003594",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2005.png",
       "rank": 90,
       "rating": -7.748997994325029,
       "sourceSeason": 2025,
-      "team": "Air Force"
+      "team": "Air Force",
+      "teamId": 2005
     },
     {
+      "abbreviation": "M-OH",
+      "alternateColor": "#ffffff",
+      "color": "#c41230",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/193.png",
       "rank": 91,
       "rating": -7.925183874856558,
       "sourceSeason": 2025,
-      "team": "Miami (OH)"
+      "team": "Miami (OH)",
+      "teamId": 193
     },
     {
+      "abbreviation": "BC",
+      "alternateColor": "#dbcca6",
+      "color": "#8c2232",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/103.png",
       "rank": 92,
       "rating": -8.112332783100126,
       "sourceSeason": 2025,
-      "team": "Boston College"
+      "team": "Boston College",
+      "teamId": 103
     },
     {
+      "abbreviation": "UNC",
+      "alternateColor": "#13294b",
+      "color": "#7bafd4",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/153.png",
       "rank": 93,
       "rating": -8.198291015627097,
       "sourceSeason": 2025,
-      "team": "North Carolina"
+      "team": "North Carolina",
+      "teamId": 153
     },
     {
+      "abbreviation": "WKU",
+      "alternateColor": "#ffffff",
+      "color": "#c60c30",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/98.png",
       "rank": 94,
       "rating": -8.344456026836852,
       "sourceSeason": 2025,
-      "team": "Western Kentucky"
+      "team": "Western Kentucky",
+      "teamId": 98
     },
     {
+      "abbreviation": "TEM",
+      "alternateColor": "#ffffff",
+      "color": "#a41e35",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/218.png",
       "rank": 95,
       "rating": -8.53440629316679,
       "sourceSeason": 2025,
-      "team": "Temple"
+      "team": "Temple",
+      "teamId": 218
     },
     {
+      "abbreviation": "TROY",
+      "alternateColor": "#b1b1b1",
+      "color": "#862633",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2653.png",
       "rank": 96,
       "rating": -9.722445984365853,
       "sourceSeason": 2025,
-      "team": "Troy"
+      "team": "Troy",
+      "teamId": 2653
     },
     {
+      "abbreviation": "MRSH",
+      "alternateColor": "#000000",
+      "color": "#00b140",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/276.png",
       "rank": 97,
       "rating": -9.771274921935296,
       "sourceSeason": 2025,
-      "team": "Marshall"
+      "team": "Marshall",
+      "teamId": 276
     },
     {
+      "abbreviation": "SYR",
+      "alternateColor": "#000e54",
+      "color": "#f76900",
+      "conference": "ACC",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/183.png",
       "rank": 98,
       "rating": -11.485404847898195,
       "sourceSeason": 2025,
-      "team": "Syracuse"
+      "team": "Syracuse",
+      "teamId": 183
     },
     {
+      "abbreviation": "USM",
+      "alternateColor": "#231f20",
+      "color": "#ffc72c",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2572.png",
       "rank": 99,
       "rating": -11.664491513286375,
       "sourceSeason": 2025,
-      "team": "Southern Miss"
+      "team": "Southern Miss",
+      "teamId": 2572
     },
     {
+      "abbreviation": "WYO",
+      "alternateColor": "#ffc425",
+      "color": "#492f24",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2751.png",
       "rank": 100,
       "rating": -11.783623203527066,
       "sourceSeason": 2025,
-      "team": "Wyoming"
+      "team": "Wyoming",
+      "teamId": 2751
     },
     {
+      "abbreviation": "JXST",
+      "alternateColor": "#000000",
+      "color": "#cc0000",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/55.png",
       "rank": 101,
       "rating": -12.565613311148608,
       "sourceSeason": 2025,
-      "team": "Jacksonville State"
+      "team": "Jacksonville State",
+      "teamId": 55
     },
     {
+      "abbreviation": "LIB",
+      "alternateColor": "#b72025",
+      "color": "#0a254e",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2335.png",
       "rank": 102,
       "rating": -12.618024908217404,
       "sourceSeason": 2025,
-      "team": "Liberty"
+      "team": "Liberty",
+      "teamId": 2335
     },
     {
+      "abbreviation": "CMU",
+      "alternateColor": "#ffc82e",
+      "color": "#6a0032",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2117.png",
       "rank": 103,
       "rating": -12.754671084553673,
       "sourceSeason": 2025,
-      "team": "Central Michigan"
+      "team": "Central Michigan",
+      "teamId": 2117
     },
     {
+      "abbreviation": "CSU",
+      "alternateColor": "#c8c372",
+      "color": "#1e4d2b",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/36.png",
       "rank": 104,
       "rating": -13.165742894788917,
       "sourceSeason": 2025,
-      "team": "Colorado State"
+      "team": "Colorado State",
+      "teamId": 36
     },
     {
+      "abbreviation": "ARST",
+      "alternateColor": "#000000",
+      "color": "#cc092f",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2032.png",
       "rank": 105,
       "rating": -13.676795502993045,
       "sourceSeason": 2025,
-      "team": "Arkansas State"
+      "team": "Arkansas State",
+      "teamId": 2032
     },
     {
+      "abbreviation": "NEV",
+      "alternateColor": "#8a8d8f",
+      "color": "#041e42",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2440.png",
       "rank": 106,
       "rating": -13.935945236136178,
       "sourceSeason": 2025,
-      "team": "Nevada"
+      "team": "Nevada",
+      "teamId": 2440
     },
     {
+      "abbreviation": "MOST",
+      "alternateColor": "#ffffff",
+      "color": "#5e0009",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2623.png",
       "rank": 107,
       "rating": -14.014351754163593,
       "sourceSeason": 2025,
-      "team": "Missouri State"
+      "team": "Missouri State",
+      "teamId": 2623
     },
     {
+      "abbreviation": "GASO",
+      "alternateColor": "#ffffff",
+      "color": "#041e42",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/290.png",
       "rank": 108,
       "rating": -14.110863261242834,
       "sourceSeason": 2025,
-      "team": "Georgia Southern"
+      "team": "Georgia Southern",
+      "teamId": 290
     },
     {
+      "abbreviation": "USA",
+      "alternateColor": "#bf0d3e",
+      "color": "#00205b",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/6.png",
       "rank": 109,
       "rating": -14.133189252537084,
       "sourceSeason": 2025,
-      "team": "South Alabama"
+      "team": "South Alabama",
+      "teamId": 6
     },
     {
+      "abbreviation": "ORST",
+      "alternateColor": "#000000",
+      "color": "#dc4405",
+      "conference": "Pac-12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/204.png",
       "rank": 110,
       "rating": -14.204586610312198,
       "sourceSeason": 2025,
-      "team": "Oregon State"
+      "team": "Oregon State",
+      "teamId": 204
     },
     {
+      "abbreviation": "FIU",
+      "alternateColor": "#c3993f",
+      "color": "#091f3f",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2229.png",
       "rank": 111,
       "rating": -14.341050005339705,
       "sourceSeason": 2025,
-      "team": "Florida International"
+      "team": "Florida International",
+      "teamId": 2229
     },
     {
+      "abbreviation": "OKST",
+      "alternateColor": "#000000",
+      "color": "#fe5c00",
+      "conference": "Big 12",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/197.png",
       "rank": 112,
       "rating": -14.85234819275427,
       "sourceSeason": 2025,
-      "team": "Oklahoma State"
+      "team": "Oklahoma State",
+      "teamId": 197
     },
     {
+      "abbreviation": "UL",
+      "alternateColor": "#000000",
+      "color": "#ce181e",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/309.png",
       "rank": 113,
       "rating": -14.879741456310441,
       "sourceSeason": 2025,
-      "team": "Louisiana"
+      "team": "Louisiana",
+      "teamId": 309
     },
     {
+      "abbreviation": "FAU",
+      "alternateColor": "#cc0000",
+      "color": "#003366",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2226.png",
       "rank": 114,
       "rating": -15.283173043284075,
       "sourceSeason": 2025,
-      "team": "Florida Atlantic"
+      "team": "Florida Atlantic",
+      "teamId": 2226
     },
     {
+      "abbreviation": "SJSU",
+      "alternateColor": "#e5a823",
+      "color": "#0055a2",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/23.png",
       "rank": 115,
       "rating": -15.428050702459274,
       "sourceSeason": 2025,
-      "team": "San Jos\u00e9 State"
+      "team": "San Jos\u00e9 State",
+      "teamId": 23
     },
     {
+      "abbreviation": "TLSA",
+      "alternateColor": "#d0b787",
+      "color": "#003595",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/202.png",
       "rank": 116,
       "rating": -15.437596838088151,
       "sourceSeason": 2025,
-      "team": "Tulsa"
+      "team": "Tulsa",
+      "teamId": 202
     },
     {
+      "abbreviation": "DEL",
+      "alternateColor": "#ffd200",
+      "color": "#00539f",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/48.png",
       "rank": 117,
       "rating": -15.711030754328757,
       "sourceSeason": 2025,
-      "team": "Delaware"
+      "team": "Delaware",
+      "teamId": 48
     },
     {
+      "abbreviation": "EMU",
+      "alternateColor": "#ffffff",
+      "color": "#046a38",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2199.png",
       "rank": 118,
       "rating": -15.82878050282992,
       "sourceSeason": 2025,
-      "team": "Eastern Michigan"
+      "team": "Eastern Michigan",
+      "teamId": 2199
     },
     {
+      "abbreviation": "NIU",
+      "alternateColor": "#000000",
+      "color": "#c8102e",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2459.png",
       "rank": 119,
       "rating": -16.65815471381689,
       "sourceSeason": 2025,
-      "team": "Northern Illinois"
+      "team": "Northern Illinois",
+      "teamId": 2459
     },
     {
+      "abbreviation": "APP",
+      "alternateColor": "#ffcd00",
+      "color": "#000000",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2026.png",
       "rank": 120,
       "rating": -16.77495660749778,
       "sourceSeason": 2025,
-      "team": "App State"
+      "team": "App State",
+      "teamId": 2026
     },
     {
+      "abbreviation": "BGSU",
+      "alternateColor": "#4f2c1d",
+      "color": "#fd5000",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/189.png",
       "rank": 121,
       "rating": -16.795481831001315,
       "sourceSeason": 2025,
-      "team": "Bowling Green"
+      "team": "Bowling Green",
+      "teamId": 189
     },
     {
+      "abbreviation": "BUF",
+      "alternateColor": "#ffffff",
+      "color": "#005bbb",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2084.png",
       "rank": 122,
       "rating": -17.193444163100654,
       "sourceSeason": 2025,
-      "team": "Buffalo"
+      "team": "Buffalo",
+      "teamId": 2084
     },
     {
+      "abbreviation": "UAB",
+      "alternateColor": "#fdb913",
+      "color": "#1a5632",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/5.png",
       "rank": 123,
       "rating": -17.29013049887813,
       "sourceSeason": 2025,
-      "team": "UAB"
+      "team": "UAB",
+      "teamId": 5
     },
     {
+      "abbreviation": "CCU",
+      "alternateColor": "#a27752",
+      "color": "#006f71",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/324.png",
       "rank": 124,
       "rating": -18.236307120611787,
       "sourceSeason": 2025,
-      "team": "Coastal Carolina"
+      "team": "Coastal Carolina",
+      "teamId": 324
     },
     {
+      "abbreviation": "NMSU",
+      "alternateColor": "#ffffff",
+      "color": "#8c0b42",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/166.png",
       "rank": 125,
       "rating": -18.68995003167014,
       "sourceSeason": 2025,
-      "team": "New Mexico State"
+      "team": "New Mexico State",
+      "teamId": 166
     },
     {
+      "abbreviation": "MTSU",
+      "alternateColor": "#ffffff",
+      "color": "#036eb7",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2393.png",
       "rank": 126,
       "rating": -19.73288651249219,
       "sourceSeason": 2025,
-      "team": "Middle Tennessee"
+      "team": "Middle Tennessee",
+      "teamId": 2393
     },
     {
+      "abbreviation": "KENT",
+      "alternateColor": "#eaab00",
+      "color": "#002664",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2309.png",
       "rank": 127,
       "rating": -20.492365973962503,
       "sourceSeason": 2025,
-      "team": "Kent State"
+      "team": "Kent State",
+      "teamId": 2309
     },
     {
+      "abbreviation": "RICE",
+      "alternateColor": "#c1c6c8",
+      "color": "#00205b",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/242.png",
       "rank": 128,
       "rating": -20.783020241581315,
       "sourceSeason": 2025,
-      "team": "Rice"
+      "team": "Rice",
+      "teamId": 242
     },
     {
+      "abbreviation": "UTEP",
+      "alternateColor": "#041e42",
+      "color": "#ff8200",
+      "conference": "Mountain West",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2638.png",
       "rank": 129,
       "rating": -21.505674743642313,
       "sourceSeason": 2025,
-      "team": "UTEP"
+      "team": "UTEP",
+      "teamId": 2638
     },
     {
+      "abbreviation": "BALL",
+      "alternateColor": "#ffffff",
+      "color": "#ba0c2f",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2050.png",
       "rank": 130,
       "rating": -22.367050011398618,
       "sourceSeason": 2025,
-      "team": "Ball State"
+      "team": "Ball State",
+      "teamId": 2050
     },
     {
+      "abbreviation": "GAST",
+      "alternateColor": "#ffffff",
+      "color": "#0039a6",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2247.png",
       "rank": 131,
       "rating": -22.906410842308624,
       "sourceSeason": 2025,
-      "team": "Georgia State"
+      "team": "Georgia State",
+      "teamId": 2247
     },
     {
+      "abbreviation": "AKR",
+      "alternateColor": "#a89968",
+      "color": "#041e42",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2006.png",
       "rank": 132,
       "rating": -23.16214854452041,
       "sourceSeason": 2025,
-      "team": "Akron"
+      "team": "Akron",
+      "teamId": 2006
     },
     {
+      "abbreviation": "CLT",
+      "alternateColor": "#a49665",
+      "color": "#005035",
+      "conference": "American Athletic",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2429.png",
       "rank": 133,
       "rating": -24.24124719110338,
       "sourceSeason": 2025,
-      "team": "Charlotte"
+      "team": "Charlotte",
+      "teamId": 2429
     },
     {
+      "abbreviation": "ULM",
+      "alternateColor": "#fdb913",
+      "color": "#840029",
+      "conference": "Sun Belt",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2433.png",
       "rank": 134,
       "rating": -25.378480994924047,
       "sourceSeason": 2025,
-      "team": "UL Monroe"
+      "team": "UL Monroe",
+      "teamId": 2433
     },
     {
+      "abbreviation": "SHSU",
+      "alternateColor": "#ffffff",
+      "color": "#f56423",
+      "conference": "Conference USA",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/2534.png",
       "rank": 135,
       "rating": -28.142411706361454,
       "sourceSeason": 2025,
-      "team": "Sam Houston"
+      "team": "Sam Houston",
+      "teamId": 2534
     },
     {
+      "abbreviation": "MASS",
+      "alternateColor": "#ffffff",
+      "color": "#881c1c",
+      "conference": "Mid-American",
+      "logo": "https://cdn.collegefootballdata.com/logos/500/113.png",
       "rank": 136,
       "rating": -37.510326384013666,
       "sourceSeason": 2025,
-      "team": "Massachusetts"
+      "team": "Massachusetts",
+      "teamId": 113
     }
   ],
   "version": "beat-the-model-v1",
