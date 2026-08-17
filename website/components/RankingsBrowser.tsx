@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 
 import type { BeatTheModelRanking } from "../lib/beat-the-model";
+import { TeamLogo } from "./TeamLogo";
 
 type RankingView = "top25" | "all";
 
@@ -26,6 +27,7 @@ export function RankingsBrowser({ teams }: { teams: BeatTheModelRanking[] }) {
       <div className="fan-ranking-leaders" aria-label="Top five power rankings">
         {leaders.map((team, index) => (
           <article key={team.team} className={index === 0 ? "leader" : ""}>
+            <TeamLogo team={team.team} src={team.logo} size="lg" className="fan-ranking-leader-logo" />
             <span>#{team.rank}</span>
             <strong>{team.team}</strong>
             <small>{formatRating(team.rating)} power</small>
@@ -66,11 +68,14 @@ export function RankingsBrowser({ teams }: { teams: BeatTheModelRanking[] }) {
         {filtered.map((team) => (
           <div className={`fan-ranking-row${team.rank <= 25 ? " top25" : ""}`} role="row" key={team.team}>
             <span className="fan-ranking-number" role="cell">#{team.rank}</span>
-            <span className="fan-ranking-team" role="cell">
-              <strong>{team.team}</strong>
-              {typeof team.gamesBefore === "number" ? (
-                <small>{team.gamesBefore === 0 ? "Previous-season carryover" : `${team.gamesBefore} current-season game${team.gamesBefore === 1 ? "" : "s"}`}</small>
-              ) : null}
+            <span className="fan-ranking-team fan-ranking-team-with-logo" role="cell">
+              <TeamLogo team={team.team} src={team.logo} size="sm" />
+              <span>
+                <strong>{team.team}</strong>
+                {typeof team.gamesBefore === "number" ? (
+                  <small>{team.gamesBefore === 0 ? "Previous-season carryover" : `${team.gamesBefore} current-season game${team.gamesBefore === 1 ? "" : "s"}`}</small>
+                ) : team.conference ? <small>{team.conference}</small> : null}
+              </span>
             </span>
             <span className="fan-ranking-rating" role="cell">{formatRating(team.rating)}</span>
           </div>
