@@ -172,6 +172,6 @@ def test_evaluate_selections_requires_all_units_and_can_win() -> None:
         for i, category in enumerate(CATEGORY_ORDER)
     }
     result = evaluate_selections(dataset, selections)
-    assert result["estimatedHybridSrs"] == 30.0
+    assert math.isclose(result["estimatedHybridSrs"], 30.0, rel_tol=1e-12, abs_tol=1e-12)
     assert result["winProbability"] > 0.5
     assert result["win"] is True
