@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { ArchiveBrowser } from "../../../../components/ArchiveBrowser";
-import { ArchiveGameCard } from "../../../../components/ArchiveGameCard";
+import { ArchiveWeekView } from "../../../../components/ArchiveWeekView";
 import { ARCHIVE_SEASONS, getArchiveIndex, getArchiveWeek } from "../../../../lib/archive";
 
 export async function generateMetadata({ params }: { params: Promise<{ season: string; week: string }> }): Promise<Metadata> {
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ season: s
   const week = Number(weekRaw);
   return {
     title: `${season} Week ${week} College Football Archive`,
-    description: `Browse the ${season} college football Week ${week} model archive and historical slate.`,
+    description: `Browse the ${season} college football Week ${week} model archive, market lines, picks, and results.`,
   };
 }
 
@@ -24,39 +24,35 @@ export default async function ArchiveWeekPage({ params }: { params: Promise<{ se
 
   const data = getArchiveWeek(season, week);
   const index = getArchiveIndex();
-  const title = `Week ${week}`;
 
   return (
     <>
-      <Link className="back-link" href="/">← Current predictions</Link>
+      <Link className="back-link" href="/archive">← Archive</Link>
 
-      <section className="page-hero compact-hero archive-page-hero">
-        <span className="eyebrow">PREDICTION ARCHIVE</span>
-        <h1>{season} · {title}</h1>
-        <p>Go back through college football one week at a time. Archived model calls stay attached to the historical slate when a leakage-safe prediction exists.</p>
+      <section className="archive-page-head">
+        <div>
+          <span className="eyebrow">PREDICTION ARCHIVE</span>
+          <h1>{season} <span>/</span> Week {week}</h1>
+          <p>Historical market line, the model's margin prediction, and the result—kept together in one view.</p>
+        </div>
+        <div className="archive-page-chip">
+          <span>Comparable seasons</span>
+          <strong>2014–2025</strong>
+          <small>2020 excluded</small>
+        </div>
       </section>
 
       <ArchiveBrowser index={index} />
 
-      <section className="archive-week-section">
-        <div className="section-heading">
-          <div>
-            <span className="eyebrow">{data.label ?? `${season} ${title}`}</span>
-            <h2>{data.games.length ? `${data.games.length} games` : "Archive data not generated yet"}</h2>
-          </div>
-        </div>
-
-        {data.games.length ? (
-          <div className="archive-game-list">
-            {data.games.map((game) => <ArchiveGameCard key={game.id} game={game} />)}
-          </div>
-        ) : (
-          <div className="empty-panel archive-empty">
-            <h2>This week is ready for archive data.</h2>
-            <p>The page exists now, but no historical export has been written for this season/week on this checkout. We do not fabricate old model picks to fill the screen.</p>
-          </div>
-        )}
-      </section>
+      {data.games.length ? (
+        <ArchiveWeekView data={data} />
+      ) : (
+        <section className="empty-panel archive-empty">
+          <span className="eyebrow">NO DATA</span>
+          <h2>This archive week has not been generated on this checkout.</h2>
+          <p>Regenerate the website archive from the repository root. Historical picks are never fabricated to fill an empty table.</p>
+        </section>
+      )}
     </>
   );
 }
