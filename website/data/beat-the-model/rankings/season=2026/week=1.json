@@ -1,0 +1,827 @@
+{
+  "method": "Week 1 equals the previous season's final site-aware power ratings.",
+  "rankingVersion": "btm-site-aware-srs-four-game-carryover-v1",
+  "schemaVersion": 1,
+  "season": 2026,
+  "sourceSeason": 2025,
+  "teams": [
+    {
+      "rank": 1,
+      "rating": 39.930563198908985,
+      "sourceSeason": 2025,
+      "team": "Indiana"
+    },
+    {
+      "rank": 2,
+      "rating": 32.09973264833022,
+      "sourceSeason": 2025,
+      "team": "Ohio State"
+    },
+    {
+      "rank": 3,
+      "rating": 30.088995416769567,
+      "sourceSeason": 2025,
+      "team": "Oregon"
+    },
+    {
+      "rank": 4,
+      "rating": 29.990966976383913,
+      "sourceSeason": 2025,
+      "team": "Notre Dame"
+    },
+    {
+      "rank": 5,
+      "rating": 29.611176726631534,
+      "sourceSeason": 2025,
+      "team": "Texas Tech"
+    },
+    {
+      "rank": 6,
+      "rating": 27.25377843308883,
+      "sourceSeason": 2025,
+      "team": "Miami"
+    },
+    {
+      "rank": 7,
+      "rating": 25.02631888954033,
+      "sourceSeason": 2025,
+      "team": "Utah"
+    },
+    {
+      "rank": 8,
+      "rating": 21.6933704458143,
+      "sourceSeason": 2025,
+      "team": "Iowa"
+    },
+    {
+      "rank": 9,
+      "rating": 21.41802797133275,
+      "sourceSeason": 2025,
+      "team": "Georgia"
+    },
+    {
+      "rank": 10,
+      "rating": 20.75732261873891,
+      "sourceSeason": 2025,
+      "team": "Ole Miss"
+    },
+    {
+      "rank": 11,
+      "rating": 20.616945780337947,
+      "sourceSeason": 2025,
+      "team": "USC"
+    },
+    {
+      "rank": 12,
+      "rating": 20.268348028362624,
+      "sourceSeason": 2025,
+      "team": "Vanderbilt"
+    },
+    {
+      "rank": 13,
+      "rating": 20.103994834388864,
+      "sourceSeason": 2025,
+      "team": "Texas A&M"
+    },
+    {
+      "rank": 14,
+      "rating": 19.99091911192453,
+      "sourceSeason": 2025,
+      "team": "Alabama"
+    },
+    {
+      "rank": 15,
+      "rating": 19.20423951652473,
+      "sourceSeason": 2025,
+      "team": "Washington"
+    },
+    {
+      "rank": 16,
+      "rating": 17.836067027534803,
+      "sourceSeason": 2025,
+      "team": "Oklahoma"
+    },
+    {
+      "rank": 17,
+      "rating": 17.46325703553107,
+      "sourceSeason": 2025,
+      "team": "Penn State"
+    },
+    {
+      "rank": 18,
+      "rating": 17.37683709490436,
+      "sourceSeason": 2025,
+      "team": "BYU"
+    },
+    {
+      "rank": 19,
+      "rating": 16.202076228976043,
+      "sourceSeason": 2025,
+      "team": "Texas"
+    },
+    {
+      "rank": 20,
+      "rating": 15.723186855220735,
+      "sourceSeason": 2025,
+      "team": "Michigan"
+    },
+    {
+      "rank": 21,
+      "rating": 13.802163542974206,
+      "sourceSeason": 2025,
+      "team": "Illinois"
+    },
+    {
+      "rank": 22,
+      "rating": 13.534052392353237,
+      "sourceSeason": 2025,
+      "team": "SMU"
+    },
+    {
+      "rank": 23,
+      "rating": 13.459426704986765,
+      "sourceSeason": 2025,
+      "team": "Arizona"
+    },
+    {
+      "rank": 24,
+      "rating": 13.297723356710161,
+      "sourceSeason": 2025,
+      "team": "South Florida"
+    },
+    {
+      "rank": 25,
+      "rating": 12.61132733355955,
+      "sourceSeason": 2025,
+      "team": "Missouri"
+    },
+    {
+      "rank": 26,
+      "rating": 12.215804425830989,
+      "sourceSeason": 2025,
+      "team": "James Madison"
+    },
+    {
+      "rank": 27,
+      "rating": 12.168470925866547,
+      "sourceSeason": 2025,
+      "team": "Tennessee"
+    },
+    {
+      "rank": 28,
+      "rating": 11.671499278786195,
+      "sourceSeason": 2025,
+      "team": "North Texas"
+    },
+    {
+      "rank": 29,
+      "rating": 11.283800750602847,
+      "sourceSeason": 2025,
+      "team": "Florida State"
+    },
+    {
+      "rank": 30,
+      "rating": 11.211940543721907,
+      "sourceSeason": 2025,
+      "team": "Virginia"
+    },
+    {
+      "rank": 31,
+      "rating": 10.86413787928331,
+      "sourceSeason": 2025,
+      "team": "Louisville"
+    },
+    {
+      "rank": 32,
+      "rating": 10.31020186181896,
+      "sourceSeason": 2025,
+      "team": "TCU"
+    },
+    {
+      "rank": 33,
+      "rating": 10.23533708308619,
+      "sourceSeason": 2025,
+      "team": "Auburn"
+    },
+    {
+      "rank": 34,
+      "rating": 10.164888037250957,
+      "sourceSeason": 2025,
+      "team": "Pittsburgh"
+    },
+    {
+      "rank": 35,
+      "rating": 9.313433106388498,
+      "sourceSeason": 2025,
+      "team": "Kansas State"
+    },
+    {
+      "rank": 36,
+      "rating": 9.012996538102591,
+      "sourceSeason": 2025,
+      "team": "LSU"
+    },
+    {
+      "rank": 37,
+      "rating": 8.547704597446964,
+      "sourceSeason": 2025,
+      "team": "Iowa State"
+    },
+    {
+      "rank": 38,
+      "rating": 8.109314315340567,
+      "sourceSeason": 2025,
+      "team": "NC State"
+    },
+    {
+      "rank": 39,
+      "rating": 7.968041574641124,
+      "sourceSeason": 2025,
+      "team": "Clemson"
+    },
+    {
+      "rank": 40,
+      "rating": 7.61350066053369,
+      "sourceSeason": 2025,
+      "team": "South Carolina"
+    },
+    {
+      "rank": 41,
+      "rating": 7.322952778538114,
+      "sourceSeason": 2025,
+      "team": "Arizona State"
+    },
+    {
+      "rank": 42,
+      "rating": 7.307658796001194,
+      "sourceSeason": 2025,
+      "team": "Georgia Tech"
+    },
+    {
+      "rank": 43,
+      "rating": 7.198756435605589,
+      "sourceSeason": 2025,
+      "team": "Nebraska"
+    },
+    {
+      "rank": 44,
+      "rating": 7.137729431543994,
+      "sourceSeason": 2025,
+      "team": "Duke"
+    },
+    {
+      "rank": 45,
+      "rating": 6.962454588373865,
+      "sourceSeason": 2025,
+      "team": "Northwestern"
+    },
+    {
+      "rank": 46,
+      "rating": 6.731794231164729,
+      "sourceSeason": 2025,
+      "team": "Florida"
+    },
+    {
+      "rank": 47,
+      "rating": 6.342528894916702,
+      "sourceSeason": 2025,
+      "team": "East Carolina"
+    },
+    {
+      "rank": 48,
+      "rating": 6.052591605466625,
+      "sourceSeason": 2025,
+      "team": "Arkansas"
+    },
+    {
+      "rank": 49,
+      "rating": 5.738619382788235,
+      "sourceSeason": 2025,
+      "team": "Houston"
+    },
+    {
+      "rank": 50,
+      "rating": 5.334688325324588,
+      "sourceSeason": 2025,
+      "team": "Washington State"
+    },
+    {
+      "rank": 51,
+      "rating": 5.252180583568746,
+      "sourceSeason": 2025,
+      "team": "Old Dominion"
+    },
+    {
+      "rank": 52,
+      "rating": 5.04772664346614,
+      "sourceSeason": 2025,
+      "team": "Toledo"
+    },
+    {
+      "rank": 53,
+      "rating": 4.689668463054681,
+      "sourceSeason": 2025,
+      "team": "Kansas"
+    },
+    {
+      "rank": 54,
+      "rating": 4.677547921765702,
+      "sourceSeason": 2025,
+      "team": "Wake Forest"
+    },
+    {
+      "rank": 55,
+      "rating": 4.618814043811432,
+      "sourceSeason": 2025,
+      "team": "Wisconsin"
+    },
+    {
+      "rank": 56,
+      "rating": 4.155375921887945,
+      "sourceSeason": 2025,
+      "team": "Boise State"
+    },
+    {
+      "rank": 57,
+      "rating": 3.8072748422161724,
+      "sourceSeason": 2025,
+      "team": "Tulane"
+    },
+    {
+      "rank": 58,
+      "rating": 3.7984760921630016,
+      "sourceSeason": 2025,
+      "team": "San Diego State"
+    },
+    {
+      "rank": 59,
+      "rating": 3.581436528325483,
+      "sourceSeason": 2025,
+      "team": "Kentucky"
+    },
+    {
+      "rank": 60,
+      "rating": 3.4350213896002764,
+      "sourceSeason": 2025,
+      "team": "Cincinnati"
+    },
+    {
+      "rank": 61,
+      "rating": 2.9701083555510404,
+      "sourceSeason": 2025,
+      "team": "Mississippi State"
+    },
+    {
+      "rank": 62,
+      "rating": 2.9595455635092107,
+      "sourceSeason": 2025,
+      "team": "Michigan State"
+    },
+    {
+      "rank": 63,
+      "rating": 2.9003227050037546,
+      "sourceSeason": 2025,
+      "team": "Rutgers"
+    },
+    {
+      "rank": 64,
+      "rating": 2.6571489017915466,
+      "sourceSeason": 2025,
+      "team": "UTSA"
+    },
+    {
+      "rank": 65,
+      "rating": 2.3083946936356092,
+      "sourceSeason": 2025,
+      "team": "Baylor"
+    },
+    {
+      "rank": 66,
+      "rating": 2.202702267070563,
+      "sourceSeason": 2025,
+      "team": "Memphis"
+    },
+    {
+      "rank": 67,
+      "rating": 1.3196788872005734,
+      "sourceSeason": 2025,
+      "team": "Minnesota"
+    },
+    {
+      "rank": 68,
+      "rating": 1.1636116807472805,
+      "sourceSeason": 2025,
+      "team": "Navy"
+    },
+    {
+      "rank": 69,
+      "rating": 0.6805877846255596,
+      "sourceSeason": 2025,
+      "team": "New Mexico"
+    },
+    {
+      "rank": 70,
+      "rating": 0.39530920342156556,
+      "sourceSeason": 2025,
+      "team": "Maryland"
+    },
+    {
+      "rank": 71,
+      "rating": -0.14022606570980356,
+      "sourceSeason": 2025,
+      "team": "UNLV"
+    },
+    {
+      "rank": 72,
+      "rating": -0.557248190970632,
+      "sourceSeason": 2025,
+      "team": "Army"
+    },
+    {
+      "rank": 73,
+      "rating": -0.8835429518068588,
+      "sourceSeason": 2025,
+      "team": "UCLA"
+    },
+    {
+      "rank": 74,
+      "rating": -1.5362686608602818,
+      "sourceSeason": 2025,
+      "team": "Purdue"
+    },
+    {
+      "rank": 75,
+      "rating": -1.7901909077436349,
+      "sourceSeason": 2025,
+      "team": "Western Michigan"
+    },
+    {
+      "rank": 76,
+      "rating": -1.919368421239577,
+      "sourceSeason": 2025,
+      "team": "Utah State"
+    },
+    {
+      "rank": 77,
+      "rating": -2.0485138054344865,
+      "sourceSeason": 2025,
+      "team": "UCF"
+    },
+    {
+      "rank": 78,
+      "rating": -2.7720377078239964,
+      "sourceSeason": 2025,
+      "team": "Hawai'i"
+    },
+    {
+      "rank": 79,
+      "rating": -2.98131929529686,
+      "sourceSeason": 2025,
+      "team": "Virginia Tech"
+    },
+    {
+      "rank": 80,
+      "rating": -3.1266434565508647,
+      "sourceSeason": 2025,
+      "team": "Fresno State"
+    },
+    {
+      "rank": 81,
+      "rating": -3.430570685603838,
+      "sourceSeason": 2025,
+      "team": "Stanford"
+    },
+    {
+      "rank": 82,
+      "rating": -3.472400246534581,
+      "sourceSeason": 2025,
+      "team": "California"
+    },
+    {
+      "rank": 83,
+      "rating": -3.6195844487191273,
+      "sourceSeason": 2025,
+      "team": "Ohio"
+    },
+    {
+      "rank": 84,
+      "rating": -3.796679525570522,
+      "sourceSeason": 2025,
+      "team": "Texas State"
+    },
+    {
+      "rank": 85,
+      "rating": -4.0470175751883115,
+      "sourceSeason": 2025,
+      "team": "Colorado"
+    },
+    {
+      "rank": 86,
+      "rating": -4.308390239801185,
+      "sourceSeason": 2025,
+      "team": "West Virginia"
+    },
+    {
+      "rank": 87,
+      "rating": -6.478624635685663,
+      "sourceSeason": 2025,
+      "team": "Louisiana Tech"
+    },
+    {
+      "rank": 88,
+      "rating": -6.554416095471626,
+      "sourceSeason": 2025,
+      "team": "UConn"
+    },
+    {
+      "rank": 89,
+      "rating": -7.246641891359722,
+      "sourceSeason": 2025,
+      "team": "Kennesaw State"
+    },
+    {
+      "rank": 90,
+      "rating": -7.748997994325029,
+      "sourceSeason": 2025,
+      "team": "Air Force"
+    },
+    {
+      "rank": 91,
+      "rating": -7.925183874856558,
+      "sourceSeason": 2025,
+      "team": "Miami (OH)"
+    },
+    {
+      "rank": 92,
+      "rating": -8.112332783100126,
+      "sourceSeason": 2025,
+      "team": "Boston College"
+    },
+    {
+      "rank": 93,
+      "rating": -8.198291015627097,
+      "sourceSeason": 2025,
+      "team": "North Carolina"
+    },
+    {
+      "rank": 94,
+      "rating": -8.344456026836852,
+      "sourceSeason": 2025,
+      "team": "Western Kentucky"
+    },
+    {
+      "rank": 95,
+      "rating": -8.53440629316679,
+      "sourceSeason": 2025,
+      "team": "Temple"
+    },
+    {
+      "rank": 96,
+      "rating": -9.722445984365853,
+      "sourceSeason": 2025,
+      "team": "Troy"
+    },
+    {
+      "rank": 97,
+      "rating": -9.771274921935296,
+      "sourceSeason": 2025,
+      "team": "Marshall"
+    },
+    {
+      "rank": 98,
+      "rating": -11.485404847898195,
+      "sourceSeason": 2025,
+      "team": "Syracuse"
+    },
+    {
+      "rank": 99,
+      "rating": -11.664491513286375,
+      "sourceSeason": 2025,
+      "team": "Southern Miss"
+    },
+    {
+      "rank": 100,
+      "rating": -11.783623203527066,
+      "sourceSeason": 2025,
+      "team": "Wyoming"
+    },
+    {
+      "rank": 101,
+      "rating": -12.565613311148608,
+      "sourceSeason": 2025,
+      "team": "Jacksonville State"
+    },
+    {
+      "rank": 102,
+      "rating": -12.618024908217404,
+      "sourceSeason": 2025,
+      "team": "Liberty"
+    },
+    {
+      "rank": 103,
+      "rating": -12.754671084553673,
+      "sourceSeason": 2025,
+      "team": "Central Michigan"
+    },
+    {
+      "rank": 104,
+      "rating": -13.165742894788917,
+      "sourceSeason": 2025,
+      "team": "Colorado State"
+    },
+    {
+      "rank": 105,
+      "rating": -13.676795502993045,
+      "sourceSeason": 2025,
+      "team": "Arkansas State"
+    },
+    {
+      "rank": 106,
+      "rating": -13.935945236136178,
+      "sourceSeason": 2025,
+      "team": "Nevada"
+    },
+    {
+      "rank": 107,
+      "rating": -14.014351754163593,
+      "sourceSeason": 2025,
+      "team": "Missouri State"
+    },
+    {
+      "rank": 108,
+      "rating": -14.110863261242834,
+      "sourceSeason": 2025,
+      "team": "Georgia Southern"
+    },
+    {
+      "rank": 109,
+      "rating": -14.133189252537084,
+      "sourceSeason": 2025,
+      "team": "South Alabama"
+    },
+    {
+      "rank": 110,
+      "rating": -14.204586610312198,
+      "sourceSeason": 2025,
+      "team": "Oregon State"
+    },
+    {
+      "rank": 111,
+      "rating": -14.341050005339705,
+      "sourceSeason": 2025,
+      "team": "Florida International"
+    },
+    {
+      "rank": 112,
+      "rating": -14.85234819275427,
+      "sourceSeason": 2025,
+      "team": "Oklahoma State"
+    },
+    {
+      "rank": 113,
+      "rating": -14.879741456310441,
+      "sourceSeason": 2025,
+      "team": "Louisiana"
+    },
+    {
+      "rank": 114,
+      "rating": -15.283173043284075,
+      "sourceSeason": 2025,
+      "team": "Florida Atlantic"
+    },
+    {
+      "rank": 115,
+      "rating": -15.428050702459274,
+      "sourceSeason": 2025,
+      "team": "San Jos\u00e9 State"
+    },
+    {
+      "rank": 116,
+      "rating": -15.437596838088151,
+      "sourceSeason": 2025,
+      "team": "Tulsa"
+    },
+    {
+      "rank": 117,
+      "rating": -15.711030754328757,
+      "sourceSeason": 2025,
+      "team": "Delaware"
+    },
+    {
+      "rank": 118,
+      "rating": -15.82878050282992,
+      "sourceSeason": 2025,
+      "team": "Eastern Michigan"
+    },
+    {
+      "rank": 119,
+      "rating": -16.65815471381689,
+      "sourceSeason": 2025,
+      "team": "Northern Illinois"
+    },
+    {
+      "rank": 120,
+      "rating": -16.77495660749778,
+      "sourceSeason": 2025,
+      "team": "App State"
+    },
+    {
+      "rank": 121,
+      "rating": -16.795481831001315,
+      "sourceSeason": 2025,
+      "team": "Bowling Green"
+    },
+    {
+      "rank": 122,
+      "rating": -17.193444163100654,
+      "sourceSeason": 2025,
+      "team": "Buffalo"
+    },
+    {
+      "rank": 123,
+      "rating": -17.29013049887813,
+      "sourceSeason": 2025,
+      "team": "UAB"
+    },
+    {
+      "rank": 124,
+      "rating": -18.236307120611787,
+      "sourceSeason": 2025,
+      "team": "Coastal Carolina"
+    },
+    {
+      "rank": 125,
+      "rating": -18.68995003167014,
+      "sourceSeason": 2025,
+      "team": "New Mexico State"
+    },
+    {
+      "rank": 126,
+      "rating": -19.73288651249219,
+      "sourceSeason": 2025,
+      "team": "Middle Tennessee"
+    },
+    {
+      "rank": 127,
+      "rating": -20.492365973962503,
+      "sourceSeason": 2025,
+      "team": "Kent State"
+    },
+    {
+      "rank": 128,
+      "rating": -20.783020241581315,
+      "sourceSeason": 2025,
+      "team": "Rice"
+    },
+    {
+      "rank": 129,
+      "rating": -21.505674743642313,
+      "sourceSeason": 2025,
+      "team": "UTEP"
+    },
+    {
+      "rank": 130,
+      "rating": -22.367050011398618,
+      "sourceSeason": 2025,
+      "team": "Ball State"
+    },
+    {
+      "rank": 131,
+      "rating": -22.906410842308624,
+      "sourceSeason": 2025,
+      "team": "Georgia State"
+    },
+    {
+      "rank": 132,
+      "rating": -23.16214854452041,
+      "sourceSeason": 2025,
+      "team": "Akron"
+    },
+    {
+      "rank": 133,
+      "rating": -24.24124719110338,
+      "sourceSeason": 2025,
+      "team": "Charlotte"
+    },
+    {
+      "rank": 134,
+      "rating": -25.378480994924047,
+      "sourceSeason": 2025,
+      "team": "UL Monroe"
+    },
+    {
+      "rank": 135,
+      "rating": -28.142411706361454,
+      "sourceSeason": 2025,
+      "team": "Sam Houston"
+    },
+    {
+      "rank": 136,
+      "rating": -37.510326384013666,
+      "sourceSeason": 2025,
+      "team": "Massachusetts"
+    }
+  ],
+  "version": "beat-the-model-v1",
+  "week": 1
+}

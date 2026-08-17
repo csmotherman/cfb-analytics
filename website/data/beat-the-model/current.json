@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
-  "version": "beat-the-model-v1",
-  "season": 2026,
-  "week": 1,
-  "updatedAt": null,
-  "status": "awaiting-slate",
-  "slateSize": 15,
-  "rankingVersion": "btm-site-aware-srs-four-game-carryover-v1",
-  "selectionVersion": "btm-top-15-power-matchups-v1",
+  "games": [],
   "modelVersion": "prediction-v2-2026-prospective-freeze-v1",
-  "games": []
+  "rankingVersion": "btm-site-aware-srs-four-game-carryover-v1",
+  "schemaVersion": 1,
+  "season": 2026,
+  "selectionVersion": "btm-top-15-power-matchups-v1",
+  "slateSize": 15,
+  "status": "awaiting-slate",
+  "updatedAt": null,
+  "version": "beat-the-model-v1",
+  "week": 1
 }

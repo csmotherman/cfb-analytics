@@ -1,16 +1,28 @@
 {
   "archiveVersion": "website-prediction-archive-v3",
+  "beatTheModel": {
+    "currentRankedTeams": 136,
+    "currentSeason": 2026,
+    "currentSlateGames": 0,
+    "currentStatus": "awaiting-slate",
+    "currentWeek": 1,
+    "historicalSelectedGames": 1435,
+    "historicalSlates": 104,
+    "rankingVersion": "btm-site-aware-srs-four-game-carryover-v1",
+    "selectionVersion": "btm-top-15-power-matchups-v1",
+    "version": "beat-the-model-v1"
+  },
   "earlyPriorGeneratedGames": 1180,
   "earlyPriorOverlapGames": 20,
   "earlyPriorSupplementGames": 1160,
   "historicalGames": 8510,
   "marketGames": 8510,
-  "marketSemantics": "historical CFBD reference spread; first parseable formattedSpread provider in API order",
+  "marketSemantics": "internal historical CFBD reference spread; retained for audit, not surfaced by Beat the Model",
   "missingMarketGames": 0,
   "officialOosModelGames": 5137,
   "predictionSemantics": "stored mature minGames=3 Prediction-v2 OOS calls, supplemented only when missing by the frozen early-prior rule reconstructed with earlier-season-only training",
   "recommendedBets": 495,
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "seasons": [
     {
       "earlyPriorModelGames": 0,

@@ -1,5 +1,20 @@
 {
   "archiveVersion": "website-prediction-archive-v3",
+  "beatTheModel": {
+    "eligibleGames": 1,
+    "modelAccuracy": 1.0,
+    "modelLosses": 0,
+    "modelMae": 11.262644967542691,
+    "modelWins": 1,
+    "rankingVersion": "btm-site-aware-srs-four-game-carryover-v1",
+    "selectedGameIds": [
+      "401762521"
+    ],
+    "selectedGames": 1,
+    "selectionVersion": "btm-top-15-power-matchups-v1",
+    "slateSize": 15,
+    "version": "beat-the-model-v1"
+  },
   "games": [
     {
       "actualAwayScore": 16,
@@ -7,14 +22,21 @@
       "actualHomeScore": 17,
       "atsCorrect": false,
       "atsResult": "LOSS",
+      "awayPowerRating": -2.8088230495337325,
+      "awayRank": 77,
       "awayTeam": "Army",
+      "beatTheModelSelected": true,
+      "beatTheModelSlot": 1,
       "correct": true,
       "earlyPriorVersion": null,
       "evidenceStatus": "official-oos",
+      "homePowerRating": -0.6552530551179419,
+      "homeRank": 71,
       "homeTeam": "Navy",
       "id": "401762521",
       "marketHomeMargin": 6.5,
       "marketProvider": "DraftKings",
+      "matchupScore": 75.5,
       "modelAbsoluteError": 11.262644967542691,
       "modelAtsSide": "HOME",
       "modelHomeMargin": 12.262644967542691,
