@@ -6,6 +6,13 @@ on:
       - agent/beat-2019-lsu-nil-players
     paths:
       - .github/workflows/temp-team-year-wheel-build.yml
+  pull_request:
+    branches:
+      - agent/website-fan-experience-v3
+    paths:
+      - .github/workflows/temp-team-year-wheel-build.yml
+      - src/cfb_analytics/prototypes/historical_player_team_year_wheel.py
+      - tests/prototypes/test_historical_player_team_year_wheel.py
 
 permissions:
   contents: write
@@ -76,7 +83,7 @@ jobs:
         run: |
           git add data/prototypes/beat-2019-lsu/team-year-wheel-v2.json
           git config user.name 'github-actions[bot]'
-          git config user.email '4189828+github-actions[bot]@users.noreply.github.com'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           if git diff --cached --quiet; then
             echo 'No generated wheel data changes.'
             exit 0
