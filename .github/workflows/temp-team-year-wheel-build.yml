@@ -1,0 +1,85 @@
+name: Build team-year NIL wheel
+
+on:
+  push:
+    branches:
+      - agent/beat-2019-lsu-nil-players
+    paths:
+      - .github/workflows/temp-team-year-wheel-build.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/beat-2019-lsu-nil-players
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project
+        run: pip install -e '.[dev]'
+
+      - name: Run player wheel tests
+        run: |
+          pytest -q \
+            tests/prototypes/test_historical_player_nil_draft.py \
+            tests/prototypes/test_historical_player_team_year_wheel.py
+
+      - name: Build real team-year wheel and calibrate cap
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          python -m cfb_analytics.prototypes.historical_player_team_year_wheel \
+            --build \
+            --output data/prototypes/beat-2019-lsu/team-year-wheel-v2.json \
+            --simulations 20000 \
+            --seed 7319
+
+      - name: Validate 1-in-1000 game contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/prototypes/beat-2019-lsu/team-year-wheel-v2.json')
+          d = json.loads(p.read_text())
+          assert d['challengeVersion'] == 'historical-player-team-year-wheel-v2'
+          assert d['rules']['spins'] == 7
+          assert d['rules']['requiredPlayers'] == 7
+          assert d['wheel']['entryCount'] >= 50
+          assert all(row['rosterCount'] >= 7 for row in d['wheel']['entries'])
+          assert all(row.get('logo') for row in d['wheel']['entries'])
+          selected = d['difficultyBenchmark']['selected']
+          rate = float(selected['playableOracleWinRate'])
+          assert float(selected['feasibleRate']) >= 0.50
+          assert 0.0005 <= rate <= 0.0020, rate
+          assert float(selected['maxBestPossibleWinProbability']) > 0.50
+          assert d['target']['season'] == 2019 and d['target']['team'] == 'LSU'
+          print('TEAM-YEAR NIL WHEEL CONTRACT: PASS')
+          print('entries', d['wheel']['entryCount'])
+          print('budget', d['rules']['budgetMillions'])
+          print('raw feasible', selected['feasibleRate'])
+          print('playable oracle win rate', rate)
+          print('one in', selected['oneInApproximately'])
+          print('mean best possible', selected['meanBestPossibleWinProbability'])
+          print('max best possible', selected['maxBestPossibleWinProbability'])
+          PY
+
+      - name: Commit generated wheel dataset
+        run: |
+          git add data/prototypes/beat-2019-lsu/team-year-wheel-v2.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189828+github-actions[bot]@users.noreply.github.com'
+          if git diff --cached --quiet; then
+            echo 'No generated wheel data changes.'
+            exit 0
+          fi
+          git commit -m 'data: add calibrated team-year NIL wheel'
+          git push origin HEAD:agent/beat-2019-lsu-nil-players
