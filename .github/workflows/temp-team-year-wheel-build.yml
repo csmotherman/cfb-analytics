@@ -89,4 +89,5 @@ jobs:
             exit 0
           fi
           git commit -m 'data: add calibrated team-year NIL wheel'
+          git pull --rebase origin agent/beat-2019-lsu-nil-players
           git push origin HEAD:agent/beat-2019-lsu-nil-players
