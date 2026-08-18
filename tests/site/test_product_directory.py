@@ -3,12 +3,12 @@ from cfb_analytics.site.product_directory import PRODUCT_MANIFEST, SITE_TREE, pr
 
 def test_primary_fan_routes_are_present():
     routes = {item["route"] for item in PRODUCT_MANIFEST["navigation"]}
-    assert routes == {"/teams", "/rankings", "/compare", "/simulator", "/archetypes", "/metrics"}
+    assert routes == {"/football/2026", "/football/[season]", "/schedule", "/rankings", "/compare", "/metrics"}
 
 
 def test_landing_page_is_answer_first():
     landing = PRODUCT_MANIFEST["landingPage"]
-    assert landing["hero"]["headline"] == "Know your team. Settle the debate."
+    assert landing["hero"]["headline"] == "Know exactly where Michigan stands."
     assert landing["modules"][0]["id"] == "fan_questions"
     assert landing["modules"][1]["id"] == "power_snapshot"
     assert landing["modules"][2]["id"] == "featured_simulation"
@@ -32,15 +32,18 @@ def test_team_page_answers_fan_questions_above_fold():
     assert team["sections"][-1] == "Advanced breakdown"
 
 
-def test_frontend_tree_has_core_pages_and_share_components():
+def test_frontend_tree_has_core_michigan_pages_and_data_adapter():
     required = {
         "app/page.tsx",
+        "app/michigan/page.tsx",
+        "app/football/[season]/page.tsx",
+        "app/schedule/page.tsx",
         "app/teams/[team]/[season]/page.tsx",
-        "app/simulator/page.tsx",
         "app/compare/page.tsx",
-        "components/fan/ShareCard.tsx",
+        "components/MichiganHome.tsx",
+        "lib/michigan.ts",
     }
     assert required.issubset(set(SITE_TREE))
     rendered = print_tree()
     assert rendered.startswith("website/\n")
-    assert "app/simulator/page.tsx" in rendered
+    assert "app/michigan/page.tsx" in rendered

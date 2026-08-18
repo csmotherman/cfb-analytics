@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Link from "next/link";
 import { avgMargin, datasetStatus, fieldWinPct, rankOf, tournamentRows } from "../lib/data";
 
@@ -25,4 +26,11 @@ export default function Home(){
 
     <section className="panel"><h2>The teams everyone is chasing</h2>{top.length?top.map(r=><div key={`${r.season}-${r.team}`} style={{marginBottom:10}}><b>#{rankOf(r)} {r.season} {r.team}</b> — field win {fieldWinPct(r)!==null?(fieldWinPct(r)!*100).toFixed(1)+"%":"n/a"}, avg margin {avgMargin(r)!==null?(avgMargin(r)!>=0?"+":"")+avgMargin(r)!.toFixed(1):"n/a"}</div>):<div className="notice">Build the cross-era tournament JSON to populate this section.</div>}</section>
   </>;
+=======
+import { MichiganHome } from "../components/MichiganHome";
+import { CURRENT_MICHIGAN_SEASON } from "../lib/michigan";
+
+export default function Home() {
+  return <MichiganHome season={CURRENT_MICHIGAN_SEASON} />;
+>>>>>>> 28a9c53 (new design)
 }

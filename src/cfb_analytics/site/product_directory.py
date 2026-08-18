@@ -17,56 +17,35 @@ import json
 from pathlib import Path
 from typing import Any
 
-SITE_PRODUCT_VERSION = "fan-first-site-product-v1"
+SITE_PRODUCT_VERSION = "michigan-season-architecture-v2"
 
 SITE_TREE = (
     "app/page.tsx",
+    "app/michigan/page.tsx",
+    "app/football/[season]/page.tsx",
+    "app/schedule/page.tsx",
     "app/teams/page.tsx",
-    "app/teams/[team]/page.tsx",
     "app/teams/[team]/[season]/page.tsx",
     "app/rankings/page.tsx",
-    "app/rankings/[season]/page.tsx",
     "app/compare/page.tsx",
-    "app/simulator/page.tsx",
-    "app/archetypes/page.tsx",
-    "app/archetypes/[slug]/page.tsx",
     "app/metrics/page.tsx",
-    "app/metrics/[metric]/page.tsx",
-    "components/fan/InsightCard.tsx",
-    "components/fan/QuestionCard.tsx",
-    "components/fan/ShareCard.tsx",
-    "components/team/TeamHero.tsx",
-    "components/team/IdentityStrip.tsx",
-    "components/team/StrengthWeakness.tsx",
-    "components/team/GradeGrid.tsx",
-    "components/team/SeasonTimeline.tsx",
-    "components/rankings/RankingTable.tsx",
-    "components/simulator/MatchupPicker.tsx",
-    "components/simulator/SimulationResult.tsx",
-    "components/compare/ComparisonBars.tsx",
-    "components/archetypes/ArchetypeCard.tsx",
-    "components/charts/PercentileBar.tsx",
-    "components/charts/TrendLine.tsx",
-    "lib/data/siteData.ts",
-    "lib/insights/explain.ts",
-    "lib/insights/headlines.ts",
-    "lib/format/football.ts",
-    "public/teams/",
-    "public/share/",
+    "components/MichiganHome.tsx",
+    "components/Nav.tsx",
+    "lib/michigan.ts",
 )
 
 PRODUCT_MANIFEST: dict[str, Any] = {
     "version": SITE_PRODUCT_VERSION,
     "positioning": {
-        "promise": "Turn college-football data into answers fans actually care about.",
+        "promise": "Explain Michigan football using the entire FBS field as context.",
         "taglineOptions": [
-            "Know your team. Settle the debate.",
-            "College football, explained by the numbers.",
-            "Find out who is good, why they are good, and who would win.",
+            "Know exactly where Michigan stands.",
+            "Michigan is the focus. The nation is the measuring stick.",
+            "Maize and blue questions, national answers.",
         ],
         "northStar": (
-            "A fan should be able to understand a team, compare eras, and settle a "
-            "football argument without knowing advanced analytics terminology."
+            "A Michigan fan should understand the team, its opponents, and its national standing "
+            "without needing advanced analytics terminology."
         ),
     },
     "productRules": [
@@ -75,6 +54,8 @@ PRODUCT_MANIFEST: dict[str, Any] = {
         "Show national percentile/rank whenever a raw number is hard to interpret.",
         "Separate team quality, team identity/style, and recent trajectory.",
         "Never present a model estimate as a historical fact.",
+        "Resolve the current Michigan product to 2026 PRESEASON while 2025 remains the latest completed season.",
+        "Label every performance value ACTUAL, PROJECTED, or PRESEASON.",
         "Explain why a team is ranked or favored with 2-4 concrete football reasons.",
         "Every major result should be easy to share as a compact visual card.",
         "Mobile-first: the first screen should answer one question, not display a dashboard wall.",
@@ -82,25 +63,25 @@ PRODUCT_MANIFEST: dict[str, Any] = {
         "Methodology is available, transparent, and clickable, but never blocks the fan experience.",
     ],
     "navigation": [
-        {"label": "Teams", "route": "/teams", "question": "How good is my team and what are they good at?"},
+        {"label": "Michigan", "route": "/football/2026", "question": "What is the current Michigan season state?"},
+        {"label": "Seasons", "route": "/football/[season]", "question": "How did Michigan compare within each season from 2010 onward?"},
+        {"label": "Schedule", "route": "/schedule", "question": "How did Michigan perform game by game?"},
         {"label": "Rankings", "route": "/rankings", "question": "Who are the best teams?"},
-        {"label": "Compare", "route": "/compare", "question": "How do these teams actually differ?"},
-        {"label": "Simulator", "route": "/simulator", "question": "Who would win?"},
-        {"label": "Archetypes", "route": "/archetypes", "question": "What kind of team is this?"},
-        {"label": "Metrics", "route": "/metrics", "question": "What does this stat actually mean?"},
+        {"label": "Compare", "route": "/compare", "question": "How does Michigan compare with another FBS team?"},
+        {"label": "Methodology", "route": "/metrics", "question": "What does each Michigan metric mean?"},
     ],
     "landingPage": {
         "goal": "Hook a college-football fan in under five seconds and give them an immediate action.",
         "hero": {
-            "eyebrow": "COLLEGE FOOTBALL, EXPLAINED",
-            "headline": "Know your team. Settle the debate.",
+            "eyebrow": "THE NATIONAL PICTURE, THROUGH A MAIZE & BLUE LENS",
+            "headline": "Know exactly where Michigan stands.",
             "subheadline": (
-                "See who is actually good, why they win, what style they play, and what happens when "
-                "teams from any season face each other."
+                "See what Michigan does well, where it falls short, and how it compares nationally "
+                "and inside the Big Ten."
             ),
-            "primaryCta": {"label": "Find Your Team", "route": "/teams"},
-            "secondaryCta": {"label": "Simulate a Matchup", "route": "/simulator"},
-            "requiredInteraction": "Search team + season directly from the hero.",
+            "primaryCta": {"label": "Explore Michigan", "route": "/michigan"},
+            "secondaryCta": {"label": "View National Rankings", "route": "/rankings"},
+            "requiredInteraction": "Open the latest Michigan profile directly from the hero.",
         },
         "modules": [
             {

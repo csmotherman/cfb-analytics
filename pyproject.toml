@@ -17,6 +17,7 @@ models = [
   "numpy>=2,<3",
   "scikit-learn>=1.6,<2",
 ]
+publish = ["pyarrow>=18,<22"]
 
 [project.scripts]
 cfb-raw = "cfb_analytics.raw.cli:main"

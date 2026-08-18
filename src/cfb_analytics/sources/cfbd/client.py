@@ -7,6 +7,7 @@ import os
 import random
 import time
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 import httpx
@@ -19,6 +20,28 @@ class CfbdError(RuntimeError):
     pass
 
 
+def _env_file_value(path: Path, key: str) -> str | None:
+    """Read one simple dotenv value without mutating or exposing the environment."""
+    if not path.is_file():
+        return None
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[7:].lstrip()
+        name, separator, value = line.partition("=")
+        if not separator or name.strip() != key:
+            continue
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in {'"', "'"}:
+            value = value[1:-1]
+        elif " #" in value:
+            value = value.split(" #", 1)[0].rstrip()
+        return value or None
+    return None
+
+
 @dataclass
 class CfbdResponse:
     url: str
@@ -29,10 +52,12 @@ class CfbdResponse:
 
 
 class CfbdClient:
-    def __init__(self, api_key: str | None = None, timeout: float = 60.0) -> None:
+    def __init__(self, api_key: str | None = None, timeout: float = 60.0, env_file: Path | None = Path(".env")) -> None:
         token = api_key or os.getenv("CFBD_API_KEY")
+        if not token and env_file is not None:
+            token = _env_file_value(env_file, "CFBD_API_KEY")
         if not token:
-            raise CfbdError("CFBD_API_KEY is not set")
+            raise CfbdError("CFBD_API_KEY is not set in the process environment or .env")
         self._client = httpx.Client(
             base_url=BASE_URL,
             headers={"Authorization": f"Bearer {token}", "Accept": "application/json"},
@@ -96,3 +121,72 @@ class CfbdClient:
             "/plays",
             {"year": season, "week": week, "seasonType": season_type, "classification": CLASSIFICATION},
         )
+<<<<<<< HEAD
+=======
+
+    def lines(self, season: int, week: int, season_type: str = "regular") -> CfbdResponse:
+        """Return the CFBD betting-line feed for one season/week partition.
+
+        The v2 CFBD /lines endpoint does not expose the classification filter used
+        by /games. Callers should join the returned game IDs back to the authoritative
+        FBS-vs-FBS schedule before using market data in a product surface.
+        """
+        return self.get_json(
+            "/lines",
+            {"year": season, "week": week, "seasonType": season_type},
+        )
+
+    def teams(self) -> CfbdResponse:
+        """Return CFBD team metadata, including logos and brand fields.
+
+        The endpoint contains teams across classifications. Product callers are
+        responsible for retaining only rows whose classification is ``fbs``.
+        """
+        return self.get_json("/teams", {})
+
+    def usage(self, *, days: int = 7, limit: int = 10) -> CfbdResponse:
+        """Return authenticated call usage for lightweight quota monitoring."""
+        return self.get_json("/info/usage", {"days": days, "limit": limit, "api": "cfb"})
+
+    def user_info(self) -> CfbdResponse:
+        """Return account tier and remaining-call information."""
+        return self.get_json("/info", {})
+
+    def team_season_stats(
+        self,
+        season: int,
+        *,
+        start_week: int | None = None,
+        end_week: int | None = None,
+    ) -> CfbdResponse:
+        """Return FBS team season stats over an explicit week window."""
+        return self.get_json(
+            "/stats/season",
+            {
+                "year": season,
+                "startWeek": start_week,
+                "endWeek": end_week,
+                "classification": CLASSIFICATION,
+            },
+        )
+
+    def team_season_advanced_stats(
+        self,
+        season: int,
+        *,
+        start_week: int | None = None,
+        end_week: int | None = None,
+        exclude_garbage_time: bool = True,
+    ) -> CfbdResponse:
+        """Return FBS advanced team stats over a pregame-safe week window."""
+        return self.get_json(
+            "/stats/season/advanced",
+            {
+                "year": season,
+                "startWeek": start_week,
+                "endWeek": end_week,
+                "classification": CLASSIFICATION,
+                "excludeGarbageTime": exclude_garbage_time,
+            },
+        )
+>>>>>>> 28a9c53 (new design)
