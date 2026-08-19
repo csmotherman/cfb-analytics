@@ -58,6 +58,23 @@ def test_publish_recruiting_and_roster_grades(tmp_path: Path) -> None:
     assert lineup["offense"] == [{"label": "QB", "playerId": "9"}]
 
 
+def test_publish_matches_current_class_early_enrollee(tmp_path: Path) -> None:
+    target = tmp_path / "2026" / "michigan"
+    target.mkdir(parents=True)
+    (target / "roster.json").write_text(json.dumps([{
+        "id": "freshman", "firstName": "Current", "lastName": "Recruit",
+        "recruitIds": ["2026"], "position": "RB", "year": 1,
+    }]))
+
+    manifest = publish(FakeClient(), tmp_path)
+    grades = json.loads((target / "player-grades.json").read_text())
+
+    assert manifest["gradedPlayers"] == 1
+    assert grades[0]["recruitClass"] == 2026
+    assert grades[0]["grade"] == "S+"
+    assert grades[0]["basis"] == "CFBD recruiting composite"
+
+
 def test_projected_lineup_uses_published_grade_then_experience() -> None:
     roster = [
         {"id": "veteran", "position": "QB", "year": 4, "jersey": 9, "lastName": "Veteran"},

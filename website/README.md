@@ -1,12 +1,27 @@
-# SOAR Analytics Website
+# SOAR Analytics · Michigan Football Focus
 
-This is the Michigan-football-first experience within SOAR Analytics, backed by the national analytics engine in the repository root.
+SOAR Analytics is the public analytics product. Michigan Football Focus is its fan-first Michigan edition, backed by the national analytics engine in the repository root.
 
 ## Product boundary
 
 Python and published artifacts own calculations. `website/lib/` turns those artifacts into typed product objects. React components present them and never invent grades, ranks, predictions, player images, depth order, or performance.
 
 Every displayed number is labeled as one of `ACTUAL`, `PROJECTED`, `PRESEASON`, or `BENCHMARK`.
+
+## Article publishing contract
+
+`/articles` is the canonical editorial index and `/articles/[slug]` is the
+shareable social landing page. Article records live in
+`lib/michigan/stories.ts` and may carry multiple typed tags across `POSITION`,
+`UNIT`, and `TOPIC`. Tags are intentionally many-to-many: one story can appear
+in several filtered views.
+
+Every article must provide at least one `dataLinks` entry pointing to the site
+surface that supports or contextualizes its argument. Those links do not make
+unsupported projections valid; displayed statistics still come from published
+artifacts and retain their existing value-type labels. Reporting sources remain
+separate from SOAR data links. Legacy `/stories` routes redirect to the
+canonical article URLs.
 
 ## Current real data
 

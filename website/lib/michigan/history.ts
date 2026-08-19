@@ -19,7 +19,7 @@ export type HistoricalRosterPlayer = {
 };
 
 type HistoricalStatRow = { season: number; team: string; conference?: string; statName: string; statValue: number };
-export type HistoricalGame = { id: number; season: number; week: number; seasonType: string; startDate?: string | null; completed: boolean; neutralSite: boolean; conferenceGame?: boolean; venue?: string | null; homeId: number; homeTeam: string; homePoints?: number | null; awayId: number; awayTeam: string; awayPoints?: number | null; notes?: string | null; playoff?: { competition?: string | null; round?: string | null; roundName?: string | null; bowlName?: string | null } | null };
+export type HistoricalGame = { id: number; season: number; week: number; seasonType: string; startDate?: string | null; startTimeTBD?: boolean; completed: boolean; neutralSite: boolean; conferenceGame?: boolean; venue?: string | null; attendance?: number | null; homeId: number; homeTeam: string; homeConference?: string | null; homePoints?: number | null; homeLineScores?: number[] | null; homePregameElo?: number | null; homePostgameElo?: number | null; awayId: number; awayTeam: string; awayConference?: string | null; awayPoints?: number | null; awayLineScores?: number[] | null; awayPregameElo?: number | null; awayPostgameElo?: number | null; excitementIndex?: number | null; notes?: string | null; playoff?: { competition?: string | null; round?: string | null; roundName?: string | null; bowlName?: string | null } | null };
 export type HistoricalGrades = { season: number; overall: string; offense: string; defense: string; valueType: "ACTUAL" };
 export type HistoricalCfpOutlook = {
   season: number;
@@ -43,6 +43,10 @@ export function historicalGames(season: number): HistoricalGame[] {
   return (readJson<HistoricalGame[]>("data", "published", "michigan_history", String(season), "games.json") ?? [])
     .filter((game) => game.completed)
     .sort((a, b) => (a.seasonType === "postseason" ? 1 : 0) - (b.seasonType === "postseason" ? 1 : 0) || a.week - b.week || String(a.startDate ?? "").localeCompare(String(b.startDate ?? "")) || a.id - b.id);
+}
+
+export function historicalGame(season: number, gameId: string | number): HistoricalGame | null {
+  return historicalGames(season).find((game) => String(game.id) === String(gameId)) ?? null;
 }
 
 export function historicalGrades(season: number): HistoricalGrades | null {

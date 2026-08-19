@@ -2,26 +2,31 @@ import { readJson } from "../server-data";
 import { currentRoster } from "./roster";
 import type { MichiganPlayer, ValueType } from "./types";
 
-export type DepthSlot = { label: string; player: MichiganPlayer };
-export type ProjectedLineup = {
+export type DepthSlot = { label: string; players: MichiganPlayer[] };
+export type ResearchedDepthChart = {
   version: string;
   season: number;
   team: string;
   valueType: ValueType;
+  status: "UNOFFICIAL";
+  asOf: string;
   basis: string;
-  offense: Array<{ label: string; playerId: string }>;
-  defense: Array<{ label: string; playerId: string }>;
+  sources: Array<{ label: string; url: string }>;
+  offense: Array<{ label: string; playerIds: string[] }>;
+  defense: Array<{ label: string; playerIds: string[] }>;
+  specialists: Array<{ label: string; playerIds: string[] }>;
 };
 
-export function projectedLineups(): { offense: DepthSlot[]; defense: DepthSlot[]; basis: string } | null {
-  const artifact = readJson<ProjectedLineup>("data", "published", "2026", "michigan", "projected-lineup.json");
-  if (!artifact || artifact.valueType !== "PROJECTED" || !Array.isArray(artifact.offense) || !Array.isArray(artifact.defense)) return null;
+export function researchedDepthChart(): { offense: DepthSlot[]; defense: DepthSlot[]; specialists: DepthSlot[]; basis: string; asOf: string; sources: ResearchedDepthChart["sources"] } | null {
+  const artifact = readJson<ResearchedDepthChart>("data", "published", "2026", "michigan", "researched-depth-chart.json");
+  if (!artifact || artifact.valueType !== "PROJECTED" || artifact.status !== "UNOFFICIAL") return null;
   const players = new Map(currentRoster().map((player) => [player.id, player]));
-  const resolve = (slots: Array<{ label: string; playerId: string }>): DepthSlot[] | null => {
-    const resolved = slots.map((slot) => ({ label: slot.label, player: players.get(slot.playerId) }));
-    return resolved.every((slot) => slot.player) ? resolved as DepthSlot[] : null;
+  const resolve = (slots: Array<{ label: string; playerIds: string[] }>): DepthSlot[] | null => {
+    const resolved = slots.map((slot) => ({ label: slot.label, players: slot.playerIds.map((id) => players.get(id)).filter(Boolean) as MichiganPlayer[] }));
+    return resolved.every((slot, index) => slot.players.length === slots[index].playerIds.length) ? resolved : null;
   };
   const offense = resolve(artifact.offense);
   const defense = resolve(artifact.defense);
-  return offense && defense ? { offense, defense, basis: artifact.basis } : null;
+  const specialists = resolve(artifact.specialists);
+  return offense && defense && specialists ? { offense, defense, specialists, basis: artifact.basis, asOf: artifact.asOf, sources: artifact.sources } : null;
 }

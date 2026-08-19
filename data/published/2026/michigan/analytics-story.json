@@ -1,0 +1,56 @@
+{
+  "comparisonType": "STAFF_CONTEXT",
+  "definitionVersion": "michigan-utah-staff-context-v1",
+  "interpretation": {
+    "boundary": "Utah 2025 is staff context, not a projection that Michigan 2026 will reproduce the same tendencies or results.",
+    "michigan": "Efficient and explosive on the ground, with finishing drives the clearest offensive gap.",
+    "utah": "Run-led, efficient on late downs, and substantially stronger at turning opportunities into points."
+  },
+  "michiganDefense": {
+    "explosivePlayRateAllowed": 0.09225092250922509,
+    "explosivePlayRateAllowedNationalRank": 20,
+    "pointsPerResolvedPossessionAllowed": 1.6618705035971224,
+    "pointsPerResolvedPossessionAllowedNationalRank": 33,
+    "yardsPerSuccessfulPlayAllowed": 10.644508670520231,
+    "yardsPerSuccessfulPlayAllowedNationalRank": 4
+  },
+  "runShareDefinition": "rushAttempts / (rushAttempts + dropbacks)",
+  "season": 2025,
+  "teams": {
+    "michigan": {
+      "designedBalanceRushShare": 0.5710814094775213,
+      "dropbacks": 353,
+      "fourthDownConversionRate": 0.4666666666666667,
+      "pointsPerOpportunity": 3.4,
+      "pointsPerOpportunityNationalRank": 78,
+      "pointsPerResolvedPossession": 2.26027397260274,
+      "pointsPerResolvedPossessionNationalRank": 39,
+      "rushAttempts": 470,
+      "rushExplosivePlayRate": 0.15434782608695652,
+      "rushSuccessRate": 0.508695652173913,
+      "rushYardsPerAttempt": 6.008510638297873,
+      "successRate": 0.46898263027295284,
+      "successRateNationalRank": 18,
+      "team": "Michigan",
+      "thirdDownConversionRate": 0.461038961038961
+    },
+    "utah": {
+      "designedBalanceRushShare": 0.5845070422535211,
+      "dropbacks": 354,
+      "fourthDownConversionRate": 0.6521739130434783,
+      "pointsPerOpportunity": 4.441558441558442,
+      "pointsPerOpportunityNationalRank": 11,
+      "pointsPerResolvedPossession": 2.909090909090909,
+      "pointsPerResolvedPossessionNationalRank": 8,
+      "rushAttempts": 498,
+      "rushExplosivePlayRate": 0.18633540372670807,
+      "rushSuccessRate": 0.5093167701863354,
+      "rushYardsPerAttempt": 6.399598393574297,
+      "successRate": 0.48724179829890646,
+      "successRateNationalRank": 11,
+      "team": "Utah",
+      "thirdDownConversionRate": 0.5197368421052632
+    }
+  },
+  "valueType": "ACTUAL"
+}

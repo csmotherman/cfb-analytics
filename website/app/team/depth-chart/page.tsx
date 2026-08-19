@@ -1,7 +1,8 @@
 import { FieldDepthChart } from "../../../components/players/FieldDepthChart";
-import { projectedLineups } from "../../../lib/michigan/depth-chart";
+import { researchedDepthChart } from "../../../lib/michigan/depth-chart";
 
 export default function DepthChartPage() {
-  const lineup = projectedLineups();
-  return <div className="page-stack page-pad"><section className="page-hero"><span className="eyebrow">2026 PROJECTED STARTERS</span><h1>THE<br/>FIRST 22.</h1><p>Michigan's projected starters. Not the official depth chart.</p></section>{lineup?<><FieldDepthChart offense={lineup.offense} defense={lineup.defense}/><section className="method-note"><strong>HOW WE PICKED IT</strong><p>Recruiting grade and experience.</p></section></>:<section className="empty-state"><strong>Lineup coming soon</strong></section>}</div>;
+  const chart = researchedDepthChart();
+  const asOf = chart ? new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${chart.asOf}T00:00:00Z`)) : "";
+  return <div className="depth-page"><section className="depth-hero"><div><span className="kicker maize">UNOFFICIAL DEPTH CHART · AS OF {asOf}</span><h1>THE<br/><b>TWO-DEEP.</b></h1><p>A researched view of Michigan's current pecking order—starters, next men up, and every specialist in one formation board.</p></div><aside><span><small>OFFENSE</small><b>22</b></span><span><small>DEFENSE</small><b>22</b></span><p>Published projection<br/>Not issued by Michigan</p></aside></section>{chart?<><FieldDepthChart offense={chart.offense} defense={chart.defense} specialists={chart.specialists}/><section className="method-note depth-method"><strong>WHAT “UNOFFICIAL” MEANS</strong><p>Michigan has not issued a 2026 depth chart. This board follows the latest published Ourlads two-deep and verifies every player against Michigan's official roster. It is a sourced projection, not private practice information.</p><div className="depth-sources">{chart.sources.map((source) => <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.label} ↗</a>)}</div></section></>:<section className="empty-state"><strong>Depth chart unavailable</strong><p>SOAR does not construct a chart when the researched artifact is missing.</p></section>}</div>;
 }

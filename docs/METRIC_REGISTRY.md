@@ -1,5 +1,58 @@
 # CFB Analytics Metric Registry
 
+## Player Production Grade v2
+
+**Status:** RESEARCH ONLY
+**Level:** player-season
+**Definition version:** `player-production-grade-v2`
+
+For the 2026 Michigan roster, the site may display an **ACTUAL** grade derived
+from recorded 2025 CFBD player-season statistics. Players are compared with all
+FBS players in the same position family and season. The grade combines a
+production percentile (65%) and usage percentile (35%). Usage is measured with
+attempts plus carries for quarterbacks; carries plus receptions for backs;
+receptions for receivers; total tackles as the available national participation
+proxy for defenders; field-goal plus extra-point attempts for kickers; and punts
+for punters. A player with zero measured usage is excluded from the production
+list. Percentile bands map to F, D, C, B, A, S and S+.
+
+This is a descriptive production grade, not a 2026 projection or an estimate of
+snap quality. Players without usable individual statistics—especially most
+offensive linemen—remain ungraded by this family and may instead show a clearly
+labeled recruiting benchmark. The published artifact preserves season,
+position family, cohort size, production percentile, usage percentile,
+composite percentile, basis and value type.
+
+Roster status is separate from the grade. A player with a 2025 Michigan roster
+entry is `RETURNING`; a player with a 2025 entry for another team is `TRANSFER`;
+and a player with no roster history through 2025 is `FRESHMAN`. A player with
+older history but an unexplained missing 2025 entry remains `UNCLASSIFIED`
+instead of being mislabeled; the current published Michigan roster has no such
+case.
+
+## Staff-context run share
+
+**Status:** RESEARCH ONLY
+**Level:** team-season
+**Definition version:** `michigan-utah-staff-context-v1`
+
+The 2025 Michigan/Utah editorial comparison derives run share as locked rush
+attempts divided by locked rush attempts plus Dropbacks v1. It is used only to
+describe observed play-selection balance. Utah is staff context for Michigan's
+new leadership, not a 2026 Michigan projection or a claim of scheme identity.
+
+## Market-calibrated game win chance
+
+**Status:** BENCHMARK
+**Level:** scheduled game
+**Definition version:** `market-spread-win-calibration-v1`
+
+Only games with a preserved, timestamped sportsbook spread are eligible. The
+displayed Michigan win chance comes from a logistic calibration of clean
+2018–2025 closing market home margins against straight-up results. It is a
+market-derived historical estimate, not sportsbook consensus, a SOAR game-model
+probability, or betting advice. Games without a sourced spread remain blank.
+
 This registry is the production contract for derived football metrics in this repository.
 
 It exists to prevent metric semantics from being reconstructed later from implementation details, audit scripts, or commit history. A metric should not be considered production-locked unless its definition, eligibility, exclusions, propagation level, reconciliation guarantees, and unresolved limitations are documented here.

@@ -5,4 +5,3 @@ export function TeamComparisonChart({points}:{points:Point[]}){return <Bars poin
 export function PlayerTrendChart({points}:{points:Point[]}){return <Bars points={points}/>}
 export function SeasonHistoryChart({points}:{points:Point[]}){return <Bars points={points}/>}
 export function OpponentComparisonChart({points}:{points:Point[]}){return <Bars points={points}/>}
-export function ScatterLogoChart(){return <div className="empty-state"><span>TEAM COMPARISON</span><h2>Chart coming soon.</h2><p>See how Michigan stacks up across college football.</p></div>}

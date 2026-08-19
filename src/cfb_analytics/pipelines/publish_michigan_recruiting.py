@@ -119,7 +119,10 @@ def publish(client: CfbdClient, root: Path, *, season: int = 2026, team: str = "
         recruits.append({**row, "grade": prospect_grade(rating), "valueType": "BENCHMARK", "source": "CFBD recruiting composite"})
     recruits.sort(key=lambda row: (row.get("ranking") is None, row.get("ranking") or 99999, row.get("name") or ""))
 
-    historical: list[dict[str, Any]] = []
+    # The upcoming roster already contains members of the current recruiting
+    # class. Include the response we just fetched so early enrollees/freshmen
+    # receive their verified benchmark instead of an incorrect unmatched state.
+    historical: list[dict[str, Any]] = list(class_response.payload)
     source_urls = [class_response.url, rank_response.url]
     for class_year in range(2022, season):
         response = client.recruiting_players(class_year, team)

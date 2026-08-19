@@ -1,6 +1,7 @@
 export const siteConfig = {
   siteName: "SOAR Analytics",
   shortName: "SOAR",
+  editionName: "Michigan Football Focus",
   tagline: "Michigan football, mapped through strength, identity, and trajectory.",
   primaryTeam: "Michigan",
   primaryTeamId: 130,

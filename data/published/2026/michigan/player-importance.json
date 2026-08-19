@@ -1,0 +1,1075 @@
+{
+  "definitionVersion": "player-importance-v1",
+  "players": [
+    {
+      "depth": 1,
+      "importanceScore": 1000,
+      "playerId": "5141741",
+      "rank": 1,
+      "reason": "Starting quarterback and the highest-leverage player in Michigan's playoff path.",
+      "role": "QB1",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 402.15,
+      "playerId": "5079574",
+      "rank": 2,
+      "reason": "Projected RB1; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "RB1",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 401.84,
+      "playerId": "5160962",
+      "rank": 3,
+      "reason": "Projected RDE; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "RDE",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 400.77,
+      "playerId": "5078910",
+      "rank": 4,
+      "reason": "Projected SS; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "SS",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 400.74,
+      "playerId": "4918445",
+      "rank": 5,
+      "reason": "Projected NB; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "NB",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 400.3,
+      "playerId": "4794102",
+      "rank": 6,
+      "reason": "Projected LCB; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "LCB",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 400.18,
+      "playerId": "4918449",
+      "rank": 7,
+      "reason": "Projected RCB; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "RCB",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 398.99,
+      "playerId": "5141572",
+      "rank": 8,
+      "reason": "Projected WR-X; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "WR-X",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 398.94,
+      "playerId": "4923036",
+      "rank": 9,
+      "reason": "Projected LDE; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "LDE",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 398.34,
+      "playerId": "5156353",
+      "rank": 10,
+      "reason": "Projected LDT; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "LDT",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 397.86,
+      "playerId": "5214557",
+      "rank": 11,
+      "reason": "Projected SLOT; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "SLOT",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 397.58,
+      "playerId": "4870704",
+      "rank": 12,
+      "reason": "Projected RDT; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "RDT",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 396.46,
+      "playerId": "4870632",
+      "rank": 13,
+      "reason": "Projected MLB; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "MLB",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 394.56,
+      "playerId": "4603101",
+      "rank": 14,
+      "reason": "Projected FS; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "FS",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 391.2,
+      "playerId": "5141620",
+      "rank": 15,
+      "reason": "Projected WLB; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "WLB",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 389.43,
+      "playerId": "5088628",
+      "rank": 16,
+      "reason": "Projected TE1; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "TE1",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 388.68,
+      "playerId": "5141435",
+      "rank": 17,
+      "reason": "Projected WR-Z; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "WR-Z",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 386,
+      "playerId": "4870717",
+      "rank": 18,
+      "reason": "Projected RG; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "RG",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 386,
+      "playerId": "4899479",
+      "rank": 19,
+      "reason": "Projected LG; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "LG",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 386,
+      "playerId": "5079452",
+      "rank": 20,
+      "reason": "Projected C; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "C",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 386,
+      "playerId": "5079729",
+      "rank": 21,
+      "reason": "Projected RT; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "RT",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 386,
+      "playerId": "5110462",
+      "rank": 22,
+      "reason": "Projected LT; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "LT",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 382.92,
+      "playerId": "5296243",
+      "rank": 23,
+      "reason": "Projected K1; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "K1",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 376.89,
+      "playerId": "5265648",
+      "rank": 24,
+      "reason": "Projected P1; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "P1",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 1,
+      "importanceScore": 362,
+      "playerId": "5084942",
+      "rank": 25,
+      "reason": "Projected LS1; expected first-unit role carries more weight than raw box-score grade.",
+      "role": "LS1",
+      "tier": "PROJECTED STARTER"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 280,
+      "playerId": "5269403",
+      "rank": 26,
+      "reason": "Projected Second Unit at QB2; importance rises with a larger verified role.",
+      "role": "QB2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 279.28,
+      "playerId": "4891197",
+      "rank": 27,
+      "reason": "Projected Second Unit at RDT2; importance rises with a larger verified role.",
+      "role": "RDT2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 279.28,
+      "playerId": "5079636",
+      "rank": 28,
+      "reason": "Projected Second Unit at LDE2; importance rises with a larger verified role.",
+      "role": "LDE2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 278.35,
+      "playerId": "5079392",
+      "rank": 29,
+      "reason": "Projected Second Unit at SS2; importance rises with a larger verified role.",
+      "role": "SS2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 276.66,
+      "playerId": "5141734",
+      "rank": 30,
+      "reason": "Projected Second Unit at FS2; importance rises with a larger verified role.",
+      "role": "FS2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 275.4,
+      "playerId": "5141534",
+      "rank": 31,
+      "reason": "Projected Second Unit at RDE2; importance rises with a larger verified role.",
+      "role": "RDE2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 274.2,
+      "playerId": "5079417",
+      "rank": 32,
+      "reason": "Projected Second Unit at SLOT2; importance rises with a larger verified role.",
+      "role": "SLOT2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 273.82,
+      "playerId": "5167194",
+      "rank": 33,
+      "reason": "Projected Second Unit at MLB2; importance rises with a larger verified role.",
+      "role": "MLB2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 271,
+      "playerId": "5159046",
+      "rank": 34,
+      "reason": "Projected Second Unit at RB2; importance rises with a larger verified role.",
+      "role": "RB2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 270,
+      "playerId": "5084045",
+      "rank": 35,
+      "reason": "Projected Second Unit at RCB2; importance rises with a larger verified role.",
+      "role": "RCB2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 270,
+      "playerId": "5141437",
+      "rank": 36,
+      "reason": "Projected Second Unit at LCB2; importance rises with a larger verified role.",
+      "role": "LCB2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 270,
+      "playerId": "5207605",
+      "rank": 37,
+      "reason": "Projected Second Unit at NB2; importance rises with a larger verified role.",
+      "role": "NB2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 269,
+      "playerId": "5128064",
+      "rank": 38,
+      "reason": "Projected Second Unit at LDT2; importance rises with a larger verified role.",
+      "role": "LDT2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 268,
+      "playerId": "5087172",
+      "rank": 39,
+      "reason": "Projected Second Unit at WLB2; importance rises with a larger verified role.",
+      "role": "WLB2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 268,
+      "playerId": "5159013",
+      "rank": 40,
+      "reason": "Projected Second Unit at WR-Z2; importance rises with a larger verified role.",
+      "role": "WR-Z2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 268,
+      "playerId": "5215236",
+      "rank": 41,
+      "reason": "Projected Second Unit at WR-X2; importance rises with a larger verified role.",
+      "role": "WR-X2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 266.32,
+      "playerId": "5079494",
+      "rank": 42,
+      "reason": "Projected Second Unit at TE2; importance rises with a larger verified role.",
+      "role": "TE2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 266,
+      "playerId": "5079487",
+      "rank": 43,
+      "reason": "Projected Second Unit at LG2; importance rises with a larger verified role.",
+      "role": "LG2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 266,
+      "playerId": "5142589",
+      "rank": 44,
+      "reason": "Projected Second Unit at LT2; importance rises with a larger verified role.",
+      "role": "LT2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 266,
+      "playerId": "5152089",
+      "rank": 45,
+      "reason": "Projected Second Unit at RG2; importance rises with a larger verified role.",
+      "role": "RG2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 266,
+      "playerId": "5160491",
+      "rank": 46,
+      "reason": "Projected Second Unit at RT2; importance rises with a larger verified role.",
+      "role": "RT2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 2,
+      "importanceScore": 266,
+      "playerId": "5295977",
+      "rank": 47,
+      "reason": "Projected Second Unit at C2; importance rises with a larger verified role.",
+      "role": "C2",
+      "tier": "PROJECTED SECOND UNIT"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 166.25,
+      "playerId": "4833597",
+      "rank": 48,
+      "reason": "Roster Depth at QB; importance rises with a larger verified role.",
+      "role": "QB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 160,
+      "playerId": "5159073",
+      "rank": 49,
+      "reason": "Roster Depth at QB; importance rises with a larger verified role.",
+      "role": "QB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 160,
+      "playerId": "5258803",
+      "rank": 50,
+      "reason": "Roster Depth at QB; importance rises with a larger verified role.",
+      "role": "QB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 159.23,
+      "playerId": "5156348",
+      "rank": 51,
+      "reason": "Roster Depth at RB; importance rises with a larger verified role.",
+      "role": "RB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 156.12,
+      "playerId": "4878106",
+      "rank": 52,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 154.91,
+      "playerId": "4896290",
+      "rank": 53,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 154.61,
+      "playerId": "5222269",
+      "rank": 54,
+      "reason": "Roster Depth at RB; importance rises with a larger verified role.",
+      "role": "RB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 154.05,
+      "playerId": "5079546",
+      "rank": 55,
+      "reason": "Roster Depth at RB; importance rises with a larger verified role.",
+      "role": "RB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 153.94,
+      "playerId": "5079644",
+      "rank": 56,
+      "reason": "Roster Depth at S; importance rises with a larger verified role.",
+      "role": "S",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 152.22,
+      "playerId": "5108220",
+      "rank": 57,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 151.57,
+      "playerId": "5141554",
+      "rank": 58,
+      "reason": "Roster Depth at DT; importance rises with a larger verified role.",
+      "role": "DT",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 151,
+      "playerId": "5141530",
+      "rank": 59,
+      "reason": "Roster Depth at RB; importance rises with a larger verified role.",
+      "role": "RB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 151,
+      "playerId": "5281455",
+      "rank": 60,
+      "reason": "Roster Depth at RB; importance rises with a larger verified role.",
+      "role": "RB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 151,
+      "playerId": "5391395",
+      "rank": 61,
+      "reason": "Roster Depth at RB; importance rises with a larger verified role.",
+      "role": "RB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150.86,
+      "playerId": "5141759",
+      "rank": 62,
+      "reason": "Roster Depth at S; importance rises with a larger verified role.",
+      "role": "S",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5079731",
+      "rank": 63,
+      "reason": "Roster Depth at CB; importance rises with a larger verified role.",
+      "role": "CB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5086014",
+      "rank": 64,
+      "reason": "Roster Depth at CB; importance rises with a larger verified role.",
+      "role": "CB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5127729",
+      "rank": 65,
+      "reason": "Roster Depth at CB; importance rises with a larger verified role.",
+      "role": "CB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5162850",
+      "rank": 66,
+      "reason": "Roster Depth at DE; importance rises with a larger verified role.",
+      "role": "DE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5168274",
+      "rank": 67,
+      "reason": "Roster Depth at DE; importance rises with a larger verified role.",
+      "role": "DE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5199856",
+      "rank": 68,
+      "reason": "Roster Depth at DE; importance rises with a larger verified role.",
+      "role": "DE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5209346",
+      "rank": 69,
+      "reason": "Roster Depth at DE; importance rises with a larger verified role.",
+      "role": "DE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5209412",
+      "rank": 70,
+      "reason": "Roster Depth at DE; importance rises with a larger verified role.",
+      "role": "DE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5210185",
+      "rank": 71,
+      "reason": "Roster Depth at DE; importance rises with a larger verified role.",
+      "role": "DE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5391397",
+      "rank": 72,
+      "reason": "Roster Depth at CB; importance rises with a larger verified role.",
+      "role": "CB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 150,
+      "playerId": "5391399",
+      "rank": 73,
+      "reason": "Roster Depth at CB; importance rises with a larger verified role.",
+      "role": "CB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149.72,
+      "playerId": "5086016",
+      "rank": 74,
+      "reason": "Roster Depth at S; importance rises with a larger verified role.",
+      "role": "S",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149,
+      "playerId": "5089325",
+      "rank": 75,
+      "reason": "Roster Depth at DT; importance rises with a larger verified role.",
+      "role": "DT",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149,
+      "playerId": "5209293",
+      "rank": 76,
+      "reason": "Roster Depth at DT; importance rises with a larger verified role.",
+      "role": "DT",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149,
+      "playerId": "5209376",
+      "rank": 77,
+      "reason": "Roster Depth at S; importance rises with a larger verified role.",
+      "role": "S",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149,
+      "playerId": "5217105",
+      "rank": 78,
+      "reason": "Roster Depth at DT; importance rises with a larger verified role.",
+      "role": "DT",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149,
+      "playerId": "5222267",
+      "rank": 79,
+      "reason": "Roster Depth at S; importance rises with a larger verified role.",
+      "role": "S",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149,
+      "playerId": "5276986",
+      "rank": 80,
+      "reason": "Roster Depth at S; importance rises with a larger verified role.",
+      "role": "S",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 149,
+      "playerId": "5290675",
+      "rank": 81,
+      "reason": "Roster Depth at DT; importance rises with a larger verified role.",
+      "role": "DT",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "4495746",
+      "rank": 82,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5086017",
+      "rank": 83,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5086018",
+      "rank": 84,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5141803",
+      "rank": 85,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5156351",
+      "rank": 86,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5161819",
+      "rank": 87,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5207806",
+      "rank": 88,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5209314",
+      "rank": 89,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5209416",
+      "rank": 90,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5222271",
+      "rank": 91,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5224470",
+      "rank": 92,
+      "reason": "Roster Depth at WR; importance rises with a larger verified role.",
+      "role": "WR",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5274327",
+      "rank": 93,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5276971",
+      "rank": 94,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5391396",
+      "rank": 95,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 148,
+      "playerId": "5391401",
+      "rank": 96,
+      "reason": "Roster Depth at LB; importance rises with a larger verified role.",
+      "role": "LB",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146.7,
+      "playerId": "4899352",
+      "rank": 97,
+      "reason": "Roster Depth at TE; importance rises with a larger verified role.",
+      "role": "TE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "4921240",
+      "rank": 98,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5081267",
+      "rank": 99,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5086022",
+      "rank": 100,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5086023",
+      "rank": 101,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5141453",
+      "rank": 102,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5160473",
+      "rank": 103,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5279127",
+      "rank": 104,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5391402",
+      "rank": 105,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 146,
+      "playerId": "5391403",
+      "rank": 106,
+      "reason": "Roster Depth at OL; importance rises with a larger verified role.",
+      "role": "OL",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 142,
+      "playerId": "5141588",
+      "rank": 107,
+      "reason": "Roster Depth at TE; importance rises with a larger verified role.",
+      "role": "TE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 142,
+      "playerId": "5156349",
+      "rank": 108,
+      "reason": "Roster Depth at TE; importance rises with a larger verified role.",
+      "role": "TE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 142,
+      "playerId": "5276673",
+      "rank": 109,
+      "reason": "Roster Depth at TE; importance rises with a larger verified role.",
+      "role": "TE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 142,
+      "playerId": "5299144",
+      "rank": 110,
+      "reason": "Roster Depth at TE; importance rises with a larger verified role.",
+      "role": "TE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 142,
+      "playerId": "5391398",
+      "rank": 111,
+      "reason": "Roster Depth at TE; importance rises with a larger verified role.",
+      "role": "TE",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 134.4,
+      "playerId": "5085243",
+      "rank": 112,
+      "reason": "Roster Depth at P; importance rises with a larger verified role.",
+      "role": "P",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 132,
+      "playerId": "5222268",
+      "rank": 113,
+      "reason": "Roster Depth at PK; importance rises with a larger verified role.",
+      "role": "PK",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 132,
+      "playerId": "5391394",
+      "rank": 114,
+      "reason": "Roster Depth at PK; importance rises with a larger verified role.",
+      "role": "PK",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 130,
+      "playerId": "5299145",
+      "rank": 115,
+      "reason": "Roster Depth at P; importance rises with a larger verified role.",
+      "role": "P",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 122,
+      "playerId": "5153627",
+      "rank": 116,
+      "reason": "Roster Depth at LS; importance rises with a larger verified role.",
+      "role": "LS",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 122,
+      "playerId": "5295951",
+      "rank": 117,
+      "reason": "Roster Depth at LS; importance rises with a larger verified role.",
+      "role": "LS",
+      "tier": "ROSTER DEPTH"
+    },
+    {
+      "depth": 3,
+      "importanceScore": 122,
+      "playerId": "5391400",
+      "rank": 118,
+      "reason": "Roster Depth at LS; importance rises with a larger verified role.",
+      "role": "LS",
+      "tier": "ROSTER DEPTH"
+    }
+  ],
+  "season": 2026,
+  "source": {
+    "name": "Ourlads Michigan depth chart",
+    "updated": "2026-08-08",
+    "url": "https://www.ourlads.com/ncaa-football/depth-charts/depth-chart/michigan/91119"
+  },
+  "team": "Michigan",
+  "valueType": "PROJECTED"
+}

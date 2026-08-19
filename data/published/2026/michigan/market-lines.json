@@ -1,0 +1,102 @@
+{
+  "calibration": {
+    "games": 7492,
+    "intercept": 0.07445609862768567,
+    "slope": 0.11586674179983444
+  },
+  "games": [
+    {
+      "asOf": "2026-08-19",
+      "gameId": "401858428",
+      "marketWinChance": 0.9587,
+      "opponent": "Western Michigan",
+      "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
+      "source": {
+        "name": "MLive preseason odds roundup",
+        "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+      },
+      "sportsbook": "BetMGM",
+      "teamSpread": -26.5,
+      "valueType": "MARKET",
+      "week": 1
+    },
+    {
+      "asOf": "2026-08-19",
+      "gameId": "401856679",
+      "marketWinChance": 0.59,
+      "opponent": "Oklahoma",
+      "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
+      "source": {
+        "name": "MLive preseason odds roundup",
+        "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+      },
+      "sportsbook": "BetMGM",
+      "teamSpread": -2.5,
+      "valueType": "MARKET",
+      "week": 2
+    },
+    {
+      "asOf": "2026-08-19",
+      "gameId": "401858490",
+      "marketWinChance": 0.6958,
+      "opponent": "Penn State",
+      "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
+      "source": {
+        "name": "MLive preseason odds roundup",
+        "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+      },
+      "sportsbook": "DraftKings",
+      "teamSpread": -6.5,
+      "valueType": "MARKET",
+      "week": 7
+    },
+    {
+      "asOf": "2026-08-19",
+      "gameId": "401858511",
+      "marketWinChance": 0.8911,
+      "opponent": "Michigan State",
+      "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
+      "source": {
+        "name": "MLive preseason odds roundup",
+        "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+      },
+      "sportsbook": "DraftKings",
+      "teamSpread": -17.5,
+      "valueType": "MARKET",
+      "week": 10
+    },
+    {
+      "asOf": "2026-08-19",
+      "gameId": "401858523",
+      "marketWinChance": 0.1626,
+      "opponent": "Oregon",
+      "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
+      "source": {
+        "name": "MLive preseason odds roundup",
+        "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+      },
+      "sportsbook": "BetMGM",
+      "teamSpread": 13.5,
+      "valueType": "MARKET",
+      "week": 11
+    },
+    {
+      "asOf": "2026-08-19",
+      "gameId": "401858540",
+      "marketWinChance": 0.1967,
+      "opponent": "Ohio State",
+      "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
+      "source": {
+        "name": "MLive preseason odds roundup",
+        "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+      },
+      "sportsbook": "FanDuel",
+      "teamSpread": 11.5,
+      "valueType": "MARKET",
+      "week": 13
+    }
+  ],
+  "season": 2026,
+  "team": "Michigan",
+  "valueType": "MARKET"
+}

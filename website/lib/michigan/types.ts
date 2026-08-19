@@ -1,5 +1,11 @@
 export type ValueType = "ACTUAL" | "PROJECTED" | "PRESEASON" | "BENCHMARK";
 export type Grade = "F" | "D" | "C" | "B" | "A" | "S" | "S+";
+export type PlayerInsight = {
+  valueType: "PROJECTED";
+  focus: {kind:"PRODUCTION"|"PROSPECT";label:string;grade?:Grade|null;stars?:number|null;rating?:number|null;percentile?:number|null};
+  pastSeasons: Array<{season:number;team:string;stats:Array<{label:string;value:number}>}>;
+  strengths: string[]; growthAreas: string[]; expectation: string; expectationBasis: string;
+};
 
 export type MichiganPlayer = {
   id: string; firstName: string; lastName: string; jersey?: number | null;
@@ -7,12 +13,17 @@ export type MichiganPlayer = {
   year?: number | null; homeCity?: string | null; homeState?: string | null;
   teamId: number; season: number; valueType: ValueType; recruitIds?: string[];
   playerImageUrl?: string | null; playerImageSource?: string | null;
+  playerImageSourceUrl?: string | null;
   playerImageCredit?: string | null; playerImageUpdatedAt?: string | null;
   performanceGrade?: Grade | null; prospectGrade?: Grade | null; potentialGrade?: Grade | null;
+  performanceGradeBasis?: string | null; performanceGradeSeason?: number | null;
+  rosterStatus?: "RETURNING" | "TRANSFER" | "FRESHMAN" | "UNCLASSIFIED" | null; previousTeam?: string | null;
   compositeRating?: number | null; stars?: number | null; nationalRecruitRank?: number | null;
   gradeBasis?: string | null;
   recruitClass?: number | null; originalCommitment?: string | null;
   careerTimeline?: Array<{season:number;team?:string|null;position?:string|null;jersey?:number|null;year?:number|null}>;
+  insight?: PlayerInsight | null;
+  importanceRank?: number | null; importanceRole?: string | null; importanceTier?: string | null; importanceReason?: string | null;
 };
 
 export type MichiganRecruit = {

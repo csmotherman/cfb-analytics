@@ -1,0 +1,3 @@
+"use client";
+import { useState } from "react";
+export function FanPoll(){const[vote,setVote]=useState<"yes"|"no"|null>(null);return <section className="fan-poll" aria-labelledby="fan-pulse"><div><span className="kicker maize">FAN PULSE · PRESEASON</span><h2 id="fan-pulse">Will Michigan make the College Football Playoff?</h2><p>Your pick stays on this device. Community results will appear when verified voting is available.</p></div><div className="vote-box">{vote?<><span className="vote-check">✓</span><b>YOUR PICK: {vote.toUpperCase()}</b><button type="button" onClick={()=>setVote(null)}>Change vote</button></>:<><button type="button" onClick={()=>setVote("yes")}>YES</button><button type="button" onClick={()=>setVote("no")}>NO</button></>}</div></section>}

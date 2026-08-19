@@ -792,15 +792,15 @@
     "valueType": "BENCHMARK"
   },
   {
-    "basis": "No matched recruiting composite",
-    "compositeRating": null,
-    "grade": null,
-    "nationalRecruitRank": null,
+    "basis": "CFBD recruiting composite",
+    "compositeRating": 0.9933,
+    "grade": "S",
+    "nationalRecruitRank": 12,
     "player": "Savion Hiter",
     "playerId": "5159046",
     "position": "RB",
-    "recruitClass": null,
-    "stars": null,
+    "recruitClass": 2026,
+    "stars": 5,
     "valueType": "BENCHMARK"
   },
   {
