@@ -1,0 +1,443 @@
+[
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "firstDowns",
+    "statValue": 286,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "firstDownsOpponent",
+    "statValue": 225,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fourthDownConversions",
+    "statValue": 12,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fourthDownConversionsOpponent",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fourthDowns",
+    "statValue": 22,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fourthDownsOpponent",
+    "statValue": 22,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fumblesLost",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fumblesLostOpponent",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fumblesRecovered",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "fumblesRecoveredOpponent",
+    "statValue": 17,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "games",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "interceptions",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "interceptionsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "interceptionTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "interceptionTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "interceptionYards",
+    "statValue": 31,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "interceptionYardsOpponent",
+    "statValue": 36,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "kickReturns",
+    "statValue": 27,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "kickReturnsOpponent",
+    "statValue": 36,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "kickReturnTDs",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "kickReturnTDsOpponent",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "kickReturnYards",
+    "statValue": 665,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "kickReturnYardsOpponent",
+    "statValue": 440,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "netPassingYards",
+    "statValue": 3261,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "netPassingYardsOpponent",
+    "statValue": 2412,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passAttempts",
+    "statValue": 410,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passAttemptsOpponent",
+    "statValue": 345,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passCompletions",
+    "statValue": 228,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passCompletionsOpponent",
+    "statValue": 198,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passesIntercepted",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passesInterceptedOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passingTDs",
+    "statValue": 25,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "passingTDsOpponent",
+    "statValue": 16,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "penalties",
+    "statValue": 80,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "penaltiesOpponent",
+    "statValue": 96,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "penaltyYards",
+    "statValue": 649,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "penaltyYardsOpponent",
+    "statValue": 850,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "possessionTime",
+    "statValue": 23032,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "possessionTimeOpponent",
+    "statValue": 23768,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "puntReturns",
+    "statValue": 37,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "puntReturnsOpponent",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "puntReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "puntReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "puntReturnYards",
+    "statValue": 271,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "puntReturnYardsOpponent",
+    "statValue": 134,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "rushingAttempts",
+    "statValue": 495,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "rushingAttemptsOpponent",
+    "statValue": 501,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "rushingTDs",
+    "statValue": 26,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "rushingTDsOpponent",
+    "statValue": 20,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "rushingYards",
+    "statValue": 1959,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "rushingYardsOpponent",
+    "statValue": 1583,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "sacks",
+    "statValue": 49,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "sacksOpponent",
+    "statValue": 33,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "tacklesForLoss",
+    "statValue": 102,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "tacklesForLossOpponent",
+    "statValue": 75,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "thirdDownConversions",
+    "statValue": 68,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "thirdDownConversionsOpponent",
+    "statValue": 59,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "thirdDowns",
+    "statValue": 175,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "thirdDownsOpponent",
+    "statValue": 182,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "totalYards",
+    "statValue": 5220,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "totalYardsOpponent",
+    "statValue": 3995,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "turnovers",
+    "statValue": 20,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2019,
+    "statName": "turnoversOpponent",
+    "statValue": 20,
+    "team": "Michigan"
+  }
+]

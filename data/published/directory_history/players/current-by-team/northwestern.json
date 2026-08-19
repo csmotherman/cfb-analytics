@@ -1,0 +1,5382 @@
+[
+  {
+    "playerId": "4699437",
+    "recruiting": {
+      "athleteId": "4699437",
+      "city": "Mansfield",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.5631924,
+        "longitude": -97.1416768
+      },
+      "id": "117122",
+      "name": "Ore Adeyi",
+      "position": "CB",
+      "ranking": 1426,
+      "rating": 0.8415,
+      "recruitType": "HighSchool",
+      "school": "Mansfield Legacy",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2021
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2021,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4921291",
+    "recruiting": {
+      "athleteId": "4921291",
+      "city": "Liberty",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29047",
+        "latitude": 39.246479,
+        "longitude": -94.419079
+      },
+      "id": "112104",
+      "name": "Ricky Ahumaraeze",
+      "position": "WR",
+      "ranking": 863,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5307060",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5149001",
+    "recruiting": {
+      "athleteId": "5149001",
+      "city": "Bryant",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "05125",
+        "latitude": 34.5959265,
+        "longitude": -92.4890469
+      },
+      "id": "106835",
+      "name": "Daniel Anderson",
+      "position": "RB",
+      "ranking": 645,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Bryant",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151980",
+    "recruiting": {
+      "athleteId": "5151980",
+      "city": "Antioch",
+      "committedTo": "Ball State",
+      "country": "USA",
+      "grade": null,
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "47093",
+        "latitude": 36.0806394,
+        "longitude": -83.7799037
+      },
+      "id": "256649",
+      "name": "Arkel Anugwom",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Antioch",
+      "stars": null,
+      "stateProvince": "TN",
+      "teamSlug": "ball-state",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Ball State",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Ball State",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921425",
+    "recruiting": {
+      "athleteId": "4921425",
+      "city": "Joliet",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.5263603,
+        "longitude": -88.0840212
+      },
+      "id": "111908",
+      "name": "Anthony Birsa",
+      "position": "IOL",
+      "ranking": 664,
+      "rating": 0.8775,
+      "recruitType": "HighSchool",
+      "school": "Joliet Catholic Academy",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5212609",
+    "recruiting": {
+      "athleteId": "5212609",
+      "city": "Colleyville",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.8809603,
+        "longitude": -97.155012
+      },
+      "id": "107419",
+      "name": "Braden Blueitt",
+      "position": "WR",
+      "ranking": 1271,
+      "rating": 0.8619,
+      "recruitType": "HighSchool",
+      "school": "Colleyville Heritage",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193492",
+    "recruiting": {
+      "athleteId": "5193492",
+      "city": "Batavia",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17089",
+        "latitude": 41.8500284,
+        "longitude": -88.3125738
+      },
+      "id": "110307",
+      "name": "Ryan Boe",
+      "position": "QB",
+      "ranking": 1701,
+      "rating": 0.8481,
+      "recruitType": "HighSchool",
+      "school": "Batavia",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222757",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4910827",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "LS",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 60,
+        "position": "LS",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 60,
+        "position": "LS",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 60,
+        "position": "LS",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 60,
+        "position": "LS",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5212591",
+    "recruiting": {
+      "athleteId": "5212591",
+      "city": "Shakopee",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "27139",
+        "latitude": 44.7980186,
+        "longitude": -93.5268986
+      },
+      "id": "107481",
+      "name": "Trey Boyd",
+      "position": "IOL",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Shakopee",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4868925",
+    "recruiting": {
+      "athleteId": "4868925",
+      "city": "Glendora",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1361187,
+        "longitude": -117.865339
+      },
+      "id": "114172",
+      "name": "Braydon Brus",
+      "position": "ATH",
+      "ranking": 633,
+      "rating": 0.8763,
+      "recruitType": "HighSchool",
+      "school": "Glendora",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 206,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5281818",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5145121",
+    "recruiting": {
+      "athleteId": "5145121",
+      "city": "Sault Sainte Marie",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26033",
+        "latitude": 46.490586,
+        "longitude": -84.359269
+      },
+      "id": "109995",
+      "name": "Callen Campbell",
+      "position": "DL",
+      "ranking": 1332,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "Sault Area",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4684277",
+    "recruiting": {
+      "athleteId": "4684277",
+      "city": "Northbrook",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 42.128704,
+        "longitude": -87.8265089
+      },
+      "id": "116771",
+      "name": "Jackson Carsello",
+      "position": "OT",
+      "ranking": 1031,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "Glenbrook North",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2021
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2021,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5075805",
+    "recruiting": {
+      "athleteId": "5075805",
+      "city": "Downey",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.942215,
+        "longitude": -118.1235646
+      },
+      "id": "111414",
+      "name": "Aidan Chiles",
+      "position": "QB",
+      "ranking": 153,
+      "rating": 0.9365,
+      "recruitType": "HighSchool",
+      "school": "Downey",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "QB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "QB",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "QB",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291753",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5145594",
+    "recruiting": {
+      "athleteId": "5145594",
+      "city": "Canton",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "28089",
+        "latitude": 42.3076547,
+        "longitude": -83.4868961
+      },
+      "id": "109802",
+      "name": "Idrys Cotton",
+      "position": "IOL",
+      "ranking": 1123,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Plymouth",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4917942",
+    "recruiting": {
+      "athleteId": "4917942",
+      "city": "Mount Prospect",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0664167,
+        "longitude": -87.9372908
+      },
+      "id": "112139",
+      "name": "Frank Covey IV",
+      "position": "ATH",
+      "ranking": 899,
+      "rating": 0.8675,
+      "recruitType": "HighSchool",
+      "school": "Prospect",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295999",
+    "recruiting": {
+      "athleteId": "5295999",
+      "city": "Hamler",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39069",
+        "latitude": 41.2292165,
+        "longitude": -84.0341106
+      },
+      "id": "221772",
+      "name": "Lincoln Creager",
+      "position": "S",
+      "ranking": 3325,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Patrick Henry",
+      "stars": 2,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081565",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5222750",
+    "recruiting": {
+      "athleteId": "5222750",
+      "city": "Lexington",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "21067",
+        "latitude": 38.0464066,
+        "longitude": -84.4970393
+      },
+      "id": "110290",
+      "name": "Terrion Curry-Hicks",
+      "position": "CB",
+      "ranking": 1682,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Frederick Douglass",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5280835",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5279241",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5334130",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4565357",
+    "recruiting": {
+      "athleteId": "4565357",
+      "city": "Belleville",
+      "committedTo": "Iowa",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 42.2048414,
+        "longitude": -83.4852106
+      },
+      "id": "120754",
+      "name": "Brenden Deasfernandes",
+      "position": "CB",
+      "ranking": 2413,
+      "rating": 0.8119,
+      "recruitType": "HighSchool",
+      "school": "Belleville",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "iowa",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2020
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2021,
+        "team": "Iowa",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2022,
+        "team": "Iowa",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2023,
+        "team": "Iowa",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2024,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2025,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5328488",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290494",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5166800",
+    "recruiting": {
+      "athleteId": "5166800",
+      "city": "Ramsey",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 41.0573188,
+        "longitude": -74.1409771
+      },
+      "id": "107303",
+      "name": "Marquet Dorsey Jr.",
+      "position": "CB",
+      "ranking": 1133,
+      "rating": 0.8647,
+      "recruitType": "HighSchool",
+      "school": "Don Bosco Prep",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5154381",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "P",
+        "season": 2023,
+        "team": "Florida A&M",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "P",
+        "season": 2025,
+        "team": "Mississippi Valley State",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "P",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5214596",
+    "recruiting": {
+      "athleteId": "5214596",
+      "city": "Winnetka",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.1080703,
+        "longitude": -87.7365286
+      },
+      "id": "108351",
+      "name": "Nikola Dugandzic",
+      "position": "P",
+      "ranking": 2434,
+      "rating": 0.8308,
+      "recruitType": "HighSchool",
+      "school": "New Trier",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "P",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 92,
+        "position": "P",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084772",
+    "recruiting": {
+      "athleteId": "5084772",
+      "city": "Los Alamitos",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8038865,
+        "longitude": -118.0772433
+      },
+      "id": "237989",
+      "name": "Hayden Eligon II",
+      "position": "WR",
+      "ranking": 1919,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Los Alamitos",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5212979",
+    "recruiting": {
+      "athleteId": "5212979",
+      "city": "Dallas",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13223",
+        "latitude": 33.9237141,
+        "longitude": -84.8407732
+      },
+      "id": "107570",
+      "name": "Dube Enongene",
+      "position": "WR",
+      "ranking": 1458,
+      "rating": 0.8581,
+      "recruitType": "HighSchool",
+      "school": "North Paulding",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079389",
+    "recruiting": {
+      "athleteId": "5079389",
+      "city": "Westlake Village",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "237905",
+      "name": "Chase Farrell",
+      "position": "WR",
+      "ranking": 1053,
+      "rating": 0.8658,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "WR",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4833594",
+    "recruiting": {
+      "athleteId": "4833594",
+      "city": "Dallas",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "114288",
+      "name": "Robert Fitzgerald",
+      "position": "S",
+      "ranking": 756,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Dallas Jesuit",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4836465",
+    "recruiting": {
+      "athleteId": "4836465",
+      "city": "Winter Garden",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5656649,
+        "longitude": -81.5856742
+      },
+      "id": "114905",
+      "name": "Brendan Flakes",
+      "position": "DL",
+      "ranking": 1404,
+      "rating": 0.8456,
+      "recruitType": "HighSchool",
+      "school": "West Orange",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5278235",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222751",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "LS",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "LS",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "LS",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290656",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4914368",
+    "recruiting": {
+      "athleteId": "4914368",
+      "city": "Norman",
+      "committedTo": "New Mexico State",
+      "country": "USA",
+      "grade": null,
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "40027",
+        "latitude": 35.2225717,
+        "longitude": -97.4394816
+      },
+      "id": "255798",
+      "name": "Gavin Frakes",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Norman North",
+      "stars": null,
+      "stateProvince": "OK",
+      "teamSlug": "new-mexico-state",
+      "valueType": "BENCHMARK",
+      "weight": 213,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2022,
+        "team": "New Mexico State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2023,
+        "team": "New Mexico State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2024,
+        "team": "Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5245126",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4923270",
+    "recruiting": {
+      "athleteId": "4923270",
+      "city": "West Chester",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.3303357,
+        "longitude": -84.408275
+      },
+      "id": "112453",
+      "name": "Josh Fussell",
+      "position": "CB",
+      "ranking": 1220,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Lakota West",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4918416",
+    "recruiting": {
+      "athleteId": "4918416",
+      "city": "St. Louis",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "111922",
+      "name": "Tyler Gant",
+      "position": "DL",
+      "ranking": 674,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Christian Brothers College",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921508",
+    "recruiting": {
+      "athleteId": "4921508",
+      "city": "Clayton",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39113",
+        "latitude": 39.8631101,
+        "longitude": -84.3605022
+      },
+      "id": "111583",
+      "name": "Nigel Glover",
+      "position": "LB",
+      "ranking": 336,
+      "rating": 0.8996,
+      "recruitType": "HighSchool",
+      "school": "Northmont",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2023,
+        "team": "Ohio State",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917943",
+    "recruiting": {
+      "athleteId": "4917943",
+      "city": "Naperville",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.7728699,
+        "longitude": -88.1479278
+      },
+      "id": "112274",
+      "name": "Aidan Gray",
+      "position": "QB",
+      "ranking": 1039,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "Naperville North",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5158278",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5155867",
+    "recruiting": {
+      "athleteId": "5155867",
+      "city": "Arlington Heights",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0811563,
+        "longitude": -87.9802164
+      },
+      "id": "110447",
+      "name": "Carson Grove",
+      "position": "ATH",
+      "ranking": 1836,
+      "rating": 0.8428,
+      "recruitType": "HighSchool",
+      "school": "John Hersey",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216511",
+    "recruiting": {
+      "athleteId": "5216511",
+      "city": "Cincinnati",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "107977",
+      "name": "Jonah Hayes",
+      "position": "EDGE",
+      "ranking": 1950,
+      "rating": 0.8458,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Moeller",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5158281",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4816307",
+    "recruiting": {
+      "athleteId": "4816307",
+      "city": "Little Rock",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "05119",
+        "latitude": 34.7464809,
+        "longitude": -92.2895948
+      },
+      "id": "114189",
+      "name": "Joseph Himon II",
+      "position": "RB",
+      "ranking": 651,
+      "rating": 0.8752,
+      "recruitType": "HighSchool",
+      "school": "Pulaski Academy",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4569262",
+    "recruiting": {
+      "athleteId": "4569262",
+      "city": "Germany",
+      "committedTo": "TCU",
+      "country": "DEU",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "116421",
+      "name": "Alex Honig",
+      "position": "QB",
+      "ranking": 683,
+      "rating": 0.8704,
+      "recruitType": "HighSchool",
+      "school": "Germany",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2021
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2021,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2022,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2023,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2024,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327651",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685233",
+    "recruiting": {
+      "athleteId": "4685233",
+      "city": "Gibsonia",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.6300671,
+        "longitude": -79.9695004
+      },
+      "id": "118086",
+      "name": "Migo Jackson",
+      "position": "EDGE",
+      "ranking": 2398,
+      "rating": 0.8022,
+      "recruitType": "HighSchool",
+      "school": "Pine-Richland",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2021
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2021,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2022,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290616",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4738818",
+    "recruiting": {
+      "athleteId": "4738818",
+      "city": "Hollywood",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "114497",
+      "name": "Jamaal Johnson",
+      "position": "DL",
+      "ranking": 967,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DL",
+        "season": 2022,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DL",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DL",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5193589",
+    "recruiting": {
+      "athleteId": "5193589",
+      "city": "Hamden",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "09009",
+        "latitude": 41.3959287,
+        "longitude": -72.8968716
+      },
+      "id": "110341",
+      "name": "Qayvier Johnson",
+      "position": "EDGE",
+      "ranking": 1732,
+      "rating": 0.8469,
+      "recruitType": "HighSchool",
+      "school": "Hamden Hall",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222253",
+    "recruiting": {
+      "athleteId": "5222253",
+      "city": "Severn",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "24003",
+        "latitude": 39.1278864,
+        "longitude": -76.6869128
+      },
+      "id": "107761",
+      "name": "Alijah Jones",
+      "position": "S",
+      "ranking": 1655,
+      "rating": 0.8525,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Spalding",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5326896",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222254",
+    "recruiting": {
+      "athleteId": "5222254",
+      "city": "Lake Mary",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12117",
+        "latitude": 28.756618000000003,
+        "longitude": -81.33888382214167
+      },
+      "id": "107693",
+      "name": "Tanner Jumpp",
+      "position": "DL",
+      "ranking": 1560,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Lake Mary",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 53,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214444",
+    "recruiting": {
+      "athleteId": "5214444",
+      "city": "Westerville",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.126139,
+        "longitude": -82.9295287
+      },
+      "id": "107190",
+      "name": "Tyler Kielmeyer",
+      "position": "TE",
+      "ranking": 1024,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "Westerville South",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 48,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4924145",
+    "recruiting": {
+      "athleteId": "4924145",
+      "city": "Lakewood",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.4819932,
+        "longitude": -81.7981908
+      },
+      "id": "111822",
+      "name": "Michael Kilbane",
+      "position": "EDGE",
+      "ranking": 579,
+      "rating": 0.8817,
+      "recruitType": "HighSchool",
+      "school": "St. Edward",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "DL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5145736",
+    "recruiting": {
+      "athleteId": "5145736",
+      "city": "Painesville",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39085",
+        "latitude": 41.7244885,
+        "longitude": -81.245657
+      },
+      "id": "108861",
+      "name": "Dominic Kirks",
+      "position": "DL",
+      "ranking": 163,
+      "rating": 0.9297,
+      "recruitType": "HighSchool",
+      "school": "Riverside",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2024,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5122027",
+    "recruiting": {
+      "athleteId": "5122027",
+      "city": "Tipp City",
+      "committedTo": "Bowling Green",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "39109",
+        "latitude": 39.9583892,
+        "longitude": -84.1721638
+      },
+      "id": "113351",
+      "name": "Jackson Kleather",
+      "position": "K",
+      "ranking": 2317,
+      "rating": 0.8167,
+      "recruitType": "HighSchool",
+      "school": "Tippecanoe",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "bowling-green",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "PK",
+        "season": 2023,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "PK",
+        "season": 2024,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "PK",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "PK",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5078244",
+    "recruiting": {
+      "athleteId": "5078244",
+      "city": "Katy",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "112838",
+      "name": "Caleb Komolafe",
+      "position": "S",
+      "ranking": 1630,
+      "rating": 0.8436,
+      "recruitType": "HighSchool",
+      "school": "Katy Tompkins",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391538",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216333",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222756",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5158275",
+    "recruiting": {
+      "athleteId": "5158275",
+      "city": "Lawndale",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8885217,
+        "longitude": -118.3531991
+      },
+      "id": "112740",
+      "name": "J.J. Lewis",
+      "position": "S",
+      "ranking": 1522,
+      "rating": 0.8475,
+      "recruitType": "HighSchool",
+      "school": "Leuzinger",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921437",
+    "recruiting": {
+      "athleteId": "4921437",
+      "city": "Westlake Village",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "113026",
+      "name": "Jalen Lewis",
+      "position": "CB",
+      "ranking": 1850,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5282367",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4940231",
+    "recruiting": {
+      "athleteId": "4940231",
+      "city": "Orlando",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "112006",
+      "name": "Camp Magee",
+      "position": "TE",
+      "ranking": 761,
+      "rating": 0.8736,
+      "recruitType": "HighSchool",
+      "school": "Edgewater",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391536",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685459",
+    "recruiting": {
+      "athleteId": "4685459",
+      "city": "Chandler",
+      "committedTo": "West Virginia",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.3062223,
+        "longitude": -111.8413317
+      },
+      "id": "113832",
+      "name": "Nicco Marchiol",
+      "position": "QB",
+      "ranking": 289,
+      "rating": 0.9025,
+      "recruitType": "HighSchool",
+      "school": "Hamilton",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "west-virginia",
+      "valueType": "BENCHMARK",
+      "weight": 216,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2022,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2023,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2025,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5138636",
+    "recruiting": {
+      "athleteId": "5138636",
+      "city": "Cleveland",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.5051613,
+        "longitude": -81.6934446
+      },
+      "id": "110726",
+      "name": "Sean Martin",
+      "position": "ATH",
+      "ranking": 2185,
+      "rating": 0.8311,
+      "recruitType": "HighSchool",
+      "school": "St. Ignatius",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211986",
+    "recruiting": {
+      "athleteId": "5211986",
+      "city": "Lawton",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "220915",
+      "name": "Mason Mayne",
+      "position": "DL",
+      "ranking": 1014,
+      "rating": 0.8683,
+      "recruitType": "HighSchool",
+      "school": "Lawton",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5287502",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5246775",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685712",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685448",
+    "recruiting": {
+      "athleteId": "4685448",
+      "city": "Lubbock",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48303",
+        "latitude": 33.5635206,
+        "longitude": -101.879336
+      },
+      "id": "113707",
+      "name": "Kobie McKinzie",
+      "position": "LB",
+      "ranking": 164,
+      "rating": 0.9341,
+      "recruitType": "HighSchool",
+      "school": "Lubbock-Cooper",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2022,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5320929",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291097",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161830",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215504",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214457",
+    "recruiting": {
+      "athleteId": "5214457",
+      "city": "Glen Ellyn",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.8775293,
+        "longitude": -88.0670118
+      },
+      "id": "107216",
+      "name": "Michael O'Connell",
+      "position": "OT",
+      "ranking": 1049,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "Glenbard West",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5196380",
+    "recruiting": {
+      "athleteId": "5196380",
+      "city": "Frankfort",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.4958665,
+        "longitude": -87.8486613
+      },
+      "id": "107082",
+      "name": "Caden O'Rourke",
+      "position": "EDGE",
+      "ranking": 897,
+      "rating": 0.8714,
+      "recruitType": "HighSchool",
+      "school": "Lincoln-Way East",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5188305",
+    "recruiting": {
+      "athleteId": "5188305",
+      "city": "London",
+      "committedTo": "Northwestern",
+      "country": "England",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "110223",
+      "name": "Timi Oke",
+      "position": "CB",
+      "ranking": 1570,
+      "rating": 0.8508,
+      "recruitType": "HighSchool",
+      "school": "NFL Academy",
+      "stars": 3,
+      "stateProvince": "EN",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 171,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5195388",
+    "recruiting": {
+      "athleteId": "5195388",
+      "city": "Austin",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "109946",
+      "name": "Ezomo Oratokhai",
+      "position": "IOL",
+      "ranking": 1297,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Lake Travis",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5081563",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5085616",
+    "recruiting": {
+      "athleteId": "5085616",
+      "city": "North Las Vegas",
+      "committedTo": "Weber State",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.2005843,
+        "longitude": -115.1215844
+      },
+      "id": "255999",
+      "name": "Montae Pate",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Legacy",
+      "stars": null,
+      "stateProvince": "NV",
+      "teamSlug": "weber-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2022,
+        "team": "Weber State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "Weber State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "Weber State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4812341",
+    "recruiting": {
+      "athleteId": "4812341",
+      "city": "Park Ridge",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0112329,
+        "longitude": -87.8406031
+      },
+      "id": "114332",
+      "name": "Chris Petrucci",
+      "position": "TE",
+      "ranking": 799,
+      "rating": 0.8685,
+      "recruitType": "HighSchool",
+      "school": "Maine South",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5150132",
+    "recruiting": {
+      "athleteId": "5150132",
+      "city": "Lancaster",
+      "committedTo": "Bowling Green",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.5920798,
+        "longitude": -96.7561083
+      },
+      "id": "110721",
+      "name": "Mar'Kel Porter",
+      "position": "RB",
+      "ranking": 2184,
+      "rating": 0.8311,
+      "recruitType": "HighSchool",
+      "school": "Lancaster",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "bowling-green",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2024,
+        "team": "Bowling Green",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216569",
+    "recruiting": {
+      "athleteId": "5216569",
+      "city": "Ballwin",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29189",
+        "latitude": 38.5936028,
+        "longitude": -90.5385549
+      },
+      "id": "107803",
+      "name": "Robby Preckel",
+      "position": "TE",
+      "ranking": 1699,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Lafayette",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 41,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5196646",
+    "recruiting": {
+      "athleteId": "5196646",
+      "city": "Eden Prairie",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "27053",
+        "latitude": 44.8546856,
+        "longitude": -93.470786
+      },
+      "id": "111070",
+      "name": "Dennis Rahouski",
+      "position": "IOL",
+      "ranking": 2658,
+      "rating": 0.8141,
+      "recruitType": "HighSchool",
+      "school": "Eden Prairie",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 253,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5156387",
+    "recruiting": {
+      "athleteId": "5156387",
+      "city": "Lakewood",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.4819932,
+        "longitude": -81.7981908
+      },
+      "id": "110045",
+      "name": "Troy Regovich",
+      "position": "DL",
+      "ranking": 1391,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "St. Edward",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5289734",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4838692",
+    "recruiting": {
+      "athleteId": "4838692",
+      "city": "McDonough",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.4473361,
+        "longitude": -84.1468616
+      },
+      "id": "114738",
+      "name": "Jason Reynolds",
+      "position": "LB",
+      "ranking": 1230,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Eagle's Landing Christian",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 214,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4921449",
+    "recruiting": {
+      "athleteId": "4921449",
+      "city": "Peoria",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.5806115,
+        "longitude": -112.2372942
+      },
+      "id": "112290",
+      "name": "Dylan Roberts",
+      "position": "DL",
+      "ranking": 1055,
+      "rating": 0.8625,
+      "recruitType": "HighSchool",
+      "school": "Peoria Centennial",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5199860",
+    "recruiting": {
+      "athleteId": "5199860",
+      "city": "Marietta",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.9528472,
+        "longitude": -84.5496148
+      },
+      "id": "107445",
+      "name": "Marcus Romain",
+      "position": "QB",
+      "ranking": 1293,
+      "rating": 0.8614,
+      "recruitType": "HighSchool",
+      "school": "Wheeler",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5158276",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222758",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4921317",
+    "recruiting": {
+      "athleteId": "4921317",
+      "city": "Batavia",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17089",
+        "latitude": 41.8500284,
+        "longitude": -88.3125738
+      },
+      "id": "112476",
+      "name": "Jack Sadowsky V",
+      "position": "LB",
+      "ranking": 1245,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Batavia",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 218,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2023,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685545",
+    "recruiting": {
+      "athleteId": "4685545",
+      "city": "Littleton",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "A",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "08005",
+        "latitude": 39.613321,
+        "longitude": -105.0166498
+      },
+      "id": "113641",
+      "name": "Gavin Sawchuk",
+      "position": "RB",
+      "ranking": 98,
+      "rating": 0.9583,
+      "recruitType": "HighSchool",
+      "school": "Valor Christian",
+      "stars": 4,
+      "stateProvince": "CO",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2022,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295998",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5116110",
+    "recruiting": {
+      "athleteId": "5116110",
+      "city": "Northbrook",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 42.128704,
+        "longitude": -87.8265089
+      },
+      "id": "109629",
+      "name": "Patrick Schaller",
+      "position": "TE",
+      "ranking": 947,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Glenbrook North",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5152194",
+    "recruiting": {
+      "athleteId": "5152194",
+      "city": "Oakland",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "F",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "31021",
+        "latitude": 41.8358265,
+        "longitude": -96.4669709
+      },
+      "id": "218000",
+      "name": "Grant Seagren",
+      "position": "TE",
+      "ranking": 3302,
+      "rating": 0.75,
+      "recruitType": "HighSchool",
+      "school": "Oakland Craig",
+      "stars": 2,
+      "stateProvince": "NE",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "Nebraska",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Nebraska",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921514",
+    "recruiting": {
+      "athleteId": "4921514",
+      "city": "Scottsdale",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "112730",
+      "name": "Cole Shivers",
+      "position": "CB",
+      "ranking": 1522,
+      "rating": 0.8475,
+      "recruitType": "HighSchool",
+      "school": "Saguaro",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147071",
+    "recruiting": {
+      "athleteId": "5147071",
+      "city": "Durham",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "37063",
+        "latitude": 35.996653,
+        "longitude": -78.9018053
+      },
+      "id": "110849",
+      "name": "Matthew Smith",
+      "position": "LB",
+      "ranking": 2364,
+      "rating": 0.8256,
+      "recruitType": "HighSchool",
+      "school": "Hillside",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 208,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5165978",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2025,
+        "team": "Sacred Heart",
+        "year": 3
+      },
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5196355",
+    "recruiting": {
+      "athleteId": "5196355",
+      "city": "Westerville",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.126139,
+        "longitude": -82.9295287
+      },
+      "id": "107237",
+      "name": "Jon Jon Stevens Jr.",
+      "position": "ATH",
+      "ranking": 1076,
+      "rating": 0.8664,
+      "recruitType": "HighSchool",
+      "school": "Westerville North",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5193499",
+    "recruiting": {
+      "athleteId": "5193499",
+      "city": "Peru",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "110592",
+      "name": "Braxton Strong",
+      "position": "DL",
+      "ranking": 2049,
+      "rating": 0.837,
+      "recruitType": "HighSchool",
+      "school": "Peru",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5294234",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222753",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4912163",
+    "recruiting": {
+      "athleteId": "4912163",
+      "city": "Mobile",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.6943566,
+        "longitude": -88.0430541
+      },
+      "id": "114791",
+      "name": "Braden Turner",
+      "position": "CB",
+      "ranking": 1261,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "McGill Toolen",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295997",
+    "recruiting": {
+      "athleteId": "5295997",
+      "city": "Wheaton",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.8646959,
+        "longitude": -88.1101709
+      },
+      "id": "221614",
+      "name": "Seth Valeri",
+      "position": "ATH",
+      "ranking": 3230,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "St. Francis",
+      "stars": 2,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081567",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290769",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222258",
+    "recruiting": {
+      "athleteId": "5222258",
+      "city": "New Lenox",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.5119761,
+        "longitude": -87.9656098
+      },
+      "id": "107556",
+      "name": "Josh Veldman",
+      "position": "LB",
+      "ranking": 1440,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Lincoln Way West",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222752",
+    "recruiting": {
+      "athleteId": "5222752",
+      "city": "Wales",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "F",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "55133",
+        "latitude": 43.0044549,
+        "longitude": -88.3767626
+      },
+      "id": "238500",
+      "name": "Drew Wagner",
+      "position": "WR",
+      "ranking": 3084,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Kettle Moraine",
+      "stars": 2,
+      "stateProvince": "WI",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4899672",
+    "recruiting": {
+      "athleteId": "4899672",
+      "city": "Bolingbrook",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.7003302,
+        "longitude": -88.0717708
+      },
+      "id": "111785",
+      "name": "Damon Walters",
+      "position": "S",
+      "ranking": 533,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "Bolingbrook",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391537",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5154734",
+    "recruiting": {
+      "athleteId": "5154734",
+      "city": "Sioux Falls",
+      "committedTo": "South Dakota State",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "46099",
+        "latitude": 43.5499749,
+        "longitude": -96.700327
+      },
+      "id": "257059",
+      "name": "Griffin Wilde",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Jefferson",
+      "stars": null,
+      "stateProvince": "SD",
+      "teamSlug": "south-dakota-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "South Dakota State",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "South Dakota State",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147242",
+    "recruiting": {
+      "athleteId": "5147242",
+      "city": "Cleveland",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "47011",
+        "latitude": 35.1595182,
+        "longitude": -84.8766115
+      },
+      "id": "109932",
+      "name": "Tito Williams Jr.",
+      "position": "S",
+      "ranking": 1281,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Bradley Central",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222749",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279125",
+    "recruiting": null,
+    "team": "Northwestern",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "DL",
+        "season": 2026,
+        "team": "Northwestern",
+        "year": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "allRequestedRecruitingSeasonsWritten": true,
+    "allRequestedRosterSeasonsWritten": true,
+    "allTimelinesNonEmpty": true,
+    "multiTeamAppearancesPreserved": true,
+    "noExactDuplicatePlayerTeamRows": true,
+    "noWithinSeasonRecruitIdDuplicates": true
+  },
+  "counts": {
+    "multiSeasonPlayers": 36575,
+    "multiTeamPlayers": 13222,
+    "portalBySeason": {
+      "2021": 1770,
+      "2022": 2273,
+      "2023": 2502,
+      "2024": 3378,
+      "2025": 4499,
+      "2026": 4445
+    },
+    "recruitingBySeason": {
+      "2010": 2445,
+      "2011": 2682,
+      "2012": 3086,
+      "2013": 3430,
+      "2014": 3772,
+      "2015": 3516,
+      "2016": 4452,
+      "2017": 4710,
+      "2018": 4348,
+      "2019": 4455,
+      "2020": 4413,
+      "2021": 3364,
+      "2022": 3955,
+      "2023": 4166,
+      "2024": 4236,
+      "2025": 4120,
+      "2026": 3987
+    },
+    "rostersBySeason": {
+      "2021": 18698,
+      "2022": 30401,
+      "2023": 22465,
+      "2024": 22843,
+      "2025": 30072,
+      "2026": 15442
+    },
+    "sameSeasonMultiTeamAppearanceExcess": 210,
+    "sameSeasonMultiTeamPlayers": 208,
+    "teamTrendSeries": 266,
+    "uniqueRecruits": 65137,
+    "uniqueRosterPlayers": 66904
+  },
+  "quality": {
+    "duplicateRecruitRowsWithinSeason": 0,
+    "exactDuplicatePlayerTeamRows": 0,
+    "recruitsMissingCommittedTeam": 12661,
+    "recruitsMissingRating": 5699,
+    "repeatedPlayerIdsWithinSeason": 210,
+    "rosterPlayersWithEmptyTimeline": 0
+  },
+  "range": {
+    "recruiting": [
+      2010,
+      2026
+    ],
+    "rosters": [
+      2021,
+      2026
+    ]
+  },
+  "status": "PASS"
+}

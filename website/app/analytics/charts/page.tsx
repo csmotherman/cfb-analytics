@@ -1,0 +1,2 @@
+import { EmptyState } from "../../../components/ui/EmptyState";
+export default function Page(){return <div className="page-stack page-pad"><section className="page-hero"><span className="eyebrow">CHARTS · 2026</span><h1>TRACK THE<br/>SEASON.</h1><p>Michigan by game, opponent and Big Ten rank.</p></section><EmptyState eyebrow="2026 CHARTS" title="Waiting for kickoff.">Game trends start Week 1.</EmptyState></div>}

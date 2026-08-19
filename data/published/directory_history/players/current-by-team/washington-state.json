@@ -1,0 +1,4080 @@
+[
+  {
+    "playerId": "5219843",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "PK",
+        "season": 2024,
+        "team": "North Texas",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "PK",
+        "season": 2025,
+        "team": "North Texas",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "PK",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5227824",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5227832",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5159816",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5228147",
+    "recruiting": {
+      "athleteId": "5228147",
+      "city": "Park City",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "49043",
+        "latitude": 40.6460635,
+        "longitude": -111.4979741
+      },
+      "id": "238154",
+      "name": "Ben Beatty",
+      "position": "EDGE",
+      "ranking": 2492,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Park City",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "DE",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5092211",
+    "recruiting": {
+      "athleteId": "5092211",
+      "city": "Chesapeake",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "51550",
+        "latitude": 36.7183708,
+        "longitude": -76.2466798
+      },
+      "id": "113381",
+      "name": "Kaden Beatty",
+      "position": "DL",
+      "ranking": 2341,
+      "rating": 0.815,
+      "recruitType": "HighSchool",
+      "school": "Atlantic Shores Christian School",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5278402",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5223910",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2025,
+        "team": "Cal Poly",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5250418",
+    "recruiting": {
+      "athleteId": "5250418",
+      "city": "Kearney",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 79.5,
+      "hometownInfo": {
+        "fipsCode": "31019",
+        "latitude": 40.699478,
+        "longitude": -99.081858
+      },
+      "id": "108164",
+      "name": "Turner Bertrand",
+      "position": "OT",
+      "ranking": 2246,
+      "rating": 0.8397,
+      "recruitType": "HighSchool",
+      "school": "Kearney",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5119307",
+    "recruiting": {
+      "athleteId": "5119307",
+      "city": "Destrehan",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "22089",
+        "latitude": 29.960933,
+        "longitude": -90.3705407077716
+      },
+      "id": "111904",
+      "name": "Daniel Blood",
+      "position": "WR",
+      "ranking": 655,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Destrehan",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4431200",
+    "recruiting": {
+      "athleteId": "4431200",
+      "city": "Louisville",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "21111",
+        "latitude": 38.2542376,
+        "longitude": -85.759407
+      },
+      "id": "113949",
+      "name": "Selah Brown",
+      "position": "DL",
+      "ranking": 402,
+      "rating": 0.8922,
+      "recruitType": "HighSchool",
+      "school": "Louisville Male",
+      "stars": 4,
+      "stateProvince": "KY",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 251,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2021,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2022,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2023,
+        "team": "Louisville",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148359",
+    "recruiting": {
+      "athleteId": "5148359",
+      "city": "Indianapolis",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "110665",
+      "name": "Nylan Brown",
+      "position": "LB",
+      "ranking": 2127,
+      "rating": 0.8342,
+      "recruitType": "HighSchool",
+      "school": "Ben Davis",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153080",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296463",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296464",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4832802",
+    "recruiting": {
+      "athleteId": "4832802",
+      "city": "Gig Harbor",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "53053",
+        "latitude": 47.3259697,
+        "longitude": -122.5878659
+      },
+      "id": "114834",
+      "name": "Hudson Cedarland",
+      "position": "LB",
+      "ranking": 1335,
+      "rating": 0.8481,
+      "recruitType": "HighSchool",
+      "school": "Gig Harbor",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "TE",
+        "season": 2022,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "TE",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "TE",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "TE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "TE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685297",
+    "recruiting": {
+      "athleteId": "4685297",
+      "city": "Portland",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "41051",
+        "latitude": 45.5202471,
+        "longitude": -122.6741949
+      },
+      "id": "113687",
+      "name": "Darrius Clemons",
+      "position": "WR",
+      "ranking": 144,
+      "rating": 0.9422,
+      "recruitType": "HighSchool",
+      "school": "Westview",
+      "stars": 4,
+      "stateProvince": "OR",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5257868",
+    "recruiting": {
+      "athleteId": "5257868",
+      "city": "Phoenix",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4484367,
+        "longitude": -112.0741417
+      },
+      "id": "108399",
+      "name": "Jorden Cunningham",
+      "position": "OT",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Brophy College Preparatory",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220804",
+    "recruiting": {
+      "athleteId": "5220804",
+      "city": "Australia",
+      "committedTo": "New Mexico State",
+      "country": "AUS",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "257620",
+      "name": "Max Dean",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "ProKick Australia",
+      "stars": null,
+      "stateProvince": null,
+      "teamSlug": "new-mexico-state",
+      "valueType": "BENCHMARK",
+      "weight": 198,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "P",
+        "season": 2024,
+        "team": "New Mexico State",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "P",
+        "season": 2025,
+        "team": "New Mexico State",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "P",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5155746",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "WR",
+        "season": 2025,
+        "team": "West Georgia",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394580",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5155864",
+    "recruiting": {
+      "athleteId": "5155864",
+      "city": "Pittsburgh",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.4416941,
+        "longitude": -79.9900861
+      },
+      "id": "109583",
+      "name": "Julian Dugger",
+      "position": "QB",
+      "ranking": 899,
+      "rating": 0.8706,
+      "recruitType": "HighSchool",
+      "school": "Penn Hills",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 187,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5090796",
+    "recruiting": {
+      "athleteId": "5090796",
+      "city": "Yuba City",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06101",
+        "latitude": 39.1404477,
+        "longitude": -121.6169108
+      },
+      "id": "112166",
+      "name": "Noah Dunham",
+      "position": "OT",
+      "ranking": 922,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Yuba City",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5228146",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5263246",
+    "recruiting": {
+      "athleteId": "5263246",
+      "city": "Norman",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "40027",
+        "latitude": 35.2225717,
+        "longitude": -97.4394816
+      },
+      "id": "107232",
+      "name": "Owen Eshelman",
+      "position": "QB",
+      "ranking": 1072,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Norman North",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5223969",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327441",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870746",
+    "recruiting": {
+      "athleteId": "4870746",
+      "city": "Bellflower",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8825705,
+        "longitude": -118.1167679
+      },
+      "id": "111667",
+      "name": "Jshawn Frausto-Ramos",
+      "position": "CB",
+      "ranking": 418,
+      "rating": 0.8925,
+      "recruitType": "HighSchool",
+      "school": "St. John Bosco",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2025,
+        "team": "Arizona",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5221381",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153063",
+    "recruiting": {
+      "athleteId": "5153063",
+      "city": "Chehalis",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "53041",
+        "latitude": 46.6599653,
+        "longitude": -122.9634322
+      },
+      "id": "217620",
+      "name": "Gavin Fugate",
+      "position": "ATH",
+      "ranking": 2811,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "WF West",
+      "stars": 2,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 197,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153065",
+    "recruiting": {
+      "athleteId": "5153065",
+      "city": "Sammamish",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6088445,
+        "longitude": -122.0423067
+      },
+      "id": "217921",
+      "name": "Branden Ganashamoorthy",
+      "position": "WR",
+      "ranking": 3198,
+      "rating": 0.76,
+      "recruitType": "HighSchool",
+      "school": "Eastside Catholic",
+      "stars": 2,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5216630",
+    "recruiting": {
+      "athleteId": "5216630",
+      "city": "West Hills",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2032325,
+        "longitude": -118.645476
+      },
+      "id": "107785",
+      "name": "Ishmael Gibbs",
+      "position": "CB",
+      "ranking": 1671,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Chaminade",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "CB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5394568",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222221",
+    "recruiting": {
+      "athleteId": "5222221",
+      "city": "Bradenton",
+      "committedTo": "Florida",
+      "country": "USA",
+      "grade": "B",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "108974",
+      "name": "Tank Hawkins",
+      "position": "WR",
+      "ranking": 276,
+      "rating": 0.9093,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "florida",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2024,
+        "team": "Florida",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5264422",
+    "recruiting": {
+      "athleteId": "5264422",
+      "city": "Verona",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17063",
+        "latitude": 41.215285,
+        "longitude": -88.50465218777931
+      },
+      "id": "258042",
+      "name": "Dylan Hildebrand",
+      "position": "IOL",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Verona Area",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5327442",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5153067",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DE",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "DE",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5263016",
+    "recruiting": {
+      "athleteId": "5263016",
+      "city": "Liberty",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "29047",
+        "latitude": 39.246479,
+        "longitude": -94.419079
+      },
+      "id": "108329",
+      "name": "Isaiah Hung",
+      "position": "LB",
+      "ranking": 2412,
+      "rating": 0.8319,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086070",
+    "recruiting": {
+      "athleteId": "5086070",
+      "city": "Bradenton",
+      "committedTo": "Campbell",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "114854",
+      "name": "Paul Hutson III",
+      "position": "DL",
+      "ranking": 1341,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "campbell",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2022,
+        "team": "Campbell",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2023,
+        "team": "Austin Peay",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2024,
+        "team": "Campbell",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2025,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5228145",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290708",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5258474",
+    "recruiting": {
+      "athleteId": "5258474",
+      "city": "Portland",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "41051",
+        "latitude": 45.5202471,
+        "longitude": -122.6741949
+      },
+      "id": "107619",
+      "name": "Cash Landau",
+      "position": "TE",
+      "ranking": 1507,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Franklin",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5152136",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DT",
+        "season": 2024,
+        "team": "Eastern Washington",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DT",
+        "season": 2025,
+        "team": "Eastern Washington",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5024359",
+    "recruiting": {
+      "athleteId": "5024359",
+      "city": "Snohomish",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "53061",
+        "latitude": 47.9180275,
+        "longitude": -122.0899646
+      },
+      "id": "112450",
+      "name": "Trey Leckner",
+      "position": "ATH",
+      "ranking": 1220,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Glacier Peak",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "TE",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "TE",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "TE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "TE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5227827",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5085119",
+    "recruiting": {
+      "athleteId": "5085119",
+      "city": "Colbert",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13195",
+        "latitude": 34.0378903,
+        "longitude": -83.2126517
+      },
+      "id": "235106",
+      "name": "Jonny Lester",
+      "position": "TE",
+      "ranking": 2552,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Northwest Christian School (nwcs)",
+      "stars": 2,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2022,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4431227",
+    "recruiting": {
+      "athleteId": "4431227",
+      "city": "Griffin",
+      "committedTo": "Indiana",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13255",
+        "latitude": 33.2467807,
+        "longitude": -84.2640904
+      },
+      "id": "119082",
+      "name": "Damarjhe Lewis",
+      "position": "DT",
+      "ranking": 671,
+      "rating": 0.8707,
+      "recruitType": "HighSchool",
+      "school": "Griffin",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "indiana",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2020
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2021,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2022,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2023,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394575",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "P",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5149268",
+    "recruiting": {
+      "athleteId": "5149268",
+      "city": "Seattle",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6038321,
+        "longitude": -122.3300624
+      },
+      "id": "110192",
+      "name": "Chris Lino",
+      "position": "OT",
+      "ranking": 1541,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Seattle Prep",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5153064",
+    "recruiting": {
+      "athleteId": "5153064",
+      "city": "Sumner",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "053",
+        "latitude": 47.22131,
+        "longitude": -122.2326539
+      },
+      "id": "217181",
+      "name": "Kyle Martin",
+      "position": "IOL",
+      "ranking": 2391,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Sumner",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151345",
+    "recruiting": {
+      "athleteId": "5151345",
+      "city": "Loomis",
+      "committedTo": "San Jos\u00e9 State",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06061",
+        "latitude": 38.8212889,
+        "longitude": -121.1930041
+      },
+      "id": "217391",
+      "name": "Akio Martinson",
+      "position": "DL",
+      "ranking": 2678,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Del Oro",
+      "stars": 2,
+      "stateProvince": "CA",
+      "teamSlug": "san-jos-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2023,
+        "team": "San Jos\u00e9 State",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2024,
+        "team": "San Jos\u00e9 State",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394578",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081357",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2022,
+        "team": "Maryland",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290273",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5394567",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5165156",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2025,
+        "team": "Idaho",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5254887",
+    "recruiting": {
+      "athleteId": "5254887",
+      "city": "Fort Worth",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "108131",
+      "name": "Gaylon McNeal",
+      "position": "S",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "North Crowley",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5155127",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2025,
+        "team": "Saint Francis",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394577",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394573",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296468",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 18,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5394572",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5394579",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5213124",
+    "recruiting": {
+      "athleteId": "5213124",
+      "city": "Houston",
+      "committedTo": "California",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "107478",
+      "name": "Ike Okafor",
+      "position": "DL",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Alief Hastings",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "california",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2025,
+        "team": "California",
+        "year": 1
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147188",
+    "recruiting": {
+      "athleteId": "5147188",
+      "city": "Katy",
+      "committedTo": "Arizona",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "110055",
+      "name": "Eduwa Okundaye",
+      "position": "EDGE",
+      "ranking": 1391,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Katy Tompkins",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DE",
+        "season": 2024,
+        "team": "Arizona",
+        "year": 2
+      },
+      {
+        "jersey": 94,
+        "position": "DE",
+        "season": 2025,
+        "team": "Arizona",
+        "year": 2
+      },
+      {
+        "jersey": 94,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296469",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5394576",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147870",
+    "recruiting": {
+      "athleteId": "5147870",
+      "city": "SACRAMENTO",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06067",
+        "latitude": 38.5815719,
+        "longitude": -121.4943996
+      },
+      "id": "109733",
+      "name": "Kayo Patu",
+      "position": "S",
+      "ranking": 1053,
+      "rating": 0.8658,
+      "recruitType": "HighSchool",
+      "school": "Roosevelt",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4685492",
+    "recruiting": {
+      "athleteId": "4685492",
+      "city": "Murrieta",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.577752399999994,
+        "longitude": -117.18845420205307
+      },
+      "id": "113791",
+      "name": "Jack Pedersen",
+      "position": "TE",
+      "ranking": 248,
+      "rating": 0.9107,
+      "recruitType": "HighSchool",
+      "school": "Vista Murrieta",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "TE",
+        "season": 2022,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "TE",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "TE",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "TE",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "TE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394571",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214533",
+    "recruiting": {
+      "athleteId": "5214533",
+      "city": "Pearland",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "107513",
+      "name": "Kyle Peterson",
+      "position": "S",
+      "ranking": 1405,
+      "rating": 0.8592,
+      "recruitType": "HighSchool",
+      "school": "Shadow Creek",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "S",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226019",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "UC Davis",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394566",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5095368",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DE",
+        "season": 2022,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DE",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DE",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5076654",
+    "recruiting": {
+      "athleteId": "5076654",
+      "city": "Lakewood",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "53053",
+        "latitude": 47.1714085,
+        "longitude": -122.5164
+      },
+      "id": "112434",
+      "name": "Leo Pulalasi",
+      "position": "ATH",
+      "ranking": 1203,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "Lakes",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5112995",
+    "recruiting": {
+      "athleteId": "5112995",
+      "city": "Temecula",
+      "committedTo": "Cal Poly",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.4946353,
+        "longitude": -117.1473661
+      },
+      "id": "255958",
+      "name": "Kai Rapolla",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Rancho Christian",
+      "stars": null,
+      "stateProvince": "CA",
+      "teamSlug": "cal-poly",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2022,
+        "team": "Cal Poly",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2023,
+        "team": "Cal Poly",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2024,
+        "team": "Cal Poly",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5210428",
+    "recruiting": {
+      "athleteId": "5210428",
+      "city": "Portland",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "41051",
+        "latitude": 45.5202471,
+        "longitude": -122.6741949
+      },
+      "id": "108044",
+      "name": "Peyton Read",
+      "position": "TE",
+      "ranking": 2023,
+      "rating": 0.8433,
+      "recruitType": "HighSchool",
+      "school": "Westview",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5227816",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5227813",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "S",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394570",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215567",
+    "recruiting": {
+      "athleteId": "5215567",
+      "city": "Westlake Village",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "108027",
+      "name": "Jamarey Smith",
+      "position": "S",
+      "ranking": 1996,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5298065",
+    "recruiting": {
+      "athleteId": "5298065",
+      "city": "Pasadena",
+      "committedTo": "Cal Poly",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1476452,
+        "longitude": -118.1444779
+      },
+      "id": "108232",
+      "name": "CJ Solis-Lumar",
+      "position": "CB",
+      "ranking": 2303,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "Pasadena",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "cal-poly",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2025,
+        "team": "Cal Poly",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394574",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5227843",
+    "recruiting": {
+      "athleteId": "5227843",
+      "city": "North Augusta",
+      "committedTo": "South Dakota State",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "45003",
+        "latitude": 33.520849999999996,
+        "longitude": -81.96696923114902
+      },
+      "id": "257485",
+      "name": "Jack Stevens",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "North Augusta",
+      "stars": null,
+      "stateProvince": "SC",
+      "teamSlug": "south-dakota-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2024,
+        "team": "South Dakota State",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5221039",
+    "recruiting": {
+      "athleteId": "5221039",
+      "city": "East Palo Alto",
+      "committedTo": "USC",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "06081",
+        "latitude": 37.4688273,
+        "longitude": -122.1410751
+      },
+      "id": "109525",
+      "name": "Kalolo Ta'aga",
+      "position": "OT",
+      "ranking": 826,
+      "rating": 0.8731,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Riordan",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "usc",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "USC",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Utah",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4911919",
+    "recruiting": {
+      "athleteId": "4911919",
+      "city": "Killeen",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48027",
+        "latitude": 31.1171441,
+        "longitude": -97.727796
+      },
+      "id": "113924",
+      "name": "Khamari Terrell",
+      "position": "CB",
+      "ranking": 380,
+      "rating": 0.8937,
+      "recruitType": "HighSchool",
+      "school": "Killeen Shoemaker",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2022,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2024,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2025,
+        "team": "Texas State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220604",
+    "recruiting": {
+      "athleteId": "5220604",
+      "city": "Los Gatos",
+      "committedTo": "San Jos\u00e9 State",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06085",
+        "latitude": 37.226611,
+        "longitude": -121.9746797
+      },
+      "id": "111236",
+      "name": "Jaylen Thomas",
+      "position": "ATH",
+      "ranking": 3079,
+      "rating": 0.7833,
+      "recruitType": "HighSchool",
+      "school": "Los Gatos",
+      "stars": 2,
+      "stateProvince": "CA",
+      "teamSlug": "san-jos-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2024,
+        "team": "San Jos\u00e9 State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2025,
+        "team": "San Jos\u00e9 State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5193557",
+    "recruiting": {
+      "athleteId": "5193557",
+      "city": "Livermore",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06001",
+        "latitude": 37.6820583,
+        "longitude": -121.7680531
+      },
+      "id": "238121",
+      "name": "Xavier Thorpe",
+      "position": "OT",
+      "ranking": 2492,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Livermore",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5323360",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5048884",
+    "recruiting": {
+      "athleteId": "5048884",
+      "city": "Kennewick",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "53005",
+        "latitude": 46.2087066,
+        "longitude": -119.1199192
+      },
+      "id": "112878",
+      "name": "Ashton Tripp",
+      "position": "OT",
+      "ranking": 1664,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "Kennewick",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685584",
+    "recruiting": {
+      "athleteId": "4685584",
+      "city": "San Diego",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 32.7174209,
+        "longitude": -117.1627714
+      },
+      "id": "113688",
+      "name": "Jalil Tucker",
+      "position": "CB",
+      "ranking": 145,
+      "rating": 0.9417,
+      "recruitType": "HighSchool",
+      "school": "San Diego Lincoln",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2022,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209444",
+    "recruiting": {
+      "athleteId": "5209444",
+      "city": "Olympia",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "53067",
+        "latitude": 47.0451022,
+        "longitude": -122.8950075
+      },
+      "id": "107874",
+      "name": "Malijah Tucker",
+      "position": "DL",
+      "ranking": 1850,
+      "rating": 0.8494,
+      "recruitType": "HighSchool",
+      "school": "Tumwater",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DT",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 58,
+        "position": "DT",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5154732",
+    "recruiting": {
+      "athleteId": "5154732",
+      "city": "Lutz",
+      "committedTo": "South Dakota State",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 28.1511243,
+        "longitude": -82.4614831
+      },
+      "id": "257060",
+      "name": "Kirby Vorhees",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Steinbrenner",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "south-dakota-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2023,
+        "team": "South Dakota State",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2024,
+        "team": "South Dakota State",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394569",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5149495",
+    "recruiting": {
+      "athleteId": "5149495",
+      "city": "Goodyear",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4353672,
+        "longitude": -112.3576005
+      },
+      "id": "108822",
+      "name": "DJ Warner",
+      "position": "EDGE",
+      "ranking": 124,
+      "rating": 0.9438,
+      "recruitType": "HighSchool",
+      "school": "Desert Edge",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 217,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5332429",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5210502",
+    "recruiting": {
+      "athleteId": "5210502",
+      "city": "Camas",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "53011",
+        "latitude": 45.5911103,
+        "longitude": -122.4122248
+      },
+      "id": "107823",
+      "name": "Luke Webb",
+      "position": "EDGE",
+      "ranking": 1711,
+      "rating": 0.8508,
+      "recruitType": "HighSchool",
+      "school": "Camas",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 44,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5264503",
+    "recruiting": {
+      "athleteId": "5264503",
+      "city": "Chaska",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "27019",
+        "latitude": 44.7894072,
+        "longitude": -93.6021791
+      },
+      "id": "108335",
+      "name": "Josh Wedel",
+      "position": "TE",
+      "ranking": 2414,
+      "rating": 0.8317,
+      "recruitType": "HighSchool",
+      "school": "Chaska",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5167316",
+    "recruiting": {
+      "athleteId": "5167316",
+      "city": "Corona",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "108191",
+      "name": "Noah Westbrook",
+      "position": "WR",
+      "ranking": 2272,
+      "rating": 0.8383,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5238343",
+    "recruiting": {
+      "athleteId": "5238343",
+      "city": "Orange",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7872568,
+        "longitude": -117.8503088
+      },
+      "id": "108066",
+      "name": "Arion Williams",
+      "position": "IOL",
+      "ranking": 2044,
+      "rating": 0.8425,
+      "recruitType": "HighSchool",
+      "school": "Orange Lutheran",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5182344",
+    "recruiting": null,
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5227814",
+    "recruiting": {
+      "athleteId": "5227814",
+      "city": "Chanhassen",
+      "committedTo": "South Dakota State",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "27019",
+        "latitude": 44.8618403,
+        "longitude": -93.5307207
+      },
+      "id": "238184",
+      "name": "Maxwell Woods",
+      "position": "RB",
+      "ranking": 2705,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Chanhassen",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "south-dakota-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2024,
+        "team": "South Dakota State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5174763",
+    "recruiting": {
+      "athleteId": "5174763",
+      "city": "McAlester",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "40121",
+        "latitude": 34.9334981,
+        "longitude": -95.7697934
+      },
+      "id": "110258",
+      "name": "Malachi Wrice",
+      "position": "EDGE",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "McAlester",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "DE",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "DE",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211772",
+    "recruiting": {
+      "athleteId": "5211772",
+      "city": "Country Club Hills",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.5680898,
+        "longitude": -87.7203257
+      },
+      "id": "107964",
+      "name": "Erimus Wright",
+      "position": "ATH",
+      "ranking": 1937,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Hillcrest",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4782663",
+    "recruiting": {
+      "athleteId": "4782663",
+      "city": "Rabun Gap",
+      "committedTo": "Vanderbilt",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "13241",
+        "latitude": 34.97479,
+        "longitude": -83.30549
+      },
+      "id": "234645",
+      "name": "Linus Zunk",
+      "position": "DL",
+      "ranking": 997,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Rabun Gap-Nacoochee",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "vanderbilt",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Washington State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DE",
+        "season": 2022,
+        "team": "Vanderbilt",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DE",
+        "season": 2023,
+        "team": "Vanderbilt",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DE",
+        "season": 2024,
+        "team": "Vanderbilt",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DE",
+        "season": 2025,
+        "team": "Vanderbilt",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DE",
+        "season": 2026,
+        "team": "Washington State",
+        "year": 4
+      }
+    ]
+  }
+]

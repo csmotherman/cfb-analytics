@@ -1,0 +1,83 @@
+{
+  "artifacts": {
+    "audit.json": "1a5495a2896162c7bb4afdd8726c26abeff52b0aba6eccbd82da8c3604629923",
+    "michigan/2014": "71276e74b0d1b72edcd99898b7ba7b03acf79ab3ba72e0e45451700ac8b8d82b",
+    "michigan/2015": "ff63f4408dd9bab90165d69d0a8be6f651760d4b9c5854cf8531eee772acde09",
+    "michigan/2016": "234645911f8bae516878d39b680bc7b0c73a7e95c4e771b4febe5e4a8d7176c1",
+    "michigan/2017": "4a45778ab15b6de8427d5ecf376c6f8f01d37c2d10c36c49422b2e732c2c67be",
+    "michigan/2018": "7954041d30819d83933c39abf6ff8aa3228b5e0061c6d9f380ba003a1da28c96",
+    "michigan/2019": "694519feba25f58b4bb642c0fda839b5caa727e1cfae405d712d4b3774ea9175",
+    "michigan/2021": "98075eab8b7e2f64b30990614107c88fdf2c0432da6b249ca73b0085b2d14d25",
+    "michigan/2022": "4147efe41288b256337a52bbfe7909d28eb5614f79f450984b721672613db3e9",
+    "michigan/2023": "460c2058e6bebe47111e050777735a5e3acd39f21d39f425a85453380abe5568",
+    "michigan/2024": "d66e88e4eb3a2273f620c90fd2e01e1d99710d46b16d32f255d58b2175eec20f",
+    "michigan/2025": "ac9b3c4ec85ef8b8554ca2ab5bf9c4e293ae6b993d8ad296555f8b139224097b",
+    "seasons/2014.json": "1ba2dd1854ce5988b391a045f9ba41bc08f46f21ca433faf3c705c65c1f442c3",
+    "seasons/2015.json": "706c09ec6899449a1eb6a5f19430d30b9768e3d896d0cfa575ebde470f5532f9",
+    "seasons/2016.json": "0591a35fb18a05d83060a54b6ba9b911fa14ccb4c840d38f3fe515004831ab51",
+    "seasons/2017.json": "03d03d9f2798685af5f08a2a121417e0bc86a749809d5e060eae31b325bcff38",
+    "seasons/2018.json": "87967f7dae9fda65a9404cce61fa79b6f1bb33bb8bdb91fa8bef47a27c67f97a",
+    "seasons/2019.json": "138d3c14372ada1de120b967aee2d241a7a38f71fd434333de58375657c882ec",
+    "seasons/2021.json": "d6880bf0e14a6e1e3acf5ad4756fb387017d232356d9c2e891a619a53d65a180",
+    "seasons/2022.json": "d07371a1fa9176a8a0fed64075ce33a57355cac3489eb257d6983387fb215ed5",
+    "seasons/2023.json": "a8e5d9d5ed5c7869e8c5f8041db993ef69b6864530ebf54a2bc110cbe8041b50",
+    "seasons/2024.json": "708e28af955d794c7482b69594f9eb71d24a5a4ba44ab02e284bebb78499c433",
+    "seasons/2025.json": "312b4e01144f9c7fd4ee2c0554488e2150ca8025fb06adb89284575633d3fcca"
+  },
+  "audit": {
+    "actualSelections": 60,
+    "brierScore": 0.011083,
+    "evaluation": "leave-one-season-out",
+    "features": [
+      "winPercentage",
+      "losses",
+      "strengthOfSchedule",
+      "qualityWins",
+      "scoringMarginPerGame",
+      "conferenceChampion"
+    ],
+    "logLoss": 0.038204,
+    "maxFieldSizeSumError": 1e-05,
+    "modelVersion": "historical-cfp-resume-v1",
+    "seasons": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "teamSeasons": 1438,
+    "topFieldAccuracy": 0.866667
+  },
+  "modelVersion": "historical-cfp-resume-v1",
+  "notApplicableSeasons": [
+    2010,
+    2011,
+    2012,
+    2013
+  ],
+  "publishedAtUtc": "2026-08-19T02:28:20.611449+00:00",
+  "scope": "final regular-season resume; retrospective, not preseason",
+  "seasons": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "unavailableSeasons": [
+    2020
+  ]
+}

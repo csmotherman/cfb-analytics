@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "player-grades.json": "c43342283d696c13982b9b545a2d5078c3117db25b4ad7d557d9f7ef82776c7b",
+    "projected-lineup.json": "44dd389423a02999841b4a208f57b8a26022d4adccb136f38d3ab501be22557d",
+    "recruiting.json": "5752ac51ff9412c3806949fc41b9d937e25533d86bec30c4bd706cf2e48cd953"
+  },
+  "gradeScale": {
+    "A": ">= .950",
+    "B": ">= .900",
+    "C": ">= .850",
+    "D": ">= .800",
+    "F": "< .800",
+    "S": ">= .980",
+    "S+": ">= .995"
+  },
+  "gradedPlayers": 51,
+  "lineupDefinitionVersion": "michigan-preseason-lineup-v1",
+  "publishedAtUtc": "2026-08-19T00:14:16.442037+00:00",
+  "recruitRows": 24,
+  "season": 2026,
+  "sourceUrls": [
+    "https://api.collegefootballdata.com/recruiting/players?year=2026&team=Michigan",
+    "https://api.collegefootballdata.com/recruiting/teams?year=2026&team=Michigan",
+    "https://api.collegefootballdata.com/recruiting/players?year=2022&team=Michigan",
+    "https://api.collegefootballdata.com/recruiting/players?year=2023&team=Michigan",
+    "https://api.collegefootballdata.com/recruiting/players?year=2024&team=Michigan",
+    "https://api.collegefootballdata.com/recruiting/players?year=2025&team=Michigan"
+  ],
+  "team": "Michigan",
+  "valueType": "BENCHMARK",
+  "version": "michigan-recruiting-v2"
+}

@@ -1,0 +1,4138 @@
+[
+  {
+    "playerId": "5393812",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5393811",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5154217",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2024,
+        "team": "Kennesaw State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5150930",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296036",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219701",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4685283",
+    "recruiting": {
+      "athleteId": "4685283",
+      "city": "Chicago",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "A",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "113622",
+      "name": "Kaleb Brown",
+      "position": "WR",
+      "ranking": 79,
+      "rating": 0.9684,
+      "recruitType": "HighSchool",
+      "school": "St. Rita",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2022,
+        "team": "Ohio State",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2023,
+        "team": "Iowa",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Iowa",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219694",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5194316",
+    "recruiting": {
+      "athleteId": "5194316",
+      "city": "Leeds",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.506102,
+        "longitude": -86.61711816402307
+      },
+      "id": "111142",
+      "name": "Chris Burge",
+      "position": "DL",
+      "ranking": 2794,
+      "rating": 0.8083,
+      "recruitType": "HighSchool",
+      "school": "Leeds",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "DE",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "DE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "DE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5057381",
+    "recruiting": {
+      "athleteId": "5057381",
+      "city": "Springville",
+      "committedTo": "BYU",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "49049",
+        "latitude": 40.1668572,
+        "longitude": -111.6109221
+      },
+      "id": "112772",
+      "name": "Ryder Burton",
+      "position": "QB",
+      "ranking": 1564,
+      "rating": 0.8464,
+      "recruitType": "HighSchool",
+      "school": "Springville",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "byu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2023,
+        "team": "BYU",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5092287",
+    "recruiting": {
+      "athleteId": "5092287",
+      "city": "Hyattsville",
+      "committedTo": "Middle Tennessee",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.9529442,
+        "longitude": -76.9408647
+      },
+      "id": "255858",
+      "name": "Muaaz Byard",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "DeMatha Catholic",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "middle-tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2022,
+        "team": "Middle Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2023,
+        "team": "Middle Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2024,
+        "team": "Middle Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2025,
+        "team": "Middle Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327481",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5203714",
+    "recruiting": {
+      "athleteId": "5203714",
+      "city": "Opa Locka",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.896733849999997,
+        "longitude": -80.25949640850294
+      },
+      "id": "107675",
+      "name": "Gabriel Cline",
+      "position": "TE",
+      "ranking": 1560,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Monsignor Pace",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5393810",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4920191",
+    "recruiting": {
+      "athleteId": "4920191",
+      "city": "College Station",
+      "committedTo": "Duke",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48041",
+        "latitude": 30.5955289,
+        "longitude": -96.3071042
+      },
+      "id": "112112",
+      "name": "Marquise Collins",
+      "position": "RB",
+      "ranking": 874,
+      "rating": 0.8686,
+      "recruitType": "HighSchool",
+      "school": "College Station",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "duke",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "RB",
+        "season": 2023,
+        "team": "Duke",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "RB",
+        "season": 2024,
+        "team": "Duke",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "RB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5194310",
+    "recruiting": {
+      "athleteId": "5194310",
+      "city": "Madison",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "01089",
+        "latitude": 34.6928726,
+        "longitude": -86.7511427
+      },
+      "id": "111135",
+      "name": "Myles Cook",
+      "position": "EDGE",
+      "ranking": 2790,
+      "rating": 0.8089,
+      "recruitType": "HighSchool",
+      "school": "Bob Jones",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DE",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "DE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "DE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5102586",
+    "recruiting": {
+      "athleteId": "5102586",
+      "city": "Phenix City",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01113",
+        "latitude": 32.4709761,
+        "longitude": -85.0007653
+      },
+      "id": "112595",
+      "name": "Keyon Cox",
+      "position": "OT",
+      "ranking": 1365,
+      "rating": 0.8514,
+      "recruitType": "HighSchool",
+      "school": "Central Phenix City",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5154887",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2024,
+        "team": "Youngstown State",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5300742",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DL",
+        "season": 2025,
+        "team": "Youngstown State",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5122390",
+    "recruiting": {
+      "athleteId": "5122390",
+      "city": "Franklinton",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "22117",
+        "latitude": 30.8471283,
+        "longitude": -90.153141
+      },
+      "id": "109316",
+      "name": "KJ Daniels",
+      "position": "WR",
+      "ranking": 619,
+      "rating": 0.8819,
+      "recruitType": "HighSchool",
+      "school": "Bowling Green School",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oklahoma",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296038",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219700",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5220652",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2025,
+        "team": "Georgia State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151663",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2023,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2024,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296039",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5252197",
+    "recruiting": {
+      "athleteId": "5252197",
+      "city": "Madison",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13211",
+        "latitude": 33.5956814,
+        "longitude": -83.467944
+      },
+      "id": "106839",
+      "name": "Jaylen Elder",
+      "position": "WR",
+      "ranking": 645,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Morgan County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5086373",
+    "recruiting": {
+      "athleteId": "5086373",
+      "city": "Manor",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.3407629,
+        "longitude": -97.5569456
+      },
+      "id": "112894",
+      "name": "Ike Esonwune",
+      "position": "LB",
+      "ranking": 1680,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Manor",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5078812",
+    "recruiting": {
+      "athleteId": "5078812",
+      "city": "Apopka",
+      "committedTo": "East Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.6779683,
+        "longitude": -81.5115214
+      },
+      "id": "113039",
+      "name": "Antonio Ferguson",
+      "position": "TE",
+      "ranking": 1862,
+      "rating": 0.8337,
+      "recruitType": "HighSchool",
+      "school": "Apopka",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "east-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "East Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Florida International",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5148648",
+    "recruiting": {
+      "athleteId": "5148648",
+      "city": "Fort Worth",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "107158",
+      "name": "Draden Fullbright",
+      "position": "CB",
+      "ranking": 987,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "North Crowley",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 1
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5155750",
+    "recruiting": {
+      "athleteId": "5155750",
+      "city": "Saraland",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 67,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.820742,
+        "longitude": -88.0705556
+      },
+      "id": "221187",
+      "name": "CD Gill",
+      "position": "WR",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Saraland",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5098783",
+    "recruiting": {
+      "athleteId": "5098783",
+      "city": "Springdale",
+      "committedTo": "Morgan State",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.9376113,
+        "longitude": -76.8388603
+      },
+      "id": "256109",
+      "name": "Blanche Gold",
+      "position": "EDGE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "C.H. Flowers",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "morgan-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2022,
+        "team": "Morgan State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2025,
+        "team": "Morgan State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5227913",
+    "recruiting": {
+      "athleteId": "5227913",
+      "city": "Saraland",
+      "committedTo": "Alabama A&M",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.820742,
+        "longitude": -88.0705556
+      },
+      "id": "257750",
+      "name": "Delvon Gulley",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Saraland",
+      "stars": null,
+      "stateProvince": "AL",
+      "teamSlug": "alabama-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 186,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2024,
+        "team": "Alabama A&M",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4703027",
+    "recruiting": {
+      "athleteId": "4703027",
+      "city": "Shelby",
+      "committedTo": "Wake Forest",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37045",
+        "latitude": 35.2919489,
+        "longitude": -81.5402112
+      },
+      "id": "114226",
+      "name": "Eli Hall",
+      "position": "DL",
+      "ranking": 678,
+      "rating": 0.8741,
+      "recruitType": "HighSchool",
+      "school": "Crest",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "wake-forest",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2022,
+        "team": "Wake Forest",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2023,
+        "team": "Wake Forest",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2024,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2025,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092221",
+    "recruiting": {
+      "athleteId": "5092221",
+      "city": "Lafayette",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "22055",
+        "latitude": 30.2240897,
+        "longitude": -92.0198427
+      },
+      "id": "256474",
+      "name": "Badger Hargett",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Ascension Episcopal",
+      "stars": null,
+      "stateProvince": "LA",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "P",
+        "season": 2023,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "P",
+        "season": 2024,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "P",
+        "season": 2025,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "P",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5327488",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5278427",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5162395",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327489",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081640",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2022,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2023,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2024,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152135",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2024,
+        "team": "Eastern Washington",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Washington",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219690",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5095096",
+    "recruiting": {
+      "athleteId": "5095096",
+      "city": "Fort Lauderdale",
+      "committedTo": "Gardner-Webb",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "114104",
+      "name": "AJ Johnson",
+      "position": "WR",
+      "ranking": 562,
+      "rating": 0.8804,
+      "recruitType": "HighSchool",
+      "school": "Western",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "gardner-webb",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2022,
+        "team": "Gardner-Webb",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2023,
+        "team": "Gardner-Webb",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "East Tennessee State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219697",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5192677",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2025,
+        "team": "Memphis",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219695",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "S",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "S",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "S",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870881",
+    "recruiting": {
+      "athleteId": "4870881",
+      "city": "Orlando",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "111802",
+      "name": "Payton Kirkland",
+      "position": "IOL",
+      "ranking": 559,
+      "rating": 0.8828,
+      "recruitType": "HighSchool",
+      "school": "Dr. Phillips",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 360,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2023,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "Colorado",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141512",
+    "recruiting": {
+      "athleteId": "5141512",
+      "city": "Montgomery",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "01101",
+        "latitude": 32.3669656,
+        "longitude": -86.3006485
+      },
+      "id": "221499",
+      "name": "Julius Lane Jr",
+      "position": "ATH",
+      "ranking": 3126,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Pike Road",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "CB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 18,
+        "position": "CB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5265387",
+    "recruiting": {
+      "athleteId": "5265387",
+      "city": "Dacula",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.9887165,
+        "longitude": -83.8979573
+      },
+      "id": "108143",
+      "name": "Donovan Lawrence",
+      "position": "IOL",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Dacula",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 350,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4875933",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2021,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2022,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2023,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2024,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5149973",
+    "recruiting": {
+      "athleteId": "5149973",
+      "city": "LaGrange",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13285",
+        "latitude": 33.039291,
+        "longitude": -85.0313269
+      },
+      "id": "110593",
+      "name": "Jaden Ligon",
+      "position": "OT",
+      "ranking": 2049,
+      "rating": 0.837,
+      "recruitType": "HighSchool",
+      "school": "LaGrange",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157112",
+    "recruiting": {
+      "athleteId": "5157112",
+      "city": "La Puente",
+      "committedTo": "Campbell",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.01979,
+        "longitude": -117.9503677
+      },
+      "id": "113532",
+      "name": "Raymond Macias",
+      "position": "DL",
+      "ranking": 2800,
+      "rating": 0.7894,
+      "recruitType": "HighSchool",
+      "school": "Bishop Amat",
+      "stars": 2,
+      "stateProvince": "CA",
+      "teamSlug": "campbell",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2024,
+        "team": "Campbell",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Campbell",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5119262",
+    "recruiting": {
+      "athleteId": "5119262",
+      "city": "Clinton",
+      "committedTo": "Vanderbilt",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "47001",
+        "latitude": 36.1034126,
+        "longitude": -84.1318632
+      },
+      "id": "112083",
+      "name": "Barrett Maddox",
+      "position": "OT",
+      "ranking": 841,
+      "rating": 0.8703,
+      "recruitType": "HighSchool",
+      "school": "Clinton",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "vanderbilt",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "Vanderbilt",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193467",
+    "recruiting": {
+      "athleteId": "5193467",
+      "city": "Trussville",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.626629,
+        "longitude": -86.5549335251678
+      },
+      "id": "110488",
+      "name": "Kade Martin",
+      "position": "IOL",
+      "ranking": 1880,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Hewitt-Trussville",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5193338",
+    "recruiting": {
+      "athleteId": "5193338",
+      "city": "Mccalla",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.3062319,
+        "longitude": -87.0241656
+      },
+      "id": "237953",
+      "name": "J'Quan Mason",
+      "position": "EDGE",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "McAdory",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4876855",
+    "recruiting": {
+      "athleteId": "4876855",
+      "city": "Washington",
+      "committedTo": "Monmouth",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "118196",
+      "name": "Kyrik Mason",
+      "position": "OT",
+      "ranking": 2494,
+      "rating": 0.7956,
+      "recruitType": "HighSchool",
+      "school": "St. John's College",
+      "stars": 2,
+      "stateProvince": "DC",
+      "teamSlug": "monmouth",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2021
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2022,
+        "team": "Monmouth",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Georgia State",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152798",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2024,
+        "team": "Sacramento State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2025,
+        "team": "Sacramento State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4897730",
+    "recruiting": {
+      "athleteId": "4897730",
+      "city": "Mobile",
+      "committedTo": "South Alabama",
+      "country": "USA",
+      "grade": "D",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.6943566,
+        "longitude": -88.0430541
+      },
+      "id": "115528",
+      "name": "Bam McReynolds",
+      "position": "RB",
+      "ranking": 2192,
+      "rating": 0.8111,
+      "recruitType": "HighSchool",
+      "school": "McGill Toolen",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "south-alabama",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2022,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2023,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2024,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2025,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5272712",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5096393",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2022,
+        "team": "Troy",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092470",
+    "recruiting": {
+      "athleteId": "5092470",
+      "city": "Bay Minette",
+      "committedTo": "Southern Miss",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "01003",
+        "latitude": 30.8829628,
+        "longitude": -87.7730474
+      },
+      "id": "115544",
+      "name": "Ty Mims",
+      "position": "WR",
+      "ranking": 2276,
+      "rating": 0.8096,
+      "recruitType": "HighSchool",
+      "school": "Baldwin County",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "southern-miss",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2022,
+        "team": "Southern Miss",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2023,
+        "team": "Southern Miss",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Southern Miss",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Texas State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393807",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5393808",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149746",
+    "recruiting": {
+      "athleteId": "5149746",
+      "city": "Ellenwood",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13063",
+        "latitude": 33.6101096,
+        "longitude": -84.287978
+      },
+      "id": "111020",
+      "name": "Kyle Mosley",
+      "position": "DL",
+      "ranking": 2608,
+      "rating": 0.8167,
+      "recruitType": "HighSchool",
+      "school": "Cedar Grove",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296042",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5085244",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2022,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2023,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2024,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Nicholls",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5232192",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2025,
+        "team": "Georgia State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296043",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4432470",
+    "recruiting": {
+      "athleteId": "4432470",
+      "city": "Pearland",
+      "committedTo": "Duke",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "119729",
+      "name": "Calib Perez",
+      "position": "OT",
+      "ranking": 1347,
+      "rating": 0.8459,
+      "recruitType": "HighSchool",
+      "school": "Pearland Dawson",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "duke",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2020
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2021,
+        "team": "Duke",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2022,
+        "team": "Duke",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Duke",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295450",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5195616",
+    "recruiting": {
+      "athleteId": "5195616",
+      "city": "Montgomery",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01101",
+        "latitude": 32.3669656,
+        "longitude": -86.3006485
+      },
+      "id": "106812",
+      "name": "Jotavion Pierce",
+      "position": "S",
+      "ranking": 619,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Montgomery Catholic Preparatory",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 1
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5265519",
+    "recruiting": {
+      "athleteId": "5265519",
+      "city": "Auburn",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "01081",
+        "latitude": 32.6550905,
+        "longitude": -85.50364346309962
+      },
+      "id": "221251",
+      "name": "Aidan Platt",
+      "position": "IOL",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Auburn",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 1
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079568",
+    "recruiting": {
+      "athleteId": "5079568",
+      "city": "Miami",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "110059",
+      "name": "Adrian Posse",
+      "position": "QB",
+      "ranking": 1408,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5167188",
+    "recruiting": {
+      "athleteId": "5167188",
+      "city": "Arlington",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "107307",
+      "name": "Elijah Pratt",
+      "position": "S",
+      "ranking": 1133,
+      "rating": 0.8647,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302755",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296044",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393813",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219011",
+    "recruiting": {
+      "athleteId": "5219011",
+      "city": "Woodbridge",
+      "committedTo": "Wake Forest",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "51153",
+        "latitude": 38.6581723,
+        "longitude": -77.2497049
+      },
+      "id": "110764",
+      "name": "EJ Reid",
+      "position": "WR",
+      "ranking": 2206,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "Freedom",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "wake-forest",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Wake Forest",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Wake Forest",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157260",
+    "recruiting": {
+      "athleteId": "5157260",
+      "city": "North Charleston",
+      "committedTo": "East Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "45019",
+        "latitude": 32.9131295,
+        "longitude": -80.0629981965219
+      },
+      "id": "110730",
+      "name": "Samuel Riddy Jr.",
+      "position": "EDGE",
+      "ranking": 2191,
+      "rating": 0.8308,
+      "recruitType": "HighSchool",
+      "school": "North Charleston",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "east-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "East Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "East Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5393806",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4918110",
+    "recruiting": {
+      "athleteId": "4918110",
+      "city": "San Diego",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 32.7174209,
+        "longitude": -117.1627714
+      },
+      "id": "111425",
+      "name": "Rod Robinson II",
+      "position": "RB",
+      "ranking": 193,
+      "rating": 0.9248,
+      "recruitType": "HighSchool",
+      "school": "San Diego Lincoln",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2023,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2024,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2025,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5197123",
+    "recruiting": {
+      "athleteId": "5197123",
+      "city": "Wetumpka",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "01051",
+        "latitude": 32.5437448,
+        "longitude": -86.2119127
+      },
+      "id": "257377",
+      "name": "Nate Rogers",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Wetumpka",
+      "stars": null,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5212634",
+    "recruiting": {
+      "athleteId": "5212634",
+      "city": "Blythewood",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "45079",
+        "latitude": 34.2187005,
+        "longitude": -80.98456918011235
+      },
+      "id": "107647",
+      "name": "Sterling Sanders",
+      "position": "DL",
+      "ranking": 1540,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Blythewood",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2025,
+        "team": "Boston College",
+        "year": 1
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5157261",
+    "recruiting": {
+      "athleteId": "5157261",
+      "city": "Miami",
+      "committedTo": "Coastal Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "111743",
+      "name": "Ja'Vin Simpkins",
+      "position": "RB",
+      "ranking": 495,
+      "rating": 0.8869,
+      "recruitType": "HighSchool",
+      "school": "Miami Norland",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "coastal-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2023,
+        "team": "Coastal Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2024,
+        "team": "Coastal Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2025,
+        "team": "Coastal Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5257620",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "PK",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "PK",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327675",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4711421",
+    "recruiting": {
+      "athleteId": "4711421",
+      "city": "Orlando",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "113774",
+      "name": "CJ Smith",
+      "position": "WR",
+      "ranking": 231,
+      "rating": 0.9135,
+      "recruitType": "HighSchool",
+      "school": "Mt. Dora",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2022,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Memphis",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4912355",
+    "recruiting": {
+      "athleteId": "4912355",
+      "city": "Burgaw",
+      "committedTo": "Old Dominion",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "115616",
+      "name": "Chris Spencer",
+      "position": "DL",
+      "ranking": 2348,
+      "rating": 0.8006,
+      "recruitType": "HighSchool",
+      "school": "Pender",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "old-dominion",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2022
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2022,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2023,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2024,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5224205",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2024,
+        "team": "Eastern Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5078469",
+    "recruiting": {
+      "athleteId": "5078469",
+      "city": "North Palm Beach",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.8237944,
+        "longitude": -80.05592659756701
+      },
+      "id": "112937",
+      "name": "Darrell Sweeting",
+      "position": "ATH",
+      "ranking": 1760,
+      "rating": 0.8386,
+      "recruitType": "HighSchool",
+      "school": "The Benjamin School",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "Marshall",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5075546",
+    "recruiting": {
+      "athleteId": "5075546",
+      "city": "Santa Clara",
+      "committedTo": "USC",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06085",
+        "latitude": 37.3541132,
+        "longitude": -121.9551744
+      },
+      "id": "111716",
+      "name": "Amos Talalele",
+      "position": "IOL",
+      "ranking": 468,
+      "rating": 0.8886,
+      "recruitType": "HighSchool",
+      "school": "Santa Clara",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "usc",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "USC",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "USC",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas State",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4683502",
+    "recruiting": {
+      "athleteId": "4683502",
+      "city": "Potomac",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "24031",
+        "latitude": 39.017936,
+        "longitude": -77.2094542
+      },
+      "id": "116627",
+      "name": "Nigel Tate",
+      "position": "DL",
+      "ranking": 894,
+      "rating": 0.8607,
+      "recruitType": "HighSchool",
+      "school": "The Bullis School",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2021
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2021,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2022,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2023,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2024,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393815",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147199",
+    "recruiting": {
+      "athleteId": "5147199",
+      "city": "Miami",
+      "committedTo": "Marshall",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "109960",
+      "name": "Guylijah Theodule",
+      "position": "CB",
+      "ranking": 1297,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "marshall",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "Marshall",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "Southern Miss",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079741",
+    "recruiting": {
+      "athleteId": "5079741",
+      "city": "Detroit",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "111482",
+      "name": "Jalen Thompson",
+      "position": "DL",
+      "ranking": 230,
+      "rating": 0.9162,
+      "recruitType": "HighSchool",
+      "school": "Cass Technical",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "Memphis",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5393809",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "P",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220656",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393814",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079754",
+    "recruiting": {
+      "athleteId": "5079754",
+      "city": "Cordele",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13081",
+        "latitude": 31.9635074,
+        "longitude": -83.7823938
+      },
+      "id": "109614",
+      "name": "Barry Walker",
+      "position": "IOL",
+      "ranking": 938,
+      "rating": 0.8694,
+      "recruitType": "HighSchool",
+      "school": "Crisp County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OT",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OT",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OT",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141683",
+    "recruiting": {
+      "athleteId": "5141683",
+      "city": "Buford",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "107019",
+      "name": "Mantrez Walker",
+      "position": "LB",
+      "ranking": 844,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2025,
+        "team": "Colorado",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219703",
+    "recruiting": {
+      "athleteId": "5219703",
+      "city": "Leesburg",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13177",
+        "latitude": 31.7324556,
+        "longitude": -84.1711966
+      },
+      "id": "109163",
+      "name": "Omar White",
+      "position": "DL",
+      "ranking": 467,
+      "rating": 0.8908,
+      "recruitType": "HighSchool",
+      "school": "Valdosta",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 307,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2024,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5278138",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5223954",
+    "recruiting": null,
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2025,
+        "team": "Montana",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5110457",
+    "recruiting": {
+      "athleteId": "5110457",
+      "city": "Arlington",
+      "committedTo": "Baylor",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "109410",
+      "name": "Kris Wokomah",
+      "position": "S",
+      "ranking": 720,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Arlington Bowie",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "baylor",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2024,
+        "team": "Baylor",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2025,
+        "team": "Baylor",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2026,
+        "team": "UAB",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4921275",
+    "recruiting": {
+      "athleteId": "4921275",
+      "city": "Downingtown",
+      "committedTo": "West Virginia",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "42029",
+        "latitude": 40.0064958,
+        "longitude": -75.7032742
+      },
+      "id": "112487",
+      "name": "Cooper Young",
+      "position": "IOL",
+      "ranking": 1260,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "Downingtown West",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "west-virginia",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "UAB",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2023,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "UAB",
+        "year": 3
+      }
+    ]
+  }
+]

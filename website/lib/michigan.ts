@@ -65,33 +65,29 @@ export type ConferenceSummary = {
   successRateAllowed?: number | null;
 };
 
-function repositoryRoot(): string {
-  const cwd = process.cwd();
-  if (fs.existsSync(path.join(cwd, "data", "published"))) return cwd;
-  const parent = path.resolve(cwd, "..");
-  if (fs.existsSync(path.join(parent, "data", "published"))) return parent;
-  return parent;
-}
-
 function readRows<T>(...segments: string[]): T[] {
-  const file = path.join(repositoryRoot(), ...segments);
+  const file = path.join(process.cwd(), "..", "data", "published", ...segments.slice(2));
   if (!fs.existsSync(file)) return [];
   try {
     const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
-    return Array.isArray(parsed) ? parsed as T[] : [];
-  } catch {
-    return [];
+    if (!Array.isArray(parsed)) throw new TypeError("expected a JSON array");
+    return parsed as T[];
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    throw new Error(`Invalid published rows at ${file}: ${reason}`, { cause: error });
   }
 }
 
 function readObject<T>(...segments: string[]): T | null {
-  const file = path.join(repositoryRoot(), ...segments);
+  const file = path.join(process.cwd(), "..", "data", "published", ...segments.slice(2));
   if (!fs.existsSync(file)) return null;
   try {
     const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
-    return parsed && !Array.isArray(parsed) ? parsed as T : null;
-  } catch {
-    return null;
+    if (!parsed || Array.isArray(parsed) || typeof parsed !== "object") throw new TypeError("expected a JSON object");
+    return parsed as T;
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    throw new Error(`Invalid published object at ${file}: ${reason}`, { cause: error });
   }
 }
 
@@ -112,7 +108,7 @@ export function seasonState(season: number): SeasonState {
 }
 
 export function latestPublishedSeason(): number | null {
-  const root = path.join(repositoryRoot(), "data", "published");
+  const root = path.join(process.cwd(), "..", "data", "published");
   if (!fs.existsSync(root)) return null;
   const seasons = fs.readdirSync(root)
     .map(Number)

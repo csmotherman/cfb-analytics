@@ -1,0 +1,4850 @@
+[
+  {
+    "playerId": "5196815",
+    "recruiting": {
+      "athleteId": "5196815",
+      "city": "Plano",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.0136764,
+        "longitude": -96.6925096
+      },
+      "id": "107188",
+      "name": "Chance Ables",
+      "position": "WR",
+      "ranking": 1024,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "Plano East",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 177,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5280580",
+    "recruiting": {
+      "athleteId": "5280580",
+      "city": "Downey",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.942215,
+        "longitude": -118.1235646
+      },
+      "id": "105560",
+      "name": "Oscar Aguilar Jr.",
+      "position": "LB",
+      "ranking": 1881,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Downey",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296140",
+    "recruiting": {
+      "athleteId": "5296140",
+      "city": "Orange",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7872568,
+        "longitude": -117.8503088
+      },
+      "id": "107133",
+      "name": "Ben Alefaio-Lilii",
+      "position": "S",
+      "ranking": 969,
+      "rating": 0.8697,
+      "recruitType": "HighSchool",
+      "school": "Orange Lutheran",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218901",
+    "recruiting": {
+      "athleteId": "5218901",
+      "city": "Bradenton",
+      "committedTo": "Georgia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "110075",
+      "name": "Tana Alo-Tupuola",
+      "position": "IOL",
+      "ranking": 1421,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "georgia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "Georgia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Georgia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917619",
+    "recruiting": {
+      "athleteId": "4917619",
+      "city": "Detroit",
+      "committedTo": "Kentucky",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "111688",
+      "name": "Khamari Anderson",
+      "position": "TE",
+      "ranking": 442,
+      "rating": 0.8908,
+      "recruitType": "HighSchool",
+      "school": "Cass Technical",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2023,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5264760",
+    "recruiting": {
+      "athleteId": "5264760",
+      "city": "Edmond",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "40109",
+        "latitude": 35.6571367,
+        "longitude": -97.4649038
+      },
+      "id": "104382",
+      "name": "Landen Anderson",
+      "position": "DL",
+      "ranking": 527,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Santa Fe",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5226949",
+    "recruiting": {
+      "athleteId": "5226949",
+      "city": "Potomac",
+      "committedTo": "Villanova",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "24031",
+        "latitude": 39.017936,
+        "longitude": -77.2094542
+      },
+      "id": "257757",
+      "name": "David Avit",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Winston Churchill",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "villanova",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "Villanova",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Villanova",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5258266",
+    "recruiting": {
+      "athleteId": "5258266",
+      "city": "Glendale",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.5386858,
+        "longitude": -112.1859941
+      },
+      "id": "107497",
+      "name": "Tristan Bacon",
+      "position": "LB",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Raymond S. Kellis",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921398",
+    "recruiting": {
+      "athleteId": "4921398",
+      "city": "Westlake Village",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "111912",
+      "name": "Luke Baklenko",
+      "position": "OT",
+      "ranking": 668,
+      "rating": 0.8772,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141026",
+    "recruiting": {
+      "athleteId": "5141026",
+      "city": "Jacksonville",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "109415",
+      "name": "Antoine Belgrave-Shorter",
+      "position": "CB",
+      "ranking": 720,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Mandarin",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079305",
+    "recruiting": {
+      "athleteId": "5079305",
+      "city": "Dickinson",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.4607876,
+        "longitude": -95.0513173
+      },
+      "id": "109323",
+      "name": "Rodney Bimage Jr.",
+      "position": "CB",
+      "ranking": 631,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Dickinson",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141378",
+    "recruiting": {
+      "athleteId": "5141378",
+      "city": "Lexington",
+      "committedTo": "Kentucky",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "21067",
+        "latitude": 38.0464066,
+        "longitude": -84.4970393
+      },
+      "id": "109042",
+      "name": "Cutter Boley",
+      "position": "QB",
+      "ranking": 344,
+      "rating": 0.9014,
+      "recruitType": "HighSchool",
+      "school": "Lexington Christian Academy",
+      "stars": 4,
+      "stateProvince": "KY",
+      "teamSlug": "kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 203,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2024,
+        "team": "Kentucky",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2025,
+        "team": "Kentucky",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5110535",
+    "recruiting": {
+      "athleteId": "5110535",
+      "city": "Lancaster",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.5920798,
+        "longitude": -96.7561083
+      },
+      "id": "112432",
+      "name": "Kyson Brown",
+      "position": "RB",
+      "ranking": 1203,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "Lancaster",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079348",
+    "recruiting": {
+      "athleteId": "5079348",
+      "city": "Seattle",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "B",
+      "height": 67.5,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6038321,
+        "longitude": -122.3300624
+      },
+      "id": "108990",
+      "name": "Jason Brown Jr.",
+      "position": "RB",
+      "ranking": 292,
+      "rating": 0.9076,
+      "recruitType": "HighSchool",
+      "school": "O'Dea",
+      "stars": 4,
+      "stateProvince": "WA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 194,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5156856",
+    "recruiting": {
+      "athleteId": "5156856",
+      "city": "Duncanville",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "107703",
+      "name": "Desean Bryant Jr.",
+      "position": "OT",
+      "ranking": 1598,
+      "rating": 0.8547,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5164354",
+    "recruiting": {
+      "athleteId": "5164354",
+      "city": "Corona",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 68.5,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "107152",
+      "name": "Cory Butler Jr.",
+      "position": "WR",
+      "ranking": 987,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141410",
+    "recruiting": {
+      "athleteId": "5141410",
+      "city": "Missouri City",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "258020",
+      "name": "Caleb Chester",
+      "position": "CB",
+      "ranking": 795,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Marshall",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "Texas",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086236",
+    "recruiting": {
+      "athleteId": "5086236",
+      "city": "Haslett",
+      "committedTo": "Central Michigan",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "255781",
+      "name": "Grayson Curtis",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Haslett",
+      "stars": null,
+      "stateProvince": "MI",
+      "teamSlug": "central-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2022,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2023,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2024,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2025,
+        "team": "New Mexico State",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5225441",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northern Arizona",
+        "year": 2
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5282578",
+    "recruiting": {
+      "athleteId": "5282578",
+      "city": "Richardson",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9481789,
+        "longitude": -96.7297206
+      },
+      "id": "104921",
+      "name": "DaQuwan Dunn",
+      "position": "CB",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Richardson Berkner",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215045",
+    "recruiting": {
+      "athleteId": "5215045",
+      "city": "Albuquerque",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "35001",
+        "latitude": 35.0841034,
+        "longitude": -106.6509851
+      },
+      "id": "106442",
+      "name": "Cameron Dyer",
+      "position": "ATH",
+      "ranking": 251,
+      "rating": 0.9135,
+      "recruitType": "HighSchool",
+      "school": "La Cueva",
+      "stars": 4,
+      "stateProvince": "NM",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 202,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5159831",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209295",
+    "recruiting": {
+      "athleteId": "5209295",
+      "city": "El Paso",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "A",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "48141",
+        "latitude": 31.7754152,
+        "longitude": -106.4646348
+      },
+      "id": "103911",
+      "name": "Jake Fette",
+      "position": "QB",
+      "ranking": 119,
+      "rating": 0.95,
+      "recruitType": "HighSchool",
+      "school": "El Paso Del Valle",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4683724",
+    "recruiting": {
+      "athleteId": "4683724",
+      "city": "Henderson",
+      "committedTo": "San Diego State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "116913",
+      "name": "Zyrus Fiaseu",
+      "position": "LB",
+      "ranking": 1219,
+      "rating": 0.8496,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "san-diego-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2021
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2021,
+        "team": "San Diego State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2022,
+        "team": "San Diego State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2023,
+        "team": "San Diego State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4923268",
+    "recruiting": {
+      "athleteId": "4923268",
+      "city": "Tatum",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48401",
+        "latitude": 32.315053,
+        "longitude": -94.5163729
+      },
+      "id": "112580",
+      "name": "C.J. Fite",
+      "position": "DL",
+      "ranking": 1347,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Tatum",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147726",
+    "recruiting": {
+      "athleteId": "5147726",
+      "city": "Scottsdale",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "110827",
+      "name": "Kanyon Floyd",
+      "position": "P",
+      "ranking": 2348,
+      "rating": 0.8267,
+      "recruitType": "HighSchool",
+      "school": "Horizon",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "P",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 31,
+        "position": "P",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 31,
+        "position": "P",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296142",
+    "recruiting": {
+      "athleteId": "5296142",
+      "city": "San Clemente",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.4270275,
+        "longitude": -117.6124179
+      },
+      "id": "107882",
+      "name": "Lee Fuimaono",
+      "position": "ATH",
+      "ranking": 1857,
+      "rating": 0.8492,
+      "recruitType": "HighSchool",
+      "school": "San Clemente",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086098",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147330",
+    "recruiting": {
+      "athleteId": "5147330",
+      "city": "Prescott Valley",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04025",
+        "latitude": 34.6100243,
+        "longitude": -112.315721
+      },
+      "id": "110451",
+      "name": "James Giggey",
+      "position": "DL",
+      "ranking": 1836,
+      "rating": 0.8428,
+      "recruitType": "HighSchool",
+      "school": "Bradshaw Mountain",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4900771",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2022,
+        "team": "Delaware State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "Delaware State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Delaware State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Delaware State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5104212",
+    "recruiting": {
+      "athleteId": "5104212",
+      "city": "Gainesville",
+      "committedTo": "Alabama",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12001",
+        "latitude": 29.6519684,
+        "longitude": -82.3249846
+      },
+      "id": "111484",
+      "name": "Jaren Hamilton",
+      "position": "WR",
+      "ranking": 232,
+      "rating": 0.9159,
+      "recruitType": "HighSchool",
+      "school": "Buchholz",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "alabama",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2023,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2024,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5031157",
+    "recruiting": {
+      "athleteId": "5031157",
+      "city": "Great Falls",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "30013",
+        "latitude": 47.5048851,
+        "longitude": -111.2918908
+      },
+      "id": "111935",
+      "name": "Reed Harris",
+      "position": "ATH",
+      "ranking": 694,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Great Falls",
+      "stars": 3,
+      "stateProvince": "MT",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2023,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5254915",
+    "recruiting": {
+      "athleteId": "5254915",
+      "city": "Coppell",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9552598,
+        "longitude": -97.0155703
+      },
+      "id": "107219",
+      "name": "Harry Hassmann",
+      "position": "WR",
+      "ranking": 1049,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "Coppell",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149218",
+    "recruiting": {
+      "athleteId": "5149218",
+      "city": "Corona",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "110003",
+      "name": "Brent Helton",
+      "position": "IOL",
+      "ranking": 1352,
+      "rating": 0.8572,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146774",
+    "recruiting": {
+      "athleteId": "5146774",
+      "city": "Corona",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "109656",
+      "name": "Wade Helton",
+      "position": "OT",
+      "ranking": 977,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147229",
+    "recruiting": {
+      "athleteId": "5147229",
+      "city": "San Diego",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 32.7174209,
+        "longitude": -117.1627714
+      },
+      "id": "110070",
+      "name": "Martell Hughes",
+      "position": "S",
+      "ranking": 1421,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Madison",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141480",
+    "recruiting": {
+      "athleteId": "5141480",
+      "city": "Orange",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7872568,
+        "longitude": -117.8503088
+      },
+      "id": "106524",
+      "name": "AJ Ia",
+      "position": "TE",
+      "ranking": 334,
+      "rating": 0.9008,
+      "recruitType": "HighSchool",
+      "school": "Orange Lutheran",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "TE",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "TE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5152783",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2024,
+        "team": "Portland State",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "Portland State",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5167179",
+    "recruiting": {
+      "athleteId": "5167179",
+      "city": "Mililani",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.4508308,
+        "longitude": -158.0095783
+      },
+      "id": "107439",
+      "name": "Isaiah Iosefa",
+      "position": "LB",
+      "ranking": 1277,
+      "rating": 0.8617,
+      "recruitType": "HighSchool",
+      "school": "Mililani",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5156151",
+    "recruiting": {
+      "athleteId": "5156151",
+      "city": "Downey",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.942215,
+        "longitude": -118.1235646
+      },
+      "id": "107870",
+      "name": "Matai Jefferson",
+      "position": "IOL",
+      "ranking": 1849,
+      "rating": 0.8497,
+      "recruitType": "HighSchool",
+      "school": "Warren",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 350,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079522",
+    "recruiting": {
+      "athleteId": "5079522",
+      "city": "Scottsdale",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "109769",
+      "name": "Plas Johnson",
+      "position": "WR",
+      "ranking": 1097,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Chaparral",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4597499",
+    "recruiting": {
+      "athleteId": "4597499",
+      "city": "Chandler",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.3062223,
+        "longitude": -111.8413317
+      },
+      "id": "116563",
+      "name": "Mikey Keene",
+      "position": "QB",
+      "ranking": 819,
+      "rating": 0.8641,
+      "recruitType": "HighSchool",
+      "school": "Chandler",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2021
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2021,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2022,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2023,
+        "team": "Fresno State",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Fresno State",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159821",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "PK",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "PK",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "PK",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "PK",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161785",
+    "recruiting": {
+      "athleteId": "5161785",
+      "city": "Medford",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "41029",
+        "latitude": 42.3264181,
+        "longitude": -122.8718605
+      },
+      "id": "109972",
+      "name": "Terrell Kim",
+      "position": "IOL",
+      "ranking": 1323,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "North Medford",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 340,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5289726",
+    "recruiting": {
+      "athleteId": "5289726",
+      "city": "Richmond",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.5821811,
+        "longitude": -95.7607832
+      },
+      "id": "104484",
+      "name": "Davis Kinney",
+      "position": "S",
+      "ranking": 665,
+      "rating": 0.8822,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Travis",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4868898",
+    "recruiting": {
+      "athleteId": "4868898",
+      "city": "Gibsonia",
+      "committedTo": "Kansas State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.6300671,
+        "longitude": -79.9695004
+      },
+      "id": "114047",
+      "name": "Jalen Klemm",
+      "position": "OT",
+      "ranking": 502,
+      "rating": 0.8837,
+      "recruitType": "HighSchool",
+      "school": "Pine-Richland",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "kansas-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2022,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "Washington",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211162",
+    "recruiting": {
+      "athleteId": "5211162",
+      "city": "Salt Lake City",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "49035",
+        "latitude": 40.7596198,
+        "longitude": -111.8867975
+      },
+      "id": "107652",
+      "name": "Rob Lapuaho",
+      "position": "OT",
+      "ranking": 1540,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "West",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5377919",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219133",
+    "recruiting": {
+      "athleteId": "5219133",
+      "city": "Whittier",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.9708782,
+        "longitude": -118.0308396
+      },
+      "id": "110473",
+      "name": "Owen Long",
+      "position": "ATH",
+      "ranking": 1863,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "La Serna",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2024,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2025,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917171",
+    "recruiting": {
+      "athleteId": "4917171",
+      "city": "Kailua",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.394833,
+        "longitude": -157.72989134661873
+      },
+      "id": "114961",
+      "name": "Blazen Lono-Wong",
+      "position": "EDGE",
+      "ranking": 1464,
+      "rating": 0.8428,
+      "recruitType": "HighSchool",
+      "school": "Kailua",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2022,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209382",
+    "recruiting": {
+      "athleteId": "5209382",
+      "city": "Humble",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "B",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9988312,
+        "longitude": -95.2621553
+      },
+      "id": "104263",
+      "name": "Cardae Mack",
+      "position": "RB",
+      "ranking": 304,
+      "rating": 0.9066,
+      "recruitType": "HighSchool",
+      "school": "Atascocita",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5310169",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146892",
+    "recruiting": {
+      "athleteId": "5146892",
+      "city": "Reno",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32031",
+        "latitude": 39.5261206,
+        "longitude": -119.8126581
+      },
+      "id": "110189",
+      "name": "Salesi Manu",
+      "position": "EDGE",
+      "ranking": 1541,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Bishop Manogue",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5283061",
+    "recruiting": {
+      "athleteId": "5283061",
+      "city": "St. Louis",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "105271",
+      "name": "Mason Marden",
+      "position": "LB",
+      "ranking": 1654,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Ladue Horton Watkins",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5127743",
+    "recruiting": {
+      "athleteId": "5127743",
+      "city": "Seattle",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6038321,
+        "longitude": -122.3300624
+      },
+      "id": "109422",
+      "name": "Kyan McDonald",
+      "position": "S",
+      "ranking": 734,
+      "rating": 0.8764,
+      "recruitType": "HighSchool",
+      "school": "O'Dea",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5264247",
+    "recruiting": {
+      "athleteId": "5264247",
+      "city": "Tallahassee",
+      "committedTo": "Florida International",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12073",
+        "latitude": 30.4380832,
+        "longitude": -84.2809332
+      },
+      "id": "108196",
+      "name": "Jessiah McGrew",
+      "position": "ATH",
+      "ranking": 2279,
+      "rating": 0.8381,
+      "recruitType": "HighSchool",
+      "school": "Florida State University School",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-international",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida International",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4804881",
+    "recruiting": {
+      "athleteId": "4804881",
+      "city": "Mission Hills",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06083",
+        "latitude": 34.687584,
+        "longitude": -120.43901754304565
+      },
+      "id": "114342",
+      "name": "Rashad McKenzie",
+      "position": "DL",
+      "ranking": 799,
+      "rating": 0.8685,
+      "recruitType": "HighSchool",
+      "school": "Bishop Alemany",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2022,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219054",
+    "recruiting": {
+      "athleteId": "5219054",
+      "city": "Melbourne",
+      "committedTo": "Ohio State",
+      "country": "AUS",
+      "grade": null,
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "257298",
+      "name": "Nick McLarty",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Caulfield Grammar",
+      "stars": null,
+      "stateProvince": "VC",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2024,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5110569",
+    "recruiting": {
+      "athleteId": "5110569",
+      "city": "Duluth",
+      "committedTo": "Indiana",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.0028569,
+        "longitude": -84.1441046
+      },
+      "id": "112028",
+      "name": "Anthony Miller",
+      "position": "TE",
+      "ranking": 786,
+      "rating": 0.8726,
+      "recruitType": "HighSchool",
+      "school": "Duluth",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "indiana",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "Indiana",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Tulane",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Tulane",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870850",
+    "recruiting": {
+      "athleteId": "4870850",
+      "city": "Vivian",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "111520",
+      "name": "Omarion Miller",
+      "position": "WR",
+      "ranking": 271,
+      "rating": 0.9096,
+      "recruitType": "HighSchool",
+      "school": "North Caddo",
+      "stars": 4,
+      "stateProvince": "LA",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211420",
+    "recruiting": {
+      "athleteId": "5211420",
+      "city": "Cincinnati",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "104540",
+      "name": "Landen Miree",
+      "position": "TE",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Princeton",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5377920",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5218026",
+    "recruiting": {
+      "athleteId": "5218026",
+      "city": "Austin",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "107223",
+      "name": "Daeshon Morgan",
+      "position": "DL",
+      "ranking": 1062,
+      "rating": 0.8669,
+      "recruitType": "HighSchool",
+      "school": "Austin Vandegrift",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4804883",
+    "recruiting": {
+      "athleteId": "4804883",
+      "city": "Menlo Park",
+      "committedTo": "Fresno State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06081",
+        "latitude": 37.4519671,
+        "longitude": -122.1779927
+      },
+      "id": "114155",
+      "name": "Jalen Moss",
+      "position": "WR",
+      "ranking": 616,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Menlo-Atherton",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "fresno-state",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2022,
+        "team": "Fresno State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2023,
+        "team": "Fresno State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2024,
+        "team": "Fresno State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5167753",
+    "recruiting": {
+      "athleteId": "5167753",
+      "city": "Wahiawa",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.500624100000003,
+        "longitude": -158.0166720181598
+      },
+      "id": "106768",
+      "name": "Manamo'ui Muti",
+      "position": "OT",
+      "ranking": 573,
+      "rating": 0.8836,
+      "recruitType": "HighSchool",
+      "school": "Leilehua",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215549",
+    "recruiting": {
+      "athleteId": "5215549",
+      "city": "San Tan Valley",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "04021",
+        "latitude": 33.1775233,
+        "longitude": -111.5478925
+      },
+      "id": "107653",
+      "name": "Uriah Neloms",
+      "position": "WR",
+      "ranking": 1540,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "San Tan Charter",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 196,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5278315",
+    "recruiting": {
+      "athleteId": "5278315",
+      "city": "Oceanside",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 33.1958696,
+        "longitude": -117.3794834
+      },
+      "id": "105354",
+      "name": "Niniva Nicholson",
+      "position": "IOL",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Santa Margarita Catholic",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4869551",
+    "recruiting": {
+      "athleteId": "4869551",
+      "city": "Baton Rouge",
+      "committedTo": "Purdue",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "22033",
+        "latitude": 30.4459596,
+        "longitude": -91.18738
+      },
+      "id": "114456",
+      "name": "Roman Pitre",
+      "position": "ATH",
+      "ranking": 926,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "University Lab",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "purdue",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2022,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2023,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220589",
+    "recruiting": {
+      "athleteId": "5220589",
+      "city": "Houston",
+      "committedTo": "Arkansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "107297",
+      "name": "Nigel Pringle",
+      "position": "ATH",
+      "ranking": 1133,
+      "rating": 0.8647,
+      "recruitType": "HighSchool",
+      "school": "North Shore",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "Arkansas",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5159828",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4602193",
+    "recruiting": {
+      "athleteId": "4602193",
+      "city": "Marshall",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48203",
+        "latitude": 32.5447756,
+        "longitude": -94.3661004
+      },
+      "id": "116227",
+      "name": "Lyrik Rawls",
+      "position": "S",
+      "ranking": 480,
+      "rating": 0.8826,
+      "recruitType": "HighSchool",
+      "school": "Marshall",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2021
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2021,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2022,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5257046",
+    "recruiting": {
+      "athleteId": "5257046",
+      "city": "Columbus",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48089",
+        "latitude": 29.7066181,
+        "longitude": -96.539699
+      },
+      "id": "107621",
+      "name": "Grayson Rigdon",
+      "position": "RB",
+      "ranking": 1507,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Columbus",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216317",
+    "recruiting": {
+      "athleteId": "5216317",
+      "city": "Edmond",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "40109",
+        "latitude": 35.6571367,
+        "longitude": -97.4649038
+      },
+      "id": "107102",
+      "name": "Demarius Robinson",
+      "position": "RB",
+      "ranking": 924,
+      "rating": 0.8706,
+      "recruitType": "HighSchool",
+      "school": "Santa Fe",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079669",
+    "recruiting": {
+      "athleteId": "5079669",
+      "city": "Las Vegas",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "109859",
+      "name": "Xander Ruggeroli",
+      "position": "OT",
+      "ranking": 1183,
+      "rating": 0.8614,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 286,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "Nebraska",
+        "year": 2
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296139",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5122233",
+    "recruiting": {
+      "athleteId": "5122233",
+      "city": "Texas City",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.396013,
+        "longitude": -94.9175485
+      },
+      "id": "220918",
+      "name": "Xavier Skowron",
+      "position": "S",
+      "ranking": 1203,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Texas City",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4872845",
+    "recruiting": {
+      "athleteId": "4872845",
+      "city": "Belmont",
+      "committedTo": "East Carolina",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "37071",
+        "latitude": 35.2438272,
+        "longitude": -81.0377322
+      },
+      "id": "255021",
+      "name": "Carson Smith",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "South Point",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "east-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2021
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2021,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2021,
+        "team": "South Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2022,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2023,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2024,
+        "team": "Austin Peay",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2025,
+        "team": "Austin Peay",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4432765",
+    "recruiting": {
+      "athleteId": "4432765",
+      "city": "Texarkana",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "S",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48037",
+        "latitude": 33.44628645,
+        "longitude": -94.07638067493534
+      },
+      "id": "115779",
+      "name": "Clayton Smith",
+      "position": "EDGE",
+      "ranking": 38,
+      "rating": 0.9812,
+      "recruitType": "HighSchool",
+      "school": "Texas High",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2021
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DE",
+        "season": 2021,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DE",
+        "season": 2022,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DE",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DE",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DE",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141688",
+    "recruiting": {
+      "athleteId": "5141688",
+      "city": "Spring",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 30.0798826,
+        "longitude": -95.4172549
+      },
+      "id": "107049",
+      "name": "Joseph Smith",
+      "position": "CB",
+      "ranking": 873,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Legacy the School of Sport Sciences",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "CB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 15,
+        "position": "CB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5145591",
+    "recruiting": {
+      "athleteId": "5145591",
+      "city": "Ponchatoula",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "22105",
+        "latitude": 30.4388041,
+        "longitude": -90.4414762
+      },
+      "id": "109763",
+      "name": "Albert Smith III",
+      "position": "LB",
+      "ranking": 1088,
+      "rating": 0.8647,
+      "recruitType": "HighSchool",
+      "school": "Ponchatoula",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DE",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "DE",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "DE",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5078918",
+    "recruiting": {
+      "athleteId": "5078918",
+      "city": "Metairie",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "22051",
+        "latitude": 30.001852,
+        "longitude": -90.1767149159888
+      },
+      "id": "111874",
+      "name": "Ashton Stamps",
+      "position": "CB",
+      "ranking": 628,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Rummel",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141698",
+    "recruiting": {
+      "athleteId": "5141698",
+      "city": "Long Beach",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.7690164,
+        "longitude": -118.1916048
+      },
+      "id": "106938",
+      "name": "Maki Stewart",
+      "position": "IOL",
+      "ranking": 750,
+      "rating": 0.8761,
+      "recruitType": "HighSchool",
+      "school": "Millikan",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4686332",
+    "recruiting": {
+      "athleteId": "4686332",
+      "city": "Phoenix",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4484367,
+        "longitude": -112.0741417
+      },
+      "id": "113918",
+      "name": "Zac Swanson",
+      "position": "DL",
+      "ranking": 374,
+      "rating": 0.8944,
+      "recruitType": "HighSchool",
+      "school": "Brophy College Preparatory",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2022,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2023,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296143",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870992",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5252195",
+    "recruiting": {
+      "athleteId": "5252195",
+      "city": "Peoria",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.5806115,
+        "longitude": -112.2372942
+      },
+      "id": "105268",
+      "name": "Zeth Thues",
+      "position": "S",
+      "ranking": 1030,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5217191",
+    "recruiting": {
+      "athleteId": "5217191",
+      "city": "Dallas",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "104381",
+      "name": "Cortavious Tisaby",
+      "position": "OT",
+      "ranking": 527,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "South Oak Cliff",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141725",
+    "recruiting": {
+      "athleteId": "5141725",
+      "city": "Tustin",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7458511,
+        "longitude": -117.826166
+      },
+      "id": "107246",
+      "name": "Michael Tollefson",
+      "position": "QB",
+      "ranking": 1076,
+      "rating": 0.8664,
+      "recruitType": "HighSchool",
+      "school": "Tustin",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209421",
+    "recruiting": {
+      "athleteId": "5209421",
+      "city": "Copperas Cove",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48099",
+        "latitude": 31.124062,
+        "longitude": -97.9030785
+      },
+      "id": "104648",
+      "name": "Marques Uini",
+      "position": "IOL",
+      "ranking": 1114,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Copperas Cove",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 293,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5331412",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5377918",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5164362",
+    "recruiting": {
+      "athleteId": "5164362",
+      "city": "Bradenton",
+      "committedTo": "Washington",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "106681",
+      "name": "Raiden Vines-Bright",
+      "position": "WR",
+      "ranking": 487,
+      "rating": 0.8894,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "washington",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Washington",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5077117",
+    "recruiting": {
+      "athleteId": "5077117",
+      "city": "Henderson",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48401",
+        "latitude": 32.1532157,
+        "longitude": -94.7993802
+      },
+      "id": "112282",
+      "name": "Montana Warren",
+      "position": "S",
+      "ranking": 1039,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "Henderson",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146858",
+    "recruiting": {
+      "athleteId": "5146858",
+      "city": "Los Angeles",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "109981",
+      "name": "Champ Westbrooks",
+      "position": "IOL",
+      "ranking": 1332,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "Loyola",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 248,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084754",
+    "recruiting": {
+      "athleteId": "5084754",
+      "city": "Glendale",
+      "committedTo": "Northern Arizona",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.5386858,
+        "longitude": -112.1859941
+      },
+      "id": "255972",
+      "name": "Tyler Wigglesworth",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Mountain Ridge",
+      "stars": null,
+      "stateProvince": "AZ",
+      "teamSlug": "northern-arizona",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2022,
+        "team": "Northern Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5278205",
+    "recruiting": {
+      "athleteId": "5278205",
+      "city": "Marietta",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.9528472,
+        "longitude": -84.5496148
+      },
+      "id": "104865",
+      "name": "Jalen Williams",
+      "position": "CB",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Kell",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079638",
+    "recruiting": {
+      "athleteId": "5079638",
+      "city": "Pearland",
+      "committedTo": "Houston",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "109101",
+      "name": "Maurice Williams II",
+      "position": "LB",
+      "ranking": 402,
+      "rating": 0.8958,
+      "recruitType": "HighSchool",
+      "school": "Shadow Creek",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "houston",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2024,
+        "team": "Houston",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147693",
+    "recruiting": {
+      "athleteId": "5147693",
+      "city": "Mesa",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4151117,
+        "longitude": -111.8314773
+      },
+      "id": "110121",
+      "name": "Ramar Williams",
+      "position": "DL",
+      "ranking": 1464,
+      "rating": 0.8542,
+      "recruitType": "HighSchool",
+      "school": "Eastmark",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5027539",
+    "recruiting": {
+      "athleteId": "5027539",
+      "city": "Keller",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.9299655,
+        "longitude": -97.2271249
+      },
+      "id": "112329",
+      "name": "Adrian Wilson",
+      "position": "S",
+      "ranking": 1094,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Keller Central",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685626",
+    "recruiting": {
+      "athleteId": "4685626",
+      "city": "Portland",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "41051",
+        "latitude": 45.5202471,
+        "longitude": -122.6741949
+      },
+      "id": "114032",
+      "name": "Emar'rion Winston",
+      "position": "EDGE",
+      "ranking": 488,
+      "rating": 0.8852,
+      "recruitType": "HighSchool",
+      "school": "Central Catholic",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2022
+    },
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DL",
+        "season": 2022,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DL",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DL",
+        "season": 2024,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DL",
+        "season": 2025,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DL",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219152",
+    "recruiting": null,
+    "team": "Arizona State",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "Arizona State",
+        "year": 2
+      }
+    ]
+  }
+]

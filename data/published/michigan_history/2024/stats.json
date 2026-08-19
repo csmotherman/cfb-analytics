@@ -1,0 +1,443 @@
+[
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "firstDowns",
+    "statValue": 210,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "firstDownsOpponent",
+    "statValue": 226,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fourthDownConversions",
+    "statValue": 12,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fourthDownConversionsOpponent",
+    "statValue": 5,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fourthDowns",
+    "statValue": 17,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fourthDownsOpponent",
+    "statValue": 14,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fumblesLost",
+    "statValue": 7,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fumblesLostOpponent",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fumblesRecovered",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "fumblesRecoveredOpponent",
+    "statValue": 7,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "games",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "interceptions",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "interceptionsOpponent",
+    "statValue": 12,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "interceptionTDs",
+    "statValue": 2,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "interceptionTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "interceptionYards",
+    "statValue": 149,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "interceptionYardsOpponent",
+    "statValue": 139,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "kickReturns",
+    "statValue": 24,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "kickReturnsOpponent",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "kickReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "kickReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "kickReturnYards",
+    "statValue": 495,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "kickReturnYardsOpponent",
+    "statValue": 188,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "netPassingYards",
+    "statValue": 1678,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "netPassingYardsOpponent",
+    "statValue": 2812,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passAttempts",
+    "statValue": 308,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passAttemptsOpponent",
+    "statValue": 435,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passCompletions",
+    "statValue": 190,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passCompletionsOpponent",
+    "statValue": 262,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passesIntercepted",
+    "statValue": 12,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passesInterceptedOpponent",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passingTDs",
+    "statValue": 12,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "passingTDsOpponent",
+    "statValue": 19,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "penalties",
+    "statValue": 51,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "penaltiesOpponent",
+    "statValue": 54,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "penaltyYards",
+    "statValue": 514,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "penaltyYardsOpponent",
+    "statValue": 409,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "possessionTime",
+    "statValue": 24885,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "possessionTimeOpponent",
+    "statValue": 21915,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "puntReturns",
+    "statValue": 15,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "puntReturnsOpponent",
+    "statValue": 14,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "puntReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "puntReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "puntReturnYards",
+    "statValue": 158,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "puntReturnYardsOpponent",
+    "statValue": 239,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "rushingAttempts",
+    "statValue": 484,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "rushingAttemptsOpponent",
+    "statValue": 384,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "rushingTDs",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "rushingTDsOpponent",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "rushingYards",
+    "statValue": 2046,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "rushingYardsOpponent",
+    "statValue": 1180,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "sacks",
+    "statValue": 36,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "sacksOpponent",
+    "statValue": 16,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "tacklesForLoss",
+    "statValue": 79,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "tacklesForLossOpponent",
+    "statValue": 65,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "thirdDownConversions",
+    "statValue": 74,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "thirdDownConversionsOpponent",
+    "statValue": 77,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "thirdDowns",
+    "statValue": 177,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "thirdDownsOpponent",
+    "statValue": 186,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "totalYards",
+    "statValue": 3724,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "totalYardsOpponent",
+    "statValue": 3992,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "turnovers",
+    "statValue": 20,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2024,
+    "statName": "turnoversOpponent",
+    "statValue": 18,
+    "team": "Michigan"
+  }
+]

@@ -1,11 +1,14 @@
 {
-  "name": "michigan-football-analytics",
+  "name": "soar-analytics",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "check:data": "node scripts/check-published-data.mjs",
+    "check:product": "node scripts/check-product-contract.mjs",
+    "test": "npm run check:data && npm run check:product",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

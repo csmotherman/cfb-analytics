@@ -16,4 +16,5 @@ data/processed/**
 website/node_modules/
 website/.next/
 website/.turbo/
+website/*.tsbuildinfo
 website/npm-debug.log*

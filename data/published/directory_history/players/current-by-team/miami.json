@@ -1,0 +1,5139 @@
+[
+  {
+    "playerId": "5141356",
+    "recruiting": {
+      "athleteId": "5141356",
+      "city": "Las Vegas",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "106315",
+      "name": "Seuseu Alofaituli",
+      "position": "IOL",
+      "ranking": 124,
+      "rating": 0.9437,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 4,
+      "stateProvince": "NV",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5110100",
+    "recruiting": {
+      "athleteId": "5110100",
+      "city": "Warner Robins",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "13153",
+        "latitude": 32.6200973,
+        "longitude": -83.606568
+      },
+      "id": "109391",
+      "name": "Judd Anderson",
+      "position": "QB",
+      "ranking": 702,
+      "rating": 0.8783,
+      "recruitType": "HighSchool",
+      "school": "Warner Robins",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141368",
+    "recruiting": {
+      "athleteId": "5141368",
+      "city": "New Iberia",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "22045",
+        "latitude": 30.0035365,
+        "longitude": -91.8187285
+      },
+      "id": "106375",
+      "name": "Ja'Boree Antoine",
+      "position": "CB",
+      "ranking": 184,
+      "rating": 0.9277,
+      "recruitType": "HighSchool",
+      "school": "Westgate",
+      "stars": 4,
+      "stateProvince": "LA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5244036",
+    "recruiting": {
+      "athleteId": "5244036",
+      "city": "Hoover",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.3848933,
+        "longitude": -86.8070484
+      },
+      "id": "104157",
+      "name": "Tyson Bacon",
+      "position": "DL",
+      "ranking": 1174,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Hoover",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 263,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4804878",
+    "recruiting": {
+      "athleteId": "4804878",
+      "city": "Santa Ana",
+      "committedTo": "Harvard",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "113983",
+      "name": "Cooper Barkate",
+      "position": "ATH",
+      "ranking": 435,
+      "rating": 0.8889,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "harvard",
+      "valueType": "BENCHMARK",
+      "weight": 182,
+      "year": 2022
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2022,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2023,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2024,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "Duke",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141370",
+    "recruiting": {
+      "athleteId": "5141370",
+      "city": "Miami",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "S",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "108726",
+      "name": "Armondo Blount",
+      "position": "DL",
+      "ranking": 28,
+      "rating": 0.9875,
+      "recruitType": "HighSchool",
+      "school": "Miami Central",
+      "stars": 5,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5078098",
+    "recruiting": {
+      "athleteId": "5078098",
+      "city": "Moultrie",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13071",
+        "latitude": 31.179998,
+        "longitude": -83.7887928
+      },
+      "id": "112259",
+      "name": "Kamal Bonner",
+      "position": "LB",
+      "ranking": 1023,
+      "rating": 0.8636,
+      "recruitType": "HighSchool",
+      "school": "Colquitt County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2023,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5081246",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2022,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5168278",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5245125",
+    "recruiting": {
+      "athleteId": "5245125",
+      "city": "Clovis",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "06019",
+        "latitude": 36.8252277,
+        "longitude": -119.7029194
+      },
+      "id": "103978",
+      "name": "Israel Briggs",
+      "position": "TE",
+      "ranking": 402,
+      "rating": 0.8967,
+      "recruitType": "HighSchool",
+      "school": "Clovis",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5156998",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "North Dakota State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870650",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141389",
+    "recruiting": {
+      "athleteId": "5141389",
+      "city": "Sanford",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12117",
+        "latitude": 28.8117297,
+        "longitude": -81.2680345
+      },
+      "id": "106548",
+      "name": "Max Buchanan",
+      "position": "IOL",
+      "ranking": 358,
+      "rating": 0.8994,
+      "recruitType": "HighSchool",
+      "school": "Seminole",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226970",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "WR",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5198250",
+    "recruiting": {
+      "athleteId": "5198250",
+      "city": "Orlando",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "107271",
+      "name": "Demetrius Campbell",
+      "position": "OT",
+      "ranking": 1107,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Orlando Christian Prep",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161808",
+    "recruiting": {
+      "athleteId": "5161808",
+      "city": "Opa Locka",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.896733849999997,
+        "longitude": -80.25949640850294
+      },
+      "id": "103949",
+      "name": "Jordan Campbell",
+      "position": "EDGE",
+      "ranking": 216,
+      "rating": 0.9206,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5158979",
+    "recruiting": {
+      "athleteId": "5158979",
+      "city": "Nixa",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "S+",
+      "height": 79.5,
+      "hometownInfo": {
+        "fipsCode": "29043",
+        "latitude": 37.0439358,
+        "longitude": -93.3098534
+      },
+      "id": "103836",
+      "name": "Jackson Cantwell",
+      "position": "OT",
+      "ranking": 2,
+      "rating": 0.9989,
+      "recruitType": "HighSchool",
+      "school": "Nixa",
+      "stars": 5,
+      "stateProvince": "MO",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5167747",
+    "recruiting": {
+      "athleteId": "5167747",
+      "city": "Newberry",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12001",
+        "latitude": 29.6463535,
+        "longitude": -82.6065023
+      },
+      "id": "106389",
+      "name": "Jarquez Carter",
+      "position": "DL",
+      "ranking": 198,
+      "rating": 0.9253,
+      "recruitType": "HighSchool",
+      "school": "Newberry",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 284,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226971",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4921109",
+    "recruiting": {
+      "athleteId": "4921109",
+      "city": "Culver",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "18099",
+        "latitude": 41.2189311,
+        "longitude": -86.4230626
+      },
+      "id": "111930",
+      "name": "Jackson Carver",
+      "position": "TE",
+      "ranking": 674,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "The Loomis Chaffee School",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161813",
+    "recruiting": {
+      "athleteId": "5161813",
+      "city": "Venice",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.0999188,
+        "longitude": -82.4543597
+      },
+      "id": "104041",
+      "name": "Asharri Charles",
+      "position": "EDGE",
+      "ranking": 80,
+      "rating": 0.9659,
+      "recruitType": "HighSchool",
+      "school": "Venice",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 229,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5279410",
+    "recruiting": {
+      "athleteId": "5279410",
+      "city": "Bear",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "10003",
+        "latitude": 39.6292788,
+        "longitude": -75.6582628
+      },
+      "id": "104598",
+      "name": "Isaac Chukwurah",
+      "position": "DL",
+      "ranking": 458,
+      "rating": 0.8922,
+      "recruitType": "HighSchool",
+      "school": "Caravel Academy",
+      "stars": 4,
+      "stateProvince": "DE",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4923056",
+    "recruiting": {
+      "athleteId": "4923056",
+      "city": "Cartersville",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13015",
+        "latitude": 34.1650972,
+        "longitude": -84.7999383
+      },
+      "id": "112168",
+      "name": "Johnathan Cline",
+      "position": "IOL",
+      "ranking": 929,
+      "rating": 0.8664,
+      "recruitType": "HighSchool",
+      "school": "Cartersville",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "East Tennessee State",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161816",
+    "recruiting": {
+      "athleteId": "5161816",
+      "city": "Orlando",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "104038",
+      "name": "Dereon Coleman",
+      "position": "QB",
+      "ranking": 287,
+      "rating": 0.9077,
+      "recruitType": "HighSchool",
+      "school": "Jones",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5271182",
+    "recruiting": {
+      "athleteId": "5271182",
+      "city": "Zoarville",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "104137",
+      "name": "Ben Congdon",
+      "position": "OT",
+      "ranking": 180,
+      "rating": 0.9288,
+      "recruitType": "HighSchool",
+      "school": "Tuscarawas Valley",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5168282",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219069",
+    "recruiting": {
+      "athleteId": "5219069",
+      "city": "Tucson",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "04019",
+        "latitude": 32.2228765,
+        "longitude": -110.9748477
+      },
+      "id": "109307",
+      "name": "Keona Davis",
+      "position": "DL",
+      "ranking": 612,
+      "rating": 0.8825,
+      "recruitType": "HighSchool",
+      "school": "Salpointe Catholic",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2024,
+        "team": "Nebraska",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "Nebraska",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5142262",
+    "recruiting": {
+      "athleteId": "5142262",
+      "city": "Baton Rouge",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "22033",
+        "latitude": 30.4459596,
+        "longitude": -91.18738
+      },
+      "id": "109418",
+      "name": "Dylan Day",
+      "position": "S",
+      "ranking": 720,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Southern Lab",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5259295",
+    "recruiting": {
+      "athleteId": "5259295",
+      "city": "Manhattan",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "20161",
+        "latitude": 39.1836082,
+        "longitude": -96.5716694
+      },
+      "id": "104017",
+      "name": "JJ Dunnigan",
+      "position": "S",
+      "ranking": 115,
+      "rating": 0.9515,
+      "recruitType": "HighSchool",
+      "school": "Manhattan",
+      "stars": 4,
+      "stateProvince": "KS",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5271171",
+    "recruiting": {
+      "athleteId": "5271171",
+      "city": "Orlando",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "104603",
+      "name": "Justin Edwards",
+      "position": "LB",
+      "ranking": 731,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Edgewater",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5273716",
+    "recruiting": {
+      "athleteId": "5273716",
+      "city": "Fort Myers",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.640628,
+        "longitude": -81.8723084
+      },
+      "id": "104373",
+      "name": "Joel Ervin",
+      "position": "IOL",
+      "ranking": 334,
+      "rating": 0.9026,
+      "recruitType": "HighSchool",
+      "school": "Fort Myers",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5263007",
+    "recruiting": {
+      "athleteId": "5263007",
+      "city": "Cornelius",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.4817982,
+        "longitude": -80.8589501
+      },
+      "id": "104343",
+      "name": "Tyran Evans",
+      "position": "WR",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Hough",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 201,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295127",
+    "recruiting": {
+      "athleteId": "5295127",
+      "city": "Hollywood",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "106433",
+      "name": "Chris Ewald Jr.",
+      "position": "CB",
+      "ranking": 242,
+      "rating": 0.9153,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5298737",
+    "recruiting": {
+      "athleteId": "5298737",
+      "city": "Miami",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "106329",
+      "name": "Bryce Fitzgerald",
+      "position": "S",
+      "ranking": 138,
+      "rating": 0.9391,
+      "recruitType": "HighSchool",
+      "school": "Miami Columbus",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 172,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870736",
+    "recruiting": {
+      "athleteId": "4870736",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "111395",
+      "name": "Mark Fletcher Jr.",
+      "position": "RB",
+      "ranking": 143,
+      "rating": 0.9402,
+      "recruitType": "HighSchool",
+      "school": "American Heritage",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 226,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5226976",
+    "recruiting": {
+      "athleteId": "5226976",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "109486",
+      "name": "OJ Frederique Jr.",
+      "position": "CB",
+      "ranking": 784,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 176,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141467",
+    "recruiting": {
+      "athleteId": "5141467",
+      "city": "West Chester",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.3303357,
+        "longitude": -84.408275
+      },
+      "id": "106543",
+      "name": "Luka Gilbert",
+      "position": "TE",
+      "ranking": 353,
+      "rating": 0.8997,
+      "recruitType": "HighSchool",
+      "school": "Lakota West",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 233,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5306780",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5377922",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870842",
+    "recruiting": {
+      "athleteId": "4870842",
+      "city": "Fort Pierce",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12111",
+        "latitude": 27.4467056,
+        "longitude": -80.3256056
+      },
+      "id": "111546",
+      "name": "Vandrevius Jacobs",
+      "position": "WR",
+      "ranking": 298,
+      "rating": 0.9048,
+      "recruitType": "HighSchool",
+      "school": "Vero Beach",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 167,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2023,
+        "team": "Florida State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "South Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5160492",
+    "recruiting": {
+      "athleteId": "5160492",
+      "city": "Jacksonville",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "104112",
+      "name": "Brody Jennings",
+      "position": "CB",
+      "ranking": 348,
+      "rating": 0.901,
+      "recruitType": "HighSchool",
+      "school": "Mandarin",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5121892",
+    "recruiting": {
+      "athleteId": "5121892",
+      "city": "Australia",
+      "committedTo": "Miami",
+      "country": "AUS",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "256475",
+      "name": "Dylan Joyce",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Australia",
+      "stars": null,
+      "stateProvince": null,
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 213,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "P",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "P",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "P",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "P",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5271176",
+    "recruiting": {
+      "athleteId": "5271176",
+      "city": "Orlando",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "104628",
+      "name": "DeAnthony Lafayette",
+      "position": "EDGE",
+      "ranking": 343,
+      "rating": 0.902,
+      "recruitType": "HighSchool",
+      "school": "Lake Nona",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5168310",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5126999",
+    "recruiting": {
+      "athleteId": "5126999",
+      "city": "Chicago",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "S",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "108729",
+      "name": "Marquise Lightfoot",
+      "position": "EDGE",
+      "ranking": 31,
+      "rating": 0.9855,
+      "recruitType": "HighSchool",
+      "school": "Kenwood Academy",
+      "stars": 5,
+      "stateProvince": "IL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 212,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079503",
+    "recruiting": {
+      "athleteId": "5079503",
+      "city": "Las Vegas",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "108972",
+      "name": "Elija Lofton",
+      "position": "TE",
+      "ranking": 274,
+      "rating": 0.9094,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 4,
+      "stateProvince": "NV",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5149474",
+    "recruiting": {
+      "athleteId": "5149474",
+      "city": "Westlake Village",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "106266",
+      "name": "Hayden Lowe",
+      "position": "EDGE",
+      "ranking": 75,
+      "rating": 0.9633,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5127735",
+    "recruiting": {
+      "athleteId": "5127735",
+      "city": "Fort Lauderdale",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "109070",
+      "name": "Xavier Lucas",
+      "position": "S",
+      "ranking": 374,
+      "rating": 0.8988,
+      "recruitType": "HighSchool",
+      "school": "American Heritage",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159950",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159947",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079591",
+    "recruiting": {
+      "athleteId": "5079591",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "108831",
+      "name": "Jordan Lyle",
+      "position": "RB",
+      "ranking": 133,
+      "rating": 0.9403,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079564",
+    "recruiting": {
+      "athleteId": "5079564",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "109029",
+      "name": "Ryan Mack",
+      "position": "CB",
+      "ranking": 331,
+      "rating": 0.9035,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5160496",
+    "recruiting": {
+      "athleteId": "5160496",
+      "city": "Boca Raton",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.3586885,
+        "longitude": -80.0830984
+      },
+      "id": "104146",
+      "name": "Javian Mallory",
+      "position": "RB",
+      "ranking": 418,
+      "rating": 0.8956,
+      "recruitType": "HighSchool",
+      "school": "West Boca Raton",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141569",
+    "recruiting": {
+      "athleteId": "5141569",
+      "city": "Miami",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "106722",
+      "name": "Ezekiel Marcelin Jr.",
+      "position": "LB",
+      "ranking": 532,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Miami Central",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 208,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146893",
+    "recruiting": {
+      "athleteId": "5146893",
+      "city": "Spanish Fort",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01003",
+        "latitude": 30.6749127,
+        "longitude": -87.9152724
+      },
+      "id": "109441",
+      "name": "Cole McConathy II",
+      "position": "EDGE",
+      "ranking": 750,
+      "rating": 0.8758,
+      "recruitType": "HighSchool",
+      "school": "Spanish Fort",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4896339",
+    "recruiting": {
+      "athleteId": "4896339",
+      "city": "St. Augustine",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12109",
+        "latitude": 29.8946952,
+        "longitude": -81.3145395
+      },
+      "id": "114276",
+      "name": "Matthew McCoy",
+      "position": "OT",
+      "ranking": 735,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Creekside",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5121169",
+    "recruiting": {
+      "athleteId": "5121169",
+      "city": "San Luis Obispo",
+      "committedTo": "Tulane",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06079",
+        "latitude": 35.2827525,
+        "longitude": -120.6596156
+      },
+      "id": "113522",
+      "name": "Darian Mensah",
+      "position": "QB",
+      "ranking": 2672,
+      "rating": 0.7933,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph",
+      "stars": 2,
+      "stateProvince": "CA",
+      "teamSlug": "tulane",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2023,
+        "team": "Tulane",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "Tulane",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Duke",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921440",
+    "recruiting": {
+      "athleteId": "4921440",
+      "city": "Brunswick",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "C",
+      "height": 78.5,
+      "hometownInfo": {
+        "fipsCode": "13127",
+        "latitude": 31.1499528,
+        "longitude": -81.4914894
+      },
+      "id": "111727",
+      "name": "Jamal Meriweather",
+      "position": "OT",
+      "ranking": 480,
+      "rating": 0.8879,
+      "recruitType": "HighSchool",
+      "school": "Brunswick",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 287,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5142325",
+    "recruiting": {
+      "athleteId": "5142325",
+      "city": "Paramus",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 40.9452911,
+        "longitude": -74.0735899
+      },
+      "id": "109768",
+      "name": "Juan Minaya",
+      "position": "OT",
+      "ranking": 1097,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Paramus Catholic",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 335,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141593",
+    "recruiting": {
+      "athleteId": "5141593",
+      "city": "Pembroke Pines",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.02322025,
+        "longitude": -80.34123906625615
+      },
+      "id": "106316",
+      "name": "Joshua Moore",
+      "position": "WR",
+      "ranking": 125,
+      "rating": 0.9435,
+      "recruitType": "HighSchool",
+      "school": "West Broward",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4916996",
+    "recruiting": {
+      "athleteId": "4916996",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "114098",
+      "name": "Ahmad Moten Sr.",
+      "position": "DL",
+      "ranking": 558,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Gibbons",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276674",
+    "recruiting": {
+      "athleteId": "5276674",
+      "city": "South Elgin",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17089",
+        "latitude": 41.9941938,
+        "longitude": -88.2922996
+      },
+      "id": "104306",
+      "name": "Gavin Mueller",
+      "position": "TE",
+      "ranking": 77,
+      "rating": 0.9676,
+      "recruitType": "HighSchool",
+      "school": "South Elgin",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5289268",
+    "recruiting": {
+      "athleteId": "5289268",
+      "city": "Wayne",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "34031",
+        "latitude": 40.9491723,
+        "longitude": -74.2376802
+      },
+      "id": "104830",
+      "name": "Logan Nagle",
+      "position": "DL",
+      "ranking": 508,
+      "rating": 0.8889,
+      "recruitType": "HighSchool",
+      "school": "DePaul Catholic",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5198317",
+    "recruiting": {
+      "athleteId": "5198317",
+      "city": "Newberry",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12001",
+        "latitude": 29.6463535,
+        "longitude": -82.6065023
+      },
+      "id": "107101",
+      "name": "Mykah Newton",
+      "position": "EDGE",
+      "ranking": 924,
+      "rating": 0.8706,
+      "recruitType": "HighSchool",
+      "school": "Newberry",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685484",
+    "recruiting": {
+      "athleteId": "4685484",
+      "city": "Alpharetta",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "114069",
+      "name": "Jack Nickel",
+      "position": "TE",
+      "ranking": 522,
+      "rating": 0.8826,
+      "recruitType": "HighSchool",
+      "school": "Milton",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2022,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141605",
+    "recruiting": {
+      "athleteId": "5141605",
+      "city": "Alpharetta",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "106423",
+      "name": "Luke Nickel",
+      "position": "QB",
+      "ranking": 232,
+      "rating": 0.9171,
+      "recruitType": "HighSchool",
+      "school": "Milton",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4919038",
+    "recruiting": {
+      "athleteId": "4919038",
+      "city": "Los Alamitos",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8038865,
+        "longitude": -118.0772433
+      },
+      "id": "111926",
+      "name": "Ethan O'Connor",
+      "position": "ATH",
+      "ranking": 674,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Los Alamitos",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870875",
+    "recruiting": {
+      "athleteId": "4870875",
+      "city": "Brockton",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "S",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "25023",
+        "latitude": 42.0834335,
+        "longitude": -71.0183787
+      },
+      "id": "111269",
+      "name": "Samson Okunlola",
+      "position": "OT",
+      "ranking": 24,
+      "rating": 0.9886,
+      "recruitType": "HighSchool",
+      "school": "Thayer Academy",
+      "stars": 5,
+      "stateProvince": "MA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4566164",
+    "recruiting": {
+      "athleteId": "4566164",
+      "city": "Wheaton",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.8646959,
+        "longitude": -88.1101709
+      },
+      "id": "120078",
+      "name": "Jack Olsen",
+      "position": "K",
+      "ranking": 1717,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Wheaton Warrenville South",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2020
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "PK",
+        "season": 2021,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "PK",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "PK",
+        "season": 2023,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "PK",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "PK",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "PK",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211183",
+    "recruiting": {
+      "athleteId": "5211183",
+      "city": "Stow",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.1596261,
+        "longitude": -81.4406258
+      },
+      "id": "104320",
+      "name": "Milan Parris",
+      "position": "WR",
+      "ranking": 112,
+      "rating": 0.952,
+      "recruitType": "HighSchool",
+      "school": "Walsh Jesuit",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5162723",
+    "recruiting": {
+      "athleteId": "5162723",
+      "city": "Tampa",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "104313",
+      "name": "Canon Pickett",
+      "position": "IOL",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Tampa Bay Tech",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079565",
+    "recruiting": {
+      "athleteId": "5079565",
+      "city": "Tampa",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "108770",
+      "name": "Booker Pickett Jr.",
+      "position": "EDGE",
+      "ranking": 72,
+      "rating": 0.9657,
+      "recruitType": "HighSchool",
+      "school": "Wharton",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5217147",
+    "recruiting": {
+      "athleteId": "5217147",
+      "city": "Charlotte",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "104201",
+      "name": "Camdin Portis",
+      "position": "CB",
+      "ranking": 258,
+      "rating": 0.9118,
+      "recruitType": "HighSchool",
+      "school": "Myers Park",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150903",
+    "recruiting": {
+      "athleteId": "5150903",
+      "city": "Wildwood",
+      "committedTo": "Jacksonville State",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12119",
+        "latitude": 28.865264,
+        "longitude": -82.0389743
+      },
+      "id": "257004",
+      "name": "Zechariah Poyser",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Wildwood",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "jacksonville-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2023,
+        "team": "Jacksonville State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Jacksonville State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5164331",
+    "recruiting": {
+      "athleteId": "5164331",
+      "city": "Seffner",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.998541000000003,
+        "longitude": -82.27488400114905
+      },
+      "id": "106340",
+      "name": "Girard Pringle Jr.",
+      "position": "RB",
+      "ranking": 149,
+      "rating": 0.9359,
+      "recruitType": "HighSchool",
+      "school": "Armwood",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 182,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5132631",
+    "recruiting": {
+      "athleteId": "5132631",
+      "city": "Theodore",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.547295,
+        "longitude": -88.18020367595204
+      },
+      "id": "109189",
+      "name": "Cam Pruitt",
+      "position": "S",
+      "ranking": 492,
+      "rating": 0.8894,
+      "recruitType": "HighSchool",
+      "school": "Theodore",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 187,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5181240",
+    "recruiting": {
+      "athleteId": "5181240",
+      "city": "Jonesboro",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13063",
+        "latitude": 33.5215013,
+        "longitude": -84.3538128
+      },
+      "id": "104148",
+      "name": "Cortez Redding",
+      "position": "S",
+      "ranking": 554,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Jonesboro",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5226978",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226979",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5170143",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4682510",
+    "recruiting": {
+      "athleteId": "4682510",
+      "city": "Miami",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "116149",
+      "name": "Ryan Rodriguez",
+      "position": "IOL",
+      "ranking": 406,
+      "rating": 0.8893,
+      "recruitType": "HighSchool",
+      "school": "Miami Columbus",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2021
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2021,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4840127",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "DB",
+        "season": 2022,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5168292",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295891",
+    "recruiting": {
+      "athleteId": "5295891",
+      "city": "Naples",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.1421976,
+        "longitude": -81.7942944
+      },
+      "id": "211741",
+      "name": "Fred Sainteus",
+      "position": "DL",
+      "ranking": 356,
+      "rating": 0.9002,
+      "recruitType": "HighSchool",
+      "school": "St. John Neumann",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 273,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079678",
+    "recruiting": {
+      "athleteId": "5079678",
+      "city": "Chicago",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "S",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "108708",
+      "name": "Justin Scott",
+      "position": "DL",
+      "ranking": 10,
+      "rating": 0.9945,
+      "recruitType": "HighSchool",
+      "school": "St. Ignatius",
+      "stars": 5,
+      "stateProvince": "IL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5304420",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214513",
+    "recruiting": {
+      "athleteId": "5214513",
+      "city": "Savannah",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13051",
+        "latitude": 32.0809263,
+        "longitude": -81.0911768
+      },
+      "id": "106429",
+      "name": "Herbert Scroggins III",
+      "position": "EDGE",
+      "ranking": 238,
+      "rating": 0.9166,
+      "recruitType": "HighSchool",
+      "school": "Benedictine Military School",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4682490",
+    "recruiting": {
+      "athleteId": "4682490",
+      "city": "Melbourne",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12009",
+        "latitude": 28.0836269,
+        "longitude": -80.6081089
+      },
+      "id": "116019",
+      "name": "Chase Smith",
+      "position": "ATH",
+      "ranking": 278,
+      "rating": 0.9059,
+      "recruitType": "HighSchool",
+      "school": "Melbourne",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2021
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2021,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5210477",
+    "recruiting": {
+      "athleteId": "5210477",
+      "city": "Mission Viejo",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5965685,
+        "longitude": -117.659405
+      },
+      "id": "103909",
+      "name": "Vance Spafford",
+      "position": "WR",
+      "ranking": 351,
+      "rating": 0.9007,
+      "recruitType": "HighSchool",
+      "school": "Mission Viejo",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5162720",
+    "recruiting": {
+      "athleteId": "5162720",
+      "city": "Jacksonville",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "104782",
+      "name": "JJ Sparks",
+      "position": "IOL",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "The Bolles School",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5212622",
+    "recruiting": {
+      "athleteId": "5212622",
+      "city": "Clayton",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "37101",
+        "latitude": 35.650711,
+        "longitude": -78.4563914
+      },
+      "id": "103992",
+      "name": "Keshawn Stancil",
+      "position": "DL",
+      "ranking": 120,
+      "rating": 0.95,
+      "recruitType": "HighSchool",
+      "school": "Clayton",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 267,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5226981",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 47,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 47,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4712326",
+    "recruiting": {
+      "athleteId": "4712326",
+      "city": "Fort Lauderdale",
+      "committedTo": "Arizona",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "117250",
+      "name": "Isaiah Taylor",
+      "position": "S",
+      "ranking": 1562,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "arizona",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2021
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2021,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2022,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2023,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5226982",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "P",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "P",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "P",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226983",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "WR",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5196025",
+    "recruiting": {
+      "athleteId": "5196025",
+      "city": "Fort Lauderdale",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "110336",
+      "name": "Omar Thornton",
+      "position": "LB",
+      "ranking": 1728,
+      "rating": 0.847,
+      "recruitType": "HighSchool",
+      "school": "American Heritage",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2024,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159175",
+    "recruiting": {
+      "athleteId": "5159175",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "106549",
+      "name": "Malachi Toney",
+      "position": "WR",
+      "ranking": 359,
+      "rating": 0.8993,
+      "recruitType": "HighSchool",
+      "school": "American Heritage",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 182,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4430604",
+    "recruiting": {
+      "athleteId": "4430604",
+      "city": "Pleasantville",
+      "committedTo": "Rutgers",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34001",
+        "latitude": 39.3898388,
+        "longitude": -74.5240422
+      },
+      "id": "123279",
+      "name": "Mohamed Toure",
+      "position": "ILB",
+      "ranking": 1024,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Pleasantville",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "rutgers",
+      "valueType": "BENCHMARK",
+      "weight": 213,
+      "year": 2019
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2021,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2022,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2023,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5164365",
+    "recruiting": {
+      "athleteId": "5164365",
+      "city": "Phenix City",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "01113",
+        "latitude": 32.4709761,
+        "longitude": -85.0007653
+      },
+      "id": "106665",
+      "name": "Daylyn Upshaw",
+      "position": "WR",
+      "ranking": 474,
+      "rating": 0.8903,
+      "recruitType": "HighSchool",
+      "school": "Central Phenix City",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226984",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5150904",
+    "recruiting": {
+      "athleteId": "5150904",
+      "city": "Temple",
+      "committedTo": "Jacksonville State",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13045",
+        "latitude": 33.733194499999996,
+        "longitude": -85.03112422515679
+      },
+      "id": "257005",
+      "name": "Cam Vaughn",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Temple",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "jacksonville-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "Jacksonville State",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "Jacksonville State",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5098610",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5163001",
+    "recruiting": {
+      "athleteId": "5163001",
+      "city": "Seffner",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.998541000000003,
+        "longitude": -82.27488400114905
+      },
+      "id": "103985",
+      "name": "Jaelen Waters",
+      "position": "CB",
+      "ranking": 165,
+      "rating": 0.9332,
+      "recruitType": "HighSchool",
+      "school": "Armwood",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5123219",
+    "recruiting": {
+      "athleteId": "5123219",
+      "city": "Delray Beach",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.4614625,
+        "longitude": -80.0728201
+      },
+      "id": "110896",
+      "name": "Jake Weinberg",
+      "position": "K",
+      "ranking": 2419,
+      "rating": 0.8236,
+      "recruitType": "HighSchool",
+      "school": "American Heritage Palm Beach",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "PK",
+        "season": 2024,
+        "team": "Florida State",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "PK",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "PK",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5142321",
+    "recruiting": {
+      "athleteId": "5142321",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "109485",
+      "name": "Chris Wheatley-Humphrey",
+      "position": "RB",
+      "ranking": 784,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "South Broward",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226985",
+    "recruiting": null,
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "RB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "RB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "RB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5236220",
+    "recruiting": {
+      "athleteId": "5236220",
+      "city": "Seffner",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.998541000000003,
+        "longitude": -82.27488400114905
+      },
+      "id": "106438",
+      "name": "Kellen Wiley Jr.",
+      "position": "LB",
+      "ranking": 247,
+      "rating": 0.9142,
+      "recruitType": "HighSchool",
+      "school": "Armwood",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5198284",
+    "recruiting": {
+      "athleteId": "5198284",
+      "city": "Orlando",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "107536",
+      "name": "Jaden Wilkerson",
+      "position": "OT",
+      "ranking": 1419,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Edgewater",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2025
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 1
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5226986",
+    "recruiting": {
+      "athleteId": "5226986",
+      "city": "Bradenton",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "111352",
+      "name": "Riley Williams",
+      "position": "TE",
+      "ranking": 110,
+      "rating": 0.948,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "DB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4871089",
+    "recruiting": {
+      "athleteId": "4871089",
+      "city": "Venice",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "S",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.0999188,
+        "longitude": -82.4543597
+      },
+      "id": "111263",
+      "name": "Damon Wilson II",
+      "position": "EDGE",
+      "ranking": 21,
+      "rating": 0.99,
+      "recruitType": "HighSchool",
+      "school": "Venice",
+      "stars": 5,
+      "stateProvince": "FL",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2023,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2024,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5200381",
+    "recruiting": {
+      "athleteId": "5200381",
+      "city": "St. Augustine",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12109",
+        "latitude": 29.8946952,
+        "longitude": -81.3145395
+      },
+      "id": "103991",
+      "name": "Somourian Wingo",
+      "position": "WR",
+      "ranking": 65,
+      "rating": 0.9708,
+      "recruitType": "HighSchool",
+      "school": "St. Augustine",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5270907",
+    "recruiting": {
+      "athleteId": "5270907",
+      "city": "Orlando",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "105211",
+      "name": "Rhys Woodrow",
+      "position": "IOL",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Boone",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209322",
+    "recruiting": {
+      "athleteId": "5209322",
+      "city": "Jonesboro",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13063",
+        "latitude": 33.5215013,
+        "longitude": -84.3538128
+      },
+      "id": "104026",
+      "name": "Jontavius Wyman",
+      "position": "CB",
+      "ranking": 376,
+      "rating": 0.8981,
+      "recruitType": "HighSchool",
+      "school": "Jonesboro",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Miami",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "Miami",
+        "year": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+import { RosterExplorer } from "../../../components/players/RosterExplorer";
+import { currentRoster } from "../../../lib/michigan/roster";
+export default function RosterPage(){const roster=currentRoster();return <div className="compact-page"><header className="compact-header"><div><span className="eyebrow">2026 MICHIGAN ROSTER · PRESEASON</span><h1>{roster.length} Wolverines. One team.</h1></div><div className="compact-kpis"><b>{roster.filter(p=>p.prospectGrade).length}<small>GRADED</small></b><b>{new Set(roster.map(p=>p.position)).size}<small>POSITIONS</small></b><b>0–0<small>RECORD</small></b></div></header><RosterExplorer players={roster}/></div>}

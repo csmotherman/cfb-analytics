@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { MichiganHome } from "../../../components/MichiganHome";
+import { redirect } from "next/navigation";
 import { CURRENT_MICHIGAN_SEASON, MICHIGAN_HISTORY_START } from "../../../lib/michigan";
 
 type Props = { params: Promise<{ season: string }> };
@@ -25,5 +25,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function FootballSeasonPage({ params }: Props) {
   const season = parseSeason((await params).season);
   if (season === null) notFound();
-  return <MichiganHome season={season} />;
+  redirect(season === CURRENT_MICHIGAN_SEASON ? "/" : `/history/${season}`);
 }

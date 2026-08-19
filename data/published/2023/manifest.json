@@ -1,0 +1,37 @@
+{
+  "artifact_sha256": "41ea21e39a18a07a4f17d38c230a4014a86881592d073254520d675ae9e50f3d",
+  "conferences": 11,
+  "format_note": "JSON is always emitted; Parquet is also emitted when pyarrow is installed.",
+  "metrics_ranked": [
+    "successRate",
+    "successRateAllowed",
+    "explosivePlayRate",
+    "explosivePlayRateAllowed",
+    "yardsPerSuccessfulPlay",
+    "yardsPerSuccessfulPlayAllowed",
+    "pointsPerResolvedPossession",
+    "pointsPerResolvedPossessionAllowed",
+    "pointsPerOpportunity",
+    "pointsPerOpportunityAllowed",
+    "havocRate",
+    "havocRateAllowed"
+  ],
+  "season": 2023,
+  "season_state": "COMPLETE",
+  "season_state_evidence": "all_saved_games_completed",
+  "team_audit": {
+    "duplicate_keys": 0,
+    "max_reconstruction_error": 0.0,
+    "status": "PASS",
+    "team_season_rows": 133
+  },
+  "team_game_audit": {
+    "duplicate_keys": 0,
+    "games": 792,
+    "status": "PASS",
+    "team_game_rows": 1584
+  },
+  "team_game_rows": 1584,
+  "team_season_rows": 133,
+  "value_type": "ACTUAL"
+}

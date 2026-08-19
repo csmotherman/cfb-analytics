@@ -1,0 +1,4364 @@
+[
+  {
+    "playerId": "5173623",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4819249",
+    "recruiting": {
+      "athleteId": "4819249",
+      "city": "Honolulu",
+      "committedTo": "Utah",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "114139",
+      "name": "Ka'eo Akana",
+      "position": "LB",
+      "ranking": 593,
+      "rating": 0.8785,
+      "recruitType": "HighSchool",
+      "school": "Roosevelt",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "utah",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2022,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2023,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5101124",
+    "recruiting": {
+      "athleteId": "5101124",
+      "city": "Las Vegas",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "110346",
+      "name": "Micah Alejado",
+      "position": "QB",
+      "ranking": 1741,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4917317",
+    "recruiting": {
+      "athleteId": "4917317",
+      "city": "Manteca",
+      "committedTo": "BYU",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06077",
+        "latitude": 37.7986184,
+        "longitude": -121.2117148
+      },
+      "id": "115099",
+      "name": "Zion Allen",
+      "position": "CB",
+      "ranking": 1637,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "Manteca",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "byu",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2022,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2023,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302880",
+    "recruiting": {
+      "athleteId": "5302880",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "106035",
+      "name": "Jahren Altura",
+      "position": "ATH",
+      "ranking": 1976,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917119",
+    "recruiting": {
+      "athleteId": "4917119",
+      "city": "Melbourne",
+      "committedTo": "Virginia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12009",
+        "latitude": 28.0836269,
+        "longitude": -80.6081089
+      },
+      "id": "114449",
+      "name": "Devin Alves",
+      "position": "ATH",
+      "ranking": 925,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Melbourne",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "virginia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2022,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2023,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2024,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084135",
+    "recruiting": {
+      "athleteId": "5084135",
+      "city": "Euless",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.8457865,
+        "longitude": -97.0667142473263
+      },
+      "id": "255850",
+      "name": "Pofele Ashlock",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Trinity",
+      "stars": null,
+      "stateProvince": "TX",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5158916",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "TE",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "TE",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "TE",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "TE",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4869582",
+    "recruiting": {
+      "athleteId": "4869582",
+      "city": "Las Vegas",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "114557",
+      "name": "Cam Barfield",
+      "position": "RB",
+      "ranking": 1040,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2022,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2023,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388744",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302881",
+    "recruiting": {
+      "athleteId": "5302881",
+      "city": "Irvine",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6856969,
+        "longitude": -117.8259819
+      },
+      "id": "105697",
+      "name": "Dillon Booth",
+      "position": "WR",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Crean Lutheran",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5299904",
+    "recruiting": {
+      "athleteId": "5299904",
+      "city": "Las Vegas",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "213297",
+      "name": "Hudson Borsari",
+      "position": "K",
+      "ranking": 3253,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "PK",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388742",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917319",
+    "recruiting": {
+      "athleteId": "4917319",
+      "city": "Waipahu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.3866667,
+        "longitude": -158.0091667
+      },
+      "id": "115642",
+      "name": "Dean Briski",
+      "position": "DL",
+      "ranking": 2511,
+      "rating": 0.7983,
+      "recruitType": "HighSchool",
+      "school": "Samoana HS",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4775257",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5081863",
+    "recruiting": {
+      "athleteId": "5081863",
+      "city": "Kansas City",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.100105,
+        "longitude": -94.5781416
+      },
+      "id": "116517",
+      "name": "Howard Brown",
+      "position": "DL",
+      "ranking": 776,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Lincoln College Prep",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 288,
+      "year": 2021
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2022,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2023,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5138130",
+    "recruiting": {
+      "athleteId": "5138130",
+      "city": "Ewa Beach",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.315603,
+        "longitude": -158.008804
+      },
+      "id": "110122",
+      "name": "Nazaiah Caravallo",
+      "position": "LB",
+      "ranking": 1464,
+      "rating": 0.8542,
+      "recruitType": "HighSchool",
+      "school": "James Campbell",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5085972",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147678",
+    "recruiting": {
+      "athleteId": "5147678",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "110837",
+      "name": "Alika Cavaco-Amoy",
+      "position": "LB",
+      "ranking": 2361,
+      "rating": 0.8261,
+      "recruitType": "HighSchool",
+      "school": "Punahou",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327571",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295248",
+    "recruiting": {
+      "athleteId": "5295248",
+      "city": "Waianae",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.446678,
+        "longitude": -158.185272
+      },
+      "id": "258219",
+      "name": "Kingston Costales",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Waianae",
+      "stars": null,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870673",
+    "recruiting": {
+      "athleteId": "4870673",
+      "city": "Las Vegas",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "111640",
+      "name": "Kodi DeCambra",
+      "position": "S",
+      "ranking": 394,
+      "rating": 0.8944,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 4,
+      "stateProvince": "NV",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4871099",
+    "recruiting": {
+      "athleteId": "4871099",
+      "city": "Mountain View",
+      "committedTo": "San Jos\u00e9 State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06085",
+        "latitude": 37.3893889,
+        "longitude": -122.0832101
+      },
+      "id": "115477",
+      "name": "Denaris DeRosa Jr.",
+      "position": "IOL",
+      "ranking": 2141,
+      "rating": 0.8144,
+      "recruitType": "HighSchool",
+      "school": "St. Francis",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "san-jos-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2022,
+        "team": "San Jos\u00e9 State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2023,
+        "team": "San Jos\u00e9 State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "San Jos\u00e9 State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "San Jos\u00e9 State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5218883",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5158917",
+    "recruiting": {
+      "athleteId": "5158917",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "217247",
+      "name": "Nick Delgadillo",
+      "position": "WR",
+      "ranking": 2529,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5150131",
+    "recruiting": {
+      "athleteId": "5150131",
+      "city": "Fort Lauderdale",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "110628",
+      "name": "Jaylon Edmond",
+      "position": "ATH",
+      "ranking": 2091,
+      "rating": 0.8353,
+      "recruitType": "HighSchool",
+      "school": "Western",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2025,
+        "team": "Wake Forest",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5150635",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2023,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2024,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152780",
+    "recruiting": {
+      "athleteId": "5152780",
+      "city": "Bend",
+      "committedTo": "Portland State",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "41017",
+        "latitude": 44.0581728,
+        "longitude": -121.3153096
+      },
+      "id": "217971",
+      "name": "Spencer Elliott",
+      "position": "IOL",
+      "ranking": 3302,
+      "rating": 0.75,
+      "recruitType": "HighSchool",
+      "school": "Summit",
+      "stars": 2,
+      "stateProvince": "OR",
+      "teamSlug": "portland-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2023,
+        "team": "Portland State",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2024,
+        "team": "Portland State",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2025,
+        "team": "Portland State",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302884",
+    "recruiting": {
+      "athleteId": "5302884",
+      "city": "Waianae",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.446678,
+        "longitude": -158.185272
+      },
+      "id": "105951",
+      "name": "Vai Fanuaea",
+      "position": "TE",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Nanakuli",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5304126",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5218882",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5218867",
+    "recruiting": {
+      "athleteId": "5218867",
+      "city": "Mountain View",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06085",
+        "latitude": 37.3893889,
+        "longitude": -122.0832101
+      },
+      "id": "113367",
+      "name": "Junior Fiaui",
+      "position": "LB",
+      "ranking": 2330,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "St. Francis",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5087651",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2025,
+        "team": "West Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291002",
+    "recruiting": {
+      "athleteId": "5291002",
+      "city": "Peoria",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.5806115,
+        "longitude": -112.2372942
+      },
+      "id": "106130",
+      "name": "TJ Fo'ilefutu",
+      "position": "ATH",
+      "ranking": 3115,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388749",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5085572",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2022,
+        "team": "Portland State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146748",
+    "recruiting": {
+      "athleteId": "5146748",
+      "city": "Keller",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.9299655,
+        "longitude": -97.2271249
+      },
+      "id": "109220",
+      "name": "Tre' Griffiths",
+      "position": "WR",
+      "ranking": 526,
+      "rating": 0.8869,
+      "recruitType": "HighSchool",
+      "school": "Keller",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388747",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079499",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Washington",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Washington",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5280596",
+    "recruiting": {
+      "athleteId": "5280596",
+      "city": "Missouri City",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "104851",
+      "name": "Robert Haynes IV",
+      "position": "WR",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Ridge Point",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388748",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5293824",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "P",
+        "season": 2025,
+        "team": "Texas",
+        "year": 1
+      },
+      {
+        "jersey": 47,
+        "position": "P",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193299",
+    "recruiting": {
+      "athleteId": "5193299",
+      "city": "Euless",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.8457865,
+        "longitude": -97.0667142473263
+      },
+      "id": "111229",
+      "name": "Jarvis Heimuli",
+      "position": "WR",
+      "ranking": 3071,
+      "rating": 0.7883,
+      "recruitType": "HighSchool",
+      "school": "Trinity",
+      "stars": 2,
+      "stateProvince": "TX",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5195571",
+    "recruiting": {
+      "athleteId": "5195571",
+      "city": "Gardena",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8963593,
+        "longitude": -118.3053037
+      },
+      "id": "238145",
+      "name": "Boogie Henderson",
+      "position": "IOL",
+      "ranking": 2492,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Junipero Serra",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388750",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4432712",
+    "recruiting": {
+      "athleteId": "4432712",
+      "city": "Mililani",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.4508308,
+        "longitude": -158.0095783
+      },
+      "id": "115897",
+      "name": "Wynden Ho'ohuli",
+      "position": "LB",
+      "ranking": 156,
+      "rating": 0.9335,
+      "recruitType": "HighSchool",
+      "school": "Mililani",
+      "stars": 4,
+      "stateProvince": "HI",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2021
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2021,
+        "team": "Nebraska",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5312618",
+    "recruiting": {
+      "athleteId": "5312618",
+      "city": "San Antonio",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48029",
+        "latitude": 29.4246002,
+        "longitude": -98.4951405
+      },
+      "id": "212985",
+      "name": "Avin Houston",
+      "position": "CB",
+      "ranking": 2846,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Central Catholic",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4879728",
+    "recruiting": {
+      "athleteId": "4879728",
+      "city": "Las Vegas",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "114954",
+      "name": "Benjamin Hudson",
+      "position": "LB",
+      "ranking": 1454,
+      "rating": 0.8433,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4891196",
+    "recruiting": {
+      "athleteId": "4891196",
+      "city": "Las Vegas",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "111780",
+      "name": "Jeremiah Hughes",
+      "position": "CB",
+      "ranking": 533,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2023,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295247",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388741",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211117",
+    "recruiting": {
+      "athleteId": "5211117",
+      "city": "Orlando",
+      "committedTo": "Virginia",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "106828",
+      "name": "Bjorn Jurgensen",
+      "position": "QB",
+      "ranking": 636,
+      "rating": 0.8803,
+      "recruitType": "HighSchool",
+      "school": "Bishop Moore Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "virginia",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Virginia",
+        "year": 1
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218879",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5218880",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5229929",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Utah",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151465",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "TE",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "TE",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "TE",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "TE",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5218871",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215247",
+    "recruiting": {
+      "athleteId": "5215247",
+      "city": "Ewa Beach",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.315603,
+        "longitude": -158.008804
+      },
+      "id": "108606",
+      "name": "Jordan Kernaghan",
+      "position": "IOL",
+      "ranking": 2951,
+      "rating": 0.8163,
+      "recruitType": "HighSchool",
+      "school": "James Campbell",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5148777",
+    "recruiting": {
+      "athleteId": "5148777",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "108368",
+      "name": "Titan Lacaden",
+      "position": "WR",
+      "ranking": 2445,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2025
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151459",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219664",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2024,
+        "team": "BYU",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295255",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5218875",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5215031",
+    "recruiting": {
+      "athleteId": "5215031",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "108638",
+      "name": "Zaden Mariteragi",
+      "position": "LB",
+      "ranking": 2980,
+      "rating": 0.8122,
+      "recruitType": "HighSchool",
+      "school": "Farrington",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4683516",
+    "recruiting": {
+      "athleteId": "4683516",
+      "city": "St. Augustine",
+      "committedTo": "Minnesota",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12109",
+        "latitude": 29.8946952,
+        "longitude": -81.3145395
+      },
+      "id": "116843",
+      "name": "Luther McCoy",
+      "position": "DL",
+      "ranking": 1123,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Creekside",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "minnesota",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2021
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2021,
+        "team": "Minnesota",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2022,
+        "team": "Minnesota",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2023,
+        "team": "Minnesota",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2024,
+        "team": "Minnesota",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5303283",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5122068",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5218869",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388746",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "P",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5158459",
+    "recruiting": {
+      "athleteId": "5158459",
+      "city": "Santa Ana",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "112042",
+      "name": "Lipe Moala",
+      "position": "IOL",
+      "ranking": 797,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141974",
+    "recruiting": {
+      "athleteId": "5141974",
+      "city": "Ewa Beach",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.315603,
+        "longitude": -158.008804
+      },
+      "id": "110918",
+      "name": "Kela Moore",
+      "position": "S",
+      "ranking": 2443,
+      "rating": 0.8222,
+      "recruitType": "HighSchool",
+      "school": "James Campbell",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4871221",
+    "recruiting": {
+      "athleteId": "4871221",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "115409",
+      "name": "Kona Moore",
+      "position": "S",
+      "ranking": 2000,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5092252",
+    "recruiting": {
+      "athleteId": "5092252",
+      "city": "Charlotte",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "257051",
+      "name": "Jack Mowrey",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Ardrey Kell",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LS",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LS",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LS",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LS",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147135",
+    "recruiting": {
+      "athleteId": "5147135",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "111124",
+      "name": "Tu'i Muti",
+      "position": "IOL",
+      "ranking": 2777,
+      "rating": 0.8096,
+      "recruitType": "HighSchool",
+      "school": "Punahou",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295256",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295244",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5078004",
+    "recruiting": {
+      "athleteId": "5078004",
+      "city": "Las Vegas",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "113272",
+      "name": "Jamih Otis",
+      "position": "LB",
+      "ranking": 2143,
+      "rating": 0.8214,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388752",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5074099",
+    "recruiting": {
+      "athleteId": "5074099",
+      "city": "Las Vegas",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "112839",
+      "name": "Elijah Palmer",
+      "position": "CB",
+      "ranking": 1630,
+      "rating": 0.8436,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5224386",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LS",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LS",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LS",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5215010",
+    "recruiting": {
+      "athleteId": "5215010",
+      "city": "Ewa Beach",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.315603,
+        "longitude": -158.008804
+      },
+      "id": "108372",
+      "name": "Aisiah Paogofie",
+      "position": "LB",
+      "ranking": 2445,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "James Campbell",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5121470",
+    "recruiting": {
+      "athleteId": "5121470",
+      "city": "Layton",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "49011",
+        "latitude": 41.0751048,
+        "longitude": -111.9741925
+      },
+      "id": "113463",
+      "name": "Zoram Petelo",
+      "position": "EDGE",
+      "ranking": 2495,
+      "rating": 0.8056,
+      "recruitType": "HighSchool",
+      "school": "Layton Christian Academy",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 223,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388753",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5291692",
+    "recruiting": {
+      "athleteId": "5291692",
+      "city": "Boise",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "16001",
+        "latitude": 43.6166163,
+        "longitude": -116.200886
+      },
+      "id": "105977",
+      "name": "Andrew Price",
+      "position": "OT",
+      "ranking": 1654,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Timberline",
+      "stars": 3,
+      "stateProvince": "ID",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079651",
+    "recruiting": {
+      "athleteId": "5079651",
+      "city": "Las Vegas",
+      "committedTo": "Kansas State",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "109798",
+      "name": "DeVon Rice",
+      "position": "ATH",
+      "ranking": 1123,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "kansas-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2024,
+        "team": "Kansas State",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kansas State",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5289727",
+    "recruiting": {
+      "athleteId": "5289727",
+      "city": "Chandler",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.3062223,
+        "longitude": -111.8413317
+      },
+      "id": "105663",
+      "name": "Marquis Richardson",
+      "position": "S",
+      "ranking": 2231,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Hamilton",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218863",
+    "recruiting": {
+      "athleteId": "5218863",
+      "city": "Mililani",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "F",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.4508308,
+        "longitude": -158.0095783
+      },
+      "id": "113541",
+      "name": "Ezekiel Rodrigues",
+      "position": "S",
+      "ranking": 2810,
+      "rating": 0.7833,
+      "recruitType": "HighSchool",
+      "school": "Mililani",
+      "stars": 2,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5158924",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295249",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4869316",
+    "recruiting": {
+      "athleteId": "4869316",
+      "city": "Pago Pago",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "60010",
+        "latitude": -14.2754786,
+        "longitude": -170.7048298
+      },
+      "id": "115144",
+      "name": "Oakie Salave'a",
+      "position": "ATH",
+      "ranking": 1685,
+      "rating": 0.8348,
+      "recruitType": "HighSchool",
+      "school": "Tafuna",
+      "stars": 3,
+      "stateProvince": "AS",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2022,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295239",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083969",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2022,
+        "team": "VMI",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "West Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4879877",
+    "recruiting": {
+      "athleteId": "4879877",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "115722",
+      "name": "Ethan Spencer",
+      "position": "IOL",
+      "ranking": 2711,
+      "rating": 0.7833,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 2,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388743",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5292969",
+    "recruiting": {
+      "athleteId": "5292969",
+      "city": "Scottsdale",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "212434",
+      "name": "Kydel Stone",
+      "position": "CB",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Saguaro",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151458",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4819259",
+    "recruiting": {
+      "athleteId": "4819259",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "234742",
+      "name": "Devon Tauaefa",
+      "position": "WR",
+      "ranking": 2000,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5155701",
+    "recruiting": {
+      "athleteId": "5155701",
+      "city": "Lakewood",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8503463,
+        "longitude": -118.1171914
+      },
+      "id": "110944",
+      "name": "Jay Tauala-Harris",
+      "position": "IOL",
+      "ranking": 2469,
+      "rating": 0.8204,
+      "recruitType": "HighSchool",
+      "school": "Lakewood",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222648",
+    "recruiting": {
+      "athleteId": "5222648",
+      "city": "Salt Lake City",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "49035",
+        "latitude": 40.7596198,
+        "longitude": -111.8867975
+      },
+      "id": "108006",
+      "name": "Uluaki Taukiuvea",
+      "position": "ATH",
+      "ranking": 1971,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Hunter",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2025
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295251",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 1
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084119",
+    "recruiting": {
+      "athleteId": "5084119",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "118228",
+      "name": "Matagi Thompson",
+      "position": "S",
+      "ranking": 2536,
+      "rating": 0.7933,
+      "recruitType": "HighSchool",
+      "school": "Punahou",
+      "stars": 2,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2021
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4912070",
+    "recruiting": {
+      "athleteId": "4912070",
+      "city": "Los Alamitos",
+      "committedTo": "Utah State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8038865,
+        "longitude": -118.0772433
+      },
+      "id": "115026",
+      "name": "Adam Tomczyk",
+      "position": "DL",
+      "ranking": 1571,
+      "rating": 0.8393,
+      "recruitType": "HighSchool",
+      "school": "Los Alamitos",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "utah-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2022
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2022,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2023,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2025,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291024",
+    "recruiting": {
+      "athleteId": "5291024",
+      "city": "Calgary",
+      "committedTo": "Hawai'i",
+      "country": "CAN",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "105942",
+      "name": "Cooper Troy",
+      "position": "IOL",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Team Alberta",
+      "stars": 3,
+      "stateProvince": "AB",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218881",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388745",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296026",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5158769",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2023,
+        "team": "Idaho State",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388751",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147694",
+    "recruiting": {
+      "athleteId": "5147694",
+      "city": "Honolulu",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "110421",
+      "name": "Noah Wily",
+      "position": "EDGE",
+      "ranking": 1816,
+      "rating": 0.8442,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2024
+    },
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DL",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295254",
+    "recruiting": null,
+    "team": "Hawai'i",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2025,
+        "team": "Hawai'i",
+        "year": 2
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "Hawai'i",
+        "year": 2
+      }
+    ]
+  }
+]

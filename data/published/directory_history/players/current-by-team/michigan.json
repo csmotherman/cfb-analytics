@@ -1,0 +1,5188 @@
+[
+  {
+    "playerId": "5224470",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2025,
+        "team": "Butler",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4878106",
+    "recruiting": {
+      "athleteId": "4878106",
+      "city": "Park City",
+      "committedTo": "Utah State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "49043",
+        "latitude": 40.6460635,
+        "longitude": -111.4979741
+      },
+      "id": "115493",
+      "name": "Max Alford",
+      "position": "RB",
+      "ranking": 2158,
+      "rating": 0.813,
+      "recruitType": "HighSchool",
+      "school": "Park City",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "utah-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2022,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2023,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2025,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5086016",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "S",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "S",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "S",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5142589",
+    "recruiting": {
+      "athleteId": "5142589",
+      "city": "Overland Park",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "S",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 38.9742502,
+        "longitude": -94.6851702
+      },
+      "id": "106207",
+      "name": "Andrew Babalola",
+      "position": "OT",
+      "ranking": 16,
+      "rating": 0.9914,
+      "recruitType": "HighSchool",
+      "school": "Blue Valley Northwest",
+      "stars": 5,
+      "stateProvince": "KS",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5391394",
+    "recruiting": {
+      "athleteId": "5391394",
+      "city": "Charlotte",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "224728",
+      "name": "Jacob Baggett",
+      "position": "K",
+      "ranking": 3341,
+      "rating": 0.805,
+      "recruitType": "HighSchool",
+      "school": "Providence Day School",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "PK",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921240",
+    "recruiting": {
+      "athleteId": "4921240",
+      "city": "Wilmette",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0757315,
+        "longitude": -87.7193768
+      },
+      "id": "111925",
+      "name": "Brooks Bahr",
+      "position": "DL",
+      "ranking": 674,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Loyola Academy",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5391397",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5391401",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5081267",
+    "recruiting": {
+      "athleteId": "5081267",
+      "city": "Wallingford",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "09009",
+        "latitude": 41.4570418,
+        "longitude": -72.8231552
+      },
+      "id": "109607",
+      "name": "Manuel Beigel",
+      "position": "DL",
+      "ranking": 928,
+      "rating": 0.8697,
+      "recruitType": "HighSchool",
+      "school": "Choate Rosemary Hall",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 282,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5108220",
+    "recruiting": {
+      "athleteId": "5108220",
+      "city": "Kansas City",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.100105,
+        "longitude": -94.5781416
+      },
+      "id": "112108",
+      "name": "Kendrick Bell",
+      "position": "ATH",
+      "ranking": 863,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Park Hill",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4794102",
+    "recruiting": {
+      "athleteId": "4794102",
+      "city": "Concord",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.9768525,
+        "longitude": -122.0335624
+      },
+      "id": "113714",
+      "name": "Zeke Berry",
+      "position": "S",
+      "ranking": 171,
+      "rating": 0.9313,
+      "recruitType": "HighSchool",
+      "school": "De La Salle",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2022
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209346",
+    "recruiting": {
+      "athleteId": "5209346",
+      "city": "Chicago",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "104003",
+      "name": "McHale Blade",
+      "position": "DL",
+      "ranking": 438,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "Simeon",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222268",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "PK",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 35,
+        "position": "PK",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 35,
+        "position": "PK",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5162850",
+    "recruiting": {
+      "athleteId": "5162850",
+      "city": "Washington",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "104662",
+      "name": "Tariq Boney",
+      "position": "EDGE",
+      "ranking": 314,
+      "rating": 0.9049,
+      "recruitType": "HighSchool",
+      "school": "St. John's College",
+      "stars": 4,
+      "stateProvince": "DC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5276673",
+    "recruiting": {
+      "athleteId": "5276673",
+      "city": "Denver",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "08031",
+        "latitude": 39.7392364,
+        "longitude": -104.9848623
+      },
+      "id": "104453",
+      "name": "Mason Bonner",
+      "position": "TE",
+      "ranking": 527,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Mullen",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870632",
+    "recruiting": {
+      "athleteId": "4870632",
+      "city": "Tampa",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "111329",
+      "name": "Troy Bowles",
+      "position": "LB",
+      "ranking": 81,
+      "rating": 0.9627,
+      "recruitType": "HighSchool",
+      "school": "Tampa Jesuit",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2023,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2024,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5078910",
+    "recruiting": {
+      "athleteId": "5078910",
+      "city": "Mobile",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.6943566,
+        "longitude": -88.0430541
+      },
+      "id": "113246",
+      "name": "Chris Bracy",
+      "position": "S",
+      "ranking": 2112,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "St. Paul's Episcopal",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2023,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2024,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2025,
+        "team": "Memphis",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4923036",
+    "recruiting": {
+      "athleteId": "4923036",
+      "city": "Chatsworth",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2595715,
+        "longitude": -118.6023247
+      },
+      "id": "111708",
+      "name": "Cameron Brandt",
+      "position": "DL",
+      "ranking": 458,
+      "rating": 0.8894,
+      "recruitType": "HighSchool",
+      "school": "Sierra Canyon",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5215236",
+    "recruiting": {
+      "athleteId": "5215236",
+      "city": "Lake Worth",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.615891,
+        "longitude": -80.0691435
+      },
+      "id": "106732",
+      "name": "Jamar Browder",
+      "position": "WR",
+      "ranking": 541,
+      "rating": 0.8858,
+      "recruitType": "HighSchool",
+      "school": "Santaluces Community",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5265648",
+    "recruiting": {
+      "athleteId": "5265648",
+      "city": "Australia",
+      "committedTo": "UNLV",
+      "country": "AUS",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "258061",
+      "name": "Cameron Brown",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Gold Coast Stingrays",
+      "stars": null,
+      "stateProvince": null,
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "P",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "P",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5281455",
+    "recruiting": {
+      "athleteId": "5281455",
+      "city": "Columbus",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 39.9622601,
+        "longitude": -83.0007065
+      },
+      "id": "104401",
+      "name": "Jonathan Brown",
+      "position": "RB",
+      "ranking": 804,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "St. Francis de Sales",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214557",
+    "recruiting": {
+      "athleteId": "5214557",
+      "city": "Henderson",
+      "committedTo": "Utah",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "106760",
+      "name": "JJ Buchanan",
+      "position": "ATH",
+      "ranking": 570,
+      "rating": 0.8841,
+      "recruitType": "HighSchool",
+      "school": "Coronado",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "utah",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "Utah",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296243",
+    "recruiting": {
+      "athleteId": "5296243",
+      "city": "Orlando",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "108526",
+      "name": "Trey Butkowski",
+      "position": "K",
+      "ranking": 2733,
+      "rating": 0.8233,
+      "recruitType": "HighSchool",
+      "school": "Lake Nona",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2025,
+        "team": "Pittsburgh",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5269403",
+    "recruiting": {
+      "athleteId": "5269403",
+      "city": "Saline",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "26161",
+        "latitude": 42.1667072,
+        "longitude": -83.7816075
+      },
+      "id": "104887",
+      "name": "Tommy Carr",
+      "position": "QB",
+      "ranking": 318,
+      "rating": 0.9044,
+      "recruitType": "HighSchool",
+      "school": "Saline",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5274327",
+    "recruiting": {
+      "athleteId": "5274327",
+      "city": "Flowood",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "28121",
+        "latitude": 32.3095903,
+        "longitude": -90.1389757
+      },
+      "id": "105139",
+      "name": "Kaden Catchings",
+      "position": "LB",
+      "ranking": 1030,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Hartfield Academy",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391399",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5084942",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2025,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079392",
+    "recruiting": {
+      "athleteId": "5079392",
+      "city": "Nashville",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "109009",
+      "name": "Mason Curtis",
+      "position": "LB",
+      "ranking": 311,
+      "rating": 0.9055,
+      "recruitType": "HighSchool",
+      "school": "Ensworth",
+      "stars": 4,
+      "stateProvince": "TN",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161819",
+    "recruiting": {
+      "athleteId": "5161819",
+      "city": "Richmond",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "51760",
+        "latitude": 37.5385087,
+        "longitude": -77.43428
+      },
+      "id": "104641",
+      "name": "Markel Dabney",
+      "position": "ATH",
+      "ranking": 804,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Huguenot",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160962",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2023,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2025,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209293",
+    "recruiting": {
+      "athleteId": "5209293",
+      "city": "St. Louis",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "A",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "103936",
+      "name": "Titan Davis",
+      "position": "DL",
+      "ranking": 96,
+      "rating": 0.9595,
+      "recruitType": "HighSchool",
+      "school": "De Smet Jesuit",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 271,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209376",
+    "recruiting": {
+      "athleteId": "5209376",
+      "city": "Frisco",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "104226",
+      "name": "Jordan Deck",
+      "position": "S",
+      "ranking": 379,
+      "rating": 0.8978,
+      "recruitType": "HighSchool",
+      "school": "Frisco Lone Star",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391403",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141437",
+    "recruiting": {
+      "athleteId": "5141437",
+      "city": "Chester",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "51041",
+        "latitude": 37.3569086,
+        "longitude": -77.4421818
+      },
+      "id": "106279",
+      "name": "Shamari Earls",
+      "position": "CB",
+      "ranking": 88,
+      "rating": 0.9544,
+      "recruitType": "HighSchool",
+      "school": "Thomas Dale",
+      "stars": 4,
+      "stateProvince": "VA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084045",
+    "recruiting": {
+      "athleteId": "5084045",
+      "city": "Nappanee",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "18039",
+        "latitude": 41.4427856,
+        "longitude": -86.0013699
+      },
+      "id": "108856",
+      "name": "Jo'Ziah Edmond",
+      "position": "CB",
+      "ranking": 158,
+      "rating": 0.9309,
+      "recruitType": "HighSchool",
+      "school": "Northwood",
+      "stars": 4,
+      "stateProvince": "IN",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 181,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5168274",
+    "recruiting": {
+      "athleteId": "5168274",
+      "city": "District Heights",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.8576128,
+        "longitude": -76.8894171
+      },
+      "id": "108850",
+      "name": "Lugard Edokpayi",
+      "position": "EDGE",
+      "ranking": 152,
+      "rating": 0.9344,
+      "recruitType": "HighSchool",
+      "school": "Bishop McNamara",
+      "stars": 4,
+      "stateProvince": "MD",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870717",
+    "recruiting": {
+      "athleteId": "4870717",
+      "city": "Cumming",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "13117",
+        "latitude": 34.2073196,
+        "longitude": -84.1401926
+      },
+      "id": "111596",
+      "name": "Nathan Efobi",
+      "position": "IOL",
+      "ranking": 348,
+      "rating": 0.8984,
+      "recruitType": "HighSchool",
+      "school": "South Forsyth",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 282,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870704",
+    "recruiting": {
+      "athleteId": "4870704",
+      "city": "Colleyville",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.8809603,
+        "longitude": -97.155012
+      },
+      "id": "111375",
+      "name": "Enow Etta",
+      "position": "DL",
+      "ranking": 121,
+      "rating": 0.9453,
+      "recruitType": "HighSchool",
+      "school": "Covenant Christian Academy",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DT",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "DT",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "DT",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5391396",
+    "recruiting": {
+      "athleteId": "5391396",
+      "city": "Argyle",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.110156,
+        "longitude": -97.17940980147037
+      },
+      "id": "224528",
+      "name": "Ndi Etta",
+      "position": "EDGE",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Liberty Christian",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141435",
+    "recruiting": {
+      "athleteId": "5141435",
+      "city": "Jacksonville",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "106235",
+      "name": "Jaime Ffrench Jr.",
+      "position": "WR",
+      "ranking": 44,
+      "rating": 0.979,
+      "recruitType": "HighSchool",
+      "school": "Mandarin",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2025,
+        "team": "Texas",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5086017",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4833597",
+    "recruiting": {
+      "athleteId": "4833597",
+      "city": "Aledo",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48367",
+        "latitude": 32.69900905,
+        "longitude": -97.60396629774493
+      },
+      "id": "114900",
+      "name": "Brayden Fowler-Nicolosi",
+      "position": "QB",
+      "ranking": 1404,
+      "rating": 0.8456,
+      "recruitType": "HighSchool",
+      "school": "Aledo",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2022
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2022,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2023,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2024,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2025,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5279127",
+    "recruiting": {
+      "athleteId": "5279127",
+      "city": "Wilmette",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0757315,
+        "longitude": -87.7193768
+      },
+      "id": "105110",
+      "name": "Tommy Fraumann",
+      "position": "OT",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Loyola Academy",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5110462",
+    "recruiting": {
+      "athleteId": "5110462",
+      "city": "Austin",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "108867",
+      "name": "Blake Frazier",
+      "position": "OT",
+      "ranking": 169,
+      "rating": 0.9289,
+      "recruitType": "HighSchool",
+      "school": "Austin Vandegrift",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141453",
+    "recruiting": {
+      "athleteId": "5141453",
+      "city": "Franklin",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.5222567,
+        "longitude": -83.3060432
+      },
+      "id": "106470",
+      "name": "Avery Gach",
+      "position": "IOL",
+      "ranking": 280,
+      "rating": 0.909,
+      "recruitType": "HighSchool",
+      "school": "Wylie E. Groves",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079417",
+    "recruiting": {
+      "athleteId": "5079417",
+      "city": "Charlotte",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "109273",
+      "name": "Channing Goodwin",
+      "position": "WR",
+      "ranking": 581,
+      "rating": 0.8836,
+      "recruitType": "HighSchool",
+      "school": "Providence Day School",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079452",
+    "recruiting": {
+      "athleteId": "5079452",
+      "city": "Ponte Vedra Beach",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12109",
+        "latitude": 30.2396865,
+        "longitude": -81.3856384
+      },
+      "id": "109202",
+      "name": "Jake Guarnera",
+      "position": "IOL",
+      "ranking": 508,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Ponte Vedra",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391402",
+    "recruiting": {
+      "athleteId": "5391402",
+      "city": "Washington",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "104775",
+      "name": "Ace Hamilton",
+      "position": "IOL",
+      "ranking": 608,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "St. John's College",
+      "stars": 3,
+      "stateProvince": "DC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079487",
+    "recruiting": {
+      "athleteId": "5079487",
+      "city": "Avon",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39093",
+        "latitude": 41.4516512,
+        "longitude": -82.0350598
+      },
+      "id": "109112",
+      "name": "Luke Hamilton",
+      "position": "IOL",
+      "ranking": 409,
+      "rating": 0.895,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5089325",
+    "recruiting": {
+      "athleteId": "5089325",
+      "city": "Cincinnati",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "109135",
+      "name": "Ted Hammond",
+      "position": "DL",
+      "ranking": 434,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "St. Xavier",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 258,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079494",
+    "recruiting": {
+      "athleteId": "5079494",
+      "city": "Bellevue",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6144219,
+        "longitude": -122.1923372
+      },
+      "id": "109046",
+      "name": "Hogan Hansen",
+      "position": "TE",
+      "ranking": 348,
+      "rating": 0.9012,
+      "recruitType": "HighSchool",
+      "school": "Bellevue",
+      "stars": 4,
+      "stateProvince": "WA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5258803",
+    "recruiting": {
+      "athleteId": "5258803",
+      "city": "Cincinnati",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "108386",
+      "name": "Chase Herbstreit",
+      "position": "QB",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "St. Xavier",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4918449",
+    "recruiting": {
+      "athleteId": "4918449",
+      "city": "Kankakee",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17091",
+        "latitude": 41.1200325,
+        "longitude": -87.8611531
+      },
+      "id": "111412",
+      "name": "Jyaire Hill",
+      "position": "CB",
+      "ranking": 174,
+      "rating": 0.9312,
+      "recruitType": "HighSchool",
+      "school": "Kankakee",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159046",
+    "recruiting": {
+      "athleteId": "5159046",
+      "city": "Mineral",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "S",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "51109",
+        "latitude": 38.010695,
+        "longitude": -77.9086068
+      },
+      "id": "103852",
+      "name": "Savion Hiter",
+      "position": "RB",
+      "ranking": 12,
+      "rating": 0.9933,
+      "recruitType": "HighSchool",
+      "school": "Louisa County",
+      "stars": 5,
+      "stateProvince": "VA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5156349",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5085243",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "P",
+        "season": 2022,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "P",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "P",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "P",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "P",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5199856",
+    "recruiting": {
+      "athleteId": "5199856",
+      "city": "Alpharetta",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "106598",
+      "name": "Julius Holly",
+      "position": "EDGE",
+      "ranking": 404,
+      "rating": 0.895,
+      "recruitType": "HighSchool",
+      "school": "Alpharetta",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "DE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141530",
+    "recruiting": {
+      "athleteId": "5141530",
+      "city": "Bradenton",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "106670",
+      "name": "Donovan Johnson",
+      "position": "RB",
+      "ranking": 478,
+      "rating": 0.89,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209314",
+    "recruiting": {
+      "athleteId": "5209314",
+      "city": "Chesapeake",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "51550",
+        "latitude": 36.7183708,
+        "longitude": -76.2466798
+      },
+      "id": "103979",
+      "name": "Travis Johnson",
+      "position": "WR",
+      "ranking": 125,
+      "rating": 0.9481,
+      "recruitType": "HighSchool",
+      "school": "Oscar Smith",
+      "stars": 4,
+      "stateProvince": "VA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295977",
+    "recruiting": {
+      "athleteId": "5295977",
+      "city": "Honolulu",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "106829",
+      "name": "Houston Ka'aha'aina-Torres",
+      "position": "IOL",
+      "ranking": 636,
+      "rating": 0.8803,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Nebraska",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079546",
+    "recruiting": {
+      "athleteId": "5079546",
+      "city": "Las Vegas",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "109259",
+      "name": "Micah Ka'apana",
+      "position": "RB",
+      "ranking": 567,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141554",
+    "recruiting": {
+      "athleteId": "5141554",
+      "city": "Howell",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26093",
+        "latitude": 42.6072552,
+        "longitude": -83.9293952
+      },
+      "id": "106710",
+      "name": "Bobby Kanka",
+      "position": "DL",
+      "ranking": 519,
+      "rating": 0.8875,
+      "recruitType": "HighSchool",
+      "school": "Howell",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5086022",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5156348",
+    "recruiting": {
+      "athleteId": "5156348",
+      "city": "Ada",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "081",
+        "latitude": 42.9582975,
+        "longitude": -85.5004645
+      },
+      "id": "217807",
+      "name": "Bryson Kuzdzal",
+      "position": "RB",
+      "ranking": 3001,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "Forest Hills Eastern",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4891197",
+    "recruiting": {
+      "athleteId": "4891197",
+      "city": "Las Vegas",
+      "committedTo": "Utah",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "112474",
+      "name": "Jonah Lea'ea",
+      "position": "EDGE",
+      "ranking": 1245,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "utah",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2023,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2025,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5160491",
+    "recruiting": {
+      "athleteId": "5160491",
+      "city": "Honolulu",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "A",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "103972",
+      "name": "Malakai Lee",
+      "position": "OT",
+      "ranking": 107,
+      "rating": 0.9543,
+      "recruitType": "HighSchool",
+      "school": "Kamehameha Kapalama",
+      "stars": 4,
+      "stateProvince": "HI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 349,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4899479",
+    "recruiting": {
+      "athleteId": "4899479",
+      "city": "Washington",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "111519",
+      "name": "Evan Link",
+      "position": "OT",
+      "ranking": 270,
+      "rating": 0.9097,
+      "recruitType": "HighSchool",
+      "school": "Gonzaga",
+      "stars": 4,
+      "stateProvince": "DC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5127729",
+    "recruiting": {
+      "athleteId": "5127729",
+      "city": "Lexington",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "21067",
+        "latitude": 38.0464066,
+        "longitude": -84.4970393
+      },
+      "id": "109858",
+      "name": "Jeremiah Lowe",
+      "position": "CB",
+      "ranking": 1183,
+      "rating": 0.8614,
+      "recruitType": "HighSchool",
+      "school": "Frederick Douglass",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141803",
+    "recruiting": {
+      "athleteId": "5141803",
+      "city": "South Park",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.312149399999996,
+        "longitude": -80.00343121383315
+      },
+      "id": "110558",
+      "name": "Zach Ludwig",
+      "position": "LB",
+      "ranking": 2017,
+      "rating": 0.8386,
+      "recruitType": "HighSchool",
+      "school": "South Park",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 202,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295951",
+    "recruiting": {
+      "athleteId": "5295951",
+      "city": "Erie",
+      "committedTo": "Marshall",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "42049",
+        "latitude": 42.1294712,
+        "longitude": -80.0852695
+      },
+      "id": "258172",
+      "name": "Gavin Magorien",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "McDowell",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "marshall",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2025,
+        "team": "Marshall",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141572",
+    "recruiting": {
+      "athleteId": "5141572",
+      "city": "Fulshear",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.690292,
+        "longitude": -95.8996261
+      },
+      "id": "106308",
+      "name": "Andrew Marsh",
+      "position": "WR",
+      "ranking": 117,
+      "rating": 0.9448,
+      "recruitType": "HighSchool",
+      "school": "Katy Jordan",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079574",
+    "recruiting": {
+      "athleteId": "5079574",
+      "city": "Cincinnati",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "A",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "108776",
+      "name": "Jordan Marshall",
+      "position": "RB",
+      "ranking": 78,
+      "rating": 0.9606,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Moeller",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141534",
+    "recruiting": {
+      "athleteId": "5141534",
+      "city": "Oak Park",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "A",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8878145,
+        "longitude": -87.7887615
+      },
+      "id": "106234",
+      "name": "Nate Marshall",
+      "position": "EDGE",
+      "ranking": 43,
+      "rating": 0.9791,
+      "recruitType": "HighSchool",
+      "school": "Fenwick",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 94,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5088628",
+    "recruiting": {
+      "athleteId": "5088628",
+      "city": "Carlsbad",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 33.1580933,
+        "longitude": -117.3505966
+      },
+      "id": "216936",
+      "name": "Zack Marshall",
+      "position": "ATH",
+      "ranking": 546,
+      "rating": 0.8836,
+      "recruitType": "HighSchool",
+      "school": "Carlsbad",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209412",
+    "recruiting": {
+      "athleteId": "5209412",
+      "city": "Washington",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "S",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "103907",
+      "name": "Carter Meadows",
+      "position": "EDGE",
+      "ranking": 9,
+      "rating": 0.9945,
+      "recruitType": "HighSchool",
+      "school": "Gonzaga",
+      "stars": 5,
+      "stateProvince": "DC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5153627",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "LS",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 67,
+        "position": "LS",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 67,
+        "position": "LS",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 67,
+        "position": "LS",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4896290",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2022,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2023,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2024,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159013",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4603101",
+    "recruiting": {
+      "athleteId": "4603101",
+      "city": "Clayton",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "39113",
+        "latitude": 39.8631101,
+        "longitude": -84.3605022
+      },
+      "id": "116247",
+      "name": "Rod Moore",
+      "position": "S",
+      "ranking": 506,
+      "rating": 0.8807,
+      "recruitType": "HighSchool",
+      "school": "Northmont",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2021
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2021,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5217105",
+    "recruiting": {
+      "athleteId": "5217105",
+      "city": "Louisville",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "21111",
+        "latitude": 38.2542376,
+        "longitude": -85.759407
+      },
+      "id": "106519",
+      "name": "Travis Moten",
+      "position": "DL",
+      "ranking": 329,
+      "rating": 0.9017,
+      "recruitType": "HighSchool",
+      "school": "Fern Creek Traditional",
+      "stars": 4,
+      "stateProvince": "KY",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079636",
+    "recruiting": {
+      "athleteId": "5079636",
+      "city": "Ijamsville",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "24021",
+        "latitude": 39.3603809,
+        "longitude": -77.3227621
+      },
+      "id": "109244",
+      "name": "Dominic Nichols",
+      "position": "EDGE",
+      "ranking": 549,
+      "rating": 0.8853,
+      "recruitType": "HighSchool",
+      "school": "Oakdale",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 252,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "DE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5086014",
+    "recruiting": {
+      "athleteId": "5086014",
+      "city": "Detroit",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "235264",
+      "name": "Josh Nichols",
+      "position": "ATH",
+      "ranking": 2723,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Renaissance",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2022
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152089",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276986",
+    "recruiting": {
+      "athleteId": "5276986",
+      "city": "Anaheim",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8347516,
+        "longitude": -117.911732
+      },
+      "id": "105353",
+      "name": "Ernest Nunley",
+      "position": "CB",
+      "ranking": 1030,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Anaheim Western",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222269",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "RB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "RB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079644",
+    "recruiting": {
+      "athleteId": "5079644",
+      "city": "Harper Woods",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.4333367,
+        "longitude": -82.9238847
+      },
+      "id": "108991",
+      "name": "Jacob Oden",
+      "position": "S",
+      "ranking": 293,
+      "rating": 0.9076,
+      "recruitType": "HighSchool",
+      "school": "Harper Woods",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141588",
+    "recruiting": {
+      "athleteId": "5141588",
+      "city": "Alcoa",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "47009",
+        "latitude": 35.7895271,
+        "longitude": -83.9737935
+      },
+      "id": "106757",
+      "name": "Eli Owens",
+      "position": "TE",
+      "ranking": 563,
+      "rating": 0.8842,
+      "recruitType": "HighSchool",
+      "school": "Alcoa",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 243,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141620",
+    "recruiting": {
+      "athleteId": "5141620",
+      "city": "Bradenton",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "106336",
+      "name": "Nathaniel Owusu-Boateng",
+      "position": "LB",
+      "ranking": 145,
+      "rating": 0.9371,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5128064",
+    "recruiting": {
+      "athleteId": "5128064",
+      "city": "Lancaster",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42071",
+        "latitude": 40.03813,
+        "longitude": -76.3056686
+      },
+      "id": "109465",
+      "name": "Deyvid Palepale",
+      "position": "DL",
+      "ranking": 776,
+      "rating": 0.8747,
+      "recruitType": "HighSchool",
+      "school": "Manheim Township",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5210185",
+    "recruiting": {
+      "athleteId": "5210185",
+      "city": "Newburgh",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18173",
+        "latitude": 37.9456824,
+        "longitude": -87.4046571
+      },
+      "id": "106552",
+      "name": "Benny Patterson",
+      "position": "DL",
+      "ranking": 362,
+      "rating": 0.8989,
+      "recruitType": "HighSchool",
+      "school": "Castle",
+      "stars": 4,
+      "stateProvince": "IN",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 93,
+        "position": "DE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4495746",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5156353",
+    "recruiting": {
+      "athleteId": "5156353",
+      "city": "Oak Lawn",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.7108662,
+        "longitude": -87.7581081
+      },
+      "id": "111813",
+      "name": "Trey Pierce",
+      "position": "DL",
+      "ranking": 568,
+      "rating": 0.8825,
+      "recruitType": "HighSchool",
+      "school": "Brother Rice",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209416",
+    "recruiting": {
+      "athleteId": "5209416",
+      "city": "Dallas",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "104567",
+      "name": "Jaylen Pile",
+      "position": "WR",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Dallas Parish Episcopal",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 187,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391398",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5299144",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "TE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276971",
+    "recruiting": {
+      "athleteId": "5276971",
+      "city": "Cincinnati",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "104395",
+      "name": "Aden Reeder",
+      "position": "LB",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "St. Xavier",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222267",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5299145",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "P",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "P",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5222271",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159073",
+    "recruiting": {
+      "athleteId": "5159073",
+      "city": "Newbury Park",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06111",
+        "latitude": 34.183671,
+        "longitude": -118.9118302
+      },
+      "id": "103918",
+      "name": "Brady Smigiel",
+      "position": "QB",
+      "ranking": 411,
+      "rating": 0.8964,
+      "recruitType": "HighSchool",
+      "school": "Newbury Park",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4918445",
+    "recruiting": {
+      "athleteId": "4918445",
+      "city": "Lehi",
+      "committedTo": "Utah",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "49049",
+        "latitude": 40.3880902,
+        "longitude": -111.8491619
+      },
+      "id": "111578",
+      "name": "Smith Snowden",
+      "position": "CB",
+      "ranking": 356,
+      "rating": 0.8976,
+      "recruitType": "HighSchool",
+      "school": "Skyridge",
+      "stars": 4,
+      "stateProvince": "UT",
+      "teamSlug": "utah",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2023,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2025,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079729",
+    "recruiting": {
+      "athleteId": "5079729",
+      "city": "Kansas City",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.100105,
+        "longitude": -94.5781416
+      },
+      "id": "108820",
+      "name": "Andrew Sprague",
+      "position": "OT",
+      "ranking": 122,
+      "rating": 0.9447,
+      "recruitType": "HighSchool",
+      "school": "Rockhurst",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 286,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391395",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5087172",
+    "recruiting": {
+      "athleteId": "5087172",
+      "city": "Brainerd",
+      "committedTo": "North Dakota State",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "27035",
+        "latitude": 46.3580221,
+        "longitude": -94.2008288
+      },
+      "id": "255963",
+      "name": "Nathaniel Staehling",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Brainerd",
+      "stars": null,
+      "stateProvince": "MN",
+      "teamSlug": "north-dakota-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2022,
+        "team": "North Dakota State",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2024,
+        "team": "North Dakota State",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "North Dakota State",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079731",
+    "recruiting": {
+      "athleteId": "5079731",
+      "city": "Chicago",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "109008",
+      "name": "I'Marion Stewart",
+      "position": "WR",
+      "ranking": 310,
+      "rating": 0.9056,
+      "recruitType": "HighSchool",
+      "school": "Kenwood Academy",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5086023",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5167194",
+    "recruiting": {
+      "athleteId": "5167194",
+      "city": "Stockbridge",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.5442781,
+        "longitude": -84.2338093
+      },
+      "id": "106885",
+      "name": "Chase Taylor",
+      "position": "LB",
+      "ranking": 702,
+      "rating": 0.8781,
+      "recruitType": "HighSchool",
+      "school": "Stockbridge",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 201,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4899352",
+    "recruiting": {
+      "athleteId": "4899352",
+      "city": "Oswego",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17093",
+        "latitude": 41.6789932,
+        "longitude": -88.3550216
+      },
+      "id": "111660",
+      "name": "Deakon Tonielli",
+      "position": "TE",
+      "ranking": 415,
+      "rating": 0.8928,
+      "recruitType": "HighSchool",
+      "school": "Oswego",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5391400",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141741",
+    "recruiting": {
+      "athleteId": "5141741",
+      "city": "Belleville",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "S+",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 42.2048414,
+        "longitude": -83.4852106
+      },
+      "id": "106192",
+      "name": "Bryce Underwood",
+      "position": "QB",
+      "ranking": 1,
+      "rating": 0.9998,
+      "recruitType": "HighSchool",
+      "school": "Belleville",
+      "stars": 5,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290675",
+    "recruiting": {
+      "athleteId": "5290675",
+      "city": "Liberty Hill",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48491",
+        "latitude": 30.6649119,
+        "longitude": -97.9225161
+      },
+      "id": "104251",
+      "name": "Alister Vallejo",
+      "position": "DL",
+      "ranking": 212,
+      "rating": 0.9208,
+      "recruitType": "HighSchool",
+      "school": "Liberty Hill",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DT",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5207605",
+    "recruiting": {
+      "athleteId": "5207605",
+      "city": "Waco",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48309",
+        "latitude": 31.549333,
+        "longitude": -97.1466695
+      },
+      "id": "104024",
+      "name": "Jamarion Vincent",
+      "position": "CB",
+      "ranking": 150,
+      "rating": 0.939,
+      "recruitType": "HighSchool",
+      "school": "Waco Connally",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160473",
+    "recruiting": {
+      "athleteId": "5160473",
+      "city": "Needham",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "25021",
+        "latitude": 42.283431,
+        "longitude": -71.2328329
+      },
+      "id": "104285",
+      "name": "Marky Walbridge",
+      "position": "OT",
+      "ranking": 241,
+      "rating": 0.916,
+      "recruitType": "HighSchool",
+      "school": "St. Sebastian's",
+      "stars": 4,
+      "stateProvince": "MA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5207806",
+    "recruiting": {
+      "athleteId": "5207806",
+      "city": "Marrero",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "22051",
+        "latitude": 29.8993723,
+        "longitude": -90.1003506
+      },
+      "id": "106391",
+      "name": "Jacob Washington",
+      "position": "WR",
+      "ranking": 200,
+      "rating": 0.9251,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Shaw",
+      "stars": 4,
+      "stateProvince": "LA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5156351",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5086018",
+    "recruiting": null,
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "WR",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "WR",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "WR",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "WR",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141759",
+    "recruiting": {
+      "athleteId": "5141759",
+      "city": "Washington",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "A",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "106287",
+      "name": "Kainoa Winston",
+      "position": "S",
+      "ranking": 96,
+      "rating": 0.9508,
+      "recruitType": "HighSchool",
+      "school": "Gonzaga",
+      "stars": 4,
+      "stateProvince": "DC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141734",
+    "recruiting": {
+      "athleteId": "5141734",
+      "city": "Monroe",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37179",
+        "latitude": 34.9854275,
+        "longitude": -80.5495112
+      },
+      "id": "106311",
+      "name": "Jordan Young",
+      "position": "ATH",
+      "ranking": 120,
+      "rating": 0.9442,
+      "recruitType": "HighSchool",
+      "school": "Monroe",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Michigan",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2026,
+        "team": "Michigan",
+        "year": 2
+      }
+    ]
+  }
+]

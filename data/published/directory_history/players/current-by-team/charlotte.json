@@ -1,0 +1,4123 @@
+[
+  {
+    "playerId": "5148741",
+    "recruiting": {
+      "athleteId": "5148741",
+      "city": "Miami",
+      "committedTo": "App State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "110024",
+      "name": "Khamani Alexander",
+      "position": "RB",
+      "ranking": 1362,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Belen Jesuit Prep",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "app-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2024,
+        "team": "App State",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2025,
+        "team": "App State",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5382280",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148820",
+    "recruiting": {
+      "athleteId": "5148820",
+      "city": "Richmond",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "51760",
+        "latitude": 37.5385087,
+        "longitude": -77.43428
+      },
+      "id": "110600",
+      "name": "Cornell Allen",
+      "position": "S",
+      "ranking": 2063,
+      "rating": 0.8369,
+      "recruitType": "HighSchool",
+      "school": "Trinity Episcopal",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5277537",
+    "recruiting": {
+      "athleteId": "5277537",
+      "city": "Jackson",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39079",
+        "latitude": 39.0520169,
+        "longitude": -82.6365537
+      },
+      "id": "105687",
+      "name": "Jake Allen",
+      "position": "IOL",
+      "ranking": 2502,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Jackson",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210130",
+    "recruiting": {
+      "athleteId": "5210130",
+      "city": "Hoschton",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "13157",
+        "latitude": 34.096496,
+        "longitude": -83.7612839
+      },
+      "id": "107104",
+      "name": "Devin Ancrum",
+      "position": "DL",
+      "ranking": 924,
+      "rating": 0.8706,
+      "recruitType": "HighSchool",
+      "school": "Mill Creek",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "North Carolina",
+        "year": 1
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5153730",
+    "recruiting": {
+      "athleteId": "5153730",
+      "city": "Fairburn",
+      "committedTo": "Austin Peay",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.5670562,
+        "longitude": -84.5810418
+      },
+      "id": "256869",
+      "name": "Jaden Barnes",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Langston Hughes",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "austin-peay",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2023
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "Austin Peay",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Austin Peay",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5382270",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LS",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5194803",
+    "recruiting": {
+      "athleteId": "5194803",
+      "city": "Mobile",
+      "committedTo": "Troy",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.6943566,
+        "longitude": -88.0430541
+      },
+      "id": "110990",
+      "name": "Kevin Beckham",
+      "position": "WR",
+      "ranking": 2578,
+      "rating": 0.8189,
+      "recruitType": "HighSchool",
+      "school": "Baker",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "troy",
+      "valueType": "BENCHMARK",
+      "weight": 177,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2024,
+        "team": "Troy",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5220006",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2024,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5160480",
+    "recruiting": {
+      "athleteId": "5160480",
+      "city": "Snellville",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.857328,
+        "longitude": -84.0199108
+      },
+      "id": "105052",
+      "name": "Alchino Blakely",
+      "position": "S",
+      "ranking": 2502,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "South Gwinnett",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220007",
+    "recruiting": {
+      "athleteId": "5220007",
+      "city": "Anderson",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "45007",
+        "latitude": 34.5068601,
+        "longitude": -82.6506264
+      },
+      "id": "109572",
+      "name": "Tank Boston",
+      "position": "WR",
+      "ranking": 889,
+      "rating": 0.8712,
+      "recruitType": "HighSchool",
+      "school": "Westside",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5382273",
+    "recruiting": {
+      "athleteId": "5382273",
+      "city": "Carmel",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "18057",
+        "latitude": 39.9788017,
+        "longitude": -86.1189257
+      },
+      "id": "105884",
+      "name": "Kaiden Bower",
+      "position": "DL",
+      "ranking": 2709,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Carmel",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193091",
+    "recruiting": {
+      "athleteId": "5193091",
+      "city": "Grand Rapids",
+      "committedTo": "Ohio",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "26081",
+        "latitude": 42.9632405,
+        "longitude": -85.6678639
+      },
+      "id": "110932",
+      "name": "Stellan Bowman",
+      "position": "LB",
+      "ranking": 2457,
+      "rating": 0.8214,
+      "recruitType": "HighSchool",
+      "school": "East Kentwood",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "ohio",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2024,
+        "team": "Ohio",
+        "year": 2
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5228655",
+    "recruiting": {
+      "athleteId": "5228655",
+      "city": "Lithonia",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13089",
+        "latitude": 33.7123305,
+        "longitude": -84.1051939
+      },
+      "id": "111092",
+      "name": "Kendal Brown",
+      "position": "EDGE",
+      "ranking": 2675,
+      "rating": 0.8122,
+      "recruitType": "HighSchool",
+      "school": "Arabia Mountain",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5306141",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5293889",
+    "recruiting": {
+      "athleteId": "5293889",
+      "city": "Pearland",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": null,
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "258306",
+      "name": "Aiden Bui",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Shadow Creek",
+      "stars": null,
+      "stateProvince": "TX",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 145,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "PK",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 84,
+        "position": "PK",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081247",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2022,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869241",
+    "recruiting": {
+      "athleteId": "4869241",
+      "city": "Oxford",
+      "committedTo": "Southern Miss",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "28071",
+        "latitude": 34.3664127,
+        "longitude": -89.5187664
+      },
+      "id": "115607",
+      "name": "DJ Burgess",
+      "position": "EDGE",
+      "ranking": 2341,
+      "rating": 0.8026,
+      "recruitType": "HighSchool",
+      "school": "Lafayette",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "southern-miss",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DL",
+        "season": 2022,
+        "team": "Southern Miss",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5308657",
+    "recruiting": {
+      "athleteId": "5308657",
+      "city": "Douglasville",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13097",
+        "latitude": 33.7514966,
+        "longitude": -84.7477136
+      },
+      "id": "211327",
+      "name": "Colin Bussey",
+      "position": "EDGE",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "New Manchester",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5382274",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5327476",
+    "recruiting": {
+      "athleteId": "5327476",
+      "city": "Greensboro",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37081",
+        "latitude": 36.0726355,
+        "longitude": -79.7919754
+      },
+      "id": "224535",
+      "name": "Kaden Catoe",
+      "position": "WR",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Grimsley",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4784594",
+    "recruiting": {
+      "athleteId": "4784594",
+      "city": "Buford",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "114783",
+      "name": "CJ Clinkscales",
+      "position": "ATH",
+      "ranking": 1261,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2022,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2023,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5212700",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226267",
+    "recruiting": {
+      "athleteId": "5226267",
+      "city": "Snow Hill",
+      "committedTo": "Bryant",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "24047",
+        "latitude": 38.1770634,
+        "longitude": -75.3926959
+      },
+      "id": "257790",
+      "name": "Zyheem Collick",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Snow Hill",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "bryant",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Bryant",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Bryant",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5306138",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4920194",
+    "recruiting": {
+      "athleteId": "4920194",
+      "city": "Detroit",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "112114",
+      "name": "Jameel Croft Jr.",
+      "position": "S",
+      "ranking": 874,
+      "rating": 0.8686,
+      "recruitType": "HighSchool",
+      "school": "Martin Luther King",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083504",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2022,
+        "team": "Maine",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Maine",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5382267",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5293892",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302734",
+    "recruiting": {
+      "athleteId": "5302734",
+      "city": "Salem",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "51775",
+        "latitude": 37.293378,
+        "longitude": -80.054667
+      },
+      "id": "224512",
+      "name": "Brody Dawyot",
+      "position": "ATH",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Glenvar",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5289827",
+    "recruiting": {
+      "athleteId": "5289827",
+      "city": "Marietta",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.9528472,
+        "longitude": -84.5496148
+      },
+      "id": "105900",
+      "name": "Mikey Domanik",
+      "position": "LB",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Kell",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5265477",
+    "recruiting": {
+      "athleteId": "5265477",
+      "city": "Petal",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "28035",
+        "latitude": 31.3465627,
+        "longitude": -89.2600605
+      },
+      "id": "220939",
+      "name": "Jaylen Doss",
+      "position": "DL",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Petal",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5382265",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5228760",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5306143",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4886015",
+    "recruiting": {
+      "athleteId": "4886015",
+      "city": "New Hyde Park",
+      "committedTo": "Long Island University",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "36059",
+        "latitude": 40.7308451,
+        "longitude": -73.6805499
+      },
+      "id": "255493",
+      "name": "Kristos Fernandez",
+      "position": "OT",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "New Hyde Park Memorial",
+      "stars": null,
+      "stateProvince": "NY",
+      "teamSlug": "long-island-university",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2021
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2021,
+        "team": "Long Island University",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2022,
+        "team": "Long Island University",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219479",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921434",
+    "recruiting": {
+      "athleteId": "4921434",
+      "city": "Washington",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "112501",
+      "name": "Collin Gill",
+      "position": "CB",
+      "ranking": 1271,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "St. John's College",
+      "stars": 3,
+      "stateProvince": "DC",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2024,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382279",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5089540",
+    "recruiting": {
+      "athleteId": "5089540",
+      "city": "Ocala",
+      "committedTo": "Western Carolina",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12083",
+        "latitude": 29.1871986,
+        "longitude": -82.1400923
+      },
+      "id": "255915",
+      "name": "Cole Gonzales",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Trinity Catholic",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "western-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2022,
+        "team": "Western Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2023,
+        "team": "Western Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2024,
+        "team": "Western Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2025,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4888151",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2022,
+        "team": "Tennessee State",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5156879",
+    "recruiting": {
+      "athleteId": "5156879",
+      "city": "Bloomingdale",
+      "committedTo": "Western Kentucky",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13051",
+        "latitude": 32.1324249,
+        "longitude": -81.2990018
+      },
+      "id": "110500",
+      "name": "Jaylen Hampton",
+      "position": "WR",
+      "ranking": 1880,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "New Hampstead",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "western-kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Western Kentucky",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5382275",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4801306",
+    "recruiting": {
+      "athleteId": "4801306",
+      "city": "Alabaster",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01117",
+        "latitude": 33.2442813,
+        "longitude": -86.8163773
+      },
+      "id": "114343",
+      "name": "Conner Harrell",
+      "position": "QB",
+      "ranking": 799,
+      "rating": 0.8685,
+      "recruitType": "HighSchool",
+      "school": "Thompson",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 189,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2022,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2023,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302732",
+    "recruiting": {
+      "athleteId": "5302732",
+      "city": "Charlotte",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "105454",
+      "name": "Josh Hines",
+      "position": "S",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Myers Park",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216676",
+    "recruiting": {
+      "athleteId": "5216676",
+      "city": "Englewood",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "08005",
+        "latitude": 39.6482059,
+        "longitude": -104.9879641
+      },
+      "id": "108583",
+      "name": "Jeremiah Hoffman",
+      "position": "WR",
+      "ranking": 2926,
+      "rating": 0.8189,
+      "recruitType": "HighSchool",
+      "school": "Cherry Creek",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870747",
+    "recruiting": {
+      "athleteId": "4870747",
+      "city": "Thomasville",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13275",
+        "latitude": 30.8365815,
+        "longitude": -83.9787808
+      },
+      "id": "111513",
+      "name": "Adam Hopkins IV",
+      "position": "WR",
+      "ranking": 266,
+      "rating": 0.9105,
+      "recruitType": "HighSchool",
+      "school": "Thomas County Central",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2023,
+        "team": "Colorado",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382272",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5293893",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219099",
+    "recruiting": {
+      "athleteId": "5219099",
+      "city": "Dallas",
+      "committedTo": "Purdue",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "109549",
+      "name": "Caleb Irving",
+      "position": "DL",
+      "ranking": 866,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Dallas Parish Episcopal",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "purdue",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151037",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5293894",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5293895",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "P",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 44,
+        "position": "P",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5157323",
+    "recruiting": {
+      "athleteId": "5157323",
+      "city": "Miami",
+      "committedTo": "Akron",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "113476",
+      "name": "Zayden Laing-Taylor",
+      "position": "S",
+      "ranking": 2507,
+      "rating": 0.8037,
+      "recruitType": "HighSchool",
+      "school": "Miami Central",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "akron",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2023,
+        "team": "Akron",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5228652",
+    "recruiting": {
+      "athleteId": "5228652",
+      "city": "Valdosta",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13185",
+        "latitude": 30.8327022,
+        "longitude": -83.2784851
+      },
+      "id": "110800",
+      "name": "Grant Laskey",
+      "position": "TE",
+      "ranking": 2324,
+      "rating": 0.8283,
+      "recruitType": "HighSchool",
+      "school": "Lowndes",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4915837",
+    "recruiting": {
+      "athleteId": "4915837",
+      "city": "Greer",
+      "committedTo": "Duke",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "45045",
+        "latitude": 34.9381361,
+        "longitude": -82.2272119
+      },
+      "id": "112120",
+      "name": "Grayson Loftis",
+      "position": "QB",
+      "ranking": 882,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "Gaffney",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "duke",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2023,
+        "team": "Duke",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Duke",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151047",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "P",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "P",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "P",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "P",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5382268",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5228658",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5382269",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5306139",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4606685",
+    "recruiting": {
+      "athleteId": "4606685",
+      "city": "Charlotte",
+      "committedTo": "Coastal Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "121021",
+      "name": "Logan Mauldin",
+      "position": "WR",
+      "ranking": 2667,
+      "rating": 0.8067,
+      "recruitType": "HighSchool",
+      "school": "Myers Park",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "coastal-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2020
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "TE",
+        "season": 2021,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "TE",
+        "season": 2022,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "TE",
+        "season": 2023,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "TE",
+        "season": 2024,
+        "team": "McNeese",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "TE",
+        "season": 2025,
+        "team": "McNeese",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "TE",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4708099",
+    "recruiting": {
+      "athleteId": "4708099",
+      "city": "Newburyport",
+      "committedTo": "San Diego State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "25009",
+        "latitude": 42.8125913,
+        "longitude": -70.8772751
+      },
+      "id": "117348",
+      "name": "Gus McGee",
+      "position": "TE",
+      "ranking": 1654,
+      "rating": 0.8333,
+      "recruitType": "HighSchool",
+      "school": "Miami Columbus",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "san-diego-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2021
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "TE",
+        "season": 2022,
+        "team": "San Diego State",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "TE",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "TE",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "TE",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "TE",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5178078",
+    "recruiting": {
+      "athleteId": "5178078",
+      "city": "Washington",
+      "committedTo": "Maryland",
+      "country": "USA",
+      "grade": "D",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "110272",
+      "name": "Shamar McIntosh",
+      "position": "S",
+      "ranking": 1663,
+      "rating": 0.8492,
+      "recruitType": "HighSchool",
+      "school": "St. John's College",
+      "stars": 3,
+      "stateProvince": "DC",
+      "teamSlug": "maryland",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2024,
+        "team": "Maryland",
+        "year": 2
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "Maryland",
+        "year": 2
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5293896",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302736",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5293897",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5382271",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "RB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5326883",
+    "recruiting": {
+      "athleteId": "5326883",
+      "city": "Charlotte",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "212816",
+      "name": "Donte Nicholson",
+      "position": "WR",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "West Charlotte",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5232393",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5382277",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5326884",
+    "recruiting": {
+      "athleteId": "5326884",
+      "city": "Fort Mill",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "45091",
+        "latitude": 35.0073697,
+        "longitude": -80.9450759
+      },
+      "id": "212812",
+      "name": "Gray Patterson",
+      "position": "LB",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Fort Mill",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4880358",
+    "recruiting": {
+      "athleteId": "4880358",
+      "city": "Suwanee",
+      "committedTo": "Marshall",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.0514898,
+        "longitude": -84.0712997
+      },
+      "id": "115175",
+      "name": "Cam Pedro",
+      "position": "WR",
+      "ranking": 1718,
+      "rating": 0.8326,
+      "recruitType": "HighSchool",
+      "school": "Collins Hill",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "marshall",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2022,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2023,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Southeast Missouri State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Southeast Missouri State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295750",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Coastal Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382276",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5169205",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382278",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5228653",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4879655",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2021,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2022,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4916982",
+    "recruiting": {
+      "athleteId": "4916982",
+      "city": "Parker",
+      "committedTo": "Wyoming",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "08035",
+        "latitude": 39.5184514,
+        "longitude": -104.7612638
+      },
+      "id": "115520",
+      "name": "Luke Sandy",
+      "position": "DL",
+      "ranking": 2166,
+      "rating": 0.8117,
+      "recruitType": "HighSchool",
+      "school": "Legend",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "wyoming",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2022,
+        "team": "Wyoming",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2023,
+        "team": "Wyoming",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wyoming",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wyoming",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152391",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Drake",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5156065",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2023,
+        "team": "Ohio",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "Ohio",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296238",
+    "recruiting": {
+      "athleteId": "5296238",
+      "city": "Tallahassee",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12073",
+        "latitude": 30.4380832,
+        "longitude": -84.2809332
+      },
+      "id": "108697",
+      "name": "Henry Searcy",
+      "position": "LS",
+      "ranking": 3324,
+      "rating": 0.7822,
+      "recruitType": "HighSchool",
+      "school": "Lawton Chiles",
+      "stars": 2,
+      "stateProvince": "FL",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LS",
+        "season": 2025,
+        "team": "Pittsburgh",
+        "year": 1
+      },
+      {
+        "jersey": 33,
+        "position": "LS",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5287858",
+    "recruiting": {
+      "athleteId": "5287858",
+      "city": "Hazlehurst",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "105148",
+      "name": "La'Trell Sellers",
+      "position": "LB",
+      "ranking": 1754,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Jeff Davis",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5154412",
+    "recruiting": {
+      "athleteId": "5154412",
+      "city": "Stockbridge",
+      "committedTo": "Jackson State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.5442781,
+        "longitude": -84.2338093
+      },
+      "id": "112728",
+      "name": "Nireek Sharpe",
+      "position": "CB",
+      "ranking": 1501,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Stockbridge",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "jackson-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2023,
+        "team": "Jackson State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2024,
+        "team": "Jackson State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265500",
+    "recruiting": {
+      "athleteId": "5265500",
+      "city": "Kennesaw",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 34.0234337,
+        "longitude": -84.6154897
+      },
+      "id": "258304",
+      "name": "Isaac Sikes-Rasby",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "North Cobb",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219485",
+    "recruiting": {
+      "athleteId": "5219485",
+      "city": "Bridgewater",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "25023",
+        "latitude": 41.9903787,
+        "longitude": -70.9750426
+      },
+      "id": "111109",
+      "name": "Dom Silvia",
+      "position": "OT",
+      "ranking": 2691,
+      "rating": 0.8104,
+      "recruitType": "HighSchool",
+      "school": "Dexter Southfield",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147196",
+    "recruiting": {
+      "athleteId": "5147196",
+      "city": "Kings Mountain",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37045",
+        "latitude": 35.2450607,
+        "longitude": -81.3410516
+      },
+      "id": "109432",
+      "name": "Curtis Simpson",
+      "position": "EDGE",
+      "ranking": 738,
+      "rating": 0.8761,
+      "recruitType": "HighSchool",
+      "school": "Kings Mountain",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5382262",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382266",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917092",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2022,
+        "team": "Florida International",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2023,
+        "team": "Florida International",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2024,
+        "team": "Florida International",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5382263",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222352",
+    "recruiting": {
+      "athleteId": "5222352",
+      "city": "Orlando",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "108565",
+      "name": "Devon St. Clair",
+      "position": "S",
+      "ranking": 2771,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Bishop Moore Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 192,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 1
+      },
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149156",
+    "recruiting": {
+      "athleteId": "5149156",
+      "city": "Chicago",
+      "committedTo": "Ohio",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "110493",
+      "name": "Parker Startz",
+      "position": "LB",
+      "ranking": 1880,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Mount Carmel",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "ohio",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2024,
+        "team": "Ohio",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5303453",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161884",
+    "recruiting": {
+      "athleteId": "5161884",
+      "city": "Greenwood",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "05131",
+        "latitude": 35.2156489,
+        "longitude": -94.2557663
+      },
+      "id": "104646",
+      "name": "Cody Taylor",
+      "position": "IOL",
+      "ranking": 1566,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Greenwood",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081077",
+    "recruiting": {
+      "athleteId": "5081077",
+      "city": "Baltimore",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "114221",
+      "name": "Ayo Tifase",
+      "position": "DL",
+      "ranking": 678,
+      "rating": 0.8741,
+      "recruitType": "HighSchool",
+      "school": "Concordia Prep",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2022,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2023,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302733",
+    "recruiting": {
+      "athleteId": "5302733",
+      "city": "Bryant",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "05125",
+        "latitude": 34.5959265,
+        "longitude": -92.4890469
+      },
+      "id": "105952",
+      "name": "Caleb Tucker",
+      "position": "WR",
+      "ranking": 2728,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "Bryant",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5289618",
+    "recruiting": {
+      "athleteId": "5289618",
+      "city": "Tyrone",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13113",
+        "latitude": 33.4713249,
+        "longitude": -84.5972005
+      },
+      "id": "105754",
+      "name": "Chase Usher",
+      "position": "CB",
+      "ranking": 2694,
+      "rating": 0.8389,
+      "recruitType": "HighSchool",
+      "school": "Sandy Creek",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5138656",
+    "recruiting": {
+      "athleteId": "5138656",
+      "city": "Greenfield",
+      "committedTo": "Georgia State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "18059",
+        "latitude": 39.7855096,
+        "longitude": -85.7681979
+      },
+      "id": "110484",
+      "name": "Lane Wadle",
+      "position": "TE",
+      "ranking": 1874,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Greenfield-Central",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "georgia-state",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Georgia State",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Georgia State",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382264",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5228660",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "DL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327478",
+    "recruiting": {
+      "athleteId": "5327478",
+      "city": "Smyrna",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.883887,
+        "longitude": -84.5147454
+      },
+      "id": "224574",
+      "name": "Maddox West",
+      "position": "S",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Campbell",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 174,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5127000",
+    "recruiting": {
+      "athleteId": "5127000",
+      "city": "Concord",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "37025",
+        "latitude": 35.4093772,
+        "longitude": -80.5797416
+      },
+      "id": "109406",
+      "name": "D'Nas White",
+      "position": "DL",
+      "ranking": 717,
+      "rating": 0.8772,
+      "recruitType": "HighSchool",
+      "school": "Jay M. Robinson",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 333,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2024,
+        "team": "Florida State",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5272738",
+    "recruiting": {
+      "athleteId": "5272738",
+      "city": "Clearwater",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.9658533,
+        "longitude": -82.8001026
+      },
+      "id": "211785",
+      "name": "Jaylen White",
+      "position": "QB",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Clearwater",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5089860",
+    "recruiting": {
+      "athleteId": "5089860",
+      "city": "Baton Rouge",
+      "committedTo": "Grambling",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "22033",
+        "latitude": 30.4459596,
+        "longitude": -91.18738
+      },
+      "id": "115289",
+      "name": "Chance Williams",
+      "position": "RB",
+      "ranking": 1875,
+      "rating": 0.8267,
+      "recruitType": "HighSchool",
+      "school": "Scotlandville Magnet",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "grambling",
+      "valueType": "BENCHMARK",
+      "weight": 172,
+      "year": 2022
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2022,
+        "team": "Grambling",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2023,
+        "team": "Grambling",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2024,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2025,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151012",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5196845",
+    "recruiting": {
+      "athleteId": "5196845",
+      "city": "Charlotte",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "257357",
+      "name": "DeQuinder Williams II",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "West Charlotte",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5152266",
+    "recruiting": null,
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2023,
+        "team": "Bucknell",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2024,
+        "team": "Bucknell",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5293899",
+    "recruiting": {
+      "athleteId": "5293899",
+      "city": "Powder Springs",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.8595492,
+        "longitude": -84.683824
+      },
+      "id": "258305",
+      "name": "Dy'Lon Womack",
+      "position": "ATH",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "McEachern",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Charlotte",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "Charlotte",
+        "year": 2
+      }
+    ]
+  }
+]

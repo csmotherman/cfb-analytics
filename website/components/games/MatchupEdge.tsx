@@ -1,0 +1,1 @@
+export function MatchupEdge({label,michigan,opponent}:{label:string;michigan?:string|null;opponent?:string|null}){return <div className="metric-grade"><span>{label}</span><strong>{michigan??"—"} / {opponent??"—"}</strong><p>{michigan&&opponent?"Michigan / Opponent":"Coming soon"}</p></div>}

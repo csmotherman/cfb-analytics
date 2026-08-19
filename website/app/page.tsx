@@ -1,36 +1,16 @@
-<<<<<<< HEAD
 import Link from "next/link";
-import { avgMargin, datasetStatus, fieldWinPct, rankOf, tournamentRows } from "../lib/data";
+import { GameCard } from "../components/games/GameCard";
+import { currentRoster } from "../lib/michigan/roster";
+import { nextGame } from "../lib/michigan/games";
+import { currentRecruitingClass, nationalRecruits } from "../lib/michigan/recruiting";
+import { projectedLineups } from "../lib/michigan/depth-chart";
 
-export default function Home(){
-  const status=datasetStatus();
-  const top=[...tournamentRows()].sort((a,b)=>(rankOf(a)??9999)-(rankOf(b)??9999)).slice(0,5);
-  return <>
-    <section className="hero">
-      <div className="muted">COLLEGE FOOTBALL, EXPLAINED</div>
-      <h1>Know your team. Settle the debate.</h1>
-      <p>Explore historical power, dynamic team identities, comparisons, and head-to-head simulations built from the same underlying football data.</p>
-      <div className="row"><Link className="button" href="/teams">Find a Team</Link><Link className="button secondary" href="/simulator">Simulate a Matchup</Link></div>
-    </section>
-
-    <h2>What do you want to know?</h2>
-    <div className="grid">
-      <Link className="card" href="/rankings"><b>Who is the best?</b><p className="muted">All-time model power rankings.</p></Link>
-      <Link className="card" href="/simulator"><b>Who would win?</b><p className="muted">Pick any two historical team-seasons.</p></Link>
-      <Link className="card" href="/teams"><b>What is my team?</b><p className="muted">Open a team-season profile with its current identity and tags.</p></Link>
-      <Link className="card" href="/archetypes"><b>How did they play?</b><p className="muted">Explore dynamic identities, style, structure, and effectiveness.</p></Link>
-      <Link className="card" href="/compare"><b>Compare two teams</b><p className="muted">Put eras side by side.</p></Link>
-    </div>
-
-    <section className="panel"><h2>Data readiness</h2>{status.map(s=><div key={s.relative}>{s.ready?"✅":"⚠️"} <b>{s.label}</b> — <code>{s.relative}</code></div>)}</section>
-
-    <section className="panel"><h2>The teams everyone is chasing</h2>{top.length?top.map(r=><div key={`${r.season}-${r.team}`} style={{marginBottom:10}}><b>#{rankOf(r)} {r.season} {r.team}</b> — field win {fieldWinPct(r)!==null?(fieldWinPct(r)!*100).toFixed(1)+"%":"n/a"}, avg margin {avgMargin(r)!==null?(avgMargin(r)!>=0?"+":"")+avgMargin(r)!.toFixed(1):"n/a"}</div>):<div className="notice">Build the cross-era tournament JSON to populate this section.</div>}</section>
-  </>;
-=======
-import { MichiganHome } from "../components/MichiganHome";
-import { CURRENT_MICHIGAN_SEASON } from "../lib/michigan";
-
-export default function Home() {
-  return <MichiganHome season={CURRENT_MICHIGAN_SEASON} />;
->>>>>>> 28a9c53 (new design)
-}
+export default function Home(){const roster=currentRoster();const game=nextGame();const recruiting=currentRecruitingClass();const lineup=projectedLineups();const lineupCount=lineup?lineup.offense.length+lineup.defense.length:null;const nationalRecruitCount=nationalRecruits().length;const graded=roster.filter(p=>p.prospectGrade).sort((a,b)=>(b.compositeRating??0)-(a.compositeRating??0)).slice(0,4);return <div className="command-screen">
+  <header className="command-top"><div><span className="eyebrow">2026 MICHIGAN FOOTBALL · PRESEASON</span><h1>THIS IS MICHIGAN.</h1><p>Roster. Recruiting. Schedule. Analytics. One home field.</p></div><img src="/images/winged-helmet-3d.png" alt="Michigan winged football helmet"/></header>
+  <section className="command-grid">
+    <article className="command-next"><span className="eyebrow">NEXT GAME</span>{game?<GameCard game={game}/>:<strong>Schedule pending</strong>}</article>
+    <article className="command-roster"><header><span className="eyebrow">PLAYERS TO KNOW</span><Link href="/team/roster">ALL {roster.length} →</Link></header>{graded.map(p=><Link href={`/players/${p.id}`} key={p.id}><b>#{p.jersey??"—"}</b><span>{p.firstName} {p.lastName}<small>{p.position} · {p.stars?`${p.stars}★`:"NR"}</small></span><strong>{p.prospectGrade}</strong></Link>)}</article>
+    <article className="command-recruits"><header><span className="eyebrow">RECRUITING · #{recruiting?.ranking?.rank??"—"}</span><Link href="/recruiting">CLASS HQ →</Link></header>{recruiting?.recruits.slice(0,4).map(r=><Link href={`/recruiting/players/${r.id}`} key={r.id}><b>#{r.ranking??"—"}</b><span>{r.name}<small>{r.position} · {"★".repeat(r.stars??0)}</small></span><strong>{r.grade}</strong></Link>)}</article>
+    <nav className="command-actions" aria-label="Michigan destinations"><Link href="/team/depth-chart"><b>{lineupCount??"—"}</b><span>STARTING LINEUP</span></Link><Link href="/analytics"><b>↗</b><span>ANALYTICS</span></Link><Link href="/stories/2026-coaching-staff"><b>KW</b><span>NEW COACHING STAFF</span></Link><Link href="/recruiting/national"><b>{nationalRecruitCount||"—"}</b><span>NATIONAL RECRUITS</span></Link><Link href="/stories"><b>〽</b><span>STORIES</span></Link><Link href="/history"><b>2010</b><span>THE VAULT</span></Link></nav>
+  </section>
+</div>}

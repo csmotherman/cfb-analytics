@@ -1,0 +1,443 @@
+[
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "firstDowns",
+    "statValue": 297,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "firstDownsOpponent",
+    "statValue": 198,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fourthDownConversions",
+    "statValue": 17,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fourthDownConversionsOpponent",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fourthDowns",
+    "statValue": 22,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fourthDownsOpponent",
+    "statValue": 33,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fumblesLost",
+    "statValue": 3,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fumblesLostOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fumblesRecovered",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "fumblesRecoveredOpponent",
+    "statValue": 3,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "games",
+    "statValue": 15,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "interceptions",
+    "statValue": 5,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "interceptionsOpponent",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "interceptionTDs",
+    "statValue": 4,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "interceptionTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "interceptionYards",
+    "statValue": 419,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "interceptionYardsOpponent",
+    "statValue": 51,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "kickReturns",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "kickReturnsOpponent",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "kickReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "kickReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "kickReturnYards",
+    "statValue": 251,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "kickReturnYardsOpponent",
+    "statValue": 314,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "netPassingYards",
+    "statValue": 3205,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "netPassingYardsOpponent",
+    "statValue": 2355,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passAttempts",
+    "statValue": 361,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passAttemptsOpponent",
+    "statValue": 414,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passCompletions",
+    "statValue": 260,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passCompletionsOpponent",
+    "statValue": 229,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passesIntercepted",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passesInterceptedOpponent",
+    "statValue": 5,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passingTDs",
+    "statValue": 24,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "passingTDsOpponent",
+    "statValue": 8,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "penalties",
+    "statValue": 45,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "penaltiesOpponent",
+    "statValue": 75,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "penaltyYards",
+    "statValue": 412,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "penaltyYardsOpponent",
+    "statValue": 605,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "possessionTime",
+    "statValue": 29002,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "possessionTimeOpponent",
+    "statValue": 24998,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "puntReturns",
+    "statValue": 31,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "puntReturnsOpponent",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "puntReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "puntReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "puntReturnYards",
+    "statValue": 316,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "puntReturnYardsOpponent",
+    "statValue": 73,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "rushingAttempts",
+    "statValue": 563,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "rushingAttemptsOpponent",
+    "statValue": 450,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "rushingTDs",
+    "statValue": 40,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "rushingTDsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "rushingYards",
+    "statValue": 2536,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "rushingYardsOpponent",
+    "statValue": 1348,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "sacks",
+    "statValue": 38,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "sacksOpponent",
+    "statValue": 19,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "tacklesForLoss",
+    "statValue": 84,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "tacklesForLossOpponent",
+    "statValue": 45,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "thirdDownConversions",
+    "statValue": 74,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "thirdDownConversionsOpponent",
+    "statValue": 57,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "thirdDowns",
+    "statValue": 173,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "thirdDownsOpponent",
+    "statValue": 196,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "totalYards",
+    "statValue": 5741,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "totalYardsOpponent",
+    "statValue": 3703,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "turnovers",
+    "statValue": 8,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2023,
+    "statName": "turnoversOpponent",
+    "statValue": 27,
+    "team": "Michigan"
+  }
+]

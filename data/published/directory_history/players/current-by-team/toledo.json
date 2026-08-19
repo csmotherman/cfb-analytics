@@ -1,0 +1,3859 @@
+[
+  {
+    "playerId": "5300295",
+    "recruiting": {
+      "athleteId": "5300295",
+      "city": "Holly Springs",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.6512655,
+        "longitude": -78.8336218
+      },
+      "id": "258360",
+      "name": "Max Allen",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Holly Springs",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 1
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5144684",
+    "recruiting": {
+      "athleteId": "5144684",
+      "city": "Cincinnati",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "108051",
+      "name": "Maddox Arnold",
+      "position": "LB",
+      "ranking": 2030,
+      "rating": 0.8431,
+      "recruitType": "HighSchool",
+      "school": "Cincinnati Elder",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5230932",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5225646",
+    "recruiting": {
+      "athleteId": "5225646",
+      "city": "East St. Louis",
+      "committedTo": "Lindenwood",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.6244952,
+        "longitude": -90.1509429
+      },
+      "id": "238523",
+      "name": "Rico Bond",
+      "position": "WR",
+      "ranking": 3084,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "East St. Louis",
+      "stars": 2,
+      "stateProvince": "IL",
+      "teamSlug": "lindenwood",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Lindenwood",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Lindenwood",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084698",
+    "recruiting": {
+      "athleteId": "5084698",
+      "city": "Southfield",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.4733689,
+        "longitude": -83.2218731
+      },
+      "id": "109564",
+      "name": "Tashi Braceful",
+      "position": "WR",
+      "ranking": 879,
+      "rating": 0.8714,
+      "recruitType": "HighSchool",
+      "school": "Southfield",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5092826",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2022,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2023,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5231136",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Gardner-Webb",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5165982",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5308776",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4812374",
+    "recruiting": {
+      "athleteId": "4812374",
+      "city": "St. Petersburg",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.7703796,
+        "longitude": -82.6695085
+      },
+      "id": "114895",
+      "name": "Terrell Crosby Jr.",
+      "position": "ATH",
+      "ranking": 1399,
+      "rating": 0.8459,
+      "recruitType": "HighSchool",
+      "school": "Lakewood",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2022,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153399",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151692",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151693",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "P",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "P",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "P",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "P",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209951",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193114",
+    "recruiting": {
+      "athleteId": "5193114",
+      "city": "Dublin",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.0992294,
+        "longitude": -83.1140771
+      },
+      "id": "110282",
+      "name": "Michael-Arinze Ezirim",
+      "position": "CB",
+      "ranking": 1676,
+      "rating": 0.8486,
+      "recruitType": "HighSchool",
+      "school": "Dublin Jerome",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211431",
+    "recruiting": {
+      "athleteId": "5211431",
+      "city": "River Rouge",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.2729262,
+        "longitude": -83.1352891
+      },
+      "id": "107842",
+      "name": "Jordin Farrow",
+      "position": "DL",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "River Rouge",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "DT",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 48,
+        "position": "DT",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295444",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "S",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5153404",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5109506",
+    "recruiting": {
+      "athleteId": "5109506",
+      "city": "Alliance",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.9153362,
+        "longitude": -81.1059309
+      },
+      "id": "115051",
+      "name": "Stephen Gales",
+      "position": "OT",
+      "ranking": 1596,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Alliance",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5298655",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Southeast Missouri State",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153413",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "PK",
+        "season": 2023,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "PK",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "PK",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "PK",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148878",
+    "recruiting": {
+      "athleteId": "5148878",
+      "city": "Columbus",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 39.9622601,
+        "longitude": -83.0007065
+      },
+      "id": "110371",
+      "name": "Jake Grimm",
+      "position": "IOL",
+      "ranking": 1766,
+      "rating": 0.8456,
+      "recruitType": "HighSchool",
+      "school": "Gahanna Lincoln",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295447",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "DT",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 41,
+        "position": "DT",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222597",
+    "recruiting": {
+      "athleteId": "5222597",
+      "city": "Massillon",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7967244,
+        "longitude": -81.5215093
+      },
+      "id": "108287",
+      "name": "Tyler Hackenbracht",
+      "position": "ATH",
+      "ranking": 2370,
+      "rating": 0.8342,
+      "recruitType": "HighSchool",
+      "school": "Massillon Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5162858",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4833021",
+    "recruiting": {
+      "athleteId": "4833021",
+      "city": "Delaware",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39041",
+        "latitude": 40.2986724,
+        "longitude": -83.067965
+      },
+      "id": "114803",
+      "name": "Jonathan Harder",
+      "position": "OT",
+      "ranking": 1307,
+      "rating": 0.8493,
+      "recruitType": "HighSchool",
+      "school": "Olentangy Berlin",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2022,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2023,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141805",
+    "recruiting": {
+      "athleteId": "5141805",
+      "city": "Valparaiso",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "18127",
+        "latitude": 41.4730948,
+        "longitude": -87.0611412
+      },
+      "id": "110459",
+      "name": "Matt Hofer",
+      "position": "OT",
+      "ranking": 1853,
+      "rating": 0.8419,
+      "recruitType": "HighSchool",
+      "school": "Valparaiso",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5162859",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151695",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4880356",
+    "recruiting": {
+      "athleteId": "4880356",
+      "city": "Augusta",
+      "committedTo": "Coastal Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13245",
+        "latitude": 33.4709714,
+        "longitude": -81.9748429
+      },
+      "id": "115192",
+      "name": "Kaleb Hutchinson",
+      "position": "S",
+      "ranking": 1731,
+      "rating": 0.8317,
+      "recruitType": "HighSchool",
+      "school": "Westside",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "coastal-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2022,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2023,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5164730",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2023,
+        "team": "Charleston Southern",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2024,
+        "team": "Charleston Southern",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079456",
+    "recruiting": {
+      "athleteId": "5079456",
+      "city": "West Bloomfield",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "36069",
+        "latitude": 42.5679,
+        "longitude": -83.3733
+      },
+      "id": "109258",
+      "name": "Kari Jackson",
+      "position": "LB",
+      "ranking": 566,
+      "rating": 0.8848,
+      "recruitType": "HighSchool",
+      "school": "West Bloomfield",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5173078",
+    "recruiting": {
+      "athleteId": "5173078",
+      "city": "Ocala",
+      "committedTo": "Georgia State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12083",
+        "latitude": 29.1871986,
+        "longitude": -82.1400923
+      },
+      "id": "110780",
+      "name": "Dominic Johnson",
+      "position": "IOL",
+      "ranking": 2232,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Trinity Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "georgia-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "Georgia State",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "Georgia State",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5252597",
+    "recruiting": {
+      "athleteId": "5252597",
+      "city": "Tampa",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "108442",
+      "name": "Zach Johnson",
+      "position": "EDGE",
+      "ranking": 2642,
+      "rating": 0.827,
+      "recruitType": "HighSchool",
+      "school": "Carrollwood Day",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 2
+      },
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157388",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2024,
+        "team": "Holy Cross",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2025,
+        "team": "Holy Cross",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5300305",
+    "recruiting": {
+      "athleteId": "5300305",
+      "city": "St. Augustine",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12109",
+        "latitude": 29.8946952,
+        "longitude": -81.3145395
+      },
+      "id": "221515",
+      "name": "Trenton Jones",
+      "position": "WR",
+      "ranking": 3126,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "St. Augustine",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 1
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5138635",
+    "recruiting": {
+      "athleteId": "5138635",
+      "city": "Rochester",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "27109",
+        "latitude": 42.680588,
+        "longitude": -83.1338214
+      },
+      "id": "110858",
+      "name": "Jacob Kropchak",
+      "position": "IOL",
+      "ranking": 2383,
+      "rating": 0.8253,
+      "recruitType": "HighSchool",
+      "school": "Stoney Creek",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5153289",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2024,
+        "team": "Robert Morris",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220137",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "DE",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "DE",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220133",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4677297",
+    "recruiting": {
+      "athleteId": "4677297",
+      "city": "Arden",
+      "committedTo": "Virginia",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "37021",
+        "latitude": 35.4661821,
+        "longitude": -82.5164242
+      },
+      "id": "116834",
+      "name": "Langston Long",
+      "position": "S",
+      "ranking": 1123,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Christ School",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "virginia",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2021
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2021,
+        "team": "Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2022,
+        "team": "Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2023,
+        "team": "Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5087060",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2022,
+        "team": "Butler",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2025,
+        "team": "Butler",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151512",
+    "recruiting": {
+      "athleteId": "5151512",
+      "city": "Flossmoor",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.5428123,
+        "longitude": -87.6847684
+      },
+      "id": "256633",
+      "name": "Christian Medlock",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Homewood-Flossmoor",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 304,
+      "year": 2023
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5300311",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "P",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "P",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5092811",
+    "recruiting": {
+      "athleteId": "5092811",
+      "city": "Gadsden",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "01055",
+        "latitude": 34.010929,
+        "longitude": -85.9989596
+      },
+      "id": "256073",
+      "name": "CJ Miller",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Gadsden City",
+      "stars": null,
+      "stateProvince": "AL",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2022,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5138637",
+    "recruiting": {
+      "athleteId": "5138637",
+      "city": "Fort Lauderdale",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "110208",
+      "name": "Hyajah Miller",
+      "position": "CB",
+      "ranking": 1559,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Coconut Creek",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "CB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "CB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "CB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5257269",
+    "recruiting": {
+      "athleteId": "5257269",
+      "city": "East St. Louis",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.6244952,
+        "longitude": -90.1509429
+      },
+      "id": "106817",
+      "name": "Omar Mims Jr.",
+      "position": "WR",
+      "ranking": 627,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Cahokia",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5200190",
+    "recruiting": {
+      "athleteId": "5200190",
+      "city": "Perry",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39085",
+        "latitude": 41.760326,
+        "longitude": -81.140932
+      },
+      "id": "108233",
+      "name": "Walter Moses",
+      "position": "QB",
+      "ranking": 2316,
+      "rating": 0.8364,
+      "recruitType": "HighSchool",
+      "school": "Perry",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220125",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4882061",
+    "recruiting": {
+      "athleteId": "4882061",
+      "city": "Springfield",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "41039",
+        "latitude": 44.0462362,
+        "longitude": -123.0220289
+      },
+      "id": "114588",
+      "name": "Jake Newell",
+      "position": "TE",
+      "ranking": 1064,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Thurston",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2022,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2023,
+        "team": "Akron",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Akron",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Akron",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4941014",
+    "recruiting": {
+      "athleteId": "4941014",
+      "city": "Acworth",
+      "committedTo": "Georgia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 34.0659329,
+        "longitude": -84.6768796
+      },
+      "id": "112352",
+      "name": "Ezra Odinjor",
+      "position": "EDGE",
+      "ranking": 1113,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Allatoona",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "georgia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 219,
+      "year": 2023
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DE",
+        "season": 2023,
+        "team": "Georgia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DE",
+        "season": 2024,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DE",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4603084",
+    "recruiting": {
+      "athleteId": "4603084",
+      "city": "Akron",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.083064,
+        "longitude": -81.518485
+      },
+      "id": "254980",
+      "name": "Damon Ollison",
+      "position": "LB",
+      "ranking": 837,
+      "rating": 0.863,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Hoban",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2021
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2021,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2022,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5083234",
+    "recruiting": {
+      "athleteId": "5083234",
+      "city": "Dallas",
+      "committedTo": "Northern Colorado",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "256047",
+      "name": "LaDavion Osborn",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Lake Highlands",
+      "stars": null,
+      "stateProvince": "TX",
+      "teamSlug": "northern-colorado",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2022,
+        "team": "Northern Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2023,
+        "team": "Northern Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2024,
+        "team": "Northern Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2025,
+        "team": "Northern Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5277542",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220138",
+    "recruiting": {
+      "athleteId": "5220138",
+      "city": "Hollywood",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "112684",
+      "name": "Wayne Peart II",
+      "position": "DL",
+      "ranking": 1473,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5227167",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "CB",
+        "season": 2025,
+        "team": "Robert Morris",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "CB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5092816",
+    "recruiting": {
+      "athleteId": "5092816",
+      "city": "Snellville",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.857328,
+        "longitude": -84.0199108
+      },
+      "id": "256074",
+      "name": "Isaac Prince",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Shiloh",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2022,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2023,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296703",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "P",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5152860",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Gardner-Webb",
+        "year": 3
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5082330",
+    "recruiting": {
+      "athleteId": "5082330",
+      "city": "Gray",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13169",
+        "latitude": 33.0095802,
+        "longitude": -83.5337816
+      },
+      "id": "115538",
+      "name": "John Alan Richter",
+      "position": "QB",
+      "ranking": 2202,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Jones County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2022,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394415",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394416",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5304415",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "FB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "FB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295451",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5109511",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5222609",
+    "recruiting": {
+      "athleteId": "5222609",
+      "city": "Columbus",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 39.9622601,
+        "longitude": -83.0007065
+      },
+      "id": "107701",
+      "name": "Tyrell Russell",
+      "position": "CB",
+      "ranking": 1597,
+      "rating": 0.8547,
+      "recruitType": "HighSchool",
+      "school": "Beechcroft",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "CB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "CB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5083472",
+    "recruiting": {
+      "athleteId": "5083472",
+      "city": "Mount Prospect",
+      "committedTo": "Cornell",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0664167,
+        "longitude": -87.9372908
+      },
+      "id": "256171",
+      "name": "Ben Sahakian",
+      "position": "EDGE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Prospect",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "cornell",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DE",
+        "season": 2022,
+        "team": "Cornell",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DE",
+        "season": 2024,
+        "team": "Cornell",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DE",
+        "season": 2025,
+        "team": "Cornell",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211696",
+    "recruiting": {
+      "athleteId": "5211696",
+      "city": "Franklin",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.5222567,
+        "longitude": -83.3060432
+      },
+      "id": "107124",
+      "name": "Noah Sanders",
+      "position": "RB",
+      "ranking": 945,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Wylie E. Groves",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4899485",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5024333",
+    "recruiting": {
+      "athleteId": "5024333",
+      "city": "Ann Arbor",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "26161",
+        "latitude": 42.2681569,
+        "longitude": -83.7312291
+      },
+      "id": "112719",
+      "name": "Laith Shamma",
+      "position": "DL",
+      "ranking": 1501,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Huron",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5308792",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4712328",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2021,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2022,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2023,
+        "team": "Massachusetts",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2024,
+        "team": "Massachusetts",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4683014",
+    "recruiting": {
+      "athleteId": "4683014",
+      "city": "River Rouge",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.2729262,
+        "longitude": -83.1352891
+      },
+      "id": "116632",
+      "name": "Armorion Smith",
+      "position": "S",
+      "ranking": 894,
+      "rating": 0.8607,
+      "recruitType": "HighSchool",
+      "school": "River Rouge",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2021
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2021,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2022,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079699",
+    "recruiting": {
+      "athleteId": "5079699",
+      "city": "Waukesha",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "55133",
+        "latitude": 43.0116784,
+        "longitude": -88.2314813
+      },
+      "id": "109072",
+      "name": "Corey Smith",
+      "position": "RB",
+      "ranking": 376,
+      "rating": 0.8988,
+      "recruitType": "HighSchool",
+      "school": "Catholic Memorial",
+      "stars": 4,
+      "stateProvince": "WI",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4921153",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5281462",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5083458",
+    "recruiting": {
+      "athleteId": "5083458",
+      "city": "Goffstown",
+      "committedTo": "New Hampshire",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "33011",
+        "latitude": 43.020445,
+        "longitude": -71.600257
+      },
+      "id": "256210",
+      "name": "Peyton Strickland",
+      "position": "TE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Goffstown",
+      "stars": null,
+      "stateProvince": "NH",
+      "teamSlug": "new-hampshire",
+      "valueType": "BENCHMARK",
+      "weight": 228,
+      "year": 2022
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2022,
+        "team": "New Hampshire",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2024,
+        "team": "New Hampshire",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2025,
+        "team": "New Hampshire",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5300317",
+    "recruiting": {
+      "athleteId": "5300317",
+      "city": "Dacula",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.9887165,
+        "longitude": -83.8979573
+      },
+      "id": "258359",
+      "name": "KJ Thomas",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Hebron Christian Academy",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4871710",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2021,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2021,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2022,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Rhode Island",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5076049",
+    "recruiting": {
+      "athleteId": "5076049",
+      "city": "Fort Wayne",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18003",
+        "latitude": 41.0799898,
+        "longitude": -85.1386015
+      },
+      "id": "113183",
+      "name": "Nicholas Thompson",
+      "position": "CB",
+      "ranking": 2054,
+      "rating": 0.8269,
+      "recruitType": "HighSchool",
+      "school": "Bishop Luers",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2023
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265296",
+    "recruiting": {
+      "athleteId": "5265296",
+      "city": "Avon",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39093",
+        "latitude": 41.4516512,
+        "longitude": -82.0350598
+      },
+      "id": "221211",
+      "name": "Samuel Toniolo",
+      "position": "DL",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "DE",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 53,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4432593",
+    "recruiting": {
+      "athleteId": "4432593",
+      "city": "New York",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "36061",
+        "latitude": 40.7127281,
+        "longitude": -74.0060152
+      },
+      "id": "119263",
+      "name": "Ibrahim Traore",
+      "position": "OT",
+      "ranking": 855,
+      "rating": 0.863,
+      "recruitType": "HighSchool",
+      "school": "Frederick Douglas Academy Ii",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2020
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2021,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2022,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211743",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5078063",
+    "recruiting": {
+      "athleteId": "5078063",
+      "city": "Perrysburg",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "39173",
+        "latitude": 41.5571178,
+        "longitude": -83.6279321
+      },
+      "id": "113336",
+      "name": "Connor Walendzak",
+      "position": "RB",
+      "ranking": 2302,
+      "rating": 0.817,
+      "recruitType": "HighSchool",
+      "school": "Perrysburg",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "RB",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "RB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "RB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "RB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153403",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2023,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5216911",
+    "recruiting": {
+      "athleteId": "5216911",
+      "city": "Harper Woods",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.4333367,
+        "longitude": -82.9238847
+      },
+      "id": "108352",
+      "name": "Bryant Weatherspoon Jr.",
+      "position": "DL",
+      "ranking": 2435,
+      "rating": 0.8306,
+      "recruitType": "HighSchool",
+      "school": "Harper Woods",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DT",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 35,
+        "position": "DT",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214521",
+    "recruiting": {
+      "athleteId": "5214521",
+      "city": "Franklin",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.5222567,
+        "longitude": -83.3060432
+      },
+      "id": "107820",
+      "name": "Cade Wilhelmi",
+      "position": "IOL",
+      "ranking": 1711,
+      "rating": 0.8508,
+      "recruitType": "HighSchool",
+      "school": "Detroit Country Day",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211771",
+    "recruiting": {
+      "athleteId": "5211771",
+      "city": "Jackson",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "28049",
+        "latitude": 42.2465036,
+        "longitude": -84.4016963
+      },
+      "id": "108024",
+      "name": "Kadale Williams",
+      "position": "ATH",
+      "ranking": 1996,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Lumen Christi",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5208169",
+    "recruiting": {
+      "athleteId": "5208169",
+      "city": "Tallmadge",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.1014616,
+        "longitude": -81.4417989
+      },
+      "id": "107993",
+      "name": "Ameer Yasin",
+      "position": "OT",
+      "ranking": 1971,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Tallmadge",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220128",
+    "recruiting": null,
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5000969",
+    "recruiting": {
+      "athleteId": "5000969",
+      "city": "Perrysburg",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39173",
+        "latitude": 41.5571178,
+        "longitude": -83.6279321
+      },
+      "id": "113419",
+      "name": "Grant Zimmerly",
+      "position": "IOL",
+      "ranking": 2381,
+      "rating": 0.8104,
+      "recruitType": "HighSchool",
+      "school": "Perrysburg",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5224269",
+    "recruiting": {
+      "athleteId": "5224269",
+      "city": "Hawthorne",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12001",
+        "latitude": 29.5918856,
+        "longitude": -82.0869578
+      },
+      "id": "257815",
+      "name": "Andrew Zock",
+      "position": "EDGE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Hawthorne",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Toledo",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DE",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DE",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DE",
+        "season": 2026,
+        "team": "Toledo",
+        "year": 3
+      }
+    ]
+  }
+]

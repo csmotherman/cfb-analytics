@@ -1,0 +1,443 @@
+[
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "firstDowns",
+    "statValue": 326,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "firstDownsOpponent",
+    "statValue": 216,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fourthDownConversions",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fourthDownConversionsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fourthDowns",
+    "statValue": 21,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fourthDownsOpponent",
+    "statValue": 28,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fumblesLost",
+    "statValue": 4,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fumblesLostOpponent",
+    "statValue": 4,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fumblesRecovered",
+    "statValue": 5,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "fumblesRecoveredOpponent",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "games",
+    "statValue": 14,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "interceptions",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "interceptionsOpponent",
+    "statValue": 14,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "interceptionTDs",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "interceptionTDsOpponent",
+    "statValue": 3,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "interceptionYards",
+    "statValue": 168,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "interceptionYardsOpponent",
+    "statValue": 117,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "kickReturns",
+    "statValue": 20,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "kickReturnsOpponent",
+    "statValue": 25,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "kickReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "kickReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "kickReturnYards",
+    "statValue": 401,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "kickReturnYardsOpponent",
+    "statValue": 442,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "netPassingYards",
+    "statValue": 3078,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "netPassingYardsOpponent",
+    "statValue": 2719,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passAttempts",
+    "statValue": 370,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passAttemptsOpponent",
+    "statValue": 457,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passCompletions",
+    "statValue": 238,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passCompletionsOpponent",
+    "statValue": 256,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passesIntercepted",
+    "statValue": 14,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passesInterceptedOpponent",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passingTDs",
+    "statValue": 24,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "passingTDsOpponent",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "penalties",
+    "statValue": 58,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "penaltiesOpponent",
+    "statValue": 62,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "penaltyYards",
+    "statValue": 448,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "penaltyYardsOpponent",
+    "statValue": 630,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "possessionTime",
+    "statValue": 28389,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "possessionTimeOpponent",
+    "statValue": 22011,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "puntReturns",
+    "statValue": 33,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "puntReturnsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "puntReturnTDs",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "puntReturnTDsOpponent",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "puntReturnYards",
+    "statValue": 281,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "puntReturnYardsOpponent",
+    "statValue": 83,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "rushingAttempts",
+    "statValue": 600,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "rushingAttemptsOpponent",
+    "statValue": 421,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "rushingTDs",
+    "statValue": 41,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "rushingTDsOpponent",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "rushingYards",
+    "statValue": 3344,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "rushingYardsOpponent",
+    "statValue": 1371,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "sacks",
+    "statValue": 37,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "sacksOpponent",
+    "statValue": 17,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "tacklesForLoss",
+    "statValue": 68,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "tacklesForLossOpponent",
+    "statValue": 59,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "thirdDownConversions",
+    "statValue": 84,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "thirdDownConversionsOpponent",
+    "statValue": 67,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "thirdDowns",
+    "statValue": 186,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "thirdDownsOpponent",
+    "statValue": 198,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "totalYards",
+    "statValue": 6422,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "totalYardsOpponent",
+    "statValue": 4090,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "turnovers",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2022,
+    "statName": "turnoversOpponent",
+    "statValue": 18,
+    "team": "Michigan"
+  }
+]

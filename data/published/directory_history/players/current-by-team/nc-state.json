@@ -1,0 +1,5158 @@
+[
+  {
+    "playerId": "5203854",
+    "recruiting": {
+      "athleteId": "5203854",
+      "city": "Fort Lauderdale",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "107618",
+      "name": "Omarian Abraham",
+      "position": "DL",
+      "ranking": 1507,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "American Heritage",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 294,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290566",
+    "recruiting": {
+      "athleteId": "5290566",
+      "city": "Iva",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "104446",
+      "name": "Amiri Acker",
+      "position": "WR",
+      "ranking": 306,
+      "rating": 0.906,
+      "recruitType": "HighSchool",
+      "school": "Crescent",
+      "stars": 4,
+      "stateProvince": "SC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 186,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4872478",
+    "recruiting": {
+      "athleteId": "4872478",
+      "city": "Arlington",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "113973",
+      "name": "Joseph Adedire",
+      "position": "DL",
+      "ranking": 427,
+      "rating": 0.89,
+      "recruitType": "HighSchool",
+      "school": "Mansfield Summit",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DE",
+        "season": 2022,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DE",
+        "season": 2023,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DE",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DE",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5378092",
+    "recruiting": {
+      "athleteId": "5378092",
+      "city": "Locust Grove",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.3459495,
+        "longitude": -84.109083
+      },
+      "id": "193449",
+      "name": "Chino Aguirre",
+      "position": "S",
+      "ranking": 1114,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Luella",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870590",
+    "recruiting": {
+      "athleteId": "4870590",
+      "city": "Fayetteville",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13113",
+        "latitude": 33.4487257,
+        "longitude": -84.4549262
+      },
+      "id": "111450",
+      "name": "Raul Aguirre Jr.",
+      "position": "LB",
+      "ranking": 204,
+      "rating": 0.9233,
+      "recruitType": "HighSchool",
+      "school": "Whitewater",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5278551",
+    "recruiting": {
+      "athleteId": "5278551",
+      "city": "Clinton",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "45059",
+        "latitude": 34.4726277,
+        "longitude": -81.8806562
+      },
+      "id": "105005",
+      "name": "Tre Aiken",
+      "position": "OT",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Clinton",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 286,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5082623",
+    "recruiting": {
+      "athleteId": "5082623",
+      "city": "Lehi",
+      "committedTo": "Utah State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "49049",
+        "latitude": 40.3880902,
+        "longitude": -111.8491619
+      },
+      "id": "115333",
+      "name": "Teague Andersen",
+      "position": "IOL",
+      "ranking": 1922,
+      "rating": 0.8252,
+      "recruitType": "HighSchool",
+      "school": "Lehi",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "utah-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2022,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2023,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5089312",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "LS",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "LS",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "LS",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "LS",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079301",
+    "recruiting": {
+      "athleteId": "5079301",
+      "city": "Hollywood",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "109131",
+      "name": "CJ Bailey",
+      "position": "QB",
+      "ranking": 434,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079315",
+    "recruiting": {
+      "athleteId": "5079315",
+      "city": "Charlotte",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "237892",
+      "name": "Brody Barnhardt",
+      "position": "S",
+      "ranking": 854,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Providence Day School",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 192,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296060",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290766",
+    "recruiting": {
+      "athleteId": "5290766",
+      "city": "Columbia",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "45079",
+        "latitude": 34.0007493,
+        "longitude": -81.0343313
+      },
+      "id": "104746",
+      "name": "Jordyn Best",
+      "position": "CB",
+      "ranking": 731,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Ridge View",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5212698",
+    "recruiting": {
+      "athleteId": "5212698",
+      "city": "Marshville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37179",
+        "latitude": 34.988486,
+        "longitude": -80.3670085
+      },
+      "id": "106469",
+      "name": "Je'rel Bolder",
+      "position": "WR",
+      "ranking": 279,
+      "rating": 0.9091,
+      "recruitType": "HighSchool",
+      "school": "Forest Hills",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 192,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146992",
+    "recruiting": {
+      "athleteId": "5146992",
+      "city": "Massillon",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7967244,
+        "longitude": -81.5215093
+      },
+      "id": "110264",
+      "name": "Chase Bond",
+      "position": "DL",
+      "ranking": 1656,
+      "rating": 0.8494,
+      "recruitType": "HighSchool",
+      "school": "Massillon Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5378094",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211180",
+    "recruiting": {
+      "athleteId": "5211180",
+      "city": "Chicago",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "212047",
+      "name": "Stephen Brown",
+      "position": "TE",
+      "ranking": 1881,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Marist",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079316",
+    "recruiting": {
+      "athleteId": "5079316",
+      "city": "Lanham",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.9670551,
+        "longitude": -76.8619166
+      },
+      "id": "109284",
+      "name": "Asaad Brown Jr.",
+      "position": "CB",
+      "ranking": 592,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Mt. Zion Prep",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "CB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222691",
+    "recruiting": {
+      "athleteId": "5222691",
+      "city": "Loganville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13297",
+        "latitude": 33.8389977,
+        "longitude": -83.9007382
+      },
+      "id": "105317",
+      "name": "Lawrence Brown Jr.",
+      "position": "EDGE",
+      "ranking": 2288,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Grayson",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220008",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "WR",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5207855",
+    "recruiting": {
+      "athleteId": "5207855",
+      "city": "San Antonio",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48029",
+        "latitude": 29.4246002,
+        "longitude": -98.4951405
+      },
+      "id": "107349",
+      "name": "Ke'Von Carter",
+      "position": "LB",
+      "ranking": 1173,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Wagner",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 203,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296061",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296062",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5378100",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5378099",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5294233",
+    "recruiting": {
+      "athleteId": "5294233",
+      "city": "Kinston",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "37107",
+        "latitude": 35.2626635,
+        "longitude": -77.5816353
+      },
+      "id": "105488",
+      "name": "Tyreek Copper",
+      "position": "WR",
+      "ranking": 469,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "Kinston",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5229556",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5167700",
+    "recruiting": {
+      "athleteId": "5167700",
+      "city": "Palm Coast",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12035",
+        "latitude": 29.5541432,
+        "longitude": -81.2207673
+      },
+      "id": "106871",
+      "name": "Colby Cronk",
+      "position": "EDGE",
+      "ranking": 686,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Flagler Palm Coast",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4703064",
+    "recruiting": {
+      "athleteId": "4703064",
+      "city": "Kernersville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "37067",
+        "latitude": 36.1198589,
+        "longitude": -80.0736533
+      },
+      "id": "115943",
+      "name": "Micah Crowell",
+      "position": "WR",
+      "ranking": 202,
+      "rating": 0.921,
+      "recruitType": "HighSchool",
+      "school": "East Forsyth",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2021
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2022,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5110445",
+    "recruiting": {
+      "athleteId": "5110445",
+      "city": "North Richland Hills",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "B",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.8342952,
+        "longitude": -97.2289029
+      },
+      "id": "109010",
+      "name": "Daniel Cruz",
+      "position": "IOL",
+      "ranking": 312,
+      "rating": 0.9054,
+      "recruitType": "HighSchool",
+      "school": "Richland",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2024,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141409",
+    "recruiting": {
+      "athleteId": "5141409",
+      "city": "Delray Beach",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 68.5,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.4614625,
+        "longitude": -80.0728201
+      },
+      "id": "106718",
+      "name": "Deandre Desinor",
+      "position": "RB",
+      "ranking": 524,
+      "rating": 0.8869,
+      "recruitType": "HighSchool",
+      "school": "Atlantic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296064",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079411",
+    "recruiting": {
+      "athleteId": "5079411",
+      "city": "Spanish Fort",
+      "committedTo": "Alabama",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01003",
+        "latitude": 30.6749127,
+        "longitude": -87.9152724
+      },
+      "id": "108900",
+      "name": "Sterling Dixon",
+      "position": "EDGE",
+      "ranking": 202,
+      "rating": 0.9213,
+      "recruitType": "HighSchool",
+      "school": "Spanish Fort",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "alabama",
+      "valueType": "BENCHMARK",
+      "weight": 211,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2024,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296065",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5215337",
+    "recruiting": {
+      "athleteId": "5215337",
+      "city": "North Palm Beach",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.8237944,
+        "longitude": -80.05592659756701
+      },
+      "id": "107389",
+      "name": "Preston Douglas",
+      "position": "TE",
+      "ranking": 1225,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "The Benjamin School",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296066",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5080819",
+    "recruiting": {
+      "athleteId": "5080819",
+      "city": "Moody",
+      "committedTo": "Arkansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "01115",
+        "latitude": 33.5909365,
+        "longitude": -86.4908168
+      },
+      "id": "111610",
+      "name": "Davion Dozier",
+      "position": "WR",
+      "ranking": 358,
+      "rating": 0.8975,
+      "recruitType": "HighSchool",
+      "school": "Moody",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4901373",
+    "recruiting": {
+      "athleteId": "4901373",
+      "city": "Cedar Hill",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.5888072,
+        "longitude": -96.9553675
+      },
+      "id": "114764",
+      "name": "Harvey Dyson",
+      "position": "DL",
+      "ranking": 1255,
+      "rating": 0.8507,
+      "recruitType": "HighSchool",
+      "school": "Cedar Hill",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2022
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2022,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2023,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4432697",
+    "recruiting": {
+      "athleteId": "4432697",
+      "city": "Baltimore",
+      "committedTo": "Jackson State",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "115941",
+      "name": "KaTron Evans",
+      "position": "DL",
+      "ranking": 200,
+      "rating": 0.9212,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 4,
+      "stateProvince": "MD",
+      "teamSlug": "jackson-state",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2021
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2021,
+        "team": "Jackson State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2022,
+        "team": "Jackson State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084046",
+    "recruiting": {
+      "athleteId": "5084046",
+      "city": "Nashville",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "A",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "108783",
+      "name": "Ondre Evans",
+      "position": "CB",
+      "ranking": 85,
+      "rating": 0.9566,
+      "recruitType": "HighSchool",
+      "school": "Christ Presbyterian Academy",
+      "stars": 4,
+      "stateProvince": "TN",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2024,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2025,
+        "team": "Georgia",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203717",
+    "recruiting": {
+      "athleteId": "5203717",
+      "city": "Miami",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "107345",
+      "name": "Adrian Farrow",
+      "position": "DL",
+      "ranking": 1173,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Miami Norland",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "DL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 47,
+        "position": "DL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5272620",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5126527",
+    "recruiting": {
+      "athleteId": "5126527",
+      "city": "Katy",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "109402",
+      "name": "Ian Flynt",
+      "position": "TE",
+      "ranking": 714,
+      "rating": 0.8775,
+      "recruitType": "HighSchool",
+      "school": "Katy Taylor",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2024,
+        "team": "Nebraska",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220012",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079468",
+    "recruiting": {
+      "athleteId": "5079468",
+      "city": "Hollywood",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "109213",
+      "name": "Davion Gause",
+      "position": "RB",
+      "ranking": 518,
+      "rating": 0.8875,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2025,
+        "team": "North Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5214465",
+    "recruiting": {
+      "athleteId": "5214465",
+      "city": "Wilmington",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "37129",
+        "latitude": 34.2257282,
+        "longitude": -77.9447107
+      },
+      "id": "106930",
+      "name": "Michael Gibbs",
+      "position": "IOL",
+      "ranking": 744,
+      "rating": 0.8764,
+      "recruitType": "HighSchool",
+      "school": "Hoggard",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5212730",
+    "recruiting": {
+      "athleteId": "5212730",
+      "city": "Lake Worth",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.615891,
+        "longitude": -80.0691435
+      },
+      "id": "107204",
+      "name": "Caden Gordon",
+      "position": "CB",
+      "ranking": 1045,
+      "rating": 0.8675,
+      "recruitType": "HighSchool",
+      "school": "Santaluces Community",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5289839",
+    "recruiting": {
+      "athleteId": "5289839",
+      "city": "Gastonia",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37071",
+        "latitude": 35.2622158,
+        "longitude": -81.1838794
+      },
+      "id": "104760",
+      "name": "Caleb Gordon",
+      "position": "LB",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Ashbrook",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5257985",
+    "recruiting": {
+      "athleteId": "5257985",
+      "city": "Waxhaw",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "37179",
+        "latitude": 34.9362535,
+        "longitude": -80.75079198523316
+      },
+      "id": "108587",
+      "name": "Cristian Harthan",
+      "position": "P",
+      "ranking": 2929,
+      "rating": 0.8183,
+      "recruitType": "HighSchool",
+      "school": "Cuthbertson",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290772",
+    "recruiting": {
+      "athleteId": "5290772",
+      "city": "Suwanee",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.0514898,
+        "longitude": -84.0712997
+      },
+      "id": "193597",
+      "name": "Tristen Hill",
+      "position": "S",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Peachtree Ridge",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5263574",
+    "recruiting": {
+      "athleteId": "5263574",
+      "city": "Arlington",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "107128",
+      "name": "LaCorian Hodge",
+      "position": "LB",
+      "ranking": 945,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Arlington Seguin",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296067",
+    "recruiting": {
+      "athleteId": "5296067",
+      "city": "Delray Beach",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.4614625,
+        "longitude": -80.0728201
+      },
+      "id": "220923",
+      "name": "Teddy Hoffmann",
+      "position": "WR",
+      "ranking": 1203,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Atlantic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870793",
+    "recruiting": {
+      "athleteId": "4870793",
+      "city": "Cornelius",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.4817982,
+        "longitude": -80.8589501
+      },
+      "id": "111648",
+      "name": "Tad Hudson",
+      "position": "QB",
+      "ranking": 403,
+      "rating": 0.8939,
+      "recruitType": "HighSchool",
+      "school": "Hough",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2023,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296068",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296069",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290901",
+    "recruiting": {
+      "athleteId": "5290901",
+      "city": "Winter Park",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.13784445,
+        "longitude": -81.75399813758739
+      },
+      "id": "105186",
+      "name": "Jordan Jackson",
+      "position": "CB",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Winter Park",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079524",
+    "recruiting": {
+      "athleteId": "5079524",
+      "city": "Fort Lauderdale",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "112874",
+      "name": "Rico Jackson",
+      "position": "OT",
+      "ranking": 1664,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "Dillard",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870806",
+    "recruiting": {
+      "athleteId": "4870806",
+      "city": "Sumter",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "45085",
+        "latitude": 33.9204354,
+        "longitude": -80.3414693
+      },
+      "id": "114728",
+      "name": "DJ Jackson",
+      "position": "DL",
+      "ranking": 1198,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Sumter",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159453",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5378093",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147510",
+    "recruiting": {
+      "athleteId": "5147510",
+      "city": "Rolesville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.9232862,
+        "longitude": -78.4573914
+      },
+      "id": "110011",
+      "name": "Isiah Jones",
+      "position": "RB",
+      "ranking": 1362,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Rolesville",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 187,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5378104",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5229838",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220013",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "PK",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "PK",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "PK",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5210800",
+    "recruiting": {
+      "athleteId": "5210800",
+      "city": "Charlotte",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "104220",
+      "name": "Damaad Lewis",
+      "position": "DL",
+      "ranking": 508,
+      "rating": 0.8889,
+      "recruitType": "HighSchool",
+      "school": "Myers Park",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "DT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081845",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2022,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870877",
+    "recruiting": {
+      "athleteId": "4870877",
+      "city": "Fort Lauderdale",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "A",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "111337",
+      "name": "King Mack",
+      "position": "S",
+      "ranking": 88,
+      "rating": 0.9586,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2024,
+        "team": "Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296070",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5176079",
+    "recruiting": {
+      "athleteId": "5176079",
+      "city": "Buford",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "104824",
+      "name": "Dylan McCoy",
+      "position": "RB",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5125334",
+    "recruiting": {
+      "athleteId": "5125334",
+      "city": "Kissimmee",
+      "committedTo": "East Carolina",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12097",
+        "latitude": 28.2918995,
+        "longitude": -81.4075838
+      },
+      "id": "256522",
+      "name": "Jimarion McCrimon",
+      "position": "OT",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Osceola",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "east-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2023,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2024,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159007",
+    "recruiting": {
+      "athleteId": "5159007",
+      "city": "Bradenton",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "105341",
+      "name": "Carmelo McKenzie",
+      "position": "DL",
+      "ranking": 1566,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146779",
+    "recruiting": {
+      "athleteId": "5146779",
+      "city": "Gastonia",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "37071",
+        "latitude": 35.2622158,
+        "longitude": -81.1838794
+      },
+      "id": "109535",
+      "name": "Trent Mitchell",
+      "position": "OT",
+      "ranking": 850,
+      "rating": 0.8728,
+      "recruitType": "HighSchool",
+      "school": "Ashbrook",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290700",
+    "recruiting": {
+      "athleteId": "5290700",
+      "city": "Pittsburgh",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.4416941,
+        "longitude": -79.9900861
+      },
+      "id": "105137",
+      "name": "Ziggy Moore",
+      "position": "LB",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Woodland Hills",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 218,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5265578",
+    "recruiting": {
+      "athleteId": "5265578",
+      "city": "Paramus",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 40.9452911,
+        "longitude": -74.0735899
+      },
+      "id": "105193",
+      "name": "Jordan Moreta",
+      "position": "LB",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Paramus Catholic",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291741",
+    "recruiting": {
+      "athleteId": "5291741",
+      "city": "Fairhope",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01003",
+        "latitude": 30.507956,
+        "longitude": -87.89742922432941
+      },
+      "id": "211697",
+      "name": "Noah Moss",
+      "position": "RB",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "St. Michael Catholic",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4431473",
+    "recruiting": {
+      "athleteId": "4431473",
+      "city": "Murphy",
+      "committedTo": "Florida",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "37039",
+        "latitude": 35.0875836,
+        "longitude": -84.0346315
+      },
+      "id": "116023",
+      "name": "Yousef Mugharbil",
+      "position": "IOL",
+      "ranking": 282,
+      "rating": 0.9057,
+      "recruitType": "HighSchool",
+      "school": "Murphy",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "florida",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2021
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2021,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2022,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870957",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5125151",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "CB",
+        "season": 2023,
+        "team": "North Texas",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "CB",
+        "season": 2024,
+        "team": "North Texas",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5378103",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079659",
+    "recruiting": {
+      "athleteId": "5079659",
+      "city": "Burlington",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "A",
+      "height": 69.5,
+      "hometownInfo": {
+        "fipsCode": "37001",
+        "latitude": 36.0956918,
+        "longitude": -79.4377991
+      },
+      "id": "108802",
+      "name": "Jonathan Paylor",
+      "position": "ATH",
+      "ranking": 104,
+      "rating": 0.9505,
+      "recruitType": "HighSchool",
+      "school": "Hugh M Cummings",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "RB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "RB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222362",
+    "recruiting": {
+      "athleteId": "5222362",
+      "city": "Kings Mills",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39165",
+        "latitude": 39.3556146,
+        "longitude": -84.2485483
+      },
+      "id": "107907",
+      "name": "Kage Payne",
+      "position": "IOL",
+      "ranking": 1881,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Kings",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5378097",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5201877",
+    "recruiting": {
+      "athleteId": "5201877",
+      "city": "Fullerton",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8708215,
+        "longitude": -117.9294165
+      },
+      "id": "106399",
+      "name": "Vander Ploog",
+      "position": "TE",
+      "ranking": 208,
+      "rating": 0.9218,
+      "recruitType": "HighSchool",
+      "school": "Troy",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 223,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Oregon",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296071",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5172608",
+    "recruiting": {
+      "athleteId": "5172608",
+      "city": "El Cajon",
+      "committedTo": "Montana State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 32.7947731,
+        "longitude": -116.9625269
+      },
+      "id": "217046",
+      "name": "Hunter Provience",
+      "position": "TE",
+      "ranking": 1953,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "montana-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2023,
+        "team": "Montana State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2024,
+        "team": "Montana State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2025,
+        "team": "Montana State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5155981",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2023,
+        "team": "Norfolk State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2024,
+        "team": "Norfolk State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5212653",
+    "recruiting": {
+      "athleteId": "5212653",
+      "city": "Kernersville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37067",
+        "latitude": 36.1198589,
+        "longitude": -80.0736533
+      },
+      "id": "104888",
+      "name": "Jai Richburg",
+      "position": "WR",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "East Forsyth",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141652",
+    "recruiting": {
+      "athleteId": "5141652",
+      "city": "Pittsboro",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "37037",
+        "latitude": 35.7201229,
+        "longitude": -79.1771539
+      },
+      "id": "107136",
+      "name": "Gus Ritchey",
+      "position": "TE",
+      "ranking": 975,
+      "rating": 0.8694,
+      "recruitType": "HighSchool",
+      "school": "Cary",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 241,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079661",
+    "recruiting": {
+      "athleteId": "5079661",
+      "city": "Fort Lauderdale",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "108879",
+      "name": "Chance Robinson",
+      "position": "WR",
+      "ranking": 181,
+      "rating": 0.926,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296072",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "S",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079666",
+    "recruiting": {
+      "athleteId": "5079666",
+      "city": "Gulf Shores",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 69.5,
+      "hometownInfo": {
+        "fipsCode": "01003",
+        "latitude": 30.259257,
+        "longitude": -87.71199293967432
+      },
+      "id": "109143",
+      "name": "Ronnie Royal III",
+      "position": "ATH",
+      "ranking": 447,
+      "rating": 0.8925,
+      "recruitType": "HighSchool",
+      "school": "Gulf Shores",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "S",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "S",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5162724",
+    "recruiting": {
+      "athleteId": "5162724",
+      "city": "Richmond",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "51760",
+        "latitude": 37.5385087,
+        "longitude": -77.43428
+      },
+      "id": "105304",
+      "name": "Brady Sakowitz",
+      "position": "OT",
+      "ranking": 1881,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Trinity Episcopal",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5213233",
+    "recruiting": {
+      "athleteId": "5213233",
+      "city": "Gwynn Oak",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "24005",
+        "latitude": 39.3265775,
+        "longitude": -76.7181764750945
+      },
+      "id": "104681",
+      "name": "Koby Sarkodie",
+      "position": "S",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Milford Mill Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 206,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5289316",
+    "recruiting": {
+      "athleteId": "5289316",
+      "city": "Camden",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34007",
+        "latitude": 39.9448402,
+        "longitude": -75.1198911
+      },
+      "id": "105187",
+      "name": "Elijah Satchell",
+      "position": "DL",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Camden Eastside",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5378095",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5126513",
+    "recruiting": {
+      "athleteId": "5126513",
+      "city": "Stockbridge",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.5442781,
+        "longitude": -84.2338093
+      },
+      "id": "109283",
+      "name": "Duke Scott",
+      "position": "RB",
+      "ranking": 591,
+      "rating": 0.8834,
+      "recruitType": "HighSchool",
+      "school": "Stockbridge",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147970",
+    "recruiting": {
+      "athleteId": "5147970",
+      "city": "Nashville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "109317",
+      "name": "Jaren Sensabaugh",
+      "position": "CB",
+      "ranking": 625,
+      "rating": 0.8819,
+      "recruitType": "HighSchool",
+      "school": "Ensworth",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "CB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4871041",
+    "recruiting": {
+      "athleteId": "4871041",
+      "city": "Boone",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37189",
+        "latitude": 36.216795,
+        "longitude": -81.6745517
+      },
+      "id": "111938",
+      "name": "Isaiah Shirley",
+      "position": "DL",
+      "ranking": 695,
+      "rating": 0.8764,
+      "recruitType": "HighSchool",
+      "school": "Watauga",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DT",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DT",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DT",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5279150",
+    "recruiting": {
+      "athleteId": "5279150",
+      "city": "Clayton",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "37101",
+        "latitude": 35.650711,
+        "longitude": -78.4563914
+      },
+      "id": "105289",
+      "name": "Aiden Smalls",
+      "position": "ATH",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Clayton",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290636",
+    "recruiting": {
+      "athleteId": "5290636",
+      "city": "Maryville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "47009",
+        "latitude": 35.7564719,
+        "longitude": -83.9704593
+      },
+      "id": "104772",
+      "name": "Brody Smith",
+      "position": "OT",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Maryville",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079837",
+    "recruiting": {
+      "athleteId": "5079837",
+      "city": "Wilkesboro",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "37193",
+        "latitude": 36.145965,
+        "longitude": -81.1606401
+      },
+      "id": "112098",
+      "name": "Kamen Smith",
+      "position": "OT",
+      "ranking": 857,
+      "rating": 0.8694,
+      "recruitType": "HighSchool",
+      "school": "Wilkes Central",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OT",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OT",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OT",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084967",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2022,
+        "team": "Nevada",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2023,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296075",
+    "recruiting": {
+      "athleteId": "5296075",
+      "city": "Louisville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "21111",
+        "latitude": 38.2542376,
+        "longitude": -85.759407
+      },
+      "id": "106384",
+      "name": "Spike Sowells Jr.",
+      "position": "IOL",
+      "ranking": 193,
+      "rating": 0.9257,
+      "recruitType": "HighSchool",
+      "school": "Louisville Male",
+      "stars": 4,
+      "stateProvince": "KY",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5220019",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5214517",
+    "recruiting": {
+      "athleteId": "5214517",
+      "city": "Anderson",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "45007",
+        "latitude": 34.5068601,
+        "longitude": -82.6506264
+      },
+      "id": "106983",
+      "name": "Cam Strong",
+      "position": "CB",
+      "ranking": 795,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "T.L. Hanna",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 166,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5378090",
+    "recruiting": {
+      "athleteId": "5378090",
+      "city": "Shelby",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37045",
+        "latitude": 35.2919489,
+        "longitude": -81.5402112
+      },
+      "id": "104514",
+      "name": "Pluto Surratt",
+      "position": "S",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Crest",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151801",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211398",
+    "recruiting": {
+      "athleteId": "5211398",
+      "city": "Leesburg",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "51107",
+        "latitude": 39.1154496,
+        "longitude": -77.5645446
+      },
+      "id": "107553",
+      "name": "Tristan Teasdell",
+      "position": "S",
+      "ranking": 1440,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Tuscarora",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5378096",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5378091",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079745",
+    "recruiting": {
+      "athleteId": "5079745",
+      "city": "Hollywood",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "S",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "108740",
+      "name": "Joshisa Trader",
+      "position": "WR",
+      "ranking": 42,
+      "rating": 0.9803,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5378102",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "LS",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4812345",
+    "recruiting": {
+      "athleteId": "4812345",
+      "city": "Cary",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.7883046,
+        "longitude": -78.7811964
+      },
+      "id": "114792",
+      "name": "Rylan Vann",
+      "position": "IOL",
+      "ranking": 1261,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Cary",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2022,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5378098",
+    "recruiting": {
+      "athleteId": "5378098",
+      "city": "Kings Mountain",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37045",
+        "latitude": 35.2450607,
+        "longitude": -81.3410516
+      },
+      "id": "104361",
+      "name": "Tex Vaughn",
+      "position": "TE",
+      "ranking": 665,
+      "rating": 0.8822,
+      "recruitType": "HighSchool",
+      "school": "Kings Mountain",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "TE",
+        "season": 2026,
+        "team": "NC State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4703069",
+    "recruiting": {
+      "athleteId": "4703069",
+      "city": "Bailey",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "37127",
+        "latitude": 35.7809129,
+        "longitude": -78.118429
+      },
+      "id": "234641",
+      "name": "Jackson Vick",
+      "position": "CB",
+      "ranking": 951,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Southern Nash",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 174,
+      "year": 2022
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2022,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5217706",
+    "recruiting": {
+      "athleteId": "5217706",
+      "city": "Loganville",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13297",
+        "latitude": 33.8389977,
+        "longitude": -83.9007382
+      },
+      "id": "107744",
+      "name": "Josiah Victor",
+      "position": "DL",
+      "ranking": 1629,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Grayson",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 90,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5081852",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2022,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219235",
+    "recruiting": {
+      "athleteId": "5219235",
+      "city": "Katy",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "257435",
+      "name": "Jackson Waller",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Katy",
+      "stars": null,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 206,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "P",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "P",
+        "season": 2025,
+        "team": "Arkansas State",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "P",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5160003",
+    "recruiting": {
+      "athleteId": "5160003",
+      "city": "Picayune",
+      "committedTo": "Alcorn State",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "28109",
+        "latitude": 30.5254692,
+        "longitude": -89.6795084
+      },
+      "id": "257106",
+      "name": "Tyran Warren",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Picayune Memorial",
+      "stars": null,
+      "stateProvince": "MS",
+      "teamSlug": "alcorn-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2023,
+        "team": "Alcorn State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2024,
+        "team": "Alcorn State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "Alcorn State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5378101",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219162",
+    "recruiting": {
+      "athleteId": "5219162",
+      "city": "Buford",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "109122",
+      "name": "Ty White",
+      "position": "S",
+      "ranking": 426,
+      "rating": 0.8944,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 187,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2025,
+        "team": "North Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5211058",
+    "recruiting": {
+      "athleteId": "5211058",
+      "city": "Antioch",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "47093",
+        "latitude": 36.0806394,
+        "longitude": -83.7799037
+      },
+      "id": "106656",
+      "name": "TK Whitset",
+      "position": "OT",
+      "ranking": 466,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "Antioch",
+      "stars": 4,
+      "stateProvince": "TN",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219168",
+    "recruiting": {
+      "athleteId": "5219168",
+      "city": "Wilmington",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "37129",
+        "latitude": 34.2257282,
+        "longitude": -77.9447107
+      },
+      "id": "257312",
+      "name": "Hudson Wilharm",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Hoggard",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147735",
+    "recruiting": {
+      "athleteId": "5147735",
+      "city": "Wake Forest",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.9803138,
+        "longitude": -78.5103731
+      },
+      "id": "110475",
+      "name": "Zane Williams",
+      "position": "LB",
+      "ranking": 1863,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "Wake Forest",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 3
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159454",
+    "recruiting": null,
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148611",
+    "recruiting": {
+      "athleteId": "5148611",
+      "city": "Columbia",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "45079",
+        "latitude": 34.0007493,
+        "longitude": -81.0343313
+      },
+      "id": "106811",
+      "name": "Will Wilson",
+      "position": "QB",
+      "ranking": 619,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Richland Northeast",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "NC State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "NC State",
+        "year": 2
+      }
+    ]
+  }
+]

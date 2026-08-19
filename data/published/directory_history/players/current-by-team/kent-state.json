@@ -1,0 +1,4320 @@
+[
+  {
+    "playerId": "5151679",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388324",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5154316",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2023,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5095134",
+    "recruiting": {
+      "athleteId": "5095134",
+      "city": "Ellicott City",
+      "committedTo": "Robert Morris",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24027",
+        "latitude": 39.2673284,
+        "longitude": -76.7983067
+      },
+      "id": "256294",
+      "name": "Mofe Adewole",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Centennial",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "robert-morris",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2022
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2022,
+        "team": "Robert Morris",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Robert Morris",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388312",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295588",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5027432",
+    "recruiting": {
+      "athleteId": "5027432",
+      "city": "Massillon",
+      "committedTo": "Kentucky",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7967244,
+        "longitude": -81.5215093
+      },
+      "id": "111844",
+      "name": "Ardell Banks",
+      "position": "WR",
+      "ranking": 600,
+      "rating": 0.8803,
+      "recruitType": "HighSchool",
+      "school": "Massillon Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302809",
+    "recruiting": {
+      "athleteId": "5302809",
+      "city": "Columbus",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 39.9622601,
+        "longitude": -83.0007065
+      },
+      "id": "212653",
+      "name": "TeJuan Barbour",
+      "position": "CB",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Northland",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5165755",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388322",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5189754",
+    "recruiting": {
+      "athleteId": "5189754",
+      "city": "Carroll",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39045",
+        "latitude": 39.7989528,
+        "longitude": -82.7010016
+      },
+      "id": "111224",
+      "name": "Brodyn Bishop",
+      "position": "S",
+      "ranking": 3067,
+      "rating": 0.7894,
+      "recruitType": "HighSchool",
+      "school": "Bloom-Carroll",
+      "stars": 2,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4877642",
+    "recruiting": {
+      "athleteId": "4877642",
+      "city": "Ann Arbor",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26161",
+        "latitude": 42.2681569,
+        "longitude": -83.7312291
+      },
+      "id": "115364",
+      "name": "Tyler Bivens",
+      "position": "CB",
+      "ranking": 1955,
+      "rating": 0.8222,
+      "recruitType": "HighSchool",
+      "school": "Huron",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2022
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2022,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5243578",
+    "recruiting": {
+      "athleteId": "5243578",
+      "city": "Millville",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34011",
+        "latitude": 39.4020593,
+        "longitude": -75.0393368
+      },
+      "id": "108208",
+      "name": "Darian Blachewicz",
+      "position": "DL",
+      "ranking": 2281,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Millville",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222389",
+    "recruiting": {
+      "athleteId": "5222389",
+      "city": "Painesville",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39085",
+        "latitude": 41.7244885,
+        "longitude": -81.245657
+      },
+      "id": "238716",
+      "name": "Antonio Bottiggi",
+      "position": "DL",
+      "ranking": 3253,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "Riverside",
+      "stars": 2,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870641",
+    "recruiting": {
+      "athleteId": "4870641",
+      "city": "Philadelphia",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "111550",
+      "name": "Semaj Bridgeman",
+      "position": "LB",
+      "ranking": 302,
+      "rating": 0.9041,
+      "recruitType": "HighSchool",
+      "school": "Imhotep Institute",
+      "stars": 4,
+      "stateProvince": "PA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302807",
+    "recruiting": {
+      "athleteId": "5302807",
+      "city": "Hamilton",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.3995067,
+        "longitude": -84.5613428
+      },
+      "id": "213036",
+      "name": "Eckley Bridges",
+      "position": "DL",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Hamilton",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5268612",
+    "recruiting": {
+      "athleteId": "5268612",
+      "city": "Cincinnati",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "212950",
+      "name": "Jacob Broach",
+      "position": "EDGE",
+      "ranking": 2846,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Princeton",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193532",
+    "recruiting": {
+      "athleteId": "5193532",
+      "city": "Stilwell",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 38.7691755,
+        "longitude": -94.6563454
+      },
+      "id": "238628",
+      "name": "Martell Buchanan",
+      "position": "S",
+      "ranking": 3253,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "Blue Valley",
+      "stars": 2,
+      "stateProvince": "KS",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222390",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5302915",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5126524",
+    "recruiting": {
+      "athleteId": "5126524",
+      "city": "Avon",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "39093",
+        "latitude": 41.4516512,
+        "longitude": -82.0350598
+      },
+      "id": "110046",
+      "name": "Jakorion Caffey",
+      "position": "RB",
+      "ranking": 1391,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2024,
+        "team": "Cincinnati",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2025,
+        "team": "Cincinnati",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295589",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5085561",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2022,
+        "team": "Idaho State",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295590",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211905",
+    "recruiting": {
+      "athleteId": "5211905",
+      "city": "Plainfield",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34039",
+        "latitude": 40.6337136,
+        "longitude": -74.4073737
+      },
+      "id": "108085",
+      "name": "Joel Cordoba",
+      "position": "S",
+      "ranking": 2057,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "Plainfield",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147050",
+    "recruiting": {
+      "athleteId": "5147050",
+      "city": "Plainfield",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "34039",
+        "latitude": 40.6337136,
+        "longitude": -74.4073737
+      },
+      "id": "110959",
+      "name": "Josue Cordoba",
+      "position": "DL",
+      "ranking": 2469,
+      "rating": 0.8204,
+      "recruitType": "HighSchool",
+      "school": "Plainfield",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5258329",
+    "recruiting": {
+      "athleteId": "5258329",
+      "city": "New Philadelphia",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39157",
+        "latitude": 40.4897871,
+        "longitude": -81.4456706
+      },
+      "id": "108696",
+      "name": "Boston Crowell",
+      "position": "IOL",
+      "ranking": 3323,
+      "rating": 0.7844,
+      "recruitType": "HighSchool",
+      "school": "New Philadelphia",
+      "stars": 2,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5280827",
+    "recruiting": {
+      "athleteId": "5280827",
+      "city": "Hilliard",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.033814,
+        "longitude": -83.1596108
+      },
+      "id": "212960",
+      "name": "Liam Dalton",
+      "position": "IOL",
+      "ranking": 2846,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Hilliard Davidson",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5395376",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388320",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160198",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2023,
+        "team": "Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5119841",
+    "recruiting": {
+      "athleteId": "5119841",
+      "city": "Beloit",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39099",
+        "latitude": 40.9231141,
+        "longitude": -80.9937025
+      },
+      "id": "113195",
+      "name": "Dru DeShields",
+      "position": "QB",
+      "ranking": 2062,
+      "rating": 0.8263,
+      "recruitType": "HighSchool",
+      "school": "West Branch",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5150825",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2023,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5194677",
+    "recruiting": {
+      "athleteId": "5194677",
+      "city": "Littleton",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "08005",
+        "latitude": 39.613321,
+        "longitude": -105.0166498
+      },
+      "id": "257406",
+      "name": "Garrett Dial",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Valor Christian",
+      "stars": null,
+      "stateProvince": "CO",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222391",
+    "recruiting": {
+      "athleteId": "5222391",
+      "city": "Brunswick",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39103",
+        "latitude": 41.2456819,
+        "longitude": -81.8275398
+      },
+      "id": "111194",
+      "name": "Jaxon Dunn",
+      "position": "IOL",
+      "ranking": 2955,
+      "rating": 0.7996,
+      "recruitType": "HighSchool",
+      "school": "Brunswick",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222386",
+    "recruiting": {
+      "athleteId": "5222386",
+      "city": "Cincinnati",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "110126",
+      "name": "Jay Jay Etheridge",
+      "position": "ATH",
+      "ranking": 1475,
+      "rating": 0.8539,
+      "recruitType": "HighSchool",
+      "school": "Mt. Healthy",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 156,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5310072",
+    "recruiting": {
+      "athleteId": "5310072",
+      "city": "Mentor",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "39085",
+        "latitude": 41.6661573,
+        "longitude": -81.339552
+      },
+      "id": "212700",
+      "name": "Jackson Farley",
+      "position": "RB",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Mentor",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151681",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4684638",
+    "recruiting": {
+      "athleteId": "4684638",
+      "city": "Ann Arbor",
+      "committedTo": "Buffalo",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26161",
+        "latitude": 42.2681569,
+        "longitude": -83.7312291
+      },
+      "id": "117610",
+      "name": "Ali Fisher",
+      "position": "WR",
+      "ranking": 1919,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "Pioneer",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "buffalo",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2021
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2021,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2022,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211188",
+    "recruiting": {
+      "athleteId": "5211188",
+      "city": "Springfield",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39023",
+        "latitude": 39.9242266,
+        "longitude": -83.8088172
+      },
+      "id": "108342",
+      "name": "Zy'Aire Fletcher",
+      "position": "ATH",
+      "ranking": 2425,
+      "rating": 0.8311,
+      "recruitType": "HighSchool",
+      "school": "Springfield",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388317",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "P",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5215186",
+    "recruiting": {
+      "athleteId": "5215186",
+      "city": "Evans",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "13073",
+        "latitude": 33.5143065,
+        "longitude": -82.1387819734912
+      },
+      "id": "108218",
+      "name": "BuddyRow Garrer",
+      "position": "WR",
+      "ranking": 2301,
+      "rating": 0.8369,
+      "recruitType": "HighSchool",
+      "school": "Evans",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295592",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222633",
+    "recruiting": {
+      "athleteId": "5222633",
+      "city": "Avon",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39093",
+        "latitude": 41.4516512,
+        "longitude": -82.0350598
+      },
+      "id": "108433",
+      "name": "Nolan Good",
+      "position": "QB",
+      "ranking": 2640,
+      "rating": 0.8272,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4875741",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2021,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2022,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5156390",
+    "recruiting": {
+      "athleteId": "5156390",
+      "city": "Lakewood",
+      "committedTo": "Coastal Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.4819932,
+        "longitude": -81.7981908
+      },
+      "id": "108314",
+      "name": "Nate Gregory",
+      "position": "LB",
+      "ranking": 2397,
+      "rating": 0.8331,
+      "recruitType": "HighSchool",
+      "school": "St. Edward",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "coastal-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2025,
+        "team": "Coastal Carolina",
+        "year": 1
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222598",
+    "recruiting": {
+      "athleteId": "5222598",
+      "city": "Yorkville",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06045",
+        "latitude": 41.6411409,
+        "longitude": -88.4472948
+      },
+      "id": "108406",
+      "name": "Bryce Griffin",
+      "position": "EDGE",
+      "ranking": 2612,
+      "rating": 0.8296,
+      "recruitType": "HighSchool",
+      "school": "Yorkville",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146972",
+    "recruiting": {
+      "athleteId": "5146972",
+      "city": "Downingtown",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "42029",
+        "latitude": 40.0064958,
+        "longitude": -75.7032742
+      },
+      "id": "111007",
+      "name": "Ayden Harris",
+      "position": "ATH",
+      "ranking": 2592,
+      "rating": 0.817,
+      "recruitType": "HighSchool",
+      "school": "Downingtown East",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147053",
+    "recruiting": {
+      "athleteId": "5147053",
+      "city": "Huntington",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "54011",
+        "latitude": 38.4192496,
+        "longitude": -82.445154
+      },
+      "id": "111082",
+      "name": "Wayne Harris",
+      "position": "WR",
+      "ranking": 2660,
+      "rating": 0.8137,
+      "recruitType": "HighSchool",
+      "school": "Huntington",
+      "stars": 3,
+      "stateProvince": "WV",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4912559",
+    "recruiting": {
+      "athleteId": "4912559",
+      "city": "Dearborn",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3222599,
+        "longitude": -83.1763145
+      },
+      "id": "115585",
+      "name": "Mohammed Hazime",
+      "position": "TE",
+      "ranking": 2309,
+      "rating": 0.8056,
+      "recruitType": "HighSchool",
+      "school": "Fordson",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2022
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2022,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5078404",
+    "recruiting": {
+      "athleteId": "5078404",
+      "city": "Cherry Hill",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "34007",
+        "latitude": 39.9348351,
+        "longitude": -75.0307264
+      },
+      "id": "256778",
+      "name": "Marques Hicks",
+      "position": "RB",
+      "ranking": 2135,
+      "rating": 0.7804,
+      "recruitType": "HighSchool",
+      "school": "Camden Catholic",
+      "stars": 2,
+      "stateProvince": "NJ",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 197,
+      "year": 2023
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083407",
+    "recruiting": {
+      "athleteId": "5083407",
+      "city": "Streetsboro",
+      "committedTo": "Rhode Island",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39133",
+        "latitude": 41.239223,
+        "longitude": -81.345941
+      },
+      "id": "235236",
+      "name": "Hunter Hopperton",
+      "position": "TE",
+      "ranking": 2723,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Streetsboro",
+      "stars": 2,
+      "stateProvince": "OH",
+      "teamSlug": "rhode-island",
+      "valueType": "BENCHMARK",
+      "weight": 243,
+      "year": 2022
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "FB",
+        "season": 2022,
+        "team": "Rhode Island",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "FB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "FB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "FB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5212938",
+    "recruiting": {
+      "athleteId": "5212938",
+      "city": "Dayton",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39113",
+        "latitude": 39.7589478,
+        "longitude": -84.1916069
+      },
+      "id": "108190",
+      "name": "Teaunn Hunter",
+      "position": "WR",
+      "ranking": 2272,
+      "rating": 0.8383,
+      "recruitType": "HighSchool",
+      "school": "Wayne",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388319",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5088365",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2022,
+        "team": "Saint Francis",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2023,
+        "team": "Saint Francis",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Saint Francis",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295594",
+    "recruiting": {
+      "athleteId": "5295594",
+      "city": "Detroit",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "108419",
+      "name": "Derrick Jackson",
+      "position": "S",
+      "ranking": 2626,
+      "rating": 0.8286,
+      "recruitType": "HighSchool",
+      "school": "Cass Technical",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388316",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388315",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5089863",
+    "recruiting": {
+      "athleteId": "5089863",
+      "city": "Cincinnati",
+      "committedTo": "Grambling",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "255860",
+      "name": "Norey Johnson",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Deer Park",
+      "stars": null,
+      "stateProvince": "OH",
+      "teamSlug": "grambling",
+      "valueType": "BENCHMARK",
+      "weight": 166,
+      "year": 2022
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2022,
+        "team": "Grambling",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2023,
+        "team": "Grambling",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2024,
+        "team": "Houston Christian",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2025,
+        "team": "Houston Christian",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302805",
+    "recruiting": {
+      "athleteId": "5302805",
+      "city": "Avon",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18063",
+        "latitude": 39.7628227,
+        "longitude": -86.3997168
+      },
+      "id": "212453",
+      "name": "William Johnson III",
+      "position": "IOL",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5287518",
+    "recruiting": {
+      "athleteId": "5287518",
+      "city": "Macedonia",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.313667,
+        "longitude": -81.50845
+      },
+      "id": "212808",
+      "name": "Gavin Kanar",
+      "position": "OT",
+      "ranking": 2694,
+      "rating": 0.8389,
+      "recruitType": "HighSchool",
+      "school": "Nordonia",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5122047",
+    "recruiting": {
+      "athleteId": "5122047",
+      "city": "North Olmsted",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.4156025,
+        "longitude": -81.9234726
+      },
+      "id": "216951",
+      "name": "Jared Kelley",
+      "position": "WR",
+      "ranking": 1113,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "North Olmsted",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4875755",
+    "recruiting": {
+      "athleteId": "4875755",
+      "city": "Centralia",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17121",
+        "latitude": 38.5250491,
+        "longitude": -89.1334037
+      },
+      "id": "255005",
+      "name": "Mason King",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Centralia",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2021
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2021,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2022,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2023,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2024,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5287857",
+    "recruiting": {
+      "athleteId": "5287857",
+      "city": "Massillon",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7967244,
+        "longitude": -81.5215093
+      },
+      "id": "105265",
+      "name": "Lennox Lemon",
+      "position": "CB",
+      "ranking": 1654,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Massillon Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 176,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5258331",
+    "recruiting": {
+      "athleteId": "5258331",
+      "city": "Xenia",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39057",
+        "latitude": 39.6847822,
+        "longitude": -83.9296526
+      },
+      "id": "221553",
+      "name": "Sean Leonard",
+      "position": "K",
+      "ranking": 3126,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Xenia",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "PK",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 96,
+        "position": "PK",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5258332",
+    "recruiting": {
+      "athleteId": "5258332",
+      "city": "Columbus",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18005",
+        "latitude": 39.2014405,
+        "longitude": -85.9213796
+      },
+      "id": "108671",
+      "name": "Garrett Long",
+      "position": "TE",
+      "ranking": 3114,
+      "rating": 0.805,
+      "recruitType": "HighSchool",
+      "school": "Columbus North",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 83,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295595",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302814",
+    "recruiting": {
+      "athleteId": "5302814",
+      "city": "Pickerington",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39045",
+        "latitude": 39.896277299999994,
+        "longitude": -82.77319049748806
+      },
+      "id": "213306",
+      "name": "Chase Mantooth",
+      "position": "LS",
+      "ranking": 3346,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Pickerington Central",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5263587",
+    "recruiting": {
+      "athleteId": "5263587",
+      "city": "Avon",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "39093",
+        "latitude": 41.4516512,
+        "longitude": -82.0350598
+      },
+      "id": "221864",
+      "name": "Matthew Maxey",
+      "position": "WR",
+      "ranking": 3430,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 2,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291799",
+    "recruiting": {
+      "athleteId": "5291799",
+      "city": "St. Louis",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "212755",
+      "name": "Kendall McNutt",
+      "position": "LB",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "St. Louis University",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5257035",
+    "recruiting": {
+      "athleteId": "5257035",
+      "city": "Middletown",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.5150576,
+        "longitude": -84.3982763
+      },
+      "id": "108494",
+      "name": "Tyler Meadows",
+      "position": "OT",
+      "ranking": 2689,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Lakota East",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5227269",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Saint Francis",
+        "year": 3
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388311",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5258022",
+    "recruiting": {
+      "athleteId": "5258022",
+      "city": "Akron",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.083064,
+        "longitude": -81.518485
+      },
+      "id": "221526",
+      "name": "Tanner Mintz",
+      "position": "LB",
+      "ranking": 3126,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Hoban",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4912560",
+    "recruiting": {
+      "athleteId": "4912560",
+      "city": "Lapeer",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26087",
+        "latitude": 43.0514161,
+        "longitude": -83.3188341
+      },
+      "id": "115639",
+      "name": "Dustyn Morell",
+      "position": "OT",
+      "ranking": 2511,
+      "rating": 0.7983,
+      "recruitType": "HighSchool",
+      "school": "Lapeer",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2022
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2022,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5082292",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2022,
+        "team": "UTEP",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "UTEP",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "UTEP",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5088143",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2022,
+        "team": "Presbyterian",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2023,
+        "team": "Presbyterian",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5194691",
+    "recruiting": {
+      "athleteId": "5194691",
+      "city": "La Grange",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8054577,
+        "longitude": -87.8748644
+      },
+      "id": "111214",
+      "name": "Tommy Newcomb",
+      "position": "K",
+      "ranking": 2972,
+      "rating": 0.7956,
+      "recruitType": "HighSchool",
+      "school": "Lyons Township",
+      "stars": 2,
+      "stateProvince": "IL",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "PK",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "PK",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "PK",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5082969",
+    "recruiting": {
+      "athleteId": "5082969",
+      "city": "Philadelphia",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "234808",
+      "name": "Rocco Nicholl",
+      "position": "LB",
+      "ranking": 2000,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph's Prep",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2022,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327609",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5287511",
+    "recruiting": {
+      "athleteId": "5287511",
+      "city": "Mentor",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39085",
+        "latitude": 41.6661573,
+        "longitude": -81.339552
+      },
+      "id": "212452",
+      "name": "Colin Prichard",
+      "position": "OT",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Mentor",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146577",
+    "recruiting": {
+      "athleteId": "5146577",
+      "city": "Youngstown",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39099",
+        "latitude": 41.1035786,
+        "longitude": -80.6520161
+      },
+      "id": "109883",
+      "name": "Davion Pritchard",
+      "position": "CB",
+      "ranking": 1212,
+      "rating": 0.8606,
+      "recruitType": "HighSchool",
+      "school": "Fitch",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "Pittsburgh",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5326065",
+    "recruiting": {
+      "athleteId": "5326065",
+      "city": "Middletown",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.5150576,
+        "longitude": -84.3982763
+      },
+      "id": "212026",
+      "name": "Zymir Reed",
+      "position": "WR",
+      "ranking": 1846,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Middletown",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5227117",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2025,
+        "team": "Duquesne",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388318",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222396",
+    "recruiting": {
+      "athleteId": "5222396",
+      "city": "Pittsburgh",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.4416941,
+        "longitude": -79.9900861
+      },
+      "id": "110025",
+      "name": "Clinton Robinson",
+      "position": "ATH",
+      "ranking": 1362,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Keystone Oaks",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 196,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "S",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "S",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "S",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388314",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222397",
+    "recruiting": {
+      "athleteId": "5222397",
+      "city": "Centreville",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "24035",
+        "latitude": 39.0420588,
+        "longitude": -76.0674344
+      },
+      "id": "110887",
+      "name": "Jaihien Roy",
+      "position": "LB",
+      "ranking": 2403,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "Queen Anne's County",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5215187",
+    "recruiting": {
+      "athleteId": "5215187",
+      "city": "Napoleon",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39069",
+        "latitude": 41.3922726,
+        "longitude": -84.1252243
+      },
+      "id": "108269",
+      "name": "Trey Rubinstein",
+      "position": "LB",
+      "ranking": 2341,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Napoleon",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141625",
+    "recruiting": {
+      "athleteId": "5141625",
+      "city": "Atco",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34007",
+        "latitude": 39.769838,
+        "longitude": -74.8873855
+      },
+      "id": "107832",
+      "name": "Deante Ruffin",
+      "position": "QB",
+      "ranking": 1728,
+      "rating": 0.8506,
+      "recruitType": "HighSchool",
+      "school": "Winslow Township",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291785",
+    "recruiting": {
+      "athleteId": "5291785",
+      "city": "Baltimore",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "213034",
+      "name": "Carlos Shird",
+      "position": "DL",
+      "ranking": 3115,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Mount Saint Joseph",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388323",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291801",
+    "recruiting": {
+      "athleteId": "5291801",
+      "city": "York",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "42133",
+        "latitude": 39.962398,
+        "longitude": -76.727392
+      },
+      "id": "212310",
+      "name": "Brendyn Smith",
+      "position": "WR",
+      "ranking": 1914,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Central York",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5312159",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5193272",
+    "recruiting": {
+      "athleteId": "5193272",
+      "city": "West Mifflin",
+      "committedTo": "Bowling Green",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.3634026,
+        "longitude": -79.8664375
+      },
+      "id": "257423",
+      "name": "Rico Steele",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "West Mifflin Area",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "bowling-green",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Bowling Green",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141694",
+    "recruiting": {
+      "athleteId": "5141694",
+      "city": "Louisville",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "21111",
+        "latitude": 38.2542376,
+        "longitude": -85.759407
+      },
+      "id": "107581",
+      "name": "Maurice Stephens",
+      "position": "WR",
+      "ranking": 1477,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "Ballard",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388321",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086981",
+    "recruiting": {
+      "athleteId": "5086981",
+      "city": "Chicago",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "113374",
+      "name": "Angelo Stockstill",
+      "position": "ATH",
+      "ranking": 2340,
+      "rating": 0.8153,
+      "recruitType": "HighSchool",
+      "school": "Simeon",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295596",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210753",
+    "recruiting": {
+      "athleteId": "5210753",
+      "city": "Aliquippa",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42007",
+        "latitude": 40.6102386,
+        "longitude": -80.267726
+      },
+      "id": "105001",
+      "name": "Daiveon Taylor",
+      "position": "LB",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Aliquippa",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5142743",
+    "recruiting": {
+      "athleteId": "5142743",
+      "city": "Akron",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.083064,
+        "longitude": -81.518485
+      },
+      "id": "110465",
+      "name": "Dakota Taylor",
+      "position": "WR",
+      "ranking": 1859,
+      "rating": 0.8419,
+      "recruitType": "HighSchool",
+      "school": "Buchtel",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5302817",
+    "recruiting": {
+      "athleteId": "5302817",
+      "city": "Lakewood",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.4819932,
+        "longitude": -81.7981908
+      },
+      "id": "213157",
+      "name": "Dion'dre Taylor",
+      "position": "DL",
+      "ranking": 3115,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "St. Edward",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215184",
+    "recruiting": {
+      "athleteId": "5215184",
+      "city": "Emmaus",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42077",
+        "latitude": 40.5395421,
+        "longitude": -75.4968502
+      },
+      "id": "108308",
+      "name": "Rafael Terrero Jr.",
+      "position": "LB",
+      "ranking": 2391,
+      "rating": 0.8336,
+      "recruitType": "HighSchool",
+      "school": "Emmaus",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388310",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5304012",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2025,
+        "team": "Saint Francis",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5302808",
+    "recruiting": {
+      "athleteId": "5302808",
+      "city": "Xenia",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39057",
+        "latitude": 39.6847822,
+        "longitude": -83.9296526
+      },
+      "id": "212790",
+      "name": "Kale Webb",
+      "position": "DL",
+      "ranking": 2709,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Xenia",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5327601",
+    "recruiting": {
+      "athleteId": "5327601",
+      "city": "Lakewood",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.4819932,
+        "longitude": -81.7981908
+      },
+      "id": "212912",
+      "name": "Brandon White",
+      "position": "RB",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "St. Edward",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 182,
+      "year": 2026
+    },
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5227192",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2025,
+        "team": "Robert Morris",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388313",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151685",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kent State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5323792",
+    "recruiting": null,
+    "team": "Kent State",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kent State",
+        "year": 1
+      }
+    ]
+  }
+]

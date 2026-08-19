@@ -1,0 +1,544 @@
+.season-totals {
+  margin-top: 10px;
+  border: 1px solid var(--border-subtle);
+}
+
+.season-totals > header,
+.season-totals > div {
+  display: grid;
+  grid-template-columns: 1fr 110px 110px;
+  align-items: center;
+  gap: 12px;
+  min-height: 40px;
+  padding: 7px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.season-totals > header {
+  min-height: 30px;
+  background: #050b12;
+  color: var(--text-secondary);
+  font-size: 8px;
+  letter-spacing: .1em;
+}
+
+.season-totals > header span:not(:first-child),
+.season-totals strong {
+  text-align: right;
+}
+
+.season-summary,
+.achievement-grid,
+.basic-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--border-subtle);
+}
+
+.cfp-resume-summary {
+  display: grid;
+  grid-template-columns: 1.35fr repeat(3, 1fr);
+  border: 1px solid rgba(102, 184, 255, .28);
+  background: linear-gradient(105deg, rgba(0, 39, 76, .62), rgba(7, 17, 29, .96));
+}
+
+.cfp-resume-summary > div {
+  min-height: 104px;
+  padding: 18px;
+  border-right: 1px solid var(--border-subtle);
+}
+
+.cfp-resume-summary > div:last-of-type { border-right: 0; }
+.cfp-resume-summary span,
+.cfp-resume-summary small { display: block; color: var(--text-secondary); font-size: 9px; letter-spacing: .08em; }
+.cfp-resume-summary strong { display: block; margin: 8px 0 6px; color: var(--maize); font-family: var(--font-data); font-size: 30px; }
+.cfp-resume-summary p { grid-column: 1 / -1; margin: 0; padding: 11px 18px; border-top: 1px solid var(--border-subtle); color: var(--text-secondary); font-size: 11px; line-height: 1.5; }
+
+.season-summary > div,
+.achievement-grid > div,
+.basic-stat-grid > div {
+  min-height: 92px;
+  padding: 16px;
+  border-right: 1px solid var(--border-subtle);
+}
+
+.season-summary > div:last-child,
+.achievement-grid > div:last-child,
+.basic-stat-grid > div:nth-child(4n) {
+  border-right: 0;
+}
+
+.season-summary span,
+.achievement-grid span,
+.basic-stat-grid span {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.season-summary strong,
+.achievement-grid strong,
+.basic-stat-grid strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--maize);
+  font-family: var(--font-data);
+  font-size: 26px;
+}
+
+.season-summary small {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-secondary);
+  font-size: 8px;
+}
+
+.basic-stat-grid > div:nth-child(-n+4) {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.history-roster-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  min-height: 150px;
+  padding: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 203, 5, .35);
+  background: linear-gradient(120deg, #06101a, #00274c);
+  text-decoration: none;
+  transition: border-color .2s ease, transform .2s ease;
+}
+
+.history-roster-link::after {
+  content: "M";
+  position: absolute;
+  right: 2%;
+  bottom: -35%;
+  color: rgba(255, 203, 5, .08);
+  font-size: 190px;
+  font-weight: 1000;
+}
+
+.history-roster-link:hover {
+  border-color: var(--maize);
+  transform: translateY(-2px);
+}
+
+.history-roster-link span,
+.history-roster-link b {
+  color: var(--maize);
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+
+.history-roster-link strong {
+  grid-column: 1;
+  margin-top: 8px;
+  font-size: clamp(30px, 4vw, 54px);
+}
+
+.history-roster-link b {
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.playoff-results {
+  gap: 10px;
+  border: 0;
+  background: transparent;
+}
+
+.season-results > .playoff-game {
+  position: relative;
+  min-height: 84px;
+  padding: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 203, 5, .35);
+  background: linear-gradient(110deg, rgba(0, 39, 76, .95), rgba(7, 17, 29, .98));
+}
+
+.season-results > .playoff-game::after {
+  content: "CFP";
+  position: absolute;
+  right: 12px;
+  color: rgba(255, 203, 5, .08);
+  font-family: var(--font-data);
+  font-size: 54px;
+  font-weight: 1000;
+}
+
+.season-results > .playoff-win {
+  border-color: var(--maize);
+  box-shadow: inset 4px 0 var(--maize);
+}
+
+.season-results > .title-game {
+  background: linear-gradient(110deg, rgba(92, 68, 0, .55), #00274c 58%, #07111d);
+}
+
+.season-results > .all-games-playoff {
+  background: rgba(255, 203, 5, .07);
+  box-shadow: inset 3px 0 var(--maize);
+}
+
+.season-results > .history-game-row {
+  grid-template-columns: 28px 34px 72px minmax(0, 1fr) auto;
+}
+
+.history-game-row > img,
+.history-game-row > .team-logo-fallback {
+  width: 30px !important;
+  height: 30px !important;
+  object-fit: contain;
+}
+
+.history-game-row > strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.championship-banner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(255, 203, 5, .55);
+  background: #00274c;
+  animation: title-reveal .8s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+.championship-banner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -80% -20%;
+  background: conic-gradient(from 90deg, transparent, rgba(255, 203, 5, .22), transparent 28%);
+  animation: title-sweep 6s linear infinite;
+}
+
+.championship-banner > span {
+  display: block;
+  color: var(--maize);
+  font-family: var(--font-data);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .18em;
+}
+
+.championship-banner > strong,
+.championship-banner > b {
+  display: block;
+  line-height: .82;
+  letter-spacing: -.06em;
+}
+
+.big-ten-banner {
+  min-height: 190px;
+  padding: 30px;
+  background: linear-gradient(120deg, #06101a, #00274c 60%, #174672);
+}
+
+.big-ten-banner > strong {
+  margin-top: 15px;
+  color: white;
+  font-size: clamp(42px, 7vw, 82px);
+}
+
+.big-ten-banner > b {
+  position: absolute;
+  right: 4%;
+  bottom: -12%;
+  color: rgba(255, 203, 5, .17);
+  font-size: clamp(100px, 18vw, 220px);
+}
+
+.national-title-banner {
+  min-height: 430px;
+  margin-inline: calc(50% - 50vw);
+  padding: 58px max(24px, calc((100vw - 1320px) / 2));
+  background: radial-gradient(circle at 75% 45%, rgba(255, 203, 5, .23), transparent 30rem), linear-gradient(125deg, #030910, #00274c 58%, #06101a);
+  box-shadow: 0 0 80px rgba(255, 203, 5, .12);
+}
+
+.national-title-banner > strong {
+  margin-top: 30px;
+  color: white;
+  font-size: clamp(66px, 11vw, 160px);
+  text-shadow: 0 5px 50px rgba(0, 0, 0, .5);
+  animation: champion-pulse 2.8s ease-in-out infinite;
+}
+
+.national-title-banner > b {
+  position: absolute;
+  right: max(24px, calc((100vw - 1320px) / 2));
+  bottom: -8%;
+  color: rgba(255, 203, 5, .18);
+  font-size: clamp(150px, 28vw, 390px);
+}
+
+.national-title-banner > p {
+  margin: 24px 0 0;
+  color: var(--maize);
+  font-size: 18px;
+  font-weight: 850;
+  letter-spacing: .04em;
+}
+
+@keyframes title-reveal {
+  from { opacity: 0; transform: translateY(28px) scale(.98); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes title-sweep {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes champion-pulse {
+  50% { color: var(--maize); text-shadow: 0 0 45px rgba(255, 203, 5, .28); }
+}
+
+.season-totals > div span {
+  font-size: 11px;
+}
+
+.season-totals strong {
+  font-family: var(--font-data);
+  font-size: 13px;
+}
+
+@media (max-width: 620px) {
+  .season-totals > header,
+  .season-totals > div {
+    grid-template-columns: 1fr 82px 82px;
+    padding-inline: 10px;
+  }
+
+  .season-summary,
+  .achievement-grid,
+  .basic-stat-grid,
+  .cfp-resume-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .season-summary > div:nth-child(2n),
+  .achievement-grid > div:nth-child(2n),
+  .basic-stat-grid > div:nth-child(2n),
+  .cfp-resume-summary > div:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .season-summary > div:nth-child(-n+2),
+  .achievement-grid > div:nth-child(-n+2),
+  .basic-stat-grid > div:not(:nth-last-child(-n+2)),
+  .cfp-resume-summary > div:nth-child(-n+2) {
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .history-roster-link {
+    display: block;
+    min-height: 130px;
+    padding: 20px;
+  }
+
+  .history-roster-link b {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .national-title-banner {
+    min-height: 360px;
+    padding-top: 45px;
+  }
+
+  .national-title-banner > b {
+    bottom: 0;
+  }
+
+  .season-results > .history-game-row {
+    grid-template-columns: 25px 28px minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .history-game-row > span {
+    display: none;
+  }
+
+  .history-game-row > img,
+  .history-game-row > .team-logo-fallback {
+    width: 26px !important;
+    height: 26px !important;
+  }
+}
+
+/* Season page composition */
+.history-scoreboard {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(260px, 1.25fr) minmax(180px, .7fr) minmax(320px, 1fr);
+  grid-template-areas: "title record grades" "achievements achievements achievements";
+  overflow: hidden;
+  border: 1px solid rgba(255, 203, 5, .28);
+  background: linear-gradient(120deg, #06101a, #00274c 62%, #0b2135);
+}
+.history-scoreboard::after { content: "M"; position: absolute; right: -20px; bottom: -70px; color: rgba(255, 203, 5, .055); font-size: 240px; font-weight: 1000; line-height: 1; pointer-events: none; }
+.history-scoreboard-title { grid-area: title; padding: 24px; }
+.history-scoreboard-title h1 { margin: 6px 0 0; color: white; font-size: clamp(60px, 8vw, 112px); line-height: .8; }
+.history-scoreboard-title p { margin: 13px 0 0; font-size: 13px; }
+.history-record { grid-area: record; display: grid; align-content: center; padding: 24px; border-left: 1px solid var(--border-subtle); }
+.history-record span,
+.history-grade-strip span { color: var(--text-secondary); font-family: var(--font-data); font-size: 9px; letter-spacing: .1em; }
+.history-record strong { margin-top: 7px; color: var(--maize); font-family: var(--font-data); font-size: clamp(40px, 5vw, 66px); line-height: 1; }
+.history-grade-strip { z-index: 1; grid-area: grades; display: grid; grid-template-columns: repeat(3, 1fr); align-items: stretch; border-left: 1px solid var(--border-subtle); }
+.history-grade-strip > div { display: grid; align-content: center; justify-items: center; padding: 18px 12px; border-left: 1px solid var(--border-subtle); }
+.history-grade-strip > div:first-child { border-left: 0; }
+.history-grade-strip strong { margin-top: 7px; color: var(--maize); font-family: var(--font-data); font-size: 38px; }
+.history-scoreboard .season-achievements { grid-area: achievements; padding: 11px 24px; border-top: 1px solid var(--border-subtle); background: rgba(0, 0, 0, .18); }
+
+.history-season-layout { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(280px, .7fr); gap: 16px; align-items: start; }
+.history-season-main,
+.history-season-rail { display: grid; gap: 16px; }
+
+.history-season-main .cfp-resume-summary { grid-template-columns: 1.35fr repeat(3, 1fr); }
+.history-season-main .cfp-resume-summary > header { display: grid; align-content: center; min-height: 126px; padding: 20px; border-right: 1px solid var(--border-subtle); }
+.history-season-main .cfp-resume-summary > header span { color: var(--maize); }
+.history-season-main .cfp-resume-summary > header strong { font-size: 42px; }
+.history-playoff-section { padding: 18px; border: 1px solid rgba(255, 203, 5, .2); background: rgba(0, 39, 76, .22); }
+
+.history-stat-panel { border: 1px solid var(--border-subtle); background: #07111d; }
+.history-stat-panel > header { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid var(--border-subtle); }
+.history-stat-panel > header span { color: var(--maize); font-family: var(--font-data); font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.history-stat-panel > header small { color: var(--text-secondary); font-size: 8px; }
+.history-stat-panel > div { display: grid; grid-template-columns: repeat(2, 1fr); }
+.history-stat-panel > div > div { min-height: 72px; padding: 12px; border-right: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+.history-stat-panel > div > div:nth-child(2n) { border-right: 0; }
+.history-stat-panel > div > div:nth-last-child(-n+2) { border-bottom: 0; }
+.history-stat-panel span { display: block; color: var(--text-secondary); font-size: 9px; line-height: 1.25; }
+.history-stat-panel strong { display: block; margin-top: 7px; color: white; font-family: var(--font-data); font-size: 20px; }
+.history-season-rail .history-roster-link { display: block; min-height: 130px; }
+.history-season-rail .history-roster-link strong { display: block; font-size: 50px; line-height: 1; }
+.history-season-rail .history-roster-link b { display: block; margin-top: 12px; }
+
+@media (max-width: 900px) {
+  .history-scoreboard { grid-template-columns: 1.2fr .7fr; grid-template-areas: "title record" "grades grades" "achievements achievements"; }
+  .history-grade-strip { border-top: 1px solid var(--border-subtle); border-left: 0; }
+  .history-season-layout { grid-template-columns: 1fr; }
+  .history-season-rail { grid-template-columns: 1.4fr .6fr; }
+}
+
+@media (max-width: 620px) {
+  .history-scoreboard { grid-template-columns: 1fr auto; grid-template-areas: "title record" "grades grades" "achievements achievements"; }
+  .history-scoreboard::after { display: none; }
+  .history-scoreboard-title { padding: 17px 14px; }
+  .history-scoreboard-title h1 { font-size: 58px; }
+  .history-scoreboard-title p { margin-top: 8px; font-size: 11px; }
+  .history-record { padding: 14px; }
+  .history-record strong { font-size: 34px; }
+  .history-grade-strip strong { font-size: 28px; }
+  .history-grade-strip > div { padding: 11px 8px; }
+  .history-scoreboard .season-achievements { padding: 9px 12px; }
+
+  .history-season-layout,
+  .history-season-main,
+  .history-season-rail { gap: 10px; }
+  .history-season-main .cfp-resume-summary { grid-template-columns: repeat(3, 1fr); }
+  .history-season-main .cfp-resume-summary > header { grid-column: 1 / -1; grid-template-columns: 1fr auto; min-height: 78px; padding: 13px; border-right: 0; border-bottom: 1px solid var(--border-subtle); }
+  .history-season-main .cfp-resume-summary > header strong { grid-column: 2; grid-row: 1 / 3; align-self: center; margin: 0; font-size: 34px; }
+  .history-season-main .cfp-resume-summary > header small { grid-column: 1; }
+  .history-season-main .cfp-resume-summary > div { min-height: 66px; padding: 9px; }
+  .history-season-main .cfp-resume-summary > div strong { font-size: 19px; }
+  .history-season-main .cfp-resume-summary > div small { font-size: 7px; }
+  .history-playoff-section { padding: 11px; }
+  .history-season-rail { grid-template-columns: 1fr; }
+  .history-stat-panel > div { grid-template-columns: repeat(4, 1fr); }
+  .history-stat-panel > div > div { min-height: 62px; padding: 8px 6px; border-bottom: 1px solid var(--border-subtle); }
+  .history-stat-panel > div > div:nth-child(2n) { border-right: 1px solid var(--border-subtle); }
+  .history-stat-panel > div > div:nth-child(4n) { border-right: 0; }
+  .history-stat-panel > div > div:nth-last-child(-n+4) { border-bottom: 0; }
+  .history-stat-panel span { font-size: 7px; }
+  .history-stat-panel strong { font-size: 16px; }
+  .history-season-rail .history-roster-link { min-height: 82px; }
+  .history-season-rail .history-roster-link strong { font-size: 30px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .championship-banner,
+  .championship-banner::before,
+  .national-title-banner > strong {
+    animation: none;
+  }
+
+  .history-roster-link {
+    transition: none;
+  }
+}
+
+/* Compact history hierarchy: essentials first, long tables on demand. */
+.history-season-page { gap: 14px; }
+.history-season-page .page-hero { max-width: none; }
+.history-season-hero { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding: 8px 0 4px; }
+.history-season-hero h1 { margin: 4px 0 0; font-size: clamp(38px, 6vw, 76px); white-space: nowrap; }
+.history-season-hero p { margin: 0 0 8px; font-size: 14px; text-align: right; }
+.history-index-hero { padding-bottom: 8px; }
+.history-index-hero h1 { margin-bottom: 8px; }
+
+.season-achievements { display: flex; flex-wrap: wrap; gap: 7px; }
+.season-achievements span { padding: 8px 11px; border: 1px solid var(--border-subtle); border-radius: 999px; color: var(--text-secondary); font-family: var(--font-data); font-size: 9px; letter-spacing: .06em; }
+.season-achievements span.earned { border-color: rgba(255, 203, 5, .5); background: rgba(255, 203, 5, .09); color: var(--maize); }
+
+.history-disclosure { border: 1px solid var(--border-subtle); background: rgba(5, 11, 18, .45); }
+.history-disclosure > summary { display: grid; grid-template-columns: 1fr auto auto; align-items: center; min-height: 54px; padding: 0 16px; cursor: pointer; list-style: none; }
+.history-disclosure > summary::-webkit-details-marker { display: none; }
+.history-disclosure > summary span { color: var(--maize); font-family: var(--font-data); font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.history-disclosure > summary b { color: var(--text-secondary); font-family: var(--font-data); font-size: 10px; }
+.history-disclosure > summary::after { content: "+"; margin-left: 12px; color: var(--maize); font-size: 20px; }
+.history-disclosure[open] > summary::after { content: "−"; }
+.history-disclosure .basic-stat-grid,
+.history-disclosure .season-results { margin: 0; border-width: 1px 0 0; }
+
+.history-season-page .history-roster-link { min-height: 96px; padding: 18px; }
+.history-season-page .history-roster-link strong { font-size: clamp(24px, 3vw, 38px); }
+
+@media (max-width: 620px) {
+  .history-page,
+  .history-season-page { gap: 11px; padding-top: 12px; }
+
+  .history-index-hero { padding: 6px 0 2px; }
+  .history-index-hero h1 { font-size: 38px; }
+  .history-index-hero p { display: none; }
+  .history-page .history-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .history-page .season-tile { position: relative; min-height: 82px; padding: 11px; }
+  .history-page .season-tile strong { font-size: 25px; }
+  .history-page .season-tile p { position: absolute; top: 11px; right: 11px; margin: 0; font-size: 14px; }
+  .history-page .season-tile b { display: block; margin-top: 8px; overflow: hidden; color: var(--text-secondary); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+
+  .history-season-hero { display: block; padding: 2px 0; }
+  .history-season-hero h1 { font-size: 36px; white-space: normal; }
+  .history-season-hero p { margin-top: 6px; text-align: left; }
+
+  .history-season-page .season-summary > div,
+  .history-season-page .cfp-resume-summary > div,
+  .history-season-page .basic-stat-grid > div { min-height: 70px; padding: 11px; }
+  .history-season-page .season-summary strong,
+  .history-season-page .cfp-resume-summary strong,
+  .history-season-page .basic-stat-grid strong { margin-top: 5px; font-size: 22px; }
+  .history-season-page .cfp-resume-summary p { padding: 9px 11px; font-size: 10px; }
+
+  .season-achievements { gap: 5px; }
+  .season-achievements span { padding: 6px 8px; font-size: 8px; }
+  .history-disclosure > summary { min-height: 48px; padding-inline: 11px; }
+
+  .history-season-page .history-roster-link { min-height: 88px; padding: 14px; }
+  .history-season-page .history-roster-link b { margin-top: 10px; }
+  .history-season-page .national-title-banner { min-height: 230px; padding: 28px 18px; }
+  .history-season-page .national-title-banner > strong { margin-top: 18px; font-size: 52px; }
+  .history-season-page .national-title-banner > p { margin-top: 14px; font-size: 13px; }
+  .history-season-page .big-ten-banner { min-height: 125px; padding: 20px; }
+  .history-season-page .big-ten-banner > strong { font-size: 34px; }
+  .history-season-page .season-results > .playoff-game { min-height: 62px; padding: 10px; }
+}

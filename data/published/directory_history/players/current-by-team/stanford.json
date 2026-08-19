@@ -1,0 +1,5280 @@
+[
+  {
+    "playerId": "5168670",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Bucknell",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Bucknell",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4876144",
+    "recruiting": {
+      "athleteId": "4876144",
+      "city": "Kennewick",
+      "committedTo": "Eastern Washington",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "53005",
+        "latitude": 46.2087066,
+        "longitude": -119.1199192
+      },
+      "id": "118065",
+      "name": "Tuna Altahir",
+      "position": "RB",
+      "ranking": 2378,
+      "rating": 0.8044,
+      "recruitType": "HighSchool",
+      "school": "Kamiakin",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "eastern-washington",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2021
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2022,
+        "team": "Eastern Washington",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "Eastern Washington",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Eastern Washington",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685251",
+    "recruiting": {
+      "athleteId": "4685251",
+      "city": "Franklin",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "47187",
+        "latitude": 35.925193,
+        "longitude": -86.8689365
+      },
+      "id": "113811",
+      "name": "Fisher Anderson",
+      "position": "OT",
+      "ranking": 268,
+      "rating": 0.9068,
+      "recruitType": "HighSchool",
+      "school": "Franklin",
+      "stars": 4,
+      "stateProvince": "TN",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146819",
+    "recruiting": {
+      "athleteId": "5146819",
+      "city": "Jersey City",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34017",
+        "latitude": 40.7281575,
+        "longitude": -74.0776417
+      },
+      "id": "110370",
+      "name": "Joe Asiain",
+      "position": "DL",
+      "ranking": 1760,
+      "rating": 0.8458,
+      "recruitType": "HighSchool",
+      "school": "St. Peter's Prep",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5144020",
+    "recruiting": {
+      "athleteId": "5144020",
+      "city": "San Clemente",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.4270275,
+        "longitude": -117.6124179
+      },
+      "id": "110251",
+      "name": "Connor Bachhuber",
+      "position": "OT",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "San Clemente",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5381551",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5255254",
+    "recruiting": {
+      "athleteId": "5255254",
+      "city": "Brentwood",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "47187",
+        "latitude": 36.0325687,
+        "longitude": -86.7825235
+      },
+      "id": "108562",
+      "name": "London Bironas",
+      "position": "K",
+      "ranking": 2769,
+      "rating": 0.8203,
+      "recruitType": "HighSchool",
+      "school": "Brentwood Academy",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "PK",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 19,
+        "position": "PK",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219250",
+    "recruiting": {
+      "athleteId": "5219250",
+      "city": "Milford",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42103",
+        "latitude": 41.322316,
+        "longitude": -74.8023882
+      },
+      "id": "109963",
+      "name": "Aiden Black",
+      "position": "TE",
+      "ranking": 1315,
+      "rating": 0.8581,
+      "recruitType": "HighSchool",
+      "school": "Delaware Valley",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146764",
+    "recruiting": {
+      "athleteId": "5146764",
+      "city": "Miami",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "109691",
+      "name": "Benji Blackburn",
+      "position": "TE",
+      "ranking": 1008,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "Miami Columbus",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141383",
+    "recruiting": {
+      "athleteId": "5141383",
+      "city": "Princeton",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.3492744,
+        "longitude": -74.6592958
+      },
+      "id": "106892",
+      "name": "Kole Briehler",
+      "position": "DL",
+      "ranking": 706,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Hun School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219242",
+    "recruiting": {
+      "athleteId": "5219242",
+      "city": "Santa Ana",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "238046",
+      "name": "Marcus Brown",
+      "position": "WR",
+      "ranking": 2232,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5094032",
+    "recruiting": {
+      "athleteId": "5094032",
+      "city": "Huntington Beach",
+      "committedTo": "Yale",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6783336,
+        "longitude": -118.0000166
+      },
+      "id": "234671",
+      "name": "Nico Brown",
+      "position": "ATH",
+      "ranking": 1525,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Edison",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "yale",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2022,
+        "team": "Yale",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2025,
+        "team": "Yale",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146827",
+    "recruiting": {
+      "athleteId": "5146827",
+      "city": "Bay St. Louis",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "28045",
+        "latitude": 30.3132823,
+        "longitude": -89.3343223
+      },
+      "id": "109329",
+      "name": "Ziron Brown",
+      "position": "IOL",
+      "ranking": 631,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Bay",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5078420",
+    "recruiting": {
+      "athleteId": "5078420",
+      "city": "Fairfield",
+      "committedTo": "Washington",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06095",
+        "latitude": 38.2493581,
+        "longitude": -122.0399663
+      },
+      "id": "111870",
+      "name": "Leroy Bryant",
+      "position": "CB",
+      "ranking": 628,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Angelo Rodriguez",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "washington",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2023,
+        "team": "Washington",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2024,
+        "team": "Washington",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2025,
+        "team": "Washington",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5279420",
+    "recruiting": {
+      "athleteId": "5279420",
+      "city": "Glen Head",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "36059",
+        "latitude": 40.84348675,
+        "longitude": -73.62581450092935
+      },
+      "id": "105162",
+      "name": "Jacob Butler",
+      "position": "WR",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Long Island Lutheran",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5265601",
+    "recruiting": {
+      "athleteId": "5265601",
+      "city": "Mountain View",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06085",
+        "latitude": 37.3893889,
+        "longitude": -122.0832101
+      },
+      "id": "105658",
+      "name": "Chase Cahoon",
+      "position": "LB",
+      "ranking": 2288,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "St. Francis",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219249",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5293288",
+    "recruiting": {
+      "athleteId": "5293288",
+      "city": "Hampton",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.3870578,
+        "longitude": -84.2829784
+      },
+      "id": "212296",
+      "name": "Caleb Carson",
+      "position": "S",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Lovejoy",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081695",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685308",
+    "recruiting": {
+      "athleteId": "4685308",
+      "city": "Arlington",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "113697",
+      "name": "Ernest Cooper IV",
+      "position": "DL",
+      "ranking": 154,
+      "rating": 0.9391,
+      "recruitType": "HighSchool",
+      "school": "Arlington Martin",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219245",
+    "recruiting": {
+      "athleteId": "5219245",
+      "city": "Concord",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.9768525,
+        "longitude": -122.0335624
+      },
+      "id": "238032",
+      "name": "Drew Cunningham",
+      "position": "LB",
+      "ranking": 2232,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "De La Salle",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5303282",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147109",
+    "recruiting": {
+      "athleteId": "5147109",
+      "city": "Metairie",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "22051",
+        "latitude": 30.001852,
+        "longitude": -90.1767149159888
+      },
+      "id": "109999",
+      "name": "Darrius Davis",
+      "position": "S",
+      "ranking": 1332,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Rummel",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079371",
+    "recruiting": {
+      "athleteId": "5079371",
+      "city": "Picayune",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "28109",
+        "latitude": 30.5254692,
+        "longitude": -89.6795084
+      },
+      "id": "109304",
+      "name": "Chris Davis Jr.",
+      "position": "RB",
+      "ranking": 612,
+      "rating": 0.8825,
+      "recruitType": "HighSchool",
+      "school": "Picayune Memorial",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219247",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5257618",
+    "recruiting": {
+      "athleteId": "5257618",
+      "city": "Rockwall",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48397",
+        "latitude": 32.9312336,
+        "longitude": -96.4597089
+      },
+      "id": "105330",
+      "name": "Jack Duckworth",
+      "position": "CB",
+      "ranking": 1806,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "Rockwall",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219244",
+    "recruiting": {
+      "athleteId": "5219244",
+      "city": "Littleton",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "08005",
+        "latitude": 39.613321,
+        "longitude": -105.0166498
+      },
+      "id": "238056",
+      "name": "Charlie Eckhardt",
+      "position": "ATH",
+      "ranking": 2232,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Arapahoe",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5081694",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5212624",
+    "recruiting": {
+      "athleteId": "5212624",
+      "city": "Raleigh",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.7803977,
+        "longitude": -78.6390989
+      },
+      "id": "104331",
+      "name": "Keysaun Eleazer",
+      "position": "EDGE",
+      "ranking": 704,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Southeast Raleigh",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5078531",
+    "recruiting": {
+      "athleteId": "5078531",
+      "city": "League City",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.5074538,
+        "longitude": -95.0949303
+      },
+      "id": "111657",
+      "name": "Nick Fattig",
+      "position": "IOL",
+      "ranking": 412,
+      "rating": 0.8932,
+      "recruitType": "HighSchool",
+      "school": "Clear Springs",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2023,
+        "team": "Texas Tech",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5092214",
+    "recruiting": {
+      "athleteId": "5092214",
+      "city": "Westlake Village",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "113203",
+      "name": "Aidan Flintoft",
+      "position": "P",
+      "ranking": 2070,
+      "rating": 0.8256,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "P",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "P",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "P",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "P",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5143191",
+    "recruiting": {
+      "athleteId": "5143191",
+      "city": "Toms River",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "34029",
+        "latitude": 39.9537359,
+        "longitude": -74.1979576
+      },
+      "id": "109556",
+      "name": "Micah Ford",
+      "position": "RB",
+      "ranking": 866,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Toms River North",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141458",
+    "recruiting": {
+      "athleteId": "5141458",
+      "city": "Newark",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34013",
+        "latitude": 40.735657,
+        "longitude": -74.1723667
+      },
+      "id": "107405",
+      "name": "Omari Gaines",
+      "position": "S",
+      "ranking": 1254,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Malcolm X Shabazz",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5085761",
+    "recruiting": {
+      "athleteId": "5085761",
+      "city": "West Liberty",
+      "committedTo": "Northern Iowa",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "19139",
+        "latitude": 41.5700231,
+        "longitude": -91.2637695
+      },
+      "id": "114995",
+      "name": "Jahsiah Galvan",
+      "position": "S",
+      "ranking": 1482,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "West Liberty",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "northern-iowa",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2022,
+        "team": "Northern Iowa",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2023,
+        "team": "Northern Iowa",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5257984",
+    "recruiting": {
+      "athleteId": "5257984",
+      "city": "Buford",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "107810",
+      "name": "Chris Garland",
+      "position": "CB",
+      "ranking": 1703,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5031156",
+    "recruiting": {
+      "athleteId": "5031156",
+      "city": "Scottsdale",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "112159",
+      "name": "Gavin Geweniger",
+      "position": "EDGE",
+      "ranking": 913,
+      "rating": 0.8669,
+      "recruitType": "HighSchool",
+      "school": "Chaparral",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "LB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5196433",
+    "recruiting": {
+      "athleteId": "5196433",
+      "city": "Newport Beach",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6170092,
+        "longitude": -117.9294401
+      },
+      "id": "107336",
+      "name": "Zach Giuliano",
+      "position": "TE",
+      "ranking": 1173,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Corona Del Mar",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917046",
+    "recruiting": {
+      "athleteId": "4917046",
+      "city": "Houston",
+      "committedTo": "Washington",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "114972",
+      "name": "Jay Green",
+      "position": "S",
+      "ranking": 1473,
+      "rating": 0.8422,
+      "recruitType": "HighSchool",
+      "school": "Houston Lamar",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "washington",
+      "valueType": "BENCHMARK",
+      "weight": 196,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2022,
+        "team": "Washington",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2023,
+        "team": "Washington",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5128062",
+    "recruiting": {
+      "athleteId": "5128062",
+      "city": "Waxhaw",
+      "committedTo": "Georgia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "37179",
+        "latitude": 34.9362535,
+        "longitude": -80.75079198523316
+      },
+      "id": "109290",
+      "name": "Kai Greer",
+      "position": "IOL",
+      "ranking": 592,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Marvin Ridge",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "georgia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "Georgia Tech",
+        "year": 2
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146778",
+    "recruiting": {
+      "athleteId": "5146778",
+      "city": "Denton",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "109744",
+      "name": "Hayden Gunter",
+      "position": "OT",
+      "ranking": 1064,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Denton",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5208218",
+    "recruiting": {
+      "athleteId": "5208218",
+      "city": "Fishers",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "18057",
+        "latitude": 39.9555928,
+        "longitude": -86.0138729
+      },
+      "id": "106387",
+      "name": "JonAnthony Hall",
+      "position": "WR",
+      "ranking": 196,
+      "rating": 0.9254,
+      "recruitType": "HighSchool",
+      "school": "Fishers",
+      "stars": 4,
+      "stateProvince": "IN",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5156056",
+    "recruiting": {
+      "athleteId": "5156056",
+      "city": "Chattanooga",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "47065",
+        "latitude": 35.0457219,
+        "longitude": -85.3094883
+      },
+      "id": "112496",
+      "name": "Caleb Hampton",
+      "position": "RB",
+      "ranking": 1266,
+      "rating": 0.8552,
+      "recruitType": "HighSchool",
+      "school": "Baylor School",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5276979",
+    "recruiting": {
+      "athleteId": "5276979",
+      "city": "Conroe",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.3118769,
+        "longitude": -95.4560512
+      },
+      "id": "104518",
+      "name": "Xavier Harmon",
+      "position": "CB",
+      "ranking": 731,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Conroe",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5231354",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "South Carolina State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290258",
+    "recruiting": {
+      "athleteId": "5290258",
+      "city": "Folsom",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06067",
+        "latitude": 38.6779591,
+        "longitude": -121.1760583
+      },
+      "id": "105373",
+      "name": "Jason Hill Jr.",
+      "position": "ATH",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Folsom",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219248",
+    "recruiting": {
+      "athleteId": "5219248",
+      "city": "Slinger",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "55131",
+        "latitude": 43.3333862,
+        "longitude": -88.2857631
+      },
+      "id": "109303",
+      "name": "Charlie Hoitink",
+      "position": "IOL",
+      "ranking": 611,
+      "rating": 0.8826,
+      "recruitType": "HighSchool",
+      "school": "Slinger",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5077804",
+    "recruiting": {
+      "athleteId": "5077804",
+      "city": "Houston",
+      "committedTo": null,
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "111968",
+      "name": "Chico Holt",
+      "position": "TE",
+      "ranking": 725,
+      "rating": 0.875,
+      "recruitType": "HighSchool",
+      "school": "Strake Jesuit",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": null,
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209298",
+    "recruiting": {
+      "athleteId": "5209298",
+      "city": "Stockton",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06077",
+        "latitude": 37.9577016,
+        "longitude": -121.2907796
+      },
+      "id": "104779",
+      "name": "Langdon Horace",
+      "position": "ATH",
+      "ranking": 731,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Edison",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146831",
+    "recruiting": {
+      "athleteId": "5146831",
+      "city": "Warner Robins",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "13153",
+        "latitude": 32.6200973,
+        "longitude": -83.606568
+      },
+      "id": "109579",
+      "name": "Kahlil House",
+      "position": "IOL",
+      "ranking": 895,
+      "rating": 0.8708,
+      "recruitType": "HighSchool",
+      "school": "Houston County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5281563",
+    "recruiting": {
+      "athleteId": "5281563",
+      "city": "Inglewood",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.9562003,
+        "longitude": -118.353132
+      },
+      "id": "105291",
+      "name": "Sarrel Howard",
+      "position": "EDGE",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Inglewood",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870802",
+    "recruiting": {
+      "athleteId": "4870802",
+      "city": "Miami",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "111770",
+      "name": "Sedrick Irvin Jr.",
+      "position": "RB",
+      "ranking": 521,
+      "rating": 0.885,
+      "recruitType": "HighSchool",
+      "school": "Miami Columbus",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5199857",
+    "recruiting": {
+      "athleteId": "5199857",
+      "city": "Leesburg",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13177",
+        "latitude": 31.7324556,
+        "longitude": -84.1711966
+      },
+      "id": "103958",
+      "name": "Lasiah Jackson",
+      "position": "S",
+      "ranking": 204,
+      "rating": 0.9224,
+      "recruitType": "HighSchool",
+      "school": "Lee County",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219246",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5165113",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2024,
+        "team": "Idaho",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5294219",
+    "recruiting": {
+      "athleteId": "5294219",
+      "city": "Suwanee",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.0514898,
+        "longitude": -84.0712997
+      },
+      "id": "104748",
+      "name": "Atticus Joseph",
+      "position": "WR",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Collins Hill",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141551",
+    "recruiting": {
+      "athleteId": "5141551",
+      "city": "La Grange Park",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8333646,
+        "longitude": -87.8677324
+      },
+      "id": "106755",
+      "name": "Gabe Kaminski",
+      "position": "EDGE",
+      "ranking": 563,
+      "rating": 0.8842,
+      "recruitType": "HighSchool",
+      "school": "Nazareth Academy",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4875315",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "PK",
+        "season": 2021,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "PK",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "PK",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "PK",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "PK",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "PK",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5083579",
+    "recruiting": {
+      "athleteId": "5083579",
+      "city": "Bettendorf",
+      "committedTo": "Harvard",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "19163",
+        "latitude": 41.5252761,
+        "longitude": -90.5096386
+      },
+      "id": "235471",
+      "name": "Aidan Kilstrom",
+      "position": "IOL",
+      "ranking": 2977,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "Pleasant Valley",
+      "stars": 2,
+      "stateProvince": "IA",
+      "teamSlug": "harvard",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2022,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5125795",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159105",
+    "recruiting": {
+      "athleteId": "5159105",
+      "city": "Sammamish",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6088445,
+        "longitude": -122.0423067
+      },
+      "id": "104607",
+      "name": "Wassie Lugolobi",
+      "position": "LB",
+      "ranking": 1030,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Eastside Catholic",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5125732",
+    "recruiting": {
+      "athleteId": "5125732",
+      "city": "Melrose",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "25017",
+        "latitude": 42.4564323,
+        "longitude": -71.064182
+      },
+      "id": "112584",
+      "name": "Braden Marceau-Olayinka",
+      "position": "DL",
+      "ranking": 1347,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Melrose",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "DL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147183",
+    "recruiting": {
+      "athleteId": "5147183",
+      "city": "Magnolia",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.2093794,
+        "longitude": -95.7507815
+      },
+      "id": "109713",
+      "name": "Sam Mattingly",
+      "position": "LB",
+      "ranking": 1034,
+      "rating": 0.8664,
+      "recruitType": "HighSchool",
+      "school": "Magnolia West",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209788",
+    "recruiting": {
+      "athleteId": "5209788",
+      "city": "Washington",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "107398",
+      "name": "Lonnie McAllister III",
+      "position": "CB",
+      "ranking": 1243,
+      "rating": 0.8625,
+      "recruitType": "HighSchool",
+      "school": "Gonzaga",
+      "stars": 3,
+      "stateProvince": "DC",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148649",
+    "recruiting": {
+      "athleteId": "5148649",
+      "city": "Las Vegas",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "106877",
+      "name": "Landon McComber",
+      "position": "LB",
+      "ranking": 692,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5245507",
+    "recruiting": {
+      "athleteId": "5245507",
+      "city": "Newark",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34013",
+        "latitude": 40.735657,
+        "longitude": -74.1723667
+      },
+      "id": "104516",
+      "name": "Zaiden McDonald",
+      "position": "S",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Malcolm X Shabazz",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5276936",
+    "recruiting": {
+      "athleteId": "5276936",
+      "city": "Los Angeles",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "104506",
+      "name": "Max Meier",
+      "position": "EDGE",
+      "ranking": 608,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "Loyola",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4709052",
+    "recruiting": {
+      "athleteId": "4709052",
+      "city": "Los Angeles",
+      "committedTo": "Sacramento State",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "118280",
+      "name": "Nathan Mejia",
+      "position": "IOL",
+      "ranking": 2590,
+      "rating": 0.7883,
+      "recruitType": "HighSchool",
+      "school": "Cathedral",
+      "stars": 2,
+      "stateProvince": "CA",
+      "teamSlug": "sacramento-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2021
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2022,
+        "team": "Sacramento State",
+        "year": 4
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5381550",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "QB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5381552",
+    "recruiting": {
+      "athleteId": "5381552",
+      "city": "Goodyear",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4353672,
+        "longitude": -112.3576005
+      },
+      "id": "104273",
+      "name": "Jay Miller",
+      "position": "IOL",
+      "ranking": 438,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "Desert Edge",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4914482",
+    "recruiting": {
+      "athleteId": "4914482",
+      "city": "San Diego",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 32.7174209,
+        "longitude": -117.1627714
+      },
+      "id": "234711",
+      "name": "Charlie Mirer",
+      "position": "QB",
+      "ranking": 1783,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Cathedral Catholic",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211073",
+    "recruiting": {
+      "athleteId": "5211073",
+      "city": "San Francisco",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06075",
+        "latitude": 37.7790262,
+        "longitude": -122.4199061
+      },
+      "id": "104428",
+      "name": "Mike Mitchell Jr.",
+      "position": "QB",
+      "ranking": 804,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Riordan",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290785",
+    "recruiting": {
+      "athleteId": "5290785",
+      "city": "Raleigh",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.7803977,
+        "longitude": -78.6390989
+      },
+      "id": "105088",
+      "name": "Marcus Monroe",
+      "position": "TE",
+      "ranking": 1114,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "North Raleigh Christian Academy",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086468",
+    "recruiting": {
+      "athleteId": "5086468",
+      "city": "Exeter",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "33015",
+        "latitude": 42.981477,
+        "longitude": -70.9478343
+      },
+      "id": "112692",
+      "name": "Aaron Morris",
+      "position": "CB",
+      "ranking": 1481,
+      "rating": 0.8486,
+      "recruitType": "HighSchool",
+      "school": "Phillips Exeter Academy",
+      "stars": 3,
+      "stateProvince": "NH",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 186,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5138634",
+    "recruiting": {
+      "athleteId": "5138634",
+      "city": "Atlanta",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "109651",
+      "name": "Jacobi Murray",
+      "position": "DL",
+      "ranking": 977,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "Holy Innocents Episcopal School",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5140699",
+    "recruiting": {
+      "athleteId": "5140699",
+      "city": "Matthews",
+      "committedTo": "Wake Forest",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.1170873,
+        "longitude": -80.723718
+      },
+      "id": "110063",
+      "name": "Sam Neely III",
+      "position": "CB",
+      "ranking": 1414,
+      "rating": 0.8553,
+      "recruitType": "HighSchool",
+      "school": "Weddington",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "wake-forest",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2024,
+        "team": "Wake Forest",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084299",
+    "recruiting": {
+      "athleteId": "5084299",
+      "city": "Memphis",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "47157",
+        "latitude": 35.1490215,
+        "longitude": -90.0516285
+      },
+      "id": "109541",
+      "name": "Brandon Nicholson",
+      "position": "ATH",
+      "ranking": 854,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Memphis University School",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "CB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "CB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5381553",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5114313",
+    "recruiting": {
+      "athleteId": "5114313",
+      "city": "Santa Ana",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "112317",
+      "name": "Jordan Onovughe",
+      "position": "WR",
+      "ranking": 1079,
+      "rating": 0.8617,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "Colorado",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Colorado",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921443",
+    "recruiting": {
+      "athleteId": "4921443",
+      "city": "Elk Grove",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06067",
+        "latitude": 38.4087993,
+        "longitude": -121.3716178
+      },
+      "id": "111841",
+      "name": "Simione Pale",
+      "position": "IOL",
+      "ranking": 598,
+      "rating": 0.8804,
+      "recruitType": "HighSchool",
+      "school": "Elk Grove",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4883119",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2022,
+        "team": "Yale",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2023,
+        "team": "Yale",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2024,
+        "team": "Yale",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276660",
+    "recruiting": {
+      "athleteId": "5276660",
+      "city": "Las Vegas",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "104614",
+      "name": "Dre Pollard",
+      "position": "ATH",
+      "ranking": 322,
+      "rating": 0.9039,
+      "recruitType": "HighSchool",
+      "school": "Clark",
+      "stars": 4,
+      "stateProvince": "NV",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086031",
+    "recruiting": {
+      "athleteId": "5086031",
+      "city": "Kentfield",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": null,
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "06041",
+        "latitude": 37.9519958,
+        "longitude": -122.5572116
+      },
+      "id": "255738",
+      "name": "Niki Prongos",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Marin  Catholic",
+      "stars": null,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 286,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2022,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152986",
+    "recruiting": {
+      "athleteId": "5152986",
+      "city": "Richmond",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "51760",
+        "latitude": 37.5385087,
+        "longitude": -77.43428
+      },
+      "id": "110980",
+      "name": "Javion Randall",
+      "position": "CB",
+      "ranking": 2563,
+      "rating": 0.8196,
+      "recruitType": "HighSchool",
+      "school": "Henrico",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "CB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "CB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148423",
+    "recruiting": {
+      "athleteId": "5148423",
+      "city": "Irvington",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34013",
+        "latitude": 40.7323235,
+        "longitude": -74.2348684
+      },
+      "id": "110097",
+      "name": "Cam Richardson",
+      "position": "S",
+      "ranking": 1447,
+      "rating": 0.8547,
+      "recruitType": "HighSchool",
+      "school": "Irvington",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4920156",
+    "recruiting": {
+      "athleteId": "4920156",
+      "city": "Fort Lauderdale",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "112237",
+      "name": "Dylan Rizk",
+      "position": "QB",
+      "ranking": 1002,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Gibbons",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2023,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5217152",
+    "recruiting": {
+      "athleteId": "5217152",
+      "city": "Mansfield",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.5631924,
+        "longitude": -97.1416768
+      },
+      "id": "103967",
+      "name": "Zion Robinson",
+      "position": "WR",
+      "ranking": 187,
+      "rating": 0.9258,
+      "recruitType": "HighSchool",
+      "school": "Mansfield",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4819256",
+    "recruiting": {
+      "athleteId": "4819256",
+      "city": "Brecksville",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.3197763,
+        "longitude": -81.6267904
+      },
+      "id": "114944",
+      "name": "Matt Rose",
+      "position": "LB",
+      "ranking": 1447,
+      "rating": 0.8437,
+      "recruitType": "HighSchool",
+      "school": "Brecksville-Broadview Heights",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4804886",
+    "recruiting": {
+      "athleteId": "4804886",
+      "city": "Encinitas",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 33.0369867,
+        "longitude": -117.2919818
+      },
+      "id": "114273",
+      "name": "Zach Rowell",
+      "position": "DL",
+      "ranking": 735,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Torrey Pines",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219251",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "PK",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 92,
+        "position": "PK",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 92,
+        "position": "PK",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279905",
+    "recruiting": {
+      "athleteId": "5279905",
+      "city": "Canonsburg",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42125",
+        "latitude": 40.2625702,
+        "longitude": -80.1872797
+      },
+      "id": "105238",
+      "name": "Lucas Shanafelt",
+      "position": "EDGE",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Peters Township",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5326449",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160502",
+    "recruiting": {
+      "athleteId": "5160502",
+      "city": "Phoenix",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4484367,
+        "longitude": -112.0741417
+      },
+      "id": "104415",
+      "name": "Daylen Sharper",
+      "position": "ATH",
+      "ranking": 804,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Brophy College Preparatory",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5153613",
+    "recruiting": {
+      "athleteId": "5153613",
+      "city": "Atherton",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06081",
+        "latitude": 37.4613272,
+        "longitude": -122.197743
+      },
+      "id": "217107",
+      "name": "Carter Shaw",
+      "position": "ATH",
+      "ranking": 2179,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Sacred Heart Prep",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141680",
+    "recruiting": {
+      "athleteId": "5141680",
+      "city": "Lawrenceville",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.300987649999996,
+        "longitude": -74.73737283395636
+      },
+      "id": "106798",
+      "name": "Adam Shovlin",
+      "position": "DL",
+      "ranking": 606,
+      "rating": 0.8819,
+      "recruitType": "HighSchool",
+      "school": "The Lawrenceville School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DE",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 95,
+        "position": "DE",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5121883",
+    "recruiting": {
+      "athleteId": "5121883",
+      "city": "Oakland",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06001",
+        "latitude": 37.8044557,
+        "longitude": -122.2713563
+      },
+      "id": "112454",
+      "name": "Omar Staples",
+      "position": "EDGE",
+      "ranking": 1220,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Oakland Tech",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "DL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079599",
+    "recruiting": {
+      "athleteId": "5079599",
+      "city": "Miami",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "109051",
+      "name": "Dylan Stephenson",
+      "position": "EDGE",
+      "ranking": 353,
+      "rating": 0.9004,
+      "recruitType": "HighSchool",
+      "school": "Miami Columbus",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 228,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5127807",
+    "recruiting": {
+      "athleteId": "5127807",
+      "city": "Chatsworth",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2595715,
+        "longitude": -118.6023247
+      },
+      "id": "110166",
+      "name": "Jaylen'Dai Sumlin",
+      "position": "S",
+      "ranking": 1513,
+      "rating": 0.8525,
+      "recruitType": "HighSchool",
+      "school": "Sierra Canyon",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4921454",
+    "recruiting": {
+      "athleteId": "4921454",
+      "city": "Watertown",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "09005",
+        "latitude": 41.6062078,
+        "longitude": -73.1181658
+      },
+      "id": "112332",
+      "name": "Charlie Symonds",
+      "position": "OT",
+      "ranking": 1097,
+      "rating": 0.8608,
+      "recruitType": "HighSchool",
+      "school": "Taft School",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2023
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685544",
+    "recruiting": {
+      "athleteId": "4685544",
+      "city": "Honolulu",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "113807",
+      "name": "Tevarua Tafiti",
+      "position": "LB",
+      "ranking": 264,
+      "rating": 0.9079,
+      "recruitType": "HighSchool",
+      "school": "Punahou",
+      "stars": 4,
+      "stateProvince": "HI",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 222,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5149255",
+    "recruiting": {
+      "athleteId": "5149255",
+      "city": "Draper",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "49035",
+        "latitude": 40.5246711,
+        "longitude": -111.8638226
+      },
+      "id": "109770",
+      "name": "Bo Tate",
+      "position": "LB",
+      "ranking": 1097,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Corner Canyon",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5217182",
+    "recruiting": {
+      "athleteId": "5217182",
+      "city": "Baton Rouge",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "22033",
+        "latitude": 30.4459596,
+        "longitude": -91.18738
+      },
+      "id": "104505",
+      "name": "Blaise Thomassie",
+      "position": "IOL",
+      "ranking": 804,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Baton Rouge Catholic",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5227532",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5212732",
+    "recruiting": {
+      "athleteId": "5212732",
+      "city": "Princeton",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.3492744,
+        "longitude": -74.6592958
+      },
+      "id": "107545",
+      "name": "Liam Thorpe",
+      "position": "ATH",
+      "ranking": 1440,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Hun School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5139059",
+    "recruiting": {
+      "athleteId": "5139059",
+      "city": "Avon",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "09003",
+        "latitude": 41.8098209,
+        "longitude": -72.8306541
+      },
+      "id": "108855",
+      "name": "Benedict Umeh",
+      "position": "DL",
+      "ranking": 157,
+      "rating": 0.9334,
+      "recruitType": "HighSchool",
+      "school": "Avon Old Farms",
+      "stars": 4,
+      "stateProvince": "CT",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2024
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211422",
+    "recruiting": {
+      "athleteId": "5211422",
+      "city": "Honolulu",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "107821",
+      "name": "Donte Utu",
+      "position": "S",
+      "ranking": 1711,
+      "rating": 0.8508,
+      "recruitType": "HighSchool",
+      "school": "Punahou",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210018",
+    "recruiting": {
+      "athleteId": "5210018",
+      "city": "Canonsburg",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42125",
+        "latitude": 40.2625702,
+        "longitude": -80.1872797
+      },
+      "id": "107077",
+      "name": "Mickey Vaccarello",
+      "position": "LB",
+      "ranking": 897,
+      "rating": 0.8714,
+      "recruitType": "HighSchool",
+      "school": "Peters Township",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081566",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "LS",
+        "season": 2022,
+        "team": "Northwestern",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "LS",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "LS",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "LS",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "LS",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4878681",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5294078",
+    "recruiting": {
+      "athleteId": "5294078",
+      "city": "Haverford",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42091",
+        "latitude": 40.0131672,
+        "longitude": -75.2943516
+      },
+      "id": "106815",
+      "name": "Josh Williams",
+      "position": "IOL",
+      "ranking": 619,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "The Haverford School",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OT",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 62,
+        "position": "OT",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4954505",
+    "recruiting": {
+      "athleteId": "4954505",
+      "city": "Alpharetta",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "114392",
+      "name": "Terian Williams II",
+      "position": "ATH",
+      "ranking": 855,
+      "rating": 0.8663,
+      "recruitType": "HighSchool",
+      "school": "Johns Creek",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5214452",
+    "recruiting": {
+      "athleteId": "5214452",
+      "city": "Springfield",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107085",
+      "name": "Reiman Zebert",
+      "position": "TE",
+      "ranking": 897,
+      "rating": 0.8714,
+      "recruitType": "HighSchool",
+      "school": "Platteview",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 1
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219243",
+    "recruiting": null,
+    "team": "Stanford",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Stanford",
+        "year": 2
+      }
+    ]
+  }
+]

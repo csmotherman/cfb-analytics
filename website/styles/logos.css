@@ -1,0 +1,12 @@
+.team-logo-fallback {
+  display: grid;
+  flex: none;
+  place-items: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  background: #00274c;
+  color: var(--maize);
+  font-family: var(--font-data);
+  font-size: 11px;
+  font-weight: 900;
+}

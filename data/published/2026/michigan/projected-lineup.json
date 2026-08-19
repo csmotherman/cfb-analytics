@@ -1,0 +1,99 @@
+{
+  "basis": "Published prospect grade, then roster class year, then jersey number",
+  "defense": [
+    {
+      "label": "EDGE",
+      "playerId": "5141534"
+    },
+    {
+      "label": "EDGE",
+      "playerId": "5168274"
+    },
+    {
+      "label": "DT",
+      "playerId": "4870704"
+    },
+    {
+      "label": "NT",
+      "playerId": "5217105"
+    },
+    {
+      "label": "WILL",
+      "playerId": "5141620"
+    },
+    {
+      "label": "MIKE",
+      "playerId": "5167194"
+    },
+    {
+      "label": "SAM",
+      "playerId": "5141803"
+    },
+    {
+      "label": "CB",
+      "playerId": "5141437"
+    },
+    {
+      "label": "CB",
+      "playerId": "4918449"
+    },
+    {
+      "label": "S",
+      "playerId": "5141759"
+    },
+    {
+      "label": "S",
+      "playerId": "5079644"
+    }
+  ],
+  "offense": [
+    {
+      "label": "QB",
+      "playerId": "5141741"
+    },
+    {
+      "label": "RB",
+      "playerId": "5079574"
+    },
+    {
+      "label": "X",
+      "playerId": "5141572"
+    },
+    {
+      "label": "Z",
+      "playerId": "5207806"
+    },
+    {
+      "label": "SLOT",
+      "playerId": "5108220"
+    },
+    {
+      "label": "TE",
+      "playerId": "5079494"
+    },
+    {
+      "label": "LT",
+      "playerId": "5142589"
+    },
+    {
+      "label": "LG",
+      "playerId": "4899479"
+    },
+    {
+      "label": "C",
+      "playerId": "5079729"
+    },
+    {
+      "label": "RG",
+      "playerId": "5110462"
+    },
+    {
+      "label": "RT",
+      "playerId": "5141453"
+    }
+  ],
+  "season": 2026,
+  "team": "Michigan",
+  "valueType": "PROJECTED",
+  "version": "michigan-preseason-lineup-v1"
+}

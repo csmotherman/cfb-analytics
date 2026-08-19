@@ -1,0 +1,34 @@
+{
+  "asOf": "2026-08-18T12:00:00-04:00",
+  "earlyPriorVersion": "prediction-v2-early-prior-four-game-linear-v1",
+  "excluded": [
+    {
+      "gameId": "401864577",
+      "reason": "incomplete frozen early-prior feature vector"
+    },
+    {
+      "gameId": "401866408",
+      "reason": "incomplete frozen early-prior feature vector"
+    }
+  ],
+  "featureMaterializerVersion": "prediction-v2-2026-outcome-free-features-v1",
+  "featureRows": 49,
+  "historyAlignment": {
+    "derivedGames": 0,
+    "derivedOnlyGames": 0,
+    "duplicateSiteGames": 0,
+    "malformedDerivedGames": 0,
+    "rawOnlyGames": 0,
+    "siteScoreGames": 0,
+    "status": "PASS"
+  },
+  "historyComponentRows": 0,
+  "historySiteGames": 0,
+  "historyTeamGameRows": 0,
+  "pipelineVersion": "prediction-v2-2026-prospective-pipeline-v1",
+  "scheduleGames": 51,
+  "schemaVersion": 1,
+  "season": 2026,
+  "seasonType": "regular",
+  "week": 1
+}

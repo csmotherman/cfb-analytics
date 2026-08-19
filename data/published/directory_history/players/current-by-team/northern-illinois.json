@@ -1,0 +1,4185 @@
+[
+  {
+    "playerId": "5327570",
+    "recruiting": {
+      "athleteId": "5327570",
+      "city": "Kansas City",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.100105,
+        "longitude": -94.5781416
+      },
+      "id": "224458",
+      "name": "Braylon Agee",
+      "position": "WR",
+      "ranking": 1336,
+      "rating": 0.865,
+      "recruitType": "HighSchool",
+      "school": "Park Hill",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290650",
+    "recruiting": {
+      "athleteId": "5290650",
+      "city": "Monaca",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42007",
+        "latitude": 40.6872885,
+        "longitude": -80.2714505
+      },
+      "id": "104632",
+      "name": "Brendan Alexander",
+      "position": "IOL",
+      "ranking": 1754,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Central Valley",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086930",
+    "recruiting": {
+      "athleteId": "5086930",
+      "city": "Wake Forest",
+      "committedTo": "North Carolina A&T",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.9803138,
+        "longitude": -78.5103731
+      },
+      "id": "234840",
+      "name": "Christopher Allen Jr.",
+      "position": "DL",
+      "ranking": 2202,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Wake Forest",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "north-carolina-a-t",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2022
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DT",
+        "season": 2022,
+        "team": "North Carolina A&T",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DT",
+        "season": 2023,
+        "team": "North Carolina A&T",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DT",
+        "season": 2024,
+        "team": "North Carolina A&T",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DT",
+        "season": 2025,
+        "team": "North Carolina A&T",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4879806",
+    "recruiting": {
+      "athleteId": "4879806",
+      "city": "Minooka",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17063",
+        "latitude": 41.4553084,
+        "longitude": -88.2617305
+      },
+      "id": "115678",
+      "name": "Malik Armstrong",
+      "position": "WR",
+      "ranking": 2547,
+      "rating": 0.7906,
+      "recruitType": "HighSchool",
+      "school": "Minooka Community HS",
+      "stars": 2,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2022
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2022,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5258463",
+    "recruiting": {
+      "athleteId": "5258463",
+      "city": "Riverview",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.871197,
+        "longitude": -82.3269883
+      },
+      "id": "221165",
+      "name": "Jordan Bellamy",
+      "position": "DL",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Armwood",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 288,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160693",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DE",
+        "season": 2025,
+        "team": "Mississippi Valley State",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222596",
+    "recruiting": {
+      "athleteId": "5222596",
+      "city": "St. Louis",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "108575",
+      "name": "Charles Brooks III",
+      "position": "EDGE",
+      "ranking": 2918,
+      "rating": 0.8196,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Ritter College Prep",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "DE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 53,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290891",
+    "recruiting": {
+      "athleteId": "5290891",
+      "city": "Cincinnati",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "211742",
+      "name": "Bryshawn Brown",
+      "position": "QB",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Winton Woods",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193292",
+    "recruiting": {
+      "athleteId": "5193292",
+      "city": "Savannah",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13051",
+        "latitude": 32.0809263,
+        "longitude": -81.0911768
+      },
+      "id": "111027",
+      "name": "La'Don Bryant",
+      "position": "WR",
+      "ranking": 2609,
+      "rating": 0.8163,
+      "recruitType": "HighSchool",
+      "school": "Benedictine Military School",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 173,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5258465",
+    "recruiting": {
+      "athleteId": "5258465",
+      "city": "Fort Lauderdale",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "221669",
+      "name": "Montrel Canion",
+      "position": "DL",
+      "ranking": 3230,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Western",
+      "stars": 2,
+      "stateProvince": "FL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DT",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 0,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388915",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222595",
+    "recruiting": {
+      "athleteId": "5222595",
+      "city": "La Grange",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8054577,
+        "longitude": -87.8748644
+      },
+      "id": "108679",
+      "name": "Tyler Chambers",
+      "position": "OT",
+      "ranking": 3122,
+      "rating": 0.8022,
+      "recruitType": "HighSchool",
+      "school": "Lyons Township",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388916",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5230036",
+    "recruiting": {
+      "athleteId": "5230036",
+      "city": "Millville",
+      "committedTo": "Long Island University",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "34011",
+        "latitude": 39.4020593,
+        "longitude": -75.0393368
+      },
+      "id": "257799",
+      "name": "Kyon Conyers",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Millville",
+      "stars": null,
+      "stateProvince": "NJ",
+      "teamSlug": "long-island-university",
+      "valueType": "BENCHMARK",
+      "weight": 181,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2024,
+        "team": "Long Island University",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2025,
+        "team": "Long Island University",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5236364",
+    "recruiting": {
+      "athleteId": "5236364",
+      "city": "Johnston",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "19153",
+        "latitude": 41.6731523,
+        "longitude": -93.6973395
+      },
+      "id": "108167",
+      "name": "Micah Cook",
+      "position": "EDGE",
+      "ranking": 2249,
+      "rating": 0.8396,
+      "recruitType": "HighSchool",
+      "school": "Johnston",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "DE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 87,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296146",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291180",
+    "recruiting": {
+      "athleteId": "5291180",
+      "city": "Metamora",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "17203",
+        "latitude": 40.7907409,
+        "longitude": -89.3614407
+      },
+      "id": "212293",
+      "name": "Jaiduan Cranford",
+      "position": "RB",
+      "ranking": 1754,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Metamora",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210128",
+    "recruiting": {
+      "athleteId": "5210128",
+      "city": "Columbia",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29019",
+        "latitude": 38.951883,
+        "longitude": -92.3337366
+      },
+      "id": "108453",
+      "name": "Brady Davidson",
+      "position": "QB",
+      "ranking": 2660,
+      "rating": 0.8267,
+      "recruitType": "HighSchool",
+      "school": "Rock Bridge",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4881032",
+    "recruiting": {
+      "athleteId": "4881032",
+      "city": "Miami",
+      "committedTo": "Western Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "113364",
+      "name": "Taron Dickens",
+      "position": "QB",
+      "ranking": 2330,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "western-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2023,
+        "team": "Western Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2024,
+        "team": "Western Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2025,
+        "team": "Western Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193277",
+    "recruiting": {
+      "athleteId": "5193277",
+      "city": "Crystal Lake",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17111",
+        "latitude": 42.2411344,
+        "longitude": -88.3161965
+      },
+      "id": "110779",
+      "name": "George Dimopoulos",
+      "position": "WR",
+      "ranking": 2232,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Crystal Lake Central",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5291961",
+    "recruiting": {
+      "athleteId": "5291961",
+      "city": "Niceville",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12091",
+        "latitude": 30.5168639,
+        "longitude": -86.482172
+      },
+      "id": "212473",
+      "name": "Justus Donahoo",
+      "position": "S",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Niceville",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5236365",
+    "recruiting": {
+      "athleteId": "5236365",
+      "city": "Roxana",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107867",
+      "name": "Andruw Ellis",
+      "position": "ATH",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Roxana",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 187,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "S",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 30,
+        "position": "S",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388917",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388918",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5327572",
+    "recruiting": {
+      "athleteId": "5327572",
+      "city": "Bremen",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13143",
+        "latitude": 33.7208676,
+        "longitude": -85.1456929
+      },
+      "id": "224672",
+      "name": "Justin Faulkner",
+      "position": "WR",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Bremen",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296147",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "P",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "P",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219946",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5277538",
+    "recruiting": {
+      "athleteId": "5277538",
+      "city": "Flossmoor",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.5428123,
+        "longitude": -87.6847684
+      },
+      "id": "105733",
+      "name": "Kellen Gamble",
+      "position": "IOL",
+      "ranking": 2487,
+      "rating": 0.8422,
+      "recruitType": "HighSchool",
+      "school": "Homewood-Flossmoor",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5326629",
+    "recruiting": {
+      "athleteId": "5326629",
+      "city": "Kenosha",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "55059",
+        "latitude": 42.5846773,
+        "longitude": -87.8212263
+      },
+      "id": "212318",
+      "name": "Brendan Grabot",
+      "position": "IOL",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Indian Trail Academy",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5279649",
+    "recruiting": {
+      "athleteId": "5279649",
+      "city": "Bellevue",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "31153",
+        "latitude": 41.1366494,
+        "longitude": -95.8907373
+      },
+      "id": "212462",
+      "name": "Jermaine Green",
+      "position": "WR",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Bellevue West",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219945",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148416",
+    "recruiting": {
+      "athleteId": "5148416",
+      "city": "Omaha",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "31055",
+        "latitude": 41.2587459,
+        "longitude": -95.9383758
+      },
+      "id": "110230",
+      "name": "Ben Gustafson",
+      "position": "OT",
+      "ranking": 1581,
+      "rating": 0.8504,
+      "recruitType": "HighSchool",
+      "school": "Elkhorn South",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5244226",
+    "recruiting": {
+      "athleteId": "5244226",
+      "city": "Marengo",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "106675",
+      "name": "Caleb Haack",
+      "position": "TE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Iowa Valley",
+      "stars": null,
+      "stateProvince": "IA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222599",
+    "recruiting": {
+      "athleteId": "5222599",
+      "city": "Collinsville",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17119",
+        "latitude": 38.6703267,
+        "longitude": -89.9845476
+      },
+      "id": "108608",
+      "name": "Devin Habermehl",
+      "position": "TE",
+      "ranking": 2951,
+      "rating": 0.8163,
+      "recruitType": "HighSchool",
+      "school": "Collinsville",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388919",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388920",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5277539",
+    "recruiting": {
+      "athleteId": "5277539",
+      "city": "Lombard",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.8864687,
+        "longitude": -88.0201536
+      },
+      "id": "212455",
+      "name": "CJ Harkins",
+      "position": "WR",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Montini Catholic",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5159261",
+    "recruiting": {
+      "athleteId": "5159261",
+      "city": "Fork Union",
+      "committedTo": "Duquesne",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "51065",
+        "latitude": 37.7632986,
+        "longitude": -78.2626198
+      },
+      "id": "256971",
+      "name": "Justin Harris",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Fork Union Military Academy",
+      "stars": null,
+      "stateProvince": "VA",
+      "teamSlug": "duquesne",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2023
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2023,
+        "team": "Duquesne",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2024,
+        "team": "Duquesne",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388921",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5289725",
+    "recruiting": {
+      "athleteId": "5289725",
+      "city": "Rabun Gap",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13241",
+        "latitude": 34.97479,
+        "longitude": -83.30549
+      },
+      "id": "105623",
+      "name": "Ryan Hassett",
+      "position": "EDGE",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Rabun Gap-Nacoochee",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302735",
+    "recruiting": {
+      "athleteId": "5302735",
+      "city": "Delray Beach",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.4614625,
+        "longitude": -80.0728201
+      },
+      "id": "212472",
+      "name": "Jvon Hatcher",
+      "position": "DL",
+      "ranking": 1566,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Atlantic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388922",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388923",
+    "recruiting": {
+      "athleteId": "5388923",
+      "city": "Brunswick",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13127",
+        "latitude": 31.1499528,
+        "longitude": -81.4914894
+      },
+      "id": "212783",
+      "name": "Da'sean Howard",
+      "position": "RB",
+      "ranking": 2694,
+      "rating": 0.8389,
+      "recruitType": "HighSchool",
+      "school": "Glynn Academy",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5121469",
+    "recruiting": {
+      "athleteId": "5121469",
+      "city": "Hartford",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "55131",
+        "latitude": 43.3177776,
+        "longitude": -88.378857
+      },
+      "id": "217283",
+      "name": "Landon Hron",
+      "position": "IOL",
+      "ranking": 2529,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Hartford",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2023
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5264765",
+    "recruiting": {
+      "athleteId": "5264765",
+      "city": "O'Fallon",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29183",
+        "latitude": 38.7910374,
+        "longitude": -90.7039107
+      },
+      "id": "221010",
+      "name": "Eliot Hummer",
+      "position": "LB",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Fort Zumwalt West",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5264660",
+    "recruiting": {
+      "athleteId": "5264660",
+      "city": "Anoka",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "27003",
+        "latitude": 45.1977428,
+        "longitude": -93.3871758
+      },
+      "id": "221728",
+      "name": "Afy Ibekwe",
+      "position": "WR",
+      "ranking": 3325,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Anoka",
+      "stars": 2,
+      "stateProvince": "MN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5327573",
+    "recruiting": {
+      "athleteId": "5327573",
+      "city": "Aurora",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17089",
+        "latitude": 41.7571701,
+        "longitude": -88.3147539
+      },
+      "id": "224578",
+      "name": "Asa Johnson",
+      "position": "QB",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Aurora Christian Schools",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193302",
+    "recruiting": {
+      "athleteId": "5193302",
+      "city": "Hephzibah",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13245",
+        "latitude": 33.3140311,
+        "longitude": -82.0967857
+      },
+      "id": "111029",
+      "name": "Telly Johnson Jr.",
+      "position": "ATH",
+      "ranking": 2609,
+      "rating": 0.8163,
+      "recruitType": "HighSchool",
+      "school": "Hephzibah",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "RB",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5152660",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2024,
+        "team": "Lafayette",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2025,
+        "team": "Lafayette",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388924",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211757",
+    "recruiting": {
+      "athleteId": "5211757",
+      "city": "Westfield",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "18057",
+        "latitude": 40.0428151,
+        "longitude": -86.1274888
+      },
+      "id": "105589",
+      "name": "Deacon King",
+      "position": "S",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Westfield",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 197,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5327579",
+    "recruiting": {
+      "athleteId": "5327579",
+      "city": "Summerville",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "45035",
+        "latitude": 33.0206179,
+        "longitude": -80.1747537
+      },
+      "id": "224674",
+      "name": "JT King",
+      "position": "DL",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Ashley Ridge",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5257267",
+    "recruiting": {
+      "athleteId": "5257267",
+      "city": "Boonville",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18173",
+        "latitude": 38.0493288,
+        "longitude": -87.2746568
+      },
+      "id": "105959",
+      "name": "Tyler Klaner",
+      "position": "TE",
+      "ranking": 2487,
+      "rating": 0.8422,
+      "recruitType": "HighSchool",
+      "school": "Boonville",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388925",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "P",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388926",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084310",
+    "recruiting": {
+      "athleteId": "5084310",
+      "city": "Memphis",
+      "committedTo": "Arkansas-Pine Bluff",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "47157",
+        "latitude": 35.1490215,
+        "longitude": -90.0516285
+      },
+      "id": "256270",
+      "name": "Kenji Lewis",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Memphis East",
+      "stars": null,
+      "stateProvince": "TN",
+      "teamSlug": "arkansas-pine-bluff",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2022
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2022,
+        "team": "Arkansas-Pine Bluff",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "Arkansas-Pine Bluff",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141806",
+    "recruiting": {
+      "athleteId": "5141806",
+      "city": "Baraboo",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "55111",
+        "latitude": 43.4704014,
+        "longitude": -89.7437844
+      },
+      "id": "110429",
+      "name": "Ross Liegel",
+      "position": "DL",
+      "ranking": 1821,
+      "rating": 0.8437,
+      "recruitType": "HighSchool",
+      "school": "Baraboo",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5229501",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2024,
+        "team": "Arkansas-Pine Bluff",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2025,
+        "team": "Bryant",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5166890",
+    "recruiting": {
+      "athleteId": "5166890",
+      "city": "Fort Myers",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.640628,
+        "longitude": -81.8723084
+      },
+      "id": "258068",
+      "name": "James Little IV",
+      "position": "CB",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Bishop Verot",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4884086",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2022,
+        "team": "Arkansas-Pine Bluff",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2023,
+        "team": "Arkansas-Pine Bluff",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5193278",
+    "recruiting": {
+      "athleteId": "5193278",
+      "city": "Troy",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "36083",
+        "latitude": 38.7292147,
+        "longitude": -89.8831541
+      },
+      "id": "111018",
+      "name": "Lane Mahnesmith",
+      "position": "OT",
+      "ranking": 2592,
+      "rating": 0.817,
+      "recruitType": "HighSchool",
+      "school": "Triad",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5265468",
+    "recruiting": {
+      "athleteId": "5265468",
+      "city": "Springfield",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17167",
+        "latitude": 39.7990175,
+        "longitude": -89.6439575
+      },
+      "id": "212411",
+      "name": "Cian Mahoney",
+      "position": "OT",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Sacred Heart Griffin",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5279124",
+    "recruiting": {
+      "athleteId": "5279124",
+      "city": "Blue Springs",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.017316,
+        "longitude": -94.282265
+      },
+      "id": "212911",
+      "name": "Mason Markel",
+      "position": "OT",
+      "ranking": 2728,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "Blue Springs",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388927",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388928",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388929",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5302862",
+    "recruiting": {
+      "athleteId": "5302862",
+      "city": "Michigan City",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "18091",
+        "latitude": 41.7075394,
+        "longitude": -86.8950297
+      },
+      "id": "212460",
+      "name": "Zaire McKinney",
+      "position": "WR",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Michigan City",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388930",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5254182",
+    "recruiting": {
+      "athleteId": "5254182",
+      "city": "Oswego",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17093",
+        "latitude": 41.6789932,
+        "longitude": -88.3550216
+      },
+      "id": "221234",
+      "name": "Zach Morrisroe",
+      "position": "DL",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Oswego East",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5304418",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302861",
+    "recruiting": {
+      "athleteId": "5302861",
+      "city": "Brookfield",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "55133",
+        "latitude": 43.0605671,
+        "longitude": -88.1064787
+      },
+      "id": "105482",
+      "name": "Jack Murray",
+      "position": "LB",
+      "ranking": 1881,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Brookfield East",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388931",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211478",
+    "recruiting": {
+      "athleteId": "5211478",
+      "city": "Merrillville",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18089",
+        "latitude": 41.4828144,
+        "longitude": -87.3328139
+      },
+      "id": "108546",
+      "name": "Trenton Nixon",
+      "position": "LB",
+      "ranking": 2751,
+      "rating": 0.8206,
+      "recruitType": "HighSchool",
+      "school": "Merrillville",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "DE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 45,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388932",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388933",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209940",
+    "recruiting": {
+      "athleteId": "5209940",
+      "city": "Avon",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18063",
+        "latitude": 39.7628227,
+        "longitude": -86.3997168
+      },
+      "id": "108237",
+      "name": "Fawzy Omotoso",
+      "position": "DL",
+      "ranking": 2319,
+      "rating": 0.8363,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 93,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5278724",
+    "recruiting": {
+      "athleteId": "5278724",
+      "city": "Mankato",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 81,
+      "hometownInfo": {
+        "fipsCode": "27013",
+        "latitude": 44.1634663,
+        "longitude": -93.9993505
+      },
+      "id": "212906",
+      "name": "Braden Petzel",
+      "position": "OT",
+      "ranking": 2846,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Mankato East",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219932",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4808720",
+    "recruiting": {
+      "athleteId": "4808720",
+      "city": "Ankeny",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "19153",
+        "latitude": 41.7318715,
+        "longitude": -93.6003837
+      },
+      "id": "115140",
+      "name": "Trey Porter",
+      "position": "ATH",
+      "ranking": 1685,
+      "rating": 0.8348,
+      "recruitType": "HighSchool",
+      "school": "Ankeny Centennial",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2022,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5194699",
+    "recruiting": {
+      "athleteId": "5194699",
+      "city": "Mundelein",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17097",
+        "latitude": 42.263079,
+        "longitude": -88.0039653
+      },
+      "id": "111193",
+      "name": "Dev'ion Reynolds",
+      "position": "CB",
+      "ranking": 2846,
+      "rating": 0.8006,
+      "recruitType": "HighSchool",
+      "school": "Carmel Catholic",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "CB",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "CB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216570",
+    "recruiting": {
+      "athleteId": "5216570",
+      "city": "Iowa City",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "19103",
+        "latitude": 41.6612561,
+        "longitude": -91.5299106
+      },
+      "id": "108400",
+      "name": "Tyler Rindels",
+      "position": "IOL",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Iowa City",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302863",
+    "recruiting": {
+      "athleteId": "5302863",
+      "city": "Indianapolis",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "105684",
+      "name": "Terry Robinson",
+      "position": "DL",
+      "ranking": 2694,
+      "rating": 0.8389,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Ritter",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 242,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296150",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296151",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5148885",
+    "recruiting": {
+      "athleteId": "5148885",
+      "city": "Wales",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "55133",
+        "latitude": 43.0044549,
+        "longitude": -88.3767626
+      },
+      "id": "110886",
+      "name": "Grey Rumohr",
+      "position": "OT",
+      "ranking": 2403,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "Kettle Moraine",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5215176",
+    "recruiting": {
+      "athleteId": "5215176",
+      "city": "St. Louis",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "108093",
+      "name": "Liam Russo",
+      "position": "TE",
+      "ranking": 2071,
+      "rating": 0.8414,
+      "recruitType": "HighSchool",
+      "school": "De Smet Jesuit",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5162566",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265497",
+    "recruiting": {
+      "athleteId": "5265497",
+      "city": "Park Ridge",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0112329,
+        "longitude": -87.8406031
+      },
+      "id": "258070",
+      "name": "JJ Schlenhardt",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Maine South",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "PK",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 33,
+        "position": "PK",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219944",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5087067",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2022,
+        "team": "Butler",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2024,
+        "team": "Butler",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2025,
+        "team": "Butler",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "PK",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092259",
+    "recruiting": {
+      "athleteId": "5092259",
+      "city": "Indianapolis",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "113482",
+      "name": "Luke Skartvedt",
+      "position": "OT",
+      "ranking": 2515,
+      "rating": 0.803,
+      "recruitType": "HighSchool",
+      "school": "Roncalli",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2023
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5291786",
+    "recruiting": {
+      "athleteId": "5291786",
+      "city": "Miami",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "212249",
+      "name": "Champ Smith",
+      "position": "S",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Gulliver Prep",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "S",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5230811",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5155315",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2025,
+        "team": "St. Thomas (MN)",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5169212",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193285",
+    "recruiting": {
+      "athleteId": "5193285",
+      "city": "Grand Island",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "31079",
+        "latitude": 40.924271,
+        "longitude": -98.338685
+      },
+      "id": "111081",
+      "name": "Joe Stein",
+      "position": "TE",
+      "ranking": 2660,
+      "rating": 0.8137,
+      "recruitType": "HighSchool",
+      "school": "Northwest",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388934",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "LS",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5269871",
+    "recruiting": {
+      "athleteId": "5269871",
+      "city": "Detroit",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "212952",
+      "name": "Darrius Summers III",
+      "position": "EDGE",
+      "ranking": 2846,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Cass Technical",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 216,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219936",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5122070",
+    "recruiting": {
+      "athleteId": "5122070",
+      "city": "Hamilton",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13145",
+        "latitude": 32.7579107,
+        "longitude": -84.8749311
+      },
+      "id": "113490",
+      "name": "Jay'shon Thomas",
+      "position": "TE",
+      "ranking": 2520,
+      "rating": 0.8006,
+      "recruitType": "HighSchool",
+      "school": "Harris County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DE",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "DE",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "DE",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "DE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083748",
+    "recruiting": {
+      "athleteId": "5083748",
+      "city": "Youngstown",
+      "committedTo": "Eastern Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39099",
+        "latitude": 41.1035786,
+        "longitude": -80.6520161
+      },
+      "id": "256205",
+      "name": "Cam Thompson",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Boardman",
+      "stars": null,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 198,
+      "year": 2022
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2022,
+        "team": "Eastern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5212988",
+    "recruiting": {
+      "athleteId": "5212988",
+      "city": "St. Louis",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "108239",
+      "name": "Austin Tillman",
+      "position": "ATH",
+      "ranking": 2319,
+      "rating": 0.8363,
+      "recruitType": "HighSchool",
+      "school": "Christian Brothers College",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4566116",
+    "recruiting": {
+      "athleteId": "4566116",
+      "city": "Chicago",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "120601",
+      "name": "Chevy Trask Jr.",
+      "position": "SDE",
+      "ranking": 2258,
+      "rating": 0.8181,
+      "recruitType": "HighSchool",
+      "school": "Evans",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2020
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2021,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2022,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kennesaw State",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388935",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219939",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "CB",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "CB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219931",
+    "recruiting": {
+      "athleteId": "5219931",
+      "city": "Orlando",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "257414",
+      "name": "Romelo Ware",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Olympia",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "RB",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5388936",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5236381",
+    "recruiting": {
+      "athleteId": "5236381",
+      "city": "Bettendorf",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "19163",
+        "latitude": 41.5252761,
+        "longitude": -90.5096386
+      },
+      "id": "108465",
+      "name": "Amari Washington",
+      "position": "DL",
+      "ranking": 2668,
+      "rating": 0.8263,
+      "recruitType": "HighSchool",
+      "school": "Bettendorf",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DT",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "DT",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5230033",
+    "recruiting": {
+      "athleteId": "5230033",
+      "city": "Camden",
+      "committedTo": "Long Island University",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34007",
+        "latitude": 39.9448402,
+        "longitude": -75.1198911
+      },
+      "id": "257797",
+      "name": "Marshall Washington Jr.",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Camden Eastside",
+      "stars": null,
+      "stateProvince": "NJ",
+      "teamSlug": "long-island-university",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2024,
+        "team": "Long Island University",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2025,
+        "team": "Long Island University",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388937",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921415",
+    "recruiting": {
+      "athleteId": "4921415",
+      "city": "Mchenry",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17111",
+        "latitude": 42.3431427,
+        "longitude": -88.2674875
+      },
+      "id": "113278",
+      "name": "Jacob Welch",
+      "position": "OT",
+      "ranking": 2145,
+      "rating": 0.8211,
+      "recruitType": "HighSchool",
+      "school": "Johnsburg",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5214939",
+    "recruiting": {
+      "athleteId": "5214939",
+      "city": "Valdosta",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13185",
+        "latitude": 30.8327022,
+        "longitude": -83.2784851
+      },
+      "id": "108446",
+      "name": "Triston White",
+      "position": "RB",
+      "ranking": 2642,
+      "rating": 0.827,
+      "recruitType": "HighSchool",
+      "school": "Valwood School",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 8,
+        "position": "RB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302864",
+    "recruiting": {
+      "athleteId": "5302864",
+      "city": "Lafayette",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "18157",
+        "latitude": 40.4167022,
+        "longitude": -86.8752869
+      },
+      "id": "106006",
+      "name": "Omar Williams Jr.",
+      "position": "CB",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Jefferson",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "CB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296153",
+    "recruiting": null,
+    "team": "Northern Illinois",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "Northern Illinois",
+        "year": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,5120 @@
+[
+  {
+    "playerId": "4612621",
+    "recruiting": {
+      "athleteId": "4612621",
+      "city": "Arlington",
+      "committedTo": "Houston",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "117322",
+      "name": "Josh Atkins",
+      "position": "OT",
+      "ranking": 1628,
+      "rating": 0.8337,
+      "recruitType": "HighSchool",
+      "school": "Mansfield Timberview",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "houston",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2021
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2021,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2022,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5121688",
+    "recruiting": {
+      "athleteId": "5121688",
+      "city": "Lawrenceville",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.9562149,
+        "longitude": -83.9879625
+      },
+      "id": "113461",
+      "name": "Santana Banner",
+      "position": "S",
+      "ranking": 2495,
+      "rating": 0.8056,
+      "recruitType": "HighSchool",
+      "school": "Mountain View",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5144161",
+    "recruiting": {
+      "athleteId": "5144161",
+      "city": "East St. Louis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.6244952,
+        "longitude": -90.1509429
+      },
+      "id": "106525",
+      "name": "CJ Bass III",
+      "position": "CB",
+      "ranking": 335,
+      "rating": 0.9008,
+      "recruitType": "HighSchool",
+      "school": "East St. Louis",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "S",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 30,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079303",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5323115",
+    "recruiting": {
+      "athleteId": "5323115",
+      "city": "Abbeville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01067",
+        "latitude": 31.5718352,
+        "longitude": -85.2504893
+      },
+      "id": "105510",
+      "name": "Ahmod Billins",
+      "position": "ATH",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Abbeville",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5148620",
+    "recruiting": {
+      "athleteId": "5148620",
+      "city": "Winston Salem",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "37067",
+        "latitude": 36.0998131,
+        "longitude": -80.2440518
+      },
+      "id": "106346",
+      "name": "JaDon Blair",
+      "position": "S",
+      "ranking": 155,
+      "rating": 0.9349,
+      "recruitType": "HighSchool",
+      "school": "Mount Tabor",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2025,
+        "team": "Notre Dame",
+        "year": 1
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5239858",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5158970",
+    "recruiting": {
+      "athleteId": "5158970",
+      "city": "Pompano Beach",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.2378597,
+        "longitude": -80.1247667
+      },
+      "id": "104108",
+      "name": "Jabari Brady",
+      "position": "WR",
+      "ranking": 554,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Monarch",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081162",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2022,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "Middle Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870623",
+    "recruiting": {
+      "athleteId": "4870623",
+      "city": "Orlando",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "111415",
+      "name": "Malik Bryant",
+      "position": "LB",
+      "ranking": 170,
+      "rating": 0.932,
+      "recruitType": "HighSchool",
+      "school": "Jones",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5200432",
+    "recruiting": {
+      "athleteId": "5200432",
+      "city": "Theodore",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.547295,
+        "longitude": -88.18020367595204
+      },
+      "id": "104329",
+      "name": "JJ Bush",
+      "position": "LB",
+      "ranking": 379,
+      "rating": 0.8978,
+      "recruitType": "HighSchool",
+      "school": "Theodore",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 219,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5294436",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "P",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "P",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161807",
+    "recruiting": {
+      "athleteId": "5161807",
+      "city": "Detroit",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "104272",
+      "name": "Khalief Canty Jr.",
+      "position": "IOL",
+      "ranking": 774,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Cass Technical",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5092219",
+    "recruiting": {
+      "athleteId": "5092219",
+      "city": "Liberty",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "29047",
+        "latitude": 39.246479,
+        "longitude": -94.419079
+      },
+      "id": "113371",
+      "name": "Blake Craig",
+      "position": "K",
+      "ranking": 2330,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "Liberty North",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "PK",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "PK",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "PK",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "PK",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5257730",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LS",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "LS",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5218808",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5078045",
+    "recruiting": {
+      "athleteId": "5078045",
+      "city": "East St. Louis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.6244952,
+        "longitude": -90.1509429
+      },
+      "id": "112149",
+      "name": "Nick Deloach Jr.",
+      "position": "WR",
+      "ranking": 903,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "Cahokia",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5164690",
+    "recruiting": {
+      "athleteId": "5164690",
+      "city": "Detroit",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "106322",
+      "name": "Elijah Dotson",
+      "position": "S",
+      "ranking": 131,
+      "rating": 0.9417,
+      "recruitType": "HighSchool",
+      "school": "Belleville",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141415",
+    "recruiting": {
+      "athleteId": "5141415",
+      "city": "Belleville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.5200504,
+        "longitude": -89.9839935
+      },
+      "id": "106684",
+      "name": "Jason Dowell",
+      "position": "DL",
+      "ranking": 494,
+      "rating": 0.8892,
+      "recruitType": "HighSchool",
+      "school": "Althoff Catholic",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218801",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5225880",
+    "recruiting": {
+      "athleteId": "5225880",
+      "city": "League City",
+      "committedTo": "Houston Christian",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.5074538,
+        "longitude": -95.0949303
+      },
+      "id": "110405",
+      "name": "Xai'Shaun Edwards",
+      "position": "RB",
+      "ranking": 1794,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Clear Springs",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "houston-christian",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "Houston Christian",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Houston Christian",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290651",
+    "recruiting": {
+      "athleteId": "5290651",
+      "city": "Boonville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29053",
+        "latitude": 38.9751547,
+        "longitude": -92.7440277
+      },
+      "id": "105239",
+      "name": "Braylon Ellison",
+      "position": "IOL",
+      "ranking": 525,
+      "rating": 0.8885,
+      "recruitType": "HighSchool",
+      "school": "Boonville",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4755664",
+    "recruiting": {
+      "athleteId": "4755664",
+      "city": "Flower Mound",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.0283854,
+        "longitude": -97.0867203
+      },
+      "id": "113715",
+      "name": "Nick Evers",
+      "position": "QB",
+      "ranking": 172,
+      "rating": 0.9312,
+      "recruitType": "HighSchool",
+      "school": "Flower Mound",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2022,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5081163",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2022,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327051",
+    "recruiting": {
+      "athleteId": "5327051",
+      "city": "St. Louis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "224450",
+      "name": "Jocques Felix",
+      "position": "DL",
+      "ranking": 1174,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Ritter College Prep",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5332628",
+    "recruiting": {
+      "athleteId": "5332628",
+      "city": "Lee's Summit",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 38.9107156,
+        "longitude": -94.3821295
+      },
+      "id": "224483",
+      "name": "Karsten Fiene",
+      "position": "WR",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Lee's Summit",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5156088",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4880351",
+    "recruiting": {
+      "athleteId": "4880351",
+      "city": "San Diego",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "B",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 32.7174209,
+        "longitude": -117.1627714
+      },
+      "id": "113700",
+      "name": "Jahlil Florence",
+      "position": "CB",
+      "ranking": 157,
+      "rating": 0.9377,
+      "recruitType": "HighSchool",
+      "school": "San Diego Lincoln",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2022,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2024,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2025,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5225213",
+    "recruiting": {
+      "athleteId": "5225213",
+      "city": "Kahuku",
+      "committedTo": "Montana",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.679124,
+        "longitude": -157.94838
+      },
+      "id": "238320",
+      "name": "Malae Fonoti",
+      "position": "RB",
+      "ranking": 2850,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Kahuku",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "montana",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2024,
+        "team": "Montana",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Montana",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5156379",
+    "recruiting": {
+      "athleteId": "5156379",
+      "city": "Olney",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "24031",
+        "latitude": 39.1532123,
+        "longitude": -77.0668408
+      },
+      "id": "106738",
+      "name": "DaMarion Fowlkes",
+      "position": "WR",
+      "ranking": 548,
+      "rating": 0.8853,
+      "recruitType": "HighSchool",
+      "school": "Our Lady of Good Counsel",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5218809",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5256922",
+    "recruiting": {
+      "athleteId": "5256922",
+      "city": "La Verne",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1008426,
+        "longitude": -117.7678355
+      },
+      "id": "104835",
+      "name": "Jaxson Gates",
+      "position": "CB",
+      "ranking": 299,
+      "rating": 0.9068,
+      "recruitType": "HighSchool",
+      "school": "Damien",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4682698",
+    "recruiting": {
+      "athleteId": "4682698",
+      "city": "Freehold",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "34025",
+        "latitude": 40.2601096,
+        "longitude": -74.2737573
+      },
+      "id": "117463",
+      "name": "Dominick Giudice",
+      "position": "EDGE",
+      "ranking": 1767,
+      "rating": 0.8293,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2021
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5120454",
+    "recruiting": {
+      "athleteId": "5120454",
+      "city": "Port Arthur",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48245",
+        "latitude": 29.8988618,
+        "longitude": -93.9288723
+      },
+      "id": "112974",
+      "name": "Caleb Goodie",
+      "position": "WR",
+      "ranking": 1789,
+      "rating": 0.837,
+      "recruitType": "HighSchool",
+      "school": "Port Arthur Memorial",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2023,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4726007",
+    "recruiting": {
+      "athleteId": "4726007",
+      "city": "St. Charles",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29183",
+        "latitude": 38.7946252,
+        "longitude": -90.519829
+      },
+      "id": "113685",
+      "name": "Marquis Gracial",
+      "position": "DL",
+      "ranking": 142,
+      "rating": 0.9422,
+      "recruitType": "HighSchool",
+      "school": "St. Charles",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2022,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4808749",
+    "recruiting": {
+      "athleteId": "4808749",
+      "city": "Fort Myers",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.640628,
+        "longitude": -81.8723084
+      },
+      "id": "113704",
+      "name": "Chris Graves Jr.",
+      "position": "ATH",
+      "ranking": 161,
+      "rating": 0.9365,
+      "recruitType": "HighSchool",
+      "school": "Bishop Verot",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2023,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2024,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2025,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141973",
+    "recruiting": {
+      "athleteId": "5141973",
+      "city": "Hoschton",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "13157",
+        "latitude": 34.096496,
+        "longitude": -83.7612839
+      },
+      "id": "108873",
+      "name": "Trajen Greco",
+      "position": "S",
+      "ranking": 175,
+      "rating": 0.928,
+      "recruitType": "HighSchool",
+      "school": "Mill Creek",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 182,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870727",
+    "recruiting": {
+      "athleteId": "4870727",
+      "city": "Lee's Summit",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "A",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 38.9107156,
+        "longitude": -94.3821295
+      },
+      "id": "111346",
+      "name": "Cayden Green",
+      "position": "OT",
+      "ranking": 99,
+      "rating": 0.9552,
+      "recruitType": "HighSchool",
+      "school": "Lee's Summit North",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5306181",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LS",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 36,
+        "position": "LS",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5131980",
+    "recruiting": {
+      "athleteId": "5131980",
+      "city": "Joplin",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "29097",
+        "latitude": 37.08418,
+        "longitude": -94.51323
+      },
+      "id": "109712",
+      "name": "Whit Hafer",
+      "position": "TE",
+      "ranking": 1034,
+      "rating": 0.8664,
+      "recruitType": "HighSchool",
+      "school": "Joplin",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5158244",
+    "recruiting": {
+      "athleteId": "5158244",
+      "city": "Canton",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "13057",
+        "latitude": 34.2367621,
+        "longitude": -84.4907621
+      },
+      "id": "109532",
+      "name": "Jackson Hancock",
+      "position": "ATH",
+      "ranking": 841,
+      "rating": 0.8728,
+      "recruitType": "HighSchool",
+      "school": "Sequoyah",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "S",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "S",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5197065",
+    "recruiting": {
+      "athleteId": "5197065",
+      "city": "Monticello",
+      "committedTo": "UL Monroe",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "28077",
+        "latitude": 31.5536678,
+        "longitude": -90.1072865
+      },
+      "id": "238029",
+      "name": "Ahmad Hardy",
+      "position": "RB",
+      "ranking": 1919,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Lawrence County",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "ul-monroe",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2024,
+        "team": "UL Monroe",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5121468",
+    "recruiting": {
+      "athleteId": "5121468",
+      "city": "Pine Bluff",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "05069",
+        "latitude": 34.2157064,
+        "longitude": -92.0140402
+      },
+      "id": "111746",
+      "name": "Jordon Harris",
+      "position": "ATH",
+      "ranking": 495,
+      "rating": 0.8869,
+      "recruitType": "HighSchool",
+      "school": "Pine Bluff",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 234,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5160489",
+    "recruiting": {
+      "athleteId": "5160489",
+      "city": "St. Louis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "104212",
+      "name": "Keenan Harris",
+      "position": "S",
+      "ranking": 608,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "St. Louis University",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5333436",
+    "recruiting": {
+      "athleteId": "5333436",
+      "city": "Lee's Summit",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 38.9107156,
+        "longitude": -94.3821295
+      },
+      "id": "224464",
+      "name": "Preston Hatfield",
+      "position": "RB",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Lee's Summit",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5067879",
+    "recruiting": {
+      "athleteId": "5067879",
+      "city": "Washington",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29071",
+        "latitude": 38.5581072,
+        "longitude": -91.0120878
+      },
+      "id": "113475",
+      "name": "Mark Hensley",
+      "position": "DL",
+      "ranking": 2507,
+      "rating": 0.8037,
+      "recruitType": "HighSchool",
+      "school": "Washington",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2023,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2024,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 57,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5308082",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5276659",
+    "recruiting": {
+      "athleteId": "5276659",
+      "city": "Edwardsville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17119",
+        "latitude": 38.8114364,
+        "longitude": -89.953157
+      },
+      "id": "104788",
+      "name": "Devyon Hill-Lomax",
+      "position": "WR",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Edwardsville",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149008",
+    "recruiting": {
+      "athleteId": "5149008",
+      "city": "Overland Park",
+      "committedTo": "Iowa",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 38.9742502,
+        "longitude": -94.6851702
+      },
+      "id": "108975",
+      "name": "Gavin Hoffman",
+      "position": "TE",
+      "ranking": 277,
+      "rating": 0.9093,
+      "recruitType": "HighSchool",
+      "school": "Blue Valley Northwest",
+      "stars": 4,
+      "stateProvince": "KS",
+      "teamSlug": "iowa",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Iowa",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5201870",
+    "recruiting": {
+      "athleteId": "5201870",
+      "city": "Hermann",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "106424",
+      "name": "Daeden Hopkins",
+      "position": "EDGE",
+      "ranking": 233,
+      "rating": 0.917,
+      "recruitType": "HighSchool",
+      "school": "Hermann",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 10,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5136856",
+    "recruiting": {
+      "athleteId": "5136856",
+      "city": "Jonesboro",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "05031",
+        "latitude": 35.8428646,
+        "longitude": -90.7034522
+      },
+      "id": "109068",
+      "name": "Brian Huff",
+      "position": "LB",
+      "ranking": 372,
+      "rating": 0.8988,
+      "recruitType": "HighSchool",
+      "school": "Valley View",
+      "stars": 4,
+      "stateProvince": "AR",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 221,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5125780",
+    "recruiting": {
+      "athleteId": "5125780",
+      "city": "St. Charles",
+      "committedTo": "Wyoming",
+      "country": "USA",
+      "grade": "F",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "29183",
+        "latitude": 38.7946252,
+        "longitude": -90.519829
+      },
+      "id": "217443",
+      "name": "Brady Hultman",
+      "position": "LB",
+      "ranking": 2678,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Francis Howell",
+      "stars": 2,
+      "stateProvince": "MO",
+      "teamSlug": "wyoming",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2023,
+        "team": "Wyoming",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5158245",
+    "recruiting": {
+      "athleteId": "5158245",
+      "city": "St. Charles",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29183",
+        "latitude": 38.7946252,
+        "longitude": -90.519829
+      },
+      "id": "109828",
+      "name": "Jude James",
+      "position": "ATH",
+      "ranking": 1158,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Francis Howell",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5276678",
+    "recruiting": {
+      "athleteId": "5276678",
+      "city": "Omaha",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "31055",
+        "latitude": 41.2587459,
+        "longitude": -95.9383758
+      },
+      "id": "104634",
+      "name": "Isaac Jensen",
+      "position": "TE",
+      "ranking": 1174,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Millard South",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5372206",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290947",
+    "recruiting": {
+      "athleteId": "5290947",
+      "city": "Fayetteville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "05143",
+        "latitude": 36.0625843,
+        "longitude": -94.1574328
+      },
+      "id": "105135",
+      "name": "Brody Jones",
+      "position": "S",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Fayetteville",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209380",
+    "recruiting": {
+      "athleteId": "5209380",
+      "city": "Venice",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.0999188,
+        "longitude": -82.4543597
+      },
+      "id": "103975",
+      "name": "DJ Jones",
+      "position": "OT",
+      "ranking": 161,
+      "rating": 0.9352,
+      "recruitType": "HighSchool",
+      "school": "Venice",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150836",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141802",
+    "recruiting": {
+      "athleteId": "5141802",
+      "city": "Washington",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "29071",
+        "latitude": 38.5581072,
+        "longitude": -91.0120878
+      },
+      "id": "109624",
+      "name": "Ryan Jostes",
+      "position": "OT",
+      "ranking": 947,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Washington",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211193",
+    "recruiting": {
+      "athleteId": "5211193",
+      "city": "Jefferson City",
+      "committedTo": "Kansas State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29051",
+        "latitude": 38.577359,
+        "longitude": -92.1724265
+      },
+      "id": "106958",
+      "name": "Will Kemna",
+      "position": "OT",
+      "ranking": 769,
+      "rating": 0.8753,
+      "recruitType": "HighSchool",
+      "school": "Helias",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "kansas-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas State",
+        "year": 1
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5109866",
+    "recruiting": {
+      "athleteId": "5109866",
+      "city": "Lynn Haven",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12005",
+        "latitude": 30.2454776,
+        "longitude": -85.648261
+      },
+      "id": "109231",
+      "name": "Cameron Keys",
+      "position": "CB",
+      "ranking": 537,
+      "rating": 0.8864,
+      "recruitType": "HighSchool",
+      "school": "Mosley",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5210730",
+    "recruiting": {
+      "athleteId": "5210730",
+      "city": "St. Louis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "106981",
+      "name": "Jason King",
+      "position": "LB",
+      "ranking": 795,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "De Smet Jesuit",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5260012",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5195295",
+    "recruiting": {
+      "athleteId": "5195295",
+      "city": "Eureka",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "29189",
+        "latitude": 38.5025537,
+        "longitude": -90.6279044
+      },
+      "id": "106326",
+      "name": "Jack Lange",
+      "position": "OT",
+      "ranking": 135,
+      "rating": 0.94,
+      "recruitType": "HighSchool",
+      "school": "Eureka",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5078245",
+    "recruiting": {
+      "athleteId": "5078245",
+      "city": "Decatur",
+      "committedTo": "Minnesota",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "13089",
+        "latitude": 33.7737582,
+        "longitude": -84.296069
+      },
+      "id": "111932",
+      "name": "Kenric Lanier II",
+      "position": "WR",
+      "ranking": 674,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Decatur",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "minnesota",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "Minnesota",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "Minnesota",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Minnesota",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5221314",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2024,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2025,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092247",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870858",
+    "recruiting": {
+      "athleteId": "4870858",
+      "city": "Kennesaw",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 34.0234337,
+        "longitude": -84.6154897
+      },
+      "id": "111722",
+      "name": "Cayden Lee",
+      "position": "WR",
+      "ranking": 475,
+      "rating": 0.8883,
+      "recruitType": "HighSchool",
+      "school": "Kennesaw Mountain",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2023,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2024,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219025",
+    "recruiting": {
+      "athleteId": "5219025",
+      "city": "Naples",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.1421976,
+        "longitude": -81.7942944
+      },
+      "id": "109155",
+      "name": "Kensley Louidor-Faustin",
+      "position": "S",
+      "ranking": 459,
+      "rating": 0.8917,
+      "recruitType": "HighSchool",
+      "school": "Naples",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 167,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4872820",
+    "recruiting": {
+      "athleteId": "4872820",
+      "city": "Overland Park",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 38.9742502,
+        "longitude": -94.6851702
+      },
+      "id": "114249",
+      "name": "Jalen Marshall",
+      "position": "DL",
+      "ranking": 709,
+      "rating": 0.873,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2022,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5142592",
+    "recruiting": {
+      "athleteId": "5142592",
+      "city": "Highland Home",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "01041",
+        "latitude": 31.953702,
+        "longitude": -86.3142945
+      },
+      "id": "106679",
+      "name": "CJ May",
+      "position": "EDGE",
+      "ranking": 487,
+      "rating": 0.8894,
+      "recruitType": "HighSchool",
+      "school": "Highland Home",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 1
+      },
+      {
+        "jersey": 97,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5271141",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5148622",
+    "recruiting": {
+      "athleteId": "5148622",
+      "city": "Canton",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7989522,
+        "longitude": -81.3784445
+      },
+      "id": "106541",
+      "name": "Dante McClellan",
+      "position": "LB",
+      "ranking": 351,
+      "rating": 0.8998,
+      "recruitType": "HighSchool",
+      "school": "McKinley",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5159003",
+    "recruiting": {
+      "athleteId": "5159003",
+      "city": "Des Moines",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "19153",
+        "latitude": 41.5910641,
+        "longitude": -93.6037149
+      },
+      "id": "104236",
+      "name": "Jayden McGregory",
+      "position": "ATH",
+      "ranking": 487,
+      "rating": 0.89,
+      "recruitType": "HighSchool",
+      "school": "West Des Moines Valley",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218802",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5218810",
+    "recruiting": {
+      "athleteId": "5218810",
+      "city": "Minneapolis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "F",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "27053",
+        "latitude": 44.9772995,
+        "longitude": -93.2654692
+      },
+      "id": "238383",
+      "name": "Adam Molitor",
+      "position": "TE",
+      "ranking": 2983,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Totino-Grace",
+      "stars": 2,
+      "stateProvince": "MN",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141584",
+    "recruiting": {
+      "athleteId": "5141584",
+      "city": "Miami",
+      "committedTo": "Florida",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "106361",
+      "name": "Naeshaun Montgomery",
+      "position": "WR",
+      "ranking": 170,
+      "rating": 0.9304,
+      "recruitType": "HighSchool",
+      "school": "Miami Central",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "florida",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida",
+        "year": 1
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141595",
+    "recruiting": {
+      "athleteId": "5141595",
+      "city": "Dallas",
+      "committedTo": "Baylor",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "106497",
+      "name": "Kamauryn Morgan",
+      "position": "EDGE",
+      "ranking": 307,
+      "rating": 0.9048,
+      "recruitType": "HighSchool",
+      "school": "South Oak Cliff",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "baylor",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Baylor",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5332630",
+    "recruiting": {
+      "athleteId": "5332630",
+      "city": "Liberty",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "29047",
+        "latitude": 39.246479,
+        "longitude": -94.419079
+      },
+      "id": "224441",
+      "name": "Trashundon Neal",
+      "position": "CB",
+      "ranking": 804,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Liberty North",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870869",
+    "recruiting": {
+      "athleteId": "4870869",
+      "city": "St. Charles",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "29183",
+        "latitude": 38.7946252,
+        "longitude": -90.519829
+      },
+      "id": "111488",
+      "name": "Brett Norfleet",
+      "position": "TE",
+      "ranking": 236,
+      "rating": 0.9151,
+      "recruitType": "HighSchool",
+      "school": "Francis Howell",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141582",
+    "recruiting": {
+      "athleteId": "5141582",
+      "city": "Bradenton",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "106286",
+      "name": "Donovan Olugbode",
+      "position": "WR",
+      "ranking": 95,
+      "rating": 0.9517,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209383",
+    "recruiting": {
+      "athleteId": "5209383",
+      "city": "Owasso",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.2661536,
+        "longitude": -95.8549456
+      },
+      "id": "104101",
+      "name": "Tajh Overton",
+      "position": "DL",
+      "ranking": 312,
+      "rating": 0.9051,
+      "recruitType": "HighSchool",
+      "school": "Owasso",
+      "stars": 4,
+      "stateProvince": "OK",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870882",
+    "recruiting": {
+      "athleteId": "4870882",
+      "city": "McDonough",
+      "committedTo": "Clemson",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.4473361,
+        "longitude": -84.1468616
+      },
+      "id": "111497",
+      "name": "Zack Owens",
+      "position": "OT",
+      "ranking": 264,
+      "rating": 0.9113,
+      "recruitType": "HighSchool",
+      "school": "Eagle's Landing Christian",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "clemson",
+      "valueType": "BENCHMARK",
+      "weight": 365,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2023,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2024,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4917271",
+    "recruiting": {
+      "athleteId": "4917271",
+      "city": "Demopolis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01091",
+        "latitude": 32.5178284,
+        "longitude": -87.8368201
+      },
+      "id": "114951",
+      "name": "Curtis Peagler",
+      "position": "IOL",
+      "ranking": 1454,
+      "rating": 0.8433,
+      "recruitType": "HighSchool",
+      "school": "Demopolis",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 340,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2022,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4917402",
+    "recruiting": {
+      "athleteId": "4917402",
+      "city": "Auburn",
+      "committedTo": "Troy",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01081",
+        "latitude": 32.6550905,
+        "longitude": -85.50364346309962
+      },
+      "id": "234655",
+      "name": "Nasir Pogue",
+      "position": "CB",
+      "ranking": 1261,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Auburn",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "troy",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2022,
+        "team": "Troy",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5156093",
+    "recruiting": {
+      "athleteId": "5156093",
+      "city": "Mission Viejo",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5965685,
+        "longitude": -117.659405
+      },
+      "id": "217231",
+      "name": "Tommy Reese",
+      "position": "LB",
+      "ranking": 2529,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Mission Viejo",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870985",
+    "recruiting": {
+      "athleteId": "4870985",
+      "city": "Kansas City",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.100105,
+        "longitude": -94.5781416
+      },
+      "id": "111690",
+      "name": "Logan Reichert",
+      "position": "OT",
+      "ranking": 445,
+      "rating": 0.8908,
+      "recruitType": "HighSchool",
+      "school": "Raytown",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 350,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5216791",
+    "recruiting": {
+      "athleteId": "5216791",
+      "city": "Venice",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.0999188,
+        "longitude": -82.4543597
+      },
+      "id": "108525",
+      "name": "Brunno Reus",
+      "position": "K",
+      "ranking": 2731,
+      "rating": 0.8236,
+      "recruitType": "HighSchool",
+      "school": "Venice",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "PK",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 1
+      },
+      {
+        "jersey": 40,
+        "position": "PK",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5305951",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "PK",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "PK",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921116",
+    "recruiting": {
+      "athleteId": "4921116",
+      "city": "St. Louis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "111872",
+      "name": "Jamal Roberts",
+      "position": "RB",
+      "ranking": 628,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "St. Mary's",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079582",
+    "recruiting": {
+      "athleteId": "5079582",
+      "city": "Fort Lauderdale",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "109403",
+      "name": "Nicholas Rodriguez",
+      "position": "LB",
+      "ranking": 714,
+      "rating": 0.8775,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5305886",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160096",
+    "recruiting": {
+      "athleteId": "5160096",
+      "city": "Mt. Juliet",
+      "committedTo": "Memphis",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "47189",
+        "latitude": 36.200055,
+        "longitude": -86.5186054
+      },
+      "id": "256518",
+      "name": "Mark Shenouda",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Mt. Juliet",
+      "stars": null,
+      "stateProvince": "TN",
+      "teamSlug": "memphis",
+      "valueType": "BENCHMARK",
+      "weight": 199,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "P",
+        "season": 2023,
+        "team": "Memphis",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "P",
+        "season": 2024,
+        "team": "Tennessee State",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "P",
+        "season": 2025,
+        "team": "Tennessee State",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "P",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5217148",
+    "recruiting": {
+      "athleteId": "5217148",
+      "city": "Wyndmoor",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42091",
+        "latitude": 40.0853435,
+        "longitude": -75.19402070907555
+      },
+      "id": "104219",
+      "name": "Gavin Sidwar",
+      "position": "QB",
+      "ranking": 586,
+      "rating": 0.8856,
+      "recruitType": "HighSchool",
+      "school": "La Salle College",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141684",
+    "recruiting": {
+      "athleteId": "5141684",
+      "city": "Moore Haven",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": "B",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12043",
+        "latitude": 26.8331174,
+        "longitude": -81.0931234
+      },
+      "id": "111538",
+      "name": "Austin Simmons",
+      "position": "QB",
+      "ranking": 292,
+      "rating": 0.9059,
+      "recruitType": "HighSchool",
+      "school": "Moore Haven",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2023,
+        "team": "Ole Miss",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2024,
+        "team": "Ole Miss",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2025,
+        "team": "Ole Miss",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5172033",
+    "recruiting": {
+      "athleteId": "5172033",
+      "city": "Hollywood",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "106802",
+      "name": "Donta Simpson Jr.",
+      "position": "DL",
+      "ranking": 606,
+      "rating": 0.8819,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 281,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4708355",
+    "recruiting": {
+      "athleteId": "4708355",
+      "city": "Baxley",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "13001",
+        "latitude": 31.7782514,
+        "longitude": -82.3484618
+      },
+      "id": "113706",
+      "name": "Darris Smith",
+      "position": "EDGE",
+      "ranking": 163,
+      "rating": 0.9352,
+      "recruitType": "HighSchool",
+      "school": "Appling County",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "EDGE",
+        "season": 2022,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5224346",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charleston Southern",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290998",
+    "recruiting": {
+      "athleteId": "5290998",
+      "city": "Pearland",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "105564",
+      "name": "Carter Stewart",
+      "position": "S",
+      "ranking": 2288,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Shadow Creek",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "S",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5195617",
+    "recruiting": {
+      "athleteId": "5195617",
+      "city": "Ironton",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "39087",
+        "latitude": 38.5367471,
+        "longitude": -82.6829406
+      },
+      "id": "106492",
+      "name": "Shaun Terry II",
+      "position": "WR",
+      "ranking": 302,
+      "rating": 0.9051,
+      "recruitType": "HighSchool",
+      "school": "Ironton",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 1
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5092989",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "EDGE",
+        "season": 2022,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276633",
+    "recruiting": {
+      "athleteId": "5276633",
+      "city": "Chicago",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "104992",
+      "name": "Max Warner",
+      "position": "RB",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Whitney Young",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5001149",
+    "recruiting": {
+      "athleteId": "5001149",
+      "city": "Miami",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "111683",
+      "name": "Bobby Washington Jr.",
+      "position": "LB",
+      "ranking": 434,
+      "rating": 0.8917,
+      "recruitType": "HighSchool",
+      "school": "Miami Palmetto",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2025,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290939",
+    "recruiting": {
+      "athleteId": "5290939",
+      "city": "Jackson",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29031",
+        "latitude": 37.3828316,
+        "longitude": -89.6684487
+      },
+      "id": "105240",
+      "name": "Brysen Wessell",
+      "position": "OT",
+      "ranking": 527,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Jackson",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146864",
+    "recruiting": {
+      "athleteId": "5146864",
+      "city": "Hogansville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "13285",
+        "latitude": 33.1731769,
+        "longitude": -84.914936
+      },
+      "id": "112648",
+      "name": "Sam Williams",
+      "position": "DL",
+      "ranking": 1403,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Callaway",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2023
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4921459",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4810360",
+    "recruiting": {
+      "athleteId": "4810360",
+      "city": "Lebanon",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29105",
+        "latitude": 37.6806669,
+        "longitude": -92.6637835
+      },
+      "id": "114328",
+      "name": "Tristan Wilson",
+      "position": "IOL",
+      "ranking": 799,
+      "rating": 0.8685,
+      "recruitType": "HighSchool",
+      "school": "Lebanon",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2022,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685604",
+    "recruiting": {
+      "athleteId": "4685604",
+      "city": "Mobile",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.6943566,
+        "longitude": -88.0430541
+      },
+      "id": "113684",
+      "name": "Robert Woodyard Jr.",
+      "position": "LB",
+      "ranking": 141,
+      "rating": 0.9425,
+      "recruitType": "HighSchool",
+      "school": "Williamson",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2022,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146314",
+    "recruiting": {
+      "athleteId": "5146314",
+      "city": "Memphis",
+      "committedTo": "Mississippi State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "47157",
+        "latitude": 35.1490215,
+        "longitude": -90.0516285
+      },
+      "id": "110000",
+      "name": "Luke Work",
+      "position": "OT",
+      "ranking": 1352,
+      "rating": 0.8572,
+      "recruitType": "HighSchool",
+      "school": "Lausanne Collegiate School",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "mississippi-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "Mississippi State",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Mississippi State",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5086697",
+    "recruiting": null,
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "WR",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "WR",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5195300",
+    "recruiting": {
+      "athleteId": "5195300",
+      "city": "Royersford",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "A",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "42091",
+        "latitude": 40.1842688,
+        "longitude": -75.5379639
+      },
+      "id": "106284",
+      "name": "Matt Zollers",
+      "position": "QB",
+      "ranking": 93,
+      "rating": 0.9527,
+      "recruitType": "HighSchool",
+      "school": "Spring-Ford",
+      "stars": 4,
+      "stateProvince": "PA",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Missouri",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2026,
+        "team": "Missouri",
+        "year": 2
+      }
+    ]
+  }
+]

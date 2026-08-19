@@ -1,0 +1,415 @@
+[
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "firstDowns",
+    "statValue": 249,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "firstDownsOpponent",
+    "statValue": 237,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fourthDownConversions",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fourthDownConversionsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fourthDowns",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fourthDownsOpponent",
+    "statValue": 21,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fumblesLost",
+    "statValue": 8,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fumblesLostOpponent",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fumblesRecovered",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "fumblesRecoveredOpponent",
+    "statValue": 8,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "games",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "interceptions",
+    "statValue": 19,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "interceptionsOpponent",
+    "statValue": 7,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "interceptionTDs",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "interceptionTDsOpponent",
+    "statValue": 2,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "interceptionYards",
+    "statValue": 127,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "interceptionYardsOpponent",
+    "statValue": 225,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "kickReturns",
+    "statValue": 42,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "kickReturnsOpponent",
+    "statValue": 50,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "kickReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "kickReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "kickReturnYards",
+    "statValue": 926,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "kickReturnYardsOpponent",
+    "statValue": 1116,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "netPassingYards",
+    "statValue": 2591,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "netPassingYardsOpponent",
+    "statValue": 2203,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passAttempts",
+    "statValue": 318,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passAttemptsOpponent",
+    "statValue": 330,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passCompletions",
+    "statValue": 169,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passCompletionsOpponent",
+    "statValue": 198,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passesIntercepted",
+    "statValue": 7,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passesInterceptedOpponent",
+    "statValue": 19,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passingTDs",
+    "statValue": 20,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "passingTDsOpponent",
+    "statValue": 16,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "penalties",
+    "statValue": 62,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "penaltiesOpponent",
+    "statValue": 84,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "penaltyYards",
+    "statValue": 628,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "penaltyYardsOpponent",
+    "statValue": 719,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "possessionTime",
+    "statValue": 24242,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "possessionTimeOpponent",
+    "statValue": 23460,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "puntReturns",
+    "statValue": 16,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "puntReturnsOpponent",
+    "statValue": 22,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "puntReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "puntReturnTDsOpponent",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "puntReturnYards",
+    "statValue": 141,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "puntReturnYardsOpponent",
+    "statValue": 203,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "rushingAttempts",
+    "statValue": 502,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "rushingAttemptsOpponent",
+    "statValue": 514,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "rushingTDs",
+    "statValue": 27,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "rushingTDsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "rushingYards",
+    "statValue": 2389,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "rushingYardsOpponent",
+    "statValue": 1957,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "thirdDownConversions",
+    "statValue": 87,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "thirdDownConversionsOpponent",
+    "statValue": 64,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "thirdDowns",
+    "statValue": 173,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "thirdDownsOpponent",
+    "statValue": 178,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "totalYards",
+    "statValue": 4980,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "totalYardsOpponent",
+    "statValue": 4160,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "turnovers",
+    "statValue": 27,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2012,
+    "statName": "turnoversOpponent",
+    "statValue": 18,
+    "team": "Michigan"
+  }
+]

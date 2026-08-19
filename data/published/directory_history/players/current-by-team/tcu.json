@@ -1,0 +1,4989 @@
+[
+  {
+    "playerId": "5147339",
+    "recruiting": {
+      "athleteId": "5147339",
+      "city": "DeSoto",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6061241,
+        "longitude": -96.865612653687
+      },
+      "id": "107086",
+      "name": "Keylan Abrams",
+      "position": "LB",
+      "ranking": 914,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "DeSoto",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5155188",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5157061",
+    "recruiting": {
+      "athleteId": "5157061",
+      "city": "Houston",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "107198",
+      "name": "Joseph Albright",
+      "position": "S",
+      "ranking": 1039,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Spring Westfield",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5207601",
+    "recruiting": {
+      "athleteId": "5207601",
+      "city": "Denton",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "107292",
+      "name": "Dillon Arkansas",
+      "position": "LB",
+      "ranking": 1133,
+      "rating": 0.8647,
+      "recruitType": "HighSchool",
+      "school": "Denton Ryan",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391236",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5268642",
+    "recruiting": {
+      "athleteId": "5268642",
+      "city": "Argyle",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.110156,
+        "longitude": -97.17940980147037
+      },
+      "id": "105042",
+      "name": "Braden Bach",
+      "position": "TE",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Argyle",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4692559",
+    "recruiting": {
+      "athleteId": "4692559",
+      "city": "Scottsdale",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "119224",
+      "name": "Cade Bennett",
+      "position": "OG",
+      "ranking": 822,
+      "rating": 0.8648,
+      "recruitType": "HighSchool",
+      "school": "Notre Dame Preparatory",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2020
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2021,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2022,
+        "team": "San Diego State",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2023,
+        "team": "San Diego State",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296129",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5092972",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2022,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "P",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296130",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5207793",
+    "recruiting": {
+      "athleteId": "5207793",
+      "city": "Temple",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "48027",
+        "latitude": 31.098207,
+        "longitude": -97.3427847
+      },
+      "id": "104255",
+      "name": "Jason Bradford",
+      "position": "S",
+      "ranking": 469,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "Temple",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296132",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5085334",
+    "recruiting": {
+      "athleteId": "5085334",
+      "city": "Lehigh Acres",
+      "committedTo": "Florida International",
+      "country": "USA",
+      "grade": "D",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.6091509,
+        "longitude": -81.652407
+      },
+      "id": "112976",
+      "name": "Jaheim Buchanon",
+      "position": "IOL",
+      "ranking": 1801,
+      "rating": 0.8369,
+      "recruitType": "HighSchool",
+      "school": "Lehigh Senior",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-international",
+      "valueType": "BENCHMARK",
+      "weight": 278,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2023,
+        "team": "Florida International",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida International",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida International",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5264361",
+    "recruiting": {
+      "athleteId": "5264361",
+      "city": "Austin",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "B",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "104462",
+      "name": "Carter Buck",
+      "position": "EDGE",
+      "ranking": 317,
+      "rating": 0.9046,
+      "recruitType": "HighSchool",
+      "school": "Lake Travis",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5279205",
+    "recruiting": {
+      "athleteId": "5279205",
+      "city": "Missouri City",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "104976",
+      "name": "Jordan Burnett",
+      "position": "IOL",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Ridge Point",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 345,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146791",
+    "recruiting": {
+      "athleteId": "5146791",
+      "city": "Houston",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "109812",
+      "name": "Samir Camacho",
+      "position": "IOL",
+      "ranking": 1139,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "Cy Falls",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 281,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4831971",
+    "recruiting": {
+      "athleteId": "4831971",
+      "city": "Greenwood",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "18081",
+        "latitude": 39.6136578,
+        "longitude": -86.1066526
+      },
+      "id": "114511",
+      "name": "Kalen Carroll",
+      "position": "CB",
+      "ranking": 987,
+      "rating": 0.8607,
+      "recruitType": "HighSchool",
+      "school": "Center Grove",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2022
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2022,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2023,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2024,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2025,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4918123",
+    "recruiting": {
+      "athleteId": "4918123",
+      "city": "Memphis",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47157",
+        "latitude": 35.1490215,
+        "longitude": -90.0516285
+      },
+      "id": "111766",
+      "name": "Max Carroll",
+      "position": "ATH",
+      "ranking": 514,
+      "rating": 0.8853,
+      "recruitType": "HighSchool",
+      "school": "Briarcrest Christian",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220347",
+    "recruiting": {
+      "athleteId": "5220347",
+      "city": "Shreveport",
+      "committedTo": "Louisiana Tech",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "22017",
+        "latitude": 32.5221828,
+        "longitude": -93.7651944
+      },
+      "id": "257411",
+      "name": "John Hoyet Chance",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Captain Shreve",
+      "stars": null,
+      "stateProvince": "LA",
+      "teamSlug": "louisiana-tech",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "P",
+        "season": 2024,
+        "team": "Louisiana Tech",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "P",
+        "season": 2025,
+        "team": "Louisiana Tech",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "P",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4918413",
+    "recruiting": {
+      "athleteId": "4918413",
+      "city": "Missouri City",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "111605",
+      "name": "Zach Chapman",
+      "position": "DL",
+      "ranking": 355,
+      "rating": 0.8977,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Marshall",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296127",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391233",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086711",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083569",
+    "recruiting": {
+      "athleteId": "5083569",
+      "city": "West Orange",
+      "committedTo": "Harvard",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "34013",
+        "latitude": 40.7987113,
+        "longitude": -74.2390353
+      },
+      "id": "255990",
+      "name": "Jaden Craig",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Seton Hall Prep",
+      "stars": null,
+      "stateProvince": "NJ",
+      "teamSlug": "harvard",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2022,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2023,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2024,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2025,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5085413",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2022,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5265297",
+    "recruiting": {
+      "athleteId": "5265297",
+      "city": "The Woodlands",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.1734194,
+        "longitude": -95.504686
+      },
+      "id": "104466",
+      "name": "Jack Daulton",
+      "position": "QB",
+      "ranking": 1030,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "The Woodlands",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870670",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5214401",
+    "recruiting": {
+      "athleteId": "5214401",
+      "city": "Palestine",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48001",
+        "latitude": 31.7621153,
+        "longitude": -95.6307891
+      },
+      "id": "107361",
+      "name": "Jon Denman",
+      "position": "RB",
+      "ranking": 1203,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Palestine Westwood",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5101112",
+    "recruiting": {
+      "athleteId": "5101112",
+      "city": "Aledo",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "48367",
+        "latitude": 32.69900905,
+        "longitude": -97.60396629774493
+      },
+      "id": "113065",
+      "name": "Ansel Din-Mbuh",
+      "position": "DL",
+      "ranking": 1889,
+      "rating": 0.8319,
+      "recruitType": "HighSchool",
+      "school": "Aledo",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5162727",
+    "recruiting": {
+      "athleteId": "5162727",
+      "city": "Richmond",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.5821811,
+        "longitude": -95.7607832
+      },
+      "id": "104622",
+      "name": "Noriel Dominguez",
+      "position": "LB",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Richmond Randle",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4832804",
+    "recruiting": {
+      "athleteId": "4832804",
+      "city": "Puyallup",
+      "committedTo": "Idaho",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "53053",
+        "latitude": 47.1849009,
+        "longitude": -122.2921406
+      },
+      "id": "234737",
+      "name": "Jordan Dwyer",
+      "position": "WR",
+      "ranking": 1783,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Puyallup",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "idaho",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2022,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2023,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4832792",
+    "recruiting": {
+      "athleteId": "4832792",
+      "city": "Amarillo",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48375",
+        "latitude": 35.2072185,
+        "longitude": -101.8338246
+      },
+      "id": "114042",
+      "name": "Major Everhart",
+      "position": "RB",
+      "ranking": 499,
+      "rating": 0.8841,
+      "recruitType": "HighSchool",
+      "school": "Amarillo Tascosa",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2022
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2022,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084893",
+    "recruiting": {
+      "athleteId": "5084893",
+      "city": "Fort Worth",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "109333",
+      "name": "Dozie Ezukanma",
+      "position": "WR",
+      "ranking": 631,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Keller Timber Creek",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5078219",
+    "recruiting": {
+      "athleteId": "5078219",
+      "city": "Melissa",
+      "committedTo": "Louisiana Tech",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.2860549,
+        "longitude": -96.5725952
+      },
+      "id": "112762",
+      "name": "Jacob Fields",
+      "position": "CB",
+      "ranking": 1552,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Melissa",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "louisiana-tech",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "S",
+        "season": 2023,
+        "team": "Louisiana Tech",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "S",
+        "season": 2024,
+        "team": "Louisiana Tech",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "S",
+        "season": 2025,
+        "team": "Louisiana Tech",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219567",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5264497",
+    "recruiting": {
+      "athleteId": "5264497",
+      "city": "Austin",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "104959",
+      "name": "Maddox Flynt",
+      "position": "DL",
+      "ranking": 1308,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Austin Westlake",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161823",
+    "recruiting": {
+      "athleteId": "5161823",
+      "city": "Arlington",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "104052",
+      "name": "Jesse Ford",
+      "position": "DL",
+      "ranking": 364,
+      "rating": 0.8993,
+      "recruitType": "HighSchool",
+      "school": "Arlington Martin",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5092971",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2022,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870705",
+    "recruiting": {
+      "athleteId": "4870705",
+      "city": "Dickinson",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.4607876,
+        "longitude": -95.0513173
+      },
+      "id": "112154",
+      "name": "Vernon Glover Jr.",
+      "position": "CB",
+      "ranking": 913,
+      "rating": 0.8669,
+      "recruitType": "HighSchool",
+      "school": "Dickinson",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5280795",
+    "recruiting": {
+      "athleteId": "5280795",
+      "city": "San Antonio",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48029",
+        "latitude": 29.4246002,
+        "longitude": -98.4951405
+      },
+      "id": "104574",
+      "name": "G'Ivori Graham",
+      "position": "RB",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "San Antonio Harlan",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5208009",
+    "recruiting": {
+      "athleteId": "5208009",
+      "city": "Spring",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 30.0798826,
+        "longitude": -95.4172549
+      },
+      "id": "107027",
+      "name": "Floyd Guidry",
+      "position": "DL",
+      "ranking": 848,
+      "rating": 0.8731,
+      "recruitType": "HighSchool",
+      "school": "Spring High",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391231",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "DE",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222190",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2024,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2025,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5167178",
+    "recruiting": {
+      "athleteId": "5167178",
+      "city": "Nashville",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "107110",
+      "name": "Sam Haley",
+      "position": "LB",
+      "ranking": 936,
+      "rating": 0.8703,
+      "recruitType": "HighSchool",
+      "school": "Ensworth",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5156033",
+    "recruiting": {
+      "athleteId": "5156033",
+      "city": "Muskogee",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "40101",
+        "latitude": 35.7478769,
+        "longitude": -95.3696909
+      },
+      "id": "109467",
+      "name": "Wesley Harvey",
+      "position": "OT",
+      "ranking": 776,
+      "rating": 0.8747,
+      "recruitType": "HighSchool",
+      "school": "Muskogee",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 257,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5221285",
+    "recruiting": {
+      "athleteId": "5221285",
+      "city": "Mansfield",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.5631924,
+        "longitude": -97.1416768
+      },
+      "id": "107872",
+      "name": "Jacobe Hayes",
+      "position": "WR",
+      "ranking": 1850,
+      "rating": 0.8494,
+      "recruitType": "HighSchool",
+      "school": "Mansfield",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084770",
+    "recruiting": {
+      "athleteId": "5084770",
+      "city": "Jacksonville",
+      "committedTo": "Western Kentucky",
+      "country": "USA",
+      "grade": "D",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "112938",
+      "name": "Koron Hayward",
+      "position": "WR",
+      "ranking": 1760,
+      "rating": 0.8386,
+      "recruitType": "HighSchool",
+      "school": "Sandalwood",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "western-kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 199,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2023,
+        "team": "Western Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2024,
+        "team": "Western Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2025,
+        "team": "Western Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5167937",
+    "recruiting": {
+      "athleteId": "5167937",
+      "city": "Franklin",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "48395",
+        "latitude": 31.0260194,
+        "longitude": -96.4852445
+      },
+      "id": "109473",
+      "name": "Devyn Hidrogo",
+      "position": "S",
+      "ranking": 784,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Franklin",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151166",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5142225",
+    "recruiting": {
+      "athleteId": "5142225",
+      "city": "The Woodlands",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.1734194,
+        "longitude": -95.504686
+      },
+      "id": "109810",
+      "name": "Ryan Hughes",
+      "position": "OT",
+      "ranking": 1139,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "The Woodlands",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870804",
+    "recruiting": {
+      "athleteId": "4870804",
+      "city": "Zachary",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "22033",
+        "latitude": 30.6485191,
+        "longitude": -91.1564961
+      },
+      "id": "111456",
+      "name": "Kylin Jackson",
+      "position": "S",
+      "ranking": 214,
+      "rating": 0.9207,
+      "recruitType": "HighSchool",
+      "school": "Zachary",
+      "stars": 4,
+      "stateProvince": "LA",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2023,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2024,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5207849",
+    "recruiting": {
+      "athleteId": "5207849",
+      "city": "Missouri City",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "107472",
+      "name": "Gil Jackson",
+      "position": "CB",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Ridge Point",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870809",
+    "recruiting": {
+      "athleteId": "4870809",
+      "city": "Round Rock",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48491",
+        "latitude": 30.508235,
+        "longitude": -97.6788934
+      },
+      "id": "111388",
+      "name": "Braylon James",
+      "position": "WR",
+      "ranking": 138,
+      "rating": 0.942,
+      "recruitType": "HighSchool",
+      "school": "Stony Point",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2023,
+        "team": "Notre Dame",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870854",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "S",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "S",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5150137",
+    "recruiting": {
+      "athleteId": "5150137",
+      "city": "Hurst",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.8234621,
+        "longitude": -97.1705678
+      },
+      "id": "110277",
+      "name": "Tristan Johnson",
+      "position": "DL",
+      "ranking": 1663,
+      "rating": 0.8492,
+      "recruitType": "HighSchool",
+      "school": "Bell",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DT",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5162994",
+    "recruiting": {
+      "athleteId": "5162994",
+      "city": "Sulphur Springs",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48223",
+        "latitude": 33.1384886,
+        "longitude": -95.6010143
+      },
+      "id": "104145",
+      "name": "Vincent Johnson Jr.",
+      "position": "OT",
+      "ranking": 469,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "Sulphur Springs",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5164358",
+    "recruiting": {
+      "athleteId": "5164358",
+      "city": "Missouri City",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "106784",
+      "name": "Dane Jones",
+      "position": "WR",
+      "ranking": 593,
+      "rating": 0.8825,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Ridge Point",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5164650",
+    "recruiting": {
+      "athleteId": "5164650",
+      "city": "Franklinton",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "22117",
+        "latitude": 30.8471283,
+        "longitude": -90.153141
+      },
+      "id": "107734",
+      "name": "Jackson Jones",
+      "position": "OT",
+      "ranking": 1629,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Pine",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391229",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4918419",
+    "recruiting": {
+      "athleteId": "4918419",
+      "city": "Arlington",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "111843",
+      "name": "Lafayette Kaiuway",
+      "position": "TE",
+      "ranking": 600,
+      "rating": 0.8803,
+      "recruitType": "HighSchool",
+      "school": "Arlington Sam Houston",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "TE",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "TE",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "TE",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "TE",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5217175",
+    "recruiting": {
+      "athleteId": "5217175",
+      "city": "Port Arthur",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48245",
+        "latitude": 29.8988618,
+        "longitude": -93.9288723
+      },
+      "id": "104857",
+      "name": "Brock King",
+      "position": "CB",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Port Arthur Memorial",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5083561",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2022,
+        "team": "Abilene Christian",
+        "year": 4
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219573",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5149118",
+    "recruiting": {
+      "athleteId": "5149118",
+      "city": "Southlake",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.9412363,
+        "longitude": -97.1341783
+      },
+      "id": "110875",
+      "name": "Kyle Lemmermann",
+      "position": "K",
+      "ranking": 2394,
+      "rating": 0.8244,
+      "recruitType": "HighSchool",
+      "school": "Southlake Carroll",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "PK",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "PK",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "PK",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5077209",
+    "recruiting": {
+      "athleteId": "5077209",
+      "city": "Mesquite",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7666103,
+        "longitude": -96.599472
+      },
+      "id": "112279",
+      "name": "Jordan Lester",
+      "position": "S",
+      "ranking": 1039,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "Mesquite Horn",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 181,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391226",
+    "recruiting": {
+      "athleteId": "5391226",
+      "city": "Frisco",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "D",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "105969",
+      "name": "Jayden Maples",
+      "position": "QB",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Frisco Wakeland",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209316",
+    "recruiting": {
+      "athleteId": "5209316",
+      "city": "Port Arthur",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "48245",
+        "latitude": 29.8988618,
+        "longitude": -93.9288723
+      },
+      "id": "104639",
+      "name": "Ace Martin",
+      "position": "RB",
+      "ranking": 487,
+      "rating": 0.89,
+      "recruitType": "HighSchool",
+      "school": "Port Arthur Memorial",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141581",
+    "recruiting": {
+      "athleteId": "5141581",
+      "city": "El Centro",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06025",
+        "latitude": 32.792,
+        "longitude": -115.5630514
+      },
+      "id": "106744",
+      "name": "Jared Martin",
+      "position": "EDGE",
+      "ranking": 554,
+      "rating": 0.8848,
+      "recruitType": "HighSchool",
+      "school": "Central",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 94,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391228",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296128",
+    "recruiting": {
+      "athleteId": "5296128",
+      "city": "Arlington",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "106840",
+      "name": "Deon Mays",
+      "position": "CB",
+      "ranking": 645,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Arlington",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151170",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147233",
+    "recruiting": {
+      "athleteId": "5147233",
+      "city": "Texarkana",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48037",
+        "latitude": 33.44628645,
+        "longitude": -94.07638067493534
+      },
+      "id": "109951",
+      "name": "Kaden McFadden",
+      "position": "S",
+      "ranking": 1297,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Texarkana Pleasant Grove",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147184",
+    "recruiting": {
+      "athleteId": "5147184",
+      "city": "Conroe",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.3118769,
+        "longitude": -95.4560512
+      },
+      "id": "109195",
+      "name": "Devondre McGee",
+      "position": "CB",
+      "ranking": 499,
+      "rating": 0.8885,
+      "recruitType": "HighSchool",
+      "school": "Conroe",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "CB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "CB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4894438",
+    "recruiting": {
+      "athleteId": "4894438",
+      "city": "Henderson",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "115156",
+      "name": "Noah McKinney",
+      "position": "OT",
+      "ranking": 1701,
+      "rating": 0.8337,
+      "recruitType": "HighSchool",
+      "school": "Coronado",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2022,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296133",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5096110",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5140254",
+    "recruiting": {
+      "athleteId": "5140254",
+      "city": "Sachse",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "B",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9762327,
+        "longitude": -96.5952703
+      },
+      "id": "108905",
+      "name": "Cheta Ofili",
+      "position": "EDGE",
+      "ranking": 207,
+      "rating": 0.9201,
+      "recruitType": "HighSchool",
+      "school": "Sachse",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "Texas Tech",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4832593",
+    "recruiting": {
+      "athleteId": "4832593",
+      "city": "Houston",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "114424",
+      "name": "Paul Oyewale",
+      "position": "DL",
+      "ranking": 896,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Langham Creek",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "LB",
+        "season": 2022,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "LB",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "LB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5168715",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2024,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2025,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079663",
+    "recruiting": {
+      "athleteId": "5079663",
+      "city": "Missouri City",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "109102",
+      "name": "Jeremy Payne",
+      "position": "RB",
+      "ranking": 406,
+      "rating": 0.8957,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Hightower",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5207801",
+    "recruiting": {
+      "athleteId": "5207801",
+      "city": "Dickinson",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.4607876,
+        "longitude": -95.0513173
+      },
+      "id": "107425",
+      "name": "Mason Peterson",
+      "position": "TE",
+      "ranking": 1277,
+      "rating": 0.8617,
+      "recruitType": "HighSchool",
+      "school": "Dickinson",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "TE",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "TE",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219566",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "S",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084293",
+    "recruiting": {
+      "athleteId": "5084293",
+      "city": "Fort Worth",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "111396",
+      "name": "Ka'Morreun Pimpton",
+      "position": "TE",
+      "ranking": 149,
+      "rating": 0.9382,
+      "recruitType": "HighSchool",
+      "school": "North Crowley",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2023,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5391230",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219571",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296125",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5075961",
+    "recruiting": {
+      "athleteId": "5075961",
+      "city": "Concord",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.9768525,
+        "longitude": -122.0335624
+      },
+      "id": "112217",
+      "name": "Cooper Powers",
+      "position": "IOL",
+      "ranking": 982,
+      "rating": 0.865,
+      "recruitType": "HighSchool",
+      "school": "De La Salle",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2023,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5269122",
+    "recruiting": {
+      "athleteId": "5269122",
+      "city": "Arlington",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "211112",
+      "name": "Khamill Pruitt",
+      "position": "WR",
+      "ranking": 774,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Arlington Lamar",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391227",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216799",
+    "recruiting": {
+      "athleteId": "5216799",
+      "city": "Keller",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.9299655,
+        "longitude": -97.2271249
+      },
+      "id": "106651",
+      "name": "Kilian Registe",
+      "position": "OT",
+      "ranking": 461,
+      "rating": 0.8915,
+      "recruitType": "HighSchool",
+      "school": "Keller",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5251971",
+    "recruiting": {
+      "athleteId": "5251971",
+      "city": "Dripping Springs",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48209",
+        "latitude": 30.1902067,
+        "longitude": -98.0866781
+      },
+      "id": "211387",
+      "name": "Cooper Reid",
+      "position": "WR",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Dripping Springs",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216693",
+    "recruiting": {
+      "athleteId": "5216693",
+      "city": "Fort Worth",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "108153",
+      "name": "Blake Robinett",
+      "position": "DL",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "All Saints Episcopal",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 52,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5391234",
+    "recruiting": {
+      "athleteId": "5391234",
+      "city": "Pasadena",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.6910625,
+        "longitude": -95.2091006
+      },
+      "id": "104432",
+      "name": "Devan Robison",
+      "position": "IOL",
+      "ranking": 527,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Pasadena Memorial",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141643",
+    "recruiting": {
+      "athleteId": "5141643",
+      "city": "Columbus",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "B",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "48089",
+        "latitude": 29.7066181,
+        "longitude": -96.539699
+      },
+      "id": "106403",
+      "name": "Adam Schobel",
+      "position": "QB",
+      "ranking": 212,
+      "rating": 0.921,
+      "recruitType": "HighSchool",
+      "school": "Columbus",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5213361",
+    "recruiting": {
+      "athleteId": "5213361",
+      "city": "Columbus",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48089",
+        "latitude": 29.7066181,
+        "longitude": -96.539699
+      },
+      "id": "106947",
+      "name": "John Schobel",
+      "position": "EDGE",
+      "ranking": 762,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Columbus",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141646",
+    "recruiting": {
+      "athleteId": "5141646",
+      "city": "Boerne",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "48259",
+        "latitude": 29.7946641,
+        "longitude": -98.7319703
+      },
+      "id": "106677",
+      "name": "Logan Schram",
+      "position": "IOL",
+      "ranking": 487,
+      "rating": 0.8894,
+      "recruitType": "HighSchool",
+      "school": "Boerne",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 328,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5279208",
+    "recruiting": {
+      "athleteId": "5279208",
+      "city": "Conroe",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.3118769,
+        "longitude": -95.4560512
+      },
+      "id": "104636",
+      "name": "James Scott",
+      "position": "WR",
+      "ranking": 774,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Conroe Oak Ridge",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5126534",
+    "recruiting": {
+      "athleteId": "5126534",
+      "city": "Jackson",
+      "committedTo": "South Alabama",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "28049",
+        "latitude": 32.2990384,
+        "longitude": -90.1847691
+      },
+      "id": "110242",
+      "name": "Jeremy Scott",
+      "position": "WR",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Callaway",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "south-alabama",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "South Alabama",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Alabama",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216050",
+    "recruiting": {
+      "athleteId": "5216050",
+      "city": "Carrollton",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9537349,
+        "longitude": -96.8902816
+      },
+      "id": "106415",
+      "name": "Terry Shelton",
+      "position": "WR",
+      "ranking": 224,
+      "rating": 0.9187,
+      "recruitType": "HighSchool",
+      "school": "Ranchview",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5077204",
+    "recruiting": {
+      "athleteId": "5077204",
+      "city": "Charlotte",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "112596",
+      "name": "Michael Short",
+      "position": "LB",
+      "ranking": 1365,
+      "rating": 0.8514,
+      "recruitType": "HighSchool",
+      "school": "Mallard Creek",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2023,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5215582",
+    "recruiting": {
+      "athleteId": "5215582",
+      "city": "Whitehouse",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48423",
+        "latitude": 32.2268666,
+        "longitude": -95.2259279
+      },
+      "id": "107387",
+      "name": "Julius Simms",
+      "position": "S",
+      "ranking": 1225,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "Whitehouse",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5200482",
+    "recruiting": {
+      "athleteId": "5200482",
+      "city": "Austin",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "106654",
+      "name": "Ed Small",
+      "position": "WR",
+      "ranking": 463,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "Austin Anderson",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219570",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5144963",
+    "recruiting": {
+      "athleteId": "5144963",
+      "city": "Lancaster",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.5920798,
+        "longitude": -96.7561083
+      },
+      "id": "109137",
+      "name": "Tobias Steppes",
+      "position": "OT",
+      "ranking": 434,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "Lancaster",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2024
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141665",
+    "recruiting": {
+      "athleteId": "5141665",
+      "city": "Brownsboro",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48213",
+        "latitude": 32.3023706,
+        "longitude": -95.6135715
+      },
+      "id": "106500",
+      "name": "Micah Strickland",
+      "position": "CB",
+      "ranking": 310,
+      "rating": 0.9044,
+      "recruitType": "HighSchool",
+      "school": "Brownsboro",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 28,
+        "position": "CB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5280610",
+    "recruiting": {
+      "athleteId": "5280610",
+      "city": "Fulshear",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.690292,
+        "longitude": -95.8996261
+      },
+      "id": "104388",
+      "name": "Zach Taylor",
+      "position": "S",
+      "ranking": 527,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Katy Jordan",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 182,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151167",
+    "recruiting": {
+      "athleteId": "5151167",
+      "city": "Duncanville",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "112111",
+      "name": "Ben Taylor-Whitfield",
+      "position": "OT",
+      "ranking": 863,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5154286",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2024,
+        "team": "Missouri State",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5252194",
+    "recruiting": {
+      "athleteId": "5252194",
+      "city": "Iowa Colony",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "D",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "106087",
+      "name": "Will Terry",
+      "position": "LS",
+      "ranking": 3329,
+      "rating": 0.8089,
+      "recruitType": "HighSchool",
+      "school": "Iowa Colony",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 222,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161853",
+    "recruiting": {
+      "athleteId": "5161853",
+      "city": "Duncanville",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "193392",
+      "name": "Ace Theus",
+      "position": "WR",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5204686",
+    "recruiting": {
+      "athleteId": "5204686",
+      "city": "Benton",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "01085",
+        "latitude": 32.308087,
+        "longitude": -86.8175307683269
+      },
+      "id": "107014",
+      "name": "Witten Van Hoy",
+      "position": "OT",
+      "ranking": 829,
+      "rating": 0.8736,
+      "recruitType": "HighSchool",
+      "school": "Benton",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "TCU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5120735",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2023,
+        "team": "Colorado School of Mines",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5391235",
+    "recruiting": null,
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222215",
+    "recruiting": {
+      "athleteId": "5222215",
+      "city": "Monroe",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "22073",
+        "latitude": 32.5093109,
+        "longitude": -92.1193012
+      },
+      "id": "107670",
+      "name": "Brody Whatley",
+      "position": "DL",
+      "ranking": 1560,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Neville",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141752",
+    "recruiting": {
+      "athleteId": "5141752",
+      "city": "Pearland",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "220902",
+      "name": "Anthony Williams",
+      "position": "LB",
+      "ranking": 795,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Shadow Creek",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296124",
+    "recruiting": {
+      "athleteId": "5296124",
+      "city": "Humble",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9988312,
+        "longitude": -95.2621553
+      },
+      "id": "106292",
+      "name": "Chad Woodfork",
+      "position": "EDGE",
+      "ranking": 101,
+      "rating": 0.9499,
+      "recruitType": "HighSchool",
+      "school": "Summer Creek",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "TCU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4871066",
+    "recruiting": {
+      "athleteId": "4871066",
+      "city": "Denton",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "111485",
+      "name": "Ryan Yaites",
+      "position": "S",
+      "ranking": 265,
+      "rating": 0.9113,
+      "recruitType": "HighSchool",
+      "school": "Denton Guyer",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "TCU",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2023,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2024,
+        "team": "California",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2026,
+        "team": "TCU",
+        "year": 4
+      }
+    ]
+  }
+]

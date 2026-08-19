@@ -1,0 +1,3784 @@
+[
+  {
+    "playerId": "5294561",
+    "recruiting": {
+      "athleteId": "5294561",
+      "city": "Burlington",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "21015",
+        "latitude": 39.02756,
+        "longitude": -84.7241133
+      },
+      "id": "106668",
+      "name": "Austin Alexander",
+      "position": "DL",
+      "ranking": 478,
+      "rating": 0.89,
+      "recruitType": "HighSchool",
+      "school": "Cooper",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 243,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DE",
+        "season": 2025,
+        "team": "North Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5081838",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2022,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2025,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5195950",
+    "recruiting": {
+      "athleteId": "5195950",
+      "city": "Franklin",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "47187",
+        "latitude": 35.925193,
+        "longitude": -86.8689365
+      },
+      "id": "106767",
+      "name": "Brenden Anes",
+      "position": "LB",
+      "ranking": 573,
+      "rating": 0.8836,
+      "recruitType": "HighSchool",
+      "school": "Page",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tennessee",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394448",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5264761",
+    "recruiting": {
+      "athleteId": "5264761",
+      "city": "Schoolcraft",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "221243",
+      "name": "Jacob Bailey",
+      "position": "OT",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Schoolcraft",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 1
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220157",
+    "recruiting": {
+      "athleteId": "5220157",
+      "city": "Muskegon",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26121",
+        "latitude": 43.2341813,
+        "longitude": -86.2483921
+      },
+      "id": "238993",
+      "name": "Andrew Baker",
+      "position": "LB",
+      "ranking": 3648,
+      "rating": 0.72,
+      "recruitType": "HighSchool",
+      "school": "Mona Shores",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279319",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5300126",
+    "recruiting": {
+      "athleteId": "5300126",
+      "city": "Atlanta",
+      "committedTo": "Presbyterian",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "258485",
+      "name": "Cam'ron Barber",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Mays",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "presbyterian",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "CB",
+        "season": 2025,
+        "team": "Presbyterian",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5326469",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215309",
+    "recruiting": {
+      "athleteId": "5215309",
+      "city": "Rochester",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "27109",
+        "latitude": 42.680588,
+        "longitude": -83.1338214
+      },
+      "id": "108053",
+      "name": "Spencer Beckeman",
+      "position": "OT",
+      "ranking": 2032,
+      "rating": 0.843,
+      "recruitType": "HighSchool",
+      "school": "Stoney Creek",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4687453",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2022,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394435",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5178602",
+    "recruiting": {
+      "athleteId": "5178602",
+      "city": "Detroit",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "110211",
+      "name": "Noah Bishop",
+      "position": "EDGE",
+      "ranking": 1559,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Cass Technical",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296172",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5075962",
+    "recruiting": {
+      "athleteId": "5075962",
+      "city": "Los Angeles",
+      "committedTo": "San Diego State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "112597",
+      "name": "Baylin Brooks",
+      "position": "WR",
+      "ranking": 1371,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Loyola",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "san-diego-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2023,
+        "team": "San Diego State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "San Diego State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5144956",
+    "recruiting": {
+      "athleteId": "5144956",
+      "city": "Brookville",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "36059",
+        "latitude": 39.422222,
+        "longitude": -85.009444
+      },
+      "id": "110952",
+      "name": "Ryan Brotherton",
+      "position": "ATH",
+      "ranking": 2469,
+      "rating": 0.8204,
+      "recruitType": "HighSchool",
+      "school": "East Central",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5167169",
+    "recruiting": {
+      "athleteId": "5167169",
+      "city": "Hammond",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "18089",
+        "latitude": 41.5833658,
+        "longitude": -87.500043
+      },
+      "id": "108431",
+      "name": "Freddy Brown",
+      "position": "LB",
+      "ranking": 2638,
+      "rating": 0.8275,
+      "recruitType": "HighSchool",
+      "school": "Morton",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 208,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5085006",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2022,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394439",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4917858",
+    "recruiting": {
+      "athleteId": "4917858",
+      "city": "Dexter",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "27099",
+        "latitude": 42.3386044,
+        "longitude": -83.8891514
+      },
+      "id": "111418",
+      "name": "Cole Cabana",
+      "position": "RB",
+      "ranking": 173,
+      "rating": 0.9314,
+      "recruitType": "HighSchool",
+      "school": "Dexter",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5216784",
+    "recruiting": {
+      "athleteId": "5216784",
+      "city": "Indianapolis",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "108238",
+      "name": "Gian Carter",
+      "position": "EDGE",
+      "ranking": 2319,
+      "rating": 0.8363,
+      "recruitType": "HighSchool",
+      "school": "Lawrence Central",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 7,
+        "position": "DL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5311782",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220158",
+    "recruiting": {
+      "athleteId": "5220158",
+      "city": "Stevensville",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26021",
+        "latitude": 42.0144871,
+        "longitude": -86.5194654
+      },
+      "id": "238781",
+      "name": "Jake Chellman",
+      "position": "IOL",
+      "ranking": 3414,
+      "rating": 0.76,
+      "recruitType": "HighSchool",
+      "school": "Lakeshore",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5164351",
+    "recruiting": {
+      "athleteId": "5164351",
+      "city": "Lexington",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "21067",
+        "latitude": 38.0464066,
+        "longitude": -84.4970393
+      },
+      "id": "107407",
+      "name": "Aveion Chenault",
+      "position": "WR",
+      "ranking": 1254,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Frederick Douglass",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327555",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5097172",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2022,
+        "team": "VMI",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2023,
+        "team": "VMI",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2024,
+        "team": "VMI",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2025,
+        "team": "VMI",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148828",
+    "recruiting": {
+      "athleteId": "5148828",
+      "city": "Grove City",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 39.8814519,
+        "longitude": -83.0929645
+      },
+      "id": "110752",
+      "name": "Gavin Dabo",
+      "position": "IOL",
+      "ranking": 2206,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "Grove City",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5156344",
+    "recruiting": {
+      "athleteId": "5156344",
+      "city": "Dexter",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "27099",
+        "latitude": 42.3386044,
+        "longitude": -83.8891514
+      },
+      "id": "217417",
+      "name": "Micah Davis",
+      "position": "S",
+      "ranking": 2678,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Dexter",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296164",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5394447",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4912229",
+    "recruiting": {
+      "athleteId": "4912229",
+      "city": "Bolingbrook",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": null,
+      "height": null,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.7003302,
+        "longitude": -88.0717708
+      },
+      "id": "255855",
+      "name": "Palmer Domschke",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Bolingbrook",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": null,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "PK",
+        "season": 2022,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "PK",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "PK",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "PK",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "PK",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5257811",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219267",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4868896",
+    "recruiting": {
+      "athleteId": "4868896",
+      "city": "Indianapolis",
+      "committedTo": "Ball State",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "115741",
+      "name": "DeJuan Echoles Jr.",
+      "position": "LB",
+      "ranking": 3235,
+      "rating": 0.7556,
+      "recruitType": "HighSchool",
+      "school": "Warren Central",
+      "stars": 2,
+      "stateProvince": "IN",
+      "teamSlug": "ball-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DE",
+        "season": 2022,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "DE",
+        "season": 2023,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "DE",
+        "season": 2024,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "DE",
+        "season": 2025,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 31,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5157493",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2025,
+        "team": "Presbyterian",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092242",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4833019",
+    "recruiting": {
+      "athleteId": "4833019",
+      "city": "Pickerington",
+      "committedTo": "Ball State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39045",
+        "latitude": 39.896277299999994,
+        "longitude": -82.77319049748806
+      },
+      "id": "115254",
+      "name": "Dakari Frazier",
+      "position": "DL",
+      "ranking": 1838,
+      "rating": 0.8293,
+      "recruitType": "HighSchool",
+      "school": "Pickerington Central",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "ball-state",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2022,
+        "team": "Ball State",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2023,
+        "team": "Ball State",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2024,
+        "team": "Ball State",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5232069",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DE",
+        "season": 2024,
+        "team": "Long Island University",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DE",
+        "season": 2025,
+        "team": "Long Island University",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5085007",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2022,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394436",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4596437",
+    "recruiting": {
+      "athleteId": "4596437",
+      "city": "Tulsa",
+      "committedTo": "Arkansas",
+      "country": "USA",
+      "grade": "B",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "115931",
+      "name": "AJ Green",
+      "position": "ATH",
+      "ranking": 190,
+      "rating": 0.9235,
+      "recruitType": "HighSchool",
+      "school": "Tulsa Union",
+      "stars": 4,
+      "stateProvince": "OK",
+      "teamSlug": "arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 194,
+      "year": 2021
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2021,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2022,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2023,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2025,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5109794",
+    "recruiting": {
+      "athleteId": "5109794",
+      "city": "Dayton",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39113",
+        "latitude": 39.7589478,
+        "longitude": -84.1916069
+      },
+      "id": "113249",
+      "name": "Dalton Gustwiller",
+      "position": "DL",
+      "ranking": 2112,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "Kettering Fairmont",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394437",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394444",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220161",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394442",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "P",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5282469",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4910683",
+    "recruiting": {
+      "athleteId": "4910683",
+      "city": "Howell",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26093",
+        "latitude": 42.6072552,
+        "longitude": -83.9293952
+      },
+      "id": "115688",
+      "name": "August Johanningsmeier",
+      "position": "TE",
+      "ranking": 2679,
+      "rating": 0.7894,
+      "recruitType": "HighSchool",
+      "school": "Howell",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2022,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394445",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5394441",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5257619",
+    "recruiting": {
+      "athleteId": "5257619",
+      "city": "Bucyrus",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "39033",
+        "latitude": 40.8083909,
+        "longitude": -82.9754649
+      },
+      "id": "108005",
+      "name": "KJ Kotalik",
+      "position": "OT",
+      "ranking": 1971,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Wynford",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220159",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157528",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Presbyterian",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Presbyterian",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5218736",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "South Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296165",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5074245",
+    "recruiting": {
+      "athleteId": "5074245",
+      "city": "Canfield",
+      "committedTo": "Indiana",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39099",
+        "latitude": 41.025059,
+        "longitude": -80.760912
+      },
+      "id": "112350",
+      "name": "Broc Lowry",
+      "position": "QB",
+      "ranking": 1113,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Canfield",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "indiana",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2023,
+        "team": "Indiana",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302873",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291699",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086095",
+    "recruiting": {
+      "athleteId": "5086095",
+      "city": "Navarre",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12113",
+        "latitude": 30.4019789,
+        "longitude": -86.8700821
+      },
+      "id": "109878",
+      "name": "Terence Marshall",
+      "position": "WR",
+      "ranking": 1199,
+      "rating": 0.8608,
+      "recruitType": "HighSchool",
+      "school": "Navarre",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296166",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394438",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5394440",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4816083",
+    "recruiting": {
+      "athleteId": "4816083",
+      "city": "South Bend",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18141",
+        "latitude": 41.6833813,
+        "longitude": -86.2500066
+      },
+      "id": "111670",
+      "name": "Daeh McCullough",
+      "position": "S",
+      "ranking": 418,
+      "rating": 0.8925,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph",
+      "stars": 4,
+      "stateProvince": "IN",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193129",
+    "recruiting": {
+      "athleteId": "5193129",
+      "city": "Chicago",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "110722",
+      "name": "CJ Miles Jr.",
+      "position": "CB",
+      "ranking": 2185,
+      "rating": 0.8311,
+      "recruitType": "HighSchool",
+      "school": "Mount Carmel",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5257316",
+    "recruiting": {
+      "athleteId": "5257316",
+      "city": "Rockford",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17201",
+        "latitude": 43.119721,
+        "longitude": -85.559604
+      },
+      "id": "221905",
+      "name": "Nolan Miller",
+      "position": "IOL",
+      "ranking": 3520,
+      "rating": 0.76,
+      "recruitType": "HighSchool",
+      "school": "Rockford",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150707",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "P",
+        "season": 2023,
+        "team": "Iowa State",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "P",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "P",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "P",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147055",
+    "recruiting": {
+      "athleteId": "5147055",
+      "city": "Lakeland",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12105",
+        "latitude": 28.0394654,
+        "longitude": -81.9498042
+      },
+      "id": "109419",
+      "name": "Carlos Mitchell Jr.",
+      "position": "ATH",
+      "ranking": 720,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Lakeland",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "CB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4709449",
+    "recruiting": {
+      "athleteId": "4709449",
+      "city": "Fort Wayne",
+      "committedTo": "Purdue",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18003",
+        "latitude": 41.0799898,
+        "longitude": -85.1386015
+      },
+      "id": "115214",
+      "name": "Domanick Moon",
+      "position": "LB",
+      "ranking": 1761,
+      "rating": 0.8311,
+      "recruitType": "HighSchool",
+      "school": "Snider",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "purdue",
+      "valueType": "BENCHMARK",
+      "weight": 218,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2022,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2023,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5282264",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4869526",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2022,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5155273",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2023,
+        "team": "VMI",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "VMI",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302874",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5095224",
+    "recruiting": {
+      "athleteId": "5095224",
+      "city": "Los Angeles",
+      "committedTo": "Princeton",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "115093",
+      "name": "Tahj Owens",
+      "position": "RB",
+      "ranking": 1637,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "Loyola",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "princeton",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2022,
+        "team": "Princeton",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2023,
+        "team": "Princeton",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2024,
+        "team": "Princeton",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2025,
+        "team": "Princeton",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5121636",
+    "recruiting": {
+      "athleteId": "5121636",
+      "city": "Leawood",
+      "committedTo": "New Mexico State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 38.966673,
+        "longitude": -94.6169012
+      },
+      "id": "113363",
+      "name": "Adam Parks",
+      "position": "DL",
+      "ranking": 2319,
+      "rating": 0.8163,
+      "recruitType": "HighSchool",
+      "school": "Blue Valley North",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "new-mexico-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2023,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2024,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2025,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5291817",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296169",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LS",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 28,
+        "position": "LS",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5126475",
+    "recruiting": {
+      "athleteId": "5126475",
+      "city": "Starkville",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "28105",
+        "latitude": 33.4503998,
+        "longitude": -88.8183872
+      },
+      "id": "109475",
+      "name": "Trey Petty",
+      "position": "QB",
+      "ranking": 784,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Starkville",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5394446",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "C",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5125739",
+    "recruiting": {
+      "athleteId": "5125739",
+      "city": "Glen Ellyn",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.8775293,
+        "longitude": -88.0670118
+      },
+      "id": "217404",
+      "name": "Joey Pope",
+      "position": "S",
+      "ranking": 2678,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Glenbard West",
+      "stars": 2,
+      "stateProvince": "IL",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302875",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5145473",
+    "recruiting": {
+      "athleteId": "5145473",
+      "city": "Avon",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18063",
+        "latitude": 39.7628227,
+        "longitude": -86.3997168
+      },
+      "id": "110925",
+      "name": "Mason Reynolds",
+      "position": "QB",
+      "ranking": 2448,
+      "rating": 0.8219,
+      "recruitType": "HighSchool",
+      "school": "Avon",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211210",
+    "recruiting": {
+      "athleteId": "5211210",
+      "city": "Fort Wayne",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18003",
+        "latitude": 41.0799898,
+        "longitude": -85.1386015
+      },
+      "id": "108405",
+      "name": "Brady Rhoad",
+      "position": "TE",
+      "ranking": 2612,
+      "rating": 0.8296,
+      "recruitType": "HighSchool",
+      "school": "Carroll",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296174",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5291737",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079700",
+    "recruiting": {
+      "athleteId": "5079700",
+      "city": "Lakewood",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.4819932,
+        "longitude": -81.7981908
+      },
+      "id": "109238",
+      "name": "Ben Roebuck",
+      "position": "OT",
+      "ranking": 542,
+      "rating": 0.8858,
+      "recruitType": "HighSchool",
+      "school": "St. Edward",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5191778",
+    "recruiting": {
+      "athleteId": "5191778",
+      "city": "Mission",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 39.0277832,
+        "longitude": -94.6557914
+      },
+      "id": "110832",
+      "name": "Jeremy Schleicher",
+      "position": "IOL",
+      "ranking": 2355,
+      "rating": 0.8263,
+      "recruitType": "HighSchool",
+      "school": "Bishop Miege",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4882000",
+    "recruiting": {
+      "athleteId": "4882000",
+      "city": "Franklin",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "55079",
+        "latitude": 42.888627,
+        "longitude": -88.0384195
+      },
+      "id": "114596",
+      "name": "Chad Schuster",
+      "position": "OT",
+      "ranking": 1080,
+      "rating": 0.8574,
+      "recruitType": "HighSchool",
+      "school": "Franklin",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2022,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5086219",
+    "recruiting": {
+      "athleteId": "5086219",
+      "city": "Myrtle Beach",
+      "committedTo": "Central Michigan",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "45051",
+        "latitude": 33.6956461,
+        "longitude": -78.8900409
+      },
+      "id": "255782",
+      "name": "Jarvarius Sims",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Myrtle Beach Collegiate",
+      "stars": null,
+      "stateProvince": "SC",
+      "teamSlug": "central-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2022,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2023,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2024,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220155",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5085008",
+    "recruiting": {
+      "athleteId": "5085008",
+      "city": "Indianapolis",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "115679",
+      "name": "Brandon Smith",
+      "position": "DL",
+      "ranking": 2547,
+      "rating": 0.7906,
+      "recruitType": "HighSchool",
+      "school": "Decatur Central",
+      "stars": 2,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2022,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220154",
+    "recruiting": {
+      "athleteId": "5220154",
+      "city": "Fort Wayne",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "18003",
+        "latitude": 41.0799898,
+        "longitude": -85.1386015
+      },
+      "id": "111112",
+      "name": "Braden Steely",
+      "position": "S",
+      "ranking": 2691,
+      "rating": 0.8104,
+      "recruitType": "HighSchool",
+      "school": "Carroll",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327237",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "DE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5153248",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2023,
+        "team": "Eastern Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2024,
+        "team": "Eastern Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219196",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "DT",
+        "season": 2024,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "DT",
+        "season": 2025,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "DT",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5394443",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219059",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2024,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5276960",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296170",
+    "recruiting": {
+      "athleteId": "5296170",
+      "city": "Walled Lake",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.537811,
+        "longitude": -83.4810481
+      },
+      "id": "107950",
+      "name": "Liam Vaughan",
+      "position": "IOL",
+      "ranking": 1929,
+      "rating": 0.8469,
+      "recruitType": "HighSchool",
+      "school": "Walled Lake Western",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296168",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5319138",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4814926",
+    "recruiting": {
+      "athleteId": "4814926",
+      "city": "New Carlisle",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "18141",
+        "latitude": 41.7003231,
+        "longitude": -86.5094621
+      },
+      "id": "234653",
+      "name": "Hunter Whitenack",
+      "position": "OT",
+      "ranking": 1053,
+      "rating": 0.8585,
+      "recruitType": "HighSchool",
+      "school": "New Prairie",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5222651",
+    "recruiting": {
+      "athleteId": "5222651",
+      "city": "Lake Zurich",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17097",
+        "latitude": 42.1969689,
+        "longitude": -88.0934108
+      },
+      "id": "108631",
+      "name": "Jacob Wilk",
+      "position": "OT",
+      "ranking": 2974,
+      "rating": 0.813,
+      "recruitType": "HighSchool",
+      "school": "Lake Zurich",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 1
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4954514",
+    "recruiting": {
+      "athleteId": "4954514",
+      "city": "Indianapolis",
+      "committedTo": "Western Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "112896",
+      "name": "Brennan Wooten",
+      "position": "TE",
+      "ranking": 1688,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Cathedral",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "western-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2023,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2024,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5293876",
+    "recruiting": null,
+    "team": "Western Michigan",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "PK",
+        "season": 2026,
+        "team": "Western Michigan",
+        "year": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "firstDowns",
+    "statValue": 265,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "firstDownsOpponent",
+    "statValue": 217,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fourthDownConversions",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fourthDownConversionsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fourthDowns",
+    "statValue": 16,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fourthDownsOpponent",
+    "statValue": 24,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fumblesLost",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fumblesLostOpponent",
+    "statValue": 2,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fumblesRecovered",
+    "statValue": 2,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "fumblesRecoveredOpponent",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "games",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "interceptions",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "interceptionsOpponent",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "interceptionTDs",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "interceptionTDsOpponent",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "interceptionYards",
+    "statValue": 97,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "interceptionYardsOpponent",
+    "statValue": 125,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "kickReturns",
+    "statValue": 29,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "kickReturnsOpponent",
+    "statValue": 41,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "kickReturnTDs",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "kickReturnTDsOpponent",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "kickReturnYards",
+    "statValue": 795,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "kickReturnYardsOpponent",
+    "statValue": 840,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "netPassingYards",
+    "statValue": 3090,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "netPassingYardsOpponent",
+    "statValue": 2060,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passAttempts",
+    "statValue": 415,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passAttemptsOpponent",
+    "statValue": 381,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passCompletions",
+    "statValue": 258,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passCompletionsOpponent",
+    "statValue": 181,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passesIntercepted",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passesInterceptedOpponent",
+    "statValue": 10,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passingTDs",
+    "statValue": 21,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "passingTDsOpponent",
+    "statValue": 8,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "penalties",
+    "statValue": 87,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "penaltiesOpponent",
+    "statValue": 74,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "penaltyYards",
+    "statValue": 778,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "penaltyYardsOpponent",
+    "statValue": 657,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "possessionTime",
+    "statValue": 26101,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "possessionTimeOpponent",
+    "statValue": 20699,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "puntReturns",
+    "statValue": 18,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "puntReturnsOpponent",
+    "statValue": 15,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "puntReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "puntReturnTDsOpponent",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "puntReturnYards",
+    "statValue": 205,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "puntReturnYardsOpponent",
+    "statValue": 161,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "rushingAttempts",
+    "statValue": 491,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "rushingAttemptsOpponent",
+    "statValue": 437,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "rushingTDs",
+    "statValue": 27,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "rushingTDsOpponent",
+    "statValue": 12,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "rushingYards",
+    "statValue": 2057,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "rushingYardsOpponent",
+    "statValue": 1589,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "thirdDownConversions",
+    "statValue": 86,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "thirdDownConversionsOpponent",
+    "statValue": 50,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "thirdDowns",
+    "statValue": 186,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "thirdDownsOpponent",
+    "statValue": 182,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "totalYards",
+    "statValue": 5147,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "totalYardsOpponent",
+    "statValue": 3649,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "turnovers",
+    "statValue": 16,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2015,
+    "statName": "turnoversOpponent",
+    "statValue": 12,
+    "team": "Michigan"
+  }
+]

@@ -1,0 +1,4098 @@
+[
+  {
+    "playerId": "5393663",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5157305",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5327264",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5212654",
+    "recruiting": {
+      "athleteId": "5212654",
+      "city": "Rolesville",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.9232862,
+        "longitude": -78.4573914
+      },
+      "id": "258357",
+      "name": "Braden Atkinson",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Rolesville",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146718",
+    "recruiting": {
+      "athleteId": "5146718",
+      "city": "Andover",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "33013",
+        "latitude": 43.4366616,
+        "longitude": -71.8197481
+      },
+      "id": "109538",
+      "name": "Exodus Ayers",
+      "position": "ATH",
+      "ranking": 852,
+      "rating": 0.8725,
+      "recruitType": "HighSchool",
+      "school": "Proctor Academy",
+      "stars": 3,
+      "stateProvince": "NH",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5393668",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5157302",
+    "recruiting": {
+      "athleteId": "5157302",
+      "city": "Roseburg",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "41019",
+        "latitude": 43.216505,
+        "longitude": -123.3417381
+      },
+      "id": "217506",
+      "name": "Tiger Black",
+      "position": "EDGE",
+      "ranking": 2811,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Roseburg",
+      "stars": 2,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "DT",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "DT",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5085886",
+    "recruiting": {
+      "athleteId": "5085886",
+      "city": "Portland",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "41051",
+        "latitude": 45.5202471,
+        "longitude": -122.6741949
+      },
+      "id": "234823",
+      "name": "Tyree Blake",
+      "position": "LB",
+      "ranking": 2202,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Portland Jesuit",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5157294",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870629",
+    "recruiting": {
+      "athleteId": "4870629",
+      "city": "Mesa",
+      "committedTo": "BYU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4151117,
+        "longitude": -111.8314773
+      },
+      "id": "111693",
+      "name": "Jackson Bowers",
+      "position": "TE",
+      "ranking": 448,
+      "rating": 0.8905,
+      "recruitType": "HighSchool",
+      "school": "Mountain View",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "byu",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2023,
+        "team": "BYU",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2024,
+        "team": "BYU",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5278665",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079357",
+    "recruiting": {
+      "athleteId": "5079357",
+      "city": "Calabasas",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1446643,
+        "longitude": -118.6440973
+      },
+      "id": "108836",
+      "name": "Aaron Butler",
+      "position": "WR",
+      "ranking": 138,
+      "rating": 0.9389,
+      "recruitType": "HighSchool",
+      "school": "Calabasas",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Texas",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Texas",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5152802",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2024,
+        "team": "Sacramento State",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5157296",
+    "recruiting": {
+      "athleteId": "5157296",
+      "city": "Portland",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "41051",
+        "latitude": 45.5202471,
+        "longitude": -122.6741949
+      },
+      "id": "217522",
+      "name": "Milan Clark",
+      "position": "CB",
+      "ranking": 2811,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Grant",
+      "stars": 2,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5393659",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5257310",
+    "recruiting": {
+      "athleteId": "5257310",
+      "city": "Cypress",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9691116,
+        "longitude": -95.6971686
+      },
+      "id": "107662",
+      "name": "Maddox Conway",
+      "position": "OT",
+      "ranking": 1558,
+      "rating": 0.8552,
+      "recruitType": "HighSchool",
+      "school": "Cy Ranch",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5325698",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216545",
+    "recruiting": {
+      "athleteId": "5216545",
+      "city": "Henderson",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "107809",
+      "name": "Sean Craig",
+      "position": "S",
+      "ranking": 1703,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5077302",
+    "recruiting": {
+      "athleteId": "5077302",
+      "city": "Sammamish",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6088445,
+        "longitude": -122.0423067
+      },
+      "id": "112888",
+      "name": "TJ Crandall",
+      "position": "CB",
+      "ranking": 1680,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Skyline",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2023,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4431247",
+    "recruiting": {
+      "athleteId": "4431247",
+      "city": "Santa Ana",
+      "committedTo": "USC",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "115790",
+      "name": "Raesjon Davis",
+      "position": "LB",
+      "ranking": 49,
+      "rating": 0.9746,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "usc",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2021
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2021,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2022,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2023,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2024,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393662",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290256",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5103443",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "WR",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5126526",
+    "recruiting": {
+      "athleteId": "5126526",
+      "city": "Graham",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "53053",
+        "latitude": 47.0395996,
+        "longitude": -122.2785729
+      },
+      "id": "237888",
+      "name": "Malachi Durant",
+      "position": "WR",
+      "ranking": 705,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Graham-Kapowsin",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4898202",
+    "recruiting": {
+      "athleteId": "4898202",
+      "city": "San Mateo",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06081",
+        "latitude": 37.5439684,
+        "longitude": -122.3066789
+      },
+      "id": "114831",
+      "name": "Nathan Elu",
+      "position": "OT",
+      "ranking": 1335,
+      "rating": 0.8481,
+      "recruitType": "HighSchool",
+      "school": "Junipero Serra",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393666",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5086979",
+    "recruiting": {
+      "athleteId": "5086979",
+      "city": "Toronto",
+      "committedTo": "Virginia Tech",
+      "country": "CAN",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "112809",
+      "name": "Ish Findlayter",
+      "position": "EDGE",
+      "ranking": 1601,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Clarkson Football North",
+      "stars": 3,
+      "stateProvince": "ON",
+      "teamSlug": "virginia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2023,
+        "team": "Virginia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2024,
+        "team": "Virginia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2025,
+        "team": "Duquesne",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5207797",
+    "recruiting": {
+      "athleteId": "5207797",
+      "city": "Cypress",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9691116,
+        "longitude": -95.6971686
+      },
+      "id": "107035",
+      "name": "Niklas Fisher",
+      "position": "EDGE",
+      "ranking": 857,
+      "rating": 0.8728,
+      "recruitType": "HighSchool",
+      "school": "Cy Ranch",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 99,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193554",
+    "recruiting": {
+      "athleteId": "5193554",
+      "city": "Prineville",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "41013",
+        "latitude": 44.2998261,
+        "longitude": -120.834972
+      },
+      "id": "109942",
+      "name": "Eddie Freauff",
+      "position": "ATH",
+      "ranking": 1293,
+      "rating": 0.8585,
+      "recruitType": "HighSchool",
+      "school": "Crook County",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5325545",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214560",
+    "recruiting": {
+      "athleteId": "5214560",
+      "city": "Henderson",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "107094",
+      "name": "Trey Glasper",
+      "position": "ATH",
+      "ranking": 917,
+      "rating": 0.8708,
+      "recruitType": "HighSchool",
+      "school": "Green Valley",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209304",
+    "recruiting": {
+      "athleteId": "5209304",
+      "city": "Hanford",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "06031",
+        "latitude": 36.3274502,
+        "longitude": -119.6456844
+      },
+      "id": "107320",
+      "name": "Kourdey Glass",
+      "position": "RB",
+      "ranking": 1161,
+      "rating": 0.8642,
+      "recruitType": "HighSchool",
+      "school": "Hanford",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218523",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5225765",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5293573",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Alabama",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157306",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5167313",
+    "recruiting": {
+      "athleteId": "5167313",
+      "city": "Corona",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "110353",
+      "name": "Cornell Hatcher",
+      "position": "RB",
+      "ranking": 1741,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5193051",
+    "recruiting": {
+      "athleteId": "5193051",
+      "city": "Eugene",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "41039",
+        "latitude": 44.0505054,
+        "longitude": -123.0950506
+      },
+      "id": "238059",
+      "name": "Will Haverland",
+      "position": "EDGE",
+      "ranking": 2232,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Sheldon",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5393667",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4872750",
+    "recruiting": {
+      "athleteId": "4872750",
+      "city": "Tenino",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "114687",
+      "name": "Takari Hickle",
+      "position": "DL",
+      "ranking": 1168,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Tenino",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5297783",
+    "recruiting": {
+      "athleteId": "5297783",
+      "city": "Portland",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "41051",
+        "latitude": 45.5202471,
+        "longitude": -122.6741949
+      },
+      "id": "221494",
+      "name": "Jaylen Hill",
+      "position": "DL",
+      "ranking": 2994,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Grant",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 91,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685395",
+    "recruiting": {
+      "athleteId": "4685395",
+      "city": "New Orleans",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "114071",
+      "name": "Tygee Hill",
+      "position": "DL",
+      "ranking": 522,
+      "rating": 0.8826,
+      "recruitType": "HighSchool",
+      "school": "Edna Karr",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2022,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2023,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5189540",
+    "recruiting": {
+      "athleteId": "5189540",
+      "city": "Alpharetta",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "109751",
+      "name": "Tyjai Hopper",
+      "position": "S",
+      "ranking": 1081,
+      "rating": 0.8652,
+      "recruitType": "HighSchool",
+      "school": "Alpharetta",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5225274",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5120455",
+    "recruiting": {
+      "athleteId": "5120455",
+      "city": "Pompano Beach",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.2378597,
+        "longitude": -80.1247667
+      },
+      "id": "112480",
+      "name": "Harlem Howard",
+      "position": "S",
+      "ranking": 1245,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Blanche Ely",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222546",
+    "recruiting": {
+      "athleteId": "5222546",
+      "city": "North Las Vegas",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.2005843,
+        "longitude": -115.1215844
+      },
+      "id": "107994",
+      "name": "Jeremiah Ioane",
+      "position": "LB",
+      "ranking": 1971,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 55,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5230871",
+    "recruiting": {
+      "athleteId": "5230871",
+      "city": "Henderson",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "107918",
+      "name": "Skyler Jackson",
+      "position": "ATH",
+      "ranking": 1881,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5225293",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296163",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Western Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393656",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5393660",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216314",
+    "recruiting": {
+      "athleteId": "5216314",
+      "city": "Concord",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.9768525,
+        "longitude": -122.0335624
+      },
+      "id": "107743",
+      "name": "Logan Knapp",
+      "position": "EDGE",
+      "ranking": 1629,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Clayton Valley",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216707",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5393665",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5012117",
+    "recruiting": {
+      "athleteId": "5012117",
+      "city": "Hollywood",
+      "committedTo": "Indiana",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "112451",
+      "name": "Will Larkins",
+      "position": "IOL",
+      "ranking": 1220,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "indiana",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Indiana",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Georgia State",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083176",
+    "recruiting": {
+      "athleteId": "5083176",
+      "city": "Lake Oswego",
+      "committedTo": "Idaho",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "41005",
+        "latitude": 45.4206749,
+        "longitude": -122.6706498
+      },
+      "id": "234778",
+      "name": "Dylan Layne",
+      "position": "ATH",
+      "ranking": 2000,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Lake Oswego",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "idaho",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2022,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2023,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2024,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2025,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5393657",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5289510",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218525",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DT",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5216696",
+    "recruiting": {
+      "athleteId": "5216696",
+      "city": "Plano",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.0136764,
+        "longitude": -96.6925096
+      },
+      "id": "107707",
+      "name": "David Madison",
+      "position": "CB",
+      "ranking": 1602,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Prestonwood Christian",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5165051",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2025,
+        "team": "Portland State",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5300309",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291971",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4879572",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5158139",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2023,
+        "team": "UL Monroe",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685497",
+    "recruiting": {
+      "athleteId": "4685497",
+      "city": "DeSoto",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6061241,
+        "longitude": -96.865612653687
+      },
+      "id": "116134",
+      "name": "Byron Murphy II",
+      "position": "DL",
+      "ranking": 393,
+      "rating": 0.8904,
+      "recruitType": "HighSchool",
+      "school": "DeSoto",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2021
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2022,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2023,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2024,
+        "team": "Duke",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5216567",
+    "recruiting": {
+      "athleteId": "5216567",
+      "city": "Santa Rosa",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06097",
+        "latitude": 38.4404925,
+        "longitude": -122.7141049
+      },
+      "id": "107906",
+      "name": "Jesse Myers",
+      "position": "EDGE",
+      "ranking": 1881,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Newman",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 45,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917981",
+    "recruiting": {
+      "athleteId": "4917981",
+      "city": "Grand Prairie",
+      "committedTo": "Vanderbilt",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.657368000000005,
+        "longitude": -97.02846624175038
+      },
+      "id": "112201",
+      "name": "AJ Newberry",
+      "position": "RB",
+      "ranking": 958,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "South Grand Prairie",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "vanderbilt",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2023,
+        "team": "Vanderbilt",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2024,
+        "team": "Vanderbilt",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Vanderbilt",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5160400",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "WR",
+        "season": 2023,
+        "team": "Nevada",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161892",
+    "recruiting": {
+      "athleteId": "5161892",
+      "city": "New Braunfels",
+      "committedTo": "Texas State",
+      "country": "USA",
+      "grade": null,
+      "height": 66,
+      "hometownInfo": {
+        "fipsCode": "48091",
+        "latitude": 29.7028266,
+        "longitude": -98.1257348
+      },
+      "id": "256605",
+      "name": "Xayvion Noland",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Canyon",
+      "stars": null,
+      "stateProvince": "TX",
+      "teamSlug": "texas-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "Texas State",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "UT Rio Grande Valley",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5210497",
+    "recruiting": {
+      "athleteId": "5210497",
+      "city": "West Linn",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "41005",
+        "latitude": 45.3656761,
+        "longitude": -122.6123141
+      },
+      "id": "107473",
+      "name": "Jake Normoyle",
+      "position": "IOL",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "West Linn",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4769838",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2022,
+        "team": "Northern Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2023,
+        "team": "Northern Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153818",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2024,
+        "team": "Maine",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2025,
+        "team": "Duquesne",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5161639",
+    "recruiting": {
+      "athleteId": "5161639",
+      "city": "Chantilly",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "51059",
+        "latitude": 38.8941543,
+        "longitude": -77.4311513
+      },
+      "id": "256538",
+      "name": "Jadyn Oh",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Chantilly",
+      "stars": null,
+      "stateProvince": "VA",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2023,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2025,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5228037",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "PK",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "PK",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "PK",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5088952",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2022,
+        "team": "Utah Tech",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2024,
+        "team": "Utah Tech",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2025,
+        "team": "Utah Tech",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148711",
+    "recruiting": {
+      "athleteId": "5148711",
+      "city": "Rogers",
+      "committedTo": "Wyoming",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "27053",
+        "latitude": 45.1888617,
+        "longitude": -93.5527318
+      },
+      "id": "110957",
+      "name": "Adrian Onyiego",
+      "position": "EDGE",
+      "ranking": 2469,
+      "rating": 0.8204,
+      "recruitType": "HighSchool",
+      "school": "Rogers",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "wyoming",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wyoming",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327660",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5393664",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5158453",
+    "recruiting": {
+      "athleteId": "5158453",
+      "city": "Layton",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "49011",
+        "latitude": 41.0751048,
+        "longitude": -111.9741925
+      },
+      "id": "111962",
+      "name": "Tevita Pome'e",
+      "position": "DL",
+      "ranking": 718,
+      "rating": 0.8753,
+      "recruitType": "HighSchool",
+      "school": "Layton Christian Academy",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "DT",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "DT",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5157299",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209415",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5393661",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5085883",
+    "recruiting": {
+      "athleteId": "5085883",
+      "city": "Lake Oswego",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "41005",
+        "latitude": 45.4206749,
+        "longitude": -122.6706498
+      },
+      "id": "234995",
+      "name": "Jake Reichle",
+      "position": "LB",
+      "ranking": 2364,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Lakeridge",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5169050",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2025,
+        "team": "Stephen F. Austin",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4700139",
+    "recruiting": {
+      "athleteId": "4700139",
+      "city": "Olympia",
+      "committedTo": "Minnesota",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "53067",
+        "latitude": 47.0451022,
+        "longitude": -122.8950075
+      },
+      "id": "116320",
+      "name": "Jacob Schuster",
+      "position": "DL",
+      "ranking": 580,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Tumwater",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "minnesota",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2021
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "DT",
+        "season": 2021,
+        "team": "Minnesota",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DT",
+        "season": 2022,
+        "team": "Minnesota",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DT",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DT",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DT",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4875851",
+    "recruiting": {
+      "athleteId": "4875851",
+      "city": "Ogden",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "49057",
+        "latitude": 41.2230048,
+        "longitude": -111.9738429
+      },
+      "id": "114922",
+      "name": "Kord Shaw",
+      "position": "ATH",
+      "ranking": 1424,
+      "rating": 0.8448,
+      "recruitType": "HighSchool",
+      "school": "Bonneville",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5229579",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Bethune-Cookman",
+        "year": 3
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5143924",
+    "recruiting": {
+      "athleteId": "5143924",
+      "city": "Bixby",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 35.9420431,
+        "longitude": -95.8833235
+      },
+      "id": "106397",
+      "name": "Broderick Shull",
+      "position": "OT",
+      "ranking": 206,
+      "rating": 0.9227,
+      "recruitType": "HighSchool",
+      "school": "Bixby",
+      "stars": 4,
+      "stateProvince": "OK",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 1
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216840",
+    "recruiting": {
+      "athleteId": "5216840",
+      "city": "Crane",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107504",
+      "name": "Cody Siegner",
+      "position": "TE",
+      "ranking": 1396,
+      "rating": 0.8597,
+      "recruitType": "HighSchool",
+      "school": "Crane Union",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5306768",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5218519",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "LB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869821",
+    "recruiting": {
+      "athleteId": "4869821",
+      "city": "Orchard Lake",
+      "committedTo": "Central Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.5869558,
+        "longitude": -83.36895696372882
+      },
+      "id": "115419",
+      "name": "DeCorion Temple",
+      "position": "TE",
+      "ranking": 2083,
+      "rating": 0.8194,
+      "recruitType": "HighSchool",
+      "school": "Orchard Lake St. Mary's",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "central-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "TE",
+        "season": 2022,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "TE",
+        "season": 2023,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "TE",
+        "season": 2024,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "TE",
+        "season": 2025,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "TE",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5160504",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210431",
+    "recruiting": {
+      "athleteId": "5210431",
+      "city": "Vancouver",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "53011",
+        "latitude": 45.6306954,
+        "longitude": -122.6744557
+      },
+      "id": "107871",
+      "name": "Noah Thomas",
+      "position": "OT",
+      "ranking": 1850,
+      "rating": 0.8494,
+      "recruitType": "HighSchool",
+      "school": "Skyview",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4812344",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5258366",
+    "recruiting": {
+      "athleteId": "5258366",
+      "city": "Richmond",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.5821811,
+        "longitude": -95.7607832
+      },
+      "id": "107289",
+      "name": "Blake Thompson",
+      "position": "CB",
+      "ranking": 1122,
+      "rating": 0.865,
+      "recruitType": "HighSchool",
+      "school": "Richmond Randle",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5075593",
+    "recruiting": {
+      "athleteId": "5075593",
+      "city": "Waianae",
+      "committedTo": "Nevada",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.446678,
+        "longitude": -158.185272
+      },
+      "id": "113299",
+      "name": "Josiah Timoteo",
+      "position": "IOL",
+      "ranking": 2158,
+      "rating": 0.8204,
+      "recruitType": "HighSchool",
+      "school": "Waianae",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "nevada",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Nevada",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Nevada",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5090566",
+    "recruiting": {
+      "athleteId": "5090566",
+      "city": "Rohnert Park",
+      "committedTo": "California",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06097",
+        "latitude": 38.3396367,
+        "longitude": -122.7010984
+      },
+      "id": "112461",
+      "name": "Sai Vadrawale III",
+      "position": "CB",
+      "ranking": 1232,
+      "rating": 0.8564,
+      "recruitType": "HighSchool",
+      "school": "Rancho Cotate",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "california",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2023,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5157295",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4907940",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5228040",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216841",
+    "recruiting": {
+      "athleteId": "5216841",
+      "city": "Lewisville",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.046233,
+        "longitude": -96.994174
+      },
+      "id": "108350",
+      "name": "Zephen Walker",
+      "position": "S",
+      "ranking": 2427,
+      "rating": 0.8311,
+      "recruitType": "HighSchool",
+      "school": "Lewisville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141751",
+    "recruiting": {
+      "athleteId": "5141751",
+      "city": "Mukilteo",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "53061",
+        "latitude": 47.9474034,
+        "longitude": -122.3036992
+      },
+      "id": "107183",
+      "name": "T'Andre Waverly",
+      "position": "ATH",
+      "ranking": 1024,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "Kamiak",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 1
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5207644",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5393658",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DB",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157297",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "P",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "P",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "P",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 38,
+        "position": "P",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5192424",
+    "recruiting": null,
+    "team": "Oregon State",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LS",
+        "season": 2024,
+        "team": "Memphis",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "LS",
+        "season": 2025,
+        "team": "Memphis",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "LS",
+        "season": 2026,
+        "team": "Oregon State",
+        "year": 2
+      }
+    ]
+  }
+]

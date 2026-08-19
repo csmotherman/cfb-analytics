@@ -121,9 +121,6 @@ class CfbdClient:
             "/plays",
             {"year": season, "week": week, "seasonType": season_type, "classification": CLASSIFICATION},
         )
-<<<<<<< HEAD
-=======
-
     def lines(self, season: int, week: int, season_type: str = "regular") -> CfbdResponse:
         """Return the CFBD betting-line feed for one season/week partition.
 
@@ -143,6 +140,43 @@ class CfbdClient:
         responsible for retaining only rows whose classification is ``fbs``.
         """
         return self.get_json("/teams", {})
+
+    def fbs_teams(self, season: int) -> CfbdResponse:
+        return self.get_json("/teams/fbs", {"year": season})
+
+    def national_roster(self, season: int) -> CfbdResponse:
+        return self.get_json("/roster", {"year": season})
+
+    def transfer_portal(self, season: int) -> CfbdResponse:
+        return self.get_json("/player/portal", {"year": season})
+
+    def coaches(self, season: int) -> CfbdResponse:
+        return self.get_json("/coaches", {"year": season})
+
+    def player_season_stats(self, season: int, team: str | None = None) -> CfbdResponse:
+        return self.get_json("/stats/player/season", {"year": season, "team": team})
+
+    def game_player_stats(self, season: int, team: str) -> CfbdResponse:
+        return self.get_json("/games/players", {"year": season, "team": team})
+
+    def game_team_stats(self, season: int, team: str) -> CfbdResponse:
+        return self.get_json("/games/teams", {"year": season, "team": team})
+
+    def roster(self, season: int, team: str) -> CfbdResponse:
+        """Return the source roster for one team and season."""
+        return self.get_json("/roster", {"year": season, "team": team})
+
+    def team_games(self, season: int, team: str) -> CfbdResponse:
+        """Return scheduled and completed games for one team and season."""
+        return self.get_json("/games", {"year": season, "team": team})
+
+    def recruiting_players(self, season: int, team: str | None = None) -> CfbdResponse:
+        """Return recruiting prospects for a class, optionally limited to one team."""
+        return self.get_json("/recruiting/players", {"year": season, "team": team})
+
+    def recruiting_team(self, season: int, team: str | None = None) -> CfbdResponse:
+        """Return team recruiting rankings for one class, optionally one team."""
+        return self.get_json("/recruiting/teams", {"year": season, "team": team})
 
     def usage(self, *, days: int = 7, limit: int = 10) -> CfbdResponse:
         """Return authenticated call usage for lightweight quota monitoring."""
@@ -189,4 +223,3 @@ class CfbdClient:
                 "excludeGarbageTime": exclude_garbage_time,
             },
         )
->>>>>>> 28a9c53 (new design)

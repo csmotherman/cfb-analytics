@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "players.json": "e7e1e2f831f04baf06a268a496336b49d9f3abce2a408e5a601cb5ace88874a5",
+    "teams.json": "1d8b70c24df59ba43d041bd2f3fe104fa9bf130f1239b32a4a8a5397bbb61674"
+  },
+  "playerRows": 3987,
+  "publishedAtUtc": "2026-08-19T00:14:17.207515+00:00",
+  "season": 2026,
+  "sourceUrls": [
+    "https://api.collegefootballdata.com/recruiting/players?year=2026",
+    "https://api.collegefootballdata.com/recruiting/teams?year=2026"
+  ],
+  "teamRows": 221,
+  "valueType": "BENCHMARK",
+  "version": "national-recruiting-v1"
+}

@@ -1,0 +1,4641 @@
+[
+  {
+    "playerId": "5086201",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LS",
+        "season": 2022,
+        "team": "Fordham",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LS",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LS",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209808",
+    "recruiting": {
+      "athleteId": "5209808",
+      "city": "Boca Raton",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.3586885,
+        "longitude": -80.0830984
+      },
+      "id": "108511",
+      "name": "Damon Allen",
+      "position": "S",
+      "ranking": 2712,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "West Boca Raton",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5255614",
+    "recruiting": {
+      "athleteId": "5255614",
+      "city": "Lilburn",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.8901036,
+        "longitude": -84.1429719
+      },
+      "id": "107957",
+      "name": "Rain Banick",
+      "position": "IOL",
+      "ranking": 1935,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Providence Christian Academy",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5122111",
+    "recruiting": {
+      "athleteId": "5122111",
+      "city": "New Orleans",
+      "committedTo": "Troy",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "256595",
+      "name": "Deshaun Batiste",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "John F. Kennedy",
+      "stars": null,
+      "stateProvince": "LA",
+      "teamSlug": "troy",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2023,
+        "team": "Troy",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2024,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4921426",
+    "recruiting": {
+      "athleteId": "4921426",
+      "city": "New Orleans",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "111725",
+      "name": "Jonathan Bax",
+      "position": "EDGE",
+      "ranking": 478,
+      "rating": 0.8882,
+      "recruitType": "HighSchool",
+      "school": "Edna Karr",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390434",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219684",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5240144",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5203855",
+    "recruiting": {
+      "athleteId": "5203855",
+      "city": "Pompano Beach",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.2378597,
+        "longitude": -80.1247667
+      },
+      "id": "108195",
+      "name": "Nimari Brantley",
+      "position": "DL",
+      "ranking": 2272,
+      "rating": 0.8383,
+      "recruitType": "HighSchool",
+      "school": "Coconut Creek",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219854",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2024,
+        "team": "Stetson",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2025,
+        "team": "Stetson",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5327479",
+    "recruiting": {
+      "athleteId": "5327479",
+      "city": "Greensboro",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "37081",
+        "latitude": 36.0726355,
+        "longitude": -79.7919754
+      },
+      "id": "213300",
+      "name": "Aedyn Buchanan",
+      "position": "OT",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Page",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 262,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4874626",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2021,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2022,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2023,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159501",
+    "recruiting": {
+      "athleteId": "5159501",
+      "city": "Omaha",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "31055",
+        "latitude": 41.2587459,
+        "longitude": -95.9383758
+      },
+      "id": "256491",
+      "name": "Noah Bustard",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Elkhorn South",
+      "stars": null,
+      "stateProvince": "NE",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2023,
+        "team": "Nebraska",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2024,
+        "team": "Nebraska",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390431",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5225888",
+    "recruiting": {
+      "athleteId": "5225888",
+      "city": "Canton",
+      "committedTo": "Houston Christian",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13057",
+        "latitude": 34.2367621,
+        "longitude": -84.4907621
+      },
+      "id": "257535",
+      "name": "Reed Chandley",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Cherokee",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "houston-christian",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "P",
+        "season": 2024,
+        "team": "Houston Christian",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "P",
+        "season": 2025,
+        "team": "Georgia State",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "P",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222535",
+    "recruiting": {
+      "athleteId": "5222535",
+      "city": "Miami",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "108070",
+      "name": "Hector Chavez",
+      "position": "LB",
+      "ranking": 2049,
+      "rating": 0.8422,
+      "recruitType": "HighSchool",
+      "school": "Miami Columbus",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327619",
+    "recruiting": {
+      "athleteId": "5327619",
+      "city": "Durango",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "08067",
+        "latitude": 37.2713951,
+        "longitude": -107.8815978
+      },
+      "id": "212325",
+      "name": "Owen Cheatham",
+      "position": "OT",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Durango",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5093222",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2022,
+        "team": "North Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2024,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5121609",
+    "recruiting": {
+      "athleteId": "5121609",
+      "city": "Akron",
+      "committedTo": "Ohio",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.083064,
+        "longitude": -81.518485
+      },
+      "id": "113230",
+      "name": "Jay Crable",
+      "position": "ATH",
+      "ranking": 2085,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Hoban",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "ohio",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2023,
+        "team": "Ohio",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2024,
+        "team": "Ohio",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2025,
+        "team": "Ohio",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147101",
+    "recruiting": {
+      "athleteId": "5147101",
+      "city": "Orange Park",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12019",
+        "latitude": 30.1654707,
+        "longitude": -81.7016346
+      },
+      "id": "110794",
+      "name": "Braden Cunningham",
+      "position": "IOL",
+      "ranking": 2319,
+      "rating": 0.8286,
+      "recruitType": "HighSchool",
+      "school": "Fleming Island",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 322,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302741",
+    "recruiting": {
+      "athleteId": "5302741",
+      "city": "Allen",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1031744,
+        "longitude": -96.6705503
+      },
+      "id": "212804",
+      "name": "Jeremiah Daoud",
+      "position": "QB",
+      "ranking": 2288,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Allen",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295332",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "S",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "S",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870688",
+    "recruiting": {
+      "athleteId": "4870688",
+      "city": "Fort Pierce",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12111",
+        "latitude": 27.4467056,
+        "longitude": -80.3256056
+      },
+      "id": "111663",
+      "name": "Wilky Denaud",
+      "position": "DL",
+      "ranking": 418,
+      "rating": 0.8925,
+      "recruitType": "HighSchool",
+      "school": "John Carroll",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219898",
+    "recruiting": {
+      "athleteId": "5219898",
+      "city": "Plano",
+      "committedTo": "Rice",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.0136764,
+        "longitude": -96.6925096
+      },
+      "id": "110159",
+      "name": "Drew Devillier",
+      "position": "QB",
+      "ranking": 1507,
+      "rating": 0.8528,
+      "recruitType": "HighSchool",
+      "school": "Plano East",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "rice",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2024,
+        "team": "Rice",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2025,
+        "team": "Rice",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685733",
+    "recruiting": {
+      "athleteId": "4685733",
+      "city": "Pickerington",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39045",
+        "latitude": 39.896277299999994,
+        "longitude": -82.77319049748806
+      },
+      "id": "114464",
+      "name": "CJ Doggette Jr.",
+      "position": "DL",
+      "ranking": 934,
+      "rating": 0.863,
+      "recruitType": "HighSchool",
+      "school": "Pickerington Central",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DL",
+        "season": 2022,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DL",
+        "season": 2023,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DL",
+        "season": 2024,
+        "team": "Ohio",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5122002",
+    "recruiting": {
+      "athleteId": "5122002",
+      "city": "Powder Springs",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.8595492,
+        "longitude": -84.683824
+      },
+      "id": "113077",
+      "name": "Ovie Dubre",
+      "position": "IOL",
+      "ranking": 1896,
+      "rating": 0.8317,
+      "recruitType": "HighSchool",
+      "school": "McEachern",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5226224",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "UT Martin",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215500",
+    "recruiting": {
+      "athleteId": "5215500",
+      "city": "Buford",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "108098",
+      "name": "Ethan Ervin",
+      "position": "RB",
+      "ranking": 2073,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295333",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5390418",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4682778",
+    "recruiting": {
+      "athleteId": "4682778",
+      "city": "Fort Wayne",
+      "committedTo": "Indiana",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18003",
+        "latitude": 41.0799898,
+        "longitude": -85.1386015
+      },
+      "id": "116702",
+      "name": "Vince Fiacable",
+      "position": "IOL",
+      "ranking": 969,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Bishop Dwenger",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "indiana",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2021
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2021,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2022,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2023,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2024,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5226137",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2025,
+        "team": "San Diego",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5390428",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5229582",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295335",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079431",
+    "recruiting": {
+      "athleteId": "5079431",
+      "city": "New Orleans",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "109472",
+      "name": "Wallace Foster IV",
+      "position": "CB",
+      "ranking": 784,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Warren Easton",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2024,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5093880",
+    "recruiting": {
+      "athleteId": "5093880",
+      "city": "Powder Springs",
+      "committedTo": "Georgia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.8595492,
+        "longitude": -84.683824
+      },
+      "id": "112174",
+      "name": "Ben Galloway",
+      "position": "OT",
+      "ranking": 929,
+      "rating": 0.8664,
+      "recruitType": "HighSchool",
+      "school": "Hillgrove",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "georgia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 293,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390427",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4683543",
+    "recruiting": {
+      "athleteId": "4683543",
+      "city": "Tampa",
+      "committedTo": "Kansas State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "254965",
+      "name": "RJ Garcia II",
+      "position": "WR",
+      "ranking": 1031,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "Berkeley Prep",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "kansas-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2021
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2021,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2022,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2023,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390423",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390419",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5390429",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5227383",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "P",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 49,
+        "position": "P",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5390420",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295328",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151828",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2023,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4808764",
+    "recruiting": {
+      "athleteId": "4808764",
+      "city": "Miami",
+      "committedTo": "Marshall",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "114620",
+      "name": "Leon Hart Jr.",
+      "position": "LB",
+      "ranking": 1110,
+      "rating": 0.8563,
+      "recruitType": "HighSchool",
+      "school": "Miami Edison",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "marshall",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2022,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2023,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2024,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4917048",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2022,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2023,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5194630",
+    "recruiting": {
+      "athleteId": "5194630",
+      "city": "Collierville",
+      "committedTo": "UTEP",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "47157",
+        "latitude": 35.042036,
+        "longitude": -89.6645266
+      },
+      "id": "111175",
+      "name": "Kam Herring",
+      "position": "CB",
+      "ranking": 2829,
+      "rating": 0.8033,
+      "recruitType": "HighSchool",
+      "school": "Collierville",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "utep",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2024,
+        "team": "UTEP",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146783",
+    "recruiting": {
+      "athleteId": "5146783",
+      "city": "Clearwater",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.9658533,
+        "longitude": -82.8001026
+      },
+      "id": "110048",
+      "name": "Mauricio Hinds",
+      "position": "OT",
+      "ranking": 1391,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Clearwater Academy International",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215467",
+    "recruiting": {
+      "athleteId": "5215467",
+      "city": "Fort Lauderdale",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "107834",
+      "name": "Branden Hoch",
+      "position": "WR",
+      "ranking": 1728,
+      "rating": 0.8506,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4840118",
+    "recruiting": {
+      "athleteId": "4840118",
+      "city": "Rabun Gap",
+      "committedTo": "Virginia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "13241",
+        "latitude": 34.97479,
+        "longitude": -83.30549
+      },
+      "id": "114489",
+      "name": "Tucker Holloway",
+      "position": "WR",
+      "ranking": 967,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Rabun Gap-Nacoochee",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "virginia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2022,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2023,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4838538",
+    "recruiting": {
+      "athleteId": "4838538",
+      "city": "Alpharetta",
+      "committedTo": "Georgia Southern",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "255869",
+      "name": "Zyere Horton",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Milton",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "georgia-southern",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2022,
+        "team": "Georgia Southern",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2023,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5203720",
+    "recruiting": {
+      "athleteId": "5203720",
+      "city": "Fort Lauderdale",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "108247",
+      "name": "Logan Husband",
+      "position": "IOL",
+      "ranking": 2328,
+      "rating": 0.8358,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290752",
+    "recruiting": {
+      "athleteId": "5290752",
+      "city": "Orlando",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "105655",
+      "name": "Ja'Cari Jackson",
+      "position": "S",
+      "ranking": 1806,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "Olympia",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5390424",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5327480",
+    "recruiting": {
+      "athleteId": "5327480",
+      "city": "Wellington",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.63799875,
+        "longitude": -80.25590780868578
+      },
+      "id": "224527",
+      "name": "Travis Jackson",
+      "position": "CB",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Palm Beach Central",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4878788",
+    "recruiting": {
+      "athleteId": "4878788",
+      "city": "Fort Lauderdale",
+      "committedTo": "Villanova",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "118039",
+      "name": "AJ Johnson",
+      "position": "TE",
+      "ranking": 2342,
+      "rating": 0.8056,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "villanova",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2021
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "TE",
+        "season": 2022,
+        "team": "Villanova",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "TE",
+        "season": 2023,
+        "team": "Villanova",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "TE",
+        "season": 2025,
+        "team": "Villanova",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "TE",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4917370",
+    "recruiting": {
+      "athleteId": "4917370",
+      "city": "Fort Mill",
+      "committedTo": "Coastal Carolina",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "45091",
+        "latitude": 35.0073697,
+        "longitude": -80.9450759
+      },
+      "id": "115696",
+      "name": "Brooks Johnson",
+      "position": "WR",
+      "ranking": 2689,
+      "rating": 0.7883,
+      "recruitType": "HighSchool",
+      "school": "Nation Ford",
+      "stars": 2,
+      "stateProvince": "SC",
+      "teamSlug": "coastal-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2022,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2023,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2024,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2025,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5081803",
+    "recruiting": {
+      "athleteId": "5081803",
+      "city": "St. Louis",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "115791",
+      "name": "JK Johnson",
+      "position": "CB",
+      "ranking": 50,
+      "rating": 0.9745,
+      "recruitType": "HighSchool",
+      "school": "De Smet Jesuit",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2021
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2022,
+        "team": "Ohio State",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2023,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2024,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295330",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5225368",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "VMI",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203852",
+    "recruiting": {
+      "athleteId": "5203852",
+      "city": "Miami",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "211999",
+      "name": "Nicsaint Joseph Jr.",
+      "position": "WR",
+      "ranking": 1654,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5082022",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DB",
+        "season": 2022,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DB",
+        "season": 2023,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390432",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "TE",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157509",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147181",
+    "recruiting": {
+      "athleteId": "5147181",
+      "city": "Miami",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "110101",
+      "name": "Char'quez Lee",
+      "position": "LB",
+      "ranking": 1447,
+      "rating": 0.8547,
+      "recruitType": "HighSchool",
+      "school": "Miami Palmetto",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5390435",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5127037",
+    "recruiting": {
+      "athleteId": "5127037",
+      "city": "Miami",
+      "committedTo": "Rutgers",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "109771",
+      "name": "Tyclean Luman",
+      "position": "EDGE",
+      "ranking": 1097,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Miami Norland",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "rutgers",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DB",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5127034",
+    "recruiting": {
+      "athleteId": "5127034",
+      "city": "Miami",
+      "committedTo": "Rutgers",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "109671",
+      "name": "Tycoolhill Luman",
+      "position": "EDGE",
+      "ranking": 990,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Miami Norland",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "rutgers",
+      "valueType": "BENCHMARK",
+      "weight": 239,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215248",
+    "recruiting": {
+      "athleteId": "5215248",
+      "city": "Tampa",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "108165",
+      "name": "Jordan Magwood",
+      "position": "QB",
+      "ranking": 2248,
+      "rating": 0.8397,
+      "recruitType": "HighSchool",
+      "school": "Carrollwood Day",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5127038",
+    "recruiting": {
+      "athleteId": "5127038",
+      "city": "Miami",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "110151",
+      "name": "Gavench Marcelin",
+      "position": "EDGE",
+      "ranking": 1501,
+      "rating": 0.8531,
+      "recruitType": "HighSchool",
+      "school": "Belen Jesuit Prep",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 242,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5390430",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4683409",
+    "recruiting": {
+      "athleteId": "4683409",
+      "city": "Pensacola",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12033",
+        "latitude": 30.421309,
+        "longitude": -87.2169149
+      },
+      "id": "115933",
+      "name": "Damarius McGhee",
+      "position": "CB",
+      "ranking": 192,
+      "rating": 0.9231,
+      "recruitType": "HighSchool",
+      "school": "Pensacola Catholic",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 163,
+      "year": 2021
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2021,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2022,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5304948",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4914830",
+    "recruiting": {
+      "athleteId": "4914830",
+      "city": "Louisville",
+      "committedTo": "Western Kentucky",
+      "country": "USA",
+      "grade": "F",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "21111",
+        "latitude": 38.2542376,
+        "longitude": -85.759407
+      },
+      "id": "235422",
+      "name": "Easton Messer",
+      "position": "WR",
+      "ranking": 2977,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "Christian Academy Of Louisville",
+      "stars": 2,
+      "stateProvince": "KY",
+      "teamSlug": "western-kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2022,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2023,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4878871",
+    "recruiting": {
+      "athleteId": "4878871",
+      "city": "Riviera Beach",
+      "committedTo": "South Dakota",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.7753405,
+        "longitude": -80.0580969
+      },
+      "id": "117809",
+      "name": "Earl Miller Jr.",
+      "position": "DL",
+      "ranking": 2118,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "American Heritage Palm Beach",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "south-dakota",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2021
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DT",
+        "season": 2022,
+        "team": "South Dakota",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DT",
+        "season": 2024,
+        "team": "Bethune-Cookman",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DT",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DT",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869648",
+    "recruiting": {
+      "athleteId": "4869648",
+      "city": "Belle Glade",
+      "committedTo": "Maryland",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.6845104,
+        "longitude": -80.6675577
+      },
+      "id": "114750",
+      "name": "Ja'Kavion Nonar",
+      "position": "OT",
+      "ranking": 1238,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Glades Central",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "maryland",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2022,
+        "team": "Maryland",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2023,
+        "team": "Maryland",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219672",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147103",
+    "recruiting": {
+      "athleteId": "5147103",
+      "city": "Camas",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "53011",
+        "latitude": 45.5911103,
+        "longitude": -122.4122248
+      },
+      "id": "110042",
+      "name": "Carson Osmus",
+      "position": "OT",
+      "ranking": 1391,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Camas",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Washington State",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5390433",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "PK",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5302737",
+    "recruiting": {
+      "athleteId": "5302737",
+      "city": "Sunbury",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39041",
+        "latitude": 40.2425623,
+        "longitude": -82.8590673
+      },
+      "id": "105459",
+      "name": "Owen Pollock",
+      "position": "TE",
+      "ranking": 1914,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Big Walnut",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5144084",
+    "recruiting": {
+      "athleteId": "5144084",
+      "city": "Baltimore",
+      "committedTo": "Maryland",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "110019",
+      "name": "Jahmari Powell-Wonson",
+      "position": "WR",
+      "ranking": 1362,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Baltimore City College",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "maryland",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2024,
+        "team": "Maryland",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "Maryland",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203725",
+    "recruiting": {
+      "athleteId": "5203725",
+      "city": "North Palm Beach",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.8237944,
+        "longitude": -80.05592659756701
+      },
+      "id": "108045",
+      "name": "Landon Rapkiewicz",
+      "position": "IOL",
+      "ranking": 2024,
+      "rating": 0.8433,
+      "recruitType": "HighSchool",
+      "school": "The Benjamin School",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148944",
+    "recruiting": {
+      "athleteId": "5148944",
+      "city": "Vero Beach",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12061",
+        "latitude": 27.6387163,
+        "longitude": -80.3975399
+      },
+      "id": "110303",
+      "name": "Amar Reynolds",
+      "position": "CB",
+      "ranking": 1682,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Vero Beach",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5217206",
+    "recruiting": {
+      "athleteId": "5217206",
+      "city": "Melbourne",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12009",
+        "latitude": 28.0836269,
+        "longitude": -80.6081089
+      },
+      "id": "108091",
+      "name": "Josh Roberts",
+      "position": "EDGE",
+      "ranking": 2057,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "Eau Gallie",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5390426",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084095",
+    "recruiting": {
+      "athleteId": "5084095",
+      "city": "Prattville",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "01001",
+        "latitude": 32.4640245,
+        "longitude": -86.4596966
+      },
+      "id": "235139",
+      "name": "Collin Rogers",
+      "position": "K",
+      "ranking": 2552,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Prattville",
+      "stars": 2,
+      "stateProvince": "AL",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2022,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5078107",
+    "recruiting": {
+      "athleteId": "5078107",
+      "city": "Orlando",
+      "committedTo": "Purdue",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "112505",
+      "name": "Derrick Rogers Jr.",
+      "position": "WR",
+      "ranking": 1271,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Jones",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "purdue",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2023,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5149907",
+    "recruiting": {
+      "athleteId": "5149907",
+      "city": "Germany",
+      "committedTo": "Florida Atlantic",
+      "country": "DEU",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "110514",
+      "name": "Keon Rohe",
+      "position": "OT",
+      "ranking": 1902,
+      "rating": 0.8404,
+      "recruitType": "HighSchool",
+      "school": "Germany",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4912143",
+    "recruiting": {
+      "athleteId": "4912143",
+      "city": "Brunswick",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13127",
+        "latitude": 31.1499528,
+        "longitude": -81.4914894
+      },
+      "id": "114776",
+      "name": "Tyson Rooks",
+      "position": "WR",
+      "ranking": 1261,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Glynn Academy",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302738",
+    "recruiting": {
+      "athleteId": "5302738",
+      "city": "Pembroke Pines",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.02322025,
+        "longitude": -80.34123906625615
+      },
+      "id": "212406",
+      "name": "Alejandro Schmitt",
+      "position": "OT",
+      "ranking": 1881,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "West Broward",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146725",
+    "recruiting": {
+      "athleteId": "5146725",
+      "city": "Orlando",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "110206",
+      "name": "Kaden Shields-Dutton",
+      "position": "RB",
+      "ranking": 1556,
+      "rating": 0.8514,
+      "recruitType": "HighSchool",
+      "school": "Edgewater",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159365",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2024,
+        "team": "Western Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2025,
+        "team": "Western Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4837215",
+    "recruiting": {
+      "athleteId": "4837215",
+      "city": "Tampa",
+      "committedTo": "Bowling Green",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "115415",
+      "name": "Joseph Sipp Jr.",
+      "position": "LB",
+      "ranking": 2079,
+      "rating": 0.8196,
+      "recruitType": "HighSchool",
+      "school": "Hillsborough",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "bowling-green",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2022,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2023,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2024,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869604",
+    "recruiting": {
+      "athleteId": "4869604",
+      "city": "Monroe",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "22073",
+        "latitude": 32.5093109,
+        "longitude": -92.1193012
+      },
+      "id": "114414",
+      "name": "Enyce Sledge",
+      "position": "DL",
+      "ranking": 878,
+      "rating": 0.8652,
+      "recruitType": "HighSchool",
+      "school": "Neville",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "DL",
+        "season": 2022,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DL",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DL",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 62,
+        "position": "DL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295331",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5390422",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4912300",
+    "recruiting": {
+      "athleteId": "4912300",
+      "city": "Pinson",
+      "committedTo": "Liberty",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.706205,
+        "longitude": -86.67007895992774
+      },
+      "id": "115092",
+      "name": "Jayden Sweeney",
+      "position": "S",
+      "ranking": 1637,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "Clay-Chalkville",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "liberty",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2022,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2023,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2024,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151490",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2023,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2024,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2025,
+        "team": "Central Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "RB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390421",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5390425",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5122155",
+    "recruiting": {
+      "athleteId": "5122155",
+      "city": "Sharpsburg",
+      "committedTo": "UL Monroe",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13077",
+        "latitude": 33.3392842,
+        "longitude": -84.6485417
+      },
+      "id": "256805",
+      "name": "Brady Tillman III",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "East Coweta",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "ul-monroe",
+      "valueType": "BENCHMARK",
+      "weight": 199,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2023,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Edward Waters",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4040767",
+    "recruiting": {
+      "athleteId": "4040767",
+      "city": "Orlando",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "113175",
+      "name": "Chris Tooley",
+      "position": "CB",
+      "ranking": 2037,
+      "rating": 0.827,
+      "recruitType": "HighSchool",
+      "school": "Jones",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5227291",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida A&M",
+        "year": 4
+      },
+      {
+        "jersey": 89,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219668",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4920163",
+    "recruiting": {
+      "athleteId": "4920163",
+      "city": "Arlington",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "111885",
+      "name": "Kelby Valsin",
+      "position": "WR",
+      "ranking": 634,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Arlington Bowie",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2023,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869991",
+    "recruiting": {
+      "athleteId": "4869991",
+      "city": "Bowling Green",
+      "committedTo": "Western Kentucky",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "21227",
+        "latitude": 36.9903199,
+        "longitude": -86.4436018
+      },
+      "id": "114374",
+      "name": "Caden Veltkamp",
+      "position": "QB",
+      "ranking": 841,
+      "rating": 0.867,
+      "recruitType": "HighSchool",
+      "school": "South Warren",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "western-kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2022,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2023,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151193",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2023,
+        "team": "UTEP",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "UTEP",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "New Mexico",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5166590",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290508",
+    "recruiting": {
+      "athleteId": "5290508",
+      "city": "Pensacola",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 69.5,
+      "hometownInfo": {
+        "fipsCode": "12033",
+        "latitude": 30.421309,
+        "longitude": -87.2169149
+      },
+      "id": "212475",
+      "name": "Justin Weatherall",
+      "position": "S",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Pine Forest",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290576",
+    "recruiting": {
+      "athleteId": "5290576",
+      "city": "Cantonment",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12033",
+        "latitude": 30.605427,
+        "longitude": -87.344442
+      },
+      "id": "104898",
+      "name": "Elijah West",
+      "position": "WR",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Tate",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5267180",
+    "recruiting": {
+      "athleteId": "5267180",
+      "city": "Fairburn",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.5670562,
+        "longitude": -84.5810418
+      },
+      "id": "105206",
+      "name": "Sean Williams",
+      "position": "CB",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Creekside",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "DB",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5154943",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Lamar",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390417",
+    "recruiting": null,
+    "team": "Florida Atlantic",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Florida Atlantic",
+        "year": 4
+      }
+    ]
+  }
+]

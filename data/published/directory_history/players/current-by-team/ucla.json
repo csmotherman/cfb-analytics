@@ -1,0 +1,5698 @@
+[
+  {
+    "playerId": "5220741",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "LS",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "LS",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "LS",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276950",
+    "recruiting": {
+      "athleteId": "5276950",
+      "city": "Marion",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "25023",
+        "latitude": 41.7001043,
+        "longitude": -70.7628129
+      },
+      "id": "104774",
+      "name": "Marcus Almada",
+      "position": "DL",
+      "ranking": 1030,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Tabor Academy",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209120",
+    "recruiting": {
+      "athleteId": "5209120",
+      "city": "Westlake Village",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "107109",
+      "name": "Stevie Amar Jr.",
+      "position": "TE",
+      "ranking": 936,
+      "rating": 0.8703,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Boston College",
+        "year": 1
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685242",
+    "recruiting": {
+      "athleteId": "4685242",
+      "city": "Miami",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "113695",
+      "name": "Julian Armella",
+      "position": "IOL",
+      "ranking": 152,
+      "rating": 0.9395,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2022,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5150922",
+    "recruiting": {
+      "athleteId": "5150922",
+      "city": "Atmore",
+      "committedTo": "Jacksonville State",
+      "country": "USA",
+      "grade": null,
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "01053",
+        "latitude": 31.0237921,
+        "longitude": -87.4938708
+      },
+      "id": "257003",
+      "name": "K.D. Arnold",
+      "position": "OT",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Escambia County",
+      "stars": null,
+      "stateProvince": "AL",
+      "teamSlug": "jacksonville-state",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153623",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079055",
+    "recruiting": {
+      "athleteId": "5079055",
+      "city": "Rock Hill",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "45091",
+        "latitude": 34.9248667,
+        "longitude": -81.0250784
+      },
+      "id": "257045",
+      "name": "Derrick Barksdale",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "South Pointe",
+      "stars": null,
+      "stateProvince": "SC",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "DB",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "DB",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "DB",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220740",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "DB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 43,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 43,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5086030",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "P",
+        "season": 2022,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "P",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "P",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "P",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "P",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5161141",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2023,
+        "team": "California",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5331481",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209395",
+    "recruiting": {
+      "athleteId": "5209395",
+      "city": "Parker",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "08035",
+        "latitude": 39.5184514,
+        "longitude": -104.7612638
+      },
+      "id": "104794",
+      "name": "DJ Bordeaux",
+      "position": "QB",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Legend",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5126563",
+    "recruiting": {
+      "athleteId": "5126563",
+      "city": "Chatsworth",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "A",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2595715,
+        "longitude": -118.6023247
+      },
+      "id": "108795",
+      "name": "Eugene Brooks",
+      "position": "IOL",
+      "ranking": 97,
+      "rating": 0.9523,
+      "recruitType": "HighSchool",
+      "school": "Sierra Canyon",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2024
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209122",
+    "recruiting": {
+      "athleteId": "5209122",
+      "city": "Long Beach",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.7690164,
+        "longitude": -118.1916048
+      },
+      "id": "106882",
+      "name": "Jace Brown",
+      "position": "WR",
+      "ranking": 692,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Long Beach Poly",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4920137",
+    "recruiting": {
+      "athleteId": "4920137",
+      "city": "Bakersfield",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06029",
+        "latitude": 35.3738712,
+        "longitude": -119.0194639
+      },
+      "id": "111830",
+      "name": "Grant Buckey",
+      "position": "DL",
+      "ranking": 587,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5276706",
+    "recruiting": {
+      "athleteId": "5276706",
+      "city": "Bakersfield",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06029",
+        "latitude": 35.3738712,
+        "longitude": -119.0194639
+      },
+      "id": "104802",
+      "name": "Quinn Buckey",
+      "position": "OT",
+      "ranking": 608,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291143",
+    "recruiting": {
+      "athleteId": "5291143",
+      "city": "Moraga",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.834897,
+        "longitude": -122.12883
+      },
+      "id": "106144",
+      "name": "Giancarlo Cereghino",
+      "position": "LS",
+      "ranking": 3330,
+      "rating": 0.8067,
+      "recruitType": "HighSchool",
+      "school": "Campolindo",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LS",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216642",
+    "recruiting": {
+      "athleteId": "5216642",
+      "city": "Pasadena",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1476452,
+        "longitude": -118.1444779
+      },
+      "id": "106823",
+      "name": "Cole Cogshell",
+      "position": "EDGE",
+      "ranking": 629,
+      "rating": 0.8808,
+      "recruitType": "HighSchool",
+      "school": "John Muir",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209555",
+    "recruiting": {
+      "athleteId": "5209555",
+      "city": "Frisco",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "107437",
+      "name": "Chase Coleman",
+      "position": "CB",
+      "ranking": 1277,
+      "rating": 0.8617,
+      "recruitType": "HighSchool",
+      "school": "Frisco Memorial",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5148601",
+    "recruiting": {
+      "athleteId": "5148601",
+      "city": "Hesperia",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06071",
+        "latitude": 34.4263886,
+        "longitude": -117.3008784
+      },
+      "id": "106481",
+      "name": "Karson Cox",
+      "position": "RB",
+      "ranking": 291,
+      "rating": 0.9068,
+      "recruitType": "HighSchool",
+      "school": "Oak Hills",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 33,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685304",
+    "recruiting": {
+      "athleteId": "4685304",
+      "city": "Maumelle",
+      "committedTo": "Arkansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "05119",
+        "latitude": 34.8667565,
+        "longitude": -92.4043219
+      },
+      "id": "113993",
+      "name": "Nico Davillier",
+      "position": "DL",
+      "ranking": 449,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Maumelle",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2022,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2023,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4684008",
+    "recruiting": {
+      "athleteId": "4684008",
+      "city": "Watson",
+      "committedTo": "South Alabama",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "27023",
+        "latitude": 30.5757,
+        "longitude": -90.9532
+      },
+      "id": "115593",
+      "name": "Christopher Davis Jr.",
+      "position": "WR",
+      "ranking": 2327,
+      "rating": 0.8044,
+      "recruitType": "HighSchool",
+      "school": "Live Oak",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "south-alabama",
+      "valueType": "BENCHMARK",
+      "weight": 174,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2022,
+        "team": "South Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2023,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2024,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2025,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4923224",
+    "recruiting": {
+      "athleteId": "4923224",
+      "city": "Glenside",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42091",
+        "latitude": 40.1023326,
+        "longitude": -75.1521195
+      },
+      "id": "257044",
+      "name": "Darold DeNgohe",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "LaSalle College",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2025,
+        "team": "Rutgers",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5211917",
+    "recruiting": {
+      "athleteId": "5211917",
+      "city": "West Roxbury",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "25025",
+        "latitude": 42.2792649,
+        "longitude": -71.1494972
+      },
+      "id": "107495",
+      "name": "JD Dean",
+      "position": "OT",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Catholic Memorial",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 1
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5092275",
+    "recruiting": {
+      "athleteId": "5092275",
+      "city": "Agoura Hills",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.14791,
+        "longitude": -118.7657042
+      },
+      "id": "112854",
+      "name": "Ty Dieffenbach",
+      "position": "QB",
+      "ranking": 1646,
+      "rating": 0.8431,
+      "recruitType": "HighSchool",
+      "school": "Agoura",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2023,
+        "team": "Pittsburgh",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "Cal Poly",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153616",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153994",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2023,
+        "team": "Richmond",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2024,
+        "team": "Richmond",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685341",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2022,
+        "team": "Notre Dame",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2023,
+        "team": "Notre Dame",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5289653",
+    "recruiting": {
+      "athleteId": "5289653",
+      "city": "Englewood",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "08005",
+        "latitude": 39.6482059,
+        "longitude": -104.9879641
+      },
+      "id": "105461",
+      "name": "Jayden Fox",
+      "position": "RB",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Cherry Creek",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295326",
+    "recruiting": {
+      "athleteId": "5295326",
+      "city": "Graham",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "53053",
+        "latitude": 47.0395996,
+        "longitude": -122.2785729
+      },
+      "id": "107025",
+      "name": "Noah Fox-Flores",
+      "position": "TE",
+      "ranking": 848,
+      "rating": 0.8731,
+      "recruitType": "HighSchool",
+      "school": "Graham-Kapowsin",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084298",
+    "recruiting": {
+      "athleteId": "5084298",
+      "city": "Henderson",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "112351",
+      "name": "A.J. Fuimaono",
+      "position": "DL",
+      "ranking": 1113,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296826",
+    "recruiting": {
+      "athleteId": "5296826",
+      "city": "Australia",
+      "committedTo": "Sam Houston",
+      "country": "AUS",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "258246",
+      "name": "Curtis Gerrand",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "ProKick Australia",
+      "stars": null,
+      "stateProvince": null,
+      "teamSlug": "sam-houston",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2025,
+        "team": "Sam Houston",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5176073",
+    "recruiting": {
+      "athleteId": "5176073",
+      "city": "Buford",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 69.5,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "107630",
+      "name": "Osiris Gilbert",
+      "position": "CB",
+      "ranking": 1523,
+      "rating": 0.8564,
+      "recruitType": "HighSchool",
+      "school": "Peachtree Ridge",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4703026",
+    "recruiting": {
+      "athleteId": "4703026",
+      "city": "Chantilly",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "B",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "51059",
+        "latitude": 38.8941543,
+        "longitude": -77.4311513
+      },
+      "id": "113711",
+      "name": "Aiden Gobaira",
+      "position": "EDGE",
+      "ranking": 168,
+      "rating": 0.9332,
+      "recruitType": "HighSchool",
+      "school": "Chantilly",
+      "stars": 4,
+      "stateProvince": "VA",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2022,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2023,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5216847",
+    "recruiting": {
+      "athleteId": "5216847",
+      "city": "Arlington Heights",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0811563,
+        "longitude": -87.9802164
+      },
+      "id": "107606",
+      "name": "Colton Gumino",
+      "position": "QB",
+      "ranking": 1502,
+      "rating": 0.8569,
+      "recruitType": "HighSchool",
+      "school": "John Hersey",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5332203",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917948",
+    "recruiting": {
+      "athleteId": "4917948",
+      "city": "West Chester",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "B",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.3303357,
+        "longitude": -84.408275
+      },
+      "id": "111407",
+      "name": "Malik Hartford",
+      "position": "S",
+      "ranking": 152,
+      "rating": 0.9371,
+      "recruitType": "HighSchool",
+      "school": "Lakota West",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2023,
+        "team": "Ohio State",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2024,
+        "team": "Ohio State",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219647",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2024,
+        "team": "BYU",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2025,
+        "team": "Utah Tech",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279674",
+    "recruiting": {
+      "athleteId": "5279674",
+      "city": "Prosper",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.2385763,
+        "longitude": -96.7866058
+      },
+      "id": "224598",
+      "name": "Lucas Hickey",
+      "position": "IOL",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Prosper Walnut Grove",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 291,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290715",
+    "recruiting": {
+      "athleteId": "5290715",
+      "city": "Rancho Santa Margarita",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6408845,
+        "longitude": -117.6029341
+      },
+      "id": "105008",
+      "name": "Logan Hirou",
+      "position": "S",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Santa Margarita Catholic",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216550",
+    "recruiting": {
+      "athleteId": "5216550",
+      "city": "Inglewood",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.9562003,
+        "longitude": -118.353132
+      },
+      "id": "107400",
+      "name": "Lucien Holland",
+      "position": "EDGE",
+      "ranking": 1243,
+      "rating": 0.8625,
+      "recruitType": "HighSchool",
+      "school": "Inglewood",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5142594",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870799",
+    "recruiting": {
+      "athleteId": "4870799",
+      "city": "Long Beach",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "S+",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.7690164,
+        "longitude": -118.1916048
+      },
+      "id": "111249",
+      "name": "Nico Iamaleava",
+      "position": "QB",
+      "ranking": 3,
+      "rating": 0.998,
+      "recruitType": "HighSchool",
+      "school": "Warren",
+      "stars": 5,
+      "stateProvince": "CA",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2023,
+        "team": "Tennessee",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2024,
+        "team": "Tennessee",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4869250",
+    "recruiting": {
+      "athleteId": "4869250",
+      "city": "Lemont",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.6737149,
+        "longitude": -88.0016263
+      },
+      "id": "115468",
+      "name": "Mack Indestad",
+      "position": "OT",
+      "ranking": 2124,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "Lemont",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5204388",
+    "recruiting": {
+      "athleteId": "5204388",
+      "city": "Corona",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "106961",
+      "name": "Kuron Jabari Jr.",
+      "position": "CB",
+      "ranking": 769,
+      "rating": 0.8753,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5152410",
+    "recruiting": {
+      "athleteId": "5152410",
+      "city": "Downey",
+      "committedTo": "Utah Tech",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.942215,
+        "longitude": -118.1235646
+      },
+      "id": "113507",
+      "name": "Scooter Jackson",
+      "position": "CB",
+      "ranking": 2655,
+      "rating": 0.7983,
+      "recruitType": "HighSchool",
+      "school": "Warren",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "utah-tech",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "Utah Tech",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5077815",
+    "recruiting": {
+      "athleteId": "5077815",
+      "city": "Oklahoma City",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "40109",
+        "latitude": 35.4729886,
+        "longitude": -97.5170536
+      },
+      "id": "112526",
+      "name": "Ta'Shawn James",
+      "position": "S",
+      "ranking": 1293,
+      "rating": 0.8542,
+      "recruitType": "HighSchool",
+      "school": "Carl Albert",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2023,
+        "team": "Iowa State",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2025,
+        "team": "Iowa State",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5237304",
+    "recruiting": {
+      "athleteId": "5237304",
+      "city": "Gardena",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8963593,
+        "longitude": -118.3053037
+      },
+      "id": "107603",
+      "name": "Robert James III",
+      "position": "DL",
+      "ranking": 1486,
+      "rating": 0.8572,
+      "recruitType": "HighSchool",
+      "school": "Junipero Serra",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 29,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5281526",
+    "recruiting": {
+      "athleteId": "5281526",
+      "city": "San Juan Capistrano",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5016932,
+        "longitude": -117.6625509
+      },
+      "id": "104966",
+      "name": "Cooper Javorsky",
+      "position": "IOL",
+      "ranking": 704,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "San Juan Hills",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4430018",
+    "recruiting": {
+      "athleteId": "4430018",
+      "city": "Scottsdale",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "118933",
+      "name": "Jaylan Jeffers",
+      "position": "OT",
+      "ranking": 529,
+      "rating": 0.8796,
+      "recruitType": "HighSchool",
+      "school": "Saguaro",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2020
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2021,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2022,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5158977",
+    "recruiting": {
+      "athleteId": "5158977",
+      "city": "Littleton",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "08005",
+        "latitude": 39.613321,
+        "longitude": -105.0166498
+      },
+      "id": "104232",
+      "name": "Camden Jensen",
+      "position": "OT",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Heritage",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4432719",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "DB",
+        "season": 2021,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "DB",
+        "season": 2022,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "DB",
+        "season": 2023,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "DB",
+        "season": 2024,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5222703",
+    "recruiting": {
+      "athleteId": "5222703",
+      "city": "Orange",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7872568,
+        "longitude": -117.8503088
+      },
+      "id": "107720",
+      "name": "Nehemiah Johnson",
+      "position": "IOL",
+      "ranking": 1614,
+      "rating": 0.8539,
+      "recruitType": "HighSchool",
+      "school": "Orange Lutheran",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4901131",
+    "recruiting": {
+      "athleteId": "4901131",
+      "city": "Clovis",
+      "committedTo": "Utah",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06019",
+        "latitude": 36.8252277,
+        "longitude": -119.7029194
+      },
+      "id": "113782",
+      "name": "Nate Johnson",
+      "position": "QB",
+      "ranking": 239,
+      "rating": 0.9124,
+      "recruitType": "HighSchool",
+      "school": "Clovis",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "utah",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2022,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2023,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2025,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295324",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 30,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209181",
+    "recruiting": {
+      "athleteId": "5209181",
+      "city": "Orange",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7872568,
+        "longitude": -117.8503088
+      },
+      "id": "105213",
+      "name": "Markus Kier",
+      "position": "WR",
+      "ranking": 1976,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Orange Lutheran",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4912342",
+    "recruiting": {
+      "athleteId": "4912342",
+      "city": "Smyrna",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 67,
+      "hometownInfo": {
+        "fipsCode": "10001",
+        "latitude": 39.2998339,
+        "longitude": -75.6046494
+      },
+      "id": "256254",
+      "name": "Wayne Knight",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Smyrna",
+      "stars": null,
+      "stateProvince": "DE",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2022,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5217054",
+    "recruiting": {
+      "athleteId": "5217054",
+      "city": "Santa Ana",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "104863",
+      "name": "CJ Lavender",
+      "position": "S",
+      "ranking": 1308,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5122883",
+    "recruiting": {
+      "athleteId": "5122883",
+      "city": "Gilbert",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.3527632,
+        "longitude": -111.7890373
+      },
+      "id": "109783",
+      "name": "Dylan Lee",
+      "position": "RB",
+      "ranking": 1109,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Williams Field",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4921256",
+    "recruiting": {
+      "athleteId": "4921256",
+      "city": "Bellflower",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8825705,
+        "longitude": -118.1167679
+      },
+      "id": "111832",
+      "name": "Ty Lee",
+      "position": "S",
+      "ranking": 587,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "St. John Bosco",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153614",
+    "recruiting": {
+      "athleteId": "5153614",
+      "city": "Laguna Hills",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5948758,
+        "longitude": -117.6882067
+      },
+      "id": "216967",
+      "name": "Troy Leigber",
+      "position": "S",
+      "ranking": 1403,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Laguna Hills",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917270",
+    "recruiting": {
+      "athleteId": "4917270",
+      "city": "Belmont",
+      "committedTo": "Wake Forest",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "25017",
+        "latitude": 42.3959296,
+        "longitude": -71.1786655
+      },
+      "id": "114947",
+      "name": "Harry Lodge",
+      "position": "TE",
+      "ranking": 1452,
+      "rating": 0.8433,
+      "recruitType": "HighSchool",
+      "school": "Belmont Hill School",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "wake-forest",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "TE",
+        "season": 2022,
+        "team": "Wake Forest",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "TE",
+        "season": 2023,
+        "team": "Wake Forest",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "TE",
+        "season": 2024,
+        "team": "Wake Forest",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "TE",
+        "season": 2025,
+        "team": "Wake Forest",
+        "year": 4
+      },
+      {
+        "jersey": 47,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869442",
+    "recruiting": {
+      "athleteId": "4869442",
+      "city": "Council Bluffs",
+      "committedTo": "Kansas State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "19155",
+        "latitude": 41.2621283,
+        "longitude": -95.8613912
+      },
+      "id": "114683",
+      "name": "Brayden Loftin",
+      "position": "TE",
+      "ranking": 1168,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Lewis Central",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "kansas-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2022,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4921504",
+    "recruiting": {
+      "athleteId": "4921504",
+      "city": "Hyattsville",
+      "committedTo": "Virginia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.9529442,
+        "longitude": -76.9408647
+      },
+      "id": "112126",
+      "name": "Dante Lovett",
+      "position": "S",
+      "ranking": 882,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "DeMatha Catholic",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "virginia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2023,
+        "team": "Virginia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Virginia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153617",
+    "recruiting": {
+      "athleteId": "5153617",
+      "city": "Kapa'a",
+      "committedTo": "UCLA",
+      "country": null,
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "111821",
+      "name": "Mone Malafu",
+      "position": "LB",
+      "ranking": 574,
+      "rating": 0.8819,
+      "recruitType": "HighSchool",
+      "school": "Kapa'a",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870821",
+    "recruiting": {
+      "athleteId": "4870821",
+      "city": "Chandler",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.3062223,
+        "longitude": -111.8413317
+      },
+      "id": "111463",
+      "name": "Cole Martin",
+      "position": "CB",
+      "ranking": 241,
+      "rating": 0.9144,
+      "recruitType": "HighSchool",
+      "school": "Basha",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921306",
+    "recruiting": {
+      "athleteId": "4921306",
+      "city": "Mission Viejo",
+      "committedTo": "Utah",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5965685,
+        "longitude": -117.659405
+      },
+      "id": "111521",
+      "name": "Mikey Matthews",
+      "position": "WR",
+      "ranking": 272,
+      "rating": 0.9095,
+      "recruitType": "HighSchool",
+      "school": "Mission Viejo",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "utah",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2023,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "California",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5161140",
+    "recruiting": {
+      "athleteId": "5161140",
+      "city": "Arcadia",
+      "committedTo": "California",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1362075,
+        "longitude": -118.0401497
+      },
+      "id": "112482",
+      "name": "Ryan McCulloch",
+      "position": "ATH",
+      "ranking": 1245,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Rio Hondo Preparatory School",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "california",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2023,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5376871",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5224368",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Montana State",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5306736",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5223775",
+    "recruiting": {
+      "athleteId": "5223775",
+      "city": "Westlake Village",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1460234,
+        "longitude": -118.8061794
+      },
+      "id": "108543",
+      "name": "Lennox Miller",
+      "position": "P",
+      "ranking": 2747,
+      "rating": 0.8217,
+      "recruitType": "HighSchool",
+      "school": "Oaks Christian",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "P",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 19,
+        "position": "P",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917945",
+    "recruiting": {
+      "athleteId": "4917945",
+      "city": "Orlando",
+      "committedTo": "Florida",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "111344",
+      "name": "Aidan Mizell",
+      "position": "WR",
+      "ranking": 103,
+      "rating": 0.9524,
+      "recruitType": "HighSchool",
+      "school": "Boone",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "florida",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "Florida",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Florida",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5326898",
+    "recruiting": {
+      "athleteId": "5326898",
+      "city": "Encino",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1591324,
+        "longitude": -118.5016166
+      },
+      "id": "211486",
+      "name": "James Moffat",
+      "position": "DL",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Crespi",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5159015",
+    "recruiting": {
+      "athleteId": "5159015",
+      "city": "Stockton",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06077",
+        "latitude": 37.9577016,
+        "longitude": -121.2907796
+      },
+      "id": "104308",
+      "name": "Kenneth Moore III",
+      "position": "WR",
+      "ranking": 438,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "St. Mary's",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4899366",
+    "recruiting": {
+      "athleteId": "4899366",
+      "city": "West Bloomfield",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "36069",
+        "latitude": 42.5679,
+        "longitude": -83.3733
+      },
+      "id": "111748",
+      "name": "Semaj Morgan",
+      "position": "WR",
+      "ranking": 502,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "West Bloomfield",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153622",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295325",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LS",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 30,
+        "position": "LS",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222801",
+    "recruiting": {
+      "athleteId": "5222801",
+      "city": "Bellflower",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8825705,
+        "longitude": -118.1167679
+      },
+      "id": "105336",
+      "name": "Matthew Muasau",
+      "position": "LB",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "St. John Bosco",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5125075",
+    "recruiting": {
+      "athleteId": "5125075",
+      "city": "Bellflower",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8825705,
+        "longitude": -118.1167679
+      },
+      "id": "112764",
+      "name": "Sean Na'a",
+      "position": "IOL",
+      "ranking": 1552,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "St. John Bosco",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4899483",
+    "recruiting": {
+      "athleteId": "4899483",
+      "city": "Crandall",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48257",
+        "latitude": 32.6279113,
+        "longitude": -96.4558196
+      },
+      "id": "111315",
+      "name": "Sammy Omosigho",
+      "position": "LB",
+      "ranking": 71,
+      "rating": 0.9671,
+      "recruitType": "HighSchool",
+      "school": "Crandall",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 208,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5376869",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "PK",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5083576",
+    "recruiting": {
+      "athleteId": "5083576",
+      "city": "Wallingford",
+      "committedTo": "Harvard",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "09009",
+        "latitude": 41.4570418,
+        "longitude": -72.8231552
+      },
+      "id": "234992",
+      "name": "Derek Osman",
+      "position": "IOL",
+      "ranking": 2364,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Choate Rosemary Hall",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "harvard",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2022,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5215016",
+    "recruiting": {
+      "athleteId": "5215016",
+      "city": "Middle Village",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "36081",
+        "latitude": 40.7182153,
+        "longitude": -73.87867088764077
+      },
+      "id": "107776",
+      "name": "Ty Partlow",
+      "position": "DL",
+      "ranking": 1671,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas More",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5102800",
+    "recruiting": {
+      "athleteId": "5102800",
+      "city": "Las Vegas",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "112119",
+      "name": "Donavyn Pellot",
+      "position": "ATH",
+      "ranking": 879,
+      "rating": 0.8683,
+      "recruitType": "HighSchool",
+      "school": "Silverado",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5084910",
+    "recruiting": {
+      "athleteId": "5084910",
+      "city": "Fayetteville",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13113",
+        "latitude": 33.4487257,
+        "longitude": -84.4549262
+      },
+      "id": "113051",
+      "name": "Josh Phifer",
+      "position": "TE",
+      "ranking": 1862,
+      "rating": 0.8337,
+      "recruitType": "HighSchool",
+      "school": "Starrs Mill",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870973",
+    "recruiting": {
+      "athleteId": "4870973",
+      "city": "Gardena",
+      "committedTo": "Oregon",
+      "country": "USA",
+      "grade": "A",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8963593,
+        "longitude": -118.3053037
+      },
+      "id": "111336",
+      "name": "Rodrick Pleasant",
+      "position": "CB",
+      "ranking": 92,
+      "rating": 0.9574,
+      "recruitType": "HighSchool",
+      "school": "Junipero Serra",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "oregon",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oregon",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5303247",
+    "recruiting": {
+      "athleteId": "5303247",
+      "city": "Huntsville",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01089",
+        "latitude": 34.729847,
+        "longitude": -86.5859011
+      },
+      "id": "105325",
+      "name": "Michael Price",
+      "position": "IOL",
+      "ranking": 1914,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Huntsville",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5292878",
+    "recruiting": {
+      "athleteId": "5292878",
+      "city": "Torrance",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8358492,
+        "longitude": -118.3406288
+      },
+      "id": "105490",
+      "name": "Major Pride",
+      "position": "WR",
+      "ranking": 1654,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Bishop Montgomery",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220743",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5083150",
+    "recruiting": {
+      "athleteId": "5083150",
+      "city": "Tracy",
+      "committedTo": "Cal Poly",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06077",
+        "latitude": 37.7396513,
+        "longitude": -121.4252227
+      },
+      "id": "255959",
+      "name": "Mason Rivera",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Kimball",
+      "stars": null,
+      "stateProvince": "CA",
+      "teamSlug": "cal-poly",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2022,
+        "team": "Cal Poly",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2024,
+        "team": "Cal Poly",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2025,
+        "team": "Cal Poly",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092420",
+    "recruiting": {
+      "athleteId": "5092420",
+      "city": "Harrisburg",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42043",
+        "latitude": 40.2663107,
+        "longitude": -76.8861122
+      },
+      "id": "257041",
+      "name": "Riley Robell",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Bishop McDevitt",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209306",
+    "recruiting": {
+      "athleteId": "5209306",
+      "city": "Newbury Park",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06111",
+        "latitude": 34.183671,
+        "longitude": -118.9118302
+      },
+      "id": "107422",
+      "name": "Shane Rosenthal",
+      "position": "WR",
+      "ranking": 1275,
+      "rating": 0.8619,
+      "recruitType": "HighSchool",
+      "school": "Newbury Park",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209464",
+    "recruiting": {
+      "athleteId": "5209464",
+      "city": "Concord",
+      "committedTo": "South Carolina",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "37025",
+        "latitude": 35.4093772,
+        "longitude": -80.5797416
+      },
+      "id": "106527",
+      "name": "Brian Rowe Jr.",
+      "position": "WR",
+      "ranking": 337,
+      "rating": 0.9007,
+      "recruitType": "HighSchool",
+      "school": "Jay M. Robinson",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "south-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141672",
+    "recruiting": {
+      "athleteId": "5141672",
+      "city": "Philadelphia",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "106547",
+      "name": "Maxwell Roy",
+      "position": "DL",
+      "ranking": 357,
+      "rating": 0.8994,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph's Prep",
+      "stars": 4,
+      "stateProvince": "PA",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 1
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141658",
+    "recruiting": {
+      "athleteId": "5141658",
+      "city": "Philadelphia",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "106427",
+      "name": "Anthony Sacca",
+      "position": "LB",
+      "ranking": 236,
+      "rating": 0.9168,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph's Prep",
+      "stars": 4,
+      "stateProvince": "PA",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2025,
+        "team": "Notre Dame",
+        "year": 1
+      },
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5221316",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4918114",
+    "recruiting": {
+      "athleteId": "4918114",
+      "city": "Los Angeles",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "216938",
+      "name": "Ashton Sanders",
+      "position": "DL",
+      "ranking": 600,
+      "rating": 0.8803,
+      "recruitType": "HighSchool",
+      "school": "Cathedral",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4832818",
+    "recruiting": {
+      "athleteId": "4832818",
+      "city": "Gig Harbor",
+      "committedTo": "Boise State",
+      "country": "USA",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "53053",
+        "latitude": 47.3259697,
+        "longitude": -122.5878659
+      },
+      "id": "115178",
+      "name": "Hall Schmidt",
+      "position": "OT",
+      "ranking": 1718,
+      "rating": 0.8326,
+      "recruitType": "HighSchool",
+      "school": "Peninsula",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "boise-state",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2022,
+        "team": "Boise State",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2023,
+        "team": "Boise State",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2024,
+        "team": "Boise State",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Boise State",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5214936",
+    "recruiting": {
+      "athleteId": "5214936",
+      "city": "Queen Creek",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.2483858,
+        "longitude": -111.6341585
+      },
+      "id": "107459",
+      "name": "Dylan Sims",
+      "position": "TE",
+      "ranking": 1306,
+      "rating": 0.8608,
+      "recruitType": "HighSchool",
+      "school": "Queen Creek",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5306734",
+    "recruiting": {
+      "athleteId": "5306734",
+      "city": "Rancho Santa Margarita",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6408845,
+        "longitude": -117.6029341
+      },
+      "id": "104225",
+      "name": "Jonah Smith",
+      "position": "WR",
+      "ranking": 390,
+      "rating": 0.893,
+      "recruitType": "HighSchool",
+      "school": "Santa Margarita Catholic",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219086",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "San Jos\u00e9 State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276975",
+    "recruiting": {
+      "athleteId": "5276975",
+      "city": "Kahuku",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.679124,
+        "longitude": -157.94838
+      },
+      "id": "105244",
+      "name": "Malaki Soliai-Tui",
+      "position": "LB",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Kahuku",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079722",
+    "recruiting": {
+      "athleteId": "5079722",
+      "city": "Lehi",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "49049",
+        "latitude": 40.3880902,
+        "longitude": -111.8491619
+      },
+      "id": "109580",
+      "name": "Jensen Somerville",
+      "position": "OT",
+      "ranking": 895,
+      "rating": 0.8708,
+      "recruitType": "HighSchool",
+      "school": "Lehi",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157400",
+    "recruiting": {
+      "athleteId": "5157400",
+      "city": "Orlando",
+      "committedTo": "Holy Cross",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "257151",
+      "name": "Drew Spinogatti",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Bishop Moore Catholic",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "holy-cross",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "LB",
+        "season": 2023,
+        "team": "Holy Cross",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "LB",
+        "season": 2024,
+        "team": "Holy Cross",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "LB",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4899486",
+    "recruiting": {
+      "athleteId": "4899486",
+      "city": "Melbourne",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12009",
+        "latitude": 28.0836269,
+        "longitude": -80.6081089
+      },
+      "id": "111394",
+      "name": "Robert Stafford III",
+      "position": "CB",
+      "ranking": 157,
+      "rating": 0.9362,
+      "recruitType": "HighSchool",
+      "school": "Eau Gallie",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 171,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2023,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4910848",
+    "recruiting": {
+      "athleteId": "4910848",
+      "city": "Ashburn",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "51107",
+        "latitude": 39.0437192,
+        "longitude": -77.4874899
+      },
+      "id": "256244",
+      "name": "Carter Sweazie",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Stone Bridge",
+      "stars": null,
+      "stateProvince": "VA",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2022,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209129",
+    "recruiting": {
+      "athleteId": "5209129",
+      "city": "Los Angeles",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "106837",
+      "name": "Scott Taylor",
+      "position": "EDGE",
+      "ranking": 645,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Loyola",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5114332",
+    "recruiting": {
+      "athleteId": "5114332",
+      "city": "Fort Worth",
+      "committedTo": "California",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "114179",
+      "name": "Curlee Thomas IV",
+      "position": "EDGE",
+      "ranking": 636,
+      "rating": 0.8759,
+      "recruitType": "HighSchool",
+      "school": "Nolan Catholic",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "california",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2023,
+        "team": "California",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2024,
+        "team": "California",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153612",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141691",
+    "recruiting": {
+      "athleteId": "5141691",
+      "city": "Pittsburg",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 38.0181745,
+        "longitude": -121.8901232
+      },
+      "id": "107185",
+      "name": "JuJu Walls",
+      "position": "EDGE",
+      "ranking": 1024,
+      "rating": 0.8681,
+      "recruitType": "HighSchool",
+      "school": "Pittsburg",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5015143",
+    "recruiting": {
+      "athleteId": "5015143",
+      "city": "Orange",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "48361",
+        "latitude": 30.0929879,
+        "longitude": -93.7365549
+      },
+      "id": "112253",
+      "name": "Amier Washington",
+      "position": "DL",
+      "ranking": 1014,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Little Cypress-Mauriceville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2023
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2023,
+        "team": "Texas Tech",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Texas Tech",
+        "year": 3
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220746",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5197086",
+    "recruiting": {
+      "athleteId": "5197086",
+      "city": "Baltimore",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "257431",
+      "name": "Sahir West",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Mount Saint Joseph",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4871070",
+    "recruiting": {
+      "athleteId": "4871070",
+      "city": "Westfield",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "18057",
+        "latitude": 40.0428151,
+        "longitude": -86.1274888
+      },
+      "id": "113723",
+      "name": "Popeye Williams",
+      "position": "EDGE",
+      "ranking": 180,
+      "rating": 0.9292,
+      "recruitType": "HighSchool",
+      "school": "Westfield",
+      "stars": 4,
+      "stateProvince": "IN",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2023,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083175",
+    "recruiting": {
+      "athleteId": "5083175",
+      "city": "Palmdale",
+      "committedTo": "Idaho",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.5793131,
+        "longitude": -118.1171108
+      },
+      "id": "234849",
+      "name": "Anthony Woods",
+      "position": "RB",
+      "ranking": 2202,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Palmdale",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "idaho",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2022,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "Idaho",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4702562",
+    "recruiting": {
+      "athleteId": "4702562",
+      "city": "Bellflower",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8825705,
+        "longitude": -118.1167679
+      },
+      "id": "114113",
+      "name": "Jalen Woods",
+      "position": "LB",
+      "ranking": 574,
+      "rating": 0.8796,
+      "recruitType": "HighSchool",
+      "school": "St. John Bosco",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2022,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4889169",
+    "recruiting": {
+      "athleteId": "4889169",
+      "city": "Los Angeles",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0536909,
+        "longitude": -118.2427666
+      },
+      "id": "114136",
+      "name": "Sam Yoon",
+      "position": "OT",
+      "ranking": 593,
+      "rating": 0.8785,
+      "recruitType": "HighSchool",
+      "school": "Loyola",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2022
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2022,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5376870",
+    "recruiting": null,
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148612",
+    "recruiting": {
+      "athleteId": "5148612",
+      "city": "Corona",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "106805",
+      "name": "LaRue Zamorano III",
+      "position": "CB",
+      "ranking": 615,
+      "rating": 0.8817,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "UCLA",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCLA",
+        "year": 1
+      }
+    ]
+  }
+]

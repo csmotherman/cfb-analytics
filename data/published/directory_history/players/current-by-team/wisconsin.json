@@ -1,0 +1,5095 @@
+[
+  {
+    "playerId": "5126464",
+    "recruiting": {
+      "athleteId": "5126464",
+      "city": "Austin",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "109326",
+      "name": "Deuce Adams",
+      "position": "QB",
+      "ranking": 631,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Austin Vandegrift",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5226578",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "WR",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "WR",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5087246",
+    "recruiting": {
+      "athleteId": "5087246",
+      "city": "Durand",
+      "committedTo": "Illinois State",
+      "country": null,
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "235660",
+      "name": "Jacob Anderson",
+      "position": "DL",
+      "ranking": 3236,
+      "rating": 0.75,
+      "recruitType": "HighSchool",
+      "school": "Durand",
+      "stars": 2,
+      "stateProvince": "IL",
+      "teamSlug": "illinois-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2022,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2023,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2024,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5289652",
+    "recruiting": {
+      "athleteId": "5289652",
+      "city": "Germantown",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47157",
+        "latitude": 35.0867577,
+        "longitude": -89.8100858
+      },
+      "id": "104756",
+      "name": "Djidjou Bah",
+      "position": "DL",
+      "ranking": 608,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "Germantown",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084664",
+    "recruiting": {
+      "athleteId": "5084664",
+      "city": "Orlando",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "A",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "108790",
+      "name": "Cai Bates",
+      "position": "CB",
+      "ranking": 92,
+      "rating": 0.9547,
+      "recruitType": "HighSchool",
+      "school": "Edgewater",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2024,
+        "team": "Florida State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5223161",
+    "recruiting": {
+      "athleteId": "5223161",
+      "city": "Arlington",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "25017",
+        "latitude": 42.4153739,
+        "longitude": -71.1564428
+      },
+      "id": "104553",
+      "name": "Brady Bekkenhuis",
+      "position": "OT",
+      "ranking": 415,
+      "rating": 0.8961,
+      "recruitType": "HighSchool",
+      "school": "Arlington",
+      "stars": 4,
+      "stateProvince": "MA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222995",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4596362",
+    "recruiting": {
+      "athleteId": "4596362",
+      "city": "Sumter",
+      "committedTo": "Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "45085",
+        "latitude": 33.9204354,
+        "longitude": -80.3414693
+      },
+      "id": "116066",
+      "name": "Justus Boone",
+      "position": "DL",
+      "ranking": 325,
+      "rating": 0.8992,
+      "recruitType": "HighSchool",
+      "school": "Sumter",
+      "stars": 4,
+      "stateProvince": "SC",
+      "teamSlug": "florida",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2021
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2021,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2022,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2023,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2024,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5212589",
+    "recruiting": {
+      "athleteId": "5212589",
+      "city": "Oconomowoc",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "55133",
+        "latitude": 43.1116731,
+        "longitude": -88.4992659
+      },
+      "id": "107549",
+      "name": "Emmett Bork",
+      "position": "TE",
+      "ranking": 1440,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Oconomowoc",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5294111",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "RB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5221276",
+    "recruiting": {
+      "athleteId": "5221276",
+      "city": "Oak Creek",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "55079",
+        "latitude": 42.8858503,
+        "longitude": -87.8631362
+      },
+      "id": "238379",
+      "name": "Drew Braam",
+      "position": "LB",
+      "ranking": 2983,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "Oak Creek",
+      "stars": 2,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5302882",
+    "recruiting": {
+      "athleteId": "5302882",
+      "city": "Chandler",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.3062223,
+        "longitude": -111.8413317
+      },
+      "id": "105708",
+      "name": "Kash Brock",
+      "position": "WR",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Basha",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917172",
+    "recruiting": {
+      "athleteId": "4917172",
+      "city": "St. Louis",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "115119",
+      "name": "Chris Brooks Jr.",
+      "position": "WR",
+      "ranking": 1665,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "St. Louis University",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2022,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5224462",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870652",
+    "recruiting": {
+      "athleteId": "4870652",
+      "city": "St. Louis",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "111573",
+      "name": "Marvin Burks Jr.",
+      "position": "S",
+      "ranking": 323,
+      "rating": 0.9009,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Ritter College Prep",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5167173",
+    "recruiting": {
+      "athleteId": "5167173",
+      "city": "Germantown",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "55103",
+        "latitude": 43.5258118,
+        "longitude": -90.221516
+      },
+      "id": "107050",
+      "name": "Cooper Catalano",
+      "position": "LB",
+      "ranking": 873,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Germantown",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4685314",
+    "recruiting": {
+      "athleteId": "4685314",
+      "city": "Evanston",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0447388,
+        "longitude": -87.6930459
+      },
+      "id": "113691",
+      "name": "Sebastian Cheeks",
+      "position": "LB",
+      "ranking": 148,
+      "rating": 0.9406,
+      "recruitType": "HighSchool",
+      "school": "Evanston Township",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2022,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2023,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5214818",
+    "recruiting": {
+      "athleteId": "5214818",
+      "city": "Owasso",
+      "committedTo": "Arkansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.2661536,
+        "longitude": -95.8549456
+      },
+      "id": "107456",
+      "name": "Blake Cherry",
+      "position": "OT",
+      "ranking": 1306,
+      "rating": 0.8608,
+      "recruitType": "HighSchool",
+      "school": "Owasso",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Arkansas",
+        "year": 2
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5210558",
+    "recruiting": {
+      "athleteId": "5210558",
+      "city": "Dexter",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "27099",
+        "latitude": 42.3386044,
+        "longitude": -83.8891514
+      },
+      "id": "106789",
+      "name": "Cam Clark",
+      "position": "OT",
+      "ranking": 593,
+      "rating": 0.8825,
+      "recruitType": "HighSchool",
+      "school": "Dexter",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5198303",
+    "recruiting": {
+      "athleteId": "5198303",
+      "city": "Gainesville",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "B",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "12001",
+        "latitude": 29.6519684,
+        "longitude": -82.3249846
+      },
+      "id": "106417",
+      "name": "Nicolas Clayton",
+      "position": "EDGE",
+      "ranking": 226,
+      "rating": 0.9182,
+      "recruitType": "HighSchool",
+      "school": "Buchholz",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4917947",
+    "recruiting": {
+      "athleteId": "4917947",
+      "city": "Lincoln",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "A",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "31109",
+        "latitude": 40.8088861,
+        "longitude": -96.7077751
+      },
+      "id": "111313",
+      "name": "Malachi Coleman",
+      "position": "WR",
+      "ranking": 67,
+      "rating": 0.969,
+      "recruitType": "HighSchool",
+      "school": "Lincoln East",
+      "stars": 4,
+      "stateProvince": "NE",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2023,
+        "team": "Nebraska",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2024,
+        "team": "Nebraska",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2025,
+        "team": "Minnesota",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146890",
+    "recruiting": {
+      "athleteId": "5146890",
+      "city": "Kingsland",
+      "committedTo": "App State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "13039",
+        "latitude": 30.7999563,
+        "longitude": -81.6898261
+      },
+      "id": "110157",
+      "name": "DeNigel Cooper",
+      "position": "EDGE",
+      "ranking": 1507,
+      "rating": 0.8528,
+      "recruitType": "HighSchool",
+      "school": "Camden County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "app-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2024,
+        "team": "App State",
+        "year": 2
+      },
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2025,
+        "team": "App State",
+        "year": 2
+      },
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5220776",
+    "recruiting": {
+      "athleteId": "5220776",
+      "city": "Gibsonia",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.6300671,
+        "longitude": -79.9695004
+      },
+      "id": "109369",
+      "name": "Ryan Cory",
+      "position": "IOL",
+      "ranking": 680,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Pine-Richland",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079355",
+    "recruiting": {
+      "athleteId": "5079355",
+      "city": "Lagrangeville",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "36027",
+        "latitude": 41.6541106,
+        "longitude": -73.6667779
+      },
+      "id": "109357",
+      "name": "Colin Cubberly",
+      "position": "IOL",
+      "ranking": 666,
+      "rating": 0.8794,
+      "recruitType": "HighSchool",
+      "school": "Arlington",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5332257",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5214464",
+    "recruiting": {
+      "athleteId": "5214464",
+      "city": "Massillon",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7967244,
+        "longitude": -81.5215093
+      },
+      "id": "106965",
+      "name": "Nolan Davenport",
+      "position": "OT",
+      "ranking": 784,
+      "rating": 0.875,
+      "recruitType": "HighSchool",
+      "school": "Massillon Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214442",
+    "recruiting": {
+      "athleteId": "5214442",
+      "city": "Indianapolis",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "107060",
+      "name": "Nizyi Davis",
+      "position": "TE",
+      "ranking": 880,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Lawrence Central",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "TE",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210002",
+    "recruiting": {
+      "athleteId": "5210002",
+      "city": "Neenah",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "55139",
+        "latitude": 44.1858193,
+        "longitude": -88.462609
+      },
+      "id": "106780",
+      "name": "Grant Dean",
+      "position": "ATH",
+      "ranking": 588,
+      "rating": 0.8828,
+      "recruitType": "HighSchool",
+      "school": "Neenah",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5376849",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5154809",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2023,
+        "team": "SE Louisiana",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "SE Louisiana",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "SE Louisiana",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5210473",
+    "recruiting": {
+      "athleteId": "5210473",
+      "city": "Clovis",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06019",
+        "latitude": 36.8252277,
+        "longitude": -119.7029194
+      },
+      "id": "105352",
+      "name": "Donovan Dunmore",
+      "position": "CB",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Buchanan",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147051",
+    "recruiting": {
+      "athleteId": "5147051",
+      "city": "Lawrenceville",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.300987649999996,
+        "longitude": -74.73737283395636
+      },
+      "id": "109469",
+      "name": "Raphael Dunn",
+      "position": "S",
+      "ranking": 776,
+      "rating": 0.8747,
+      "recruitType": "HighSchool",
+      "school": "The Lawrenceville School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079378",
+    "recruiting": {
+      "athleteId": "5079378",
+      "city": "Chicago",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "109090",
+      "name": "Darrion Dupree",
+      "position": "RB",
+      "ranking": 394,
+      "rating": 0.897,
+      "recruitType": "HighSchool",
+      "school": "Mount Carmel",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290751",
+    "recruiting": {
+      "athleteId": "5290751",
+      "city": "Fishers",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "18057",
+        "latitude": 39.9555928,
+        "longitude": -86.0138729
+      },
+      "id": "104882",
+      "name": "Carsen Eloms",
+      "position": "CB",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Fishers",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211164",
+    "recruiting": {
+      "athleteId": "5211164",
+      "city": "Monticello",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "27171",
+        "latitude": 45.3053901,
+        "longitude": -93.7939996
+      },
+      "id": "106861",
+      "name": "Luke Emmerich",
+      "position": "ATH",
+      "ranking": 665,
+      "rating": 0.8794,
+      "recruitType": "HighSchool",
+      "school": "Monticello",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4705474",
+    "recruiting": {
+      "athleteId": "4705474",
+      "city": "Pittsburgh",
+      "committedTo": "Kentucky",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.4416941,
+        "longitude": -79.9900861
+      },
+      "id": "113728",
+      "name": "Tyreese Fearbry",
+      "position": "EDGE",
+      "ranking": 185,
+      "rating": 0.9281,
+      "recruitType": "HighSchool",
+      "school": "Perry Traditional Academy",
+      "stars": 4,
+      "stateProvince": "PA",
+      "teamSlug": "kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2022,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2023,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5376850",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5376851",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149152",
+    "recruiting": {
+      "athleteId": "5149152",
+      "city": "Fort Myers",
+      "committedTo": "East Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.640628,
+        "longitude": -81.8723084
+      },
+      "id": "109678",
+      "name": "Eric Fletcher Jr.",
+      "position": "ATH",
+      "ranking": 1002,
+      "rating": 0.8675,
+      "recruitType": "HighSchool",
+      "school": "Dunbar",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "east-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2024,
+        "team": "East Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5245504",
+    "recruiting": {
+      "athleteId": "5245504",
+      "city": "Medina",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "47053",
+        "latitude": 35.8028453,
+        "longitude": -88.7747808
+      },
+      "id": "104333",
+      "name": "Yahya Gaad",
+      "position": "DL",
+      "ranking": 704,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "South Gibson",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5158842",
+    "recruiting": {
+      "athleteId": "5158842",
+      "city": "Chicago Heights",
+      "committedTo": "Grambling",
+      "country": "USA",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.5062834,
+        "longitude": -87.6357079
+      },
+      "id": "217126",
+      "name": "Micheal Garner",
+      "position": "DL",
+      "ranking": 2179,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Bloom",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "grambling",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2023,
+        "team": "Grambling",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2024,
+        "team": "Grambling",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141952",
+    "recruiting": {
+      "athleteId": "5141952",
+      "city": "Green Bay",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "55009",
+        "latitude": 44.5126379,
+        "longitude": -88.0125794
+      },
+      "id": "109431",
+      "name": "Landon Gauthier",
+      "position": "LB",
+      "ranking": 738,
+      "rating": 0.8761,
+      "recruitType": "HighSchool",
+      "school": "Bay Port",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157461",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2024,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5122018",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2023,
+        "team": "Bowling Green",
+        "year": 3
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2024,
+        "team": "Bowling Green",
+        "year": 3
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 3
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5140697",
+    "recruiting": {
+      "athleteId": "5140697",
+      "city": "Sioux Falls",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "46099",
+        "latitude": 43.5499749,
+        "longitude": -96.700327
+      },
+      "id": "109161",
+      "name": "Thomas Heiberger",
+      "position": "LB",
+      "ranking": 465,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "Jefferson",
+      "stars": 4,
+      "stateProvince": "SD",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4714046",
+    "recruiting": {
+      "athleteId": "4714046",
+      "city": "Roseville",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26099",
+        "latitude": 42.4972583,
+        "longitude": -82.9371409
+      },
+      "id": "114312",
+      "name": "Tyrell Henry",
+      "position": "WR",
+      "ranking": 779,
+      "rating": 0.8696,
+      "recruitType": "HighSchool",
+      "school": "Roseville",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2022,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5110459",
+    "recruiting": {
+      "athleteId": "5110459",
+      "city": "Royersford",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "A",
+      "height": 78.5,
+      "hometownInfo": {
+        "fipsCode": "42091",
+        "latitude": 40.1842688,
+        "longitude": -75.5379639
+      },
+      "id": "108784",
+      "name": "Kevin Heywood",
+      "position": "OT",
+      "ranking": 86,
+      "rating": 0.9558,
+      "recruitType": "HighSchool",
+      "school": "Pope John Paul II",
+      "stars": 4,
+      "stateProvince": "PA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 299,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141505",
+    "recruiting": {
+      "athleteId": "5141505",
+      "city": "Zionsville",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18011",
+        "latitude": 39.950724,
+        "longitude": -86.2616968
+      },
+      "id": "106698",
+      "name": "Eugene Hilton Jr.",
+      "position": "WR",
+      "ranking": 507,
+      "rating": 0.8883,
+      "recruitType": "HighSchool",
+      "school": "Zionsville",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5210475",
+    "recruiting": {
+      "athleteId": "5210475",
+      "city": "Santa Ana",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "104305",
+      "name": "Ryan Hopkins",
+      "position": "QB",
+      "ranking": 731,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079500",
+    "recruiting": {
+      "athleteId": "5079500",
+      "city": "McKinney",
+      "committedTo": "USC",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1976496,
+        "longitude": -96.6154471
+      },
+      "id": "109339",
+      "name": "Bryan Jackson II",
+      "position": "ATH",
+      "ranking": 646,
+      "rating": 0.8803,
+      "recruitType": "HighSchool",
+      "school": "McKinney",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "usc",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2024,
+        "team": "USC",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "USC",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4916838",
+    "recruiting": {
+      "athleteId": "4916838",
+      "city": "Batavia",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17089",
+        "latitude": 41.8500284,
+        "longitude": -88.3125738
+      },
+      "id": "112103",
+      "name": "Tyler Jansey",
+      "position": "LB",
+      "ranking": 863,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Batavia",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5145223",
+    "recruiting": {
+      "athleteId": "5145223",
+      "city": "Joliet",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.5263603,
+        "longitude": -88.0840212
+      },
+      "id": "109169",
+      "name": "Dillan Johnson",
+      "position": "DL",
+      "ranking": 473,
+      "rating": 0.8908,
+      "recruitType": "HighSchool",
+      "school": "Joliet Catholic Academy",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 287,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "DL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "DL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5125715",
+    "recruiting": {
+      "athleteId": "5125715",
+      "city": "Newport Beach",
+      "committedTo": "Old Dominion",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6170092,
+        "longitude": -117.9294401
+      },
+      "id": "113092",
+      "name": "Colton Joseph",
+      "position": "QB",
+      "ranking": 1915,
+      "rating": 0.8306,
+      "recruitType": "HighSchool",
+      "school": "Newport Harbor",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "old-dominion",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2023,
+        "team": "Old Dominion",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2024,
+        "team": "Old Dominion",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2025,
+        "team": "Old Dominion",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5260561",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146110",
+    "recruiting": {
+      "athleteId": "5146110",
+      "city": "Goodyear",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4353672,
+        "longitude": -112.3576005
+      },
+      "id": "109927",
+      "name": "Jon Jon Kamara",
+      "position": "LB",
+      "ranking": 1266,
+      "rating": 0.8592,
+      "recruitType": "HighSchool",
+      "school": "Desert Edge",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4833363",
+    "recruiting": {
+      "athleteId": "4833363",
+      "city": "Frisco",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "114313",
+      "name": "Austin Kawecki",
+      "position": "OT",
+      "ranking": 785,
+      "rating": 0.8693,
+      "recruitType": "HighSchool",
+      "school": "Frisco Lebanon Trail",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2022,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079535",
+    "recruiting": {
+      "athleteId": "5079535",
+      "city": "Missouri City",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "108789",
+      "name": "Zion Kearney",
+      "position": "WR",
+      "ranking": 91,
+      "rating": 0.9548,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Hightower",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5294112",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5376852",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "P",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5089194",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2022,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5221278",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "RB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "RB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "RB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5160653",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203533",
+    "recruiting": {
+      "athleteId": "5203533",
+      "city": "Lawrenceville",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.300987649999996,
+        "longitude": -74.73737283395636
+      },
+      "id": "107075",
+      "name": "Samuel Lateju",
+      "position": "EDGE",
+      "ranking": 897,
+      "rating": 0.8714,
+      "recruitType": "HighSchool",
+      "school": "The Lawrenceville School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5198322",
+    "recruiting": {
+      "athleteId": "5198322",
+      "city": "Fort Walton Beach",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12091",
+        "latitude": 30.4057552,
+        "longitude": -86.618842
+      },
+      "id": "104372",
+      "name": "Zion Legree",
+      "position": "ATH",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Choctawhatchee",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211759",
+    "recruiting": {
+      "athleteId": "5211759",
+      "city": "Somerville",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "34035",
+        "latitude": 40.5742696,
+        "longitude": -74.60988
+      },
+      "id": "106479",
+      "name": "Jayden Loftin",
+      "position": "EDGE",
+      "ranking": 289,
+      "rating": 0.9071,
+      "recruitType": "HighSchool",
+      "school": "Somerville",
+      "stars": 4,
+      "stateProvince": "NJ",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tennessee",
+        "year": 1
+      },
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146771",
+    "recruiting": {
+      "athleteId": "5146771",
+      "city": "Saint Paul",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "27123",
+        "latitude": 44.9504037,
+        "longitude": -93.1015026
+      },
+      "id": "108889",
+      "name": "Emerson Mandell",
+      "position": "IOL",
+      "ranking": 191,
+      "rating": 0.9237,
+      "recruitType": "HighSchool",
+      "school": "Irondale",
+      "stars": 4,
+      "stateProvince": "MN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5160654",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "LB",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4915376",
+    "recruiting": {
+      "athleteId": "4915376",
+      "city": "Miamisburg",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39113",
+        "latitude": 39.6428362,
+        "longitude": -84.2866083
+      },
+      "id": "111810",
+      "name": "Jackson McGohan",
+      "position": "TE",
+      "ranking": 559,
+      "rating": 0.8828,
+      "recruitType": "HighSchool",
+      "school": "Miamisburg",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2023,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5376853",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "PK",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5306007",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5376854",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4869243",
+    "recruiting": {
+      "athleteId": "4869243",
+      "city": "Stoughton",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "55025",
+        "latitude": 42.9167389,
+        "longitude": -89.2178997
+      },
+      "id": "234627",
+      "name": "Barrett Nelson",
+      "position": "OT",
+      "ranking": 545,
+      "rating": 0.8815,
+      "recruitType": "HighSchool",
+      "school": "Stoughton",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2022,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5221277",
+    "recruiting": {
+      "athleteId": "5221277",
+      "city": "De Pere",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "55009",
+        "latitude": 44.4487476,
+        "longitude": -88.0601086
+      },
+      "id": "238817",
+      "name": "Langdon Nordgaard",
+      "position": "TE",
+      "ranking": 3490,
+      "rating": 0.75,
+      "recruitType": "HighSchool",
+      "school": "West De Pere",
+      "stars": 2,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5126474",
+    "recruiting": {
+      "athleteId": "5126474",
+      "city": "Indianapolis",
+      "committedTo": "San Diego State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "109374",
+      "name": "Danny O'Neil",
+      "position": "QB",
+      "ranking": 685,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Cathedral",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "san-diego-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2024,
+        "team": "San Diego State",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079552",
+    "recruiting": {
+      "athleteId": "5079552",
+      "city": "Decatur",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "48497",
+        "latitude": 33.2342834,
+        "longitude": -97.5861393
+      },
+      "id": "109203",
+      "name": "Nate Palmer",
+      "position": "RB",
+      "ranking": 508,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Decatur",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "RB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "RB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "RB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5085935",
+    "recruiting": {
+      "athleteId": "5085935",
+      "city": "Memphis",
+      "committedTo": "UT Martin",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47157",
+        "latitude": 35.1490215,
+        "longitude": -90.0516285
+      },
+      "id": "256240",
+      "name": "Charles Perkins",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Memphis Academy of Health Sciences",
+      "stars": null,
+      "stateProvince": "TN",
+      "teamSlug": "ut-martin",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "DL",
+        "season": 2022,
+        "team": "UT Martin",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "DL",
+        "season": 2024,
+        "team": "UT Martin",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "DL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5204396",
+    "recruiting": {
+      "athleteId": "5204396",
+      "city": "Middleton",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "55025",
+        "latitude": 43.0962919,
+        "longitude": -89.5119565
+      },
+      "id": "106888",
+      "name": "Torin Pettaway",
+      "position": "DL",
+      "ranking": 702,
+      "rating": 0.8781,
+      "recruitType": "HighSchool",
+      "school": "Middleton",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5376855",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5195298",
+    "recruiting": {
+      "athleteId": "5195298",
+      "city": "Albuquerque",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "35001",
+        "latitude": 35.0841034,
+        "longitude": -106.6509851
+      },
+      "id": "106412",
+      "name": "Mason Posa",
+      "position": "LB",
+      "ranking": 221,
+      "rating": 0.9194,
+      "recruitType": "HighSchool",
+      "school": "La Cueva",
+      "stars": 4,
+      "stateProvince": "NM",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 221,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141641",
+    "recruiting": {
+      "athleteId": "5141641",
+      "city": "Phoenix",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4484367,
+        "longitude": -112.0741417
+      },
+      "id": "106584",
+      "name": "Logan Powell",
+      "position": "IOL",
+      "ranking": 391,
+      "rating": 0.8958,
+      "recruitType": "HighSchool",
+      "school": "Brophy College Preparatory",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5122016",
+    "recruiting": {
+      "athleteId": "5122016",
+      "city": "Easthampton",
+      "committedTo": "Buffalo",
+      "country": "USA",
+      "grade": "F",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "25015",
+        "latitude": 42.2689274,
+        "longitude": -72.6688036
+      },
+      "id": "113527",
+      "name": "Junior Poyser",
+      "position": "DL",
+      "ranking": 2677,
+      "rating": 0.7906,
+      "recruitType": "HighSchool",
+      "school": "Williston Northampton School",
+      "stars": 2,
+      "stateProvince": "MA",
+      "teamSlug": "buffalo",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2023,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2024,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146753",
+    "recruiting": {
+      "athleteId": "5146753",
+      "city": "Clearwater",
+      "committedTo": "Purdue",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.9658533,
+        "longitude": -82.8001026
+      },
+      "id": "109455",
+      "name": "Shamar Rigby",
+      "position": "WR",
+      "ranking": 761,
+      "rating": 0.8753,
+      "recruitType": "HighSchool",
+      "school": "Clearwater Central Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "purdue",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4896318",
+    "recruiting": {
+      "athleteId": "4896318",
+      "city": "Winter Garden",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5656649,
+        "longitude": -81.5856742
+      },
+      "id": "114769",
+      "name": "Javan Robinson",
+      "position": "CB",
+      "ranking": 1261,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "West Orange",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2022,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2023,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220126",
+    "recruiting": {
+      "athleteId": "5220126",
+      "city": "Kennesaw",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 34.0234337,
+        "longitude": -84.6154897
+      },
+      "id": "257340",
+      "name": "James Roe",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "North Cobb",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5148608",
+    "recruiting": {
+      "athleteId": "5148608",
+      "city": "Wautoma",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "55137",
+        "latitude": 44.0746995,
+        "longitude": -89.287897
+      },
+      "id": "106735",
+      "name": "Michael Roeske",
+      "position": "OT",
+      "ranking": 545,
+      "rating": 0.8853,
+      "recruitType": "HighSchool",
+      "school": "Wautoma",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4603090",
+    "recruiting": {
+      "athleteId": "4603090",
+      "city": "Dublin",
+      "committedTo": "West Virginia",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.0992294,
+        "longitude": -83.1140771
+      },
+      "id": "116529",
+      "name": "Hammond Russell IV",
+      "position": "DL",
+      "ranking": 785,
+      "rating": 0.8652,
+      "recruitType": "HighSchool",
+      "school": "Dublin Coffman",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "west-virginia",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2021
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2021,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2022,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2023,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5078005",
+    "recruiting": {
+      "athleteId": "5078005",
+      "city": "Des Moines",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "19153",
+        "latitude": 41.5910641,
+        "longitude": -93.6037149
+      },
+      "id": "111956",
+      "name": "Abu Sama III",
+      "position": "RB",
+      "ranking": 712,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Southeast Polk",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2023,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2025,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5376856",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5086150",
+    "recruiting": {
+      "athleteId": "5086150",
+      "city": "O'Fallon",
+      "committedTo": "Southern Illinois",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29183",
+        "latitude": 38.7910374,
+        "longitude": -90.7039107
+      },
+      "id": "235565",
+      "name": "Ryan Schwendeman",
+      "position": "TE",
+      "ranking": 3143,
+      "rating": 0.76,
+      "recruitType": "HighSchool",
+      "school": "St. Dominic",
+      "stars": 2,
+      "stateProvince": "MO",
+      "teamSlug": "southern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2022,
+        "team": "Southern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2023,
+        "team": "Southern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "Southern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Southern Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148631",
+    "recruiting": {
+      "athleteId": "5148631",
+      "city": "Cincinnati",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "106586",
+      "name": "Jai'mier Scott",
+      "position": "ATH",
+      "ranking": 396,
+      "rating": 0.8956,
+      "recruitType": "HighSchool",
+      "school": "Mt. Healthy",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 177,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5281461",
+    "recruiting": {
+      "athleteId": "5281461",
+      "city": "Streetsboro",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39133",
+        "latitude": 41.239223,
+        "longitude": -81.345941
+      },
+      "id": "105234",
+      "name": "Arthur Scott III",
+      "position": "DL",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Streetsboro",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 312,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5202459",
+    "recruiting": {
+      "athleteId": "5202459",
+      "city": "Everett",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "53061",
+        "latitude": 47.9673056,
+        "longitude": -122.2013998
+      },
+      "id": "104530",
+      "name": "Jack Sievers",
+      "position": "TE",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Murphy",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870952",
+    "recruiting": {
+      "athleteId": "4870952",
+      "city": "Clearwater",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "B",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.9658533,
+        "longitude": -82.8001026
+      },
+      "id": "111376",
+      "name": "Lucas Simmons-Johansson",
+      "position": "OT",
+      "ranking": 112,
+      "rating": 0.9469,
+      "recruitType": "HighSchool",
+      "school": "Clearwater Academy International",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "Florida State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Florida State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222610",
+    "recruiting": {
+      "athleteId": "5222610",
+      "city": "Charlotte",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "D",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.2272,
+        "longitude": -80.843083
+      },
+      "id": "108176",
+      "name": "Cairo Skanes",
+      "position": "CB",
+      "ranking": 2259,
+      "rating": 0.8389,
+      "recruitType": "HighSchool",
+      "school": "Providence Day School",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141687",
+    "recruiting": {
+      "athleteId": "5141687",
+      "city": "Fort Myers",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "B",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.640628,
+        "longitude": -81.8723084
+      },
+      "id": "106477",
+      "name": "Carter Smith",
+      "position": "QB",
+      "ranking": 287,
+      "rating": 0.9073,
+      "recruitType": "HighSchool",
+      "school": "Bishop Verot",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079705",
+    "recruiting": {
+      "athleteId": "5079705",
+      "city": "Algonquin",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17111",
+        "latitude": 42.1655801,
+        "longitude": -88.2942493
+      },
+      "id": "108989",
+      "name": "Grant Stec",
+      "position": "TE",
+      "ranking": 291,
+      "rating": 0.9076,
+      "recruitType": "HighSchool",
+      "school": "Harry D Jacobs",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5376859",
+    "recruiting": {
+      "athleteId": "5376859",
+      "city": "Newport Beach",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6170092,
+        "longitude": -117.9294401
+      },
+      "id": "106147",
+      "name": "Dorsett Stecker",
+      "position": "WR",
+      "ranking": 3346,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Corona Del Mar",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5376860",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "TE",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5376861",
+    "recruiting": {
+      "athleteId": "5376861",
+      "city": "Chattanooga",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "47065",
+        "latitude": 35.0457219,
+        "longitude": -85.3094883
+      },
+      "id": "104378",
+      "name": "Keeyshawn Tabuteau",
+      "position": "WR",
+      "ranking": 527,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "McCallie School",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5332556",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "P",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5153979",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2023,
+        "team": "Richmond",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2024,
+        "team": "Richmond",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141727",
+    "recruiting": {
+      "athleteId": "5141727",
+      "city": "Denton",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "107418",
+      "name": "Xavier Ukponu",
+      "position": "DL",
+      "ranking": 1271,
+      "rating": 0.8619,
+      "recruitType": "HighSchool",
+      "school": "Denton Guyer",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 288,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146814",
+    "recruiting": {
+      "athleteId": "5146814",
+      "city": "Kaukauna",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "55087",
+        "latitude": 44.2780432,
+        "longitude": -88.2720503
+      },
+      "id": "110147",
+      "name": "Carson Van Dinter",
+      "position": "S",
+      "ranking": 1487,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Kaukauna",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "S",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "S",
+        "season": 2025,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5160650",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5160655",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5214520",
+    "recruiting": {
+      "athleteId": "5214520",
+      "city": "Chicago",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "106821",
+      "name": "Jahmare Washington",
+      "position": "CB",
+      "ranking": 629,
+      "rating": 0.8808,
+      "recruitType": "HighSchool",
+      "school": "Morgan Park",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149005",
+    "recruiting": {
+      "athleteId": "5149005",
+      "city": "Brookline",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "25021",
+        "latitude": 42.3317642,
+        "longitude": -71.1211635
+      },
+      "id": "106556",
+      "name": "Hardy Watts",
+      "position": "IOL",
+      "ranking": 366,
+      "rating": 0.8983,
+      "recruitType": "HighSchool",
+      "school": "Dexter Southfield",
+      "stars": 4,
+      "stateProvince": "MA",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291693",
+    "recruiting": {
+      "athleteId": "5291693",
+      "city": "Iowa Colony",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "105124",
+      "name": "Kah'ni Watts",
+      "position": "S",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Iowa Colony",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5289619",
+    "recruiting": {
+      "athleteId": "5289619",
+      "city": "Appleton",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "55087",
+        "latitude": 44.2611337,
+        "longitude": -88.4067604
+      },
+      "id": "105191",
+      "name": "Ben Wenzel",
+      "position": "LB",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Appleton North",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079737",
+    "recruiting": {
+      "athleteId": "5079737",
+      "city": "Cleveland",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "A",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.5051613,
+        "longitude": -81.6934446
+      },
+      "id": "108762",
+      "name": "Bryce West",
+      "position": "CB",
+      "ranking": 64,
+      "rating": 0.969,
+      "recruitType": "HighSchool",
+      "school": "Glenville",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 177,
+      "year": 2024
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2024,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5221280",
+    "recruiting": null,
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "P",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 91,
+        "position": "P",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 91,
+        "position": "P",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151049",
+    "recruiting": {
+      "athleteId": "5151049",
+      "city": "Baltimore",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": null,
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "256842",
+      "name": "PJ Wilkins",
+      "position": "OT",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 335,
+      "year": 2023
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Ole Miss",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141760",
+    "recruiting": {
+      "athleteId": "5141760",
+      "city": "Palatine",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.1105779,
+        "longitude": -88.0336888
+      },
+      "id": "106454",
+      "name": "Jaylen Williams",
+      "position": "DL",
+      "ranking": 264,
+      "rating": 0.9115,
+      "recruitType": "HighSchool",
+      "school": "Palatine",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4431136",
+    "recruiting": {
+      "athleteId": "4431136",
+      "city": "Winona",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "27169",
+        "latitude": 44.0500054,
+        "longitude": -91.6392294
+      },
+      "id": "119099",
+      "name": "Aaron Witt",
+      "position": "SDE",
+      "ranking": 693,
+      "rating": 0.8696,
+      "recruitType": "HighSchool",
+      "school": "Winona",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2020
+    },
+    "team": "Wisconsin",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2021,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2022,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "LB",
+        "season": 2026,
+        "team": "Wisconsin",
+        "year": 4
+      }
+    ]
+  }
+]

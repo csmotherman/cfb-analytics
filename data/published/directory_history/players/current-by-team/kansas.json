@@ -1,0 +1,4980 @@
+[
+  {
+    "playerId": "4916954",
+    "recruiting": {
+      "athleteId": "4916954",
+      "city": "Chantilly",
+      "committedTo": "Jacksonville State",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "51059",
+        "latitude": 38.8941543,
+        "longitude": -77.4311513
+      },
+      "id": "256027",
+      "name": "Jibreel Al-Amin",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Freedom",
+      "stars": null,
+      "stateProvince": "VA",
+      "teamSlug": "jacksonville-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2022,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2023,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2024,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2025,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5110531",
+    "recruiting": {
+      "athleteId": "5110531",
+      "city": "Chicago Heights",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.5062834,
+        "longitude": -87.6357079
+      },
+      "id": "109058",
+      "name": "Austin Alexander",
+      "position": "CB",
+      "ranking": 357,
+      "rating": 0.9,
+      "recruitType": "HighSchool",
+      "school": "Marian Catholic",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5214653",
+    "recruiting": {
+      "athleteId": "5214653",
+      "city": "Haslett",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "104189",
+      "name": "Kory Amachree",
+      "position": "RB",
+      "ranking": 586,
+      "rating": 0.8856,
+      "recruitType": "HighSchool",
+      "school": "Haslett",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5384632",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5384631",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151060",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5384626",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5109813",
+    "recruiting": {
+      "athleteId": "5109813",
+      "city": "Chesterfield",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29189",
+        "latitude": 38.661953,
+        "longitude": -90.5643258
+      },
+      "id": "112404",
+      "name": "Alex Bray",
+      "position": "EDGE",
+      "ranking": 1173,
+      "rating": 0.8583,
+      "recruitType": "HighSchool",
+      "school": "Marquette",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DE",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DE",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 91,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079346",
+    "recruiting": {
+      "athleteId": "5079346",
+      "city": "Katy",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "109021",
+      "name": "Dakyus Brinkley",
+      "position": "EDGE",
+      "ranking": 323,
+      "rating": 0.9043,
+      "recruitType": "HighSchool",
+      "school": "Katy",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5384621",
+    "recruiting": {
+      "athleteId": "5384621",
+      "city": "Chatsworth",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2595715,
+        "longitude": -118.6023247
+      },
+      "id": "105166",
+      "name": "Trey Brown",
+      "position": "CB",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Sierra Canyon",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5142704",
+    "recruiting": {
+      "athleteId": "5142704",
+      "city": "Sioux Center",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "19167",
+        "latitude": 43.079692,
+        "longitude": -96.175672
+      },
+      "id": "109811",
+      "name": "Carson Bruhn",
+      "position": "TE",
+      "ranking": 1139,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "Sioux Center",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5384628",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151966",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2023,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2024,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2025,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5085746",
+    "recruiting": {
+      "athleteId": "5085746",
+      "city": "St. Petersburg",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.7703796,
+        "longitude": -82.6695085
+      },
+      "id": "112655",
+      "name": "Marcus Calvin",
+      "position": "DL",
+      "ranking": 1403,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Gibbs",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DT",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "DT",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "DT",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5148413",
+    "recruiting": {
+      "athleteId": "5148413",
+      "city": "Pompano Beach",
+      "committedTo": "Mississippi State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.2378597,
+        "longitude": -80.1247667
+      },
+      "id": "109864",
+      "name": "Elijah Cannon",
+      "position": "CB",
+      "ranking": 1194,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Coconut Creek",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "mississippi-state",
+      "valueType": "BENCHMARK",
+      "weight": 168,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2024,
+        "team": "Mississippi State",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2025,
+        "team": "Mississippi State",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5091820",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290670",
+    "recruiting": {
+      "athleteId": "5290670",
+      "city": "Moore",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "40027",
+        "latitude": 35.3395135,
+        "longitude": -97.4867045
+      },
+      "id": "104548",
+      "name": "Na'kwaine Carter",
+      "position": "DL",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Southmoore",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4918102",
+    "recruiting": {
+      "athleteId": "4918102",
+      "city": "Lawrence",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "20045",
+        "latitude": 38.9719384,
+        "longitude": -95.2359496
+      },
+      "id": "111894",
+      "name": "Calvin Clements",
+      "position": "OT",
+      "ranking": 650,
+      "rating": 0.8781,
+      "recruitType": "HighSchool",
+      "school": "Lawrence Free State",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219496",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327914",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685301",
+    "recruiting": {
+      "athleteId": "4685301",
+      "city": "Kansas City",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.100105,
+        "longitude": -94.5781416
+      },
+      "id": "114149",
+      "name": "Quinton Conley",
+      "position": "WR",
+      "ranking": 601,
+      "rating": 0.8781,
+      "recruitType": "HighSchool",
+      "school": "Pembroke Hill",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2022,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5157627",
+    "recruiting": {
+      "athleteId": "5157627",
+      "city": "Meridian",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "16001",
+        "latitude": 43.6086295,
+        "longitude": -116.392326
+      },
+      "id": "111133",
+      "name": "Martin Connington",
+      "position": "K",
+      "ranking": 2789,
+      "rating": 0.8092,
+      "recruitType": "HighSchool",
+      "school": "Mountain View",
+      "stars": 3,
+      "stateProvince": "ID",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "PK",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "PK",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "PK",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5199852",
+    "recruiting": {
+      "athleteId": "5199852",
+      "city": "Snellville",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.857328,
+        "longitude": -84.0199108
+      },
+      "id": "107651",
+      "name": "Jackson Cook",
+      "position": "WR",
+      "ranking": 1540,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "South Gwinnett",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296407",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Middle Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5282063",
+    "recruiting": {
+      "athleteId": "5282063",
+      "city": "Pearland",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "104688",
+      "name": "Joseph Credit",
+      "position": "LB",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Pearland",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4837267",
+    "recruiting": {
+      "athleteId": "4837267",
+      "city": "Tampa",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "114676",
+      "name": "Daveon Crouch",
+      "position": "LB",
+      "ranking": 1168,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Wharton",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2022,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2023,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2024,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2025,
+        "team": "Boston College",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146742",
+    "recruiting": {
+      "athleteId": "5146742",
+      "city": "Minneapolis",
+      "committedTo": "Iowa State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "27053",
+        "latitude": 44.9772995,
+        "longitude": -93.2654692
+      },
+      "id": "110109",
+      "name": "Khijohnn Cummings-Coleman",
+      "position": "ATH",
+      "ranking": 1460,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Coon Rapids",
+      "stars": 3,
+      "stateProvince": "MN",
+      "teamSlug": "iowa-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2024,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2025,
+        "team": "Iowa State",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219497",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141416",
+    "recruiting": {
+      "athleteId": "5141416",
+      "city": "Waukee",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "19049",
+        "latitude": 41.6118485,
+        "longitude": -93.8845129
+      },
+      "id": "106891",
+      "name": "Malachi Curvey",
+      "position": "EDGE",
+      "ranking": 706,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Ankeny Centennial",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 218,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5120485",
+    "recruiting": {
+      "athleteId": "5120485",
+      "city": "Las Vegas",
+      "committedTo": "New Mexico State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "217225",
+      "name": "Quincy Davis",
+      "position": "LB",
+      "ranking": 2529,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "new-mexico-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2023,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2024,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2025,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5075623",
+    "recruiting": {
+      "athleteId": "5075623",
+      "city": "Missouri City",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "112575",
+      "name": "Taylor Davis",
+      "position": "S",
+      "ranking": 1347,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Ridge Point",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193112",
+    "recruiting": {
+      "athleteId": "5193112",
+      "city": "Malvern",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "05059",
+        "latitude": 34.3623149,
+        "longitude": -92.8129463
+      },
+      "id": "109860",
+      "name": "Jalen Dupree",
+      "position": "RB",
+      "ranking": 1183,
+      "rating": 0.8614,
+      "recruitType": "HighSchool",
+      "school": "Malvern",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2024,
+        "team": "Colorado State",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2025,
+        "team": "Colorado State",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4918414",
+    "recruiting": {
+      "athleteId": "4918414",
+      "city": "Derby",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "B",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "20173",
+        "latitude": 37.5455735,
+        "longitude": -97.2689331
+      },
+      "id": "111411",
+      "name": "Dylan Edwards",
+      "position": "RB",
+      "ranking": 175,
+      "rating": 0.931,
+      "recruitType": "HighSchool",
+      "school": "Derby",
+      "stars": 4,
+      "stateProvince": "KS",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2023,
+        "team": "Colorado",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2024,
+        "team": "Kansas State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kansas State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5294286",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4912139",
+    "recruiting": {
+      "athleteId": "4912139",
+      "city": "Mulvane",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "20173",
+        "latitude": 37.485081,
+        "longitude": -97.24502856790883
+      },
+      "id": "115595",
+      "name": "Mason Ellis",
+      "position": "ATH",
+      "ranking": 2327,
+      "rating": 0.8044,
+      "recruitType": "HighSchool",
+      "school": "Mulvane",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2022,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5264691",
+    "recruiting": {
+      "athleteId": "5264691",
+      "city": "Lawrence",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "20045",
+        "latitude": 38.9719384,
+        "longitude": -95.2359496
+      },
+      "id": "104559",
+      "name": "Josh Galbreath",
+      "position": "LB",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Lawrence",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5083396",
+    "recruiting": {
+      "athleteId": "5083396",
+      "city": "Everett",
+      "committedTo": "Rhode Island",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "25017",
+        "latitude": 42.40843,
+        "longitude": -71.0536625
+      },
+      "id": "256174",
+      "name": "Syeed Gibbs",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Everett",
+      "stars": null,
+      "stateProvince": "MA",
+      "teamSlug": "rhode-island",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2022,
+        "team": "Rhode Island",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2023,
+        "team": "Rhode Island",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2024,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5331884",
+    "recruiting": {
+      "athleteId": "5331884",
+      "city": "Australia",
+      "committedTo": "Kansas",
+      "country": "AUS",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "224686",
+      "name": "Matthew Gill",
+      "position": "P",
+      "ranking": 3096,
+      "rating": 0.8244,
+      "recruitType": "HighSchool",
+      "school": "Australian Kicking Academy",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "P",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5264800",
+    "recruiting": {
+      "athleteId": "5264800",
+      "city": "Denton",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "104687",
+      "name": "Corbin Glasco",
+      "position": "WR",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Denton Guyer",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870279",
+    "recruiting": {
+      "athleteId": "4870279",
+      "city": "Oklahoma City",
+      "committedTo": "Baylor",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "40109",
+        "latitude": 35.4729886,
+        "longitude": -97.5170536
+      },
+      "id": "114269",
+      "name": "Corey Gordon Jr.",
+      "position": "S",
+      "ranking": 735,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Putnam City West",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "baylor",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2022,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2023,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2024,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5205024",
+    "recruiting": {
+      "athleteId": "5205024",
+      "city": "Tulsa",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "220921",
+      "name": "Josiah Hammond",
+      "position": "DL",
+      "ranking": 1203,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Tulsa Union",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5384623",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5259823",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4901380",
+    "recruiting": {
+      "athleteId": "4901380",
+      "city": "Atlanta",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "114083",
+      "name": "Jaden Harris",
+      "position": "CB",
+      "ranking": 541,
+      "rating": 0.8819,
+      "recruitType": "HighSchool",
+      "school": "Riverwood",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2023,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2024,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2025,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5223986",
+    "recruiting": {
+      "athleteId": "5223986",
+      "city": "Nashville",
+      "committedTo": "Chattanooga",
+      "country": "USA",
+      "grade": "D",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "238002",
+      "name": "Leroy Harris III",
+      "position": "LB",
+      "ranking": 1919,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Christ Presbyterian Academy",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "chattanooga",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DE",
+        "season": 2024,
+        "team": "Chattanooga",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "DE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151868",
+    "recruiting": {
+      "athleteId": "5151868",
+      "city": "Maize",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "20173",
+        "latitude": 37.7791787,
+        "longitude": -97.4672674
+      },
+      "id": "107268",
+      "name": "Bryson Hayes",
+      "position": "WR",
+      "ranking": 1107,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Maize",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084890",
+    "recruiting": {
+      "athleteId": "5084890",
+      "city": "Shenandoah",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "112987",
+      "name": "Blake Herold",
+      "position": "DL",
+      "ranking": 1803,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "Shenandoah",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870775",
+    "recruiting": {
+      "athleteId": "4870775",
+      "city": "West Bloomfield",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "36069",
+        "latitude": 42.5679,
+        "longitude": -83.3733
+      },
+      "id": "111533",
+      "name": "Amir Herring",
+      "position": "IOL",
+      "ranking": 287,
+      "rating": 0.907,
+      "recruitType": "HighSchool",
+      "school": "West Bloomfield",
+      "stars": 4,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5263878",
+    "recruiting": {
+      "athleteId": "5263878",
+      "city": "Wichita",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "20173",
+        "latitude": 37.6922361,
+        "longitude": -97.3375448
+      },
+      "id": "104315",
+      "name": "Hunter Higgins",
+      "position": "EDGE",
+      "ranking": 665,
+      "rating": 0.8822,
+      "recruitType": "HighSchool",
+      "school": "Maize South",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211202",
+    "recruiting": {
+      "athleteId": "5211202",
+      "city": "Michigan City",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18091",
+        "latitude": 41.7075394,
+        "longitude": -86.8950297
+      },
+      "id": "107093",
+      "name": "Adrian Holley",
+      "position": "EDGE",
+      "ranking": 917,
+      "rating": 0.8708,
+      "recruitType": "HighSchool",
+      "school": "Michigan City",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 90,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5294287",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870796",
+    "recruiting": {
+      "athleteId": "4870796",
+      "city": "Florence",
+      "committedTo": "Alabama",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01077",
+        "latitude": 34.79981,
+        "longitude": -87.677251
+      },
+      "id": "111295",
+      "name": "Jahlil Hurley",
+      "position": "CB",
+      "ranking": 51,
+      "rating": 0.976,
+      "recruitType": "HighSchool",
+      "school": "Florence",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "alabama",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "CB",
+        "season": 2023,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "CB",
+        "season": 2024,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "CB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4986096",
+    "recruiting": {
+      "athleteId": "4986096",
+      "city": "Houston",
+      "committedTo": "Rice",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "113002",
+      "name": "Chase Jenkins",
+      "position": "QB",
+      "ranking": 1827,
+      "rating": 0.8353,
+      "recruitType": "HighSchool",
+      "school": "Alief Taylor",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "rice",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2023,
+        "team": "Rice",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "Rice",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Rice",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5331334",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219487",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5203723",
+    "recruiting": {
+      "athleteId": "5203723",
+      "city": "Cape Coral",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.6059432,
+        "longitude": -81.9806771
+      },
+      "id": "107411",
+      "name": "Darrion Jones",
+      "position": "S",
+      "ranking": 1254,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Cape Coral",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211057",
+    "recruiting": {
+      "athleteId": "5211057",
+      "city": "Cypress",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9691116,
+        "longitude": -95.6971686
+      },
+      "id": "107096",
+      "name": "John Kelly",
+      "position": "RB",
+      "ranking": 924,
+      "rating": 0.8706,
+      "recruitType": "HighSchool",
+      "school": "Cypress Christian School",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210229",
+    "recruiting": {
+      "athleteId": "5210229",
+      "city": "Phoenix",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4484367,
+        "longitude": -112.0741417
+      },
+      "id": "107765",
+      "name": "Anderson Kopp",
+      "position": "IOL",
+      "ranking": 1655,
+      "rating": 0.8525,
+      "recruitType": "HighSchool",
+      "school": "Brophy College Preparatory",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4924150",
+    "recruiting": {
+      "athleteId": "4924150",
+      "city": "Austin",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "112531",
+      "name": "Keaton Kubecka",
+      "position": "WR",
+      "ranking": 1304,
+      "rating": 0.8539,
+      "recruitType": "HighSchool",
+      "school": "Austin Westlake",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5082001",
+    "recruiting": {
+      "athleteId": "5082001",
+      "city": "Miami",
+      "committedTo": "West Virginia",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "113999",
+      "name": "Trey Lathan",
+      "position": "LB",
+      "ranking": 457,
+      "rating": 0.8869,
+      "recruitType": "HighSchool",
+      "school": "Gulliver Prep",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "west-virginia",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2022,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2023,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4832022",
+    "recruiting": {
+      "athleteId": "4832022",
+      "city": "Dexter",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "27099",
+        "latitude": 42.3386044,
+        "longitude": -83.8891514
+      },
+      "id": "114767",
+      "name": "James Livingston",
+      "position": "OT",
+      "ranking": 1257,
+      "rating": 0.8504,
+      "recruitType": "HighSchool",
+      "school": "Dexter",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2022,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5384630",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5227973",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "S",
+        "season": 2025,
+        "team": "Northern Iowa",
+        "year": 2
+      },
+      {
+        "jersey": 34,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079604",
+    "recruiting": {
+      "athleteId": "5079604",
+      "city": "Southfield",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.4733689,
+        "longitude": -83.2218731
+      },
+      "id": "109295",
+      "name": "Isaiah Marshall",
+      "position": "QB",
+      "ranking": 603,
+      "rating": 0.8828,
+      "recruitType": "HighSchool",
+      "school": "Southfield",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 204,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5167709",
+    "recruiting": {
+      "athleteId": "5167709",
+      "city": "Scottsdale",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "107523",
+      "name": "Garrett Martin",
+      "position": "EDGE",
+      "ranking": 1419,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Saguaro",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "DE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 45,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5244729",
+    "recruiting": {
+      "athleteId": "5244729",
+      "city": "Wichita",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "20173",
+        "latitude": 37.6922361,
+        "longitude": -97.3375448
+      },
+      "id": "105231",
+      "name": "Jaylen Mason",
+      "position": "QB",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Wichita Northwest",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 196,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4816082",
+    "recruiting": {
+      "athleteId": "4816082",
+      "city": "Saraland",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.820742,
+        "longitude": -88.0705556
+      },
+      "id": "114087",
+      "name": "Tre'Von McAlpine",
+      "position": "DL",
+      "ranking": 545,
+      "rating": 0.8815,
+      "recruitType": "HighSchool",
+      "school": "Saraland",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2022,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2023,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2025,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5195296",
+    "recruiting": {
+      "athleteId": "5195296",
+      "city": "Sarasota",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.3364347,
+        "longitude": -82.5306527
+      },
+      "id": "106845",
+      "name": "Chris McCorkle",
+      "position": "CB",
+      "ranking": 660,
+      "rating": 0.8797,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Mooney",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 172,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "CB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 19,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219489",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "S",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "S",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4869730",
+    "recruiting": {
+      "athleteId": "4869730",
+      "city": "Buffalo",
+      "committedTo": "Buffalo",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "36029",
+        "latitude": 42.8867166,
+        "longitude": -78.8783922
+      },
+      "id": "115255",
+      "name": "Nik McMillan",
+      "position": "WR",
+      "ranking": 1846,
+      "rating": 0.8289,
+      "recruitType": "HighSchool",
+      "school": "Dr. Henry Wise",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "buffalo",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2022,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "Buffalo",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5264724",
+    "recruiting": {
+      "athleteId": "5264724",
+      "city": "Westfield",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "18057",
+        "latitude": 40.0428151,
+        "longitude": -86.1274888
+      },
+      "id": "104917",
+      "name": "Malachi Mills",
+      "position": "OT",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Westfield",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219491",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5384629",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4878110",
+    "recruiting": {
+      "athleteId": "4878110",
+      "city": "Uniondale",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "F",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "36059",
+        "latitude": 40.7031115,
+        "longitude": -73.5895167364443
+      },
+      "id": "115703",
+      "name": "Rino Monteforte",
+      "position": "LS",
+      "ranking": 2702,
+      "rating": 0.7844,
+      "recruitType": "HighSchool",
+      "school": "Kellenberg Memorial",
+      "stars": 2,
+      "stateProvince": "NY",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2022,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2023,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2024,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2025,
+        "team": "California",
+        "year": 4
+      },
+      {
+        "jersey": 39,
+        "position": "LS",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276703",
+    "recruiting": {
+      "athleteId": "5276703",
+      "city": "Broken Arrow",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.0525993,
+        "longitude": -95.7908195
+      },
+      "id": "193487",
+      "name": "Kaden Moody",
+      "position": "OT",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Broken Arrow",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219488",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 36,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151553",
+    "recruiting": {
+      "athleteId": "5151553",
+      "city": "Flagstaff",
+      "committedTo": "California",
+      "country": "USA",
+      "grade": "C",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "04005",
+        "latitude": 35.1987522,
+        "longitude": -111.6518229
+      },
+      "id": "114773",
+      "name": "Nick Morrow",
+      "position": "OT",
+      "ranking": 1261,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Flagstaff",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "california",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2023,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2024,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5098591",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2022,
+        "team": "UAlbany",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "UAlbany",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "UAlbany",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "UAlbany",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151071",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5216559",
+    "recruiting": {
+      "athleteId": "5216559",
+      "city": "Stilwell",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 38.7691755,
+        "longitude": -94.6563454
+      },
+      "id": "108109",
+      "name": "Tate Nagy",
+      "position": "WR",
+      "ranking": 2085,
+      "rating": 0.8408,
+      "recruitType": "HighSchool",
+      "school": "Blue Valley West",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141579",
+    "recruiting": {
+      "athleteId": "5141579",
+      "city": "Hattiesburg",
+      "committedTo": "Arkansas",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "28035",
+        "latitude": 31.3271189,
+        "longitude": -89.2903392
+      },
+      "id": "106517",
+      "name": "Kevin Oatis",
+      "position": "DL",
+      "ranking": 327,
+      "rating": 0.9019,
+      "recruitType": "HighSchool",
+      "school": "Hattiesburg",
+      "stars": 4,
+      "stateProvince": "MS",
+      "teamSlug": "arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DT",
+        "season": 2025,
+        "team": "Arkansas",
+        "year": 1
+      },
+      {
+        "jersey": 88,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5271232",
+    "recruiting": {
+      "athleteId": "5271232",
+      "city": "Tecumseh",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "20177",
+        "latitude": 39.0480559,
+        "longitude": -95.5791454
+      },
+      "id": "104861",
+      "name": "Tyren Parker",
+      "position": "WR",
+      "ranking": 1114,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Shawnee Heights",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081092",
+    "recruiting": {
+      "athleteId": "5081092",
+      "city": "Overland Park",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "20091",
+        "latitude": 38.9742502,
+        "longitude": -94.6851702
+      },
+      "id": "234689",
+      "name": "Mikey Pauley",
+      "position": "QB",
+      "ranking": 1525,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Blue Valley Northwest",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 197,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2022,
+        "team": "Nebraska",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5083804",
+    "recruiting": {
+      "athleteId": "5083804",
+      "city": "Pickerington",
+      "committedTo": "Bucknell",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39045",
+        "latitude": 39.896277299999994,
+        "longitude": -82.77319049748806
+      },
+      "id": "256276",
+      "name": "Roman Pearson",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Pickerington Central",
+      "stars": null,
+      "stateProvince": "OH",
+      "teamSlug": "bucknell",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2022,
+        "team": "Bucknell",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2023,
+        "team": "Bucknell",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2024,
+        "team": "Bucknell",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2025,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869603",
+    "recruiting": {
+      "athleteId": "4869603",
+      "city": "Chicago",
+      "committedTo": "Ball State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "115329",
+      "name": "Cam Pickett",
+      "position": "WR",
+      "ranking": 1912,
+      "rating": 0.8256,
+      "recruitType": "HighSchool",
+      "school": "Brooks College Prep",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "ball-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2022,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2023,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5150133",
+    "recruiting": {
+      "athleteId": "5150133",
+      "city": "New Orleans",
+      "committedTo": "Georgia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "110106",
+      "name": "Christian Pritchett",
+      "position": "S",
+      "ranking": 1447,
+      "rating": 0.8547,
+      "recruitType": "HighSchool",
+      "school": "St. Augustine",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "georgia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2024,
+        "team": "Georgia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2025,
+        "team": "Georgia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265581",
+    "recruiting": {
+      "athleteId": "5265581",
+      "city": "Orange City",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "19167",
+        "latitude": 43.0072424,
+        "longitude": -96.0583138
+      },
+      "id": "104602",
+      "name": "Draeden Punt",
+      "position": "DL",
+      "ranking": 731,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "MOC-Floyd Valley",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291157",
+    "recruiting": {
+      "athleteId": "5291157",
+      "city": "Indianapolis",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "105792",
+      "name": "Robert Reddick",
+      "position": "S",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Ben Davis",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5384625",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219492",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5384622",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5223133",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DE",
+        "season": 2024,
+        "team": "Air Force",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "DE",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "DE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215566",
+    "recruiting": {
+      "athleteId": "5215566",
+      "city": "Axtell",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107587",
+      "name": "Brandon Schmelzle",
+      "position": "S",
+      "ranking": 1477,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "Axtell",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5384624",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151070",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "DT",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "DT",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "DT",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5384627",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "P",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5264499",
+    "recruiting": {
+      "athleteId": "5264499",
+      "city": "Ottawa",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "20059",
+        "latitude": 38.6153828,
+        "longitude": -95.2678474
+      },
+      "id": "104955",
+      "name": "Nate Sims",
+      "position": "WR",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Ottawa",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921452",
+    "recruiting": {
+      "athleteId": "4921452",
+      "city": "Ladys Island",
+      "committedTo": "UAB",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "45013",
+        "latitude": 32.4501913,
+        "longitude": -80.6331616
+      },
+      "id": "113013",
+      "name": "Eamon Smalls",
+      "position": "DL",
+      "ranking": 1837,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Beaufort",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "uab",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2023,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2024,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2025,
+        "team": "UAB",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209386",
+    "recruiting": {
+      "athleteId": "5209386",
+      "city": "Salina",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "20169",
+        "latitude": 38.8402805,
+        "longitude": -97.6114237
+      },
+      "id": "104227",
+      "name": "Kaden Snyder",
+      "position": "OT",
+      "ranking": 379,
+      "rating": 0.8978,
+      "recruitType": "HighSchool",
+      "school": "Salina Central",
+      "stars": 4,
+      "stateProvince": "KS",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921453",
+    "recruiting": {
+      "athleteId": "4921453",
+      "city": "Nashville",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 79.5,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "112047",
+      "name": "Brandon Solis",
+      "position": "OT",
+      "ranking": 808,
+      "rating": 0.8717,
+      "recruitType": "HighSchool",
+      "school": "Lipscomb Academy",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219493",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 70,
+        "position": "DL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4917985",
+    "recruiting": {
+      "athleteId": "4917985",
+      "city": "Frisco",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "C",
+      "height": 78.5,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "111864",
+      "name": "Connor Stroh",
+      "position": "OT",
+      "ranking": 614,
+      "rating": 0.8794,
+      "recruitType": "HighSchool",
+      "school": "Frisco Wakeland",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 345,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2023,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Texas",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5276682",
+    "recruiting": {
+      "athleteId": "5276682",
+      "city": "Kansas City",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "29095",
+        "latitude": 39.100105,
+        "longitude": -94.5781416
+      },
+      "id": "104965",
+      "name": "Kevin Sullivan",
+      "position": "TE",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Rockhurst",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149273",
+    "recruiting": {
+      "athleteId": "5149273",
+      "city": "Flower Mound",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.0283854,
+        "longitude": -97.0867203
+      },
+      "id": "110460",
+      "name": "Jack Tanner",
+      "position": "IOL",
+      "ranking": 1853,
+      "rating": 0.8419,
+      "recruitType": "HighSchool",
+      "school": "Flower Mound Marcus",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141740",
+    "recruiting": {
+      "athleteId": "5141740",
+      "city": "Tampa",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "107137",
+      "name": "Justin Thurman",
+      "position": "RB",
+      "ranking": 975,
+      "rating": 0.8694,
+      "recruitType": "HighSchool",
+      "school": "Tampa Jesuit",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 184,
+      "year": 2025
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147201",
+    "recruiting": {
+      "athleteId": "5147201",
+      "city": "Southfield",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.4733689,
+        "longitude": -83.2218731
+      },
+      "id": "109216",
+      "name": "Jalen Todd",
+      "position": "CB",
+      "ranking": 518,
+      "rating": 0.8875,
+      "recruitType": "HighSchool",
+      "school": "Southfield",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "CB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5121418",
+    "recruiting": {
+      "athleteId": "5121418",
+      "city": "Fontana",
+      "committedTo": "UCLA",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06071",
+        "latitude": 34.0922335,
+        "longitude": -117.435048
+      },
+      "id": "111840",
+      "name": "Tavake Tuikolovatu",
+      "position": "IOL",
+      "ranking": 597,
+      "rating": 0.8806,
+      "recruitType": "HighSchool",
+      "school": "Summit",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "ucla",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCLA",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5163002",
+    "recruiting": {
+      "athleteId": "5163002",
+      "city": "Platte City",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "29165",
+        "latitude": 39.3703535,
+        "longitude": -94.781086
+      },
+      "id": "104626",
+      "name": "Jack Utz",
+      "position": "TE",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Platte County",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2026
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "TE",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151066",
+    "recruiting": {
+      "athleteId": "5151066",
+      "city": "Omaha",
+      "committedTo": "Kansas",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "31055",
+        "latitude": 41.2587459,
+        "longitude": -95.9383758
+      },
+      "id": "256534",
+      "name": "Ezra Vedral",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Creighton Prep",
+      "stars": null,
+      "stateProvince": "NE",
+      "teamSlug": "kansas",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4431608",
+    "recruiting": {
+      "athleteId": "4431608",
+      "city": "Hutto",
+      "committedTo": "TCU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48491",
+        "latitude": 30.5427638,
+        "longitude": -97.5468898
+      },
+      "id": "116223",
+      "name": "Landyn Watson",
+      "position": "EDGE",
+      "ranking": 480,
+      "rating": 0.8826,
+      "recruitType": "HighSchool",
+      "school": "Hutto",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tcu",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2021
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2021,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2022,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2023,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2024,
+        "team": "Marshall",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685595",
+    "recruiting": {
+      "athleteId": "4685595",
+      "city": "Leesburg",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13177",
+        "latitude": 31.7324556,
+        "longitude": -84.1711966
+      },
+      "id": "113732",
+      "name": "Jaron Willis",
+      "position": "EDGE",
+      "ranking": 189,
+      "rating": 0.9268,
+      "recruitType": "HighSchool",
+      "school": "Lee County",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2022,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2023,
+        "team": "South Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2024,
+        "team": "South Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2025,
+        "team": "South Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "LB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079749",
+    "recruiting": {
+      "athleteId": "5079749",
+      "city": "Montvale",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 41.0467635,
+        "longitude": -74.0229173
+      },
+      "id": "109219",
+      "name": "Yasin Willis",
+      "position": "RB",
+      "ranking": 525,
+      "rating": 0.8872,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph Regional",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Syracuse",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5294288",
+    "recruiting": null,
+    "team": "Kansas",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Kansas",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Kansas",
+        "year": 3
+      }
+    ]
+  }
+]

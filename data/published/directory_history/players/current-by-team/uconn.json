@@ -1,0 +1,4476 @@
+[
+  {
+    "playerId": "5278798",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290765",
+    "recruiting": {
+      "athleteId": "5290765",
+      "city": "Pembroke Pines",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.02322025,
+        "longitude": -80.34123906625615
+      },
+      "id": "104638",
+      "name": "Shmar Akande",
+      "position": "CB",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "West Broward",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5077896",
+    "recruiting": {
+      "athleteId": "5077896",
+      "city": "Milford",
+      "committedTo": "Duke",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "10005",
+        "latitude": 38.9130453,
+        "longitude": -75.4278733
+      },
+      "id": "112611",
+      "name": "Desmond Aladuge",
+      "position": "EDGE",
+      "ranking": 1380,
+      "rating": 0.8508,
+      "recruitType": "HighSchool",
+      "school": "Milford",
+      "stars": 3,
+      "stateProvince": "DE",
+      "teamSlug": "duke",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DT",
+        "season": 2023,
+        "team": "Duke",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "DT",
+        "season": 2024,
+        "team": "Duke",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "DT",
+        "season": 2025,
+        "team": "Duke",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "DT",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151689",
+    "recruiting": {
+      "athleteId": "5151689",
+      "city": "Clearwater",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.9658533,
+        "longitude": -82.8001026
+      },
+      "id": "113031",
+      "name": "Julian Allen",
+      "position": "WR",
+      "ranking": 1850,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Clearwater Central Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 198,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5218775",
+    "recruiting": {
+      "athleteId": "5218775",
+      "city": "Wilmette",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0757315,
+        "longitude": -87.7193768
+      },
+      "id": "257306",
+      "name": "Mike Baker",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Loyola Academy",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "PK",
+        "season": 2024,
+        "team": "Ole Miss",
+        "year": 1
+      },
+      {
+        "jersey": 89,
+        "position": "PK",
+        "season": 2025,
+        "team": "Ole Miss",
+        "year": 1
+      },
+      {
+        "jersey": 89,
+        "position": "PK",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302867",
+    "recruiting": {
+      "athleteId": "5302867",
+      "city": "Marion",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18053",
+        "latitude": 40.5583739,
+        "longitude": -85.6591442
+      },
+      "id": "212312",
+      "name": "Logan Barnes",
+      "position": "WR",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Marion",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295538",
+    "recruiting": {
+      "athleteId": "5295538",
+      "city": "Mansfield",
+      "committedTo": "Iowa",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "25005",
+        "latitude": 42.0334326,
+        "longitude": -71.2189405
+      },
+      "id": "107212",
+      "name": "CJ Bell Jr.",
+      "position": "CB",
+      "ranking": 1049,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas More (Prep)",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "iowa",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2025,
+        "team": "Iowa",
+        "year": 1
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150454",
+    "recruiting": {
+      "athleteId": "5150454",
+      "city": "Mission Viejo",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "F",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5965685,
+        "longitude": -117.659405
+      },
+      "id": "217598",
+      "name": "Carter Boskovich",
+      "position": "S",
+      "ranking": 2811,
+      "rating": 0.78,
+      "recruitType": "HighSchool",
+      "school": "Mission Viejo",
+      "stars": 2,
+      "stateProvince": "CA",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2023,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2024,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296247",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "West Virginia",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5167170",
+    "recruiting": {
+      "athleteId": "5167170",
+      "city": "Upper Marlboro",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.8165274,
+        "longitude": -76.7519753
+      },
+      "id": "107631",
+      "name": "Axavier Bridges-Brooks",
+      "position": "S",
+      "ranking": 1523,
+      "rating": 0.8564,
+      "recruitType": "HighSchool",
+      "school": "Rock Creek Christian Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5193720",
+    "recruiting": {
+      "athleteId": "5193720",
+      "city": "Williston",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12075",
+        "latitude": 29.3880028,
+        "longitude": -82.4481694
+      },
+      "id": "111100",
+      "name": "Javon Brown",
+      "position": "WR",
+      "ranking": 2683,
+      "rating": 0.8106,
+      "recruitType": "HighSchool",
+      "school": "Williston",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 187,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086166",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2022,
+        "team": "Georgetown",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5125554",
+    "recruiting": {
+      "athleteId": "5125554",
+      "city": "St. Petersburg",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.7703796,
+        "longitude": -82.6695085
+      },
+      "id": "111890",
+      "name": "Chamberlain Campbell",
+      "position": "EDGE",
+      "ranking": 634,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Lakewood",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2023,
+        "team": "Ole Miss",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2024,
+        "team": "Ole Miss",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 97,
+        "position": "DE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4587719",
+    "recruiting": {
+      "athleteId": "4587719",
+      "city": "Detroit",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "117500",
+      "name": "Esean Carter",
+      "position": "DL",
+      "ranking": 1811,
+      "rating": 0.8278,
+      "recruitType": "HighSchool",
+      "school": "Martin Luther King",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2021
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2022,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "DT",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685711",
+    "recruiting": {
+      "athleteId": "4685711",
+      "city": "Groton",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "25017",
+        "latitude": 42.6112242,
+        "longitude": -71.5745402
+      },
+      "id": "113766",
+      "name": "Ty Chan",
+      "position": "OT",
+      "ranking": 223,
+      "rating": 0.915,
+      "recruitType": "HighSchool",
+      "school": "Lawrence Academy",
+      "stars": 4,
+      "stateProvince": "MA",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2022,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2023,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4689529",
+    "recruiting": {
+      "athleteId": "4689529",
+      "city": "Pinson",
+      "committedTo": "Virginia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.706205,
+        "longitude": -86.67007895992774
+      },
+      "id": "116452",
+      "name": "Kenji Christian",
+      "position": "RB",
+      "ranking": 707,
+      "rating": 0.8685,
+      "recruitType": "HighSchool",
+      "school": "Pinson Valley",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "virginia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2021
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2021,
+        "team": "Virginia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2022,
+        "team": "Virginia Tech",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2023,
+        "team": "North Carolina A&T",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2024,
+        "team": "North Carolina A&T",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "RB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5150464",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2023,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2024,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2025,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5075952",
+    "recruiting": {
+      "athleteId": "5075952",
+      "city": "Cincinnati",
+      "committedTo": "Tulane",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "112456",
+      "name": "Trey Cornist",
+      "position": "RB",
+      "ranking": 1220,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Winton Woods",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "tulane",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "Tulane",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Tulane",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Central Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5293817",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "LS",
+        "season": 2025,
+        "team": "UConn",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "LS",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5082306",
+    "recruiting": {
+      "athleteId": "5082306",
+      "city": "Fresno",
+      "committedTo": "Fresno State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06019",
+        "latitude": 36.7295295,
+        "longitude": -119.70886126075588
+      },
+      "id": "115479",
+      "name": "Jayden Davis",
+      "position": "WR",
+      "ranking": 2141,
+      "rating": 0.8144,
+      "recruitType": "HighSchool",
+      "school": "Bullard",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "fresno-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2022,
+        "team": "Fresno State",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2023,
+        "team": "Fresno State",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2024,
+        "team": "Fresno State",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2025,
+        "team": "Fresno State",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5166798",
+    "recruiting": {
+      "athleteId": "5166798",
+      "city": "Ramsey",
+      "committedTo": "Rutgers",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 41.0573188,
+        "longitude": -74.1409771
+      },
+      "id": "106899",
+      "name": "Renick Dorilas",
+      "position": "CB",
+      "ranking": 717,
+      "rating": 0.8775,
+      "recruitType": "HighSchool",
+      "school": "Don Bosco Prep",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "rutgers",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2025,
+        "team": "Rutgers",
+        "year": 1
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218501",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "DL",
+        "season": 2024,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "DL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "DL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216048",
+    "recruiting": {
+      "athleteId": "5216048",
+      "city": "Hilliard",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.033814,
+        "longitude": -83.1596108
+      },
+      "id": "107206",
+      "name": "Terris Dudley",
+      "position": "ATH",
+      "ranking": 1048,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "Hilliard Bradley",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2025,
+        "team": "NC State",
+        "year": 1
+      },
+      {
+        "jersey": 27,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4604319",
+    "recruiting": {
+      "athleteId": "4604319",
+      "city": "Cleveland",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.5051613,
+        "longitude": -81.6934446
+      },
+      "id": "119471",
+      "name": "Avery Dunn",
+      "position": "WDE",
+      "ranking": 1081,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Shaker Heights",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 216,
+      "year": 2020
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2021,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2022,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141448",
+    "recruiting": {
+      "athleteId": "5141448",
+      "city": "West Bloomfield",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "36069",
+        "latitude": 42.5679,
+        "longitude": -83.3733
+      },
+      "id": "106854",
+      "name": "Kamren Flowers",
+      "position": "WR",
+      "ranking": 665,
+      "rating": 0.8794,
+      "recruitType": "HighSchool",
+      "school": "West Bloomfield",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5221596",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "TE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295446",
+    "recruiting": {
+      "athleteId": "5295446",
+      "city": "Cincinnati",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "107903",
+      "name": "Raphael Greene-Nyarko",
+      "position": "OT",
+      "ranking": 1881,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Winton Woods",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222541",
+    "recruiting": {
+      "athleteId": "5222541",
+      "city": "Princeton",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 81,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.3492744,
+        "longitude": -74.6592958
+      },
+      "id": "108625",
+      "name": "Hill Greenlee",
+      "position": "OT",
+      "ranking": 2968,
+      "rating": 0.8137,
+      "recruitType": "HighSchool",
+      "school": "Hun School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 1
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5054079",
+    "recruiting": {
+      "athleteId": "5054079",
+      "city": "Roanoke",
+      "committedTo": "Virginia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 78.5,
+      "hometownInfo": {
+        "fipsCode": "51770",
+        "latitude": 37.270973,
+        "longitude": -79.9414313
+      },
+      "id": "112256",
+      "name": "Hannes Hammer",
+      "position": "OT",
+      "ranking": 1014,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "North Cross",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "virginia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 272,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2023,
+        "team": "Virginia Tech",
+        "year": 1
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2024,
+        "team": "Virginia Tech",
+        "year": 1
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 1
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084906",
+    "recruiting": {
+      "athleteId": "5084906",
+      "city": "Michigan City",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "18091",
+        "latitude": 41.7075394,
+        "longitude": -86.8950297
+      },
+      "id": "109622",
+      "name": "Jaden Hart",
+      "position": "RB",
+      "ranking": 947,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Michigan City",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Syracuse",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4912043",
+    "recruiting": {
+      "athleteId": "4912043",
+      "city": "Pikesville",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": null,
+      "hometownInfo": {
+        "fipsCode": "24005",
+        "latitude": 39.3745035,
+        "longitude": -76.7227288
+      },
+      "id": "234676",
+      "name": "Kylish Hicks",
+      "position": "WR",
+      "ranking": 1525,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Mergenthaler Vocational",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 194,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2022,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2023,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2024,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5130411",
+    "recruiting": {
+      "athleteId": "5130411",
+      "city": "Lafayette",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "22055",
+        "latitude": 30.2240897,
+        "longitude": -92.0198427
+      },
+      "id": "109384",
+      "name": "Melvin Hills III",
+      "position": "DL",
+      "ranking": 685,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Lafayette Christian Academy",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2024,
+        "team": "Texas",
+        "year": 1
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Texas",
+        "year": 1
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5086043",
+    "recruiting": {
+      "athleteId": "5086043",
+      "city": "Wyncote",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42091",
+        "latitude": 40.0945549,
+        "longitude": -75.1487863
+      },
+      "id": "115088",
+      "name": "Matt Hoffman",
+      "position": "TE",
+      "ranking": 1634,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "Cheltenham",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2022,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2023,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2024,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5193053",
+    "recruiting": {
+      "athleteId": "5193053",
+      "city": "Wilmette",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0757315,
+        "longitude": -87.7193768
+      },
+      "id": "110938",
+      "name": "Ethan Hogg",
+      "position": "LB",
+      "ranking": 2461,
+      "rating": 0.8206,
+      "recruitType": "HighSchool",
+      "school": "Loyola Academy",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 217,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5258305",
+    "recruiting": {
+      "athleteId": "5258305",
+      "city": "King George",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "51099",
+        "latitude": 38.2681837,
+        "longitude": -77.1844222
+      },
+      "id": "221122",
+      "name": "Charles Johnson",
+      "position": "LB",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "King George",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 1
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146832",
+    "recruiting": {
+      "athleteId": "5146832",
+      "city": "Inglewood",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.9562003,
+        "longitude": -118.353132
+      },
+      "id": "111574",
+      "name": "Jamari Johnson",
+      "position": "ATH",
+      "ranking": 339,
+      "rating": 0.8994,
+      "recruitType": "HighSchool",
+      "school": "Inglewood",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211892",
+    "recruiting": {
+      "athleteId": "5211892",
+      "city": "Millville",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34011",
+        "latitude": 39.4020593,
+        "longitude": -75.0393368
+      },
+      "id": "104902",
+      "name": "Jayden Jones",
+      "position": "LB",
+      "ranking": 1566,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Millville",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302872",
+    "recruiting": {
+      "athleteId": "5302872",
+      "city": "Dexter",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "27099",
+        "latitude": 42.3386044,
+        "longitude": -83.8891514
+      },
+      "id": "105707",
+      "name": "Mateo Kipke",
+      "position": "EDGE",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Dexter",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5293820",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5083881",
+    "recruiting": {
+      "athleteId": "5083881",
+      "city": "Brooklyn",
+      "committedTo": "Lehigh",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "36047",
+        "latitude": 40.6501038,
+        "longitude": -73.9495823
+      },
+      "id": "256094",
+      "name": "David LaGanga",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Xaverian",
+      "stars": null,
+      "stateProvince": "NY",
+      "teamSlug": "lehigh",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "LS",
+        "season": 2022,
+        "team": "Lehigh",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "LS",
+        "season": 2025,
+        "team": "Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 59,
+        "position": "LS",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079486",
+    "recruiting": {
+      "athleteId": "5079486",
+      "city": "Palmetto",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.5214269,
+        "longitude": -82.5723193
+      },
+      "id": "109383",
+      "name": "Zy'marion Lang",
+      "position": "WR",
+      "ranking": 685,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Mooney",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5323959",
+    "recruiting": {
+      "athleteId": "5323959",
+      "city": "Fayetteville",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "37051",
+        "latitude": 35.0525759,
+        "longitude": -78.878292
+      },
+      "id": "212320",
+      "name": "Makijah Latiker",
+      "position": "EDGE",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Trinity Christian School",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2026
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4924147",
+    "recruiting": {
+      "athleteId": "4924147",
+      "city": "Yorkville",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06045",
+        "latitude": 41.6411409,
+        "longitude": -88.4472948
+      },
+      "id": "113245",
+      "name": "Andrew Laurich",
+      "position": "DL",
+      "ranking": 2112,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "Yorkville",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2023,
+        "team": "Colorado State",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "Colorado State",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Colorado State",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084414",
+    "recruiting": {
+      "athleteId": "5084414",
+      "city": "Rumson",
+      "committedTo": "Pennsylvania",
+      "country": "USA",
+      "grade": null,
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "34025",
+        "latitude": 40.372054,
+        "longitude": -73.9990269
+      },
+      "id": "256096",
+      "name": "John Lista",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Rumson-Fair Haven",
+      "stars": null,
+      "stateProvince": "NJ",
+      "teamSlug": "pennsylvania",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2022,
+        "team": "Pennsylvania",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2023,
+        "team": "Pennsylvania",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "Pennsylvania",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084343",
+    "recruiting": {
+      "athleteId": "5084343",
+      "city": "Cincinnati",
+      "committedTo": "Arkansas-Pine Bluff",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "256269",
+      "name": "Anas Luqman",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Princeton",
+      "stars": null,
+      "stateProvince": "OH",
+      "teamSlug": "arkansas-pine-bluff",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2022,
+        "team": "Arkansas-Pine Bluff",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2023,
+        "team": "Arkansas-Pine Bluff",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2025,
+        "team": "Ohio",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382614",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5077806",
+    "recruiting": {
+      "athleteId": "5077806",
+      "city": "Holden",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "25027",
+        "latitude": 42.3560836,
+        "longitude": -71.8623548
+      },
+      "id": "256960",
+      "name": "Tucker McDonald",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Wachusett Regional",
+      "stars": null,
+      "stateProvince": "MA",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2023,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222553",
+    "recruiting": {
+      "athleteId": "5222553",
+      "city": "Princeton",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.3492744,
+        "longitude": -74.6592958
+      },
+      "id": "108286",
+      "name": "Joe McGann",
+      "position": "OT",
+      "ranking": 2361,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Hun School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146976",
+    "recruiting": {
+      "athleteId": "5146976",
+      "city": "Atlanta",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "110817",
+      "name": "Tyler McKinstry",
+      "position": "S",
+      "ranking": 2333,
+      "rating": 0.827,
+      "recruitType": "HighSchool",
+      "school": "Westlake",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147851",
+    "recruiting": {
+      "athleteId": "5147851",
+      "city": "Park Ridge",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 41.0375969,
+        "longitude": -74.0406956
+      },
+      "id": "110506",
+      "name": "Deron McLaughlin",
+      "position": "IOL",
+      "ranking": 1900,
+      "rating": 0.8406,
+      "recruitType": "HighSchool",
+      "school": "Park Ridge",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2024,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079531",
+    "recruiting": {
+      "athleteId": "5079531",
+      "city": "Savannah",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13051",
+        "latitude": 32.0809263,
+        "longitude": -81.0911768
+      },
+      "id": "108858",
+      "name": "Jake Merklinger",
+      "position": "QB",
+      "ranking": 160,
+      "rating": 0.9306,
+      "recruitType": "HighSchool",
+      "school": "Calvary Day School",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2024,
+        "team": "Tennessee",
+        "year": 1
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2025,
+        "team": "Tennessee",
+        "year": 1
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870938",
+    "recruiting": {
+      "athleteId": "4870938",
+      "city": "Indianapolis",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "111365",
+      "name": "Joshua Mickens",
+      "position": "EDGE",
+      "ranking": 120,
+      "rating": 0.9454,
+      "recruitType": "HighSchool",
+      "school": "Lawrence Central",
+      "stars": 4,
+      "stateProvince": "IN",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2023,
+        "team": "Ohio State",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2024,
+        "team": "Ohio State",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2025,
+        "team": "Ohio State",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5214510",
+    "recruiting": {
+      "athleteId": "5214510",
+      "city": "Greensboro",
+      "committedTo": "USC",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13133",
+        "latitude": 33.5756831,
+        "longitude": -83.1823789
+      },
+      "id": "106705",
+      "name": "Steve Miller",
+      "position": "S",
+      "ranking": 514,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Greene County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "usc",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "USC",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921112",
+    "recruiting": {
+      "athleteId": "4921112",
+      "city": "Hamilton",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "B",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.3995067,
+        "longitude": -84.5613428
+      },
+      "id": "111571",
+      "name": "Braedyn Moore",
+      "position": "ATH",
+      "ranking": 322,
+      "rating": 0.901,
+      "recruitType": "HighSchool",
+      "school": "Stephen T Badin",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4873929",
+    "recruiting": {
+      "athleteId": "4873929",
+      "city": "Massillon",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7967244,
+        "longitude": -81.5215093
+      },
+      "id": "116381",
+      "name": "Terrence Moore",
+      "position": "OT",
+      "ranking": 635,
+      "rating": 0.8726,
+      "recruitType": "HighSchool",
+      "school": "Massillon Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2021
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2021,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2022,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2023,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5225894",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Houston Christian",
+        "year": 1
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5089304",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2022,
+        "team": "Western Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2023,
+        "team": "Western Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2024,
+        "team": "Western Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4592781",
+    "recruiting": {
+      "athleteId": "4592781",
+      "city": "Massillon",
+      "committedTo": "Kent State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39151",
+        "latitude": 40.7967244,
+        "longitude": -81.5215093
+      },
+      "id": "120736",
+      "name": "Luke Murphy",
+      "position": "S",
+      "ranking": 2395,
+      "rating": 0.8133,
+      "recruitType": "HighSchool",
+      "school": "Massillon Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kent-state",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2020
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2021,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2022,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2023,
+        "team": "Kent State",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2025,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296868",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151804",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DE",
+        "season": 2023,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DE",
+        "season": 2024,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DE",
+        "season": 2025,
+        "team": "NC State",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "DE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079619",
+    "recruiting": {
+      "athleteId": "5079619",
+      "city": "Waterford",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06099",
+        "latitude": 42.6907,
+        "longitude": -83.4066
+      },
+      "id": "110062",
+      "name": "Kalieb Osborne",
+      "position": "QB",
+      "ranking": 1414,
+      "rating": 0.8553,
+      "recruitType": "HighSchool",
+      "school": "Waterford Mott",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5201108",
+    "recruiting": {
+      "athleteId": "5201108",
+      "city": "Aurora",
+      "committedTo": "Wake Forest",
+      "country": "CAN",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107466",
+      "name": "Nathan Pahanich",
+      "position": "OT",
+      "ranking": 1315,
+      "rating": 0.8606,
+      "recruitType": "HighSchool",
+      "school": "Hun School",
+      "stars": 3,
+      "stateProvince": "ON",
+      "teamSlug": "wake-forest",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wake Forest",
+        "year": 1
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215278",
+    "recruiting": {
+      "athleteId": "5215278",
+      "city": "Miami",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "107892",
+      "name": "Zion Paret",
+      "position": "CB",
+      "ranking": 1868,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Miami Central",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150459",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2023,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2024,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209418",
+    "recruiting": {
+      "athleteId": "5209418",
+      "city": "Indianapolis",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "104950",
+      "name": "Bo Polston",
+      "position": "QB",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Decatur Central",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870959",
+    "recruiting": {
+      "athleteId": "4870959",
+      "city": "Nashville",
+      "committedTo": "Kentucky",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "111544",
+      "name": "Shamar Porter",
+      "position": "WR",
+      "ranking": 306,
+      "rating": 0.9036,
+      "recruitType": "HighSchool",
+      "school": "Ensworth",
+      "stars": 4,
+      "stateProvince": "TN",
+      "teamSlug": "kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 192,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Kentucky",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222645",
+    "recruiting": {
+      "athleteId": "5222645",
+      "city": "Harmony",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42019",
+        "latitude": 40.8027772,
+        "longitude": -80.1280528
+      },
+      "id": "107948",
+      "name": "Jayden Price",
+      "position": "S",
+      "ranking": 1923,
+      "rating": 0.847,
+      "recruitType": "HighSchool",
+      "school": "Seneca Valley",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4698471",
+    "recruiting": {
+      "athleteId": "4698471",
+      "city": "Groton",
+      "committedTo": "Boston College",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "25017",
+        "latitude": 42.6112242,
+        "longitude": -71.5745402
+      },
+      "id": "113990",
+      "name": "Matt Ragan",
+      "position": "TE",
+      "ranking": 444,
+      "rating": 0.8881,
+      "recruitType": "HighSchool",
+      "school": "Lawrence Academy",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "boston-college",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2022,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2023,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2024,
+        "team": "Boston College",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146274",
+    "recruiting": {
+      "athleteId": "5146274",
+      "city": "Greenville",
+      "committedTo": "Northwestern",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "45045",
+        "latitude": 34.851354,
+        "longitude": -82.3984882
+      },
+      "id": "109897",
+      "name": "Dashun Reeder",
+      "position": "RB",
+      "ranking": 1220,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Christ Church Episcopal School",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "northwestern",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Northwestern",
+        "year": 1
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4950397",
+    "recruiting": {
+      "athleteId": "4950397",
+      "city": "Texarkana",
+      "committedTo": "Bowling Green",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48037",
+        "latitude": 33.44628645,
+        "longitude": -94.07638067493534
+      },
+      "id": "112560",
+      "name": "Tracy Revels",
+      "position": "S",
+      "ranking": 1331,
+      "rating": 0.8525,
+      "recruitType": "HighSchool",
+      "school": "Texarkana Liberty-Eylau",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "bowling-green",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2023,
+        "team": "Bowling Green",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Bowling Green",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5083885",
+    "recruiting": {
+      "athleteId": "5083885",
+      "city": "Baltimore",
+      "committedTo": "Lehigh",
+      "country": "USA",
+      "grade": null,
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "256092",
+      "name": "Christian Richter",
+      "position": "OT",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "St. Paul's School",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "lehigh",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2022
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2022,
+        "team": "Lehigh",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "Marshall",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "Marshall",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5148818",
+    "recruiting": {
+      "athleteId": "5148818",
+      "city": "Germany",
+      "committedTo": "UConn",
+      "country": "DEU",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "111083",
+      "name": "Clemens Richter",
+      "position": "TE",
+      "ranking": 2660,
+      "rating": 0.8137,
+      "recruitType": "HighSchool",
+      "school": "Berkshire School",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2024,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296866",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146913",
+    "recruiting": {
+      "athleteId": "5146913",
+      "city": "Clinton Township",
+      "committedTo": "Buffalo",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "34019",
+        "latitude": 42.5869,
+        "longitude": -82.9196
+      },
+      "id": "110043",
+      "name": "Shamar Riser-Pressley",
+      "position": "EDGE",
+      "ranking": 1391,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "Clintondale",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "buffalo",
+      "valueType": "BENCHMARK",
+      "weight": 242,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Buffalo",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Buffalo",
+        "year": 1
+      },
+      {
+        "jersey": 17,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921448",
+    "recruiting": {
+      "athleteId": "4921448",
+      "city": "Olmsted Falls",
+      "committedTo": "Rutgers",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.375049,
+        "longitude": -81.9081937
+      },
+      "id": "112301",
+      "name": "Dominic Rivera",
+      "position": "OT",
+      "ranking": 1062,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Olmsted Falls",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "rutgers",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Rutgers",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296865",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "WR",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079704",
+    "recruiting": {
+      "athleteId": "5079704",
+      "city": "Red Bank",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34025",
+        "latitude": 40.3470543,
+        "longitude": -74.0643065
+      },
+      "id": "108963",
+      "name": "Emanuel Ross",
+      "position": "WR",
+      "ranking": 265,
+      "rating": 0.9102,
+      "recruitType": "HighSchool",
+      "school": "Red Bank Catholic",
+      "stars": 4,
+      "stateProvince": "NJ",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2025,
+        "team": "Syracuse",
+        "year": 1
+      },
+      {
+        "jersey": 14,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5157300",
+    "recruiting": {
+      "athleteId": "5157300",
+      "city": "Fort Lauderdale",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "112369",
+      "name": "Zakaih Saez",
+      "position": "EDGE",
+      "ranking": 1142,
+      "rating": 0.8594,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5220131",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203601",
+    "recruiting": {
+      "athleteId": "5203601",
+      "city": "Naples",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.1421976,
+        "longitude": -81.7942944
+      },
+      "id": "107532",
+      "name": "Shawn Simeon",
+      "position": "RB",
+      "ranking": 1419,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Naples",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296863",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 1
+      },
+      {
+        "jersey": 18,
+        "position": "QB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215700",
+    "recruiting": {
+      "athleteId": "5215700",
+      "city": "York",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42133",
+        "latitude": 39.962398,
+        "longitude": -76.727392
+      },
+      "id": "107852",
+      "name": "Saxton Suchanic",
+      "position": "CB",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Central York",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 1
+      },
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220463",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2024,
+        "team": "Memphis",
+        "year": 1
+      },
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2025,
+        "team": "UConn",
+        "year": 1
+      },
+      {
+        "jersey": 35,
+        "position": "P",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5258294",
+    "recruiting": {
+      "athleteId": "5258294",
+      "city": "Cleveland",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39035",
+        "latitude": 41.5051613,
+        "longitude": -81.6934446
+      },
+      "id": "108477",
+      "name": "Isiah Switzer",
+      "position": "IOL",
+      "ranking": 2674,
+      "rating": 0.8256,
+      "recruitType": "HighSchool",
+      "school": "Glenville",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5228882",
+    "recruiting": {
+      "athleteId": "5228882",
+      "city": "Frisco",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "107610",
+      "name": "Ryder Treadway",
+      "position": "WR",
+      "ranking": 1503,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Frisco Wakeland",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921414",
+    "recruiting": {
+      "athleteId": "4921414",
+      "city": "Owings Mills",
+      "committedTo": "Maryland",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24005",
+        "latitude": 39.4010753,
+        "longitude": -76.796299
+      },
+      "id": "112761",
+      "name": "Tamarus Walker",
+      "position": "IOL",
+      "ranking": 1552,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "McDonogh School",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "maryland",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2023,
+        "team": "Maryland",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "Maryland",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5382615",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "P",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222571",
+    "recruiting": {
+      "athleteId": "5222571",
+      "city": "Waverly",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107727",
+      "name": "Xavier Watson",
+      "position": "TE",
+      "ranking": 1622,
+      "rating": 0.8537,
+      "recruitType": "HighSchool",
+      "school": "Waverly",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327612",
+    "recruiting": {
+      "athleteId": "5327612",
+      "city": "Griffin",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13255",
+        "latitude": 33.2467807,
+        "longitude": -84.2640904
+      },
+      "id": "213021",
+      "name": "Elijah Whitaker",
+      "position": "S",
+      "ranking": 3036,
+      "rating": 0.827,
+      "recruitType": "HighSchool",
+      "school": "Spalding",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218502",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2024,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147933",
+    "recruiting": {
+      "athleteId": "5147933",
+      "city": "Macon",
+      "committedTo": "West Virginia",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "13021",
+        "latitude": 32.8406946,
+        "longitude": -83.6324022
+      },
+      "id": "112020",
+      "name": "Johnny Williams IV",
+      "position": "OT",
+      "ranking": 777,
+      "rating": 0.8728,
+      "recruitType": "HighSchool",
+      "school": "Northeast",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "west-virginia",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 1
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 1
+      },
+      {
+        "jersey": 5,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150467",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "UConn",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5125750",
+    "recruiting": {
+      "athleteId": "5125750",
+      "city": "Fairburn",
+      "committedTo": "Toledo",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.5670562,
+        "longitude": -84.5810418
+      },
+      "id": "217140",
+      "name": "Jediyah Willoughby",
+      "position": "ATH",
+      "ranking": 2179,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Langston Hughes",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "toledo",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2023,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Toledo",
+        "year": 2
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5300740",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Youngstown State",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "UConn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203732",
+    "recruiting": {
+      "athleteId": "5203732",
+      "city": "Miami",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "221405",
+      "name": "Lewenski Ydore",
+      "position": "LB",
+      "ranking": 2994,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "North Miami",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296870",
+    "recruiting": null,
+    "team": "UConn",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "UConn",
+        "year": 2
+      }
+    ]
+  }
+]

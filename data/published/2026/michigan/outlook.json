@@ -1,0 +1,19 @@
+{
+  "asOf": "2026-08-18T08:14:00-04:00",
+  "cfp": {
+    "calculation": "two-way American odds normalized to remove listed overround",
+    "format": "12_TEAM_2026",
+    "makePlayoffNoAmerican": -325,
+    "makePlayoffYesAmerican": 260,
+    "noVigImpliedProbability": 0.26645768025078376
+  },
+  "disclaimer": "Market-implied benchmark, not a SOAR model probability or betting recommendation.",
+  "season": 2026,
+  "source": {
+    "name": "BetMGM",
+    "url": "https://sports.betmgm.com/en/blog/odds-to-make-college-football-playoff-bm06/"
+  },
+  "team": "Michigan",
+  "valueType": "BENCHMARK",
+  "version": "soar-2026-market-outlook-v1"
+}

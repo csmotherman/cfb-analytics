@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "allRosterTeamsResolved": true,
+    "allTeamBundlesWritten": true,
+    "allTeamSlugsUnique": true,
+    "noCompletedGamesLabeledPreseason": true,
+    "playerIdsUnique": true
+  },
+  "counts": {
+    "coaches": 138,
+    "fbsRelevantGames": 888,
+    "fbsTeams": 138,
+    "portalEntries": 4445,
+    "recruitingTeamRows": 221,
+    "recruits": 3987,
+    "rosterPlayers": 15442
+  },
+  "coverage": {
+    "maxRosterSize": 197,
+    "minRosterSize": 85,
+    "positionGroups": {
+      "DB": 2905,
+      "DL": 1861,
+      "EDGE": 566,
+      "LB": 1770,
+      "OL": 2639,
+      "OTHER": 387,
+      "QB": 717,
+      "RB": 1018,
+      "ST": 581,
+      "TE": 988,
+      "WR": 2010
+    },
+    "teamsWithCoach": 138,
+    "teamsWithRoster": 138,
+    "teamsWithSchedule": 138
+  },
+  "identity": {
+    "duplicatePlayerIdRows": 0,
+    "playersMatchedToRecruit": 2221,
+    "playersWithUnknownTeam": 0,
+    "uniquePlayerIds": 15442
+  },
+  "missingness": {
+    "height": 73,
+    "hometown": 50,
+    "jersey": 102,
+    "position": 0,
+    "weight": 85
+  },
+  "season": 2026,
+  "status": "PASS"
+}

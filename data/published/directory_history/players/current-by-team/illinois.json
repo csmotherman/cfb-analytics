@@ -1,0 +1,5105 @@
+[
+  {
+    "playerId": "5076651",
+    "recruiting": {
+      "athleteId": "5076651",
+      "city": "Zionsville",
+      "committedTo": "Ball State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "18011",
+        "latitude": 39.950724,
+        "longitude": -86.2616968
+      },
+      "id": "113413",
+      "name": "Christian Abney",
+      "position": "QB",
+      "ranking": 2379,
+      "rating": 0.8106,
+      "recruitType": "HighSchool",
+      "school": "Zionsville",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "ball-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2023,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2024,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5264757",
+    "recruiting": {
+      "athleteId": "5264757",
+      "city": "Frankfort",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.4958665,
+        "longitude": -87.8486613
+      },
+      "id": "191455",
+      "name": "Jacob Alexander",
+      "position": "EDGE",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Lincoln-Way East",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5200369",
+    "recruiting": {
+      "athleteId": "5200369",
+      "city": "Orlando",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "104583",
+      "name": "Kenyon Alston",
+      "position": "WR",
+      "ranking": 554,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Bishop Moore Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4826636",
+    "recruiting": {
+      "athleteId": "4826636",
+      "city": "Skillman",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "34035",
+        "latitude": 40.4201055,
+        "longitude": -74.7146049
+      },
+      "id": "114678",
+      "name": "Owen Anderson",
+      "position": "TE",
+      "ranking": 1168,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Hun School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4915710",
+    "recruiting": {
+      "athleteId": "4915710",
+      "city": "Moline",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17161",
+        "latitude": 41.5067003,
+        "longitude": -90.5151342
+      },
+      "id": "115232",
+      "name": "Matthew Bailey",
+      "position": "S",
+      "ranking": 1774,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "Moline",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5369897",
+    "recruiting": {
+      "athleteId": "5369897",
+      "city": "Palatine",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.1105779,
+        "longitude": -88.0336888
+      },
+      "id": "104642",
+      "name": "Tony Balanganayi",
+      "position": "DL",
+      "ranking": 704,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Palatine",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146980",
+    "recruiting": {
+      "athleteId": "5146980",
+      "city": "Wheaton",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.8646959,
+        "longitude": -88.1101709
+      },
+      "id": "110020",
+      "name": "Joe Barna",
+      "position": "DL",
+      "ranking": 1362,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Wheaton North",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "DL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "DL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203604",
+    "recruiting": {
+      "athleteId": "5203604",
+      "city": "Tampa",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "104321",
+      "name": "Javari Barnett",
+      "position": "RB",
+      "ranking": 774,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Tampa Bay Tech",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5221305",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148652",
+    "recruiting": {
+      "athleteId": "5148652",
+      "city": "West Chester",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.3303357,
+        "longitude": -84.408275
+      },
+      "id": "106618",
+      "name": "Grant Beerman",
+      "position": "LB",
+      "ranking": 425,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "Lakota West",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5245163",
+    "recruiting": {
+      "athleteId": "5245163",
+      "city": "Suffield",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "09003",
+        "latitude": 41.9816944,
+        "longitude": -72.6506604
+      },
+      "id": "104316",
+      "name": "Kayden Bennett",
+      "position": "EDGE",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Suffield Academy",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5196352",
+    "recruiting": {
+      "athleteId": "5196352",
+      "city": "St. Louis",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "107006",
+      "name": "Carson Boyd",
+      "position": "QB",
+      "ranking": 829,
+      "rating": 0.8736,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Ritter College Prep",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 2,
+        "position": "QB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214493",
+    "recruiting": {
+      "athleteId": "5214493",
+      "city": "Flossmoor",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.5428123,
+        "longitude": -87.6847684
+      },
+      "id": "107395",
+      "name": "Cameron Brooks",
+      "position": "DL",
+      "ranking": 1243,
+      "rating": 0.8625,
+      "recruitType": "HighSchool",
+      "school": "Homewood-Flossmoor",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5218892",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5369893",
+    "recruiting": {
+      "athleteId": "5369893",
+      "city": "Mount Prospect",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0664167,
+        "longitude": -87.9372908
+      },
+      "id": "258711",
+      "name": "Nate Cichy",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Prospect",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5077284",
+    "recruiting": {
+      "athleteId": "5077284",
+      "city": "Fort Myers",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.640628,
+        "longitude": -81.8723084
+      },
+      "id": "112582",
+      "name": "Juice Clarke",
+      "position": "S",
+      "ranking": 1347,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Riverdale",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 164,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092451",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5198286",
+    "recruiting": {
+      "athleteId": "5198286",
+      "city": "Miami",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "104615",
+      "name": "Michael Clayton II",
+      "position": "QB",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Miami Edison",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5100582",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2022,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2023,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5228203",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209309",
+    "recruiting": {
+      "athleteId": "5209309",
+      "city": "Denton",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "104937",
+      "name": "Kaedyn Cobbs",
+      "position": "LB",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Denton Guyer",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5369894",
+    "recruiting": {
+      "athleteId": "5369894",
+      "city": "Byron",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17141",
+        "latitude": 42.1269692,
+        "longitude": -89.2556618
+      },
+      "id": "224611",
+      "name": "Caden Considine",
+      "position": "LB",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Byron",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5214494",
+    "recruiting": {
+      "athleteId": "5214494",
+      "city": "Miami",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "220901",
+      "name": "Tywan Cox",
+      "position": "S",
+      "ranking": 795,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 32,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5282148",
+    "recruiting": {
+      "athleteId": "5282148",
+      "city": "Elida",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "104619",
+      "name": "Parker Crim",
+      "position": "EDGE",
+      "ranking": 508,
+      "rating": 0.8889,
+      "recruitType": "HighSchool",
+      "school": "Elida",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5369904",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4923226",
+    "recruiting": {
+      "athleteId": "4923226",
+      "city": "Tallmadge",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.1014616,
+        "longitude": -81.4417989
+      },
+      "id": "112070",
+      "name": "Collin Dixon",
+      "position": "WR",
+      "ranking": 824,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Tallmadge",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5271188",
+    "recruiting": {
+      "athleteId": "5271188",
+      "city": "St. Louis",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "104165",
+      "name": "Jacob Eberhart",
+      "position": "LB",
+      "ranking": 422,
+      "rating": 0.8952,
+      "recruitType": "HighSchool",
+      "school": "Kirkwood",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5158882",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2024,
+        "team": "Prairie View A&M",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2025,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5369892",
+    "recruiting": {
+      "athleteId": "5369892",
+      "city": "Tolono",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17019",
+        "latitude": 39.9861415,
+        "longitude": -88.2589387
+      },
+      "id": "258712",
+      "name": "Dane Eisenmenger",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Unity",
+      "stars": null,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5294099",
+    "recruiting": {
+      "athleteId": "5294099",
+      "city": "Arlington Heights",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0811563,
+        "longitude": -87.9802164
+      },
+      "id": "106894",
+      "name": "Logan Farrell",
+      "position": "TE",
+      "ranking": 706,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "John Hersey",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "TE",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4923255",
+    "recruiting": {
+      "athleteId": "4923255",
+      "city": "Chicago",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "112477",
+      "name": "Pat Farrell",
+      "position": "EDGE",
+      "ranking": 1245,
+      "rating": 0.8558,
+      "recruitType": "HighSchool",
+      "school": "St. Rita",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870728",
+    "recruiting": {
+      "athleteId": "4870728",
+      "city": "Arthur",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "111626",
+      "name": "Kaden Feagin",
+      "position": "ATH",
+      "ranking": 380,
+      "rating": 0.8958,
+      "recruitType": "HighSchool",
+      "school": "Arthur",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 221,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295769",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "Georgia State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211749",
+    "recruiting": {
+      "athleteId": "5211749",
+      "city": "Merrillville",
+      "committedTo": "Northern Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "18089",
+        "latitude": 41.4828144,
+        "longitude": -87.3328139
+      },
+      "id": "107003",
+      "name": "James Finley",
+      "position": "CB",
+      "ranking": 828,
+      "rating": 0.8736,
+      "recruitType": "HighSchool",
+      "school": "Andrean",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "northern-illinois",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2025,
+        "team": "Northern Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5294100",
+    "recruiting": {
+      "athleteId": "5294100",
+      "city": "Montvale",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 41.0467635,
+        "longitude": -74.0229173
+      },
+      "id": "106771",
+      "name": "John Forster",
+      "position": "RB",
+      "ranking": 581,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph Regional",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5203718",
+    "recruiting": {
+      "athleteId": "5203718",
+      "city": "West Palm Beach",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.715364,
+        "longitude": -80.0532942
+      },
+      "id": "108035",
+      "name": "Dylan Frechette",
+      "position": "IOL",
+      "ranking": 2009,
+      "rating": 0.8442,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Newman",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 335,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5221307",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209796",
+    "recruiting": {
+      "athleteId": "5209796",
+      "city": "Cincinnati",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "107157",
+      "name": "Erik Gayle",
+      "position": "EDGE",
+      "ranking": 987,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Withrow",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209378",
+    "recruiting": {
+      "athleteId": "5209378",
+      "city": "DeKalb",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17037",
+        "latitude": 41.9294736,
+        "longitude": -88.7503647
+      },
+      "id": "104693",
+      "name": "Davon Grant",
+      "position": "WR",
+      "ranking": 665,
+      "rating": 0.8822,
+      "recruitType": "HighSchool",
+      "school": "DeKalb",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296806",
+    "recruiting": {
+      "athleteId": "5296806",
+      "city": "Australia",
+      "committedTo": "Illinois",
+      "country": "AUS",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "213053",
+      "name": "Jack Gray",
+      "position": "P",
+      "ranking": 3096,
+      "rating": 0.8244,
+      "recruitType": "HighSchool",
+      "school": "ProKick Australia",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "P",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5159142",
+    "recruiting": {
+      "athleteId": "5159142",
+      "city": "Durango",
+      "committedTo": "New Mexico State",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "08067",
+        "latitude": 37.2713951,
+        "longitude": -107.8815978
+      },
+      "id": "256652",
+      "name": "Zach Haber",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Durango",
+      "stars": null,
+      "stateProvince": "CO",
+      "teamSlug": "new-mexico-state",
+      "valueType": "BENCHMARK",
+      "weight": 226,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2023,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2025,
+        "team": "Arkansas",
+        "year": 3
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5276577",
+    "recruiting": {
+      "athleteId": "5276577",
+      "city": "Belleville",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.5200504,
+        "longitude": -89.9839935
+      },
+      "id": "104190",
+      "name": "Nick Hankins Jr.",
+      "position": "CB",
+      "ranking": 135,
+      "rating": 0.9444,
+      "recruitType": "HighSchool",
+      "school": "Belleville West",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079433",
+    "recruiting": {
+      "athleteId": "5079433",
+      "city": "Mundelein",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "17097",
+        "latitude": 42.263079,
+        "longitude": -88.0039653
+      },
+      "id": "110293",
+      "name": "Brandon Hansen",
+      "position": "OT",
+      "ranking": 1682,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Mundelein",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5334184",
+    "recruiting": {
+      "athleteId": "5334184",
+      "city": "Mt. Zion",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "224658",
+      "name": "Jacob Harvey",
+      "position": "WR",
+      "ranking": 2846,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Mt. Zion",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5196972",
+    "recruiting": {
+      "athleteId": "5196972",
+      "city": "Lyndon",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "20139",
+        "latitude": 38.6100099,
+        "longitude": -95.684429
+      },
+      "id": "110228",
+      "name": "Tanner Heckel",
+      "position": "S",
+      "ranking": 1576,
+      "rating": 0.8506,
+      "recruitType": "HighSchool",
+      "school": "Lyndon",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4921407",
+    "recruiting": {
+      "athleteId": "4921407",
+      "city": "East St. Louis",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.6244952,
+        "longitude": -90.1509429
+      },
+      "id": "112186",
+      "name": "Brandon Henderson",
+      "position": "OT",
+      "ranking": 946,
+      "rating": 0.8658,
+      "recruitType": "HighSchool",
+      "school": "East St. Louis",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5215424",
+    "recruiting": {
+      "athleteId": "5215424",
+      "city": "Coopersville",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "108052",
+      "name": "JJ Hirdes",
+      "position": "OT",
+      "ranking": 2030,
+      "rating": 0.8431,
+      "recruitType": "HighSchool",
+      "school": "Coopersville",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149909",
+    "recruiting": {
+      "athleteId": "5149909",
+      "city": "Stromsburg",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "31143",
+        "latitude": 41.1135884,
+        "longitude": -97.5977434
+      },
+      "id": "110584",
+      "name": "Tanner Hollinger",
+      "position": "TE",
+      "ranking": 2046,
+      "rating": 0.8372,
+      "recruitType": "HighSchool",
+      "school": "Cross County",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5220661",
+    "recruiting": {
+      "athleteId": "5220661",
+      "city": "Detroit",
+      "committedTo": "Utah State",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "257447",
+      "name": "Will Holmes",
+      "position": "EDGE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Western International",
+      "stars": null,
+      "stateProvince": "MI",
+      "teamSlug": "utah-state",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2025,
+        "team": "Utah State",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4795295",
+    "recruiting": {
+      "athleteId": "4795295",
+      "city": "Anaheim",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8347516,
+        "longitude": -117.911732
+      },
+      "id": "113758",
+      "name": "Katin Houser",
+      "position": "QB",
+      "ranking": 215,
+      "rating": 0.917,
+      "recruitType": "HighSchool",
+      "school": "St. John Bosco",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2022,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2024,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2025,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "QB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084423",
+    "recruiting": {
+      "athleteId": "5084423",
+      "city": "Redding",
+      "committedTo": "Pennsylvania",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "09001",
+        "latitude": 41.3025956,
+        "longitude": -73.3834532
+      },
+      "id": "256102",
+      "name": "Carter Janki",
+      "position": "ATH",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Joel Barlow",
+      "stars": null,
+      "stateProvince": "CT",
+      "teamSlug": "pennsylvania",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2022,
+        "team": "Pennsylvania",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Pennsylvania",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146952",
+    "recruiting": {
+      "athleteId": "5146952",
+      "city": "Dublin",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.0992294,
+        "longitude": -83.1140771
+      },
+      "id": "109496",
+      "name": "Demetrius John",
+      "position": "DL",
+      "ranking": 801,
+      "rating": 0.8739,
+      "recruitType": "HighSchool",
+      "school": "Dublin Coffman",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5294101",
+    "recruiting": {
+      "athleteId": "5294101",
+      "city": "Vero Beach",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "12061",
+        "latitude": 27.6387163,
+        "longitude": -80.3975399
+      },
+      "id": "107431",
+      "name": "RJ Jones III",
+      "position": "CB",
+      "ranking": 1277,
+      "rating": 0.8617,
+      "recruitType": "HighSchool",
+      "school": "Vero Beach",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5229357",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "WR",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5294102",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5087240",
+    "recruiting": {
+      "athleteId": "5087240",
+      "city": "Burlington",
+      "committedTo": "Illinois State",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "55101",
+        "latitude": 42.6780758,
+        "longitude": -88.27619
+      },
+      "id": "256172",
+      "name": "Eddie Kasper",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Burlington",
+      "stars": null,
+      "stateProvince": "WI",
+      "teamSlug": "illinois-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2022,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2023,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2024,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Illinois State",
+        "year": 4
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146787",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4912120",
+    "recruiting": {
+      "athleteId": "4912120",
+      "city": "Wilmette",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0757315,
+        "longitude": -87.7193768
+      },
+      "id": "115230",
+      "name": "James Kreutz",
+      "position": "LB",
+      "ranking": 1774,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "Loyola Academy",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4827047",
+    "recruiting": {
+      "athleteId": "4827047",
+      "city": "Gibson City",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "17053",
+        "latitude": 40.4653118,
+        "longitude": -88.3758875
+      },
+      "id": "114201",
+      "name": "Aidan Laughery",
+      "position": "ATH",
+      "ranking": 651,
+      "rating": 0.8752,
+      "recruitType": "HighSchool",
+      "school": "Gcms",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5276952",
+    "recruiting": {
+      "athleteId": "5276952",
+      "city": "Chicago",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "104778",
+      "name": "King Liggins",
+      "position": "DL",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Brother Rice",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5164653",
+    "recruiting": {
+      "athleteId": "5164653",
+      "city": "Blue Island",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107033",
+      "name": "Andre Lovett Jr.",
+      "position": "S",
+      "ranking": 857,
+      "rating": 0.8728,
+      "recruitType": "HighSchool",
+      "school": "Eisenhower",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5154330",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LS",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "LS",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "LS",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "LS",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5078314",
+    "recruiting": {
+      "athleteId": "5078314",
+      "city": "Destrehan",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "22089",
+        "latitude": 29.960933,
+        "longitude": -90.3705407077716
+      },
+      "id": "112690",
+      "name": "Christian Martin",
+      "position": "OT",
+      "ranking": 1481,
+      "rating": 0.8486,
+      "recruitType": "HighSchool",
+      "school": "Destrehan",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5369898",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5195736",
+    "recruiting": {
+      "athleteId": "5195736",
+      "city": "Tinley Park",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.5733669,
+        "longitude": -87.7844944
+      },
+      "id": "107098",
+      "name": "Michael McDonough",
+      "position": "IOL",
+      "ranking": 924,
+      "rating": 0.8706,
+      "recruitType": "HighSchool",
+      "school": "Andrew",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921262",
+    "recruiting": {
+      "athleteId": "4921262",
+      "city": "Wheaton",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.8646959,
+        "longitude": -88.1101709
+      },
+      "id": "112355",
+      "name": "TJ McMillen",
+      "position": "IOL",
+      "ranking": 1128,
+      "rating": 0.8597,
+      "recruitType": "HighSchool",
+      "school": "St. Francis",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870578",
+    "recruiting": {
+      "athleteId": "4870578",
+      "city": "Mead",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "53063",
+        "latitude": 47.7673923,
+        "longitude": -117.354939
+      },
+      "id": "115131",
+      "name": "Ethan Moczulski",
+      "position": "K",
+      "ranking": 1667,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "Mt. Spokane",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2022,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2025,
+        "team": "Washington",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5369891",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5369900",
+    "recruiting": {
+      "athleteId": "5369900",
+      "city": "West Palm Beach",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.715364,
+        "longitude": -80.0532942
+      },
+      "id": "224526",
+      "name": "Leslie Mosley Jr.",
+      "position": "WR",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Newman",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5077504",
+    "recruiting": {
+      "athleteId": "5077504",
+      "city": "Warren",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26099",
+        "latitude": 42.4932575,
+        "longitude": -83.0062746
+      },
+      "id": "112522",
+      "name": "Mason Muragin",
+      "position": "EDGE",
+      "ranking": 1293,
+      "rating": 0.8542,
+      "recruitType": "HighSchool",
+      "school": "De La Salle Collegiate",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5217444",
+    "recruiting": {
+      "athleteId": "5217444",
+      "city": "Clearwater",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.9658533,
+        "longitude": -82.8001026
+      },
+      "id": "106940",
+      "name": "Jershaun Newton",
+      "position": "ATH",
+      "ranking": 759,
+      "rating": 0.8758,
+      "recruitType": "HighSchool",
+      "school": "Clearwater Central Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 6,
+        "position": "QB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147732",
+    "recruiting": {
+      "athleteId": "5147732",
+      "city": "Woodberry Forest",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.1668118,
+        "longitude": -80.7514585
+      },
+      "id": "110999",
+      "name": "Lucas Osada",
+      "position": "P",
+      "ranking": 2586,
+      "rating": 0.8186,
+      "recruitType": "HighSchool",
+      "school": "Woodberry Forest",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "PK",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "PK",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "PK",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5265272",
+    "recruiting": {
+      "athleteId": "5265272",
+      "city": "Oak Park",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8878145,
+        "longitude": -87.7887615
+      },
+      "id": "258031",
+      "name": "Jack Paris",
+      "position": "LB",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Fenwick",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5084133",
+    "recruiting": {
+      "athleteId": "5084133",
+      "city": "Venice",
+      "committedTo": "Hawai'i",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.0999188,
+        "longitude": -82.4543597
+      },
+      "id": "234679",
+      "name": "Alex Perry",
+      "position": "WR",
+      "ranking": 1525,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Port Charlotte",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "hawai-i",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2022,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2023,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "Hawai'i",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida International",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4834817",
+    "recruiting": {
+      "athleteId": "4834817",
+      "city": "Venice",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.0999188,
+        "longitude": -82.4543597
+      },
+      "id": "114487",
+      "name": "Jayshon Platt",
+      "position": "WR",
+      "ranking": 965,
+      "rating": 0.8617,
+      "recruitType": "HighSchool",
+      "school": "Venice",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 177,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2022,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153131",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2023,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2024,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Jacksonville State",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5210855",
+    "recruiting": {
+      "athleteId": "5210855",
+      "city": "Toms River",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "34029",
+        "latitude": 39.9537359,
+        "longitude": -74.1979576
+      },
+      "id": "104151",
+      "name": "Kai Pritchard",
+      "position": "IOL",
+      "ranking": 416,
+      "rating": 0.896,
+      "recruitType": "HighSchool",
+      "school": "Donovan Catholic",
+      "stars": 4,
+      "stateProvince": "NJ",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210514",
+    "recruiting": {
+      "athleteId": "5210514",
+      "city": "Chicago",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8755616,
+        "longitude": -87.6244212
+      },
+      "id": "104027",
+      "name": "Nas Rankin",
+      "position": "ATH",
+      "ranking": 308,
+      "rating": 0.9059,
+      "recruitType": "HighSchool",
+      "school": "Morgan Park",
+      "stars": 4,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 161,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161909",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220917",
+    "recruiting": {
+      "athleteId": "5220917",
+      "city": "Novato",
+      "committedTo": "Texas State",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06041",
+        "latitude": 38.1061979,
+        "longitude": -122.5681191
+      },
+      "id": "257409",
+      "name": "Lars Rau",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "San Marin",
+      "stars": null,
+      "stateProvince": "CA",
+      "teamSlug": "texas-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "P",
+        "season": 2024,
+        "team": "Texas State",
+        "year": 2
+      },
+      {
+        "jersey": 81,
+        "position": "P",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 81,
+        "position": "P",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4575844",
+    "recruiting": {
+      "athleteId": "4575844",
+      "city": "New Lenox",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17197",
+        "latitude": 41.5119761,
+        "longitude": -87.9656098
+      },
+      "id": "120443",
+      "name": "Jake Renfro",
+      "position": "OC",
+      "ranking": 2095,
+      "rating": 0.8222,
+      "recruitType": "HighSchool",
+      "school": "Providence Catholic",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2020
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2021,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2022,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5125740",
+    "recruiting": {
+      "athleteId": "5125740",
+      "city": "Spring Valley",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "112319",
+      "name": "Mac Resetich",
+      "position": "S",
+      "ranking": 1079,
+      "rating": 0.8617,
+      "recruitType": "HighSchool",
+      "school": "Hall",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5369903",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4689721",
+    "recruiting": {
+      "athleteId": "4689721",
+      "city": "Aurora",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "08005",
+        "latitude": 39.729432,
+        "longitude": -104.8319196
+      },
+      "id": "116925",
+      "name": "Ty Robinson",
+      "position": "ATH",
+      "ranking": 1227,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Eaglecrest",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2021
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2021,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2022,
+        "team": "Colorado",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2023,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2024,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2025,
+        "team": "Ball State",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5196419",
+    "recruiting": {
+      "athleteId": "5196419",
+      "city": "Stoughton",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "55025",
+        "latitude": 42.9167389,
+        "longitude": -89.2178997
+      },
+      "id": "107330",
+      "name": "Griffin Rousseau",
+      "position": "IOL",
+      "ranking": 1173,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Stoughton",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5205456",
+    "recruiting": {
+      "athleteId": "5205456",
+      "city": "West Palm Beach",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.715364,
+        "longitude": -80.0532942
+      },
+      "id": "107884",
+      "name": "Xanai Scott",
+      "position": "S",
+      "ranking": 1857,
+      "rating": 0.8492,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Newman",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917004",
+    "recruiting": {
+      "athleteId": "4917004",
+      "city": "Palm Beach Gardens",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.8418256,
+        "longitude": -80.13590694666684
+      },
+      "id": "114873",
+      "name": "Xavier Scott",
+      "position": "CB",
+      "ranking": 1376,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Dwyer",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2022,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5262348",
+    "recruiting": {
+      "athleteId": "5262348",
+      "city": "Orlando",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "104862",
+      "name": "Kingston Shaw",
+      "position": "EDGE",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "The First Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5191859",
+    "recruiting": {
+      "athleteId": "5191859",
+      "city": "Ocoee",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5695186,
+        "longitude": -81.544117
+      },
+      "id": "112185",
+      "name": "Trey Smith",
+      "position": "EDGE",
+      "ranking": 946,
+      "rating": 0.8658,
+      "recruitType": "HighSchool",
+      "school": "Ocoee",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5369896",
+    "recruiting": {
+      "athleteId": "5369896",
+      "city": "Vero Beach",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "B",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "12061",
+        "latitude": 27.6387163,
+        "longitude": -80.3975399
+      },
+      "id": "104000",
+      "name": "Champ Smith",
+      "position": "IOL",
+      "ranking": 231,
+      "rating": 0.9166,
+      "recruitType": "HighSchool",
+      "school": "Vero Beach",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5237342",
+    "recruiting": {
+      "athleteId": "5237342",
+      "city": "Maroa",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "17115",
+        "latitude": 40.0364257,
+        "longitude": -88.957026
+      },
+      "id": "107886",
+      "name": "Grant Smith",
+      "position": "TE",
+      "ranking": 1857,
+      "rating": 0.8492,
+      "recruitType": "HighSchool",
+      "school": "Maroa-Forsyth",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5090099",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2022,
+        "team": "Long Island University",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2023,
+        "team": "Long Island University",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5207868",
+    "recruiting": {
+      "athleteId": "5207868",
+      "city": "Pearland",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "48039",
+        "latitude": 29.5639758,
+        "longitude": -95.2864299
+      },
+      "id": "104460",
+      "name": "Jaylen Stewart",
+      "position": "EDGE",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Pearland",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146852",
+    "recruiting": {
+      "athleteId": "5146852",
+      "city": "Philadelphia",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "109784",
+      "name": "Zafir Stewart",
+      "position": "IOL",
+      "ranking": 1109,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Imhotep Institute",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5154729",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "South Dakota State",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5294103",
+    "recruiting": {
+      "athleteId": "5294103",
+      "city": "Roseville",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26099",
+        "latitude": 42.4972583,
+        "longitude": -82.9371409
+      },
+      "id": "107209",
+      "name": "Des Straughton",
+      "position": "S",
+      "ranking": 1049,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "Roseville",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 192,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5211203",
+    "recruiting": {
+      "athleteId": "5211203",
+      "city": "Wilmette",
+      "committedTo": "Washington State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 42.0757315,
+        "longitude": -87.7193768
+      },
+      "id": "221083",
+      "name": "Connor Sullivan",
+      "position": "DL",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Loyola Academy",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "washington-state",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 1
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5369899",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5245136",
+    "recruiting": {
+      "athleteId": "5245136",
+      "city": "Olney",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "17159",
+        "latitude": 38.7296538,
+        "longitude": -88.0846891
+      },
+      "id": "104380",
+      "name": "Casey Thomann",
+      "position": "OT",
+      "ranking": 704,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Richland County",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 302,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5276982",
+    "recruiting": {
+      "athleteId": "5276982",
+      "city": "Cape Coral",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12071",
+        "latitude": 26.6059432,
+        "longitude": -81.9806771
+      },
+      "id": "104740",
+      "name": "Almirian Thomas",
+      "position": "CB",
+      "ranking": 508,
+      "rating": 0.8889,
+      "recruitType": "HighSchool",
+      "school": "Cape Coral",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160470",
+    "recruiting": {
+      "athleteId": "5160470",
+      "city": "West Chester",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39017",
+        "latitude": 39.3303357,
+        "longitude": -84.408275
+      },
+      "id": "104175",
+      "name": "Cameron Thomas",
+      "position": "LB",
+      "ranking": 554,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Lakota West",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 217,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5091842",
+    "recruiting": {
+      "athleteId": "5091842",
+      "city": "Fayetteville",
+      "committedTo": "Memphis",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47103",
+        "latitude": 35.1520267,
+        "longitude": -86.5705509
+      },
+      "id": "112858",
+      "name": "Isaiah Thomison",
+      "position": "LB",
+      "ranking": 1648,
+      "rating": 0.8428,
+      "recruitType": "HighSchool",
+      "school": "Fayetteville",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "memphis",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2023,
+        "team": "Memphis",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2024,
+        "team": "Memphis",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5369901",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211769",
+    "recruiting": {
+      "athleteId": "5211769",
+      "city": "Mt. Zion",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "106706",
+      "name": "Brayden Trimble",
+      "position": "WR",
+      "ranking": 514,
+      "rating": 0.8878,
+      "recruitType": "HighSchool",
+      "school": "Mt. Zion",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079746",
+    "recruiting": {
+      "athleteId": "5079746",
+      "city": "La Grange",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17031",
+        "latitude": 41.8054577,
+        "longitude": -87.8748644
+      },
+      "id": "109266",
+      "name": "Eddie Tuerk",
+      "position": "DL",
+      "ranking": 571,
+      "rating": 0.8842,
+      "recruitType": "HighSchool",
+      "school": "Lyons Township",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 2
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290584",
+    "recruiting": {
+      "athleteId": "5290584",
+      "city": "Downers Grove",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17043",
+        "latitude": 41.7938195,
+        "longitude": -88.010376
+      },
+      "id": "104946",
+      "name": "Will Vala",
+      "position": "TE",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Downers Grove North",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5106299",
+    "recruiting": {
+      "athleteId": "5106299",
+      "city": "Chandler",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.3062223,
+        "longitude": -111.8413317
+      },
+      "id": "109114",
+      "name": "Ca'Lil Valentine",
+      "position": "RB",
+      "ranking": 409,
+      "rating": 0.895,
+      "recruitType": "HighSchool",
+      "school": "Chandler",
+      "stars": 4,
+      "stateProvince": "AZ",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5263877",
+    "recruiting": {
+      "athleteId": "5263877",
+      "city": "Omaha",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "31055",
+        "latitude": 41.2587459,
+        "longitude": -95.9383758
+      },
+      "id": "104590",
+      "name": "Landen Von Seggern",
+      "position": "IOL",
+      "ranking": 1114,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Millard South",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5369895",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290676",
+    "recruiting": {
+      "athleteId": "5290676",
+      "city": "Omaha",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "31055",
+        "latitude": 41.2587459,
+        "longitude": -95.9383758
+      },
+      "id": "105024",
+      "name": "Nelsyn Wheeler",
+      "position": "RB",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Millard South",
+      "stars": 3,
+      "stateProvince": "NE",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215243",
+    "recruiting": {
+      "athleteId": "5215243",
+      "city": "Indianapolis",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "107037",
+      "name": "Isaiah White",
+      "position": "DL",
+      "ranking": 857,
+      "rating": 0.8728,
+      "recruitType": "HighSchool",
+      "school": "Ben Davis",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5369902",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5369905",
+    "recruiting": {
+      "athleteId": "5369905",
+      "city": "Missouri City",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "104389",
+      "name": "Isaiah Williams",
+      "position": "S",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Marshall",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5093939",
+    "recruiting": null,
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2022,
+        "team": "East Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2024,
+        "team": "East Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2025,
+        "team": "East Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209423",
+    "recruiting": {
+      "athleteId": "5209423",
+      "city": "Jacksonville",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "104419",
+      "name": "Tony Williams",
+      "position": "LB",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Raines",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5203609",
+    "recruiting": {
+      "athleteId": "5203609",
+      "city": "Fort Lauderdale",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 69.5,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "106862",
+      "name": "Cedric Wyche II",
+      "position": "RB",
+      "ranking": 665,
+      "rating": 0.8794,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Illinois",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Illinois",
+        "year": 1
+      }
+    ]
+  }
+]

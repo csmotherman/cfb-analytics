@@ -1,0 +1,5006 @@
+[
+  {
+    "playerId": "4921396",
+    "recruiting": {
+      "athleteId": "4921396",
+      "city": "Princeton",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "34021",
+        "latitude": 40.3492744,
+        "longitude": -74.6592958
+      },
+      "id": "112581",
+      "name": "Zach Aamland",
+      "position": "OT",
+      "ranking": 1347,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Hun School",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5289313",
+    "recruiting": {
+      "athleteId": "5289313",
+      "city": "Philadelphia",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "212351",
+      "name": "Dylan Abram",
+      "position": "CB",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Monsignor Bonner",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296368",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5195282",
+    "recruiting": {
+      "athleteId": "5195282",
+      "city": "Wexford",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.6264561,
+        "longitude": -80.055891
+      },
+      "id": "237931",
+      "name": "Tyree Alualu",
+      "position": "ATH",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "North Allegheny",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870278",
+    "recruiting": {
+      "athleteId": "4870278",
+      "city": "Fresh Meadows",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "36081",
+        "latitude": 40.7348246,
+        "longitude": -73.7934668
+      },
+      "id": "114140",
+      "name": "Kaleb Artis",
+      "position": "DL",
+      "ranking": 601,
+      "rating": 0.8781,
+      "recruitType": "HighSchool",
+      "school": "St Francis Preparatory School",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2022,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5121768",
+    "recruiting": {
+      "athleteId": "5121768",
+      "city": "Sumter",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "45085",
+        "latitude": 33.9204354,
+        "longitude": -80.3414693
+      },
+      "id": "256548",
+      "name": "Dante Atton",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "St Francis Xavier",
+      "stars": null,
+      "stateProvince": "SC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "P",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "P",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "P",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "P",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092790",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2022,
+        "team": "Louisiana Tech",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296367",
+    "recruiting": {
+      "athleteId": "5296367",
+      "city": "Asheville",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "37021",
+        "latitude": 35.6009498,
+        "longitude": -82.5540161
+      },
+      "id": "258166",
+      "name": "Zander Baptiste",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Asheville School",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "WR",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 28,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4726152",
+    "recruiting": {
+      "athleteId": "4726152",
+      "city": "Egg Harbor City",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "34001",
+        "latitude": 39.5287282,
+        "longitude": -74.6479364
+      },
+      "id": "114194",
+      "name": "JoJo Bermudez",
+      "position": "WR",
+      "ranking": 651,
+      "rating": 0.8752,
+      "recruitType": "HighSchool",
+      "school": "Cedar Creek",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2022,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "Delaware",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "Delaware",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211736",
+    "recruiting": {
+      "athleteId": "5211736",
+      "city": "Montvale",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 41.0467635,
+        "longitude": -74.0229173
+      },
+      "id": "212350",
+      "name": "Lamar Best",
+      "position": "QB",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph Regional",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388305",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290496",
+    "recruiting": {
+      "athleteId": "5290496",
+      "city": "Pennsauken",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "34007",
+        "latitude": 39.9562238,
+        "longitude": -75.0579502
+      },
+      "id": "105528",
+      "name": "R.J. Blount",
+      "position": "RB",
+      "ranking": 1308,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Pennsauken",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216572",
+    "recruiting": {
+      "athleteId": "5216572",
+      "city": "Upper Marlboro",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.8165274,
+        "longitude": -76.7519753
+      },
+      "id": "108426",
+      "name": "Camren Boykin",
+      "position": "QB",
+      "ranking": 2630,
+      "rating": 0.8278,
+      "recruitType": "HighSchool",
+      "school": "Maret School",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 184,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219869",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296369",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327433",
+    "recruiting": {
+      "athleteId": "5327433",
+      "city": "Lanham",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.9670551,
+        "longitude": -76.8619166
+      },
+      "id": "224454",
+      "name": "Jayden Brown",
+      "position": "DL",
+      "ranking": 1308,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Duval",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870647",
+    "recruiting": {
+      "athleteId": "4870647",
+      "city": "Nashville",
+      "committedTo": "Kentucky",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "113640",
+      "name": "Barion Brown",
+      "position": "WR",
+      "ranking": 97,
+      "rating": 0.9586,
+      "recruitType": "HighSchool",
+      "school": "Pearl-Cohn",
+      "stars": 4,
+      "stateProvince": "TN",
+      "teamSlug": "kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 173,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2023,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2024,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5172091",
+    "recruiting": {
+      "athleteId": "5172091",
+      "city": "Ellenwood",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13063",
+        "latitude": 33.6101096,
+        "longitude": -84.287978
+      },
+      "id": "257401",
+      "name": "Wesley Brown",
+      "position": "EDGE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Cedar Grove",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685695",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2022,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2023,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2025,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141403",
+    "recruiting": {
+      "athleteId": "5141403",
+      "city": "Monroe",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "37179",
+        "latitude": 34.9854275,
+        "longitude": -80.5495112
+      },
+      "id": "107926",
+      "name": "Kaegan Chambers",
+      "position": "ATH",
+      "ranking": 1901,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Monroe",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5089003",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2022,
+        "team": "St. Thomas (MN)",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "St. Thomas (MN)",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "St. Thomas (MN)",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147680",
+    "recruiting": {
+      "athleteId": "5147680",
+      "city": "Union City",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "34017",
+        "latitude": 40.7795455,
+        "longitude": -74.0237512
+      },
+      "id": "110446",
+      "name": "Denzel Chavis",
+      "position": "CB",
+      "ranking": 1836,
+      "rating": 0.8428,
+      "recruitType": "HighSchool",
+      "school": "Union City",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5080547",
+    "recruiting": {
+      "athleteId": "5080547",
+      "city": "London",
+      "committedTo": "Temple",
+      "country": "England",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "112382",
+      "name": "Peter Clarke",
+      "position": "TE",
+      "ranking": 1155,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "NFL Academy",
+      "stars": 3,
+      "stateProvince": "EN",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 248,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388303",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "PK",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5326270",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265254",
+    "recruiting": {
+      "athleteId": "5265254",
+      "city": "South Park",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.312149399999996,
+        "longitude": -80.00343121383315
+      },
+      "id": "258164",
+      "name": "Troy Cunningham",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "South Park",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296819",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "LB",
+        "season": 2025,
+        "team": "Sam Houston",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5097480",
+    "recruiting": {
+      "athleteId": "5097480",
+      "city": "Wexford",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "42003",
+        "latitude": 40.6264561,
+        "longitude": -80.055891
+      },
+      "id": "255687",
+      "name": "Kolin Dinkins",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "North Allegheny",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2022,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5301272",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "DL",
+        "season": 2025,
+        "team": "UAlbany",
+        "year": 2
+      },
+      {
+        "jersey": 59,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151237",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "DL",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219878",
+    "recruiting": {
+      "athleteId": "5219878",
+      "city": "Germany",
+      "committedTo": "Temple",
+      "country": "DEU",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "110761",
+      "name": "Daniel Evert",
+      "position": "TE",
+      "ranking": 2206,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "Germany",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215499",
+    "recruiting": {
+      "athleteId": "5215499",
+      "city": "Belleville",
+      "committedTo": "Memphis",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 42.2048414,
+        "longitude": -83.4852106
+      },
+      "id": "107779",
+      "name": "Lamar Fairfax Jr.",
+      "position": "DL",
+      "ranking": 1671,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Belleville",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "memphis",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "Memphis",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5291809",
+    "recruiting": {
+      "athleteId": "5291809",
+      "city": "Marion",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "25023",
+        "latitude": 41.7001043,
+        "longitude": -70.7628129
+      },
+      "id": "212784",
+      "name": "Brendan Farhat",
+      "position": "LB",
+      "ranking": 2333,
+      "rating": 0.8456,
+      "recruitType": "HighSchool",
+      "school": "Tabor Academy",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5087747",
+    "recruiting": {
+      "athleteId": "5087747",
+      "city": "Salisbury",
+      "committedTo": "Stony Brook",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24045",
+        "latitude": 38.3662114,
+        "longitude": -75.6008881
+      },
+      "id": "256286",
+      "name": "Jayce Freeman",
+      "position": "ATH",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Wicomico",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "stony-brook",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2022,
+        "team": "Stony Brook",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2023,
+        "team": "Stony Brook",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2024,
+        "team": "Stony Brook",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2025,
+        "team": "Stony Brook",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290580",
+    "recruiting": {
+      "athleteId": "5290580",
+      "city": "Harrisburg",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "42043",
+        "latitude": 40.2663107,
+        "longitude": -76.8861122
+      },
+      "id": "105479",
+      "name": "Liam Fuller",
+      "position": "TE",
+      "ranking": 2231,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Bishop McDevitt",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "TE",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215541",
+    "recruiting": {
+      "athleteId": "5215541",
+      "city": "Rochester",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "36055",
+        "latitude": 43.157285,
+        "longitude": -77.615214
+      },
+      "id": "106874",
+      "name": "Quante Gillians",
+      "position": "DL",
+      "ranking": 686,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Aquinas Institute",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 278,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "Syracuse",
+        "year": 2
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147225",
+    "recruiting": {
+      "athleteId": "5147225",
+      "city": "Tampa",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "110578",
+      "name": "Bryson Goodwin",
+      "position": "WR",
+      "ranking": 2032,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Tampa Jesuit",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 31,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685353",
+    "recruiting": {
+      "athleteId": "4685353",
+      "city": "Oradell",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 40.9543943,
+        "longitude": -74.0308504
+      },
+      "id": "113804",
+      "name": "Jaeden Gould",
+      "position": "CB",
+      "ranking": 261,
+      "rating": 0.9084,
+      "recruitType": "HighSchool",
+      "school": "Bergen Catholic",
+      "stars": 4,
+      "stateProvince": "NJ",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2022,
+        "team": "Nebraska",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2023,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5154382",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388300",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291740",
+    "recruiting": {
+      "athleteId": "5291740",
+      "city": "East Orange",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34013",
+        "latitude": 40.767323,
+        "longitude": -74.2048677
+      },
+      "id": "211816",
+      "name": "Alex Hanks",
+      "position": "S",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "East Orange Campus",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151240",
+    "recruiting": {
+      "athleteId": "5151240",
+      "city": "Raleigh",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.7803977,
+        "longitude": -78.6390989
+      },
+      "id": "256555",
+      "name": "Carl Hardin",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Broughton",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 98,
+        "position": "PK",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296370",
+    "recruiting": {
+      "athleteId": "5296370",
+      "city": "Philadelphia",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "108518",
+      "name": "Rameir Hardy",
+      "position": "WR",
+      "ranking": 2712,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "St. Joseph's Prep",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290795",
+    "recruiting": {
+      "athleteId": "5290795",
+      "city": "Chester",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42045",
+        "latitude": 39.849557,
+        "longitude": -75.3557458
+      },
+      "id": "212080",
+      "name": "Daron Harris",
+      "position": "S",
+      "ranking": 1566,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Chester",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219874",
+    "recruiting": {
+      "athleteId": "5219874",
+      "city": "Morristown",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "34027",
+        "latitude": 40.7970384,
+        "longitude": -74.4809492
+      },
+      "id": "257400",
+      "name": "Giakoby Hills",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Morristown",
+      "stars": null,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290623",
+    "recruiting": {
+      "athleteId": "5290623",
+      "city": "Bel Air",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "24025",
+        "latitude": 39.5355063,
+        "longitude": -76.3490396
+      },
+      "id": "212292",
+      "name": "Michael Holcomb",
+      "position": "EDGE",
+      "ranking": 1806,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "C. Milton Wright",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5388304",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5278209",
+    "recruiting": {
+      "athleteId": "5278209",
+      "city": "Union",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "34039",
+        "latitude": 40.6976019,
+        "longitude": -74.2632024
+      },
+      "id": "105521",
+      "name": "Uyi Igiehon",
+      "position": "EDGE",
+      "ranking": 1754,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Union",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4976722",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2023,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5194317",
+    "recruiting": {
+      "athleteId": "5194317",
+      "city": "Leonardtown",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "24037",
+        "latitude": 38.2912431,
+        "longitude": -76.6357946
+      },
+      "id": "257403",
+      "name": "Cameron Jones",
+      "position": "EDGE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "St. Mary's Ryken",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151239",
+    "recruiting": {
+      "athleteId": "5151239",
+      "city": "Waterbury",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "09009",
+        "latitude": 41.5538091,
+        "longitude": -73.0438362
+      },
+      "id": "115589",
+      "name": "Aaron Jones",
+      "position": "DL",
+      "ranking": 2321,
+      "rating": 0.8052,
+      "recruitType": "HighSchool",
+      "school": "Springfield Central",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152685",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2023,
+        "team": "Lafayette",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2024,
+        "team": "Lafayette",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2025,
+        "team": "Lafayette",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4924137",
+    "recruiting": {
+      "athleteId": "4924137",
+      "city": "West Orange",
+      "committedTo": "Illinois",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "34013",
+        "latitude": 40.7987113,
+        "longitude": -74.2390353
+      },
+      "id": "111594",
+      "name": "Saboor Karriem",
+      "position": "S",
+      "ranking": 346,
+      "rating": 0.8987,
+      "recruitType": "HighSchool",
+      "school": "West Orange",
+      "stars": 4,
+      "stateProvince": "NJ",
+      "teamSlug": "illinois",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2023,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2024,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151232",
+    "recruiting": {
+      "athleteId": "5151232",
+      "city": "Doylestown",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "42017",
+        "latitude": 40.3100446,
+        "longitude": -75.1304588
+      },
+      "id": "256556",
+      "name": "Patrick Keller",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Central Bucks East",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4921254",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5317030",
+    "recruiting": {
+      "athleteId": "5317030",
+      "city": "Baltimore",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "212997",
+      "name": "Logan King",
+      "position": "IOL",
+      "ranking": 2728,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151233",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079545",
+    "recruiting": {
+      "athleteId": "5079545",
+      "city": "Miami",
+      "committedTo": "Purdue",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "109376",
+      "name": "Earl Kulp",
+      "position": "CB",
+      "ranking": 685,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "purdue",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "CB",
+        "season": 2024,
+        "team": "Purdue",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "CB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5222551",
+    "recruiting": {
+      "athleteId": "5222551",
+      "city": "Surrey",
+      "committedTo": "Temple",
+      "country": "CAN",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "108626",
+      "name": "Ryder Kusch",
+      "position": "TE",
+      "ranking": 2968,
+      "rating": 0.8137,
+      "recruitType": "HighSchool",
+      "school": "Hun School (Prep)",
+      "stars": 3,
+      "stateProvince": "BC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "TE",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "TE",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5135216",
+    "recruiting": {
+      "athleteId": "5135216",
+      "city": "Paramus",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 40.9452911,
+        "longitude": -74.0735899
+      },
+      "id": "109741",
+      "name": "Adrian Laing",
+      "position": "CB",
+      "ranking": 1064,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "Paramus Catholic",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "CB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "CB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5388301",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296361",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5225338",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2024,
+        "team": "VMI",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5291772",
+    "recruiting": {
+      "athleteId": "5291772",
+      "city": "Baltimore",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "211407",
+      "name": "Coen Logan",
+      "position": "WR",
+      "ranking": 1114,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5226674",
+    "recruiting": {
+      "athleteId": "5226674",
+      "city": "Camden",
+      "committedTo": "Monmouth",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "34007",
+        "latitude": 39.9448402,
+        "longitude": -75.1198911
+      },
+      "id": "109346",
+      "name": "Willy Love",
+      "position": "ATH",
+      "ranking": 653,
+      "rating": 0.88,
+      "recruitType": "HighSchool",
+      "school": "Camden Eastside",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "monmouth",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2024,
+        "team": "Monmouth",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4705515",
+    "recruiting": {
+      "athleteId": "4705515",
+      "city": "Cumming",
+      "committedTo": "South Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13117",
+        "latitude": 34.2073196,
+        "longitude": -84.1401926
+      },
+      "id": "114294",
+      "name": "Grayson Mains",
+      "position": "OT",
+      "ranking": 759,
+      "rating": 0.8707,
+      "recruitType": "HighSchool",
+      "school": "Lambert",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "south-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2022,
+        "team": "South Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2023,
+        "team": "South Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5081241",
+    "recruiting": {
+      "athleteId": "5081241",
+      "city": "Oakdale",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "09011",
+        "latitude": 41.4662093,
+        "longitude": -72.1573008
+      },
+      "id": "255829",
+      "name": "Johnny Martin",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas More (Prep)",
+      "stars": null,
+      "stateProvince": "CT",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2022,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2023,
+        "team": "Stony Brook",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2024,
+        "team": "Stony Brook",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296364",
+    "recruiting": {
+      "athleteId": "5296364",
+      "city": "Lake Placid",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12055",
+        "latitude": 27.2930999,
+        "longitude": -81.3628502
+      },
+      "id": "107843",
+      "name": "Keveun Mason",
+      "position": "RB",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Fort Meade",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5126571",
+    "recruiting": {
+      "athleteId": "5126571",
+      "city": "Noblesville",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "18057",
+        "latitude": 40.0455918,
+        "longitude": -86.0085955
+      },
+      "id": "237926",
+      "name": "Ransom McDermott",
+      "position": "OT",
+      "ranking": 1266,
+      "rating": 0.8592,
+      "recruitType": "HighSchool",
+      "school": "Noblesville",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265492",
+    "recruiting": {
+      "athleteId": "5265492",
+      "city": "Lansdowne",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "42045",
+        "latitude": 39.9381682,
+        "longitude": -75.2718507
+      },
+      "id": "258165",
+      "name": "Adriano McLean",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Penn Wood",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 48,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5326897",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296363",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5327434",
+    "recruiting": {
+      "athleteId": "5327434",
+      "city": "Ardmore",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42091",
+        "latitude": 40.0067786,
+        "longitude": -75.2854622
+      },
+      "id": "212718",
+      "name": "Kechan Miller",
+      "position": "DL",
+      "ranking": 2288,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Lower Merion",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5317966",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5121722",
+    "recruiting": {
+      "athleteId": "5121722",
+      "city": "Philadelphia",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "256550",
+      "name": "Jordan Montgomery",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Roman Catholic",
+      "stars": null,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291131",
+    "recruiting": {
+      "athleteId": "5291131",
+      "city": "Brooklyn",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "36047",
+        "latitude": 40.6501038,
+        "longitude": -73.9495823
+      },
+      "id": "105621",
+      "name": "Ameir Morrow",
+      "position": "RB",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Erasmus Hall",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 203,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291774",
+    "recruiting": {
+      "athleteId": "5291774",
+      "city": "Harrisburg",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "42043",
+        "latitude": 40.2663107,
+        "longitude": -76.8861122
+      },
+      "id": "211822",
+      "name": "Josh Nengite",
+      "position": "EDGE",
+      "ranking": 1566,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Susquehanna Township",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290544",
+    "recruiting": {
+      "athleteId": "5290544",
+      "city": "Mooresville",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "37097",
+        "latitude": 35.5848596,
+        "longitude": -80.8100724
+      },
+      "id": "105493",
+      "name": "Brody Norman",
+      "position": "QB",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Mooresville",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5238235",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159110",
+    "recruiting": {
+      "athleteId": "5159110",
+      "city": "Watertown",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "09005",
+        "latitude": 41.6062078,
+        "longitude": -73.1181658
+      },
+      "id": "104577",
+      "name": "Jude Okeleke",
+      "position": "DL",
+      "ranking": 704,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Taft School",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296366",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219868",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "S",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "S",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219870",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "S",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "S",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 46,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290553",
+    "recruiting": {
+      "athleteId": "5290553",
+      "city": "Fort Lauderdale",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "105946",
+      "name": "Brady Palmer",
+      "position": "QB",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219871",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5388302",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5203589",
+    "recruiting": {
+      "athleteId": "5203589",
+      "city": "Fort Lauderdale",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "108295",
+      "name": "Jamarcus Pierre",
+      "position": "CB",
+      "ranking": 2375,
+      "rating": 0.8337,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Gibbons",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "S",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5164597",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2023,
+        "team": "Missouri State",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2024,
+        "team": "Missouri State",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4950403",
+    "recruiting": {
+      "athleteId": "4950403",
+      "city": "Newark",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34013",
+        "latitude": 40.735657,
+        "longitude": -74.1723667
+      },
+      "id": "113248",
+      "name": "Zyil Powell",
+      "position": "S",
+      "ranking": 2112,
+      "rating": 0.8237,
+      "recruitType": "HighSchool",
+      "school": "Paramus Catholic",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4832005",
+    "recruiting": {
+      "athleteId": "4832005",
+      "city": "Detroit",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "114463",
+      "name": "Jackson Pruitt",
+      "position": "IOL",
+      "ranking": 934,
+      "rating": 0.863,
+      "recruitType": "HighSchool",
+      "school": "Cass Technical",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2022
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2022,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159173",
+    "recruiting": {
+      "athleteId": "5159173",
+      "city": "Philadelphia",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "105286",
+      "name": "Ash Roberts",
+      "position": "WR",
+      "ranking": 2231,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Roman Catholic",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5291718",
+    "recruiting": {
+      "athleteId": "5291718",
+      "city": "Salem",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "34033",
+        "latitude": 39.5717796,
+        "longitude": -75.4671423
+      },
+      "id": "212016",
+      "name": "Antwuan Rogers",
+      "position": "DL",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Salem",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4898892",
+    "recruiting": {
+      "athleteId": "4898892",
+      "city": "Reading",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "42011",
+        "latitude": 40.335345,
+        "longitude": -75.9279495
+      },
+      "id": "111554",
+      "name": "Joey Schlaffer",
+      "position": "TE",
+      "ranking": 309,
+      "rating": 0.9031,
+      "recruitType": "HighSchool",
+      "school": "Exeter Township",
+      "stars": 4,
+      "stateProvince": "PA",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5078166",
+    "recruiting": {
+      "athleteId": "5078166",
+      "city": "New Rochelle",
+      "committedTo": "Rutgers",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "36119",
+        "latitude": 40.9115386,
+        "longitude": -73.7826363
+      },
+      "id": "112393",
+      "name": "Ajani Sheppard",
+      "position": "QB",
+      "ranking": 1166,
+      "rating": 0.8586,
+      "recruitType": "HighSchool",
+      "school": "Iona Prep",
+      "stars": 3,
+      "stateProvince": "NY",
+      "teamSlug": "rutgers",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2023,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2025,
+        "team": "Washington State",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4258419",
+    "recruiting": {
+      "athleteId": "4258419",
+      "city": "Little Rock",
+      "committedTo": "UL Monroe",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "05119",
+        "latitude": 34.7464809,
+        "longitude": -92.2895948
+      },
+      "id": "117450",
+      "name": "Hunter Smith",
+      "position": "ATH",
+      "ranking": 1763,
+      "rating": 0.8296,
+      "recruitType": "HighSchool",
+      "school": "Joe T. Robinson",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "ul-monroe",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2021
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2022,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2023,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2024,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5077787",
+    "recruiting": {
+      "athleteId": "5077787",
+      "city": "West Des Moines",
+      "committedTo": "Penn State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "19153",
+        "latitude": 41.5645337,
+        "longitude": -93.7595281
+      },
+      "id": "111976",
+      "name": "Jaxon Smolik",
+      "position": "QB",
+      "ranking": 734,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Dowling Catholic",
+      "stars": 3,
+      "stateProvince": "IA",
+      "teamSlug": "penn-state",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2023,
+        "team": "Penn State",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2024,
+        "team": "Penn State",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "Penn State",
+        "year": 3
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290193",
+    "recruiting": {
+      "athleteId": "5290193",
+      "city": "Olney",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "24031",
+        "latitude": 39.1532123,
+        "longitude": -77.0668408
+      },
+      "id": "211672",
+      "name": "Karon Spencer",
+      "position": "OT",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Our Lady of Good Counsel",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5323606",
+    "recruiting": {
+      "athleteId": "5323606",
+      "city": "Philadelphia",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "42101",
+        "latitude": 39.9527237,
+        "longitude": -75.1635262
+      },
+      "id": "212608",
+      "name": "Eyan Stead Jr.",
+      "position": "ATH",
+      "ranking": 2487,
+      "rating": 0.8422,
+      "recruitType": "HighSchool",
+      "school": "Roman Catholic",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4875583",
+    "recruiting": {
+      "athleteId": "4875583",
+      "city": "Morrow",
+      "committedTo": "Ohio State",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "254917",
+      "name": "Reis Stocksdale",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Little Miami",
+      "stars": null,
+      "stateProvince": "OH",
+      "teamSlug": "ohio-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2021
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2021,
+        "team": "Ohio State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2022,
+        "team": "Ohio State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2023,
+        "team": "Ohio State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "Ohio State",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4917625",
+    "recruiting": {
+      "athleteId": "4917625",
+      "city": "Sewell",
+      "committedTo": "Rutgers",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "34015",
+        "latitude": 39.7665029,
+        "longitude": -75.1443435
+      },
+      "id": "112007",
+      "name": "John Stone",
+      "position": "IOL",
+      "ranking": 761,
+      "rating": 0.8736,
+      "recruitType": "HighSchool",
+      "school": "Washington Township",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "rutgers",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Rutgers",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219862",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "LB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291738",
+    "recruiting": {
+      "athleteId": "5291738",
+      "city": "Willow Grove",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "106176",
+      "name": "Luke Sword",
+      "position": "P",
+      "ranking": 3253,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "Upper Moreland",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "P",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5196486",
+    "recruiting": {
+      "athleteId": "5196486",
+      "city": "Rolesville",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.9232862,
+        "longitude": -78.4573914
+      },
+      "id": "257405",
+      "name": "Russell Sykes",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Rolesville",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5291187",
+    "recruiting": {
+      "athleteId": "5291187",
+      "city": "Leonardtown",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "24037",
+        "latitude": 38.2912431,
+        "longitude": -76.6357946
+      },
+      "id": "213159",
+      "name": "Jonah Tarpley",
+      "position": "IOL",
+      "ranking": 2840,
+      "rating": 0.8311,
+      "recruitType": "HighSchool",
+      "school": "St. Mary's Ryken",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5077959",
+    "recruiting": {
+      "athleteId": "5077959",
+      "city": "Palm Harbor",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 28.0780718,
+        "longitude": -82.7637127
+      },
+      "id": "112936",
+      "name": "Kevin Terry",
+      "position": "OT",
+      "ranking": 1760,
+      "rating": 0.8386,
+      "recruitType": "HighSchool",
+      "school": "Clearwater Central Catholic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5221235",
+    "recruiting": {
+      "athleteId": "5221235",
+      "city": "Buckeystown",
+      "committedTo": "North Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "107202",
+      "name": "Kenedy Uzoma",
+      "position": "ATH",
+      "ranking": 1039,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "St. John's Catholic",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "north-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 203,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2025,
+        "team": "North Carolina",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4884103",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2022,
+        "team": "Arkansas-Pine Bluff",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5196487",
+    "recruiting": {
+      "athleteId": "5196487",
+      "city": "Sainte-Anne-de-Bellevue",
+      "committedTo": "Temple",
+      "country": "CAN",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "238408",
+      "name": "Davray Venu",
+      "position": "IOL",
+      "ranking": 2983,
+      "rating": 0.79,
+      "recruitType": "HighSchool",
+      "school": "John Abbott College",
+      "stars": 2,
+      "stateProvince": "QC",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296365",
+    "recruiting": {
+      "athleteId": "5296365",
+      "city": "Orlando",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "221049",
+      "name": "Devontae Ward-Grant",
+      "position": "S",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Evans",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 173,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5159089",
+    "recruiting": {
+      "athleteId": "5159089",
+      "city": "Baltimore",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "105568",
+      "name": "John Watkins",
+      "position": "IOL",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290513",
+    "recruiting": {
+      "athleteId": "5290513",
+      "city": "Jersey City",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34017",
+        "latitude": 40.7281575,
+        "longitude": -74.0776417
+      },
+      "id": "105087",
+      "name": "Hunter Watson",
+      "position": "WR",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "St. Peter's Prep",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079143",
+    "recruiting": {
+      "athleteId": "5079143",
+      "city": "Willow Grove",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "113176",
+      "name": "Luke Watson",
+      "position": "IOL",
+      "ranking": 2037,
+      "rating": 0.827,
+      "recruitType": "HighSchool",
+      "school": "St Mark's",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 272,
+      "year": 2023
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141703",
+    "recruiting": {
+      "athleteId": "5141703",
+      "city": "Miami",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "106968",
+      "name": "Jett White",
+      "position": "CB",
+      "ranking": 784,
+      "rating": 0.875,
+      "recruitType": "HighSchool",
+      "school": "Miami Edison",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 169,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296371",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5227760",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2024,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2025,
+        "team": "Temple",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220626",
+    "recruiting": {
+      "athleteId": "5220626",
+      "city": "Scottsdale",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "257370",
+      "name": "Sam Wolfenden",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Cactus Shadows",
+      "stars": null,
+      "stateProvince": "AZ",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "LS",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "LS",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "LS",
+        "season": 2026,
+        "team": "Temple",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5152664",
+    "recruiting": null,
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2025,
+        "team": "Temple",
+        "year": 4
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2026,
+        "team": "Temple",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296362",
+    "recruiting": {
+      "athleteId": "5296362",
+      "city": "Upper Marlboro",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.8165274,
+        "longitude": -76.7519753
+      },
+      "id": "107971",
+      "name": "De'Carlos Young",
+      "position": "RB",
+      "ranking": 1950,
+      "rating": 0.8458,
+      "recruitType": "HighSchool",
+      "school": "Dr. Henry Wise",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Temple",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Temple",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5326899",
+    "recruiting": {
+      "athleteId": "5326899",
+      "city": "Ashland",
+      "committedTo": "Temple",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01027",
+        "latitude": 40.781667,
+        "longitude": -76.344444
+      },
+      "id": "212301",
+      "name": "Aiden Zilker",
+      "position": "IOL",
+      "ranking": 2022,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "North Schuylkill",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "temple",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "Temple",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Temple",
+        "year": 1
+      }
+    ]
+  }
+]

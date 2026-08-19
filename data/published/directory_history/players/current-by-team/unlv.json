@@ -1,0 +1,4619 @@
+[
+  {
+    "playerId": "5295313",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295309",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215348",
+    "recruiting": {
+      "athleteId": "5215348",
+      "city": "Sandy",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "49035",
+        "latitude": 40.5664878,
+        "longitude": -111.838904
+      },
+      "id": "105957",
+      "name": "Cole Albrecht",
+      "position": "EDGE",
+      "ranking": 2333,
+      "rating": 0.8456,
+      "recruitType": "HighSchool",
+      "school": "Alta",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5155557",
+    "recruiting": {
+      "athleteId": "5155557",
+      "city": "Las Vegas",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "110924",
+      "name": "Jaylen Allen",
+      "position": "CB",
+      "ranking": 2448,
+      "rating": 0.8219,
+      "recruitType": "HighSchool",
+      "school": "Desert Pines",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295300",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092272",
+    "recruiting": {
+      "athleteId": "5092272",
+      "city": "Ewa Beach",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.315603,
+        "longitude": -158.008804
+      },
+      "id": "113484",
+      "name": "Blesyng Alualu-Tuiolemotu",
+      "position": "LB",
+      "ranking": 2519,
+      "rating": 0.8022,
+      "recruitType": "HighSchool",
+      "school": "James Campbell",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870607",
+    "recruiting": {
+      "athleteId": "4870607",
+      "city": "Denton",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "S+",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "111254",
+      "name": "Jackson Arnold",
+      "position": "QB",
+      "ranking": 8,
+      "rating": 0.9963,
+      "recruitType": "HighSchool",
+      "school": "Denton Guyer",
+      "stars": 5,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295305",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 40,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5389945",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "PK",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5145523",
+    "recruiting": {
+      "athleteId": "5145523",
+      "city": "Henderson",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "110795",
+      "name": "Jae Beasley II",
+      "position": "TE",
+      "ranking": 2319,
+      "rating": 0.8286,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5200367",
+    "recruiting": {
+      "athleteId": "5200367",
+      "city": "Lewisville",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.046233,
+        "longitude": -96.994174
+      },
+      "id": "105012",
+      "name": "Tatum Bell Jr.",
+      "position": "WR",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Lewisville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5389949",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220630",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "LB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "LB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5281515",
+    "recruiting": {
+      "athleteId": "5281515",
+      "city": "West Hills",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2032325,
+        "longitude": -118.645476
+      },
+      "id": "105863",
+      "name": "Mateo Bilaver",
+      "position": "OT",
+      "ranking": 1976,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Chaminade",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4700805",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2022,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327446",
+    "recruiting": {
+      "athleteId": "5327446",
+      "city": "Amarillo",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48375",
+        "latitude": 35.2072185,
+        "longitude": -101.8338246
+      },
+      "id": "224729",
+      "name": "Vern Blair",
+      "position": "CB",
+      "ranking": 3341,
+      "rating": 0.805,
+      "recruitType": "HighSchool",
+      "school": "Amarillo Palo Duro",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295301",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5124994",
+    "recruiting": {
+      "athleteId": "5124994",
+      "city": "Lehi",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "49049",
+        "latitude": 40.3880902,
+        "longitude": -111.8491619
+      },
+      "id": "217013",
+      "name": "Austin Boyd",
+      "position": "IOL",
+      "ranking": 1953,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Lehi",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 281,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4884000",
+    "recruiting": {
+      "athleteId": "4884000",
+      "city": "Danville",
+      "committedTo": "California",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.8215929,
+        "longitude": -121.9999606
+      },
+      "id": "114211",
+      "name": "Jackson Brown",
+      "position": "OT",
+      "ranking": 664,
+      "rating": 0.8748,
+      "recruitType": "HighSchool",
+      "school": "San Ramon Valley",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "california",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2022,
+        "team": "California",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Pittsburgh",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Pittsburgh",
+        "year": 3
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685289",
+    "recruiting": {
+      "athleteId": "4685289",
+      "city": "Anaheim",
+      "committedTo": "Arizona",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8347516,
+        "longitude": -117.911732
+      },
+      "id": "113779",
+      "name": "Keyan Burnett",
+      "position": "TE",
+      "ranking": 236,
+      "rating": 0.9127,
+      "recruitType": "HighSchool",
+      "school": "Servite",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "arizona",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2022,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2023,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4872961",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2021,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2022,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "Houston",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291092",
+    "recruiting": {
+      "athleteId": "5291092",
+      "city": "Newbury Park",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06111",
+        "latitude": 34.183671,
+        "longitude": -118.9118302
+      },
+      "id": "105766",
+      "name": "Vincent Carner",
+      "position": "WR",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Newbury Park",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295513",
+    "recruiting": {
+      "athleteId": "5295513",
+      "city": "Australia",
+      "committedTo": "Kennesaw State",
+      "country": "AUS",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "258412",
+      "name": "Matthew Choules",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "ProKick Australia",
+      "stars": null,
+      "stateProvince": null,
+      "teamSlug": "kennesaw-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "P",
+        "season": 2025,
+        "team": "Kennesaw State",
+        "year": 1
+      },
+      {
+        "jersey": 26,
+        "position": "P",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141405",
+    "recruiting": {
+      "athleteId": "5141405",
+      "city": "San Juan Capistrano",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5016932,
+        "longitude": -117.6625509
+      },
+      "id": "107527",
+      "name": "Logan Christensen",
+      "position": "ATH",
+      "ranking": 1419,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "JSerra Catholic",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "S",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5164307",
+    "recruiting": {
+      "athleteId": "5164307",
+      "city": "Fort Lauderdale",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "108316",
+      "name": "Sebastian Circo",
+      "position": "QB",
+      "ranking": 2397,
+      "rating": 0.8331,
+      "recruitType": "HighSchool",
+      "school": "Western",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5127736",
+    "recruiting": {
+      "athleteId": "5127736",
+      "city": "Mansfield",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.5631924,
+        "longitude": -97.1416768
+      },
+      "id": "109325",
+      "name": "Landyn Cleveland",
+      "position": "S",
+      "ranking": 631,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Mansfield Legacy",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5075569",
+    "recruiting": {
+      "athleteId": "5075569",
+      "city": "Corona",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "112623",
+      "name": "Lucas Conti",
+      "position": "DL",
+      "ranking": 1397,
+      "rating": 0.8503,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215195",
+    "recruiting": {
+      "athleteId": "5215195",
+      "city": "McKinney",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1976496,
+        "longitude": -96.6154471
+      },
+      "id": "107632",
+      "name": "Jordan Covington",
+      "position": "DL",
+      "ranking": 1523,
+      "rating": 0.8564,
+      "recruitType": "HighSchool",
+      "school": "McKinney",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870682",
+    "recruiting": {
+      "athleteId": "4870682",
+      "city": "Alpharetta",
+      "committedTo": "Clemson",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "111919",
+      "name": "Dee Crayton",
+      "position": "LB",
+      "ranking": 674,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Denmark",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "clemson",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2023,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2024,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2025,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295306",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5389953",
+    "recruiting": {
+      "athleteId": "5389953",
+      "city": "Las Vegas",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "105467",
+      "name": "Andreas Diaz-Nicolaidis",
+      "position": "ATH",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Bishop Gorman",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295311",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4428986",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2021,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2022,
+        "team": "Oregon",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2023,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2024,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5210479",
+    "recruiting": {
+      "athleteId": "5210479",
+      "city": "Cashmere",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "105386",
+      "name": "Prin Fox",
+      "position": "EDGE",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Cashmere",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5221097",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2024,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147224",
+    "recruiting": {
+      "athleteId": "5147224",
+      "city": "Bakersfield",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06029",
+        "latitude": 35.3738712,
+        "longitude": -119.0194639
+      },
+      "id": "110445",
+      "name": "Tre Fulton",
+      "position": "S",
+      "ranking": 1836,
+      "rating": 0.8428,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209180",
+    "recruiting": {
+      "athleteId": "5209180",
+      "city": "Ventura",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06111",
+        "latitude": 34.3435092,
+        "longitude": -119.29560423163717
+      },
+      "id": "104948",
+      "name": "Derek Garcia",
+      "position": "QB",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Ventura",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5281518",
+    "recruiting": {
+      "athleteId": "5281518",
+      "city": "San Diego",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06073",
+        "latitude": 32.7174209,
+        "longitude": -117.1627714
+      },
+      "id": "105478",
+      "name": "Jesus Garcia II",
+      "position": "OT",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "San Diego Lincoln",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 276,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4808744",
+    "recruiting": {
+      "athleteId": "4808744",
+      "city": "Lakeland",
+      "committedTo": "Utah",
+      "country": "USA",
+      "grade": "C",
+      "height": 67,
+      "hometownInfo": {
+        "fipsCode": "12105",
+        "latitude": 28.0394654,
+        "longitude": -81.9498042
+      },
+      "id": "113893",
+      "name": "Jaylon Glover",
+      "position": "RB",
+      "ranking": 350,
+      "rating": 0.8976,
+      "recruitType": "HighSchool",
+      "school": "Lake Gibson",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "utah",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2022,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2023,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2024,
+        "team": "Utah",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "RB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146859",
+    "recruiting": {
+      "athleteId": "5146859",
+      "city": "Upper Marlboro",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "24033",
+        "latitude": 38.8165274,
+        "longitude": -76.7519753
+      },
+      "id": "109366",
+      "name": "Herb Gray",
+      "position": "DL",
+      "ranking": 677,
+      "rating": 0.8793,
+      "recruitType": "HighSchool",
+      "school": "C.H. Flowers",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2024,
+        "team": "Tennessee",
+        "year": 2
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tennessee",
+        "year": 2
+      },
+      {
+        "jersey": 92,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222634",
+    "recruiting": {
+      "athleteId": "5222634",
+      "city": "Las Vegas",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "108008",
+      "name": "Alexander Green",
+      "position": "LB",
+      "ranking": 1971,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Palo Verde",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5281523",
+    "recruiting": {
+      "athleteId": "5281523",
+      "city": "San Juan Capistrano",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.5016932,
+        "longitude": -117.6625509
+      },
+      "id": "105597",
+      "name": "Josh Haney",
+      "position": "IOL",
+      "ranking": 1754,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "JSerra Catholic",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5276640",
+    "recruiting": {
+      "athleteId": "5276640",
+      "city": "Riverview",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.871197,
+        "longitude": -82.3269883
+      },
+      "id": "104283",
+      "name": "Jesse Harden",
+      "position": "WR",
+      "ranking": 665,
+      "rating": 0.8822,
+      "recruitType": "HighSchool",
+      "school": "Plant City",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685388",
+    "recruiting": {
+      "athleteId": "4685388",
+      "city": "Brooklyn",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "36047",
+        "latitude": 40.6501038,
+        "longitude": -73.9495823
+      },
+      "id": "115952",
+      "name": "Jahzion Harris",
+      "position": "EDGE",
+      "ranking": 211,
+      "rating": 0.9185,
+      "recruitType": "HighSchool",
+      "school": "Erasmus Hall",
+      "stars": 4,
+      "stateProvince": "NY",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2021
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2022,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2023,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "UTSA",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4923275",
+    "recruiting": {
+      "athleteId": "4923275",
+      "city": "Henderson",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "112813",
+      "name": "Ed Haynes",
+      "position": "IOL",
+      "ranking": 1601,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4429921",
+    "recruiting": {
+      "athleteId": "4429921",
+      "city": "Missouri City",
+      "committedTo": "Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "118742",
+      "name": "Avery Helm",
+      "position": "CB",
+      "ranking": 334,
+      "rating": 0.8978,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Marshall",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "florida",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2020
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2021,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2022,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2023,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2024,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302896",
+    "recruiting": {
+      "athleteId": "5302896",
+      "city": "West Hills",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2032325,
+        "longitude": -118.645476
+      },
+      "id": "105501",
+      "name": "Ronnell Hewitt Jr.",
+      "position": "LB",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Chaminade",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5142603",
+    "recruiting": {
+      "athleteId": "5142603",
+      "city": "Harbor City",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.7972822,
+        "longitude": -118.3004717
+      },
+      "id": "107026",
+      "name": "Mark Iheanachor",
+      "position": "LB",
+      "ranking": 848,
+      "rating": 0.8731,
+      "recruitType": "HighSchool",
+      "school": "Narbonne",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5125768",
+    "recruiting": {
+      "athleteId": "5125768",
+      "city": "Oklahoma City",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "40109",
+        "latitude": 35.4729886,
+        "longitude": -97.5170536
+      },
+      "id": "256759",
+      "name": "DeAngelo Irvin Jr.",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Midwest City",
+      "stars": null,
+      "stateProvince": "OK",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5083184",
+    "recruiting": {
+      "athleteId": "5083184",
+      "city": "Camas",
+      "committedTo": "Idaho",
+      "country": "USA",
+      "grade": null,
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "53011",
+        "latitude": 45.5911103,
+        "longitude": -122.4122248
+      },
+      "id": "255930",
+      "name": "Tyson Jacobson",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Camas",
+      "stars": null,
+      "stateProvince": "WA",
+      "teamSlug": "idaho",
+      "valueType": "BENCHMARK",
+      "weight": 216,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2022,
+        "team": "Idaho",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2024,
+        "team": "Eastern Washington",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2025,
+        "team": "Eastern Washington",
+        "year": 3
+      },
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295314",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5125730",
+    "recruiting": {
+      "athleteId": "5125730",
+      "city": "Riverside",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "29165",
+        "latitude": 39.1775032,
+        "longitude": -94.6130121
+      },
+      "id": "217318",
+      "name": "Darrien Jones",
+      "position": "RB",
+      "ranking": 2529,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Park Hill South",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5150548",
+    "recruiting": {
+      "athleteId": "5150548",
+      "city": "Honolulu",
+      "committedTo": "Arizona",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "112992",
+      "name": "Kamuela Ka'aihue",
+      "position": "LB",
+      "ranking": 1816,
+      "rating": 0.8361,
+      "recruitType": "HighSchool",
+      "school": "Roosevelt",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "arizona",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2023,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2024,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295299",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5198504",
+    "recruiting": {
+      "athleteId": "5198504",
+      "city": "Amarillo",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48375",
+        "latitude": 35.2072185,
+        "longitude": -101.8338246
+      },
+      "id": "105025",
+      "name": "Darien Lewis",
+      "position": "S",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Amarillo Palo Duro",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222608",
+    "recruiting": {
+      "athleteId": "5222608",
+      "city": "Henderson",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "108647",
+      "name": "Eliah Logo",
+      "position": "DL",
+      "ranking": 2990,
+      "rating": 0.8104,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 281,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4940235",
+    "recruiting": {
+      "athleteId": "4940235",
+      "city": "Hayward",
+      "committedTo": "Washington",
+      "country": "USA",
+      "grade": "B",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "06001",
+        "latitude": 37.6688205,
+        "longitude": -122.0807964
+      },
+      "id": "111462",
+      "name": "Taeshaun Lyons",
+      "position": "WR",
+      "ranking": 229,
+      "rating": 0.9164,
+      "recruitType": "HighSchool",
+      "school": "Tennyson",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "washington",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2023,
+        "team": "Washington",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "Utah",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5389951",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295302",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5245068",
+    "recruiting": {
+      "athleteId": "5245068",
+      "city": "Lake Cormorant",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "28033",
+        "latitude": 34.9042635,
+        "longitude": -90.2145395
+      },
+      "id": "104625",
+      "name": "Tylen Mathews",
+      "position": "S",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Lake Cormorant",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5389944",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5149831",
+    "recruiting": {
+      "athleteId": "5149831",
+      "city": "Muskogee",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "40101",
+        "latitude": 35.7478769,
+        "longitude": -95.3696909
+      },
+      "id": "110247",
+      "name": "Kayden McGee",
+      "position": "WR",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Muskogee",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5156153",
+    "recruiting": {
+      "athleteId": "5156153",
+      "city": "Corona",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "107115",
+      "name": "Tavian McNair",
+      "position": "WR",
+      "ranking": 936,
+      "rating": 0.8703,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5087079",
+    "recruiting": {
+      "athleteId": "5087079",
+      "city": "Deerfield",
+      "committedTo": "Holy Cross",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "25011",
+        "latitude": 42.5195925,
+        "longitude": -72.6103994
+      },
+      "id": "256189",
+      "name": "Joe Metzger",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Deerfield Academy (Prep)",
+      "stars": null,
+      "stateProvince": "MA",
+      "teamSlug": "holy-cross",
+      "valueType": "BENCHMARK",
+      "weight": 307,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2022,
+        "team": "Holy Cross",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "Holy Cross",
+        "year": 4
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5196893",
+    "recruiting": {
+      "athleteId": "5196893",
+      "city": "Phoenix",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4484367,
+        "longitude": -112.0741417
+      },
+      "id": "107615",
+      "name": "Cassidee Miles",
+      "position": "WR",
+      "ranking": 1507,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "Central",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5334973",
+    "recruiting": {
+      "athleteId": "5334973",
+      "city": "Bellevue",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.6144219,
+        "longitude": -122.1923372
+      },
+      "id": "224670",
+      "name": "AJ Morton",
+      "position": "CB",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Bellevue",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5311783",
+    "recruiting": {
+      "athleteId": "5311783",
+      "city": "Culver City",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.0278787,
+        "longitude": -118.3888493
+      },
+      "id": "211082",
+      "name": "Jordan Njoku",
+      "position": "LB",
+      "ranking": 554,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Culver City",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5139100",
+    "recruiting": {
+      "athleteId": "5139100",
+      "city": "Lewisville",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.046233,
+        "longitude": -96.994174
+      },
+      "id": "109289",
+      "name": "Tony-Louis Nkuba",
+      "position": "CB",
+      "ranking": 592,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Lewisville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "Arizona State",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279261",
+    "recruiting": {
+      "athleteId": "5279261",
+      "city": "Downey",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.942215,
+        "longitude": -118.1235646
+      },
+      "id": "105812",
+      "name": "Demari Nunley",
+      "position": "ATH",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "St. Pius X-St. Matthias Academy",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295308",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "LS",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "LS",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4685495",
+    "recruiting": {
+      "athleteId": "4685495",
+      "city": "Sachse",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9762327,
+        "longitude": -96.5952703
+      },
+      "id": "114035",
+      "name": "Alex Orji",
+      "position": "QB",
+      "ranking": 493,
+      "rating": 0.8848,
+      "recruitType": "HighSchool",
+      "school": "Sachse",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 226,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327448",
+    "recruiting": {
+      "athleteId": "5327448",
+      "city": "Alpharetta",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "224638",
+      "name": "Cameron Parodi",
+      "position": "S",
+      "ranking": 2846,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Cambridge",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5389952",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4837473",
+    "recruiting": {
+      "athleteId": "4837473",
+      "city": "Buford",
+      "committedTo": "Alabama",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "113936",
+      "name": "Jake Pope",
+      "position": "S",
+      "ranking": 391,
+      "rating": 0.8926,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "alabama",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2022,
+        "team": "Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2023,
+        "team": "Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2024,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "S",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5172342",
+    "recruiting": {
+      "athleteId": "5172342",
+      "city": "Henderson",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "111013",
+      "name": "Andre Porter",
+      "position": "LB",
+      "ranking": 2592,
+      "rating": 0.817,
+      "recruitType": "HighSchool",
+      "school": "Liberty",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "DE",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "DE",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "DE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290265",
+    "recruiting": {
+      "athleteId": "5290265",
+      "city": "Las Vegas",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.1672559,
+        "longitude": -115.1485163
+      },
+      "id": "105764",
+      "name": "Poe Purcell",
+      "position": "DL",
+      "ranking": 1914,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Eldorado",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5389950",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "PK",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870965",
+    "recruiting": {
+      "athleteId": "4870965",
+      "city": "Fort Lauderdale",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "112181",
+      "name": "Taz Reddicks",
+      "position": "WR",
+      "ranking": 938,
+      "rating": 0.8661,
+      "recruitType": "HighSchool",
+      "school": "Dillard",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265520",
+    "recruiting": {
+      "athleteId": "5265520",
+      "city": "Concord",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.9768525,
+        "longitude": -122.0335624
+      },
+      "id": "221099",
+      "name": "Ace Robinson",
+      "position": "IOL",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "De La Salle",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5292968",
+    "recruiting": {
+      "athleteId": "5292968",
+      "city": "Marietta",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.9528472,
+        "longitude": -84.5496148
+      },
+      "id": "211534",
+      "name": "Bryce Robinson",
+      "position": "DL",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Locust Grove",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5079588",
+    "recruiting": {
+      "athleteId": "5079588",
+      "city": "Cincinnati",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "109060",
+      "name": "Elias Rudolph",
+      "position": "EDGE",
+      "ranking": 364,
+      "rating": 0.8999,
+      "recruitType": "HighSchool",
+      "school": "Taft",
+      "stars": 4,
+      "stateProvince": "OH",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "LB",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 91,
+        "position": "LB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 91,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279191",
+    "recruiting": {
+      "athleteId": "5279191",
+      "city": "Sandusky",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39043",
+        "latitude": 41.4489397,
+        "longitude": -82.7079605
+      },
+      "id": "105060",
+      "name": "Eli Sanchez",
+      "position": "IOL",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Perkins",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5157395",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2024,
+        "team": "Holy Cross",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2025,
+        "team": "Holy Cross",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5258444",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "DE",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "DE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5389947",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "P",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327449",
+    "recruiting": {
+      "athleteId": "5327449",
+      "city": "Henderson",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "32003",
+        "latitude": 36.0301134,
+        "longitude": -114.9826194
+      },
+      "id": "213162",
+      "name": "Zach Scott",
+      "position": "OT",
+      "ranking": 2819,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Coronado",
+      "stars": 3,
+      "stateProvince": "NV",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4837475",
+    "recruiting": {
+      "athleteId": "4837475",
+      "city": "Loganville",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13297",
+        "latitude": 33.8389977,
+        "longitude": -83.9007382
+      },
+      "id": "114314",
+      "name": "Griffin Scroggs",
+      "position": "IOL",
+      "ranking": 785,
+      "rating": 0.8693,
+      "recruitType": "HighSchool",
+      "school": "Grayson",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2022,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2023,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2024,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5389948",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LS",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4587722",
+    "recruiting": {
+      "athleteId": "4587722",
+      "city": "Fort Lauderdale",
+      "committedTo": "Clemson",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "115919",
+      "name": "Troy Stellato",
+      "position": "WR",
+      "ranking": 178,
+      "rating": 0.9253,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Gibbons",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "clemson",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2021
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2021,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2022,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2023,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2024,
+        "team": "Clemson",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2025,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148842",
+    "recruiting": {
+      "athleteId": "5148842",
+      "city": "Scottsdale",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4942189,
+        "longitude": -111.9260184
+      },
+      "id": "110801",
+      "name": "Amare Taase",
+      "position": "IOL",
+      "ranking": 2326,
+      "rating": 0.8281,
+      "recruitType": "HighSchool",
+      "school": "Saguaro",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2024
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5334548",
+    "recruiting": {
+      "athleteId": "5334548",
+      "city": "Sacramento",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06067",
+        "latitude": 38.5815719,
+        "longitude": -121.4943996
+      },
+      "id": "224615",
+      "name": "Tevita Tausinga",
+      "position": "OT",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Inderkum",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5125754",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "RB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5091841",
+    "recruiting": {
+      "athleteId": "5091841",
+      "city": "Zachary",
+      "committedTo": "Arizona State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "22033",
+        "latitude": 30.6485191,
+        "longitude": -91.1564961
+      },
+      "id": "111990",
+      "name": "Landen Thomas",
+      "position": "DL",
+      "ranking": 749,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Zachary",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "arizona-state",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2023,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2024,
+        "team": "Arizona State",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5389946",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917314",
+    "recruiting": {
+      "athleteId": "4917314",
+      "city": "Atlanta",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "256761",
+      "name": "Jai'den Thomas",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Westlake",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2022,
+        "team": "New Mexico State",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4871032",
+    "recruiting": {
+      "athleteId": "4871032",
+      "city": "Spring Branch",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "C",
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "48091",
+        "latitude": 29.885073249999998,
+        "longitude": -98.4196833729311
+      },
+      "id": "111651",
+      "name": "Colton Thomasson",
+      "position": "OT",
+      "ranking": 406,
+      "rating": 0.8933,
+      "recruitType": "HighSchool",
+      "school": "Smithson Valley",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Baylor",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Baylor",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220629",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 2
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219882",
+    "recruiting": {
+      "athleteId": "5219882",
+      "city": "Rancho Cucamonga",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06071",
+        "latitude": 34.1033192,
+        "longitude": -117.5751735
+      },
+      "id": "108201",
+      "name": "Kal-El Togafau",
+      "position": "DL",
+      "ranking": 2281,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Rancho Cucamonga",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921413",
+    "recruiting": {
+      "athleteId": "4921413",
+      "city": "Santa Ana",
+      "committedTo": "New Mexico State",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7494951,
+        "longitude": -117.8732213
+      },
+      "id": "113071",
+      "name": "BJ Tolo",
+      "position": "IOL",
+      "ranking": 1896,
+      "rating": 0.8317,
+      "recruitType": "HighSchool",
+      "school": "Mater Dei",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "new-mexico-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2023,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "New Mexico State",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209200",
+    "recruiting": {
+      "athleteId": "5209200",
+      "city": "Long Beach",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.7690164,
+        "longitude": -118.1916048
+      },
+      "id": "107635",
+      "name": "Joshua Tuchek",
+      "position": "CB",
+      "ranking": 1523,
+      "rating": 0.8564,
+      "recruitType": "HighSchool",
+      "school": "Millikan",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5389943",
+    "recruiting": {
+      "athleteId": "5389943",
+      "city": "Anaheim",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.8347516,
+        "longitude": -117.911732
+      },
+      "id": "105531",
+      "name": "Skylar Lendsey-Vann",
+      "position": "RB",
+      "ranking": 1914,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Anaheim Western",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5155186",
+    "recruiting": null,
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2023,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2024,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "PK",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4702755",
+    "recruiting": {
+      "athleteId": "4702755",
+      "city": "Ponchatoula",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "22105",
+        "latitude": 30.4388041,
+        "longitude": -90.4414762
+      },
+      "id": "114075",
+      "name": "Amorion Walker",
+      "position": "WR",
+      "ranking": 522,
+      "rating": 0.8826,
+      "recruitType": "HighSchool",
+      "school": "Ponchatoula",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2022,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2025,
+        "team": "Middle Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302901",
+    "recruiting": {
+      "athleteId": "5302901",
+      "city": "Tampa",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "212819",
+      "name": "Bryce Waters",
+      "position": "DL",
+      "ranking": 2819,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Carrollwood Day",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209119",
+    "recruiting": {
+      "athleteId": "5209119",
+      "city": "Rancho Cucamonga",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "06071",
+        "latitude": 34.1033192,
+        "longitude": -117.5751735
+      },
+      "id": "104752",
+      "name": "Malik White",
+      "position": "OT",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Rancho Cucamonga",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290688",
+    "recruiting": {
+      "athleteId": "5290688",
+      "city": "Casa Grande",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "04021",
+        "latitude": 32.8795022,
+        "longitude": -111.7573521
+      },
+      "id": "104931",
+      "name": "Aveon Williams",
+      "position": "DL",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Casa Grande Union",
+      "stars": 3,
+      "stateProvince": "AZ",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "TE",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141714",
+    "recruiting": {
+      "athleteId": "5141714",
+      "city": "Jefferson",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48315",
+        "latitude": 32.7573626,
+        "longitude": -94.3451926
+      },
+      "id": "106712",
+      "name": "Kamran Williams",
+      "position": "RB",
+      "ranking": 522,
+      "rating": 0.8874,
+      "recruitType": "HighSchool",
+      "school": "Jefferson",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "UNLV",
+        "year": 1
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161009",
+    "recruiting": {
+      "athleteId": "5161009",
+      "city": "Marietta",
+      "committedTo": "UNLV",
+      "country": "USA",
+      "grade": "D",
+      "height": 67,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.9528472,
+        "longitude": -84.5496148
+      },
+      "id": "105363",
+      "name": "Peyton Zachary",
+      "position": "WR",
+      "ranking": 2288,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Carrollton",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "unlv",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "UNLV",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "UNLV",
+        "year": 1
+      }
+    ]
+  }
+]

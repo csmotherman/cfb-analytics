@@ -1,0 +1,30 @@
+{
+  "games": [
+    {
+      "asOf": "2026-08-18T12:00:00-04:00",
+      "awayTeam": "Western Michigan",
+      "gameId": "401858428",
+      "homeTeam": "Michigan",
+      "modelVersion": "prediction-v2-2026-prospective-freeze-v1",
+      "predictedHomeMargin": 21.689193731293024,
+      "predictedWinner": "Michigan",
+      "season": 2026,
+      "teamPredictedMargin": 21.689193731293024,
+      "valueType": "PROJECTED",
+      "week": 1,
+      "winProbability": null
+    }
+  ],
+  "probabilityStatus": "NOT_CALIBRATED",
+  "season": 2026,
+  "snapshots": [
+    {
+      "asOf": "2026-08-18T12:00:00-04:00",
+      "source": "prospective/2026/predictions/week-01.json",
+      "week": 1
+    }
+  ],
+  "team": "Michigan",
+  "valueType": "PROJECTED",
+  "version": "soar-2026-predictions-v1"
+}

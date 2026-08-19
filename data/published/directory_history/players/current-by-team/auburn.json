@@ -1,0 +1,5150 @@
+[
+  {
+    "playerId": "5369936",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150284",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141360",
+    "recruiting": {
+      "athleteId": "5141360",
+      "city": "Carrollton",
+      "committedTo": "Florida State",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13045",
+        "latitude": 33.5801103,
+        "longitude": -85.0766113
+      },
+      "id": "106620",
+      "name": "Shamar Arnoux",
+      "position": "CB",
+      "ranking": 430,
+      "rating": 0.8932,
+      "recruitType": "HighSchool",
+      "school": "Carrollton",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "florida-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "CB",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 2
+      },
+      {
+        "jersey": 14,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079309",
+    "recruiting": {
+      "athleteId": "5079309",
+      "city": "Humble",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9988312,
+        "longitude": -95.2621553
+      },
+      "id": "109032",
+      "name": "Xavier Atkins",
+      "position": "LB",
+      "ranking": 334,
+      "rating": 0.9025,
+      "recruitType": "HighSchool",
+      "school": "Summer Creek",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2024,
+        "team": "LSU",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141363",
+    "recruiting": {
+      "athleteId": "5141363",
+      "city": "Opelika",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "A",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "01081",
+        "latitude": 32.72667,
+        "longitude": -85.39249304591837
+      },
+      "id": "106239",
+      "name": "Malik Autry",
+      "position": "DL",
+      "ranking": 48,
+      "rating": 0.9775,
+      "recruitType": "HighSchool",
+      "school": "Opelika",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5159113",
+    "recruiting": {
+      "athleteId": "5159113",
+      "city": "West Palm Beach",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.715364,
+        "longitude": -80.0532942
+      },
+      "id": "104133",
+      "name": "Adam Balogoun-Ali",
+      "position": "LB",
+      "ranking": 359,
+      "rating": 0.8999,
+      "recruitType": "HighSchool",
+      "school": "Cardinal Newman",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5224734",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4690591",
+    "recruiting": {
+      "athleteId": "4690591",
+      "city": "Winter Park",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.13784445,
+        "longitude": -81.75399813758739
+      },
+      "id": "117309",
+      "name": "Cole Best",
+      "position": "IOL",
+      "ranking": 1608,
+      "rating": 0.8348,
+      "recruitType": "HighSchool",
+      "school": "Trinity Preparatory School",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2021
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2022,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4702556",
+    "recruiting": {
+      "athleteId": "4702556",
+      "city": "Van Nuys",
+      "committedTo": "Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1866193,
+        "longitude": -118.4486669
+      },
+      "id": "114031",
+      "name": "Arlis Boardingham",
+      "position": "ATH",
+      "ranking": 488,
+      "rating": 0.8852,
+      "recruitType": "HighSchool",
+      "school": "Birmingham",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "florida",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2022,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2023,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2024,
+        "team": "Florida",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 4
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5334183",
+    "recruiting": {
+      "athleteId": "5334183",
+      "city": "Australia",
+      "committedTo": "Auburn",
+      "country": "AUS",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "224721",
+      "name": "Max Bourke",
+      "position": "P",
+      "ranking": 3267,
+      "rating": 0.81,
+      "recruitType": "HighSchool",
+      "school": "Australia",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "P",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5276944",
+    "recruiting": {
+      "athleteId": "5276944",
+      "city": "Taylor",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01069",
+        "latitude": 31.163771,
+        "longitude": -85.46863795754717
+      },
+      "id": "104591",
+      "name": "Tavian Branch",
+      "position": "DL",
+      "ranking": 554,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Riverside",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290500",
+    "recruiting": {
+      "athleteId": "5290500",
+      "city": "Semmes",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.778688,
+        "longitude": -88.2588427
+      },
+      "id": "105219",
+      "name": "DJ Broughton Jr.",
+      "position": "TE",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Mary Montgomery",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4880272",
+    "recruiting": {
+      "athleteId": "4880272",
+      "city": "Rolesville",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37183",
+        "latitude": 35.9232862,
+        "longitude": -78.4573914
+      },
+      "id": "114695",
+      "name": "Byrum Brown",
+      "position": "QB",
+      "ranking": 1185,
+      "rating": 0.853,
+      "recruitType": "HighSchool",
+      "school": "Rolesville",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2022,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2023,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 17,
+        "position": "QB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5269110",
+    "recruiting": {
+      "athleteId": "5269110",
+      "city": "Seffner",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.998541000000003,
+        "longitude": -82.27488400114905
+      },
+      "id": "105273",
+      "name": "Rhys Brush",
+      "position": "QB",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Armwood",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150285",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5207830",
+    "recruiting": {
+      "athleteId": "5207830",
+      "city": "Kannapolis",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "37025",
+        "latitude": 35.4874708,
+        "longitude": -80.621438
+      },
+      "id": "106601",
+      "name": "Tai Buster",
+      "position": "IOL",
+      "ranking": 411,
+      "rating": 0.895,
+      "recruitType": "HighSchool",
+      "school": "A.L. Brown",
+      "stars": 4,
+      "stateProvince": "NC",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5145207",
+    "recruiting": {
+      "athleteId": "5145207",
+      "city": "Mobile",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.6943566,
+        "longitude": -88.0430541
+      },
+      "id": "108890",
+      "name": "Bryce Cain",
+      "position": "WR",
+      "ranking": 192,
+      "rating": 0.9237,
+      "recruitType": "HighSchool",
+      "school": "Baker",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5294024",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "LS",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 64,
+        "position": "LS",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219026",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "S",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5150289",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870642",
+    "recruiting": {
+      "athleteId": "4870642",
+      "city": "Montgomery",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "01101",
+        "latitude": 32.3669656,
+        "longitude": -86.3006485
+      },
+      "id": "111405",
+      "name": "Jeremiah Cobb",
+      "position": "RB",
+      "ranking": 168,
+      "rating": 0.9326,
+      "recruitType": "HighSchool",
+      "school": "Montgomery Catholic Preparatory",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5150283",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141397",
+    "recruiting": {
+      "athleteId": "5141397",
+      "city": "Birmingham",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.5206824,
+        "longitude": -86.8024326
+      },
+      "id": "106355",
+      "name": "Jourdin Crawford",
+      "position": "DL",
+      "ranking": 164,
+      "rating": 0.9317,
+      "recruitType": "HighSchool",
+      "school": "Parker",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5184165",
+    "recruiting": {
+      "athleteId": "5184165",
+      "city": "Roswell",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.02332,
+        "longitude": -84.360022
+      },
+      "id": "110329",
+      "name": "Nykahi Davenport",
+      "position": "RB",
+      "ranking": 1719,
+      "rating": 0.8475,
+      "recruitType": "HighSchool",
+      "school": "Roswell",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 196,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5155759",
+    "recruiting": {
+      "athleteId": "5155759",
+      "city": "Baltimore",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "106673",
+      "name": "Bryce Deas",
+      "position": "LB",
+      "ranking": 478,
+      "rating": 0.89,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 16,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079382",
+    "recruiting": {
+      "athleteId": "5079382",
+      "city": "Bradenton",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "108966",
+      "name": "Jonathan Echols",
+      "position": "TE",
+      "ranking": 268,
+      "rating": 0.9101,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "TE",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "TE",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 1,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5369937",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161005",
+    "recruiting": {
+      "athleteId": "5161005",
+      "city": "Cartersville",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13015",
+        "latitude": 34.1650972,
+        "longitude": -84.7999383
+      },
+      "id": "106741",
+      "name": "Kail Ellis",
+      "position": "IOL",
+      "ranking": 551,
+      "rating": 0.885,
+      "recruitType": "HighSchool",
+      "school": "Cass",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5155422",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "App State",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141444",
+    "recruiting": {
+      "athleteId": "5141444",
+      "city": "Highland Home",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01041",
+        "latitude": 31.953702,
+        "longitude": -86.3142945
+      },
+      "id": "106344",
+      "name": "J.J. Faulk",
+      "position": "LB",
+      "ranking": 153,
+      "rating": 0.935,
+      "recruitType": "HighSchool",
+      "school": "Highland Home",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 18,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141433",
+    "recruiting": {
+      "athleteId": "5141433",
+      "city": "Alabaster",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "A",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01117",
+        "latitude": 33.2442813,
+        "longitude": -86.8163773
+      },
+      "id": "106254",
+      "name": "AnQuon Fegans",
+      "position": "S",
+      "ranking": 63,
+      "rating": 0.9674,
+      "recruitType": "HighSchool",
+      "school": "Thompson",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219031",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5219023",
+    "recruiting": {
+      "athleteId": "5219023",
+      "city": "Birmingham",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.5206824,
+        "longitude": -86.8024326
+      },
+      "id": "110643",
+      "name": "Cole Gamble",
+      "position": "ATH",
+      "ranking": 2096,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Mountain Brook",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079437",
+    "recruiting": {
+      "athleteId": "5079437",
+      "city": "Ocala",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12083",
+        "latitude": 29.1871986,
+        "longitude": -82.1400923
+      },
+      "id": "109243",
+      "name": "Fred Gaskin III",
+      "position": "S",
+      "ranking": 549,
+      "rating": 0.8853,
+      "recruitType": "HighSchool",
+      "school": "Vanguard",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 189,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141461",
+    "recruiting": {
+      "athleteId": "5141461",
+      "city": "Alpharetta",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "106778",
+      "name": "Ryan Ghea",
+      "position": "TE",
+      "ranking": 588,
+      "rating": 0.8828,
+      "recruitType": "HighSchool",
+      "school": "Milton",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 231,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5122102",
+    "recruiting": {
+      "athleteId": "5122102",
+      "city": "Metairie",
+      "committedTo": "Southern Miss",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "22051",
+        "latitude": 30.001852,
+        "longitude": -90.1767149159888
+      },
+      "id": "113410",
+      "name": "Connor Gibbs",
+      "position": "K",
+      "ranking": 2373,
+      "rating": 0.8117,
+      "recruitType": "HighSchool",
+      "school": "Metairie Park Country Day",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "southern-miss",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2023,
+        "team": "Southern Miss",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2024,
+        "team": "Southern Miss",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "PK",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5150287",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5089326",
+    "recruiting": {
+      "athleteId": "5089326",
+      "city": "Alabaster",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01117",
+        "latitude": 33.2442813,
+        "longitude": -86.8163773
+      },
+      "id": "109359",
+      "name": "Kaleb Harris",
+      "position": "S",
+      "ranking": 666,
+      "rating": 0.8794,
+      "recruitType": "HighSchool",
+      "school": "Thompson",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "S",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141470",
+    "recruiting": {
+      "athleteId": "5141470",
+      "city": "Naples",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.1421976,
+        "longitude": -81.7942944
+      },
+      "id": "106946",
+      "name": "TJ Hedrick",
+      "position": "OT",
+      "ranking": 762,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Community School Of Naples",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Ole Miss",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141516",
+    "recruiting": {
+      "athleteId": "5141516",
+      "city": "Elba",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "01031",
+        "latitude": 31.4146108,
+        "longitude": -86.0677243
+      },
+      "id": "106402",
+      "name": "Alvin Henderson",
+      "position": "RB",
+      "ranking": 211,
+      "rating": 0.9214,
+      "recruitType": "HighSchool",
+      "school": "Elba",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5159038",
+    "recruiting": {
+      "athleteId": "5159038",
+      "city": "Baltimore",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "104815",
+      "name": "Wayne Henry",
+      "position": "S",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4683912",
+    "recruiting": {
+      "athleteId": "4683912",
+      "city": "Monroe",
+      "committedTo": "Louisiana",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "22073",
+        "latitude": 32.5093109,
+        "longitude": -92.1193012
+      },
+      "id": "117409",
+      "name": "Hunter Herring",
+      "position": "QB",
+      "ranking": 1704,
+      "rating": 0.8315,
+      "recruitType": "HighSchool",
+      "school": "Ouachita Christian School",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "louisiana",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2021
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2021,
+        "team": "Louisiana",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2022,
+        "team": "Louisiana",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2023,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2024,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2025,
+        "team": "UL Monroe",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146713",
+    "recruiting": {
+      "athleteId": "5146713",
+      "city": "St. Augustine",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12109",
+        "latitude": 29.8946952,
+        "longitude": -81.3145395
+      },
+      "id": "220925",
+      "name": "Locklan Hewlett",
+      "position": "QB",
+      "ranking": 1254,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "St. Augustine",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "QB",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "QB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5214501",
+    "recruiting": {
+      "athleteId": "5214501",
+      "city": "Lake Butler",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12125",
+        "latitude": 30.0227391,
+        "longitude": -82.3395574
+      },
+      "id": "107256",
+      "name": "Gavin Jenkins",
+      "position": "CB",
+      "ranking": 1092,
+      "rating": 0.8658,
+      "recruitType": "HighSchool",
+      "school": "Union County",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 168,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4685414",
+    "recruiting": {
+      "athleteId": "4685414",
+      "city": "Cypress",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "A",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9691116,
+        "longitude": -95.6971686
+      },
+      "id": "115787",
+      "name": "LJ Johnson Jr.",
+      "position": "RB",
+      "ranking": 46,
+      "rating": 0.9779,
+      "recruitType": "HighSchool",
+      "school": "Cy-Fair",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 204,
+      "year": 2021
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2022,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2024,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2025,
+        "team": "North Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151950",
+    "recruiting": {
+      "athleteId": "5151950",
+      "city": "Cornelius",
+      "committedTo": "App State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "37119",
+        "latitude": 35.4817982,
+        "longitude": -80.8589501
+      },
+      "id": "115546",
+      "name": "Ethan Johnson",
+      "position": "CB",
+      "ranking": 2276,
+      "rating": 0.8096,
+      "recruitType": "HighSchool",
+      "school": "Hough",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "app-state",
+      "valueType": "BENCHMARK",
+      "weight": 188,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5157291",
+    "recruiting": {
+      "athleteId": "5157291",
+      "city": "Federal Way",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "53033",
+        "latitude": 47.313494,
+        "longitude": -122.3393103
+      },
+      "id": "112289",
+      "name": "Andre Jordan Jr.",
+      "position": "CB",
+      "ranking": 1055,
+      "rating": 0.8625,
+      "recruitType": "HighSchool",
+      "school": "Federal Way",
+      "stars": 3,
+      "stateProvince": "WA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2025,
+        "team": "UCLA",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5088774",
+    "recruiting": {
+      "athleteId": "5088774",
+      "city": "Australia",
+      "committedTo": "Oklahoma State",
+      "country": "AUS",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "113412",
+      "name": "Hudson Kaak",
+      "position": "P",
+      "ranking": 2378,
+      "rating": 0.8108,
+      "recruitType": "HighSchool",
+      "school": "ProKick Australia",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "P",
+        "season": 2023,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "P",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "P",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "P",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209679",
+    "recruiting": {
+      "athleteId": "5209679",
+      "city": "Baltimore",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "107385",
+      "name": "Jeremiah Koger",
+      "position": "WR",
+      "ranking": 1225,
+      "rating": 0.8631,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 4,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4682935",
+    "recruiting": {
+      "athleteId": "4682935",
+      "city": "Dallas",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "116503",
+      "name": "Jack Leyrer",
+      "position": "OT",
+      "ranking": 756,
+      "rating": 0.8663,
+      "recruitType": "HighSchool",
+      "school": "Highland Park",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2021
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2021,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5270906",
+    "recruiting": {
+      "athleteId": "5270906",
+      "city": "Tallahassee",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12073",
+        "latitude": 30.4380832,
+        "longitude": -84.2809332
+      },
+      "id": "224444",
+      "name": "Mykall Lundy-Foster",
+      "position": "IOL",
+      "ranking": 921,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Lawton Chiles",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5217041",
+    "recruiting": {
+      "athleteId": "5217041",
+      "city": "Auburn",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "01081",
+        "latitude": 32.6550905,
+        "longitude": -85.50364346309962
+      },
+      "id": "106833",
+      "name": "Omar Mabson II",
+      "position": "RB",
+      "ranking": 636,
+      "rating": 0.8803,
+      "recruitType": "HighSchool",
+      "school": "Auburn",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5274779",
+    "recruiting": {
+      "athleteId": "5274779",
+      "city": "Cartersville",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13015",
+        "latitude": 34.1650972,
+        "longitude": -84.7999383
+      },
+      "id": "104083",
+      "name": "Brady Marchese",
+      "position": "WR",
+      "ranking": 142,
+      "rating": 0.9416,
+      "recruitType": "HighSchool",
+      "school": "Cartersville",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 183,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685465",
+    "recruiting": {
+      "athleteId": "4685465",
+      "city": "Ponchatoula",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "S",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "22105",
+        "latitude": 30.4388041,
+        "longitude": -90.4414762
+      },
+      "id": "113582",
+      "name": "Jacoby Mathews",
+      "position": "S",
+      "ranking": 39,
+      "rating": 0.9817,
+      "recruitType": "HighSchool",
+      "school": "Ponchatoula",
+      "stars": 4,
+      "stateProvince": "LA",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2022,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291755",
+    "recruiting": {
+      "athleteId": "5291755",
+      "city": "Milton",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12113",
+        "latitude": 30.6324149,
+        "longitude": -87.0396881
+      },
+      "id": "211894",
+      "name": "Mason Mathis",
+      "position": "OT",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Pace",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5167752",
+    "recruiting": {
+      "athleteId": "5167752",
+      "city": "Savannah",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13051",
+        "latitude": 32.0809263,
+        "longitude": -81.0911768
+      },
+      "id": "106659",
+      "name": "Walter Mathis Jr.",
+      "position": "DL",
+      "ranking": 468,
+      "rating": 0.8908,
+      "recruitType": "HighSchool",
+      "school": "Calvary Day School",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2025,
+        "team": "LSU",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148883",
+    "recruiting": {
+      "athleteId": "5148883",
+      "city": "Fredericksburg",
+      "committedTo": "Hampton",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "51630",
+        "latitude": 38.3031837,
+        "longitude": -77.4605399
+      },
+      "id": "110114",
+      "name": "Michael Matthews-Canty",
+      "position": "S",
+      "ranking": 1464,
+      "rating": 0.8542,
+      "recruitType": "HighSchool",
+      "school": "St. Michael the Archangel Catholic",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "hampton",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2024,
+        "team": "Hampton",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2025,
+        "team": "Hampton",
+        "year": 3
+      },
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219030",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5221273",
+    "recruiting": {
+      "athleteId": "5221273",
+      "city": "Alabaster",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01117",
+        "latitude": 33.2442813,
+        "longitude": -86.8163773
+      },
+      "id": "108563",
+      "name": "John McGuire",
+      "position": "P",
+      "ranking": 2769,
+      "rating": 0.8203,
+      "recruitType": "HighSchool",
+      "school": "Thompson",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "P",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 37,
+        "position": "P",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5178087",
+    "recruiting": {
+      "athleteId": "5178087",
+      "city": "Washington",
+      "committedTo": "Akron",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "11001",
+        "latitude": 38.8949855,
+        "longitude": -77.0365708
+      },
+      "id": "107600",
+      "name": "Kenneth McManus IV",
+      "position": "IOL",
+      "ranking": 1486,
+      "rating": 0.8572,
+      "recruitType": "HighSchool",
+      "school": "St. John's College",
+      "stars": 3,
+      "stateProvince": "DC",
+      "teamSlug": "akron",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Akron",
+        "year": 2
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870519",
+    "recruiting": {
+      "athleteId": "4870519",
+      "city": "Fort Payne",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "01049",
+        "latitude": 34.4442547,
+        "longitude": -85.7196893
+      },
+      "id": "115053",
+      "name": "Alex McPherson",
+      "position": "K",
+      "ranking": 1596,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Fort Payne",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2022,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "PK",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5161024",
+    "recruiting": {
+      "athleteId": "5161024",
+      "city": "White",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "104238",
+      "name": "Bear McWhorter",
+      "position": "IOL",
+      "ranking": 701,
+      "rating": 0.8821,
+      "recruitType": "HighSchool",
+      "school": "Cass",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 293,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4880395",
+    "recruiting": {
+      "athleteId": "4880395",
+      "city": "Roanoke",
+      "committedTo": "Troy",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "01111",
+        "latitude": 33.1512313,
+        "longitude": -85.3721709
+      },
+      "id": "114627",
+      "name": "Tae Meadows",
+      "position": "RB",
+      "ranking": 1116,
+      "rating": 0.8556,
+      "recruitType": "HighSchool",
+      "school": "Handley",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "troy",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2022,
+        "team": "Troy",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2023,
+        "team": "Troy",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2024,
+        "team": "Troy",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Troy",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5294026",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5143922",
+    "recruiting": {
+      "athleteId": "5143922",
+      "city": "Kissimmee",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12097",
+        "latitude": 28.2918995,
+        "longitude": -81.4075838
+      },
+      "id": "106367",
+      "name": "Elijah Melendez",
+      "position": "LB",
+      "ranking": 176,
+      "rating": 0.9296,
+      "recruitType": "HighSchool",
+      "school": "Osceola",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5151209",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DL",
+        "season": 2023,
+        "team": "Sam Houston",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DL",
+        "season": 2024,
+        "team": "Sam Houston",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5294027",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "QB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296027",
+    "recruiting": {
+      "athleteId": "5296027",
+      "city": "Cantonment",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12033",
+        "latitude": 30.605427,
+        "longitude": -87.344442
+      },
+      "id": "106939",
+      "name": "Christian Neptune",
+      "position": "ATH",
+      "ranking": 758,
+      "rating": 0.8759,
+      "recruitType": "HighSchool",
+      "school": "Tate",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5301221",
+    "recruiting": {
+      "athleteId": "5301221",
+      "city": "Detroit",
+      "committedTo": "Howard",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "106819",
+      "name": "Xavier Newsom",
+      "position": "EDGE",
+      "ranking": 629,
+      "rating": 0.8808,
+      "recruitType": "HighSchool",
+      "school": "Martin Luther King",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "howard",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Howard",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5081367",
+    "recruiting": {
+      "athleteId": "5081367",
+      "city": "Bentonville",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "05007",
+        "latitude": 36.3728538,
+        "longitude": -94.2088172
+      },
+      "id": "114102",
+      "name": "Chas Nimrod",
+      "position": "WR",
+      "ranking": 562,
+      "rating": 0.8804,
+      "recruitType": "HighSchool",
+      "school": "Bentonville",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 186,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2022,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219027",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 40,
+        "position": "TE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216510",
+    "recruiting": {
+      "athleteId": "5216510",
+      "city": "Perry",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13153",
+        "latitude": 32.4586695,
+        "longitude": -83.7319658
+      },
+      "id": "107917",
+      "name": "Kory Pettigrew",
+      "position": "WR",
+      "ranking": 1881,
+      "rating": 0.8483,
+      "recruitType": "HighSchool",
+      "school": "Perry",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5132630",
+    "recruiting": {
+      "athleteId": "5132630",
+      "city": "Tuskegee",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01087",
+        "latitude": 32.4240286,
+        "longitude": -85.6916195
+      },
+      "id": "108829",
+      "name": "Joe Phillips",
+      "position": "EDGE",
+      "ranking": 131,
+      "rating": 0.9405,
+      "recruitType": "HighSchool",
+      "school": "Booker T. Washington",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 31,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5146424",
+    "recruiting": {
+      "athleteId": "5146424",
+      "city": "Jacksonville",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "109436",
+      "name": "Deryc Plazz",
+      "position": "IOL",
+      "ranking": 738,
+      "rating": 0.8761,
+      "recruitType": "HighSchool",
+      "school": "Mandarin",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 292,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4868900",
+    "recruiting": {
+      "athleteId": "4868900",
+      "city": "West Monroe",
+      "committedTo": "Tulane",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "22073",
+        "latitude": 32.5184775,
+        "longitude": -92.1476353
+      },
+      "id": "114893",
+      "name": "Rayshawn Pleasant",
+      "position": "ATH",
+      "ranking": 1395,
+      "rating": 0.8463,
+      "recruitType": "HighSchool",
+      "school": "West Monroe",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "tulane",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2022,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2023,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2024,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5082990",
+    "recruiting": {
+      "athleteId": "5082990",
+      "city": "Nashville",
+      "committedTo": "Miami (OH)",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "255750",
+      "name": "Hudson Powell",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Ensworth",
+      "stars": null,
+      "stateProvince": "TN",
+      "teamSlug": "miami-oh",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2022,
+        "team": "Miami (OH)",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2023,
+        "team": "Miami (OH)",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2024,
+        "team": "Miami (OH)",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2025,
+        "team": "Miami (OH)",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "LS",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5199939",
+    "recruiting": {
+      "athleteId": "5199939",
+      "city": "Columbus",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13215",
+        "latitude": 32.4609764,
+        "longitude": -84.9877094
+      },
+      "id": "104276",
+      "name": "Parker Pritchett",
+      "position": "OT",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Carver",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4918443",
+    "recruiting": {
+      "athleteId": "4918443",
+      "city": "Alabaster",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "B",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "01117",
+        "latitude": 33.2442813,
+        "longitude": -86.8163773
+      },
+      "id": "111465",
+      "name": "Stanton Ramil",
+      "position": "OT",
+      "ranking": 222,
+      "rating": 0.9181,
+      "recruitType": "HighSchool",
+      "school": "Thompson",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 310,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5229097",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "CB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "CB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5293821",
+    "recruiting": {
+      "athleteId": "5293821",
+      "city": "Greenville",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13199",
+        "latitude": 33.0287373,
+        "longitude": -84.7129848
+      },
+      "id": "106561",
+      "name": "Scrap Richardson",
+      "position": "ATH",
+      "ranking": 371,
+      "rating": 0.8978,
+      "recruitType": "HighSchool",
+      "school": "Greenville",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "CB",
+        "season": 2025,
+        "team": "Notre Dame",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5079688",
+    "recruiting": {
+      "athleteId": "5079688",
+      "city": "Clanton",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01021",
+        "latitude": 32.8387371,
+        "longitude": -86.6294262
+      },
+      "id": "108761",
+      "name": "Demarcus Riddick",
+      "position": "LB",
+      "ranking": 63,
+      "rating": 0.9699,
+      "recruitType": "HighSchool",
+      "school": "Chilton County",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 216,
+      "year": 2024
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5229101",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "PK",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 93,
+        "position": "PK",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 93,
+        "position": "PK",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5294521",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "Arkansas State",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4912354",
+    "recruiting": {
+      "athleteId": "4912354",
+      "city": "Wilmington",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "10003",
+        "latitude": 39.7459468,
+        "longitude": -75.546589
+      },
+      "id": "256245",
+      "name": "Jo Simmons",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Salesianum",
+      "stars": null,
+      "stateProvince": "DE",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2022,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5121879",
+    "recruiting": {
+      "athleteId": "5121879",
+      "city": "Norcross",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.9412127,
+        "longitude": -84.2135309
+      },
+      "id": "256539",
+      "name": "Keshaun Singleton",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Meadowcreek",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2023,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5078908",
+    "recruiting": {
+      "athleteId": "5078908",
+      "city": "Point Pleasant Beach",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "34029",
+        "latitude": 40.0916529,
+        "longitude": -74.0480188
+      },
+      "id": "113295",
+      "name": "Cole Skinner",
+      "position": "OT",
+      "ranking": 2158,
+      "rating": 0.8204,
+      "recruitType": "HighSchool",
+      "school": "Point Pleasant",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2023,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5148663",
+    "recruiting": {
+      "athleteId": "5148663",
+      "city": "Baltimore",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "106694",
+      "name": "Darrion Smith",
+      "position": "DL",
+      "ranking": 503,
+      "rating": 0.8886,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 3,
+      "stateProvince": "MD",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222157",
+    "recruiting": {
+      "athleteId": "5222157",
+      "city": "Selma",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "01047",
+        "latitude": 32.4078632,
+        "longitude": -87.0207473
+      },
+      "id": "107565",
+      "name": "Erick Smith",
+      "position": "WR",
+      "ranking": 1458,
+      "rating": 0.8581,
+      "recruitType": "HighSchool",
+      "school": "Southside Selma",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5141696",
+    "recruiting": {
+      "athleteId": "5141696",
+      "city": "Alabaster",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "A",
+      "height": 78.5,
+      "hometownInfo": {
+        "fipsCode": "01117",
+        "latitude": 33.2442813,
+        "longitude": -86.8163773
+      },
+      "id": "106238",
+      "name": "Jared Smith",
+      "position": "EDGE",
+      "ranking": 47,
+      "rating": 0.9779,
+      "recruitType": "HighSchool",
+      "school": "Thompson",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 41,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4871006",
+    "recruiting": {
+      "athleteId": "4871006",
+      "city": "Munford",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "01121",
+        "latitude": 33.545950000000005,
+        "longitude": -85.93939159874132
+      },
+      "id": "111486",
+      "name": "Sylvester Smith",
+      "position": "S",
+      "ranking": 233,
+      "rating": 0.9156,
+      "recruitType": "HighSchool",
+      "school": "Munford",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "S",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "S",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5209337",
+    "recruiting": {
+      "athleteId": "5209337",
+      "city": "Saraland",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.820742,
+        "longitude": -88.0705556
+      },
+      "id": "104314",
+      "name": "DeShawn Spencer",
+      "position": "WR",
+      "ranking": 774,
+      "rating": 0.8789,
+      "recruitType": "HighSchool",
+      "school": "Saraland",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4869807",
+    "recruiting": {
+      "athleteId": "4869807",
+      "city": "Canby",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "41005",
+        "latitude": 45.2629088,
+        "longitude": -122.6925983
+      },
+      "id": "114999",
+      "name": "Jacob Strand",
+      "position": "OT",
+      "ranking": 1502,
+      "rating": 0.8415,
+      "recruitType": "HighSchool",
+      "school": "Canby",
+      "stars": 3,
+      "stateProvince": "OR",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2022
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2022,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 4
+      },
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5323401",
+    "recruiting": {
+      "athleteId": "5323401",
+      "city": "Alabaster",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01117",
+        "latitude": 33.2442813,
+        "longitude": -86.8163773
+      },
+      "id": "211113",
+      "name": "Damonte Tabb",
+      "position": "S",
+      "ranking": 665,
+      "rating": 0.8822,
+      "recruitType": "HighSchool",
+      "school": "Thompson",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5210501",
+    "recruiting": {
+      "athleteId": "5210501",
+      "city": "Pleasanton",
+      "committedTo": "Oregon State",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06001",
+        "latitude": 37.6624312,
+        "longitude": -121.8746789
+      },
+      "id": "106696",
+      "name": "Tristan Ti'a",
+      "position": "QB",
+      "ranking": 506,
+      "rating": 0.8885,
+      "recruitType": "HighSchool",
+      "school": "Amador Valley",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5300327",
+    "recruiting": {
+      "athleteId": "5300327",
+      "city": "Gardendale",
+      "committedTo": "Chattanooga",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.6601033,
+        "longitude": -86.8127702
+      },
+      "id": "258315",
+      "name": "Kamari Todd",
+      "position": "CB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Gardendale",
+      "stars": null,
+      "stateProvince": "AL",
+      "teamSlug": "chattanooga",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "CB",
+        "season": 2025,
+        "team": "Chattanooga",
+        "year": 2
+      },
+      {
+        "jersey": 33,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209319",
+    "recruiting": {
+      "athleteId": "5209319",
+      "city": "Mobile",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "01097",
+        "latitude": 30.6943566,
+        "longitude": -88.0430541
+      },
+      "id": "104001",
+      "name": "Shadarius Toodle",
+      "position": "LB",
+      "ranking": 282,
+      "rating": 0.9084,
+      "recruitType": "HighSchool",
+      "school": "Cottage Hill Christian Academy",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5369935",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5198561",
+    "recruiting": {
+      "athleteId": "5198561",
+      "city": "Decatur",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13089",
+        "latitude": 33.7737582,
+        "longitude": -84.296069
+      },
+      "id": "106636",
+      "name": "Sam Turner",
+      "position": "WR",
+      "ranking": 439,
+      "rating": 0.8925,
+      "recruitType": "HighSchool",
+      "school": "Southwest DeKalb",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5150291",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 3
+      },
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5293241",
+    "recruiting": {
+      "athleteId": "5293241",
+      "city": "Nashville",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "47037",
+        "latitude": 36.1622296,
+        "longitude": -86.7743531
+      },
+      "id": "195034",
+      "name": "Travis Wakefield",
+      "position": "LS",
+      "ranking": 3330,
+      "rating": 0.8067,
+      "recruitType": "HighSchool",
+      "school": "Lipscomb Academy",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 217,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4692683",
+    "recruiting": {
+      "athleteId": "4692683",
+      "city": "Smyrna",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "47149",
+        "latitude": 35.9828413,
+        "longitude": -86.5186045
+      },
+      "id": "118883",
+      "name": "Dallas Walker IV",
+      "position": "DT",
+      "ranking": 478,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Smyrna",
+      "stars": 3,
+      "stateProvince": "TN",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 321,
+      "year": 2020
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DL",
+        "season": 2021,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "DL",
+        "season": 2023,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "DL",
+        "season": 2024,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "DL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 35,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147847",
+    "recruiting": {
+      "athleteId": "5147847",
+      "city": "Savannah",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13051",
+        "latitude": 32.0809263,
+        "longitude": -81.0911768
+      },
+      "id": "106991",
+      "name": "Jacobe' Ward",
+      "position": "IOL",
+      "ranking": 795,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Benedictine Military School",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 335,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4954455",
+    "recruiting": {
+      "athleteId": "4954455",
+      "city": "Franklin",
+      "committedTo": "Baylor",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48395",
+        "latitude": 31.0260194,
+        "longitude": -96.4852445
+      },
+      "id": "111920",
+      "name": "Bryson Washington",
+      "position": "ATH",
+      "ranking": 674,
+      "rating": 0.8769,
+      "recruitType": "HighSchool",
+      "school": "Franklin",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "baylor",
+      "valueType": "BENCHMARK",
+      "weight": 197,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2023,
+        "team": "Baylor",
+        "year": 3
+      },
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2024,
+        "team": "Baylor",
+        "year": 3
+      },
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2025,
+        "team": "Baylor",
+        "year": 3
+      },
+      {
+        "jersey": 30,
+        "position": "RB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5274305",
+    "recruiting": {
+      "athleteId": "5274305",
+      "city": "Petal",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "28035",
+        "latitude": 31.3465627,
+        "longitude": -89.2600605
+      },
+      "id": "105744",
+      "name": "Chris Wells",
+      "position": "LB",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Petal",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "DE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5273844",
+    "recruiting": {
+      "athleteId": "5273844",
+      "city": "Petal",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "28035",
+        "latitude": 31.3465627,
+        "longitude": -89.2600605
+      },
+      "id": "104111",
+      "name": "Corey Wells",
+      "position": "DL",
+      "ranking": 284,
+      "rating": 0.9079,
+      "recruitType": "HighSchool",
+      "school": "Petal",
+      "stars": 4,
+      "stateProvince": "MS",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5229096",
+    "recruiting": null,
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209320",
+    "recruiting": {
+      "athleteId": "5209320",
+      "city": "Wadley",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "A",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "01111",
+        "latitude": 33.1215089,
+        "longitude": -85.5663432
+      },
+      "id": "103916",
+      "name": "Jaquez Wilkes",
+      "position": "LB",
+      "ranking": 116,
+      "rating": 0.9514,
+      "recruitType": "HighSchool",
+      "school": "Wadley",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141758",
+    "recruiting": {
+      "athleteId": "5141758",
+      "city": "Buford",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.1206564,
+        "longitude": -84.0043513
+      },
+      "id": "106559",
+      "name": "Devin Williams",
+      "position": "CB",
+      "ranking": 369,
+      "rating": 0.8982,
+      "recruitType": "HighSchool",
+      "school": "Buford",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 27,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5270869",
+    "recruiting": {
+      "athleteId": "5270869",
+      "city": "Orlando",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "104637",
+      "name": "Brian Williams Jr.",
+      "position": "WR",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "The First Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141769",
+    "recruiting": {
+      "athleteId": "5141769",
+      "city": "Enterprise",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "A",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "01031",
+        "latitude": 31.3151708,
+        "longitude": -85.8552161
+      },
+      "id": "106274",
+      "name": "Eric Winters",
+      "position": "S",
+      "ranking": 83,
+      "rating": 0.9566,
+      "recruitType": "HighSchool",
+      "school": "Enterprise",
+      "stars": 4,
+      "stateProvince": "AL",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4880967",
+    "recruiting": {
+      "athleteId": "4880967",
+      "city": "Baltimore",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "S",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "111278",
+      "name": "Da'Shawn Womack",
+      "position": "EDGE",
+      "ranking": 37,
+      "rating": 0.9851,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 5,
+      "stateProvince": "MD",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141764",
+    "recruiting": {
+      "athleteId": "5141764",
+      "city": "Baltimore",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "24510",
+        "latitude": 39.2908816,
+        "longitude": -76.610759
+      },
+      "id": "106307",
+      "name": "Blake Woodby",
+      "position": "CB",
+      "ranking": 116,
+      "rating": 0.9452,
+      "recruitType": "HighSchool",
+      "school": "St. Frances Academy",
+      "stars": 4,
+      "stateProvince": "MD",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "CB",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5277527",
+    "recruiting": {
+      "athleteId": "5277527",
+      "city": "Rabun Gap",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "13241",
+        "latitude": 34.97479,
+        "longitude": -83.30549
+      },
+      "id": "104102",
+      "name": "Wilson Zierer",
+      "position": "OT",
+      "ranking": 326,
+      "rating": 0.9036,
+      "recruitType": "HighSchool",
+      "school": "Rabun Gap-Nacoochee",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "Auburn",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Auburn",
+        "year": 1
+      }
+    ]
+  }
+]

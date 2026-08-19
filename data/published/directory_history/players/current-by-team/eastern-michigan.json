@@ -1,0 +1,4645 @@
+[
+  {
+    "playerId": "5138702",
+    "recruiting": {
+      "athleteId": "5138702",
+      "city": "Exton",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "42029",
+        "latitude": 40.0289955,
+        "longitude": -75.6207651
+      },
+      "id": "110076",
+      "name": "Adham Abouraya",
+      "position": "IOL",
+      "ranking": 1421,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Downingtown East",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 3
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 62,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5150698",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2023,
+        "team": "Iowa State",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 85,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327598",
+    "recruiting": {
+      "athleteId": "5327598",
+      "city": "Saint-Augustin-de-Desmaures",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "258721",
+      "name": "Samuel Adjin",
+      "position": "IOL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Notre Dame de Foy",
+      "stars": null,
+      "stateProvince": "QC",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4965577",
+    "recruiting": {
+      "athleteId": "4965577",
+      "city": "Miami",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "112136",
+      "name": "Rayquan Adkins",
+      "position": "CB",
+      "ranking": 890,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2023,
+        "team": "Cincinnati",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5203846",
+    "recruiting": {
+      "athleteId": "5203846",
+      "city": "Hollywood",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "211704",
+      "name": "RJ Alphonse",
+      "position": "EDGE",
+      "ranking": 1474,
+      "rating": 0.8622,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4878442",
+    "recruiting": {
+      "athleteId": "4878442",
+      "city": "St. Louis",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "114740",
+      "name": "Josh Anderson",
+      "position": "IOL",
+      "ranking": 1230,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Westminster Christian Academy",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 286,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4838518",
+    "recruiting": {
+      "athleteId": "4838518",
+      "city": "Jefferson",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13157",
+        "latitude": 34.1170537,
+        "longitude": -83.5723876
+      },
+      "id": "114485",
+      "name": "Kadin Bailey",
+      "position": "LB",
+      "ranking": 960,
+      "rating": 0.8619,
+      "recruitType": "HighSchool",
+      "school": "Jefferson",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2022,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2023,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5387668",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151485",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 26,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4608922",
+    "recruiting": {
+      "athleteId": "4608922",
+      "city": "Greenville",
+      "committedTo": "Coastal Carolina",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "45045",
+        "latitude": 34.851354,
+        "longitude": -82.3984882
+      },
+      "id": "120482",
+      "name": "Braydon Bennett",
+      "position": "ATH",
+      "ranking": 2135,
+      "rating": 0.8206,
+      "recruitType": "HighSchool",
+      "school": "Southside",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "coastal-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2020
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2021,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2022,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2023,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2024,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5222594",
+    "recruiting": {
+      "athleteId": "5222594",
+      "city": "Durham",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "37063",
+        "latitude": 35.996653,
+        "longitude": -78.9018053
+      },
+      "id": "107617",
+      "name": "Amareon Blue",
+      "position": "RB",
+      "ranking": 1507,
+      "rating": 0.8567,
+      "recruitType": "HighSchool",
+      "school": "C.E. Jordan",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 192,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "RB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "RB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5150670",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211747",
+    "recruiting": {
+      "athleteId": "5211747",
+      "city": "Akron",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.083064,
+        "longitude": -81.518485
+      },
+      "id": "107889",
+      "name": "Tylan Boykin",
+      "position": "CB",
+      "ranking": 1868,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Hoban",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5304395",
+    "recruiting": {
+      "athleteId": "5304395",
+      "city": "Fairburn",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.5670562,
+        "longitude": -84.5810418
+      },
+      "id": "212441",
+      "name": "Kijon Braxton",
+      "position": "EDGE",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Langston Hughes",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296205",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5215696",
+    "recruiting": {
+      "athleteId": "5215696",
+      "city": "Bowling Green",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "21227",
+        "latitude": 36.9903199,
+        "longitude": -86.4436018
+      },
+      "id": "108204",
+      "name": "Bryce Button",
+      "position": "QB",
+      "ranking": 2281,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "South Warren",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 198,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5209964",
+    "recruiting": {
+      "athleteId": "5209964",
+      "city": "St. Louis",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "108252",
+      "name": "Quincy Byas",
+      "position": "EDGE",
+      "ranking": 2331,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "De Smet Jesuit",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 54,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279421",
+    "recruiting": {
+      "athleteId": "5279421",
+      "city": "Indianapolis",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "212024",
+      "name": "Fa'Rel Carter",
+      "position": "CB",
+      "ranking": 1846,
+      "rating": 0.855,
+      "recruitType": "HighSchool",
+      "school": "Decatur Central",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295528",
+    "recruiting": {
+      "athleteId": "5295528",
+      "city": "Hollywood",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "107200",
+      "name": "Jonnie Carter",
+      "position": "S",
+      "ranking": 1039,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "Flanagan",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5154956",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2023,
+        "team": "Lamar",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2025,
+        "team": "Lamar",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4837378",
+    "recruiting": {
+      "athleteId": "4837378",
+      "city": "Warner Robins",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "13153",
+        "latitude": 32.6200973,
+        "longitude": -83.606568
+      },
+      "id": "113998",
+      "name": "Caleb Coley",
+      "position": "CB",
+      "ranking": 456,
+      "rating": 0.887,
+      "recruitType": "HighSchool",
+      "school": "Houston County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 166,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2022,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5387657",
+    "recruiting": {
+      "athleteId": "5387657",
+      "city": "Millville",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "34011",
+        "latitude": 39.4020593,
+        "longitude": -75.0393368
+      },
+      "id": "224623",
+      "name": "Marty Collins",
+      "position": "S",
+      "ranking": 2743,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Millville",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5257979",
+    "recruiting": {
+      "athleteId": "5257979",
+      "city": "Rose Hill",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "20015",
+        "latitude": 37.5583517,
+        "longitude": -97.1350405
+      },
+      "id": "221167",
+      "name": "Milan Colvin",
+      "position": "DL",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Derby",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 95,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5327122",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4870692",
+    "recruiting": {
+      "athleteId": "4870692",
+      "city": "Clarkston",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.735863,
+        "longitude": -83.4188304
+      },
+      "id": "111699",
+      "name": "Cole Dellinger",
+      "position": "IOL",
+      "ranking": 452,
+      "rating": 0.89,
+      "recruitType": "HighSchool",
+      "school": "Clarkston",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5083205",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5081130",
+    "recruiting": {
+      "athleteId": "5081130",
+      "city": "Hartland",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "26093",
+        "latitude": 42.656697,
+        "longitude": -83.7530022
+      },
+      "id": "115282",
+      "name": "Nathan Dibert",
+      "position": "K",
+      "ranking": 1871,
+      "rating": 0.8267,
+      "recruitType": "HighSchool",
+      "school": "Hartland",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2022,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2023,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2024,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 37,
+        "position": "PK",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220047",
+    "recruiting": {
+      "athleteId": "5220047",
+      "city": "Cocoa",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12009",
+        "latitude": 28.3553873,
+        "longitude": -80.7318827
+      },
+      "id": "113265",
+      "name": "Caleb Dobbs",
+      "position": "S",
+      "ranking": 2135,
+      "rating": 0.8228,
+      "recruitType": "HighSchool",
+      "school": "Cocoa",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5387670",
+    "recruiting": {
+      "athleteId": "5387670",
+      "city": "U S A F Academy",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "258722",
+      "name": "Owen Edlen",
+      "position": "EDGE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Air Force Prep",
+      "stars": null,
+      "stateProvince": "CO",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5148854",
+    "recruiting": {
+      "athleteId": "5148854",
+      "city": "Detroit",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3315509,
+        "longitude": -83.0466403
+      },
+      "id": "111075",
+      "name": "Marvell Eggleston",
+      "position": "EDGE",
+      "ranking": 2660,
+      "rating": 0.8137,
+      "recruitType": "HighSchool",
+      "school": "Martin Luther King",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "DL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 43,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5078066",
+    "recruiting": {
+      "athleteId": "5078066",
+      "city": "Linden",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26049",
+        "latitude": 42.8144731,
+        "longitude": -83.7824527
+      },
+      "id": "113538",
+      "name": "Bryce Eliuk",
+      "position": "LB",
+      "ranking": 2807,
+      "rating": 0.7856,
+      "recruitType": "HighSchool",
+      "school": "Linden",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 40,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4612605",
+    "recruiting": {
+      "athleteId": "4612605",
+      "city": "Crystal Lake",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "17111",
+        "latitude": 42.2411344,
+        "longitude": -88.3161965
+      },
+      "id": "116776",
+      "name": "Carter Evans",
+      "position": "TE",
+      "ranking": 1069,
+      "rating": 0.8552,
+      "recruitType": "HighSchool",
+      "school": "Prairie Ridge",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2021
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2021,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 33,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209959",
+    "recruiting": {
+      "athleteId": "5209959",
+      "city": "Xenia",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39057",
+        "latitude": 39.6847822,
+        "longitude": -83.9296526
+      },
+      "id": "104733",
+      "name": "Shawn Fishwick",
+      "position": "WR",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Xenia",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5387659",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5148852",
+    "recruiting": {
+      "athleteId": "5148852",
+      "city": "Hampton",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.3870578,
+        "longitude": -84.2829784
+      },
+      "id": "110835",
+      "name": "Antonio Floyd",
+      "position": "WR",
+      "ranking": 2355,
+      "rating": 0.8263,
+      "recruitType": "HighSchool",
+      "school": "Lovejoy",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4685349",
+    "recruiting": {
+      "athleteId": "4685349",
+      "city": "Pasadena",
+      "committedTo": "Colorado State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.1476452,
+        "longitude": -118.1444779
+      },
+      "id": "113991",
+      "name": "Mekhi Fox",
+      "position": "ATH",
+      "ranking": 448,
+      "rating": 0.888,
+      "recruitType": "HighSchool",
+      "school": "Pasadena",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "colorado-state",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2022,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2023,
+        "team": "Colorado State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4917422",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "WR",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "WR",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "WR",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "WR",
+        "season": 2025,
+        "team": "Valparaiso",
+        "year": 4
+      },
+      {
+        "jersey": 25,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327600",
+    "recruiting": {
+      "athleteId": "5327600",
+      "city": "Louisville",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "21111",
+        "latitude": 38.2542376,
+        "longitude": -85.759407
+      },
+      "id": "105902",
+      "name": "Jahbarri Frost",
+      "position": "DL",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Trinity",
+      "stars": 3,
+      "stateProvince": "KY",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917301",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220063",
+    "recruiting": {
+      "athleteId": "5220063",
+      "city": "Southfield",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "F",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.4733689,
+        "longitude": -83.2218731
+      },
+      "id": "238609",
+      "name": "Reggie Gardner",
+      "position": "DL",
+      "ranking": 3253,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "Southfield",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5083935",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2022,
+        "team": "Samford",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2023,
+        "team": "Samford",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295627",
+    "recruiting": {
+      "athleteId": "5295627",
+      "city": "Delray Beach",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.4614625,
+        "longitude": -80.0728201
+      },
+      "id": "212412",
+      "name": "Horace Glenn III",
+      "position": "CB",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Atlantic",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 150,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216633",
+    "recruiting": {
+      "athleteId": "5216633",
+      "city": "Rabun Gap",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13241",
+        "latitude": 34.97479,
+        "longitude": -83.30549
+      },
+      "id": "107956",
+      "name": "Hector Gonzalez",
+      "position": "EDGE",
+      "ranking": 1935,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "Rabun Gap-Nacoochee",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295533",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5085701",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2022,
+        "team": "Drake",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Drake",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5220054",
+    "recruiting": {
+      "athleteId": "5220054",
+      "city": "Clinton Township",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "34019",
+        "latitude": 42.5869,
+        "longitude": -82.9196
+      },
+      "id": "111089",
+      "name": "Ray Hester",
+      "position": "S",
+      "ranking": 2675,
+      "rating": 0.8122,
+      "recruitType": "HighSchool",
+      "school": "Chippewa Valley",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 168,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 20,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5387666",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5230792",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "TE",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5175094",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "P",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 39,
+        "position": "P",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 39,
+        "position": "P",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5387669",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5197158",
+    "recruiting": {
+      "athleteId": "5197158",
+      "city": "Willingboro",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "34005",
+        "latitude": 40.0278894,
+        "longitude": -74.8690542
+      },
+      "id": "237902",
+      "name": "Malachi James",
+      "position": "WR",
+      "ranking": 918,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Burlington City",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 198,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2025,
+        "team": "Syracuse",
+        "year": 3
+      },
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5271228",
+    "recruiting": {
+      "athleteId": "5271228",
+      "city": "Orlando",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "212135",
+      "name": "Carl Jean-Bart",
+      "position": "WR",
+      "ranking": 2022,
+      "rating": 0.8511,
+      "recruitType": "HighSchool",
+      "school": "Evans",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5271174",
+    "recruiting": {
+      "athleteId": "5271174",
+      "city": "Winter Park",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.13784445,
+        "longitude": -81.75399813758739
+      },
+      "id": "212246",
+      "name": "Decorie Johnson",
+      "position": "RB",
+      "ranking": 1976,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Winter Park",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290699",
+    "recruiting": {
+      "athleteId": "5290699",
+      "city": "Harrisburg",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "42043",
+        "latitude": 40.2663107,
+        "longitude": -76.8861122
+      },
+      "id": "105275",
+      "name": "Nazir Jones-Davis",
+      "position": "RB",
+      "ranking": 1881,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Bishop McDevitt",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5097521",
+    "recruiting": {
+      "athleteId": "5097521",
+      "city": "Pontiac",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.6389216,
+        "longitude": -83.2910468
+      },
+      "id": "255699",
+      "name": "Jack Kautz",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Notre Dame Preparatory School & Marist Academy",
+      "stars": null,
+      "stateProvince": "MI",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2022,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5227260",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "Saint Francis",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302835",
+    "recruiting": {
+      "athleteId": "5302835",
+      "city": "Americus",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13261",
+        "latitude": 32.0723862,
+        "longitude": -84.2326876
+      },
+      "id": "212695",
+      "name": "Aaron Kearse",
+      "position": "S",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Americus Sumter County South",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5220057",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "PK",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "PK",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 46,
+        "position": "PK",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4690158",
+    "recruiting": {
+      "athleteId": "4690158",
+      "city": "Chantilly",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "51059",
+        "latitude": 38.8941543,
+        "longitude": -77.4311513
+      },
+      "id": "119631",
+      "name": "Noah Kim",
+      "position": "PRO",
+      "ranking": 1245,
+      "rating": 0.8496,
+      "recruitType": "HighSchool",
+      "school": "Westfield",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2020
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2021,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2022,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2024,
+        "team": "Coastal Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5161955",
+    "recruiting": {
+      "athleteId": "5161955",
+      "city": "Akron",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.083064,
+        "longitude": -81.518485
+      },
+      "id": "105781",
+      "name": "Nick Kinsey",
+      "position": "QB",
+      "ranking": 2819,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Hoban",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "QB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5215468",
+    "recruiting": {
+      "athleteId": "5215468",
+      "city": "Lawrenceburg",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "18029",
+        "latitude": 39.090891,
+        "longitude": -84.8499504
+      },
+      "id": "108281",
+      "name": "Noah Knigga",
+      "position": "LB",
+      "ranking": 2361,
+      "rating": 0.8344,
+      "recruitType": "HighSchool",
+      "school": "Lawrenceburg",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 208,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5387660",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302836",
+    "recruiting": {
+      "athleteId": "5302836",
+      "city": "Indianapolis",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "213239",
+      "name": "Van Krisiloff",
+      "position": "K",
+      "ranking": 3341,
+      "rating": 0.805,
+      "recruitType": "HighSchool",
+      "school": "Cathedral",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "P",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5103574",
+    "recruiting": {
+      "athleteId": "5103574",
+      "city": "Bloomingdale",
+      "committedTo": "Georgia Southern",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13051",
+        "latitude": 32.1324249,
+        "longitude": -81.2990018
+      },
+      "id": "112834",
+      "name": "Alijah Lacey",
+      "position": "EDGE",
+      "ranking": 1622,
+      "rating": 0.8437,
+      "recruitType": "HighSchool",
+      "school": "New Hampstead",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "georgia-southern",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "DL",
+        "season": 2023,
+        "team": "Georgia Southern",
+        "year": 4
+      },
+      {
+        "jersey": 53,
+        "position": "DL",
+        "season": 2024,
+        "team": "Georgia Southern",
+        "year": 4
+      },
+      {
+        "jersey": 53,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4918453",
+    "recruiting": {
+      "athleteId": "4918453",
+      "city": "Washington Court House",
+      "committedTo": "Kentucky",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "39047",
+        "latitude": 39.5364511,
+        "longitude": -83.4390843
+      },
+      "id": "112567",
+      "name": "Tanner Lemaster",
+      "position": "TE",
+      "ranking": 1340,
+      "rating": 0.8519,
+      "recruitType": "HighSchool",
+      "school": "Washington",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2023,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5086872",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2022,
+        "team": "Charleston Southern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2023,
+        "team": "Charleston Southern",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5295532",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5220049",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5215428",
+    "recruiting": {
+      "athleteId": "5215428",
+      "city": "Kings Mills",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39165",
+        "latitude": 39.3556146,
+        "longitude": -84.2485483
+      },
+      "id": "108574",
+      "name": "Nate Lyman",
+      "position": "WR",
+      "ranking": 2918,
+      "rating": 0.8196,
+      "recruitType": "HighSchool",
+      "school": "Kings",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 189,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5211694",
+    "recruiting": {
+      "athleteId": "5211694",
+      "city": "Fort Wayne",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "18003",
+        "latitude": 41.0799898,
+        "longitude": -85.1386015
+      },
+      "id": "107227",
+      "name": "Harold Mack",
+      "position": "WR",
+      "ranking": 1067,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Wayne",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5220055",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917328",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4917329",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5125733",
+    "recruiting": {
+      "athleteId": "5125733",
+      "city": "Hartland",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "26093",
+        "latitude": 42.656697,
+        "longitude": -83.7530022
+      },
+      "id": "256570",
+      "name": "Joey Mattord",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Hartland",
+      "stars": null,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5094040",
+    "recruiting": {
+      "athleteId": "5094040",
+      "city": "Cincinnati",
+      "committedTo": "Yale",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "234779",
+      "name": "Brogan McCaughey",
+      "position": "QB",
+      "ranking": 2000,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "St. Xavier",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "yale",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2022,
+        "team": "Yale",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "Yale",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Yale",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5271147",
+    "recruiting": {
+      "athleteId": "5271147",
+      "city": "Orlando",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "212708",
+      "name": "CJ McCoy",
+      "position": "DL",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "The First Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5387662",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4896022",
+    "recruiting": {
+      "athleteId": "4896022",
+      "city": "River Rouge",
+      "committedTo": "Mississippi Valley State",
+      "country": "USA",
+      "grade": "F",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.2729262,
+        "longitude": -83.1352891
+      },
+      "id": "118246",
+      "name": "Tyler McMillan",
+      "position": "IOL",
+      "ranking": 2557,
+      "rating": 0.7917,
+      "recruitType": "HighSchool",
+      "school": "River Rouge",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "mississippi-valley-state",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2021
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2022,
+        "team": "Mississippi Valley State",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2025,
+        "team": "Illinois",
+        "year": 4
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290686",
+    "recruiting": {
+      "athleteId": "5290686",
+      "city": "Owosso",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "26155",
+        "latitude": 42.9975968,
+        "longitude": -84.1720541
+      },
+      "id": "105745",
+      "name": "Carter Miculka",
+      "position": "OT",
+      "ranking": 2502,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Owosso",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5293677",
+    "recruiting": {
+      "athleteId": "5293677",
+      "city": "Miami",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "212523",
+      "name": "CJ Miller",
+      "position": "WR",
+      "ranking": 2502,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Miami Palmetto",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5387667",
+    "recruiting": {
+      "athleteId": "5387667",
+      "city": "Duluth",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.0028569,
+        "longitude": -84.1441046
+      },
+      "id": "212461",
+      "name": "Bacori Minner",
+      "position": "WR",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Meadowcreek",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302837",
+    "recruiting": {
+      "athleteId": "5302837",
+      "city": "Fort Pierce",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12111",
+        "latitude": 27.4467056,
+        "longitude": -80.3256056
+      },
+      "id": "213050",
+      "name": "Jabari Monds",
+      "position": "CB",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Fort Pierce Westwood",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4875731",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2021,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "LB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4997580",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302838",
+    "recruiting": {
+      "athleteId": "5302838",
+      "city": "Boynton Beach",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.5256179,
+        "longitude": -80.0666026
+      },
+      "id": "212975",
+      "name": "Davontey Oliver",
+      "position": "S",
+      "ranking": 2709,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Somerset Academy Canyons",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5192778",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5147350",
+    "recruiting": {
+      "athleteId": "5147350",
+      "city": "Ironton",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39087",
+        "latitude": 38.5367471,
+        "longitude": -82.6829406
+      },
+      "id": "110976",
+      "name": "Noah Patterson",
+      "position": "DL",
+      "ranking": 2563,
+      "rating": 0.8196,
+      "recruitType": "HighSchool",
+      "school": "Ironton",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "DL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4920144",
+    "recruiting": {
+      "athleteId": "4920144",
+      "city": "Chatsworth",
+      "committedTo": "Arizona",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 34.2595715,
+        "longitude": -118.6023247
+      },
+      "id": "256505",
+      "name": "Elijha Payne",
+      "position": "OT",
+      "ranking": 797,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Sierra Canyon",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "arizona",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Delaware State",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5289617",
+    "recruiting": {
+      "athleteId": "5289617",
+      "city": "Troy",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26125",
+        "latitude": 42.6055893,
+        "longitude": -83.1499304
+      },
+      "id": "212209",
+      "name": "Nathan Piggott",
+      "position": "TE",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Athens",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5222644",
+    "recruiting": {
+      "athleteId": "5222644",
+      "city": "Erie",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "08013",
+        "latitude": 40.0146297,
+        "longitude": -105.10395109684542
+      },
+      "id": "108639",
+      "name": "Cole Powell",
+      "position": "OT",
+      "ranking": 2980,
+      "rating": 0.8122,
+      "recruitType": "HighSchool",
+      "school": "Erie",
+      "stars": 3,
+      "stateProvince": "CO",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295525",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141666",
+    "recruiting": {
+      "athleteId": "5141666",
+      "city": "Cincinnati",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "220930",
+      "name": "Donmiel Rogers",
+      "position": "CB",
+      "ranking": 1325,
+      "rating": 0.86,
+      "recruitType": "HighSchool",
+      "school": "Winton Woods",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 161,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295526",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4907672",
+    "recruiting": {
+      "athleteId": "4907672",
+      "city": "Ann Arbor",
+      "committedTo": "Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "26161",
+        "latitude": 42.2681569,
+        "longitude": -83.7312291
+      },
+      "id": "113349",
+      "name": "Adam Samaha",
+      "position": "K",
+      "ranking": 2315,
+      "rating": 0.8169,
+      "recruitType": "HighSchool",
+      "school": "Huron",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "PK",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "PK",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "PK",
+        "season": 2025,
+        "team": "Akron",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "PK",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5278411",
+    "recruiting": {
+      "athleteId": "5278411",
+      "city": "East St. Louis",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "17163",
+        "latitude": 38.6244952,
+        "longitude": -90.1509429
+      },
+      "id": "212658",
+      "name": "Armaad Sharp",
+      "position": "TE",
+      "ranking": 2533,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "East St. Louis",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290687",
+    "recruiting": {
+      "athleteId": "5290687",
+      "city": "Brighton",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "26093",
+        "latitude": 42.5316918,
+        "longitude": -83.7846458
+      },
+      "id": "105774",
+      "name": "Brady Shelton",
+      "position": "TE",
+      "ranking": 2728,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "Brighton",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5159071",
+    "recruiting": {
+      "athleteId": "5159071",
+      "city": "Glassboro",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "34015",
+        "latitude": 39.7027677,
+        "longitude": -75.1119434
+      },
+      "id": "212385",
+      "name": "Brandon Simmons Jr.",
+      "position": "DL",
+      "ranking": 2487,
+      "rating": 0.8422,
+      "recruitType": "HighSchool",
+      "school": "Glassboro",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5217203",
+    "recruiting": {
+      "athleteId": "5217203",
+      "city": "Hampton",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13151",
+        "latitude": 33.3870578,
+        "longitude": -84.2829784
+      },
+      "id": "108117",
+      "name": "Antoniyo Smith",
+      "position": "DL",
+      "ranking": 2093,
+      "rating": 0.8404,
+      "recruitType": "HighSchool",
+      "school": "Lovejoy",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290978",
+    "recruiting": {
+      "athleteId": "5290978",
+      "city": "Dearborn",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26163",
+        "latitude": 42.3222599,
+        "longitude": -83.1763145
+      },
+      "id": "213046",
+      "name": "Antonio Solares-Vitti",
+      "position": "ATH",
+      "ranking": 3115,
+      "rating": 0.82,
+      "recruitType": "HighSchool",
+      "school": "Dearborn Divine Child",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4917313",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2022,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5144207",
+    "recruiting": {
+      "athleteId": "5144207",
+      "city": "Fairland",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "110541",
+      "name": "Jace Stuckey",
+      "position": "QB",
+      "ranking": 2004,
+      "rating": 0.8396,
+      "recruitType": "HighSchool",
+      "school": "Triton Central",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5387665",
+    "recruiting": {
+      "athleteId": "5387665",
+      "city": "Westerville",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "39049",
+        "latitude": 40.126139,
+        "longitude": -82.9295287
+      },
+      "id": "105857",
+      "name": "Nily Taylor",
+      "position": "OT",
+      "ranking": 1976,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Westerville North",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5221131",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084768",
+    "recruiting": {
+      "athleteId": "5084768",
+      "city": "Lawndale",
+      "committedTo": "Northern Arizona",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8885217,
+        "longitude": -118.3531991
+      },
+      "id": "255974",
+      "name": "Warren-Stevens Tayou",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Lawndale",
+      "stars": null,
+      "stateProvince": "CA",
+      "teamSlug": "northern-arizona",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2022
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2022,
+        "team": "Northern Arizona",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5193286",
+    "recruiting": {
+      "athleteId": "5193286",
+      "city": "East Lansing",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26065",
+        "latitude": 42.7355416,
+        "longitude": -84.4852469
+      },
+      "id": "110919",
+      "name": "Javon Thomas",
+      "position": "DL",
+      "ranking": 2443,
+      "rating": 0.8222,
+      "recruitType": "HighSchool",
+      "school": "East Lansing",
+      "stars": 3,
+      "stateProvince": "MI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193287",
+    "recruiting": {
+      "athleteId": "5193287",
+      "city": "Atlanta",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "110672",
+      "name": "Jordan Toney",
+      "position": "CB",
+      "ranking": 2130,
+      "rating": 0.8337,
+      "recruitType": "HighSchool",
+      "school": "Hapeville Charter",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5302841",
+    "recruiting": {
+      "athleteId": "5302841",
+      "city": "Fort Wayne",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "18003",
+        "latitude": 41.0799898,
+        "longitude": -85.1386015
+      },
+      "id": "213110",
+      "name": "Andrew Trahin",
+      "position": "IOL",
+      "ranking": 3044,
+      "rating": 0.825,
+      "recruitType": "HighSchool",
+      "school": "Bishop Dwenger",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5387664",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5387661",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "TE",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5387658",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "RB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193324",
+    "recruiting": {
+      "athleteId": "5193324",
+      "city": "Clayton",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "39113",
+        "latitude": 39.8631101,
+        "longitude": -84.3605022
+      },
+      "id": "109781",
+      "name": "Dalin Wilkins",
+      "position": "WR",
+      "ranking": 1109,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Northmont",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5086874",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2022,
+        "team": "Charleston Southern",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2023,
+        "team": "Charleston Southern",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2024,
+        "team": "Charleston Southern",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 9,
+        "position": "DB",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5306777",
+    "recruiting": {
+      "athleteId": "5306777",
+      "city": "Oak Creek",
+      "committedTo": "Eastern Michigan",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "55079",
+        "latitude": 42.8858503,
+        "longitude": -87.8631362
+      },
+      "id": "108389",
+      "name": "Kevin Wojciechowski",
+      "position": "OT",
+      "ranking": 2468,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Oak Creek",
+      "stars": 3,
+      "stateProvince": "WI",
+      "teamSlug": "eastern-michigan",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "Eastern Michigan",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5387663",
+    "recruiting": null,
+    "team": "Eastern Michigan",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Eastern Michigan",
+        "year": 3
+      }
+    ]
+  }
+]

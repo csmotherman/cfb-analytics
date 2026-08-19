@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "roster.json": "290fca85090ec76339e72b5eca5eac6ddf50ff9623fb162b78e972aefd477c15",
+    "schedule.json": "b8b15356a539add8552f2c90a59fad33e7220cfb374de082738106a31a9e7e20"
+  },
+  "publishedAtUtc": "2026-08-18T23:07:56.422423+00:00",
+  "rosterRows": 118,
+  "scheduleRows": 12,
+  "season": 2026,
+  "seasonState": "PRESEASON",
+  "sourceUrls": [
+    "https://api.collegefootballdata.com/roster?year=2026&team=Michigan",
+    "https://api.collegefootballdata.com/games?year=2026&team=Michigan"
+  ],
+  "team": "Michigan",
+  "valueType": "PRESEASON",
+  "version": "michigan-preseason-v1"
+}

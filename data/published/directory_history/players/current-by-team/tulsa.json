@@ -1,0 +1,4774 @@
+[
+  {
+    "playerId": "4833593",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2022,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5265441",
+    "recruiting": {
+      "athleteId": "5265441",
+      "city": "Phenix City",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "01113",
+        "latitude": 32.4709761,
+        "longitude": -85.0007653
+      },
+      "id": "220972",
+      "name": "Andrew Alford",
+      "position": "QB",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Central Phenix City",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685699",
+    "recruiting": {
+      "athleteId": "4685699",
+      "city": "Atlanta",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "113871",
+      "name": "Damari Alston",
+      "position": "RB",
+      "ranking": 328,
+      "rating": 0.8995,
+      "recruitType": "HighSchool",
+      "school": "Woodward Academy",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2022,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "Auburn",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5290596",
+    "recruiting": {
+      "athleteId": "5290596",
+      "city": "Wichita",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "20173",
+        "latitude": 37.6922361,
+        "longitude": -97.3375448
+      },
+      "id": "212656",
+      "name": "Nick Anciaux",
+      "position": "OT",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Kapaun Mt. Carmel",
+      "stars": 3,
+      "stateProvince": "KS",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 65,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5207611",
+    "recruiting": {
+      "athleteId": "5207611",
+      "city": "Jenks",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.0228734,
+        "longitude": -95.9683278
+      },
+      "id": "107722",
+      "name": "Javion Antai",
+      "position": "IOL",
+      "ranking": 1614,
+      "rating": 0.8539,
+      "recruitType": "HighSchool",
+      "school": "Jenks",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 51,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5257712",
+    "recruiting": {
+      "athleteId": "5257712",
+      "city": "Springdale",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "05143",
+        "latitude": 36.1867442,
+        "longitude": -94.1288142
+      },
+      "id": "108273",
+      "name": "Hudson Ball",
+      "position": "EDGE",
+      "ranking": 2341,
+      "rating": 0.835,
+      "recruitType": "HighSchool",
+      "school": "Shiloh Christian",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 32,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5280595",
+    "recruiting": {
+      "athleteId": "5280595",
+      "city": "League City",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.5074538,
+        "longitude": -95.0949303
+      },
+      "id": "105396",
+      "name": "Kyden Barker",
+      "position": "QB",
+      "ranking": 1914,
+      "rating": 0.8533,
+      "recruitType": "HighSchool",
+      "school": "Clear Falls",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5390302",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5326900",
+    "recruiting": {
+      "athleteId": "5326900",
+      "city": "Orange Park",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "12019",
+        "latitude": 30.1654707,
+        "longitude": -81.7016346
+      },
+      "id": "258718",
+      "name": "Joel Bazinet",
+      "position": "LS",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Oakleaf",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 214,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "LS",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219787",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5390301",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5329824",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290272",
+    "recruiting": {
+      "athleteId": "5290272",
+      "city": "Fairburn",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.5670562,
+        "longitude": -84.5810418
+      },
+      "id": "105505",
+      "name": "Julian Byrd",
+      "position": "CB",
+      "ranking": 1976,
+      "rating": 0.8522,
+      "recruitType": "HighSchool",
+      "school": "Langston Hughes",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4429804",
+    "recruiting": {
+      "athleteId": "4429804",
+      "city": "Morrow",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13063",
+        "latitude": 33.5831662,
+        "longitude": -84.3393683
+      },
+      "id": "118598",
+      "name": "Jimmy Calloway",
+      "position": "WR",
+      "ranking": 191,
+      "rating": 0.9235,
+      "recruitType": "HighSchool",
+      "school": "Morrow",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 207,
+      "year": 2020
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2021,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2022,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2023,
+        "team": "Louisville",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "Tulane",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4888129",
+    "recruiting": {
+      "athleteId": "4888129",
+      "city": "Tulsa",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "114837",
+      "name": "Nunu Campbell",
+      "position": "CB",
+      "ranking": 1341,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Holland Hall",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2022,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5326901",
+    "recruiting": {
+      "athleteId": "5326901",
+      "city": "Jacksonville",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "213303",
+      "name": "Owen Carey",
+      "position": "K",
+      "ranking": 3253,
+      "rating": 0.8156,
+      "recruitType": "HighSchool",
+      "school": "Beachside",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "PK",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5193721",
+    "recruiting": {
+      "athleteId": "5193721",
+      "city": "Collinsville",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.3661205,
+        "longitude": -95.8398108
+      },
+      "id": "110819",
+      "name": "Colten Christian",
+      "position": "IOL",
+      "ranking": 2333,
+      "rating": 0.827,
+      "recruitType": "HighSchool",
+      "school": "Collinsville",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5390300",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5150130",
+    "recruiting": {
+      "athleteId": "5150130",
+      "city": "Poteau",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "40079",
+        "latitude": 35.0537094,
+        "longitude": -94.6235579
+      },
+      "id": "110436",
+      "name": "Dax Collins",
+      "position": "S",
+      "ranking": 1828,
+      "rating": 0.8433,
+      "recruitType": "HighSchool",
+      "school": "Poteau",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5315930",
+    "recruiting": {
+      "athleteId": "5315930",
+      "city": "Cincinnati",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "212761",
+      "name": "Raymir Coney",
+      "position": "LB",
+      "ranking": 2502,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Princeton",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5390294",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4920162",
+    "recruiting": {
+      "athleteId": "4920162",
+      "city": "Katy",
+      "committedTo": "Mississippi State",
+      "country": "USA",
+      "grade": "C",
+      "height": 67,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "111879",
+      "name": "Seth Davis",
+      "position": "RB",
+      "ranking": 634,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Katy",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "mississippi-state",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2023,
+        "team": "Mississippi State",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2024,
+        "team": "Mississippi State",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2025,
+        "team": "Mississippi State",
+        "year": 3
+      },
+      {
+        "jersey": 23,
+        "position": "RB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4683043",
+    "recruiting": {
+      "athleteId": "4683043",
+      "city": "Valdosta",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "13185",
+        "latitude": 30.8327022,
+        "longitude": -83.2784851
+      },
+      "id": "116258",
+      "name": "Thomas Davis",
+      "position": "LB",
+      "ranking": 511,
+      "rating": 0.8804,
+      "recruitType": "HighSchool",
+      "school": "Lowndes",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2021
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2021,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2022,
+        "team": "Miami",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2023,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2024,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2025,
+        "team": "App State",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5289942",
+    "recruiting": {
+      "athleteId": "5289942",
+      "city": "Aledo",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48367",
+        "latitude": 32.69900905,
+        "longitude": -97.60396629774493
+      },
+      "id": "212501",
+      "name": "Carson Dempsey",
+      "position": "DL",
+      "ranking": 2411,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Aledo",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 91,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4911905",
+    "recruiting": {
+      "athleteId": "4911905",
+      "city": "Tulsa",
+      "committedTo": "Oklahoma State",
+      "country": "USA",
+      "grade": "C",
+      "height": 77.5,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "114741",
+      "name": "Davis Dotson",
+      "position": "OT",
+      "ranking": 1230,
+      "rating": 0.8517,
+      "recruitType": "HighSchool",
+      "school": "Berryhill",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "oklahoma-state",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2022,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4900577",
+    "recruiting": {
+      "athleteId": "4900577",
+      "city": "Tulsa",
+      "committedTo": "Utah State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "115118",
+      "name": "JD Drew",
+      "position": "ATH",
+      "ranking": 1665,
+      "rating": 0.8356,
+      "recruitType": "HighSchool",
+      "school": "Booker T. Washington",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "utah-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2022,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2023,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5193111",
+    "recruiting": {
+      "athleteId": "5193111",
+      "city": "Bixby",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 35.9420431,
+        "longitude": -95.8833235
+      },
+      "id": "110567",
+      "name": "Brody Duffel",
+      "position": "OT",
+      "ranking": 2030,
+      "rating": 0.8381,
+      "recruitType": "HighSchool",
+      "school": "Bixby",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5196927",
+    "recruiting": {
+      "athleteId": "5196927",
+      "city": "Humble",
+      "committedTo": "UTEP",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9988312,
+        "longitude": -95.2621553
+      },
+      "id": "110738",
+      "name": "Kyran Duhon",
+      "position": "DL",
+      "ranking": 2194,
+      "rating": 0.8306,
+      "recruitType": "HighSchool",
+      "school": "Summer Creek",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "utep",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2024,
+        "team": "UTEP",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 3
+      },
+      {
+        "jersey": 0,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147143",
+    "recruiting": {
+      "athleteId": "5147143",
+      "city": "Lake Village",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "05017",
+        "latitude": 33.3287279,
+        "longitude": -91.2817806
+      },
+      "id": "110103",
+      "name": "Aquavious Dunbar",
+      "position": "LB",
+      "ranking": 1447,
+      "rating": 0.8547,
+      "recruitType": "HighSchool",
+      "school": "Lakeside",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 216,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 21,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4869727",
+    "recruiting": {
+      "athleteId": "4869727",
+      "city": "New Orleans",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "114163",
+      "name": "Cam East",
+      "position": "OT",
+      "ranking": 623,
+      "rating": 0.877,
+      "recruitType": "HighSchool",
+      "school": "St. Augustine",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2022,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2023,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390295",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "QB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4714989",
+    "recruiting": {
+      "athleteId": "4714989",
+      "city": "Haslet",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.96116000000001,
+        "longitude": -97.34228157049023
+      },
+      "id": "113809",
+      "name": "Hunter Erb",
+      "position": "OT",
+      "ranking": 266,
+      "rating": 0.9079,
+      "recruitType": "HighSchool",
+      "school": "Haslet Eaton",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2022,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2024,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5302753",
+    "recruiting": {
+      "athleteId": "5302753",
+      "city": "Tulsa",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "211814",
+      "name": "Keynan Farley",
+      "position": "CB",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Booker T. Washington",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5085399",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2022,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 42,
+        "position": "LS",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5200102",
+    "recruiting": {
+      "athleteId": "5200102",
+      "city": "Gainesville",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13139",
+        "latitude": 34.2978794,
+        "longitude": -83.8240663
+      },
+      "id": "212162",
+      "name": "Kadin Fossung",
+      "position": "EDGE",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Gainesville",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296086",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 82,
+        "position": "TE",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5223788",
+    "recruiting": {
+      "athleteId": "5223788",
+      "city": "Allen",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1031744,
+        "longitude": -96.6705503
+      },
+      "id": "108377",
+      "name": "Donnell Gee Jr.",
+      "position": "WR",
+      "ranking": 2445,
+      "rating": 0.8304,
+      "recruitType": "HighSchool",
+      "school": "Allen",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084564",
+    "recruiting": {
+      "athleteId": "5084564",
+      "city": "Suwanee",
+      "committedTo": "East Tennessee State",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 34.0514898,
+        "longitude": -84.0712997
+      },
+      "id": "256182",
+      "name": "Jaylen George",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Collins Hill",
+      "stars": null,
+      "stateProvince": "GA",
+      "teamSlug": "east-tennessee-state",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2022,
+        "team": "East Tennessee State",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2023,
+        "team": "East Tennessee State",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2024,
+        "team": "East Tennessee State",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2025,
+        "team": "Nebraska",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390297",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5146966",
+    "recruiting": {
+      "athleteId": "5146966",
+      "city": "Tiger",
+      "committedTo": "Cincinnati",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13241",
+        "latitude": 34.8470372,
+        "longitude": -83.4329399
+      },
+      "id": "109611",
+      "name": "Willie Goodwyn",
+      "position": "S",
+      "ranking": 928,
+      "rating": 0.8697,
+      "recruitType": "HighSchool",
+      "school": "Rabun County",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "cincinnati",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "CB",
+        "season": 2024,
+        "team": "Cincinnati",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "CB",
+        "season": 2025,
+        "team": "Cincinnati",
+        "year": 2
+      },
+      {
+        "jersey": 23,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5157259",
+    "recruiting": {
+      "athleteId": "5157259",
+      "city": "Oklahoma City",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "40109",
+        "latitude": 35.4729886,
+        "longitude": -97.5170536
+      },
+      "id": "109631",
+      "name": "Elijah Green",
+      "position": "S",
+      "ranking": 947,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Classen School",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "CB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "CB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 7,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917155",
+    "recruiting": {
+      "athleteId": "4917155",
+      "city": "Owasso",
+      "committedTo": "BYU",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.2661536,
+        "longitude": -95.8549456
+      },
+      "id": "115090",
+      "name": "Korbyn Green",
+      "position": "CB",
+      "ranking": 1637,
+      "rating": 0.8367,
+      "recruitType": "HighSchool",
+      "school": "Owasso",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "byu",
+      "valueType": "BENCHMARK",
+      "weight": 173,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2022,
+        "team": "BYU",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2025,
+        "team": "Western Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5244757",
+    "recruiting": {
+      "athleteId": "5244757",
+      "city": "The Colony",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.0890094,
+        "longitude": -96.8863922
+      },
+      "id": "211413",
+      "name": "Xavier Green",
+      "position": "WR",
+      "ranking": 1211,
+      "rating": 0.8678,
+      "recruitType": "HighSchool",
+      "school": "The Colony",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151635",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5219794",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "PK",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "PK",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 95,
+        "position": "PK",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5085238",
+    "recruiting": {
+      "athleteId": "5085238",
+      "city": "Phoenix",
+      "committedTo": "Mississippi State",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "04013",
+        "latitude": 33.4484367,
+        "longitude": -112.0741417
+      },
+      "id": "255711",
+      "name": "Marlon Hauck",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Desert Vista",
+      "stars": null,
+      "stateProvince": "AZ",
+      "teamSlug": "mississippi-state",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "PK",
+        "season": 2022,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "PK",
+        "season": 2023,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "PK",
+        "season": 2024,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "PK",
+        "season": 2025,
+        "team": "Mississippi State",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "PK",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5224011",
+    "recruiting": {
+      "athleteId": "5224011",
+      "city": "Brentwood",
+      "committedTo": "East Tennessee State",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "47187",
+        "latitude": 36.0325687,
+        "longitude": -86.7825235
+      },
+      "id": "257708",
+      "name": "Baylor Hayes",
+      "position": "QB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Brentwood",
+      "stars": null,
+      "stateProvince": "TN",
+      "teamSlug": "east-tennessee-state",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "East Tennessee State",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4431131",
+    "recruiting": {
+      "athleteId": "4431131",
+      "city": "Akron",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "39153",
+        "latitude": 41.083064,
+        "longitude": -81.518485
+      },
+      "id": "119065",
+      "name": "Devin Hightower",
+      "position": "OLB",
+      "ranking": 659,
+      "rating": 0.8715,
+      "recruitType": "HighSchool",
+      "school": "Archbishop Hoban",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2020
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2021,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2022,
+        "team": "Cincinnati",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2024,
+        "team": "Rhode Island",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2025,
+        "team": "UAB",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5224032",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5224041",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2024,
+        "team": "East Tennessee State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2025,
+        "team": "East Tennessee State",
+        "year": 4
+      },
+      {
+        "jersey": 88,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5193725",
+    "recruiting": {
+      "athleteId": "5193725",
+      "city": "Blanchard",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "40087",
+        "latitude": 35.1378428,
+        "longitude": -97.6580904
+      },
+      "id": "110582",
+      "name": "Ross Johnston",
+      "position": "OT",
+      "ranking": 2032,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "Blanchard",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 291,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295930",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2025,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5207653",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2025,
+        "team": "TCU",
+        "year": 1
+      },
+      {
+        "jersey": 37,
+        "position": "DB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5162991",
+    "recruiting": {
+      "athleteId": "5162991",
+      "city": "Jenks",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.0228734,
+        "longitude": -95.9683278
+      },
+      "id": "105783",
+      "name": "Ryley Kester",
+      "position": "IOL",
+      "ranking": 2333,
+      "rating": 0.8456,
+      "recruitType": "HighSchool",
+      "school": "Jenks",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 69,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5269128",
+    "recruiting": {
+      "athleteId": "5269128",
+      "city": "Owasso",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.2661536,
+        "longitude": -95.8549456
+      },
+      "id": "104991",
+      "name": "Carter Langenderfer",
+      "position": "S",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Owasso",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5258476",
+    "recruiting": {
+      "athleteId": "5258476",
+      "city": "Frisco",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "108357",
+      "name": "Tristan Lawyer",
+      "position": "LB",
+      "ranking": 2435,
+      "rating": 0.8306,
+      "recruitType": "HighSchool",
+      "school": "Frisco Wakeland",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 40,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 40,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5224053",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2025,
+        "team": "Idaho State",
+        "year": 2
+      },
+      {
+        "jersey": 19,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5302754",
+    "recruiting": {
+      "athleteId": "5302754",
+      "city": "Katy",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "212311",
+      "name": "Courtney Lewis Jr.",
+      "position": "WR",
+      "ranking": 2352,
+      "rating": 0.845,
+      "recruitType": "HighSchool",
+      "school": "Cy Lakes",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219789",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5083637",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2022,
+        "team": "Lamar",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2023,
+        "team": "Lamar",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "Louisiana Tech",
+        "year": 4
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390305",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5302745",
+    "recruiting": {
+      "athleteId": "5302745",
+      "city": "Ada",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "40123",
+        "latitude": 34.7743383,
+        "longitude": -96.6783651
+      },
+      "id": "212347",
+      "name": "Dawson Matthews",
+      "position": "IOL",
+      "ranking": 2251,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Ada",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5216786",
+    "recruiting": {
+      "athleteId": "5216786",
+      "city": "Arlington",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "107931",
+      "name": "Ian Mayes",
+      "position": "IOL",
+      "ranking": 1901,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Arlington Bowie",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 270,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5262779",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "TE",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5218766",
+    "recruiting": {
+      "athleteId": "5218766",
+      "city": "Bixby",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 35.9420431,
+        "longitude": -95.8833235
+      },
+      "id": "238088",
+      "name": "Evan McClure",
+      "position": "IOL",
+      "ranking": 2232,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Bixby",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 2
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5222554",
+    "recruiting": {
+      "athleteId": "5222554",
+      "city": "Lucas",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.0842854,
+        "longitude": -96.5766577
+      },
+      "id": "108554",
+      "name": "RJ McIntosh",
+      "position": "S",
+      "ranking": 2757,
+      "rating": 0.8204,
+      "recruitType": "HighSchool",
+      "school": "Lovejoy",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 20,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5125823",
+    "recruiting": {
+      "athleteId": "5125823",
+      "city": "Tulsa",
+      "committedTo": "Sam Houston",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "256644",
+      "name": "DJ McKinney",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Tulsa Union",
+      "stars": null,
+      "stateProvince": "OK",
+      "teamSlug": "sam-houston",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2023,
+        "team": "Sam Houston",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2024,
+        "team": "Sam Houston",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2025,
+        "team": "New Mexico",
+        "year": 3
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5390298",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "TE",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5151634",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4576218",
+    "recruiting": {
+      "athleteId": "4576218",
+      "city": "Tulsa",
+      "committedTo": "Nebraska",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "118740",
+      "name": "Sevion Morrison",
+      "position": "RB",
+      "ranking": 333,
+      "rating": 0.8978,
+      "recruitType": "HighSchool",
+      "school": "Edison",
+      "stars": 4,
+      "stateProvince": "OK",
+      "teamSlug": "nebraska",
+      "valueType": "BENCHMARK",
+      "weight": 196,
+      "year": 2020
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2021,
+        "team": "Nebraska",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2022,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2023,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2024,
+        "team": "Kansas",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 28,
+        "position": "RB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5390296",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "QB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5092825",
+    "recruiting": {
+      "athleteId": "5092825",
+      "city": "Cramerton",
+      "committedTo": "Mercer",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "37071",
+        "latitude": 35.2387504,
+        "longitude": -81.0750757
+      },
+      "id": "256075",
+      "name": "Arias Nash",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Stuart W. Cramer",
+      "stars": null,
+      "stateProvince": "NC",
+      "teamSlug": "mercer",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2022,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2024,
+        "team": "Mercer",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2025,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 10,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4910395",
+    "recruiting": {
+      "athleteId": "4910395",
+      "city": "Lawrence",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "F",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "20045",
+        "latitude": 38.9719384,
+        "longitude": -95.2359496
+      },
+      "id": "115725",
+      "name": "Tai Newhouse",
+      "position": "DL",
+      "ranking": 2962,
+      "rating": 0.7794,
+      "recruitType": "HighSchool",
+      "school": "Lawrence Free State",
+      "stars": 2,
+      "stateProvince": "KS",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2022,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5200376",
+    "recruiting": {
+      "athleteId": "5200376",
+      "city": "Houston",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "104731",
+      "name": "Reilarean Phillips",
+      "position": "LB",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Alief Elsik",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "DB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290549",
+    "recruiting": {
+      "athleteId": "5290549",
+      "city": "Shreveport",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "22017",
+        "latitude": 32.5221828,
+        "longitude": -93.7651944
+      },
+      "id": "104878",
+      "name": "Jamarcea Plater",
+      "position": "RB",
+      "ranking": 554,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Captain Shreve",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5390304",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4869966",
+    "recruiting": {
+      "athleteId": "4869966",
+      "city": "New Orleans",
+      "committedTo": "Purdue",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "114282",
+      "name": "Malachi Preciado",
+      "position": "IOL",
+      "ranking": 748,
+      "rating": 0.8715,
+      "recruitType": "HighSchool",
+      "school": "Warren Easton",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "purdue",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2022,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2023,
+        "team": "Purdue",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2024,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5230742",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296087",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5125741",
+    "recruiting": {
+      "athleteId": "5125741",
+      "city": "Owasso",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.2661536,
+        "longitude": -95.8549456
+      },
+      "id": "256747",
+      "name": "Tyler Rich",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Owasso",
+      "stars": null,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 58,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5146761",
+    "recruiting": {
+      "athleteId": "5146761",
+      "city": "Richardson",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9481789,
+        "longitude": -96.7297206
+      },
+      "id": "110115",
+      "name": "Jewlyen Roberts",
+      "position": "TE",
+      "ranking": 1464,
+      "rating": 0.8542,
+      "recruitType": "HighSchool",
+      "school": "Pearce",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5091837",
+    "recruiting": {
+      "athleteId": "5091837",
+      "city": "Tulsa",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "113263",
+      "name": "Devin Robinson",
+      "position": "S",
+      "ranking": 2133,
+      "rating": 0.823,
+      "recruitType": "HighSchool",
+      "school": "Tulsa Union",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5229589",
+    "recruiting": {
+      "athleteId": "5229589",
+      "city": "Deland",
+      "committedTo": "Bethune-Cookman",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12127",
+        "latitude": 29.0283213,
+        "longitude": -81.3031098
+      },
+      "id": "237944",
+      "name": "Javon Ross",
+      "position": "ATH",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Deland",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "bethune-cookman",
+      "valueType": "BENCHMARK",
+      "weight": 163,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2024,
+        "team": "Bethune-Cookman",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "Bethune-Cookman",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5281030",
+    "recruiting": {
+      "athleteId": "5281030",
+      "city": "Lawton",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "40031",
+        "latitude": 34.6086854,
+        "longitude": -98.3903305
+      },
+      "id": "105565",
+      "name": "Joshua Rushing",
+      "position": "WR",
+      "ranking": 2288,
+      "rating": 0.8467,
+      "recruitType": "HighSchool",
+      "school": "MacArthur",
+      "stars": 3,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5183808",
+    "recruiting": {
+      "athleteId": "5183808",
+      "city": "Kennedale",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.646801,
+        "longitude": -97.2258465
+      },
+      "id": "109914",
+      "name": "Dedaunte Scott",
+      "position": "CB",
+      "ranking": 1263,
+      "rating": 0.8594,
+      "recruitType": "HighSchool",
+      "school": "Kennedale",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5217701",
+    "recruiting": {
+      "athleteId": "5217701",
+      "city": "Denton",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.2150386,
+        "longitude": -97.1330516
+      },
+      "id": "108524",
+      "name": "Jackson Shockley",
+      "position": "TE",
+      "ranking": 2731,
+      "rating": 0.8236,
+      "recruitType": "HighSchool",
+      "school": "Denton Guyer",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219783",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "P",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "P",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 44,
+        "position": "P",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4710860",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2021,
+        "team": "Akron",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Eastern Michigan",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "West Virginia",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5146727",
+    "recruiting": {
+      "athleteId": "5146727",
+      "city": "Crandall",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48257",
+        "latitude": 32.6279113,
+        "longitude": -96.4558196
+      },
+      "id": "109509",
+      "name": "Josh Smith",
+      "position": "WR",
+      "ranking": 824,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Crandall",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5258019",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5390303",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4871069",
+    "recruiting": {
+      "athleteId": "4871069",
+      "city": "Tulsa",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "B",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "111467",
+      "name": "Micah Tease",
+      "position": "ATH",
+      "ranking": 210,
+      "rating": 0.921,
+      "recruitType": "HighSchool",
+      "school": "Booker T. Washington",
+      "stars": 4,
+      "stateProvince": "OK",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "Texas A&M",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5121616",
+    "recruiting": {
+      "athleteId": "5121616",
+      "city": "Tulsa",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": null,
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "40143",
+        "latitude": 36.1556805,
+        "longitude": -95.9929113
+      },
+      "id": "256750",
+      "name": "Grayson Tempest",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Tulsa Union",
+      "stars": null,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 19,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5222570",
+    "recruiting": {
+      "athleteId": "5222570",
+      "city": "Fort Worth",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "108155",
+      "name": "Luke Tevis",
+      "position": "TE",
+      "ranking": 2110,
+      "rating": 0.84,
+      "recruitType": "HighSchool",
+      "school": "Paschal",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4429028",
+    "recruiting": {
+      "athleteId": "4429028",
+      "city": "Duncanville",
+      "committedTo": "Auburn",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "118608",
+      "name": "Chris Thompson Jr.",
+      "position": "S",
+      "ranking": 201,
+      "rating": 0.9215,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "auburn",
+      "valueType": "BENCHMARK",
+      "weight": 199,
+      "year": 2020
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2021,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2022,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2023,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5163541",
+    "recruiting": {
+      "athleteId": "5163541",
+      "city": "Australia",
+      "committedTo": "Bethune-Cookman",
+      "country": "AUS",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "257134",
+      "name": "Max Tulen",
+      "position": "P",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "ProKick Australia",
+      "stars": null,
+      "stateProvince": null,
+      "teamSlug": "bethune-cookman",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "P",
+        "season": 2023,
+        "team": "Bethune-Cookman",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "P",
+        "season": 2025,
+        "team": "Bethune-Cookman",
+        "year": 3
+      },
+      {
+        "jersey": 29,
+        "position": "P",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4918128",
+    "recruiting": {
+      "athleteId": "4918128",
+      "city": "Star City",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "05079",
+        "latitude": 33.9428794,
+        "longitude": -91.8434668
+      },
+      "id": "112023",
+      "name": "CJ Turner",
+      "position": "LB",
+      "ranking": 777,
+      "rating": 0.8728,
+      "recruitType": "HighSchool",
+      "school": "Star City",
+      "stars": 3,
+      "stateProvince": "AR",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 35,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147932",
+    "recruiting": {
+      "athleteId": "5147932",
+      "city": "Flower Mound",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.0283854,
+        "longitude": -97.0867203
+      },
+      "id": "110481",
+      "name": "Will Upshaw",
+      "position": "EDGE",
+      "ranking": 1874,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Flower Mound Marcus",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "DL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 41,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 41,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5265523",
+    "recruiting": {
+      "athleteId": "5265523",
+      "city": "Longview",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48183",
+        "latitude": 32.5007031,
+        "longitude": -94.74049
+      },
+      "id": "220999",
+      "name": "Kelvin Washington",
+      "position": "RB",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Longview",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 1
+      },
+      {
+        "jersey": 22,
+        "position": "RB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5390299",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5157287",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "WR",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5193225",
+    "recruiting": {
+      "athleteId": "5193225",
+      "city": "Arlington",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "110786",
+      "name": "Maruio White Jr.",
+      "position": "EDGE",
+      "ranking": 2310,
+      "rating": 0.8296,
+      "recruitType": "HighSchool",
+      "school": "Mansfield Summit",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "DL",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 30,
+        "position": "DL",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 2
+      },
+      {
+        "jersey": 30,
+        "position": "DL",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5155505",
+    "recruiting": {
+      "athleteId": "5155505",
+      "city": "Trophy Club",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.00367,
+        "longitude": -97.20303354151261
+      },
+      "id": "110280",
+      "name": "Ashton Williams",
+      "position": "S",
+      "ranking": 1674,
+      "rating": 0.8489,
+      "recruitType": "HighSchool",
+      "school": "Byron Nelson",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 5,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4683139",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2021,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2022,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2023,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2024,
+        "team": "Oklahoma State",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5152004",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2023,
+        "team": "Abilene Christian",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2024,
+        "team": "Abilene Christian",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2025,
+        "team": "Abilene Christian",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079744",
+    "recruiting": {
+      "athleteId": "5079744",
+      "city": "Tyler",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48423",
+        "latitude": 32.3512601,
+        "longitude": -95.3010624
+      },
+      "id": "109856",
+      "name": "Zach Williams",
+      "position": "CB",
+      "ranking": 1183,
+      "rating": 0.8614,
+      "recruitType": "HighSchool",
+      "school": "Tyler High",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4565355",
+    "recruiting": {
+      "athleteId": "4565355",
+      "city": "Macon",
+      "committedTo": "Indiana",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "13021",
+        "latitude": 32.8406946,
+        "longitude": -83.6324022
+      },
+      "id": "119472",
+      "name": "Dexter Williams II",
+      "position": "DUAL",
+      "ranking": 1081,
+      "rating": 0.8544,
+      "recruitType": "HighSchool",
+      "school": "Mount De Sales Academy",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "indiana",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2020
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2021,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2022,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2023,
+        "team": "Indiana",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2024,
+        "team": "Georgia Southern",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2025,
+        "team": "Kennesaw State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "QB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4710276",
+    "recruiting": {
+      "athleteId": "4710276",
+      "city": "St. Louis",
+      "committedTo": "Murray State",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "29510",
+        "latitude": 38.6268039,
+        "longitude": -90.1994097
+      },
+      "id": "114846",
+      "name": "Caldra Williford",
+      "position": "S",
+      "ranking": 1341,
+      "rating": 0.8478,
+      "recruitType": "HighSchool",
+      "school": "Lutheran North",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "murray-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2022
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2022,
+        "team": "Murray State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2023,
+        "team": "Murray State",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2024,
+        "team": "Tennessee Tech",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2025,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "CB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151627",
+    "recruiting": {
+      "athleteId": "5151627",
+      "city": "Duncanville",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "113237",
+      "name": "Elijah Wilson",
+      "position": "LB",
+      "ranking": 2103,
+      "rating": 0.8244,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 3
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151622",
+    "recruiting": null,
+    "team": "Tulsa",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "Tulsa",
+        "year": 4
+      }
+    ]
+  }
+]

@@ -24,6 +24,9 @@ For season `{season}`, the application reads:
 - `data/published/{season}/national/teams.json` for national and conference comparison populations;
 - `data/published/{season}/national/conferences.json` for denominator-weighted conference summaries;
 - opponent team artifacts when a matchup needs deeper context.
+- `data/published/{season}/michigan/projected-lineup.json` for the explicitly labeled preseason lineup projection.
+- `data/published/{season}/michigan/game-predictions.json` for immutable frozen-model game margins.
+- `data/published/{season}/michigan/outlook.json` for timestamped, sourced market benchmarks such as CFP qualification odds.
 
 The server-side adapter in `website/lib/michigan.ts` resolves the latest published season and exposes typed application data. Browser components must not read raw or processed research files directly.
 
@@ -32,6 +35,10 @@ The server-side adapter in `website/lib/michigan.ts` resolves the latest publish
 Application joins use `season`, `team_id`, and `game_id`. Slugs are deterministic URL identifiers, not relational keys. The website may sort, select, filter, format, and explain published values. It must not reconstruct success rate, explosiveness, possessions, SRS, opponent adjustments, conference summaries, ranks, or percentiles. Missing analytics must be added to the publisher rather than recreated in TypeScript.
 
 Small presentation summaries, such as counting wins from canonical game rows, are permitted because they do not redefine a football metric.
+
+Preseason lineup order is also owned by Python. The `michigan-preseason-lineup-v1` artifact selects within roster position groups using published prospect grade, then roster class year, then jersey number. It is labeled `PROJECTED`, is not an official depth chart, and must render as unavailable rather than being reconstructed by the website when absent.
+
+Game predictions preserve the frozen 2026 prospective model contract. They may expose predicted margin and winner, but no win probability until a separate probability calibration passes validation. Season-level market probabilities use `BENCHMARK`, retain their source and timestamp, and must never be presented as SOAR model output. CFP format facts and market benchmarks do not authorize an invented expected-wins or selection-committee simulation.
 
 ## Product focus
 

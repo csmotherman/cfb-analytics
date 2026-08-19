@@ -1,0 +1,4578 @@
+[
+  {
+    "playerId": "5381512",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219393",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2024,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2025,
+        "team": "Kansas State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5121988",
+    "recruiting": {
+      "athleteId": "5121988",
+      "city": "Fort Worth",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.753177,
+        "longitude": -97.3327459
+      },
+      "id": "112383",
+      "name": "Kevin Allen",
+      "position": "DL",
+      "ranking": 1155,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Everman",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2023,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 93,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5216561",
+    "recruiting": {
+      "athleteId": "5216561",
+      "city": "New Orleans",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "22071",
+        "latitude": 29.9499323,
+        "longitude": -90.0701156
+      },
+      "id": "104071",
+      "name": "Jakai Anderson",
+      "position": "WR",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "McDonogh 35",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4923043",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2023,
+        "team": "Clemson",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2024,
+        "team": "Clemson",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2025,
+        "team": "Clemson",
+        "year": 3
+      },
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5381510",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5381521",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "PK",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219237",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "S",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "S",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 38,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5147100",
+    "recruiting": {
+      "athleteId": "5147100",
+      "city": "Chattanooga",
+      "committedTo": "Syracuse",
+      "country": "USA",
+      "grade": "B",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "47065",
+        "latitude": 35.0457219,
+        "longitude": -85.3094883
+      },
+      "id": "109016",
+      "name": "Marcellus Barnes Jr.",
+      "position": "CB",
+      "ranking": 318,
+      "rating": 0.905,
+      "recruitType": "HighSchool",
+      "school": "McCallie School",
+      "stars": 4,
+      "stateProvince": "TN",
+      "teamSlug": "syracuse",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 8,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5158941",
+    "recruiting": {
+      "athleteId": "5158941",
+      "city": "Yoakum",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48123",
+        "latitude": 29.289352,
+        "longitude": -97.1492978
+      },
+      "id": "104222",
+      "name": "X'Zavier Barnett",
+      "position": "ATH",
+      "ranking": 608,
+      "rating": 0.8844,
+      "recruitType": "HighSchool",
+      "school": "Yoakum",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4880599",
+    "recruiting": {
+      "athleteId": "4880599",
+      "city": "Durango",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "08067",
+        "latitude": 37.2713951,
+        "longitude": -107.8815978
+      },
+      "id": "111628",
+      "name": "Joshua Bates",
+      "position": "IOL",
+      "ranking": 381,
+      "rating": 0.8958,
+      "recruitType": "HighSchool",
+      "school": "Durango",
+      "stars": 4,
+      "stateProvince": "CO",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 64,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5142227",
+    "recruiting": {
+      "athleteId": "5142227",
+      "city": "DeSoto",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6061241,
+        "longitude": -96.865612653687
+      },
+      "id": "109585",
+      "name": "Brandon Booker",
+      "position": "LB",
+      "ranking": 899,
+      "rating": 0.8706,
+      "recruitType": "HighSchool",
+      "school": "DeSoto",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5160130",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2023,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5381516",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5164352",
+    "recruiting": {
+      "athleteId": "5164352",
+      "city": "Arlington",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.701938999999996,
+        "longitude": -97.10562379033699
+      },
+      "id": "106893",
+      "name": "Carterrious Brown",
+      "position": "WR",
+      "ranking": 706,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Arlington Seguin",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 11,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4685312",
+    "recruiting": {
+      "athleteId": "4685312",
+      "city": "Maumelle",
+      "committedTo": "Arkansas",
+      "country": "USA",
+      "grade": "C",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "05119",
+        "latitude": 34.8667565,
+        "longitude": -92.4043219
+      },
+      "id": "113882",
+      "name": "Andrew Chamblee",
+      "position": "OT",
+      "ranking": 339,
+      "rating": 0.8983,
+      "recruitType": "HighSchool",
+      "school": "Maumelle",
+      "stars": 4,
+      "stateProvince": "AR",
+      "teamSlug": "arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 305,
+      "year": 2022
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2022,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5381514",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5207842",
+    "recruiting": {
+      "athleteId": "5207842",
+      "city": "Cibolo",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "B",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "48187",
+        "latitude": 29.5707831,
+        "longitude": -98.2330927
+      },
+      "id": "106345",
+      "name": "Jalen Cooper",
+      "position": "WR",
+      "ranking": 154,
+      "rating": 0.935,
+      "recruitType": "HighSchool",
+      "school": "Cibolo Steele",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5290936",
+    "recruiting": {
+      "athleteId": "5290936",
+      "city": "Richardson",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9481789,
+        "longitude": -96.7297206
+      },
+      "id": "105761",
+      "name": "Tyrone Crethers",
+      "position": "WR",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Richardson Berkner",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5156287",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2024,
+        "team": "Louisiana Tech",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2025,
+        "team": "Louisiana Tech",
+        "year": 3
+      },
+      {
+        "jersey": 97,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4916238",
+    "recruiting": {
+      "athleteId": "4916238",
+      "city": "Waxahachie",
+      "committedTo": "LSU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48139",
+        "latitude": 32.3944908,
+        "longitude": -96.8439365
+      },
+      "id": "114027",
+      "name": "Jaelyn Davis-Robinson",
+      "position": "CB",
+      "ranking": 483,
+      "rating": 0.8856,
+      "recruitType": "HighSchool",
+      "school": "Waxahachie",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "lsu",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2022,
+        "team": "LSU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 13,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5153680",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 44,
+        "position": "CB",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "CB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "CB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 44,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209116",
+    "recruiting": {
+      "athleteId": "5209116",
+      "city": "Danville",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06013",
+        "latitude": 37.8215929,
+        "longitude": -121.9999606
+      },
+      "id": "104534",
+      "name": "Dakota Dickson",
+      "position": "DL",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Monte Vista",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290747",
+    "recruiting": {
+      "athleteId": "5290747",
+      "city": "Mesquite",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7666103,
+        "longitude": -96.599472
+      },
+      "id": "104483",
+      "name": "Keith Dotie",
+      "position": "DL",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Mesquite Poteet",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160128",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2023,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5161014",
+    "recruiting": {
+      "athleteId": "5161014",
+      "city": "Flower Mound",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "B",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "48121",
+        "latitude": 33.0283854,
+        "longitude": -97.0867203
+      },
+      "id": "104043",
+      "name": "Drew Evers",
+      "position": "IOL",
+      "ranking": 222,
+      "rating": 0.9196,
+      "recruitType": "HighSchool",
+      "school": "Flower Mound",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160121",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2023,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 25,
+        "position": "RB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5084086",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2022,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141460",
+    "recruiting": {
+      "athleteId": "5141460",
+      "city": "Anna",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.34928,
+        "longitude": -96.54938
+      },
+      "id": "106875",
+      "name": "Zadian Gentry",
+      "position": "CB",
+      "ranking": 692,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Anna",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 2,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5381511",
+    "recruiting": {
+      "athleteId": "5381511",
+      "city": "Forney",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70.5,
+      "hometownInfo": {
+        "fipsCode": "48257",
+        "latitude": 32.747893,
+        "longitude": -96.4719289
+      },
+      "id": "104535",
+      "name": "Deuce Gilbert",
+      "position": "CB",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "North Forney",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5204683",
+    "recruiting": {
+      "athleteId": "5204683",
+      "city": "Bauxite",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "B",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": "05125",
+        "latitude": 34.5556489,
+        "longitude": -92.5212702
+      },
+      "id": "104073",
+      "name": "Evan Goodwin",
+      "position": "OT",
+      "ranking": 324,
+      "rating": 0.9038,
+      "recruitType": "HighSchool",
+      "school": "Bauxite",
+      "stars": 4,
+      "stateProvince": "AR",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 325,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 60,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209408",
+    "recruiting": {
+      "athleteId": "5209408",
+      "city": "Miami",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "104086",
+      "name": "Kenneth Goodwin III",
+      "position": "LB",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Miami Edison",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5207927",
+    "recruiting": {
+      "athleteId": "5207927",
+      "city": "Conroe",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71.5,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.3118769,
+        "longitude": -95.4560512
+      },
+      "id": "106644",
+      "name": "Dramekco Green",
+      "position": "RB",
+      "ranking": 454,
+      "rating": 0.8918,
+      "recruitType": "HighSchool",
+      "school": "Conroe",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870776",
+    "recruiting": {
+      "athleteId": "4870776",
+      "city": "Longview",
+      "committedTo": "Alabama",
+      "country": "USA",
+      "grade": "S",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48183",
+        "latitude": 32.5007031,
+        "longitude": -94.74049
+      },
+      "id": "111287",
+      "name": "Jalen Hale",
+      "position": "WR",
+      "ranking": 39,
+      "rating": 0.9841,
+      "recruitType": "HighSchool",
+      "school": "Longview",
+      "stars": 5,
+      "stateProvince": "TX",
+      "teamSlug": "alabama",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2023,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2024,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2025,
+        "team": "Alabama",
+        "year": 3
+      },
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5264801",
+    "recruiting": {
+      "athleteId": "5264801",
+      "city": "Humble",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.9988312,
+        "longitude": -95.2621553
+      },
+      "id": "104547",
+      "name": "Amontre Harris",
+      "position": "EDGE",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "Summer Creek",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 213,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141487",
+    "recruiting": {
+      "athleteId": "5141487",
+      "city": "Bradenton",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "B",
+      "height": 72.5,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "106468",
+      "name": "Ty Hawkins",
+      "position": "QB",
+      "ranking": 278,
+      "rating": 0.9091,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 1,
+        "position": "QB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5381518",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5164646",
+    "recruiting": {
+      "athleteId": "5164646",
+      "city": "Corona",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06065",
+        "latitude": 33.8752945,
+        "longitude": -117.5664449
+      },
+      "id": "107338",
+      "name": "Drew Hill",
+      "position": "IOL",
+      "ranking": 1173,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "Corona Centennial",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 286,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5189535",
+    "recruiting": {
+      "athleteId": "5189535",
+      "city": "Duncanville",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "106978",
+      "name": "Javion Holiday",
+      "position": "CB",
+      "ranking": 795,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 182,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5214468",
+    "recruiting": {
+      "athleteId": "5214468",
+      "city": "Honolulu",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "107324",
+      "name": "Abel Hoopii",
+      "position": "IOL",
+      "ranking": 1161,
+      "rating": 0.8642,
+      "recruitType": "HighSchool",
+      "school": "Farrington",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 330,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5139854",
+    "recruiting": {
+      "athleteId": "5139854",
+      "city": "Dallas",
+      "committedTo": "Texas Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "109692",
+      "name": "Trey Jackson",
+      "position": "TE",
+      "ranking": 1008,
+      "rating": 0.8672,
+      "recruitType": "HighSchool",
+      "school": "South Oak Cliff",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas-tech",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Texas Tech",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Texas Tech",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4431393",
+    "recruiting": {
+      "athleteId": "4431393",
+      "city": "Douglasville",
+      "committedTo": "Georgia",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13097",
+        "latitude": 33.7514966,
+        "longitude": -84.7477136
+      },
+      "id": "115870",
+      "name": "Jonathan Jefferson",
+      "position": "DL",
+      "ranking": 129,
+      "rating": 0.9407,
+      "recruitType": "HighSchool",
+      "school": "Douglas County",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "georgia",
+      "valueType": "BENCHMARK",
+      "weight": 255,
+      "year": 2021
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2021,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2022,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2023,
+        "team": "Georgia",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 94,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5084084",
+    "recruiting": {
+      "athleteId": "5084084",
+      "city": "Dallas",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "115068",
+      "name": "Kevin Jennings",
+      "position": "QB",
+      "ranking": 1596,
+      "rating": 0.8378,
+      "recruitType": "HighSchool",
+      "school": "South Oak Cliff",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2022,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "QB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5381522",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5381517",
+    "recruiting": {
+      "athleteId": "5381517",
+      "city": "Euless",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.8457865,
+        "longitude": -97.0667142473263
+      },
+      "id": "104476",
+      "name": "Toa Katoa",
+      "position": "IOL",
+      "ranking": 1030,
+      "rating": 0.8722,
+      "recruitType": "HighSchool",
+      "school": "Trinity",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 365,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5280790",
+    "recruiting": {
+      "athleteId": "5280790",
+      "city": "Spring",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 69.5,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 30.0798826,
+        "longitude": -95.4172549
+      },
+      "id": "193580",
+      "name": "EJ Kelly",
+      "position": "RB",
+      "ranking": 486,
+      "rating": 0.8901,
+      "recruitType": "HighSchool",
+      "school": "Klein",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5076108",
+    "recruiting": {
+      "athleteId": "5076108",
+      "city": "Katy",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.7857853,
+        "longitude": -95.8243956
+      },
+      "id": "111880",
+      "name": "Alex Kilgore",
+      "position": "LB",
+      "ranking": 634,
+      "rating": 0.8786,
+      "recruitType": "HighSchool",
+      "school": "Katy Paetow",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 211,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 54,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5381513",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5121750",
+    "recruiting": {
+      "athleteId": "5121750",
+      "city": "Smyrna",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "10001",
+        "latitude": 39.2998339,
+        "longitude": -75.6046494
+      },
+      "id": "257049",
+      "name": "Yamir Knight",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Smyrna",
+      "stars": null,
+      "stateProvince": "DE",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870849",
+    "recruiting": {
+      "athleteId": "4870849",
+      "city": "Troy",
+      "committedTo": "Missouri",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "29113",
+        "latitude": 38.9794923,
+        "longitude": -90.9806954
+      },
+      "id": "111900",
+      "name": "Jahkai Lang",
+      "position": "EDGE",
+      "ranking": 655,
+      "rating": 0.8778,
+      "recruitType": "HighSchool",
+      "school": "Troy Buchanan",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "missouri",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2023,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 52,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5075537",
+    "recruiting": {
+      "athleteId": "5075537",
+      "city": "Bradenton",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12081",
+        "latitude": 27.4989278,
+        "longitude": -82.5748194
+      },
+      "id": "112206",
+      "name": "Jarvis Lee",
+      "position": "CB",
+      "ranking": 958,
+      "rating": 0.8656,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 173,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2023,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5161878",
+    "recruiting": {
+      "athleteId": "5161878",
+      "city": "Redondo Beach",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.8455911,
+        "longitude": -118.3886766
+      },
+      "id": "105782",
+      "name": "Cole Leinart",
+      "position": "QB",
+      "ranking": 2828,
+      "rating": 0.8333,
+      "recruitType": "HighSchool",
+      "school": "Redondo Union",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219228",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295343",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5225948",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2025,
+        "team": "Bowling Green",
+        "year": 2
+      },
+      {
+        "jersey": 12,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295344",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 86,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079523",
+    "recruiting": {
+      "athleteId": "5079523",
+      "city": "Tyler",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48423",
+        "latitude": 32.3512601,
+        "longitude": -95.3010624
+      },
+      "id": "109153",
+      "name": "Derrick McFall",
+      "position": "ATH",
+      "ranking": 456,
+      "rating": 0.8919,
+      "recruitType": "HighSchool",
+      "school": "Tyler High",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295341",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "P",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 43,
+        "position": "P",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4870843",
+    "recruiting": {
+      "athleteId": "4870843",
+      "city": "Sweden",
+      "committedTo": "Texas A&M",
+      "country": "SWE",
+      "grade": "B",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "113759",
+      "name": "Theo Melin Ohrstrom",
+      "position": "TE",
+      "ranking": 216,
+      "rating": 0.9162,
+      "recruitType": "HighSchool",
+      "school": "RIG Academy",
+      "stars": 4,
+      "stateProvince": null,
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2022
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2022,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2024,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2025,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5079533",
+    "recruiting": {
+      "athleteId": "5079533",
+      "city": "The Woodlands",
+      "committedTo": "Wisconsin",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48339",
+        "latitude": 30.1734194,
+        "longitude": -95.504686
+      },
+      "id": "109160",
+      "name": "Mabrey Mettauer",
+      "position": "QB",
+      "ranking": 464,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "The Woodlands",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "wisconsin",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "QB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 2
+      },
+      {
+        "jersey": null,
+        "position": "QB",
+        "season": 2025,
+        "team": "Sam Houston",
+        "year": 2
+      },
+      {
+        "jersey": null,
+        "position": "QB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5245414",
+    "recruiting": {
+      "athleteId": "5245414",
+      "city": "Kaufman",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "48257",
+        "latitude": 32.5867797,
+        "longitude": -96.3086768
+      },
+      "id": "104055",
+      "name": "Aljour Miles II",
+      "position": "WR",
+      "ranking": 469,
+      "rating": 0.8911,
+      "recruitType": "HighSchool",
+      "school": "Kaufman",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4921501",
+    "recruiting": {
+      "athleteId": "4921501",
+      "city": "DeSoto",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6061241,
+        "longitude": -96.865612653687
+      },
+      "id": "112630",
+      "name": "Jaden Milliner-Jones",
+      "position": "S",
+      "ranking": 1403,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "DeSoto",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "S",
+        "season": 2023,
+        "team": "Colorado",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "S",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "S",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4917622",
+    "recruiting": {
+      "athleteId": "4917622",
+      "city": "Frisco",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "D",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "112890",
+      "name": "Brandon Miyazono",
+      "position": "LB",
+      "ranking": 1680,
+      "rating": 0.8411,
+      "recruitType": "HighSchool",
+      "school": "Frisco",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 204,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 29,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5155011",
+    "recruiting": {
+      "athleteId": "5155011",
+      "city": "Carrollton",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "D",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.9537349,
+        "longitude": -96.8902816
+      },
+      "id": "110467",
+      "name": "Jaylen Moses",
+      "position": "S",
+      "ranking": 1861,
+      "rating": 0.8417,
+      "recruitType": "HighSchool",
+      "school": "Newman Smith",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 26,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4941019",
+    "recruiting": {
+      "athleteId": "4941019",
+      "city": "Dallas",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "D",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "112780",
+      "name": "Abdul Muhammad",
+      "position": "S",
+      "ranking": 1573,
+      "rating": 0.8458,
+      "recruitType": "HighSchool",
+      "school": "South Oak Cliff",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2023,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 27,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5147186",
+    "recruiting": {
+      "athleteId": "5147186",
+      "city": "Mesquite",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7666103,
+        "longitude": -96.599472
+      },
+      "id": "237903",
+      "name": "William Nettles",
+      "position": "CB",
+      "ranking": 947,
+      "rating": 0.8689,
+      "recruitType": "HighSchool",
+      "school": "Dallas Christian School",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 0,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4685485",
+    "recruiting": {
+      "athleteId": "4685485",
+      "city": "Norcross",
+      "committedTo": "Tennessee",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.9412127,
+        "longitude": -84.2135309
+      },
+      "id": "113686",
+      "name": "Addison Nichols",
+      "position": "IOL",
+      "ranking": 143,
+      "rating": 0.9422,
+      "recruitType": "HighSchool",
+      "school": "Greater Atlanta Christian School",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "tennessee",
+      "valueType": "BENCHMARK",
+      "weight": 318,
+      "year": 2022
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2022,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2023,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2024,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 63,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5209182",
+    "recruiting": {
+      "athleteId": "5209182",
+      "city": "Inglewood",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06037",
+        "latitude": 33.9562003,
+        "longitude": -118.353132
+      },
+      "id": "105028",
+      "name": "Andre Nickerson Jr.",
+      "position": "TE",
+      "ranking": 966,
+      "rating": 0.8733,
+      "recruitType": "HighSchool",
+      "school": "Inglewood",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141614",
+    "recruiting": {
+      "athleteId": "5141614",
+      "city": "Houston",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "A",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "106271",
+      "name": "Dramodd Odoms",
+      "position": "OT",
+      "ranking": 80,
+      "rating": 0.9591,
+      "recruitType": "HighSchool",
+      "school": "Houston Lamar",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 300,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5381520",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "PK",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870954",
+    "recruiting": {
+      "athleteId": "4870954",
+      "city": "Lynn Haven",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12005",
+        "latitude": 30.2454776,
+        "longitude": -85.648261
+      },
+      "id": "112002",
+      "name": "Randy Pittman Jr.",
+      "position": "TE",
+      "ranking": 761,
+      "rating": 0.8736,
+      "recruitType": "HighSchool",
+      "school": "Mosley",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "TE",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "TE",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "TE",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5141639",
+    "recruiting": {
+      "athleteId": "5141639",
+      "city": "Duncanville",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "107056",
+      "name": "Tyren Polley",
+      "position": "S",
+      "ranking": 880,
+      "rating": 0.8719,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "S",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4899368",
+    "recruiting": {
+      "athleteId": "4899368",
+      "city": "Naples",
+      "committedTo": "NC State",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12021",
+        "latitude": 26.1421976,
+        "longitude": -81.7942944
+      },
+      "id": "111736",
+      "name": "Kendrick Raphael",
+      "position": "RB",
+      "ranking": 488,
+      "rating": 0.8875,
+      "recruitType": "HighSchool",
+      "school": "Naples",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "nc-state",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2023,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2024,
+        "team": "NC State",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2025,
+        "team": "California",
+        "year": 4
+      },
+      {
+        "jersey": 6,
+        "position": "RB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5162847",
+    "recruiting": {
+      "athleteId": "5162847",
+      "city": "Harrison",
+      "committedTo": "Buffalo",
+      "country": "USA",
+      "grade": null,
+      "height": 67,
+      "hometownInfo": {
+        "fipsCode": "36119",
+        "latitude": 40.9689871,
+        "longitude": -73.71263
+      },
+      "id": "256567",
+      "name": "Nick Reed",
+      "position": "K",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Harrison",
+      "stars": null,
+      "stateProvince": "NY",
+      "teamSlug": "buffalo",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2023,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2024,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2025,
+        "team": "New Hampshire",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "PK",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5141619",
+    "recruiting": {
+      "athleteId": "5141619",
+      "city": "DeSoto",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6061241,
+        "longitude": -96.865612653687
+      },
+      "id": "107087",
+      "name": "Sael Reyes",
+      "position": "S",
+      "ranking": 914,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "DeSoto",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 22,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5244759",
+    "recruiting": {
+      "athleteId": "5244759",
+      "city": "Dallas",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "B",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "104035",
+      "name": "Christian Rhodes",
+      "position": "RB",
+      "ranking": 173,
+      "rating": 0.9318,
+      "recruitType": "HighSchool",
+      "school": "Lake Highlands",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "RB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5295336",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4920161",
+    "recruiting": {
+      "athleteId": "4920161",
+      "city": "Frisco",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.1506744,
+        "longitude": -96.8236116
+      },
+      "id": "112387",
+      "name": "Tripp Riordan",
+      "position": "TE",
+      "ranking": 1157,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Frisco Wakeland",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2023,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5084103",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2022,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5212665",
+    "recruiting": {
+      "athleteId": "5212665",
+      "city": "Snellville",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.857328,
+        "longitude": -84.0199108
+      },
+      "id": "107351",
+      "name": "Jalen Shivers",
+      "position": "EDGE",
+      "ranking": 1173,
+      "rating": 0.8639,
+      "recruitType": "HighSchool",
+      "school": "South Gwinnett",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 90,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141653",
+    "recruiting": {
+      "athleteId": "5141653",
+      "city": "DeSoto",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "B",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6061241,
+        "longitude": -96.865612653687
+      },
+      "id": "106537",
+      "name": "Daylon Singleton",
+      "position": "WR",
+      "ranking": 347,
+      "rating": 0.9003,
+      "recruitType": "HighSchool",
+      "school": "DeSoto",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 165,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5148841",
+    "recruiting": {
+      "athleteId": "5148841",
+      "city": "Lilburn",
+      "committedTo": "South Florida",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "13135",
+        "latitude": 33.8901036,
+        "longitude": -84.1429719
+      },
+      "id": "110007",
+      "name": "Ira Singleton",
+      "position": "EDGE",
+      "ranking": 1359,
+      "rating": 0.8569,
+      "recruitType": "HighSchool",
+      "school": "Parkview",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "south-florida",
+      "valueType": "BENCHMARK",
+      "weight": 213,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2024,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2025,
+        "team": "South Florida",
+        "year": 3
+      },
+      {
+        "jersey": 9,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151621",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": null,
+        "position": "PK",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": null,
+        "position": "PK",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": null,
+        "position": "PK",
+        "season": 2025,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": null,
+        "position": "PK",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5381519",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5155519",
+    "recruiting": {
+      "athleteId": "5155519",
+      "city": "Summerville",
+      "committedTo": "East Carolina",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "45035",
+        "latitude": 33.0206179,
+        "longitude": -80.1747537
+      },
+      "id": "109577",
+      "name": "Yannick Smith",
+      "position": "WR",
+      "ranking": 890,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Summerville",
+      "stars": 3,
+      "stateProvince": "SC",
+      "teamSlug": "east-carolina",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "East Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "East Carolina",
+        "year": 3
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5295337",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4871060",
+    "recruiting": {
+      "athleteId": "4871060",
+      "city": "New Albany",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "18043",
+        "latitude": 38.2856247,
+        "longitude": -85.8241312
+      },
+      "id": "111754",
+      "name": "Woo Spencer",
+      "position": "DL",
+      "ranking": 507,
+      "rating": 0.8861,
+      "recruitType": "HighSchool",
+      "school": "New Albany",
+      "stars": 3,
+      "stateProvince": "IN",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2023,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 55,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4871075",
+    "recruiting": {
+      "athleteId": "4871075",
+      "city": "League City",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "B",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.5074538,
+        "longitude": -95.0949303
+      },
+      "id": "113845",
+      "name": "Noah Thomas",
+      "position": "WR",
+      "ranking": 302,
+      "rating": 0.9011,
+      "recruitType": "HighSchool",
+      "school": "Clear Springs",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2023,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2024,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2025,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5151396",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2023,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2024,
+        "team": "Colorado State",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 48,
+        "position": "LS",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5159083",
+    "recruiting": {
+      "athleteId": "5159083",
+      "city": "Duncanville",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.6518004,
+        "longitude": -96.9083366
+      },
+      "id": "104256",
+      "name": "Zack Turner",
+      "position": "TE",
+      "ranking": 704,
+      "rating": 0.8811,
+      "recruitType": "HighSchool",
+      "school": "Duncanville",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5147691",
+    "recruiting": {
+      "athleteId": "5147691",
+      "city": "Daphne",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01003",
+        "latitude": 30.6035255,
+        "longitude": -87.9036047
+      },
+      "id": "110255",
+      "name": "Graham Uter",
+      "position": "IOL",
+      "ranking": 1591,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Bayside Academy",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2024
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 50,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5216697",
+    "recruiting": {
+      "athleteId": "5216697",
+      "city": "Daphne",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "01003",
+        "latitude": 30.6035255,
+        "longitude": -87.9036047
+      },
+      "id": "107801",
+      "name": "Miles Uter",
+      "position": "TE",
+      "ranking": 1694,
+      "rating": 0.8514,
+      "recruitType": "HighSchool",
+      "school": "Bayside Academy",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 89,
+        "position": "TE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5159085",
+    "recruiting": {
+      "athleteId": "5159085",
+      "city": "Orange",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.7872568,
+        "longitude": -117.8503088
+      },
+      "id": "104010",
+      "name": "Sam Utu",
+      "position": "IOL",
+      "ranking": 398,
+      "rating": 0.8969,
+      "recruitType": "HighSchool",
+      "school": "Orange Lutheran",
+      "stars": 4,
+      "stateProvince": "CA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 320,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4608871",
+    "recruiting": {
+      "athleteId": "4608871",
+      "city": "Marietta",
+      "committedTo": "Liberty",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "13067",
+        "latitude": 33.9528472,
+        "longitude": -84.5496148
+      },
+      "id": "120981",
+      "name": "Aakil Washington",
+      "position": "SDE",
+      "ranking": 2641,
+      "rating": 0.8081,
+      "recruitType": "HighSchool",
+      "school": "Wheeler",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "liberty",
+      "valueType": "BENCHMARK",
+      "weight": 218,
+      "year": 2020
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2021,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2022,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2023,
+        "team": "Liberty",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2024,
+        "team": "South Alabama",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5219227",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "CB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "CB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "CB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4571284",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DE",
+        "season": 2022,
+        "team": "Dartmouth",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "DE",
+        "season": 2025,
+        "team": "Massachusetts",
+        "year": 4
+      },
+      {
+        "jersey": 16,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4685593",
+    "recruiting": {
+      "athleteId": "4685593",
+      "city": "Dickinson",
+      "committedTo": "Texas A&M",
+      "country": "USA",
+      "grade": "A",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "48167",
+        "latitude": 29.4607876,
+        "longitude": -95.0513173
+      },
+      "id": "113612",
+      "name": "PJ Williams",
+      "position": "OT",
+      "ranking": 69,
+      "rating": 0.9711,
+      "recruitType": "HighSchool",
+      "school": "Dickinson",
+      "stars": 4,
+      "stateProvince": "TX",
+      "teamSlug": "texas-a-m",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2022
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2022,
+        "team": "Texas A&M",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2023,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 59,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5381515",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LS",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4871072",
+    "recruiting": {
+      "athleteId": "4871072",
+      "city": "Garland",
+      "committedTo": "Baylor",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.912624,
+        "longitude": -96.6388833
+      },
+      "id": "111856",
+      "name": "Trey Wilson",
+      "position": "DL",
+      "ranking": 614,
+      "rating": 0.8794,
+      "recruitType": "HighSchool",
+      "school": "Garland Lakeview Centennial",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "baylor",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DE",
+        "season": 2023,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "DE",
+        "season": 2024,
+        "team": "Baylor",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "DE",
+        "season": 2025,
+        "team": "SMU",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5207664",
+    "recruiting": {
+      "athleteId": "5207664",
+      "city": "Gray",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "23005",
+        "latitude": 29.6977,
+        "longitude": -90.7865
+      },
+      "id": "107534",
+      "name": "Tyron Winslow",
+      "position": "DL",
+      "ranking": 1419,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "H. L. Bourgeois",
+      "stars": 3,
+      "stateProvince": "LA",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2025
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 1
+      },
+      {
+        "jersey": 56,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5078007",
+    "recruiting": {
+      "athleteId": "5078007",
+      "city": "Port St. Lucie",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 76.5,
+      "hometownInfo": {
+        "fipsCode": "12111",
+        "latitude": 27.2939333,
+        "longitude": -80.3503283
+      },
+      "id": "112426",
+      "name": "Alex Woods",
+      "position": "OT",
+      "ranking": 1198,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Treasure Coast",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2023,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 3
+      },
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5290586",
+    "recruiting": {
+      "athleteId": "5290586",
+      "city": "Spring Branch",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "48091",
+        "latitude": 29.885073249999998,
+        "longitude": -98.4196833729311
+      },
+      "id": "104904",
+      "name": "Hudson Woods",
+      "position": "EDGE",
+      "ranking": 586,
+      "rating": 0.8856,
+      "recruitType": "HighSchool",
+      "school": "Smithson Valley",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DE",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5245513",
+    "recruiting": {
+      "athleteId": "5245513",
+      "city": "Melissa",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 78.5,
+      "hometownInfo": {
+        "fipsCode": "48085",
+        "latitude": 33.2860549,
+        "longitude": -96.5725952
+      },
+      "id": "104124",
+      "name": "Max Wright",
+      "position": "OT",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "Melissa",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219230",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 46,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4678012",
+    "recruiting": {
+      "athleteId": "4678012",
+      "city": "Dallas",
+      "committedTo": "Stanford",
+      "country": "USA",
+      "grade": "C",
+      "height": 70,
+      "hometownInfo": {
+        "fipsCode": "48113",
+        "latitude": 32.7762719,
+        "longitude": -96.7968559
+      },
+      "id": "116422",
+      "name": "Jimmy Wyrick",
+      "position": "CB",
+      "ranking": 683,
+      "rating": 0.8704,
+      "recruitType": "HighSchool",
+      "school": "South Oak Cliff",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "stanford",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2021
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2021,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2022,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2023,
+        "team": "Stanford",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2024,
+        "team": "UTSA",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2025,
+        "team": "UTSA",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "S",
+        "season": 2026,
+        "team": "SMU",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5207891",
+    "recruiting": {
+      "athleteId": "5207891",
+      "city": "San Marcos",
+      "committedTo": "SMU",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48209",
+        "latitude": 29.8826436,
+        "longitude": -97.9405828
+      },
+      "id": "104456",
+      "name": "I'Zayah Young",
+      "position": "LB",
+      "ranking": 833,
+      "rating": 0.8767,
+      "recruitType": "HighSchool",
+      "school": "San Marcos",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "smu",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2026
+    },
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2026,
+        "team": "SMU",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5219234",
+    "recruiting": null,
+    "team": "SMU",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2024,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2025,
+        "team": "SMU",
+        "year": 2
+      },
+      {
+        "jersey": 96,
+        "position": "DL",
+        "season": 2026,
+        "team": "SMU",
+        "year": 2
+      }
+    ]
+  }
+]

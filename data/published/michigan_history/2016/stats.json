@@ -1,0 +1,443 @@
+[
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "firstDowns",
+    "statValue": 284,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "firstDownsOpponent",
+    "statValue": 187,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fourthDownConversions",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fourthDownConversionsOpponent",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fourthDowns",
+    "statValue": 20,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fourthDownsOpponent",
+    "statValue": 27,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fumblesLost",
+    "statValue": 5,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fumblesLostOpponent",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fumblesRecovered",
+    "statValue": 6,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "fumblesRecoveredOpponent",
+    "statValue": 5,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "games",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "interceptions",
+    "statValue": 7,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "interceptionsOpponent",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "interceptionTDs",
+    "statValue": 3,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "interceptionTDsOpponent",
+    "statValue": 1,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "interceptionYards",
+    "statValue": 147,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "interceptionYardsOpponent",
+    "statValue": 126,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "kickReturns",
+    "statValue": 27,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "kickReturnsOpponent",
+    "statValue": 42,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "kickReturnTDs",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "kickReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "kickReturnYards",
+    "statValue": 486,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "kickReturnYardsOpponent",
+    "statValue": 928,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "netPassingYards",
+    "statValue": 2756,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "netPassingYardsOpponent",
+    "statValue": 1853,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passAttempts",
+    "statValue": 370,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passAttemptsOpponent",
+    "statValue": 328,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passCompletions",
+    "statValue": 228,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passCompletionsOpponent",
+    "statValue": 143,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passesIntercepted",
+    "statValue": 13,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passesInterceptedOpponent",
+    "statValue": 7,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passingTDs",
+    "statValue": 20,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "passingTDsOpponent",
+    "statValue": 11,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "penalties",
+    "statValue": 63,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "penaltiesOpponent",
+    "statValue": 70,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "penaltyYards",
+    "statValue": 593,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "penaltyYardsOpponent",
+    "statValue": 544,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "possessionTime",
+    "statValue": 25778,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "possessionTimeOpponent",
+    "statValue": 21022,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "puntReturns",
+    "statValue": 26,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "puntReturnsOpponent",
+    "statValue": 21,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "puntReturnTDs",
+    "statValue": 2,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "puntReturnTDsOpponent",
+    "statValue": 0,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "puntReturnYards",
+    "statValue": 357,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "puntReturnYardsOpponent",
+    "statValue": 137,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "rushingAttempts",
+    "statValue": 574,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "rushingAttemptsOpponent",
+    "statValue": 481,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "rushingTDs",
+    "statValue": 41,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "rushingTDsOpponent",
+    "statValue": 9,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "rushingYards",
+    "statValue": 2768,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "rushingYardsOpponent",
+    "statValue": 1550,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "sacks",
+    "statValue": 46,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "sacksOpponent",
+    "statValue": 22,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "tacklesForLoss",
+    "statValue": 119,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "tacklesForLossOpponent",
+    "statValue": 86,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "thirdDownConversions",
+    "statValue": 79,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "thirdDownConversionsOpponent",
+    "statValue": 37,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "thirdDowns",
+    "statValue": 183,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "thirdDownsOpponent",
+    "statValue": 177,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "totalYards",
+    "statValue": 5524,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "totalYardsOpponent",
+    "statValue": 3403,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "turnovers",
+    "statValue": 12,
+    "team": "Michigan"
+  },
+  {
+    "conference": "Big Ten",
+    "season": 2016,
+    "statName": "turnoversOpponent",
+    "statValue": 19,
+    "team": "Michigan"
+  }
+]

@@ -1,0 +1,4547 @@
+[
+  {
+    "playerId": "5296077",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 35,
+        "position": "RB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 35,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5154248",
+    "recruiting": {
+      "athleteId": "5154248",
+      "city": "Newport Beach",
+      "committedTo": "Boise State",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "06059",
+        "latitude": 33.6170092,
+        "longitude": -117.9294401
+      },
+      "id": "110414",
+      "name": "Kaleb Annett",
+      "position": "QB",
+      "ranking": 1794,
+      "rating": 0.8444,
+      "recruitType": "HighSchool",
+      "school": "Corona Del Mar",
+      "stars": 3,
+      "stateProvince": "CA",
+      "teamSlug": "boise-state",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2024,
+        "team": "Boise State",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2025,
+        "team": "Boise State",
+        "year": 2
+      },
+      {
+        "jersey": 10,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5152183",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 27,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5172096",
+    "recruiting": {
+      "athleteId": "5172096",
+      "city": "Miami",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 67,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "104405",
+      "name": "Kaj Baker",
+      "position": "ATH",
+      "ranking": 884,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Somerset Academy Charter",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 158,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4911929",
+    "recruiting": {
+      "athleteId": "4911929",
+      "city": "Greensboro",
+      "committedTo": "James Madison",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "37081",
+        "latitude": 36.0726355,
+        "longitude": -79.7919754
+      },
+      "id": "234947",
+      "name": "Alonza Barnett III",
+      "position": "QB",
+      "ranking": 2364,
+      "rating": 0.8,
+      "recruitType": "HighSchool",
+      "school": "Grimsley",
+      "stars": 3,
+      "stateProvince": "NC",
+      "teamSlug": "james-madison",
+      "valueType": "BENCHMARK",
+      "weight": 193,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2022,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2023,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2024,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2025,
+        "team": "James Madison",
+        "year": 4
+      },
+      {
+        "jersey": 14,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5083572",
+    "recruiting": {
+      "athleteId": "5083572",
+      "city": "Huntington",
+      "committedTo": "Harvard",
+      "country": "USA",
+      "grade": null,
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "54011",
+        "latitude": 38.4192496,
+        "longitude": -82.445154
+      },
+      "id": "255991",
+      "name": "Ty Bartrum",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Spring Valley",
+      "stars": null,
+      "stateProvince": "WV",
+      "teamSlug": "harvard",
+      "valueType": "BENCHMARK",
+      "weight": 195,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2022,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2023,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2024,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2025,
+        "team": "Harvard",
+        "year": 4
+      },
+      {
+        "jersey": 21,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5092994",
+    "recruiting": {
+      "athleteId": "5092994",
+      "city": "Pensacola",
+      "committedTo": "Memphis",
+      "country": "USA",
+      "grade": "D",
+      "height": 74.5,
+      "hometownInfo": {
+        "fipsCode": "12033",
+        "latitude": 30.421309,
+        "longitude": -87.2169149
+      },
+      "id": "115384",
+      "name": "DJ Bell",
+      "position": "S",
+      "ranking": 1974,
+      "rating": 0.8215,
+      "recruitType": "HighSchool",
+      "school": "Pensacola",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "memphis",
+      "valueType": "BENCHMARK",
+      "weight": 178,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2022,
+        "team": "Memphis",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2023,
+        "team": "Memphis",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2024,
+        "team": "Memphis",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4832028",
+    "recruiting": {
+      "athleteId": "4832028",
+      "city": "Oradell",
+      "committedTo": "Notre Dame",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 40.9543943,
+        "longitude": -74.0308504
+      },
+      "id": "113995",
+      "name": "Jayden Bellamy",
+      "position": "CB",
+      "ranking": 452,
+      "rating": 0.887,
+      "recruitType": "HighSchool",
+      "school": "Bergen Catholic",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "notre-dame",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2022,
+        "team": "Notre Dame",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2023,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2024,
+        "team": "Syracuse",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 1,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296960",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 36,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5160651",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "P",
+        "season": 2023,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "P",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "P",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 49,
+        "position": "P",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5193217",
+    "recruiting": {
+      "athleteId": "5193217",
+      "city": "Birmingham",
+      "committedTo": "UL Monroe",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "01073",
+        "latitude": 33.5206824,
+        "longitude": -86.8024326
+      },
+      "id": "110988",
+      "name": "Jonathan Bibbs",
+      "position": "WR",
+      "ranking": 2574,
+      "rating": 0.8194,
+      "recruitType": "HighSchool",
+      "school": "Spain Park",
+      "stars": 3,
+      "stateProvince": "AL",
+      "teamSlug": "ul-monroe",
+      "valueType": "BENCHMARK",
+      "weight": 155,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2024,
+        "team": "UL Monroe",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2025,
+        "team": "UL Monroe",
+        "year": 2
+      },
+      {
+        "jersey": 3,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5295613",
+    "recruiting": {
+      "athleteId": "5295613",
+      "city": "Miami",
+      "committedTo": "Colorado",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "106719",
+      "name": "TJ Branch",
+      "position": "S",
+      "ranking": 524,
+      "rating": 0.8869,
+      "recruitType": "HighSchool",
+      "school": "Miami Northwestern",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "colorado",
+      "valueType": "BENCHMARK",
+      "weight": 172,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2025,
+        "team": "Colorado",
+        "year": 1
+      },
+      {
+        "jersey": 16,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5161780",
+    "recruiting": {
+      "athleteId": "5161780",
+      "city": "Winter Garden",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5656649,
+        "longitude": -81.5856742
+      },
+      "id": "109994",
+      "name": "Jordyn Bridgewater",
+      "position": "WR",
+      "ranking": 1332,
+      "rating": 0.8575,
+      "recruitType": "HighSchool",
+      "school": "West Orange",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2024,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 82,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5168802",
+    "recruiting": {
+      "athleteId": "5168802",
+      "city": "Lehi",
+      "committedTo": "Utah State",
+      "country": "USA",
+      "grade": "D",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "49049",
+        "latitude": 40.3880902,
+        "longitude": -111.8491619
+      },
+      "id": "110519",
+      "name": "Grayson Brousseau",
+      "position": "TE",
+      "ranking": 1912,
+      "rating": 0.8403,
+      "recruitType": "HighSchool",
+      "school": "Lehi",
+      "stars": 3,
+      "stateProvince": "UT",
+      "teamSlug": "utah-state",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2024,
+        "team": "Utah State",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2025,
+        "team": "Oklahoma State",
+        "year": 2
+      },
+      {
+        "jersey": 88,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296835",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2025,
+        "team": "Sam Houston",
+        "year": 2
+      },
+      {
+        "jersey": 83,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5385727",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4874685",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 72,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5236675",
+    "recruiting": {
+      "athleteId": "5236675",
+      "city": "Minersville",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42107",
+        "latitude": 40.6906451,
+        "longitude": -76.2621697
+      },
+      "id": "104727",
+      "name": "Dante Carr",
+      "position": "QB",
+      "ranking": 586,
+      "rating": 0.8856,
+      "recruitType": "HighSchool",
+      "school": "Minersville",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 200,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 16,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4870654",
+    "recruiting": {
+      "athleteId": "4870654",
+      "city": "Tampa",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "111410",
+      "name": "Lewis Carter",
+      "position": "LB",
+      "ranking": 156,
+      "rating": 0.9362,
+      "recruitType": "HighSchool",
+      "school": "Tampa Catholic",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 205,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 20,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5078144",
+    "recruiting": {
+      "athleteId": "5078144",
+      "city": "Keller",
+      "committedTo": "Central Arkansas",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "48439",
+        "latitude": 32.9299655,
+        "longitude": -97.2271249
+      },
+      "id": "112991",
+      "name": "Landen Chambers",
+      "position": "RB",
+      "ranking": 1816,
+      "rating": 0.8361,
+      "recruitType": "HighSchool",
+      "school": "Keller Fossil Ridge",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "central-arkansas",
+      "valueType": "BENCHMARK",
+      "weight": 210,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "RB",
+        "season": 2024,
+        "team": "Central Arkansas",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "RB",
+        "season": 2025,
+        "team": "Central Arkansas",
+        "year": 3
+      },
+      {
+        "jersey": 11,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5142600",
+    "recruiting": {
+      "athleteId": "5142600",
+      "city": "Boynton Beach",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12099",
+        "latitude": 26.5256179,
+        "longitude": -80.0666026
+      },
+      "id": "106883",
+      "name": "Waden Charles",
+      "position": "WR",
+      "ranking": 700,
+      "rating": 0.8783,
+      "recruitType": "HighSchool",
+      "school": "Somerset Academy Canyons",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 9,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5161810",
+    "recruiting": {
+      "athleteId": "5161810",
+      "city": "Brunswick",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "13127",
+        "latitude": 31.1499528,
+        "longitude": -81.4914894
+      },
+      "id": "105185",
+      "name": "Kasiyah Charlton",
+      "position": "OT",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Brunswick",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 295,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 77,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5101237",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 96,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 96,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5157309",
+    "recruiting": {
+      "athleteId": "5157309",
+      "city": "Sweden",
+      "committedTo": "Oregon State",
+      "country": "SWE",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "112530",
+      "name": "Thomas Collins",
+      "position": "DL",
+      "ranking": 1304,
+      "rating": 0.8539,
+      "recruitType": "HighSchool",
+      "school": "RIG Academy",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "oregon-state",
+      "valueType": "BENCHMARK",
+      "weight": 275,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2023,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2024,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2025,
+        "team": "Oregon State",
+        "year": 3
+      },
+      {
+        "jersey": 99,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5092328",
+    "recruiting": {
+      "athleteId": "5092328",
+      "city": "Virginia Beach",
+      "committedTo": "Old Dominion",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "51810",
+        "latitude": 36.8529841,
+        "longitude": -75.9774183
+      },
+      "id": "255824",
+      "name": "Jahleel Culbreath",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Ocean Lakes",
+      "stars": null,
+      "stateProvince": "VA",
+      "teamSlug": "old-dominion",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2022,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2023,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2024,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2025,
+        "team": "Old Dominion",
+        "year": 4
+      },
+      {
+        "jersey": 34,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4870659",
+    "recruiting": {
+      "athleteId": "4870659",
+      "city": "Many",
+      "committedTo": "USC",
+      "country": "USA",
+      "grade": "B",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "22085",
+        "latitude": 31.5687848,
+        "longitude": -93.4840645
+      },
+      "id": "111356",
+      "name": "Tackett Curtis",
+      "position": "LB",
+      "ranking": 109,
+      "rating": 0.9481,
+      "recruitType": "HighSchool",
+      "school": "Many",
+      "stars": 4,
+      "stateProvince": "LA",
+      "teamSlug": "usc",
+      "valueType": "BENCHMARK",
+      "weight": 224,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2023,
+        "team": "USC",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2024,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2025,
+        "team": "Wisconsin",
+        "year": 4
+      },
+      {
+        "jersey": 24,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4837207",
+    "recruiting": {
+      "athleteId": "4837207",
+      "city": "Clearwater",
+      "committedTo": "Ole Miss",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.9658533,
+        "longitude": -82.8001026
+      },
+      "id": "114544",
+      "name": "Preston Cushman",
+      "position": "OT",
+      "ranking": 1029,
+      "rating": 0.8593,
+      "recruitType": "HighSchool",
+      "school": "Calvary Christian",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ole-miss",
+      "valueType": "BENCHMARK",
+      "weight": 285,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2022,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2023,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2024,
+        "team": "Ole Miss",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 78,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5122026",
+    "recruiting": {
+      "athleteId": "5122026",
+      "city": "Germany",
+      "committedTo": "Akron",
+      "country": "DEU",
+      "grade": "D",
+      "height": 79,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "113464",
+      "name": "Bruno Dall",
+      "position": "DL",
+      "ranking": 2495,
+      "rating": 0.8056,
+      "recruitType": "HighSchool",
+      "school": "St. Stanislaus",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "akron",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 41,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "Akron",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Akron",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Akron",
+        "year": 3
+      },
+      {
+        "jersey": 41,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296085",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 97,
+        "position": "PK",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5153889",
+    "recruiting": {
+      "athleteId": "5153889",
+      "city": "Towson",
+      "committedTo": "Monmouth",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "24005",
+        "latitude": 39.4018552,
+        "longitude": -76.602388
+      },
+      "id": "257124",
+      "name": "Josh Derry",
+      "position": "WR",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Concordia Prep",
+      "stars": null,
+      "stateProvince": "MD",
+      "teamSlug": "monmouth",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2023,
+        "team": "Monmouth",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2024,
+        "team": "Monmouth",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2025,
+        "team": "Monmouth",
+        "year": 4
+      },
+      {
+        "jersey": 5,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5156996",
+    "recruiting": {
+      "athleteId": "5156996",
+      "city": "Gurnee",
+      "committedTo": "North Dakota State",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "17097",
+        "latitude": 42.3702996,
+        "longitude": -87.9020186
+      },
+      "id": "113076",
+      "name": "Jailen Duffie",
+      "position": "CB",
+      "ranking": 1896,
+      "rating": 0.8317,
+      "recruitType": "HighSchool",
+      "school": "Warren Township",
+      "stars": 3,
+      "stateProvince": "IL",
+      "teamSlug": "north-dakota-state",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2024,
+        "team": "North Dakota State",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2025,
+        "team": "North Dakota State",
+        "year": 3
+      },
+      {
+        "jersey": 17,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079427",
+    "recruiting": {
+      "athleteId": "5079427",
+      "city": "Apopka",
+      "committedTo": "Pittsburgh",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.6779683,
+        "longitude": -81.5115214
+      },
+      "id": "109265",
+      "name": "Sincere Edwards",
+      "position": "DL",
+      "ranking": 571,
+      "rating": 0.8842,
+      "recruitType": "HighSchool",
+      "school": "Wekiva",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "pittsburgh",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 10,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Pittsburgh",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 10,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5079386",
+    "recruiting": {
+      "athleteId": "5079386",
+      "city": "Melbourne",
+      "committedTo": "West Virginia",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12009",
+        "latitude": 28.0836269,
+        "longitude": -80.6081089
+      },
+      "id": "109116",
+      "name": "Ric'Darious Farmer",
+      "position": "WR",
+      "ranking": 409,
+      "rating": 0.895,
+      "recruitType": "HighSchool",
+      "school": "Melbourne Central Catholic",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "west-virginia",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2024,
+        "team": "West Virginia",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 6,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5084793",
+    "recruiting": {
+      "athleteId": "5084793",
+      "city": "Houston",
+      "committedTo": "Houston Christian",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "48201",
+        "latitude": 29.7589382,
+        "longitude": -95.3676974
+      },
+      "id": "256230",
+      "name": "Caleb Flagg",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "North Shore",
+      "stars": null,
+      "stateProvince": "TX",
+      "teamSlug": "houston-christian",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2022,
+        "team": "Houston Christian",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2023,
+        "team": "Houston Christian",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2024,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2025,
+        "team": "Missouri",
+        "year": 4
+      },
+      {
+        "jersey": 18,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4869496",
+    "recruiting": {
+      "athleteId": "4869496",
+      "city": "Alpharetta",
+      "committedTo": "Georgia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 34.0709576,
+        "longitude": -84.2747329
+      },
+      "id": "114081",
+      "name": "Tyler Gibson",
+      "position": "OT",
+      "ranking": 537,
+      "rating": 0.8822,
+      "recruitType": "HighSchool",
+      "school": "Johns Creek",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "georgia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2022,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2023,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2025,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 75,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5086117",
+    "recruiting": {
+      "athleteId": "5086117",
+      "city": "Bowling Green",
+      "committedTo": "Eastern Kentucky",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "21227",
+        "latitude": 36.9903199,
+        "longitude": -86.4436018
+      },
+      "id": "256088",
+      "name": "Brad Gurley Jr.",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Bowling Green",
+      "stars": null,
+      "stateProvince": "KY",
+      "teamSlug": "eastern-kentucky",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2022,
+        "team": "Eastern Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2024,
+        "team": "Eastern Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2025,
+        "team": "Eastern Kentucky",
+        "year": 4
+      },
+      {
+        "jersey": 93,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5327427",
+    "recruiting": {
+      "athleteId": "5327427",
+      "city": "Platte City",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "29165",
+        "latitude": 39.3703535,
+        "longitude": -94.781086
+      },
+      "id": "212304",
+      "name": "Brooks Hall",
+      "position": "TE",
+      "ranking": 1708,
+      "rating": 0.8578,
+      "recruitType": "HighSchool",
+      "school": "Platte County",
+      "stars": 3,
+      "stateProvince": "MO",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 87,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5279675",
+    "recruiting": {
+      "athleteId": "5279675",
+      "city": "Missouri City",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "48157",
+        "latitude": 29.6185669,
+        "longitude": -95.5377215
+      },
+      "id": "105150",
+      "name": "Preston Hall",
+      "position": "LB",
+      "ranking": 1114,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Fort Bend Ridge Point",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5203607",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 80,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5385729",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 30,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5195291",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 94,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Florida State",
+        "year": 1
+      },
+      {
+        "jersey": 94,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5163493",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 45,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 45,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4808748",
+    "recruiting": {
+      "athleteId": "4808748",
+      "city": "Sanford",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12117",
+        "latitude": 28.8117297,
+        "longitude": -81.2680345
+      },
+      "id": "114164",
+      "name": "Demari Henderson",
+      "position": "S",
+      "ranking": 623,
+      "rating": 0.877,
+      "recruitType": "HighSchool",
+      "school": "Seminole",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 161,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2022,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 8,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5159158",
+    "recruiting": {
+      "athleteId": "5159158",
+      "city": "Fort Lauderdale",
+      "committedTo": "Massachusetts",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.1223084,
+        "longitude": -80.1433786
+      },
+      "id": "256829",
+      "name": "Rashad Henry",
+      "position": "LB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas Aquinas",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "massachusetts",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2023,
+        "team": "Massachusetts",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2024,
+        "team": "Massachusetts",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2025,
+        "team": "Massachusetts",
+        "year": 3
+      },
+      {
+        "jersey": 19,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5225963",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2025,
+        "team": "Tennessee State",
+        "year": 2
+      },
+      {
+        "jersey": 43,
+        "position": "LS",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5163494",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 68,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5221392",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2024,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 85,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296084",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 86,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5385726",
+    "recruiting": {
+      "athleteId": "5385726",
+      "city": "Sarasota",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "B",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "12115",
+        "latitude": 27.3364347,
+        "longitude": -82.5306527
+      },
+      "id": "104224",
+      "name": "Tyren Hornes",
+      "position": "WR",
+      "ranking": 151,
+      "rating": 0.939,
+      "recruitType": "HighSchool",
+      "school": "Booker",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5195294",
+    "recruiting": {
+      "athleteId": "5195294",
+      "city": "Oakdale",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "09011",
+        "latitude": 41.4662093,
+        "longitude": -72.1573008
+      },
+      "id": "104242",
+      "name": "Alhassan Iddrissu",
+      "position": "EDGE",
+      "ranking": 634,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "St. Thomas More",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 98,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5223957",
+    "recruiting": {
+      "athleteId": "5223957",
+      "city": "Meridian",
+      "committedTo": "Idaho",
+      "country": "USA",
+      "grade": null,
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "16001",
+        "latitude": 43.6086295,
+        "longitude": -116.392326
+      },
+      "id": "257425",
+      "name": "Matt Irwin",
+      "position": "S",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Owyhee",
+      "stars": null,
+      "stateProvince": "ID",
+      "teamSlug": "idaho",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2024,
+        "team": "Idaho",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2025,
+        "team": "Idaho",
+        "year": 3
+      },
+      {
+        "jersey": 28,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5160072",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2023,
+        "team": "East Carolina",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5125729",
+    "recruiting": {
+      "athleteId": "5125729",
+      "city": "Choctaw",
+      "committedTo": "Tulsa",
+      "country": "USA",
+      "grade": null,
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "40109",
+        "latitude": 35.4975654,
+        "longitude": -97.2689263
+      },
+      "id": "256748",
+      "name": "RJ Jackson Jr.",
+      "position": "TE",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Choctaw",
+      "stars": null,
+      "stateProvince": "OK",
+      "teamSlug": "tulsa",
+      "valueType": "BENCHMARK",
+      "weight": 220,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2023,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2024,
+        "team": "Tulsa",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 95,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5271175",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 90,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5085337",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2023,
+        "team": "Florida International",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2024,
+        "team": "Florida International",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2025,
+        "team": "Florida International",
+        "year": 4
+      },
+      {
+        "jersey": 12,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4708164",
+    "recruiting": {
+      "athleteId": "4708164",
+      "city": "Salem",
+      "committedTo": "Virginia Tech",
+      "country": "USA",
+      "grade": "D",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "51775",
+        "latitude": 37.293378,
+        "longitude": -80.054667
+      },
+      "id": "117748",
+      "name": "Jayden McDonald",
+      "position": "CB",
+      "ranking": 2057,
+      "rating": 0.8178,
+      "recruitType": "HighSchool",
+      "school": "Salem",
+      "stars": 3,
+      "stateProvince": "VA",
+      "teamSlug": "virginia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 218,
+      "year": 2021
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2021,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2022,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2023,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2024,
+        "team": "Virginia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 38,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5331180",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 14,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5305889",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 49,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 49,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5139099",
+    "recruiting": {
+      "athleteId": "5139099",
+      "city": "Blountstown",
+      "committedTo": "Miami",
+      "country": "USA",
+      "grade": "B",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12013",
+        "latitude": 30.4435293,
+        "longitude": -85.0451953
+      },
+      "id": "108891",
+      "name": "Artavius Jones",
+      "position": "DL",
+      "ranking": 193,
+      "rating": 0.9235,
+      "recruitType": "HighSchool",
+      "school": "Blountstown",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "miami",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "DT",
+        "season": 2024,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "DT",
+        "season": 2025,
+        "team": "Miami",
+        "year": 2
+      },
+      {
+        "jersey": 42,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5296078",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 37,
+        "position": "LS",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 37,
+        "position": "LS",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5277347",
+    "recruiting": {
+      "athleteId": "5277347",
+      "city": "Neptune Beach",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.311908,
+        "longitude": -81.3964734
+      },
+      "id": "105602",
+      "name": "Elijah Keys",
+      "position": "CB",
+      "ranking": 1066,
+      "rating": 0.8711,
+      "recruitType": "HighSchool",
+      "school": "Duncan U. Fletcher",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5385730",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5080968",
+    "recruiting": {
+      "athleteId": "5080968",
+      "city": "France",
+      "committedTo": "Michigan",
+      "country": "FRA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": null,
+        "latitude": null,
+        "longitude": null
+      },
+      "id": "112090",
+      "name": "Aymeric Koumba",
+      "position": "EDGE",
+      "ranking": 846,
+      "rating": 0.87,
+      "recruitType": "HighSchool",
+      "school": "Pionniers de Touraine",
+      "stars": 3,
+      "stateProvince": null,
+      "teamSlug": "michigan",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Michigan",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 12,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5163560",
+    "recruiting": {
+      "athleteId": "5163560",
+      "city": "Miami",
+      "committedTo": "Bethune-Cookman",
+      "country": "USA",
+      "grade": null,
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "12086",
+        "latitude": 25.7742658,
+        "longitude": -80.1936589
+      },
+      "id": "257133",
+      "name": "Jeffson Lafontant",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "North Miami Beach",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "bethune-cookman",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2023,
+        "team": "Bethune-Cookman",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2024,
+        "team": "Bethune-Cookman",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 92,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5296081",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 53,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5271370",
+    "recruiting": {
+      "athleteId": "5271370",
+      "city": "Jacksonville",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12031",
+        "latitude": 30.3321838,
+        "longitude": -81.655651
+      },
+      "id": "105254",
+      "name": "Arthur Lewis IV",
+      "position": "RB",
+      "ranking": 1523,
+      "rating": 0.8611,
+      "recruitType": "HighSchool",
+      "school": "Bartram Trail",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 190,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 24,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4875126",
+    "recruiting": {
+      "athleteId": "4875126",
+      "city": "Atlanta",
+      "committedTo": "Georgia Tech",
+      "country": "USA",
+      "grade": "C",
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "13121",
+        "latitude": 33.7490987,
+        "longitude": -84.3901849
+      },
+      "id": "114215",
+      "name": "Horace Lockett",
+      "position": "DL",
+      "ranking": 676,
+      "rating": 0.8744,
+      "recruitType": "HighSchool",
+      "school": "Westlake",
+      "stars": 3,
+      "stateProvince": "GA",
+      "teamSlug": "georgia-tech",
+      "valueType": "BENCHMARK",
+      "weight": 315,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "DT",
+        "season": 2022,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DT",
+        "season": 2023,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DT",
+        "season": 2024,
+        "team": "Georgia Tech",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DT",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5265070",
+    "recruiting": {
+      "athleteId": "5265070",
+      "city": "Mccomb",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "28113",
+        "latitude": 31.2437872,
+        "longitude": -90.4531536
+      },
+      "id": "221018",
+      "name": "Camp Lott",
+      "position": "OT",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Parklane Academy",
+      "stars": 3,
+      "stateProvince": "MS",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 245,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 57,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5212731",
+    "recruiting": {
+      "athleteId": "5212731",
+      "city": "Kahuku",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.679124,
+        "longitude": -157.94838
+      },
+      "id": "107868",
+      "name": "Jacob Maiava",
+      "position": "IOL",
+      "ranking": 1738,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "Kahuku",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 55,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5385732",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 79,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5209923",
+    "recruiting": {
+      "athleteId": "5209923",
+      "city": "Platte City",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "B",
+      "height": 75.5,
+      "hometownInfo": {
+        "fipsCode": "29165",
+        "latitude": 39.3703535,
+        "longitude": -94.781086
+      },
+      "id": "104582",
+      "name": "Rocco Marriott",
+      "position": "QB",
+      "ranking": 320,
+      "rating": 0.9042,
+      "recruitType": "HighSchool",
+      "school": "Platte County",
+      "stars": 4,
+      "stateProvince": "MO",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 203,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 8,
+        "position": "QB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4918127",
+    "recruiting": {
+      "athleteId": "4918127",
+      "city": "Lake Mary",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12117",
+        "latitude": 28.756618000000003,
+        "longitude": -81.33888382214167
+      },
+      "id": "111723",
+      "name": "Braeden Marshall",
+      "position": "CB",
+      "ranking": 475,
+      "rating": 0.8883,
+      "recruitType": "HighSchool",
+      "school": "Lake Mary",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 4,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296076",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 31,
+        "position": "PK",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 31,
+        "position": "PK",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5265516",
+    "recruiting": {
+      "athleteId": "5265516",
+      "city": "Indianapolis",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": null,
+      "height": 80,
+      "hometownInfo": {
+        "fipsCode": "18097",
+        "latitude": 39.7683331,
+        "longitude": -86.1583502
+      },
+      "id": "258053",
+      "name": "RaiShaun McHaney",
+      "position": "OT",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Lutheran Of Indianapolis",
+      "stars": null,
+      "stateProvince": "IN",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 250,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 70,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5081393",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2022,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2023,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 58,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5291723",
+    "recruiting": {
+      "athleteId": "5291723",
+      "city": "Key West",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12087",
+        "latitude": 24.5625566,
+        "longitude": -81.7724368
+      },
+      "id": "211923",
+      "name": "Noah Mercer",
+      "position": "DL",
+      "ranking": 1263,
+      "rating": 0.8667,
+      "recruitType": "HighSchool",
+      "school": "Key West",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 235,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 55,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296080",
+    "recruiting": {
+      "athleteId": "5296080",
+      "city": "Oviedo",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": null,
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12117",
+        "latitude": 28.6702526,
+        "longitude": -81.2084941
+      },
+      "id": "258055",
+      "name": "Chance Nixon",
+      "position": "RB",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Oviedo",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 179,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 42,
+        "position": "RB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 42,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4941009",
+    "recruiting": {
+      "athleteId": "4941009",
+      "city": "St. Petersburg",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "B",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12103",
+        "latitude": 27.7703796,
+        "longitude": -82.6695085
+      },
+      "id": "111527",
+      "name": "Isaiah Nixon",
+      "position": "EDGE",
+      "ranking": 279,
+      "rating": 0.9085,
+      "recruitType": "HighSchool",
+      "school": "Lakewood",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 215,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 6,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 6,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5160500",
+    "recruiting": {
+      "athleteId": "5160500",
+      "city": "Honolulu",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 73,
+      "hometownInfo": {
+        "fipsCode": "15003",
+        "latitude": 21.304547,
+        "longitude": -157.8556764
+      },
+      "id": "105686",
+      "name": "Jordan Nunuha",
+      "position": "WR",
+      "ranking": 2052,
+      "rating": 0.85,
+      "recruitType": "HighSchool",
+      "school": "St. Louis",
+      "stars": 3,
+      "stateProvince": "HI",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 23,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5290701",
+    "recruiting": {
+      "athleteId": "5290701",
+      "city": "Ramsey",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "34003",
+        "latitude": 41.0573188,
+        "longitude": -74.1409771
+      },
+      "id": "105594",
+      "name": "Matthew Occhipinti",
+      "position": "LB",
+      "ranking": 1654,
+      "rating": 0.8589,
+      "recruitType": "HighSchool",
+      "school": "Don Bosco Prep",
+      "stars": 3,
+      "stateProvince": "NJ",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 32,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296083",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 81,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5296079",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 39,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 39,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "4899481",
+    "recruiting": {
+      "athleteId": "4899481",
+      "city": "Perkasie",
+      "committedTo": "Oklahoma",
+      "country": "USA",
+      "grade": "C",
+      "height": 75,
+      "hometownInfo": {
+        "fipsCode": "42017",
+        "latitude": 40.372048,
+        "longitude": -75.292676
+      },
+      "id": "111800",
+      "name": "Phil Picciotti",
+      "position": "LB",
+      "ranking": 554,
+      "rating": 0.8833,
+      "recruitType": "HighSchool",
+      "school": "IMG Academy",
+      "stars": 3,
+      "stateProvince": "PA",
+      "teamSlug": "oklahoma",
+      "valueType": "BENCHMARK",
+      "weight": 225,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2023,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2024,
+        "team": "Oklahoma",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 33,
+        "position": "LB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5148656",
+    "recruiting": {
+      "athleteId": "5148656",
+      "city": "Cincinnati",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "39061",
+        "latitude": 39.1014537,
+        "longitude": -84.5124602
+      },
+      "id": "106945",
+      "name": "Caden Piening",
+      "position": "TE",
+      "ranking": 762,
+      "rating": 0.8756,
+      "recruitType": "HighSchool",
+      "school": "Anderson",
+      "stars": 3,
+      "stateProvince": "OH",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 230,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 18,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5385728",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 29,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5203708",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 47,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5152185",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2023,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2024,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 74,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5279122",
+    "recruiting": {
+      "athleteId": "5279122",
+      "city": "Stuart",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 73.5,
+      "hometownInfo": {
+        "fipsCode": "12085",
+        "latitude": 27.197983,
+        "longitude": -80.2519175
+      },
+      "id": "105384",
+      "name": "Amarion Queen",
+      "position": "CB",
+      "ranking": 1438,
+      "rating": 0.8633,
+      "recruitType": "HighSchool",
+      "school": "Martin County",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 22,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5221393",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2024,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 13,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5232402",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 3
+      },
+      {
+        "jersey": 76,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5385731",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 56,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5293964",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 97,
+        "position": "DT",
+        "season": 2025,
+        "team": "Tennessee",
+        "year": 4
+      },
+      {
+        "jersey": 97,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5296082",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 2
+      },
+      {
+        "jersey": 67,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 2
+      }
+    ]
+  },
+  {
+    "playerId": "5279724",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 61,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "4868929",
+    "recruiting": {
+      "athleteId": "4868929",
+      "city": "Austin",
+      "committedTo": "Texas",
+      "country": "USA",
+      "grade": "D",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "48453",
+        "latitude": 30.2711286,
+        "longitude": -97.7436995
+      },
+      "id": "115240",
+      "name": "Will Stone",
+      "position": "K",
+      "ranking": 1783,
+      "rating": 0.83,
+      "recruitType": "HighSchool",
+      "school": "Regents School",
+      "stars": 3,
+      "stateProvince": "TX",
+      "teamSlug": "texas",
+      "valueType": "BENCHMARK",
+      "weight": 175,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2022,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2023,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2024,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2025,
+        "team": "Texas",
+        "year": 4
+      },
+      {
+        "jersey": 15,
+        "position": "PK",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5142612",
+    "recruiting": {
+      "athleteId": "5142612",
+      "city": "Tampa",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9477595,
+        "longitude": -82.458444
+      },
+      "id": "106723",
+      "name": "Rukeem Stroud",
+      "position": "CB",
+      "ranking": 532,
+      "rating": 0.8867,
+      "recruitType": "HighSchool",
+      "school": "Tampa Bay Tech",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 160,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 25,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5141668",
+    "recruiting": {
+      "athleteId": "5141668",
+      "city": "Kissimmee",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "B",
+      "height": 69,
+      "hometownInfo": {
+        "fipsCode": "12097",
+        "latitude": 28.2918995,
+        "longitude": -81.4075838
+      },
+      "id": "106502",
+      "name": "Taevion Swint",
+      "position": "RB",
+      "ranking": 312,
+      "rating": 0.9038,
+      "recruitType": "HighSchool",
+      "school": "Osceola",
+      "stars": 4,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 4,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "5091893",
+    "recruiting": {
+      "athleteId": "5091893",
+      "city": "Staten Island",
+      "committedTo": "Buffalo",
+      "country": "USA",
+      "grade": null,
+      "height": 77,
+      "hometownInfo": {
+        "fipsCode": "36085",
+        "latitude": 40.564209,
+        "longitude": -74.12530461995391
+      },
+      "id": "256568",
+      "name": "Henry Tabansi",
+      "position": "OT",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Moore Catholic",
+      "stars": null,
+      "stateProvince": "NY",
+      "teamSlug": "buffalo",
+      "valueType": "BENCHMARK",
+      "weight": 288,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2023,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2024,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2025,
+        "team": "Buffalo",
+        "year": 3
+      },
+      {
+        "jersey": 73,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5103176",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 11,
+        "position": "EDGE",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "EDGE",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "EDGE",
+        "season": 2025,
+        "team": "Arkansas",
+        "year": 4
+      },
+      {
+        "jersey": 11,
+        "position": "EDGE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5155168",
+    "recruiting": {
+      "athleteId": "5155168",
+      "city": "Holland",
+      "committedTo": "Michigan State",
+      "country": "USA",
+      "grade": "F",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "26139",
+        "latitude": 42.7876022,
+        "longitude": -86.1090828
+      },
+      "id": "217742",
+      "name": "Cooper Terpstra",
+      "position": "IOL",
+      "ranking": 3001,
+      "rating": 0.77,
+      "recruitType": "HighSchool",
+      "school": "West Ottawa",
+      "stars": 2,
+      "stateProvince": "MI",
+      "teamSlug": "michigan-state",
+      "valueType": "BENCHMARK",
+      "weight": 265,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2023,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2024,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2025,
+        "team": "Michigan State",
+        "year": 3
+      },
+      {
+        "jersey": 54,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "5151048",
+    "recruiting": {
+      "athleteId": "5151048",
+      "city": "Hollywood",
+      "committedTo": "Charlotte",
+      "country": "USA",
+      "grade": "D",
+      "height": 68,
+      "hometownInfo": {
+        "fipsCode": "12011",
+        "latitude": 26.0112014,
+        "longitude": -80.1494901
+      },
+      "id": "113212",
+      "name": "Duane Thomas Jr.",
+      "position": "WR",
+      "ranking": 2070,
+      "rating": 0.8256,
+      "recruitType": "HighSchool",
+      "school": "Chaminade-Madonna",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "charlotte",
+      "valueType": "BENCHMARK",
+      "weight": 170,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2023,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2024,
+        "team": "Charlotte",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 7,
+        "position": "WR",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5265522",
+    "recruiting": {
+      "athleteId": "5265522",
+      "city": "Lakeland",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": null,
+      "height": 74,
+      "hometownInfo": {
+        "fipsCode": "12105",
+        "latitude": 28.0394654,
+        "longitude": -81.9498042
+      },
+      "id": "258054",
+      "name": "Trenton Turner",
+      "position": "DL",
+      "ranking": null,
+      "rating": null,
+      "recruitType": "HighSchool",
+      "school": "Lakeland",
+      "stars": null,
+      "stateProvince": "FL",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 280,
+      "year": 2025
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2025,
+        "team": "UCF",
+        "year": 1
+      },
+      {
+        "jersey": 54,
+        "position": "DT",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4922996",
+    "recruiting": {
+      "athleteId": "4922996",
+      "city": "Orlando",
+      "committedTo": "Maryland",
+      "country": "USA",
+      "grade": "C",
+      "height": 76,
+      "hometownInfo": {
+        "fipsCode": "12095",
+        "latitude": 28.5421109,
+        "longitude": -81.3790304
+      },
+      "id": "112219",
+      "name": "Dylan Wade",
+      "position": "ATH",
+      "ranking": 982,
+      "rating": 0.865,
+      "recruitType": "HighSchool",
+      "school": "Jones",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "maryland",
+      "valueType": "BENCHMARK",
+      "weight": 240,
+      "year": 2023
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 0,
+        "position": "TE",
+        "season": 2023,
+        "team": "Maryland",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "TE",
+        "season": 2024,
+        "team": "Maryland",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "TE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 0,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5085404",
+    "recruiting": null,
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2022,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2023,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2024,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 84,
+        "position": "TE",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5136049",
+    "recruiting": {
+      "athleteId": "5136049",
+      "city": "Forsyth",
+      "committedTo": "Louisville",
+      "country": "USA",
+      "grade": "C",
+      "height": 72,
+      "hometownInfo": {
+        "fipsCode": "13207",
+        "latitude": 33.0342974,
+        "longitude": -83.938242
+      },
+      "id": "109079",
+      "name": "Duke Watson",
+      "position": "RB",
+      "ranking": 382,
+      "rating": 0.8983,
+      "recruitType": "HighSchool",
+      "school": "Mary Persons",
+      "stars": 4,
+      "stateProvince": "GA",
+      "teamSlug": "louisville",
+      "valueType": "BENCHMARK",
+      "weight": 180,
+      "year": 2024
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2024,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2025,
+        "team": "Louisville",
+        "year": 3
+      },
+      {
+        "jersey": 26,
+        "position": "RB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 3
+      }
+    ]
+  },
+  {
+    "playerId": "4880091",
+    "recruiting": {
+      "athleteId": "4880091",
+      "city": "Windsor",
+      "committedTo": "UConn",
+      "country": "USA",
+      "grade": "D",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "09003",
+        "latitude": 41.8525984,
+        "longitude": -72.6437022
+      },
+      "id": "115320",
+      "name": "Brady Wayburn",
+      "position": "OT",
+      "ranking": 1899,
+      "rating": 0.8259,
+      "recruitType": "HighSchool",
+      "school": "The Loomis Chaffee School",
+      "stars": 3,
+      "stateProvince": "CT",
+      "teamSlug": "uconn",
+      "valueType": "BENCHMARK",
+      "weight": 290,
+      "year": 2022
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2022,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2023,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2024,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2025,
+        "team": "UConn",
+        "year": 4
+      },
+      {
+        "jersey": 66,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  },
+  {
+    "playerId": "5211886",
+    "recruiting": {
+      "athleteId": "5211886",
+      "city": "Marion",
+      "committedTo": "UCF",
+      "country": "USA",
+      "grade": "C",
+      "height": 78,
+      "hometownInfo": {
+        "fipsCode": "25023",
+        "latitude": 41.7001043,
+        "longitude": -70.7628129
+      },
+      "id": "105644",
+      "name": "Amahn Williams",
+      "position": "OT",
+      "ranking": 1358,
+      "rating": 0.8644,
+      "recruitType": "HighSchool",
+      "school": "Tabor Academy",
+      "stars": 3,
+      "stateProvince": "MA",
+      "teamSlug": "ucf",
+      "valueType": "BENCHMARK",
+      "weight": 260,
+      "year": 2026
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 71,
+        "position": "OL",
+        "season": 2026,
+        "team": "UCF",
+        "year": 1
+      }
+    ]
+  },
+  {
+    "playerId": "4709684",
+    "recruiting": {
+      "athleteId": "4709684",
+      "city": "Valrico",
+      "committedTo": "Florida Atlantic",
+      "country": "USA",
+      "grade": "D",
+      "height": 71,
+      "hometownInfo": {
+        "fipsCode": "12057",
+        "latitude": 27.9484265,
+        "longitude": -82.23621545220522
+      },
+      "id": "117927",
+      "name": "Jayden Williams",
+      "position": "CB",
+      "ranking": 2236,
+      "rating": 0.8111,
+      "recruitType": "HighSchool",
+      "school": "Bloomingdale",
+      "stars": 3,
+      "stateProvince": "FL",
+      "teamSlug": "florida-atlantic",
+      "valueType": "BENCHMARK",
+      "weight": 185,
+      "year": 2021
+    },
+    "team": "UCF",
+    "timeline": [
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2021,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2022,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2023,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2024,
+        "team": "Florida Atlantic",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2025,
+        "team": "UCF",
+        "year": 4
+      },
+      {
+        "jersey": 2,
+        "position": "DB",
+        "season": 2026,
+        "team": "UCF",
+        "year": 4
+      }
+    ]
+  }
+]
