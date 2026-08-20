@@ -1,17 +1,64 @@
 import Link from "next/link";
-import Image from "next/image";
-import {gameDate,gameTime,homeData,logoUrl,opponentOf} from "../lib/home-data";
+import {gameDate,gameTime,homeData,opponentOf} from "../lib/home-data";
 import {formatMichiganSpread,marketLineFor} from "../lib/market-lines";
-import {coachingForSeason} from "../lib/michigan/coaching";
 
-const stat=(player:ReturnType<typeof homeData>["squad"][number]|undefined,label:string)=>player?.insight?.pastSeasons.find(season=>season.season===2025)?.stats.find(row=>row.label===label)?.value;
+const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.performanceGrade??player.grade??player.importanceTier??"—";
 
-export default function Home(){const{next,schedule,roster,squad}=homeData();const opponent=next?opponentOf(next):null;const nextMarket=next?marketLineFor(next.id):null;const bryce=squad.find(player=>player.id==="5141741");const jordan=squad.find(player=>player.id==="5079574");const hiter=squad.find(player=>player.id==="5159046");const staff=coachingForSeason(2026);return <div className="home">
-<div className="wrap home-lead-story"><section className="new-era-feature"><div className="new-era-copy"><span className="kicker maize">2026 SEASON PREVIEW · TEAM 147</span><h1>A NEW<br/><b>AGE.</b></h1><p>Michigan’s difficult reset, Whittingham’s culture, a rebuilt roster and the sophomore quarterback who can change the ceiling.</p><Link className="button primary" href="/articles/new-age-era">READ THE FEATURE →</Link></div><Image src="/images/home/new-age-era.png" width={1122} height={1402} sizes="(max-width: 800px) 46vw, 58vw" priority alt="New Age Wolverines artwork featuring Michigan's new coaching era and young offensive core"/></section></div>
-<section className="hero home-season-status"><div className="hero-grid"/><div className="wrap hero-inner"><div className="hero-copy"><span className="kicker">2026 SEASON · PRESEASON</span><h2><span>MICHIGAN</span> FOOTBALL</h2><p className="hero-deck">The new staff, the new core, and the data that matters.</p><div className="hero-actions"><Link className="button primary" href="/team">MEET THE TEAM <span>→</span></Link><Link className="button ghost" href="/articles">READ THE NOTEBOOK</Link></div></div>{next&&opponent&&<div className="hero-game"><div className="hero-game-top"><span>NEXT UP</span><span>WEEK {next.week}</span></div><div className="matchup"><div><img src={logoUrl(130)} alt="Michigan"/><b>MICHIGAN</b></div><em>VS</em><div><img src={logoUrl(opponent.id)} alt={opponent.name}/><b>{opponent.name.toUpperCase()}</b></div></div>{nextMarket&&<div className="market-callout"><span><small>MARKET SPREAD</small><b>{formatMichiganSpread(nextMarket.teamSpread)}</b></span><span><small>MARKET WIN CHANCE</small><b>{Math.round(nextMarket.marketWinChance*100)}%</b></span></div>}<div className="game-meta"><strong>{gameDate(next)} · {gameTime(next)}</strong><span>{next.venue}</span></div></div>}</div><div className="wrap hero-rail"><span>TEAM 147</span><b>{roster.length} WOLVERINES</b><i/><span>THE ROAD</span><b>{schedule.length} GAMES</b></div></section>
-<div className="wrap home-focus-stack"><section className="squad-spotlight"><header className="section-header"><div><span className="kicker navy">THE NEW CORE</span><h2>Three names. One new era.</h2></div><Link href="/team">FULL TEAM →</Link></header><div className="squad-board">
-{bryce&&<Link href={`/players/${bryce.id}`} className="squad-qb"><div className="squad-copy"><span>SOPHOMORE CAPTAIN · QB1</span><h3>BRYCE<br/><b>UNDERWOOD</b></h3><p>Thirteen starts are the foundation. The next step is command of a new offense.</p><div className="squad-numbers"><span><b>{stat(bryce,"Pass yards")?.toLocaleString()??"—"}</b><small>PASS YARDS</small></span><span><b>{stat(bryce,"Rush yards")?.toLocaleString()??"—"}</b><small>RUSH YARDS</small></span><span><b>{bryce.grade??"—"}</b><small>2025 PRODUCTION</small></span></div></div>{bryce.playerImageUrl&&<img src={bryce.playerImageUrl} alt="Bryce Underwood in his Michigan uniform"/>}<em>PLAYER FILE →</em></Link>}
-<div className="squad-rb"><div className="room-heading"><span>THE BACKFIELD</span><h3>MARSHALL + HITER</h3><p>Proven production meets five-star upside.</p></div>{[jordan,hiter].filter(Boolean).map(player=>player&&<Link href={`/players/${player.id}`} key={player.id} className="room-player">{player.playerImageUrl&&<img src={player.playerImageUrl} alt={`${player.firstName} ${player.lastName} in his Michigan uniform`}/>}<div><span>#{player.jersey} · {player.year===1?"FRESHMAN":"JUNIOR"}</span><strong>{player.firstName}<br/><b>{player.lastName}</b></strong><small>{player.id==="5079574"?`${stat(player,"Rush yards")?.toLocaleString()??"—"} YDS · ${stat(player,"Rush TD")??"—"} TD`:`${player.stars??"—"}-STAR · #${player.nationalRecruitRank??"—"} COMPOSITE`}</small></div></Link>)}</div>
-</div><div className="staff-command"><div><span className="kicker maize">NEW COMMAND</span><h3>{staff?.head_coach??"New leadership"}</h3><p>One connected staff. One clear football plan.</p></div><div className="staff-three"><span><small>HEAD COACH</small><b>{staff?.head_coach??"—"}</b></span><span><small>OFFENSE</small><b>{staff?.offensive_coordinator??"—"}</b></span><span><small>DEFENSE</small><b>{staff?.defensive_coordinator??"—"}</b></span></div><Link href="/articles/2026-coaching-staff">READ →</Link></div></section>
-<nav className="home-gateways" aria-label="Explore Michigan Football Focus"><Link href="/articles"><small>READ</small><strong>Notebook</strong><span>→</span></Link><Link href="/analytics"><small>UNDERSTAND</small><strong>Analytics</strong><span>→</span></Link><Link href="/schedule"><small>FOLLOW</small><strong>Schedule</strong><span>→</span></Link><Link href="/recruiting"><small>TRACK</small><strong>Recruiting</strong><span>→</span></Link></nav></div>
-</div>}
+export default function Home(){
+  const {next,schedule,roster,squad}=homeData();
+  const opponent=next?opponentOf(next):null;
+  const market=next?marketLineFor(next.id):null;
+  const players=[
+    squad.find(p=>p.id==="5141741"),
+    squad.find(p=>p.id==="5079574"),
+    squad.find(p=>p.id==="5159046"),
+  ].filter(Boolean) as ReturnType<typeof homeData>["squad"];
+
+  return <div className="mock-home">
+    <div className="mock-shell">
+      {next&&opponent&&<section className="mock-game-card">
+        <div className="mock-game-art" aria-hidden="true"/>
+        <div className="mock-game-content">
+          <span className="mock-eyebrow maize">NEXT GAME</span>
+          <h1>MICHIGAN</h1>
+          <h2><span>VS</span> {opponent.name.toUpperCase()}</h2>
+          <div className="mock-game-meta"><span>▣ {gameDate(next)}</span><span>◷ {gameTime(next)}</span><span>▣ {next.venue}</span></div>
+          <div className="mock-game-lower">
+            <div className="mock-probability"><span>{market?"MARKET WIN CHANCE":"WIN PROBABILITY"}</span><strong>{market?`${Math.round(market.marketWinChance*100)}%`:"—"}</strong><div><i style={{width:market?`${Math.round(market.marketWinChance*100)}%`:"0%"}}/></div><small>{market?`Michigan ${formatMichiganSpread(market.teamSpread)}`:"Available game week"}</small></div>
+            <Link href="/schedule" className="mock-outline-button">GAME PREVIEW <b>›</b></Link>
+          </div>
+        </div>
+      </section>}
+
+      <section className="mock-section pulse-section">
+        <header><h2>MICHIGAN PULSE</h2><span>2026 PRESEASON</span></header>
+        <div className="pulse-scroll">
+          <article><small>TEAM 147</small><strong>{roster.length}</strong><span>Wolverines</span></article>
+          <article><small>SCHEDULE</small><strong>{schedule.length}</strong><span>Games</span></article>
+          <article><small>{market?"NEXT GAME CHANCE":"CFP CHANCE"}</small><strong>{market?`${Math.round(market.marketWinChance*100)}%`:"—"}</strong><span>{market?"Market context":"Coming soon"}</span></article>
+          <article><small>TREND</small><strong className="trend-arrow">↗</strong><span>New era</span></article>
+          <article><small>BIGGEST TEST</small><strong>OU</strong><span>Oklahoma</span></article>
+        </div>
+      </section>
+
+      <section className="mock-section">
+        <header><h2>PLAYERS TO WATCH</h2><Link href="/team">VIEW ALL <b>›</b></Link></header>
+        <div className="player-watch-scroll">
+          {players.map(player=><Link className="watch-card" href={`/players/${player.id}`} key={player.id}>
+            <div className="blank-player-image"><span>{player.jersey??"M"}</span></div>
+            <div className="watch-copy"><small>#{player.jersey??"—"}</small><h3>{player.firstName}<br/>{player.lastName}</h3><p>{player.position??"ATH"} · {player.year===1?"Freshman":player.year===2?"Sophomore":player.year===3?"Junior":player.year===4?"Senior":"Michigan"}</p><div><b>{grade(player)}</b><span>PLAYER GRADE</span></div></div>
+          </Link>)}
+        </div>
+      </section>
+
+      <section className="mock-section news-section">
+        <header><h2>LATEST NEWS</h2><Link href="/articles">VIEW ALL <b>›</b></Link></header>
+        <div className="mock-news-list">
+          <Link href="/articles/new-age-era"><div className="blank-news-image"/><div><small>ANALYSIS</small><h3>A New Age: Michigan enters 2026 with a new staff and a new ceiling</h3><span>Season preview</span></div></Link>
+          <Link href="/articles/2026-coaching-staff"><div className="blank-news-image"/><div><small>NOTEBOOK</small><h3>Inside Michigan’s new coaching staff</h3><span>2026 preview</span></div></Link>
+          <Link href="/recruiting"><div className="blank-news-image"/><div><small>RECRUITING</small><h3>Track Michigan’s roster and recruiting movement</h3><span>Recruiting hub</span></div></Link>
+        </div>
+      </section>
+    </div>
+  </div>;
+}
