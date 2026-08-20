@@ -8,7 +8,12 @@ body{background:var(--mock-bg)}
 /* The source PNG is 2048x682, but its visible artwork only occupies y=115..523.
    Size it by width so the visible ~60% artwork height matches the Block M. */
 .nav-brand-logo{display:block;width:260px;height:auto;object-fit:contain;flex:0 0 auto}
-.mock-menu{color:white;font-size:25px;line-height:1}
+.mock-menu{width:44px;height:44px;display:grid;place-items:center;flex:0 0 auto;border:1px solid #2a455f;border-radius:9px;background:#071a2c;color:#f4f7fb;transition:border-color .18s ease,background .18s ease,transform .18s ease}
+.mock-menu svg{width:25px;height:25px;overflow:visible}
+.mock-menu path{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;transition:stroke .18s ease}
+.mock-menu .menu-accent{stroke:var(--mock-maize)}
+.mock-menu:hover,.mock-menu:focus-visible{border-color:var(--mock-maize);background:#0b2237;outline:none}
+.mock-menu:active{transform:scale(.96)}
 .mock-home{min-height:100vh;background:linear-gradient(180deg,#031426 0%,#031222 100%);color:var(--mock-text);padding:24px 0 90px}
 .mock-shell{width:min(1180px,calc(100% - 34px));margin:auto;display:grid;gap:28px}
 .mock-game-card{position:relative;min-height:470px;border:1px solid #324a61;border-radius:8px;overflow:hidden;background:#06192b}
@@ -34,13 +39,13 @@ footer{background:#020b13}
   .mock-site-nav{height:70px;position:sticky}
   .mock-nav-inner{width:calc(100% - 28px)}
   .nav-michigan-logo{width:52px;height:52px}
-  .nav-brand-logo{width:235px;height:auto;max-width:none}
-  .mock-menu{font-size:26px}
+  .nav-brand-logo{width:238px;max-width:calc(100vw - 150px);height:auto}
+  .mock-menu{width:42px;height:42px;border-radius:8px}
+  .mock-menu svg{width:24px;height:24px}
   .desktop-links{display:none!important}
   .mock-home{padding:14px 0 calc(76px + env(safe-area-inset-bottom))}
   .mock-shell{width:calc(100% - 24px);gap:22px}
 
-  /* Hero follows the reference: landscape, not a tall stacked card. */
   .mock-game-card{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:1.62/1;border-radius:8px}
   .mock-hero-photo{left:40%;right:0;top:0;bottom:0;height:auto}
   .mock-hero-photo img{object-position:58% 25%;transform:scale(1.02)}
@@ -58,7 +63,6 @@ footer{background:#020b13}
   .mock-probability small{font-size:9px;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .mock-outline-button{min-width:0;width:100%;height:48px;min-height:48px;gap:14px;font-size:9px;padding:0 10px;background:#041524d9}
 
-  /* Reference keeps all five Pulse cards visible at once. */
   .mock-section>header{margin-bottom:10px}
   .mock-section>header h2{font-size:23px}
   .pulse-section>header>span{font-size:8px}
@@ -70,7 +74,6 @@ footer{background:#020b13}
   .pulse-scroll .trend-arrow{width:40px;height:40px;font-size:26px}
   .pulse-opponent img{width:38px;height:38px}
 
-  /* Reference keeps all three feature players visible at once. */
   .player-watch-scroll{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;overflow:visible;margin:0}
   .watch-card{width:auto;height:250px;min-width:0;flex:none}
   .blank-player-image>span{font-size:20px;top:9px;left:10px}
@@ -82,41 +85,41 @@ footer{background:#020b13}
   .watch-copy>div span{font-size:7px}
 
   .mock-news-list>a{grid-template-columns:100px 1fr;min-height:92px}
-  .mock-news-list>a>div:last-child{padding:12px}
-  .mock-news-list h3{font-size:13px;margin:3px 0 5px}
+  .mock-news-list>a>div:last-child{padding:11px 12px}
+  .mock-news-list h3{font-size:12px}
 
-  /* Flat app-style nav: no floating pill or oversized active tile. */
-  .mock-bottom-nav{position:fixed;left:0;right:0;bottom:0;width:100%;height:calc(64px + env(safe-area-inset-bottom));margin:0;border:0;border-top:1px solid #20394f;border-radius:0;background:#031426;box-shadow:none;padding:0 6px env(safe-area-inset-bottom);display:grid;grid-template-columns:repeat(5,1fr);z-index:50}
-  .mock-bottom-nav a{height:64px;min-width:0;padding:7px 2px 6px!important;border-radius:0!important;background:transparent!important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#c4ced8!important;font-size:9px!important}
-  .mock-bottom-nav a svg{width:20px!important;height:20px!important;fill:none!important;stroke:currentColor;stroke-width:1.8}
-  .mock-bottom-nav a span{font-size:9px!important;line-height:1!important;color:inherit!important}
-  .mock-bottom-nav a.active{color:var(--mock-maize)!important}
-  .mock-bottom-nav a.active svg{fill:currentColor!important;stroke:currentColor}
+  .mock-bottom-nav{height:calc(64px + env(safe-area-inset-bottom))!important;min-height:64px;padding:0 0 env(safe-area-inset-bottom)!important;grid-template-columns:repeat(5,1fr)!important;background:#031426f7!important;border:0!important;border-top:1px solid #263e54!important;border-radius:0!important;box-shadow:none!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;max-width:none!important;transform:none!important}
+  .mock-bottom-nav a{min-width:0!important;height:64px!important;padding:7px 3px 6px!important;gap:3px!important;border:0!important;border-radius:0!important;background:transparent!important;color:#c3ccd6!important;text-transform:uppercase;font:600 8px var(--body)!important}
+  .mock-bottom-nav a svg{width:21px!important;height:21px!important;fill:none;stroke:currentColor;stroke-width:1.8}
+  .mock-bottom-nav a.active{color:var(--mock-maize)!important;background:transparent!important;box-shadow:none!important}
+  .mock-bottom-nav a.active svg{fill:currentColor;stroke:currentColor}
+  footer{display:none}
 }
 
 @media(max-width:520px){
-  .mock-game-card{aspect-ratio:1.48/1}
-  .mock-game-content{padding:18px 16px}
-  .mock-game-content h1{font-size:42px}
-  .mock-game-content h2{font-size:19px}
-  .mock-game-meta{font-size:8px}
-  .mock-game-lower{left:12px;right:12px;bottom:12px;grid-template-columns:minmax(0,1fr) 132px;gap:8px}
-  .mock-probability{padding:9px 10px}.mock-probability strong{font-size:34px}
-  .mock-outline-button{height:46px;min-height:46px;font-size:8px}
-  .pulse-scroll{gap:5px}.pulse-scroll article{padding:9px 4px;min-height:112px}.pulse-scroll small{font-size:7px}.pulse-scroll strong{font-size:27px}.pulse-scroll span{font-size:7px}.pulse-scroll .trend-arrow{width:36px;height:36px;font-size:23px}.pulse-opponent img{width:34px;height:34px}
-  .watch-card{height:225px}.watch-copy h3{font-size:17px}.watch-copy p{font-size:7px}.watch-copy>div span{font-size:6.5px}
+  .mock-site-nav{height:66px}
+  .nav-michigan-logo{width:48px;height:48px}
+  .nav-brand-logo{width:215px;max-width:calc(100vw - 138px)}
+  .mock-menu{width:40px;height:40px}
+  .mock-shell{width:calc(100% - 20px);gap:20px}
+  .mock-game-card{aspect-ratio:1.56/1}
+  .mock-game-content{padding:18px 15px}
+  .mock-game-content h1{font-size:42px;max-width:63%}
+  .mock-game-content h2{font-size:19px;max-width:75%}
+  .mock-game-meta{font-size:8px;gap:6px 9px;max-width:76%}
+  .mock-game-lower{left:12px;right:12px;bottom:11px;grid-template-columns:minmax(0,1fr) 126px;gap:8px}
+  .mock-probability{padding:8px 10px}.mock-probability strong{font-size:33px}.mock-outline-button{height:44px;min-height:44px;font-size:8px}
+  .mock-section>header h2{font-size:21px}.pulse-scroll{gap:5px}.pulse-scroll article{min-height:108px;padding:9px 4px}.pulse-scroll small{font-size:7px}.pulse-scroll strong{font-size:27px}.pulse-scroll span{font-size:7px}.pulse-scroll .trend-arrow{width:36px;height:36px;font-size:23px}.pulse-opponent img{width:34px;height:34px}
+  .watch-card{height:225px}.watch-copy h3{font-size:17px}.watch-copy p{font-size:7px}.watch-copy>div span{font-size:6px}
 }
 
 @media(max-width:390px){
-  .mock-nav-inner{width:calc(100% - 22px)}
-  .nav-michigan-logo{width:46px;height:46px}
-  .nav-brand-logo{width:205px;height:auto}
-  .mock-shell{width:calc(100% - 18px)}
-  .mock-game-card{aspect-ratio:1.38/1}
-  .mock-game-content{padding:15px 13px}
-  .mock-game-content h1{font-size:37px}.mock-game-content h2{font-size:17px}.mock-game-meta{gap:5px 8px;font-size:7.5px}
-  .mock-game-lower{left:10px;right:10px;bottom:10px;grid-template-columns:minmax(0,1fr) 118px;gap:7px}
-  .mock-probability strong{font-size:31px}.mock-probability small{font-size:7.5px}.mock-outline-button{height:43px;min-height:43px;font-size:7.5px}
-  .mock-section>header h2{font-size:21px}.pulse-scroll{gap:4px}.pulse-scroll article{min-height:108px;padding:8px 3px}.pulse-scroll small{font-size:6.5px}.pulse-scroll strong{font-size:24px}.pulse-scroll span{font-size:6.5px}.pulse-scroll .trend-arrow{width:33px;height:33px;font-size:21px}.pulse-opponent img{width:31px;height:31px}
-  .player-watch-scroll{gap:5px}.watch-card{height:205px}.watch-copy{padding:42px 7px 8px}.watch-copy h3{font-size:15px}.watch-copy p{font-size:6.5px}.watch-copy>div b{font-size:12px}.watch-copy>div span{font-size:6px}
+  .nav-michigan-logo{width:44px;height:44px}
+  .nav-brand-logo{width:190px;max-width:calc(100vw - 128px)}
+  .mock-game-card{aspect-ratio:1.48/1}
+  .mock-game-content h1{font-size:38px}
+  .mock-game-content h2{font-size:17px}
+  .mock-game-lower{grid-template-columns:minmax(0,1fr) 112px}
+  .pulse-scroll{gap:4px}.pulse-scroll article{padding-inline:3px}.pulse-scroll small{font-size:6px}.pulse-scroll strong{font-size:25px}.pulse-scroll span{font-size:6px}
+  .watch-card{height:205px}.watch-copy h3{font-size:15px}
 }
