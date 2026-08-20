@@ -3,18 +3,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [["/","Home"],["/team","Team"],["/team/depth-chart","Depth Chart"],["/schedule","Schedule"],["/recruiting","Recruiting"],["/analytics","Analytics"],["/history","History"]] as const;
+const links = [["/","Home"],["/team","Team"],["/schedule","Schedule"],["/recruiting","Recruiting"],["/analytics","Analytics"],["/articles","Stories"]] as const;
 const mobile = links.slice(0,4);
 const active = (path:string,href:string) => {
   if (href === "/") return path === "/";
-  if (href === "/team") return path === "/team" || path === "/team/roster" || path.startsWith("/team/positions/");
+  if (href === "/team") return path === "/team" || path === "/team/roster" || path.startsWith("/team/positions/") || path.startsWith("/team/depth-chart");
   return path.startsWith(href);
 };
 
 function MobileIcon({label}:{label:string}) {
   if(label === "Home") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 10 8-6 8 6v9H4z"/><path d="M9 19v-6h6v6"/></svg>;
   if(label === "Team") return <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M6 20c0-4 2-7 6-7s6 3 6 7"/></svg>;
-  if(label === "Depth Chart") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v18M20 3v18M4 7h16M4 17h16M8 12h8"/><circle cx="12" cy="12" r="2"/></svg>;
+  if(label === "Recruiting") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M6 10.5V15c0 2 2.7 4 6 4s6-2 6-4v-4.5"/></svg>;
   return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>;
 }
 
