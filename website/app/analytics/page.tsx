@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {AnalyticsYearSwitch} from "../../components/AnalyticsYearSwitch";
 
 const years=Array.from({length:17},(_,i)=>2010+i);
 const blank="—";
@@ -20,10 +21,7 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
   ] as const;
 
   return <div className="analytics-overview">
-    <nav className="analytics-year-switch" aria-label="Analytics season">
-      <span className="year-calendar" aria-hidden="true">▦</span>
-      {years.map(y=><Link key={y} href={`/analytics?year=${y}`} className={year===y?"active":""}>{y}{y===2026&&<small>TBD</small>}</Link>)}
-    </nav>
+    <AnalyticsYearSwitch year={year}/>
 
     <section className="analytics-overview-hero">
       <div className="analytics-overview-hero-copy">
