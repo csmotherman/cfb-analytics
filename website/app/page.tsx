@@ -29,7 +29,7 @@ export default function Home(){
           <div className="mock-game-meta"><span>▣ {gameDate(next)}</span><span>◷ {gameTime(next)}</span><span>▣ {next.venue}</span></div>
           <div className="mock-game-lower">
             <div className="mock-probability"><span>{market?"MARKET WIN CHANCE":"WIN PROBABILITY"}</span><strong>{market?`${Math.round(market.marketWinChance*100)}%`:"—"}</strong><div><i style={{width:market?`${Math.round(market.marketWinChance*100)}%`:"0%"}}/></div><small>{market?`Michigan ${formatMichiganSpread(market.teamSpread)}`:"Available game week"}</small></div>
-            <Link href="/schedule" className="mock-outline-button">GAME PREVIEW <b>›</b></Link>
+            <Link href={`/games/${next.id}`} className="mock-outline-button">GAME PREVIEW <b>›</b></Link>
           </div>
         </div>
       </section>}
