@@ -26,7 +26,13 @@ export function SiteNav(){
         <Image src="/brand/michigan-football-focus.png" alt="Michigan Football Focus" width={240} height={72} priority className="nav-brand-logo"/>
       </Link>
       <nav className="desktop-links" aria-label="Primary navigation">{desktopLinks.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""}>{label}</Link>)}</nav>
-      <Link href="/more" className="mock-menu" aria-label="More">☰</Link>
+      <Link href="/more" className="mock-menu" aria-label="Open menu">
+        <svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M5 8h18"/>
+          <path className="menu-accent" d="M5 14h18"/>
+          <path d="M5 20h18"/>
+        </svg>
+      </Link>
     </div></header>
     <nav className="bottom-nav mock-bottom-nav" aria-label="Mobile primary navigation">
       {mobileLinks.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""}><Icon label={label}/><span>{label}</span></Link>)}
