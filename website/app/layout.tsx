@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "../styles/importance.css";
+import "../styles/ux-polish.css";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
