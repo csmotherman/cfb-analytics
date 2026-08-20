@@ -6,9 +6,10 @@ import {teamLogoUrl} from "../lib/team-assets";
 const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.performanceGrade??player.grade??player.importanceTier??"—";
 
 export default function Home(){
-  const {next,schedule,roster,squad}=homeData();
+  const {next,schedule,squad,outlook}=homeData();
   const opponent=next?opponentOf(next):null;
   const market=next?marketLineFor(next.id):null;
+  const cfpChance=outlook?`${Math.round(outlook.cfp.noVigImpliedProbability*100)}%`:"—";
   const players=[
     squad.find(p=>p.id==="5141741"),
     squad.find(p=>p.id==="5079574"),
@@ -39,13 +40,13 @@ export default function Home(){
       </section>}
 
       <section className="mock-section pulse-section">
-        <header><h2>MICHIGAN PULSE</h2><span>2026 PRESEASON</span></header>
+        <header><h2>MICHIGAN PULSE</h2><span>UPDATED TODAY</span></header>
         <div className="pulse-scroll">
-          <article><small>TEAM 147</small><strong>{roster.length}</strong><span>Wolverines</span></article>
-          <article><small>SCHEDULE</small><strong>{schedule.length}</strong><span>Games</span></article>
-          <article><small>{market?"NEXT GAME CHANCE":"CFP CHANCE"}</small><strong>{market?`${Math.round(market.marketWinChance*100)}%`:"—"}</strong><span>{market?"Market context":"Coming soon"}</span></article>
-          <article><small>TREND</small><strong className="trend-arrow">↗</strong><span>New era</span></article>
-          <article><small>BIGGEST TEST</small><strong>OU</strong><span>Oklahoma</span></article>
+          <article><small>PROJECTED RECORD</small><strong>—</strong><span>Coming soon</span></article>
+          <article><small>TEAM RANKING</small><strong>—</strong><span>National</span></article>
+          <article><small>CFP CHANCE</small><strong>{cfpChance}</strong><span>{outlook?"Market outlook":"Coming soon"}</span></article>
+          <article><small>TREND</small><strong className="trend-arrow">↗</strong><span>Preseason</span></article>
+          {next&&opponent?<article className="pulse-opponent"><small>UPCOMING TEST</small><img src={teamLogoUrl(opponent.id,128)} alt={`${opponent.name} logo`}/><span>{opponent.site==="HOME"?"vs":"@"} {opponent.name} · {gameDate(next)}</span></article>:<article><small>UPCOMING TEST</small><strong>—</strong><span>Schedule TBD</span></article>}
         </div>
       </section>
 
