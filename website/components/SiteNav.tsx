@@ -6,7 +6,7 @@ import {usePathname} from "next/navigation";
 import {teamLogoUrl} from "../lib/team-assets";
 
 const desktopLinks=[["/team","Team"],["/schedule","Schedule"],["/recruiting","Recruiting"],["/analytics","Analytics"],["/articles","News"]] as const;
-const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/recruiting","Recruiting"]] as const;
+const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 
 const active=(path:string,href:string)=>href==="/"?path==="/":path.startsWith(href);
 
@@ -14,6 +14,7 @@ function Icon({label}:{label:string}){
   if(label==="Home")return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3z"/></svg>;
   if(label==="Team")return <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-4 2-7 6-7s6 3 6 7M10 20c0-4 2-7 6-7s6 3 6 7"/></svg>;
   if(label==="Schedule")return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>;
+  if(label==="Analytics")return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>;
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>;
 }
 
