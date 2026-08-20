@@ -1,0 +1,219 @@
+/* Final responsive polish layer.
+   Keep this file last so it normalizes the older feature-specific styles
+   without forcing a rewrite of working route markup. */
+
+:root{
+  --page-gutter:clamp(18px,3vw,32px);
+  --section-space:clamp(48px,6vw,76px);
+  --card-pad:clamp(18px,2.2vw,26px);
+  --readable-muted:#66758a;
+}
+
+body{font-size:16px;line-height:1.55}
+.wrap{width:min(1220px,calc(100% - (var(--page-gutter) * 2)))}
+
+/* Normalized type hierarchy: one dramatic moment per page, not every block. */
+.hero h1,
+.command-hero h1,
+.player-hero h1,
+.route-page>h1,
+.page-banner h1,
+.player-dossier>header h1,
+.recruit-dossier>header h1{font-size:clamp(3rem,6vw,4.9rem);line-height:.92}
+
+.section-lead h2,
+.section-header h2,
+.outlook h2,
+.recruiting-strip h2,
+.page-hero h1,
+.story-card h2{font-size:clamp(2rem,4vw,3rem);line-height:1}
+
+.story-card:not(.featured) h2{font-size:clamp(1.65rem,2.6vw,2.35rem)}
+.hero-deck,.page-hero p,.section-lead p,.story-grid p,.outlook-copy p,.outlook-note p{font-size:15px;line-height:1.6}
+
+/* Eliminate unreadable public-facing microcopy. */
+.kicker,
+.hero-game-top,
+.card-label,
+.desktop-links a,
+.more-link,
+.game-meta span,
+.hero-rail,
+.section-lead a,
+.section-header a,
+.outlook a,
+.recruiting-strip a,
+.player-card p,
+.story-grid span,
+.story-grid b,
+.schedule-tile>span,
+.schedule-tile p,
+.schedule-tile small,
+.commit-list small,
+.footer-inner span,
+.footer-inner nav,
+.tile-grade small,
+.recruiting-score span,
+.recruit-row small,
+.grade-method>div small,
+.story-card>span,
+.story-card b,
+.story-page header small,
+.importance-source,
+.team-player-list small,
+.dossier-grid span,
+.dossier-grade small,
+.compact-kpis small,
+.dense-table>header{font-size:11px}
+
+/* Navigation: lighter, clearer, better tap sizing. */
+.site-nav{height:64px}
+.nav-inner{gap:24px}
+.desktop-links a{padding-inline:12px;letter-spacing:.01em}
+.more-link{min-height:40px;display:flex;align-items:center;gap:8px}
+
+/* Cards should feel useful rather than oversized. */
+.player-card{flex-basis:230px}
+.player-visual{height:164px}
+.schedule-tile{flex-basis:158px;min-height:190px}
+.story-grid>a{min-height:210px}
+.story-grid .story-main{min-height:270px}
+.story-main h3{font-size:36px}
+.content-stack{padding-block:var(--section-space);gap:var(--section-space)}
+
+/* More editorial breathing room; fewer boxes doing all the hierarchy work. */
+.section-header{margin-bottom:22px}
+.button{min-height:44px}
+.card-scroll,.schedule-scroll{scrollbar-width:none}
+.card-scroll::-webkit-scrollbar,.schedule-scroll::-webkit-scrollbar{display:none}
+
+/* Player/team dossier normalization. */
+.player-dossier>header,.recruit-dossier>header{min-height:170px}
+.dossier-number,.dossier-grade{font-size:50px}
+.dossier-grid strong{font-size:14px}
+.player-hero-copy>b{font-size:28px}
+.player-fallback strong{font-size:130px}
+
+@media(max-width:900px){
+  .wrap{width:min(100% - 40px,760px)}
+  .hero-inner{gap:36px;padding-block:52px}
+  .command-hero{padding-block:62px}
+  .story-grid{gap:12px;background:transparent}
+  .story-grid>a{border:1px solid var(--line)}
+}
+
+@media(max-width:760px){
+  :root{--page-gutter:16px;--section-space:44px;--card-pad:18px}
+  body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  .wrap{width:calc(100% - 32px)}
+
+  /* Mobile is intentionally recomposed: live season context first, feature second. */
+  .home{display:flex;flex-direction:column}
+  .home .home-season-status{order:1}
+  .home .home-lead-story{order:2}
+  .home .home-focus-stack{order:3}
+
+  .site-nav{height:58px}
+  .nav-inner{gap:14px}
+  .focus-wordmark strong{font-size:18px}
+  .focus-wordmark span{font-size:10px}
+  .focus-wordmark small{font-size:9px}
+
+  .bottom-nav{
+    height:calc(64px + env(safe-area-inset-bottom));
+    padding-bottom:env(safe-area-inset-bottom);
+    grid-template-columns:repeat(5,1fr);
+  }
+  .bottom-nav a{min-width:0;gap:4px;font-size:10px}
+  .bottom-nav a svg{width:20px;height:20px}
+  .bottom-nav a>span{font-family:var(--body);font-size:10px;line-height:1}
+
+  /* Normal mobile display scale. */
+  .hero h1,
+  .command-hero h1,
+  .player-hero h1,
+  .route-page>h1,
+  .page-banner h1,
+  .player-dossier>header h1,
+  .recruit-dossier>header h1{font-size:clamp(2.45rem,12vw,3rem);line-height:.94}
+
+  .section-lead h2,
+  .section-header h2,
+  .outlook h2,
+  .recruiting-strip h2,
+  .page-hero h1,
+  .story-card h2,
+  .story-card:not(.featured) h2{font-size:clamp(1.75rem,8vw,2.15rem);line-height:1.02}
+
+  .hero-inner{padding:28px 0 22px}
+  .hero-deck{font-size:15px;line-height:1.5}
+  .hero-actions{gap:8px;margin-top:20px}
+  .button{padding:13px 14px;font-size:11px}
+
+  /* Treat the next game like the mobile dashboard, not a second giant hero. */
+  .home-season-status .hero-copy{margin-bottom:20px}
+  .home-season-status .hero-game{margin-top:18px}
+  .matchup{padding:16px 12px}
+  .matchup img{width:54px;height:54px;margin-bottom:8px}
+  .matchup b{font-size:16px}
+  .game-meta{padding:13px 14px;gap:12px}
+  .game-meta strong{font-size:16px}
+  .game-meta span{font-size:11px;text-align:right}
+  .hero-rail{min-height:48px;padding-inline:16px;gap:10px}
+  .hero-rail span,.hero-rail b{font-size:10px}
+
+  /* The editorial feature becomes a compact follow-up card on phones. */
+  .home-lead-story{padding-top:18px}
+  .new-era-feature{min-height:0!important}
+  .new-era-feature h1{font-size:clamp(2.25rem,10vw,2.8rem)!important;line-height:.9!important}
+  .new-era-feature p{font-size:14px!important;line-height:1.5!important}
+  .new-era-feature .button{width:auto}
+
+  .content-stack{padding:40px 0 56px;gap:44px}
+  .home-focus-stack{padding-top:34px}
+  .section-header{align-items:end;gap:12px;margin-bottom:18px}
+  .section-header a{font-size:11px}
+
+  /* Carousels should reveal the next item instead of filling the screen. */
+  .player-card{flex-basis:min(70vw,250px);max-width:250px}
+  .player-visual{height:154px}
+  .schedule-tile{flex-basis:min(40vw,156px);min-height:182px}
+  .story-grid{display:grid;grid-template-columns:1fr;overflow:visible;gap:12px}
+  .story-grid>a,.story-grid .story-main{min-height:0;padding:22px;scroll-snap-align:none}
+  .story-main h3{font-size:30px}
+
+  .fan-poll{padding:26px 20px}
+  .fan-poll h2{font-size:30px}
+  .recruiting-strip{padding:28px 20px}
+
+  /* Team/player pages: preserve drama but keep information on-screen. */
+  .player-dossier>header,.recruit-dossier>header{min-height:136px;padding:14px;gap:10px}
+  .dossier-number{width:48px;height:70px;font-size:34px}
+  .dossier-grade{font-size:36px}
+  .dossier-grid{grid-template-columns:repeat(2,1fr)}
+  .dossier-grid>div{min-height:66px;padding:10px}
+  .dossier-grid strong{font-size:13px}
+  .player-hero{min-height:430px;padding-block:40px}
+  .player-hero-copy>b{margin-top:20px;font-size:24px}
+  .player-fallback strong{font-size:100px}
+
+  /* Mobile tables favor legibility over maximum density. */
+  .dense-table>header,.dense-table>a{min-height:50px;font-size:12px}
+  .dense-table>header{font-size:10px}
+  .importance-source{font-size:10px;line-height:1.4}
+  .team-player-list small{font-size:10px}
+
+  footer{padding-bottom:28px}
+}
+
+@media(max-width:420px){
+  .hero-actions{display:grid;grid-template-columns:1fr}
+  .button{width:100%}
+  .summary-rail{overflow-x:auto}
+  .summary-rail>span{min-width:92px}
+  .player-dossier>header,.recruit-dossier>header{grid-template-columns:44px 1fr auto}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
