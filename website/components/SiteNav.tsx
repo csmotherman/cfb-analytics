@@ -21,7 +21,7 @@ function MobileIcon({label}:{label:string}) {
 export function SiteNav() {
   const path=usePathname();
   return <><header className="site-nav"><div className="nav-signal"/><div className="wrap nav-inner">
-    <Link href="/" className="wordmark focus-wordmark" aria-label="SOAR Analytics home"><strong>SOAR</strong><span>ANALYTICS<small>MICHIGAN FOOTBALL FOCUS</small></span></Link>
+    <Link href="/" className="wordmark focus-wordmark" aria-label="Michigan Football Focus home"><strong>M</strong><span>MICHIGAN<small>FOOTBALL FOCUS</small></span></Link>
     <nav className="desktop-links" aria-label="Primary navigation">{links.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""} aria-current={active(path,href)?"page":undefined}><span>{label}</span></Link>)}</nav>
     <Link className={`more-link${path.startsWith("/more")?" active":""}`} href="/more"><span>Explore</span><b>＋</b></Link>
   </div></header><nav className="bottom-nav" aria-label="Mobile primary navigation">
