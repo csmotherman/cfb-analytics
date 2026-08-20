@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {gameDate,gameTime,homeData,opponentOf} from "../lib/home-data";
 import {formatMichiganSpread,marketLineFor} from "../lib/market-lines";
+import {teamLogoUrl} from "../lib/team-assets";
 
 const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.performanceGrade??player.grade??player.importanceTier??"—";
 
@@ -17,7 +18,14 @@ export default function Home(){
   return <div className="mock-home">
     <div className="mock-shell">
       {next&&opponent&&<section className="mock-game-card">
-        <div className="mock-game-art" aria-hidden="true"/>
+        <div className="mock-matchup-art">
+          <span className="mock-site-label">{opponent.site}</span>
+          <div className="mock-logo-matchup">
+            <div className="mock-team-logo"><img src={teamLogoUrl(130,256)} alt="Michigan logo"/><strong>MICHIGAN</strong></div>
+            <span className="mock-vs">VS</span>
+            <div className="mock-team-logo"><img src={teamLogoUrl(opponent.id,256)} alt={`${opponent.name} logo`}/><strong>{opponent.name.toUpperCase()}</strong></div>
+          </div>
+        </div>
         <div className="mock-game-content">
           <span className="mock-eyebrow maize">NEXT GAME</span>
           <h1>MICHIGAN</h1>
