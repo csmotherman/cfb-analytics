@@ -19,13 +19,8 @@ export default function Home(){
   return <div className="mock-home">
     <div className="mock-shell">
       {next&&opponent&&<section className="mock-game-card">
-        <div className="mock-matchup-art">
-          <span className="mock-site-label">{opponent.site}</span>
-          <div className="mock-logo-matchup">
-            <div className="mock-team-logo"><img src={teamLogoUrl(130,256)} alt="Michigan logo"/><strong>MICHIGAN</strong></div>
-            <span className="mock-vs">VS</span>
-            <div className="mock-team-logo"><img src={teamLogoUrl(opponent.id,256)} alt={`${opponent.name} logo`}/><strong>{opponent.name.toUpperCase()}</strong></div>
-          </div>
+        <div className="mock-hero-photo" aria-hidden="true">
+          <img src="/images/Bryce Underwood/Bryce4k.jpg" alt=""/>
         </div>
         <div className="mock-game-content">
           <span className="mock-eyebrow maize">NEXT GAME</span>
