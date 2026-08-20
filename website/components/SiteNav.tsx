@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 
@@ -19,7 +20,7 @@ export function SiteNav(){
   const path=usePathname();
   return <>
     <header className="site-nav mock-site-nav"><div className="wrap nav-inner mock-nav-inner">
-      <Link href="/" className="mock-wordmark" aria-label="Michigan Football home"><span className="mock-m">M</span><span><strong>MICHIGAN</strong><small>FOOTBALL</small></span></Link>
+      <Link href="/" className="mock-wordmark" aria-label="Michigan Football Focus home"><Image src="/brand/michigan-football-focus.png" alt="Michigan Football Focus" width={240} height={72} priority className="nav-brand-logo"/></Link>
       <nav className="desktop-links" aria-label="Primary navigation">{desktopLinks.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""}>{label}</Link>)}</nav>
       <Link href="/more" className="mock-menu" aria-label="More">☰</Link>
     </div></header>
