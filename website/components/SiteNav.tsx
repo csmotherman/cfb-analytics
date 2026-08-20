@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
-import {teamLogoUrl} from "@/lib/team-assets";
+import {teamLogoUrl} from "../lib/team-assets";
 
 const desktopLinks=[["/team","Team"],["/schedule","Schedule"],["/recruiting","Recruiting"],["/analytics","Analytics"],["/articles","News"]] as const;
 const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/recruiting","Recruiting"]] as const;
