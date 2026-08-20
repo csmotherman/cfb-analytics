@@ -3,6 +3,7 @@ import "./globals.css";
 import "../styles/importance.css";
 import "../styles/ux-polish.css";
 import "../styles/mockup-home.css";
+import "../styles/matchup-logos.css";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
