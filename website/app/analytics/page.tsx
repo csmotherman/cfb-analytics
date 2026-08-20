@@ -50,8 +50,8 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
     <section className="analytics-overview-section analytics-explore"><h2>EXPLORE ANALYTICS</h2><div className="analytics-explore-grid">
       {explore.map(([href,title,copy,image])=><Link href={href} className="analytics-explore-card" key={title}><div className="analytics-explore-image" style={{backgroundImage:`linear-gradient(180deg,transparent 30%,rgba(3,20,38,.95)),url('${image}')`}}/><div><h3>{title}</h3><p>{copy}</p><b>›</b></div></Link>)}
     </div><div className="analytics-explore-secondary">
-      <Link href="/analytics/trends"><span>⌁</span><div><h3>TRENDS</h3><p>Is Michigan getting better?</p></div><b>›</b></Link>
-      <Link href="/analytics/staff"><span>♟</span><div><h3>STAFF &amp; SCHEME</h3><p>What the new staff could change</p></div><b>›</b></Link>
+      <Link href="/analytics/trends" style={{backgroundImage:"linear-gradient(90deg,rgba(3,20,38,.94),rgba(3,20,38,.56)),url('/images/analytics/overview-trends.png')"}}><div><h3>TRENDS</h3><p>Is Michigan getting better?</p></div><b>›</b></Link>
+      <Link href="/analytics/staff" style={{backgroundImage:"linear-gradient(90deg,rgba(3,20,38,.94),rgba(3,20,38,.56)),url('/images/analytics/overview-staff.png')"}}><div><h3>STAFF &amp; SCHEME</h3><p>What the new staff could change</p></div><b>›</b></Link>
     </div></section>
   </div>;
 }
