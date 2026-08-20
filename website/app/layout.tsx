@@ -4,6 +4,7 @@ import "../styles/importance.css";
 import "../styles/ux-polish.css";
 import "../styles/mockup-home.css";
 import "../styles/matchup-logos.css";
+import "../styles/more-page.css";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
