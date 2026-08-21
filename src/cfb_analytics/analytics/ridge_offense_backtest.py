@@ -74,6 +74,10 @@ def _solve_prepared(prepared,lam:float):
  offense={t:float(beta[idx[t]]) for t in prepared['team_ids']};defense={t:float(beta[n+idx[t]]) for t in prepared['team_ids']}
  return {'baseline':prepared['baseline'],'offense_effect':offense,'defense_effect':defense}
 
+def _solve_ppd_ridge(rows:list[dict[str,Any]],lam:float):
+ """Compatibility wrapper for callers/tests using the pre-optimization helper."""
+ return _solve_prepared(_prepare_ppd_system(rows),lam)
+
 def _raw_ppd(train):
  totals={}
  for r in train:
