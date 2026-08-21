@@ -19,11 +19,13 @@
   .player-focus-stats>header h2,.player-focus-related>header h2{font-size:16px;line-height:1.2}
   .player-stat-table-shell{width:100%;max-width:100%;min-width:0;margin:0;overflow:hidden}
   .player-stat-table-wrap{width:100%;max-width:100%;box-sizing:border-box;overflow-x:auto;overflow-y:hidden}
-  .player-stat-table{width:max-content;min-width:680px;max-width:none}
+  .player-stat-table{width:max-content;min-width:0;max-width:none;table-layout:auto}
+  .player-stat-table th,.player-stat-table td{box-sizing:border-box}
+  .player-stat-table th:not(.sticky-year):not(.sticky-team),.player-stat-table td:not(.sticky-year):not(.sticky-team){min-width:62px}
   .player-stat-table .sticky-year{min-width:52px;width:52px;max-width:52px}
-  .player-stat-table .sticky-team{left:52px}
-  .player-stat-team{min-width:112px;max-width:112px}
-  .player-stat-team span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
+  .player-stat-table .sticky-team{left:52px;min-width:118px;width:118px;max-width:118px}
+  .player-stat-team{min-width:0;max-width:100%;width:100%;gap:7px}
+  .player-stat-team span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;min-width:0}
   .player-grade-grid{grid-template-columns:1fr 1fr;gap:8px}
   .player-grade-grid article{min-width:0;padding:14px 8px}
   .player-grade-grid strong{font-size:32px}
@@ -39,8 +41,8 @@
   .player-focus-grade{padding:13px}
   .player-focus-grade strong{font-size:40px}
   .player-focus-card{padding:12px}
-  .player-stat-table{min-width:640px}
   .player-stat-table th,.player-stat-table td{padding:10px 9px}
-  .player-stat-team{min-width:104px;max-width:104px}
+  .player-stat-table th:not(.sticky-year):not(.sticky-team),.player-stat-table td:not(.sticky-year):not(.sticky-team){min-width:58px}
+  .player-stat-table .sticky-team{min-width:108px;width:108px;max-width:108px}
   .player-grade-grid{grid-template-columns:1fr 1fr}
 }
