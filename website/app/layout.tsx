@@ -7,6 +7,7 @@ import "../styles/player-watch-images.css";
 import "../styles/pulse-ranking.css";
 import "../styles/article-focus.css";
 import "../styles/player-profile-focus.css";
+import "../styles/player-profile-mobile.css";
 import "../styles/matchup-logos.css";
 import "../styles/more-page.css";
 import "../styles/game-preview.css";
