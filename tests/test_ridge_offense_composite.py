@@ -1,6 +1,13 @@
 import pytest
-from cfb_analytics.analytics.ridge_offense_composite import METRICS,rankings
+from cfb_analytics.analytics.ridge_offense_composite import METRICS,_obs,rankings
 from tests.test_opponent_adjusted_offense import _sample_rows
+
+def test_metric_value_and_weight_mapping_is_correct():
+ row=_sample_rows()[0]
+ ppd,w=_obs(row,'ppd');assert ppd==pytest.approx(3.5);assert w==pytest.approx(10)
+ ypd,w=_obs(row,'ypd');assert ypd==pytest.approx(35.0);assert w==pytest.approx(10)
+ sr,w=_obs(row,'success');assert sr==pytest.approx(.5);assert w==pytest.approx(60)
+ score,w=_obs(row,'scoring');assert score==pytest.approx(.5);assert w==pytest.approx(10)
 
 def test_multi_metric_rankings_have_all_adjusted_metrics():
  ranked,w=rankings(_sample_rows(),2025,lam=20)
