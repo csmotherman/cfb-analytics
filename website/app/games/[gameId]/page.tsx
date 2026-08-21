@@ -2,13 +2,14 @@ import type {Metadata} from "next";
 import Link from "next/link";
 import {notFound} from "next/navigation";
 import {gameById,opponent} from "../../../lib/michigan/games";
-import {gamePreview,profileRank,offenseRank,defenseRank} from "../../../lib/michigan/game-preview";
+import {gamePreview} from "../../../lib/michigan/game-preview";
 import {marketLineFor,formatMichiganSpread} from "../../../lib/market-lines";
 import {teamLogoUrl} from "../../../lib/team-assets";
 import {gameDate,gameTime} from "../../../lib/home-data";
 
 type Props={params:Promise<{gameId:string}>};
-const rank=(value:number|null)=>value==null?"—":`#${value}`;
+const rank=(value:number|undefined|null)=>value==null?"—":`#${value}`;
+const rating=(value:number|undefined|null)=>value==null?"—":value.toFixed(1);
 
 export async function generateMetadata({params}:Props):Promise<Metadata>{
   const game=gameById((await params).gameId);
@@ -16,7 +17,7 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
   const opp=opponent(game);
   return{
     title:`Michigan vs ${opp.name} Game Preview`,
-    description:`Michigan vs ${opp.name}: offense, defense, overall team rank, conference and market outlook.`
+    description:`Michigan vs ${opp.name}: opponent-adjusted offense, defense and overall rankings, conference and market outlook.`
   };
 }
 
@@ -25,23 +26,11 @@ export default async function GameHub({params}:Props){
   if(!game)notFound();
 
   const market=marketLineFor(game.id);
-  const {opp,michigan2025,opponent2025}=gamePreview(game);
+  const {opp,baselineSeason,michigan,opponent:opponentRatings}=gamePreview(game);
   const home=game.homeId===130;
 
   const michiganConference=home?(game.homeConference??"Big Ten"):(game.awayConference??"Big Ten");
   const opponentConference=home?(game.awayConference??"—"):(game.homeConference??"—");
-
-  const michiganRanks={
-    offense:offenseRank(michigan2025),
-    defense:defenseRank(michigan2025),
-    overall:profileRank(michigan2025)
-  };
-  const opponentRanks={
-    offense:offenseRank(opponent2025),
-    defense:defenseRank(opponent2025),
-    overall:profileRank(opponent2025)
-  };
-
   const marketMargin=market?Math.abs(market.teamSpread):null;
   const marketLeader=market?(market.teamSpread<=0?"Michigan":opp.name):null;
 
@@ -76,22 +65,25 @@ export default async function GameHub({params}:Props){
 
       <section className="preview-block">
         <div className="preview-section-heading">
-          <span>2025 BASELINE</span>
+          <span>{baselineSeason} OPPONENT-ADJUSTED BASELINE</span>
           <h2>TEAM COMPARISON</h2>
         </div>
 
-        <div className="comparison-table">
+        <div className="comparison-table ridge-matchup-table">
           <div className="comparison-head">
             <span><img src={teamLogoUrl(130,64)} alt=""/>MICHIGAN</span>
-            <i>RANK</i>
+            <i>NATIONAL RANK</i>
             <span><img src={teamLogoUrl(opp.id,64)} alt=""/>{opp.name.toUpperCase()}</span>
           </div>
-          <div><strong>{rank(michiganRanks.offense)}</strong><span>OFFENSE</span><strong>{rank(opponentRanks.offense)}</strong></div>
-          <div><strong>{rank(michiganRanks.defense)}</strong><span>DEFENSE</span><strong>{rank(opponentRanks.defense)}</strong></div>
-          <div><strong>{rank(michiganRanks.overall)}</strong><span>OVERALL</span><strong>{rank(opponentRanks.overall)}</strong></div>
+          <div><strong>{rank(michigan?.overall.rank)}</strong><span>OVERALL</span><strong>{rank(opponentRatings?.overall.rank)}</strong></div>
+          <div className="rating-row"><strong>{rating(michigan?.overall.rating)}</strong><span>OVERALL RATING</span><strong>{rating(opponentRatings?.overall.rating)}</strong></div>
+          <div><strong>{rank(michigan?.offense.rank)}</strong><span>OFFENSE</span><strong>{rank(opponentRatings?.offense.rank)}</strong></div>
+          <div className="rating-row"><strong>{rating(michigan?.offense.rating)}</strong><span>OFFENSIVE RATING</span><strong>{rating(opponentRatings?.offense.rating)}</strong></div>
+          <div><strong>{rank(michigan?.defense.rank)}</strong><span>DEFENSE</span><strong>{rank(opponentRatings?.defense.rank)}</strong></div>
+          <div className="rating-row"><strong>{rating(michigan?.defense.rating)}</strong><span>DEFENSIVE RATING</span><strong>{rating(opponentRatings?.defense.rating)}</strong></div>
           <div><strong className="conference-value">{michiganConference}</strong><span>CONFERENCE</span><strong className="conference-value">{opponentConference}</strong></div>
         </div>
-        <p className="preview-footnote">Ranks use the site&apos;s 2025 efficiency profile. Offense combines success-rate and explosiveness rank; defense uses the corresponding allowed metrics; overall combines all four.</p>
+        <p className="preview-footnote">Offense and defense are the exact opponent-adjusted Ridge ratings used on the Analytics page: points per drive, yards per drive, success rate and scoring-drive rate, adjusted for opponent strength. Ratings are centered at 100; higher is better. Overall is the equal-weight average of the two unit ratings, then ranked nationally.</p>
       </section>
 
       <section className="market-preview-card">
