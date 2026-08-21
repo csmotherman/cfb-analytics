@@ -47,7 +47,7 @@ function ComparisonRow({label,michigan,opponent,opponentName}:ComparisonRowProps
         <i/>
         <span className="advantage-track-right"/>
       </div>
-      <div className="advantage-scale"><span>OPPONENT</span><b>0</b><span>MICHIGAN</span></div>
+      <div className="advantage-scale"><span>MICHIGAN</span><b>0</b><span>OPPONENT</span></div>
     </div>
 
     <div className="advantage-team-value opponent-value">
