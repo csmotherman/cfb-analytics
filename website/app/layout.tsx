@@ -13,6 +13,7 @@ import "../styles/team-hub.css";
 import "../styles/team-formation-home.css";
 import "../styles/team-depth-formats.css";
 import "../styles/roster-directory.css";
+import "../styles/schedule-home.css";
 import "../styles/matchup-logos.css";
 import "../styles/more-page.css";
 import "../styles/game-preview.css";
