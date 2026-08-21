@@ -8,6 +8,7 @@ import {marketLineFor,formatMichiganSpread} from "../../../lib/market-lines";
 import {teamLogoUrl} from "../../../lib/team-assets";
 import {gameDate,gameTime} from "../../../lib/home-data";
 import "./game-preview.css";
+import "./market-single.css";
 
 type Props={params:Promise<{gameId:string}>};
 const rank=(value:number|undefined|null)=>value==null?"—":`#${value}`;
@@ -77,8 +78,6 @@ export default async function GameHub({params}:Props){
 
   const michiganConference=home?(game.homeConference??"Big Ten"):(game.awayConference??"Big Ten");
   const opponentConference=home?(game.awayConference??"—"):(game.homeConference??"—");
-  const marketMargin=market?Math.abs(market.teamSpread):null;
-  const marketLeader=market?(market.teamSpread<=0?"Michigan":opp.name):null;
 
   return <main className="game-preview-page">
     <div className="preview-app-shell">
@@ -140,16 +139,11 @@ export default async function GameHub({params}:Props){
         <p className="preview-footnote">National ranks and ratings use the same opponent-adjusted Ridge system as the Analytics page. The center indicator shows which team owns the rating advantage in each category.</p>
       </section>
 
-      <section className="market-preview-card compact-market-card">
-        <div className="market-title"><span>MARKET</span><strong>GAME LINE</strong></div>
-        <div>
-          <small>SPREAD</small>
-          {market?<><strong>{formatMichiganSpread(market.teamSpread)}</strong><span>{market.sportsbook}</span></>:<strong>NOT YET PUBLISHED</strong>}
-        </div>
-        <div>
-          <small>IMPLIED EDGE</small>
-          <strong>{market&&marketMargin!=null?`${marketLeader} ${marketMargin.toFixed(1)}`:"—"}</strong>
-          <span>{market?.asOf??"Waiting for market"}</span>
+      <section className="market-preview-card compact-market-card single-market-card">
+        <div className="market-title"><span>MARKET</span><strong>SPREAD</strong></div>
+        <div className="single-market-line">
+          <small>CURRENT LINE</small>
+          {market?<><strong>{formatMichiganSpread(market.teamSpread)}</strong><span>{market.sportsbook} · {market.asOf}</span></>:<><strong>NOT YET PUBLISHED</strong><span>Waiting for market</span></>}
         </div>
       </section>
 
