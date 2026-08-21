@@ -1,0 +1,336 @@
+"""Opponent-adjusted offensive rating prototype.
+
+This module is intentionally narrow: it is a transparent first-pass model for
+validating one season before the rating is wired into published site data.
+
+The rating uses only three fan-readable offensive outcomes:
+
+* 50% opponent-adjusted points per resolved possession (points per drive)
+* 30% opponent-adjusted success rate
+* 20% opponent-adjusted scoring possessions per possession
+
+Each game is adjusted against the opponent's defensive performance in all
+OTHER FBS-vs-FBS games (leave-one-out). This prevents the game being graded
+from contaminating the defensive baseline used to grade it.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+import argparse
+import csv
+import json
+import math
+from pathlib import Path
+from statistics import fmean, pstdev
+from typing import Any, Iterable
+
+
+PPD_WEIGHT = 0.50
+SUCCESS_WEIGHT = 0.30
+SCORING_DRIVE_WEIGHT = 0.20
+
+
+@dataclass(frozen=True)
+class Totals:
+    points: float = 0.0
+    resolved_possessions: float = 0.0
+    successes: float = 0.0
+    success_plays: float = 0.0
+    scoring_possessions: float = 0.0
+    possessions: float = 0.0
+
+    def __add__(self, other: "Totals") -> "Totals":
+        return Totals(
+            self.points + other.points,
+            self.resolved_possessions + other.resolved_possessions,
+            self.successes + other.successes,
+            self.success_plays + other.success_plays,
+            self.scoring_possessions + other.scoring_possessions,
+            self.possessions + other.possessions,
+        )
+
+    def __sub__(self, other: "Totals") -> "Totals":
+        return Totals(
+            self.points - other.points,
+            self.resolved_possessions - other.resolved_possessions,
+            self.successes - other.successes,
+            self.success_plays - other.success_plays,
+            self.scoring_possessions - other.scoring_possessions,
+            self.possessions - other.possessions,
+        )
+
+
+def _number(row: dict[str, Any], key: str) -> float:
+    value = row.get(key)
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        raise ValueError(f"Missing numeric field {key!r} for game {row.get('gameId')} / {row.get('team')}")
+    return float(value)
+
+
+def _scoring_possessions(row: dict[str, Any], *, allowed: bool) -> float:
+    suffix = "Allowed" if allowed else ""
+    return sum(
+        _number(row, f"{name}{suffix}")
+        for name in ("possessionTouchdowns", "possessionFieldGoals", "otherScoringPossessions")
+    )
+
+
+def offensive_totals(row: dict[str, Any]) -> Totals:
+    return Totals(
+        points=_number(row, "possessionPoints"),
+        resolved_possessions=_number(row, "resolvedPointPossessions"),
+        successes=_number(row, "successfulPlays"),
+        success_plays=_number(row, "successEligiblePlays"),
+        scoring_possessions=_scoring_possessions(row, allowed=False),
+        possessions=_number(row, "validatedPossessions"),
+    )
+
+
+def defensive_totals(row: dict[str, Any]) -> Totals:
+    return Totals(
+        points=_number(row, "possessionPointsAllowed"),
+        resolved_possessions=_number(row, "resolvedPointPossessionsAllowed"),
+        successes=_number(row, "successfulPlaysAllowed"),
+        success_plays=_number(row, "successEligiblePlaysAllowed"),
+        scoring_possessions=_scoring_possessions(row, allowed=True),
+        possessions=_number(row, "validatedDefensivePossessions"),
+    )
+
+
+def _rate(numerator: float, denominator: float) -> float | None:
+    return numerator / denominator if denominator > 0 else None
+
+
+def metrics(totals: Totals) -> tuple[float | None, float | None, float | None]:
+    return (
+        _rate(totals.points, totals.resolved_possessions),
+        _rate(totals.successes, totals.success_plays),
+        _rate(totals.scoring_possessions, totals.possessions),
+    )
+
+
+def _weighted_mean(values: Iterable[tuple[float, float]]) -> float:
+    pairs = [(value, weight) for value, weight in values if weight > 0 and math.isfinite(value)]
+    denominator = sum(weight for _, weight in pairs)
+    if denominator <= 0:
+        raise ValueError("Cannot compute weighted mean with zero total weight")
+    return sum(value * weight for value, weight in pairs) / denominator
+
+
+def _z_scores(values: dict[int, float]) -> dict[int, float]:
+    population = list(values.values())
+    sigma = pstdev(population)
+    if sigma == 0:
+        return {key: 0.0 for key in values}
+    mu = fmean(population)
+    return {key: (value - mu) / sigma for key, value in values.items()}
+
+
+def _rank(values: dict[int, float]) -> dict[int, int]:
+    ordered = sorted(values.items(), key=lambda item: (-item[1], item[0]))
+    return {team_id: rank for rank, (team_id, _) in enumerate(ordered, start=1)}
+
+
+def _eligible_rows(rows: list[dict[str, Any]], season: int) -> list[dict[str, Any]]:
+    filtered = []
+    for row in rows:
+        if int(row.get("season", -1)) != season:
+            continue
+        if str(row.get("classification", "")).lower() != "fbs":
+            continue
+        if str(row.get("opponent_classification", "")).lower() != "fbs":
+            continue
+        if row.get("gameValidationStatus") not in (None, "PASS"):
+            continue
+        filtered.append(row)
+    return filtered
+
+
+def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int) -> list[dict[str, Any]]:
+    """Return transparent national offense rankings for one season.
+
+    Adjustment for each game and metric:
+        team performance - opponent defensive LOO baseline + national baseline
+
+    The defensive baseline excludes the exact game being evaluated. Games for
+    which the opponent has no other eligible defensive sample are skipped.
+    """
+    rows = _eligible_rows(rows, season)
+    if not rows:
+        raise ValueError(f"No eligible FBS-vs-FBS team-game rows found for {season}")
+
+    # One defensive row exists per team-game. Aggregate each team's defense so
+    # we can cheaply subtract the current matchup for a leave-one-out baseline.
+    defense_by_team: dict[int, Totals] = {}
+    defense_game_by_key: dict[tuple[int, str], Totals] = {}
+    national_offense = Totals()
+    team_names: dict[int, str] = {}
+
+    for row in rows:
+        team_id = int(row["team_id"])
+        game_id = str(row.get("gameId") or row.get("game_id"))
+        team_names[team_id] = str(row["team"])
+        off = offensive_totals(row)
+        defense = defensive_totals(row)
+        national_offense = national_offense + off
+        defense_by_team[team_id] = defense_by_team.get(team_id, Totals()) + defense
+        defense_game_by_key[(team_id, game_id)] = defense
+
+    national_ppd, national_success, national_scoring = metrics(national_offense)
+    if None in (national_ppd, national_success, national_scoring):
+        raise ValueError("National baselines could not be calculated")
+    national_ppd = float(national_ppd)
+    national_success = float(national_success)
+    national_scoring = float(national_scoring)
+
+    game_adjustments: dict[int, list[dict[str, float]]] = {}
+    skipped_no_loo = 0
+
+    for row in rows:
+        team_id = int(row["team_id"])
+        opponent_id = int(row["opponent_id"])
+        game_id = str(row.get("gameId") or row.get("game_id"))
+        if opponent_id not in defense_by_team:
+            continue
+
+        opponent_game_defense = defense_game_by_key.get((opponent_id, game_id))
+        if opponent_game_defense is None:
+            # Defensive fields on the offensive row are the same game's other
+            # side, so this remains safe if a paired opponent row is absent.
+            opponent_game_defense = offensive_totals(row)
+
+        opponent_loo = defense_by_team[opponent_id] - opponent_game_defense
+        opp_ppd, opp_success, opp_scoring = metrics(opponent_loo)
+        if None in (opp_ppd, opp_success, opp_scoring):
+            skipped_no_loo += 1
+            continue
+
+        off = offensive_totals(row)
+        team_ppd, team_success, team_scoring = metrics(off)
+        if None in (team_ppd, team_success, team_scoring):
+            continue
+
+        game_adjustments.setdefault(team_id, []).append({
+            "adj_ppd": float(team_ppd) - float(opp_ppd) + national_ppd,
+            "adj_success": float(team_success) - float(opp_success) + national_success,
+            "adj_scoring": float(team_scoring) - float(opp_scoring) + national_scoring,
+            "ppd_weight": off.resolved_possessions,
+            "success_weight": off.success_plays,
+            "scoring_weight": off.possessions,
+        })
+
+    adjusted_ppd: dict[int, float] = {}
+    adjusted_success: dict[int, float] = {}
+    adjusted_scoring: dict[int, float] = {}
+    games_used: dict[int, int] = {}
+
+    for team_id, games in game_adjustments.items():
+        if not games:
+            continue
+        adjusted_ppd[team_id] = _weighted_mean((g["adj_ppd"], g["ppd_weight"]) for g in games)
+        adjusted_success[team_id] = _weighted_mean((g["adj_success"], g["success_weight"]) for g in games)
+        adjusted_scoring[team_id] = _weighted_mean((g["adj_scoring"], g["scoring_weight"]) for g in games)
+        games_used[team_id] = len(games)
+
+    common = set(adjusted_ppd) & set(adjusted_success) & set(adjusted_scoring)
+    adjusted_ppd = {team_id: adjusted_ppd[team_id] for team_id in common}
+    adjusted_success = {team_id: adjusted_success[team_id] for team_id in common}
+    adjusted_scoring = {team_id: adjusted_scoring[team_id] for team_id in common}
+
+    z_ppd = _z_scores(adjusted_ppd)
+    z_success = _z_scores(adjusted_success)
+    z_scoring = _z_scores(adjusted_scoring)
+    ppd_rank = _rank(adjusted_ppd)
+    success_rank = _rank(adjusted_success)
+    scoring_rank = _rank(adjusted_scoring)
+
+    rating = {
+        team_id: PPD_WEIGHT * z_ppd[team_id]
+        + SUCCESS_WEIGHT * z_success[team_id]
+        + SCORING_DRIVE_WEIGHT * z_scoring[team_id]
+        for team_id in common
+    }
+    overall_rank = _rank(rating)
+
+    output = []
+    for team_id in sorted(common, key=lambda value: overall_rank[value]):
+        output.append({
+            "season": season,
+            "rank": overall_rank[team_id],
+            "team": team_names.get(team_id, str(team_id)),
+            "team_id": team_id,
+            "rating": rating[team_id],
+            "adjusted_points_per_drive": adjusted_ppd[team_id],
+            "points_per_drive_rank": ppd_rank[team_id],
+            "adjusted_success_rate": adjusted_success[team_id],
+            "success_rate_rank": success_rank[team_id],
+            "adjusted_scoring_drive_rate": adjusted_scoring[team_id],
+            "scoring_drive_rate_rank": scoring_rank[team_id],
+            "games_used": games_used[team_id],
+        })
+
+    if not output:
+        raise ValueError("No teams had enough leave-one-out opponent data to rank")
+    return output
+
+
+def load_team_games(path: Path) -> list[dict[str, Any]]:
+    with path.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+    if not isinstance(payload, list):
+        raise ValueError(f"Expected a JSON array in {path}")
+    return payload
+
+
+def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def _format_row(row: dict[str, Any]) -> str:
+    return (
+        f"{row['rank']:>3}  {row['team']:<24.24} "
+        f"RATING {row['rating']:>6.3f}  "
+        f"PPD {row['adjusted_points_per_drive']:>5.2f} (#{row['points_per_drive_rank']:<3})  "
+        f"SR {row['adjusted_success_rate'] * 100:>5.1f}% (#{row['success_rate_rank']:<3})  "
+        f"SCORE% {row['adjusted_scoring_drive_rate'] * 100:>5.1f}% (#{row['scoring_drive_rate_rank']:<3})  "
+        f"G {row['games_used']}"
+    )
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Test opponent-adjusted offensive rankings")
+    parser.add_argument("--season", type=int, default=2025)
+    parser.add_argument("--input", type=Path, default=None)
+    parser.add_argument("--top", type=int, default=25)
+    parser.add_argument("--team", default="Michigan")
+    parser.add_argument("--output", type=Path, default=None)
+    args = parser.parse_args(argv)
+
+    input_path = args.input or Path(f"data/canonical/season={args.season}/team_games.json")
+    rows = calculate_opponent_adjusted_offense(load_team_games(input_path), args.season)
+
+    print(f"\nOpponent-Adjusted Offense — {args.season}")
+    print("50% Adj PPD | 30% Adj Success Rate | 20% Adj Scoring Drive %")
+    print("FBS vs FBS only; opponent defensive baseline excludes the graded game.\n")
+    for row in rows[: max(0, args.top)]:
+        print(_format_row(row))
+
+    target = next((row for row in rows if str(row["team"]).casefold() == args.team.casefold()), None)
+    if target is not None and target not in rows[: max(0, args.top)]:
+        print(f"\n{args.team}:")
+        print(_format_row(target))
+    elif target is None:
+        print(f"\n{args.team!r} was not found in the eligible ranking set.")
+
+    if args.output:
+        write_csv(rows, args.output)
+        print(f"\nWrote {len(rows)} teams to {args.output}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
