@@ -1,15 +1,61 @@
-import type {Metadata} from "next";
+import type {CSSProperties,Metadata} from "react";
 import Link from "next/link";
 import {notFound} from "next/navigation";
 import {gameById,opponent} from "../../../lib/michigan/games";
-import {gamePreview} from "../../../lib/michigan/game-preview";
+import {gamePreview,type MatchupRidgeSide} from "../../../lib/michigan/game-preview";
 import {marketLineFor,formatMichiganSpread} from "../../../lib/market-lines";
 import {teamLogoUrl} from "../../../lib/team-assets";
 import {gameDate,gameTime} from "../../../lib/home-data";
+import "./game-preview.css";
 
 type Props={params:Promise<{gameId:string}>};
 const rank=(value:number|undefined|null)=>value==null?"—":`#${value}`;
 const rating=(value:number|undefined|null)=>value==null?"—":value.toFixed(1);
+
+type ComparisonRowProps={
+  label:string;
+  michigan:MatchupRidgeSide|undefined;
+  opponent:MatchupRidgeSide|undefined;
+  opponentName:string;
+};
+
+function ComparisonRow({label,michigan,opponent,opponentName}:ComparisonRowProps){
+  const hasRatings=michigan?.rating!=null&&opponent?.rating!=null;
+  const difference=hasRatings?michigan.rating-opponent.rating:0;
+  const absDifference=Math.abs(difference);
+  const michiganLeads=difference>=0;
+  const leader=hasRatings?(michiganLeads?"MICHIGAN":opponentName.toUpperCase()):"—";
+  const width=Math.min(absDifference/30,1)*50;
+  const meterStyle={"--advantage-width":`${width}%`} as CSSProperties;
+
+  return <div className="advantage-row">
+    <div className="advantage-team-value michigan-value">
+      <strong>{rank(michigan?.rank)}</strong>
+      <b>{rating(michigan?.rating)}</b>
+      <small>NATIONAL RANK · RATING</small>
+    </div>
+
+    <div className="advantage-center">
+      <span className="advantage-label">{label}</span>
+      <strong className={`advantage-number ${michiganLeads?"michigan-leads":"opponent-leads"}`}>
+        {hasRatings?`+${absDifference.toFixed(1)}`:"—"}
+      </strong>
+      <small className={`advantage-winner ${michiganLeads?"michigan-leads":"opponent-leads"}`}>{leader} ADVANTAGE</small>
+      <div className={`advantage-meter ${michiganLeads?"to-michigan":"to-opponent"}`} style={meterStyle} aria-label={`${leader} advantage ${absDifference.toFixed(1)} rating points`}>
+        <span className="advantage-track-left"/>
+        <i/>
+        <span className="advantage-track-right"/>
+      </div>
+      <div className="advantage-scale"><span>OPPONENT</span><b>0</b><span>MICHIGAN</span></div>
+    </div>
+
+    <div className="advantage-team-value opponent-value">
+      <strong>{rank(opponent?.rank)}</strong>
+      <b>{rating(opponent?.rating)}</b>
+      <small>NATIONAL RANK · RATING</small>
+    </div>
+  </div>;
+}
 
 export async function generateMetadata({params}:Props):Promise<Metadata>{
   const game=gameById((await params).gameId);
@@ -63,51 +109,53 @@ export default async function GameHub({params}:Props){
         </div>
       </section>
 
-      <section className="preview-block">
-        <div className="preview-section-heading">
-          <span>{baselineSeason} OPPONENT-ADJUSTED BASELINE</span>
-          <h2>TEAM COMPARISON</h2>
+      <section className="preview-block advantage-comparison-block">
+        <div className="preview-section-heading advantage-heading">
+          <div>
+            <span>{baselineSeason} OPPONENT-ADJUSTED BASELINE</span>
+            <h2>TEAM COMPARISON</h2>
+          </div>
+          <p>Ratings are opponent-adjusted Ridge ratings<br/><b>100 = FBS average</b></p>
         </div>
 
-        <div className="comparison-table ridge-matchup-table">
-          <div className="comparison-head">
-            <span><img src={teamLogoUrl(130,64)} alt=""/>MICHIGAN</span>
-            <i>NATIONAL RANK</i>
-            <span><img src={teamLogoUrl(opp.id,64)} alt=""/>{opp.name.toUpperCase()}</span>
+        <div className="advantage-comparison">
+          <div className="advantage-comparison-head">
+            <div>
+              <img src={teamLogoUrl(130,64)} alt="Michigan logo"/>
+              <strong>MICHIGAN</strong>
+              <small>{michiganConference}</small>
+            </div>
+            <span>ADVANTAGE<small>RATING-POINT EDGE</small></span>
+            <div>
+              <img src={teamLogoUrl(opp.id,64)} alt={`${opp.name} logo`}/>
+              <strong>{opp.name.toUpperCase()}</strong>
+              <small>{opponentConference}</small>
+            </div>
           </div>
-          <div><strong>{rank(michigan?.overall.rank)}</strong><span>OVERALL</span><strong>{rank(opponentRatings?.overall.rank)}</strong></div>
-          <div className="rating-row"><strong>{rating(michigan?.overall.rating)}</strong><span>OVERALL RATING</span><strong>{rating(opponentRatings?.overall.rating)}</strong></div>
-          <div><strong>{rank(michigan?.offense.rank)}</strong><span>OFFENSE</span><strong>{rank(opponentRatings?.offense.rank)}</strong></div>
-          <div className="rating-row"><strong>{rating(michigan?.offense.rating)}</strong><span>OFFENSIVE RATING</span><strong>{rating(opponentRatings?.offense.rating)}</strong></div>
-          <div><strong>{rank(michigan?.defense.rank)}</strong><span>DEFENSE</span><strong>{rank(opponentRatings?.defense.rank)}</strong></div>
-          <div className="rating-row"><strong>{rating(michigan?.defense.rating)}</strong><span>DEFENSIVE RATING</span><strong>{rating(opponentRatings?.defense.rating)}</strong></div>
-          <div><strong className="conference-value">{michiganConference}</strong><span>CONFERENCE</span><strong className="conference-value">{opponentConference}</strong></div>
+
+          <ComparisonRow label="OVERALL" michigan={michigan?.overall} opponent={opponentRatings?.overall} opponentName={opp.name}/>
+          <ComparisonRow label="OFFENSE" michigan={michigan?.offense} opponent={opponentRatings?.offense} opponentName={opp.name}/>
+          <ComparisonRow label="DEFENSE" michigan={michigan?.defense} opponent={opponentRatings?.defense} opponentName={opp.name}/>
         </div>
-        <p className="preview-footnote">Offense and defense are the exact opponent-adjusted Ridge ratings used on the Analytics page: points per drive, yards per drive, success rate and scoring-drive rate, adjusted for opponent strength. Ratings are centered at 100; higher is better. Overall is the equal-weight average of the two unit ratings, then ranked nationally.</p>
+
+        <p className="preview-footnote">National rank and rating come from the same opponent-adjusted Ridge system used on the Analytics page. Higher rating is better; the centered marker shows the rating-point advantage between the teams.</p>
       </section>
 
-      <section className="market-preview-card">
-        <div className="preview-section-heading market-heading">
-          <span>BETTING MARKET</span>
-          <h2>MARKET PROJECTION</h2>
+      <section className="market-preview-card compact-market-card">
+        <div>
+          <small>MARKET PROJECTION</small>
+          {market?<><strong>{marketLeader?.toUpperCase()} {formatMichiganSpread(market.teamSpread)}</strong><span>{market.sportsbook}</span></>:<strong>NOT YET PUBLISHED</strong>}
         </div>
-        {market?<>
-          <div className="market-projection-main">
-            <small>SPREAD-IMPLIED MARGIN</small>
-            <strong>{marketLeader} by {marketMargin?.toFixed(1)}</strong>
-            <span>{formatMichiganSpread(market.teamSpread)} · {market.sportsbook}</span>
-          </div>
-          <div className="market-projection-meta">
-            <div><small>MARKET WIN CHANCE</small><strong>{Math.round(market.marketWinChance*100)}%</strong></div>
-            <div><small>AS OF</small><strong>{market.asOf}</strong></div>
-          </div>
-          <p className="market-note">An exact market-implied final score requires both a spread and a game total. The current published feed has the spread, so this page shows the market-implied margin without inventing a total.</p>
-        </>:<div className="market-empty"><strong>MARKET LINE NOT YET PUBLISHED</strong><p>This section will populate when a sourced line is available for the matchup.</p></div>}
+        <div>
+          <small>SPREAD-IMPLIED EDGE</small>
+          <strong>{market&&marketMargin!=null?`${marketLeader} by ${marketMargin.toFixed(1)}`:"—"}</strong>
+          <span>{market?.asOf??"Waiting for market"}</span>
+        </div>
       </section>
 
       <Link className="game-preview-article-cta" href="/articles">
         <span>FULL STORY</span>
-        <strong>READ THE GAME PREVIEW ARTICLE</strong>
+        <strong>FULL GAME PREVIEW &amp; ANALYSIS</strong>
         <b>→</b>
       </Link>
     </div>
