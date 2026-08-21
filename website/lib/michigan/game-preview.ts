@@ -33,6 +33,16 @@ export function gamePreview(game:MichiganScheduleGame){
   return {opp,michigan2025,opponent2025,michiganMovement,opponentMovement};
 }
 
+export function offenseRank(profile:SeasonProfile|null){
+  if(!profile)return null;
+  return Math.round((profile.national_successRate_rank+profile.national_explosivePlayRate_rank)/2);
+}
+
+export function defenseRank(profile:SeasonProfile|null){
+  if(!profile)return null;
+  return Math.round((profile.national_successRateAllowed_rank+profile.national_explosivePlayRateAllowed_rank)/2);
+}
+
 export function profileRank(profile:SeasonProfile|null){
   if(!profile)return null;
   return Math.round((profile.national_successRate_rank+profile.national_successRateAllowed_rank+profile.national_explosivePlayRate_rank+profile.national_explosivePlayRateAllowed_rank)/4);
