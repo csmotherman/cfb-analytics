@@ -4,6 +4,7 @@ import crypto from "node:crypto";
 
 const repositoryRoot = path.resolve(process.cwd(), "..");
 const requiredArtifacts = [
+  "data/published/2025/analytics/ridge-team-ratings.json",
   "data/published/2026/michigan/roster.json",
   "data/published/2026/michigan/schedule.json",
   "data/published/2026/michigan/recruiting.json",
@@ -26,6 +27,16 @@ for (const relativePath of requiredArtifacts) {
     parsedArtifacts.set(relativePath, JSON.parse(fs.readFileSync(file, "utf8")));
   } catch (error) {
     failures.push(`${relativePath}: invalid JSON (${error instanceof Error ? error.message : String(error)})`);
+  }
+}
+
+const ridgeRatings = parsedArtifacts.get("data/published/2025/analytics/ridge-team-ratings.json");
+if (!ridgeRatings || ridgeRatings.season !== 2025 || !Array.isArray(ridgeRatings.teams) || ridgeRatings.teams.length < 100) {
+  failures.push("data/published/2025/analytics/ridge-team-ratings.json: expected all-team 2025 Ridge ratings");
+} else {
+  const michigan = ridgeRatings.teams.find((team) => Number(team.team_id) === 130);
+  if (!michigan || !Number.isFinite(michigan.overall?.rank) || !Number.isFinite(michigan.offense?.rank) || !Number.isFinite(michigan.defense?.rank)) {
+    failures.push("data/published/2025/analytics/ridge-team-ratings.json: Michigan Ridge ranks missing");
   }
 }
 
