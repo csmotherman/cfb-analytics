@@ -25,7 +25,7 @@ export default async function GameHub({params}:Props){
   const oppScore=prediction?Math.max(0,Math.round(27-prediction.teamPredictedMargin/2)):null;
   const margin=prediction?Math.abs(prediction.teamPredictedMargin).toFixed(1):null;
   const stronger2025=michRank&&oppRank?michRank<oppRank:null;
-  const transferEdge=michiganMovement.transferValue-opponentMovement.transferValue;
+  const transferEdge=(michiganMovement.avgRating??0)-(opponentMovement.avgRating??0);
 
   return <div className="game-preview-page"><div className="preview-app-shell">
     <div className="preview-topbar"><Link href="/">‹ <span>HOME</span></Link><h1>GAME PREVIEW</h1><span className="preview-share">↗</span></div>
@@ -45,7 +45,7 @@ export default async function GameHub({params}:Props){
         <div className="comparison-head"><span><img src={teamLogoUrl(130,64)} alt=""/> MICHIGAN</span><i></i><span><img src={teamLogoUrl(opp.id,64)} alt=""/> {shortName(opp.name)}</span></div>
         <div><strong>{michRank?`#${michRank}`:"—"}</strong><span>2025 PROFILE RANK*</span><strong>{oppRank?`#${oppRank}`:"—"}</strong></div>
         <div><strong>{michigan2025?pct(michigan2025.successRate):"—"}</strong><span>OFFENSIVE SUCCESS RATE</span><strong>{opponent2025?pct(opponent2025.successRate):"—"}</strong></div>
-        <div><strong>{michigan2025?n(michigan2025.yardsPerPlay,1):"—"}</strong><span>YARDS PER PLAY</span><strong>{opponent2025?n(opponent2025.yardsPerPlay,1):"—"}</strong></div>
+        <div><strong>{michigan2025?n(michigan2025.yardsPerGame,1):"—"}</strong><span>YARDS PER GAME</span><strong>{opponent2025?n(opponent2025.yardsPerGame,1):"—"}</strong></div>
         <div><strong>{michigan2025?n(michigan2025.yardsAllowedPerGame,0):"—"}</strong><span>YARDS ALLOWED / GAME</span><strong>{opponent2025?n(opponent2025.yardsAllowedPerGame,0):"—"}</strong></div>
       </div>
       <p className="preview-footnote">*2025 profile rank is the site's four-metric national composite, not the AP poll.</p>
