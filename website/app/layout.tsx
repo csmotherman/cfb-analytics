@@ -5,6 +5,7 @@ import "../styles/ux-polish.css";
 import "../styles/mockup-home.css";
 import "../styles/player-watch-images.css";
 import "../styles/pulse-ranking.css";
+import "../styles/article-focus.css";
 import "../styles/matchup-logos.css";
 import "../styles/more-page.css";
 import "../styles/game-preview.css";
