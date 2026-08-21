@@ -17,6 +17,8 @@ export type MichiganPlayer = {
   playerImageCredit?: string | null; playerImageUpdatedAt?: string | null;
   performanceGrade?: Grade | null; prospectGrade?: Grade | null; potentialGrade?: Grade | null;
   performanceGradeBasis?: string | null; performanceGradeSeason?: number | null;
+  productionPercentile?: number | null; usagePercentile?: number | null; nationalPositionPercentile?: number | null;
+  productionScore?: number | null; usageValue?: number | null; productionCohortSize?: number | null; positionFamily?: string | null;
   rosterStatus?: "RETURNING" | "TRANSFER" | "FRESHMAN" | "UNCLASSIFIED" | null; previousTeam?: string | null;
   compositeRating?: number | null; stars?: number | null; nationalRecruitRank?: number | null;
   gradeBasis?: string | null;
