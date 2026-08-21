@@ -10,6 +10,10 @@ export type FanSeason = {
   yardsAllowedPerGame:number;
   yardsPerPlay:number;
   yardsAllowedPerPlay:number;
+  offensivePlays:number;
+  defensivePlays:number;
+  possessionPoints:number;
+  possessionPointsAllowed:number;
   rushYards:number;
   rushYardsAllowed:number;
   netPassYards:number;
@@ -69,12 +73,24 @@ type FanGame = {
   season_type?:string;
 };
 
+type NationalTeamRow = Partial<FanSeason> & {team?:string;classification?:string};
+
 export type FanRecord = {
   wins:number;
   losses:number;
   record:string;
   regular:{wins:number;losses:number;record:string;games:number};
   postseason:{wins:number;losses:number;record:string;games:number};
+};
+
+export type SnapshotRanks = {
+  fieldSize:number;
+  yardsPerGame:number;
+  yardsPerPlay:number;
+  yardsAllowedPerGame:number;
+  yardsAllowedPerPlay:number;
+  pointsPerPlay:number;
+  pointsAllowedPerPlay:number;
 };
 
 export type FanTier = "elite"|"strong"|"average"|"concern";
@@ -110,6 +126,34 @@ export function michiganRecord(season:number):FanRecord|null{
     record:`${wins}-${losses}`,
     regular:{...buckets.regular,record:`${buckets.regular.wins}-${buckets.regular.losses}`},
     postseason:{...buckets.postseason,record:`${buckets.postseason.wins}-${buckets.postseason.losses}`},
+  };
+}
+
+function rankValues(values:number[],target:number,higherIsBetter:boolean){
+  const clean=values.filter(Number.isFinite).sort((a,b)=>higherIsBetter?b-a:a-b);
+  const index=clean.findIndex(v=>Math.abs(v-target)<1e-12);
+  return index>=0?index+1:1+clean.filter(v=>higherIsBetter?v>target:v<target).length;
+}
+
+export function michiganSnapshotRanks(season:number):SnapshotRanks|null{
+  const rows=readJson<NationalTeamRow[]>("data","published",String(season),"national","teams.json");
+  if(!rows?.length)return null;
+  const fbs=rows.filter(r=>(r.classification??"fbs")==="fbs" && Number.isFinite(r.yardsPerGame) && Number.isFinite(r.yardsAllowedPerGame));
+  const michigan=fbs.find(r=>String(r.team).toLowerCase()==="michigan");
+  if(!michigan)return null;
+  const pointsPerPlay=(r:NationalTeamRow)=>Number(r.offensivePlays)>0?Number(r.possessionPoints)/Number(r.offensivePlays):NaN;
+  const pointsAllowedPerPlay=(r:NationalTeamRow)=>Number(r.defensivePlays)>0?Number(r.possessionPointsAllowed)/Number(r.defensivePlays):NaN;
+  const ypg=Number(michigan.yardsPerGame), ypp=Number(michigan.yardsPerPlay);
+  const yapg=Number(michigan.yardsAllowedPerGame), yapp=Number(michigan.yardsAllowedPerPlay);
+  const ppp=pointsPerPlay(michigan), pppa=pointsAllowedPerPlay(michigan);
+  return {
+    fieldSize:fbs.length,
+    yardsPerGame:rankValues(fbs.map(r=>Number(r.yardsPerGame)),ypg,true),
+    yardsPerPlay:rankValues(fbs.map(r=>Number(r.yardsPerPlay)),ypp,true),
+    yardsAllowedPerGame:rankValues(fbs.map(r=>Number(r.yardsAllowedPerGame)),yapg,false),
+    yardsAllowedPerPlay:rankValues(fbs.map(r=>Number(r.yardsAllowedPerPlay)),yapp,false),
+    pointsPerPlay:rankValues(fbs.map(pointsPerPlay),ppp,true),
+    pointsAllowedPerPlay:rankValues(fbs.map(pointsAllowedPerPlay),pppa,false),
   };
 }
 
