@@ -3,7 +3,6 @@ import Link from "next/link";
 const sections=[
   {href:"/analytics",label:"Analytics",description:"Team performance, efficiency, player grades, and Michigan data tools.",tag:"DATA"},
   {href:"/articles",label:"News & Analysis",description:"Michigan stories, notebooks, previews, and long-form analysis.",tag:"READ"},
-  {href:"/history",label:"Michigan History",description:"Explore past seasons, teams, results, and program history.",tag:"ARCHIVE"},
   {href:"/polls",label:"Fan Polls",description:"Vote on Michigan questions and see where fans stand.",tag:"FANS"},
   {href:"/metrics",label:"Metrics",description:"Browse the definitions and advanced metrics used throughout the site.",tag:"REFERENCE"},
   {href:"/methodology",label:"Methodology",description:"See how ratings, grades, projections, and site data are built.",tag:"HOW IT WORKS"},
