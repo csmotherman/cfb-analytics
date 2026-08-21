@@ -1,1 +1,145 @@
-.game-preview-page .advantage-comparison-block{padding-bottom:4px}.game-preview-page .advantage-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}.game-preview-page .advantage-heading>div>span{color:#ffcb05}.game-preview-page .advantage-heading p{margin:0;color:#9fb0c1;text-align:right;font-size:12px;line-height:1.45}.game-preview-page .advantage-heading p b{color:#dbe4ec;font-weight:700}.game-preview-page .advantage-comparison{margin-top:18px;border:1px solid #2b465e;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#071b2d,#061625)}.game-preview-page .advantage-comparison-head{display:grid;grid-template-columns:1fr minmax(180px,1.15fr) 1fr;align-items:center;gap:18px;padding:18px 22px;border-bottom:1px solid #29445a}.game-preview-page .advantage-comparison-head>div{display:grid;justify-items:center;gap:4px;text-align:center}.game-preview-page .advantage-comparison-head img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 0 1px rgba(255,255,255,.95)) drop-shadow(0 0 4px rgba(255,255,255,.28))}.game-preview-page .advantage-comparison-head strong{font:800 16px var(--display);color:#f4f7fb}.game-preview-page .advantage-comparison-head small{color:#91a2b3;font-size:10px}.game-preview-page .advantage-comparison-head>span{display:grid;gap:3px;text-align:center;color:#f4f7fb;font:800 13px var(--display);letter-spacing:.05em}.game-preview-page .advantage-comparison-head>span small{font:700 8px var(--display);letter-spacing:.08em;color:#7f91a4}.game-preview-page .advantage-row{display:grid;grid-template-columns:1fr minmax(260px,1.45fr) 1fr;align-items:center;gap:18px;min-height:170px;padding:22px;border-bottom:1px solid #29445a}.game-preview-page .advantage-row:last-child{border-bottom:0}.game-preview-page .advantage-team-value{display:grid;gap:2px}.game-preview-page .advantage-team-value strong{font:800 clamp(30px,3vw,42px)/1 var(--display);color:#f5f8fb}.game-preview-page .advantage-team-value b{font:800 clamp(24px,2.7vw,36px)/1.05 var(--display);color:#ffcb05}.game-preview-page .advantage-team-value small{margin-top:7px;color:#7f92a4;font:700 8px var(--display);letter-spacing:.07em}.game-preview-page .opponent-value{text-align:right}.game-preview-page .opponent-value b{color:#aebbc7}.game-preview-page .advantage-center{min-width:0;text-align:center}.game-preview-page .advantage-label{display:block;color:#f4f7fb;font:800 18px var(--display);letter-spacing:.04em}.game-preview-page .advantage-number{display:block;margin-top:2px;font:800 clamp(30px,3.5vw,44px)/1 var(--display)}.game-preview-page .advantage-winner{display:block;margin-top:4px;font:800 9px var(--display);letter-spacing:.07em}.game-preview-page .michigan-leads{color:#ffcb05}.game-preview-page .opponent-leads{color:#e7edf3}.game-preview-page .advantage-meter{--advantage-width:0%;position:relative;display:grid;grid-template-columns:1fr 2px 1fr;align-items:center;height:20px;margin:14px auto 0;max-width:390px}.game-preview-page .advantage-meter>span{position:relative;height:12px;background:#24394b}.game-preview-page .advantage-meter>span:first-child{border-radius:7px 0 0 7px}.game-preview-page .advantage-meter>span:last-child{border-radius:0 7px 7px 0}.game-preview-page .advantage-meter>i{z-index:3;width:2px;height:20px;background:#f7f9fb}.game-preview-page .advantage-meter:after{content:"";position:absolute;top:4px;height:12px;width:var(--advantage-width);border-radius:6px;z-index:2}.game-preview-page .advantage-meter.to-michigan:after{right:calc(50% + 1px);background:#ffcb05;box-shadow:0 0 16px #ffcb0540}.game-preview-page .advantage-meter.to-opponent:after{left:calc(50% + 1px);background:#dce5ec;box-shadow:0 0 14px #fff2}.game-preview-page .advantage-scale{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;max-width:390px;margin:2px auto 0;color:#708599;font-size:8px}.game-preview-page .advantage-scale span:first-child{text-align:left;color:#ffcb05}.game-preview-page .advantage-scale span:last-child{text-align:right}.game-preview-page .advantage-scale b{color:#9eb0c0;font-weight:700}.game-preview-page .compact-market-card{display:grid;grid-template-columns:1fr 1fr;padding:0;margin-top:18px;overflow:hidden}.game-preview-page .compact-market-card>div{display:grid;justify-items:center;gap:4px;padding:18px 20px;text-align:center}.game-preview-page .compact-market-card>div+div{border-left:1px solid #29445a}.game-preview-page .compact-market-card small{color:#8396a8;font:800 9px var(--display);letter-spacing:.08em}.game-preview-page .compact-market-card strong{color:#f4f7fb;font:800 20px var(--display)}.game-preview-page .compact-market-card>div:first-child strong{color:#ffcb05}.game-preview-page .compact-market-card span{color:#8193a4;font-size:9px}.game-preview-page .game-preview-article-cta{margin-top:12px}@media(max-width:760px){.game-preview-page .advantage-heading{display:block}.game-preview-page .advantage-heading p{margin-top:8px;text-align:left;font-size:10px}.game-preview-page .advantage-comparison{margin-top:14px;border-radius:12px}.game-preview-page .advantage-comparison-head{grid-template-columns:1fr 92px 1fr;gap:6px;padding:14px 10px}.game-preview-page .advantage-comparison-head img{width:34px;height:34px}.game-preview-page .advantage-comparison-head strong{font-size:12px}.game-preview-page .advantage-comparison-head>span{font-size:9px}.game-preview-page .advantage-comparison-head>span small{font-size:6px}.game-preview-page .advantage-row{grid-template-columns:88px minmax(0,1fr) 88px;gap:6px;min-height:148px;padding:18px 9px}.game-preview-page .advantage-team-value strong{font-size:30px}.game-preview-page .advantage-team-value b{font-size:25px}.game-preview-page .advantage-team-value small{font-size:6px;line-height:1.25}.game-preview-page .advantage-label{font-size:14px}.game-preview-page .advantage-number{font-size:30px}.game-preview-page .advantage-winner{font-size:7px}.game-preview-page .advantage-meter{height:18px;margin-top:11px;max-width:230px}.game-preview-page .advantage-meter>span{height:10px}.game-preview-page .advantage-meter>i{height:18px}.game-preview-page .advantage-meter:after{top:4px;height:10px}.game-preview-page .advantage-scale{max-width:230px;font-size:6px}.game-preview-page .compact-market-card>div{padding:15px 8px}.game-preview-page .compact-market-card strong{font-size:15px}.game-preview-page .compact-market-card small{font-size:7px}.game-preview-page .preview-footnote{font-size:9px;line-height:1.5}}@media(max-width:390px){.game-preview-page .advantage-row{grid-template-columns:76px minmax(0,1fr) 76px}.game-preview-page .advantage-team-value strong{font-size:26px}.game-preview-page .advantage-team-value b{font-size:22px}.game-preview-page .advantage-label{font-size:13px}.game-preview-page .advantage-number{font-size:27px}.game-preview-page .advantage-meter,.game-preview-page .advantage-scale{max-width:190px}}
+.game-preview-page{padding:24px 0 96px;background:radial-gradient(circle at 50% -12%,rgba(21,70,110,.34),transparent 34rem),linear-gradient(180deg,#031426 0%,#04111e 72%,#030b13 100%)}
+.game-preview-page .preview-app-shell{width:min(920px,calc(100% - 36px));margin:auto}
+.game-preview-page .preview-topbar{height:58px;margin-bottom:18px;border-bottom:1px solid rgba(151,178,201,.2)}
+.game-preview-page .preview-topbar>a{color:#9eb0c1;font-size:10px;letter-spacing:.09em;transition:color .16s ease}
+.game-preview-page .preview-topbar>a:hover{color:#ffcb05}
+.game-preview-page .preview-topbar>div{text-align:center}
+.game-preview-page .preview-topbar>div>span{display:block;margin-bottom:3px;color:#ffcb05;font:800 7px var(--display);letter-spacing:.14em}
+.game-preview-page .preview-topbar h1{font-size:20px;letter-spacing:.06em}
+.game-preview-page .preview-topbar>span{font-size:9px;color:#788da0}
+
+.game-preview-page .preview-matchup-card{position:relative;overflow:hidden;padding:0;border:1px solid rgba(109,145,174,.32);border-radius:14px;background:linear-gradient(145deg,rgba(8,31,51,.97),rgba(4,20,35,.99));box-shadow:0 22px 60px rgba(0,0,0,.2),inset 0 1px rgba(255,255,255,.025)}
+.game-preview-page .preview-matchup-card:after{content:"M";position:absolute;right:-34px;top:-66px;color:rgba(255,203,5,.025);font:1000 270px/1 var(--display);pointer-events:none}
+.game-preview-page .preview-matchup-kicker{position:relative;z-index:1;padding:12px 18px;border-bottom:1px solid rgba(109,145,174,.18);color:#8095a7;font:800 8px var(--display);letter-spacing:.13em;text-align:center}
+.game-preview-page .preview-matchup{position:relative;z-index:1;grid-template-columns:1fr 86px 1fr;padding:26px 46px 24px}
+.game-preview-page .preview-team{min-width:0}
+.game-preview-page .preview-matchup img{width:104px;height:88px}
+.game-preview-page .preview-matchup strong{margin-top:10px;font-size:21px;letter-spacing:.01em}
+.game-preview-page .preview-matchup small{margin-top:5px;font-size:8px;letter-spacing:.1em}
+.game-preview-page .preview-versus{display:grid;place-items:center;gap:8px;color:#ffcb05}
+.game-preview-page .preview-versus span{font:900 18px var(--display);letter-spacing:.05em}
+.game-preview-page .preview-versus i{display:block;width:1px;height:24px;background:linear-gradient(transparent,rgba(255,203,5,.58),transparent)}
+.game-preview-page .preview-meta{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0;padding:0;border-top:1px solid rgba(109,145,174,.2);background:rgba(1,12,23,.28)}
+.game-preview-page .preview-meta>span{display:grid;gap:4px;justify-items:center;padding:13px 16px;text-align:center}
+.game-preview-page .preview-meta>span+span{border-left:1px solid rgba(109,145,174,.16)}
+.game-preview-page .preview-meta small{color:#6f8497;font:800 7px var(--display);letter-spacing:.11em}
+.game-preview-page .preview-meta b{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#e4eaf0;font:700 10px var(--body)}
+
+.game-preview-page .advantage-comparison-block{margin-top:30px;padding-bottom:0}
+.game-preview-page .advantage-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;margin-bottom:12px}
+.game-preview-page .advantage-heading>div>span{display:block;margin-bottom:5px;color:#ffcb05;font:800 8px var(--display);letter-spacing:.12em}
+.game-preview-page .advantage-heading h2{font-size:25px;letter-spacing:.025em}
+.game-preview-page .advantage-heading p{margin:0;color:#8397a9;text-align:right;font-size:10px;line-height:1.5}
+.game-preview-page .advantage-heading p b{color:#cdd7df;font-weight:700}
+.game-preview-page .advantage-comparison{overflow:hidden;margin-top:0;border:1px solid rgba(109,145,174,.31);border-radius:14px;background:linear-gradient(180deg,#071b2d,#051421);box-shadow:0 18px 48px rgba(0,0,0,.13)}
+.game-preview-page .advantage-comparison-head{display:grid;grid-template-columns:1fr minmax(150px,.9fr) 1fr;align-items:center;gap:16px;padding:14px 22px;border-bottom:1px solid rgba(109,145,174,.22);background:rgba(2,15,27,.34)}
+.game-preview-page .advantage-comparison-head>div{display:flex;align-items:center;justify-content:flex-start;gap:10px;min-width:0}
+.game-preview-page .advantage-comparison-head>div:last-child{flex-direction:row-reverse;text-align:right}
+.game-preview-page .advantage-comparison-head img{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 0 1px rgba(255,255,255,.85)) drop-shadow(0 0 3px rgba(255,255,255,.18))}
+.game-preview-page .advantage-comparison-head strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#eef3f7;font:800 12px var(--display);letter-spacing:.025em}
+.game-preview-page .advantage-comparison-head>span{display:grid;gap:2px;text-align:center;color:#aebdca;font:800 9px var(--display);letter-spacing:.1em}
+.game-preview-page .advantage-comparison-head>span small{color:#60788c;font:700 6px var(--display);letter-spacing:.08em}
+
+.game-preview-page .advantage-row{display:grid;grid-template-columns:1fr minmax(250px,1.25fr) 1fr;align-items:center;gap:24px;min-height:124px;padding:18px 24px;border-bottom:1px solid rgba(109,145,174,.17)}
+.game-preview-page .advantage-row:last-child{border-bottom:0}
+.game-preview-page .advantage-team-value{display:flex;align-items:center;gap:18px;min-width:0}
+.game-preview-page .opponent-value{justify-content:flex-end;text-align:right}
+.game-preview-page .metric-primary,.game-preview-page .metric-secondary{display:grid;gap:1px}
+.game-preview-page .metric-primary strong{color:#f3f7fa;font:900 35px/1 var(--display);letter-spacing:-.02em}
+.game-preview-page .metric-secondary b{color:#ffcb05;font:800 20px/1 var(--display)}
+.game-preview-page .opponent-value .metric-secondary b{color:#b8c5d0}
+.game-preview-page .metric-primary small,.game-preview-page .metric-secondary small{margin:0;color:#60778b;font:800 6px var(--display);letter-spacing:.11em}
+.game-preview-page .advantage-center{min-width:0;text-align:center}
+.game-preview-page .advantage-label{display:block;color:#dfe6ec;font:800 11px var(--display);letter-spacing:.12em}
+.game-preview-page .edge-readout{display:flex;align-items:baseline;justify-content:center;gap:7px;margin-top:5px}
+.game-preview-page .edge-readout strong{font:900 28px/1 var(--display)}
+.game-preview-page .edge-readout small{font:800 7px var(--display);letter-spacing:.08em}
+.game-preview-page .michigan-leads{color:#ffcb05}
+.game-preview-page .opponent-leads{color:#dfe7ee}
+.game-preview-page .advantage-meter{--advantage-width:0%;position:relative;display:grid;grid-template-columns:1fr 1px 1fr;align-items:center;height:11px;max-width:330px;margin:11px auto 0}
+.game-preview-page .advantage-meter>span{height:5px;background:#1a3246}
+.game-preview-page .advantage-meter>span:first-child{border-radius:5px 0 0 5px}
+.game-preview-page .advantage-meter>span:last-child{border-radius:0 5px 5px 0}
+.game-preview-page .advantage-meter>i{z-index:3;width:1px;height:11px;background:#8fa2b3}
+.game-preview-page .advantage-meter:after{content:"";position:absolute;top:3px;z-index:2;width:var(--advantage-width);height:5px;border-radius:5px}
+.game-preview-page .advantage-meter.to-michigan:after{right:calc(50% + .5px);background:#ffcb05;box-shadow:0 0 11px rgba(255,203,5,.22)}
+.game-preview-page .advantage-meter.to-opponent:after{left:calc(50% + .5px);background:#d7e0e8}
+.game-preview-page .advantage-scale{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;max-width:330px;margin:3px auto 0;color:#5f7589;font:700 6px var(--display);letter-spacing:.05em}
+.game-preview-page .advantage-scale span:first-child{text-align:left;color:#a58b21}
+.game-preview-page .advantage-scale span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right}
+.game-preview-page .advantage-scale b{color:#718699;font-weight:700}
+.game-preview-page .preview-footnote{margin:9px 3px 0;color:#667d90;font-size:8px;line-height:1.55}
+
+.game-preview-page .compact-market-card{display:grid;grid-template-columns:180px 1fr 1fr;align-items:stretch;margin-top:24px;padding:0;overflow:hidden;border:1px solid rgba(109,145,174,.28);border-radius:12px;background:#061725}
+.game-preview-page .compact-market-card>div{display:grid;align-content:center;justify-items:start;gap:3px;min-height:82px;padding:15px 20px;text-align:left}
+.game-preview-page .compact-market-card>div+div{border-left:1px solid rgba(109,145,174,.18)}
+.game-preview-page .compact-market-card .market-title{background:rgba(255,203,5,.055)}
+.game-preview-page .market-title span{color:#ffcb05;font:800 7px var(--display);letter-spacing:.12em}
+.game-preview-page .market-title strong{color:#f2f6f9;font:900 18px var(--display)}
+.game-preview-page .compact-market-card small{color:#6d8396;font:800 7px var(--display);letter-spacing:.1em}
+.game-preview-page .compact-market-card strong{color:#edf2f6;font:800 17px var(--display)}
+.game-preview-page .compact-market-card>div:nth-child(2) strong{color:#ffcb05}
+.game-preview-page .compact-market-card span{color:#6c8193;font-size:8px}
+
+.game-preview-page .game-preview-article-cta{display:grid;grid-template-columns:1fr auto;grid-template-areas:"eyebrow arrow" "title arrow" "deck arrow";align-items:center;margin-top:12px;padding:17px 20px;border:1px solid rgba(255,203,5,.42);border-radius:12px;background:linear-gradient(110deg,rgba(255,203,5,.09),rgba(255,203,5,.015));box-shadow:none}
+.game-preview-page .game-preview-article-cta:hover{border-color:#ffcb05;background:linear-gradient(110deg,rgba(255,203,5,.13),rgba(255,203,5,.025));transform:translateY(-1px)}
+.game-preview-page .game-preview-article-cta span{grid-area:eyebrow;color:#ffcb05;font:800 7px var(--display);letter-spacing:.12em}
+.game-preview-page .game-preview-article-cta strong{grid-area:title;margin-top:3px;color:#f4f7fa;font:900 16px var(--display)}
+.game-preview-page .game-preview-article-cta small{grid-area:deck;margin-top:3px;color:#788d9f;font-size:9px}
+.game-preview-page .game-preview-article-cta b{grid-area:arrow;padding-left:20px;color:#ffcb05;font:800 24px var(--display)}
+
+@media(max-width:760px){
+  .game-preview-page{padding-top:8px}
+  .game-preview-page .preview-app-shell{width:calc(100% - 20px)}
+  .game-preview-page .preview-topbar{height:50px;margin-bottom:10px}
+  .game-preview-page .preview-topbar h1{font-size:17px}
+  .game-preview-page .preview-matchup-card{border-radius:12px}
+  .game-preview-page .preview-matchup-kicker{padding:9px 10px;font-size:7px}
+  .game-preview-page .preview-matchup{grid-template-columns:1fr 44px 1fr;padding:18px 10px 17px}
+  .game-preview-page .preview-matchup img{width:70px;height:61px}
+  .game-preview-page .preview-matchup strong{font-size:15px}
+  .game-preview-page .preview-matchup small{font-size:7px}
+  .game-preview-page .preview-versus span{font-size:15px}
+  .game-preview-page .preview-versus i{height:17px}
+  .game-preview-page .preview-meta>span{padding:10px 6px}
+  .game-preview-page .preview-meta small{font-size:6px}
+  .game-preview-page .preview-meta b{font-size:8px}
+  .game-preview-page .advantage-comparison-block{margin-top:22px}
+  .game-preview-page .advantage-heading{display:flex;align-items:flex-end;gap:10px}
+  .game-preview-page .advantage-heading h2{font-size:20px}
+  .game-preview-page .advantage-heading p{font-size:8px}
+  .game-preview-page .advantage-comparison-head{grid-template-columns:1fr 76px 1fr;gap:5px;padding:11px 9px}
+  .game-preview-page .advantage-comparison-head>div{gap:6px}
+  .game-preview-page .advantage-comparison-head img{width:26px;height:26px}
+  .game-preview-page .advantage-comparison-head strong{font-size:9px}
+  .game-preview-page .advantage-comparison-head>span{font-size:7px}
+  .game-preview-page .advantage-row{grid-template-columns:78px minmax(0,1fr) 78px;gap:7px;min-height:108px;padding:14px 9px}
+  .game-preview-page .advantage-team-value{display:grid;gap:6px}
+  .game-preview-page .opponent-value{justify-content:initial}
+  .game-preview-page .metric-primary strong{font-size:26px}
+  .game-preview-page .metric-secondary b{font-size:16px}
+  .game-preview-page .advantage-label{font-size:9px}
+  .game-preview-page .edge-readout{display:grid;gap:1px;margin-top:4px}
+  .game-preview-page .edge-readout strong{font-size:22px}
+  .game-preview-page .edge-readout small{font-size:6px}
+  .game-preview-page .advantage-meter{max-width:205px;margin-top:8px}
+  .game-preview-page .advantage-scale{max-width:205px;font-size:5px}
+  .game-preview-page .compact-market-card{grid-template-columns:1fr 1fr;margin-top:18px}
+  .game-preview-page .compact-market-card .market-title{grid-column:1/3;min-height:auto;padding:10px 14px;display:flex;justify-content:space-between;align-items:center}
+  .game-preview-page .compact-market-card .market-title strong{font-size:13px}
+  .game-preview-page .compact-market-card>div:nth-child(2){border-left:0}
+  .game-preview-page .compact-market-card>div{min-height:70px;padding:12px 13px}
+  .game-preview-page .compact-market-card strong{font-size:14px}
+}
+
+@media(max-width:390px){
+  .game-preview-page .preview-topbar>span{display:block}
+  .game-preview-page .preview-matchup strong{font-size:13px}
+  .game-preview-page .preview-meta{grid-template-columns:1fr 1fr}
+  .game-preview-page .preview-meta>span:last-child{grid-column:1/3;border-top:1px solid rgba(109,145,174,.16);border-left:0}
+  .game-preview-page .advantage-heading p{display:none}
+  .game-preview-page .advantage-row{grid-template-columns:68px minmax(0,1fr) 68px;padding-inline:7px}
+  .game-preview-page .metric-primary strong{font-size:23px}
+  .game-preview-page .metric-secondary b{font-size:15px}
+  .game-preview-page .advantage-meter,.game-preview-page .advantage-scale{max-width:170px}
+}
