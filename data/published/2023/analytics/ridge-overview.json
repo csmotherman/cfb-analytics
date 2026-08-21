@@ -1,0 +1,66 @@
+{
+  "season": 2023,
+  "team": "Michigan",
+  "lambda": 20.0,
+  "method": "weighted ridge least squares",
+  "weights": {
+    "ppd": 0.25,
+    "ypd": 0.25,
+    "success": 0.25,
+    "scoring": 0.25
+  },
+  "offense": {
+    "rank": 7,
+    "rating": 123.97727580504036,
+    "field_size": 133,
+    "metrics": {
+      "ppd": {
+        "value": 3.1840269807516925,
+        "rank": 5,
+        "field_size": 133
+      },
+      "ypd": {
+        "value": 36.48477703714957,
+        "rank": 21,
+        "field_size": 133
+      },
+      "success": {
+        "value": 0.5026204368347323,
+        "rank": 9,
+        "field_size": 133
+      },
+      "scoring": {
+        "value": 0.5185634171348035,
+        "rank": 4,
+        "field_size": 133
+      }
+    }
+  },
+  "defense": {
+    "rank": 3,
+    "rating": 132.87290075082592,
+    "field_size": 133,
+    "metrics": {
+      "ppd": {
+        "value": 1.025527589440715,
+        "rank": 2,
+        "field_size": 133
+      },
+      "ypd": {
+        "value": 24.324466312914,
+        "rank": 4,
+        "field_size": 133
+      },
+      "success": {
+        "value": 0.34988275677536596,
+        "rank": 9,
+        "field_size": 133
+      },
+      "scoring": {
+        "value": 0.19730183112779673,
+        "rank": 2,
+        "field_size": 133
+      }
+    }
+  }
+}

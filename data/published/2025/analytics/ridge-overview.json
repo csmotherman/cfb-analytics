@@ -1,0 +1,66 @@
+{
+  "season": 2025,
+  "team": "Michigan",
+  "lambda": 20.0,
+  "method": "weighted ridge least squares",
+  "weights": {
+    "ppd": 0.25,
+    "ypd": 0.25,
+    "success": 0.25,
+    "scoring": 0.25
+  },
+  "offense": {
+    "rank": 24,
+    "rating": 114.2101528361009,
+    "field_size": 136,
+    "metrics": {
+      "ppd": {
+        "value": 2.4878308501735127,
+        "rank": 22,
+        "field_size": 136
+      },
+      "ypd": {
+        "value": 36.64807274603989,
+        "rank": 29,
+        "field_size": 136
+      },
+      "success": {
+        "value": 0.4864166879704023,
+        "rank": 20,
+        "field_size": 136
+      },
+      "scoring": {
+        "value": 0.4279464930032656,
+        "rank": 23,
+        "field_size": 136
+      }
+    }
+  },
+  "defense": {
+    "rank": 36,
+    "rating": 109.74875423092433,
+    "field_size": 136,
+    "metrics": {
+      "ppd": {
+        "value": 1.561508377430156,
+        "rank": 32,
+        "field_size": 136
+      },
+      "ypd": {
+        "value": 29.641303916585485,
+        "rank": 30,
+        "field_size": 136
+      },
+      "success": {
+        "value": 0.4120960755739994,
+        "rank": 50,
+        "field_size": 136
+      },
+      "scoring": {
+        "value": 0.29233530765147847,
+        "rank": 33,
+        "field_size": 136
+      }
+    }
+  }
+}

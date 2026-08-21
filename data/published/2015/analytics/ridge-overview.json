@@ -1,0 +1,66 @@
+{
+  "season": 2015,
+  "team": "Michigan",
+  "lambda": 20.0,
+  "method": "weighted ridge least squares",
+  "weights": {
+    "ppd": 0.25,
+    "ypd": 0.25,
+    "success": 0.25,
+    "scoring": 0.25
+  },
+  "offense": {
+    "rank": 20,
+    "rating": 114.4689853483619,
+    "field_size": 128,
+    "metrics": {
+      "ppd": {
+        "value": 2.621887498377097,
+        "rank": 16,
+        "field_size": 128
+      },
+      "ypd": {
+        "value": 34.727004619309206,
+        "rank": 29,
+        "field_size": 128
+      },
+      "success": {
+        "value": 0.4698093318265703,
+        "rank": 22,
+        "field_size": 128
+      },
+      "scoring": {
+        "value": 0.44507333330444593,
+        "rank": 16,
+        "field_size": 128
+      }
+    }
+  },
+  "defense": {
+    "rank": 6,
+    "rating": 123.0462758102714,
+    "field_size": 128,
+    "metrics": {
+      "ppd": {
+        "value": 1.3488640152039695,
+        "rank": 11,
+        "field_size": 128
+      },
+      "ypd": {
+        "value": 26.09576809601463,
+        "rank": 11,
+        "field_size": 128
+      },
+      "success": {
+        "value": 0.3252832840874338,
+        "rank": 4,
+        "field_size": 128
+      },
+      "scoring": {
+        "value": 0.24924614681865004,
+        "rank": 12,
+        "field_size": 128
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "season": 2014,
+  "team": "Michigan",
+  "lambda": 20.0,
+  "method": "weighted ridge least squares",
+  "weights": {
+    "ppd": 0.25,
+    "ypd": 0.25,
+    "success": 0.25,
+    "scoring": 0.25
+  },
+  "offense": {
+    "rank": 62,
+    "rating": 99.47987353448968,
+    "field_size": 128,
+    "metrics": {
+      "ppd": {
+        "value": 1.8406134290483966,
+        "rank": 81,
+        "field_size": 128
+      },
+      "ypd": {
+        "value": 31.22436714701739,
+        "rank": 62,
+        "field_size": 128
+      },
+      "success": {
+        "value": 0.4547424161434641,
+        "rank": 37,
+        "field_size": 128
+      },
+      "scoring": {
+        "value": 0.3247440856947962,
+        "rank": 79,
+        "field_size": 128
+      }
+    }
+  },
+  "defense": {
+    "rank": 25,
+    "rating": 112.81806746097013,
+    "field_size": 128,
+    "metrics": {
+      "ppd": {
+        "value": 1.600805630648248,
+        "rank": 28,
+        "field_size": 128
+      },
+      "ypd": {
+        "value": 26.232913788443813,
+        "rank": 19,
+        "field_size": 128
+      },
+      "success": {
+        "value": 0.38431269868443724,
+        "rank": 24,
+        "field_size": 128
+      },
+      "scoring": {
+        "value": 0.30590534905911987,
+        "rank": 42,
+        "field_size": 128
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "season": 2024,
+  "team": "Michigan",
+  "lambda": 20.0,
+  "method": "weighted ridge least squares",
+  "weights": {
+    "ppd": 0.25,
+    "ypd": 0.25,
+    "success": 0.25,
+    "scoring": 0.25
+  },
+  "offense": {
+    "rank": 64,
+    "rating": 100.50115826062856,
+    "field_size": 134,
+    "metrics": {
+      "ppd": {
+        "value": 2.2203610618713876,
+        "rank": 61,
+        "field_size": 134
+      },
+      "ypd": {
+        "value": 29.784088922935048,
+        "rank": 103,
+        "field_size": 134
+      },
+      "success": {
+        "value": 0.4334785055251287,
+        "rank": 60,
+        "field_size": 134
+      },
+      "scoring": {
+        "value": 0.4099301174772935,
+        "rank": 48,
+        "field_size": 134
+      }
+    }
+  },
+  "defense": {
+    "rank": 10,
+    "rating": 120.46178714432523,
+    "field_size": 134,
+    "metrics": {
+      "ppd": {
+        "value": 1.5277787564247651,
+        "rank": 15,
+        "field_size": 134
+      },
+      "ypd": {
+        "value": 26.54536559831534,
+        "rank": 9,
+        "field_size": 134
+      },
+      "success": {
+        "value": 0.35127740588493345,
+        "rank": 10,
+        "field_size": 134
+      },
+      "scoring": {
+        "value": 0.28687521869485466,
+        "rank": 17,
+        "field_size": 134
+      }
+    }
+  }
+}

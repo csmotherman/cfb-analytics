@@ -1,0 +1,66 @@
+{
+  "season": 2018,
+  "team": "Michigan",
+  "lambda": 20.0,
+  "method": "weighted ridge least squares",
+  "weights": {
+    "ppd": 0.25,
+    "ypd": 0.25,
+    "success": 0.25,
+    "scoring": 0.25
+  },
+  "offense": {
+    "rank": 10,
+    "rating": 121.0157841314843,
+    "field_size": 130,
+    "metrics": {
+      "ppd": {
+        "value": 2.874024288404766,
+        "rank": 9,
+        "field_size": 130
+      },
+      "ypd": {
+        "value": 37.06269088803741,
+        "rank": 16,
+        "field_size": 130
+      },
+      "success": {
+        "value": 0.49401781989112503,
+        "rank": 17,
+        "field_size": 130
+      },
+      "scoring": {
+        "value": 0.48583202456110053,
+        "rank": 6,
+        "field_size": 130
+      }
+    }
+  },
+  "defense": {
+    "rank": 5,
+    "rating": 123.71974265965608,
+    "field_size": 130,
+    "metrics": {
+      "ppd": {
+        "value": 1.503992230510557,
+        "rank": 19,
+        "field_size": 130
+      },
+      "ypd": {
+        "value": 24.083305684021383,
+        "rank": 6,
+        "field_size": 130
+      },
+      "success": {
+        "value": 0.31955237439600676,
+        "rank": 3,
+        "field_size": 130
+      },
+      "scoring": {
+        "value": 0.2568539038589425,
+        "rank": 14,
+        "field_size": 130
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "season": 2022,
+  "team": "Michigan",
+  "lambda": 20.0,
+  "method": "weighted ridge least squares",
+  "weights": {
+    "ppd": 0.25,
+    "ypd": 0.25,
+    "success": 0.25,
+    "scoring": 0.25
+  },
+  "offense": {
+    "rank": 7,
+    "rating": 128.8652539653599,
+    "field_size": 131,
+    "metrics": {
+      "ppd": {
+        "value": 3.298003168094283,
+        "rank": 5,
+        "field_size": 131
+      },
+      "ypd": {
+        "value": 38.5966513504521,
+        "rank": 13,
+        "field_size": 131
+      },
+      "success": {
+        "value": 0.5277837018979264,
+        "rank": 5,
+        "field_size": 131
+      },
+      "scoring": {
+        "value": 0.5662168815355215,
+        "rank": 4,
+        "field_size": 131
+      }
+    }
+  },
+  "defense": {
+    "rank": 10,
+    "rating": 124.02147611708784,
+    "field_size": 131,
+    "metrics": {
+      "ppd": {
+        "value": 1.306693734744502,
+        "rank": 5,
+        "field_size": 131
+      },
+      "ypd": {
+        "value": 26.467230658218583,
+        "rank": 10,
+        "field_size": 131
+      },
+      "success": {
+        "value": 0.3768558629788431,
+        "rank": 19,
+        "field_size": 131
+      },
+      "scoring": {
+        "value": 0.2495200307174399,
+        "rank": 6,
+        "field_size": 131
+      }
+    }
+  }
+}
