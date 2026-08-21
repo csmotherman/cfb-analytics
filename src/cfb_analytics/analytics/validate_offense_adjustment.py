@@ -1,7 +1,9 @@
 """Out-of-sample validation for raw, one-pass, and least-squares offense models.
 
 Uses deterministic game-level K-fold cross-validation. Both team rows from the
-same game are assigned to the same fold, preventing mirror-row leakage.
+same game are assigned to the same fold, preventing mirror-row leakage. Supports
+single-season validation and pooled multi-season validation with exact
+opportunity-weighted aggregation of held-out errors.
 """
 from __future__ import annotations
 import argparse, hashlib, json, math
@@ -21,6 +23,7 @@ FIELD_NAMES = {
     "success": "success rate",
     "scoring": "scoring drive rate",
 }
+MODELS = ("raw", "one_pass", "least_squares")
 
 
 def _game_id(row: dict[str, Any]) -> str:
@@ -64,7 +67,6 @@ def _evaluate_fold(train: list[dict[str, Any]], test: list[dict[str, Any]]) -> d
     one_pass = {int(r["team_id"]): r for r in one_pass_rows}
     ls = {name: _solve_metric(train, name) for name in METRICS}
     out = {name: [] for name in METRICS}
-
     one_pass_fields = {
         "ppd": "adjusted_points_per_drive",
         "ypd": "adjusted_yards_per_drive",
@@ -87,10 +89,7 @@ def _evaluate_fold(train: list[dict[str, Any]], test: list[dict[str, Any]]) -> d
             opp_allow = _metric_from_totals(raw_defense[oid], idx)
             if actual is None or team_raw is None or opp_allow is None or weight <= 0:
                 continue
-            # Raw predicts the team's training average regardless of opponent.
             raw_pred = team_raw
-            # V1 neutral offense plus the held-out opponent's training defensive
-            # allowance relative to the national environment.
             neutral = float(one_pass[tid][one_pass_fields[name]])
             one_pred = neutral + (opp_allow - national)
             ls_pred = float(solved["baseline"] + solved["offense_effect"][tid] - solved["defense_effect"][oid])
@@ -100,14 +99,19 @@ def _evaluate_fold(train: list[dict[str, Any]], test: list[dict[str, Any]]) -> d
 
 def _errors(obs: list[tuple[float,float,float,float,float]]) -> dict[str, dict[str,float]]:
     if not obs:
-        return {m: {"mae": float("nan"), "rmse": float("nan")} for m in ("raw","one_pass","least_squares")}
-    actual = np.asarray([x[0] for x in obs]); weights = np.asarray([x[4] for x in obs])
+        return {m: {"mae": float("nan"), "rmse": float("nan"), "weight": 0.0, "absolute_error": 0.0, "squared_error": 0.0} for m in MODELS}
+    actual = np.asarray([x[0] for x in obs]); weights = np.asarray([x[4] for x in obs]); weight_sum = float(weights.sum())
     result = {}
     for label, pos in (("raw",1),("one_pass",2),("least_squares",3)):
         pred = np.asarray([x[pos] for x in obs]); err = pred-actual
+        abs_sum = float(np.sum(weights * np.abs(err)))
+        sq_sum = float(np.sum(weights * err**2))
         result[label] = {
-            "mae": float(np.average(np.abs(err), weights=weights)),
-            "rmse": float(math.sqrt(np.average(err**2, weights=weights))),
+            "mae": abs_sum / weight_sum,
+            "rmse": math.sqrt(sq_sum / weight_sum),
+            "weight": weight_sum,
+            "absolute_error": abs_sum,
+            "squared_error": sq_sum,
         }
     return result
 
@@ -138,35 +142,88 @@ def cross_validate(rows: list[dict[str, Any]], season: int, folds: int = 5, seed
     }
 
 
+def aggregate_seasons(results: list[dict[str, Any]]) -> dict[str, Any]:
+    if not results:
+        raise ValueError("No season results to aggregate")
+    pooled = {}
+    for metric in METRICS:
+        observations = sum(r["metrics"][metric]["observations"] for r in results)
+        errors = {}
+        for model in MODELS:
+            blocks = [r["metrics"][metric]["errors"][model] for r in results]
+            weight = sum(b["weight"] for b in blocks)
+            abs_sum = sum(b["absolute_error"] for b in blocks)
+            sq_sum = sum(b["squared_error"] for b in blocks)
+            errors[model] = {
+                "mae": abs_sum / weight if weight else float("nan"),
+                "rmse": math.sqrt(sq_sum / weight) if weight else float("nan"),
+                "weight": weight,
+                "absolute_error": abs_sum,
+                "squared_error": sq_sum,
+            }
+        pooled[metric] = {"observations": observations, "errors": errors}
+    return {
+        "seasons": [r["season"] for r in results],
+        "games": sum(r["games"] for r in results),
+        "metrics": pooled,
+    }
+
+
 def load(path: Path):
     with path.open(encoding="utf-8") as h:
         return json.load(h)
 
 
+def _print_metric_block(block: dict[str, Any], name: str, indent: str = "") -> None:
+    print(f"{indent}{FIELD_NAMES[name].upper()}  ({block['observations']} held-out team-games)")
+    for model in MODELS:
+        e = block["errors"][model]
+        print(f"{indent}  {model:<14} MAE {e['mae']:.5f}   RMSE {e['rmse']:.5f}")
+    raw_rmse = block["errors"]["raw"]["rmse"]
+    for model in ("one_pass","least_squares"):
+        rmse = block["errors"][model]["rmse"]
+        gain = (raw_rmse-rmse)/raw_rmse*100 if raw_rmse else float("nan")
+        print(f"{indent}    {model:<13} RMSE improvement vs raw: {gain:+.2f}%")
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description="Out-of-sample test of raw, one-pass, and LS offense adjustment")
-    p.add_argument("--season", type=int, default=2025)
-    p.add_argument("--input", type=Path)
+    p.add_argument("--season", type=int, default=None, help="Validate one season")
+    p.add_argument("--seasons", nargs="+", type=int, help="Validate and pool multiple seasons, e.g. --seasons 2022 2023 2024 2025")
+    p.add_argument("--input", type=Path, help="Custom input path; only valid with --season")
     p.add_argument("--folds", type=int, default=5)
     p.add_argument("--seed", default="cfb-analytics-v1")
     a = p.parse_args(argv)
-    path = a.input or Path(f"data/canonical/season={a.season}/team_games.json")
-    result = cross_validate(load(path), a.season, a.folds, a.seed)
-    print(f"\nOpponent Adjustment Out-of-Sample Validation — {a.season}")
-    print(f"Game-level {result['folds']}-fold CV | {result['games']} FBS-vs-FBS games")
-    print("Lower MAE/RMSE is better. Errors are opportunity-weighted.\n")
-    for name in ("ppd","ypd","success","scoring"):
-        block = result["metrics"][name]
-        print(f"{FIELD_NAMES[name].upper()}  ({block['observations']} held-out team-games)")
-        for model in ("raw","one_pass","least_squares"):
-            e = block["errors"][model]
-            print(f"  {model:<14} MAE {e['mae']:.5f}   RMSE {e['rmse']:.5f}")
-        raw_rmse = block["errors"]["raw"]["rmse"]
-        for model in ("one_pass","least_squares"):
-            rmse = block["errors"][model]["rmse"]
-            gain = (raw_rmse-rmse)/raw_rmse*100 if raw_rmse else float("nan")
-            print(f"    {model:<13} RMSE improvement vs raw: {gain:+.2f}%")
-        print()
+    if a.input and a.seasons:
+        p.error("--input cannot be combined with --seasons")
+    seasons = a.seasons or [a.season if a.season is not None else 2025]
+    season_results = []
+    for season in seasons:
+        path = a.input if a.input is not None else Path(f"data/canonical/season={season}/team_games.json")
+        result = cross_validate(load(path), season, a.folds, a.seed)
+        season_results.append(result)
+        print(f"\nOpponent Adjustment Out-of-Sample Validation — {season}")
+        print(f"Game-level {result['folds']}-fold CV | {result['games']} FBS-vs-FBS games")
+        print("Lower MAE/RMSE is better. Errors are opportunity-weighted.\n")
+        for name in ("ppd","ypd","success","scoring"):
+            _print_metric_block(result["metrics"][name], name)
+            print()
+    if len(season_results) > 1:
+        pooled = aggregate_seasons(season_results)
+        print(f"\nPOOLED MULTI-SEASON VALIDATION — {min(pooled['seasons'])}–{max(pooled['seasons'])}")
+        print(f"{len(pooled['seasons'])} seasons | {pooled['games']} total FBS-vs-FBS games")
+        print("Exact opportunity-weighted aggregation of all held-out predictions.\n")
+        for name in ("ppd","ypd","success","scoring"):
+            _print_metric_block(pooled["metrics"][name], name)
+            print()
+        print("LS RMSE improvement vs raw by season")
+        print(f"  {'METRIC':<10}" + "".join(f"{s:>10}" for s in pooled["seasons"]) + f"{'POOLED':>10}")
+        for name in ("ppd","ypd","success","scoring"):
+            vals=[]
+            for r in season_results:
+                b=r["metrics"][name]["errors"]; vals.append((b["raw"]["rmse"]-b["least_squares"]["rmse"])/b["raw"]["rmse"]*100)
+            pb=pooled["metrics"][name]["errors"];pg=(pb["raw"]["rmse"]-pb["least_squares"]["rmse"])/pb["raw"]["rmse"]*100
+            print(f"  {name.upper():<10}" + "".join(f"{v:>9.2f}%" for v in vals) + f"{pg:>9.2f}%")
     return 0
 
 if __name__ == "__main__":
