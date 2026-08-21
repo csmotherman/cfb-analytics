@@ -154,15 +154,17 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
 
     The defensive baseline excludes the exact game being evaluated. Games for
     which the opponent has no other eligible defensive sample are skipped.
+
+    Returned rows include raw season metrics and adjustment deltas so extreme
+    schedule effects can be audited before the rating is published.
     """
     rows = _eligible_rows(rows, season)
     if not rows:
         raise ValueError(f"No eligible FBS-vs-FBS team-game rows found for {season}")
 
-    # One defensive row exists per team-game. Aggregate each team's defense so
-    # we can cheaply subtract the current matchup for a leave-one-out baseline.
     defense_by_team: dict[int, Totals] = {}
     defense_game_by_key: dict[tuple[int, str], Totals] = {}
+    offense_by_team: dict[int, Totals] = {}
     national_offense = Totals()
     team_names: dict[int, str] = {}
 
@@ -173,6 +175,7 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
         off = offensive_totals(row)
         defense = defensive_totals(row)
         national_offense = national_offense + off
+        offense_by_team[team_id] = offense_by_team.get(team_id, Totals()) + off
         defense_by_team[team_id] = defense_by_team.get(team_id, Totals()) + defense
         defense_game_by_key[(team_id, game_id)] = defense
 
@@ -184,7 +187,6 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
     national_scoring = float(national_scoring)
 
     game_adjustments: dict[int, list[dict[str, float]]] = {}
-    skipped_no_loo = 0
 
     for row in rows:
         team_id = int(row["team_id"])
@@ -195,14 +197,11 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
 
         opponent_game_defense = defense_game_by_key.get((opponent_id, game_id))
         if opponent_game_defense is None:
-            # Defensive fields on the offensive row are the same game's other
-            # side, so this remains safe if a paired opponent row is absent.
             opponent_game_defense = offensive_totals(row)
 
         opponent_loo = defense_by_team[opponent_id] - opponent_game_defense
         opp_ppd, opp_success, opp_scoring = metrics(opponent_loo)
         if None in (opp_ppd, opp_success, opp_scoring):
-            skipped_no_loo += 1
             continue
 
         off = offensive_totals(row)
@@ -237,6 +236,17 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
     adjusted_success = {team_id: adjusted_success[team_id] for team_id in common}
     adjusted_scoring = {team_id: adjusted_scoring[team_id] for team_id in common}
 
+    raw_ppd: dict[int, float] = {}
+    raw_success: dict[int, float] = {}
+    raw_scoring: dict[int, float] = {}
+    for team_id in common:
+        team_ppd, team_success, team_scoring = metrics(offense_by_team[team_id])
+        if None in (team_ppd, team_success, team_scoring):
+            raise ValueError(f"Raw metrics could not be calculated for team {team_id}")
+        raw_ppd[team_id] = float(team_ppd)
+        raw_success[team_id] = float(team_success)
+        raw_scoring[team_id] = float(team_scoring)
+
     z_ppd = _z_scores(adjusted_ppd)
     z_success = _z_scores(adjusted_success)
     z_scoring = _z_scores(adjusted_scoring)
@@ -260,11 +270,17 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
             "team": team_names.get(team_id, str(team_id)),
             "team_id": team_id,
             "rating": rating[team_id],
+            "raw_points_per_drive": raw_ppd[team_id],
             "adjusted_points_per_drive": adjusted_ppd[team_id],
+            "points_per_drive_adjustment": adjusted_ppd[team_id] - raw_ppd[team_id],
             "points_per_drive_rank": ppd_rank[team_id],
+            "raw_success_rate": raw_success[team_id],
             "adjusted_success_rate": adjusted_success[team_id],
+            "success_rate_adjustment": adjusted_success[team_id] - raw_success[team_id],
             "success_rate_rank": success_rank[team_id],
+            "raw_scoring_drive_rate": raw_scoring[team_id],
             "adjusted_scoring_drive_rate": adjusted_scoring[team_id],
+            "scoring_drive_rate_adjustment": adjusted_scoring[team_id] - raw_scoring[team_id],
             "scoring_drive_rate_rank": scoring_rank[team_id],
             "games_used": games_used[team_id],
         })
@@ -301,6 +317,18 @@ def _format_row(row: dict[str, Any]) -> str:
     )
 
 
+def _format_diagnostic_row(row: dict[str, Any]) -> str:
+    return (
+        f"{row['rank']:>3}  {row['team']:<20.20} "
+        f"PPD {row['raw_points_per_drive']:>5.2f}->{row['adjusted_points_per_drive']:>5.2f} "
+        f"({row['points_per_drive_adjustment']:+.2f})  "
+        f"SR {row['raw_success_rate'] * 100:>5.1f}->{row['adjusted_success_rate'] * 100:>5.1f}% "
+        f"({row['success_rate_adjustment'] * 100:+.1f}pp)  "
+        f"SCORE {row['raw_scoring_drive_rate'] * 100:>5.1f}->{row['adjusted_scoring_drive_rate'] * 100:>5.1f}% "
+        f"({row['scoring_drive_rate_adjustment'] * 100:+.1f}pp)"
+    )
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Test opponent-adjusted offensive rankings")
     parser.add_argument("--season", type=int, default=2025)
@@ -308,6 +336,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--top", type=int, default=25)
     parser.add_argument("--team", default="Michigan")
     parser.add_argument("--output", type=Path, default=None)
+    parser.add_argument(
+        "--diagnostics",
+        action="store_true",
+        help="Print raw -> adjusted metrics and schedule adjustment magnitude",
+    )
     args = parser.parse_args(argv)
 
     input_path = args.input or Path(f"data/canonical/season={args.season}/team_games.json")
@@ -316,15 +349,25 @@ def main(argv: list[str] | None = None) -> int:
     print(f"\nOpponent-Adjusted Offense — {args.season}")
     print("50% Adj PPD | 30% Adj Success Rate | 20% Adj Scoring Drive %")
     print("FBS vs FBS only; opponent defensive baseline excludes the graded game.\n")
-    for row in rows[: max(0, args.top)]:
+    shown = rows[: max(0, args.top)]
+    for row in shown:
         print(_format_row(row))
 
     target = next((row for row in rows if str(row["team"]).casefold() == args.team.casefold()), None)
-    if target is not None and target not in rows[: max(0, args.top)]:
+    if target is not None and target not in shown:
         print(f"\n{args.team}:")
         print(_format_row(target))
     elif target is None:
         print(f"\n{args.team!r} was not found in the eligible ranking set.")
+
+    if args.diagnostics:
+        print("\nRaw -> Adjusted Diagnostics")
+        print("Positive delta = schedule adjustment helped the offense; negative = hurt it.\n")
+        diagnostic_rows = list(shown)
+        if target is not None and target not in diagnostic_rows:
+            diagnostic_rows.append(target)
+        for row in diagnostic_rows:
+            print(_format_diagnostic_row(row))
 
     if args.output:
         write_csv(rows, args.output)
