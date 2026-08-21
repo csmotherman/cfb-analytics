@@ -62,6 +62,21 @@ export type FanSeason = {
   national_yardsPerSuccessfulPlayAllowed_rank:number;
 };
 
+type FanGame = {
+  win?:number|boolean;
+  loss?:number|boolean;
+  seasonType?:string;
+  season_type?:string;
+};
+
+export type FanRecord = {
+  wins:number;
+  losses:number;
+  record:string;
+  regular:{wins:number;losses:number;record:string;games:number};
+  postseason:{wins:number;losses:number;record:string;games:number};
+};
+
 export type FanTier = "elite"|"strong"|"average"|"concern";
 
 export function ridgeOverview(season:number):RidgeOverview|null{
@@ -71,6 +86,31 @@ export function ridgeOverview(season:number):RidgeOverview|null{
 export function michiganFanSeason(season:number):FanSeason|null{
   const rows=readJson<FanSeason[]>("data","published",String(season),"teams","michigan","season.json");
   return rows?.[0]??null;
+}
+
+export function michiganRecord(season:number):FanRecord|null{
+  const rows=readJson<FanGame[]>("data","published",String(season),"teams","michigan","games.json");
+  if(!rows?.length)return null;
+  const buckets={regular:{wins:0,losses:0,games:0},postseason:{wins:0,losses:0,games:0}};
+  for(const game of rows){
+    const type=String(game.seasonType??game.season_type??"regular").toLowerCase();
+    const bucket=type.includes("regular")?buckets.regular:buckets.postseason;
+    const won=game.win===true || Number(game.win)===1;
+    const lost=game.loss===true || Number(game.loss)===1;
+    if(!won&&!lost)continue;
+    bucket.games+=1;
+    if(won)bucket.wins+=1;
+    if(lost)bucket.losses+=1;
+  }
+  const wins=buckets.regular.wins+buckets.postseason.wins;
+  const losses=buckets.regular.losses+buckets.postseason.losses;
+  return {
+    wins,
+    losses,
+    record:`${wins}-${losses}`,
+    regular:{...buckets.regular,record:`${buckets.regular.wins}-${buckets.regular.losses}`},
+    postseason:{...buckets.postseason,record:`${buckets.postseason.wins}-${buckets.postseason.losses}`},
+  };
 }
 
 export function metricDisplay(metric:keyof RidgeSide["metrics"],value:number){
