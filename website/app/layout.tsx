@@ -11,6 +11,7 @@ import "../styles/player-profile-mobile.css";
 import "../styles/player-game-log.css";
 import "../styles/team-hub.css";
 import "../styles/team-formation-home.css";
+import "../styles/team-depth-formats.css";
 import "../styles/roster-directory.css";
 import "../styles/matchup-logos.css";
 import "../styles/more-page.css";
