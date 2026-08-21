@@ -1,34 +1,56 @@
 import Link from "next/link";
 import {AnalyticsYearSwitch} from "../../components/AnalyticsYearSwitch";
-import {metricDisplay,michiganFanSeason,overviewTraits,pct,rankDisplay,ridgeOverview} from "../../lib/ridge-analytics";
+import {fanTier,fanTierLabel,metricDisplay,michiganFanSeason,overviewTraits,pct,ridgeOverview} from "../../lib/ridge-analytics";
 
 const years=Array.from({length:17},(_,i)=>2010+i);
 
-function SummaryStat({label,value,detail}:{label:string;value:string;detail:string}){
-  return <div className="ao-snapshot-stat">
-    <span>{label}</span>
-    <strong>{value}</strong>
-    <small>{detail}</small>
-  </div>;
+type MetricCard={
+  label:string;
+  value:string;
+  rank:number;
+  fieldSize:number;
+  copy:string;
+};
+
+function RankBadge({rank,fieldSize}:{rank:number;fieldSize:number}){
+  const tier=fanTier(rank,fieldSize);
+  return <span className={`fan-rank-badge ${tier}`}>{fanTierLabel(rank,fieldSize)} <b>#{rank}</b></span>;
 }
 
-function UnitRow({label,value,detail,tone}:{label:string;value:string;detail:string;tone:"good"|"elite"|"neutral"}){
-  return <div className="ao-unit-row">
-    <div><span>{label}</span><strong>{value}</strong><small>{detail}</small></div>
-    <b className={`ao-pill ${tone}`}>{tone==="elite"?"ELITE":tone==="good"?"STRONG":"SOLID"}</b>
-  </div>;
-}
-
-function UnitOverview({side,year,rank,rows,copy}:{side:"OFFENSE"|"DEFENSE";year:number;rank:number;rows:Array<{label:string;value:string;detail:string;tone:"good"|"elite"|"neutral"}>;copy:string}){
-  const href=side==="OFFENSE"?`/analytics/offense?year=${year}`:`/analytics/defense?year=${year}`;
-  return <article className="ao-unit-card">
-    <header>
-      <div><small>{side} OVERVIEW</small><strong>#{rank} <span>nationally</span></strong></div>
-      <Link href={href}>View all {side.toLowerCase()} →</Link>
-    </header>
-    <div className="ao-unit-rows">{rows.map(row=><UnitRow key={row.label} {...row}/>)}</div>
-    <p>{copy}</p>
+function MetricRow({metric}:{metric:MetricCard}){
+  return <article className="fan-metric-row">
+    <div className="fan-metric-main">
+      <span className="fan-metric-label">{metric.label}</span>
+      <strong>{metric.value}</strong>
+      <RankBadge rank={metric.rank} fieldSize={metric.fieldSize}/>
+    </div>
+    <p>{metric.copy}</p>
   </article>;
+}
+
+function UnitOverview({
+  side,title,rank,fieldSize,rating,href,metrics
+}:{
+  side:"offense"|"defense";
+  title:string;
+  rank:number;
+  fieldSize:number;
+  rating:number;
+  href:string;
+  metrics:MetricCard[];
+}){
+  return <section className={`fan-unit-card ${side}`}>
+    <div className="fan-unit-head">
+      <div>
+        <span>{title}</span>
+        <div className="fan-unit-rank"><strong>#{rank}</strong><small>NATIONALLY</small></div>
+        <RankBadge rank={rank} fieldSize={fieldSize}/>
+      </div>
+      <div className="fan-unit-rating"><span>TEAM RATING</span><b>{rating.toFixed(1)}</b></div>
+    </div>
+    <div className="fan-unit-metrics">{metrics.map(metric=><MetricRow key={metric.label} metric={metric}/>)}</div>
+    <Link className="fan-view-all" href={href}>View all {side} analytics <span>→</span></Link>
+  </section>;
 }
 
 export default async function AnalyticsPage({searchParams}:{searchParams:Promise<{year?:string}>}){
@@ -43,87 +65,132 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
 
   const identity=data&&season
     ? data.defense.rank<data.offense.rank
-      ? `Defense set the standard for this Michigan team. The Wolverines paired that strength with an offense that stayed efficient enough to control games and avoid putting the defense in bad spots.`
-      : `Michigan's offense drove the team, while the defense complemented it by holding opponents to ${season.pointsPerResolvedPossessionAllowed.toFixed(2)} points per possession.`
+      ? `Michigan's defense was the stronger national unit. The Wolverines were hardest to beat when they forced offenses off schedule and let the run game control the flow of the game.`
+      : `Michigan's offense was the stronger national unit. The Wolverines were at their best when they stayed ahead of the chains and consistently turned drives into points.`
     :null;
 
-  const offenseTone=data&&data.offense.rank<=10?"elite" as const:data&&data.offense.rank<=35?"good" as const:"neutral" as const;
-  const defenseTone=data&&data.defense.rank<=10?"elite" as const:data&&data.defense.rank<=35?"good" as const:"neutral" as const;
+  const offenseMetrics:MetricCard[]=data&&season?[
+    {
+      label:"Making Drives Count",
+      value:`${metricDisplay("ppd",data.offense.metrics.ppd.value)} pts / drive`,
+      rank:data.offense.metrics.ppd.rank,
+      fieldSize:data.offense.metrics.ppd.field_size,
+      copy:"How efficiently Michigan turns a possession into points after accounting for the strength of the defense it faced.",
+    },
+    {
+      label:"Staying Ahead of the Chains",
+      value:metricDisplay("success",data.offense.metrics.success.value),
+      rank:data.offense.metrics.success.rank,
+      fieldSize:data.offense.metrics.success.field_size,
+      copy:"How often Michigan wins the down and keeps the offense out of obvious passing situations.",
+    },
+    {
+      label:"Big-Play Ability",
+      value:pct(season.explosivePlayRate),
+      rank:season.national_explosivePlayRate_rank,
+      fieldSize:data.offense.field_size,
+      copy:"How often Michigan creates a chunk play that can flip field position or change a drive in one snap.",
+    },
+  ]:[];
 
-  return <div className="analytics-overview ao-page">
+  const defenseMetrics:MetricCard[]=data&&season?[
+    {
+      label:"Keeping Teams Off the Board",
+      value:`${metricDisplay("ppd",data.defense.metrics.ppd.value)} pts / drive`,
+      rank:data.defense.metrics.ppd.rank,
+      fieldSize:data.defense.metrics.ppd.field_size,
+      copy:"How well Michigan limits opponent scoring after accounting for the strength of the offenses it faced.",
+    },
+    {
+      label:"Knocking Offenses Off Schedule",
+      value:metricDisplay("success",data.defense.metrics.success.value),
+      rank:data.defense.metrics.success.rank,
+      fieldSize:data.defense.metrics.success.field_size,
+      copy:"How often Michigan prevents the offense from getting the result it needs on a play and creates tougher next downs.",
+    },
+    {
+      label:"Preventing Big Plays",
+      value:pct(season.explosivePlayRateAllowed),
+      rank:season.national_explosivePlayRateAllowed_rank,
+      fieldSize:data.defense.field_size,
+      copy:"How rarely Michigan allows the explosive gains that turn normal possessions into immediate scoring threats.",
+    },
+  ]:[];
+
+  return <div className="analytics-overview fan-overview">
     <AnalyticsYearSwitch year={year}/>
 
-    <section className="ao-hero">
-      <div className="ao-hero-copy">
+    <section className="analytics-overview-hero fan-overview-hero">
+      <div className="analytics-overview-hero-copy">
+        <h1>MICHIGAN<br/><b>ANALYTICS</b></h1>
         <span>{year} SEASON OVERVIEW</span>
-        <h1>MICHIGAN</h1>
-        <p>The quick read on the Wolverines.</p>
+        <p>{data
+          ?"The quick answer to three questions: how good was Michigan, what defined the team, and where did the Wolverines stand nationally?"
+          :"Michigan analytics are not available for this season yet."}
+        </p>
       </div>
-      <div className="ao-hero-image" aria-hidden="true"><img src="/images/analytics/overview-header.png" alt=""/></div>
+      <div className="analytics-overview-hero-image" aria-hidden="true"><img src="/images/analytics/overview-header.png" alt=""/></div>
     </section>
 
-    {data&&season?<div className="ao-content">
-      <section className="ao-card ao-snapshot">
-        <h2>SEASON SNAPSHOT</h2>
-        <div className="ao-snapshot-grid">
-          <SummaryStat label="GAMES" value={String(season.games)} detail={`${year} season`}/>
-          <SummaryStat label="OFFENSE" value={`#${data.offense.rank}`} detail="national rank"/>
-          <SummaryStat label="DEFENSE" value={`#${data.defense.rank}`} detail="national rank"/>
-          <SummaryStat label="YARDS / GAME" value={season.yardsPerGame.toFixed(0)} detail={`${season.yardsPerPlay.toFixed(2)} per play`}/>
-          <SummaryStat label="YARDS ALLOWED" value={season.yardsAllowedPerGame.toFixed(0)} detail={`${season.yardsAllowedPerPlay.toFixed(2)} per play`}/>
-          <SummaryStat label="SCORING DRIVES" value={pct(season.scoringRatePerPossession)} detail="of possessions"/>
+    {data&&season?<>
+      <section className="fan-section fan-snapshot">
+        <div className="fan-section-title"><div><span>THE QUICK READ</span><h2>SEASON SNAPSHOT</h2></div></div>
+        <div className="fan-snapshot-grid">
+          <article><span>OFFENSE</span><strong>#{data.offense.rank}</strong><RankBadge rank={data.offense.rank} fieldSize={data.offense.field_size}/></article>
+          <article><span>DEFENSE</span><strong>#{data.defense.rank}</strong><RankBadge rank={data.defense.rank} fieldSize={data.defense.field_size}/></article>
+          <article><span>YARDS / GAME</span><strong>{season.yardsPerGame.toFixed(0)}</strong><small>{season.yardsPerPlay.toFixed(2)} per play</small></article>
+          <article><span>YARDS ALLOWED</span><strong>{season.yardsAllowedPerGame.toFixed(0)}</strong><small>{season.yardsAllowedPerPlay.toFixed(2)} per play</small></article>
         </div>
       </section>
 
-      {identity&&<section className="ao-card ao-identity">
-        <div className="ao-identity-mark">M</div>
-        <div><span>TEAM IDENTITY</span><strong>{identity}</strong></div>
+      {identity&&<section className="fan-section fan-identity">
+        <span>TEAM IDENTITY</span>
+        <p>{identity}</p>
       </section>}
 
-      <section className="ao-units">
-        <UnitOverview
-          side="OFFENSE"
-          year={year}
-          rank={data.offense.rank}
-          rows={[
-            {label:"POINTS / DRIVE",value:metricDisplay("ppd",data.offense.metrics.ppd.value),detail:`${rankDisplay(data.offense.metrics.ppd.rank,data.offense.metrics.ppd.field_size)}`,tone:offenseTone},
-            {label:"SUCCESS RATE",value:metricDisplay("success",data.offense.metrics.success.value),detail:`${rankDisplay(data.offense.metrics.success.rank,data.offense.metrics.success.field_size)}`,tone:offenseTone},
-            {label:"EXPLOSIVE PLAYS",value:pct(season.explosivePlayRate),detail:`#${season.national_explosivePlayRate_rank} nationally`,tone:season.national_explosivePlayRate_rank<=15?"elite":season.national_explosivePlayRate_rank<=40?"good":"neutral"},
-          ]}
-          copy="Michigan's offense in three numbers: scoring efficiency, consistency, and big-play creation."
-        />
-        <UnitOverview
-          side="DEFENSE"
-          year={year}
-          rank={data.defense.rank}
-          rows={[
-            {label:"POINTS ALLOWED / DRIVE",value:metricDisplay("ppd",data.defense.metrics.ppd.value),detail:`${rankDisplay(data.defense.metrics.ppd.rank,data.defense.metrics.ppd.field_size)}`,tone:defenseTone},
-            {label:"SUCCESS RATE ALLOWED",value:metricDisplay("success",data.defense.metrics.success.value),detail:`${rankDisplay(data.defense.metrics.success.rank,data.defense.metrics.success.field_size)}`,tone:defenseTone},
-            {label:"EXPLOSIVES ALLOWED",value:pct(season.explosivePlayRateAllowed),detail:`#${season.national_explosivePlayRateAllowed_rank} nationally`,tone:season.national_explosivePlayRateAllowed_rank<=15?"elite":season.national_explosivePlayRateAllowed_rank<=40?"good":"neutral"},
-          ]}
-          copy="Michigan's defense in three numbers: preventing points, winning downs, and limiting chunk plays."
-        />
-      </section>
-
-      <section className="ao-takeaways">
-        <article className="ao-takeaway strength">
-          <span>BIGGEST STRENGTH</span>
-          {best&&<><strong>#{best.rank} · {best.label}</strong><p>Michigan's best opponent-adjusted trait relative to the rest of the FBS.</p></>}
-        </article>
-        <article className="ao-takeaway concern">
-          <span>BIGGEST CONCERN</span>
-          {concern&&<><strong>#{concern.rank} · {concern.label}</strong><p>The clearest area where Michigan trails its other national metrics.</p></>}
-        </article>
-      </section>
-
-      <section className="ao-deeper">
-        <h2>EXPLORE MORE</h2>
-        <div className="ao-deeper-grid">
-          <Link href={`/analytics/offense?year=${year}`} className="ao-deeper-card" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.06),rgba(3,20,38,.96)),url('/images/analytics/overview-offense.png')"}}><div><strong>OFFENSE ANALYTICS</strong><span>Efficiency, run/pass splits and situational breakdowns.</span><b>Explore offense →</b></div></Link>
-          <Link href={`/analytics/defense?year=${year}`} className="ao-deeper-card" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.06),rgba(3,20,38,.96)),url('/images/analytics/overview-defense.png')"}}><div><strong>DEFENSE ANALYTICS</strong><span>Stops, pressure, explosives and opponent splits.</span><b>Explore defense →</b></div></Link>
-          <Link href={`/analytics/staff?year=${year}`} className="ao-deeper-card" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.06),rgba(3,20,38,.96)),url('/images/analytics/overview-staff.png')"}}><div><strong>STAFF ANALYTICS</strong><span>Play calling, tendencies and coaching decisions.</span><b>Explore staff →</b></div></Link>
+      <section className="fan-section">
+        <div className="fan-section-title"><div><span>HOW GOOD ARE THEY?</span><h2>OFFENSE &amp; DEFENSE</h2></div><p>Every ranked metric is compared with the full FBS.</p></div>
+        <div className="fan-units-grid">
+          <UnitOverview side="offense" title="OFFENSE" rank={data.offense.rank} fieldSize={data.offense.field_size} rating={data.offense.rating} href={`/analytics/offense?year=${year}`} metrics={offenseMetrics}/>
+          <UnitOverview side="defense" title="DEFENSE" rank={data.defense.rank} fieldSize={data.defense.field_size} rating={data.defense.rating} href={`/analytics/defense?year=${year}`} metrics={defenseMetrics}/>
         </div>
       </section>
-    </div>:<section className="ao-content"><div className="ao-card ao-empty"><h2>ANALYTICS NOT AVAILABLE YET</h2><p>This season does not have a published Michigan analytics profile. Choose an available season to continue.</p></div></section>}
+
+      <section className="fan-section">
+        <div className="fan-section-title"><div><span>WHAT DEFINES THIS TEAM?</span><h2>THE GOOD &amp; THE BAD</h2></div></div>
+        <div className="fan-story-grid">
+          {best&&<article className="fan-story-card strength">
+            <span className="fan-story-kicker">BIGGEST STRENGTH</span>
+            <h3>{best.label}</h3>
+            <div className="fan-story-rank"><strong>#{best.rank}</strong><span>NATIONALLY</span><RankBadge rank={best.rank} fieldSize={best.field_size}/></div>
+            <p>{best.explanation}</p>
+          </article>}
+          {concern&&<article className="fan-story-card concern">
+            <span className="fan-story-kicker">BIGGEST CONCERN</span>
+            <h3>{concern.label}</h3>
+            <div className="fan-story-rank"><strong>#{concern.rank}</strong><span>NATIONALLY</span><RankBadge rank={concern.rank} fieldSize={concern.field_size}/></div>
+            <p>{concern.explanation}</p>
+          </article>}
+        </div>
+      </section>
+
+      <section className="fan-section analytics-explore">
+        <div className="fan-section-title"><div><span>WANT THE DETAILS?</span><h2>GO DEEPER</h2></div></div>
+        <div className="fan-explore-grid">
+          <Link href={`/analytics/offense?year=${year}`} className="fan-explore-card">
+            <div className="fan-explore-image" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.04),rgba(3,20,38,.96)),url('/images/analytics/overview-offense.png')"}}/>
+            <div><span>FULL BREAKDOWN</span><h3>OFFENSE ANALYTICS</h3><p>Run/pass splits, drives, downs, explosiveness and scoring.</p><b>Explore offense →</b></div>
+          </Link>
+          <Link href={`/analytics/defense?year=${year}`} className="fan-explore-card">
+            <div className="fan-explore-image" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.04),rgba(3,20,38,.96)),url('/images/analytics/overview-defense.png')"}}/>
+            <div><span>FULL BREAKDOWN</span><h3>DEFENSE ANALYTICS</h3><p>Run/pass defense, havoc, drives, downs and scoring prevention.</p><b>Explore defense →</b></div>
+          </Link>
+          <Link href={`/analytics/staff?year=${year}`} className="fan-explore-card">
+            <div className="fan-explore-image" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.04),rgba(3,20,38,.96)),url('/images/analytics/overview-staff.png')"}}/>
+            <div><span>COACHING LENS</span><h3>STAFF ANALYTICS</h3><p>Play calling, tendencies, personnel usage and how scheme shaped results.</p><b>Explore staff →</b></div>
+          </Link>
+        </div>
+      </section>
+    </>:<section className="fan-section"><div className="fan-story-card concern"><h3>Analytics not available yet</h3><p>This season does not have a published Michigan analytics profile. Choose an available season to continue.</p></div></section>}
   </div>;
 }
