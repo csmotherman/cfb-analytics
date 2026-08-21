@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "prepare:deploy-data": "node scripts/prepare-deploy-data.mjs",
+    "build": "npm run prepare:deploy-data && next build",
     "start": "next start",
     "check:data": "node scripts/check-published-data.mjs",
     "check:product": "node scripts/check-product-contract.mjs",
