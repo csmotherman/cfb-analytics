@@ -3,6 +3,8 @@ import type { MichiganPlayer, PlayerInsight } from "./types";
 
 type RecruitingRatingRow={
   playerId:string;
+  ratingStatus?:MichiganPlayer["recruitingRatingStatus"];
+  walkOnStatus?:MichiganPlayer["walkOnStatus"];
   rating?:number|null;
   stars?:number|null;
   nationalRank?:number|null;
@@ -37,8 +39,10 @@ export function currentRoster(): MichiganPlayer[] {
     const nationalRank=recruitingRating?.nationalRank??recruit?.ranking??grade?.nationalRecruitRank??null;
     const recruitClass=recruitingRating?.recruitClass??recruit?.year??null;
     const commitment=recruitingRating?.committedTo??recruit?.committedTo??null;
+    const recruitingRatingStatus=recruitingRating?.ratingStatus??(rating!=null?"RATED":"UNRATED");
+    const walkOnStatus=recruitingRating?.walkOnStatus??"UNKNOWN";
     const gradeBasis=recruitingRating?.rating!=null?`CFBD recruiting composite · ${recruitingRating.matchMethod??"canonical roster match"}`:recruit?"CFBD recruiting composite · longitudinal exact-ID join":grade?.basis??null;
-    return {...player, importanceRank:importanceRow?.rank??null,importanceRole:importanceRow?.role??null,importanceTier:importanceRow?.tier??null,importanceReason:importanceRow?.reason??null,insight:insightById.get(player.id)??null,playerImageUrl:image?.imageUrl??null,playerImageSource:image?.source??null,playerImageSourceUrl:image?.sourceProfileUrl??null,playerImageUpdatedAt:image?.acquiredAt??null,rosterStatus: status?.rosterStatus ?? null, previousTeam: status?.previousTeam ?? null, performanceGrade: production?.grade ?? null, performanceGradeBasis: production?.basis ?? null, performanceGradeSeason: production?.season ?? null,productionPercentile:production?.productionPercentile??null,usagePercentile:production?.usagePercentile??null,nationalPositionPercentile:production?.nationalPositionPercentile??null,productionScore:production?.productionScore??null,usageValue:production?.usageValue??null,productionCohortSize:production?.cohortSize??null,positionFamily:production?.positionFamily??null, prospectGrade: recruit?.grade ?? grade?.grade ?? null, compositeRating: rating, stars, nationalRecruitRank:nationalRank, recruitClass,originalCommitment:commitment,careerTimeline:history?.timeline??[],gradeBasis};
+    return {...player, importanceRank:importanceRow?.rank??null,importanceRole:importanceRow?.role??null,importanceTier:importanceRow?.tier??null,importanceReason:importanceRow?.reason??null,insight:insightById.get(player.id)??null,playerImageUrl:image?.imageUrl??null,playerImageSource:image?.source??null,playerImageSourceUrl:image?.sourceProfileUrl??null,playerImageUpdatedAt:image?.acquiredAt??null,rosterStatus: status?.rosterStatus ?? null, previousTeam: status?.previousTeam ?? null, performanceGrade: production?.grade ?? null, performanceGradeBasis: production?.basis ?? null, performanceGradeSeason: production?.season ?? null,productionPercentile:production?.productionPercentile??null,usagePercentile:production?.usagePercentile??null,nationalPositionPercentile:production?.nationalPositionPercentile??null,productionScore:production?.productionScore??null,usageValue:production?.usageValue??null,productionCohortSize:production?.cohortSize??null,positionFamily:production?.positionFamily??null, prospectGrade: recruit?.grade ?? grade?.grade ?? null, compositeRating: rating, stars, nationalRecruitRank:nationalRank,recruitingRatingStatus,walkOnStatus,recruitClass,originalCommitment:commitment,careerTimeline:history?.timeline??[],gradeBasis};
   });
 }
 
