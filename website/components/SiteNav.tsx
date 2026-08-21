@@ -3,10 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
+import {useEffect,useState} from "react";
 import {teamLogoUrl} from "../lib/team-assets";
 
 const desktopLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
+const moreLinks=[
+  {href:"/articles",label:"News & Analysis",meta:"Stories, previews and notebooks"},
+  {href:"/history",label:"Michigan History",meta:"Past seasons, teams and results"},
+  {href:"/polls",label:"Fan Polls",meta:"Vote and see where fans stand"},
+  {href:"/metrics",label:"Metrics",meta:"Definitions for site analytics"},
+  {href:"/methodology",label:"Methodology",meta:"How ratings and grades are built"},
+  {href:"/recruiting/portal",label:"Transfer Portal",meta:"Michigan portal movement"},
+] as const;
 
 const active=(path:string,href:string)=>href==="/"?path==="/":path.startsWith(href);
 
@@ -20,6 +29,17 @@ function Icon({label}:{label:string}){
 
 export function SiteNav(){
   const path=usePathname();
+  const [moreOpen,setMoreOpen]=useState(false);
+
+  useEffect(()=>{setMoreOpen(false)},[path]);
+  useEffect(()=>{
+    if(!moreOpen)return;
+    const onKey=(event:KeyboardEvent)=>{if(event.key==="Escape")setMoreOpen(false)};
+    document.addEventListener("keydown",onKey);
+    document.body.classList.add("more-drawer-open");
+    return()=>{document.removeEventListener("keydown",onKey);document.body.classList.remove("more-drawer-open")};
+  },[moreOpen]);
+
   return <>
     <header className="site-nav mock-site-nav"><div className="wrap nav-inner mock-nav-inner">
       <Link href="/" className="mock-wordmark" aria-label="Michigan Football Focus home">
@@ -27,17 +47,36 @@ export function SiteNav(){
         <Image src="/brand/michigan-football-focus.png" alt="Michigan Football Focus" width={240} height={72} priority className="nav-brand-logo"/>
       </Link>
       <nav className="desktop-links" aria-label="Primary navigation">{desktopLinks.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""}>{label}</Link>)}</nav>
-      <Link href="/more" className={`mock-menu${path.startsWith("/more")?" active":""}`} aria-label="More">
+      <button type="button" className={`mock-menu more-trigger${moreOpen?" active":""}`} aria-label="Open more navigation" aria-expanded={moreOpen} aria-controls="more-drawer" onClick={()=>setMoreOpen(open=>!open)}>
         <svg viewBox="0 0 28 28" aria-hidden="true">
           <path d="M5 8h18"/>
           <path className="menu-accent" d="M5 14h18"/>
           <path d="M5 20h18"/>
         </svg>
-      </Link>
+      </button>
     </div></header>
+
     <nav className="bottom-nav mock-bottom-nav" aria-label="Mobile primary navigation">
       {mobileLinks.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""}><Icon label={label}/><span>{label}</span></Link>)}
-      <Link href="/more" className={path.startsWith("/more")?"active":""}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg><span>More</span></Link>
+      <button type="button" className={moreOpen?"active":""} aria-expanded={moreOpen} aria-controls="more-drawer" onClick={()=>setMoreOpen(open=>!open)}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg><span>More</span></button>
     </nav>
+
+    <div className={`more-drawer-layer${moreOpen?" open":""}`} aria-hidden={!moreOpen}>
+      <button className="more-drawer-backdrop" aria-label="Close more navigation" tabIndex={moreOpen?0:-1} onClick={()=>setMoreOpen(false)}/>
+      <aside id="more-drawer" className="more-drawer" role="dialog" aria-modal="true" aria-label="More navigation">
+        <header className="more-drawer-header">
+          <div><span>EXPLORE</span><h2>MORE MICHIGAN</h2></div>
+          <button type="button" aria-label="Close more navigation" onClick={()=>setMoreOpen(false)}>×</button>
+        </header>
+        <div className="more-drawer-links">
+          {moreLinks.map((item,index)=><Link href={item.href} key={item.href} onClick={()=>setMoreOpen(false)}>
+            <span>{String(index+1).padStart(2,"0")}</span>
+            <div><strong>{item.label}</strong><small>{item.meta}</small></div>
+            <b aria-hidden="true">›</b>
+          </Link>)}
+        </div>
+        <footer className="more-drawer-footer"><span>MICHIGAN FOOTBALL FOCUS</span><small>Everything else, without leaving the page.</small></footer>
+      </aside>
+    </div>
   </>;
 }
