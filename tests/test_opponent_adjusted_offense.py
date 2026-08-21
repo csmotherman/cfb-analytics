@@ -3,7 +3,9 @@ import pytest
 from cfb_analytics.analytics.opponent_adjusted_offense import calculate_opponent_adjusted_offense
 
 
-def _row(*, game: str, team_id: int, team: str, opp_id: int, opp: str, points: int, possessions: int, successes: int, plays: int, scoring: int, points_allowed: int, possessions_allowed: int, successes_allowed: int, plays_allowed: int, scoring_allowed: int):
+def _row(*, game: str, team_id: int, team: str, opp_id: int, opp: str, points: int, possessions: int, successes: int, plays: int, scoring: int, points_allowed: int, possessions_allowed: int, successes_allowed: int, plays_allowed: int, scoring_allowed: int, yards: int | None = None, yards_allowed: int | None = None):
+    yards = points * 10 if yards is None else yards
+    yards_allowed = points_allowed * 10 if yards_allowed is None else yards_allowed
     return {
         "season": 2025,
         "classification": "fbs",
@@ -22,6 +24,8 @@ def _row(*, game: str, team_id: int, team: str, opp_id: int, opp: str, points: i
         "possessionFieldGoals": 0,
         "otherScoringPossessions": 0,
         "validatedPossessions": possessions,
+        "possessionYards": yards,
+        "yardagePossessions": possessions,
         "possessionPointsAllowed": points_allowed,
         "resolvedPointPossessionsAllowed": possessions_allowed,
         "successfulPlaysAllowed": successes_allowed,
@@ -30,13 +34,12 @@ def _row(*, game: str, team_id: int, team: str, opp_id: int, opp: str, points: i
         "possessionFieldGoalsAllowed": 0,
         "otherScoringPossessionsAllowed": 0,
         "validatedDefensivePossessions": possessions_allowed,
+        "possessionYardsAllowed": yards_allowed,
+        "yardagePossessionsAllowed": possessions_allowed,
     }
 
 
 def _sample_rows():
-    # Three teams play a double round-robin. Paired rows intentionally mirror
-    # each game's offensive/defensive counts so leave-one-out baselines are
-    # available for every opponent.
     return [
         _row(game="1", team_id=1, team="Alpha", opp_id=2, opp="Beta", points=35, possessions=10, successes=30, plays=60, scoring=5, points_allowed=14, possessions_allowed=10, successes_allowed=20, plays_allowed=60, scoring_allowed=2),
         _row(game="1", team_id=2, team="Beta", opp_id=1, opp="Alpha", points=14, possessions=10, successes=20, plays=60, scoring=2, points_allowed=35, possessions_allowed=10, successes_allowed=30, plays_allowed=60, scoring_allowed=5),
@@ -55,41 +58,61 @@ def _sample_rows():
 
 def test_opponent_adjusted_offense_ranks_clear_best_offense_first():
     rankings = calculate_opponent_adjusted_offense(_sample_rows(), 2025)
-
     assert [row["team"] for row in rankings] == ["Alpha", "Beta", "Gamma"]
     assert rankings[0]["rank"] == 1
     assert rankings[0]["adjusted_points_per_drive"] > rankings[1]["adjusted_points_per_drive"]
     assert rankings[0]["adjusted_success_rate"] > rankings[1]["adjusted_success_rate"]
     assert rankings[0]["adjusted_scoring_drive_rate"] > rankings[1]["adjusted_scoring_drive_rate"]
+    assert rankings[0]["adjusted_yards_per_drive"] > rankings[1]["adjusted_yards_per_drive"]
 
 
 def test_diagnostics_expose_raw_metrics_and_exact_adjustment_deltas():
     rankings = calculate_opponent_adjusted_offense(_sample_rows(), 2025)
     alpha = next(row for row in rankings if row["team"] == "Alpha")
 
-    # Alpha totals across four 10-possession games: 140 points, 122 successes
-    # on 240 eligible plays, and 21 scoring possessions.
     assert alpha["raw_points_per_drive"] == pytest.approx(3.5)
     assert alpha["raw_success_rate"] == pytest.approx(122 / 240)
     assert alpha["raw_scoring_drive_rate"] == pytest.approx(21 / 40)
+    assert alpha["raw_yards_per_drive"] == pytest.approx(35.0)
 
-    assert alpha["points_per_drive_adjustment"] == pytest.approx(
-        alpha["adjusted_points_per_drive"] - alpha["raw_points_per_drive"]
-    )
-    assert alpha["success_rate_adjustment"] == pytest.approx(
-        alpha["adjusted_success_rate"] - alpha["raw_success_rate"]
-    )
-    assert alpha["scoring_drive_rate_adjustment"] == pytest.approx(
-        alpha["adjusted_scoring_drive_rate"] - alpha["raw_scoring_drive_rate"]
-    )
+    assert alpha["points_per_drive_adjustment"] == pytest.approx(alpha["adjusted_points_per_drive"] - alpha["raw_points_per_drive"])
+    assert alpha["success_rate_adjustment"] == pytest.approx(alpha["adjusted_success_rate"] - alpha["raw_success_rate"])
+    assert alpha["scoring_drive_rate_adjustment"] == pytest.approx(alpha["adjusted_scoring_drive_rate"] - alpha["raw_scoring_drive_rate"])
+    assert alpha["yards_per_drive_adjustment"] == pytest.approx(alpha["adjusted_yards_per_drive"] - alpha["raw_yards_per_drive"])
 
 
 def test_adjustment_is_not_a_relabeling_of_raw_performance():
     rankings = calculate_opponent_adjusted_offense(_sample_rows(), 2025)
-
-    # At least one team must actually move on each component. This catches a
-    # regression where raw metrics accidentally flow straight through as the
-    # supposedly opponent-adjusted values.
     assert any(abs(row["points_per_drive_adjustment"]) > 1e-9 for row in rankings)
     assert any(abs(row["success_rate_adjustment"]) > 1e-9 for row in rankings)
     assert any(abs(row["scoring_drive_rate_adjustment"]) > 1e-9 for row in rankings)
+    assert any(abs(row["yards_per_drive_adjustment"]) > 1e-9 for row in rankings)
+
+
+def test_yards_per_drive_uses_yardage_possessions_not_point_possessions():
+    rows = _sample_rows()
+    for row in rows:
+        if row["team"] == "Alpha":
+            row["yardagePossessions"] = row["validatedPossessions"] * 2
+    rankings = calculate_opponent_adjusted_offense(rows, 2025)
+    alpha = next(row for row in rankings if row["team"] == "Alpha")
+    assert alpha["raw_yards_per_drive"] == pytest.approx(17.5)
+
+
+def test_non_fbs_and_failed_validation_rows_are_excluded():
+    rows = _sample_rows()
+    junk = dict(rows[0])
+    junk.update({"gameId": "junk", "team_id": 99, "team": "Junk", "opponent_id": 1, "classification": "fcs"})
+    failed = dict(rows[0])
+    failed.update({"gameId": "failed", "team_id": 98, "team": "Failed", "opponent_id": 1, "gameValidationStatus": "FAIL"})
+    rankings = calculate_opponent_adjusted_offense(rows + [junk, failed], 2025)
+    names = {row["team"] for row in rankings}
+    assert "Junk" not in names
+    assert "Failed" not in names
+
+
+def test_missing_yardage_field_fails_loudly():
+    rows = _sample_rows()
+    del rows[0]["possessionYards"]
+    with pytest.raises(ValueError, match="possessionYards"):
+        calculate_opponent_adjusted_offense(rows, 2025)
