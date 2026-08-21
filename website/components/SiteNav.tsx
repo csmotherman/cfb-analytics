@@ -13,7 +13,7 @@ const moreLinks=[
   {href:"/polls",label:"Fan Polls",meta:"Vote and see where fans stand"},
   {href:"/metrics",label:"Metrics",meta:"Definitions for site analytics"},
   {href:"/methodology",label:"Methodology",meta:"How ratings and grades are built"},
-  {href:"/recruiting/portal",label:"Transfer Portal",meta:"Michigan portal movement"},
+  {href:"/new-additions",label:"New Additions",meta:"Freshmen and transfers joining Michigan"},
 ] as const;
 
 const active=(path:string,href:string)=>href==="/"?path==="/":path.startsWith(href);
@@ -47,11 +47,7 @@ export function SiteNav(){
       </Link>
       <nav className="desktop-links" aria-label="Primary navigation">{desktopLinks.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""}>{label}</Link>)}</nav>
       <button type="button" className={`mock-menu more-trigger${moreOpen?" active":""}`} aria-label="Open more navigation" aria-expanded={moreOpen} aria-controls="more-drawer" onClick={()=>setMoreOpen(open=>!open)}>
-        <svg viewBox="0 0 28 28" aria-hidden="true">
-          <path d="M5 8h18"/>
-          <path className="menu-accent" d="M5 14h18"/>
-          <path d="M5 20h18"/>
-        </svg>
+        <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 8h18"/><path className="menu-accent" d="M5 14h18"/><path d="M5 20h18"/></svg>
       </button>
     </div></header>
 
@@ -63,16 +59,9 @@ export function SiteNav(){
     <div className={`more-drawer-layer${moreOpen?" open":""}`} aria-hidden={!moreOpen}>
       <button className="more-drawer-backdrop" aria-label="Close more navigation" tabIndex={moreOpen?0:-1} onClick={()=>setMoreOpen(false)}/>
       <aside id="more-drawer" className="more-drawer" role="dialog" aria-modal="true" aria-label="More navigation">
-        <header className="more-drawer-header">
-          <div><span>EXPLORE</span><h2>MORE MICHIGAN</h2></div>
-          <button type="button" aria-label="Close more navigation" onClick={()=>setMoreOpen(false)}>×</button>
-        </header>
+        <header className="more-drawer-header"><div><span>EXPLORE</span><h2>MORE MICHIGAN</h2></div><button type="button" aria-label="Close more navigation" onClick={()=>setMoreOpen(false)}>×</button></header>
         <div className="more-drawer-links">
-          {moreLinks.map((item,index)=><Link href={item.href} key={item.href} onClick={()=>setMoreOpen(false)}>
-            <span>{String(index+1).padStart(2,"0")}</span>
-            <div><strong>{item.label}</strong><small>{item.meta}</small></div>
-            <b aria-hidden="true">›</b>
-          </Link>)}
+          {moreLinks.map((item,index)=><Link href={item.href} key={item.href} onClick={()=>setMoreOpen(false)}><span>{String(index+1).padStart(2,"0")}</span><div><strong>{item.label}</strong><small>{item.meta}</small></div><b aria-hidden="true">›</b></Link>)}
         </div>
         <footer className="more-drawer-footer"><span>MICHIGAN FOOTBALL FOCUS</span><small>Everything else, without leaving the page.</small></footer>
       </aside>
