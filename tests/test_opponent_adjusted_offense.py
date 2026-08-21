@@ -13,18 +13,15 @@ def test_raw_and_deltas():
  for adj,raw,delta in (("adjusted_points_per_drive","raw_points_per_drive","points_per_drive_adjustment"),("adjusted_success_rate","raw_success_rate","success_rate_adjustment"),("adjusted_scoring_drive_rate","raw_scoring_drive_rate","scoring_drive_rate_adjustment"),("adjusted_yards_per_drive","raw_yards_per_drive","yards_per_drive_adjustment")):assert a[delta]==pytest.approx(a[adj]-a[raw])
 def test_adjustment_identity_matches_average_opponent_allowance():
  r=calculate_opponent_adjusted_offense(_sample_rows(),2025)
- # With equal opportunity counts in this fixture, adjusted - raw equals national baseline minus weighted LOO opponent allowance.
- rows=_sample_rows();total_points=sum(x["possessionPoints"] for x in rows);total_poss=sum(x["resolvedPointPossessions"] for x in rows);total_yards=sum(x["possessionYards"] for x in rows);total_yposs=sum(x["yardagePossessions"] for x in rows);total_succ=sum(x["successfulPlays"] for x in rows);total_plays=sum(x["successEligiblePlays"] for x in rows);total_score=sum(x["possessionTouchdowns"] for x in rows);total_drives=sum(x["validatedPossessions"] for x in rows)
- national=(total_points/total_poss,total_yards/total_yposs,total_succ/total_plays,total_score/total_drives)
+ rows=_sample_rows();national=(sum(x["possessionPoints"] for x in rows)/sum(x["resolvedPointPossessions"] for x in rows),sum(x["possessionYards"] for x in rows)/sum(x["yardagePossessions"] for x in rows),sum(x["successfulPlays"] for x in rows)/sum(x["successEligiblePlays"] for x in rows),sum(x["possessionTouchdowns"] for x in rows)/sum(x["validatedPossessions"] for x in rows))
  for x in r:
-  assert x["points_per_drive_adjustment"]==pytest.approx(national[0]-x["average_opponent_ppd_allowed_loo"])
-  assert x["yards_per_drive_adjustment"]==pytest.approx(national[1]-x["average_opponent_ypd_allowed_loo"])
-  assert x["success_rate_adjustment"]==pytest.approx(national[2]-x["average_opponent_success_rate_allowed_loo"])
-  assert x["scoring_drive_rate_adjustment"]==pytest.approx(national[3]-x["average_opponent_scoring_drive_rate_allowed_loo"])
+  assert x["points_per_drive_adjustment"]==pytest.approx(national[0]-x["average_opponent_ppd_allowed_loo"]);assert x["yards_per_drive_adjustment"]==pytest.approx(national[1]-x["average_opponent_ypd_allowed_loo"]);assert x["success_rate_adjustment"]==pytest.approx(national[2]-x["average_opponent_success_rate_allowed_loo"]);assert x["scoring_drive_rate_adjustment"]==pytest.approx(national[3]-x["average_opponent_scoring_drive_rate_allowed_loo"])
 def test_leave_one_out_really_excludes_graded_game():
  r=calculate_opponent_adjusted_offense(_sample_rows(),2025);a=next(x for x in r if x["team"]=="Alpha")
- # Alpha faces Beta twice and Gamma twice. Beta's LOO PPD allowed in games 1/4 is 22.5/10 and 21/10; Gamma's in games 2/5 is 20/10 and 17/10. Equal weights => 1.9875.
- assert a["average_opponent_ppd_allowed_loo"]==pytest.approx((2.25+2.10+2.00+1.70)/4)
+ # Beta defense allowed 110 points over four 10-drive games. Against Alpha in game 1 it allowed 35, so the LOO baseline is 75/30=2.50; against Alpha in game 4 it is 72/30=2.40. Gamma allowed 112 total, giving 80/30=2.6667 and 77/30=2.5667 when Alpha's games 2 and 5 are respectively removed. Equal Alpha drive counts make the schedule average 2.53333.
+ expected=((110-35)/30+(110-38)/30+(112-32)/30+(112-35)/30)/4
+ assert a["average_opponent_ppd_allowed_loo"]==pytest.approx(expected)
+ assert a["average_opponent_ppd_allowed_loo"]==pytest.approx(2.533333333333333)
 def test_yards_uses_yardage_possessions():
  rows=_sample_rows()
  for x in rows:
