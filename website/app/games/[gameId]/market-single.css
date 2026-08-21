@@ -1,0 +1,9 @@
+.game-preview-page .single-market-card{grid-template-columns:180px 1fr}
+.game-preview-page .single-market-card .single-market-line{border-left:1px solid rgba(109,145,174,.18)}
+.game-preview-page .single-market-card .single-market-line strong{color:#ffcb05;font-size:21px}
+@media(max-width:760px){
+  .game-preview-page .single-market-card{grid-template-columns:118px 1fr}
+  .game-preview-page .single-market-card .market-title{grid-column:auto;min-height:70px;padding:12px 13px;display:grid;justify-content:start;align-content:center}
+  .game-preview-page .single-market-card .single-market-line{border-left:1px solid rgba(109,145,174,.18)}
+  .game-preview-page .single-market-card .single-market-line strong{font-size:17px}
+}
