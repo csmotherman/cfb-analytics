@@ -85,7 +85,7 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
         </p>
       </div>
       <div className="analytics-overview-hero-image" aria-hidden="true">
-        <img src="/images/Bryce Underwood/Bryce4k.jpg" alt=""/>
+        <img src="images/analytics/overview-header.png" alt=""/>
       </div>
     </section>
 
