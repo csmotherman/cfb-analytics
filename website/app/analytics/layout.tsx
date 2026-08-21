@@ -1,6 +1,7 @@
 import type {ReactNode} from "react";
 import "../../styles/analytics-shell.css";
 import "../../styles/analytics-year-wheel-fix.css";
+import "../../styles/fan-overview.css";
 
 export default function AnalyticsLayout({children}:{children:ReactNode}){
   return <div className="analytics-shell">
