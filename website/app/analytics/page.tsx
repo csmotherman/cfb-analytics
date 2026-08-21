@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {AnalyticsYearSwitch} from "../../components/AnalyticsYearSwitch";
-import {fanTier,fanTierLabel,metricDisplay,michiganFanSeason,michiganRecord,overviewTraits,pct,ridgeOverview} from "../../lib/ridge-analytics";
+import {fanTier,fanTierLabel,metricDisplay,michiganFanSeason,michiganRecord,michiganSnapshotRanks,overviewTraits,pct,ridgeOverview} from "../../lib/ridge-analytics";
 
 const years=Array.from({length:17},(_,i)=>2010+i);
 
@@ -44,6 +44,7 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
   const data=ridgeOverview(year);
   const season=michiganFanSeason(year);
   const record=michiganRecord(year);
+  const snapshotRanks=michiganSnapshotRanks(year);
   const traits=data?overviewTraits(data):null;
   const best=traits?.strengths[0]??null;
   const concern=traits?.concerns[0]??null;
@@ -66,6 +67,9 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
     {label:"Preventing Big Plays",value:pct(season.explosivePlayRateAllowed),rank:season.national_explosivePlayRateAllowed_rank,fieldSize:data.defense.field_size,copy:"How rarely Michigan allows the explosive gains that turn normal possessions into immediate scoring threats."},
   ]:[];
 
+  const offensivePointsPerPlay=season&&season.offensivePlays?season.possessionPoints/season.offensivePlays:0;
+  const defensivePointsPerPlay=season&&season.defensivePlays?season.possessionPointsAllowed/season.defensivePlays:0;
+
   return <div className="analytics-overview fan-overview">
     <AnalyticsYearSwitch year={year}/>
     <section className="analytics-overview-hero fan-overview-hero">
@@ -77,11 +81,62 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
       <section className="fan-section fan-snapshot">
         <div className="fan-section-title"><div><span>THE QUICK READ</span><h2>SEASON SNAPSHOT</h2></div></div>
         <div className="fan-snapshot-grid">
-          {record&&<article className="fan-record-card"><span>RECORD</span><strong>{record.record}</strong><div className="fan-record-splits"><small><b>{record.regular.record}</b> REGULAR SEASON</small><small><b>{record.postseason.games?record.postseason.record:"—"}</b> BOWL / CFP</small></div></article>}
-          <article><span>OFFENSE</span><strong>#{data.offense.rank}</strong><RankBadge rank={data.offense.rank} fieldSize={data.offense.field_size}/></article>
-          <article><span>DEFENSE</span><strong>#{data.defense.rank}</strong><RankBadge rank={data.defense.rank} fieldSize={data.defense.field_size}/></article>
-          <article><span>YARDS / GAME</span><strong>{season.yardsPerGame.toFixed(0)}</strong><small>{season.yardsPerPlay.toFixed(2)} per play</small></article>
-          <article><span>YARDS ALLOWED</span><strong>{season.yardsAllowedPerGame.toFixed(0)}</strong><small>{season.yardsAllowedPerPlay.toFixed(2)} per play</small></article>
+          {record&&<article className="fan-record-card">
+            <span>RECORD</span>
+            <strong>{record.record}</strong>
+            <div className="fan-record-splits">
+              <small><b>{record.regular.record}</b><em>REGULAR SEASON</em></small>
+              <small><b>{record.postseason.games?record.postseason.record:"—"}</b><em>POSTSEASON</em></small>
+            </div>
+          </article>}
+
+          <article className="fan-snapshot-rating-card">
+            <span>OFFENSIVE RATING</span>
+            <strong>{data.offense.rating.toFixed(1)}</strong>
+            <RankBadge rank={data.offense.rank} fieldSize={data.offense.field_size}/>
+            <small>#{data.offense.rank} NATIONALLY</small>
+          </article>
+
+          <article className="fan-snapshot-rating-card">
+            <span>DEFENSIVE RATING</span>
+            <strong>{data.defense.rating.toFixed(1)}</strong>
+            <RankBadge rank={data.defense.rank} fieldSize={data.defense.field_size}/>
+            <small>#{data.defense.rank} NATIONALLY</small>
+          </article>
+
+          <article className="fan-snapshot-yardage-card">
+            <span>OFFENSE</span>
+            <small className="fan-snapshot-subtitle">YARDS / GAME</small>
+            <strong>{season.yardsPerGame.toFixed(0)}</strong>
+            {snapshotRanks&&<RankBadge rank={snapshotRanks.yardsPerGame} fieldSize={snapshotRanks.fieldSize}/>} 
+            {snapshotRanks&&<small>#{snapshotRanks.yardsPerGame} NATIONALLY</small>}
+            <div className="fan-snapshot-secondary"><b>{season.yardsPerPlay.toFixed(2)}</b> YARDS / PLAY{snapshotRanks&&<em>#{snapshotRanks.yardsPerPlay} nationally</em>}</div>
+          </article>
+
+          <article className="fan-snapshot-yardage-card">
+            <span>DEFENSE</span>
+            <small className="fan-snapshot-subtitle">YARDS ALLOWED / GAME</small>
+            <strong>{season.yardsAllowedPerGame.toFixed(0)}</strong>
+            {snapshotRanks&&<RankBadge rank={snapshotRanks.yardsAllowedPerGame} fieldSize={snapshotRanks.fieldSize}/>} 
+            {snapshotRanks&&<small>#{snapshotRanks.yardsAllowedPerGame} NATIONALLY</small>}
+            <div className="fan-snapshot-secondary"><b>{season.yardsAllowedPerPlay.toFixed(2)}</b> YARDS / PLAY{snapshotRanks&&<em>#{snapshotRanks.yardsAllowedPerPlay} nationally</em>}</div>
+          </article>
+
+          {snapshotRanks&&<article className="fan-snapshot-points-card">
+            <span>OFFENSE</span>
+            <small className="fan-snapshot-subtitle">POINTS / PLAY</small>
+            <strong>{offensivePointsPerPlay.toFixed(3)}</strong>
+            <RankBadge rank={snapshotRanks.pointsPerPlay} fieldSize={snapshotRanks.fieldSize}/>
+            <small>#{snapshotRanks.pointsPerPlay} NATIONALLY</small>
+          </article>}
+
+          {snapshotRanks&&<article className="fan-snapshot-points-card">
+            <span>DEFENSE</span>
+            <small className="fan-snapshot-subtitle">POINTS ALLOWED / PLAY</small>
+            <strong>{defensivePointsPerPlay.toFixed(3)}</strong>
+            <RankBadge rank={snapshotRanks.pointsAllowedPerPlay} fieldSize={snapshotRanks.fieldSize}/>
+            <small>#{snapshotRanks.pointsAllowedPerPlay} NATIONALLY</small>
+          </article>}
         </div>
       </section>
 
