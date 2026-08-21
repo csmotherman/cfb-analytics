@@ -39,7 +39,7 @@ export default async function PlayerPage({params,searchParams}:Props){
       <div className="player-focus-grade"><small>{freshman?"RECRUITING GRADE":"PLAYER GRADE"}</small><strong>{focusValue}</strong><span>{focusDetail}</span><i>{freshman?"RECRUITING":"POSITION-BASED PRODUCTION"}</i></div>
     </section>
 
-    <nav className="player-focus-tabs" aria-label="Player profile sections"><Link className={tab==="overview"?"active":""} href={`/players/${p.id}`}>OVERVIEW</Link><Link className={tab==="stats"?"active":""} href={`/players/${p.id}?tab=stats`}>STATS</Link></nav>
+    <nav className="player-focus-tabs" aria-label="Player profile sections"><Link scroll={false} className={tab==="overview"?"active":""} href={`/players/${p.id}`}>OVERVIEW</Link><Link scroll={false} className={tab==="stats"?"active":""} href={`/players/${p.id}?tab=stats`}>STATS</Link></nav>
 
     {tab==="overview"?<div className="player-focus-grid">
       <section className="player-focus-card player-focus-profile"><h2>QUICK OVERVIEW</h2><div className="player-focus-lines"><div><span>POSITION</span><strong>{p.position??"—"}</strong></div><div><span>CLASS</span><strong>{classLabel(p.year)}</strong></div><div><span>JERSEY</span><strong>#{p.jersey??"—"}</strong></div><div><span>HEIGHT / WEIGHT</span><strong>{formatHeight(p.height)} · {p.weight?`${p.weight} lbs`:"—"}</strong></div><div><span>HOMETOWN</span><strong>{[p.homeCity,p.homeState].filter(Boolean).join(", ")||"—"}</strong></div></div></section>
