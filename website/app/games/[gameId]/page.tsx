@@ -20,6 +20,13 @@ type ComparisonRowProps={
   opponentName:string;
 };
 
+function TeamMetric({side,align}:{side:MatchupRidgeSide|undefined;align:"left"|"right"}){
+  return <div className={`advantage-team-value ${align==="right"?"opponent-value":"michigan-value"}`}>
+    <div className="metric-primary"><strong>{rank(side?.rank)}</strong><small>NATIONAL</small></div>
+    <div className="metric-secondary"><b>{rating(side?.rating)}</b><small>RATING</small></div>
+  </div>;
+}
+
 function ComparisonRow({label,michigan,opponent,opponentName}:ComparisonRowProps){
   const hasRatings=michigan?.rating!=null&&opponent?.rating!=null;
   const difference=hasRatings?michigan.rating-opponent.rating:0;
@@ -30,31 +37,23 @@ function ComparisonRow({label,michigan,opponent,opponentName}:ComparisonRowProps
   const meterStyle={"--advantage-width":`${width}%`} as CSSProperties;
 
   return <div className="advantage-row">
-    <div className="advantage-team-value michigan-value">
-      <strong>{rank(michigan?.rank)}</strong>
-      <b>{rating(michigan?.rating)}</b>
-      <small>NATIONAL RANK · RATING</small>
-    </div>
+    <TeamMetric side={michigan} align="left"/>
 
     <div className="advantage-center">
       <span className="advantage-label">{label}</span>
-      <strong className={`advantage-number ${michiganLeads?"michigan-leads":"opponent-leads"}`}>
-        {hasRatings?`+${absDifference.toFixed(1)}`:"—"}
-      </strong>
-      <small className={`advantage-winner ${michiganLeads?"michigan-leads":"opponent-leads"}`}>{leader} ADVANTAGE</small>
-      <div className={`advantage-meter ${michiganLeads?"to-michigan":"to-opponent"}`} style={meterStyle} aria-label={`${leader} advantage ${absDifference.toFixed(1)} rating points`}>
-        <span className="advantage-track-left"/>
-        <i/>
-        <span className="advantage-track-right"/>
+      <div className="edge-readout">
+        <strong className={michiganLeads?"michigan-leads":"opponent-leads"}>{hasRatings?`+${absDifference.toFixed(1)}`:"—"}</strong>
+        <small className={michiganLeads?"michigan-leads":"opponent-leads"}>{hasRatings?`${leader} EDGE`:"NO DATA"}</small>
       </div>
-      <div className="advantage-scale"><span>MICHIGAN</span><b>0</b><span>OPPONENT</span></div>
+      <div className={`advantage-meter ${michiganLeads?"to-michigan":"to-opponent"}`} style={meterStyle} aria-label={`${leader} advantage ${absDifference.toFixed(1)} rating points`}>
+        <span/>
+        <i/>
+        <span/>
+      </div>
+      <div className="advantage-scale"><span>MICH</span><b>EVEN</b><span>{opponentName.toUpperCase()}</span></div>
     </div>
 
-    <div className="advantage-team-value opponent-value">
-      <strong>{rank(opponent?.rank)}</strong>
-      <b>{rating(opponent?.rating)}</b>
-      <small>NATIONAL RANK · RATING</small>
-    </div>
+    <TeamMetric side={opponent} align="right"/>
   </div>;
 }
 
@@ -84,39 +83,40 @@ export default async function GameHub({params}:Props){
   return <main className="game-preview-page">
     <div className="preview-app-shell">
       <header className="preview-topbar">
-        <Link href="/schedule">‹ SCHEDULE</Link>
-        <h1>GAME PREVIEW</h1>
+        <Link href="/schedule">← SCHEDULE</Link>
+        <div><span>WEEK {game.week}</span><h1>GAME PREVIEW</h1></div>
         <span>2026</span>
       </header>
 
       <section className="preview-matchup-card">
+        <div className="preview-matchup-kicker">MICHIGAN FOOTBALL · WEEK {game.week}</div>
         <div className="preview-matchup">
-          <div>
+          <div className="preview-team michigan-team">
             <img src={teamLogoUrl(130,256)} alt="Michigan logo"/>
             <strong>MICHIGAN</strong>
             <small>{michiganConference}</small>
           </div>
-          <span>VS</span>
-          <div>
+          <div className="preview-versus"><span>VS</span><i/></div>
+          <div className="preview-team opponent-team">
             <img src={teamLogoUrl(opp.id,256)} alt={`${opp.name} logo`}/>
             <strong>{opp.name.toUpperCase()}</strong>
             <small>{opponentConference}</small>
           </div>
         </div>
         <div className="preview-meta">
-          <span>{gameDate(game)}</span>
-          <span>{gameTime(game)} ET</span>
-          <span>{game.venue??(home?"Michigan Stadium":"Away")}</span>
+          <span><small>DATE</small><b>{gameDate(game)}</b></span>
+          <span><small>KICKOFF</small><b>{gameTime(game)} ET</b></span>
+          <span><small>LOCATION</small><b>{game.venue??(home?"Michigan Stadium":"Away")}</b></span>
         </div>
       </section>
 
       <section className="preview-block advantage-comparison-block">
         <div className="preview-section-heading advantage-heading">
           <div>
-            <span>{baselineSeason} OPPONENT-ADJUSTED BASELINE</span>
-            <h2>TEAM COMPARISON</h2>
+            <span>{baselineSeason} OPPONENT-ADJUSTED RIDGE</span>
+            <h2>HOW THEY STACK UP</h2>
           </div>
-          <p>Ratings are opponent-adjusted Ridge ratings<br/><b>100 = FBS average</b></p>
+          <p>Higher rating is better.<br/><b>100 = FBS average</b></p>
         </div>
 
         <div className="advantage-comparison">
@@ -124,13 +124,11 @@ export default async function GameHub({params}:Props){
             <div>
               <img src={teamLogoUrl(130,64)} alt="Michigan logo"/>
               <strong>MICHIGAN</strong>
-              <small>{michiganConference}</small>
             </div>
-            <span>ADVANTAGE<small>RATING-POINT EDGE</small></span>
+            <span>EDGE<small>RATING-POINT DIFFERENCE</small></span>
             <div>
               <img src={teamLogoUrl(opp.id,64)} alt={`${opp.name} logo`}/>
               <strong>{opp.name.toUpperCase()}</strong>
-              <small>{opponentConference}</small>
             </div>
           </div>
 
@@ -139,24 +137,26 @@ export default async function GameHub({params}:Props){
           <ComparisonRow label="DEFENSE" michigan={michigan?.defense} opponent={opponentRatings?.defense} opponentName={opp.name}/>
         </div>
 
-        <p className="preview-footnote">National rank and rating come from the same opponent-adjusted Ridge system used on the Analytics page. Higher rating is better; the centered marker shows the rating-point advantage between the teams.</p>
+        <p className="preview-footnote">National ranks and ratings use the same opponent-adjusted Ridge system as the Analytics page. The center indicator shows which team owns the rating advantage in each category.</p>
       </section>
 
       <section className="market-preview-card compact-market-card">
+        <div className="market-title"><span>MARKET</span><strong>GAME LINE</strong></div>
         <div>
-          <small>MARKET PROJECTION</small>
+          <small>SPREAD</small>
           {market?<><strong>{formatMichiganSpread(market.teamSpread)}</strong><span>{market.sportsbook}</span></>:<strong>NOT YET PUBLISHED</strong>}
         </div>
         <div>
-          <small>SPREAD-IMPLIED EDGE</small>
-          <strong>{market&&marketMargin!=null?`${marketLeader} by ${marketMargin.toFixed(1)}`:"—"}</strong>
+          <small>IMPLIED EDGE</small>
+          <strong>{market&&marketMargin!=null?`${marketLeader} ${marketMargin.toFixed(1)}`:"—"}</strong>
           <span>{market?.asOf??"Waiting for market"}</span>
         </div>
       </section>
 
       <Link className="game-preview-article-cta" href="/articles">
-        <span>FULL STORY</span>
-        <strong>FULL GAME PREVIEW &amp; ANALYSIS</strong>
+        <span>DEEP DIVE</span>
+        <strong>READ THE FULL GAME PREVIEW</strong>
+        <small>Matchups, personnel and what matters most.</small>
         <b>→</b>
       </Link>
     </div>
