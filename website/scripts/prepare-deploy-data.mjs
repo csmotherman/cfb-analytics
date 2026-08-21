@@ -37,8 +37,8 @@ let files=0;
 // Current-season product data is small enough to ship as a complete season tree.
 files+=copyTree(path.join(sourceRoot,"2026"),path.join(targetRoot,"2026"));
 
-// Historical pages only need Michigan, national comparisons and the compact
-// opponent-adjusted overview. Never copy directory_history into deployment.
+// Historical pages only need Michigan, national comparisons and compact
+// opponent-adjusted analytics artifacts. Never copy directory_history into deployment.
 for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
   if(!entry.isDirectory()||!/^(201\d|202[0-5])$/.test(entry.name))continue;
   const season=entry.name;
@@ -51,10 +51,12 @@ for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
     if(copyFile(path.join(sourceSeason,"national",name),path.join(targetSeason,"national",name)))files+=1;
   }
 
-  if(copyFile(
-    path.join(sourceSeason,"analytics","ridge-overview.json"),
-    path.join(targetSeason,"analytics","ridge-overview.json")
-  ))files+=1;
+  for(const name of ["ridge-overview.json","ridge-team-ratings.json"]){
+    if(copyFile(
+      path.join(sourceSeason,"analytics",name),
+      path.join(targetSeason,"analytics",name)
+    ))files+=1;
+  }
 }
 
 // Small repository-owned config files are also copied so server rendering never
