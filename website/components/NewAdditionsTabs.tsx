@@ -15,6 +15,7 @@ export type NewAdditionRow={
   previousTeam:string|null;
   previousTeamId:number|null;
   recruitRating:number|null;
+  recruitingRatingStatus:"RATED"|"UNRATED";
   stars:number|null;
   nationalRecruitRank:number|null;
 };
@@ -24,7 +25,7 @@ type Props={freshmen:NewAdditionRow[];transfers:NewAdditionRow[]};
 type FreshmanSort="rating-desc"|"rating-asc";
 
 function Rating({player}:{player:NewAdditionRow}){
-  if(player.recruitRating==null)return <div className="new-addition-rating unavailable"><strong>—</strong><small>RATING</small></div>;
+  if(player.recruitingRatingStatus==="UNRATED"||player.recruitRating==null)return <div className="new-addition-rating unavailable"><strong>UNRATED</strong><small>NO VERIFIED COMPOSITE</small></div>;
   return <div className="new-addition-rating">
     <strong>{player.recruitRating.toFixed(4).replace(/^0/,"")}</strong>
     <small>{player.stars?`${player.stars}★`:"RATING"}{player.nationalRecruitRank?` · #${player.nationalRecruitRank}`:""}</small>
@@ -49,9 +50,11 @@ export function NewAdditionsTabs({freshmen,transfers}:Props){
   const [freshmanSort,setFreshmanSort]=useState<FreshmanSort>("rating-desc");
 
   const sortedFreshmen=useMemo(()=>[...freshmen].sort((a,b)=>{
-    const aRating=a.recruitRating??-1;
-    const bRating=b.recruitRating??-1;
-    const ratingDiff=freshmanSort==="rating-desc"?bRating-aRating:aRating-bRating;
+    const aRated=a.recruitRating!=null;
+    const bRated=b.recruitRating!=null;
+    if(aRated!==bRated)return aRated?-1:1;
+    if(!aRated&&!bRated)return `${a.lastName}${a.firstName}`.localeCompare(`${b.lastName}${b.firstName}`);
+    const ratingDiff=freshmanSort==="rating-desc"?(b.recruitRating??0)-(a.recruitRating??0):(a.recruitRating??0)-(b.recruitRating??0);
     return ratingDiff||`${a.lastName}${a.firstName}`.localeCompare(`${b.lastName}${b.firstName}`);
   }),[freshmen,freshmanSort]);
 
