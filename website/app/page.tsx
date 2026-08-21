@@ -8,11 +8,11 @@ const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.grade?
 const watchImage=(firstName:string,lastName:string)=>{
   const key=`${firstName} ${lastName}`;
   const images:Record<string,string>={
-    "Bryce Underwood":"/images/home/bryce-underwood-watch.svg",
-    "John Henry Daley":"/images/home/john-henry-daley-watch.svg",
-    "Jordan Marshall":"/images/home/jordan-marshall-watch.svg",
+    "Bryce Underwood":"/images/home/bryce-underwood.png",
+    "John Henry Daley":"/images/home/john-henry-daley.png",
+    "Jordan Marshall":"/images/home/jordan-marshall.png",
   };
-  return images[key]??"/images/home/player-watch-placeholder.svg";
+  return images[key]??"/images/home/bryce-underwood.png";
 };
 
 export default function Home(){
