@@ -17,6 +17,7 @@ import "../styles/schedule-home.css";
 import "../styles/matchup-logos.css";
 import "../styles/more-page.css";
 import "../styles/more-drawer.css";
+import "../styles/new-additions.css";
 import "../styles/game-preview.css";
 import { SiteNav } from "../components/SiteNav";
 
@@ -30,5 +31,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: "#031426" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en" data-scroll-behavior="smooth"><body><SiteNav /><main>{children}</main><footer><div className="wrap footer-inner"><div><b>MICHIGAN FOOTBALL FOCUS</b><span>Michigan football, understood.</span></div><nav aria-label="Footer"><a href="/articles">Articles</a><a href="/recruiting/portal">Transfers</a><a href="/methodology">Methodology</a></nav></div></footer></body></html>;
+  return <html lang="en" data-scroll-behavior="smooth"><body><SiteNav /><main>{children}</main><footer><div className="wrap footer-inner"><div><b>MICHIGAN FOOTBALL FOCUS</b><span>Michigan football, understood.</span></div><nav aria-label="Footer"><a href="/articles">Articles</a><a href="/new-additions">New Additions</a><a href="/methodology">Methodology</a></nav></div></footer></body></html>;
 }
