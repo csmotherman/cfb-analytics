@@ -1,10 +1,14 @@
 import Link from "next/link";
-import {FieldDepthChart} from "../../components/players/FieldDepthChart";
+import TeamDepthFormats from "../../components/TeamDepthFormats";
 import TeamBattleList,{type TeamBattle} from "../../components/TeamBattleList";
 import {researchedDepthChart} from "../../lib/michigan/depth-chart";
 
-export default function TeamPage(){
+type Props={searchParams:Promise<{format?:string}>};
+
+export default async function TeamPage({searchParams}:Props){
   const chart=researchedDepthChart();
+  const requested=(await searchParams).format;
+  const format:1|2|3=requested==="2"?2:requested==="3"?3:1;
   const battles:TeamBattle[]=[
     {position:"WR3",title:"Who earns the third receiver role?",players:["Jaime Ffrench","Travis Johnson","Salesi Moa","Channing Goodwin"],detail:"Andrew Marsh and JJ Buchanan are the clearest top-two options. The next major receiver role remains fluid, with multiple players still pushing for snaps."},
     {position:"LT / G",title:"How does the offensive line settle?",players:["Blake Frazier","Andrew Babalola","Evan Link","Nathan Efobi","Brady Norton"],detail:"Jake Guarnera and Andrew Sprague look like the safest pieces. Left tackle and both guard spots still have legitimate competition, so the final five can still move."},
@@ -14,10 +18,15 @@ export default function TeamPage(){
 
   return <div className="mock-home team-formation-home"><div className="mock-shell">
     <section className="mock-section team-formation-intro">
-      <header><div><span className="mock-eyebrow maize">2026 MICHIGAN · PROJECTED</span><h1>DEPTH CHART</h1><p>See Michigan the way it will actually line up. Tap any player for the full profile, and open the position battles below for the spots that are still unsettled.</p></div><Link href="/team/roster">FULL ROSTER <b>›</b></Link></header>
+      <header><div><span className="mock-eyebrow maize">2026 MICHIGAN · PROJECTED</span><h1>DEPTH CHART</h1><p>Three mobile concepts are live. Pick the one that feels easiest to use on your phone.</p></div><Link href="/team/roster">PLAYER DIRECTORY <b>›</b></Link></header>
+      <nav className="team-format-picker" aria-label="Depth chart format previews">
+        <Link className={format===1?"active":""} href="/team?format=1" scroll={false}><b>1</b><span>FORMATION</span></Link>
+        <Link className={format===2?"active":""} href="/team?format=2" scroll={false}><b>2</b><span>DIRECTORY</span></Link>
+        <Link className={format===3?"active":""} href="/team?format=3" scroll={false}><b>3</b><span>CARDS</span></Link>
+      </nav>
     </section>
 
-    {chart?<FieldDepthChart offense={chart.offense} defense={chart.defense} specialists={chart.specialists}/>:<section className="mock-section"><div className="player-focus-empty"><b>Projected depth chart unavailable.</b></div></section>}
+    {chart?<TeamDepthFormats offense={chart.offense} defense={chart.defense} specialists={chart.specialists} format={format}/>:<section className="mock-section"><div className="player-focus-empty"><b>Projected depth chart unavailable.</b></div></section>}
 
     <section className="mock-section team-battles-section">
       <header><div><span className="mock-eyebrow maize">FALL CAMP</span><h2>POSITION BATTLES</h2></div><span>Tap a battle to expand</span></header>
