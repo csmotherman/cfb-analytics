@@ -12,6 +12,7 @@ export type MichiganStory = {
   readMinutes?:number;
   tags:StoryTag[];
   dataLinks:StoryDataLink[];
+  coverImage?:string;
   coverQuestion?:string;
   coverLabel?:string;
   coverTheme?:string;
@@ -30,6 +31,7 @@ export function michiganStories(): MichiganStory[] {
       published:"August 21, 2026",
       readMinutes:9,
       playerIds:["5141741","5079574","5141572"],
+      coverImage:"/images/home/bryce-underwood.png",
       coverQuestion:"Can Jason Beck turn Michigan’s foundation into a playoff offense?",
       coverLabel:"OFFENSE PREVIEW",
       coverTheme:"offense",
