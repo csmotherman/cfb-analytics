@@ -21,6 +21,7 @@ export type MichiganPlayer = {
   productionScore?: number | null; usageValue?: number | null; productionCohortSize?: number | null; positionFamily?: string | null;
   rosterStatus?: "RETURNING" | "TRANSFER" | "FRESHMAN" | "UNCLASSIFIED" | null; previousTeam?: string | null;
   compositeRating?: number | null; stars?: number | null; nationalRecruitRank?: number | null;
+  recruitingRatingStatus?: "RATED" | "UNRATED" | null; walkOnStatus?: "UNKNOWN" | "VERIFIED_WALK_ON" | "NOT_WALK_ON" | null;
   gradeBasis?: string | null;
   recruitClass?: number | null; originalCommitment?: string | null;
   careerTimeline?: Array<{season:number;team?:string|null;position?:string|null;jersey?:number|null;year?:number|null}>;
