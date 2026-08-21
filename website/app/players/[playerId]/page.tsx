@@ -3,7 +3,7 @@ import Link from "next/link";
 import {notFound} from "next/navigation";
 import {playerById,playersByPosition} from "../../../lib/michigan/roster";
 import {classLabel,formatHeight} from "../../../lib/michigan/format";
-import {storiesForPlayer} from "../../../lib/michigan/stories";
+import {michiganStories} from "../../../lib/michigan/stories";
 
 type Props={params:Promise<{playerId:string}>};
 const statValue=(value:number)=>Number.isInteger(value)?value.toLocaleString():value.toFixed(1);
@@ -12,7 +12,7 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{const p
 
 export default async function PlayerPage({params}:Props){
   const p=playerById((await params).playerId);if(!p)notFound();const room=playersByPosition(p.position??"");const insight=p.insight;const freshman=p.rosterStatus==="FRESHMAN";const focusValue=freshman?(p.stars?"★".repeat(p.stars):"UNRATED"):(p.performanceGrade??"NG");const focusDetail=freshman?(p.compositeRating?`${p.compositeRating.toFixed(4)} composite · ${p.nationalRecruitRank?`No. ${p.nationalRecruitRank} nationally`:"no national rank"}`:"No verified composite rating"):(p.performanceGrade?`${insight?.focus.percentile?.toFixed(1)??"—"}th position percentile`:"No measured 2025 usage; no production grade");
-  const stories=storiesForPlayer(p.id);
+  const stories=michiganStories().filter(story=>story.playerIds?.includes(p.id));
   return <article className="player-profile-page">
     <header className="player-profile-hero"><div className="wrap player-profile-hero-inner"><div className="player-profile-copy"><span className="kicker">2026 MICHIGAN · {p.position??"ATH"} · {p.rosterStatus??"ROSTER"}</span><h1>{p.firstName}<br/><b>{p.lastName}</b></h1><p>#{p.jersey??"—"} · {formatHeight(p.height)} · {p.weight?`${p.weight} lbs`:"Weight —"} · {classLabel(p.year)}<br/>{[p.homeCity,p.homeState].filter(Boolean).join(", ")||"Hometown —"}</p>{p.playerImageSourceUrl&&<a className="player-photo-source" href={p.playerImageSourceUrl}>PHOTO: {p.playerImageSource} ↗</a>}</div><div className="player-profile-image">{p.playerImageUrl?<img src={p.playerImageUrl} alt={`${p.firstName} ${p.lastName}`}/>:<strong>{p.jersey??"M"}</strong>}</div><div className="profile-focus"><small>{freshman?"PROSPECT PROFILE":"2025 PRODUCTION"}</small><strong className={freshman?"stars-focus":""}>{focusValue}</strong><span>{focusDetail}</span><i>{freshman?"BENCHMARK":"ACTUAL"}</i></div></div></header>
     <div className="wrap player-profile-stack">
