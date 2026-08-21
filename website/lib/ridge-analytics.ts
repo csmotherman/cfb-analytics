@@ -93,10 +93,10 @@ export function fanTier(rank:number,fieldSize:number):FanTier{
 
 export function fanTierLabel(rank:number,fieldSize:number){
   const tier=fanTier(rank,fieldSize);
-  if(tier==="elite")return rank<=5?"ELITE · TOP 5":"ELITE · TOP 10";
-  if(tier==="strong")return rank<=25?"TOP 25":"ABOVE AVERAGE";
-  if(tier==="average")return "AROUND AVERAGE";
-  return "BELOW AVERAGE";
+  if(tier==="elite")return "ELITE";
+  if(tier==="strong")return "SOLID";
+  if(tier==="average")return "AVERAGE";
+  return "CONCERN";
 }
 
 export function fanMetricName(side:"Offense"|"Defense",metric:keyof RidgeSide["metrics"]){
