@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import pytest
 from cfb_analytics.analytics.optimize_offense_composite import _fit_weights,_project_simplex,optimize
 from tests.test_opponent_adjusted_offense import _sample_rows
 
