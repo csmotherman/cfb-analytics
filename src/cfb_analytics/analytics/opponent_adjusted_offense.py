@@ -1,17 +1,13 @@
 """Opponent-adjusted offensive rating prototype.
 
-This module is intentionally narrow: it is a transparent first-pass model for
-validating one season before the rating is wired into published site data.
-
-The rating uses only three fan-readable offensive outcomes:
-
-* 50% opponent-adjusted points per resolved possession (points per drive)
+The published composite remains intentionally narrow:
+* 50% opponent-adjusted points per resolved possession
 * 30% opponent-adjusted success rate
 * 20% opponent-adjusted scoring possessions per possession
 
-Each game is adjusted against the opponent's defensive performance in all
-OTHER FBS-vs-FBS games (leave-one-out). This prevents the game being graded
-from contaminating the defensive baseline used to grade it.
+Adjusted yards per drive is exposed as an additional diagnostic metric, but is
+not yet included in the composite weight. Each game is adjusted against the
+opponent's defensive performance in all OTHER FBS-vs-FBS games (leave-one-out).
 """
 from __future__ import annotations
 
@@ -23,7 +19,6 @@ import math
 from pathlib import Path
 from statistics import fmean, pstdev
 from typing import Any, Iterable
-
 
 PPD_WEIGHT = 0.50
 SUCCESS_WEIGHT = 0.30
@@ -38,6 +33,8 @@ class Totals:
     success_plays: float = 0.0
     scoring_possessions: float = 0.0
     possessions: float = 0.0
+    yards: float = 0.0
+    yardage_possessions: float = 0.0
 
     def __add__(self, other: "Totals") -> "Totals":
         return Totals(
@@ -47,6 +44,8 @@ class Totals:
             self.success_plays + other.success_plays,
             self.scoring_possessions + other.scoring_possessions,
             self.possessions + other.possessions,
+            self.yards + other.yards,
+            self.yardage_possessions + other.yardage_possessions,
         )
 
     def __sub__(self, other: "Totals") -> "Totals":
@@ -57,6 +56,8 @@ class Totals:
             self.success_plays - other.success_plays,
             self.scoring_possessions - other.scoring_possessions,
             self.possessions - other.possessions,
+            self.yards - other.yards,
+            self.yardage_possessions - other.yardage_possessions,
         )
 
 
@@ -83,6 +84,8 @@ def offensive_totals(row: dict[str, Any]) -> Totals:
         success_plays=_number(row, "successEligiblePlays"),
         scoring_possessions=_scoring_possessions(row, allowed=False),
         possessions=_number(row, "validatedPossessions"),
+        yards=_number(row, "possessionYards"),
+        yardage_possessions=_number(row, "yardagePossessions"),
     )
 
 
@@ -94,6 +97,8 @@ def defensive_totals(row: dict[str, Any]) -> Totals:
         success_plays=_number(row, "successEligiblePlaysAllowed"),
         scoring_possessions=_scoring_possessions(row, allowed=True),
         possessions=_number(row, "validatedDefensivePossessions"),
+        yards=_number(row, "possessionYardsAllowed"),
+        yardage_possessions=_number(row, "yardagePossessionsAllowed"),
     )
 
 
@@ -101,11 +106,12 @@ def _rate(numerator: float, denominator: float) -> float | None:
     return numerator / denominator if denominator > 0 else None
 
 
-def metrics(totals: Totals) -> tuple[float | None, float | None, float | None]:
+def metrics(totals: Totals) -> tuple[float | None, float | None, float | None, float | None]:
     return (
         _rate(totals.points, totals.resolved_possessions),
         _rate(totals.successes, totals.success_plays),
         _rate(totals.scoring_possessions, totals.possessions),
+        _rate(totals.yards, totals.yardage_possessions),
     )
 
 
@@ -147,17 +153,7 @@ def _eligible_rows(rows: list[dict[str, Any]], season: int) -> list[dict[str, An
 
 
 def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int) -> list[dict[str, Any]]:
-    """Return transparent national offense rankings for one season.
-
-    Adjustment for each game and metric:
-        team performance - opponent defensive LOO baseline + national baseline
-
-    The defensive baseline excludes the exact game being evaluated. Games for
-    which the opponent has no other eligible defensive sample are skipped.
-
-    Returned rows include raw season metrics and adjustment deltas so extreme
-    schedule effects can be audited before the rating is published.
-    """
+    """Return national offense rankings with auditable raw/adjusted components."""
     rows = _eligible_rows(rows, season)
     if not rows:
         raise ValueError(f"No eligible FBS-vs-FBS team-game rows found for {season}")
@@ -179,15 +175,11 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
         defense_by_team[team_id] = defense_by_team.get(team_id, Totals()) + defense
         defense_game_by_key[(team_id, game_id)] = defense
 
-    national_ppd, national_success, national_scoring = metrics(national_offense)
-    if None in (national_ppd, national_success, national_scoring):
+    national_ppd, national_success, national_scoring, national_ypd = metrics(national_offense)
+    if None in (national_ppd, national_success, national_scoring, national_ypd):
         raise ValueError("National baselines could not be calculated")
-    national_ppd = float(national_ppd)
-    national_success = float(national_success)
-    national_scoring = float(national_scoring)
 
     game_adjustments: dict[int, list[dict[str, float]]] = {}
-
     for row in rows:
         team_id = int(row["team_id"])
         opponent_id = int(row["opponent_id"])
@@ -200,27 +192,30 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
             opponent_game_defense = offensive_totals(row)
 
         opponent_loo = defense_by_team[opponent_id] - opponent_game_defense
-        opp_ppd, opp_success, opp_scoring = metrics(opponent_loo)
-        if None in (opp_ppd, opp_success, opp_scoring):
+        opp_ppd, opp_success, opp_scoring, opp_ypd = metrics(opponent_loo)
+        if None in (opp_ppd, opp_success, opp_scoring, opp_ypd):
             continue
 
         off = offensive_totals(row)
-        team_ppd, team_success, team_scoring = metrics(off)
-        if None in (team_ppd, team_success, team_scoring):
+        team_ppd, team_success, team_scoring, team_ypd = metrics(off)
+        if None in (team_ppd, team_success, team_scoring, team_ypd):
             continue
 
         game_adjustments.setdefault(team_id, []).append({
-            "adj_ppd": float(team_ppd) - float(opp_ppd) + national_ppd,
-            "adj_success": float(team_success) - float(opp_success) + national_success,
-            "adj_scoring": float(team_scoring) - float(opp_scoring) + national_scoring,
+            "adj_ppd": float(team_ppd) - float(opp_ppd) + float(national_ppd),
+            "adj_success": float(team_success) - float(opp_success) + float(national_success),
+            "adj_scoring": float(team_scoring) - float(opp_scoring) + float(national_scoring),
+            "adj_ypd": float(team_ypd) - float(opp_ypd) + float(national_ypd),
             "ppd_weight": off.resolved_possessions,
             "success_weight": off.success_plays,
             "scoring_weight": off.possessions,
+            "ypd_weight": off.yardage_possessions,
         })
 
     adjusted_ppd: dict[int, float] = {}
     adjusted_success: dict[int, float] = {}
     adjusted_scoring: dict[int, float] = {}
+    adjusted_ypd: dict[int, float] = {}
     games_used: dict[int, int] = {}
 
     for team_id, games in game_adjustments.items():
@@ -229,23 +224,27 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
         adjusted_ppd[team_id] = _weighted_mean((g["adj_ppd"], g["ppd_weight"]) for g in games)
         adjusted_success[team_id] = _weighted_mean((g["adj_success"], g["success_weight"]) for g in games)
         adjusted_scoring[team_id] = _weighted_mean((g["adj_scoring"], g["scoring_weight"]) for g in games)
+        adjusted_ypd[team_id] = _weighted_mean((g["adj_ypd"], g["ypd_weight"]) for g in games)
         games_used[team_id] = len(games)
 
-    common = set(adjusted_ppd) & set(adjusted_success) & set(adjusted_scoring)
-    adjusted_ppd = {team_id: adjusted_ppd[team_id] for team_id in common}
-    adjusted_success = {team_id: adjusted_success[team_id] for team_id in common}
-    adjusted_scoring = {team_id: adjusted_scoring[team_id] for team_id in common}
+    common = set(adjusted_ppd) & set(adjusted_success) & set(adjusted_scoring) & set(adjusted_ypd)
+    adjusted_ppd = {k: adjusted_ppd[k] for k in common}
+    adjusted_success = {k: adjusted_success[k] for k in common}
+    adjusted_scoring = {k: adjusted_scoring[k] for k in common}
+    adjusted_ypd = {k: adjusted_ypd[k] for k in common}
 
     raw_ppd: dict[int, float] = {}
     raw_success: dict[int, float] = {}
     raw_scoring: dict[int, float] = {}
+    raw_ypd: dict[int, float] = {}
     for team_id in common:
-        team_ppd, team_success, team_scoring = metrics(offense_by_team[team_id])
-        if None in (team_ppd, team_success, team_scoring):
+        team_ppd, team_success, team_scoring, team_ypd = metrics(offense_by_team[team_id])
+        if None in (team_ppd, team_success, team_scoring, team_ypd):
             raise ValueError(f"Raw metrics could not be calculated for team {team_id}")
         raw_ppd[team_id] = float(team_ppd)
         raw_success[team_id] = float(team_success)
         raw_scoring[team_id] = float(team_scoring)
+        raw_ypd[team_id] = float(team_ypd)
 
     z_ppd = _z_scores(adjusted_ppd)
     z_success = _z_scores(adjusted_success)
@@ -253,6 +252,7 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
     ppd_rank = _rank(adjusted_ppd)
     success_rank = _rank(adjusted_success)
     scoring_rank = _rank(adjusted_scoring)
+    ypd_rank = _rank(adjusted_ypd)
 
     rating = {
         team_id: PPD_WEIGHT * z_ppd[team_id]
@@ -282,6 +282,10 @@ def calculate_opponent_adjusted_offense(rows: list[dict[str, Any]], season: int)
             "adjusted_scoring_drive_rate": adjusted_scoring[team_id],
             "scoring_drive_rate_adjustment": adjusted_scoring[team_id] - raw_scoring[team_id],
             "scoring_drive_rate_rank": scoring_rank[team_id],
+            "raw_yards_per_drive": raw_ypd[team_id],
+            "adjusted_yards_per_drive": adjusted_ypd[team_id],
+            "yards_per_drive_adjustment": adjusted_ypd[team_id] - raw_ypd[team_id],
+            "yards_per_drive_rank": ypd_rank[team_id],
             "games_used": games_used[team_id],
         })
 
@@ -311,6 +315,7 @@ def _format_row(row: dict[str, Any]) -> str:
         f"{row['rank']:>3}  {row['team']:<24.24} "
         f"RATING {row['rating']:>6.3f}  "
         f"PPD {row['adjusted_points_per_drive']:>5.2f} (#{row['points_per_drive_rank']:<3})  "
+        f"YPD {row['adjusted_yards_per_drive']:>5.1f} (#{row['yards_per_drive_rank']:<3})  "
         f"SR {row['adjusted_success_rate'] * 100:>5.1f}% (#{row['success_rate_rank']:<3})  "
         f"SCORE% {row['adjusted_scoring_drive_rate'] * 100:>5.1f}% (#{row['scoring_drive_rate_rank']:<3})  "
         f"G {row['games_used']}"
@@ -320,12 +325,10 @@ def _format_row(row: dict[str, Any]) -> str:
 def _format_diagnostic_row(row: dict[str, Any]) -> str:
     return (
         f"{row['rank']:>3}  {row['team']:<20.20} "
-        f"PPD {row['raw_points_per_drive']:>5.2f}->{row['adjusted_points_per_drive']:>5.2f} "
-        f"({row['points_per_drive_adjustment']:+.2f})  "
-        f"SR {row['raw_success_rate'] * 100:>5.1f}->{row['adjusted_success_rate'] * 100:>5.1f}% "
-        f"({row['success_rate_adjustment'] * 100:+.1f}pp)  "
-        f"SCORE {row['raw_scoring_drive_rate'] * 100:>5.1f}->{row['adjusted_scoring_drive_rate'] * 100:>5.1f}% "
-        f"({row['scoring_drive_rate_adjustment'] * 100:+.1f}pp)"
+        f"PPD {row['raw_points_per_drive']:>5.2f}->{row['adjusted_points_per_drive']:>5.2f} ({row['points_per_drive_adjustment']:+.2f})  "
+        f"YPD {row['raw_yards_per_drive']:>5.1f}->{row['adjusted_yards_per_drive']:>5.1f} ({row['yards_per_drive_adjustment']:+.1f})  "
+        f"SR {row['raw_success_rate'] * 100:>5.1f}->{row['adjusted_success_rate'] * 100:>5.1f}% ({row['success_rate_adjustment'] * 100:+.1f}pp)  "
+        f"SCORE {row['raw_scoring_drive_rate'] * 100:>5.1f}->{row['adjusted_scoring_drive_rate'] * 100:>5.1f}% ({row['scoring_drive_rate_adjustment'] * 100:+.1f}pp)"
     )
 
 
@@ -336,18 +339,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--top", type=int, default=25)
     parser.add_argument("--team", default="Michigan")
     parser.add_argument("--output", type=Path, default=None)
-    parser.add_argument(
-        "--diagnostics",
-        action="store_true",
-        help="Print raw -> adjusted metrics and schedule adjustment magnitude",
-    )
+    parser.add_argument("--diagnostics", action="store_true", help="Print raw -> adjusted metrics and schedule adjustment magnitude")
     args = parser.parse_args(argv)
 
     input_path = args.input or Path(f"data/canonical/season={args.season}/team_games.json")
     rows = calculate_opponent_adjusted_offense(load_team_games(input_path), args.season)
 
     print(f"\nOpponent-Adjusted Offense — {args.season}")
-    print("50% Adj PPD | 30% Adj Success Rate | 20% Adj Scoring Drive %")
+    print("Composite: 50% Adj PPD | 30% Adj Success Rate | 20% Adj Scoring Drive %")
+    print("Adj YPD shown separately; not yet included in composite rating.")
     print("FBS vs FBS only; opponent defensive baseline excludes the graded game.\n")
     shown = rows[: max(0, args.top)]
     for row in shown:
