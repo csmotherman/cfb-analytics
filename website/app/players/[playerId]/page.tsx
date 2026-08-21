@@ -20,12 +20,12 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{const p
 export default async function PlayerPage({params,searchParams}:Props){
   const p=playerById((await params).playerId);if(!p)notFound();
   const tab=(await searchParams).tab==="stats"?"stats":"overview";
-  const insight=p.insight;const freshman=p.rosterStatus==="FRESHMAN";
+  const freshman=p.rosterStatus==="FRESHMAN";
   const careers=readJson<CareerRow[]>("data","published","2026","michigan","player-career-stats.json")??[];
   const career=careers.find(row=>row.playerId===p.id);const careerSeasons=(career?.seasons??[]).filter(season=>season.hasBoxScoreStats);
   const hasStats=careerSeasons.length>0;
   const focusValue=freshman?(p.prospectGrade??(p.stars?`${p.stars}★`:"NR")):(p.performanceGrade??p.prospectGrade??"NR");
-  const focusDetail=freshman?(p.nationalRecruitRank?`No. ${p.nationalRecruitRank} national recruit`:p.compositeRating?`${p.compositeRating.toFixed(4)} composite`:"Recruiting profile"):(p.performanceGrade?`${p.nationalPositionPercentile?.toFixed(1)??"—"}th position percentile":"Recruiting baseline");
+  const focusDetail=freshman?(p.nationalRecruitRank?`No. ${p.nationalRecruitRank} national recruit`:p.compositeRating?`${p.compositeRating.toFixed(4)} composite`:"Recruiting profile"):(p.performanceGrade?`${p.nationalPositionPercentile?.toFixed(1)??"—"}th position percentile`:"Recruiting baseline");
   const stories=michiganStories().filter(story=>story.playerIds?.includes(p.id));
   const bio=[`${p.firstName} ${p.lastName} is a ${classLabel(p.year).toLowerCase()} ${p.position??"player"} for Michigan.`,p.previousTeam?`He joined Michigan after playing at ${p.previousTeam}.`:null,p.homeCity||p.homeState?`He is from ${[p.homeCity,p.homeState].filter(Boolean).join(", ")}.`:null,p.importanceReason??null].filter(Boolean).join(" ");
   const SeasonCards=()=>hasStats?<div className="player-focus-season-list">{careerSeasons.map(season=><article className="player-focus-season" key={`${season.season}-${season.team}`}><header><div className="player-season-team">{season.teamId?<img src={teamLogoUrl(season.teamId,64)} alt=""/>:<span className="player-season-logo-fallback">M</span>}<div><b>{season.season}</b><span>{season.team}</span></div></div>{season.position&&<em>{season.position}</em>}</header><div>{season.displayStats.map((stat,index)=><span key={`${stat.category}-${stat.stat}-${index}`}><small>{statLabel(stat)}</small><strong>{statValue(stat.value)}</strong></span>)}</div></article>)}</div>:<div className="player-focus-empty"><b>No verified college box-score production yet.</b><p>{freshman?"Recruiting information is the honest baseline until his first college season begins.":"No position-relevant public box-score statistics are currently published for this player."}</p></div>;
