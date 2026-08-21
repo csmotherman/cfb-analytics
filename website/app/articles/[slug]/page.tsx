@@ -23,15 +23,17 @@ export default async function Article({params}:Props){
 
   return <article className="focus-article">
     <div className="focus-article-shell">
-      {story.coverImage&&<div className="focus-article-image"><img src={story.coverImage} alt=""/></div>}
-
-      <header className="focus-article-header">
-        <span className="focus-article-eyebrow">{story.eyebrow}</span>
-        <h1>{story.title}</h1>
-        <p>{story.deck}</p>
-        <div className="focus-article-meta">
-          {story.published&&<span>{story.published}</span>}
-          <span>{story.readMinutes??5} MIN READ</span>
+      <header className="focus-article-hero">
+        {story.coverImage&&<img src={story.coverImage} alt=""/>}
+        <div className="focus-article-hero-fade"/>
+        <div className="focus-article-hero-copy">
+          <span className="focus-article-eyebrow">{story.eyebrow}</span>
+          <h1>{story.title}</h1>
+          <p>{story.deck}</p>
+          <div className="focus-article-meta">
+            {story.published&&<span>{story.published}</span>}
+            <span>{story.readMinutes??5} MIN READ</span>
+          </div>
         </div>
       </header>
 
