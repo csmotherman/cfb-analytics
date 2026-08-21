@@ -10,7 +10,7 @@ const yearLabel = (year?: number | null) => ["Fr", "So", "Jr", "Sr", "Gr"][Math.
 function PositionCard({ slot, select, selectedId }: { slot: DepthSlot; select: (player: MichiganPlayer, label: string) => void; selectedId: string }) {
   return <article className="depth-position-card">
     <h3>{slot.label}</h3>
-    <div>{slot.players.map((player, index) => <button type="button" className={selectedId === player.id ? "active" : ""} onMouseEnter={() => select(player, slot.label)} onFocus={() => select(player, slot.label)} onClick={() => select(player, slot.label)} key={player.id}>
+    <div>{slot.players.map((player, index) => <button type="button" className={selectedId === player.id ? "active" : ""} onMouseEnter={() => select(player, slot.label)} onFocus={() => select(player, slot.label)} onClick={() => select(player, slot.label)} key={`${player.id}-${index}`}>
       <span>{index + 1}</span><b>#{player.jersey ?? "—"}</b><strong>{player.firstName[0]}. {player.lastName}</strong><small>{yearLabel(player.year)}</small>
     </button>)}</div>
   </article>;
@@ -19,7 +19,7 @@ function PositionCard({ slot, select, selectedId }: { slot: DepthSlot; select: (
 function UnitBoard({ title, subtitle, slots, unit, select, selectedId }: { title: string; subtitle: string; slots: DepthSlot[]; unit: string; select: (player: MichiganPlayer, label: string) => void; selectedId: string }) {
   return <section className={`depth-unit-board ${unit}`} aria-labelledby={`${unit}-title`}>
     <header><div><span>PROJECTED TWO-DEEP</span><h2 id={`${unit}-title`}>{title}</h2></div><small>{subtitle}</small></header>
-    <div className="depth-formation" aria-label={`${title} projected depth chart`}>{slots.map((slot) => <PositionCard slot={slot} select={select} selectedId={selectedId} key={slot.label}/>)}</div>
+    <div className="depth-formation" aria-label={`${title} projected depth chart`}>{slots.map((slot, index) => <PositionCard slot={slot} select={select} selectedId={selectedId} key={`${unit}-${slot.label}-${index}`}/>)}</div>
   </section>;
 }
 
