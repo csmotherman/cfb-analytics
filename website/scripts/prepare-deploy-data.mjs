@@ -57,6 +57,13 @@ for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
   ))files+=1;
 }
 
+// Small repository-owned config files are also copied so server rendering never
+// needs to reach outside the deployed Next app at runtime.
+files+=copyTree(
+  path.join(repositoryRoot,"src","cfb_analytics","config"),
+  path.join(targetRoot,"_config")
+);
+
 const bytes=(root)=>{
   let total=0;
   if(!fs.existsSync(root))return total;
