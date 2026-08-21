@@ -3,7 +3,7 @@ import {gameDate,gameTime,homeData,opponentOf} from "../lib/home-data";
 import {formatMichiganSpread,marketLineFor} from "../lib/market-lines";
 import {teamLogoUrl} from "../lib/team-assets";
 
-const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.performanceGrade??player.grade??player.importanceTier??"—";
+const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.grade??"—";
 
 export default function Home(){
   const {next,schedule,squad,outlook}=homeData();
