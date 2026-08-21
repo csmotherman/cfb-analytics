@@ -1,0 +1,46 @@
+@media (max-width:760px){
+  .player-focus-page{overflow-x:clip}
+  .player-focus-shell{width:calc(100% - 16px);max-width:100%;min-width:0}
+  .player-focus-hero,.player-focus-grid,.player-focus-card,.player-focus-stats,.player-focus-related,.player-focus-outlook,.player-focus-profile,.player-focus-recruiting{min-width:0;max-width:100%}
+  .player-focus-hero{grid-template-columns:96px minmax(0,1fr);gap:12px;padding:12px}
+  .player-focus-photo{width:100%;min-width:0}
+  .player-focus-copy{min-width:0;overflow:hidden}
+  .player-focus-copy h1{font-size:clamp(27px,9vw,34px);line-height:.92;overflow-wrap:anywhere;word-break:normal;max-width:100%}
+  .player-focus-copy>p{font-size:11px;white-space:normal}
+  .player-focus-copy .player-focus-meta{display:grid;gap:4px;font-size:9px;overflow-wrap:anywhere}
+  .player-focus-grade{width:100%;min-width:0;box-sizing:border-box}
+  .player-focus-tabs{width:100%;box-sizing:border-box;overflow-x:auto;scrollbar-width:none}
+  .player-focus-tabs::-webkit-scrollbar{display:none}
+  .player-focus-card{padding:14px;box-sizing:border-box;overflow:hidden}
+  .player-focus-lines div{gap:10px;align-items:flex-start}
+  .player-focus-lines span{flex:0 0 42%;font-size:10px}
+  .player-focus-lines strong{min-width:0;max-width:58%;overflow-wrap:anywhere;font-size:11px}
+  .player-focus-stats>header,.player-focus-related>header{width:100%;min-width:0}
+  .player-focus-stats>header h2,.player-focus-related>header h2{font-size:16px;line-height:1.2}
+  .player-stat-table-shell{width:100%;max-width:100%;min-width:0;margin:0;overflow:hidden}
+  .player-stat-table-wrap{width:100%;max-width:100%;box-sizing:border-box;overflow-x:auto;overflow-y:hidden}
+  .player-stat-table{width:max-content;min-width:680px;max-width:none}
+  .player-stat-table .sticky-year{min-width:52px;width:52px;max-width:52px}
+  .player-stat-table .sticky-team{left:52px}
+  .player-stat-team{min-width:112px;max-width:112px}
+  .player-stat-team span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
+  .player-grade-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .player-grade-grid article{min-width:0;padding:14px 8px}
+  .player-grade-grid strong{font-size:32px}
+  .player-focus-links{width:100%;box-sizing:border-box}
+  .player-focus-links a{flex:1 1 0;text-align:center;min-width:0}
+}
+
+@media (max-width:420px){
+  .player-focus-shell{width:calc(100% - 12px)}
+  .player-focus-hero{grid-template-columns:84px minmax(0,1fr);gap:10px;padding:10px}
+  .player-focus-copy h1{font-size:clamp(24px,8.4vw,30px)}
+  .player-focus-photo strong{font-size:12px}
+  .player-focus-grade{padding:13px}
+  .player-focus-grade strong{font-size:40px}
+  .player-focus-card{padding:12px}
+  .player-stat-table{min-width:640px}
+  .player-stat-table th,.player-stat-table td{padding:10px 9px}
+  .player-stat-team{min-width:104px;max-width:104px}
+  .player-grade-grid{grid-template-columns:1fr 1fr}
+}
