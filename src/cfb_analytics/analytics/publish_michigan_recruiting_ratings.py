@@ -24,8 +24,11 @@ def _norm(value: str | None) -> str:
 
 
 def _recruit_row(row: dict[str, Any], method: str) -> dict[str, Any]:
+    rating = row.get("rating")
     return {
-        "rating": row.get("rating"),
+        "ratingStatus": "RATED" if rating is not None else "UNRATED",
+        "walkOnStatus": "UNKNOWN",
+        "rating": rating,
         "stars": row.get("stars"),
         "nationalRank": row.get("ranking"),
         "recruitClass": row.get("year"),
@@ -116,6 +119,8 @@ def publish(current_season: int = 2026, team: str = "Michigan") -> dict[str, Any
             methods[method] = methods.get(method, 0) + 1
         else:
             base.update({
+                "ratingStatus": "UNRATED",
+                "walkOnStatus": "UNKNOWN",
                 "rating": None,
                 "stars": None,
                 "nationalRank": None,
@@ -146,6 +151,7 @@ def publish(current_season: int = 2026, team: str = "Michigan") -> dict[str, Any
     print(f"  players: {result['players']} | matched: {matched} | unrated: {result['unrated']} | coverage: {result['coverage']:.1%}")
     for key, value in sorted(methods.items()):
         print(f"  {key}: {value}")
+    print("  unrated players remain UNRATED; walk-on status is UNKNOWN unless separately verified")
     print(f"  output: {result['output']}")
     return result
 
