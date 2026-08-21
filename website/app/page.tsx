@@ -79,7 +79,7 @@ export default function Home(){
       <section className="mock-section news-section">
         <header><h2>LATEST NEWS</h2><Link href="/articles">VIEW ALL <b>›</b></Link></header>
         <div className="mock-news-list">
-          <Link href="/articles/what-to-expect-michigan-offense-2026"><div className="blank-news-image"/><div><small>OFFENSE</small><h3>What to Expect From Michigan’s Offense in 2026</h3><span>Season preview · 9 min read</span></div></Link>
+          <Link href="/articles/what-to-expect-michigan-offense-2026"><div className="news-image"><img src="/images/home/bryce-underwood.png" alt="Bryce Underwood"/></div><div><small>OFFENSE</small><h3>What to Expect From Michigan’s Offense in 2026</h3><span>Season preview · 9 min read</span></div></Link>
           <Link href="/articles"><div className="blank-news-image"/><div><small>DEFENSE</small><h3>What to Expect From Michigan’s Defense in 2026</h3><span>Coming soon</span></div></Link>
           <Link href="/articles"><div className="blank-news-image"/><div><small>BIG PICTURE</small><h3>Can Michigan’s New Staff Turn the Wolverines Into a Playoff Team?</h3><span>Coming soon</span></div></Link>
         </div>
