@@ -10,7 +10,6 @@ const desktopLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/an
 const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 const moreLinks=[
   {href:"/articles",label:"News & Analysis",meta:"Stories, previews and notebooks"},
-  {href:"/history",label:"Michigan History",meta:"Past seasons, teams and results"},
   {href:"/polls",label:"Fan Polls",meta:"Vote and see where fans stand"},
   {href:"/metrics",label:"Metrics",meta:"Definitions for site analytics"},
   {href:"/methodology",label:"Methodology",meta:"How ratings and grades are built"},
