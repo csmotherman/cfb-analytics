@@ -145,7 +145,7 @@ export default async function GameHub({params}:Props){
       <section className="market-preview-card compact-market-card">
         <div>
           <small>MARKET PROJECTION</small>
-          {market?<><strong>{marketLeader?.toUpperCase()} {formatMichiganSpread(market.teamSpread)}</strong><span>{market.sportsbook}</span></>:<strong>NOT YET PUBLISHED</strong>}
+          {market?<><strong>{formatMichiganSpread(market.teamSpread)}</strong><span>{market.sportsbook}</span></>:<strong>NOT YET PUBLISHED</strong>}
         </div>
         <div>
           <small>SPREAD-IMPLIED EDGE</small>
