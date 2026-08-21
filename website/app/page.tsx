@@ -5,15 +5,25 @@ import {teamLogoUrl} from "../lib/team-assets";
 
 const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.grade??"—";
 
+const watchImage=(firstName:string,lastName:string)=>{
+  const key=`${firstName} ${lastName}`;
+  const images:Record<string,string>={
+    "Bryce Underwood":"/images/home/bryce-underwood-watch.svg",
+    "John Henry Daley":"/images/home/john-henry-daley-watch.svg",
+    "Jordan Marshall":"/images/home/jordan-marshall-watch.svg",
+  };
+  return images[key]??"/images/home/player-watch-placeholder.svg";
+};
+
 export default function Home(){
   const {next,schedule,squad,outlook}=homeData();
   const opponent=next?opponentOf(next):null;
   const market=next?marketLineFor(next.id):null;
   const cfpChance=outlook?`${Math.round(outlook.cfp.noVigImpliedProbability*100)}%`:"—";
   const players=[
-    squad.find(p=>p.id==="5141741"),
-    squad.find(p=>p.id==="5079574"),
-    squad.find(p=>p.id==="5159046"),
+    squad.find(p=>p.firstName==="Bryce"&&p.lastName==="Underwood"),
+    squad.find(p=>p.firstName==="John Henry"&&p.lastName==="Daley"),
+    squad.find(p=>p.firstName==="Jordan"&&p.lastName==="Marshall"),
   ].filter(Boolean) as ReturnType<typeof homeData>["squad"];
 
   return <div className="mock-home">
@@ -49,7 +59,7 @@ export default function Home(){
         <header><h2>PLAYERS TO WATCH</h2><Link href="/team">VIEW ALL <b>›</b></Link></header>
         <div className="player-watch-scroll">
           {players.map(player=><Link className="watch-card" href={`/players/${player.id}`} key={player.id}>
-            <div className="blank-player-image"><span>{player.jersey??"M"}</span></div>
+            <div className="blank-player-image"><img src={watchImage(player.firstName,player.lastName)} alt={`${player.firstName} ${player.lastName}`}/><span>{player.jersey??"M"}</span></div>
             <div className="watch-copy"><small>#{player.jersey??"—"}</small><h3>{player.firstName}<br/>{player.lastName}</h3><p>{player.position??"ATH"} · {player.year===1?"Freshman":player.year===2?"Sophomore":player.year===3?"Junior":player.year===4?"Senior":"Michigan"}</p><div><b>{grade(player)}</b><span>PLAYER GRADE</span></div></div>
           </Link>)}
         </div>
