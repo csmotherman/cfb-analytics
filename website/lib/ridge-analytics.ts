@@ -62,6 +62,8 @@ export type FanSeason = {
   national_yardsPerSuccessfulPlayAllowed_rank:number;
 };
 
+export type FanTier = "elite"|"strong"|"average"|"concern";
+
 export function ridgeOverview(season:number):RidgeOverview|null{
   return readJson<RidgeOverview>("data","published",String(season),"analytics","ridge-overview.json");
 }
@@ -81,11 +83,52 @@ export function rankDisplay(rank:number,fieldSize:number){return `#${rank} of ${
 export function pct(value:number){return `${(value*100).toFixed(1)}%`;}
 export function perGame(total:number,games:number){return games?total/games:0;}
 
+export function fanTier(rank:number,fieldSize:number):FanTier{
+  const pctRank=rank/Math.max(1,fieldSize);
+  if(rank<=10 || pctRank<=.08)return "elite";
+  if(rank<=30 || pctRank<=.25)return "strong";
+  if(pctRank<=.58)return "average";
+  return "concern";
+}
+
+export function fanTierLabel(rank:number,fieldSize:number){
+  const tier=fanTier(rank,fieldSize);
+  if(tier==="elite")return rank<=5?"ELITE · TOP 5":"ELITE · TOP 10";
+  if(tier==="strong")return rank<=25?"TOP 25":"ABOVE AVERAGE";
+  if(tier==="average")return "AROUND AVERAGE";
+  return "BELOW AVERAGE";
+}
+
+export function fanMetricName(side:"Offense"|"Defense",metric:keyof RidgeSide["metrics"]){
+  const labels={
+    Offense:{ppd:"Making Drives Count",ypd:"Moving the Ball",success:"Staying Ahead of the Chains",scoring:"Finishing Drives"},
+    Defense:{ppd:"Keeping Teams Off the Board",ypd:"Limiting Long Drives",success:"Knocking Offenses Off Schedule",scoring:"Ending Drives Empty"},
+  } as const;
+  return labels[side][metric];
+}
+
+export function fanMetricExplanation(side:"Offense"|"Defense",metric:keyof RidgeSide["metrics"]){
+  const copy={
+    Offense:{
+      ppd:"Michigan turns possessions into points efficiently, with opponent strength already accounted for.",
+      ypd:"Michigan consistently moves the field and creates better scoring position over the course of a drive.",
+      success:"Michigan wins enough plays to stay out of bad down-and-distance situations and keep the playbook open.",
+      scoring:"Michigan finishes a high share of possessions with points instead of coming away empty.",
+    },
+    Defense:{
+      ppd:"Michigan makes opponents work for points and limits scoring efficiency after opponent strength is accounted for.",
+      ypd:"Michigan prevents opponents from stacking first downs and sustaining long drives.",
+      success:"Michigan forces offenses behind schedule and into tougher second- and third-down situations.",
+      scoring:"Michigan ends opponent possessions without points at a strong rate.",
+    },
+  } as const;
+  return copy[side][metric];
+}
+
 export function overviewTraits(data:RidgeOverview){
-  const labels={ppd:"Points per drive",ypd:"Yards per drive",success:"Success rate",scoring:"Scoring drive rate"} as const;
-  const entries=(Object.keys(labels) as Array<keyof typeof labels>).flatMap(metric=>[
-    {side:"Offense" as const,metric,label:`${labels[metric]} offense`,...data.offense.metrics[metric],quality:1-(data.offense.metrics[metric].rank-1)/Math.max(1,data.offense.metrics[metric].field_size-1)},
-    {side:"Defense" as const,metric,label:`${labels[metric]} defense`,...data.defense.metrics[metric],quality:1-(data.defense.metrics[metric].rank-1)/Math.max(1,data.defense.metrics[metric].field_size-1)},
+  const entries=(Object.keys(data.offense.metrics) as Array<keyof RidgeSide["metrics"]>).flatMap(metric=>[
+    {side:"Offense" as const,metric,label:fanMetricName("Offense",metric),explanation:fanMetricExplanation("Offense",metric),...data.offense.metrics[metric],quality:1-(data.offense.metrics[metric].rank-1)/Math.max(1,data.offense.metrics[metric].field_size-1)},
+    {side:"Defense" as const,metric,label:fanMetricName("Defense",metric),explanation:fanMetricExplanation("Defense",metric),...data.defense.metrics[metric],quality:1-(data.defense.metrics[metric].rank-1)/Math.max(1,data.defense.metrics[metric].field_size-1)},
   ]);
   const sorted=[...entries].sort((a,b)=>b.quality-a.quality);
   return {strengths:sorted.slice(0,3),concerns:[...sorted].reverse().slice(0,3)};
