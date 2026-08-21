@@ -27,6 +27,7 @@ export default function NewAdditions(){
     previousTeam:player.previousTeam??null,
     previousTeamId:player.rosterStatus==="TRANSFER"?previousTeamId(player.id,player.previousTeam):null,
     recruitRating:player.compositeRating??null,
+    recruitingRatingStatus:player.recruitingRatingStatus??(player.compositeRating!=null?"RATED":"UNRATED"),
     stars:player.stars??null,
     nationalRecruitRank:player.nationalRecruitRank??null,
   }));
