@@ -1,5 +1,35 @@
 import Link from "next/link";
-import { gameDate,gameTime,homeData,logoUrl,opponentOf } from "../../lib/home-data";
-import { formatMichiganSpread, marketLines } from "../../lib/market-lines";
+import {gameDate,gameTime,homeData,logoUrl,opponentOf} from "../../lib/home-data";
+import {formatMichiganSpread,marketLines} from "../../lib/market-lines";
 
-export default function Schedule(){const{schedule,next}=homeData();const lines=new Map(marketLines().map(line=>[line.gameId,line]));const home=schedule.filter(g=>g.homeId===130).length;const road=schedule.length-home;return <div className="editorial-page"><section className="page-banner"><div className="wrap page-banner-inner"><div><span className="kicker">2026 SEASON</span><h1>THE ROAD</h1><p>One clean view of every Saturday ahead. Market information appears only where a sourced preseason line exists.</p></div><div className="banner-mark">{schedule.length}</div></div><div className="wrap summary-rail"><span><small>GAMES</small><b>{schedule.length}</b></span><span><small>HOME</small><b>{home}</b></span><span><small>AWAY</small><b>{road}</b></span><span><small>MARKETS AVAILABLE</small><b>{lines.size}</b></span><span><small>OPENER</small><b>{next?gameDate(next):"TBD"}</b></span></div></section><div className="wrap editorial-stack"><section><header className="section-header"><div><span className="kicker navy">FULL SCHEDULE</span><h2>Week by week</h2></div></header><div className="schedule-list market-schedule">{schedule.map(game=>{const opponent=opponentOf(game);const market=lines.get(String(game.id));return <article id={`game-${game.id}`} key={game.id}><span className="week-box">W{game.week}</span><img src={logoUrl(opponent.id)} alt=""/><div><small>{opponent.site}{game.conferenceGame?" · BIG TEN":""}</small><h3>{opponent.name}</h3></div><p>{gameDate(game)}<br/><b>{gameTime(game)}</b></p>{market?<div className="schedule-market"><span>{formatMichiganSpread(market.teamSpread)}</span><b>{Math.round(market.marketWinChance*100)}%</b><small>MARKET-CALIBRATED WIN CHANCE</small></div>:<div/>}<Link href={`/games/${game.id}`}>→</Link></article>})}</div><p className="market-note">Market spreads are sourced preseason prices. Win chance is calibrated from historical closing spreads and straight-up results; it is not a sportsbook probability or betting recommendation.</p></section></div></div>}
+export default function Schedule(){
+  const {schedule,next}=homeData();
+  const lines=new Map(marketLines().map(line=>[line.gameId,line]));
+  const home=schedule.filter(game=>game.homeId===130).length;
+  const road=schedule.length-home;
+  const nextOpponent=next?opponentOf(next):null;
+  const nextMarket=next?lines.get(String(next.id)):null;
+
+  return <div className="mock-home schedule-home"><div className="mock-shell">
+    <section className="mock-section schedule-intro">
+      <header><div><span className="mock-eyebrow maize">2026 MICHIGAN</span><h1>SCHEDULE</h1><p>Every matchup in one clean view. Home, road, date, kickoff and market context when available.</p></div><div className="schedule-kpis"><span><small>GAMES</small><b>{schedule.length}</b></span><span><small>HOME</small><b>{home}</b></span><span><small>AWAY</small><b>{road}</b></span></div></header>
+    </section>
+
+    {next&&nextOpponent&&<section className="mock-section schedule-next-card">
+      <div className="schedule-next-copy"><span className="mock-eyebrow maize">NEXT GAME · WEEK {next.week}</span><small>{nextOpponent.site}{next.conferenceGame?" · BIG TEN":""}</small><h2>MICHIGAN <span>{nextOpponent.site==="AWAY"?"@":"VS"}</span> {nextOpponent.name.toUpperCase()}</h2><div className="schedule-next-meta"><span>{gameDate(next)}</span><span>{gameTime(next)}</span><span>{next.venue}</span></div>{nextMarket&&<div className="schedule-next-market"><strong>{formatMichiganSpread(nextMarket.teamSpread)}</strong><span>{Math.round(nextMarket.marketWinChance*100)}% MARKET WIN CHANCE</span></div>}<Link className="mock-outline-button" href={`/games/${next.id}`}>GAME PREVIEW <b>›</b></Link></div>
+      <div className="schedule-next-logo"><img src={logoUrl(nextOpponent.id)} alt={`${nextOpponent.name} logo`}/></div>
+    </section>}
+
+    <section className="mock-section schedule-list-section">
+      <header><h2>FULL SCHEDULE</h2><span>WEEK BY WEEK</span></header>
+      <div className="schedule-card-list">{schedule.map(game=>{const opponent=opponentOf(game);const market=lines.get(String(game.id));const isNext=next?.id===game.id;return <Link className={`schedule-row-card${isNext?" next":""}`} href={`/games/${game.id}`} key={game.id}>
+        <div className="schedule-row-week"><small>WEEK</small><b>{game.week}</b></div>
+        <div className="schedule-row-opponent"><img src={logoUrl(opponent.id)} alt=""/><div><small>{opponent.site}{game.conferenceGame?" · BIG TEN":""}</small><strong>{opponent.name}</strong></div></div>
+        <div className="schedule-row-date"><span>{gameDate(game)}</span><small>{gameTime(game)}</small></div>
+        <div className="schedule-row-market">{market?<><strong>{formatMichiganSpread(market.teamSpread)}</strong><small>{Math.round(market.marketWinChance*100)}% WIN</small></>:<><strong>—</strong><small>NO MARKET</small></>}</div>
+        <b className="schedule-row-arrow">›</b>
+      </Link>})}</div>
+      <p className="schedule-market-note">Market lines are sourced preseason prices. Win chance is model-calibrated context, not a betting recommendation.</p>
+    </section>
+  </div></div>;
+}
