@@ -19,7 +19,7 @@ export default function TeamDepthBoard({offense,defense,special}:Props){
       <button type="button" className={tab==="special"?"active":""} onClick={()=>setTab("special")}>SPECIAL TEAMS</button>
     </div>
     <div className="team-depth-columns"><span>POSITION</span><span>PROJECTED FIRST</span><span>NEXT UP</span></div>
-    <div className="team-depth-rows">{rows.map(row=><article key={row.position} className={row.battle?"battle":""}>
+    <div className="team-depth-rows">{rows.map((row,index)=><article key={`${tab}-${row.position}-${index}`} className={row.battle?"battle":""}>
       <div className="team-depth-position"><strong>{row.position}</strong>{row.battle&&<small>BATTLE</small>}</div>
       <div className="team-depth-players">{row.starter.map(player=><Player key={player.id} player={player}/>)}</div>
       <div className="team-depth-players next">{row.next.map(player=><Player key={player.id} player={player}/>)}</div>
