@@ -36,7 +36,9 @@ export function readJson<T>(...segments: string[]): T | null {
 
 export function readConfigJson<T>(filename: string): T | null {
   if (path.basename(filename) !== filename || !filename.endsWith(".json")) throw new Error(`Invalid config filename: ${filename}`);
-  const file = path.join(process.cwd(), "..", "src", "cfb_analytics", "config", filename);
+  const bundled=path.join(process.cwd(),".published-data","_config",filename);
+  const repository=path.join(process.cwd(),"..","src","cfb_analytics","config",filename);
+  const file=fs.existsSync(bundled)?bundled:repository;
   if (!fs.existsSync(file)) return null;
   try {
     return JSON.parse(fs.readFileSync(file, "utf8")) as T;
