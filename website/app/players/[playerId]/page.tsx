@@ -6,11 +6,13 @@ import {classLabel,formatHeight} from "../../../lib/michigan/format";
 import {michiganStories} from "../../../lib/michigan/stories";
 import {readJson} from "../../../lib/server-data";
 import {teamLogoUrl} from "../../../lib/team-assets";
+import PlayerGameLog,{type PlayerGameLogYear} from "../../../components/PlayerGameLog";
 
 type Props={params:Promise<{playerId:string}>;searchParams:Promise<{tab?:string}>};
 type CareerStat={category:string;stat:string;value:string|number};
 type CareerSeason={season:number;team:string;teamId?:number|null;position?:string|null;positionFamily?:string|null;side?:string|null;displayStats:CareerStat[];hasBoxScoreStats:boolean};
 type CareerRow={playerId:string;currentTeam:string;currentPosition?:string|null;seasons:CareerSeason[]};
+type GameLogRow={playerId:string;currentTeam:string;years:PlayerGameLogYear[]};
 const statValue=(value:string|number)=>typeof value==="number"?(Number.isInteger(value)?value.toLocaleString():value.toFixed(1)):value;
 const percentileGrade=(value:number|null|undefined)=>value==null?"—":value>=97?"S+":value>=90?"S":value>=80?"A":value>=65?"B":value>=45?"C":value>=25?"D":"F";
 const statKey=(stat:CareerStat)=>`${stat.category}:${stat.stat}`;
@@ -23,7 +25,9 @@ export default async function PlayerPage({params,searchParams}:Props){
   const tab=(await searchParams).tab==="stats"?"stats":"overview";
   const freshman=p.rosterStatus==="FRESHMAN";
   const careers=readJson<CareerRow[]>("data","published","2026","michigan","player-career-stats.json")??[];
+  const gameLogs=readJson<GameLogRow[]>("data","published","2026","michigan","player-career-game-logs.json")??[];
   const career=careers.find(row=>row.playerId===p.id);const careerSeasons=(career?.seasons??[]).filter(season=>season.hasBoxScoreStats);
+  const playerGameYears=gameLogs.find(row=>row.playerId===p.id)?.years??[];
   const hasStats=careerSeasons.length>0;
   const statColumns=Array.from(new Map(careerSeasons.flatMap(season=>season.displayStats).map(stat=>[statKey(stat),stat])).values());
   const focusValue=freshman?(p.prospectGrade??(p.stars?`${p.stars}★`:"NR")):(p.performanceGrade??p.prospectGrade??"NR");
@@ -49,7 +53,7 @@ export default async function PlayerPage({params,searchParams}:Props){
       {stories.length>0&&<section className="player-focus-related"><header><h2>RELATED COVERAGE</h2></header><div className="player-focus-related-list">{stories.map(story=><Link href={`/articles/${story.slug}`} key={story.slug}><small>{story.eyebrow}</small><strong>{story.title}</strong><p>{story.deck}</p></Link>)}</div></section>}
     </div>:<div className="player-focus-grid">
       <section className="player-focus-card player-focus-stats"><header><div><span className="player-focus-kicker">SEASON STATS</span><h2>Full college career.</h2></div><small>TEAM + SEASON VERIFIED</small></header><SeasonTable/></section>
-      <section className="player-focus-card player-focus-stats"><header><div><span className="player-focus-kicker">GAME LOG</span><h2>Game-by-game production.</h2></div></header><div className="player-focus-empty"><b>Historical player game logs are next.</b><p>Season totals now follow each player across schools. The next data pass will do the same for game-by-game production so transfers retain their complete career game history.</p></div></section>
+      <section className="player-focus-card player-focus-stats"><header><div><span className="player-focus-kicker">GAME LOG</span><h2>Game-by-game production.</h2></div><small>{playerGameYears.length?`${playerGameYears.length} SEASON${playerGameYears.length===1?"":"S"}`:"NO GAME LOGS"}</small></header><PlayerGameLog years={playerGameYears}/></section>
       {p.performanceGrade&&<section className="player-focus-card player-focus-stats"><header><div><span className="player-focus-kicker">GRADE BREAKDOWN</span><h2>How his 2025 production compares nationally.</h2></div><small>{p.productionCohortSize?`${p.productionCohortSize.toLocaleString()} PLAYER COHORT`:"POSITION COHORT"}</small></header><div className="player-grade-grid"><article><small>OVERALL</small><strong>{p.performanceGrade}</strong><span>{p.nationalPositionPercentile?.toFixed(1)??"—"}th percentile</span></article><article><small>PRODUCTION</small><strong>{percentileGrade(p.productionPercentile)}</strong><span>{p.productionPercentile?.toFixed(1)??"—"}th percentile</span></article><article><small>USAGE / ROLE</small><strong>{percentileGrade(p.usagePercentile)}</strong><span>{p.usagePercentile?.toFixed(1)??"—"}th percentile</span></article><article><small>POSITION STANDING</small><strong>{percentileGrade(p.nationalPositionPercentile)}</strong><span>{p.nationalPositionPercentile?.toFixed(1)??"—"}th percentile</span></article></div><p className="player-grade-note">{p.performanceGradeBasis}</p></section>}
     </div>}
 
