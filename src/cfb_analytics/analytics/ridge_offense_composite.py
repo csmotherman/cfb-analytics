@@ -12,7 +12,6 @@ audited without changing the underlying adjusted metrics.
 from __future__ import annotations
 import argparse,json,math
 from pathlib import Path
-from typing import Any
 import numpy as np
 from cfb_analytics.analytics.opponent_adjusted_offense import _eligible_rows,offensive_totals,metrics
 
@@ -22,11 +21,11 @@ def load(path:Path):
  with path.open(encoding="utf-8") as h:return json.load(h)
 
 def _obs(row,metric):
- t=offensive_totals(row);vals=metrics(t)
- if metric=="ppd":return vals[0],float(t.resolved_possessions)
- if metric=="ypd":return vals[1],float(t.yardage_possessions)
- if metric=="success":return vals[2],float(t.success_plays)
- if metric=="scoring":return vals[3],float(t.validated_possessions)
+ t=offensive_totals(row);ppd,sr,score,ypd=metrics(t)
+ if metric=="ppd":return ppd,float(t.resolved_possessions)
+ if metric=="ypd":return ypd,float(t.yardage_possessions)
+ if metric=="success":return sr,float(t.success_plays)
+ if metric=="scoring":return score,float(t.possessions)
  raise ValueError(metric)
 
 def _prepare(rows,metric):
