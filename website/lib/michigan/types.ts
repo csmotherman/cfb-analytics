@@ -44,6 +44,6 @@ export type RecruitingClass = {
 export type MichiganScheduleGame = {
   id: number; season: number; week: number; startDate: string; startTimeTBD: boolean;
   completed: boolean; neutralSite: boolean; conferenceGame: boolean; venue?: string | null;
-  homeId: number; homeTeam: string; homePoints?: number | null;
-  awayId: number; awayTeam: string; awayPoints?: number | null; valueType: ValueType;
+  homeId: number; homeTeam: string; homePoints?: number | null; homeConference?: string | null;
+  awayId: number; awayTeam: string; awayPoints?: number | null; awayConference?: string | null; valueType: ValueType;
 };
