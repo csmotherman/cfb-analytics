@@ -5,7 +5,7 @@ import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {teamLogoUrl} from "../lib/team-assets";
 
-const desktopLinks=[["/team","Team"],["/schedule","Schedule"],["/recruiting","Recruiting"],["/analytics","Analytics"],["/articles","News"]] as const;
+const desktopLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 
 const active=(path:string,href:string)=>href==="/"?path==="/":path.startsWith(href);
@@ -27,7 +27,7 @@ export function SiteNav(){
         <Image src="/brand/michigan-football-focus.png" alt="Michigan Football Focus" width={240} height={72} priority className="nav-brand-logo"/>
       </Link>
       <nav className="desktop-links" aria-label="Primary navigation">{desktopLinks.map(([href,label])=><Link key={href} href={href} className={active(path,href)?"active":""}>{label}</Link>)}</nav>
-      <Link href="/more" className="mock-menu" aria-label="Open menu">
+      <Link href="/more" className={`mock-menu${path.startsWith("/more")?" active":""}`} aria-label="More">
         <svg viewBox="0 0 28 28" aria-hidden="true">
           <path d="M5 8h18"/>
           <path className="menu-accent" d="M5 14h18"/>
