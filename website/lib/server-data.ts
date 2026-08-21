@@ -4,6 +4,14 @@ import path from "node:path";
 type CachedJson = { mtimeMs: number; size: number; value: unknown };
 const jsonCache = new Map<string, CachedJson>();
 
+function publishedRoot(){
+  const bundled=path.join(process.cwd(),".published-data");
+  const repository=path.join(process.cwd(),"..","data","published");
+  // Production builds create .published-data before next build. Local dev keeps
+  // reading the canonical repo data unless the bundled directory is present.
+  return fs.existsSync(bundled)?bundled:repository;
+}
+
 export function readJson<T>(...segments: string[]): T | null {
   if (segments[0] !== "data" || segments[1] !== "published") {
     throw new Error(`Published-data path must begin with data/published: ${segments.join("/")}`);
@@ -11,7 +19,7 @@ export function readJson<T>(...segments: string[]): T | null {
   if (segments.some((segment) => path.isAbsolute(segment) || segment === ".." || segment.includes("/../"))) {
     throw new Error(`Published-data path escapes the repository: ${segments.join("/")}`);
   }
-  const file = path.join(process.cwd(), "..", "data", "published", ...segments.slice(2));
+  const file = path.join(publishedRoot(), ...segments.slice(2));
   if (!fs.existsSync(file)) return null;
   try {
     const stats = fs.statSync(file);
