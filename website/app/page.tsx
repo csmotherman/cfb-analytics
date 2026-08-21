@@ -68,9 +68,9 @@ export default function Home(){
       <section className="mock-section news-section">
         <header><h2>LATEST NEWS</h2><Link href="/articles">VIEW ALL <b>›</b></Link></header>
         <div className="mock-news-list">
-          <Link href="/articles/new-age-era"><div className="blank-news-image"/><div><small>ANALYSIS</small><h3>A New Age: Michigan enters 2026 with a new staff and a new ceiling</h3><span>Season preview</span></div></Link>
-          <Link href="/articles/2026-coaching-staff"><div className="blank-news-image"/><div><small>NOTEBOOK</small><h3>Inside Michigan’s new coaching staff</h3><span>2026 preview</span></div></Link>
-          <Link href="/recruiting"><div className="blank-news-image"/><div><small>RECRUITING</small><h3>Track Michigan’s roster and recruiting movement</h3><span>Recruiting hub</span></div></Link>
+          <Link href="/articles"><div className="blank-news-image"/><div><small>NEWS</small><h3>Michigan Football Article Coming Soon</h3><span>Placeholder story</span></div></Link>
+          <Link href="/articles"><div className="blank-news-image"/><div><small>ANALYSIS</small><h3>Michigan Football Analysis Coming Soon</h3><span>Placeholder story</span></div></Link>
+          <Link href="/articles"><div className="blank-news-image"/><div><small>NOTEBOOK</small><h3>Michigan Football Notebook Coming Soon</h3><span>Placeholder story</span></div></Link>
         </div>
       </section>
     </div>
