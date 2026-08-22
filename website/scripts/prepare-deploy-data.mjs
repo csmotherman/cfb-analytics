@@ -13,6 +13,16 @@ const copyFile=(source,target)=>{
   return true;
 };
 
+const projectArray=(source,target,keys)=>{
+  if(!fs.existsSync(source))return false;
+  const parsed=JSON.parse(fs.readFileSync(source,"utf8"));
+  if(!Array.isArray(parsed))return false;
+  const rows=parsed.map(row=>Object.fromEntries(keys.filter(key=>Object.hasOwn(row,key)).map(key=>[key,row[key]])));
+  fs.mkdirSync(path.dirname(target),{recursive:true});
+  fs.writeFileSync(target,JSON.stringify(rows));
+  return true;
+};
+
 if(!fs.existsSync(sourceRoot)){
   throw new Error(`Published data directory not found: ${sourceRoot}`);
 }
@@ -23,23 +33,35 @@ fs.mkdirSync(targetRoot,{recursive:true});
 let files=0;
 
 // /analytics remains server-rendered because ?year= selects the historical
-// season at request time. Ship only the four artifacts that page actually reads.
+// season at request time. Keep full Michigan season rows and Ridge overviews,
+// but project the large national/game datasets down to only fields this page uses.
+const nationalSnapshotKeys=[
+  "team","classification","yardsPerGame","yardsAllowedPerGame","yardsPerPlay","yardsAllowedPerPlay",
+  "offensivePlays","defensivePlays","possessionPoints","possessionPointsAllowed"
+];
+const recordKeys=["win","loss","seasonType","season_type"];
+
 for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
   if(!entry.isDirectory()||!/^(201\d|202[0-5])$/.test(entry.name))continue;
   const season=entry.name;
   const sourceSeason=path.join(sourceRoot,season);
   const targetSeason=path.join(targetRoot,season);
 
-  for(const name of ["season.json","games.json"]){
-    if(copyFile(
-      path.join(sourceSeason,"teams","michigan",name),
-      path.join(targetSeason,"teams","michigan",name)
-    ))files+=1;
-  }
-
   if(copyFile(
+    path.join(sourceSeason,"teams","michigan","season.json"),
+    path.join(targetSeason,"teams","michigan","season.json")
+  ))files+=1;
+
+  if(projectArray(
+    path.join(sourceSeason,"teams","michigan","games.json"),
+    path.join(targetSeason,"teams","michigan","games.json"),
+    recordKeys
+  ))files+=1;
+
+  if(projectArray(
     path.join(sourceSeason,"national","teams.json"),
-    path.join(targetSeason,"national","teams.json")
+    path.join(targetSeason,"national","teams.json"),
+    nationalSnapshotKeys
   ))files+=1;
 
   if(copyFile(
@@ -88,6 +110,6 @@ const bytes=(root)=>{
 
 const sizeMb=bytes(targetRoot)/1024/1024;
 console.log(`Prepared ${files} route-specific runtime JSON files (${sizeMb.toFixed(1)} MB) in ${targetRoot}`);
-if(sizeMb>20){
+if(sizeMb>10){
   throw new Error(`Runtime data bundle is unexpectedly large (${sizeMb.toFixed(1)} MB). Refusing to build.`);
 }
