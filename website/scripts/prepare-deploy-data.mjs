@@ -22,11 +22,8 @@ fs.mkdirSync(targetRoot,{recursive:true});
 
 let files=0;
 
-// Keep the Vercel runtime bundle deliberately small. Finite Michigan pages
-// (games, players, articles and position rooms) are prerendered at build time
-// and can read directly from the repository checkout while Next builds them.
-// The only route that still needs published JSON at request time is /analytics,
-// whose year query parameter selects among historical seasons.
+// /analytics remains server-rendered because ?year= selects the historical
+// season at request time. Ship only the four artifacts that page actually reads.
 for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
   if(!entry.isDirectory()||!/^(201\d|202[0-5])$/.test(entry.name))continue;
   const season=entry.name;
@@ -51,6 +48,34 @@ for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
   ))files+=1;
 }
 
+// Player profiles remain request-rendered because ?tab=stats changes the server
+// output. Keep only the Michigan roster/profile files required by currentRoster()
+// and the two verified career-stat artifacts used by the profile page.
+const currentMichiganFiles=[
+  "roster.json",
+  "player-grades.json",
+  "player-recruiting-ratings.json",
+  "recruiting.json",
+  "player-production-grades.json",
+  "player-roster-status.json",
+  "player-images.json",
+  "player-profile-insights.json",
+  "player-importance.json",
+  "player-career-stats.json",
+  "player-career-game-logs.json"
+];
+for(const name of currentMichiganFiles){
+  if(copyFile(
+    path.join(sourceRoot,"2026","michigan",name),
+    path.join(targetRoot,"2026","michigan",name)
+  ))files+=1;
+}
+
+if(copyFile(
+  path.join(sourceRoot,"directory_history","players","current-by-team","michigan.json"),
+  path.join(targetRoot,"directory_history","players","current-by-team","michigan.json")
+))files+=1;
+
 const bytes=(root)=>{
   let total=0;
   if(!fs.existsSync(root))return total;
@@ -62,7 +87,7 @@ const bytes=(root)=>{
 };
 
 const sizeMb=bytes(targetRoot)/1024/1024;
-console.log(`Prepared ${files} runtime JSON files (${sizeMb.toFixed(1)} MB) in ${targetRoot}`);
+console.log(`Prepared ${files} route-specific runtime JSON files (${sizeMb.toFixed(1)} MB) in ${targetRoot}`);
 if(sizeMb>20){
   throw new Error(`Runtime data bundle is unexpectedly large (${sizeMb.toFixed(1)} MB). Refusing to build.`);
 }
