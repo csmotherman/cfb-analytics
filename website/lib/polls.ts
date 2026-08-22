@@ -1,18 +1,15 @@
-export type MichiganPollSnapshot={
-  apRank:number|null;
-  coachesRank:number|null;
-  modelRank:number|null;
-  modelStatus:string;
-  label:string;
-};
+export type FanPollOption={id:string;label:string;detail?:string};
+export type FanPollDefinition={id:string;category:string;question:string;description:string;options:FanPollOption[]};
 
-// Preseason snapshot. AP and Coaches rankings are public polls; the model stays
-// intentionally unavailable until enough current-season games exist to support
-// a meaningful opponent-adjusted ranking.
-export const michiganPollSnapshot:MichiganPollSnapshot={
-  apRank:16,
-  coachesRank:16,
-  modelRank:null,
-  modelStatus:"Starts Week 4",
-  label:"2026 preseason",
-};
+export const FAN_POLLS:FanPollDefinition[]=[
+  {id:"2026-record",category:"SEASON PREDICTION",question:"What will Michigan's 2026 regular-season record be?",description:"Plant your flag before the season starts.",options:[{id:"12-0",label:"12-0",detail:"Perfect regular season"},{id:"11-1",label:"11-1",detail:"One stumble"},{id:"10-2",label:"10-2",detail:"Playoff conversation"},{id:"9-3",label:"9-3",detail:"Good, not dominant"},{id:"8-4-or-worse",label:"8-4 or worse",detail:"Rough first year"}]},
+  {id:"2026-cfp-finish",category:"POSTSEASON",question:"How far does Michigan go in the College Football Playoff race?",description:"Not just whether they get in — what is the ceiling?",options:[{id:"miss",label:"Miss the CFP"},{id:"early-exit",label:"Early playoff exit"},{id:"semifinal",label:"Reach the semifinal"},{id:"title-game",label:"Reach the title game"},{id:"champion",label:"Win the national title"}]},
+  {id:"2026-big-ten-finish",category:"BIG TEN",question:"Where will Michigan finish in the Big Ten?",description:"Conference expectations under the new staff.",options:[{id:"champion",label:"Big Ten champion"},{id:"runner-up",label:"Reach the title game"},{id:"3-4",label:"3rd–4th"},{id:"5-6",label:"5th–6th"},{id:"7-plus",label:"7th or lower"}]},
+  {id:"wmu-margin",category:"WEEK 1",question:"What happens against Western Michigan?",description:"Pick the final margin, not an exact score.",options:[{id:"wmu-win",label:"Western Michigan wins"},{id:"mich-1-13",label:"Michigan by 1–13"},{id:"mich-14-20",label:"Michigan by 14–20"},{id:"mich-21-27",label:"Michigan by 21–27"},{id:"mich-28-34",label:"Michigan by 28–34"},{id:"mich-35-plus",label:"Michigan by 35+"}]},
+  {id:"underwood-pass-td",category:"PLAYER PREDICTION",question:"How many passing touchdowns will Bryce Underwood throw?",description:"A full sophomore-season prediction.",options:[{id:"under-20",label:"Under 20"},{id:"20-24",label:"20–24"},{id:"25-29",label:"25–29"},{id:"30-34",label:"30–34"},{id:"35-plus",label:"35+"}]},
+  {id:"marshall-rush-yards",category:"PLAYER PREDICTION",question:"How many rushing yards will Jordan Marshall finish with?",description:"Where does Michigan's lead back land by season's end?",options:[{id:"under-900",label:"Under 900"},{id:"900-1099",label:"900–1,099"},{id:"1100-1299",label:"1,100–1,299"},{id:"1300-1499",label:"1,300–1,499"},{id:"1500-plus",label:"1,500+"}]},
+  {id:"best-unit",category:"TEAM IDENTITY",question:"Which Michigan position group will be the team's biggest strength?",description:"Pick the room you trust most entering 2026.",options:[{id:"qb",label:"Quarterback"},{id:"rb",label:"Running backs"},{id:"receivers",label:"WR / TE"},{id:"ol",label:"Offensive line"},{id:"front-seven",label:"Defensive front seven"},{id:"secondary",label:"Secondary"}]},
+  {id:"team-calling-card",category:"TEAM IDENTITY",question:"What will define Michigan most in 2026?",description:"The one thing fans will associate with Team 147 by November.",options:[{id:"run-game",label:"Dominant run game"},{id:"underwood",label:"Underwood's leap"},{id:"explosive-offense",label:"Explosive new offense"},{id:"defense",label:"Elite defense"},{id:"balanced",label:"Complete, balanced team"}]}
+];
+
+export function fanPollById(id:string){return FAN_POLLS.find(poll=>poll.id===id)??null;}
