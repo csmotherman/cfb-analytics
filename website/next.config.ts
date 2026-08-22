@@ -18,12 +18,12 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Attach data only to the functions that read it at request time. This avoids
-  // copying the runtime bundle into unrelated functions/static routes.
+  // Attach data only to the functions that read it at request time. The compact
+  // runtime bundle is ~2 MB, so use simple Turbopack-safe globs rather than
+  // year-range character classes that its glob parser rejects.
   outputFileTracingIncludes: {
     "/analytics": [
-      ".published-data/201?/**/*.json",
-      ".published-data/202[0-5]/**/*.json"
+      ".published-data/**/*.json"
     ],
     "/players/*": [
       ".published-data/2026/michigan/*.json",
