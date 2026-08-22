@@ -4,12 +4,12 @@ const nextConfig: NextConfig = {
   // Keep repository-owned contributor instructions stable during local development.
   agentRules: false,
 
-  // Legacy URLs resolve at the routing layer instead of creating server-rendered
-  // pages/functions. Historical Michigan season URLs now land on the matching
-  // Analytics year because the old History section no longer exists.
+  // Legacy/parked URLs resolve at the routing layer instead of creating
+  // server-rendered pages/functions on Vercel.
   async redirects() {
     return [
       { source: "/stories/:slug", destination: "/articles/:slug", permanent: true },
+      { source: "/polls", destination: "/more", permanent: false },
       { source: "/recruiting/national", destination: "/new-additions", permanent: true },
       { source: "/recruiting/players/:id", destination: "/new-additions", permanent: true },
       { source: "/recruiting/teams/:team", destination: "/new-additions", permanent: true },
@@ -19,8 +19,7 @@ const nextConfig: NextConfig = {
   },
 
   // Attach data only to the functions that read it at request time. The compact
-  // runtime bundle is ~2 MB, so use simple Turbopack-safe globs rather than
-  // year-range character classes that its glob parser rejects.
+  // runtime bundle is ~2 MB, so use simple Turbopack-safe globs.
   outputFileTracingIncludes: {
     "/analytics": [
       ".published-data/**/*.json"

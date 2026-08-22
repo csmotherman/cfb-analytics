@@ -19,7 +19,6 @@ import "../styles/more-page.css";
 import "../styles/more-drawer.css";
 import "../styles/new-additions.css";
 import "../styles/game-preview.css";
-import "../styles/fan-polls.css";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {

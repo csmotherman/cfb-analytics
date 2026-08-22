@@ -1,6 +1,26 @@
+export type MichiganPollSnapshot={
+  apRank:number|null;
+  coachesRank:number|null;
+  modelRank:number|null;
+  modelStatus:string;
+  label:string;
+};
+
+// Preseason snapshot used by the Michigan Pulse ranking card. Keep this
+// separate from the optional fan-voting definitions below.
+export const michiganPollSnapshot:MichiganPollSnapshot={
+  apRank:16,
+  coachesRank:16,
+  modelRank:null,
+  modelStatus:"Starts Week 4",
+  label:"2026 preseason",
+};
+
 export type FanPollOption={id:string;label:string;detail?:string};
 export type FanPollDefinition={id:string;category:string;question:string;description:string;options:FanPollOption[]};
 
+// Parked for a future community-voting launch. The public poll route is hidden
+// until persistent voting storage is intentionally enabled.
 export const FAN_POLLS:FanPollDefinition[]=[
   {id:"2026-record",category:"SEASON PREDICTION",question:"What will Michigan's 2026 regular-season record be?",description:"Plant your flag before the season starts.",options:[{id:"12-0",label:"12-0",detail:"Perfect regular season"},{id:"11-1",label:"11-1",detail:"One stumble"},{id:"10-2",label:"10-2",detail:"Playoff conversation"},{id:"9-3",label:"9-3",detail:"Good, not dominant"},{id:"8-4-or-worse",label:"8-4 or worse",detail:"Rough first year"}]},
   {id:"2026-cfp-finish",category:"POSTSEASON",question:"How far does Michigan go in the College Football Playoff race?",description:"Not just whether they get in — what is the ceiling?",options:[{id:"miss",label:"Miss the CFP"},{id:"early-exit",label:"Early playoff exit"},{id:"semifinal",label:"Reach the semifinal"},{id:"title-game",label:"Reach the title game"},{id:"champion",label:"Win the national title"}]},
