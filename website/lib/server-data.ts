@@ -6,12 +6,12 @@ const jsonCache = new Map<string, CachedJson>();
 
 function publishedFile(segments:string[]){
   const relative=segments.slice(2);
-  const bundled=path.join(process.cwd(),".published-data",...relative);
   const repository=path.join(process.cwd(),"..","data","published",...relative);
-  // Production runtime reads the compact bundle. During builds/local development,
-  // any file intentionally omitted from that bundle can still be read directly
-  // from the repository checkout.
-  return fs.existsSync(bundled)?bundled:repository;
+  const bundled=path.join(process.cwd(),".published-data",...relative);
+  // During local/Vercel builds the repository checkout exists, so always use the
+  // canonical full-detail source. Serverless runtime packages do not include the
+  // repository data tree; there we fall back to the compact route-specific bundle.
+  return fs.existsSync(repository)?repository:bundled;
 }
 
 export function readJson<T>(...segments: string[]): T | null {
@@ -38,9 +38,9 @@ export function readJson<T>(...segments: string[]): T | null {
 
 export function readConfigJson<T>(filename: string): T | null {
   if (path.basename(filename) !== filename || !filename.endsWith(".json")) throw new Error(`Invalid config filename: ${filename}`);
-  const bundled=path.join(process.cwd(),".published-data","_config",filename);
   const repository=path.join(process.cwd(),"..","src","cfb_analytics","config",filename);
-  const file=fs.existsSync(bundled)?bundled:repository;
+  const bundled=path.join(process.cwd(),".published-data","_config",filename);
+  const file=fs.existsSync(repository)?repository:bundled;
   if (!fs.existsSync(file)) return null;
   try {
     return JSON.parse(fs.readFileSync(file, "utf8")) as T;
