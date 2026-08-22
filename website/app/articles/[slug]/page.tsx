@@ -1,9 +1,12 @@
 import type {Metadata} from "next";
 import Link from "next/link";
 import {notFound} from "next/navigation";
-import {storyBySlug} from "../../../lib/michigan/stories";
+import {michiganStories,storyBySlug} from "../../../lib/michigan/stories";
 
 type Props={params:Promise<{slug:string}>};
+
+export const dynamicParams=false;
+export function generateStaticParams(){return michiganStories().map(story=>({slug:story.slug}));}
 
 export async function generateMetadata({params}:Props):Promise<Metadata>{
   const story=storyBySlug((await params).slug);
