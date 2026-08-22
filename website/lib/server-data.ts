@@ -4,11 +4,13 @@ import path from "node:path";
 type CachedJson = { mtimeMs: number; size: number; value: unknown };
 const jsonCache = new Map<string, CachedJson>();
 
-function publishedRoot(){
-  const bundled=path.join(process.cwd(),".published-data");
-  const repository=path.join(process.cwd(),"..","data","published");
-  // Production builds create .published-data before next build. Local dev keeps
-  // reading the canonical repo data unless the bundled directory is present.
+function publishedFile(segments:string[]){
+  const relative=segments.slice(2);
+  const bundled=path.join(process.cwd(),".published-data",...relative);
+  const repository=path.join(process.cwd(),"..","data","published",...relative);
+  // Production runtime reads the compact bundle. During builds/local development,
+  // any file intentionally omitted from that bundle can still be read directly
+  // from the repository checkout.
   return fs.existsSync(bundled)?bundled:repository;
 }
 
@@ -19,7 +21,7 @@ export function readJson<T>(...segments: string[]): T | null {
   if (segments.some((segment) => path.isAbsolute(segment) || segment === ".." || segment.includes("/../"))) {
     throw new Error(`Published-data path escapes the repository: ${segments.join("/")}`);
   }
-  const file = path.join(publishedRoot(), ...segments.slice(2));
+  const file = publishedFile(segments);
   if (!fs.existsSync(file)) return null;
   try {
     const stats = fs.statSync(file);
