@@ -18,11 +18,17 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Only /analytics reads published JSON at request time. All finite Michigan
-  // routes are prerendered, so attaching the data bundle globally would duplicate
-  // it across Vercel functions and dramatically slow deployment packaging.
+  // Attach data only to the functions that read it at request time. This avoids
+  // copying the runtime bundle into unrelated functions/static routes.
   outputFileTracingIncludes: {
-    "/analytics": [".published-data/**/*.json"]
+    "/analytics": [
+      ".published-data/201?/**/*.json",
+      ".published-data/202[0-5]/**/*.json"
+    ],
+    "/players/*": [
+      ".published-data/2026/michigan/*.json",
+      ".published-data/directory_history/players/current-by-team/michigan.json"
+    ]
   }
 };
 
