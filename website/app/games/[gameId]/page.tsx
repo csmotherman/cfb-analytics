@@ -2,7 +2,7 @@ import type {CSSProperties} from "react";
 import type {Metadata} from "next";
 import Link from "next/link";
 import {notFound} from "next/navigation";
-import {gameById,opponent} from "../../../lib/michigan/games";
+import {currentSchedule,gameById,opponent} from "../../../lib/michigan/games";
 import {gamePreview,type MatchupRidgeSide} from "../../../lib/michigan/game-preview";
 import {marketLineFor,formatMichiganSpread} from "../../../lib/market-lines";
 import {teamLogoUrl} from "../../../lib/team-assets";
@@ -13,6 +13,9 @@ import "./market-single.css";
 type Props={params:Promise<{gameId:string}>};
 const rank=(value:number|undefined|null)=>value==null?"—":`#${value}`;
 const rating=(value:number|undefined|null)=>value==null?"—":value.toFixed(1);
+
+export const dynamicParams=false;
+export function generateStaticParams(){return currentSchedule().map(game=>({gameId:String(game.id)}));}
 
 type ComparisonRowProps={
   label:string;
