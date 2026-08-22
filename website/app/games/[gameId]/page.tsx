@@ -78,6 +78,7 @@ export default async function GameHub({params}:Props){
 
   const michiganConference=home?(game.homeConference??"Big Ten"):(game.awayConference??"Big Ten");
   const opponentConference=home?(game.awayConference??"—"):(game.homeConference??"—");
+  const articleHref=String(game.id)==="401858428"?"/articles/michigan-western-michigan-2026-preview":"/articles";
 
   return <main className="game-preview-page">
     <div className="preview-app-shell">
@@ -147,7 +148,7 @@ export default async function GameHub({params}:Props){
         </div>
       </section>
 
-      <Link className="game-preview-article-cta" href="/articles">
+      <Link className="game-preview-article-cta" href={articleHref}>
         <span>DEEP DIVE</span>
         <strong>READ THE FULL GAME PREVIEW</strong>
         <small>Matchups, personnel and what matters most.</small>
