@@ -1,0 +1,381 @@
+/* Mobile readability remodel
+   Loaded last on purpose: this is the canonical narrow-screen composition layer.
+   The goal is not to make everything larger; it is to stop sacrificing legibility
+   to preserve desktop density on a phone. */
+
+:root{
+  --mobile-copy:15px;
+  --mobile-copy-compact:13px;
+  --mobile-data:13px;
+  --mobile-label:11px;
+  --mobile-label-tight:10px;
+  --mobile-control:16px;
+  --mobile-row:52px;
+}
+
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+
+@media(max-width:760px){
+  body{font-size:16px;line-height:1.55}
+
+  /* Global floor for public-facing microcopy. */
+  .eyebrow,.data-label,.kicker,.mock-eyebrow,
+  .hero-game-top,.card-label,.importance-source,
+  .team-depth-status,.team-hub-note strong,
+  .preview-section-heading>span,.market-projection-main small,
+  .market-projection-meta small,.game-preview-article-cta span,
+  .new-additions-hero>div>span,.new-additions-toolbar>div span,
+  .player-focus-kicker,.player-focus-grade small,
+  .player-focus-grade i,.player-focus-back,
+  .player-focus-related-list small,.player-focus-links a,
+  .feature-stat span,.feature-stat small,.feature-section-kicker,
+  .feature-thesis span,.feature-command span,.feature-path>span,
+  .feature-checklist>span,.feature-verdict>span,
+  .focus-article-eyebrow,.focus-article-meta,
+  .tdf-swipe-cue,.tdf-list-head,
+  .schedule-market-note{font-size:var(--mobile-label)}
+
+  input,select,textarea{font-size:var(--mobile-control)!important}
+  button,a{touch-action:manipulation}
+
+  /* Navigation */
+  .bottom-nav a,.mock-bottom-nav a{font-size:10px}
+  .bottom-nav a>span{font-size:10px}
+  .mock-bottom-nav a{font-size:10px!important}
+  .mock-bottom-nav a span{font-size:10px!important}
+
+  /* Homepage hero: give text room instead of compressing it into an image ratio. */
+  .mock-game-card{aspect-ratio:auto;min-height:440px}
+  .mock-game-content{padding:22px 18px 18px}
+  .mock-game-content h1{font-size:44px;max-width:72%;margin:7px 0 10px}
+  .mock-game-content h2{font-size:22px;max-width:82%;white-space:normal;margin-bottom:10px}
+  .mock-game-meta{font-size:11px;line-height:1.35;max-width:82%;gap:7px 12px}
+  .mock-game-lower{left:14px;right:14px;bottom:14px;grid-template-columns:minmax(0,1fr) 136px;gap:9px}
+  .mock-probability{padding:10px 12px}
+  .mock-probability>span,.mock-probability small{font-size:11px}
+  .mock-probability small{white-space:normal;line-height:1.25}
+  .mock-outline-button{font-size:11px;line-height:1.1}
+
+  /* Homepage pulse: stop forcing five cards across 390px. */
+  .pulse-scroll{display:flex;grid-template-columns:none;gap:9px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 7px;scrollbar-width:none}
+  .pulse-scroll::-webkit-scrollbar{display:none}
+  .pulse-scroll article{flex:0 0 min(42vw,158px);min-height:132px;padding:14px 10px;scroll-snap-align:start}
+  .pulse-scroll small{font-size:11px;line-height:1.15}
+  .pulse-scroll strong{font-size:34px}
+  .pulse-scroll span{font-size:11px;line-height:1.25}
+  .pulse-section>header>span{font-size:11px}
+
+  /* Player Watch: readable carousel instead of three narrow columns. */
+  .player-watch-scroll{display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
+  .player-watch-scroll::-webkit-scrollbar{display:none}
+  .watch-card{flex:0 0 min(76vw,285px);height:300px;scroll-snap-align:start}
+  .watch-copy{padding:56px 14px 14px}
+  .watch-copy h3{font-size:25px}
+  .watch-copy p{font-size:12px;line-height:1.35;white-space:normal;margin-bottom:10px}
+  .watch-copy>div b{font-size:17px}
+  .watch-copy>div span{font-size:11px}
+
+  /* News cards */
+  .mock-news-list>a{grid-template-columns:112px 1fr;min-height:104px}
+  .mock-news-list>a>div:last-child{padding:13px 14px}
+  .mock-news-list small{font-size:11px}
+  .mock-news-list h3{font-size:14px;line-height:1.3;margin:5px 0 8px}
+  .mock-news-list span{font-size:11px}
+
+  /* Generic cards / dense tables */
+  .compact-filters input,.compact-filters select{font-size:16px}
+  .compact-filters button,.compact-filters a{font-size:12px}
+  .dense-table>header,.dense-table>a{min-height:52px;font-size:12px;line-height:1.25}
+  .dense-table>header{font-size:11px}
+  .dense-table strong small{font-size:11px}
+  .pager a,.pager button,.pager span{font-size:11px}
+  .dossier-grid span{font-size:11px;line-height:1.2}
+  .dossier-grid strong{font-size:14px}
+  .dossier-grade small{font-size:11px}
+  .dossier-bottom p{font-size:13px;line-height:1.5}
+  .dossier-bottom nav a{font-size:12px}
+
+  /* Analytics year picker and legacy analytics cards. */
+  .analytics-year-switch a{font-size:12px;min-width:60px}
+  .analytics-year-switch small{font-size:10px}
+  .analytics-overview-hero-copy>span{font-size:11px}
+  .analytics-overview-hero-copy p{font-size:12px;line-height:1.4}
+  .analytics-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px}
+  .analytics-summary-grid article{height:auto;min-height:132px;padding:13px 9px}
+  .analytics-summary-grid span{font-size:11px}
+  .analytics-summary-grid small{font-size:11px}
+  .analytics-summary-grid b{font-size:11px}
+  .analytics-identity-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .analytics-identity-grid article{height:auto;min-height:156px;padding:13px 9px}
+  .analytics-identity-grid article>span{font-size:11px;min-height:0}
+  .analytics-identity-grid article>small{font-size:11px}
+  .analytics-identity-grid article>b{font-size:11px}
+  .analytics-identity-grid article>p{font-size:12px;line-height:1.35}
+  .analytics-story-grid{grid-template-columns:1fr;gap:8px}
+  .analytics-story-card{min-height:0;padding:14px}
+  .analytics-story-card span>b{font-size:12px}
+  .analytics-story-card span>small,.analytics-story-card p{font-size:12px;line-height:1.35}
+  .analytics-explore-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .analytics-explore-card{height:170px}
+  .analytics-explore-card h3{font-size:18px}
+  .analytics-explore-card p{font-size:11px;line-height:1.3}
+  .analytics-explore-secondary p{font-size:11px}
+
+  /* Fan-first analytics: preserve the good two-column snapshot, raise detail type. */
+  .fan-overview .fan-section-title>div>span,.fan-identity>span{font-size:11px}
+  .fan-snapshot-grid article>span:first-child{font-size:12px}
+  .fan-snapshot-grid article>small{font-size:11px}
+  .fan-snapshot-subtitle{font-size:11px!important}
+  .fan-snapshot-secondary{font-size:11px}
+  .fan-snapshot-secondary em{font-size:10px}
+  .fan-record-splits small{font-size:11px}
+  .fan-rank-badge{font-size:10px}
+  .fan-rank-badge b{font-size:11px}
+  .fan-unit-head>div:first-child>span{font-size:13px}
+  .fan-unit-rank small,.fan-unit-rating>span{font-size:11px}
+  .fan-metric-label{font-size:14px}
+  .fan-metric-row p{font-size:13px;line-height:1.5}
+  .fan-view-all{font-size:12px}
+  .fan-story-kicker,.fan-story-rank>span{font-size:11px}
+  .fan-explore-card>div:last-child>span{font-size:11px}
+  .fan-explore-card p{font-size:13px}
+  .fan-explore-card b{font-size:11px}
+
+  /* Game preview: metric labels are first-class content. */
+  .preview-topbar a,.preview-topbar>span{font-size:12px}
+  .preview-matchup strong{font-size:18px}
+  .preview-matchup small{font-size:11px}
+  .preview-meta{font-size:12px;line-height:1.35}
+  .preview-section-heading>span{font-size:11px}
+  .comparison-head span{font-size:11px;padding:12px 6px}
+  .comparison-head i{font-size:10px}
+  .comparison-table>div:not(.comparison-head){min-height:58px}
+  .comparison-table>div>strong{font-size:23px}
+  .comparison-table>div>span{font-size:11px;line-height:1.2;padding:5px}
+  .comparison-table .conference-value{font-size:14px}
+  .preview-footnote,.market-note{font-size:11px;line-height:1.5}
+  .market-projection-main small,.market-projection-meta small{font-size:11px}
+  .market-projection-main span{font-size:12px}
+  .market-projection-meta strong{font-size:15px}
+  .market-empty p{font-size:12px}
+  .game-preview-article-cta span{font-size:10px}
+  .game-preview-article-cta strong{font-size:15px}
+
+  /* Roster directory: horizontal scrolling is allowed, so the text does not need to shrink. */
+  .roster-directory-hero p{font-size:14px;line-height:1.5}
+  .roster-directory-summary small{font-size:11px}
+  .roster-directory-tools label>span{font-size:11px}
+  .roster-directory-count span{font-size:11px}
+  .roster-directory-table{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .roster-directory-head,.roster-directory-row{min-width:700px}
+  .roster-directory-head{font-size:11px;padding:11px 12px}
+  .roster-directory-row{min-height:54px;padding:10px 12px}
+  .roster-directory-player b{font-size:14px}
+  .roster-directory-player strong{font-size:14px}
+  .roster-directory-row>span:not(.roster-directory-player){font-size:12px}
+
+  /* Player profile */
+  .player-focus-kicker{font-size:11px}
+  .player-focus-copy>p{font-size:14px;line-height:1.5}
+  .player-focus-copy .player-focus-meta{font-size:12px;line-height:1.35;gap:6px 12px}
+  .player-focus-grade small{font-size:11px}
+  .player-focus-grade span{font-size:13px}
+  .player-focus-grade i{font-size:10px}
+  .player-focus-tabs{gap:22px}
+  .player-focus-tabs a{font-size:12px;padding:13px 4px 11px}
+  .player-focus-card h2{font-size:20px}
+  .player-focus-card h3{font-size:15px}
+  .player-focus-lines span{font-size:12px}
+  .player-focus-lines strong{font-size:13px}
+  .player-focus-outlook>p{font-size:14px}
+  .player-stat-swipe{font-size:11px}
+  .player-stat-table{min-width:780px}
+  .player-stat-table th{font-size:11px}
+  .player-stat-table td{font-size:13px}
+  .player-grade-grid small{font-size:11px}
+  .player-grade-grid span{font-size:12px;line-height:1.35}
+  .player-grade-note{font-size:12px}
+  .player-focus-related-list small{font-size:11px}
+  .player-focus-related-list strong{font-size:16px}
+  .player-focus-related-list p{font-size:13px}
+  .player-focus-links a{font-size:11px}
+
+  /* Player game logs */
+  .player-game-year-tabs button{font-size:11px;padding:9px 14px}
+  .player-game-season-meta>div{font-size:13px}
+  .player-game-season-meta small{font-size:11px}
+  .player-game-opponent small{font-size:11px}
+  .player-game-opponent strong{font-size:13px}
+  .player-game-result{font-size:12px}
+  .player-game-table .sticky-game{min-width:160px;width:160px;max-width:160px}
+  .player-game-table th:nth-child(n+3),.player-game-table td:nth-child(n+3){min-width:66px}
+
+  /* Team hub */
+  .team-hub-hero p{font-size:14px;line-height:1.5}
+  .team-hub-actions a{font-size:12px;line-height:1.15;min-height:44px;display:grid;place-items:center}
+  .team-hub-snapshot small{font-size:11px}
+  .team-depth-section>header p{font-size:13px}
+  .team-depth-status{font-size:11px}
+  .team-depth-tabs button{font-size:12px;min-height:44px}
+  .team-depth-position strong{font-size:14px}
+  .team-depth-position small{font-size:10px}
+  .team-depth-players.next:before{font-size:10px}
+  .team-depth-player{min-height:50px;padding:8px 9px}
+  .team-depth-player strong{font-size:13px}
+  .team-depth-player small{font-size:11px}
+  .team-depth-rows article>p{font-size:12px;line-height:1.45}
+  .team-camp-grid h3{font-size:17px}
+  .team-camp-grid p,.team-hub-note p{font-size:13px}
+  .team-hub-note strong{font-size:11px}
+
+  /* Depth chart formats */
+  .tdf-unit-tabs button{font-size:12px;min-height:44px;padding:12px 8px}
+  .tdf-unit-meta span{font-size:13px}
+  .tdf-unit-meta small{font-size:11px}
+  .tdf-field{padding-top:18px}
+  .tdf-field-grid{gap:8px}
+  .tdf-field-grid button{min-height:64px;padding:10px 7px}
+  .tdf-field-grid button small{font-size:10px}
+  .tdf-field-grid button strong{font-size:12px}
+  .tdf-field-grid button span{font-size:11px}
+  .tdf-endzone{font-size:11px}
+  .tdf-selected-depth>header small,.tdf-selected-depth>header>span{font-size:11px}
+  .tdf-player-line strong{font-size:13px}
+  .tdf-player-line small{font-size:11px}
+  .tdf-list-head{font-size:11px}
+  .tdf-depth-row>strong{font-size:13px}
+  .tdf-depth-row a>b{font-size:11px}
+  .tdf-depth-row a>span{font-size:13px}
+  .tdf-depth-row a small{font-size:11px}
+  .tdf-swipe-cue{font-size:11px}
+  .tdf-position-card>header small{font-size:11px}
+  .tdf-card-starter>small,.tdf-card-starter>b{font-size:11px}
+  .tdf-card-starter>span{font-size:12px}
+  .tdf-card-depth>small{font-size:11px}
+  .tdf-card-depth>a b{font-size:11px}
+  .tdf-card-depth>a strong{font-size:13px}
+  .tdf-card-depth>a small{font-size:11px}
+  .tdf-card-depth p{font-size:12px}
+
+  /* Schedule */
+  .schedule-intro p{font-size:14px;line-height:1.5}
+  .schedule-kpis small{font-size:11px}
+  .schedule-next-copy>small{font-size:11px}
+  .schedule-next-meta{font-size:12px;line-height:1.4}
+  .schedule-next-market span{font-size:11px}
+  .schedule-row-card{min-height:84px;padding:12px 11px}
+  .schedule-row-week small{font-size:10px}
+  .schedule-row-week b{font-size:18px}
+  .schedule-row-opponent small{font-size:11px}
+  .schedule-row-opponent strong{font-size:14px}
+  .schedule-row-date span{font-size:12px}
+  .schedule-row-date small,.schedule-row-market small{font-size:11px}
+  .schedule-row-market strong{font-size:13px}
+  .schedule-list-section>header span{font-size:11px}
+  .schedule-market-note{font-size:11px}
+
+  /* New additions */
+  .new-additions-hero p{font-size:14px;line-height:1.5}
+  .new-additions-summary small{font-size:11px}
+  .new-additions-tabs button{font-size:12px;min-height:44px}
+  .new-additions-tabs button span{font-size:10px}
+  .new-additions-toolbar>div span{font-size:11px}
+  .recruit-sort,.recruit-sort b{font-size:11px}
+  .new-addition-player strong{font-size:17px}
+  .new-addition-player small,.new-addition-class small,.new-addition-rating small{font-size:11px}
+  .new-addition-class strong{font-size:13px}
+  .new-addition-rating strong{font-size:18px}
+  .new-addition-origin small{font-size:11px}
+
+  /* More hub */
+  .more-page-header p{font-size:14px;line-height:1.5}
+  .more-hub-card small{font-size:11px}
+  .more-hub-card p{font-size:13px;line-height:1.45}
+
+  /* Long-form editorial was already healthy; only raise supporting labels. */
+  .focus-article-eyebrow{font-size:11px}
+  .focus-article-meta{font-size:11px;line-height:1.3}
+  .focus-article-sources>strong{font-size:11px}
+  .focus-article-sources a{font-size:12px}
+  .feature-back{font-size:11px}
+  .feature-stat span{font-size:10px}
+  .feature-stat small{font-size:11px;line-height:1.3}
+  .feature-section-kicker{font-size:11px}
+  .feature-matchup-card span,.feature-matchup-card small{font-size:11px}
+  .feature-matchup-center small{font-size:10px;line-height:1.25}
+  .feature-versus-stat small,.feature-versus-stat span{font-size:10px}
+}
+
+@media(max-width:520px){
+  /* Do not reintroduce tiny type at the narrowest widths. Recompose instead. */
+  .mock-game-card{min-height:430px}
+  .mock-game-content h1{font-size:40px;max-width:74%}
+  .mock-game-content h2{font-size:20px;max-width:84%}
+  .mock-game-meta{font-size:11px;max-width:84%}
+  .mock-game-lower{grid-template-columns:minmax(0,1fr) 122px}
+  .mock-outline-button{font-size:10px}
+  .pulse-scroll article{flex-basis:min(45vw,158px)}
+  .watch-card{flex-basis:min(82vw,285px)}
+
+  .analytics-overview-hero{height:190px}
+  .analytics-overview-hero-copy{width:56%;padding:8px 0 8px 9px}
+  .analytics-overview-hero-copy h1{font-size:38px}
+  .analytics-overview-hero-copy>span{font-size:11px}
+  .analytics-overview-hero-copy p{max-width:190px;font-size:11px;line-height:1.35}
+  .analytics-overview-hero-image{left:38%}
+  .analytics-explore-grid{grid-template-columns:1fr}
+  .analytics-explore-card{height:165px}
+
+  .fan-overview-hero.analytics-overview-hero{height:220px}
+  .fan-overview-hero .analytics-overview-hero-copy>span{font-size:11px}
+  .fan-overview-hero .analytics-overview-hero-copy p{font-size:12px}
+  .fan-snapshot-grid article>span:first-child{font-size:11px}
+  .fan-snapshot-grid article>small{font-size:11px}
+  .fan-rank-badge{font-size:10px}
+
+  .preview-matchup strong{font-size:17px}
+  .comparison-head span{font-size:11px}
+  .comparison-table>div>span{font-size:11px}
+
+  .roster-directory-head,.roster-directory-row{min-width:700px}
+  .roster-directory-player strong{font-size:14px}
+
+  .player-focus-copy h1{font-size:30px}
+  .player-focus-copy>p{font-size:13px}
+  .player-focus-copy .player-focus-meta{font-size:11px}
+  .player-focus-tabs a{font-size:11px}
+  .player-stat-table th{font-size:11px}
+  .player-stat-table td{font-size:13px}
+
+  .tdf-unit-tabs button{font-size:11px}
+  .tdf-field-grid button strong{font-size:12px}
+  .tdf-depth-row a small{font-size:11px}
+
+  .new-additions-toolbar{align-items:flex-end}
+  .new-additions-toolbar>div span{font-size:11px}
+  .recruit-sort,.recruit-sort b{font-size:10px}
+  .new-addition-origin small{font-size:11px}
+}
+
+@media(max-width:390px){
+  /* 390px is the validation target. Keep content readable and let layout breathe. */
+  .mock-game-card{min-height:420px}
+  .mock-game-content{padding-inline:14px}
+  .mock-game-content h1{font-size:38px;max-width:76%}
+  .mock-game-content h2{font-size:19px;max-width:86%}
+  .mock-game-lower{left:11px;right:11px;grid-template-columns:minmax(0,1fr) 116px}
+  .mock-probability{padding:9px 10px}
+
+  .preview-topbar>span{display:none}
+  .comparison-head span{font-size:11px}
+  .comparison-table .conference-value{font-size:13px}
+
+  .player-game-table .sticky-game{min-width:150px;width:150px;max-width:150px}
+  .player-game-table th:nth-child(2),.player-game-table td:nth-child(2){min-width:84px;width:84px;max-width:84px}
+  .player-game-table th:nth-child(n+3),.player-game-table td:nth-child(n+3){min-width:64px}
+
+  .schedule-next-card{grid-template-columns:1fr 64px}
+  .schedule-next-logo img{width:64px;height:64px}
+
+  .new-additions-summary{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
