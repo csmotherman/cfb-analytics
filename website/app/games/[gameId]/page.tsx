@@ -9,6 +9,7 @@ import {teamLogoUrl} from "../../../lib/team-assets";
 import {gameDate,gameTime} from "../../../lib/home-data";
 import "./game-preview.css";
 import "./market-single.css";
+import "./mobile-readability.css";
 
 type Props={params:Promise<{gameId:string}>};
 const rank=(value:number|undefined|null)=>value==null?"—":`#${value}`;
