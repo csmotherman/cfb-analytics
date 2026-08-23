@@ -83,7 +83,7 @@ export default async function GameHub({params}:Props){
   const opponentConference=home?(game.awayConference??"—"):(game.homeConference??"—");
   const articleHref=String(game.id)==="401858428"?"/articles/michigan-western-michigan-2026-preview":"/articles";
 
-  return <main className="game-preview-page">
+  return <div className="game-preview-page">
     <div className="preview-app-shell">
       <header className="preview-topbar">
         <Link href="/schedule">← SCHEDULE</Link>
@@ -158,5 +158,5 @@ export default async function GameHub({params}:Props){
         <b>→</b>
       </Link>
     </div>
-  </main>;
+  </div>;
 }
