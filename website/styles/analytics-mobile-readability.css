@@ -1,0 +1,78 @@
+/* Analytics route mobile readability layer.
+   Loaded last by app/analytics/layout.tsx so route CSS cannot reintroduce microcopy. */
+
+@media(max-width:760px){
+  .analytics-shell .analytics-year-switch a{font-size:12px;min-width:60px}
+  .analytics-shell .analytics-year-switch small{font-size:10px}
+
+  .analytics-shell .analytics-overview-hero-copy>span{font-size:11px}
+  .analytics-shell .analytics-overview-hero-copy p{font-size:12px;line-height:1.4}
+
+  .analytics-shell .analytics-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px}
+  .analytics-shell .analytics-summary-grid article{height:auto;min-height:132px;padding:13px 9px}
+  .analytics-shell .analytics-summary-grid span,
+  .analytics-shell .analytics-summary-grid small,
+  .analytics-shell .analytics-summary-grid b{font-size:11px;line-height:1.25}
+
+  .analytics-shell .analytics-identity-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .analytics-shell .analytics-identity-grid article{height:auto;min-height:156px;padding:13px 9px}
+  .analytics-shell .analytics-identity-grid article>span,
+  .analytics-shell .analytics-identity-grid article>small,
+  .analytics-shell .analytics-identity-grid article>b{font-size:11px;line-height:1.25}
+  .analytics-shell .analytics-identity-grid article>p{font-size:12px;line-height:1.35}
+
+  .analytics-shell .analytics-story-grid{grid-template-columns:1fr;gap:8px}
+  .analytics-shell .analytics-story-card{min-height:0;padding:14px}
+  .analytics-shell .analytics-story-card span>b{font-size:12px}
+  .analytics-shell .analytics-story-card span>small,
+  .analytics-shell .analytics-story-card p{font-size:12px;line-height:1.4}
+
+  .analytics-shell .analytics-explore-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .analytics-shell .analytics-explore-card{height:170px}
+  .analytics-shell .analytics-explore-card h3{font-size:18px}
+  .analytics-shell .analytics-explore-card p,
+  .analytics-shell .analytics-explore-secondary p{font-size:11px;line-height:1.3}
+
+  .analytics-shell .fan-overview .fan-section-title>div>span,
+  .analytics-shell .fan-identity>span{font-size:11px}
+  .analytics-shell .fan-snapshot-grid article>span:first-child{font-size:12px}
+  .analytics-shell .fan-snapshot-grid article>small{font-size:11px;line-height:1.25}
+  .analytics-shell .fan-snapshot-subtitle{font-size:11px!important}
+  .analytics-shell .fan-snapshot-secondary{font-size:11px;line-height:1.3}
+  .analytics-shell .fan-snapshot-secondary em{font-size:10px}
+  .analytics-shell .fan-record-splits small{font-size:11px}
+  .analytics-shell .fan-rank-badge{font-size:10px}
+  .analytics-shell .fan-rank-badge b{font-size:11px}
+
+  .analytics-shell .fan-unit-head>div:first-child>span{font-size:13px}
+  .analytics-shell .fan-unit-rank small,
+  .analytics-shell .fan-unit-rating>span{font-size:11px}
+  .analytics-shell .fan-metric-label{font-size:14px}
+  .analytics-shell .fan-metric-row p{font-size:13px;line-height:1.5}
+  .analytics-shell .fan-view-all{font-size:12px}
+
+  .analytics-shell .fan-story-kicker,
+  .analytics-shell .fan-story-rank>span{font-size:11px}
+  .analytics-shell .fan-story-card p{font-size:13px;line-height:1.5}
+
+  .analytics-shell .fan-explore-card>div:last-child>span{font-size:11px}
+  .analytics-shell .fan-explore-card p{font-size:13px;line-height:1.4}
+  .analytics-shell .fan-explore-card b{font-size:11px}
+}
+
+@media(max-width:520px){
+  .analytics-shell .analytics-overview-hero{height:190px}
+  .analytics-shell .analytics-overview-hero-copy{width:56%;padding:8px 0 8px 9px}
+  .analytics-shell .analytics-overview-hero-copy h1{font-size:38px}
+  .analytics-shell .analytics-overview-hero-copy>span{font-size:11px}
+  .analytics-shell .analytics-overview-hero-copy p{max-width:190px;font-size:11px;line-height:1.35}
+  .analytics-shell .analytics-overview-hero-image{left:38%}
+  .analytics-shell .analytics-explore-grid{grid-template-columns:1fr}
+  .analytics-shell .analytics-explore-card{height:165px}
+
+  .analytics-shell .fan-overview-hero.analytics-overview-hero{height:220px}
+  .analytics-shell .fan-overview-hero .analytics-overview-hero-copy>span{font-size:11px}
+  .analytics-shell .fan-overview-hero .analytics-overview-hero-copy p{font-size:12px}
+  .analytics-shell .fan-snapshot-grid article>span:first-child,
+  .analytics-shell .fan-snapshot-grid article>small{font-size:11px}
+}
