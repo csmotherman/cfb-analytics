@@ -6,12 +6,13 @@ const jsonCache = new Map<string, CachedJson>();
 
 function publishedFile(segments:string[]){
   const relative=segments.slice(2);
-  const repository=path.join(process.cwd(),"..","data","published",...relative);
   const bundled=path.join(process.cwd(),".published-data",...relative);
-  // During local/Vercel builds the repository checkout exists, so always use the
-  // canonical full-detail source. Serverless runtime packages do not include the
-  // repository data tree; there we fall back to the compact route-specific bundle.
-  return fs.existsSync(repository)?repository:bundled;
+  if(fs.existsSync(bundled))return bundled;
+
+  const repository=path.join(process.cwd(),"..","data","published",...relative);
+  // Local development can still read the canonical repository data when the
+  // compact deployment bundle has not been prepared yet.
+  return repository;
 }
 
 export function readJson<T>(...segments: string[]): T | null {
