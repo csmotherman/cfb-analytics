@@ -23,7 +23,7 @@ import "../styles/expansion.css";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://cfb-analytics-two.vercel.app"),
   title: { default: "Michigan Football Focus", template: "%s | Michigan Football Focus" },
   description: "Michigan Football Focus maps Michigan football strength, identity, roster intelligence, recruiting, schedule, analytics, and history for fans.",
   openGraph: { title: "Michigan Football Focus", description: "The 2026 Michigan season, mapped through strength, identity, and trajectory.", images: ["/og.png"] },
