@@ -1,0 +1,2584 @@
+{
+  "analysisVersion": "matchup-full-v1",
+  "generatedAtUtc": "2026-08-21T20:41:18.584210+00:00",
+  "baselineSeason": 2025,
+  "targetSeason": 2026,
+  "methodology": {
+    "baseline": "2025 complete-season FBS team data plus opponent-adjusted Ridge ratings. This is a matchup evidence report, not a 2026 score prediction.",
+    "matchupEdge": "Each matchup metric compares the offense's national percentile with the opposing defense's national percentile for the corresponding allowed metric. A gap of at least 15 percentile points is labeled an advantage; smaller gaps are labeled EVEN.",
+    "ranking": "National ranks are recomputed across published FBS season rows; rank 1 is best.",
+    "limitations": [
+      "Team efficiency statistics are a 2025 baseline and do not automatically account for offseason roster or coaching changes.",
+      "Special teams are represented only indirectly through field position and possession outcomes.",
+      "Market data is context, not model truth."
+    ]
+  },
+  "game": {
+    "attendance": null,
+    "awayClassification": "fbs",
+    "awayConference": "Mid-American",
+    "awayId": 2711,
+    "awayLineScores": null,
+    "awayPoints": null,
+    "awayPostgameElo": null,
+    "awayPostgameWinProbability": null,
+    "awayPregameElo": 1530,
+    "awayTeam": "Western Michigan",
+    "completed": false,
+    "conferenceGame": false,
+    "excitementIndex": null,
+    "highlights": "",
+    "homeClassification": "fbs",
+    "homeConference": "Big Ten",
+    "homeId": 130,
+    "homeLineScores": null,
+    "homePoints": null,
+    "homePostgameElo": null,
+    "homePostgameWinProbability": null,
+    "homePregameElo": 1690,
+    "homeTeam": "Michigan",
+    "id": 401858428,
+    "neutralSite": false,
+    "notes": null,
+    "playoff": null,
+    "season": 2026,
+    "seasonType": "regular",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "startTimeTBD": false,
+    "valueType": "PRESEASON",
+    "venue": "Michigan Stadium",
+    "venueId": 3558,
+    "week": 1
+  },
+  "market": {
+    "asOf": "2026-08-19",
+    "gameId": "401858428",
+    "marketWinChance": 0.9587,
+    "opponent": "Western Michigan",
+    "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
+    "source": {
+      "name": "MLive preseason odds roundup",
+      "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+    },
+    "sportsbook": "BetMGM",
+    "teamSpread": -26.5,
+    "valueType": "MARKET",
+    "week": 1
+  },
+  "ridge": {
+    "modelSeason": 2025,
+    "lambda": 20.0,
+    "method": "weighted ridge least squares",
+    "teamA": {
+      "overall": {
+        "rating": 111.97945353351261,
+        "rank": 25,
+        "field_size": 136
+      },
+      "offense": {
+        "rank": 24,
+        "rating": 114.2101528361009,
+        "field_size": 136,
+        "metrics": {
+          "ppd": {
+            "value": 2.4878308501735127,
+            "rank": 22,
+            "field_size": 136
+          },
+          "ypd": {
+            "value": 36.64807274603989,
+            "rank": 29,
+            "field_size": 136
+          },
+          "success": {
+            "value": 0.4864166879704023,
+            "rank": 20,
+            "field_size": 136
+          },
+          "scoring": {
+            "value": 0.4279464930032656,
+            "rank": 23,
+            "field_size": 136
+          }
+        }
+      },
+      "defense": {
+        "rank": 36,
+        "rating": 109.74875423092433,
+        "field_size": 136,
+        "metrics": {
+          "ppd": {
+            "value": 1.561508377430156,
+            "rank": 32,
+            "field_size": 136
+          },
+          "ypd": {
+            "value": 29.641303916585485,
+            "rank": 30,
+            "field_size": 136
+          },
+          "success": {
+            "value": 0.4120960755739994,
+            "rank": 50,
+            "field_size": 136
+          },
+          "scoring": {
+            "value": 0.29233530765147847,
+            "rank": 33,
+            "field_size": 136
+          }
+        }
+      },
+      "games": 13
+    },
+    "teamB": {
+      "overall": {
+        "rating": 98.81691414214117,
+        "rank": 70,
+        "field_size": 136
+      },
+      "offense": {
+        "rank": 106,
+        "rating": 89.70810649333485,
+        "field_size": 136,
+        "metrics": {
+          "ppd": {
+            "value": 1.6294058132075957,
+            "rank": 101,
+            "field_size": 136
+          },
+          "ypd": {
+            "value": 29.36810070839509,
+            "rank": 104,
+            "field_size": 136
+          },
+          "success": {
+            "value": 0.3847651165617788,
+            "rank": 105,
+            "field_size": 136
+          },
+          "scoring": {
+            "value": 0.2871213975267837,
+            "rank": 101,
+            "field_size": 136
+          }
+        }
+      },
+      "defense": {
+        "rank": 41,
+        "rating": 107.92572179094749,
+        "field_size": 136,
+        "metrics": {
+          "ppd": {
+            "value": 1.6849050808668788,
+            "rank": 41,
+            "field_size": 136
+          },
+          "ypd": {
+            "value": 30.101657295621955,
+            "rank": 34,
+            "field_size": 136
+          },
+          "success": {
+            "value": 0.409850486755493,
+            "rank": 47,
+            "field_size": 136
+          },
+          "scoring": {
+            "value": 0.3044243707047927,
+            "rank": 42,
+            "field_size": 136
+          }
+        }
+      },
+      "games": 13
+    }
+  },
+  "teams": {
+    "Michigan": {
+      "team": "Michigan",
+      "teamId": 130,
+      "conference": "Big Ten",
+      "games": 13,
+      "record": {
+        "wins": 9,
+        "losses": 4,
+        "games": 13
+      },
+      "ridge": {
+        "team_id": 130,
+        "team": "Michigan",
+        "games": 13,
+        "overall": {
+          "rating": 111.97945353351261,
+          "rank": 25,
+          "field_size": 136
+        },
+        "offense": {
+          "rank": 24,
+          "rating": 114.2101528361009,
+          "field_size": 136,
+          "metrics": {
+            "ppd": {
+              "value": 2.4878308501735127,
+              "rank": 22,
+              "field_size": 136
+            },
+            "ypd": {
+              "value": 36.64807274603989,
+              "rank": 29,
+              "field_size": 136
+            },
+            "success": {
+              "value": 0.4864166879704023,
+              "rank": 20,
+              "field_size": 136
+            },
+            "scoring": {
+              "value": 0.4279464930032656,
+              "rank": 23,
+              "field_size": 136
+            }
+          }
+        },
+        "defense": {
+          "rank": 36,
+          "rating": 109.74875423092433,
+          "field_size": 136,
+          "metrics": {
+            "ppd": {
+              "value": 1.561508377430156,
+              "rank": 32,
+              "field_size": 136
+            },
+            "ypd": {
+              "value": 29.641303916585485,
+              "rank": 30,
+              "field_size": 136
+            },
+            "success": {
+              "value": 0.4120960755739994,
+              "rank": 50,
+              "field_size": 136
+            },
+            "scoring": {
+              "value": 0.29233530765147847,
+              "rank": 33,
+              "field_size": 136
+            }
+          }
+        }
+      },
+      "style": {
+        "rushShare": 0.5710814094775213,
+        "passShare": 0.4289185905224787,
+        "possessionsPerGame": 11.23076923076923,
+        "defensivePossessionsPerGame": 10.76923076923077,
+        "averageStartOwnYardLine": 33.21917808219178,
+        "averageOpponentStartOwnYardLine": 33.58571428571429,
+        "threeAndOutRate": 0.17123287671232876,
+        "threeAndOutForcedRate": 0.22142857142857142,
+        "giveawaysPerGame": 0.9230769230769231,
+        "takeawaysPerGame": 0.9230769230769231,
+        "turnoverMargin": 0,
+        "sacksAllowed": 20,
+        "sacksMade": 27
+      },
+      "metrics": [
+        {
+          "label": "Success rate",
+          "key": "successRate",
+          "value": 0.46898263027295284,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 18,
+          "fieldSize": 136,
+          "percentile": 0.8740740740740741
+        },
+        {
+          "label": "Success rate allowed",
+          "key": "successRateAllowed",
+          "value": 0.42558425584255843,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 67,
+          "fieldSize": 136,
+          "percentile": 0.5111111111111111
+        },
+        {
+          "label": "Rush success rate",
+          "key": "rushSuccessRate",
+          "value": 0.508695652173913,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 6,
+          "fieldSize": 136,
+          "percentile": 0.962962962962963
+        },
+        {
+          "label": "Rush success allowed",
+          "key": "rushSuccessRateAllowed",
+          "value": 0.40310077519379844,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 43,
+          "fieldSize": 136,
+          "percentile": 0.6888888888888889
+        },
+        {
+          "label": "Pass success rate",
+          "key": "passSuccessRate",
+          "value": 0.4161849710982659,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 65,
+          "fieldSize": 136,
+          "percentile": 0.5259259259259259
+        },
+        {
+          "label": "Pass success allowed",
+          "key": "passSuccessRateAllowed",
+          "value": 0.4460093896713615,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 96,
+          "fieldSize": 136,
+          "percentile": 0.2962962962962963
+        },
+        {
+          "label": "Explosive play rate",
+          "key": "explosivePlayRate",
+          "value": 0.1327543424317618,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 30,
+          "fieldSize": 136,
+          "percentile": 0.7851851851851852
+        },
+        {
+          "label": "Explosive rate allowed",
+          "key": "explosivePlayRateAllowed",
+          "value": 0.09225092250922509,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 20,
+          "fieldSize": 136,
+          "percentile": 0.8592592592592593
+        },
+        {
+          "label": "Yards per play",
+          "key": "yardsPerPlay",
+          "value": 6.233292831105711,
+          "format": "num",
+          "higherIsBetter": true,
+          "rank": 29,
+          "fieldSize": 136,
+          "percentile": 0.7925925925925926
+        },
+        {
+          "label": "Yards per play allowed",
+          "key": "yardsPerPlayAllowed",
+          "value": 5.037037037037037,
+          "format": "num",
+          "higherIsBetter": false,
+          "rank": 15,
+          "fieldSize": 136,
+          "percentile": 0.8962962962962963
+        },
+        {
+          "label": "Points per possession",
+          "key": "pointsPerResolvedPossession",
+          "value": 2.26027397260274,
+          "format": "num",
+          "higherIsBetter": true,
+          "rank": 39,
+          "fieldSize": 136,
+          "percentile": 0.7185185185185186
+        },
+        {
+          "label": "Points per possession allowed",
+          "key": "pointsPerResolvedPossessionAllowed",
+          "value": 1.6618705035971224,
+          "format": "num",
+          "higherIsBetter": false,
+          "rank": 33,
+          "fieldSize": 136,
+          "percentile": 0.762962962962963
+        },
+        {
+          "label": "Third-down conversion",
+          "key": "thirdDownConversionRate",
+          "value": 0.461038961038961,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 24,
+          "fieldSize": 136,
+          "percentile": 0.8296296296296296
+        },
+        {
+          "label": "Third-down conversion allowed",
+          "key": "thirdDownConversionRateAllowed",
+          "value": 0.39156626506024095,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 56,
+          "fieldSize": 136,
+          "percentile": 0.5925925925925926
+        },
+        {
+          "label": "Havoc created",
+          "key": "havocRate",
+          "value": 0.10645933014354067,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 36,
+          "fieldSize": 136,
+          "percentile": 0.7407407407407407
+        },
+        {
+          "label": "Havoc allowed",
+          "key": "havocRateAllowed",
+          "value": 0.0851581508515815,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 35,
+          "fieldSize": 136,
+          "percentile": 0.7481481481481482
+        },
+        {
+          "label": "Points per opportunity",
+          "key": "pointsPerOpportunity",
+          "value": 3.4,
+          "format": "num",
+          "higherIsBetter": true,
+          "rank": 78,
+          "fieldSize": 136,
+          "percentile": 0.4296296296296296
+        },
+        {
+          "label": "Points per opportunity allowed",
+          "key": "pointsPerOpportunityAllowed",
+          "value": 3.5555555555555554,
+          "format": "num",
+          "higherIsBetter": false,
+          "rank": 70,
+          "fieldSize": 136,
+          "percentile": 0.48888888888888893
+        }
+      ],
+      "recentForm": {
+        "games": 5,
+        "record": {
+          "wins": 4,
+          "losses": 1,
+          "games": 5
+        },
+        "averages": {
+          "points_for": 26.0,
+          "points_against": 21.0,
+          "successRate": 0.46905982905982907,
+          "successRateAllowed": 0.39885694588141435,
+          "rushSuccessRate": 0.5095360195360196,
+          "rushSuccessRateAllowed": 0.3847121212121212,
+          "passSuccessRate": 0.39906419028999673,
+          "passSuccessRateAllowed": 0.41317756317756316,
+          "explosivePlayRate": 0.12234095406509199,
+          "explosivePlayRateAllowed": 0.07968792456710921,
+          "yardsPerPlay": 5.8483363728329065,
+          "yardsPerPlayAllowed": 4.784633950287979,
+          "pointsPerResolvedPossession": 1.9992207792207792,
+          "pointsPerResolvedPossessionAllowed": 1.4894444444444446,
+          "turnoverMargin": -0.6
+        },
+        "variability": {
+          "points_for": 11.865917579353061,
+          "points_against": 3.5777087639996634,
+          "successRate": 0.1135707208637102,
+          "successRateAllowed": 0.08880930859141736,
+          "rushSuccessRate": 0.1154425267002287,
+          "rushSuccessRateAllowed": 0.09023585111046516,
+          "passSuccessRate": 0.12365538419313903,
+          "passSuccessRateAllowed": 0.12412410750560395,
+          "explosivePlayRate": 0.018432816802717265,
+          "explosivePlayRateAllowed": 0.017248404547557175,
+          "yardsPerPlay": 1.0036092960835592,
+          "yardsPerPlayAllowed": 0.5406286831160562,
+          "pointsPerResolvedPossession": 1.44788330507114,
+          "pointsPerResolvedPossessionAllowed": 0.7805988521008947,
+          "turnoverMargin": 1.624807680927192
+        }
+      },
+      "opponentStrength": {
+        "ratedOpponents": 13,
+        "averageOpponentRidgeRating": 106.48427013491977,
+        "top25RidgeOpponents": 5,
+        "recordVsTop25Ridge": {
+          "wins": 1,
+          "losses": 4,
+          "games": 5
+        },
+        "bestWin": {
+          "opponent": "Washington",
+          "score": "24-7",
+          "opponentRidgeRating": 114.63071964470498,
+          "opponentRidgeRank": 16
+        }
+      },
+      "gameLog": [
+        {
+          "gameId": "401752808",
+          "week": 1,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "New Mexico",
+          "result": "W",
+          "pointsFor": 34,
+          "pointsAgainst": 17,
+          "margin": 17,
+          "successRate": 0.43548387096774194,
+          "successRateAllowed": 0.3972602739726027,
+          "rushSuccessRate": 0.4482758620689655,
+          "rushSuccessRateAllowed": 0.24,
+          "passSuccessRate": 0.42424242424242425,
+          "passSuccessRateAllowed": 0.4791666666666667,
+          "explosivePlayRate": 0.11290322580645161,
+          "explosivePlayRateAllowed": 0.0684931506849315,
+          "yardsPerPlay": 7.306451612903226,
+          "yardsPerPlayAllowed": 3.6133333333333333,
+          "pointsPerResolvedPossession": 3.090909090909091,
+          "pointsPerResolvedPossessionAllowed": 1.4166666666666667,
+          "turnoverMargin": 2,
+          "opponentRidgeOverallRating": 99.55775796361564,
+          "opponentRidgeOverallRank": 67
+        },
+        {
+          "gameId": "401778330",
+          "week": 1,
+          "seasonType": "postseason",
+          "homeAway": "away",
+          "opponent": "Texas",
+          "result": "L",
+          "pointsFor": 27,
+          "pointsAgainst": 41,
+          "margin": -14,
+          "successRate": 0.39473684210526316,
+          "successRateAllowed": 0.47540983606557374,
+          "rushSuccessRate": 0.5294117647058824,
+          "rushSuccessRateAllowed": 0.4827586206896552,
+          "passSuccessRate": 0.2857142857142857,
+          "passSuccessRateAllowed": 0.46875,
+          "explosivePlayRate": 0.10526315789473684,
+          "explosivePlayRateAllowed": 0.19672131147540983,
+          "yardsPerPlay": 4.69620253164557,
+          "yardsPerPlayAllowed": 6.8059701492537314,
+          "pointsPerResolvedPossession": 2.076923076923077,
+          "pointsPerResolvedPossessionAllowed": 3.4166666666666665,
+          "turnoverMargin": -2,
+          "opponentRidgeOverallRating": 112.54704696451404,
+          "opponentRidgeOverallRank": 21
+        },
+        {
+          "gameId": "401752690",
+          "week": 2,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Oklahoma",
+          "result": "L",
+          "pointsFor": 13,
+          "pointsAgainst": 24,
+          "margin": -11,
+          "successRate": 0.23636363636363636,
+          "successRateAllowed": 0.4583333333333333,
+          "rushSuccessRate": 0.26666666666666666,
+          "rushSuccessRateAllowed": 0.4864864864864865,
+          "passSuccessRate": 0.2,
+          "passSuccessRateAllowed": 0.42857142857142855,
+          "explosivePlayRate": 0.07272727272727272,
+          "explosivePlayRateAllowed": 0.125,
+          "yardsPerPlay": 5.321428571428571,
+          "yardsPerPlayAllowed": 5.712328767123288,
+          "pointsPerResolvedPossession": 1.0833333333333333,
+          "pointsPerResolvedPossessionAllowed": 2.1818181818181817,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 117.56720951434971,
+          "opponentRidgeOverallRank": 12
+        },
+        {
+          "gameId": "401752839",
+          "week": 3,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Central Michigan",
+          "result": "W",
+          "pointsFor": 63,
+          "pointsAgainst": 3,
+          "margin": 60,
+          "successRate": 0.6447368421052632,
+          "successRateAllowed": 0.18,
+          "rushSuccessRate": 0.6346153846153846,
+          "rushSuccessRateAllowed": 0.14285714285714285,
+          "passSuccessRate": 0.6666666666666666,
+          "passSuccessRateAllowed": 0.22727272727272727,
+          "explosivePlayRate": 0.25,
+          "explosivePlayRateAllowed": 0.04,
+          "yardsPerPlay": 7.3544303797468356,
+          "yardsPerPlayAllowed": 2.5961538461538463,
+          "pointsPerResolvedPossession": 5.7272727272727275,
+          "pointsPerResolvedPossessionAllowed": 0.25,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 86.97320319492457,
+          "opponentRidgeOverallRank": 120
+        },
+        {
+          "gameId": "401752846",
+          "week": 4,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Nebraska",
+          "result": "W",
+          "pointsFor": 30,
+          "pointsAgainst": 27,
+          "margin": 3,
+          "successRate": 0.3888888888888889,
+          "successRateAllowed": 0.43478260869565216,
+          "rushSuccessRate": 0.4666666666666667,
+          "rushSuccessRateAllowed": 0.375,
+          "passSuccessRate": 0.2916666666666667,
+          "passSuccessRateAllowed": 0.4666666666666667,
+          "explosivePlayRate": 0.12962962962962962,
+          "explosivePlayRateAllowed": 0.10144927536231885,
+          "yardsPerPlay": 7.277777777777778,
+          "yardsPerPlayAllowed": 5.385714285714286,
+          "pointsPerResolvedPossession": 2.5,
+          "pointsPerResolvedPossessionAllowed": 2.25,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 103.30129903277006,
+          "opponentRidgeOverallRank": 59
+        },
+        {
+          "gameId": "401752856",
+          "week": 6,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Wisconsin",
+          "result": "W",
+          "pointsFor": 24,
+          "pointsAgainst": 10,
+          "margin": 14,
+          "successRate": 0.5666666666666667,
+          "successRateAllowed": 0.4107142857142857,
+          "rushSuccessRate": 0.5625,
+          "rushSuccessRateAllowed": 0.37037037037037035,
+          "passSuccessRate": 0.5714285714285714,
+          "passSuccessRateAllowed": 0.4482758620689655,
+          "explosivePlayRate": 0.15,
+          "explosivePlayRateAllowed": 0.05357142857142857,
+          "yardsPerPlay": 7.166666666666667,
+          "yardsPerPlayAllowed": 4.5,
+          "pointsPerResolvedPossession": 2.0,
+          "pointsPerResolvedPossessionAllowed": 0.9090909090909091,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 101.21208118731843,
+          "opponentRidgeOverallRank": 63
+        },
+        {
+          "gameId": "401752868",
+          "week": 7,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "USC",
+          "result": "L",
+          "pointsFor": 13,
+          "pointsAgainst": 31,
+          "margin": -18,
+          "successRate": 0.45454545454545453,
+          "successRateAllowed": 0.6153846153846154,
+          "rushSuccessRate": 0.4642857142857143,
+          "rushSuccessRateAllowed": 0.5277777777777778,
+          "passSuccessRate": 0.4444444444444444,
+          "passSuccessRateAllowed": 0.7241379310344828,
+          "explosivePlayRate": 0.10909090909090909,
+          "explosivePlayRateAllowed": 0.13846153846153847,
+          "yardsPerPlay": 5.8545454545454545,
+          "yardsPerPlayAllowed": 7.075757575757576,
+          "pointsPerResolvedPossession": 1.3,
+          "pointsPerResolvedPossessionAllowed": 3.1,
+          "turnoverMargin": -1,
+          "opponentRidgeOverallRating": 118.39712658325658,
+          "opponentRidgeOverallRank": 11
+        },
+        {
+          "gameId": "401752873",
+          "week": 8,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Washington",
+          "result": "W",
+          "pointsFor": 24,
+          "pointsAgainst": 7,
+          "margin": 17,
+          "successRate": 0.47058823529411764,
+          "successRateAllowed": 0.49019607843137253,
+          "rushSuccessRate": 0.46153846153846156,
+          "rushSuccessRateAllowed": 0.5238095238095238,
+          "passSuccessRate": 0.4827586206896552,
+          "passSuccessRateAllowed": 0.4666666666666667,
+          "explosivePlayRate": 0.14705882352941177,
+          "explosivePlayRateAllowed": 0.058823529411764705,
+          "yardsPerPlay": 6.132352941176471,
+          "yardsPerPlayAllowed": 5.294117647058823,
+          "pointsPerResolvedPossession": 2.1818181818181817,
+          "pointsPerResolvedPossessionAllowed": 0.875,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 114.63071964470498,
+          "opponentRidgeOverallRank": 16
+        },
+        {
+          "gameId": "401752881",
+          "week": 9,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Michigan State",
+          "result": "W",
+          "pointsFor": 31,
+          "pointsAgainst": 20,
+          "margin": 11,
+          "successRate": 0.4603174603174603,
+          "successRateAllowed": 0.3582089552238806,
+          "rushSuccessRate": 0.5111111111111111,
+          "rushSuccessRateAllowed": 0.4375,
+          "passSuccessRate": 0.3333333333333333,
+          "passSuccessRateAllowed": 0.2857142857142857,
+          "explosivePlayRate": 0.1111111111111111,
+          "explosivePlayRateAllowed": 0.05970149253731343,
+          "yardsPerPlay": 5.859375,
+          "yardsPerPlayAllowed": 4.28169014084507,
+          "pointsPerResolvedPossession": 0.21428571428571427,
+          "pointsPerResolvedPossessionAllowed": 0.0,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 99.4973274077162,
+          "opponentRidgeOverallRank": 68
+        },
+        {
+          "gameId": "401752890",
+          "week": 10,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Purdue",
+          "result": "W",
+          "pointsFor": 21,
+          "pointsAgainst": 16,
+          "margin": 5,
+          "successRate": 0.5,
+          "successRateAllowed": 0.47619047619047616,
+          "rushSuccessRate": 0.5833333333333334,
+          "rushSuccessRateAllowed": 0.4444444444444444,
+          "passSuccessRate": 0.36363636363636365,
+          "passSuccessRateAllowed": 0.5185185185185185,
+          "explosivePlayRate": 0.15517241379310345,
+          "explosivePlayRateAllowed": 0.06349206349206349,
+          "yardsPerPlay": 6.433333333333334,
+          "yardsPerPlayAllowed": 4.453125,
+          "pointsPerResolvedPossession": 2.1,
+          "pointsPerResolvedPossessionAllowed": 1.6,
+          "turnoverMargin": -2,
+          "opponentRidgeOverallRating": 98.4123759667801,
+          "opponentRidgeOverallRank": 73
+        },
+        {
+          "gameId": "401752905",
+          "week": 12,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Northwestern",
+          "result": "W",
+          "pointsFor": 24,
+          "pointsAgainst": 22,
+          "margin": 2,
+          "successRate": 0.5571428571428572,
+          "successRateAllowed": 0.27450980392156865,
+          "rushSuccessRate": 0.5897435897435898,
+          "rushSuccessRateAllowed": 0.28,
+          "passSuccessRate": 0.5161290322580645,
+          "passSuccessRateAllowed": 0.2692307692307692,
+          "explosivePlayRate": 0.11428571428571428,
+          "explosivePlayRateAllowed": 0.09803921568627451,
+          "yardsPerPlay": 6.917808219178082,
+          "yardsPerPlayAllowed": 4.622641509433962,
+          "pointsPerResolvedPossession": 2.1818181818181817,
+          "pointsPerResolvedPossessionAllowed": 2.0,
+          "turnoverMargin": -3,
+          "opponentRidgeOverallRating": 104.96388765134327,
+          "opponentRidgeOverallRank": 51
+        },
+        {
+          "gameId": "401752914",
+          "week": 13,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Maryland",
+          "result": "W",
+          "pointsFor": 45,
+          "pointsAgainst": 20,
+          "margin": 25,
+          "successRate": 0.5714285714285714,
+          "successRateAllowed": 0.36363636363636365,
+          "rushSuccessRate": 0.5777777777777777,
+          "rushSuccessRateAllowed": 0.2727272727272727,
+          "passSuccessRate": 0.56,
+          "passSuccessRateAllowed": 0.4090909090909091,
+          "explosivePlayRate": 0.12857142857142856,
+          "explosivePlayRateAllowed": 0.07575757575757576,
+          "yardsPerPlay": 6.055555555555555,
+          "yardsPerPlayAllowed": 4.746268656716418,
+          "pointsPerResolvedPossession": 4.5,
+          "pointsPerResolvedPossessionAllowed": 1.625,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 96.19134027303924,
+          "opponentRidgeOverallRank": 81
+        },
+        {
+          "gameId": "401752921",
+          "week": 14,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Ohio State",
+          "result": "L",
+          "pointsFor": 9,
+          "pointsAgainst": 27,
+          "margin": -18,
+          "successRate": 0.2564102564102564,
+          "successRateAllowed": 0.5217391304347826,
+          "rushSuccessRate": 0.2857142857142857,
+          "rushSuccessRateAllowed": 0.4888888888888889,
+          "passSuccessRate": 0.2222222222222222,
+          "passSuccessRateAllowed": 0.5833333333333334,
+          "explosivePlayRate": 0.10256410256410256,
+          "explosivePlayRateAllowed": 0.10144927536231885,
+          "yardsPerPlay": 3.975609756097561,
+          "yardsPerPlayAllowed": 5.819444444444445,
+          "pointsPerResolvedPossession": 1.0,
+          "pointsPerResolvedPossessionAllowed": 2.2222222222222223,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 131.04413636962423,
+          "opponentRidgeOverallRank": 2
+        }
+      ]
+    },
+    "Western Michigan": {
+      "team": "Western Michigan",
+      "teamId": 2711,
+      "conference": "Mid-American",
+      "games": 13,
+      "record": {
+        "wins": 9,
+        "losses": 4,
+        "games": 13
+      },
+      "ridge": {
+        "team_id": 2711,
+        "team": "Western Michigan",
+        "games": 13,
+        "overall": {
+          "rating": 98.81691414214117,
+          "rank": 70,
+          "field_size": 136
+        },
+        "offense": {
+          "rank": 106,
+          "rating": 89.70810649333485,
+          "field_size": 136,
+          "metrics": {
+            "ppd": {
+              "value": 1.6294058132075957,
+              "rank": 101,
+              "field_size": 136
+            },
+            "ypd": {
+              "value": 29.36810070839509,
+              "rank": 104,
+              "field_size": 136
+            },
+            "success": {
+              "value": 0.3847651165617788,
+              "rank": 105,
+              "field_size": 136
+            },
+            "scoring": {
+              "value": 0.2871213975267837,
+              "rank": 101,
+              "field_size": 136
+            }
+          }
+        },
+        "defense": {
+          "rank": 41,
+          "rating": 107.92572179094749,
+          "field_size": 136,
+          "metrics": {
+            "ppd": {
+              "value": 1.6849050808668788,
+              "rank": 41,
+              "field_size": 136
+            },
+            "ypd": {
+              "value": 30.101657295621955,
+              "rank": 34,
+              "field_size": 136
+            },
+            "success": {
+              "value": 0.409850486755493,
+              "rank": 47,
+              "field_size": 136
+            },
+            "scoring": {
+              "value": 0.3044243707047927,
+              "rank": 42,
+              "field_size": 136
+            }
+          }
+        }
+      },
+      "style": {
+        "rushShare": 0.6507009345794392,
+        "passShare": 0.3492990654205608,
+        "possessionsPerGame": 10.692307692307692,
+        "defensivePossessionsPerGame": 11.384615384615385,
+        "averageStartOwnYardLine": 34.05755395683453,
+        "averageOpponentStartOwnYardLine": 31.25,
+        "threeAndOutRate": 0.18705035971223022,
+        "threeAndOutForcedRate": 0.25675675675675674,
+        "giveawaysPerGame": 0.38461538461538464,
+        "takeawaysPerGame": 0.7692307692307693,
+        "turnoverMargin": 5,
+        "sacksAllowed": 19,
+        "sacksMade": 31
+      },
+      "metrics": [
+        {
+          "label": "Success rate",
+          "key": "successRate",
+          "value": 0.42502951593860683,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 63,
+          "fieldSize": 136,
+          "percentile": 0.5407407407407407
+        },
+        {
+          "label": "Success rate allowed",
+          "key": "successRateAllowed",
+          "value": 0.38107416879795397,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 18,
+          "fieldSize": 136,
+          "percentile": 0.8740740740740741
+        },
+        {
+          "label": "Rush success rate",
+          "key": "rushSuccessRate",
+          "value": 0.45126353790613716,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 47,
+          "fieldSize": 136,
+          "percentile": 0.6592592592592592
+        },
+        {
+          "label": "Rush success allowed",
+          "key": "rushSuccessRateAllowed",
+          "value": 0.39950372208436724,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 37,
+          "fieldSize": 136,
+          "percentile": 0.7333333333333334
+        },
+        {
+          "label": "Pass success rate",
+          "key": "passSuccessRate",
+          "value": 0.37542662116040953,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 112,
+          "fieldSize": 136,
+          "percentile": 0.1777777777777778
+        },
+        {
+          "label": "Pass success allowed",
+          "key": "passSuccessRateAllowed",
+          "value": 0.36147757255936674,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 16,
+          "fieldSize": 136,
+          "percentile": 0.8888888888888888
+        },
+        {
+          "label": "Explosive play rate",
+          "key": "explosivePlayRate",
+          "value": 0.10743801652892562,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 79,
+          "fieldSize": 136,
+          "percentile": 0.4222222222222223
+        },
+        {
+          "label": "Explosive rate allowed",
+          "key": "explosivePlayRateAllowed",
+          "value": 0.10869565217391304,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 50,
+          "fieldSize": 136,
+          "percentile": 0.6370370370370371
+        },
+        {
+          "label": "Yards per play",
+          "key": "yardsPerPlay",
+          "value": 5.178738317757009,
+          "format": "num",
+          "higherIsBetter": true,
+          "rank": 109,
+          "fieldSize": 136,
+          "percentile": 0.19999999999999996
+        },
+        {
+          "label": "Yards per play allowed",
+          "key": "yardsPerPlayAllowed",
+          "value": 5.297128589263421,
+          "format": "num",
+          "higherIsBetter": false,
+          "rank": 31,
+          "fieldSize": 136,
+          "percentile": 0.7777777777777778
+        },
+        {
+          "label": "Points per possession",
+          "key": "pointsPerResolvedPossession",
+          "value": 1.7608695652173914,
+          "format": "num",
+          "higherIsBetter": true,
+          "rank": 85,
+          "fieldSize": 136,
+          "percentile": 0.37777777777777777
+        },
+        {
+          "label": "Points per possession allowed",
+          "key": "pointsPerResolvedPossessionAllowed",
+          "value": 1.3333333333333333,
+          "format": "num",
+          "higherIsBetter": false,
+          "rank": 9,
+          "fieldSize": 136,
+          "percentile": 0.9407407407407408
+        },
+        {
+          "label": "Third-down conversion",
+          "key": "thirdDownConversionRate",
+          "value": 0.3988439306358382,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 75,
+          "fieldSize": 136,
+          "percentile": 0.45185185185185184
+        },
+        {
+          "label": "Third-down conversion allowed",
+          "key": "thirdDownConversionRateAllowed",
+          "value": 0.32926829268292684,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 10,
+          "fieldSize": 136,
+          "percentile": 0.9333333333333333
+        },
+        {
+          "label": "Havoc created",
+          "key": "havocRate",
+          "value": 0.10099750623441396,
+          "format": "pct",
+          "higherIsBetter": true,
+          "rank": 48,
+          "fieldSize": 136,
+          "percentile": 0.6518518518518519
+        },
+        {
+          "label": "Havoc allowed",
+          "key": "havocRateAllowed",
+          "value": 0.08761682242990654,
+          "format": "pct",
+          "higherIsBetter": false,
+          "rank": 41,
+          "fieldSize": 136,
+          "percentile": 0.7037037037037037
+        },
+        {
+          "label": "Points per opportunity",
+          "key": "pointsPerOpportunity",
+          "value": 3.0945945945945947,
+          "format": "num",
+          "higherIsBetter": true,
+          "rank": 103,
+          "fieldSize": 136,
+          "percentile": 0.24444444444444446
+        },
+        {
+          "label": "Points per opportunity allowed",
+          "key": "pointsPerOpportunityAllowed",
+          "value": 3.240740740740741,
+          "format": "num",
+          "higherIsBetter": false,
+          "rank": 35,
+          "fieldSize": 136,
+          "percentile": 0.7481481481481482
+        }
+      ],
+      "recentForm": {
+        "games": 5,
+        "record": {
+          "wins": 5,
+          "losses": 0,
+          "games": 5
+        },
+        "averages": {
+          "points_for": 26.0,
+          "points_against": 17.4,
+          "successRate": 0.45482402651245935,
+          "successRateAllowed": 0.3514554936588835,
+          "rushSuccessRate": 0.46526199788911654,
+          "rushSuccessRateAllowed": 0.3324265113738798,
+          "passSuccessRate": 0.38942857142857146,
+          "passSuccessRateAllowed": 0.416919372337329,
+          "explosivePlayRate": 0.13590657373306628,
+          "explosivePlayRateAllowed": 0.10939258481631363,
+          "yardsPerPlay": 5.748108990317068,
+          "yardsPerPlayAllowed": 5.435831512414465,
+          "pointsPerResolvedPossession": 2.427179487179487,
+          "pointsPerResolvedPossessionAllowed": 1.6921212121212121,
+          "turnoverMargin": 0.2
+        },
+        "variability": {
+          "points_for": 6.324555320336759,
+          "points_against": 3.666060555964672,
+          "successRate": 0.09331422410773664,
+          "successRateAllowed": 0.07038759908856905,
+          "rushSuccessRate": 0.12403995026354371,
+          "rushSuccessRateAllowed": 0.08146666183429792,
+          "passSuccessRate": 0.08411653723694702,
+          "passSuccessRateAllowed": 0.19740588995870717,
+          "explosivePlayRate": 0.024140549729896803,
+          "explosivePlayRateAllowed": 0.055256185136385784,
+          "yardsPerPlay": 0.26909290146265435,
+          "yardsPerPlayAllowed": 1.2501552668311868,
+          "pointsPerResolvedPossession": 0.5901530332818696,
+          "pointsPerResolvedPossessionAllowed": 0.49224882656473834,
+          "turnoverMargin": 1.1661903789690602
+        }
+      },
+      "opponentStrength": {
+        "ratedOpponents": 13,
+        "averageOpponentRidgeRating": 92.50478516170392,
+        "top25RidgeOpponents": 0,
+        "recordVsTop25Ridge": {
+          "wins": 0,
+          "losses": 0,
+          "games": 0
+        },
+        "bestWin": {
+          "opponent": "Toledo",
+          "score": "14-13",
+          "opponentRidgeRating": 106.38798384201408,
+          "opponentRidgeRank": 42
+        }
+      },
+      "gameLog": [
+        {
+          "gameId": "401752802",
+          "week": 1,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Michigan State",
+          "result": "L",
+          "pointsFor": 6,
+          "pointsAgainst": 23,
+          "margin": -17,
+          "successRate": 0.24528301886792453,
+          "successRateAllowed": 0.484375,
+          "rushSuccessRate": 0.21052631578947367,
+          "rushSuccessRateAllowed": 0.45,
+          "passSuccessRate": 0.2647058823529412,
+          "passSuccessRateAllowed": 0.5416666666666666,
+          "explosivePlayRate": 0.09433962264150944,
+          "explosivePlayRateAllowed": 0.125,
+          "yardsPerPlay": 2.857142857142857,
+          "yardsPerPlayAllowed": 5.656716417910448,
+          "pointsPerResolvedPossession": 0.0,
+          "pointsPerResolvedPossessionAllowed": 1.6153846153846154,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 99.4973274077162,
+          "opponentRidgeOverallRank": 68
+        },
+        {
+          "gameId": "401778306",
+          "week": 1,
+          "seasonType": "postseason",
+          "homeAway": "home",
+          "opponent": "Kennesaw State",
+          "result": "W",
+          "pointsFor": 41,
+          "pointsAgainst": 6,
+          "margin": 35,
+          "successRate": 0.4745762711864407,
+          "successRateAllowed": 0.421875,
+          "rushSuccessRate": 0.4634146341463415,
+          "rushSuccessRateAllowed": 0.5862068965517241,
+          "passSuccessRate": 0.5,
+          "passSuccessRateAllowed": 0.2857142857142857,
+          "explosivePlayRate": 0.13559322033898305,
+          "explosivePlayRateAllowed": 0.125,
+          "yardsPerPlay": 6.85,
+          "yardsPerPlayAllowed": 5.9393939393939394,
+          "pointsPerResolvedPossession": 2.4545454545454546,
+          "pointsPerResolvedPossessionAllowed": 0.0,
+          "turnoverMargin": 2,
+          "opponentRidgeOverallRating": 92.65856340777427,
+          "opponentRidgeOverallRank": 91
+        },
+        {
+          "gameId": "401762461",
+          "week": 2,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "North Texas",
+          "result": "L",
+          "pointsFor": 30,
+          "pointsAgainst": 33,
+          "margin": -3,
+          "successRate": 0.3695652173913043,
+          "successRateAllowed": 0.44155844155844154,
+          "rushSuccessRate": 0.3972602739726027,
+          "rushSuccessRateAllowed": 0.5882352941176471,
+          "passSuccessRate": 0.2631578947368421,
+          "passSuccessRateAllowed": 0.32558139534883723,
+          "explosivePlayRate": 0.07608695652173914,
+          "explosivePlayRateAllowed": 0.19480519480519481,
+          "yardsPerPlay": 4.021739130434782,
+          "yardsPerPlayAllowed": 6.5256410256410255,
+          "pointsPerResolvedPossession": 1.2,
+          "pointsPerResolvedPossessionAllowed": 2.2857142857142856,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 108.0817925785048,
+          "opponentRidgeOverallRank": 35
+        },
+        {
+          "gameId": "401752829",
+          "week": 3,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Illinois",
+          "result": "L",
+          "pointsFor": 0,
+          "pointsAgainst": 38,
+          "margin": -38,
+          "successRate": 0.27586206896551724,
+          "successRateAllowed": 0.5409836065573771,
+          "rushSuccessRate": 0.25806451612903225,
+          "rushSuccessRateAllowed": 0.6060606060606061,
+          "passSuccessRate": 0.2962962962962963,
+          "passSuccessRateAllowed": 0.4642857142857143,
+          "explosivePlayRate": 0.05172413793103448,
+          "explosivePlayRateAllowed": 0.13114754098360656,
+          "yardsPerPlay": 3.5172413793103448,
+          "yardsPerPlayAllowed": 5.870967741935484,
+          "pointsPerResolvedPossession": 0.0,
+          "pointsPerResolvedPossessionAllowed": 3.4545454545454546,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 110.12684188364992,
+          "opponentRidgeOverallRank": 28
+        },
+        {
+          "gameId": "401762820",
+          "week": 4,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Toledo",
+          "result": "W",
+          "pointsFor": 14,
+          "pointsAgainst": 13,
+          "margin": 1,
+          "successRate": 0.40298507462686567,
+          "successRateAllowed": 0.3188405797101449,
+          "rushSuccessRate": 0.4375,
+          "rushSuccessRateAllowed": 0.3333333333333333,
+          "passSuccessRate": 0.37142857142857144,
+          "passSuccessRateAllowed": 0.3,
+          "explosivePlayRate": 0.05970149253731343,
+          "explosivePlayRateAllowed": 0.07246376811594203,
+          "yardsPerPlay": 4.343283582089552,
+          "yardsPerPlayAllowed": 4.072463768115942,
+          "pointsPerResolvedPossession": 1.0769230769230769,
+          "pointsPerResolvedPossessionAllowed": 1.0,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 106.38798384201408,
+          "opponentRidgeOverallRank": 42
+        },
+        {
+          "gameId": "401762832",
+          "week": 6,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Massachusetts",
+          "result": "W",
+          "pointsFor": 21,
+          "pointsAgainst": 3,
+          "margin": 18,
+          "successRate": 0.5,
+          "successRateAllowed": 0.3387096774193548,
+          "rushSuccessRate": 0.5365853658536586,
+          "rushSuccessRateAllowed": 0.36363636363636365,
+          "passSuccessRate": 0.44,
+          "passSuccessRateAllowed": 0.325,
+          "explosivePlayRate": 0.09090909090909091,
+          "explosivePlayRateAllowed": 0.04838709677419355,
+          "yardsPerPlay": 5.636363636363637,
+          "yardsPerPlayAllowed": 4.079365079365079,
+          "pointsPerResolvedPossession": 1.9090909090909092,
+          "pointsPerResolvedPossessionAllowed": 0.2727272727272727,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 67.44763344068711,
+          "opponentRidgeOverallRank": 136
+        },
+        {
+          "gameId": "401762834",
+          "week": 7,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Ball State",
+          "result": "W",
+          "pointsFor": 42,
+          "pointsAgainst": 0,
+          "margin": 42,
+          "successRate": 0.5285714285714286,
+          "successRateAllowed": 0.16666666666666666,
+          "rushSuccessRate": 0.5238095238095238,
+          "rushSuccessRateAllowed": 0.2,
+          "passSuccessRate": 0.5357142857142857,
+          "passSuccessRateAllowed": 0.14285714285714285,
+          "explosivePlayRate": 0.11428571428571428,
+          "explosivePlayRateAllowed": 0.020833333333333332,
+          "yardsPerPlay": 6.535211267605634,
+          "yardsPerPlayAllowed": 2.125,
+          "pointsPerResolvedPossession": 3.5,
+          "pointsPerResolvedPossessionAllowed": 0.0,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 77.41664826677203,
+          "opponentRidgeOverallRank": 134
+        },
+        {
+          "gameId": "401762874",
+          "week": 9,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Miami (OH)",
+          "result": "L",
+          "pointsFor": 17,
+          "pointsAgainst": 26,
+          "margin": -9,
+          "successRate": 0.42424242424242425,
+          "successRateAllowed": 0.4166666666666667,
+          "rushSuccessRate": 0.5428571428571428,
+          "rushSuccessRateAllowed": 0.3225806451612903,
+          "passSuccessRate": 0.2903225806451613,
+          "passSuccessRateAllowed": 0.5172413793103449,
+          "explosivePlayRate": 0.10606060606060606,
+          "explosivePlayRateAllowed": 0.1,
+          "yardsPerPlay": 4.909090909090909,
+          "yardsPerPlayAllowed": 6.580645161290323,
+          "pointsPerResolvedPossession": 0.3,
+          "pointsPerResolvedPossessionAllowed": 1.6363636363636365,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 92.10050073306247,
+          "opponentRidgeOverallRank": 94
+        },
+        {
+          "gameId": "401762850",
+          "week": 10,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Central Michigan",
+          "result": "W",
+          "pointsFor": 24,
+          "pointsAgainst": 21,
+          "margin": 3,
+          "successRate": 0.453125,
+          "successRateAllowed": 0.35714285714285715,
+          "rushSuccessRate": 0.46153846153846156,
+          "rushSuccessRateAllowed": 0.24242424242424243,
+          "passSuccessRate": 0.44,
+          "passSuccessRateAllowed": 0.7777777777777778,
+          "explosivePlayRate": 0.109375,
+          "explosivePlayRateAllowed": 0.047619047619047616,
+          "yardsPerPlay": 5.2272727272727275,
+          "yardsPerPlayAllowed": 5.478260869565218,
+          "pointsPerResolvedPossession": 2.6666666666666665,
+          "pointsPerResolvedPossessionAllowed": 2.3333333333333335,
+          "turnoverMargin": -1,
+          "opponentRidgeOverallRating": 86.97320319492457,
+          "opponentRidgeOverallRank": 120
+        },
+        {
+          "gameId": "401762857",
+          "week": 12,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Ohio",
+          "result": "W",
+          "pointsFor": 17,
+          "pointsAgainst": 13,
+          "margin": 4,
+          "successRate": 0.44642857142857145,
+          "successRateAllowed": 0.39285714285714285,
+          "rushSuccessRate": 0.47619047619047616,
+          "rushSuccessRateAllowed": 0.43243243243243246,
+          "passSuccessRate": 0.35714285714285715,
+          "passSuccessRateAllowed": 0.3157894736842105,
+          "explosivePlayRate": 0.14285714285714285,
+          "explosivePlayRateAllowed": 0.10714285714285714,
+          "yardsPerPlay": 5.982142857142857,
+          "yardsPerPlayAllowed": 5.107142857142857,
+          "pointsPerResolvedPossession": 1.7,
+          "pointsPerResolvedPossessionAllowed": 1.3,
+          "turnoverMargin": 0,
+          "opponentRidgeOverallRating": 97.49864600825427,
+          "opponentRidgeOverallRank": 78
+        },
+        {
+          "gameId": "401762864",
+          "week": 13,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Northern Illinois",
+          "result": "W",
+          "pointsFor": 35,
+          "pointsAgainst": 19,
+          "margin": 16,
+          "successRate": 0.6119402985074627,
+          "successRateAllowed": 0.2727272727272727,
+          "rushSuccessRate": 0.6610169491525424,
+          "rushSuccessRateAllowed": 0.2894736842105263,
+          "passSuccessRate": 0.25,
+          "passSuccessRateAllowed": 0.23529411764705882,
+          "explosivePlayRate": 0.1791044776119403,
+          "explosivePlayRateAllowed": 0.12727272727272726,
+          "yardsPerPlay": 5.779411764705882,
+          "yardsPerPlayAllowed": 4.6909090909090905,
+          "pointsPerResolvedPossession": 3.1818181818181817,
+          "pointsPerResolvedPossessionAllowed": 1.7272727272727273,
+          "turnoverMargin": -1,
+          "opponentRidgeOverallRating": 82.25572822953566,
+          "opponentRidgeOverallRank": 128
+        },
+        {
+          "gameId": "401762869",
+          "week": 14,
+          "seasonType": "regular",
+          "homeAway": "away",
+          "opponent": "Eastern Michigan",
+          "result": "W",
+          "pointsFor": 31,
+          "pointsAgainst": 21,
+          "margin": 10,
+          "successRate": 0.4444444444444444,
+          "successRateAllowed": 0.4576271186440678,
+          "rushSuccessRate": 0.4583333333333333,
+          "rushSuccessRateAllowed": 0.42857142857142855,
+          "passSuccessRate": 0.4,
+          "passSuccessRateAllowed": 0.47368421052631576,
+          "explosivePlayRate": 0.12698412698412698,
+          "explosivePlayRateAllowed": 0.2033898305084746,
+          "yardsPerPlay": 5.841269841269841,
+          "yardsPerPlayAllowed": 7.770491803278689,
+          "pointsPerResolvedPossession": 2.8181818181818183,
+          "pointsPerResolvedPossessionAllowed": 2.1,
+          "turnoverMargin": 2,
+          "opponentRidgeOverallRating": 90.01683737619311,
+          "opponentRidgeOverallRank": 102
+        },
+        {
+          "gameId": "401777329",
+          "week": 15,
+          "seasonType": "regular",
+          "homeAway": "home",
+          "opponent": "Miami (OH)",
+          "result": "W",
+          "pointsFor": 23,
+          "pointsAgainst": 13,
+          "margin": 10,
+          "successRate": 0.3181818181818182,
+          "successRateAllowed": 0.27692307692307694,
+          "rushSuccessRate": 0.2692307692307692,
+          "rushSuccessRateAllowed": 0.2692307692307692,
+          "passSuccessRate": 0.5,
+          "passSuccessRateAllowed": 0.28205128205128205,
+          "explosivePlayRate": 0.12121212121212122,
+          "explosivePlayRateAllowed": 0.06153846153846154,
+          "yardsPerPlay": 5.91044776119403,
+          "yardsPerPlayAllowed": 4.132352941176471,
+          "pointsPerResolvedPossession": 1.7692307692307692,
+          "pointsPerResolvedPossessionAllowed": 1.0,
+          "turnoverMargin": 1,
+          "opponentRidgeOverallRating": 92.10050073306247,
+          "opponentRidgeOverallRank": 94
+        }
+      ]
+    }
+  },
+  "matchups": {
+    "michigan-offense-vs-western-michigan-defense": [
+      {
+        "group": "efficiency",
+        "metric": "Success rate",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.46898263027295284,
+          "rank": 18,
+          "fieldSize": 136,
+          "percentile": 0.8740740740740741
+        },
+        "defense": {
+          "value": 0.38107416879795397,
+          "rank": 18,
+          "fieldSize": 136,
+          "percentile": 0.8740740740740741
+        },
+        "relativeQualityEdge": 0.0,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "run",
+        "metric": "Rush success rate",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.508695652173913,
+          "rank": 6,
+          "fieldSize": 136,
+          "percentile": 0.962962962962963
+        },
+        "defense": {
+          "value": 0.39950372208436724,
+          "rank": 37,
+          "fieldSize": 136,
+          "percentile": 0.7333333333333334
+        },
+        "relativeQualityEdge": 0.22962962962962963,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "pass",
+        "metric": "Pass success rate",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.4161849710982659,
+          "rank": 65,
+          "fieldSize": 136,
+          "percentile": 0.5259259259259259
+        },
+        "defense": {
+          "value": 0.36147757255936674,
+          "rank": 16,
+          "fieldSize": 136,
+          "percentile": 0.8888888888888888
+        },
+        "relativeQualityEdge": -0.36296296296296293,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "explosiveness",
+        "metric": "Explosive play rate",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.1327543424317618,
+          "rank": 30,
+          "fieldSize": 136,
+          "percentile": 0.7851851851851852
+        },
+        "defense": {
+          "value": 0.10869565217391304,
+          "rank": 50,
+          "fieldSize": 136,
+          "percentile": 0.6370370370370371
+        },
+        "relativeQualityEdge": 0.14814814814814814,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "run",
+        "metric": "Rush explosive rate",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.15434782608695652,
+          "rank": 29,
+          "fieldSize": 136,
+          "percentile": 0.7925925925925926
+        },
+        "defense": {
+          "value": 0.14640198511166252,
+          "rank": 89,
+          "fieldSize": 136,
+          "percentile": 0.3481481481481481
+        },
+        "relativeQualityEdge": 0.44444444444444453,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "pass",
+        "metric": "Pass explosive rate",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.10404624277456648,
+          "rank": 39,
+          "fieldSize": 136,
+          "percentile": 0.7185185185185186
+        },
+        "defense": {
+          "value": 0.06860158311345646,
+          "rank": 10,
+          "fieldSize": 136,
+          "percentile": 0.9333333333333333
+        },
+        "relativeQualityEdge": -0.2148148148148148,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "efficiency",
+        "metric": "Yards per play",
+        "format": "num",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 6.233292831105711,
+          "rank": 29,
+          "fieldSize": 136,
+          "percentile": 0.7925925925925926
+        },
+        "defense": {
+          "value": 5.297128589263421,
+          "rank": 31,
+          "fieldSize": 136,
+          "percentile": 0.7777777777777778
+        },
+        "relativeQualityEdge": 0.014814814814814836,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "drives",
+        "metric": "Yards per possession",
+        "format": "num",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 35.19178082191781,
+          "rank": 41,
+          "fieldSize": 136,
+          "percentile": 0.7037037037037037
+        },
+        "defense": {
+          "value": 27.43243243243243,
+          "rank": 19,
+          "fieldSize": 136,
+          "percentile": 0.8666666666666667
+        },
+        "relativeQualityEdge": -0.16296296296296298,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "drives",
+        "metric": "Points per resolved possession",
+        "format": "num",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 2.26027397260274,
+          "rank": 39,
+          "fieldSize": 136,
+          "percentile": 0.7185185185185186
+        },
+        "defense": {
+          "value": 1.3333333333333333,
+          "rank": 9,
+          "fieldSize": 136,
+          "percentile": 0.9407407407407408
+        },
+        "relativeQualityEdge": -0.2222222222222222,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "drives",
+        "metric": "Scoring rate per possession",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.3904109589041096,
+          "rank": 41,
+          "fieldSize": 136,
+          "percentile": 0.7037037037037037
+        },
+        "defense": {
+          "value": 0.25,
+          "rank": 10,
+          "fieldSize": 136,
+          "percentile": 0.9333333333333333
+        },
+        "relativeQualityEdge": -0.22962962962962963,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "downs",
+        "metric": "Third-down conversion",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.461038961038961,
+          "rank": 24,
+          "fieldSize": 136,
+          "percentile": 0.8296296296296296
+        },
+        "defense": {
+          "value": 0.32926829268292684,
+          "rank": 10,
+          "fieldSize": 136,
+          "percentile": 0.9333333333333333
+        },
+        "relativeQualityEdge": -0.10370370370370374,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "downs",
+        "metric": "Standard-down success",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.5346020761245674,
+          "rank": 10,
+          "fieldSize": 136,
+          "percentile": 0.9333333333333333
+        },
+        "defense": {
+          "value": 0.4277456647398844,
+          "rank": 17,
+          "fieldSize": 136,
+          "percentile": 0.8814814814814815
+        },
+        "relativeQualityEdge": 0.051851851851851816,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "downs",
+        "metric": "Passing-down success",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.3026315789473684,
+          "rank": 65,
+          "fieldSize": 136,
+          "percentile": 0.5259259259259259
+        },
+        "defense": {
+          "value": 0.2889733840304182,
+          "rank": 49,
+          "fieldSize": 136,
+          "percentile": 0.6444444444444444
+        },
+        "relativeQualityEdge": -0.11851851851851847,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "finishing",
+        "metric": "Red-zone TD rate",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.5370370370370371,
+          "rank": 70,
+          "fieldSize": 136,
+          "percentile": 0.48888888888888893
+        },
+        "defense": {
+          "value": 0.47619047619047616,
+          "rank": 30,
+          "fieldSize": 136,
+          "percentile": 0.7851851851851852
+        },
+        "relativeQualityEdge": -0.2962962962962963,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "finishing",
+        "metric": "Red-zone success",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.5289256198347108,
+          "rank": 8,
+          "fieldSize": 136,
+          "percentile": 0.9481481481481482
+        },
+        "defense": {
+          "value": 0.37894736842105264,
+          "rank": 28,
+          "fieldSize": 136,
+          "percentile": 0.8
+        },
+        "relativeQualityEdge": 0.14814814814814814,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "finishing",
+        "metric": "Points per opportunity",
+        "format": "num",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 3.4,
+          "rank": 78,
+          "fieldSize": 136,
+          "percentile": 0.4296296296296296
+        },
+        "defense": {
+          "value": 3.240740740740741,
+          "rank": 35,
+          "fieldSize": 136,
+          "percentile": 0.7481481481481482
+        },
+        "relativeQualityEdge": -0.31851851851851865,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "run",
+        "metric": "Rush yards per attempt",
+        "format": "num",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 6.008510638297873,
+          "rank": 10,
+          "fieldSize": 136,
+          "percentile": 0.9333333333333333
+        },
+        "defense": {
+          "value": 5.226044226044226,
+          "rank": 89,
+          "fieldSize": 136,
+          "percentile": 0.3481481481481481
+        },
+        "relativeQualityEdge": 0.5851851851851853,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "pass",
+        "metric": "Net pass yards per dropback",
+        "format": "num",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 6.53257790368272,
+          "rank": 66,
+          "fieldSize": 136,
+          "percentile": 0.5185185185185186
+        },
+        "defense": {
+          "value": 5.370558375634518,
+          "rank": 11,
+          "fieldSize": 136,
+          "percentile": 0.9259259259259259
+        },
+        "relativeQualityEdge": -0.40740740740740733,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "disruption",
+        "metric": "Havoc battle",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.0851581508515815,
+          "rank": 35,
+          "fieldSize": 136,
+          "percentile": 0.7481481481481482
+        },
+        "defense": {
+          "value": 0.10099750623441396,
+          "rank": 48,
+          "fieldSize": 136,
+          "percentile": 0.6518518518518519
+        },
+        "relativeQualityEdge": 0.09629629629629632,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "disruption",
+        "metric": "Sack battle",
+        "format": "pct",
+        "offenseTeam": "Michigan",
+        "defenseTeam": "Western Michigan",
+        "offense": {
+          "value": 0.056657223796033995,
+          "rank": 76,
+          "fieldSize": 136,
+          "percentile": 0.4444444444444444
+        },
+        "defense": {
+          "value": 0.07868020304568528,
+          "rank": 13,
+          "fieldSize": 136,
+          "percentile": 0.9111111111111111
+        },
+        "relativeQualityEdge": -0.4666666666666667,
+        "advantage": "Western Michigan"
+      }
+    ],
+    "western-michigan-offense-vs-michigan-defense": [
+      {
+        "group": "efficiency",
+        "metric": "Success rate",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.42502951593860683,
+          "rank": 63,
+          "fieldSize": 136,
+          "percentile": 0.5407407407407407
+        },
+        "defense": {
+          "value": 0.42558425584255843,
+          "rank": 67,
+          "fieldSize": 136,
+          "percentile": 0.5111111111111111
+        },
+        "relativeQualityEdge": 0.029629629629629672,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "run",
+        "metric": "Rush success rate",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.45126353790613716,
+          "rank": 47,
+          "fieldSize": 136,
+          "percentile": 0.6592592592592592
+        },
+        "defense": {
+          "value": 0.40310077519379844,
+          "rank": 43,
+          "fieldSize": 136,
+          "percentile": 0.6888888888888889
+        },
+        "relativeQualityEdge": -0.029629629629629672,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "pass",
+        "metric": "Pass success rate",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.37542662116040953,
+          "rank": 112,
+          "fieldSize": 136,
+          "percentile": 0.1777777777777778
+        },
+        "defense": {
+          "value": 0.4460093896713615,
+          "rank": 96,
+          "fieldSize": 136,
+          "percentile": 0.2962962962962963
+        },
+        "relativeQualityEdge": -0.11851851851851847,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "explosiveness",
+        "metric": "Explosive play rate",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.10743801652892562,
+          "rank": 79,
+          "fieldSize": 136,
+          "percentile": 0.4222222222222223
+        },
+        "defense": {
+          "value": 0.09225092250922509,
+          "rank": 20,
+          "fieldSize": 136,
+          "percentile": 0.8592592592592593
+        },
+        "relativeQualityEdge": -0.437037037037037,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "run",
+        "metric": "Rush explosive rate",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.12815884476534295,
+          "rank": 79,
+          "fieldSize": 136,
+          "percentile": 0.4222222222222223
+        },
+        "defense": {
+          "value": 0.10594315245478036,
+          "rank": 23,
+          "fieldSize": 136,
+          "percentile": 0.837037037037037
+        },
+        "relativeQualityEdge": -0.41481481481481475,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "pass",
+        "metric": "Pass explosive rate",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.06825938566552901,
+          "rank": 120,
+          "fieldSize": 136,
+          "percentile": 0.11851851851851847
+        },
+        "defense": {
+          "value": 0.07981220657276995,
+          "rank": 36,
+          "fieldSize": 136,
+          "percentile": 0.7407407407407407
+        },
+        "relativeQualityEdge": -0.6222222222222222,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "efficiency",
+        "metric": "Yards per play",
+        "format": "num",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 5.178738317757009,
+          "rank": 109,
+          "fieldSize": 136,
+          "percentile": 0.19999999999999996
+        },
+        "defense": {
+          "value": 5.037037037037037,
+          "rank": 15,
+          "fieldSize": 136,
+          "percentile": 0.8962962962962963
+        },
+        "relativeQualityEdge": -0.6962962962962963,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "drives",
+        "metric": "Yards per possession",
+        "format": "num",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 31.0431654676259,
+          "rank": 89,
+          "fieldSize": 136,
+          "percentile": 0.3481481481481481
+        },
+        "defense": {
+          "value": 30.114285714285714,
+          "rank": 33,
+          "fieldSize": 136,
+          "percentile": 0.762962962962963
+        },
+        "relativeQualityEdge": -0.41481481481481486,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "drives",
+        "metric": "Points per resolved possession",
+        "format": "num",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 1.7608695652173914,
+          "rank": 85,
+          "fieldSize": 136,
+          "percentile": 0.37777777777777777
+        },
+        "defense": {
+          "value": 1.6618705035971224,
+          "rank": 33,
+          "fieldSize": 136,
+          "percentile": 0.762962962962963
+        },
+        "relativeQualityEdge": -0.3851851851851852,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "drives",
+        "metric": "Scoring rate per possession",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.2949640287769784,
+          "rank": 99,
+          "fieldSize": 136,
+          "percentile": 0.274074074074074
+        },
+        "defense": {
+          "value": 0.3142857142857143,
+          "rank": 39,
+          "fieldSize": 136,
+          "percentile": 0.7185185185185186
+        },
+        "relativeQualityEdge": -0.44444444444444453,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "downs",
+        "metric": "Third-down conversion",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.3988439306358382,
+          "rank": 75,
+          "fieldSize": 136,
+          "percentile": 0.45185185185185184
+        },
+        "defense": {
+          "value": 0.39156626506024095,
+          "rank": 56,
+          "fieldSize": 136,
+          "percentile": 0.5925925925925926
+        },
+        "relativeQualityEdge": -0.14074074074074072,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "downs",
+        "metric": "Standard-down success",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.506872852233677,
+          "rank": 32,
+          "fieldSize": 136,
+          "percentile": 0.7703703703703704
+        },
+        "defense": {
+          "value": 0.47027972027972026,
+          "rank": 60,
+          "fieldSize": 136,
+          "percentile": 0.5629629629629629
+        },
+        "relativeQualityEdge": 0.20740740740740748,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "downs",
+        "metric": "Passing-down success",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.24528301886792453,
+          "rank": 122,
+          "fieldSize": 136,
+          "percentile": 0.10370370370370374
+        },
+        "defense": {
+          "value": 0.31950207468879666,
+          "rank": 94,
+          "fieldSize": 136,
+          "percentile": 0.3111111111111111
+        },
+        "relativeQualityEdge": -0.20740740740740737,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "finishing",
+        "metric": "Red-zone TD rate",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.6,
+          "rank": 36,
+          "fieldSize": 136,
+          "percentile": 0.7407407407407407
+        },
+        "defense": {
+          "value": 0.5,
+          "rank": 36,
+          "fieldSize": 136,
+          "percentile": 0.7407407407407407
+        },
+        "relativeQualityEdge": 0.0,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "finishing",
+        "metric": "Red-zone success",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.5211267605633803,
+          "rank": 10,
+          "fieldSize": 136,
+          "percentile": 0.9333333333333333
+        },
+        "defense": {
+          "value": 0.44144144144144143,
+          "rank": 73,
+          "fieldSize": 136,
+          "percentile": 0.4666666666666667
+        },
+        "relativeQualityEdge": 0.4666666666666667,
+        "advantage": "Western Michigan"
+      },
+      {
+        "group": "finishing",
+        "metric": "Points per opportunity",
+        "format": "num",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 3.0945945945945947,
+          "rank": 103,
+          "fieldSize": 136,
+          "percentile": 0.24444444444444446
+        },
+        "defense": {
+          "value": 3.5555555555555554,
+          "rank": 70,
+          "fieldSize": 136,
+          "percentile": 0.48888888888888893
+        },
+        "relativeQualityEdge": -0.24444444444444446,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "run",
+        "metric": "Rush yards per attempt",
+        "format": "num",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 5.168761220825853,
+          "rank": 44,
+          "fieldSize": 136,
+          "percentile": 0.6814814814814815
+        },
+        "defense": {
+          "value": 4.313131313131313,
+          "rank": 19,
+          "fieldSize": 136,
+          "percentile": 0.8666666666666667
+        },
+        "relativeQualityEdge": -0.18518518518518523,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "pass",
+        "metric": "Net pass yards per dropback",
+        "format": "num",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 5.197324414715719,
+          "rank": 124,
+          "fieldSize": 136,
+          "percentile": 0.0888888888888889
+        },
+        "defense": {
+          "value": 5.687074829931973,
+          "rank": 20,
+          "fieldSize": 136,
+          "percentile": 0.8592592592592593
+        },
+        "relativeQualityEdge": -0.7703703703703704,
+        "advantage": "Michigan"
+      },
+      {
+        "group": "disruption",
+        "metric": "Havoc battle",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.08761682242990654,
+          "rank": 41,
+          "fieldSize": 136,
+          "percentile": 0.7037037037037037
+        },
+        "defense": {
+          "value": 0.10645933014354067,
+          "rank": 36,
+          "fieldSize": 136,
+          "percentile": 0.7407407407407407
+        },
+        "relativeQualityEdge": -0.03703703703703698,
+        "advantage": "EVEN"
+      },
+      {
+        "group": "disruption",
+        "metric": "Sack battle",
+        "format": "pct",
+        "offenseTeam": "Western Michigan",
+        "defenseTeam": "Michigan",
+        "offense": {
+          "value": 0.06354515050167224,
+          "rank": 93,
+          "fieldSize": 136,
+          "percentile": 0.31851851851851853
+        },
+        "defense": {
+          "value": 0.061224489795918366,
+          "rank": 45,
+          "fieldSize": 136,
+          "percentile": 0.674074074074074
+        },
+        "relativeQualityEdge": -0.3555555555555555,
+        "advantage": "Michigan"
+      }
+    ]
+  },
+  "commonOpponents": [
+    {
+      "opponent": "Central Michigan",
+      "teamA": {
+        "gameId": "401752839",
+        "week": 3,
+        "seasonType": "regular",
+        "homeAway": "home",
+        "opponent": "Central Michigan",
+        "result": "W",
+        "pointsFor": 63,
+        "pointsAgainst": 3,
+        "margin": 60,
+        "successRate": 0.6447368421052632,
+        "successRateAllowed": 0.18,
+        "rushSuccessRate": 0.6346153846153846,
+        "rushSuccessRateAllowed": 0.14285714285714285,
+        "passSuccessRate": 0.6666666666666666,
+        "passSuccessRateAllowed": 0.22727272727272727,
+        "explosivePlayRate": 0.25,
+        "explosivePlayRateAllowed": 0.04,
+        "yardsPerPlay": 7.3544303797468356,
+        "yardsPerPlayAllowed": 2.5961538461538463,
+        "pointsPerResolvedPossession": 5.7272727272727275,
+        "pointsPerResolvedPossessionAllowed": 0.25,
+        "turnoverMargin": 1,
+        "opponentRidgeOverallRating": 86.97320319492457,
+        "opponentRidgeOverallRank": 120
+      },
+      "teamB": {
+        "gameId": "401762850",
+        "week": 10,
+        "seasonType": "regular",
+        "homeAway": "home",
+        "opponent": "Central Michigan",
+        "result": "W",
+        "pointsFor": 24,
+        "pointsAgainst": 21,
+        "margin": 3,
+        "successRate": 0.453125,
+        "successRateAllowed": 0.35714285714285715,
+        "rushSuccessRate": 0.46153846153846156,
+        "rushSuccessRateAllowed": 0.24242424242424243,
+        "passSuccessRate": 0.44,
+        "passSuccessRateAllowed": 0.7777777777777778,
+        "explosivePlayRate": 0.109375,
+        "explosivePlayRateAllowed": 0.047619047619047616,
+        "yardsPerPlay": 5.2272727272727275,
+        "yardsPerPlayAllowed": 5.478260869565218,
+        "pointsPerResolvedPossession": 2.6666666666666665,
+        "pointsPerResolvedPossessionAllowed": 2.3333333333333335,
+        "turnoverMargin": -1,
+        "opponentRidgeOverallRating": 86.97320319492457,
+        "opponentRidgeOverallRank": 120
+      }
+    },
+    {
+      "opponent": "Michigan State",
+      "teamA": {
+        "gameId": "401752881",
+        "week": 9,
+        "seasonType": "regular",
+        "homeAway": "away",
+        "opponent": "Michigan State",
+        "result": "W",
+        "pointsFor": 31,
+        "pointsAgainst": 20,
+        "margin": 11,
+        "successRate": 0.4603174603174603,
+        "successRateAllowed": 0.3582089552238806,
+        "rushSuccessRate": 0.5111111111111111,
+        "rushSuccessRateAllowed": 0.4375,
+        "passSuccessRate": 0.3333333333333333,
+        "passSuccessRateAllowed": 0.2857142857142857,
+        "explosivePlayRate": 0.1111111111111111,
+        "explosivePlayRateAllowed": 0.05970149253731343,
+        "yardsPerPlay": 5.859375,
+        "yardsPerPlayAllowed": 4.28169014084507,
+        "pointsPerResolvedPossession": 0.21428571428571427,
+        "pointsPerResolvedPossessionAllowed": 0.0,
+        "turnoverMargin": 0,
+        "opponentRidgeOverallRating": 99.4973274077162,
+        "opponentRidgeOverallRank": 68
+      },
+      "teamB": {
+        "gameId": "401752802",
+        "week": 1,
+        "seasonType": "regular",
+        "homeAway": "away",
+        "opponent": "Michigan State",
+        "result": "L",
+        "pointsFor": 6,
+        "pointsAgainst": 23,
+        "margin": -17,
+        "successRate": 0.24528301886792453,
+        "successRateAllowed": 0.484375,
+        "rushSuccessRate": 0.21052631578947367,
+        "rushSuccessRateAllowed": 0.45,
+        "passSuccessRate": 0.2647058823529412,
+        "passSuccessRateAllowed": 0.5416666666666666,
+        "explosivePlayRate": 0.09433962264150944,
+        "explosivePlayRateAllowed": 0.125,
+        "yardsPerPlay": 2.857142857142857,
+        "yardsPerPlayAllowed": 5.656716417910448,
+        "pointsPerResolvedPossession": 0.0,
+        "pointsPerResolvedPossessionAllowed": 1.6153846153846154,
+        "turnoverMargin": 0,
+        "opponentRidgeOverallRating": 99.4973274077162,
+        "opponentRidgeOverallRank": 68
+      }
+    }
+  ],
+  "keySignals": [
+    {
+      "type": "RIDGE",
+      "category": "overall",
+      "team": "Michigan",
+      "magnitude": 13.162539391371439,
+      "text": "Michigan leads by 13.2 Ridge rating points in overall"
+    },
+    {
+      "type": "RIDGE",
+      "category": "offense",
+      "team": "Michigan",
+      "magnitude": 24.50204634276605,
+      "text": "Michigan leads by 24.5 Ridge rating points in offense"
+    },
+    {
+      "type": "RIDGE",
+      "category": "defense",
+      "team": "Michigan",
+      "magnitude": 1.823032439976842,
+      "text": "Michigan leads by 1.8 Ridge rating points in defense"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Net pass yards per dropback",
+      "team": "Michigan",
+      "magnitude": 0.7703703703703704,
+      "text": "Net pass yards per dropback: Michigan (Western Michigan offense #124 vs Michigan defense #20)"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Yards per play",
+      "team": "Michigan",
+      "magnitude": 0.6962962962962963,
+      "text": "Yards per play: Michigan (Western Michigan offense #109 vs Michigan defense #15)"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Pass explosive rate",
+      "team": "Michigan",
+      "magnitude": 0.6222222222222222,
+      "text": "Pass explosive rate: Michigan (Western Michigan offense #120 vs Michigan defense #36)"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Rush yards per attempt",
+      "team": "Michigan",
+      "magnitude": 0.5851851851851853,
+      "text": "Rush yards per attempt: Michigan (Michigan offense #10 vs Western Michigan defense #89)"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Sack battle",
+      "team": "Western Michigan",
+      "magnitude": 0.4666666666666667,
+      "text": "Sack battle: Western Michigan (Michigan offense #76 vs Western Michigan defense #13)"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Red-zone success",
+      "team": "Western Michigan",
+      "magnitude": 0.4666666666666667,
+      "text": "Red-zone success: Western Michigan (Western Michigan offense #10 vs Michigan defense #73)"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Rush explosive rate",
+      "team": "Michigan",
+      "magnitude": 0.44444444444444453,
+      "text": "Rush explosive rate: Michigan (Michigan offense #29 vs Western Michigan defense #89)"
+    },
+    {
+      "type": "MATCHUP",
+      "category": "Scoring rate per possession",
+      "team": "Michigan",
+      "magnitude": 0.44444444444444453,
+      "text": "Scoring rate per possession: Michigan (Western Michigan offense #99 vs Michigan defense #39)"
+    },
+    {
+      "type": "MARKET",
+      "category": "spread",
+      "team": "Michigan",
+      "magnitude": 26.5,
+      "text": "Market: Michigan favored by 26.5 at BetMGM"
+    }
+  ],
+  "outputPath": "data/analysis/2026/michigan-vs-western-michigan.json"
+}

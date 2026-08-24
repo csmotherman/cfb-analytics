@@ -27,7 +27,7 @@ body{background:var(--mock-bg)}
 .mock-game-meta{display:flex;flex-wrap:wrap;gap:18px;color:#e5edf4;font:500 13px var(--body);margin-bottom:28px}
 .mock-game-lower{display:flex;align-items:end;gap:22px}.mock-probability{width:min(320px,100%);padding:16px 18px;border:1px solid #29435b;border-radius:6px;background:#07192ae8;backdrop-filter:blur(3px)}.mock-probability>span{display:block;font:700 11px var(--display);letter-spacing:.08em}.mock-probability strong{display:block;color:var(--mock-maize);font:800 58px/.95 var(--display);margin:8px 0}.mock-probability>div{height:8px;background:#20394f;border-radius:99px;overflow:hidden}.mock-probability i{display:block;height:100%;background:var(--mock-maize);border-radius:inherit}.mock-probability small{display:block;margin-top:9px;color:#c1ccd7;font-size:11px}.mock-outline-button{min-height:54px;min-width:210px;border:1px solid var(--mock-maize);display:flex;align-items:center;justify-content:center;gap:30px;padding:0 18px;font:700 12px var(--display);letter-spacing:.08em;background:#041524d9}.mock-outline-button b{font-size:26px;font-weight:400}
 .mock-section{min-width:0}.mock-section>header{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:12px}.mock-section>header h2{font:700 27px/1 var(--display);letter-spacing:.035em;margin:0}.mock-section>header>span,.mock-section>header a{font:600 10px var(--body);letter-spacing:.05em;color:#c3ced8}.mock-section>header a b{color:var(--mock-maize);font-size:20px;margin-left:5px}
-.pulse-scroll{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.pulse-scroll article{min-height:138px;border:1px solid #2a4259;border-radius:6px;background:#071a2c;padding:18px 14px;display:flex;flex-direction:column;justify-content:space-between;text-align:center}.pulse-scroll small{font:700 10px var(--display);letter-spacing:.05em}.pulse-scroll strong{font:800 42px/1 var(--display)}.pulse-scroll span{color:#d5dee7;font-size:11px}.pulse-scroll .trend-arrow{color:#38d16b;border:1px solid #38d16b;border-radius:50%;width:54px;height:54px;display:grid;place-items:center;margin:auto;font-size:35px}.pulse-opponent img{width:58px;height:58px;object-fit:contain;margin:2px auto}.pulse-opponent span{line-height:1.25}
+.pulse-scroll{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.pulse-scroll article{min-height:138px;border:1px solid #2a4259;border-radius:6px;background:#071a2c;padding:18px 14px;display:flex;flex-direction:column;justify-content:space-between;text-align:center}.pulse-scroll small{font:700 10px var(--display);letter-spacing:.05em}.pulse-scroll strong{font:800 42px/1 var(--display)}.pulse-scroll span{color:#d5dee7;font-size:11px}
 .player-watch-scroll{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.watch-card{min-width:0;position:relative;height:340px;border:1px solid #334a60;border-radius:7px;overflow:hidden;background:#081c2f}.blank-player-image{position:absolute;inset:0;background:linear-gradient(180deg,#132c43 0%,#0b2034 42%,#061625 100%)}.blank-player-image:after{content:'IMAGE';position:absolute;inset:0;display:grid;place-items:center;color:#677d92;font-size:11px;letter-spacing:.18em}.blank-player-image>span{position:absolute;top:12px;left:14px;z-index:1;color:white;font:800 26px var(--display)}.watch-copy{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:62px 16px 14px;background:linear-gradient(transparent,#03101df2 40%)}.watch-copy>small{display:none}.watch-copy h3{font:800 28px/.92 var(--display);margin:0 0 8px;text-transform:uppercase}.watch-copy p{font-size:11px;color:#d2dce6;margin:0 0 12px}.watch-copy>div{display:flex;align-items:center;gap:9px}.watch-copy>div b{background:var(--mock-maize);color:#041525;font:800 18px/1 var(--display);padding:5px 7px;border-radius:2px}.watch-copy>div span{font:700 10px var(--display);letter-spacing:.04em}
 .mock-news-list{border:1px solid #263e54;border-radius:7px;overflow:hidden;background:#06182a}.mock-news-list>a{display:grid;grid-template-columns:160px 1fr;min-height:112px;border-bottom:1px solid #233a50}.mock-news-list>a:last-child{border-bottom:0}.blank-news-image{background:linear-gradient(135deg,#18344d,#0a2034);border-right:1px solid #223b52;position:relative}.blank-news-image:after{content:'IMAGE';position:absolute;inset:0;display:grid;place-items:center;color:#6b8298;font-size:9px;letter-spacing:.16em}.mock-news-list>a>div:last-child{padding:16px 20px}.mock-news-list small{color:var(--mock-maize);font:700 11px var(--display);letter-spacing:.04em}.mock-news-list h3{font:500 17px/1.25 var(--body);margin:4px 0 8px;max-width:680px}.mock-news-list span{font-size:10px;color:#9babbc}
 footer{background:#020b13}
@@ -66,13 +66,12 @@ footer{background:#020b13}
   .mock-section>header{margin-bottom:10px}
   .mock-section>header h2{font-size:23px}
   .pulse-section>header>span{font-size:8px}
-  .pulse-scroll{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;overflow:visible;margin:0;padding:0}
-  .pulse-scroll article{min-width:0;min-height:118px;padding:11px 6px;scroll-snap-align:none}
-  .pulse-scroll small{font-size:8px;line-height:1.1}
-  .pulse-scroll strong{font-size:30px}
-  .pulse-scroll span{font-size:8px;line-height:1.15}
-  .pulse-scroll .trend-arrow{width:40px;height:40px;font-size:26px}
-  .pulse-opponent img{width:38px;height:38px}
+  .pulse-scroll{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;margin:0;padding:0}
+  .pulse-scroll article{min-width:0;min-height:0;padding:14px 12px;scroll-snap-align:none}
+  .pulse-ranking-card{grid-column:1/-1}
+  .pulse-scroll small{font-size:9px;line-height:1.1}
+  .pulse-scroll strong{font-size:32px}
+  .pulse-scroll span{font-size:9px;line-height:1.15}
 
   .player-watch-scroll{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;overflow:visible;margin:0}
   .watch-card{width:auto;height:250px;min-width:0;flex:none}
@@ -109,7 +108,7 @@ footer{background:#020b13}
   .mock-game-meta{font-size:8px;gap:6px 9px;max-width:76%}
   .mock-game-lower{left:12px;right:12px;bottom:11px;grid-template-columns:minmax(0,1fr) 126px;gap:8px}
   .mock-probability{padding:8px 10px}.mock-probability strong{font-size:33px}.mock-outline-button{height:44px;min-height:44px;font-size:8px}
-  .mock-section>header h2{font-size:21px}.pulse-scroll{gap:5px}.pulse-scroll article{min-height:108px;padding:9px 4px}.pulse-scroll small{font-size:7px}.pulse-scroll strong{font-size:27px}.pulse-scroll span{font-size:7px}.pulse-scroll .trend-arrow{width:36px;height:36px;font-size:23px}.pulse-opponent img{width:34px;height:34px}
+  .mock-section>header h2{font-size:21px}
   .watch-card{height:225px}.watch-copy h3{font-size:17px}.watch-copy p{font-size:7px}.watch-copy>div span{font-size:6px}
 }
 
@@ -120,6 +119,5 @@ footer{background:#020b13}
   .mock-game-content h1{font-size:38px}
   .mock-game-content h2{font-size:17px}
   .mock-game-lower{grid-template-columns:minmax(0,1fr) 112px}
-  .pulse-scroll{gap:4px}.pulse-scroll article{padding-inline:3px}.pulse-scroll small{font-size:6px}.pulse-scroll strong{font-size:25px}.pulse-scroll span{font-size:6px}
   .watch-card{height:205px}.watch-copy h3{font-size:15px}
 }

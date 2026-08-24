@@ -2,7 +2,6 @@ import Link from "next/link";
 import {gameDate,gameTime,homeData,opponentOf} from "../lib/home-data";
 import {formatMichiganSpread,marketLineFor} from "../lib/market-lines";
 import {michiganPollSnapshot} from "../lib/polls";
-import {teamLogoUrl} from "../lib/team-assets";
 
 const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.grade??"—";
 
@@ -50,7 +49,6 @@ export default function Home(){
       <section className="mock-section pulse-section">
         <header><h2>MICHIGAN PULSE</h2><span>UPDATED TODAY</span></header>
         <div className="pulse-scroll">
-          <article><small>PROJECTED RECORD</small><strong>—</strong><span>Coming soon</span></article>
           <article className="pulse-ranking-card">
             <small>TEAM RANKING</small>
             <div className="pulse-ranking-list">
@@ -60,9 +58,8 @@ export default function Home(){
             </div>
             <span>{michiganPollSnapshot.modelRank?michiganPollSnapshot.label:michiganPollSnapshot.modelStatus}</span>
           </article>
+          <article><small>PROJECTED RECORD</small><strong>—</strong><span>Coming soon</span></article>
           <article><small>CFP CHANCE</small><strong>{cfpChance}</strong><span>{outlook?"Market outlook":"Coming soon"}</span></article>
-          <article><small>TREND</small><strong className="trend-arrow">↗</strong><span>Preseason</span></article>
-          {next&&opponent?<article className="pulse-opponent"><small>UPCOMING TEST</small><img src={teamLogoUrl(opponent.id,128)} alt={`${opponent.name} logo`}/><span>{opponent.site==="HOME"?"vs":"@"} {opponent.name} · {gameDate(next)}</span></article>:<article><small>UPCOMING TEST</small><strong>—</strong><span>Schedule TBD</span></article>}
         </div>
       </section>
 
