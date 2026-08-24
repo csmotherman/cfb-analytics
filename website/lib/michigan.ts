@@ -1,5 +1,4 @@
-import fs from "node:fs";
-import path from "node:path";
+import {readJson} from "./server-data";
 
 export type MichiganSeason = {
   season: number;
@@ -66,29 +65,17 @@ export type ConferenceSummary = {
 };
 
 function readRows<T>(...segments: string[]): T[] {
-  const file = path.join(process.cwd(), "..", "data", "published", ...segments.slice(2));
-  if (!fs.existsSync(file)) return [];
-  try {
-    const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
-    if (!Array.isArray(parsed)) throw new TypeError("expected a JSON array");
-    return parsed as T[];
-  } catch (error) {
-    const reason = error instanceof Error ? error.message : String(error);
-    throw new Error(`Invalid published rows at ${file}: ${reason}`, { cause: error });
-  }
+  const parsed = readJson<unknown>(...segments);
+  if (parsed == null) return [];
+  if (!Array.isArray(parsed)) throw new TypeError(`Expected a published JSON array at ${segments.join("/")}`);
+  return parsed as T[];
 }
 
 function readObject<T>(...segments: string[]): T | null {
-  const file = path.join(process.cwd(), "..", "data", "published", ...segments.slice(2));
-  if (!fs.existsSync(file)) return null;
-  try {
-    const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
-    if (!parsed || Array.isArray(parsed) || typeof parsed !== "object") throw new TypeError("expected a JSON object");
-    return parsed as T;
-  } catch (error) {
-    const reason = error instanceof Error ? error.message : String(error);
-    throw new Error(`Invalid published object at ${file}: ${reason}`, { cause: error });
-  }
+  const parsed = readJson<unknown>(...segments);
+  if (parsed == null) return null;
+  if (Array.isArray(parsed) || typeof parsed !== "object") throw new TypeError(`Expected a published JSON object at ${segments.join("/")}`);
+  return parsed as T;
 }
 
 export function supportedMichiganSeasons(): number[] {
@@ -108,13 +95,10 @@ export function seasonState(season: number): SeasonState {
 }
 
 export function latestPublishedSeason(): number | null {
-  const root = path.join(process.cwd(), "..", "data", "published");
-  if (!fs.existsSync(root)) return null;
-  const seasons = fs.readdirSync(root)
-    .map(Number)
-    .filter(Number.isFinite)
-    .sort((a, b) => b - a);
-  return seasons[0] ?? null;
+  for (const season of supportedMichiganSeasons()) {
+    if (publishedManifest(season) || michiganSeason(season)) return season;
+  }
+  return null;
 }
 
 export function michiganSeason(season: number): MichiganSeason | null {
