@@ -1,11 +1,14 @@
 import type {Metadata} from "next";
 import Link from "next/link";
 
+const articleUrl="https://cfb-analytics-two.vercel.app/articles/can-michigan-new-staff-playoff-team";
+const articleImage="https://cfb-analytics-two.vercel.app/images/articles/staff-article.png";
+
 export const metadata:Metadata={
   title:"Can Michigan’s New Staff Turn the Wolverines Into a Playoff Team?",
   description:"A fan-first look at what changed from Michigan’s 2025 staff to Kyle Whittingham’s 2026 staff — and what actually has to improve for the Wolverines to reach the CFP.",
-  openGraph:{type:"article",title:"Can Michigan’s New Staff Turn the Wolverines Into a Playoff Team?",description:"What changes on Saturdays under Kyle Whittingham, Jason Beck and Jay Hill — and whether it can move Michigan from 9-4 to the playoff.",images:["/images/articles/staff-article.png"]},
-  twitter:{card:"summary_large_image",title:"Can Michigan’s New Staff Turn the Wolverines Into a Playoff Team?",description:"What changes on Saturdays under Kyle Whittingham, Jason Beck and Jay Hill — and whether it can move Michigan from 9-4 to the playoff.",images:["/images/articles/staff-article.png"]}
+  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Can Michigan’s New Staff Turn the Wolverines Into a Playoff Team?",description:"What changes on Saturdays under Kyle Whittingham, Jason Beck and Jay Hill — and whether it can move Michigan from 9-4 to the playoff.",images:[{url:articleImage,alt:"Michigan football coaching staff"}]},
+  twitter:{card:"summary_large_image",title:"Can Michigan’s New Staff Turn the Wolverines Into a Playoff Team?",description:"What changes on Saturdays under Kyle Whittingham, Jason Beck and Jay Hill — and whether it can move Michigan from 9-4 to the playoff.",images:[articleImage]}
 };
 
 const paragraphs=[
