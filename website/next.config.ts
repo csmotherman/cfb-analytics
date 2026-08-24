@@ -18,8 +18,8 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Attach data only to the functions that read it at request time. The compact
-  // runtime bundle is ~2 MB, so use simple Turbopack-safe globs.
+  // Attach only the compact route-specific runtime bundle to server functions.
+  // The canonical ../data/published tree is build input, not runtime output.
   outputFileTracingIncludes: {
     "/analytics": [
       ".published-data/**/*.json"
@@ -27,6 +27,14 @@ const nextConfig: NextConfig = {
     "/players/*": [
       ".published-data/2026/michigan/*.json",
       ".published-data/directory_history/players/current-by-team/michigan.json"
+    ]
+  },
+  outputFileTracingExcludes: {
+    "/analytics": [
+      "../data/published/**/*"
+    ],
+    "/players/*": [
+      "../data/published/**/*"
     ]
   }
 };
