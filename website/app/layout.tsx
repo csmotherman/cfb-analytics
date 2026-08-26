@@ -25,7 +25,7 @@ import { SiteNav } from "../components/SiteNav";
 
 const SITE_NAME="Michigan Football Focus";
 const SITE_URL=(process.env.NEXT_PUBLIC_SITE_URL||"https://michiganfootballfocus.com").replace(/\/$/,"");
-const SITE_DESCRIPTION="Michigan Football Focus covers Michigan Wolverines football with news, 2026 projections, rankings, depth charts, player analysis, schedules and advanced analytics.";
+const SITE_DESCRIPTION="Michigan Football Focus covers Michigan Wolverines football news, 2026 projections, rankings, depth charts, players, schedules and advanced analytics.";
 const SOCIAL_IMAGE={url:"/og.png",alt:"Michigan Football Focus — Michigan Wolverines football news, projections and analytics"};
 
 export const metadata: Metadata = {
