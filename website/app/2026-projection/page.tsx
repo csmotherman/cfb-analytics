@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { michiganPreseasonProjection } from "../../lib/preseason-power";
 import { teamLogoUrl } from "../../lib/team-assets";
+import styles from "../../styles/forecastPages.module.css";
 
 export const metadata: Metadata = {
   title: "Michigan 2026 Win Projection",
@@ -14,8 +15,14 @@ export default function ProjectionPage(){
   const data = michiganPreseasonProjection();
 
   if(!data || data.games.length===0){
-    return <div className="mock-home"><div className="mock-shell">
-      <section className="mock-section"><header><div><span className="mock-eyebrow maize">MICHIGAN 2026</span><h1>SEASON PROJECTION</h1></div></header><p>Projection is not available yet.</p></section>
+    return <div className={styles.page}><div className={styles.shell}>
+      <section className={`${styles.hero} ${styles.heroCompact}`}>
+        <div className={styles.heroContent}>
+          <span className={styles.eyebrow}>MICHIGAN 2026</span>
+          <h1>SEASON PROJECTION</h1>
+          <p className={styles.heroDeck}>Projection is not available yet.</p>
+        </div>
+      </section>
     </div></div>;
   }
 
@@ -36,66 +43,88 @@ export default function ProjectionPage(){
   const projectedWins = Math.round(wd.expectedWins);
   const projectedLosses = wd.gamesWithData - projectedWins;
 
-  return <div className="mock-home"><div className="mock-shell">
-    <section className="mock-section pp-hero">
-      <header><div>
-        <span className="mock-eyebrow maize">MICHIGAN 2026</span>
+  return <div className={styles.page}><div className={styles.shell}>
+    <section className={styles.hero}>
+      <div className={styles.heroContent}>
+        <span className={styles.eyebrow}>MICHIGAN 2026 · PRESEASON MODEL</span>
         <h1>SEASON PROJECTION</h1>
-        <p>Every 2026 game projected from a single preseason power rating, held fixed all season -- this is a &quot;before Game 1&quot; view, not an in-season model that updates with real 2026 results as they happen.</p>
-      </div></header>
-
-      <div className="pp-hero-record">
-        <span><small>PROJECTED RECORD</small><b>{projectedWins}-{projectedLosses}</b></span>
-        <span><small>EXPECTED WINS</small><b>{wd.expectedWins.toFixed(1)}</b></span>
-        <span><small>MEDIAN OUTCOME</small><b>{wd.medianWins}-{wd.gamesWithData-wd.medianWins}</b></span>
-        <span><small>UNDEFEATED</small><b>{wd.probUndefeated.toFixed(1)}%</b></span>
+        <p className={styles.heroDeck}>Every game projected before kickoff using one frozen preseason power rating. No 2026 results are allowed to move the forecast after the season begins.</p>
       </div>
 
-      <div className="pp-disclaimer">
-        <b>RESEARCH MODEL</b>
-        <span>{data.disclaimer}</span>
+      <div className={styles.heroStats} aria-label="Season projection summary">
+        <div className={styles.heroStat}><small>PROJECTED RECORD</small><strong>{projectedWins}-{projectedLosses}</strong></div>
+        <div className={styles.heroStat}><small>EXPECTED WINS</small><strong>{wd.expectedWins.toFixed(1)}</strong></div>
+        <div className={styles.heroStat}><small>MEDIAN OUTCOME</small><strong>{wd.medianWins}-{wd.gamesWithData-wd.medianWins}</strong></div>
+        <div className={styles.heroStat}><small>UNDEFEATED</small><strong>{wd.probUndefeated.toFixed(1)}%</strong></div>
       </div>
     </section>
 
-    <section className="mock-section" style={{marginTop:22}}>
-      <header><h2>WIN TOTAL DISTRIBUTION</h2><span>50,000 SEASON SIMULATIONS</span></header>
-      <div className="pp-win-dist">
-        {distEntries.map(row=><div className={`pp-win-dist-row${row.wins===wd.medianWins?" pp-median":""}`} key={row.wins}>
-          <b>{row.wins}W</b>
-          <div className="pp-win-dist-track"><div className="pp-win-dist-fill" style={{width:`${Math.max(2,100*row.pct/maxPct)}%`}}/></div>
-          <span>{row.pct.toFixed(1)}%</span>
-        </div>)}
+    <div className={styles.researchNote}>
+      <b>RESEARCH MODEL</b>
+      <span>{data.disclaimer}</span>
+    </div>
+
+    <section className={styles.section}>
+      <header className={styles.sectionHeader}>
+        <h2>WIN TOTAL DISTRIBUTION</h2>
+        <span>50,000 SEASON SIMULATIONS</span>
+      </header>
+      <div className={styles.distributionPanel}>
+        <div className={styles.distRows}>
+          {distEntries.map(row=><div className={`${styles.distRow}${row.wins===wd.medianWins?` ${styles.distMedian}`:""}`} key={row.wins}>
+            <b className={styles.distWins}>{row.wins}W</b>
+            <div className={styles.distTrack}><div className={styles.distFill} style={{width:`${Math.max(2,100*row.pct/maxPct)}%`}}/></div>
+            <span className={styles.distPct}>{row.pct.toFixed(1)}%</span>
+          </div>)}
+        </div>
       </div>
     </section>
 
-    <section className="mock-section" style={{marginTop:26}}>
-      <header><h2>GAME BY GAME</h2><span>WEEK BY WEEK</span></header>
-      <div className="pp-game-list">
+    <section className={styles.section}>
+      <header className={styles.sectionHeader}>
+        <h2>GAME BY GAME</h2>
+        <span>WEEK BY WEEK</span>
+      </header>
+      <div className={styles.gameBoard}>
+        <div className={styles.gameHeader} aria-hidden="true">
+          <span>WEEK</span><span>OPPONENT</span><span>PROJ MARGIN</span><span>WIN PROB</span><span/>
+        </div>
         {rows.map(({week,game})=>{
-          if(!game) return <div className="pp-bye-row" key={`bye-${week}`}>WEEK {week} · BYE</div>;
-          if(!game.dataAvailable) return <div className="pp-game-row" key={week}>
-            <div className="pp-game-week"><small>WK</small><b>{week}</b></div>
-            <div className="pp-game-opponent"><div><small>{SITE_LABEL[game.site]}</small><strong>{game.opponent}</strong></div></div>
-            <div className="pp-game-margin"/><div className="pp-game-prob"><b>—</b><small>NO RATING</small></div><b className="pp-game-arrow"/>
+          if(!game) return <div className={styles.byeRow} key={`bye-${week}`}>WEEK {week} · BYE</div>;
+
+          if(!game.dataAvailable) return <div className={styles.gameRow} key={week}>
+            <div className={styles.gameWeek}><small>WK</small><b>{week}</b></div>
+            <div className={styles.opponent}>
+              <div className={styles.opponentCopy}><div className={styles.siteLine}><span className={styles.sitePill}>{SITE_LABEL[game.site]}</span></div><strong>{game.opponent}</strong></div>
+            </div>
+            <div className={`${styles.metric} ${styles.marginMetric}`}><strong>—</strong><small>PROJ MARGIN</small></div>
+            <div className={`${styles.metric} ${styles.probMetric}`}><strong>—</strong><small>NO RATING</small></div>
+            <b className={styles.gameArrow}/>
           </div>;
+
           const favored = (game.winProb ?? 0) >= 0.5;
           const marginLabel = game.predictedMargin!=null ? `${game.predictedMargin>=0?"+":""}${game.predictedMargin.toFixed(1)}` : "—";
+          const metricClass = favored?styles.favored:styles.underdog;
           const content = <>
-            <div className="pp-game-week"><small>WK</small><b>{week}</b></div>
-            <div className="pp-game-opponent">
+            <div className={styles.gameWeek}><small>WK</small><b>{week}</b></div>
+            <div className={styles.opponent}>
               {game.opponentTeamId!=null && <img src={teamLogoUrl(game.opponentTeamId,64)} alt=""/>}
-              <div><small>{SITE_LABEL[game.site]}{game.opponentRank!=null?` · #${game.opponentRank}`:""}</small><strong>{game.opponent}</strong></div>
+              <div className={styles.opponentCopy}>
+                <div className={styles.siteLine}><span className={styles.sitePill}>{SITE_LABEL[game.site]}</span>{game.opponentRank!=null&&<span>#{game.opponentRank}</span>}</div>
+                <strong>{game.opponent}</strong>
+              </div>
             </div>
-            <div className="pp-game-margin"><strong className={favored?"pp-favored":"pp-underdog"}>{marginLabel}</strong><small>PROJ MARGIN</small></div>
-            <div className="pp-game-prob"><b className={favored?"pp-favored":"pp-underdog"}>{Math.round((game.winProb ?? 0)*100)}%</b><small>WIN PROB</small></div>
-            <b className="pp-game-arrow">›</b>
+            <div className={`${styles.metric} ${styles.marginMetric}`}><strong className={metricClass}>{marginLabel}</strong><small>PROJ MARGIN</small></div>
+            <div className={`${styles.metric} ${styles.probMetric}`}><strong className={metricClass}>{Math.round((game.winProb ?? 0)*100)}%</strong><small>WIN PROB</small></div>
+            <b className={styles.gameArrow}>›</b>
           </>;
+
           return game.gameId
-            ? <Link className="pp-game-row" href={`/games/${game.gameId}`} key={week}>{content}</Link>
-            : <div className="pp-game-row" key={week}>{content}</div>;
+            ? <Link className={styles.gameRow} href={`/games/${game.gameId}`} key={week}>{content}</Link>
+            : <div className={styles.gameRow} key={week}>{content}</div>;
         })}
       </div>
-      <p className="schedule-market-note">Win probability and margin ranges come from an empirical bootstrap of the model&apos;s own out-of-sample Week 1 prediction errors (2018-2025), not an assumed distribution.</p>
+      <p className={styles.marketNote}>Win probability and margin ranges come from an empirical bootstrap of the model&apos;s own out-of-sample Week 1 prediction errors (2018-2025), not an assumed distribution.</p>
     </section>
   </div></div>;
 }
