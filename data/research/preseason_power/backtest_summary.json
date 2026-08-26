@@ -1,0 +1,25 @@
+{
+  "features": [
+    "power_y1",
+    "power_y2",
+    "power_y3",
+    "recruiting_3yr",
+    "qb_returning_flag",
+    "home_field"
+  ],
+  "overall": {
+    "brier": 0.15742340636768384,
+    "log_loss": 0.48248691690078943,
+    "mae": 12.455809463938479,
+    "median_ae": 9.696446562716023,
+    "n": 312,
+    "rmse": 16.18287936137056,
+    "winner_pct": 77.88461538461539
+  },
+  "skipped_seasons": [
+    2014,
+    2015,
+    2016,
+    2017
+  ]
+}

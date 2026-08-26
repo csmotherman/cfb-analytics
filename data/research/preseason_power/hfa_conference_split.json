@@ -1,0 +1,9 @@
+{
+  "avg_residual_all_home": 0.5351735895027496,
+  "avg_residual_g5_home": -1.4526341349116103,
+  "avg_residual_p4_home": 1.413993846612256,
+  "n_g5_home": 84,
+  "n_home": 274,
+  "n_p4_home": 190,
+  "verdict": "difference is within ~1 standard error of the pooled HFA estimate given sample size; keep a single constant HFA"
+}

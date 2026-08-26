@@ -1,0 +1,432 @@
+{
+  "season": 2025,
+  "comparison": "Michigan 2025 vs Jay Hill BYU 2025",
+  "comparisons": [
+    {
+      "metric": "successRateAllowed",
+      "label": "Success Rate Allowed",
+      "michiganValue": 0.42558425584255843,
+      "michiganRank": 67,
+      "byuValue": 0.4109090909090909,
+      "byuRank": 47,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "passSuccessRateAllowed",
+      "label": "Pass Success Rate Allowed",
+      "michiganValue": 0.4460093896713615,
+      "michiganRank": 96,
+      "byuValue": 0.4125874125874126,
+      "byuRank": 63,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "rushSuccessRateAllowed",
+      "label": "Rush Success Rate Allowed",
+      "michiganValue": 0.40310077519379844,
+      "michiganRank": 43,
+      "byuValue": 0.4090909090909091,
+      "byuRank": 45,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "explosivePlayRateAllowed",
+      "label": "Explosive Play Rate Allowed",
+      "michiganValue": 0.09225092250922509,
+      "michiganRank": 20,
+      "byuValue": 0.09454545454545454,
+      "byuRank": 24,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "yardsPerPlayAllowed",
+      "label": "Yards Per Play Allowed",
+      "michiganValue": 5.037037037037037,
+      "michiganRank": 15,
+      "byuValue": 5.42789598108747,
+      "byuRank": 39,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "netPassYardsPerDropbackAllowed",
+      "label": "Net Pass Yards / Dropback Allowed",
+      "michiganValue": 5.687074829931973,
+      "michiganRank": 20,
+      "byuValue": 6.0588235294117645,
+      "byuRank": 39,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "rushYardsPerAttemptAllowed",
+      "label": "Rush Yards / Attempt Allowed",
+      "michiganValue": 4.313131313131313,
+      "michiganRank": 19,
+      "byuValue": 4.737623762376238,
+      "byuRank": 46,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "thirdDownConversionRateAllowed",
+      "label": "3rd Down Conversion Rate Allowed",
+      "michiganValue": 0.39156626506024095,
+      "michiganRank": 56,
+      "byuValue": 0.3597560975609756,
+      "byuRank": 26,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "fourthDownConversionRateAllowed",
+      "label": "4th Down Conversion Rate Allowed",
+      "michiganValue": 0.6153846153846154,
+      "michiganRank": 94,
+      "byuValue": 0.4857142857142857,
+      "byuRank": 45,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "redZonePossessionScoringRateAllowed",
+      "label": "Red Zone Scoring Rate Allowed",
+      "michiganValue": 0.8,
+      "michiganRank": 86,
+      "byuValue": 0.6481481481481481,
+      "byuRank": 7,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "redZonePossessionTouchdownRateAllowed",
+      "label": "Red Zone TD Rate Allowed",
+      "michiganValue": 0.5,
+      "michiganRank": 36,
+      "byuValue": 0.37037037037037035,
+      "byuRank": 4,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "redZonePointsPerResolvedPossessionAllowed",
+      "label": "Red Zone Points / Possession",
+      "michiganValue": 4.35,
+      "michiganRank": 54,
+      "byuValue": 3.3773584905660377,
+      "byuRank": 2,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "pointsPerOpportunityAllowed",
+      "label": "Points Per Scoring Opportunity Allowed",
+      "michiganValue": 3.5555555555555554,
+      "michiganRank": 70,
+      "byuValue": 3.026315789473684,
+      "byuRank": 19,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "pointsPerResolvedPossessionAllowed",
+      "label": "Points Per Possession Allowed",
+      "michiganValue": 1.6618705035971224,
+      "michiganRank": 33,
+      "byuValue": 1.6598639455782314,
+      "byuRank": 31,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "defensiveSackRate",
+      "label": "Defensive Sack Rate",
+      "michiganValue": 0.061224489795918366,
+      "michiganRank": 45,
+      "byuValue": 0.05656108597285068,
+      "byuRank": 61,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    }
+  ],
+  "michiganWeaknesses": [
+    {
+      "metric": "passSuccessRateAllowed",
+      "label": "Pass Success Rate Allowed",
+      "michiganValue": 0.4460093896713615,
+      "michiganRank": 96,
+      "byuValue": 0.4125874125874126,
+      "byuRank": 63,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "fourthDownConversionRateAllowed",
+      "label": "4th Down Conversion Rate Allowed",
+      "michiganValue": 0.6153846153846154,
+      "michiganRank": 94,
+      "byuValue": 0.4857142857142857,
+      "byuRank": 45,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "redZonePossessionScoringRateAllowed",
+      "label": "Red Zone Scoring Rate Allowed",
+      "michiganValue": 0.8,
+      "michiganRank": 86,
+      "byuValue": 0.6481481481481481,
+      "byuRank": 7,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "pointsPerOpportunityAllowed",
+      "label": "Points Per Scoring Opportunity Allowed",
+      "michiganValue": 3.5555555555555554,
+      "michiganRank": 70,
+      "byuValue": 3.026315789473684,
+      "byuRank": 19,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "successRateAllowed",
+      "label": "Success Rate Allowed",
+      "michiganValue": 0.42558425584255843,
+      "michiganRank": 67,
+      "byuValue": 0.4109090909090909,
+      "byuRank": 47,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "thirdDownConversionRateAllowed",
+      "label": "3rd Down Conversion Rate Allowed",
+      "michiganValue": 0.39156626506024095,
+      "michiganRank": 56,
+      "byuValue": 0.3597560975609756,
+      "byuRank": 26,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "redZonePointsPerResolvedPossessionAllowed",
+      "label": "Red Zone Points / Possession",
+      "michiganValue": 4.35,
+      "michiganRank": 54,
+      "byuValue": 3.3773584905660377,
+      "byuRank": 2,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "defensiveSackRate",
+      "label": "Defensive Sack Rate",
+      "michiganValue": 0.061224489795918366,
+      "michiganRank": 45,
+      "byuValue": 0.05656108597285068,
+      "byuRank": 61,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "rushSuccessRateAllowed",
+      "label": "Rush Success Rate Allowed",
+      "michiganValue": 0.40310077519379844,
+      "michiganRank": 43,
+      "byuValue": 0.4090909090909091,
+      "byuRank": 45,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "redZonePossessionTouchdownRateAllowed",
+      "label": "Red Zone TD Rate Allowed",
+      "michiganValue": 0.5,
+      "michiganRank": 36,
+      "byuValue": 0.37037037037037035,
+      "byuRank": 4,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "pointsPerResolvedPossessionAllowed",
+      "label": "Points Per Possession Allowed",
+      "michiganValue": 1.6618705035971224,
+      "michiganRank": 33,
+      "byuValue": 1.6598639455782314,
+      "byuRank": 31,
+      "fieldSize": 136,
+      "edge": "HILL/BYU"
+    },
+    {
+      "metric": "explosivePlayRateAllowed",
+      "label": "Explosive Play Rate Allowed",
+      "michiganValue": 0.09225092250922509,
+      "michiganRank": 20,
+      "byuValue": 0.09454545454545454,
+      "byuRank": 24,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "netPassYardsPerDropbackAllowed",
+      "label": "Net Pass Yards / Dropback Allowed",
+      "michiganValue": 5.687074829931973,
+      "michiganRank": 20,
+      "byuValue": 6.0588235294117645,
+      "byuRank": 39,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "rushYardsPerAttemptAllowed",
+      "label": "Rush Yards / Attempt Allowed",
+      "michiganValue": 4.313131313131313,
+      "michiganRank": 19,
+      "byuValue": 4.737623762376238,
+      "byuRank": 46,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    },
+    {
+      "metric": "yardsPerPlayAllowed",
+      "label": "Yards Per Play Allowed",
+      "michiganValue": 5.037037037037037,
+      "michiganRank": 15,
+      "byuValue": 5.42789598108747,
+      "byuRank": 39,
+      "fieldSize": 136,
+      "edge": "MICHIGAN"
+    }
+  ],
+  "hillAdvantages": [
+    {
+      "metric": "redZonePossessionScoringRateAllowed",
+      "label": "Red Zone Scoring Rate Allowed",
+      "michiganValue": 0.8,
+      "michiganRank": 86,
+      "byuValue": 0.6481481481481481,
+      "byuRank": 7,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 79
+    },
+    {
+      "metric": "redZonePointsPerResolvedPossessionAllowed",
+      "label": "Red Zone Points / Possession",
+      "michiganValue": 4.35,
+      "michiganRank": 54,
+      "byuValue": 3.3773584905660377,
+      "byuRank": 2,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 52
+    },
+    {
+      "metric": "pointsPerOpportunityAllowed",
+      "label": "Points Per Scoring Opportunity Allowed",
+      "michiganValue": 3.5555555555555554,
+      "michiganRank": 70,
+      "byuValue": 3.026315789473684,
+      "byuRank": 19,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 51
+    },
+    {
+      "metric": "fourthDownConversionRateAllowed",
+      "label": "4th Down Conversion Rate Allowed",
+      "michiganValue": 0.6153846153846154,
+      "michiganRank": 94,
+      "byuValue": 0.4857142857142857,
+      "byuRank": 45,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 49
+    },
+    {
+      "metric": "passSuccessRateAllowed",
+      "label": "Pass Success Rate Allowed",
+      "michiganValue": 0.4460093896713615,
+      "michiganRank": 96,
+      "byuValue": 0.4125874125874126,
+      "byuRank": 63,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 33
+    },
+    {
+      "metric": "redZonePossessionTouchdownRateAllowed",
+      "label": "Red Zone TD Rate Allowed",
+      "michiganValue": 0.5,
+      "michiganRank": 36,
+      "byuValue": 0.37037037037037035,
+      "byuRank": 4,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 32
+    },
+    {
+      "metric": "thirdDownConversionRateAllowed",
+      "label": "3rd Down Conversion Rate Allowed",
+      "michiganValue": 0.39156626506024095,
+      "michiganRank": 56,
+      "byuValue": 0.3597560975609756,
+      "byuRank": 26,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 30
+    },
+    {
+      "metric": "successRateAllowed",
+      "label": "Success Rate Allowed",
+      "michiganValue": 0.42558425584255843,
+      "michiganRank": 67,
+      "byuValue": 0.4109090909090909,
+      "byuRank": 47,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 20
+    },
+    {
+      "metric": "pointsPerResolvedPossessionAllowed",
+      "label": "Points Per Possession Allowed",
+      "michiganValue": 1.6618705035971224,
+      "michiganRank": 33,
+      "byuValue": 1.6598639455782314,
+      "byuRank": 31,
+      "fieldSize": 136,
+      "edge": "HILL/BYU",
+      "rankImprovement": 2
+    }
+  ],
+  "officialContext": {
+    "Michigan2025": {
+      "pointsAllowedPerGame": 20.38,
+      "thirdDownDefense": 0.37989,
+      "fourthDownDefense": 0.60714,
+      "redZoneScoresAllowed": 33,
+      "redZoneTrips": 39,
+      "redZoneTouchdownsAllowed": 21,
+      "interceptions": 13
+    },
+    "JayHillBYU2025": {
+      "pointsAllowedPerGame": 19.1,
+      "redZoneDefense": 0.704,
+      "redZoneDefenseNationalRank": 5,
+      "interceptions": 17,
+      "interceptionsNationalRank": 7,
+      "turnoversGained": 24,
+      "turnoversGainedNationalRank": 14,
+      "thirdDownDefense": 0.33,
+      "thirdDownDefenseNationalRank": 19,
+      "scoringDefenseNationalRank": 21
+    }
+  }
+}

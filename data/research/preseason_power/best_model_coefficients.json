@@ -1,0 +1,84 @@
+{
+  "latest_fit_for_2026": {
+    "home_field_advantage_pts": 4.071001245459774,
+    "normalized_w1_y-1": 0.5688950999647743,
+    "normalized_w2_y-2": 0.2410360512663887,
+    "normalized_w3_y-3": 0.190068848768837,
+    "predicting_season": 2025,
+    "raw_w1": 0.48483094661793935,
+    "raw_w2": 0.20541877915940812,
+    "raw_w3": 0.16198286797844305
+  },
+  "per_season_walkforward_fits": [
+    {
+      "home_field_advantage_pts": 3.1740567452013155,
+      "normalized_w1_y-1": 0.7381568518306825,
+      "normalized_w2_y-2": -0.03262412240504951,
+      "normalized_w3_y-3": 0.29446727057436706,
+      "predicting_season": 2018,
+      "raw_w1": 0.6892547075522844,
+      "raw_w2": -0.03046280731754315,
+      "raw_w3": 0.2749591119558017
+    },
+    {
+      "home_field_advantage_pts": 3.145466391342835,
+      "normalized_w1_y-1": 0.615064080150714,
+      "normalized_w2_y-2": 0.2034637511034412,
+      "normalized_w3_y-3": 0.18147216874584474,
+      "predicting_season": 2019,
+      "raw_w1": 0.5755632197597141,
+      "raw_w2": 0.19039683094611903,
+      "raw_w3": 0.1698175996792768
+    },
+    {
+      "home_field_advantage_pts": 3.4254119406848402,
+      "normalized_w1_y-1": 0.6084080627707812,
+      "normalized_w2_y-2": 0.18753796038267165,
+      "normalized_w3_y-3": 0.20405397684654714,
+      "predicting_season": 2021,
+      "raw_w1": 0.5395756748120987,
+      "raw_w2": 0.1663208095328752,
+      "raw_w3": 0.1809682826253888
+    },
+    {
+      "home_field_advantage_pts": 4.292357919225062,
+      "normalized_w1_y-1": 0.5016558082048185,
+      "normalized_w2_y-2": 0.3935324822342889,
+      "normalized_w3_y-3": 0.10481170956089249,
+      "predicting_season": 2022,
+      "raw_w1": 0.40515354119987124,
+      "raw_w2": 0.3178296276982408,
+      "raw_w3": 0.08464934441757772
+    },
+    {
+      "home_field_advantage_pts": 4.155692907718776,
+      "normalized_w1_y-1": 0.5297925704826265,
+      "normalized_w2_y-2": 0.29920972134950474,
+      "normalized_w3_y-3": 0.17099770816786872,
+      "predicting_season": 2023,
+      "raw_w1": 0.4518319258226475,
+      "raw_w2": 0.2551800688693082,
+      "raw_w3": 0.14583485706936852
+    },
+    {
+      "home_field_advantage_pts": 4.360075866111117,
+      "normalized_w1_y-1": 0.5689084312826127,
+      "normalized_w2_y-2": 0.2974961752457284,
+      "normalized_w3_y-3": 0.13359539347165894,
+      "predicting_season": 2024,
+      "raw_w1": 0.4817990102524155,
+      "raw_w2": 0.2519445220105525,
+      "raw_w3": 0.11313969842881899
+    },
+    {
+      "home_field_advantage_pts": 4.071001245459774,
+      "normalized_w1_y-1": 0.5688950999647743,
+      "normalized_w2_y-2": 0.2410360512663887,
+      "normalized_w3_y-3": 0.190068848768837,
+      "predicting_season": 2025,
+      "raw_w1": 0.48483094661793935,
+      "raw_w2": 0.20541877915940812,
+      "raw_w3": 0.16198286797844305
+    }
+  ]
+}

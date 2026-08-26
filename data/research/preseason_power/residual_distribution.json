@@ -1,0 +1,20 @@
+{
+  "empirical_kde_held_out_nll": 4.190059410325621,
+  "excess_kurtosis": 0.3615232674295892,
+  "normal_fit": {
+    "held_out_nll": 4.184032016661344,
+    "mu": -1.0875928378858188,
+    "sigma": 16.350261084280042
+  },
+  "overall_residual_mean": -0.9799158711754987,
+  "overall_residual_std": 16.153183875325993,
+  "recommendation": "empirical bootstrap (near-tied with Normal; use empirical per brief, Normal would be nearly identical)",
+  "skew": 0.20840552445359786,
+  "student_t_fit": {
+    "df": 15.087480656656625,
+    "held_out_nll": 4.179786303514576,
+    "loc": -1.2784681862896574,
+    "scale": 15.24885071038311
+  },
+  "train_test_split_season": 2022
+}

@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    {
+      "file": "national/preseason-power.json",
+      "rows": 133,
+      "sha256": "a11ef65e2a76f2d9ab1931eb436c4bf73d4f7019ef8d242372210f33b7350eac"
+    },
+    {
+      "file": "michigan/preseason-2026-projection.json",
+      "games": 12,
+      "sha256": "7e975c696aef23f59cd0898ae138a3697cdf519512e7eb24493993701924b25b"
+    }
+  ],
+  "publishedAtUtc": "2026-08-26T16:03:51.801787+00:00",
+  "season": 2026,
+  "sourceDoc": "docs/PRESEASON_POWER_RATING_RESEARCH.md",
+  "sourceModel": "src/cfb_analytics/analytics/preseason_power/",
+  "valueType": "RESEARCH",
+  "version": "preseason-power-2026-v1"
+}

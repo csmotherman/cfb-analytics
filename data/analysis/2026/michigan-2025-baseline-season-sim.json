@@ -1,0 +1,26 @@
+{
+  "scenario": "2026 Michigan schedule using 2025 Michigan and 2025 opponent full-season states",
+  "baselineSeason": 2025,
+  "targetSeason": 2026,
+  "gameSimulations": 50000,
+  "seasonSimulations": 100000,
+  "expectedWins": 0.82376,
+  "p10Wins": 0,
+  "medianWins": 1,
+  "p90Wins": 1,
+  "games": [
+    {
+      "week": 1,
+      "opponent": "Western Michigan",
+      "site": "H",
+      "win_probability": 0.82214,
+      "expected_margin": 14.997080400733825,
+      "michigan_score": 29.92489068670526,
+      "opponent_score": 14.927810285971438
+    }
+  ],
+  "winDistribution": {
+    "0": 0.17624,
+    "1": 0.82376
+  }
+}

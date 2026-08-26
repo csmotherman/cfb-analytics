@@ -1,0 +1,148 @@
+{
+  "scenario": "2026 Michigan official regular-season schedule using Michigan's 2025 full-season state and each opponent's 2025 full-season state",
+  "importantInterpretation": "No-improvement historical baseline. Not a literal 2026 roster projection.",
+  "baselineSeason": 2025,
+  "targetSeason": 2026,
+  "gameSimulations": 50000,
+  "seasonSimulations": 100000,
+  "expectedWins": 7.0056,
+  "averageSimulatedWins": 7.01307,
+  "p10Wins": 5,
+  "p25Wins": 6,
+  "medianWins": 7,
+  "p75Wins": 8,
+  "p90Wins": 9,
+  "mostLikelyRecord": {
+    "wins": 7,
+    "losses": 5,
+    "probability": 0.27484
+  },
+  "probability10PlusWins": 0.0348,
+  "probability11PlusWins": 0.00459,
+  "probability12Wins": 0.0003,
+  "games": [
+    {
+      "week": 1,
+      "opponent": "Western Michigan",
+      "site": "H",
+      "winProbability": 0.82214,
+      "expectedMarginMichigan": 14.997080400733825,
+      "expectedMichiganScore": 29.92489068670526,
+      "expectedOpponentScore": 14.927810285971438
+    },
+    {
+      "week": 2,
+      "opponent": "Oklahoma",
+      "site": "H",
+      "winProbability": 0.46128,
+      "expectedMarginMichigan": -1.5938145724286858,
+      "expectedMichiganScore": 20.700200266543895,
+      "expectedOpponentScore": 22.29401483897258
+    },
+    {
+      "week": 3,
+      "opponent": "UTEP",
+      "site": "H",
+      "winProbability": 0.9711,
+      "expectedMarginMichigan": 30.79520572295048,
+      "expectedMichiganScore": 38.57324446462205,
+      "expectedOpponentScore": 7.778038741671571
+    },
+    {
+      "week": 4,
+      "opponent": "Iowa",
+      "site": "H",
+      "winProbability": 0.50632,
+      "expectedMarginMichigan": 0.3908373354273001,
+      "expectedMichiganScore": 21.809916851607387,
+      "expectedOpponentScore": 21.419079516180087
+    },
+    {
+      "week": 5,
+      "opponent": "Minnesota",
+      "site": "A",
+      "winProbability": 0.77976,
+      "expectedMarginMichigan": 12.51813282232867,
+      "expectedMichiganScore": 26.588366355469574,
+      "expectedOpponentScore": 14.070233533140902
+    },
+    {
+      "week": 7,
+      "opponent": "Penn State",
+      "site": "H",
+      "winProbability": 0.55334,
+      "expectedMarginMichigan": 2.274454837857413,
+      "expectedMichiganScore": 22.85306721979654,
+      "expectedOpponentScore": 20.578612381939127
+    },
+    {
+      "week": 8,
+      "opponent": "Indiana",
+      "site": "H",
+      "winProbability": 0.18286,
+      "expectedMarginMichigan": -14.592395524987774,
+      "expectedMichiganScore": 13.901632609281055,
+      "expectedOpponentScore": 28.494028134268827
+    },
+    {
+      "week": 9,
+      "opponent": "Rutgers",
+      "site": "A",
+      "winProbability": 0.73178,
+      "expectedMarginMichigan": 10.247695211792605,
+      "expectedMichiganScore": 28.337224340463106,
+      "expectedOpponentScore": 18.089529128670502
+    },
+    {
+      "week": 10,
+      "opponent": "Michigan State",
+      "site": "H",
+      "winProbability": 0.81214,
+      "expectedMarginMichigan": 14.291243724745112,
+      "expectedMichiganScore": 28.72544321320126,
+      "expectedOpponentScore": 14.43419948845615
+    },
+    {
+      "week": 11,
+      "opponent": "Oregon",
+      "site": "A",
+      "winProbability": 0.19124,
+      "expectedMarginMichigan": -13.97012441330401,
+      "expectedMichiganScore": 15.473401461794078,
+      "expectedOpponentScore": 29.44352587509809
+    },
+    {
+      "week": 12,
+      "opponent": "UCLA",
+      "site": "H",
+      "winProbability": 0.8259,
+      "expectedMarginMichigan": 15.189443999525787,
+      "expectedMichiganScore": 30.934523613653433,
+      "expectedOpponentScore": 15.745079614127647
+    },
+    {
+      "week": 13,
+      "opponent": "Ohio State",
+      "site": "A",
+      "winProbability": 0.16774,
+      "expectedMarginMichigan": -15.810545114170049,
+      "expectedMichiganScore": 13.654861357947492,
+      "expectedOpponentScore": 29.46540647211754
+    }
+  ],
+  "winDistribution": {
+    "0": 1e-05,
+    "1": 1e-05,
+    "2": 0.00065,
+    "3": 0.00621,
+    "4": 0.031,
+    "5": 0.10313,
+    "6": 0.21403,
+    "7": 0.27484,
+    "8": 0.22535,
+    "9": 0.10997,
+    "10": 0.03021,
+    "11": 0.00429,
+    "12": 0.0003
+  }
+}

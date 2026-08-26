@@ -1,0 +1,13 @@
+week,opponent,gameId,site,opponent_rank,predicted_margin,win_prob,median_margin,p10_margin,p90_margin,data_available
+1,Western Michigan,401858428,home,79,27.6,0.956,29.5,7.3,47.9,True
+2,Oklahoma,401856679,home,12,4.3,0.67,6.1,-16.4,24.6,True
+3,UTEP,401858450,home,122,38.4,0.987,40.3,18.1,58.7,True
+4,Iowa,401858463,home,24,13.0,0.819,14.8,-7.3,33.3,True
+5,Minnesota,401858474,away,33,10.9,0.793,12.8,-9.8,31.2,True
+7,Penn State,401858490,home,20,10.1,0.787,12.0,-10.2,30.4,True
+8,Indiana,401858496,home,15,7.9,0.744,9.8,-12.4,28.3,True
+9,Rutgers,401858507,away,49,14.7,0.838,16.4,-6.0,34.4,True
+10,Michigan State,401858511,home,58,23.1,0.921,25.0,2.8,43.5,True
+11,Oregon,401858523,away,2,-11.4,0.235,-9.5,-32.1,8.9,True
+12,UCLA,401858528,home,51,20.9,0.902,22.7,0.2,41.2,True
+13,Ohio State,401858540,away,1,-12.5,0.223,-10.7,-33.2,7.8,True
