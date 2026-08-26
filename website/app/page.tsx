@@ -86,7 +86,7 @@ export default function Home(){
 
       {(projection||rankings)&&<section className={modelStyles.modelSection} aria-labelledby="model-center-title">
         <header className={modelStyles.sectionHeader}>
-          <div><span className={modelStyles.eyebrow}>2026 MODEL CENTER</span><h2 id="model-center-title">PRESEASON OUTLOOK</h2></div>
+          <div><span className={modelStyles.eyebrow}>2026 MODEL CENTER</span><h2 id="model-center-title"><span>PRESEASON</span> <em>OUTLOOK</em></h2></div>
           <Link href="/methodology">HOW IT WORKS</Link>
         </header>
 
