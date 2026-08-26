@@ -45,8 +45,8 @@ export default function Articles(){
         </div>
       </div>
     </header>
-    <main className={`wrap ${styles.content}`}>
+    <div className={`wrap ${styles.content}`}>
       <ArticleLibrary stories={stories}/>
-    </main>
+    </div>
   </div>;
 }
