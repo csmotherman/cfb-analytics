@@ -182,3 +182,58 @@ def portal_features(team: str, target_season: int) -> dict[str, Any]:
         net = in_totals[k] - out_totals[k]
         out[f"portal_net_{k.replace('.', '_')}_share"] = (net / base) if base > 0 else None
     return out
+
+
+TRANSFER_QB_PRODUCTIVE_ATT_THRESHOLD = 100
+
+
+@lru_cache(maxsize=None)
+def transfer_qb_features(team: str, target_season: int) -> dict[str, Any]:
+    """Incoming transfer QB, evaluated on his PRIOR season's actual production at his old team.
+
+    Only populated when the team's own prior-season starter did NOT return (see
+    qb_continuity_features) -- if the incumbent is back, an incoming QB transfer
+    is presumptively a backup, not the starter, and would just be noise here.
+    Matched by normalized name + portal-reported origin school against
+    player_season_stats(target_season-1), same join approach as portal_features,
+    but scoped to position=='QB' only and picking the single most-productive
+    (highest prior passing attempts) incoming name match, since a team's QB
+    portal cycle rarely has more than one real starter-caliber name in it.
+    """
+    incumbent = qb_continuity_features(team, target_season)
+    if not incumbent.get("data_available"):
+        return {"transfer_qb_available": False}
+    if incumbent.get("qb_returning_flag") == 1:
+        return {"transfer_qb_available": True, "transfer_qb_incoming_flag": 0, "transfer_qb_prior_passing_yards": 0.0, "transfer_qb_prior_pass_att": 0.0}
+
+    rows = load_portal(target_season)
+    if not rows:
+        return {"transfer_qb_available": False}
+    prior_idx = _portal_value_index(target_season - 1)
+
+    best: dict[str, float] | None = None
+    for row in rows:
+        if row.get("destination") != team or row.get("position") != "QB":
+            continue
+        origin = row.get("origin")
+        if not origin:
+            continue
+        name = normalize_name(f"{row.get('firstName', '')} {row.get('lastName', '')}")
+        stats = prior_idx.get((name, origin))
+        if not stats or stats.get("position") != "QB":
+            continue
+        atts = float(stats.get("passing.ATT", 0.0) or 0.0)
+        if best is None or atts > best.get("passing.ATT", 0.0):
+            best = stats
+
+    if best is None:
+        return {"transfer_qb_available": True, "transfer_qb_incoming_flag": 0, "transfer_qb_prior_passing_yards": 0.0, "transfer_qb_prior_pass_att": 0.0}
+
+    atts = float(best.get("passing.ATT", 0.0) or 0.0)
+    yards = float(best.get("passing.YDS", 0.0) or 0.0)
+    return {
+        "transfer_qb_available": True,
+        "transfer_qb_incoming_flag": 1 if atts >= TRANSFER_QB_PRODUCTIVE_ATT_THRESHOLD else 0,
+        "transfer_qb_prior_passing_yards": yards,
+        "transfer_qb_prior_pass_att": atts,
+    }

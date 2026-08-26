@@ -77,6 +77,21 @@ Multi-year power (2018-2025 matched sample) beat single-year: MAE 13.72 -> 13.38
 
 **Portal made every variant worse and was excluded.** This is very likely a measurement artifact rather than evidence that transfer activity doesn't matter: `portal.json` has no player ID, so incoming/outgoing transfers were matched to `player_season_stats` by normalized name + team, which only matched 40-70% of transfers in spot checks. The unmatched half is silently scored as zero prior production, which is systematically wrong for real transfers. A future revisit needs an ID-based join (or CFBD's athlete-ID-bearing transfer endpoint, if available) before portal value can be fairly tested.
 
+### Addendum -- transfer-QB-specific test (`transfer_qb_features`, `Model 5b`)
+
+The generic portal ablation above bundles all positions together with a noisy name join. A narrower, cleaner version was tested separately: for a team whose own prior-season starter did *not* return, look up the incoming QB transfer (if any) via `portal.json`, and use his actual prior-season production at his old school (`transfer_qb_incoming_flag` = 1 if he threw >=100 attempts, `transfer_qb_prior_passing_yards` continuous) -- e.g. this correctly identifies Miami's 2026 incoming QB Darian Mensah (500 att / 3,973 yds at Duke in 2025) as a productive transfer, not an unknown.
+
+On the 4 portal-available seasons (2022-2025, n=180, of which 63 games had a nonzero home-vs-away transfer-QB differential -- not a sparse sample):
+
+| model | MAE | win% | Brier |
+|---|---|---|---|
+| RECOMMENDED (recruiting_3yr + QB returning flag) | 12.06 | 80.0 | .1451 |
+| + transfer_qb_incoming_flag | 12.62 | 76.7 | .1539 |
+| + transfer_qb_prior_passing_yards | 13.00 | 77.2 | .1606 |
+| + both | 13.04 | 76.1 | .1615 |
+
+**Worse in every variant -- not added to the recommended model.** The interesting part is *why*: the fitted coefficient's sign was correctly positive in all 4 walk-forward steps (a productive transfer QB genuinely correlates with outperforming), but its size was unstable year to year (+5.35, +2.59, +1.34, +3.59), and that instability cost more out-of-sample accuracy than the correct-direction signal recovered. This reads as a real, underlying football effect (transfer QB integration -- new receivers, new line, new scheme, no guarantee of even winning the job -- is inherently higher-variance than same-team continuity) rather than a data problem, unlike the generic portal result above. Current verdict: the Week 1 model does not have statistical grounds to credit a team extra for a productive incoming transfer QB beyond what recruiting and the (absence of a) returning-starter flag already capture -- Miami's 2026 rank reflects that.
+
 **Model 7 (coaching) was not built** -- no historical coaching-change data exists in the repo (see data audit).
 
 ### Recommended model -- full walk-forward evaluation (2018-2025, n=312)

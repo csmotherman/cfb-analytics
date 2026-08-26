@@ -3,8 +3,8 @@ import Link from "next/link";
 import {ArticleMobileToc} from "../../../components/ArticleMobileToc";
 import {teamLogoUrl} from "../../../lib/team-assets";
 
-const articleUrl="https://cfb-analytics-two.vercel.app/articles/michigan-western-michigan-2026-preview";
-const articleImage="https://cfb-analytics-two.vercel.app/images/articles/michigan-western-michigan-2026-preview.jpg";
+const articleUrl="https://michiganfootballfocus.com/articles/michigan-western-michigan-2026-preview";
+const articleImage="https://michiganfootballfocus.com/images/articles/michigan-western-michigan-2026-preview.jpg";
 const socialDescription="Michigan -26.5 vs. the MAC's reigning champs. The data says the Wolverines should run first and make Broc Lowry throw — but Western's defense isn't as overmatched as the spread suggests.";
 
 export const metadata:Metadata={

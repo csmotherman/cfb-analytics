@@ -1,8 +1,8 @@
 import type {Metadata} from "next";
 import Link from "next/link";
 
-const articleUrl="https://cfb-analytics-two.vercel.app/articles/can-michigan-new-staff-playoff-team";
-const articleImage="https://cfb-analytics-two.vercel.app/images/articles/staff-article.png";
+const articleUrl="https://michiganfootballfocus.com/articles/can-michigan-new-staff-playoff-team";
+const articleImage="https://michiganfootballfocus.com/images/articles/staff-article.png";
 
 export const metadata:Metadata={
   title:"Can Michigan’s New Staff Turn the Wolverines Into a Playoff Team?",

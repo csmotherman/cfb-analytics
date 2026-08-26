@@ -20,7 +20,7 @@ from typing import Callable
 import numpy as np
 
 from .common import COMPLETE_SEASONS, load_team_games, prior_seasons
-from .features import portal_features, qb_continuity_features, recruiting_features, returning_production_features
+from .features import portal_features, qb_continuity_features, recruiting_features, returning_production_features, transfer_qb_features
 from .historical_priors import season_points_ratings, season_srs_overall, season_team_summary
 
 FeatureFn = Callable[[str, str, int], float | None]
@@ -251,6 +251,20 @@ def portal_defense_net(home: str, away: str, season: int) -> float | None:
     return None if h is None or a is None else h - a
 
 
+def transfer_qb_incoming_flag(home: str, away: str, season: int) -> float | None:
+    hf, af = transfer_qb_features(home, season), transfer_qb_features(away, season)
+    if not hf.get("transfer_qb_available") or not af.get("transfer_qb_available"):
+        return None
+    return float(hf["transfer_qb_incoming_flag"]) - float(af["transfer_qb_incoming_flag"])
+
+
+def transfer_qb_prior_passing_yards(home: str, away: str, season: int) -> float | None:
+    hf, af = transfer_qb_features(home, season), transfer_qb_features(away, season)
+    if not hf.get("transfer_qb_available") or not af.get("transfer_qb_available"):
+        return None
+    return float(hf["transfer_qb_prior_passing_yards"]) - float(af["transfer_qb_prior_passing_yards"])
+
+
 # ---------------------------------------------------------------------------
 # Design matrix assembly
 # ---------------------------------------------------------------------------
@@ -319,4 +333,6 @@ def build_feature_registry(shrinkage: float = 3.0) -> dict[str, FeatureFn]:
         "qb_returning_pass_share": qb_returning_pass_share,
         "portal_offense_net": portal_offense_net,
         "portal_defense_net": portal_defense_net,
+        "transfer_qb_incoming_flag": transfer_qb_incoming_flag,
+        "transfer_qb_prior_passing_yards": transfer_qb_prior_passing_yards,
     }
