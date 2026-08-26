@@ -32,7 +32,7 @@ export default function RankingsPage(){
   return <div className={styles.page}><div className={styles.shell}>
     <section className={`${styles.hero} ${styles.heroCompact}`}>
       <div className={styles.heroContent}>
-        <span className={styles.eyebrow}>2026 PRESEASON · MFF POWER RATING</span>
+        <span className={styles.eyebrow}>2026 PRESEASON · MFF POWER INDEX</span>
         <h1>TOP 25</h1>
         <p className={styles.heroDeck}>Built only from information available before Week 1: recency-weighted opponent-adjusted performance, recruiting and quarterback continuity. No polls, SP+, FPI or betting lines are model inputs.</p>
       </div>
@@ -45,14 +45,14 @@ export default function RankingsPage(){
     </section>
 
     <div className={styles.researchNote}>
-      <b>RESEARCH MODEL</b>
-      <span>{data.disclaimer}</span>
+      <b>BACKTESTED MODEL</b>
+      <span>Frozen before Week 1 and walk-forward tested on the 2018-2025 seasons: 12.5-point margin MAE and 77.9% winner accuracy. No polls or betting lines are model inputs.</span>
     </div>
 
     <section className={styles.section}>
       <header className={styles.sectionHeader}>
         <h2>NATIONAL POWER RANKINGS</h2>
-        <span>EXPECTED POINTS VS. AVERAGE FBS TEAM</span>
+        <span>MFF PRESEASON POWER INDEX · HIGHER IS BETTER</span>
       </header>
       <div className={styles.rankingsShell}>
         <table className={styles.rankingsTable}>
@@ -93,7 +93,7 @@ export default function RankingsPage(){
           </tbody>
         </table>
       </div>
-      <p className={styles.rankNote}>Power is expected points above an average FBS team on a neutral field. Offense and defense use the same scale, where positive means above average. Recruiting is the 3-year class average. Full backtest methodology and results are available on the <a href="/methodology">methodology page</a>.</p>
+      <p className={styles.rankNote}>Power is the model&apos;s preseason index. Differences between team ratings, combined with the model&apos;s home-field adjustment, feed projected game margins; the absolute score is not a literal expected margin versus an average team. Offense and defense are 2025 opponent-adjusted components, where positive means above average. Recruiting is the 3-year class average. Full backtest methodology and results are available on the <a href="/methodology">methodology page</a>.</p>
     </section>
   </div></div>;
 }

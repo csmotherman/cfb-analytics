@@ -22,12 +22,12 @@ const metrics = [
   ["Position percentile", "A player's standing among the published national FBS comparison cohort at the same position and above the required usage threshold."],
   ["Production grade", "A display grade derived from measured 2025 usage and production within a positional cohort. It describes the season; it does not forecast the next one."],
   ["Prospect tier", "A display translation of recruiting consensus. It describes incoming pedigree, not college performance."],
-  ["Market win chance", "A historical calibration from a sourced point spread. It is market context, not a game prediction."],
+  ["Market win chance", "A historical calibration from a sourced point spread. It is market context, not a Michigan Football Focus game prediction."],
 ];
 
 const currentStatus = [
   ["2026 roster, staff, schedule and roles", "Preseason evidence."],
-  ["Michigan and Utah team performance", "Completed 2025 actuals."],
+  ["2025 team performance", "Completed-season actuals used as historical context."],
   ["Recruiting", "Consensus benchmarks, not college proof."],
   ["Markets", "Sourced prices and historical spread calibration."],
   ["2026 in-season analytics", "Begin only after observed games are published."],
@@ -35,7 +35,7 @@ const currentStatus = [
 
 const trustRules = [
   "We do not invent rankings, grades, player roles, probabilities, or historical comparisons when an artifact is missing.",
-  "Utah's 2025 performance describes recent staff context; it does not guarantee Michigan will reproduce Utah's tendencies or results.",
+  "Prior-season performance and staff context inform expectations; they do not guarantee that Michigan will reproduce another team's tendencies or results.",
   "Public language may simplify a calculation, but it does not change its denominator, direction, or underlying definition.",
 ];
 
@@ -82,13 +82,13 @@ export default function Methodology() {
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={styles.section} id="fan-glossary">
         <header className={styles.sectionHeader}>
           <div>
             <span className={styles.sectionKicker}>FAN GLOSSARY</span>
             <h2>What the numbers mean.</h2>
           </div>
-          <p>These are public-language definitions. The Python analytics system and metric registry remain the calculation source of truth.</p>
+          <p>These are public-language definitions. The underlying analytics system and metric registry remain the calculation source of truth.</p>
         </header>
 
         <div className={styles.glossary}>

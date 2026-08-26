@@ -26,10 +26,10 @@ export default function Schedule(){
         <div className="schedule-row-week"><small>WEEK</small><b>{game.week}</b></div>
         <div className="schedule-row-opponent"><img src={logoUrl(opponent.id)} alt=""/><div><small>{opponent.site}{game.conferenceGame?" · BIG TEN":""}</small><strong>{opponent.name}</strong></div></div>
         <div className="schedule-row-date"><span>{gameDate(game)}</span><small>{gameTime(game)}</small></div>
-        <div className="schedule-row-market">{market?<><strong>{formatMichiganSpread(market.teamSpread)}</strong><small>{Math.round(market.marketWinChance*100)}% WIN</small></>:<><strong>—</strong><small>NO MARKET</small></>}</div>
+        <div className="schedule-row-market">{market?<><strong>{formatMichiganSpread(market.teamSpread)}</strong><small>{Math.round(market.marketWinChance*100)}% MARKET WIN</small></>:<><strong>—</strong><small>NO MARKET</small></>}</div>
         <b className="schedule-row-arrow">›</b>
       </Link>})}</div>
-      <p className="schedule-market-note">Market lines are sourced preseason prices. Win chance is model-calibrated context, not a betting recommendation.</p>
+      <p className="schedule-market-note">Market lines are sourced preseason prices. Market win chance is calibrated context, not the Michigan Football Focus game model and not a betting recommendation.</p>
     </section>
   </div></div>;
 }

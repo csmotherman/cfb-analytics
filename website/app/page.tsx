@@ -68,7 +68,7 @@ export default function Home(){
       </section>}
 
       <section className="mock-section pulse-section">
-        <header><h2>MICHIGAN PULSE</h2><span>UPDATED TODAY</span></header>
+        <header><h2>MICHIGAN PULSE</h2><span>2026 PRESEASON</span></header>
         <div className="pulse-scroll">
           <article className="pulse-ranking-card">
             <small>TEAM RANKING</small>
@@ -80,7 +80,7 @@ export default function Home(){
             <span>{michiganPower?"Michigan Football Focus model":michiganPollSnapshot.modelRank?michiganPollSnapshot.label:michiganPollSnapshot.modelStatus}</span>
           </article>
           <article><small>PROJECTED RECORD</small><strong>{projectedRecord}</strong><span>{projection?`${projection.winDistribution.expectedWins.toFixed(1)} expected wins`:"Coming soon"}</span></article>
-          <article><small>CFP CHANCE</small><strong>{cfpChance}</strong><span>{outlook?"Market outlook":"Coming soon"}</span></article>
+          <article><small>MARKET CFP CHANCE</small><strong>{cfpChance}</strong><span>{outlook?"Market outlook":"Coming soon"}</span></article>
         </div>
       </section>
 
@@ -148,7 +148,7 @@ export default function Home(){
       </section>}
 
       <section className="mock-section">
-        <header><h2>PLAYERS TO WATCH</h2><Link href="/team">VIEW ALL <b>›</b></Link></header>
+        <header><h2>PLAYERS TO WATCH</h2><Link href="/players">VIEW ALL <b>›</b></Link></header>
         <div className="player-watch-scroll">
           {players.map(player=><Link className="watch-card" href={`/players/${player.id}`} key={player.id}>
             <div className="blank-player-image"><img src={watchImage(player.firstName,player.lastName)} alt={`${player.firstName} ${player.lastName}`}/><span>{player.jersey??"M"}</span></div>
