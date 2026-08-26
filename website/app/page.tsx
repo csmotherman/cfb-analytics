@@ -9,8 +9,8 @@ import modelStyles from "../styles/homeModel.module.css";
 
 const SITE_NAME="Michigan Football Focus";
 const SITE_URL=(process.env.NEXT_PUBLIC_SITE_URL||"https://michiganfootballfocus.com").replace(/\/$/,"");
-const HOME_TITLE="Michigan Football Focus | Wolverines News, Analytics & Projections";
-const HOME_DESCRIPTION="Michigan Football Focus covers Michigan Wolverines football with news, 2026 projections, rankings, depth charts, player analysis, schedules and advanced analytics.";
+const HOME_TITLE="Michigan Football Focus | Wolverines News & Analytics";
+const HOME_DESCRIPTION="Michigan Football Focus covers Michigan Wolverines football news, 2026 projections, rankings, depth charts, players, schedules and advanced analytics.";
 
 export const metadata:Metadata={
   title:{absolute:HOME_TITLE},
