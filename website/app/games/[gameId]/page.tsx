@@ -5,6 +5,7 @@ import {notFound} from "next/navigation";
 import {currentSchedule,gameById,opponent} from "../../../lib/michigan/games";
 import {gamePreview,type MatchupRidgeSide} from "../../../lib/michigan/game-preview";
 import {marketLineFor,formatMichiganSpread} from "../../../lib/market-lines";
+import {michiganPreseasonProjection} from "../../../lib/preseason-power";
 import {teamLogoUrl} from "../../../lib/team-assets";
 import {gameDate,gameTime} from "../../../lib/home-data";
 import "./game-preview.css";
@@ -67,7 +68,7 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
   const opp=opponent(game);
   return{
     title:`Michigan vs ${opp.name} Game Preview`,
-    description:`Michigan vs ${opp.name}: opponent-adjusted offense, defense and overall rankings, conference and market outlook.`
+    description:`Michigan vs ${opp.name}: preseason model outlook, opponent-adjusted offense and defense, and current market context.`
   };
 }
 
@@ -76,12 +77,16 @@ export default async function GameHub({params}:Props){
   if(!game)notFound();
 
   const market=marketLineFor(game.id);
+  const projection=michiganPreseasonProjection();
+  const modelGame=projection?.games.find(item=>item.gameId===String(game.id))??null;
   const {opp,baselineSeason,michigan,opponent:opponentRatings}=gamePreview(game);
   const home=game.homeId===130;
 
   const michiganConference=home?(game.homeConference??"Big Ten"):(game.awayConference??"Big Ten");
   const opponentConference=home?(game.awayConference??"—"):(game.homeConference??"—");
   const articleHref=String(game.id)==="401858428"?"/articles/michigan-western-michigan-2026-preview":"/articles";
+  const modelWinPct=modelGame?.winProb!=null?Math.round(modelGame.winProb*100):null;
+  const modelMargin=modelGame?.predictedMargin!=null?`${modelGame.predictedMargin>=0?"+":""}${modelGame.predictedMargin.toFixed(1)}`:null;
 
   return <div className="game-preview-page">
     <div className="preview-app-shell">
@@ -112,6 +117,15 @@ export default async function GameHub({params}:Props){
           <span><small>LOCATION</small><b>{game.venue??(home?"Michigan Stadium":"Away")}</b></span>
         </div>
       </section>
+
+      {modelGame?.dataAvailable&&<section className="game-model-card" aria-label="Michigan Football Focus preseason model projection">
+        <div className="game-model-title"><span>MFF MODEL</span><strong>PRESEASON PROJECTION</strong><small>FROZEN BEFORE WEEK 1</small></div>
+        <div className="game-model-stats">
+          <div><small>MICHIGAN WIN PROBABILITY</small><strong>{modelWinPct}%</strong></div>
+          <div><small>PROJECTED MARGIN</small><strong>{modelMargin}</strong><span>MICHIGAN PERSPECTIVE</span></div>
+        </div>
+        <Link href="/2026-projection">FULL SEASON PROJECTION <b>›</b></Link>
+      </section>}
 
       <section className="preview-block advantage-comparison-block">
         <div className="preview-section-heading advantage-heading">
