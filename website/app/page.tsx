@@ -2,6 +2,9 @@ import Link from "next/link";
 import {gameDate,gameTime,homeData,opponentOf} from "../lib/home-data";
 import {formatMichiganSpread,marketLineFor} from "../lib/market-lines";
 import {michiganPollSnapshot} from "../lib/polls";
+import {michiganPreseasonProjection,preseasonPowerNational} from "../lib/preseason-power";
+import {teamLogoUrl} from "../lib/team-assets";
+import modelStyles from "../styles/homeModel.module.css";
 
 const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.grade??"—";
 
@@ -18,10 +21,28 @@ const watchImage=(firstName:string,lastName:string)=>{
 const pollRank=(rank:number|null)=>rank?`#${rank}`:"—";
 
 export default function Home(){
-  const {next,schedule,squad,outlook}=homeData();
+  const {next,squad,outlook}=homeData();
   const opponent=next?opponentOf(next):null;
   const market=next?marketLineFor(next.id):null;
   const cfpChance=outlook?`${Math.round(outlook.cfp.noVigImpliedProbability*100)}%`:"—";
+  const projection=michiganPreseasonProjection();
+  const rankings=preseasonPowerNational();
+  const michiganPower=rankings?.teams.find(team=>team.teamId===130)??null;
+  const modelRank=michiganPower?.rank??michiganPollSnapshot.modelRank;
+  const projectedRecord=projection?`${projection.winDistribution.medianWins}-${projection.winDistribution.gamesWithData-projection.winDistribution.medianWins}`:"—";
+  const expectedWins=projection?.winDistribution.expectedWins??null;
+  const eightToTen=projection?Object.entries(projection.winDistribution.distributionPct).reduce((sum,[wins,pct])=>{
+    const value=Number(wins);
+    return value>=8&&value<=10?sum+pct:sum;
+  },0):null;
+  const ninePlus=projection?Object.entries(projection.winDistribution.distributionPct).reduce((sum,[wins,pct])=>Number(wins)>=9?sum+pct:sum,0):null;
+  const distribution=projection?[8,9,10].map(wins=>({wins,pct:projection.winDistribution.distributionPct[String(wins)]??0})):[];
+  const maxDist=Math.max(1,...distribution.map(row=>row.pct));
+  const spotlightGames=projection?.games.filter(game=>["Oklahoma","Oregon","Ohio State"].includes(game.opponent))??[];
+  const rankingPreview=rankings?[
+    ...rankings.teams.slice(0,5),
+    ...(michiganPower&&michiganPower.rank>5?[michiganPower]:[]),
+  ]:[];
   const players=[
     squad.find(p=>p.firstName==="Bryce"&&p.lastName==="Underwood"),
     squad.find(p=>p.firstName==="John Henry"&&p.lastName==="Daley"),
@@ -54,14 +75,77 @@ export default function Home(){
             <div className="pulse-ranking-list">
               <div><span>AP POLL</span><strong>{pollRank(michiganPollSnapshot.apRank)}</strong></div>
               <div><span>COACHES POLL</span><strong>{pollRank(michiganPollSnapshot.coachesRank)}</strong></div>
-              <div className="model-rank"><span>MODEL POWER RANK</span><strong>{pollRank(michiganPollSnapshot.modelRank)}</strong></div>
+              <div className="model-rank"><span>PRESEASON POWER</span><strong>{pollRank(modelRank)}</strong></div>
             </div>
-            <span>{michiganPollSnapshot.modelRank?michiganPollSnapshot.label:michiganPollSnapshot.modelStatus}</span>
+            <span>{michiganPower?"Michigan Football Focus model":michiganPollSnapshot.modelRank?michiganPollSnapshot.label:michiganPollSnapshot.modelStatus}</span>
           </article>
-          <article><small>PROJECTED RECORD</small><strong>—</strong><span>Coming soon</span></article>
+          <article><small>PROJECTED RECORD</small><strong>{projectedRecord}</strong><span>{projection?`${projection.winDistribution.expectedWins.toFixed(1)} expected wins`:"Coming soon"}</span></article>
           <article><small>CFP CHANCE</small><strong>{cfpChance}</strong><span>{outlook?"Market outlook":"Coming soon"}</span></article>
         </div>
       </section>
+
+      {(projection||rankings)&&<section className={modelStyles.modelSection} aria-labelledby="model-center-title">
+        <header className={modelStyles.sectionHeader}>
+          <div><span className={modelStyles.eyebrow}>2026 MODEL CENTER</span><h2 id="model-center-title">PRESEASON OUTLOOK</h2></div>
+          <Link href="/methodology">HOW IT WORKS</Link>
+        </header>
+
+        <div className={modelStyles.grid}>
+          {projection&&<article className={modelStyles.projectionCard}>
+            <div className={modelStyles.cardTop}>
+              <div><span className={modelStyles.cardKicker}>MICHIGAN SEASON PROJECTION</span><strong className={modelStyles.record}>{projectedRecord}</strong><span className={modelStyles.recordLabel}>MEDIAN OUTCOME · 50,000 SIMULATIONS</span></div>
+              <span className={modelStyles.modelBadge}>PRESEASON MODEL</span>
+            </div>
+
+            <div className={modelStyles.statRail}>
+              <div><small>EXPECTED WINS</small><strong>{expectedWins?.toFixed(1)??"—"}</strong></div>
+              <div><small>8-10 WINS</small><strong>{eightToTen!=null?`${eightToTen.toFixed(1)}%`:"—"}</strong></div>
+              <div><small>9+ WINS</small><strong>{ninePlus!=null?`${ninePlus.toFixed(1)}%`:"—"}</strong></div>
+            </div>
+
+            <div className={modelStyles.dist}>
+              <div className={modelStyles.distHeader}><span>MOST LIKELY WIN TOTALS</span><b>9 WINS LEADS</b></div>
+              <div className={modelStyles.distRows}>
+                {distribution.map(row=><div className={modelStyles.distRow} key={row.wins}>
+                  <span>{row.wins}W</span>
+                  <div className={modelStyles.track}><div className={modelStyles.fill} style={{width:`${Math.max(4,(row.pct/maxDist)*100)}%`}}/></div>
+                  <span>{row.pct.toFixed(1)}%</span>
+                </div>)}
+              </div>
+            </div>
+
+            <div className={modelStyles.miniGames}>
+              {spotlightGames.map(game=>{
+                const winPct=Math.round((game.winProb??0)*100);
+                const favored=winPct>=50;
+                return <div className={modelStyles.miniGame} key={game.week}>
+                  <small>WK {game.week}</small>
+                  <strong>{game.opponentRank!=null?`#${game.opponentRank} `:""}{game.opponent}</strong>
+                  <span className={favored?modelStyles.favored:modelStyles.underdog}>{winPct}% WIN</span>
+                </div>;
+              })}
+            </div>
+
+            <Link href="/2026-projection" className={modelStyles.primaryLink}>FULL GAME-BY-GAME PROJECTION <b>›</b></Link>
+          </article>}
+
+          {rankings&&<article className={modelStyles.rankingCard}>
+            <div className={modelStyles.rankingHead}>
+              <div><span className={modelStyles.cardKicker}>NATIONAL POWER RANKINGS</span><h3>2026 PRESEASON TOP 25</h3></div>
+              <span>NO POLL OR<br/>BETTING INPUTS</span>
+            </div>
+            <div className={modelStyles.rankingList}>
+              {rankingPreview.map(team=><div className={modelStyles.rankRow} data-michigan={team.teamId===130?"true":"false"} key={team.team}>
+                <span className={modelStyles.rankNumber}>#{team.rank}</span>
+                {team.teamId!=null?<img className={modelStyles.teamLogo} src={teamLogoUrl(team.teamId,64)} alt=""/>:<span/>}
+                <div className={modelStyles.teamName}><strong>{team.team}</strong><small>{team.conference??"FBS"}</small></div>
+                <div className={modelStyles.power}><strong>{team.powerScore?.toFixed(1)??"—"}</strong><small>POWER</small></div>
+              </div>)}
+            </div>
+            <Link href="/rankings" className={modelStyles.rankingLink}>VIEW ALL 25 RANKINGS <b>›</b></Link>
+          </article>}
+        </div>
+      </section>}
 
       <section className="mock-section">
         <header><h2>PLAYERS TO WATCH</h2><Link href="/team">VIEW ALL <b>›</b></Link></header>
