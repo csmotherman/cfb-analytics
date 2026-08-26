@@ -10,14 +10,15 @@ const desktopLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/an
 const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 const moreLinks=[
   {href:"/articles",label:"News & Analysis",meta:"Stories, previews and notebooks"},
+  {href:"/players",label:"Players",meta:"Profiles, production grades and career stats"},
   {href:"/rankings",label:"Top 25 Rankings",meta:"2026 preseason power ratings, no AP poll or Vegas input"},
   {href:"/2026-projection",label:"2026 Win Projection",meta:"Michigan's projected record, game by game"},
-  {href:"/metrics",label:"Metrics",meta:"Definitions for site analytics"},
-  {href:"/methodology",label:"Methodology",meta:"How ratings and grades are built"},
+  {href:"/methodology#fan-glossary",label:"Metric Glossary",meta:"Plain-English definitions for site analytics"},
+  {href:"/methodology",label:"Methodology",meta:"How ratings, grades and evidence labels are built"},
   {href:"/new-additions",label:"New Additions",meta:"Freshmen and transfers joining Michigan"},
 ] as const;
 
-const active=(path:string,href:string)=>href==="/"?path==="/":path.startsWith(href);
+const active=(path:string,href:string)=>href==="/"?path==="/":path.startsWith(href.split("#")[0]);
 
 function Icon({label}:{label:string}){
   if(label==="Home")return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3z"/></svg>;
