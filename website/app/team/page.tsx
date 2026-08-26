@@ -15,7 +15,12 @@ export default function TeamPage(){
 
   return <div className="mock-home team-formation-home"><div className="mock-shell">
     <section className="mock-section team-formation-intro">
-      <header><div><span className="mock-eyebrow maize">2026 MICHIGAN · PROJECTED</span><h1>DEPTH CHART</h1><p>Desktop shows the full formation. Mobile switches automatically to the compact depth directory for faster scanning.</p></div><Link href="/team/roster">PLAYER DIRECTORY <b>›</b></Link></header>
+      <header><div><span className="mock-eyebrow maize">2026 MICHIGAN · PROJECTED</span><h1>DEPTH CHART</h1><p>Michigan&apos;s projected two-deep, the biggest position battles, and a quick path to every player on the 2026 roster.</p></div><Link href="/team/roster">PLAYER DIRECTORY <b>›</b></Link></header>
+      <nav className="team-quick-links" aria-label="Explore the Michigan team">
+        <Link href="/players"><small>PRODUCTION + PROFILES</small><strong>PLAYERS</strong><b>›</b></Link>
+        <Link href="/team/roster"><small>EVERY WOLVERINE</small><strong>FULL ROSTER</strong><b>›</b></Link>
+        <Link href="/new-additions"><small>FRESHMEN + TRANSFERS</small><strong>NEW ADDITIONS</strong><b>›</b></Link>
+      </nav>
     </section>
 
     {chart?<>
