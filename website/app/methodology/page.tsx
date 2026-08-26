@@ -40,7 +40,7 @@ const trustRules = [
 ];
 
 export default function Methodology() {
-  return <main className={styles.page}>
+  return <div className={styles.page}>
     <div className={styles.shell}>
       <section className={styles.hero}>
         <div className={styles.heroTop}>
@@ -129,5 +129,5 @@ export default function Methodology() {
         <p>If the underlying evidence changes, the label changes with it. If the evidence does not exist, the site should say so instead of pretending certainty.</p>
       </div>
     </div>
-  </main>;
+  </div>;
 }
