@@ -1,2 +1,2 @@
 import { redirect } from "next/navigation";
-export default function Page(){redirect("/analytics")}
+export default function Page(){redirect("/methodology#fan-glossary")}
