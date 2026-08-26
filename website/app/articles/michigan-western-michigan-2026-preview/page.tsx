@@ -1,10 +1,17 @@
 import type {Metadata} from "next";
 import Link from "next/link";
+import {ArticleMobileToc} from "../../../components/ArticleMobileToc";
 import {teamLogoUrl} from "../../../lib/team-assets";
+
+const articleUrl="https://cfb-analytics-two.vercel.app/articles/michigan-western-michigan-2026-preview";
+const articleImage="https://cfb-analytics-two.vercel.app/images/articles/michigan-western-michigan-2026-preview.jpg";
+const socialDescription="Michigan -26.5 vs. the MAC's reigning champs. The data says the Wolverines should run first and make Broc Lowry throw — but Western's defense isn't as overmatched as the spread suggests.";
 
 export const metadata:Metadata={
   title:"Michigan vs. Western Michigan: The Data Says Michigan Should Run First and Make Broc Lowry Throw",
-  description:"Michigan owns a massive offensive edge entering Week 1, but Western Michigan is not a typical MAC opener. The defending conference champions have a legitimate run game, a proven quarterback and a defense that was much better than its name recognition suggests."
+  description:"Michigan owns a massive offensive edge entering Week 1, but Western Michigan is not a typical MAC opener. The defending conference champions have a legitimate run game, a proven quarterback and a defense that was much better than its name recognition suggests.",
+  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Michigan vs. Western Michigan: The Data Says Michigan Should Run First and Make Broc Lowry Throw",description:socialDescription,images:[{url:articleImage,alt:"Michigan vs. Western Michigan, Week 1"}]},
+  twitter:{card:"summary_large_image",title:"Michigan vs. Western Michigan: The Data Says Michigan Should Run First and Make Broc Lowry Throw",description:socialDescription,images:[articleImage]}
 };
 
 const sources=[
@@ -65,6 +72,8 @@ export default function MichiganWesternMichiganPreview(){
         </div>
       </section>
 
+      <ArticleMobileToc sections={sections}/>
+
       <div className="feature-reading-layout">
         <aside className="feature-toc">
           <span>IN THIS PREVIEW</span>
@@ -113,6 +122,7 @@ export default function MichiganWesternMichiganPreview(){
             <p>Our numbers put Western's defense at <strong>No. 41 nationally in opponent-adjusted Ridge rating</strong>, just five spots behind Michigan.</p>
             <div className="feature-data-list"><span><b>#9</b> points allowed / resolved possession</span><span><b>#10</b> scoring rate allowed / possession</span><span><b>#10</b> pass explosive rate allowed</span><span><b>#11</b> net pass yards allowed / dropback</span><span><b>#10</b> third-down defense</span></div>
             <p>Western's official numbers tell the same story. The defense finished ninth nationally in scoring defense and played a major role in the program's MAC championship.</p>
+            <p>But that unit isn't walking back onto the field intact. Western returns only <strong>three starters on defense</strong> for 2026, and head coach Lance Taylor has called the defense his own <strong>"biggest concern"</strong> this preseason — even after it allowed just 17.4 points a game a year ago. Respect the tape. Discount how much of it is still on the roster.</p>
             <p>That creates one of the game's more important questions: <strong>Can Michigan turn successful drives into touchdowns?</strong></p>
             <p>That wasn't always automatic last season. Michigan ranked only No. 78 in points per scoring opportunity and No. 70 in red-zone touchdown rate. Western's defense ranked No. 35 in points allowed per scoring opportunity and No. 30 in red-zone touchdown rate allowed.</p>
             <p>Michigan can dominate the yardage battle and still make covering a four-touchdown spread uncomfortable if drives repeatedly end in field goals. Beck's arrival could matter there too. Utah finished 12th nationally in red-zone offense last season.</p>
@@ -127,6 +137,7 @@ export default function MichiganWesternMichiganPreview(){
             <p>That's a major loss.</p>
             <p>Western also changed defensive coordinators. Greer Martini was promoted after serving as linebackers coach in 2025, while longtime Furman defensive coordinator Duane Vaughn joined the staff as co-defensive coordinator and outside linebackers coach.</p>
             <p>So the 2025 Western pass-rush numbers need context. The underlying defense was excellent. The single most disruptive player from that defense is gone, and the staff responsible for replacing his production has changed.</p>
+            <p>Michigan's own line is still being finalized, too. Presumptive starting left tackle Andrew Babalola, a five-star recruit, has been slowed by a minor injury in fall camp — and Blake Frazier has picked up real momentum to open the season there instead.</p>
             <p>If Michigan's rebuilt offensive line controls that front, Western loses one of its most realistic ways to derail drives.</p>
           </section>
 
@@ -150,6 +161,7 @@ export default function MichiganWesternMichiganPreview(){
             <p>This won't be the same Michigan defense that produced the 2025 numbers.</p>
             <p>Jay Hill takes over after three seasons as BYU's defensive coordinator. His 2025 BYU defense ranked in the top 25 nationally in seven categories, including No. 5 in red-zone defense, No. 7 in interceptions and No. 19 on third down.</p>
             <p>His first Michigan game presents a useful test of discipline.</p>
+            <p>He also inherits real strength up front. <strong>"I believe we have two of the best defensive tackles in college football right now,"</strong> Hill said of Enow Etta and Trey Pierce this preseason — the interior pair whose job is to keep Lowry boxed in before he ever gets to the second level.</p>
             <p>Western's traditional rushing attack is good, but Lowry is what changes the math. Michigan cannot simply fit the run as if it's defending an ordinary handoff offense. A quarterback who ran for nearly 1,000 yards can punish an undisciplined edge or a linebacker flowing too aggressively toward Buckley.</p>
             <p>Western actually owns two intriguing statistical advantages from last season: its offense ranked No. 32 nationally in standard-down success, while Michigan's defense ranked No. 60 in standard-down success allowed. Western also ranked No. 10 in red-zone success while Michigan's defense was only No. 73 in preventing it.</p>
             <div className="feature-two-downs"><div><small>BAD FOR WESTERN</small><strong>3rd &amp; 8</strong><span>Michigan can unleash the pass defense.</span></div><div><small>GOOD FOR WESTERN</small><strong>2nd &amp; 4</strong><span>Lowry keeps the entire run menu alive.</span></div></div>
