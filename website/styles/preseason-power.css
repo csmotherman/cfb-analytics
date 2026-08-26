@@ -1,0 +1,108 @@
+/* Preseason power research: Top 25 rankings table + Michigan 2026 game-by-game projection.
+   Reuses the site's mock-home/mock-shell/mock-section page shell (mockup-home.css)
+   and the navy/maize dark palette + Barlow Condensed/Inter type pattern used everywhere else. */
+
+.pp-disclaimer{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border:1px solid #3a3316;border-radius:8px;background:#1a1607;color:#d8cf9e;font-size:11px;line-height:1.55}
+.pp-disclaimer b{flex:0 0 auto;color:#ffcb05;font:800 9px var(--display);letter-spacing:.08em;padding-top:1px}
+.pp-disclaimer a{color:#ffda42;text-decoration:underline}
+
+/* ---------- Rankings table ---------- */
+.rankings-table-shell{position:relative}
+.rankings-swipe{display:none}
+.rankings-table-wrap{width:100%;overflow-x:auto;border:1px solid #20394f;border-radius:9px;background:#06182a;scrollbar-width:thin;scrollbar-color:#46657f #071a2c;-webkit-overflow-scrolling:touch}
+.rankings-table-wrap::-webkit-scrollbar{height:9px}
+.rankings-table-wrap::-webkit-scrollbar-thumb{background:#46657f;border:2px solid #071a2c;border-radius:99px}
+.rankings-table{width:100%;min-width:820px;border-collapse:separate;border-spacing:0;font-variant-numeric:tabular-nums}
+.rankings-table th,.rankings-table td{padding:11px 14px;border-bottom:1px solid #1a3145;white-space:nowrap;background:#06182a}
+.rankings-table th{background:#041525;color:#8fa2b4;font:700 9px var(--display);letter-spacing:.07em;text-align:right;position:sticky;top:0;z-index:4}
+.rankings-table th:first-child,.rankings-table td.rk-rank{text-align:center}
+.rankings-table th:nth-child(2),.rankings-table td.rk-team{text-align:left}
+.rankings-table tbody tr:last-child td{border-bottom:0}
+.rankings-table tbody tr:hover td{background:#0a2034}
+.rankings-table tbody tr.rk-michigan td{background:#1c1704}
+.rankings-table tbody tr.rk-michigan:hover td{background:#241d06}
+.rankings-table td{color:#e4ebf1;font-size:12.5px;text-align:right}
+
+.rk-rank{position:sticky;left:0;z-index:3;min-width:44px}
+.rk-team{position:sticky;left:44px;z-index:2;box-shadow:8px 0 12px -12px #000}
+.rankings-table thead .rk-rank,.rankings-table thead .rk-team{z-index:6;background:#041525}
+.rankings-table tbody .rk-rank,.rankings-table tbody .rk-team{background:#06182a}
+.rankings-table tbody tr.rk-michigan .rk-rank,.rankings-table tbody tr.rk-michigan .rk-team{background:#1c1704}
+.rankings-table tbody tr:hover .rk-rank,.rankings-table tbody tr:hover .rk-team{background:#0a2034}
+.rankings-table tbody tr.rk-michigan:hover .rk-rank,.rankings-table tbody tr.rk-michigan:hover .rk-team{background:#241d06}
+
+.rk-rank-chip{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font:800 12px var(--display);color:#c2d0dc;border:1px solid #2d465e}
+.rk-rank-chip.top4{background:rgba(255,203,5,.16);border-color:#ffcb05;color:#ffda42}
+.rk-rank-chip.top12{background:rgba(105,211,111,.1);border-color:rgba(105,211,111,.4);color:#8aeb8f}
+
+.rk-team-cell{display:flex;align-items:center;gap:10px;min-width:190px}
+.rk-team-cell img{width:26px;height:26px;object-fit:contain;flex:0 0 26px;filter:drop-shadow(0 0 2px rgba(255,255,255,.6))}
+.rk-team-cell div{display:grid;min-width:0}
+.rk-team-cell strong{font:800 13px var(--display);color:#f4f7fb;overflow:hidden;text-overflow:ellipsis}
+.rk-team-cell small{color:#7890a2;font:700 8px var(--display);letter-spacing:.04em}
+
+.rk-power{color:#ffcb05;font:800 14px var(--display)}
+.rk-qb{display:inline-flex;padding:3px 8px;border-radius:999px;font:800 8px var(--display);letter-spacing:.05em}
+.rk-qb.yes{background:rgba(105,211,111,.14);border:1px solid rgba(105,211,111,.45);color:#8aeb8f}
+.rk-qb.no{background:rgba(255,133,133,.13);border:1px solid rgba(255,133,133,.4);color:#ff8585}
+
+@media(max-width:760px){
+  .rankings-table{min-width:660px}
+  .rankings-table th,.rankings-table td{padding:10px 11px;font-size:11px}
+  .rankings-table th{font-size:8px}
+  .rk-team-cell{min-width:150px}
+  .rankings-table-shell{margin:0 -4px}
+  .rankings-table-shell::after{content:"";position:absolute;top:0;right:0;bottom:9px;width:34px;pointer-events:none;background:linear-gradient(90deg,transparent,#06182ae8);border-radius:0 9px 9px 0;z-index:5}
+  .rankings-swipe{display:flex;align-items:center;justify-content:flex-end;gap:6px;margin:0 6px 7px;color:#ffcb05;font:700 9px var(--display);letter-spacing:.05em;text-transform:uppercase}
+  .rankings-swipe span{font-size:15px;line-height:1}
+}
+
+/* ---------- Michigan 2026 projection ---------- */
+.pp-hero{display:grid;gap:16px}
+.pp-hero-record{display:flex;gap:10px;flex-wrap:wrap}
+.pp-hero-record span{min-width:96px;padding:14px 16px;border:1px solid #29425a;border-radius:8px;background:#06182a;text-align:center}
+.pp-hero-record small{display:block;color:#8fa2b4;font:700 8px var(--display);letter-spacing:.07em}
+.pp-hero-record b{display:block;margin-top:5px;color:#ffcb05;font:800 26px var(--display)}
+
+.pp-win-dist{display:grid;gap:6px;margin-top:4px}
+.pp-win-dist-row{display:grid;grid-template-columns:36px 1fr 44px;align-items:center;gap:10px}
+.pp-win-dist-row b{color:#e4ebf1;font:800 12px var(--display);text-align:right}
+.pp-win-dist-track{height:12px;border-radius:6px;background:#0a2034;border:1px solid #1c3448;overflow:hidden}
+.pp-win-dist-fill{height:100%;background:linear-gradient(90deg,#b89400,#ffcb05);border-radius:6px 0 0 6px}
+.pp-win-dist-row span{color:#93a4b7;font:700 10px var(--body);text-align:right}
+.pp-win-dist-row.pp-median .pp-win-dist-fill{background:linear-gradient(90deg,#ffcb05,#fff3b0)}
+.pp-win-dist-row.pp-median b{color:#ffda42}
+
+.pp-game-list{display:grid;gap:8px;margin-top:8px}
+.pp-game-row{display:grid;grid-template-columns:56px minmax(0,1.5fr) 120px 96px 24px;align-items:center;gap:14px;padding:13px 14px;border:1px solid #233d54;border-radius:9px;background:#06182a;color:#f4f7fb}
+.pp-game-row:hover{border-color:#4c6b84;background:#0a2034}
+.pp-game-week{display:grid;text-align:center}
+.pp-game-week small{color:#71899c;font:700 8px var(--display)}
+.pp-game-week b{color:#ffcb05;font:800 17px var(--display)}
+.pp-game-opponent{display:flex;align-items:center;gap:11px;min-width:0}
+.pp-game-opponent img{width:34px;height:34px;object-fit:contain;flex:0 0 34px;filter:drop-shadow(0 0 1px rgba(255,255,255,.98)) drop-shadow(0 0 3px rgba(255,255,255,.7))}
+.pp-game-opponent div{display:grid;min-width:0}
+.pp-game-opponent small{color:#7890a2;font:700 8px var(--display);letter-spacing:.04em}
+.pp-game-opponent strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:800 14px var(--display)}
+.pp-game-margin{display:grid;text-align:right}
+.pp-game-margin strong{font:800 13px var(--display)}
+.pp-game-margin strong.pp-favored{color:#8aeb8f}
+.pp-game-margin strong.pp-underdog{color:#ff8585}
+.pp-game-margin small{margin-top:2px;color:#7f94a7;font:700 8px var(--display)}
+.pp-game-prob{display:grid;text-align:right}
+.pp-game-prob b{font:800 15px var(--display)}
+.pp-game-prob b.pp-favored{color:#8aeb8f}
+.pp-game-prob b.pp-underdog{color:#ff8585}
+.pp-game-prob small{margin-top:2px;color:#7f94a7;font:700 8px var(--display)}
+.pp-game-arrow{color:#4c6b84;font-size:18px;text-align:right}
+.pp-bye-row{padding:12px 14px;border:1px dashed #29425a;border-radius:9px;color:#71899c;font:700 10px var(--display);letter-spacing:.05em;text-align:center}
+
+@media(max-width:760px){
+  .pp-hero-record{width:100%}
+  .pp-hero-record span{flex:1;min-width:0;padding:11px 6px}
+  .pp-hero-record b{font-size:21px}
+  .pp-game-row{grid-template-columns:40px minmax(0,1fr) 58px;gap:10px;padding:11px 10px}
+  .pp-game-margin,.pp-game-arrow{display:none}
+  .pp-game-opponent img{width:28px;height:28px;flex-basis:28px}
+  .pp-game-opponent strong{font-size:12.5px}
+}

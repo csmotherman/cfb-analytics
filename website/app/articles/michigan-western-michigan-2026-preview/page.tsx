@@ -46,13 +46,8 @@ export default function MichiganWesternMichiganPreview(){
     <div className="focus-article-shell feature-shell">
       <Link className="feature-back" href="/articles">← THE NOTEBOOK</Link>
 
-      <header className="focus-article-hero feature-hero">
-        <div className="feature-hero-grid" aria-hidden="true"/>
-        <div className="feature-matchup-logos" aria-hidden="true">
-          <img className="feature-logo michigan" src={teamLogoUrl(130,256)} alt=""/>
-          <span>VS</span>
-          <img className="feature-logo western" src={teamLogoUrl(2711,256)} alt=""/>
-        </div>
+      <header className="focus-article-hero matchup-hero">
+        <img src="/images/articles/michigan-western.png" alt="Michigan vs. Western Michigan"/>
         <div className="focus-article-hero-copy">
           <span className="focus-article-eyebrow">WEEK 1 · SEPTEMBER 5 · THE BIG HOUSE</span>
           <h1>Michigan vs. Western Michigan</h1>

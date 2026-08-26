@@ -10,6 +10,8 @@ const desktopLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/an
 const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 const moreLinks=[
   {href:"/articles",label:"News & Analysis",meta:"Stories, previews and notebooks"},
+  {href:"/rankings",label:"Top 25 Rankings",meta:"2026 preseason power ratings, no AP poll or Vegas input"},
+  {href:"/2026-projection",label:"2026 Win Projection",meta:"Michigan's projected record, game by game"},
   {href:"/metrics",label:"Metrics",meta:"Definitions for site analytics"},
   {href:"/methodology",label:"Methodology",meta:"How ratings and grades are built"},
   {href:"/new-additions",label:"New Additions",meta:"Freshmen and transfers joining Michigan"},

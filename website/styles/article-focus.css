@@ -17,9 +17,10 @@
   .feature-mobile-toc b{font:800 10px var(--display);color:#ffcb05}
 }
 
-/* Hero matchup logos: make the "who's playing" identity actually legible on phones */
+/* Matchup-graphic hero: the default hero scrim is tuned for photos (dark low, clear high).
+   This asset is a bold two-tone logo graphic, not a photo, so a photo-strength scrim on
+   mobile crushes it to near-black. Lighten it here without touching the shared photo case. */
 @media(max-width:760px){
-  .feature-matchup-logos{opacity:.9}
-  .feature-logo{width:88px;height:88px}
-  .feature-matchup-logos span{width:32px;height:32px;font-size:8px}
+  .focus-article-hero.matchup-hero>img{object-position:center 50%;filter:brightness(.85) saturate(1.02)}
+  .focus-article-hero.matchup-hero::after{background:linear-gradient(90deg,rgba(3,20,38,.95) 0%,rgba(3,20,38,.8) 40%,rgba(3,20,38,.42) 70%,rgba(3,20,38,.14) 100%),linear-gradient(0deg,rgba(3,20,38,.98) 0%,rgba(3,20,38,.96) 40%,rgba(3,20,38,.8) 58%,rgba(3,20,38,.42) 74%,rgba(3,20,38,.1) 90%,rgba(3,20,38,0) 100%)}
 }

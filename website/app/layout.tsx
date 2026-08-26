@@ -20,6 +20,7 @@ import "../styles/more-drawer.css";
 import "../styles/new-additions.css";
 import "../styles/game-preview.css";
 import "../styles/expansion.css";
+import "../styles/preseason-power.css";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
