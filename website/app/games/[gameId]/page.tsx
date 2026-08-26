@@ -10,7 +10,8 @@ import {gameDate,gameTime} from "../../../lib/home-data";
 import "./game-preview.css";
 import "./market-single.css";
 
-type Props={params:Promise<{gameId:string}>};
+type Props={params:Promise<{playerId:string}>};
+type GameProps={params:Promise<{gameId:string}>};
 const rank=(value:number|undefined|null)=>value==null?"—":`#${value}`;
 const rating=(value:number|undefined|null)=>value==null?"—":value.toFixed(1);
 
@@ -61,7 +62,7 @@ function ComparisonRow({label,michigan,opponent,opponentName}:ComparisonRowProps
   </div>;
 }
 
-export async function generateMetadata({params}:Props):Promise<Metadata>{
+export async function generateMetadata({params}:GameProps):Promise<Metadata>{
   const game=gameById((await params).gameId);
   if(!game)return{title:"Game not found"};
   const opp=opponent(game);
@@ -71,7 +72,7 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
   };
 }
 
-export default async function GameHub({params}:Props){
+export default async function GameHub({params}:GameProps){
   const game=gameById((await params).gameId);
   if(!game)notFound();
 
@@ -83,7 +84,7 @@ export default async function GameHub({params}:Props){
   const opponentConference=home?(game.awayConference??"—"):(game.homeConference??"—");
   const articleHref=String(game.id)==="401858428"?"/articles/michigan-western-michigan-2026-preview":"/articles";
 
-  return <main className="game-preview-page">
+  return <div className="game-preview-page">
     <div className="preview-app-shell">
       <header className="preview-topbar">
         <Link href="/schedule">← SCHEDULE</Link>
@@ -158,5 +159,5 @@ export default async function GameHub({params}:Props){
         <b>→</b>
       </Link>
     </div>
-  </main>;
+  </div>;
 }
