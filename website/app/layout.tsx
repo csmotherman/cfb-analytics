@@ -23,12 +23,48 @@ import "../styles/expansion.css";
 import "../styles/preseason-power.css";
 import { SiteNav } from "../components/SiteNav";
 
+const SITE_NAME="Michigan Football Focus";
+const SITE_URL=(process.env.NEXT_PUBLIC_SITE_URL||"https://michiganfootballfocus.com").replace(/\/$/,"");
+const SITE_DESCRIPTION="Michigan Football Focus covers Michigan Wolverines football with news, 2026 projections, rankings, depth charts, player analysis, schedules and advanced analytics.";
+const SOCIAL_IMAGE={url:"/og.png",alt:"Michigan Football Focus — Michigan Wolverines football news, projections and analytics"};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://michiganfootballfocus.com"),
-  title: { default: "Michigan Football Focus", template: "%s | Michigan Football Focus" },
-  description: "Michigan Football Focus maps Michigan football strength, identity, roster intelligence, recruiting, schedule, analytics, and history for fans.",
-  openGraph: { title: "Michigan Football Focus", description: "The 2026 Michigan season, mapped through strength, identity, and trajectory.", images: ["/og.png"] },
-  twitter: { card: "summary_large_image", title: "Michigan Football Focus", description: "The 2026 Michigan season, mapped through strength, identity, and trajectory.", images: ["/og.png"] },
+  metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
+  title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
+  description: SITE_DESCRIPTION,
+  authors: [{name:SITE_NAME,url:SITE_URL}],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  category: "sports",
+  robots: {
+    index:true,
+    follow:true,
+    googleBot:{
+      index:true,
+      follow:true,
+      "max-video-preview":-1,
+      "max-image-preview":"large",
+      "max-snippet":-1,
+    },
+  },
+  openGraph: {
+    type:"website",
+    locale:"en_US",
+    url:"/",
+    siteName:SITE_NAME,
+    title:SITE_NAME,
+    description:SITE_DESCRIPTION,
+    images:[SOCIAL_IMAGE],
+  },
+  twitter: {
+    card:"summary_large_image",
+    site:"@umfootballfocus",
+    creator:"@umfootballfocus",
+    title:SITE_NAME,
+    description:SITE_DESCRIPTION,
+    images:[SOCIAL_IMAGE],
+  },
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: "#031426" };
 
