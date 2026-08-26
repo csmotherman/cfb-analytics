@@ -6,53 +6,52 @@
 .pp-disclaimer b{flex:0 0 auto;color:#ffcb05;font:800 9px var(--display);letter-spacing:.08em;padding-top:1px}
 .pp-disclaimer a{color:#ffda42;text-decoration:underline}
 
-/* ---------- Rankings table ---------- */
+/* ---------- Rankings table (white card floating on the dark page) ---------- */
 .rankings-table-shell{position:relative}
 .rankings-swipe{display:none}
-.rankings-table-wrap{width:100%;overflow-x:auto;border:1px solid #20394f;border-radius:9px;background:#06182a;scrollbar-width:thin;scrollbar-color:#46657f #071a2c;-webkit-overflow-scrolling:touch}
+.rankings-table-wrap{width:100%;overflow-x:auto;border:1px solid #dde3e8;border-radius:9px;background:#fff;scrollbar-width:thin;scrollbar-color:#c3cbd3 #f0f2f5;-webkit-overflow-scrolling:touch;box-shadow:0 14px 34px rgba(0,0,0,.28)}
 .rankings-table-wrap::-webkit-scrollbar{height:9px}
-.rankings-table-wrap::-webkit-scrollbar-thumb{background:#46657f;border:2px solid #071a2c;border-radius:99px}
-.rankings-table{width:100%;min-width:820px;border-collapse:separate;border-spacing:0;font-variant-numeric:tabular-nums}
-.rankings-table th,.rankings-table td{padding:11px 14px;border-bottom:1px solid #1a3145;white-space:nowrap;background:#06182a}
-.rankings-table th{background:#041525;color:#8fa2b4;font:700 9px var(--display);letter-spacing:.07em;text-align:right;position:sticky;top:0;z-index:4}
-.rankings-table th:first-child,.rankings-table td.rk-rank{text-align:center}
-.rankings-table th:nth-child(2),.rankings-table td.rk-team{text-align:left}
+.rankings-table-wrap::-webkit-scrollbar-thumb{background:#c3cbd3;border:2px solid #f0f2f5;border-radius:99px}
+.rankings-table{width:auto;border-collapse:separate;border-spacing:0;font-variant-numeric:tabular-nums;box-sizing:border-box}
+.rankings-table th,.rankings-table td{padding:11px 12px;border-bottom:1px solid #e9ecef;white-space:nowrap;background:#fff;box-sizing:border-box}
+.rankings-table th{background:#f6f7f9;color:#5b6673;font:700 9px var(--display);letter-spacing:.07em;text-align:right;position:sticky;top:0;z-index:4;width:82px}
+.rankings-table th:first-child,.rankings-table td.rk-rank{text-align:center;width:44px}
+.rankings-table th:nth-child(2),.rankings-table td.rk-team{text-align:left;width:212px}
 .rankings-table tbody tr:last-child td{border-bottom:0}
-.rankings-table tbody tr:hover td{background:#0a2034}
-.rankings-table tbody tr.rk-michigan td{background:#1c1704}
-.rankings-table tbody tr.rk-michigan:hover td{background:#241d06}
-.rankings-table td{color:#e4ebf1;font-size:12.5px;text-align:right}
+.rankings-table tbody tr:hover td{background:#f2f5f8}
+.rankings-table tbody tr.rk-michigan td{background:#fff6d9}
+.rankings-table tbody tr.rk-michigan:hover td{background:#fff0c2}
+.rankings-table td{color:#1c2733;font-size:12.5px;text-align:right}
 
-.rk-rank{position:sticky;left:0;z-index:3;min-width:44px}
-.rk-team{position:sticky;left:44px;z-index:2;box-shadow:8px 0 12px -12px #000}
-.rankings-table thead .rk-rank,.rankings-table thead .rk-team{z-index:6;background:#041525}
-.rankings-table tbody .rk-rank,.rankings-table tbody .rk-team{background:#06182a}
-.rankings-table tbody tr.rk-michigan .rk-rank,.rankings-table tbody tr.rk-michigan .rk-team{background:#1c1704}
-.rankings-table tbody tr:hover .rk-rank,.rankings-table tbody tr:hover .rk-team{background:#0a2034}
-.rankings-table tbody tr.rk-michigan:hover .rk-rank,.rankings-table tbody tr.rk-michigan:hover .rk-team{background:#241d06}
+.rk-rank{position:sticky;left:0;z-index:3}
+.rk-team{position:sticky;left:44px;z-index:2;box-shadow:8px 0 10px -10px rgba(0,0,0,.2)}
+.rankings-table thead .rk-rank,.rankings-table thead .rk-team{z-index:6;background:#f6f7f9}
+.rankings-table tbody .rk-rank,.rankings-table tbody .rk-team{background:#fff}
+.rankings-table tbody tr.rk-michigan .rk-rank,.rankings-table tbody tr.rk-michigan .rk-team{background:#fff6d9}
+.rankings-table tbody tr:hover .rk-rank,.rankings-table tbody tr:hover .rk-team{background:#f2f5f8}
+.rankings-table tbody tr.rk-michigan:hover .rk-rank,.rankings-table tbody tr.rk-michigan:hover .rk-team{background:#fff0c2}
 
-.rk-rank-chip{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font:800 12px var(--display);color:#c2d0dc;border:1px solid #2d465e}
-.rk-rank-chip.top4{background:rgba(255,203,5,.16);border-color:#ffcb05;color:#ffda42}
-.rk-rank-chip.top12{background:rgba(105,211,111,.1);border-color:rgba(105,211,111,.4);color:#8aeb8f}
+.rk-rank-chip{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font:800 12px var(--display);color:#5b6673;border:1px solid #d5dbe1}
+.rk-rank-chip.top4{background:#fff4cc;border-color:#e0ac00;color:#8a6d00}
+.rk-rank-chip.top12{background:#e6f7ea;border-color:#4caf6a;color:#1e7a3d}
 
-.rk-team-cell{display:flex;align-items:center;gap:10px;min-width:190px}
-.rk-team-cell img{width:26px;height:26px;object-fit:contain;flex:0 0 26px;filter:drop-shadow(0 0 2px rgba(255,255,255,.6))}
+.rk-team-cell{display:flex;align-items:center;gap:10px;width:100%}
+.rk-team-cell img{width:26px;height:26px;object-fit:contain;flex:0 0 26px}
 .rk-team-cell div{display:grid;min-width:0}
-.rk-team-cell strong{font:800 13px var(--display);color:#f4f7fb;overflow:hidden;text-overflow:ellipsis}
-.rk-team-cell small{color:#7890a2;font:700 8px var(--display);letter-spacing:.04em}
+.rk-team-cell strong{font:800 13px var(--display);color:#0a1c2e;overflow:hidden;text-overflow:ellipsis}
+.rk-team-cell small{color:#7c8894;font:700 8px var(--display);letter-spacing:.04em}
 
-.rk-power{color:#ffcb05;font:800 14px var(--display)}
+.rk-power{color:#0a1c2e;font:800 14px var(--display)}
 .rk-qb{display:inline-flex;padding:3px 8px;border-radius:999px;font:800 8px var(--display);letter-spacing:.05em}
-.rk-qb.yes{background:rgba(105,211,111,.14);border:1px solid rgba(105,211,111,.45);color:#8aeb8f}
-.rk-qb.no{background:rgba(255,133,133,.13);border:1px solid rgba(255,133,133,.4);color:#ff8585}
+.rk-qb.yes{background:#e6f7ea;border:1px solid #4caf6a;color:#1e7a3d}
+.rk-qb.no{background:#fdeaea;border:1px solid #e05a5a;color:#b23030}
 
 @media(max-width:760px){
-  .rankings-table{min-width:660px}
-  .rankings-table th,.rankings-table td{padding:10px 11px;font-size:11px}
-  .rankings-table th{font-size:8px}
-  .rk-team-cell{min-width:150px}
+  .rankings-table th,.rankings-table td{padding:10px 10px;font-size:11px}
+  .rankings-table th{font-size:8px;width:64px}
+  .rankings-table th:nth-child(2),.rankings-table td.rk-team{width:168px}
   .rankings-table-shell{margin:0 -4px}
-  .rankings-table-shell::after{content:"";position:absolute;top:0;right:0;bottom:9px;width:34px;pointer-events:none;background:linear-gradient(90deg,transparent,#06182ae8);border-radius:0 9px 9px 0;z-index:5}
+  .rankings-table-shell::after{content:"";position:absolute;top:0;right:0;bottom:9px;width:34px;pointer-events:none;background:linear-gradient(90deg,transparent,#ffffffe8);border-radius:0 9px 9px 0;z-index:5}
   .rankings-swipe{display:flex;align-items:center;justify-content:flex-end;gap:6px;margin:0 6px 7px;color:#ffcb05;font:700 9px var(--display);letter-spacing:.05em;text-transform:uppercase}
   .rankings-swipe span{font-size:15px;line-height:1}
 }
