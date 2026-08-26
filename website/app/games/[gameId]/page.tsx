@@ -10,8 +10,7 @@ import {gameDate,gameTime} from "../../../lib/home-data";
 import "./game-preview.css";
 import "./market-single.css";
 
-type Props={params:Promise<{playerId:string}>};
-type GameProps={params:Promise<{gameId:string}>};
+type Props={params:Promise<{gameId:string}>};
 const rank=(value:number|undefined|null)=>value==null?"—":`#${value}`;
 const rating=(value:number|undefined|null)=>value==null?"—":value.toFixed(1);
 
@@ -62,7 +61,7 @@ function ComparisonRow({label,michigan,opponent,opponentName}:ComparisonRowProps
   </div>;
 }
 
-export async function generateMetadata({params}:GameProps):Promise<Metadata>{
+export async function generateMetadata({params}:Props):Promise<Metadata>{
   const game=gameById((await params).gameId);
   if(!game)return{title:"Game not found"};
   const opp=opponent(game);
@@ -72,7 +71,7 @@ export async function generateMetadata({params}:GameProps):Promise<Metadata>{
   };
 }
 
-export default async function GameHub({params}:GameProps){
+export default async function GameHub({params}:Props){
   const game=gameById((await params).gameId);
   if(!game)notFound();
 
