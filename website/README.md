@@ -25,18 +25,35 @@ canonical article URLs.
 
 ## Private Creator Hub
 
-`/creator-hub` is a private, non-indexed creator workspace. Access is checked on
-the server and the password must never be committed to the repository.
+`/creator-hub` is a private, non-indexed, multi-creator workspace organized
+around video outlines — sections, talking points, attached research/visuals,
+and a request loop between each creator and Carter. It intentionally does not
+share the public site's nav, footer, or visual design system (see
+`components/PublicChrome.tsx`, which renders the public chrome everywhere
+except `/creator-hub/*`).
 
-Set this environment variable in the deployment environment:
+Each creator authenticates with a private 4-digit PIN (never a shared
+password). PINs are salted and hashed at rest (`node:crypto` scrypt); a
+successful unlock creates a real server-side session row in
+`creator_sessions` and an HttpOnly cookie scoped to `/creator-hub`. See
+`lib/creator-hub/` for the schema, typed data layer, and auth helpers.
 
-```bash
-CREATOR_HUB_PASSWORD=<your private password>
-```
+**One-time setup:**
 
-Successful access creates an HttpOnly, same-site cookie scoped to
-`/creator-hub`. The session expires after two weeks and is invalidated
-immediately when `CREATOR_HUB_PASSWORD` changes.
+1. Attach a Postgres database to the Vercel project (Vercel's Neon
+   integration). This populates `DATABASE_URL` / `POSTGRES_URL`
+   automatically in the deployment environment; set the same variable
+   locally (e.g. in `.env.local`) for `npm run dev`.
+2. Run `lib/creator-hub/schema.sql` once against that database (Vercel's
+   query editor, `psql`, or any Postgres client). It is safe to re-run —
+   every statement is `if not exists`.
+3. Seed each creator with a real PIN — never hardcode one in source:
+
+   ```bash
+   node scripts/seed-creator.mjs "Darren Talks Ball" darren-talks-ball 1234
+   ```
+
+Re-running the seed script for an existing slug updates that creator's PIN.
 
 ## Current real data
 

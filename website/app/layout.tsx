@@ -23,7 +23,7 @@ import "../styles/expansion.css";
 import "../styles/preseason-power.css";
 import "../styles/offensive-profile-radar.css";
 import "../styles/creator-hub.css";
-import { SiteNav } from "../components/SiteNav";
+import { PublicChrome } from "../components/PublicChrome";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://michiganfootballfocus.com"),
@@ -35,5 +35,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: "#031426" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en" data-scroll-behavior="smooth"><body><SiteNav /><main>{children}</main><footer><div className="wrap footer-inner"><div><b>MICHIGAN FOOTBALL FOCUS</b><span>Michigan football, understood.</span></div><nav aria-label="Footer"><a href="/articles">Articles</a><a href="/new-additions">New Additions</a><a href="/methodology">Methodology</a></nav></div></footer></body></html>;
+  return <html lang="en" data-scroll-behavior="smooth"><body><PublicChrome>{children}</PublicChrome></body></html>;
 }
