@@ -23,6 +23,21 @@ artifacts and retain their existing value-type labels. Reporting sources remain
 separate from SOAR data links. Legacy `/stories` routes redirect to the
 canonical article URLs.
 
+## Private Creator Hub
+
+`/creator-hub` is a private, non-indexed creator workspace. Access is checked on
+the server and the password must never be committed to the repository.
+
+Set this environment variable in the deployment environment:
+
+```bash
+CREATOR_HUB_PASSWORD=<your private password>
+```
+
+Successful access creates an HttpOnly, same-site cookie scoped to
+`/creator-hub`. The session expires after two weeks and is invalidated
+immediately when `CREATOR_HUB_PASSWORD` changes.
+
 ## Current real data
 
 - 2026 Michigan roster: `data/published/2026/michigan/roster.json`
