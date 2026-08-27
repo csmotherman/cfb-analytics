@@ -17,6 +17,6 @@ export default async function OffenseAnalyticsPage({searchParams}:{searchParams:
       <h1>OFFENSE ANALYTICS</h1>
       <p>Every metric behind the {year} offensive profile radar, plus the full breakdown the radar doesn&apos;t have room for &mdash; success rate splits, explosiveness, offensive line, passing, situational football, and turnovers. Ranked against that season&apos;s FBS field only.</p>
     </header>
-    <UnitDetailTables profile={profile} side="offense"/>
+    <UnitDetailTables profile={profile} side="offense" season={year}/>
   </div>;
 }

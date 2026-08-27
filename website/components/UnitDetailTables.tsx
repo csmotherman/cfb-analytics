@@ -53,9 +53,14 @@ function MetricTable({ metrics, side }: { metrics: UnitDetailMetric[]; side: "of
   </div>;
 }
 
-export function UnitDetailTables({ profile, side }: { profile: UnitDetailProfile | null; side: "offense" | "defense" }) {
+export function UnitDetailTables({ profile, side, season }: { profile: UnitDetailProfile | null; side: "offense" | "defense"; season: number }) {
   if (!profile || profile.metrics.length === 0) {
-    return <section className="ud-empty"><p>No {side} analytics are available for this season yet.</p></section>;
+    const message = season >= 2026
+      ? `The ${season} season hasn't been played yet — check back once games are in the books.`
+      : season < 2014
+      ? `This site's play-by-play analytics start in 2014. Pick a season from 2014 onward to see ${side} data.`
+      : `No ${side} analytics are available for this season yet.`;
+    return <section className="ud-empty"><p>{message}</p></section>;
   }
 
   const byGroup = new Map<string, UnitDetailMetric[]>();

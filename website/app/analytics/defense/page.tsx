@@ -17,6 +17,6 @@ export default async function DefenseAnalyticsPage({searchParams}:{searchParams:
       <h1>DEFENSE ANALYTICS</h1>
       <p>Everything the offense page shows, from the other side of the ball &mdash; efficiency and explosiveness allowed, defensive line disruption, pass defense, situational stops, and takeaways. Ranked against that season&apos;s FBS field only.</p>
     </header>
-    <UnitDetailTables profile={profile} side="defense"/>
+    <UnitDetailTables profile={profile} side="defense" season={year}/>
   </div>;
 }
