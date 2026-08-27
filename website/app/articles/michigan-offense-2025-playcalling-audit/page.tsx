@@ -128,14 +128,14 @@ export default function PlaycallingAuditArticle() {
           </div>
           <div className="audit-score-reveal">
             <div className="audit-score-team">
-              <img src={teamLogoUrl(130, 72)} alt="Michigan" />
+              <img src={teamLogoUrl(130, 64)} alt="Michigan" />
               <span>MICHIGAN · LINDSEY</span>
               <strong>{officialRegularSeasonScoring.michigan.toFixed(1)}</strong>
               <small>OFFICIAL PPG · 12 REGULAR-SEASON GAMES</small>
             </div>
             <div className="audit-score-gap"><span>THE GAP</span><strong>+{officialRegularSeasonScoring.gap.toFixed(1)}</strong><b>PPG</b></div>
             <div className="audit-score-team">
-              <img src={teamLogoUrl(254, 72)} alt="Utah" />
+              <img src={teamLogoUrl(254, 64)} alt="Utah" />
               <span>UTAH · BECK</span>
               <strong>{officialRegularSeasonScoring.utah.toFixed(1)}</strong>
               <small>OFFICIAL PPG · 12 REGULAR-SEASON GAMES</small>
