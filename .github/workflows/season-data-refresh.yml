@@ -1,0 +1,172 @@
+name: Season data refresh
+
+on:
+  schedule:
+    # Tue-Sat, off-peak-ish and off the round minute/hour marks GitHub's
+    # scheduler gets congested at. Day-of-week: 2=Tue ... 6=Sat.
+    - cron: "17 13 * * 2-6"
+  workflow_dispatch:
+    inputs:
+      season:
+        description: Season to refresh
+        required: true
+        default: "2026"
+
+concurrency:
+  group: season-data-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  SEASON: ${{ github.event.inputs.season || '2026' }}
+  CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -e '.[dev,models,publish]'
+
+      # Pre-flight code-health gate, before the pipeline touches any data.
+      # Must run here, not after the pipeline: the suite includes a leakage
+      # guard (test_prospective_2026_outputs_are_not_touched) that asserts
+      # `git status prospective/2026` is clean, which the weekly predictions
+      # step below legitimately trips by design (new week files are supposed
+      # to land there as the season progresses).
+      - name: Python test suite
+        run: pytest
+
+      # data/raw and data/processed are gitignored cache, not committed --
+      # restore the previous run's copy so ingest only fetches genuinely new
+      # weeks instead of the whole season from scratch every day.
+      - name: Restore raw/processed cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/raw
+            data/processed
+          key: cfb-data-${{ env.SEASON }}-${{ github.run_id }}
+          restore-keys: |
+            cfb-data-${{ env.SEASON }}-
+
+      # --- Core chain: raw -> canonical play/drive materialization -> ---
+      # --- derived metrics -> canonical identity -> ratings -> publish ---
+      # Verified locally against the live 2026 season before this file was
+      # written -- every step below actually ran clean end to end.
+      - name: Ingest raw CFBD data
+        run: python -m cfb_analytics.pipelines.ingest --season ${{ env.SEASON }}
+
+      - name: Materialize canonical plays
+        run: python -m cfb_analytics.raw.cli canonical-plays --season ${{ env.SEASON }}
+
+      - name: Materialize derived drives
+        run: python -m cfb_analytics.raw.cli derived-drives --season ${{ env.SEASON }}
+
+      - name: Ingest all-FBS fact corpus (FBS membership)
+        run: python -m cfb_analytics.pipelines.ingest_facts --season ${{ env.SEASON }}
+
+      - name: Derive per-game/per-season metrics
+        run: python -m cfb_analytics.pipelines.calculate_metrics --season ${{ env.SEASON }}
+
+      - name: Build canonical identity + team_games
+        run: python -m cfb_analytics.pipelines.build_canonical --season ${{ env.SEASON }}
+
+      - name: Compute opponent-adjusted ratings
+        run: python -m cfb_analytics.pipelines.calculate_ratings --season ${{ env.SEASON }}
+
+      - name: Publish national/conference/team season data
+        run: python -m cfb_analytics.pipelines.publish --season ${{ env.SEASON }}
+
+      # --- Deeper analytics: each needs a non-empty FBS field (i.e. real
+      # games already played this season) to fit. They fail cleanly without
+      # writing anything early in the season / on off-nights -- that's
+      # expected, not a bug, so these don't block the core data above from
+      # shipping. The site already handles "not published yet" gracefully.
+      - name: Publish Ridge overview + team ratings
+        continue-on-error: true
+        run: python -m cfb_analytics.analytics.publish_ridge_overview --seasons ${{ env.SEASON }}
+
+      - name: Publish Michigan offensive profile
+        continue-on-error: true
+        run: python -m cfb_analytics.analytics.offensive_profile --seasons ${{ env.SEASON }} --team Michigan
+
+      - name: Publish Michigan offense/defense detail
+        continue-on-error: true
+        run: python -m cfb_analytics.analytics.unit_detail --seasons ${{ env.SEASON }} --team Michigan
+
+      # Weekly game predictions: scores at most one new upcoming week (1-4,
+      # the early-prior transition window) per run, using the already-frozen
+      # 2026 model -- but only once the *previous* week's games are all
+      # final, so each week's prediction actually reflects real results
+      # played so far rather than a locked-in preseason-only guess. Outputs
+      # are immutable/exclusive-create, so once scored a week never changes;
+      # this gate is what makes that snapshot meaningful instead of stale.
+      - name: Publish weekly game predictions
+        continue-on-error: true
+        run: python -m cfb_analytics.pipelines.weekly_predictions
+
+      # --- Player pages: independent of the core chain (own CFBD fetch). ---
+      - name: Refresh Michigan player season stats
+        continue-on-error: true
+        run: python -m cfb_analytics.analytics.publish_player_stats --season ${{ env.SEASON }} --team Michigan
+
+      - name: Refresh Michigan player stats snapshot
+        continue-on-error: true
+        run: python -m cfb_analytics.pipelines.publish_player_stats --start ${{ env.SEASON }} --end ${{ env.SEASON }}
+
+      - name: Publish player production grades
+        continue-on-error: true
+        run: python -m cfb_analytics.pipelines.publish_player_production_grades --season ${{ env.SEASON }}
+
+      - name: Publish player importance
+        continue-on-error: true
+        run: python -m cfb_analytics.pipelines.publish_michigan_player_importance
+
+      - name: Publish player profile insights
+        continue-on-error: true
+        run: python -m cfb_analytics.pipelines.publish_michigan_player_profiles
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+
+      - run: npm ci
+        working-directory: website
+
+      # Same gate the site's own CI runs on every push -- if refreshed data
+      # fails any of these, nothing below gets committed or deployed.
+      - run: npm run check:data
+        working-directory: website
+
+      - run: npm run check:product
+        working-directory: website
+
+      - run: npm run typecheck
+        working-directory: website
+
+      - run: npm run build
+        working-directory: website
+
+      - name: Commit and push refreshed data
+        run: |
+          git config user.name "cfb-analytics-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/canonical data/published
+          if git diff --staged --quiet; then
+            echo "No data changes; skipping commit."
+          else
+            git commit -m "Automated season data refresh: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

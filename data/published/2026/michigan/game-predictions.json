@@ -13,6 +13,48 @@
       "valueType": "PROJECTED",
       "week": 1,
       "winProbability": null
+    },
+    {
+      "asOf": "2026-08-27T18:16:15.246714+00:00",
+      "awayTeam": "Oklahoma",
+      "gameId": "401856679",
+      "homeTeam": "Michigan",
+      "modelVersion": "prediction-v2-2026-prospective-freeze-v1",
+      "predictedHomeMargin": -2.5770352379887878,
+      "predictedWinner": "Oklahoma",
+      "season": 2026,
+      "teamPredictedMargin": -2.5770352379887878,
+      "valueType": "PROJECTED",
+      "week": 2,
+      "winProbability": null
+    },
+    {
+      "asOf": "2026-08-27T18:16:15.246714+00:00",
+      "awayTeam": "UTEP",
+      "gameId": "401858450",
+      "homeTeam": "Michigan",
+      "modelVersion": "prediction-v2-2026-prospective-freeze-v1",
+      "predictedHomeMargin": 38.43891938670702,
+      "predictedWinner": "Michigan",
+      "season": 2026,
+      "teamPredictedMargin": 38.43891938670702,
+      "valueType": "PROJECTED",
+      "week": 3,
+      "winProbability": null
+    },
+    {
+      "asOf": "2026-08-27T18:16:15.246714+00:00",
+      "awayTeam": "Iowa",
+      "gameId": "401858463",
+      "homeTeam": "Michigan",
+      "modelVersion": "prediction-v2-2026-prospective-freeze-v1",
+      "predictedHomeMargin": 4.780488392050011,
+      "predictedWinner": "Michigan",
+      "season": 2026,
+      "teamPredictedMargin": 4.780488392050011,
+      "valueType": "PROJECTED",
+      "week": 4,
+      "winProbability": null
     }
   ],
   "probabilityStatus": "NOT_CALIBRATED",
@@ -22,6 +64,21 @@
       "asOf": "2026-08-18T12:00:00-04:00",
       "source": "prospective/2026/predictions/week-01.json",
       "week": 1
+    },
+    {
+      "asOf": "2026-08-27T18:16:15.246714+00:00",
+      "source": "prospective/2026/predictions/week-02.json",
+      "week": 2
+    },
+    {
+      "asOf": "2026-08-27T18:16:15.246714+00:00",
+      "source": "prospective/2026/predictions/week-03.json",
+      "week": 3
+    },
+    {
+      "asOf": "2026-08-27T18:16:15.246714+00:00",
+      "source": "prospective/2026/predictions/week-04.json",
+      "week": 4
     }
   ],
   "team": "Michigan",

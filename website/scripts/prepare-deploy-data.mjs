@@ -42,7 +42,7 @@ const nationalSnapshotKeys=[
 const recordKeys=["win","loss","seasonType","season_type"];
 
 for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
-  if(!entry.isDirectory()||!/^(201\d|202[0-5])$/.test(entry.name))continue;
+  if(!entry.isDirectory()||!/^(201\d|202\d)$/.test(entry.name))continue;
   const season=entry.name;
   const sourceSeason=path.join(sourceRoot,season);
   const targetSeason=path.join(targetRoot,season);
