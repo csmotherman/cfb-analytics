@@ -5,7 +5,7 @@ import {useLayoutEffect,useRef} from "react";
 
 const years=Array.from({length:17},(_,i)=>2010+i);
 
-export function AnalyticsYearSwitch({year}:{year:number}){
+export function AnalyticsYearSwitch({year,basePath="/analytics"}:{year:number;basePath?:string}){
   const railRef=useRef<HTMLElement|null>(null);
 
   useLayoutEffect(()=>{
@@ -29,7 +29,7 @@ export function AnalyticsYearSwitch({year}:{year:number}){
     <span className="year-calendar" aria-hidden="true">▦</span>
     {years.map(y=><Link
       key={y}
-      href={`/analytics?year=${y}`}
+      href={`${basePath}?year=${y}`}
       data-year={y}
       className={year===y?"active":""}
       aria-current={year===y?"page":undefined}

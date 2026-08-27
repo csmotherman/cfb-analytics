@@ -1,5 +1,7 @@
 import Link from "next/link";
 import {AnalyticsYearSwitch} from "../../components/AnalyticsYearSwitch";
+import {OffensiveProfileRadar} from "../../components/OffensiveProfileRadar";
+import {offensiveProfile} from "../../lib/offensive-profile";
 import {fanTier,fanTierLabel,metricDisplay,michiganFanSeason,michiganRecord,michiganSnapshotRanks,overviewTraits,pct,ridgeOverview} from "../../lib/ridge-analytics";
 
 const years=Array.from({length:17},(_,i)=>2010+i);
@@ -45,6 +47,7 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
   const season=michiganFanSeason(year);
   const record=michiganRecord(year);
   const snapshotRanks=michiganSnapshotRanks(year);
+  const profile=offensiveProfile(year);
   const traits=data?overviewTraits(data):null;
   const best=traits?.strengths[0]??null;
   const concern=traits?.concerns[0]??null;
@@ -142,6 +145,8 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
 
       {identity&&<section className="fan-section fan-identity"><span>TEAM IDENTITY</span><p>{identity}</p></section>}
 
+      <OffensiveProfileRadar season={year} data={profile}/>
+
       <section className="fan-section"><div className="fan-section-title"><div><span>HOW GOOD ARE THEY?</span><h2>OFFENSE &amp; DEFENSE</h2></div><p>Every ranked metric is compared with the full FBS.</p></div><div className="fan-units-grid"><UnitOverview side="offense" title="OFFENSE" rank={data.offense.rank} fieldSize={data.offense.field_size} rating={data.offense.rating} href={`/analytics/offense?year=${year}`} metrics={offenseMetrics}/><UnitOverview side="defense" title="DEFENSE" rank={data.defense.rank} fieldSize={data.defense.field_size} rating={data.defense.rating} href={`/analytics/defense?year=${year}`} metrics={defenseMetrics}/></div></section>
 
       <section className="fan-section"><div className="fan-section-title"><div><span>WHAT DEFINES THIS TEAM?</span><h2>THE GOOD &amp; THE BAD</h2></div></div><div className="fan-story-grid">
@@ -154,6 +159,9 @@ export default async function AnalyticsPage({searchParams}:{searchParams:Promise
         <Link href={`/analytics/defense?year=${year}`} className="fan-explore-card"><div className="fan-explore-image" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.04),rgba(3,20,38,.96)),url('/images/analytics/overview-defense.png')"}}/><div><span>FULL BREAKDOWN</span><h3>DEFENSE ANALYTICS</h3><p>Run/pass defense, havoc, drives, downs and scoring prevention.</p><b>Explore defense →</b></div></Link>
         <Link href={`/analytics/staff?year=${year}`} className="fan-explore-card"><div className="fan-explore-image" style={{backgroundImage:"linear-gradient(180deg,rgba(3,20,38,.04),rgba(3,20,38,.96)),url('/images/analytics/overview-staff.png')"}}/><div><span>COACHING LENS</span><h3>STAFF ANALYTICS</h3><p>Play calling, tendencies, personnel usage and how scheme shaped results.</p><b>Explore staff →</b></div></Link>
       </div></section>
-    </>:<section className="fan-section"><div className="fan-story-card concern"><h3>Analytics not available yet</h3><p>This season does not have a published Michigan analytics profile. Choose an available season to continue.</p></div></section>}
+    </>:<>
+      <OffensiveProfileRadar season={year} data={profile}/>
+      <section className="fan-section"><div className="fan-story-card concern"><h3>Full season snapshot not available yet</h3><p>{profile?"This season predates the site's team-rating pipeline, but the offensive profile above is computed directly from that year's play-by-play.":"This season does not have a published Michigan analytics profile. Choose an available season to continue."}</p></div></section>
+    </>}
   </div>;
 }

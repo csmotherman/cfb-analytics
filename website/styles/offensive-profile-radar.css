@@ -1,0 +1,52 @@
+/* Michigan Offensive Profile radar -- matches the site's navy/maize system
+   (mockup-home.css tokens) rather than a generic dashboard chart library look. */
+
+.radar-card{border:1px solid #29425a;border-radius:10px;background:#06182a;padding:26px 28px 30px;margin:6px 0}
+.radar-card>header{align-items:flex-start;margin-bottom:4px}
+.radar-card h2{font:800 26px/1.05 var(--display);letter-spacing:.01em;margin:6px 0 8px;color:#fff}
+.radar-subtitle{margin:0;color:#93a4b7;font-size:12.5px;line-height:1.5}
+.radar-caveat{margin:8px 0 0;padding:9px 12px;border:1px solid #3a3316;border-radius:6px;background:#1a1607;color:#d8cf9e;font-size:11.5px;line-height:1.5}
+.radar-empty{color:#7c8894;font-size:13px;padding:20px 0}
+
+.radar-layout{margin-top:18px}
+
+/* ---------- desktop: SVG spider chart + detail panel ---------- */
+.radar-desktop{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:26px;align-items:center}
+.radar-svg{width:100%;height:auto;overflow:visible}
+.radar-ring{fill:none;stroke:#1c3448;stroke-width:1}
+.radar-spoke{stroke:#16283a;stroke-width:1}
+.radar-fill{fill:#ffcb05;fill-opacity:.14}
+.radar-stroke{fill:none;stroke:#ffcb05;stroke-width:2.25;filter:drop-shadow(0 0 6px rgba(255,203,5,.45))}
+.radar-vertex{fill:#ffcb05;stroke:#06182a;stroke-width:2;cursor:pointer;transition:r .12s ease}
+.radar-vertex:hover,.radar-vertex.active,.radar-vertex:focus-visible{fill:#fff3b0;outline:none}
+.radar-label{fill:#93a4b7;font:700 12.5px var(--display);letter-spacing:.02em;text-transform:uppercase;cursor:pointer;transition:fill .12s ease}
+.radar-label:hover,.radar-label.active,.radar-label:focus-visible{fill:#ffda42;outline:none}
+.radar-ring-label{fill:#4c6b84;font:600 9px var(--body)}
+
+.radar-detail{border:1px solid #29425a;border-radius:9px;background:#071a2c;padding:18px 18px 16px}
+.radar-detail-head{display:flex;flex-direction:column;gap:6px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #1f364b}
+.radar-detail-head strong{font:800 16px var(--display);color:#fff;letter-spacing:.005em}
+.radar-detail-flag{align-self:flex-start;padding:3px 8px;border-radius:999px;background:rgba(255,133,133,.13);border:1px solid rgba(255,133,133,.4);color:#ff8585;font:800 8px var(--display);letter-spacing:.05em}
+.radar-detail-body{display:grid;gap:7px}
+.radar-detail-value{font:800 32px var(--display);color:#ffcb05;line-height:1}
+.radar-detail-rank{color:#c5d0d9;font-size:12.5px}
+.radar-detail-pct{color:#93a4b7;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+
+/* ---------- mobile: readable percentile bar list ---------- */
+.radar-mobile{display:none}
+.radar-bar-row{display:grid;grid-template-columns:1fr;gap:6px;padding:12px 0;border-top:1px solid #16283a}
+.radar-bar-row:first-child{border-top:0;padding-top:0}
+.radar-bar-label{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.radar-bar-label strong{font:700 14px var(--display);color:#f4f7fb;letter-spacing:.005em}
+.radar-bar-label small{color:#ff8585;font:800 8px var(--display);letter-spacing:.05em;white-space:nowrap}
+.radar-bar-track{height:10px;border-radius:5px;background:#0a2034;border:1px solid #1c3448;overflow:hidden}
+.radar-bar-fill{height:100%;border-radius:5px 0 0 5px;background:linear-gradient(90deg,#b89400,#ffcb05)}
+.radar-bar-meta{display:flex;justify-content:space-between;gap:10px;color:#93a4b7;font-size:11.5px}
+.radar-bar-meta b{color:#ffda42;font:800 12px var(--display)}
+
+@media(max-width:760px){
+  .radar-card{padding:20px 16px 22px;border-radius:9px}
+  .radar-card h2{font-size:21px}
+  .radar-desktop{display:none}
+  .radar-mobile{display:grid}
+}

@@ -1,0 +1,134 @@
+{
+  "fieldSize": 128,
+  "metrics": [
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "ppa_play",
+      "label": "PPA / Play",
+      "percentile": 61.4,
+      "rank": 50,
+      "unit": "ppa",
+      "value": 0.2401
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "early_down_ppa_play",
+      "label": "Early Down PPA / Play",
+      "percentile": 57.5,
+      "rank": 55,
+      "unit": "ppa",
+      "value": 0.1481
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "late_down_success_rate",
+      "label": "Late Down Success Rate",
+      "percentile": 79.5,
+      "rank": 27,
+      "unit": "rate",
+      "value": 0.467
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "rush_ppa_play",
+      "label": "Rush PPA / Play",
+      "percentile": 59.8,
+      "rank": 52,
+      "unit": "ppa",
+      "value": 0.1797
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": false,
+      "key": "stuff_rate",
+      "label": "Stuff Rate Allowed",
+      "percentile": 48.8,
+      "rank": 66,
+      "unit": "rate",
+      "value": 0.1844
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "line_yards",
+      "label": "Line Yards",
+      "percentile": 41.7,
+      "rank": 75,
+      "unit": "yards",
+      "value": 3.002
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "opportunity_rate",
+      "label": "Opportunity Rate",
+      "percentile": 37.0,
+      "rank": 81,
+      "unit": "rate",
+      "value": 0.4693
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "explosive_play_rate",
+      "label": "Explosive Play Rate",
+      "percentile": 78.7,
+      "rank": 28,
+      "unit": "rate",
+      "value": 0.143
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "pass_ppa_dropback",
+      "label": "Pass PPA / Dropback",
+      "percentile": 66.9,
+      "rank": 43,
+      "unit": "ppa",
+      "value": 0.3406
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "yards_per_dropback",
+      "label": "Yards / Dropback",
+      "percentile": 63.0,
+      "rank": 48,
+      "unit": "yards",
+      "value": 6.9392
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": true,
+      "key": "pass_success_rate",
+      "label": "Pass Success Rate",
+      "percentile": 66.9,
+      "rank": 43,
+      "unit": "rate",
+      "value": 0.4355
+    },
+    {
+      "fieldSize": 128,
+      "higherIsBetter": false,
+      "key": "havoc_rate_allowed",
+      "label": "Havoc Rate Allowed",
+      "percentile": 52.0,
+      "rank": 62,
+      "unit": "rate",
+      "value": 0.1064
+    }
+  ],
+  "sample": {
+    "dropbacks": 378,
+    "offensivePlays": 909,
+    "rushAttempts": 537
+  },
+  "sampleSizeCaveat": null,
+  "season": 2016,
+  "team": "Michigan",
+  "version": "offensive-profile-v1"
+}
