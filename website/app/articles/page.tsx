@@ -27,8 +27,30 @@ const westernMichiganPreview:MichiganStory={
   ]
 };
 
+const playcallingAudit:MichiganStory={
+  slug:"michigan-offense-2025-playcalling-audit",
+  eyebrow:"PLAY-BY-PLAY AUDIT · 2025 SEASON",
+  title:"Michigan's 2025 Offense, Down by Down — Then the Offense Replacing It",
+  coverQuestion:"What exactly does Jason Beck need to fix, and what should transfer from Utah?",
+  deck:"A full play-by-play audit of what worked and what didn't for Michigan's 2025 offense, down by down, game by game, against Jason Beck's Utah tape — with sourced 2026 reporting on what should actually carry over.",
+  published:"August 27, 2026",
+  readMinutes:12,
+  coverImage:"/images/articles/jason-beck.png",
+  tags:[
+    {type:"UNIT",slug:"offense",label:"Offense"},
+    {type:"POSITION",slug:"qb",label:"QB"},
+    {type:"TOPIC",slug:"analytics",label:"Analytics"},
+    {type:"TOPIC",slug:"coaching",label:"Coaching"}
+  ],
+  body:[],
+  dataLinks:[
+    {label:"2025 Michigan offense analytics",href:"/analytics/offense?year=2025",description:"See the full opponent-adjusted efficiency breakdown behind this audit."},
+    {label:"Bryce Underwood profile",href:"/players/5141741",description:"Review Underwood's freshman production and 2026 roster profile."}
+  ]
+};
+
 export default function Articles(){
-  const stories=[westernMichiganPreview,...michiganStories()];
+  const stories=[playcallingAudit,westernMichiganPreview,...michiganStories()];
   return <div className={styles.page}>
     <header className={styles.hero}>
       <div className={`wrap ${styles.heroInner}`}>

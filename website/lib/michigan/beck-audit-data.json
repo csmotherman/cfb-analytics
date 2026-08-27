@@ -1,0 +1,436 @@
+{
+  "michigan": {
+    "trend": [
+      {
+        "order": 1,
+        "opponent": "New Mexico",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.43548387096774194,
+        "passingDownSuccessRate": 0.3333333333333333
+      },
+      {
+        "order": 2,
+        "opponent": "Oklahoma",
+        "seasonType": "regular",
+        "win": false,
+        "successRate": 0.23636363636363636,
+        "passingDownSuccessRate": 0.1
+      },
+      {
+        "order": 3,
+        "opponent": "Central Michigan",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.6447368421052632,
+        "passingDownSuccessRate": 0.5
+      },
+      {
+        "order": 4,
+        "opponent": "Nebraska",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.3888888888888889,
+        "passingDownSuccessRate": 0.35
+      },
+      {
+        "order": 5,
+        "opponent": "Wisconsin",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.5666666666666667,
+        "passingDownSuccessRate": 0.35714285714285715
+      },
+      {
+        "order": 6,
+        "opponent": "USC",
+        "seasonType": "regular",
+        "win": false,
+        "successRate": 0.45454545454545453,
+        "passingDownSuccessRate": 0.3157894736842105
+      },
+      {
+        "order": 7,
+        "opponent": "Washington",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.47058823529411764,
+        "passingDownSuccessRate": 0.3
+      },
+      {
+        "order": 8,
+        "opponent": "Michigan State",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.4603174603174603,
+        "passingDownSuccessRate": 0.08333333333333333
+      },
+      {
+        "order": 9,
+        "opponent": "Purdue",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.5,
+        "passingDownSuccessRate": 0.4166666666666667
+      },
+      {
+        "order": 10,
+        "opponent": "Northwestern",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.5571428571428572,
+        "passingDownSuccessRate": 0.5294117647058824
+      },
+      {
+        "order": 11,
+        "opponent": "Maryland",
+        "seasonType": "regular",
+        "win": true,
+        "successRate": 0.5714285714285714,
+        "passingDownSuccessRate": 0.5
+      },
+      {
+        "order": 12,
+        "opponent": "Ohio State",
+        "seasonType": "regular",
+        "win": false,
+        "successRate": 0.2564102564102564,
+        "passingDownSuccessRate": 0.1
+      },
+      {
+        "order": 13,
+        "opponent": "Texas",
+        "seasonType": "postseason",
+        "win": false,
+        "successRate": 0.39473684210526316,
+        "passingDownSuccessRate": 0.16666666666666666
+      }
+    ],
+    "matrix": [
+      {
+        "down": "1st Down",
+        "bucket": "Short (1-3)",
+        "totalPlays": 7,
+        "runRate": 1.0,
+        "run": {
+          "plays": 7,
+          "successRate": 0.7142857142857143
+        },
+        "pass": {
+          "plays": 0,
+          "successRate": null
+        }
+      },
+      {
+        "down": "1st Down",
+        "bucket": "Medium (4-7)",
+        "totalPlays": 11,
+        "runRate": 0.8181818181818182,
+        "run": {
+          "plays": 9,
+          "successRate": 0.6666666666666666
+        },
+        "pass": {
+          "plays": 2,
+          "successRate": 0.0
+        }
+      },
+      {
+        "down": "1st Down",
+        "bucket": "Long (8+)",
+        "totalPlays": 319,
+        "runRate": 0.6426332288401254,
+        "run": {
+          "plays": 205,
+          "successRate": 0.4682926829268293
+        },
+        "pass": {
+          "plays": 114,
+          "successRate": 0.49122807017543857
+        }
+      },
+      {
+        "down": "2nd Down",
+        "bucket": "Short (1-3)",
+        "totalPlays": 39,
+        "runRate": 0.7692307692307693,
+        "run": {
+          "plays": 30,
+          "successRate": 0.7666666666666667
+        },
+        "pass": {
+          "plays": 9,
+          "successRate": 0.5555555555555556
+        }
+      },
+      {
+        "down": "2nd Down",
+        "bucket": "Medium (4-7)",
+        "totalPlays": 88,
+        "runRate": 0.5454545454545454,
+        "run": {
+          "plays": 48,
+          "successRate": 0.5625
+        },
+        "pass": {
+          "plays": 40,
+          "successRate": 0.525
+        }
+      },
+      {
+        "down": "2nd Down",
+        "bucket": "Long (8+)",
+        "totalPlays": 118,
+        "runRate": 0.4915254237288136,
+        "run": {
+          "plays": 58,
+          "successRate": 0.25862068965517243
+        },
+        "pass": {
+          "plays": 60,
+          "successRate": 0.4166666666666667
+        }
+      },
+      {
+        "down": "3rd/4th Down",
+        "bucket": "Short (1-3)",
+        "totalPlays": 47,
+        "runRate": 0.723404255319149,
+        "run": {
+          "plays": 34,
+          "successRate": 0.8529411764705882
+        },
+        "pass": {
+          "plays": 13,
+          "successRate": 0.3076923076923077
+        }
+      },
+      {
+        "down": "3rd/4th Down",
+        "bucket": "Medium (4-7)",
+        "totalPlays": 51,
+        "runRate": 0.4117647058823529,
+        "run": {
+          "plays": 21,
+          "successRate": 0.6666666666666666
+        },
+        "pass": {
+          "plays": 30,
+          "successRate": 0.4666666666666667
+        }
+      },
+      {
+        "down": "3rd/4th Down",
+        "bucket": "Long (8+)",
+        "totalPlays": 50,
+        "runRate": 0.28,
+        "run": {
+          "plays": 14,
+          "successRate": 0.07142857142857142
+        },
+        "pass": {
+          "plays": 36,
+          "successRate": 0.19444444444444445
+        }
+      }
+    ],
+    "redZone": {
+      "runRate": 0.7807017543859649,
+      "run": {
+        "successRate": 0.5730337078651685,
+        "avgPpa": 0.4836196715327731
+      },
+      "pass": {
+        "successRate": 0.36,
+        "avgPpa": 0.258718325434407
+      }
+    },
+    "seasonSummary": {
+      "successRate": 0.4767123287671233,
+      "passingDownSuccessRate": 0.31862745098039214,
+      "explosivePlayRate": 0.13561643835616438,
+      "redZoneTouchdownRate": 0.5306122448979592,
+      "thirdDownConversionRate": 0.48201438848920863,
+      "sackRate": 0.05501618122977346,
+      "yardsPerPlay": 6.407258064516129,
+      "runRate": 0.5846774193548387,
+      "pointsPerGame": 27.583333333333332
+    },
+    "firstHalfSummary": {
+      "successRate": 0.46685082872928174,
+      "passingDownSuccessRate": 0.3177570093457944,
+      "explosivePlayRate": 0.143646408839779,
+      "redZoneTouchdownRate": 0.65,
+      "thirdDownConversionRate": 0.4117647058823529,
+      "sackRate": 0.043478260869565216,
+      "yardsPerPlay": 6.76775956284153,
+      "runRate": 0.5601092896174863,
+      "pointsPerGame": 29.5
+    },
+    "secondHalfSummary": {
+      "successRate": 0.48641304347826086,
+      "passingDownSuccessRate": 0.31958762886597936,
+      "explosivePlayRate": 0.12771739130434784,
+      "redZoneTouchdownRate": 0.4482758620689655,
+      "thirdDownConversionRate": 0.5492957746478874,
+      "sackRate": 0.06756756756756757,
+      "yardsPerPlay": 6.058201058201059,
+      "runRate": 0.6084656084656085,
+      "pointsPerGame": 25.666666666666668
+    },
+    "moneyDownPassPpa": 0.4459903564697518
+  },
+  "utah": {
+    "matrix": [
+      {
+        "down": "1st Down",
+        "bucket": "Short (1-3)",
+        "totalPlays": 9,
+        "runRate": 0.7777777777777778,
+        "run": {
+          "plays": 7,
+          "successRate": 0.5714285714285714
+        },
+        "pass": {
+          "plays": 2,
+          "successRate": 1.0
+        }
+      },
+      {
+        "down": "1st Down",
+        "bucket": "Medium (4-7)",
+        "totalPlays": 7,
+        "runRate": 1.0,
+        "run": {
+          "plays": 7,
+          "successRate": 0.8571428571428571
+        },
+        "pass": {
+          "plays": 0,
+          "successRate": null
+        }
+      },
+      {
+        "down": "1st Down",
+        "bucket": "Long (8+)",
+        "totalPlays": 356,
+        "runRate": 0.6629213483146067,
+        "run": {
+          "plays": 236,
+          "successRate": 0.4491525423728814
+        },
+        "pass": {
+          "plays": 120,
+          "successRate": 0.43333333333333335
+        }
+      },
+      {
+        "down": "2nd Down",
+        "bucket": "Short (1-3)",
+        "totalPlays": 44,
+        "runRate": 0.7954545454545454,
+        "run": {
+          "plays": 35,
+          "successRate": 0.6857142857142857
+        },
+        "pass": {
+          "plays": 9,
+          "successRate": 0.5555555555555556
+        }
+      },
+      {
+        "down": "2nd Down",
+        "bucket": "Medium (4-7)",
+        "totalPlays": 104,
+        "runRate": 0.5384615384615384,
+        "run": {
+          "plays": 56,
+          "successRate": 0.5357142857142857
+        },
+        "pass": {
+          "plays": 48,
+          "successRate": 0.5625
+        }
+      },
+      {
+        "down": "2nd Down",
+        "bucket": "Long (8+)",
+        "totalPlays": 128,
+        "runRate": 0.4296875,
+        "run": {
+          "plays": 55,
+          "successRate": 0.36363636363636365
+        },
+        "pass": {
+          "plays": 73,
+          "successRate": 0.4246575342465753
+        }
+      },
+      {
+        "down": "3rd/4th Down",
+        "bucket": "Short (1-3)",
+        "totalPlays": 57,
+        "runRate": 0.8596491228070176,
+        "run": {
+          "plays": 49,
+          "successRate": 0.8163265306122449
+        },
+        "pass": {
+          "plays": 8,
+          "successRate": 0.625
+        }
+      },
+      {
+        "down": "3rd/4th Down",
+        "bucket": "Medium (4-7)",
+        "totalPlays": 75,
+        "runRate": 0.3466666666666667,
+        "run": {
+          "plays": 26,
+          "successRate": 0.5
+        },
+        "pass": {
+          "plays": 49,
+          "successRate": 0.5306122448979592
+        }
+      },
+      {
+        "down": "3rd/4th Down",
+        "bucket": "Long (8+)",
+        "totalPlays": 43,
+        "runRate": 0.27906976744186046,
+        "run": {
+          "plays": 12,
+          "successRate": 0.25
+        },
+        "pass": {
+          "plays": 31,
+          "successRate": 0.22580645161290322
+        }
+      }
+    ],
+    "redZone": {
+      "runRate": 0.7054794520547946,
+      "run": {
+        "successRate": 0.4563106796116505,
+        "avgPpa": 0.3392660879390588
+      },
+      "pass": {
+        "successRate": 0.627906976744186,
+        "avgPpa": 1.057292819164546
+      }
+    },
+    "seasonSummary": {
+      "successRate": 0.48724179829890646,
+      "passingDownSuccessRate": 0.38009049773755654,
+      "explosivePlayRate": 0.15188335358444716,
+      "redZoneTouchdownRate": 0.7222222222222222,
+      "thirdDownConversionRate": 0.5197368421052632,
+      "sackRate": 0.03672316384180791,
+      "yardsPerPlay": 6.655334114888628,
+      "runRate": 0.5845070422535211,
+      "pointsPerGame": 39.5
+    },
+    "moneyDownPassPpa": 0.6712239463428828
+  }
+}
