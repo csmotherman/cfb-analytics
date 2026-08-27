@@ -1,3 +1,4 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -18,8 +19,13 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  // Turbopack's file tracer rejects exclude/include globs that navigate
+  // above the project root via "..". Rooting tracing one level up (at the
+  // repository root) lets every glob stay root-relative instead.
+  outputFileTracingRoot: path.join(process.cwd(), ".."),
+
   // Attach only the compact route-specific runtime bundle to server functions.
-  // The canonical ../data/published tree is build input, not runtime output.
+  // The canonical data/published tree is build input, not runtime output.
   outputFileTracingIncludes: {
     "/analytics": [
       ".published-data/**/*.json"

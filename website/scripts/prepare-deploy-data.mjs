@@ -68,6 +68,21 @@ for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
     path.join(sourceSeason,"analytics","ridge-overview.json"),
     path.join(targetSeason,"analytics","ridge-overview.json")
   ))files+=1;
+
+  if(copyFile(
+    path.join(sourceSeason,"analytics","offensive-profile.json"),
+    path.join(targetSeason,"analytics","offensive-profile.json")
+  ))files+=1;
+
+  if(copyFile(
+    path.join(sourceSeason,"analytics","offense-detail.json"),
+    path.join(targetSeason,"analytics","offense-detail.json")
+  ))files+=1;
+
+  if(copyFile(
+    path.join(sourceSeason,"analytics","defense-detail.json"),
+    path.join(targetSeason,"analytics","defense-detail.json")
+  ))files+=1;
 }
 
 // Player profiles remain request-rendered because ?tab=stats changes the server
