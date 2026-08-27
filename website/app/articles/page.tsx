@@ -29,12 +29,12 @@ const westernMichiganPreview:MichiganStory={
 
 const playcallingAudit:MichiganStory={
   slug:"michigan-offense-2025-playcalling-audit",
-  eyebrow:"PLAY-BY-PLAY AUDIT · 2025 SEASON",
-  title:"Michigan's 2025 Offense, Down by Down — Then the Offense Replacing It",
-  coverQuestion:"What exactly does Jason Beck need to fix, and what should transfer from Utah?",
-  deck:"A full play-by-play audit of what worked and what didn't for Michigan's 2025 offense, down by down, game by game, against Jason Beck's Utah tape — with sourced 2026 reporting on what should actually carry over.",
+  eyebrow:"DATA AUDIT · 2025 REGULAR SEASON",
+  title:"Michigan's 13.5-Point Offensive Mystery",
+  coverQuestion:"How did Jason Beck's Utah score 13.5 more points per game with almost the same offensive foundation?",
+  deck:"Michigan and Utah were nearly identical in run share, overall success rate and yards per play. The gap exploded on the scoreboard. This audit shows where the separation actually appeared — and what that does and does not say about Jason Beck in 2026.",
   published:"August 27, 2026",
-  readMinutes:12,
+  readMinutes:10,
   coverImage:"/images/articles/jason-beck.png",
   tags:[
     {type:"UNIT",slug:"offense",label:"Offense"},
