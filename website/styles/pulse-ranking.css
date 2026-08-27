@@ -1,3 +1,129 @@
-.pulse-ranking-card{justify-content:flex-start!important;gap:8px}.pulse-ranking-card>small{margin-bottom:1px}.pulse-ranking-list{width:100%;display:grid;gap:5px}.pulse-ranking-list>div{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #243d54}.pulse-ranking-list>div:first-child{border-top:0}.pulse-ranking-list span{font:700 8px/1.1 var(--display);letter-spacing:.045em;color:#c8d4df;text-align:left}.pulse-ranking-list strong{font:800 19px/1 var(--display)!important;color:#f5f8fb}.pulse-ranking-list .model-rank strong{color:var(--mock-maize)}.pulse-ranking-card>span:last-child{margin-top:auto;color:var(--mock-maize);font:700 8px/1 var(--body);letter-spacing:.035em}
-@media(max-width:760px){.pulse-ranking-card{gap:5px!important}.pulse-ranking-list{gap:2px}.pulse-ranking-list>div{padding:3px 0}.pulse-ranking-list span{font-size:6px}.pulse-ranking-list strong{font-size:14px!important}.pulse-ranking-card>span:last-child{font-size:6px}}
-@media(max-width:520px){.pulse-ranking-list span{font-size:5.5px}.pulse-ranking-list strong{font-size:13px!important}}
+/* Michigan Pulse: broadcast-style hierarchy with readable mobile type. */
+.pulse-section>header{align-items:center}
+.pulse-section>header h2{letter-spacing:.045em}
+.pulse-section>header>span{font-weight:700;letter-spacing:.08em}
+
+.pulse-ranking-card{
+  justify-content:flex-start!important;
+  gap:12px!important;
+  text-align:left!important;
+  border-color:#365169!important;
+  background:linear-gradient(135deg,#0a2138 0%,#071a2c 72%)!important;
+}
+.pulse-ranking-card>small{
+  margin:0;
+  color:#edf3f8;
+  font:800 11px/1 var(--display)!important;
+  letter-spacing:.09em!important;
+}
+.pulse-ranking-list{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-areas:
+    "model model"
+    "ap coaches";
+  gap:8px;
+}
+.pulse-ranking-list>div{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:10px 11px;
+  border:1px solid #29445c;
+  border-radius:4px;
+  background:#061728;
+}
+.pulse-ranking-list>div:nth-child(1){grid-area:ap}
+.pulse-ranking-list>div:nth-child(2){grid-area:coaches}
+.pulse-ranking-list>.model-rank{
+  grid-area:model;
+  padding:11px 12px;
+  border-color:#ffcb0566;
+  background:linear-gradient(90deg,#ffcb0514 0%,#081c30 62%,#071a2c 100%);
+}
+.pulse-ranking-list span{
+  color:#cbd7e2;
+  font:800 10px/1.1 var(--display)!important;
+  letter-spacing:.06em!important;
+  text-align:left;
+}
+.pulse-ranking-list strong{
+  flex:0 0 auto;
+  color:#f5f8fb;
+  font:800 28px/.9 var(--display)!important;
+  letter-spacing:-.02em;
+}
+.pulse-ranking-list .model-rank span{color:#f2f6f9}
+.pulse-ranking-list .model-rank strong{
+  color:var(--mock-maize);
+  font-size:42px!important;
+}
+.pulse-ranking-card>span:last-child{
+  margin-top:auto;
+  color:var(--mock-maize)!important;
+  font:700 10px/1.2 var(--body)!important;
+  letter-spacing:.035em!important;
+}
+
+.pulse-scroll>article:not(.pulse-ranking-card){
+  justify-content:center;
+  gap:7px;
+}
+.pulse-scroll>article:not(.pulse-ranking-card)>small{
+  color:#e4ebf2;
+  font-size:11px;
+  letter-spacing:.07em;
+}
+.pulse-scroll>article:not(.pulse-ranking-card)>strong{
+  color:#f7f9fb;
+  font-size:44px;
+  letter-spacing:-.025em;
+}
+.pulse-scroll>article:not(.pulse-ranking-card)>span{
+  color:#b9c7d4;
+  font-size:12px;
+  line-height:1.25;
+}
+
+@media(max-width:760px){
+  .pulse-section>header{margin-bottom:12px}
+  .pulse-section>header h2{font-size:28px!important}
+  .pulse-section>header>span{font-size:10px!important}
+  .pulse-scroll{gap:10px!important}
+  .pulse-ranking-card{
+    min-height:0!important;
+    padding:16px!important;
+    gap:11px!important;
+  }
+  .pulse-ranking-card>small{font-size:11px!important}
+  .pulse-ranking-list{gap:8px}
+  .pulse-ranking-list>div{padding:10px 11px}
+  .pulse-ranking-list>.model-rank{padding:12px}
+  .pulse-ranking-list span{font-size:10px!important}
+  .pulse-ranking-list strong{font-size:29px!important}
+  .pulse-ranking-list .model-rank strong{font-size:46px!important}
+  .pulse-ranking-card>span:last-child{font-size:10px!important}
+  .pulse-scroll>article:not(.pulse-ranking-card){
+    min-height:126px!important;
+    padding:16px 12px!important;
+  }
+  .pulse-scroll>article:not(.pulse-ranking-card)>small{font-size:11px!important}
+  .pulse-scroll>article:not(.pulse-ranking-card)>strong{font-size:42px!important}
+  .pulse-scroll>article:not(.pulse-ranking-card)>span{font-size:12px!important}
+}
+
+@media(max-width:520px){
+  .pulse-section>header h2{font-size:27px!important}
+  .pulse-section>header>span{font-size:9px!important}
+  .pulse-ranking-card{padding:15px!important}
+  .pulse-ranking-list span{font-size:9.5px!important}
+  .pulse-ranking-list strong{font-size:28px!important}
+  .pulse-ranking-list .model-rank strong{font-size:44px!important}
+  .pulse-ranking-card>span:last-child{font-size:9.5px!important}
+  .pulse-scroll>article:not(.pulse-ranking-card)>small{font-size:10.5px!important}
+  .pulse-scroll>article:not(.pulse-ranking-card)>strong{font-size:40px!important}
+  .pulse-scroll>article:not(.pulse-ranking-card)>span{font-size:11.5px!important}
+}
