@@ -11,9 +11,11 @@ import {
   type CreatorAttachment,
   type CreatorRequest,
 } from "../../../../../lib/creator-hub/db";
+import { findGameStoryPackByGameId, findStory } from "../../../../../lib/creator-hub/game-story";
 import { StatusBadge } from "../../StatusBadge";
 import { Disclosure } from "../../Disclosure";
 import { VisualCard } from "../../VisualCard";
+import { StoryCard } from "../../../../../components/creator-hub/visuals/StoryCard";
 import { SectionEditor } from "./SectionEditor";
 import { AttachExisting } from "./AttachExisting";
 import { StatusSelect } from "./StatusSelect";
@@ -70,6 +72,29 @@ function AttachmentsBlock({
             />
           );
         }
+        if (a.kind === "story" && a.game_id && a.story_id) {
+          const pack = findGameStoryPackByGameId(a.game_id);
+          const story = pack ? findStory(pack, a.story_id) : null;
+          if (!pack || !story) return null;
+          return (
+            <div key={a.id} className="ch-attach-card">
+              <b>{story.headline}</b>
+              <p>vs {pack.opponent} &middot; Week {pack.week}</p>
+              <div style={{ marginTop: 8 }}>
+                <Disclosure trigger="Show Visual" title="Visual">
+                  <StoryCard story={story} michiganTeamId={pack.michiganTeamId} opponentTeamId={pack.opponentTeamId} opponentName={pack.opponent} />
+                </Disclosure>
+              </div>
+              <div className="actions">
+                <form action={removeAttachmentAction}>
+                  <input type="hidden" name="videoId" value={videoId} />
+                  <input type="hidden" name="attachmentId" value={a.id} />
+                  <button type="submit">Remove</button>
+                </form>
+              </div>
+            </div>
+          );
+        }
         return null;
       })}
     </div>
@@ -121,13 +146,18 @@ function RequestForm({ videoId, sectionId }: { videoId: number; sectionId?: numb
 
 export default async function VideoOutlinePage({
   params,
+  searchParams,
 }: {
   params: Promise<{ creatorSlug: string; videoSlug: string }>;
+  searchParams: Promise<{ mode?: string }>;
 }) {
   const { creatorSlug, videoSlug } = await params;
+  const { mode } = await searchParams;
+  const editMode = mode === "edit";
   const creator = await requireCreatorForSlug(creatorSlug);
   const video = await getVideoBySlug(creator.id, videoSlug);
   if (!video) notFound();
+  const outlineHref = `/creator-hub/${creator.slug}/videos/${video.slug}`;
 
   const [sections, attachments, requests, researchList, visualsList] = await Promise.all([
     getSectionsForVideo(video.id),
@@ -156,18 +186,25 @@ export default async function VideoOutlinePage({
         <span className="updated">Last edited {new Date(video.updated_at).toLocaleString()}</span>
         {video.hook && <p className="ch-outline-hook">{video.hook}</p>}
 
-        <div style={{ display: "flex", gap: 8, marginTop: 16, flexWrap: "wrap" }}>
-          <Disclosure trigger="Edit Outline" title="Edit video">
-            <form action={updateVideoAction}>
-              <input type="hidden" name="videoId" value={video.id} />
-              <div className="ch-field"><label>Title</label><input className="ch-input" name="title" defaultValue={video.title} required /></div>
-              <div className="ch-field"><label>Thesis</label><textarea className="ch-textarea" name="thesis" rows={2} defaultValue={video.thesis} /></div>
-              <div className="ch-field"><label>Hook</label><textarea className="ch-textarea" name="hook" rows={2} defaultValue={video.hook} /></div>
-              <button type="submit" className="ch-btn ch-btn-primary">Save</button>
-            </form>
-          </Disclosure>
-          <RequestForm videoId={video.id} />
-          <AttachExisting videoId={video.id} sections={sections} research={researchList} visuals={visualsList} />
+        <div style={{ display: "flex", gap: 8, marginTop: 16, flexWrap: "wrap", alignItems: "center" }}>
+          {editMode ? (
+            <>
+              <Disclosure trigger="Edit Outline" title="Edit video">
+                <form action={updateVideoAction}>
+                  <input type="hidden" name="videoId" value={video.id} />
+                  <div className="ch-field"><label>Title</label><input className="ch-input" name="title" defaultValue={video.title} required /></div>
+                  <div className="ch-field"><label>Thesis</label><textarea className="ch-textarea" name="thesis" rows={2} defaultValue={video.thesis} /></div>
+                  <div className="ch-field"><label>Hook</label><textarea className="ch-textarea" name="hook" rows={2} defaultValue={video.hook} /></div>
+                  <button type="submit" className="ch-btn ch-btn-primary">Save</button>
+                </form>
+              </Disclosure>
+              <RequestForm videoId={video.id} />
+              <AttachExisting videoId={video.id} sections={sections} research={researchList} visuals={visualsList} />
+              <Link href={outlineHref} className="ch-btn ch-btn-ghost ch-btn-sm" style={{ marginLeft: "auto" }}>Done editing</Link>
+            </>
+          ) : (
+            <Link href={`${outlineHref}?mode=edit`} className="ch-btn ch-btn-primary ch-btn-sm">Edit Outline</Link>
+          )}
         </div>
       </div>
 
@@ -187,27 +224,31 @@ export default async function VideoOutlinePage({
         const sectionAttachments = attachments.filter((a) => a.section_id === section.id);
         const sectionRequests = requests.filter((r) => r.section_id === section.id);
         return (
-          <SectionEditor key={section.id} section={section} videoId={video.id} index={index} count={sections.length}>
+          <SectionEditor key={section.id} section={section} videoId={video.id} index={index} count={sections.length} readOnly={!editMode}>
             {(sectionAttachments.length > 0 || sectionRequests.length > 0) && (
               <div className="ch-outline-subhead">Analytics &amp; Visuals</div>
             )}
             <AttachmentsBlock attachments={sectionAttachments} research={researchMap} visuals={visualsMap} videoId={video.id} />
             <RequestsBlock requests={sectionRequests} />
-            <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
-              <RequestForm videoId={video.id} sectionId={section.id} />
-              <AttachExisting videoId={video.id} sections={sections} research={researchList} visuals={visualsList} defaultSectionId={section.id} />
-            </div>
+            {editMode && (
+              <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <RequestForm videoId={video.id} sectionId={section.id} />
+                <AttachExisting videoId={video.id} sections={sections} research={researchList} visuals={visualsList} defaultSectionId={section.id} />
+              </div>
+            )}
           </SectionEditor>
         );
       })}
 
-      <Disclosure trigger="+ Add Section" title="New section">
-        <form action={createSectionAction}>
-          <input type="hidden" name="videoId" value={video.id} />
-          <div className="ch-field"><label>Section title</label><input className="ch-input" name="title" required autoFocus /></div>
-          <button type="submit" className="ch-btn ch-btn-primary">Add section</button>
-        </form>
-      </Disclosure>
+      {editMode && (
+        <Disclosure trigger="+ Add Section" title="New section">
+          <form action={createSectionAction}>
+            <input type="hidden" name="videoId" value={video.id} />
+            <div className="ch-field"><label>Section title</label><input className="ch-input" name="title" required autoFocus /></div>
+            <button type="submit" className="ch-btn ch-btn-primary">Add section</button>
+          </form>
+        </Disclosure>
+      )}
     </>
   );
 }

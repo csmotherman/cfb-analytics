@@ -9,11 +9,10 @@ export function WorkspaceTopbar({ creatorSlug, creatorName }: { creatorSlug: str
   const links: [string, string][] = [
     ["Home", base],
     ["Videos", `${base}/videos`],
+    ["Game Room", `${base}/games`],
     ["Requests", `${base}/requests`],
-    ["Research", `${base}/research`],
-    ["Visuals", `${base}/visuals`],
-    ["Notes", `${base}/notes`],
   ];
+  const libraryActive = ["/research", "/visuals", "/notes"].some((suffix) => pathname?.startsWith(`${base}${suffix}`));
 
   return (
     <div className="ch-topbar">
@@ -26,6 +25,7 @@ export function WorkspaceTopbar({ creatorSlug, creatorName }: { creatorSlug: str
               <a key={href} href={href} className={active ? "active" : ""}>{label}</a>
             );
           })}
+          <a href={`${base}/research`} className={`ch-topbar-library${libraryActive ? " active" : ""}`}>Library</a>
         </nav>
         <div className="ch-topbar-actions">
           <form action={lockCreator}>

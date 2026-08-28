@@ -31,6 +31,7 @@ import {
   type RequestType,
   type VideoStatus,
 } from "../../../lib/creator-hub/db";
+import { findGameStoryPackByGameId, findStory } from "../../../lib/creator-hub/game-story";
 
 // Every action re-derives the creator from the session cookie -- never
 // trusts a creatorId submitted from the client -- so one creator's session
@@ -49,6 +50,7 @@ function revalidateWorkspace(creatorSlug: string, videoSlug?: string) {
   revalidatePath(`${base}/research`);
   revalidatePath(`${base}/visuals`);
   revalidatePath(`${base}/notes`);
+  revalidatePath(`${base}/games`);
   if (videoSlug) revalidatePath(`${base}/videos/${videoSlug}`);
 }
 
@@ -275,4 +277,42 @@ export async function removeAttachmentAction(formData: FormData): Promise<void> 
 
   await removeAttachment(attachmentId);
   revalidateWorkspace(creator.slug, video.slug);
+}
+
+export async function addStoryToVideoAction(formData: FormData): Promise<void> {
+  const creator = await requireCreator();
+  const gameId = Number(formData.get("gameId"));
+  const storyId = String(formData.get("storyId") || "");
+  const existingVideoId = formData.get("videoId");
+  const newVideoTitle = String(formData.get("newVideoTitle") || "").trim();
+
+  // The story's content (headline, evidence, video angle) is re-derived
+  // from the published game-stories.json artifact server-side, never
+  // trusted from the client -- the form only submits gameId/storyId.
+  const pack = findGameStoryPackByGameId(gameId);
+  const story = pack ? findStory(pack, storyId) : null;
+  if (!pack || !story) redirect(`/creator-hub/${creator.slug}/games`);
+
+  let video;
+  if (existingVideoId && Number(existingVideoId) > 0) {
+    video = await getVideoById(Number(existingVideoId));
+    if (!video || video.creator_id !== creator.id) redirect(`/creator-hub/${creator.slug}/games`);
+  } else {
+    const title = newVideoTitle || `Michigan vs ${pack.opponent}: What Actually Happened`;
+    video = await createVideo(creator.id, { title, thesis: story.whyItMatters });
+  }
+
+  const talkingPoints = [story.videoAngle, ...story.evidence].join("\n");
+  const section = await createSection(video.id, story.headline);
+  await updateSection(section.id, { title: story.headline, talking_points: talkingPoints, notes: "" });
+  await attachToVideo({
+    video_id: video.id,
+    section_id: section.id,
+    kind: "story",
+    game_id: gameId,
+    story_id: storyId,
+  });
+
+  revalidateWorkspace(creator.slug, video.slug);
+  redirect(`/creator-hub/${creator.slug}/videos/${video.slug}`);
 }

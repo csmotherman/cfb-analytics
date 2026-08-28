@@ -1,5 +1,145 @@
 # CFB Analytics Metric Registry
 
+## Opponent-Adjusted Game Delta v1
+
+**Status:** PARTIAL
+**Level:** single-game
+**Definition version:** `opponent-adjusted-delta-v1` (baseline: `opponent-baseline-excl-game-v1`)
+
+For a single Michigan game, compares one of Michigan's game-level rate metrics
+(the 26 metrics in `METRIC_SPECS`, each a locked numerator/denominator pair
+already present on every team-game row: success rate and its rush/pass split,
+explosive-play rate, yards per successful play, points per resolved
+possession, points per opportunity, havoc rate, standard/passing-down success,
+third-down conversion, red-zone touchdown rate, and average starting field
+position, each with an Allowed counterpart) against the opponent's own season
+baseline for that same metric, **excluding the game being analyzed** — summing
+each metric's numerator/denominator across the opponent's other games this
+season and dividing, per `docs/data-contracts/TEAM_SEASON.md`'s "rates
+reconstructed after aggregation" rule, rather than trusting a season average
+that already bakes this exact game into itself. The delta is sign-normalized
+(via a documented per-metric higher-vs-lower-is-better table) so a positive
+number always means "better for the side being described," regardless of the
+metric's natural direction — including the field-position metrics, where a
+lower value is favorable for the offense being described but a higher value
+is favorable for the defense allowing it.
+
+Status is PARTIAL, not LOCKED: every input field is itself LOCKED, and the
+26-metric table was verified to reproduce each team's published `season.json`
+rate exactly when run over all of a team's games (see
+`tests/analytics/test_game_story.py::test_metric_specs_reproduce_published_season_rates`),
+but the excl-game re-aggregation formula itself has not yet run across a full
+season of live production use.
+
+Every game-story delta is only computed and surfaced together with a
+`signalClass` (STRONG_SIGNAL/WATCH/LIKELY_NOISY, see Signal Classification v1
+below) and, where sample size allows, a percentile ranking against the
+opponent's own in-season distribution of that metric (suppressed below 6
+games via `sampleSizeCaveat` rather than presented as a thin-sample "best/
+worst all season" claim).
+
+## Drive Result (Inferred) v1
+
+**Status:** PARTIAL
+**Level:** single-drive
+**Definition version:** `drive-result-inferred-v1`
+
+`data/processed/derived/drives/.../drives.json` (LOCKED `drive-v4`) does not
+carry a TD/FG/PUNT/TURNOVER result field. This classifies each drive from the
+plays within it (joined by each play's own `driveId`) rather than from the
+drive record's own score-tracking fields, which were found by hand-inspection
+to not reliably track "this drive's own offense score" (verified on the 2025
+Michigan/Maryland game: those fields would have misclassified a clean,
+unreturned interception as a defensive touchdown). A drive containing a
+`scoring: true` play is a touchdown unless that play is a field goal or
+safety (the only other ways to score); the scoring team is read from that
+play's own `offense` field, so a defensive/return score during a nominal
+offensive drive is separately labeled `TURNOVER_SCORE` rather than credited
+to the original offense. Drives without a scoring play are classified from
+their terminal play's turnover/punt/missed-field-goal flags, an unconverted
+4th-down snap, or (scanning the whole drive, since the end-of-period marker
+is not always the drive's own designated last play) an end-of-half/end-of-
+game marker.
+
+Verified on the full 2025 Michigan/Maryland game: all 19 drives classified
+(0 UNKNOWN), and summing each drive's inferred points reproduces the actual
+45-20 final score exactly. Verified across all 13 of Michigan's 2025 games:
+290 of 291 drives classified (99.7%); the one residual UNKNOWN is left
+unclassified rather than guessed. Status is PARTIAL rather than LOCKED
+because the classifier has not yet run across a full season of every FBS
+team, only Michigan's own games.
+
+## Drive Funnel v1
+
+**Status:** LOCKED
+**Level:** single-game
+**Definition version:** `drive-funnel-v1`
+
+A direct readthrough of already-locked team-game aggregate fields
+(possessions, scoring opportunities, red-zone possessions, red-zone
+touchdowns — Finishing Drives v2 and Red Zone v1 per this registry) into a
+possessions → scoring opportunity → red zone → touchdown funnel. No new
+computation. A distinct "crossed midfield" stage is deliberately not
+included: no locked team-game field tracks it separately from "reached a
+scoring opportunity" (which, by the existing Finishing Drives v2 definition,
+already implies reaching the opponent's 40), so the funnel does not invent an
+intermediate count that isn't backed by a locked field.
+
+## Half-Split Success Rate v1
+
+**Status:** LOCKED
+**Level:** single-game, split by period 1-2 vs. 3-4
+**Definition version:** `half-split-v1`
+
+Re-runs the already-locked Success Rate v1 classifier over a team's plays in
+one game, split by first half (periods 1-2) vs. second half (periods 3-4).
+Reports the observed rates only — it does not attribute any change to a
+coaching adjustment or any other cause. A first-half/second-half swing is
+presented as "Michigan's rushing success rate changed from X to Y after
+halftime," with any causal interpretation left to a separate, explicitly
+labeled film/scheme note, never asserted as fact from the numbers alone.
+
+## Signal Classification v1
+
+**Status:** LOCKED (rule table, not a statistical model)
+**Level:** single-game
+**Definition version:** `signal-classification-v1`
+
+A fixed, documented rule table (`FAMILY_THRESHOLDS` in
+`src/cfb_analytics/analytics/game_story/signal.py`) mapping a metric's game
+sample size (its locked eligible-plays/possessions/attempts denominator) to
+STRONG_SIGNAL, WATCH, or LIKELY_NOISY. Turnover-count metrics (interceptions,
+fumbles lost, turnover margin) are always LIKELY_NOISY regardless of sample
+size, since single-game turnover totals are treated throughout this registry
+as largely chance-driven rather than a stable team-quality signal. This is a
+deterministic lookup, not a machine-learned or statistical volatility
+estimate — thresholds were chosen by football judgment (e.g. a 70-play
+success rate is stronger evidence than a 4-trip red-zone rate) and are
+revisable, not fit to data.
+
+## Game Story v1
+
+**Status:** PARTIAL
+**Level:** single-game
+**Definition version:** `game-story-v1`
+
+The story-selection layer that ranks candidate observations (built from
+Opponent-Adjusted Game Delta v1, one candidate per topic: efficiency,
+explosiveness, situational downs, drive quality, field position, havoc) by
+the magnitude of their opponent-adjusted delta, keeps at most one story per
+topic, and selects the top 3-6. Headlines are produced by a fixed, closed set
+of Python functions keyed on delta sign and magnitude (never free-text
+generation), which makes an unhedged causal claim structurally impossible to
+emit. A selection rule guarantees at least one `concern`-polarity story is
+surfaced when one clears the concern threshold, even in a lopsided win —
+verified on Michigan's 2025 loss to Ohio State, where the top-ranked story
+correctly leads with a passing-offense concern rather than a manufactured
+positive. Status is PARTIAL rather than LOCKED because the topic set and
+ranking weights are a first version, not yet validated across a full season
+of production use; every individual number a story cites remains LOCKED or
+PARTIAL per its own entry above, with `metricStatus` and `signalClass`
+carried on every published story object.
+
 ## Player Production Grade v2
 
 **Status:** RESEARCH ONLY

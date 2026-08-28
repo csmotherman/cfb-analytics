@@ -10,12 +10,14 @@ export function SectionEditor({
   index,
   count,
   children,
+  readOnly = false,
 }: {
   section: CreatorVideoSection;
   videoId: number;
   index: number;
   count: number;
   children: React.ReactNode;
+  readOnly?: boolean;
 }) {
   const [editing, setEditing] = useState(false);
   const points = section.talking_points.split("\n").map((p) => p.trim()).filter(Boolean);
@@ -25,7 +27,7 @@ export function SectionEditor({
       <div className="ch-outline-section-head">
         <h3><span className="ch-outline-section-num">{index + 1}</span>{editing ? "Editing…" : section.title}</h3>
         <div style={{ display: "flex", gap: 6 }}>
-          {!editing && (
+          {!editing && !readOnly && (
             <>
               <form action={moveSectionAction}>
                 <input type="hidden" name="videoId" value={videoId} />
@@ -46,7 +48,7 @@ export function SectionEditor({
       </div>
 
       <div className="ch-outline-section-body">
-        {editing ? (
+        {editing && !readOnly ? (
           <form
             action={async (formData) => {
               await updateSectionAction(formData);

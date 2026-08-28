@@ -7,8 +7,10 @@ import {
   getVideosForCreator,
   getVisualsForCreator,
 } from "../../../lib/creator-hub/db";
+import { latestGameStoryPack } from "../../../lib/creator-hub/game-story";
 import { StatusBadge } from "./StatusBadge";
 import { Disclosure } from "./Disclosure";
+import { TeamLogo } from "../../../components/ui/TeamLogo";
 import { createNoteAction, createRequestAction, createVideoAction } from "./workspace-actions";
 
 export const dynamic = "force-dynamic";
@@ -37,8 +39,9 @@ export default async function CreatorHome({ params }: { params: Promise<{ creato
     getVisualsForCreator(creator.id),
     getNotesForCreator(creator.id),
   ]);
+  const latestGame = latestGameStoryPack();
 
-  const activeVideos = videos.filter((v) => v.status !== "archived" && v.status !== "published").slice(0, 6);
+  const activeVideos = videos.filter((v) => v.status !== "archived" && v.status !== "published").slice(0, 5);
   const weekAgo = Date.now() - 1000 * 60 * 60 * 24 * 7;
   const recentlyCompleted = requests.filter((r) => r.status === "completed" && r.completed_at && new Date(r.completed_at).getTime() > weekAgo);
   const recentResearch = research.filter((r) => new Date(r.created_at).getTime() > weekAgo);
@@ -46,36 +49,20 @@ export default async function CreatorHome({ params }: { params: Promise<{ creato
   const carterNotes = notes.filter((n) => n.author === "carter" && new Date(n.created_at).getTime() > weekAgo);
   const hasReadyForYou = recentlyCompleted.length + recentResearch.length + recentVisuals.length + carterNotes.length > 0;
 
-  const recentItems = [
-    ...research.slice(0, 4).map((r) => ({ kind: "research" as const, id: r.id, title: r.title, updated: r.updated_at })),
-    ...visuals.slice(0, 4).map((v) => ({ kind: "visual" as const, id: v.id, title: v.title, updated: v.updated_at })),
-  ].sort((a, b) => new Date(b.updated).getTime() - new Date(a.updated).getTime()).slice(0, 6);
-
   return (
     <>
       <div className="ch-page-head">
-        <div>
-          <h1>{creator.name}</h1>
-        </div>
+        <div><h1>{creator.name}</h1></div>
         <div className="ch-page-actions">
-          <Disclosure trigger="+ New Video Outline" title="New video outline" primary>
+          <Disclosure trigger="+ New Video" title="New video outline" primary>
             <form action={createVideoAction}>
-              <div className="ch-field">
-                <label>Working title</label>
-                <input className="ch-input" name="title" required autoFocus />
-              </div>
-              <div className="ch-field">
-                <label>Main idea / thesis</label>
-                <textarea className="ch-textarea" name="thesis" rows={2} />
-              </div>
-              <div className="ch-field">
-                <label>Hook</label>
-                <textarea className="ch-textarea" name="hook" rows={2} />
-              </div>
+              <div className="ch-field"><label>Working title</label><input className="ch-input" name="title" required autoFocus /></div>
+              <div className="ch-field"><label>Main idea / thesis</label><textarea className="ch-textarea" name="thesis" rows={2} /></div>
+              <div className="ch-field"><label>Hook</label><textarea className="ch-textarea" name="hook" rows={2} /></div>
               <button type="submit" className="ch-btn ch-btn-primary">Create video</button>
             </form>
           </Disclosure>
-          <Disclosure trigger="+ Request" title="Request research">
+          <Disclosure trigger="Request Analysis" title="Request research">
             <form action={createRequestAction}>
               <div className="ch-field">
                 <label>Which video?</label>
@@ -83,14 +70,8 @@ export default async function CreatorHome({ params }: { params: Promise<{ creato
                   {videos.map((v) => <option key={v.id} value={v.id}>{v.title}</option>)}
                 </select>
               </div>
-              <div className="ch-field">
-                <label>What do you need?</label>
-                <textarea className="ch-textarea" name="what_you_need" rows={2} required />
-              </div>
-              <div className="ch-field">
-                <label>What are you trying to prove?</label>
-                <textarea className="ch-textarea" name="what_proving" rows={2} />
-              </div>
+              <div className="ch-field"><label>What do you need?</label><textarea className="ch-textarea" name="what_you_need" rows={2} required /></div>
+              <div className="ch-field"><label>What are you trying to prove?</label><textarea className="ch-textarea" name="what_proving" rows={2} /></div>
               <div className="ch-field">
                 <label>Type</label>
                 <select className="ch-select" name="request_type">
@@ -106,9 +87,7 @@ export default async function CreatorHome({ params }: { params: Promise<{ creato
           </Disclosure>
           <Disclosure trigger="+ Quick Note" title="Quick note">
             <form action={createNoteAction}>
-              <div className="ch-field">
-                <textarea className="ch-textarea" name="body" rows={3} required autoFocus placeholder="Loose thought worth remembering..." />
-              </div>
+              <div className="ch-field"><textarea className="ch-textarea" name="body" rows={3} required autoFocus placeholder="Loose thought worth remembering..." /></div>
               <input type="hidden" name="author" value="creator" />
               <button type="submit" className="ch-btn ch-btn-primary">Save note</button>
             </form>
@@ -118,8 +97,8 @@ export default async function CreatorHome({ params }: { params: Promise<{ creato
 
       <section className="ch-section">
         <div className="ch-section-head">
-          <h2>Active Videos</h2>
-          <Link href={`/creator-hub/${creator.slug}/videos`} className="count">View all →</Link>
+          <h2>Your Videos</h2>
+          <Link href={`/creator-hub/${creator.slug}/videos`} className="count">View all videos &rarr;</Link>
         </div>
         {activeVideos.length === 0 ? (
           <div className="ch-empty">No active videos yet. Start one above.</div>
@@ -139,59 +118,42 @@ export default async function CreatorHome({ params }: { params: Promise<{ creato
 
       {hasReadyForYou && (
         <section className="ch-section">
-          <div className="ch-section-head"><h2>Ready For You</h2></div>
+          <div className="ch-section-head"><h2>New From Carter</h2></div>
           <div className="ch-card ch-card-pad">
             <ul className="ch-talking-points">
-              {recentlyCompleted.length > 0 && <li>{recentlyCompleted.length} research request{recentlyCompleted.length === 1 ? "" : "s"} completed</li>}
+              {recentlyCompleted.map((r) => <li key={`req-${r.id}`}>&#10003; {r.what_you_need}</li>)}
               {recentResearch.length > 0 && <li>{recentResearch.length} new research item{recentResearch.length === 1 ? "" : "s"} added</li>}
-              {recentVisuals.length > 0 && <li>{recentVisuals.length} new chart{recentVisuals.length === 1 ? "" : "s"} added</li>}
-              {carterNotes.length > 0 && <li>{carterNotes.length} note{carterNotes.length === 1 ? "" : "s"} from Carter</li>}
+              {recentVisuals.length > 0 && <li>{recentVisuals.length} new graphic{recentVisuals.length === 1 ? "" : "s"} added</li>}
+              {carterNotes.map((n) => <li key={`note-${n.id}`}>&#10003; {n.body}</li>)}
             </ul>
           </div>
         </section>
       )}
 
-      <section className="ch-section">
-        <div className="ch-section-head">
-          <h2>Recent Research &amp; Visuals</h2>
-          <Link href={`/creator-hub/${creator.slug}/research`} className="count">Libraries →</Link>
-        </div>
-        {recentItems.length === 0 ? (
-          <div className="ch-empty">Nothing yet.</div>
-        ) : (
-          <div className="ch-attach-grid">
-            {recentItems.map((item) => (
-              <Link
-                key={`${item.kind}-${item.id}`}
-                href={`/creator-hub/${creator.slug}/${item.kind === "research" ? "research" : "visuals"}`}
-                className="ch-attach-card"
-              >
-                <b>{item.title}</b>
-                <p>{item.kind === "research" ? "Research" : "Visual"} · {timeAgo(item.updated)}</p>
-              </Link>
-            ))}
-          </div>
-        )}
-      </section>
-
-      <section className="ch-section">
-        <div className="ch-section-head">
-          <h2>Ideas / Quick Notes</h2>
-          <Link href={`/creator-hub/${creator.slug}/notes`} className="count">View all →</Link>
-        </div>
-        {notes.length === 0 ? (
-          <div className="ch-empty">No notes yet.</div>
-        ) : (
-          <div className="ch-video-list">
-            {notes.slice(0, 4).map((n) => (
-              <div key={n.id} className="ch-card ch-note-card">
-                <p>{n.body}</p>
-                <div className="meta"><span>{n.author === "carter" ? "Carter" : creator.name} · {timeAgo(n.created_at)}</span></div>
+      {latestGame && (
+        <section className="ch-section">
+          <div className="ch-section-head"><h2>Latest Game</h2></div>
+          <Link href={`/creator-hub/${creator.slug}/games/${latestGame.gameId}`} className="ch-card ch-card-pad ch-home-game">
+            <div className="ch-home-game-score">
+              {latestGame.michiganTeamId != null && <TeamLogo teamId={latestGame.michiganTeamId} name="Michigan" size={64} className="ch-game-row-logo" />}
+              <span className="score">{latestGame.pointsFor}</span>
+              <span className="vs">&ndash;</span>
+              <span className="score">{latestGame.pointsAgainst}</span>
+              {latestGame.opponentTeamId != null && <TeamLogo teamId={latestGame.opponentTeamId} name={latestGame.opponent} size={64} className="ch-game-row-logo" />}
+              <span className="opp">{latestGame.opponent}</span>
+            </div>
+            {latestGame.stories.length > 0 && (
+              <div className="ch-home-game-stories">
+                <p className="label">Stories you should know</p>
+                <ol>
+                  {latestGame.stories.slice(0, 3).map((s) => <li key={s.id}>{s.headline}</li>)}
+                </ol>
               </div>
-            ))}
-          </div>
-        )}
-      </section>
+            )}
+            <span className="ch-btn ch-btn-primary ch-btn-sm">Open Game Breakdown</span>
+          </Link>
+        </section>
+      )}
     </>
   );
 }

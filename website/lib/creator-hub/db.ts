@@ -102,10 +102,11 @@ export type CreatorNote = {
   author: NoteAuthor;
   body: string;
   converted_video_id: number | null;
+  game_id: number | null;
   created_at: string;
 };
 
-export type AttachmentKind = "research" | "visual";
+export type AttachmentKind = "research" | "visual" | "story";
 
 export type CreatorAttachment = {
   id: number;
@@ -114,6 +115,8 @@ export type CreatorAttachment = {
   kind: AttachmentKind;
   research_id: number | null;
   visual_id: number | null;
+  game_id: number | null;
+  story_id: string | null;
   created_at: string;
 };
 
@@ -395,9 +398,9 @@ export async function updateRequestStatus(requestId: number, status: RequestStat
   }
 }
 
-export async function createNote(creatorId: number, author: NoteAuthor, body: string): Promise<CreatorNote> {
+export async function createNote(creatorId: number, author: NoteAuthor, body: string, gameId: number | null = null): Promise<CreatorNote> {
   const rows = await sql()`
-    insert into creator_notes (creator_id, author, body) values (${creatorId}, ${author}, ${body}) returning *
+    insert into creator_notes (creator_id, author, body, game_id) values (${creatorId}, ${author}, ${body}, ${gameId}) returning *
   `;
   return (rows as CreatorNote[])[0];
 }
@@ -414,13 +417,17 @@ export async function attachToVideo(data: {
   kind: AttachmentKind;
   research_id?: number | null;
   visual_id?: number | null;
+  game_id?: number | null;
+  story_id?: string | null;
 }): Promise<CreatorAttachment> {
   const rows = await sql()`
-    insert into creator_attachments (video_id, section_id, kind, research_id, visual_id)
+    insert into creator_attachments (video_id, section_id, kind, research_id, visual_id, game_id, story_id)
     values (
       ${data.video_id}, ${data.section_id}, ${data.kind},
       ${data.kind === "research" ? data.research_id ?? null : null},
-      ${data.kind === "visual" ? data.visual_id ?? null : null}
+      ${data.kind === "visual" ? data.visual_id ?? null : null},
+      ${data.kind === "story" ? data.game_id ?? null : null},
+      ${data.kind === "story" ? data.story_id ?? null : null}
     )
     returning *
   `;

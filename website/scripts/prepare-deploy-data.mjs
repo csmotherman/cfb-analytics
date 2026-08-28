@@ -58,6 +58,13 @@ for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
     recordKeys
   ))files+=1;
 
+  // Full copy, not projected: the Creator Hub Game Room reads every field
+  // of this self-contained artifact (stories, drive timeline, funnel).
+  if(copyFile(
+    path.join(sourceSeason,"teams","michigan","game-stories.json"),
+    path.join(targetSeason,"teams","michigan","game-stories.json")
+  ))files+=1;
+
   if(projectArray(
     path.join(sourceSeason,"national","teams.json"),
     path.join(targetSeason,"national","teams.json"),

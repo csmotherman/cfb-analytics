@@ -1,6 +1,7 @@
 import { requireCreatorForSlug } from "../../actions";
 import { getNotesForCreator } from "../../../../lib/creator-hub/db";
 import { Disclosure } from "../Disclosure";
+import { LibraryTabs } from "../LibraryTabs";
 import { createNoteAction, convertNoteToVideoAction } from "../workspace-actions";
 
 export const dynamic = "force-dynamic";
@@ -20,6 +21,7 @@ export default async function NotesPage({ params }: { params: Promise<{ creatorS
 
   return (
     <>
+      <LibraryTabs creatorSlug={creator.slug} active="notes" />
       <div className="ch-page-head">
         <div><h1>Notes</h1><p>Loose thoughts, not full outlines yet.</p></div>
         <Disclosure trigger="+ Quick Note" primary>

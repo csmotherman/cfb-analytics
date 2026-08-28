@@ -3,6 +3,7 @@ import { getVisualsForCreator, getVideosForCreator, getAttachmentsForVideo } fro
 import { Disclosure } from "../Disclosure";
 import { VisualCard } from "../VisualCard";
 import { AddToVideoForm } from "../AddToVideoForm";
+import { LibraryTabs } from "../LibraryTabs";
 import { createVisualAction } from "../workspace-actions";
 
 export const dynamic = "force-dynamic";
@@ -14,6 +15,7 @@ export default async function VisualsLibraryPage({ params }: { params: Promise<{
 
   return (
     <>
+      <LibraryTabs creatorSlug={creator.slug} active="visuals" />
       <div className="ch-page-head">
         <div><h1>Visuals</h1><p>Charts and graphics, ready to put on screen.</p></div>
         <Disclosure trigger="+ New Visual" primary>

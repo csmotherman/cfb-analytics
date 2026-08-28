@@ -2,6 +2,7 @@ import { requireCreatorForSlug } from "../../actions";
 import { getResearchForCreator, getVideosForCreator, getAttachmentsForVideo } from "../../../../lib/creator-hub/db";
 import { Disclosure } from "../Disclosure";
 import { AddToVideoForm } from "../AddToVideoForm";
+import { LibraryTabs } from "../LibraryTabs";
 import { createResearchAction } from "../workspace-actions";
 
 export const dynamic = "force-dynamic";
@@ -25,6 +26,7 @@ export default async function ResearchLibraryPage({ params }: { params: Promise<
 
   return (
     <>
+      <LibraryTabs creatorSlug={creator.slug} active="research" />
       <div className="ch-page-head">
         <div><h1>Research</h1><p>Reusable research, attachable to any video.</p></div>
         <Disclosure trigger="+ New Research" primary>

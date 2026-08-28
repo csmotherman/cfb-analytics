@@ -87,6 +87,10 @@ jobs:
       - name: Publish national/conference/team season data
         run: python -m cfb_analytics.pipelines.publish --season ${{ env.SEASON }}
 
+      - name: Publish Michigan game story packs
+        continue-on-error: true
+        run: python -m cfb_analytics.pipelines.publish_michigan_game_stories --season ${{ env.SEASON }}
+
       # --- Deeper analytics: each needs a non-empty FBS field (i.e. real
       # games already played this season) to fit. They fail cleanly without
       # writing anything early in the season / on off-nights -- that's

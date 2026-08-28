@@ -99,24 +99,57 @@ create table if not exists creator_notes (
   author text not null default 'creator' check (author in ('creator','carter')),
   body text not null,
   converted_video_id integer references creator_videos(id) on delete set null,
+  -- Numeric CFBD gameId, not a foreign key: games live in the published
+  -- game-stories.json artifact (Python-owned), not a Postgres table. Lets a
+  -- quick note attach to a game without requiring a video yet.
+  game_id integer,
   created_at timestamptz not null default now()
 );
 create index if not exists creator_notes_creator_id_idx on creator_notes(creator_id);
+alter table creator_notes add column if not exists game_id integer;
 
--- Junction table: attaches reusable research/visuals to a video (section_id
--- null) or one specific section, without duplicating the underlying content.
+-- Junction table: attaches reusable research/visuals/stories to a video
+-- (section_id null = whole-video) or one specific section, without
+-- duplicating the underlying content. A 'story' attachment isn't a Postgres
+-- row -- game_id + story_id point into the published game-stories.json
+-- artifact, the same way research_id/visual_id point at Postgres rows.
 create table if not exists creator_attachments (
   id serial primary key,
   video_id integer not null references creator_videos(id) on delete cascade,
   section_id integer references creator_video_sections(id) on delete cascade,
-  kind text not null check (kind in ('research','visual')),
+  kind text not null,
   research_id integer references creator_research(id) on delete cascade,
   visual_id integer references creator_visuals(id) on delete cascade,
-  created_at timestamptz not null default now(),
-  check (
-    (kind = 'research' and research_id is not null and visual_id is null) or
-    (kind = 'visual' and visual_id is not null and research_id is null)
-  )
+  game_id integer,
+  story_id text,
+  created_at timestamptz not null default now()
 );
 create index if not exists creator_attachments_video_id_idx on creator_attachments(video_id);
 create index if not exists creator_attachments_section_id_idx on creator_attachments(section_id);
+alter table creator_attachments add column if not exists game_id integer;
+alter table creator_attachments add column if not exists story_id text;
+
+-- Idempotent constraint (re)installation: drop whatever check constraints
+-- already exist on this table (auto-generated names vary by how the table
+-- was first created) and install the current 3-branch shape fresh, so this
+-- file stays safe to re-run against a database created before 'story'
+-- attachments existed.
+do $$
+declare
+  constraint_name text;
+begin
+  for constraint_name in
+    select conname from pg_constraint
+    where conrelid = 'creator_attachments'::regclass and contype = 'c'
+  loop
+    execute format('alter table creator_attachments drop constraint %I', constraint_name);
+  end loop;
+end $$;
+alter table creator_attachments add constraint creator_attachments_kind_check
+  check (kind in ('research', 'visual', 'story'));
+alter table creator_attachments add constraint creator_attachments_shape_check
+  check (
+    (kind = 'research' and research_id is not null and visual_id is null and game_id is null and story_id is null) or
+    (kind = 'visual' and visual_id is not null and research_id is null and game_id is null and story_id is null) or
+    (kind = 'story' and game_id is not null and story_id is not null and research_id is null and visual_id is null)
+  );
