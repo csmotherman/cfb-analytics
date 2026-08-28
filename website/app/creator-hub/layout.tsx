@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../../styles/creator-hub-mobile.css";
 
 export const metadata: Metadata = {
   title: "Creator Hub",

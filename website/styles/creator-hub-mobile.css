@@ -1,0 +1,501 @@
+/* Creator Hub mobile ergonomics.
+   Loaded only by the Creator Hub layout so the public site is untouched. */
+
+.ch-shell{
+  min-width:0;
+  overflow-x:hidden;
+}
+
+.ch-shell button,
+.ch-shell input,
+.ch-shell textarea,
+.ch-shell select{
+  touch-action:manipulation;
+}
+
+@media (max-width:720px){
+  .ch-topbar{
+    padding-top:env(safe-area-inset-top);
+  }
+
+  .ch-topbar-inner{
+    height:auto;
+    min-height:0;
+    padding:8px 12px 0;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    gap:6px 10px;
+  }
+
+  .ch-topbar-brand{
+    min-width:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size:14px;
+  }
+
+  .ch-topbar-brand small{
+    display:inline;
+    font-size:9px;
+  }
+
+  .ch-topbar-actions{
+    grid-column:2;
+    grid-row:1;
+  }
+
+  .ch-topbar-lock{
+    min-height:38px;
+    padding:8px 12px;
+  }
+
+  .ch-topbar-nav{
+    grid-column:1 / -1;
+    width:calc(100% + 24px);
+    margin:0 -12px;
+    padding:2px 12px 8px;
+    gap:4px;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+
+  .ch-topbar-nav::-webkit-scrollbar,
+  .ch-library-tabs::-webkit-scrollbar,
+  .ch-filter-row::-webkit-scrollbar{
+    display:none;
+  }
+
+  .ch-topbar-nav a{
+    flex:0 0 auto;
+    min-height:40px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:9px 12px;
+    font-size:12.5px;
+  }
+
+  .ch-topbar-library{
+    margin-left:0;
+    border-left:0;
+    padding-left:12px!important;
+  }
+
+  .ch-container,
+  .ch-container.narrow{
+    width:100%;
+    max-width:100%;
+    padding:20px 14px calc(48px + env(safe-area-inset-bottom));
+  }
+
+  .ch-page-head{
+    display:block;
+    margin-bottom:22px;
+  }
+
+  .ch-page-head > div:first-child{
+    min-width:0;
+  }
+
+  .ch-page-head h1{
+    font-size:22px;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-page-head p{
+    font-size:13px;
+  }
+
+  .ch-page-actions{
+    width:100%;
+    margin-top:14px;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+  }
+
+  .ch-page-actions > .ch-btn{
+    width:100%;
+    min-width:0;
+    justify-content:center;
+  }
+
+  .ch-page-actions > .ch-card{
+    grid-column:1 / -1;
+    width:100%;
+    margin-bottom:0!important;
+  }
+
+  .ch-library-tabs,
+  .ch-filter-row{
+    width:calc(100% + 28px);
+    margin-left:-14px;
+    margin-right:-14px;
+    padding-left:14px;
+    padding-right:14px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    flex-wrap:nowrap;
+    overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+
+  .ch-library-tabs a,
+  .ch-filter-pill{
+    flex:0 0 auto;
+    white-space:nowrap;
+  }
+
+  .ch-btn{
+    min-height:44px;
+    justify-content:center;
+  }
+
+  .ch-btn-sm{
+    min-height:36px;
+    padding:7px 11px;
+  }
+
+  .ch-input,
+  .ch-textarea,
+  .ch-select{
+    font-size:16px;
+    min-height:44px;
+    padding:10px 11px;
+  }
+
+  .ch-textarea{
+    min-height:88px;
+  }
+
+  .ch-card-pad{
+    padding:15px 14px;
+  }
+
+  .ch-entry{
+    min-height:100svh;
+    justify-content:flex-start;
+    padding:44px 16px calc(32px + env(safe-area-inset-bottom));
+  }
+
+  .ch-entry-head{
+    margin-bottom:28px;
+  }
+
+  .ch-entry-head h1{
+    font-size:26px;
+  }
+
+  .ch-creator-grid{
+    grid-template-columns:1fr;
+    max-width:440px;
+  }
+
+  .ch-creator-card{
+    min-height:72px;
+    padding:17px 16px;
+  }
+
+  .ch-pin-backdrop{
+    align-items:flex-end;
+    padding:12px 12px calc(12px + env(safe-area-inset-bottom));
+  }
+
+  .ch-pin-modal{
+    max-width:none;
+    border-radius:16px;
+    padding:22px 18px;
+  }
+
+  .ch-pin-input{
+    font-size:28px;
+    min-height:54px;
+  }
+
+  .ch-video-card{
+    width:100%;
+    padding:15px 14px;
+    gap:12px;
+  }
+
+  .ch-video-card-title{
+    align-items:flex-start;
+    flex-wrap:wrap;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-video-card > .ch-btn,
+  .ch-video-card > span.ch-btn{
+    width:100%;
+  }
+
+  .ch-outline-head h1{
+    font-size:23px;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-outline-head .status-row{
+    flex-wrap:wrap;
+  }
+
+  .ch-outline-hook{
+    padding:12px 13px;
+    font-size:13.5px;
+  }
+
+  .ch-outline-section-head{
+    padding:13px 12px;
+    align-items:flex-start;
+  }
+
+  .ch-outline-section-head h3{
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-outline-section-body{
+    padding:0 12px 14px;
+  }
+
+  .ch-request-chip{
+    max-width:100%;
+    flex-wrap:wrap;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-note-card .meta{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .ch-home-game-score{
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  .ch-home-game-score .opp{
+    width:100%;
+    margin-left:0;
+  }
+
+  .ch-home-game .ch-btn{
+    width:100%;
+  }
+
+  .ch-game-row{
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+  }
+
+  .ch-game-row-score{
+    justify-content:flex-start;
+  }
+
+  .ch-game-row-body .headline,
+  .ch-game-row-body .concern{
+    overflow-wrap:anywhere;
+  }
+
+  .ch-gameroom-header{
+    gap:8px;
+    justify-content:space-between;
+    padding:18px 10px;
+  }
+
+  .ch-gameroom-header .side{
+    min-width:0;
+    flex:1 1 0;
+    text-align:center;
+  }
+
+  .ch-gameroom-header .side img{
+    width:46px!important;
+    height:46px!important;
+  }
+
+  .ch-gameroom-header .side .score{
+    font-size:32px;
+  }
+
+  .ch-gameroom-header .side .name{
+    max-width:100%;
+    font-size:11.5px;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-gameroom-header .mid{
+    flex:0 0 auto;
+    max-width:76px;
+    text-align:center;
+  }
+
+  .ch-gameroom-header .mid .week{
+    font-size:10px;
+  }
+
+  .ch-story-block-head{
+    display:grid;
+    grid-template-columns:auto minmax(0,1fr);
+    align-items:start;
+    gap:8px 10px;
+  }
+
+  .ch-story-block-head h3{
+    min-width:0;
+    font-size:15px;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-story-signal{
+    grid-column:2;
+    width:max-content;
+    max-width:100%;
+  }
+
+  .ch-story-evidence{
+    padding-left:16px;
+  }
+
+  .ch-viz-frame{
+    aspect-ratio:auto;
+    min-height:330px;
+    border-radius:9px;
+  }
+
+  .ch-viz-frame-inner{
+    padding:18px 14px 14px;
+  }
+
+  .ch-viz-title{
+    font-size:18px;
+  }
+
+  .ch-storycard{
+    gap:14px;
+  }
+
+  .ch-storycard-stat{
+    width:100%;
+  }
+
+  .ch-storycard-compare{
+    width:100%;
+  }
+
+  .ch-storycard-opp-logo{
+    width:32px!important;
+    height:32px!important;
+  }
+
+  .ch-viz-bars{
+    gap:15px;
+  }
+
+  .ch-viz-bar-row{
+    grid-template-columns:72px minmax(0,1fr) 48px;
+    gap:8px;
+  }
+
+  .ch-viz-bar-label{
+    font-size:11px;
+    text-align:left;
+    overflow-wrap:anywhere;
+  }
+
+  .ch-viz-bar-value{
+    font-size:13px;
+  }
+
+  .ch-drivemap{
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+  }
+
+  .ch-drivemap-row{
+    min-width:500px;
+  }
+
+  .ch-visual-fullscreen{
+    padding:calc(12px + env(safe-area-inset-top)) 10px calc(12px + env(safe-area-inset-bottom));
+  }
+
+  .ch-visual-fullscreen .close{
+    top:calc(10px + env(safe-area-inset-top));
+    right:10px;
+    min-height:40px;
+  }
+}
+
+@media (max-width:480px){
+  .ch-topbar-brand small{
+    display:none;
+  }
+
+  .ch-topbar-nav a{
+    padding-left:11px;
+    padding-right:11px;
+    font-size:12px;
+  }
+
+  .ch-page-actions{
+    grid-template-columns:1fr;
+  }
+
+  .ch-page-actions > .ch-card{
+    grid-column:1;
+  }
+
+  .ch-page-head h1{
+    font-size:21px;
+  }
+
+  .ch-section{
+    margin-bottom:28px;
+  }
+
+  .ch-section-head{
+    align-items:flex-start;
+  }
+
+  .ch-section-head .count{
+    text-align:right;
+  }
+
+  .ch-card-pad,
+  .ch-note-card{
+    padding:14px 12px;
+  }
+
+  .ch-gameroom-header{
+    padding-left:6px;
+    padding-right:6px;
+  }
+
+  .ch-gameroom-header .side img{
+    width:40px!important;
+    height:40px!important;
+  }
+
+  .ch-gameroom-header .side .score{
+    font-size:29px;
+  }
+
+  .ch-story-block{
+    margin-bottom:12px;
+  }
+
+  .ch-story-why,
+  .ch-story-angle{
+    font-size:13px;
+  }
+
+  .ch-viz-frame{
+    min-height:350px;
+  }
+}
