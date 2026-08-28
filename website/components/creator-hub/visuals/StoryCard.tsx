@@ -1,4 +1,3 @@
-import { TeamLogo } from "../../ui/TeamLogo";
 import { teamColors } from "../../../lib/team-colors";
 import { formatMetricValue, formatMetricDelta } from "../../../lib/creator-hub/format-metric";
 import { Visual16x9Frame } from "./Visual16x9Frame";
@@ -20,33 +19,51 @@ export function StoryCard({
   const gamesUsed = story.context.opponentGamesUsed as number | undefined;
   const michigan = teamColors(michiganTeamId);
   const opponent = teamColors(opponentTeamId);
-  const favorable = story.delta != null && story.delta > 0;
+  const values = [Math.abs(gameValue ?? 0), Math.abs(opponentBaseline ?? 0)];
+  const max = Math.max(...values, 0.0001);
+  const rank = story.percentile.rank;
+  const sampleSize = story.percentile.sampleSize;
+  const percentile = story.percentile.percentile == null ? null : Math.max(0, Math.min(100, story.percentile.percentile * 100));
 
   return (
     <Visual16x9Frame title={story.headline} source={`SOAR Analytics · ${story.definitionVersion}`}>
-      <div className="ch-storycard">
-        <div className="ch-storycard-stat" style={{ color: michigan.primary }}>
-          {michiganTeamId != null && <TeamLogo teamId={michiganTeamId} name="Michigan" size={64} className="ch-storycard-logo" />}
-          <div className="ch-storycard-number">{formatMetricValue(story.metric, gameValue)}</div>
-          <div className="ch-storycard-caption">Michigan this game</div>
+      <div className="ch-storychart">
+        <div className="ch-storychart-bars">
+          <div className="ch-storychart-row">
+            <div className="ch-storychart-label">Michigan</div>
+            <div className="ch-storychart-track">
+              <div className="ch-storychart-fill" style={{ width: `${Math.max((Math.abs(gameValue ?? 0) / max) * 100, 2)}%`, background: michigan.primary }} />
+            </div>
+            <strong>{formatMetricValue(story.metric, gameValue)}</strong>
+          </div>
+          <div className="ch-storychart-row">
+            <div className="ch-storychart-label">{opponentName} normal{gamesUsed != null ? ` (${gamesUsed})` : ""}</div>
+            <div className="ch-storychart-track">
+              <div className="ch-storychart-fill" style={{ width: `${Math.max((Math.abs(opponentBaseline ?? 0) / max) * 100, 2)}%`, background: opponent.primary }} />
+            </div>
+            <strong>{formatMetricValue(story.metric, opponentBaseline)}</strong>
+          </div>
         </div>
 
-        <div className="ch-storycard-compare">
-          <div className="ch-storycard-row">
-            <span className="label">{opponentName} normal{gamesUsed != null ? ` (${gamesUsed} games)` : ""}</span>
-            <span className="value">{formatMetricValue(story.metric, opponentBaseline)}</span>
+        <div className="ch-storychart-footer">
+          <div className={`ch-storychart-delta ${story.polarity}`}>
+            <span>vs expectation</span>
+            <strong>{formatMetricDelta(story.metric, story.delta)}</strong>
           </div>
-          <div className={`ch-storycard-delta ${favorable ? "good" : "bad"}`} style={{ borderColor: favorable ? michigan.primary : undefined }}>
-            {formatMetricDelta(story.metric, story.delta)} vs. expectation
-          </div>
-          {story.percentile.rank != null && (
-            <div className="ch-storycard-rank">
-              {story.percentile.rank === 1 ? "Best" : `#${story.percentile.rank} of ${story.percentile.sampleSize}`} {opponentName} has faced this season
+          {rank != null && (
+            <div className="ch-storychart-rank">
+              <div className="ch-storychart-rank-head">
+                <span>Rank among {opponentName} games</span>
+                <strong>#{rank} / {sampleSize}</strong>
+              </div>
+              {percentile != null && (
+                <div className="ch-storychart-rank-track">
+                  <span style={{ left: `calc(${percentile}% - 5px)` }} />
+                </div>
+              )}
             </div>
           )}
         </div>
-
-        {opponentTeamId != null && <TeamLogo teamId={opponentTeamId} name={opponentName} size={64} className="ch-storycard-opp-logo" />}
       </div>
       {story.signalClass === "LIKELY_NOISY" && <div className="ch-viz-caveat">Small sample -- treat as a lead, not a conclusion.</div>}
     </Visual16x9Frame>
