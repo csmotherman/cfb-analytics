@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export function LibraryTabs({ creatorSlug, active }: { creatorSlug: string; active: "research" | "visuals" | "notes" }) {
-  const base = `/creator-hub/${creatorSlug}`;
+  const base = `/creator-hub/${creatorSlug}/library`;
   const tabs: [string, "research" | "visuals" | "notes"][] = [
     ["Research", "research"],
     ["Visuals", "visuals"],

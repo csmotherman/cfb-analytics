@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireCreatorForSlug } from "../../../actions";
-import { findGameStoryPackByGameId } from "../../../../../lib/creator-hub/game-story";
+import { findGameStoryPackByGameId, getAllKnownGameStoryPacks } from "../../../../../lib/creator-hub/game-story";
 import { getVideosForCreator } from "../../../../../lib/creator-hub/db";
 import { TeamLogo } from "../../../../../components/ui/TeamLogo";
 import { Disclosure } from "../../Disclosure";
@@ -31,7 +31,7 @@ function AddToVideoForm({ gameId, story, videos }: { gameId: string; story: Game
         </div>
         <div className="ch-field">
           <label>If new: title</label>
-          <input className="ch-input" name="newVideoTitle" placeholder={`Michigan vs ...: What Actually Happened`} />
+          <input className="ch-input" name="newVideoTitle" placeholder="Michigan vs ...: What Actually Happened" />
         </div>
         <button type="submit" className="ch-btn ch-btn-primary">Add story as a new section</button>
       </form>
@@ -39,9 +39,53 @@ function AddToVideoForm({ gameId, story, videos }: { gameId: string; story: Game
   );
 }
 
-export default async function GameRoomPage({ params }: { params: Promise<{ creatorSlug: string; gameId: string }> }) {
+function GameRoomList({ creatorSlug }: { creatorSlug: string }) {
+  const packs = getAllKnownGameStoryPacks();
+
+  return (
+    <>
+      <div className="ch-page-head">
+        <div><h1>Game Room</h1><p>What the data revealed, game by game -- not a recap.</p></div>
+      </div>
+
+      {packs.length === 0 ? (
+        <div className="ch-empty">No game story packs published yet.</div>
+      ) : (
+        <div className="ch-video-list">
+          {packs.map((pack) => {
+            const top = pack.stories[0];
+            const concern = pack.stories.find((s) => s.polarity === "concern");
+            return (
+              <Link key={pack.gameId} href={`/creator-hub/${creatorSlug}/games/${pack.gameId}`} className="ch-card ch-card-pad ch-game-row">
+                <div className="ch-game-row-score">
+                  {pack.michiganTeamId != null && <TeamLogo teamId={pack.michiganTeamId} name="Michigan" size={64} className="ch-game-row-logo" />}
+                  <span className={pack.win ? "win" : "loss"}>{pack.pointsFor}-{pack.pointsAgainst}</span>
+                  {pack.opponentTeamId != null && <TeamLogo teamId={pack.opponentTeamId} name={pack.opponent} size={64} className="ch-game-row-logo" />}
+                </div>
+                <div className="ch-game-row-body">
+                  <div className="meta">Week {pack.week} &middot; vs {pack.opponent}</div>
+                  {top && <div className="headline">{top.headline}</div>}
+                  {concern && concern !== top && <div className="concern">Also: {concern.headline}</div>}
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      )}
+    </>
+  );
+}
+
+export default async function GameRoomPage({
+  params,
+}: {
+  params: Promise<{ creatorSlug: string; gameId: string }>;
+}) {
   const { creatorSlug, gameId } = await params;
   const creator = await requireCreatorForSlug(creatorSlug);
+
+  if (gameId === "all") return <GameRoomList creatorSlug={creator.slug} />;
+
   const pack = findGameStoryPackByGameId(gameId);
   if (!pack) notFound();
 
