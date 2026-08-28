@@ -23,6 +23,7 @@ import "../styles/expansion.css";
 import "../styles/preseason-power.css";
 import "../styles/offensive-profile-radar.css";
 import "../styles/creator-hub.css";
+import "../styles/creator-hub-insights.css";
 import { PublicChrome } from "../components/PublicChrome";
 
 export const metadata: Metadata = {
