@@ -15,6 +15,7 @@ dependencies = [
 dev = ["pytest>=8,<9"]
 models = [
   "numpy>=2,<3",
+  "scipy>=1.15,<2",
   "scikit-learn>=1.6,<2",
 ]
 publish = ["pyarrow>=18,<22"]
@@ -22,6 +23,7 @@ publish = ["pyarrow>=18,<22"]
 [project.scripts]
 cfb-raw = "cfb_analytics.raw.cli:main"
 cfb-drive-forensics = "cfb_analytics.derived.drive_forensics_cli:main"
+cfb-adjusted-ratings = "cfb_analytics.analytics.schedule_adjusted.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
