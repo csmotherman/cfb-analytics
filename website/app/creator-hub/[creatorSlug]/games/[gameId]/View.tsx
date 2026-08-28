@@ -6,7 +6,9 @@ import { getVideosForCreator } from "../../../../../lib/creator-hub/db";
 import { TeamLogo } from "../../../../../components/ui/TeamLogo";
 import { Disclosure } from "../../Disclosure";
 import { StoryCard } from "../../../../../components/creator-hub/visuals/StoryCard";
-import { ComparisonBarChart } from "../../../../../components/creator-hub/visuals/ComparisonBarChart";
+import { OpponentAdjustedTable } from "../../../../../components/creator-hub/visuals/OpponentAdjustedTable";
+import { DriveFunnelChart } from "../../../../../components/creator-hub/visuals/DriveFunnelChart";
+import { HalfSplitChart } from "../../../../../components/creator-hub/visuals/HalfSplitChart";
 import { DriveMap } from "../../../../../components/creator-hub/visuals/DriveMap";
 import { teamColors } from "../../../../../lib/team-colors";
 import { addStoryToVideoAction } from "../../workspace-actions";
@@ -45,7 +47,7 @@ function GameRoomList({ creatorSlug }: { creatorSlug: string }) {
   return (
     <>
       <div className="ch-page-head">
-        <div><h1>Game Room</h1><p>What the data revealed, game by game -- not a recap.</p></div>
+        <div><h1>Game Room</h1><p>Charts, tables and drive-level data for every game.</p></div>
       </div>
 
       {packs.length === 0 ? (
@@ -53,8 +55,8 @@ function GameRoomList({ creatorSlug }: { creatorSlug: string }) {
       ) : (
         <div className="ch-video-list">
           {packs.map((pack) => {
-            const top = pack.stories[0];
-            const concern = pack.stories.find((s) => s.polarity === "concern");
+            const strongSignals = pack.stories.filter((s) => s.signalClass === "STRONG_SIGNAL").length;
+            const concerns = pack.stories.filter((s) => s.polarity === "concern").length;
             return (
               <Link key={pack.gameId} href={`/creator-hub/${creatorSlug}/games/${pack.gameId}`} className="ch-card ch-card-pad ch-game-row">
                 <div className="ch-game-row-score">
@@ -63,9 +65,8 @@ function GameRoomList({ creatorSlug }: { creatorSlug: string }) {
                   {pack.opponentTeamId != null && <TeamLogo teamId={pack.opponentTeamId} name={pack.opponent} size={64} className="ch-game-row-logo" />}
                 </div>
                 <div className="ch-game-row-body">
-                  <div className="meta">Week {pack.week} &middot; vs {pack.opponent}</div>
-                  {top && <div className="headline">{top.headline}</div>}
-                  {concern && concern !== top && <div className="concern">Also: {concern.headline}</div>}
+                  <div className="meta">{pack.season} · Week {pack.week} · vs {pack.opponent}</div>
+                  <div className="headline">{strongSignals} strong signal{strongSignals === 1 ? "" : "s"} · {concerns} concern{concerns === 1 ? "" : "s"} · {pack.driveTimeline.length} drives tracked</div>
                 </div>
               </Link>
             );
@@ -105,7 +106,7 @@ export default async function GameRoomPage({
         </div>
         <div className="mid">
           <span className="final">FINAL</span>
-          <span className="week">Week {pack.week} &middot; {pack.homeAway === "home" ? "Home" : "Away"}</span>
+          <span className="week">{pack.season} · Week {pack.week} · {pack.homeAway === "home" ? "Home" : "Away"}</span>
         </div>
         <div className="side" style={{ color: opponentColors.primary }}>
           {pack.opponentTeamId != null && <TeamLogo teamId={pack.opponentTeamId} name={pack.opponent} size={64} />}
@@ -114,52 +115,65 @@ export default async function GameRoomPage({
         </div>
       </div>
 
-      <div className="ch-outline-subhead" style={{ marginTop: 28 }}>What actually decided this game</div>
+      <div className="ch-dashboard-intro">
+        <span>GAME DATA DASHBOARD</span>
+        <h2>See the game before reading the takeaways.</h2>
+        <p>Every visual below is generated from the published game-story data: opponent-adjusted metrics, possession conversion, success rate splits and drive results.</p>
+      </div>
 
-      {pack.stories.map((story, index) => (
-        <div key={story.id} className="ch-card ch-card-pad ch-story-block">
-          <div className="ch-story-block-head">
-            <span className="num">{index + 1}</span>
-            <h3>{story.headline}</h3>
-            <span className={`ch-story-signal ${story.signalClass.toLowerCase()}`}>{SIGNAL_LABEL[story.signalClass]}</span>
-          </div>
-          <ul className="ch-story-evidence">
-            {story.evidence.map((line, i) => <li key={i}>{line}</li>)}
-          </ul>
-          <p className="ch-story-why"><strong>Why it matters:</strong> {story.whyItMatters}</p>
-          <p className="ch-story-angle"><strong>Video angle:</strong> &ldquo;{story.videoAngle}&rdquo;</p>
-          {story.percentile.sampleSizeCaveat && <p className="ch-story-caveat">{story.percentile.sampleSizeCaveat}</p>}
+      <OpponentAdjustedTable stories={pack.stories} opponentName={pack.opponent} />
 
-          <div style={{ display: "flex", gap: 8, marginTop: 14, flexWrap: "wrap" }}>
-            <Disclosure trigger="Show Visual" title="Visual">
-              <StoryCard story={story} michiganTeamId={pack.michiganTeamId} opponentTeamId={pack.opponentTeamId} opponentName={pack.opponent} />
-            </Disclosure>
-            <AddToVideoForm gameId={pack.gameId} story={story} videos={videos} />
-          </div>
-        </div>
-      ))}
-
-      {pack.stories[0] && (
-        <>
-          <div className="ch-outline-subhead" style={{ marginTop: 28 }}>Comparison</div>
-          <ComparisonBarChart
-            title={pack.stories[0].headline}
-            metric={pack.stories[0].metric}
-            source={`SOAR Analytics · ${pack.stories[0].definitionVersion}`}
-            bars={[
-              { label: "Michigan", value: pack.stories[0].context.gameValue as number | null, color: michiganColors.primary },
-              { label: `${pack.opponent} normal`, value: pack.stories[0].context.opponentBaseline as number | null, color: opponentColors.primary },
-            ]}
+      <div className="ch-data-grid">
+        <DriveFunnelChart
+          offense={pack.driveFunnel.offense}
+          defense={pack.driveFunnel.defense}
+          michiganTeamId={pack.michiganTeamId}
+          opponentTeamId={pack.opponentTeamId}
+          opponentName={pack.opponent}
+        />
+        {pack.halfSplit && (
+          <HalfSplitChart
+            michigan={pack.halfSplit.michigan}
+            opponent={pack.halfSplit.opponent}
+            michiganTeamId={pack.michiganTeamId}
+            opponentTeamId={pack.opponentTeamId}
+            opponentName={pack.opponent}
           />
-        </>
-      )}
+        )}
+      </div>
 
       {pack.driveTimeline.length > 0 && (
-        <>
-          <div className="ch-outline-subhead" style={{ marginTop: 28 }}>Drive Map</div>
+        <section className="ch-data-panel ch-data-panel-wide">
+          <div className="ch-data-panel-head">
+            <div>
+              <h2>Drive timeline</h2>
+              <p>Field position, yards gained and result for every meaningful possession.</p>
+            </div>
+          </div>
           <DriveMap drives={pack.driveTimeline} michiganTeamId={pack.michiganTeamId} opponentTeamId={pack.opponentTeamId} opponentName={pack.opponent} />
-        </>
+        </section>
       )}
+
+      <div className="ch-outline-subhead" style={{ marginTop: 32 }}>Video angles from the data</div>
+      <div className="ch-story-notes-grid">
+        {pack.stories.map((story) => (
+          <div key={story.id} className="ch-card ch-card-pad ch-story-note">
+            <div className="ch-story-note-head">
+              <span className={`ch-story-signal ${story.signalClass.toLowerCase()}`}>{SIGNAL_LABEL[story.signalClass]}</span>
+              <span className={`ch-story-note-polarity ${story.polarity}`}>{story.polarity}</span>
+            </div>
+            <h3>{story.headline}</h3>
+            <p>{story.videoAngle}</p>
+            {story.percentile.sampleSizeCaveat && <p className="ch-story-caveat">{story.percentile.sampleSizeCaveat}</p>}
+            <div className="ch-story-note-actions">
+              <Disclosure trigger="Open metric chart" title={story.headline}>
+                <StoryCard story={story} michiganTeamId={pack.michiganTeamId} opponentTeamId={pack.opponentTeamId} opponentName={pack.opponent} />
+              </Disclosure>
+              <AddToVideoForm gameId={pack.gameId} story={story} videos={videos} />
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
