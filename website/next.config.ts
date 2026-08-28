@@ -15,7 +15,11 @@ const nextConfig: NextConfig = {
       { source: "/recruiting/players/:id", destination: "/new-additions", permanent: true },
       { source: "/recruiting/teams/:team", destination: "/new-additions", permanent: true },
       { source: "/football/:season", destination: "/analytics?year=:season", permanent: true },
-      { source: "/teams/:team/:season", destination: "/analytics?year=:season", permanent: true }
+      { source: "/teams/:team/:season", destination: "/analytics?year=:season", permanent: true },
+      { source: "/creator-hub/:creatorSlug/research", destination: "/creator-hub/:creatorSlug/library/research", permanent: false },
+      { source: "/creator-hub/:creatorSlug/visuals", destination: "/creator-hub/:creatorSlug/library/visuals", permanent: false },
+      { source: "/creator-hub/:creatorSlug/notes", destination: "/creator-hub/:creatorSlug/library/notes", permanent: false },
+      { source: "/creator-hub/:creatorSlug/library", destination: "/creator-hub/:creatorSlug/library/research", permanent: false }
     ];
   },
 
