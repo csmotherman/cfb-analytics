@@ -54,22 +54,26 @@ export function HalfSplitChart({
       <div className="ch-half-chart" role="img" aria-label={`Success rate by half for Michigan and ${opponentName}`}>
         <div className="ch-half-yaxis"><span>100%</span><span>50%</span><span>0%</span></div>
         <div className="ch-half-groups">
-          {halves.map((half) => (
-            <div className="ch-half-group" key={half.label}>
-              <div className="ch-half-bars">
-                <div className="ch-half-bar-wrap">
-                  <span className="ch-half-value">{label(half.michiganRate)}</span>
-                  <div className="ch-half-bar" style={{ height: `${Math.max(pct(half.michiganRate), 2)}%`, background: michiganColors.primary }} />
+          {halves.map((half) => {
+            const michiganHeight = Math.max(pct(half.michiganRate), 2);
+            const opponentHeight = Math.max(pct(half.opponentRate), 2);
+            return (
+              <div className="ch-half-group" key={half.label}>
+                <div className="ch-half-bars">
+                  <div className="ch-half-bar-wrap">
+                    <span className="ch-half-value" style={{ bottom: `calc(${michiganHeight}% + 4px)` }}>{label(half.michiganRate)}</span>
+                    <div className="ch-half-bar" style={{ height: `${michiganHeight}%`, background: michiganColors.primary }} />
+                  </div>
+                  <div className="ch-half-bar-wrap">
+                    <span className="ch-half-value" style={{ bottom: `calc(${opponentHeight}% + 4px)` }}>{label(half.opponentRate)}</span>
+                    <div className="ch-half-bar" style={{ height: `${opponentHeight}%`, background: opponentColors.primary }} />
+                  </div>
                 </div>
-                <div className="ch-half-bar-wrap">
-                  <span className="ch-half-value">{label(half.opponentRate)}</span>
-                  <div className="ch-half-bar" style={{ height: `${Math.max(pct(half.opponentRate), 2)}%`, background: opponentColors.primary }} />
-                </div>
+                <strong>{half.label}</strong>
+                <small>Michigan {half.michiganPlays} plays · {opponentName} {half.opponentPlays}</small>
               </div>
-              <strong>{half.label}</strong>
-              <small>Michigan {half.michiganPlays} plays · {opponentName} {half.opponentPlays}</small>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
