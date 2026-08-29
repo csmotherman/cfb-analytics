@@ -9,6 +9,7 @@ import {teamLogoUrl} from "../lib/team-assets";
 const desktopLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 const mobileLinks=[["/","Home"],["/team","Team"],["/schedule","Schedule"],["/analytics","Analytics"]] as const;
 const moreLinks=[
+  {href:"/charts",label:"Chart Room",meta:"Creator-ready opponent-adjusted visuals and storylines"},
   {href:"/articles",label:"News & Analysis",meta:"Stories, previews and notebooks"},
   {href:"/players",label:"Players",meta:"Profiles, production grades and career stats"},
   {href:"/rankings",label:"Top 25 Rankings",meta:"2026 preseason power ratings, no AP poll or Vegas input"},
