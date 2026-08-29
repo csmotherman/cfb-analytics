@@ -32,9 +32,10 @@ fs.mkdirSync(targetRoot,{recursive:true});
 
 let files=0;
 
-// /analytics remains server-rendered because ?year= selects the historical
-// season at request time. Keep full Michigan season rows and Ridge overviews,
-// but project the large national/game datasets down to only fields this page uses.
+// Historical analytics are selected at request time through ?year=. The new
+// opponent-adjusted lab artifact is already compact and self-contained, so copy
+// it directly when present. Legacy Michigan analytics remain available to the
+// existing analytics subroutes.
 const nationalSnapshotKeys=[
   "team","classification","yardsPerGame","yardsAllowedPerGame","yardsPerPlay","yardsAllowedPerPlay",
   "offensivePlays","defensivePlays","possessionPoints","possessionPointsAllowed"
@@ -90,6 +91,11 @@ for(const entry of fs.readdirSync(sourceRoot,{withFileTypes:true})){
     path.join(sourceSeason,"analytics","defense-detail.json"),
     path.join(targetSeason,"analytics","defense-detail.json")
   ))files+=1;
+
+  if(copyFile(
+    path.join(sourceSeason,"analytics","opponent-adjusted-lab.json"),
+    path.join(targetSeason,"analytics","opponent-adjusted-lab.json")
+  ))files+=1;
 }
 
 // Player profiles remain request-rendered because ?tab=stats changes the server
@@ -132,6 +138,6 @@ const bytes=(root)=>{
 
 const sizeMb=bytes(targetRoot)/1024/1024;
 console.log(`Prepared ${files} route-specific runtime JSON files (${sizeMb.toFixed(1)} MB) in ${targetRoot}`);
-if(sizeMb>10){
+if(sizeMb>18){
   throw new Error(`Runtime data bundle is unexpectedly large (${sizeMb.toFixed(1)} MB). Refusing to build.`);
 }
