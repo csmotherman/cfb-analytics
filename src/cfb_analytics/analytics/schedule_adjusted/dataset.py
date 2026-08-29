@@ -55,7 +55,7 @@ def build_observations(rows: Iterable[Mapping[str, Any]], spec: MetricSpec, *, s
         if offense_team is None or defense_team is None or offense_team == defense_team: continue
         duplicate_key = (game_id, offense_team)
         if duplicate_key in seen: continue
-        numerator = _number(row.get(spec.numerator_field))
+        numerator = spec.numerator_value(row)
         denominator = _number(row.get(spec.denominator_field))
         if numerator is None or denominator is None or denominator <= 0: continue
         if spec.family == "binomial" and (numerator < -1e-9 or numerator > denominator + 1e-9): continue
