@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Literal
+from typing import Any, Literal, Mapping
 
 ModelFamily = Literal["binomial", "gaussian"]
 
@@ -15,6 +15,12 @@ class MetricSpec:
     better for the offense. This gives every fitted metric the same semantics:
     positive offensive effects are good offense and positive defensive effects
     are good defense.
+
+    Most production metrics have one materialized numerator field. A small
+    number are defined as the sum of multiple locked count fields; those extra
+    fields live in ``additional_numerator_fields`` so the schedule-adjusted
+    layer reconstructs the exact production definition rather than substituting
+    a similarly named proxy.
     """
 
     name: str
@@ -24,10 +30,25 @@ class MetricSpec:
     higher_is_better_offense: bool
     label: str
     unit: str
+    additional_numerator_fields: tuple[str, ...] = ()
 
     @property
     def orientation(self) -> float:
         return 1.0 if self.higher_is_better_offense else -1.0
+
+    @property
+    def numerator_fields(self) -> tuple[str, ...]:
+        return (self.numerator_field, *self.additional_numerator_fields)
+
+    def numerator_value(self, row: Mapping[str, Any]) -> float | None:
+        """Reconstruct the authoritative numerator from locked count fields."""
+        total = 0.0
+        for field in self.numerator_fields:
+            value = row.get(field)
+            if isinstance(value, bool) or not isinstance(value, (int, float)):
+                return None
+            total += float(value)
+        return total
 
 
 # Research-only v1 registry. Every numerator/denominator pair is already
@@ -50,7 +71,16 @@ METRIC_SPECS: dict[str, MetricSpec] = {
     "explosivePlayRate": MetricSpec("explosivePlayRate", "explosivePlays", "explosiveEligiblePlays", "binomial", True, "Explosive-play rate", "rate"),
     "rushExplosivePlayRate": MetricSpec("rushExplosivePlayRate", "rushExplosivePlays", "rushExplosiveEligiblePlays", "binomial", True, "Rush explosive-play rate", "rate"),
     "passExplosivePlayRate": MetricSpec("passExplosivePlayRate", "passExplosivePlays", "passExplosiveEligiblePlays", "binomial", True, "Pass explosive-play rate", "rate"),
-    "scoringRatePerPossession": MetricSpec("scoringRatePerPossession", "scoringOpportunities", "possessions", "binomial", True, "Scoring-opportunity rate per possession", "rate"),
+    "scoringRatePerPossession": MetricSpec(
+        "scoringRatePerPossession",
+        "possessionTouchdowns",
+        "possessions",
+        "binomial",
+        True,
+        "Scoring rate per possession",
+        "rate",
+        additional_numerator_fields=("possessionFieldGoals", "otherScoringPossessions"),
+    ),
     "touchdownRatePerPossession": MetricSpec("touchdownRatePerPossession", "possessionTouchdowns", "possessions", "binomial", True, "Touchdown rate per possession", "rate"),
     "touchdownRatePerOpportunity": MetricSpec("touchdownRatePerOpportunity", "opportunityTouchdowns", "scoringOpportunities", "binomial", True, "Touchdown rate per scoring opportunity", "rate"),
     "fieldGoalRatePerOpportunity": MetricSpec("fieldGoalRatePerOpportunity", "opportunityFieldGoals", "scoringOpportunities", "binomial", True, "Field-goal rate per scoring opportunity", "rate"),
