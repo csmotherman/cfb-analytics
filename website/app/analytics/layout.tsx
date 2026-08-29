@@ -3,6 +3,7 @@ import "../../styles/analytics-shell.css";
 import "../../styles/analytics-year-wheel-fix.css";
 import "../../styles/fan-overview.css";
 import "../../styles/unit-detail.css";
+import "../../styles/analytics-lab.css";
 
 export default function AnalyticsLayout({children}:{children:ReactNode}){
   return <div className="analytics-shell">
