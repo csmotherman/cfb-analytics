@@ -28,10 +28,11 @@ from cfb_analytics.analytics.schedule_adjusted.pregame_features import (
     VALIDATED_PREGAME_METRICS,
     attach_schedule_adjusted_pregame_features,
 )
+from cfb_analytics.analytics.walk_forward_baseline import DEFAULT_SEASONS
 
 CHALLENGER_VERSION = "prediction-v3-schedule-adjusted-v1"
-RESEARCH_SEASONS = (2023, 2024, 2025)
-TEST_SEASONS = (2024, 2025)
+RESEARCH_SEASONS = tuple(DEFAULT_SEASONS)
+TEST_SEASONS = (2023, 2024, 2025)
 PREDICTION_V3_FEATURES = tuple(PREDICTION_V2_FEATURES) + tuple(SCHEDULE_ADJUSTED_EDGE_FEATURES)
 
 
@@ -131,6 +132,7 @@ def concise(results: list[dict[str, Any]]) -> str:
     lines = [
         "PREDICTION V3 SCHEDULE-ADJUSTED CHALLENGER",
         f"Version: {CHALLENGER_VERSION}",
+        f"Training seasons: {RESEARCH_SEASONS[0]}-{RESEARCH_SEASONS[-1]} excluding unavailable baseline seasons",
         f"Base features: {len(PREDICTION_V2_FEATURES)} | adjusted additions: {len(SCHEDULE_ADJUSTED_EDGE_FEATURES)} | total: {len(PREDICTION_V3_FEATURES)}",
         f"Schedule-adjusted ridge: {PREGAME_RIDGE:g} | home ridge: {PREGAME_HOME_RIDGE:g}",
         "Negative MAE/RMSE delta is better. Positive winner delta is better.",
