@@ -209,7 +209,7 @@ export function OpponentAdjustedLab({data,seasons}:{data:OpponentAdjustedLabData
       <div className="oa-method-card">
         <span>MODEL</span>
         <strong>Schedule Adjusted</strong>
-        <div><b>Ridge {data.ridge:g}</b><b>Home {data.homeRidge:g}</b></div>
+        <div><b>Ridge {data.ridge.toFixed(0)}</b><b>Home {data.homeRidge.toFixed(0)}</b></div>
         <small>Strict leave-one-game-out grading</small>
       </div>
     </section>
@@ -267,12 +267,12 @@ export function OpponentAdjustedLab({data,seasons}:{data:OpponentAdjustedLabData
 
     <section className="oa-ranking-card">
       <div className="oa-panel-title"><span>NATIONAL RANKINGS</span><h3>{metric.l} performance over expected</h3><p>Same week window for every FBS team. Positive POE is better on both offense and defense.</p></div>
-      <div className="oa-table-scroll"><table><thead><tr><th>RK</th><th>TEAM</th><th>G</th><th>ACTUAL</th><th>EXPECTED</th><th>POE</th></tr></thead><tbody>{tableRows.map((row,index)=><tr key={row.team.id} className={row.team.id===selectedTeam.id?"selected":""}><td>{row.rank}</td><td><b>{row.team.n}</b><small>{row.team.c}</small></td><td>{row.aggregate.games}</td><td>{formatValue(row.aggregate.actual,metric)}</td><td>{formatValue(row.aggregate.expected,metric)}</td><td className={row.aggregate.poe>=0?"positive":"negative"}>{formatValue(row.aggregate.poe,metric,true)}</td>{index===24&&selectedMetricRank&&selectedMetricRank>25?<></>:null}</tr>)}</tbody></table></div>
+      <div className="oa-table-scroll"><table><thead><tr><th>RK</th><th>TEAM</th><th>G</th><th>ACTUAL</th><th>EXPECTED</th><th>POE</th></tr></thead><tbody>{tableRows.map(row=><tr key={row.team.id} className={row.team.id===selectedTeam.id?"selected":""}><td>{row.rank}</td><td><b>{row.team.n}</b><small>{row.team.c}</small></td><td>{row.aggregate.games}</td><td>{formatValue(row.aggregate.actual,metric)}</td><td>{formatValue(row.aggregate.expected,metric)}</td><td className={row.aggregate.poe>=0?"positive":"negative"}>{formatValue(row.aggregate.poe,metric,true)}</td></tr>)}</tbody></table></div>
     </section>
 
     <section className="oa-game-log">
       <div className="oa-panel-title"><span>GAME-BY-GAME</span><h3>Actual → Expected → POE</h3></div>
-      <div className="oa-table-scroll"><table><thead><tr><th>GAME</th><th>SCORE</th><th>ACTUAL</th><th>EXPECTED</th><th>POE</th></tr></thead><tbody>{selectedGames.map(game=>{const values=metricSlice(game,metricIndex,side);return <tr key={`${game.id}-${game.t}`}><td><b>{gameLabel(game)}</b><small>{game.ha?game.ha.toUpperCase():game.n?"NEUTRAL":""}</small></td><td>{finite(game.pf)&&finite(game.pa)?`${game.pf}-${game.pa}`:"—"}</td><td>{formatValue(values.actual,metric)}</td><td>{formatValue(values.expected,metric)}</td><td className={(values.poe??0)>=0?"positive":"negative"}>{formatValue(values.poe,metric,true)}</td></tr>;})}</tbody></table></div>
+      <div className="oa-table-scroll"><table><thead><tr><th>GAME</th><th>SCORE</th><th>ACTUAL</th><th>EXPECTED</th><th>POE</th></tr></thead><tbody>{selectedGames.map(game=>{const values=metricSlice(game,metricIndex,side);return <tr key={`${game.id}-${game.t}`}><td><b>{gameLabel(game)}</b><small>{game.n?"NEUTRAL":game.ha?game.ha.toUpperCase():""}</small></td><td>{finite(game.pf)&&finite(game.pa)?`${game.pf}-${game.pa}`:"—"}</td><td>{formatValue(values.actual,metric)}</td><td>{formatValue(values.expected,metric)}</td><td className={(values.poe??0)>=0?"positive":"negative"}>{formatValue(values.poe,metric,true)}</td></tr>;})}</tbody></table></div>
     </section>
 
     <section className="oa-methodology">
