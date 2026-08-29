@@ -1,0 +1,30 @@
+{
+  "fitHomeField": true,
+  "homeRidge": 40.0,
+  "metrics": [
+    "successRate",
+    "rushSuccessRate",
+    "passSuccessRate",
+    "explosivePlayRate",
+    "yardsPerPlay"
+  ],
+  "ridge": 40.0,
+  "season": 2025,
+  "teams": {
+    "BYU": {
+      "csv": "data/research/game-analysis/2025-byu-schedule-adjusted-games.csv",
+      "games": 13,
+      "json": "data/research/game-analysis/2025-byu-schedule-adjusted-games.json"
+    },
+    "Michigan": {
+      "csv": "data/research/game-analysis/2025-michigan-schedule-adjusted-games.csv",
+      "games": 13,
+      "json": "data/research/game-analysis/2025-michigan-schedule-adjusted-games.json"
+    },
+    "Utah": {
+      "csv": "data/research/game-analysis/2025-utah-schedule-adjusted-games.csv",
+      "games": 12,
+      "json": "data/research/game-analysis/2025-utah-schedule-adjusted-games.json"
+    }
+  }
+}

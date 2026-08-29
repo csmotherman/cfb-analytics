@@ -1,0 +1,1346 @@
+[
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401778331",
+    "home_away": "home",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.3968253968253968,
+          "expected": 0.42484596851195605,
+          "network_supported": true,
+          "opponent_exposure": 662.0,
+          "performance_over_expected": 0.028020571686559248,
+          "subject_exposure": 719.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.5362318840579711,
+          "expected": 0.47716056310230504,
+          "network_supported": true,
+          "opponent_exposure": 630.0,
+          "performance_over_expected": 0.05907132095566603,
+          "subject_exposure": 754.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.45454545454545453,
+          "expected": 0.4545759533068382,
+          "network_supported": true,
+          "opponent_exposure": 331.0,
+          "performance_over_expected": 3.049876138366825e-05,
+          "subject_exposure": 381.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.5405405405405406,
+          "expected": 0.5065953969615593,
+          "network_supported": true,
+          "opponent_exposure": 362.0,
+          "performance_over_expected": 0.03394514357898126,
+          "subject_exposure": 446.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.3333333333333333,
+          "expected": 0.3905580647019071,
+          "network_supported": true,
+          "opponent_exposure": 331.0,
+          "performance_over_expected": 0.05722473136857381,
+          "subject_exposure": 338.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.53125,
+          "expected": 0.4174830673073852,
+          "network_supported": true,
+          "opponent_exposure": 268.0,
+          "performance_over_expected": 0.11376693269261479,
+          "subject_exposure": 308.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.14285714285714285,
+          "expected": 0.12163886102939518,
+          "network_supported": true,
+          "opponent_exposure": 662.0,
+          "performance_over_expected": -0.021218281827747668,
+          "subject_exposure": 720.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.14492753623188406,
+          "expected": 0.15715306460177322,
+          "network_supported": true,
+          "opponent_exposure": 630.0,
+          "performance_over_expected": -0.01222552836988916,
+          "subject_exposure": 754.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 5.276923076923077,
+          "expected": 5.581908491294673,
+          "network_supported": true,
+          "opponent_exposure": 677.0,
+          "performance_over_expected": 0.304985414371596,
+          "subject_exposure": 743.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 7.45945945945946,
+          "expected": 6.689415623898867,
+          "network_supported": true,
+          "opponent_exposure": 646.0,
+          "performance_over_expected": 0.7700438355605925,
+          "subject_exposure": 778.0
+        }
+      }
+    ],
+    "neutral_site": true,
+    "opponent": "Nebraska",
+    "opponent_id": "158",
+    "points_against": 22.0,
+    "points_for": 44.0,
+    "season": 2025,
+    "season_type": "postseason",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 1
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401752800",
+    "home_away": "away",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.3469387755102041,
+          "expected": 0.41670092012055304,
+          "network_supported": true,
+          "opponent_exposure": 634.0,
+          "performance_over_expected": 0.06976214461034896,
+          "subject_exposure": 733.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.6282051282051282,
+          "expected": 0.48713251000948965,
+          "network_supported": true,
+          "opponent_exposure": 656.0,
+          "performance_over_expected": 0.14107261819563854,
+          "subject_exposure": 745.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.375,
+          "expected": 0.46082940715836057,
+          "network_supported": true,
+          "opponent_exposure": 297.0,
+          "performance_over_expected": 0.08582940715836057,
+          "subject_exposure": 390.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.5925925925925926,
+          "expected": 0.5200971152922375,
+          "network_supported": true,
+          "opponent_exposure": 365.0,
+          "performance_over_expected": 0.0724954773003551,
+          "subject_exposure": 429.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.32,
+          "expected": 0.3741703774319825,
+          "network_supported": true,
+          "opponent_exposure": 337.0,
+          "performance_over_expected": 0.0541703774319825,
+          "subject_exposure": 343.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.7083333333333334,
+          "expected": 0.42241360817907797,
+          "network_supported": true,
+          "opponent_exposure": 291.0,
+          "performance_over_expected": 0.2859197251542554,
+          "subject_exposure": 316.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.061224489795918366,
+          "expected": 0.13135030611501058,
+          "network_supported": true,
+          "opponent_exposure": 634.0,
+          "performance_over_expected": 0.07012581631909222,
+          "subject_exposure": 734.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.08974358974358974,
+          "expected": 0.1492828137296515,
+          "network_supported": true,
+          "opponent_exposure": 656.0,
+          "performance_over_expected": -0.05953922398606175,
+          "subject_exposure": 745.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 4.117647058823529,
+          "expected": 5.299684283107617,
+          "network_supported": true,
+          "opponent_exposure": 665.0,
+          "performance_over_expected": 1.1820372242840884,
+          "subject_exposure": 757.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 5.963414634146342,
+          "expected": 6.586606479625162,
+          "network_supported": true,
+          "opponent_exposure": 682.0,
+          "performance_over_expected": -0.6231918454788206,
+          "subject_exposure": 770.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "UCLA",
+    "opponent_id": "26",
+    "points_against": 10.0,
+    "points_for": 43.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 1
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756895",
+    "home_away": "away",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.35185185185185186,
+          "expected": 0.3560037250166679,
+          "network_supported": true,
+          "opponent_exposure": 632.0,
+          "performance_over_expected": 0.004151873164816022,
+          "subject_exposure": 728.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.55,
+          "expected": 0.43289503009214003,
+          "network_supported": true,
+          "opponent_exposure": 618.0,
+          "performance_over_expected": 0.11710496990786001,
+          "subject_exposure": 743.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.3548387096774194,
+          "expected": 0.39716548970824667,
+          "network_supported": true,
+          "opponent_exposure": 301.0,
+          "performance_over_expected": 0.04232678003082729,
+          "subject_exposure": 383.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.6585365853658537,
+          "expected": 0.435114657385496,
+          "network_supported": true,
+          "opponent_exposure": 345.0,
+          "performance_over_expected": 0.2234219279803577,
+          "subject_exposure": 442.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.34782608695652173,
+          "expected": 0.3477549683840123,
+          "network_supported": true,
+          "opponent_exposure": 331.0,
+          "performance_over_expected": -7.11185725094099e-05,
+          "subject_exposure": 345.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.4358974358974359,
+          "expected": 0.4128016588965776,
+          "network_supported": true,
+          "opponent_exposure": 273.0,
+          "performance_over_expected": 0.023095777000858297,
+          "subject_exposure": 301.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.12962962962962962,
+          "expected": 0.12071639215905589,
+          "network_supported": true,
+          "opponent_exposure": 632.0,
+          "performance_over_expected": -0.008913237470573737,
+          "subject_exposure": 729.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.15,
+          "expected": 0.1344564467464176,
+          "network_supported": true,
+          "opponent_exposure": 618.0,
+          "performance_over_expected": 0.015543553253582393,
+          "subject_exposure": 743.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 4.109090909090909,
+          "expected": 4.023177549744444,
+          "network_supported": true,
+          "opponent_exposure": 647.0,
+          "performance_over_expected": -0.08591335934646516,
+          "subject_exposure": 753.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 6.567901234567901,
+          "expected": 6.533012674724542,
+          "network_supported": true,
+          "opponent_exposure": 632.0,
+          "performance_over_expected": 0.03488855984335881,
+          "subject_exposure": 771.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Wyoming",
+    "opponent_id": "2751",
+    "points_against": 6.0,
+    "points_for": 31.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 3
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756901",
+    "home_away": "home",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.391304347826087,
+          "expected": 0.3907832889212763,
+          "network_supported": true,
+          "opponent_exposure": 861.0,
+          "performance_over_expected": -0.0005210589048106895,
+          "subject_exposure": 713.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.375,
+          "expected": 0.4027054930294057,
+          "network_supported": true,
+          "opponent_exposure": 737.0,
+          "performance_over_expected": -0.027705493029405726,
+          "subject_exposure": 759.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.34285714285714286,
+          "expected": 0.42657467742439853,
+          "network_supported": true,
+          "opponent_exposure": 447.0,
+          "performance_over_expected": 0.08371753456725567,
+          "subject_exposure": 379.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.42857142857142855,
+          "expected": 0.4122665421152676,
+          "network_supported": true,
+          "opponent_exposure": 324.0,
+          "performance_over_expected": 0.01630488645616096,
+          "subject_exposure": 455.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.4411764705882353,
+          "expected": 0.3592319520023526,
+          "network_supported": true,
+          "opponent_exposure": 414.0,
+          "performance_over_expected": -0.0819445185858827,
+          "subject_exposure": 334.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.3333333333333333,
+          "expected": 0.40268579621111616,
+          "network_supported": true,
+          "opponent_exposure": 413.0,
+          "performance_over_expected": -0.06935246287778285,
+          "subject_exposure": 304.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.15942028985507245,
+          "expected": 0.12899094843635575,
+          "network_supported": true,
+          "opponent_exposure": 861.0,
+          "performance_over_expected": -0.0304293414187167,
+          "subject_exposure": 714.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.015625,
+          "expected": 0.12448299102169619,
+          "network_supported": true,
+          "opponent_exposure": 737.0,
+          "performance_over_expected": -0.10885799102169619,
+          "subject_exposure": 759.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 6.638888888888889,
+          "expected": 5.307889053129287,
+          "network_supported": true,
+          "opponent_exposure": 879.0,
+          "performance_over_expected": -1.3309998357596022,
+          "subject_exposure": 736.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 4.073529411764706,
+          "expected": 5.548563032167736,
+          "network_supported": true,
+          "opponent_exposure": 753.0,
+          "performance_over_expected": -1.47503362040303,
+          "subject_exposure": 784.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Texas Tech",
+    "opponent_id": "2641",
+    "points_against": 34.0,
+    "points_for": 10.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 4
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756908",
+    "home_away": "away",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.3709677419354839,
+          "expected": 0.35805132464798495,
+          "network_supported": true,
+          "opponent_exposure": 664.0,
+          "performance_over_expected": -0.012916417287498927,
+          "subject_exposure": 720.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.5205479452054794,
+          "expected": 0.45881072527357303,
+          "network_supported": true,
+          "opponent_exposure": 681.0,
+          "performance_over_expected": 0.061737219931906395,
+          "subject_exposure": 750.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.43478260869565216,
+          "expected": 0.4106720522914254,
+          "network_supported": true,
+          "opponent_exposure": 374.0,
+          "performance_over_expected": -0.02411055640422677,
+          "subject_exposure": 368.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.38636363636363635,
+          "expected": 0.46218367980425124,
+          "network_supported": true,
+          "opponent_exposure": 351.0,
+          "performance_over_expected": -0.07582004344061488,
+          "subject_exposure": 439.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.1875,
+          "expected": 0.32695829915784874,
+          "network_supported": true,
+          "opponent_exposure": 290.0,
+          "performance_over_expected": 0.13945829915784874,
+          "subject_exposure": 352.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.7241379310344828,
+          "expected": 0.4291924672868647,
+          "network_supported": true,
+          "opponent_exposure": 330.0,
+          "performance_over_expected": 0.29494546374761804,
+          "subject_exposure": 311.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.14516129032258066,
+          "expected": 0.1100338869137562,
+          "network_supported": true,
+          "opponent_exposure": 666.0,
+          "performance_over_expected": -0.03512740340882446,
+          "subject_exposure": 721.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.1917808219178082,
+          "expected": 0.1300604346422439,
+          "network_supported": true,
+          "opponent_exposure": 681.0,
+          "performance_over_expected": 0.06172038727556431,
+          "subject_exposure": 750.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 5.532258064516129,
+          "expected": 4.834722956115193,
+          "network_supported": true,
+          "opponent_exposure": 687.0,
+          "performance_over_expected": -0.6975351084009356,
+          "subject_exposure": 746.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 7.054054054054054,
+          "expected": 6.974176217236503,
+          "network_supported": true,
+          "opponent_exposure": 705.0,
+          "performance_over_expected": 0.079877836817551,
+          "subject_exposure": 778.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "West Virginia",
+    "opponent_id": "277",
+    "points_against": 14.0,
+    "points_for": 48.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 5
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756922",
+    "home_away": "home",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.36363636363636365,
+          "expected": 0.38135395168807673,
+          "network_supported": true,
+          "opponent_exposure": 752.0,
+          "performance_over_expected": 0.017717588051713085,
+          "subject_exposure": 705.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.5,
+          "expected": 0.4722081662281406,
+          "network_supported": true,
+          "opponent_exposure": 746.0,
+          "performance_over_expected": 0.027791833771859398,
+          "subject_exposure": 769.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.5294117647058824,
+          "expected": 0.41591250451153877,
+          "network_supported": true,
+          "opponent_exposure": 395.0,
+          "performance_over_expected": -0.11349926019434359,
+          "subject_exposure": 380.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.5121951219512195,
+          "expected": 0.4857168157834937,
+          "network_supported": true,
+          "opponent_exposure": 334.0,
+          "performance_over_expected": 0.02647830616772584,
+          "subject_exposure": 442.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.23255813953488372,
+          "expected": 0.3520251417904801,
+          "network_supported": true,
+          "opponent_exposure": 357.0,
+          "performance_over_expected": 0.1194670022555964,
+          "subject_exposure": 325.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.46153846153846156,
+          "expected": 0.445209251251419,
+          "network_supported": true,
+          "opponent_exposure": 412.0,
+          "performance_over_expected": 0.01632921028704254,
+          "subject_exposure": 327.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.07792207792207792,
+          "expected": 0.1346992428358748,
+          "network_supported": true,
+          "opponent_exposure": 752.0,
+          "performance_over_expected": 0.05677716491379689,
+          "subject_exposure": 706.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.2222222222222222,
+          "expected": 0.11168294473046884,
+          "network_supported": true,
+          "opponent_exposure": 746.0,
+          "performance_over_expected": 0.11053927749175337,
+          "subject_exposure": 769.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 3.3734939759036147,
+          "expected": 5.760752796983415,
+          "network_supported": true,
+          "opponent_exposure": 767.0,
+          "performance_over_expected": 2.3872588210798007,
+          "subject_exposure": 725.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 7.660714285714286,
+          "expected": 6.100621656290492,
+          "network_supported": true,
+          "opponent_exposure": 765.0,
+          "performance_over_expected": 1.560092629423794,
+          "subject_exposure": 796.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Arizona State",
+    "opponent_id": "9",
+    "points_against": 10.0,
+    "points_for": 42.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 7
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756924",
+    "home_away": "away",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.417910447761194,
+          "expected": 0.45080154518434407,
+          "network_supported": true,
+          "opponent_exposure": 764.0,
+          "performance_over_expected": 0.03289109742315005,
+          "subject_exposure": 715.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.4142857142857143,
+          "expected": 0.461971810076858,
+          "network_supported": true,
+          "opponent_exposure": 755.0,
+          "performance_over_expected": -0.04768609579114369,
+          "subject_exposure": 753.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.45,
+          "expected": 0.484500706808537,
+          "network_supported": true,
+          "opponent_exposure": 412.0,
+          "performance_over_expected": 0.03450070680853701,
+          "subject_exposure": 374.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.35294117647058826,
+          "expected": 0.47543464666716684,
+          "network_supported": true,
+          "opponent_exposure": 362.0,
+          "performance_over_expected": -0.12249347019657858,
+          "subject_exposure": 449.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.37037037037037035,
+          "expected": 0.40479426786639583,
+          "network_supported": true,
+          "opponent_exposure": 352.0,
+          "performance_over_expected": 0.03442389749602548,
+          "subject_exposure": 341.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.4722222222222222,
+          "expected": 0.4241444017899241,
+          "network_supported": true,
+          "opponent_exposure": 393.0,
+          "performance_over_expected": 0.048077820432298135,
+          "subject_exposure": 304.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.16417910447761194,
+          "expected": 0.133494965099672,
+          "network_supported": true,
+          "opponent_exposure": 766.0,
+          "performance_over_expected": -0.03068413937793993,
+          "subject_exposure": 716.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.15714285714285714,
+          "expected": 0.11292043407040146,
+          "network_supported": true,
+          "opponent_exposure": 755.0,
+          "performance_over_expected": 0.04422242307245568,
+          "subject_exposure": 753.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 5.641791044776119,
+          "expected": 6.132424734875232,
+          "network_supported": true,
+          "opponent_exposure": 784.0,
+          "performance_over_expected": 0.49063369009911284,
+          "subject_exposure": 741.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 6.314285714285714,
+          "expected": 6.189419023379817,
+          "network_supported": true,
+          "opponent_exposure": 776.0,
+          "performance_over_expected": 0.12486669090589686,
+          "subject_exposure": 782.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "BYU",
+    "opponent_id": "252",
+    "points_against": 24.0,
+    "points_for": 21.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 8
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756934",
+    "home_away": "home",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.2711864406779661,
+          "expected": 0.34529645782238505,
+          "network_supported": true,
+          "opponent_exposure": 685.0,
+          "performance_over_expected": 0.07411001714441895,
+          "subject_exposure": 723.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.40298507462686567,
+          "expected": 0.5072052250324505,
+          "network_supported": true,
+          "opponent_exposure": 723.0,
+          "performance_over_expected": -0.1042201504055848,
+          "subject_exposure": 756.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.2962962962962963,
+          "expected": 0.38626594908992423,
+          "network_supported": true,
+          "opponent_exposure": 344.0,
+          "performance_over_expected": 0.08996965279362795,
+          "subject_exposure": 387.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.4418604651162791,
+          "expected": 0.5141540384991463,
+          "network_supported": true,
+          "opponent_exposure": 432.0,
+          "performance_over_expected": -0.07229357338286724,
+          "subject_exposure": 440.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.25,
+          "expected": 0.32243853405479983,
+          "network_supported": true,
+          "opponent_exposure": 341.0,
+          "performance_over_expected": 0.07243853405479983,
+          "subject_exposure": 336.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.3333333333333333,
+          "expected": 0.47007091842363935,
+          "network_supported": true,
+          "opponent_exposure": 291.0,
+          "performance_over_expected": -0.13673758509030604,
+          "subject_exposure": 316.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.1016949152542373,
+          "expected": 0.11642184791745411,
+          "network_supported": true,
+          "opponent_exposure": 685.0,
+          "performance_over_expected": 0.014726932663216813,
+          "subject_exposure": 724.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.208955223880597,
+          "expected": 0.1640557349964138,
+          "network_supported": true,
+          "opponent_exposure": 723.0,
+          "performance_over_expected": 0.044899488884183214,
+          "subject_exposure": 756.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 2.338709677419355,
+          "expected": 5.148447784073668,
+          "network_supported": true,
+          "opponent_exposure": 707.0,
+          "performance_over_expected": 2.8097381066543132,
+          "subject_exposure": 746.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 7.185714285714286,
+          "expected": 7.353095205208227,
+          "network_supported": true,
+          "opponent_exposure": 732.0,
+          "performance_over_expected": -0.16738091949394107,
+          "subject_exposure": 782.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Colorado",
+    "opponent_id": "38",
+    "points_against": 7.0,
+    "points_for": 53.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 9
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756942",
+    "home_away": "home",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.4166666666666667,
+          "expected": 0.41744167502300783,
+          "network_supported": true,
+          "opponent_exposure": 634.0,
+          "performance_over_expected": 0.0007750083563411447,
+          "subject_exposure": 722.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.45569620253164556,
+          "expected": 0.5181961544845488,
+          "network_supported": true,
+          "opponent_exposure": 756.0,
+          "performance_over_expected": -0.062499951952903254,
+          "subject_exposure": 744.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.4827586206896552,
+          "expected": 0.45830035927648805,
+          "network_supported": true,
+          "opponent_exposure": 328.0,
+          "performance_over_expected": -0.02445826141316715,
+          "subject_exposure": 385.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.5102040816326531,
+          "expected": 0.5243356477398631,
+          "network_supported": true,
+          "opponent_exposure": 411.0,
+          "performance_over_expected": -0.014131566107210003,
+          "subject_exposure": 434.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.3548387096774194,
+          "expected": 0.36863145485811766,
+          "network_supported": true,
+          "opponent_exposure": 306.0,
+          "performance_over_expected": 0.013792745180698285,
+          "subject_exposure": 337.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.36666666666666664,
+          "expected": 0.48036100883600164,
+          "network_supported": true,
+          "opponent_exposure": 345.0,
+          "performance_over_expected": -0.113694342169335,
+          "subject_exposure": 310.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.16666666666666666,
+          "expected": 0.1329120025273124,
+          "network_supported": true,
+          "opponent_exposure": 634.0,
+          "performance_over_expected": -0.03375466413935427,
+          "subject_exposure": 723.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.1518987341772152,
+          "expected": 0.1429986014574002,
+          "network_supported": true,
+          "opponent_exposure": 756.0,
+          "performance_over_expected": 0.00890013271981499,
+          "subject_exposure": 744.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 7.145161290322581,
+          "expected": 6.087963252334722,
+          "network_supported": true,
+          "opponent_exposure": 646.0,
+          "performance_over_expected": -1.0571980379878587,
+          "subject_exposure": 746.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 5.853658536585366,
+          "expected": 7.127225423228625,
+          "network_supported": true,
+          "opponent_exposure": 774.0,
+          "performance_over_expected": -1.273566886643259,
+          "subject_exposure": 770.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Cincinnati",
+    "opponent_id": "2132",
+    "points_against": 14.0,
+    "points_for": 45.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 10
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756949",
+    "home_away": "away",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.4090909090909091,
+          "expected": 0.4452727273444478,
+          "network_supported": true,
+          "opponent_exposure": 690.0,
+          "performance_over_expected": 0.03618181825353867,
+          "subject_exposure": 694.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.5172413793103449,
+          "expected": 0.49591579597404145,
+          "network_supported": true,
+          "opponent_exposure": 656.0,
+          "performance_over_expected": 0.02132558333630341,
+          "subject_exposure": 765.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.36666666666666664,
+          "expected": 0.47906522355778763,
+          "network_supported": true,
+          "opponent_exposure": 290.0,
+          "performance_over_expected": 0.112398556891121,
+          "subject_exposure": 384.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.55,
+          "expected": 0.49425466314738015,
+          "network_supported": true,
+          "opponent_exposure": 377.0,
+          "performance_over_expected": 0.0557453368526199,
+          "subject_exposure": 443.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.43103448275862066,
+          "expected": 0.3984465947972501,
+          "network_supported": true,
+          "opponent_exposure": 400.0,
+          "performance_over_expected": -0.032587887961370576,
+          "subject_exposure": 310.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.4444444444444444,
+          "expected": 0.4612064720108264,
+          "network_supported": true,
+          "opponent_exposure": 279.0,
+          "performance_over_expected": -0.016762027566381954,
+          "subject_exposure": 322.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.10112359550561797,
+          "expected": 0.12564663053139727,
+          "network_supported": true,
+          "opponent_exposure": 690.0,
+          "performance_over_expected": 0.024523035025779294,
+          "subject_exposure": 694.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.15517241379310345,
+          "expected": 0.12662771038505163,
+          "network_supported": true,
+          "opponent_exposure": 657.0,
+          "performance_over_expected": 0.02854470340805182,
+          "subject_exposure": 765.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 6.325842696629214,
+          "expected": 5.913682401914854,
+          "network_supported": true,
+          "opponent_exposure": 719.0,
+          "performance_over_expected": -0.41216029471435967,
+          "subject_exposure": 719.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 8.186440677966102,
+          "expected": 6.424166787432053,
+          "network_supported": true,
+          "opponent_exposure": 691.0,
+          "performance_over_expected": 1.7622738905340487,
+          "subject_exposure": 793.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Baylor",
+    "opponent_id": "239",
+    "points_against": 28.0,
+    "points_for": 55.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 12
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756960",
+    "home_away": "home",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.5081967213114754,
+          "expected": 0.3509515994107532,
+          "network_supported": true,
+          "opponent_exposure": 583.0,
+          "performance_over_expected": -0.1572451219007222,
+          "subject_exposure": 721.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.4810126582278481,
+          "expected": 0.47141836591946,
+          "network_supported": true,
+          "opponent_exposure": 678.0,
+          "performance_over_expected": 0.009594292308388097,
+          "subject_exposure": 744.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.5405405405405406,
+          "expected": 0.3757765251680494,
+          "network_supported": true,
+          "opponent_exposure": 312.0,
+          "performance_over_expected": -0.1647640153724912,
+          "subject_exposure": 377.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.6046511627906976,
+          "expected": 0.4757231410660025,
+          "network_supported": true,
+          "opponent_exposure": 361.0,
+          "performance_over_expected": 0.12892802172469514,
+          "subject_exposure": 440.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.4583333333333333,
+          "expected": 0.343352688355654,
+          "network_supported": true,
+          "opponent_exposure": 271.0,
+          "performance_over_expected": -0.11498064497767929,
+          "subject_exposure": 344.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.3333333333333333,
+          "expected": 0.45034023895901765,
+          "network_supported": true,
+          "opponent_exposure": 317.0,
+          "performance_over_expected": -0.11700690562568433,
+          "subject_exposure": 304.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.14754098360655737,
+          "expected": 0.12292186052210036,
+          "network_supported": true,
+          "opponent_exposure": 583.0,
+          "performance_over_expected": -0.024619123084457017,
+          "subject_exposure": 722.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.17721518987341772,
+          "expected": 0.14694724604716947,
+          "network_supported": true,
+          "opponent_exposure": 678.0,
+          "performance_over_expected": 0.030267943826248256,
+          "subject_exposure": 744.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 8.587301587301587,
+          "expected": 5.133374952839691,
+          "network_supported": true,
+          "opponent_exposure": 600.0,
+          "performance_over_expected": -3.4539266344618964,
+          "subject_exposure": 745.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 6.7926829268292686,
+          "expected": 6.7618249276640565,
+          "network_supported": true,
+          "opponent_exposure": 695.0,
+          "performance_over_expected": 0.030857999165212036,
+          "subject_exposure": 770.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Kansas State",
+    "opponent_id": "2306",
+    "points_against": 47.0,
+    "points_for": 51.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 13
+  },
+  {
+    "definition_version": "schedule-adjusted-game-analysis-v1",
+    "game_id": "401756964",
+    "home_away": "away",
+    "metrics": [
+      {
+        "defense": {
+          "actual": 0.4657534246575342,
+          "expected": 0.4487695340718573,
+          "network_supported": true,
+          "opponent_exposure": 592.0,
+          "performance_over_expected": -0.016983890585676897,
+          "subject_exposure": 709.0
+        },
+        "metric": "successRate",
+        "offense": {
+          "actual": 0.4230769230769231,
+          "expected": 0.4828140527632001,
+          "network_supported": true,
+          "opponent_exposure": 662.0,
+          "performance_over_expected": -0.059737129686277035,
+          "subject_exposure": 771.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.5625,
+          "expected": 0.47596875439210085,
+          "network_supported": true,
+          "opponent_exposure": 303.0,
+          "performance_over_expected": -0.08653124560789915,
+          "subject_exposure": 366.0
+        },
+        "metric": "rushSuccessRate",
+        "offense": {
+          "actual": 0.4482758620689655,
+          "expected": 0.47776905186993396,
+          "network_supported": true,
+          "opponent_exposure": 347.0,
+          "performance_over_expected": -0.029493189800968433,
+          "subject_exposure": 454.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.28,
+          "expected": 0.4099611911550887,
+          "network_supported": true,
+          "opponent_exposure": 289.0,
+          "performance_over_expected": 0.1299611911550887,
+          "subject_exposure": 343.0
+        },
+        "metric": "passSuccessRate",
+        "offense": {
+          "actual": 0.391304347826087,
+          "expected": 0.45678620899233624,
+          "network_supported": true,
+          "opponent_exposure": 315.0,
+          "performance_over_expected": -0.06548186116624927,
+          "subject_exposure": 317.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 0.1917808219178082,
+          "expected": 0.13721200257378918,
+          "network_supported": true,
+          "opponent_exposure": 592.0,
+          "performance_over_expected": -0.054568819344019026,
+          "subject_exposure": 710.0
+        },
+        "metric": "explosivePlayRate",
+        "offense": {
+          "actual": 0.17307692307692307,
+          "expected": 0.14393100376616969,
+          "network_supported": true,
+          "opponent_exposure": 662.0,
+          "performance_over_expected": 0.029145919310753388,
+          "subject_exposure": 771.0
+        }
+      },
+      {
+        "defense": {
+          "actual": 6.246753246753247,
+          "expected": 6.240074697730305,
+          "network_supported": true,
+          "opponent_exposure": 605.0,
+          "performance_over_expected": -0.006678549022941738,
+          "subject_exposure": 731.0
+        },
+        "metric": "yardsPerPlay",
+        "offense": {
+          "actual": 7.703703703703703,
+          "expected": 6.88189569478727,
+          "network_supported": true,
+          "opponent_exposure": 679.0,
+          "performance_over_expected": 0.8218080089164337,
+          "subject_exposure": 798.0
+        }
+      }
+    ],
+    "neutral_site": false,
+    "opponent": "Kansas",
+    "opponent_id": "2305",
+    "points_against": 21.0,
+    "points_for": 31.0,
+    "season": 2025,
+    "season_type": "regular",
+    "team": "Utah",
+    "team_id": "254",
+    "week": 14
+  }
+]

@@ -1,0 +1,1981 @@
+
+======================================================================================================================
+MICHIGAN EXTREME OPPONENT-ADJUSTED GAME FORENSICS
+======================================================================================================================
+Season: 2025 | ridge 40 | home ridge 20
+Every target game is excluded from its own rating fit.
+Positive POE = better than schedule-adjusted expectation for Michigan on BOTH offense and defense.
+Opponent strength is also calculated from the same leave-one-game-out network.
+
+NOTE: 'tempo/volume' below means per-play/per-possession normalization and plays per drive.
+It is not literal seconds-per-snap pace because the current team-game contract does not publish clock-seconds-per-play.
+======================================================================================================================
+
+
+######################################################################################################################
+GAME 01 | WEEK 1 | REGULAR | HOME
+MICHIGAN 34-17 NEW MEXICO
+GAME ID: 401752808
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+New Mexico                   OFFENSE #83  score  42.5 | DEFENSE #35  score  69.2 | OVERALL #56  score  55.9
+Michigan (game excluded)     OFFENSE #19  score  83.7 | DEFENSE #41  score  66.1 | OVERALL #21  score  74.9
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #94         #43         #17         #58
+Rush success rate                    #73         #26          #4         #56
+Pass success rate                   #104         #60         #54         #69
+Explosive-play rate                  #53         #35         #17         #28
+Yards per play                       #69         #49         #23         #23
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE          NEW MEXICO
+--------------------------------------------------------------------
+Offensive plays                           62                  75
+Possessions / drives                      11                  12
+Plays / drive                           5.64                6.25
+Yards / play                            7.31                3.61
+Yards / drive                          41.18               22.58
+Points / drive                          3.09                1.42
+Points / play                          0.548               0.227
+Scoring rate / drive                   54.5%               25.0%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         43.5%       46.5%     -3.0pp           #43
+                                  DEF         39.7%       39.1%     -0.6pp           #94
+Rush success rate                 OFF         44.8%       47.5%     -2.6pp           #26
+                                  DEF         24.0%       40.8%    +16.8pp           #73
+Pass success rate                 OFF         42.4%       43.0%     -0.6pp           #60
+                                  DEF         47.9%       38.8%     -9.1pp          #104
+Standard-down success rate        OFF         47.7%       52.8%     -5.0pp           #51
+                                  DEF         44.4%       43.7%     -0.7pp           #95
+Passing-down success rate         OFF         33.3%       30.2%     +3.2pp           #30
+                                  DEF         26.3%       30.2%     +3.9pp           #62
+First-down success rate           OFF         44.4%       46.0%     -1.5pp           #36
+                                  DEF         41.9%       40.4%     -1.5pp           #98
+Second-down success rate          OFF         42.9%       43.3%     -0.4pp           #24
+                                  DEF         36.0%       38.6%     +2.6pp           #87
+Third-down play success rate      OFF         46.2%       43.9%     +2.3pp           #56
+                                  DEF         35.7%       37.9%     +2.2pp           #82
+Third-down conversion rate        OFF         46.2%       43.9%     +2.3pp           #56
+                                  DEF         35.7%       37.9%     +2.2pp           #82
+Fourth-down conversion rate       OFF          0.0%       56.2%    -56.2pp           #96
+                                  DEF         66.7%       55.6%    -11.1pp           #14
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         11.3%       12.6%     -1.3pp           #35
+                                  DEF          6.8%       10.0%     +3.1pp           #53
+Rush explosive-play rate          OFF         10.3%       14.2%     -3.8pp           #28
+                                  DEF         12.0%       11.1%     -0.9pp           #79
+Pass explosive-play rate          OFF         12.1%       10.2%     +1.9pp           #63
+                                  DEF          4.2%        9.1%     +5.0pp           #33
+Yards per play                    OFF          7.31        6.35      +0.96           #49
+                                  DEF          3.61        4.78      +1.17           #69
+Rush yards per attempt            OFF          7.00        5.61      +1.39           #26
+                                  DEF          3.00        4.24      +1.24           #75
+Net pass yards per dropback       OFF          7.58        7.04      +0.54           #63
+                                  DEF          3.92        5.62      +1.70           #55
+Yards per successful play         OFF         14.22       11.76      +2.46           #39
+                                  DEF          8.48       11.07      +2.58           #38
+Rush yards per successful play    OFF         12.85        9.60      +3.24           #24
+                                  DEF          6.83        8.59      +1.75           #69
+Pass yards per successful play    OFF         15.50       14.94      +0.56           #44
+                                  DEF          8.91       14.37      +5.46           #20
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         41.18       36.26      +4.92           #53
+                                  DEF         22.58       30.41      +7.82           #60
+Points per resolved possession    OFF          3.09        2.41      +0.69           #60
+                                  DEF          1.42        1.56      +0.14           #62
+Scoring rate per possession       OFF         54.5%       38.2%    +16.3pp           #49
+                                  DEF         25.0%       32.0%     +7.0pp           #50
+Touchdown rate per possession     OFF         36.4%       27.1%     +9.2pp           #58
+                                  DEF         16.7%       20.1%     +3.4pp           #66
+Points per scoring opportunity    OFF          4.50        3.38      +1.12           #32
+                                  DEF          3.40        3.23      -0.17           #66
+Touchdown rate per scoring opportunityOFF         50.0%       42.6%     +7.4pp           #33
+                                  DEF         40.0%       37.6%     -2.4pp           #76
+Field-goal rate per scoring opportunityOFF         33.3%       20.1%    +13.3pp           #40
+                                  DEF         20.0%       23.1%     +3.1pp           #33
+Empty scoring-opportunity rate    OFF         16.7%       37.4%    +20.7pp           #19
+                                  DEF         40.0%       38.6%     +1.4pp           #50
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         54.5%       50.6%     +3.9pp          #118
+                                  DEF         46.7%       39.6%     -7.1pp          #115
+Red-zone touchdown rate           OFF         75.0%       58.1%    +16.9pp          #110
+                                  DEF         50.0%       50.2%     +0.2pp           #90
+Red-zone points per resolved possessionOFF          6.00        4.62      +1.38           #99
+                                  DEF          3.50        4.20      +0.70           #71
+Goal-to-go success rate           OFF         50.0%       48.9%     +1.1pp           #88
+                                  DEF         40.0%       44.2%     +4.2pp           #56
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          6.1%        6.1%     +0.0pp            #8
+                                  DEF          6.0%        7.3%     -1.3pp          #127
+Havoc rate allowed                OFF          3.2%        9.2%     +5.9pp           #42
+                                  DEF         14.7%       10.3%     +4.4pp           #77
+Average starting yards to goal    OFF         67.91       63.37      -4.53          #135
+                                  DEF         64.83       66.72      -1.89           #53
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        -3.0pp        -0.6pp           #43           #94
+Rush success rate                   -2.6pp       +16.8pp           #26           #73
+Pass success rate                   -0.6pp        -9.1pp           #60          #104
+Explosive-play rate                 -1.3pp        +3.1pp           #35           #53
+Yards per play                       +0.96         +1.17           #49           #69
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 02 | WEEK 1 | POSTSEASON | N
+MICHIGAN 27-41 TEXAS
+GAME ID: 401778330
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Texas                        OFFENSE #57  score  56.1 | DEFENSE #15  score  84.0 | OVERALL #27  score  70.1
+Michigan (game excluded)     OFFENSE #15  score  85.2 | DEFENSE #32  score  72.3 | OVERALL #14  score  78.7
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #70         #19         #17         #52
+Rush success rate                    #61         #10          #8         #40
+Pass success rate                    #81         #49         #43         #76
+Explosive-play rate                  #57         #19         #18         #13
+Yards per play                       #32         #16         #19         #11
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE               TEXAS
+--------------------------------------------------------------------
+Offensive plays                           78                  67
+Possessions / drives                      13                  12
+Plays / drive                           6.00                5.58
+Yards / play                            4.70                6.81
+Yards / drive                          28.54               38.00
+Points / drive                          2.08                3.42
+Points / play                          0.346               0.612
+Scoring rate / drive                   38.5%               58.3%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         39.5%       43.1%     -3.6pp           #19
+                                  DEF         47.5%       41.4%     -6.1pp           #70
+Rush success rate                 OFF         52.9%       43.4%     +9.6pp           #10
+                                  DEF         48.3%       41.4%     -6.9pp           #61
+Pass success rate                 OFF         28.6%       42.2%    -13.6pp           #49
+                                  DEF         46.9%       41.6%     -5.3pp           #81
+Standard-down success rate        OFF         50.0%       48.3%     +1.7pp           #16
+                                  DEF         47.7%       45.7%     -2.1pp           #82
+Passing-down success rate         OFF         16.7%       30.7%    -14.0pp           #56
+                                  DEF         47.1%       31.5%    -15.5pp           #45
+First-down success rate           OFF         45.2%       44.0%     +1.2pp           #26
+                                  DEF         45.2%       42.7%     -2.4pp           #74
+Second-down success rate          OFF         29.2%       43.0%    -13.9pp           #28
+                                  DEF         61.1%       38.7%    -22.4pp           #87
+Third-down play success rate      OFF         26.7%       42.1%    -15.4pp           #31
+                                  DEF         20.0%       41.2%    +21.2pp           #55
+Third-down conversion rate        OFF         26.7%       42.1%    -15.4pp           #31
+                                  DEF         20.0%       41.2%    +21.2pp           #55
+Fourth-down conversion rate       OFF         83.3%       51.2%    +32.1pp           #25
+                                  DEF        100.0%       53.8%    -46.2pp          #102
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         10.5%       11.2%     -0.6pp           #19
+                                  DEF         19.7%        9.6%    -10.0pp           #57
+Rush explosive-play rate          OFF         20.6%       12.9%     +7.6pp           #23
+                                  DEF         31.0%       10.9%    -20.1pp           #78
+Pass explosive-play rate          OFF          2.4%        9.5%     -7.1pp           #22
+                                  DEF          9.4%        9.2%     -0.2pp           #41
+Yards per play                    OFF          4.70        5.70      -1.01           #16
+                                  DEF          6.81        5.19      -1.62           #32
+Rush yards per attempt            OFF          5.63        5.05      +0.58            #8
+                                  DEF          7.12        4.00      -3.12           #78
+Net pass yards per dropback       OFF          3.95        6.40      -2.44           #32
+                                  DEF          6.50        6.22      -0.28           #28
+Yards per successful play         OFF         10.03       11.49      -1.46           #20
+                                  DEF         13.76       11.51      -2.25           #12
+Rush yards per successful play    OFF          9.11        9.50      -0.39           #19
+                                  DEF         15.43        7.77      -7.66           #95
+Pass yards per successful play    OFF         11.42       13.92      -2.50            #4
+                                  DEF         12.20       14.92      +2.72            #6
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         28.54       31.96      -3.42           #25
+                                  DEF         38.00       29.52      -8.48           #81
+Points per resolved possession    OFF          2.08        1.89      +0.19           #15
+                                  DEF          3.42        1.73      -1.68           #45
+Scoring rate per possession       OFF         38.5%       33.2%     +5.2pp           #18
+                                  DEF         58.3%       33.2%    -25.1pp           #53
+Touchdown rate per possession     OFF         23.1%       23.0%     +0.1pp           #17
+                                  DEF         41.7%       22.3%    -19.4pp           #49
+Points per scoring opportunity    OFF          3.38        3.34      +0.03           #45
+                                  DEF          4.86        3.33      -1.53           #70
+Touchdown rate per scoring opportunityOFF         37.5%       40.6%     -3.1pp           #57
+                                  DEF         57.1%       40.6%    -16.5pp           #65
+Field-goal rate per scoring opportunityOFF         25.0%       21.0%     +4.0pp           #86
+                                  DEF         28.6%       21.9%     -6.6pp           #67
+Empty scoring-opportunity rate    OFF         37.5%       38.1%     +0.6pp           #56
+                                  DEF         14.3%       37.1%    -22.8pp           #72
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         57.1%       44.4%    +12.7pp           #25
+                                  DEF        100.0%       44.0%    -56.0pp           #53
+Red-zone touchdown rate           OFF         60.0%       54.7%     +5.3pp           #83
+                                  DEF        100.0%       54.1%    -45.9pp           #40
+Red-zone points per resolved possessionOFF          4.80        4.31      +0.49           #66
+                                  DEF          7.00        4.38      -2.62           #53
+Goal-to-go success rate           OFF         50.0%       45.2%     +4.8pp           #27
+                                  DEF        100.0%       45.7%    -54.3pp           #38
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          6.8%        6.0%     -0.8pp           #24
+                                  DEF          0.0%        5.7%     -5.7pp           #58
+Havoc rate allowed                OFF         12.8%        9.1%     -3.7pp           #30
+                                  DEF          9.0%       10.9%     -2.0pp           #94
+Average starting yards to goal    OFF         67.23       68.45      +1.22            #6
+                                  DEF         64.25       64.81      -0.56           #12
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        -3.6pp        -6.1pp           #19           #70
+Rush success rate                   +9.6pp        -6.9pp           #10           #61
+Pass success rate                  -13.6pp        -5.3pp           #49           #81
+Explosive-play rate                 -0.6pp       -10.0pp           #19           #57
+Yards per play                       -1.01         -1.62           #16           #32
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 03 | WEEK 2 | REGULAR | AWAY
+MICHIGAN 13-24 OKLAHOMA
+GAME ID: 401752690
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Oklahoma                     OFFENSE #80  score  44.6 | DEFENSE #2   score  97.3 | OVERALL #26  score  71.0
+Michigan (game excluded)     OFFENSE #15  score  85.6 | DEFENSE #34  score  70.7 | OVERALL #14  score  78.1
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #76          #2         #16         #52
+Rush success rate                   #102          #1          #4         #37
+Pass success rate                    #56         #10         #44         #80
+Explosive-play rate                  #77          #7         #16         #19
+Yards per play                       #68          #3         #22         #15
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE            OKLAHOMA
+--------------------------------------------------------------------
+Offensive plays                           56                  73
+Possessions / drives                      12                  11
+Plays / drive                           4.67                6.64
+Yards / play                            5.32                5.71
+Yards / drive                          24.83               37.91
+Points / drive                          1.08                2.18
+Points / play                          0.232               0.329
+Scoring rate / drive                   25.0%               36.4%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         23.6%       36.9%    -13.3pp            #2
+                                  DEF         45.8%       41.7%     -4.2pp           #76
+Rush success rate                 OFF         26.7%       38.1%    -11.4pp            #1
+                                  DEF         48.6%       39.3%     -9.3pp          #102
+Pass success rate                 OFF         20.0%       36.6%    -16.6pp           #10
+                                  DEF         42.9%       44.2%     +1.4pp           #56
+Standard-down success rate        OFF         31.4%       42.0%    -10.6pp            #1
+                                  DEF         45.3%       48.3%     +3.0pp           #62
+Passing-down success rate         OFF         10.0%       27.9%    -17.9pp           #16
+                                  DEF         47.4%       28.7%    -18.6pp          #119
+First-down success rate           OFF         26.1%       37.3%    -11.2pp            #1
+                                  DEF         45.2%       44.8%     -0.3pp           #57
+Second-down success rate          OFF         23.5%       38.7%    -15.1pp            #5
+                                  DEF         37.5%       39.8%     +2.3pp          #106
+Third-down play success rate      OFF         21.4%       38.1%    -16.7pp            #6
+                                  DEF         56.2%       39.2%    -17.1pp           #84
+Third-down conversion rate        OFF         21.4%       38.1%    -16.7pp            #6
+                                  DEF         56.2%       39.2%    -17.1pp           #84
+Fourth-down conversion rate       OFF          0.0%       51.8%    -51.8pp           #42
+                                  DEF        100.0%       56.1%    -43.9pp           #81
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF          7.3%       10.1%     -2.8pp            #7
+                                  DEF         12.5%       10.0%     -2.5pp           #77
+Rush explosive-play rate          OFF          3.3%       11.5%     -8.2pp            #2
+                                  DEF         10.8%       12.4%     +1.5pp           #70
+Pass explosive-play rate          OFF         12.0%        8.8%     +3.2pp           #41
+                                  DEF         14.3%        8.7%     -5.6pp           #88
+Yards per play                    OFF          5.32        4.82      +0.50            #3
+                                  DEF          5.71        4.84      -0.87           #68
+Rush yards per attempt            OFF          5.19        4.39      +0.81            #2
+                                  DEF          3.97        4.46      +0.49           #68
+Net pass yards per dropback       OFF          5.48        5.28      +0.20            #8
+                                  DEF          7.60        5.23      -2.37           #81
+Yards per successful play         OFF         19.46       12.27      +7.19           #87
+                                  DEF         11.39       10.85      -0.54           #47
+Rush yards per successful play    OFF         14.38       10.03      +4.35           #67
+                                  DEF          6.72        9.52      +2.79           #49
+Pass yards per successful play    OFF         27.60       14.45     +13.15           #49
+                                  DEF         17.00       11.99      -5.01           #92
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         24.83       26.87      -2.04            #2
+                                  DEF         37.91       27.69     -10.22          #107
+Points per resolved possession    OFF          1.08        1.52      -0.44            #5
+                                  DEF          2.18        1.78      -0.40           #65
+Scoring rate per possession       OFF         25.0%       30.2%     -5.2pp            #9
+                                  DEF         36.4%       36.2%     -0.1pp           #61
+Touchdown rate per possession     OFF          8.3%       19.1%    -10.7pp            #5
+                                  DEF         27.3%       22.5%     -4.8pp          #100
+Points per scoring opportunity    OFF          1.50        2.91      -1.41           #15
+                                  DEF          4.80        3.60      -1.20           #67
+Touchdown rate per scoring opportunityOFF          0.0%       35.5%    -35.5pp            #7
+                                  DEF         60.0%       41.9%    -18.1pp          #110
+Field-goal rate per scoring opportunityOFF         50.0%       22.2%    +27.8pp          #129
+                                  DEF         20.0%       25.8%     +5.8pp            #1
+Empty scoring-opportunity rate    OFF         50.0%       41.9%     -8.1pp           #42
+                                  DEF         20.0%       31.2%    -11.2pp           #26
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         33.3%       41.3%     -7.9pp            #3
+                                  DEF         41.7%       46.4%     +4.7pp           #41
+Red-zone touchdown rate           OFF          0.0%       50.4%    -50.4pp           #31
+                                  DEF         75.0%       58.1%    -16.9pp           #25
+Red-zone points per resolved possessionOFF          1.50        4.05      -2.55           #35
+                                  DEF          6.00        4.89      -1.11           #13
+Goal-to-go success rate           OFF             —           —          —           #16
+                                  DEF         42.9%       48.0%     +5.2pp           #24
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          4.0%        7.3%     +3.3pp            #1
+                                  DEF          5.7%        5.9%     -0.2pp          #107
+Havoc rate allowed                OFF         14.3%       13.0%     -1.3pp            #1
+                                  DEF         12.3%       10.4%     +1.9pp           #95
+Average starting yards to goal    OFF         68.25       67.96      -0.29           #16
+                                  DEF         70.27       64.71      +5.56           #18
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                       -13.3pp        -4.2pp            #2           #76
+Rush success rate                  -11.4pp        -9.3pp            #1          #102
+Pass success rate                  -16.6pp        +1.4pp           #10           #56
+Explosive-play rate                 -2.8pp        -2.5pp            #7           #77
+Yards per play                       +0.50         -0.87            #3           #68
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 04 | WEEK 3 | REGULAR | HOME
+MICHIGAN 63-3 CENTRAL MICHIGAN
+GAME ID: 401752839
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Central Michigan             OFFENSE #90  score  36.0 | DEFENSE #71  score  45.0 | OVERALL #85  score  40.5
+Michigan (game excluded)     OFFENSE #28  score  75.4 | DEFENSE #51  score  59.4 | OVERALL #31  score  67.4
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #97         #75         #28         #70
+Rush success rate                   #111         #86          #9         #63
+Pass success rate                    #40         #55         #77         #95
+Explosive-play rate                  #81         #65         #35         #28
+Yards per play                      #108         #95         #22         #23
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE    CENTRAL MICHIGAN
+--------------------------------------------------------------------
+Offensive plays                           79                  51
+Possessions / drives                      11                  12
+Plays / drive                           7.18                4.25
+Yards / play                            7.35                2.60
+Yards / drive                          52.82               11.25
+Points / drive                          5.73                0.25
+Points / play                          0.797               0.059
+Scoring rate / drive                   81.8%                8.3%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         64.5%       47.5%    +16.9pp           #75
+                                  DEF         18.0%       40.1%    +22.1pp           #97
+Rush success rate                 OFF         63.5%       50.1%    +13.4pp           #86
+                                  DEF         14.3%       38.4%    +24.1pp          #111
+Pass success rate                 OFF         66.7%       41.6%    +25.1pp           #55
+                                  DEF         22.7%       44.4%    +21.7pp           #40
+Standard-down success rate        OFF         68.3%       53.3%    +15.1pp           #82
+                                  DEF         15.4%       47.0%    +31.7pp           #67
+Passing-down success rate         OFF         50.0%       29.6%    +20.4pp           #31
+                                  DEF         20.8%       27.4%     +6.6pp          #121
+First-down success rate           OFF         64.1%       47.4%    +16.7pp           #80
+                                  DEF         10.5%       44.0%    +33.5pp           #58
+Second-down success rate          OFF         62.5%       42.4%    +20.1pp           #30
+                                  DEF         13.3%       39.5%    +26.2pp           #84
+Third-down play success rate      OFF         72.7%       45.5%    +27.2pp          #104
+                                  DEF         35.7%       35.5%     -0.2pp          #118
+Third-down conversion rate        OFF         72.7%       45.5%    +27.2pp          #104
+                                  DEF         35.7%       35.5%     -0.2pp          #118
+Fourth-down conversion rate       OFF         50.0%       52.4%     -2.4pp            #7
+                                  DEF          0.0%       55.2%    +55.2pp           #43
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         25.0%       12.9%    +12.1pp           #65
+                                  DEF          4.0%        9.3%     +5.3pp           #81
+Rush explosive-play rate          OFF         28.8%       14.1%    +14.8pp           #58
+                                  DEF          7.1%       10.4%     +3.3pp          #110
+Pass explosive-play rate          OFF         16.7%       10.5%     +6.2pp           #82
+                                  DEF          0.0%        8.8%     +8.8pp           #46
+Yards per play                    OFF          7.35        7.09      +0.27           #95
+                                  DEF          2.60        4.22      +1.62          #108
+Rush yards per attempt            OFF          6.29        6.68      -0.39           #98
+                                  DEF          3.21        3.82      +0.61          #108
+Net pass yards per dropback       OFF          9.79        7.27      +2.52           #81
+                                  DEF          1.83        5.60      +3.77           #55
+Yards per successful play         OFF         10.94       12.81      -1.87           #77
+                                  DEF          9.44        9.86      +0.42          #108
+Rush yards per successful play    OFF          9.12       10.61      -1.49           #66
+                                  DEF         10.75        8.29      -2.46           #80
+Pass yards per successful play    OFF         14.69       15.72      -1.04           #78
+                                  DEF          8.40       12.91      +4.51           #62
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         52.82       37.80     +15.01           #87
+                                  DEF         11.25       28.84     +17.59           #90
+Points per resolved possession    OFF          5.73        2.25      +3.47           #60
+                                  DEF          0.25        1.12      +0.87          #117
+Scoring rate per possession       OFF         81.8%       36.6%    +45.2pp           #40
+                                  DEF          8.3%       29.1%    +20.8pp           #99
+Touchdown rate per possession     OFF         81.8%       25.1%    +56.7pp           #46
+                                  DEF          0.0%       18.5%    +18.5pp          #107
+Points per scoring opportunity    OFF          6.30        3.31      +2.99           #42
+                                  DEF          3.00        2.67      -0.33          #132
+Touchdown rate per scoring opportunityOFF         90.0%       41.0%    +49.0pp           #37
+                                  DEF          0.0%       35.3%    +35.3pp          #123
+Field-goal rate per scoring opportunityOFF          0.0%       21.1%    -21.1pp           #47
+                                  DEF        100.0%       21.9%    -78.1pp           #58
+Empty scoring-opportunity rate    OFF         10.0%       37.6%    +27.6pp           #23
+                                  DEF          0.0%       42.4%    -42.4pp          #120
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         76.5%       42.2%    +34.3pp            #6
+                                  DEF          0.0%       42.3%    +42.3pp           #83
+Red-zone touchdown rate           OFF        100.0%       54.4%    +45.6pp           #34
+                                  DEF          0.0%       47.6%    +47.6pp          #133
+Red-zone points per resolved possessionOFF          7.00        4.11      +2.89           #31
+                                  DEF          3.00        3.52      +0.52          #134
+Goal-to-go success rate           OFF         83.3%       44.8%    +38.5pp           #15
+                                  DEF          0.0%       44.2%    +44.2pp           #70
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          0.0%        5.3%     +5.3pp           #54
+                                  DEF         13.0%        6.4%     +6.6pp          #107
+Havoc rate allowed                OFF          6.3%        9.2%     +2.9pp           #36
+                                  DEF         15.7%       10.9%     +4.8pp           #96
+Average starting yards to goal    OFF         58.73       67.51      +8.78           #44
+                                  DEF         65.58       66.82      -1.23           #59
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                       +16.9pp       +22.1pp           #75           #97
+Rush success rate                  +13.4pp       +24.1pp           #86          #111
+Pass success rate                  +25.1pp       +21.7pp           #55           #40
+Explosive-play rate                +12.1pp        +5.3pp           #65           #81
+Yards per play                       +0.27         +1.62           #95          #108
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 05 | WEEK 4 | REGULAR | AWAY
+MICHIGAN 30-27 NEBRASKA
+GAME ID: 401752846
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Nebraska                     OFFENSE #39  score  67.0 | DEFENSE #72  score  44.4 | OVERALL #56  score  55.7
+Michigan (game excluded)     OFFENSE #16  score  84.9 | DEFENSE #39  score  67.4 | OVERALL #18  score  76.1
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #34         #71         #16         #59
+Rush success rate                    #42        #106          #4         #49
+Pass success rate                    #37         #41         #46         #79
+Explosive-play rate                  #65        #106         #18         #22
+Yards per play                       #50         #56         #23         #16
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE            NEBRASKA
+--------------------------------------------------------------------
+Offensive plays                           54                  70
+Possessions / drives                      12                  12
+Plays / drive                           4.50                5.83
+Yards / play                            7.28                5.39
+Yards / drive                          32.75               31.42
+Points / drive                          2.50                2.25
+Points / play                          0.556               0.386
+Scoring rate / drive                   50.0%               41.7%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         38.9%       47.1%     -8.2pp           #71
+                                  DEF         43.5%       45.6%     +2.1pp           #34
+Rush success rate                 OFF         46.7%       50.8%     -4.2pp          #106
+                                  DEF         37.5%       44.7%     +7.2pp           #42
+Pass success rate                 OFF         29.2%       40.0%    -10.8pp           #41
+                                  DEF         46.7%       46.0%     -0.6pp           #37
+Standard-down success rate        OFF         41.2%       51.3%    -10.1pp           #50
+                                  DEF         46.8%       49.4%     +2.6pp           #43
+Passing-down success rate         OFF         35.0%       32.0%     +3.0pp          #125
+                                  DEF         36.4%       33.8%     -2.5pp           #36
+First-down success rate           OFF         37.5%       47.2%     -9.7pp           #85
+                                  DEF         43.3%       46.3%     +3.0pp           #42
+Second-down success rate          OFF         42.1%       43.2%     -1.1pp           #68
+                                  DEF         54.2%       43.0%    -11.1pp           #41
+Third-down play success rate      OFF         36.4%       42.8%     -6.5pp           #78
+                                  DEF         16.7%       45.3%    +28.7pp           #14
+Third-down conversion rate        OFF         36.4%       42.8%     -6.5pp           #78
+                                  DEF         16.7%       45.3%    +28.7pp           #14
+Fourth-down conversion rate       OFF             —           —          —           #84
+                                  DEF         66.7%       54.1%    -12.5pp          #125
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         13.0%       13.7%     -0.8pp          #106
+                                  DEF         10.1%       10.4%     +0.3pp           #65
+Rush explosive-play rate          OFF         23.3%       14.8%     +8.5pp          #104
+                                  DEF          8.3%       12.7%     +4.3pp           #62
+Pass explosive-play rate          OFF          0.0%       10.2%    -10.2pp           #97
+                                  DEF         11.1%        8.9%     -2.2pp           #80
+Yards per play                    OFF          7.28        6.24      +1.04           #56
+                                  DEF          5.39        5.10      -0.29           #50
+Rush yards per attempt            OFF          9.60        6.22      +3.38           #98
+                                  DEF          3.83        4.68      +0.85           #46
+Net pass yards per dropback       OFF          4.38        6.46      -2.08           #47
+                                  DEF          6.20        5.66      -0.54           #62
+Yards per successful play         OFF         17.05       11.66      +5.39           #52
+                                  DEF         11.23       10.04      -1.19          #107
+Rush yards per successful play    OFF         18.93        9.64      +9.29           #67
+                                  DEF          7.22        8.48      +1.26           #97
+Pass yards per successful play    OFF         13.29       15.85      -2.56           #98
+                                  DEF         12.95       12.15      -0.80           #99
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         32.75       35.00      -2.25           #62
+                                  DEF         31.42       31.52      +0.10           #74
+Points per resolved possession    OFF          2.50        2.35      +0.15           #85
+                                  DEF          2.25        1.95      -0.30           #46
+Scoring rate per possession       OFF         50.0%       35.3%    +14.7pp           #93
+                                  DEF         41.7%       36.2%     -5.4pp           #58
+Touchdown rate per possession     OFF         25.0%       24.8%     +0.2pp          #104
+                                  DEF         25.0%       24.9%     -0.1pp           #59
+Points per scoring opportunity    OFF          3.20        3.73      -0.53          #127
+                                  DEF          3.86        3.70      -0.16           #58
+Touchdown rate per scoring opportunityOFF         20.0%       42.1%    -22.1pp          #133
+                                  DEF         42.9%       44.3%     +1.5pp           #64
+Field-goal rate per scoring opportunityOFF         60.0%       19.2%    +40.8pp           #27
+                                  DEF         28.6%       21.9%     -6.6pp           #71
+Empty scoring-opportunity rate    OFF         20.0%       39.2%    +19.2pp          #121
+                                  DEF         28.6%       33.4%     -4.8pp           #72
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         25.0%       47.9%    -22.9pp          #106
+                                  DEF         22.2%       44.9%    +22.7pp           #85
+Red-zone touchdown rate           OFF          0.0%       55.9%    -55.9pp          #135
+                                  DEF         40.0%       56.5%    +16.5pp           #87
+Red-zone points per resolved possessionOFF          3.00        4.78      -1.78          #135
+                                  DEF          4.00        4.63      +0.63           #58
+Goal-to-go success rate           OFF         33.3%       46.9%    -13.6pp           #96
+                                  DEF        100.0%       44.8%    -55.2pp           #98
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          4.2%        6.2%     +2.0pp           #36
+                                  DEF         15.2%        5.5%     +9.7pp          #107
+Havoc rate allowed                OFF         11.1%        8.4%     -2.7pp           #95
+                                  DEF         12.9%        9.7%     +3.2pp           #59
+Average starting yards to goal    OFF         66.33       67.73      +1.39           #31
+                                  DEF         64.58       64.85      -0.27           #16
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        -8.2pp        +2.1pp           #71           #34
+Rush success rate                   -4.2pp        +7.2pp          #106           #42
+Pass success rate                  -10.8pp        -0.6pp           #41           #37
+Explosive-play rate                 -0.8pp        +0.3pp          #106           #65
+Yards per play                       +1.04         -0.29           #56           #50
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 06 | WEEK 6 | REGULAR | HOME
+MICHIGAN 24-10 WISCONSIN
+GAME ID: 401752856
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Wisconsin                    OFFENSE #110 score  22.4 | DEFENSE #42  score  66.1 | OVERALL #76  score  44.2
+Michigan (game excluded)     OFFENSE #23  score  80.1 | DEFENSE #38  score  68.1 | OVERALL #22  score  74.1
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                        #105         #59         #22         #54
+Rush success rate                   #108         #70          #6         #47
+Pass success rate                   #100         #55         #68         #77
+Explosive-play rate                 #120         #21         #20         #26
+Yards per play                       #96         #29         #23         #16
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE           WISCONSIN
+--------------------------------------------------------------------
+Offensive plays                           60                  56
+Possessions / drives                      12                  11
+Plays / drive                           5.00                5.09
+Yards / play                            7.17                4.50
+Yards / drive                          35.83               22.91
+Points / drive                          2.00                0.91
+Points / play                          0.400               0.179
+Scoring rate / drive                   33.3%               18.2%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         56.7%       46.9%     +9.8pp           #59
+                                  DEF         41.1%       37.9%     -3.1pp          #105
+Rush success rate                 OFF         56.2%       50.0%     +6.2pp           #70
+                                  DEF         37.0%       37.4%     +0.4pp          #108
+Pass success rate                 OFF         57.1%       42.0%    +15.2pp           #55
+                                  DEF         44.8%       39.6%     -5.2pp          #100
+Standard-down success rate        OFF         63.0%       54.2%     +8.9pp           #86
+                                  DEF         47.5%       42.7%     -4.8pp          #112
+Passing-down success rate         OFF         35.7%       29.7%     +6.0pp           #22
+                                  DEF         25.0%       28.4%     +3.4pp           #96
+First-down success rate           OFF         62.1%       47.8%    +14.3pp           #81
+                                  DEF         54.2%       37.7%    -16.5pp          #123
+Second-down success rate          OFF         55.0%       46.0%     +9.0pp           #85
+                                  DEF         29.4%       39.6%    +10.2pp           #72
+Third-down play success rate      OFF         45.5%       43.4%     +2.0pp           #44
+                                  DEF         28.6%       35.3%     +6.7pp          #124
+Third-down conversion rate        OFF         45.5%       43.4%     +2.0pp           #44
+                                  DEF         28.6%       35.3%     +6.7pp          #124
+Fourth-down conversion rate       OFF             —           —          —           #47
+                                  DEF        100.0%       55.4%    -44.6pp           #15
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         15.0%       11.8%     +3.2pp           #21
+                                  DEF          5.4%        8.4%     +3.0pp          #120
+Rush explosive-play rate          OFF         12.5%       13.9%     -1.4pp           #21
+                                  DEF          3.7%       10.6%     +6.9pp          #109
+Pass explosive-play rate          OFF         17.9%        9.6%     +8.3pp           #39
+                                  DEF          6.9%        7.1%     +0.2pp          #130
+Yards per play                    OFF          7.17        5.90      +1.27           #29
+                                  DEF          4.50        4.26      -0.24           #96
+Rush yards per attempt            OFF          5.72        5.51      +0.21           #20
+                                  DEF          3.22        4.48      +1.26           #48
+Net pass yards per dropback       OFF          8.82        6.30      +2.52           #35
+                                  DEF          5.69        4.23      -1.46          #110
+Yards per successful play         OFF         11.79       11.48      +0.31           #21
+                                  DEF          9.61       10.17      +0.56           #89
+Rush yards per successful play    OFF          8.72        9.55      -0.83           #15
+                                  DEF          6.30        8.99      +2.69           #53
+Pass yards per successful play    OFF         15.25       14.61      +0.64           #28
+                                  DEF         12.15       12.16      +0.00           #88
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         35.83       33.79      +2.05           #30
+                                  DEF         22.91       26.62      +3.71          #107
+Points per resolved possession    OFF          2.00        2.20      -0.20           #32
+                                  DEF          0.91        1.12      +0.21          #113
+Scoring rate per possession       OFF         33.3%       38.3%     -5.0pp           #37
+                                  DEF         18.2%       25.6%     +7.4pp          #127
+Touchdown rate per possession     OFF         25.0%       26.9%     -1.9pp           #43
+                                  DEF          9.1%       17.5%     +8.5pp          #119
+Points per scoring opportunity    OFF          3.43        3.32      +0.11           #18
+                                  DEF          5.00        2.49      -2.51          #133
+Touchdown rate per scoring opportunityOFF         42.9%       42.3%     +0.6pp           #26
+                                  DEF         50.0%       34.6%    -15.4pp          #130
+Field-goal rate per scoring opportunityOFF         14.3%       21.2%     -6.9pp           #78
+                                  DEF         50.0%       20.7%    -29.3pp          #107
+Empty scoring-opportunity rate    OFF         42.9%       36.3%     -6.6pp           #23
+                                  DEF          0.0%       45.0%    -45.0pp          #134
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         37.5%       48.1%    -10.6pp           #58
+                                  DEF         37.5%       41.8%     +4.3pp           #85
+Red-zone touchdown rate           OFF         40.0%       56.2%    -16.2pp           #32
+                                  DEF         50.0%       50.4%     +0.4pp           #80
+Red-zone points per resolved possessionOFF          3.40        4.39      -0.99           #32
+                                  DEF          5.00        4.01      -0.99           #95
+Goal-to-go success rate           OFF         42.9%       46.9%     -4.0pp           #32
+                                  DEF         33.3%       45.0%    +11.7pp           #38
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          3.6%        6.0%     +2.4pp           #15
+                                  DEF          3.4%        7.3%     -3.9pp          #127
+Havoc rate allowed                OFF          5.0%        9.5%     +4.5pp           #29
+                                  DEF          7.1%       12.1%     -4.9pp          #117
+Average starting yards to goal    OFF         73.75       66.30      -7.45           #50
+                                  DEF         72.55       66.06      +6.49           #47
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        +9.8pp        -3.1pp           #59          #105
+Rush success rate                   +6.2pp        +0.4pp           #70          #108
+Pass success rate                  +15.2pp        -5.2pp           #55          #100
+Explosive-play rate                 +3.2pp        +3.0pp           #21          #120
+Yards per play                       +1.27         -0.24           #29           #96
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 07 | WEEK 7 | REGULAR | AWAY
+MICHIGAN 13-31 USC
+GAME ID: 401752868
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+USC                          OFFENSE #13  score  87.9 | DEFENSE #65  score  50.4 | OVERALL #28  score  69.1
+Michigan (game excluded)     OFFENSE #19  score  83.7 | DEFENSE #29  score  74.1 | OVERALL #14  score  78.9
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #19         #71         #17         #45
+Rush success rate                    #57        #115          #4         #37
+Pass success rate                     #4         #46         #57         #61
+Explosive-play rate                   #4         #60         #18         #21
+Yards per play                        #3         #48         #19         #16
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE                 USC
+--------------------------------------------------------------------
+Offensive plays                           55                  66
+Possessions / drives                      10                  10
+Plays / drive                           5.50                6.60
+Yards / play                            5.85                7.08
+Yards / drive                          32.20               46.70
+Points / drive                          1.30                3.10
+Points / play                          0.236               0.470
+Scoring rate / drive                   20.0%               50.0%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         45.5%       46.7%     -1.2pp           #71
+                                  DEF         61.5%       46.4%    -15.1pp           #19
+Rush success rate                 OFF         46.4%       51.3%     -4.9pp          #115
+                                  DEF         52.8%       42.4%    -10.4pp           #57
+Pass success rate                 OFF         44.4%       39.6%     +4.8pp           #46
+                                  DEF         72.4%       49.7%    -22.7pp            #4
+Standard-down success rate        OFF         52.8%       52.0%     +0.8pp           #68
+                                  DEF         66.0%       49.7%    -16.3pp           #22
+Passing-down success rate         OFF         31.6%       30.4%     +1.2pp          #104
+                                  DEF         41.7%       35.3%     -6.4pp           #14
+First-down success rate           OFF         42.3%       46.5%     -4.2pp           #77
+                                  DEF         58.1%       48.2%     -9.9pp           #11
+Second-down success rate          OFF         63.2%       43.7%    +19.5pp           #98
+                                  DEF         65.2%       40.2%    -25.0pp           #71
+Third-down play success rate      OFF         25.0%       43.4%    -18.4pp           #83
+                                  DEF         60.0%       45.6%    -14.4pp            #7
+Third-down conversion rate        OFF         25.0%       43.4%    -18.4pp           #83
+                                  DEF         60.0%       45.6%    -14.4pp            #7
+Fourth-down conversion rate       OFF          0.0%       52.5%    -52.5pp           #49
+                                  DEF        100.0%       57.6%    -42.4pp           #26
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         10.9%       12.4%     -1.5pp           #60
+                                  DEF         13.8%       13.1%     -0.8pp            #4
+Rush explosive-play rate          OFF         17.9%       15.6%     +2.2pp          #116
+                                  DEF         13.9%       14.2%     +0.3pp           #14
+Pass explosive-play rate          OFF          3.7%        8.4%     -4.7pp           #10
+                                  DEF         13.8%       11.4%     -2.4pp            #3
+Yards per play                    OFF          5.85        6.20      -0.35           #48
+                                  DEF          7.08        6.77      -0.31            #3
+Rush yards per attempt            OFF          4.89        6.42      -1.53           #92
+                                  DEF          6.61        5.05      -1.56           #21
+Net pass yards per dropback       OFF          6.85        5.96      +0.89           #33
+                                  DEF          7.63        8.38      +0.75            #1
+Yards per successful play         OFF         11.80       11.38      +0.42           #24
+                                  DEF         11.50       12.43      +0.93            #5
+Rush yards per successful play    OFF          8.31        9.99      -1.68           #52
+                                  DEF         11.74        9.33      -2.41           #29
+Pass yards per successful play    OFF         15.58       13.94      +1.64           #15
+                                  DEF         11.29       14.83      +3.54           #14
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         32.20       34.46      -2.26           #50
+                                  DEF         46.70       40.56      -6.14            #3
+Points per resolved possession    OFF          1.30        2.21      -0.91           #59
+                                  DEF          3.10        2.89      -0.21            #2
+Scoring rate per possession       OFF         20.0%       34.6%    -14.6pp           #58
+                                  DEF         50.0%       44.8%     -5.2pp            #2
+Touchdown rate per possession     OFF         20.0%       24.1%     -4.1pp           #81
+                                  DEF         40.0%       30.3%     -9.7pp            #6
+Points per scoring opportunity    OFF          2.33        3.53      -1.20          #104
+                                  DEF          3.88        4.49      +0.61            #5
+Touchdown rate per scoring opportunityOFF         33.3%       40.4%     -7.1pp          #116
+                                  DEF         50.0%       48.6%     -1.4pp           #11
+Field-goal rate per scoring opportunityOFF          0.0%       20.0%    -20.0pp           #26
+                                  DEF         12.5%       23.7%    +11.2pp           #28
+Empty scoring-opportunity rate    OFF         66.7%       39.8%    -26.9pp           #94
+                                  DEF         37.5%       27.7%     +9.8pp            #4
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         66.7%       47.0%    +19.7pp           #97
+                                  DEF         55.6%       45.4%    -10.2pp           #53
+Red-zone touchdown rate           OFF        100.0%       52.1%    +47.9pp           #92
+                                  DEF         75.0%       59.6%    -15.4pp           #10
+Red-zone points per resolved possessionOFF          7.00        4.17      +2.83           #74
+                                  DEF          5.25        5.15      -0.10            #4
+Goal-to-go success rate           OFF         50.0%       46.6%     +3.4pp           #96
+                                  DEF         66.7%       47.0%    -19.7pp           #37
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          7.4%        6.1%     -1.3pp           #35
+                                  DEF          0.0%        4.6%     -4.6pp            #5
+Havoc rate allowed                OFF         10.9%        8.2%     -2.7pp          #105
+                                  DEF          7.6%        8.5%     -0.9pp            #9
+Average starting yards to goal    OFF         72.90       66.18      -6.72           #71
+                                  DEF         62.80       67.72      -4.92          #114
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        -1.2pp       -15.1pp           #71           #19
+Rush success rate                   -4.9pp       -10.4pp          #115           #57
+Pass success rate                   +4.8pp       -22.7pp           #46            #4
+Explosive-play rate                 -1.5pp        -0.8pp           #60            #4
+Yards per play                       -0.35         -0.31           #48            #3
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 08 | WEEK 8 | REGULAR | HOME
+MICHIGAN 24-7 WASHINGTON
+GAME ID: 401752873
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Washington                   OFFENSE #14  score  87.0 | DEFENSE #16  score  85.3 | OVERALL #6   score  86.1
+Michigan (game excluded)     OFFENSE #22  score  81.3 | DEFENSE #38  score  67.9 | OVERALL #22  score  74.6
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #15         #24         #21         #56
+Rush success rate                    #40         #21          #4         #40
+Pass success rate                     #7         #33         #62         #80
+Explosive-play rate                  #13         #11         #21         #28
+Yards per play                       #18         #15         #23         #18
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE          WASHINGTON
+--------------------------------------------------------------------
+Offensive plays                           68                  51
+Possessions / drives                      11                   8
+Plays / drive                           6.18                6.38
+Yards / play                            6.13                5.29
+Yards / drive                          37.91               33.75
+Points / drive                          2.18                0.88
+Points / play                          0.353               0.137
+Scoring rate / drive                   36.4%               12.5%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         47.1%       44.1%     +3.0pp           #24
+                                  DEF         49.0%       46.2%     -2.9pp           #15
+Rush success rate                 OFF         46.2%       46.7%     -0.6pp           #21
+                                  DEF         52.4%       42.0%    -10.4pp           #40
+Pass success rate                 OFF         48.3%       40.5%     +7.8pp           #33
+                                  DEF         46.7%       48.6%     +1.9pp            #7
+Standard-down success rate        OFF         54.2%       49.2%     +4.9pp           #18
+                                  DEF         56.8%       50.3%     -6.5pp           #10
+Passing-down success rate         OFF         30.0%       31.8%     -1.8pp           #70
+                                  DEF         28.6%       32.6%     +4.0pp           #16
+First-down success rate           OFF         51.6%       42.0%     +9.6pp           #10
+                                  DEF         61.9%       46.6%    -15.3pp            #9
+Second-down success rate          OFF         45.5%       45.0%     +0.5pp           #55
+                                  DEF         35.3%       42.9%     +7.6pp           #24
+Third-down play success rate      OFF         46.2%       43.7%     +2.4pp           #52
+                                  DEF         41.7%       41.4%     -0.3pp           #24
+Third-down conversion rate        OFF         46.2%       43.7%     +2.4pp           #52
+                                  DEF         41.7%       41.4%     -0.3pp           #24
+Fourth-down conversion rate       OFF          0.0%       55.5%    -55.5pp           #58
+                                  DEF        100.0%       53.3%    -46.7pp           #82
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         14.7%       11.0%     +3.7pp           #11
+                                  DEF          5.9%       11.5%     +5.6pp           #13
+Rush explosive-play rate          OFF         17.9%       12.5%     +5.5pp            #7
+                                  DEF          0.0%       13.0%    +13.0pp           #22
+Pass explosive-play rate          OFF         10.3%        9.7%     +0.6pp           #32
+                                  DEF         10.0%        9.4%     -0.6pp           #15
+Yards per play                    OFF          6.13        5.64      +0.50           #15
+                                  DEF          5.29        5.69      +0.40           #18
+Rush yards per attempt            OFF          4.92        5.31      -0.39           #11
+                                  DEF          3.05        4.85      +1.81           #29
+Net pass yards per dropback       OFF          7.76        5.87      +1.89           #20
+                                  DEF          6.87        6.58      -0.28           #16
+Yards per successful play         OFF         10.66       11.50      -0.84           #20
+                                  DEF         10.16       11.34      +1.18           #25
+Rush yards per successful play    OFF          8.39        9.01      -0.62            #3
+                                  DEF          4.73        9.43      +4.70           #37
+Pass yards per successful play    OFF         13.57       14.58      -1.01           #21
+                                  DEF         14.43       13.05      -1.38           #40
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         37.91       33.87      +4.04           #31
+                                  DEF         33.75       34.03      +0.28           #20
+Points per resolved possession    OFF          2.18        2.15      +0.03           #23
+                                  DEF          0.88        2.04      +1.17           #21
+Scoring rate per possession       OFF         36.4%       38.5%     -2.2pp           #43
+                                  DEF         12.5%       33.5%    +21.0pp           #29
+Touchdown rate per possession     OFF         27.3%       25.5%     +1.8pp           #22
+                                  DEF         12.5%       22.7%    +10.2pp           #22
+Points per scoring opportunity    OFF          3.43        3.31      +0.12           #16
+                                  DEF          1.75        3.50      +1.75           #40
+Touchdown rate per scoring opportunityOFF         42.9%       41.1%     +1.8pp           #10
+                                  DEF         25.0%       40.2%    +15.2pp           #29
+Field-goal rate per scoring opportunityOFF         14.3%       22.3%     -8.0pp          #118
+                                  DEF          0.0%       20.9%    +20.9pp          #114
+Empty scoring-opportunity rate    OFF         42.9%       35.9%     -6.9pp           #31
+                                  DEF         75.0%       38.6%    +36.4pp           #63
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         30.8%       45.8%    -15.0pp            #9
+                                  DEF         50.0%       43.9%     -6.1pp           #34
+Red-zone touchdown rate           OFF         50.0%       54.9%     -4.9pp           #10
+                                  DEF         50.0%       51.0%     +1.0pp           #59
+Red-zone points per resolved possessionOFF          4.25        4.18      +0.07           #12
+                                  DEF          3.50        4.20      +0.70           #64
+Goal-to-go success rate           OFF          0.0%       51.7%    -51.7pp          #123
+                                  DEF        100.0%       42.7%    -57.3pp           #81
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          3.4%        4.9%     +1.5pp           #98
+                                  DEF          3.3%        7.1%     -3.7pp          #121
+Havoc rate allowed                OFF          5.9%        8.1%     +2.2pp          #102
+                                  DEF         11.8%       11.1%     +0.7pp           #96
+Average starting yards to goal    OFF         62.64       65.31      +2.68          #111
+                                  DEF         68.50       66.34      +2.16           #45
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        +3.0pp        -2.9pp           #24           #15
+Rush success rate                   -0.6pp       -10.4pp           #21           #40
+Pass success rate                   +7.8pp        +1.9pp           #33            #7
+Explosive-play rate                 +3.7pp        +5.6pp           #11           #13
+Yards per play                       +0.50         +0.40           #15           #18
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 09 | WEEK 9 | REGULAR | AWAY
+MICHIGAN 31-20 MICHIGAN STATE
+GAME ID: 401752881
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Michigan State               OFFENSE #67  score  51.7 | DEFENSE #81  score  40.4 | OVERALL #73  score  46.1
+Michigan (game excluded)     OFFENSE #15  score  85.0 | DEFENSE #42  score  63.3 | OVERALL #23  score  74.1
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #62         #83         #17         #63
+Rush success rate                    #72         #92          #6         #43
+Pass success rate                    #51         #77         #47        #101
+Explosive-play rate                  #75         #75         #17         #28
+Yards per play                       #71         #80         #19         #18
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE      MICHIGAN STATE
+--------------------------------------------------------------------
+Offensive plays                           64                  71
+Possessions / drives                      14                  13
+Plays / drive                           4.57                5.46
+Yards / play                            5.86                4.28
+Yards / drive                          26.79               23.38
+Points / drive                          0.21                0.00
+Points / play                          0.047               0.000
+Scoring rate / drive                    7.1%                0.0%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         46.0%       47.4%     -1.4pp           #83
+                                  DEF         35.8%       43.7%     +7.9pp           #62
+Rush success rate                 OFF         51.1%       49.6%     +1.5pp           #92
+                                  DEF         43.8%       41.9%     -1.8pp           #72
+Pass success rate                 OFF         33.3%       42.3%     -9.0pp           #77
+                                  DEF         28.6%       45.6%    +17.0pp           #51
+Standard-down success rate        OFF         54.9%       53.5%     +1.4pp           #94
+                                  DEF         41.9%       49.3%     +7.4pp           #48
+Passing-down success rate         OFF          8.3%       30.1%    -21.7pp           #77
+                                  DEF         25.0%       31.1%     +6.1pp           #96
+First-down success rate           OFF         48.3%       47.6%     +0.7pp          #102
+                                  DEF         41.4%       46.8%     +5.4pp           #37
+Second-down success rate          OFF         40.0%       45.6%     -5.6pp          #108
+                                  DEF         28.6%       42.3%    +13.7pp           #72
+Third-down play success rate      OFF         46.2%       41.7%     +4.5pp           #60
+                                  DEF         35.7%       38.4%     +2.7pp          #112
+Third-down conversion rate        OFF         46.2%       41.7%     +4.5pp           #60
+                                  DEF         35.7%       38.4%     +2.7pp          #112
+Fourth-down conversion rate       OFF        100.0%       50.2%    +49.8pp           #14
+                                  DEF         33.3%       56.5%    +23.2pp           #93
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         11.1%       12.9%     -1.7pp           #75
+                                  DEF          6.0%       10.4%     +4.4pp           #75
+Rush explosive-play rate          OFF         11.1%       15.0%     -3.9pp           #85
+                                  DEF          9.4%       13.4%     +4.1pp           #35
+Pass explosive-play rate          OFF         11.1%        9.3%     +1.8pp           #69
+                                  DEF          2.9%        8.4%     +5.5pp          #116
+Yards per play                    OFF          5.86        6.73      -0.87           #80
+                                  DEF          4.28        4.95      +0.67           #71
+Rush yards per attempt            OFF          6.30        6.03      +0.28           #60
+                                  DEF          4.70        4.15      -0.55          #100
+Net pass yards per dropback       OFF          4.72        7.30      -2.58           #91
+                                  DEF          3.92        5.81      +1.89           #65
+Yards per successful play         OFF         10.59       13.03      -2.45          #107
+                                  DEF          9.88       10.16      +0.28          #107
+Rush yards per successful play    OFF          9.83       10.46      -0.64           #87
+                                  DEF          8.57        8.81      +0.24           #69
+Pass yards per successful play    OFF         13.50       15.98      -2.48          #108
+                                  DEF         11.70       11.70      -0.00          #123
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         26.79       37.44     -10.65           #87
+                                  DEF         23.38       29.75      +6.37           #97
+Points per resolved possession    OFF          0.21        2.50      -2.29           #79
+                                  DEF          0.00        1.94      +1.94           #67
+Scoring rate per possession       OFF          7.1%       36.5%    -29.3pp           #72
+                                  DEF          0.0%       36.0%    +36.0pp           #85
+Touchdown rate per possession     OFF          0.0%       26.5%    -26.5pp          #112
+                                  DEF          0.0%       25.2%    +25.2pp           #70
+Points per scoring opportunity    OFF          0.30        3.72      -3.42          #100
+                                  DEF          0.00        3.89      +3.89           #60
+Touchdown rate per scoring opportunityOFF          0.0%       42.6%    -42.6pp          #123
+                                  DEF          0.0%       45.8%    +45.8pp           #56
+Field-goal rate per scoring opportunityOFF         10.0%       19.2%     -9.2pp            #5
+                                  DEF          0.0%       21.9%    +21.9pp           #93
+Empty scoring-opportunity rate    OFF         90.0%       38.8%    -51.2pp           #73
+                                  DEF        100.0%       32.1%    +67.9pp           #78
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         72.7%       48.1%    +24.6pp          #126
+                                  DEF         87.5%       45.2%    -42.3pp           #34
+Red-zone touchdown rate           OFF          0.0%       55.0%    -55.0pp          #121
+                                  DEF          0.0%       58.0%    +58.0pp           #42
+Red-zone points per resolved possessionOFF          0.50        4.51      -4.01           #86
+                                  DEF          0.00        4.79      +4.79           #44
+Goal-to-go success rate           OFF         60.0%       48.6%    +11.4pp          #129
+                                  DEF         80.0%       43.4%    -36.6pp          #115
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          5.6%        5.8%     +0.3pp           #63
+                                  DEF         10.5%        5.6%     +4.9pp          #103
+Havoc rate allowed                OFF          4.7%        9.1%     +4.4pp           #71
+                                  DEF          9.9%       12.6%     -2.8pp          #132
+Average starting yards to goal    OFF         68.79       65.86      -2.93           #90
+                                  DEF         67.85       66.13      +1.72           #53
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        -1.4pp        +7.9pp           #83           #62
+Rush success rate                   +1.5pp        -1.8pp           #92           #72
+Pass success rate                   -9.0pp       +17.0pp           #77           #51
+Explosive-play rate                 -1.7pp        +4.4pp           #75           #75
+Yards per play                       -0.87         +0.67           #80           #71
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 10 | WEEK 10 | REGULAR | HOME
+MICHIGAN 21-16 PURDUE
+GAME ID: 401752890
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Purdue                       OFFENSE #67  score  51.0 | DEFENSE #117 score  22.7 | OVERALL #95  score  36.8
+Michigan (game excluded)     OFFENSE #16  score  84.4 | DEFENSE #35  score  69.9 | OVERALL #16  score  77.2
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #74         #93         #19         #49
+Rush success rate                    #85         #88          #8         #41
+Pass success rate                    #62        #105         #46         #72
+Explosive-play rate                  #59        #129         #18         #28
+Yards per play                       #56        #112         #19         #18
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE              PURDUE
+--------------------------------------------------------------------
+Offensive plays                           60                  64
+Possessions / drives                      10                  10
+Plays / drive                           6.00                6.40
+Yards / play                            6.43                4.45
+Yards / drive                          38.60               28.50
+Points / drive                          2.10                1.60
+Points / play                          0.350               0.250
+Scoring rate / drive                   30.0%               30.0%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         50.0%       49.6%     +0.4pp           #93
+                                  DEF         47.6%       40.0%     -7.7pp           #74
+Rush success rate                 OFF         58.3%       51.2%     +7.1pp           #88
+                                  DEF         44.4%       38.8%     -5.6pp           #85
+Pass success rate                 OFF         36.4%       46.0%     -9.7pp          #105
+                                  DEF         51.9%       41.2%    -10.7pp           #62
+Standard-down success rate        OFF         52.2%       56.5%     -4.4pp          #111
+                                  DEF         53.1%       43.7%     -9.4pp           #88
+Passing-down success rate         OFF         41.7%       30.7%    +10.9pp           #53
+                                  DEF         28.6%       31.2%     +2.6pp           #39
+First-down success rate           OFF         48.1%       50.3%     -2.1pp          #112
+                                  DEF         48.1%       40.9%     -7.3pp           #85
+Second-down success rate          OFF         47.6%       47.5%     +0.1pp          #104
+                                  DEF         47.8%       39.6%     -8.2pp           #60
+Third-down play success rate      OFF         60.0%       44.2%    +15.8pp           #77
+                                  DEF         45.5%       36.4%     -9.1pp           #99
+Third-down conversion rate        OFF         60.0%       44.2%    +15.8pp           #77
+                                  DEF         45.5%       36.4%     -9.1pp           #99
+Fourth-down conversion rate       OFF             —           —          —           #91
+                                  DEF         50.0%       54.6%     +4.6pp           #43
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         15.5%       16.0%     -0.5pp          #129
+                                  DEF          6.3%        9.8%     +3.4pp           #59
+Rush explosive-play rate          OFF         16.7%       16.7%     -0.0pp          #109
+                                  DEF         11.1%       11.9%     +0.8pp           #48
+Pass explosive-play rate          OFF         13.6%       12.3%     +1.3pp          #128
+                                  DEF          0.0%        8.3%     +8.3pp           #81
+Yards per play                    OFF          6.43        7.41      -0.97          #112
+                                  DEF          4.45        4.86      +0.41           #56
+Rush yards per attempt            OFF          6.86        6.42      +0.44           #83
+                                  DEF          4.47        4.19      -0.29           #70
+Net pass yards per dropback       OFF          5.79        8.97      -3.17          #130
+                                  DEF          4.43        5.43      +1.00           #59
+Yards per successful play         OFF         11.86       13.31      -1.45          #114
+                                  DEF          8.13       10.80      +2.67           #55
+Rush yards per successful play    OFF         10.05       10.44      -0.39           #66
+                                  DEF          7.38        8.71      +1.33           #67
+Pass yards per successful play    OFF         16.62       17.79      -1.17          #132
+                                  DEF          9.00       12.42      +3.42           #85
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         38.60       39.64      -1.04          #102
+                                  DEF         28.50       29.58      +1.08           #71
+Points per resolved possession    OFF          2.10        2.65      -0.55           #79
+                                  DEF          1.60        1.31      -0.29           #89
+Scoring rate per possession       OFF         30.0%       43.7%    -13.7pp          #115
+                                  DEF         30.0%       28.2%     -1.8pp          #100
+Touchdown rate per possession     OFF         30.0%       29.5%     +0.5pp           #91
+                                  DEF         20.0%       17.9%     -2.1pp          #108
+Points per scoring opportunity    OFF          2.80        3.74      -0.94           #68
+                                  DEF          2.67        2.87      +0.21          #118
+Touchdown rate per scoring opportunityOFF         40.0%       44.1%     -4.1pp           #61
+                                  DEF         33.3%       35.3%     +2.0pp          #122
+Field-goal rate per scoring opportunityOFF          0.0%       22.8%    -22.8pp          #125
+                                  DEF         16.7%       22.6%     +5.9pp           #48
+Empty scoring-opportunity rate    OFF         60.0%       32.6%    -27.4pp          #109
+                                  DEF         50.0%       41.6%     +8.4pp          #115
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         54.5%       49.6%     +4.9pp          #103
+                                  DEF         50.0%       38.8%    -11.2pp          #127
+Red-zone touchdown rate           OFF         40.0%       56.1%    -16.1pp           #31
+                                  DEF         66.7%       47.3%    -19.3pp          #132
+Red-zone points per resolved possessionOFF          2.80        4.44      -1.64           #38
+                                  DEF          4.33        3.67      -0.66          #128
+Goal-to-go success rate           OFF         40.0%       48.9%     -8.9pp           #81
+                                  DEF         33.3%       41.7%     +8.4pp          #122
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          8.3%        5.2%     -3.1pp           #53
+                                  DEF          7.1%        5.4%     +1.8pp           #24
+Havoc rate allowed                OFF         10.0%        8.3%     -1.7pp           #75
+                                  DEF         10.9%       10.0%     +0.9pp           #45
+Average starting yards to goal    OFF         65.40       67.50      +2.10           #28
+                                  DEF         73.20       67.61      +5.59          #122
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        +0.4pp        -7.7pp           #93           #74
+Rush success rate                   +7.1pp        -5.6pp           #88           #85
+Pass success rate                   -9.7pp       -10.7pp          #105           #62
+Explosive-play rate                 -0.5pp        +3.4pp          #129           #59
+Yards per play                       -0.97         +0.41          #112           #56
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 11 | WEEK 12 | REGULAR | N
+MICHIGAN 24-22 NORTHWESTERN
+GAME ID: 401752905
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Northwestern                 OFFENSE #74  score  48.3 | DEFENSE #68  score  48.7 | OVERALL #69  score  48.5
+Michigan (game excluded)     OFFENSE #23  score  81.0 | DEFENSE #43  score  63.3 | OVERALL #24  score  72.1
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                         #50         #78         #22         #67
+Rush success rate                    #53         #91          #8         #54
+Pass success rate                    #51         #71         #63         #94
+Explosive-play rate                 #113         #60         #17         #21
+Yards per play                       #87         #51         #23         #17
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE        NORTHWESTERN
+--------------------------------------------------------------------
+Offensive plays                           72                  53
+Possessions / drives                      11                  11
+Plays / drive                           6.55                4.82
+Yards / play                            6.92                4.62
+Yards / drive                          45.91               22.27
+Points / drive                          2.18                2.00
+Points / play                          0.333               0.415
+Scoring rate / drive                   36.4%               45.5%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         55.7%       47.6%     +8.1pp           #78
+                                  DEF         27.5%       43.9%    +16.4pp           #50
+Rush success rate                 OFF         59.0%       50.2%     +8.7pp           #91
+                                  DEF         28.0%       43.1%    +15.1pp           #53
+Pass success rate                 OFF         51.6%       42.0%     +9.6pp           #71
+                                  DEF         26.9%       44.2%    +17.3pp           #51
+Standard-down success rate        OFF         56.6%       53.0%     +3.6pp           #76
+                                  DEF         34.4%       47.6%    +13.2pp           #66
+Passing-down success rate         OFF         52.9%       31.1%    +21.9pp          #106
+                                  DEF         15.8%       33.5%    +17.7pp           #36
+First-down success rate           OFF         52.9%       48.3%     +4.6pp          #102
+                                  DEF         33.3%       43.8%    +10.4pp           #65
+Second-down success rate          OFF         54.2%       44.0%    +10.2pp           #73
+                                  DEF         22.2%       42.6%    +20.4pp           #50
+Third-down play success rate      OFF         66.7%       43.6%    +23.1pp           #87
+                                  DEF         18.2%       42.0%    +23.8pp           #38
+Third-down conversion rate        OFF         66.7%       43.6%    +23.1pp           #87
+                                  DEF         18.2%       42.0%    +23.8pp           #38
+Fourth-down conversion rate       OFF             —           —          —           #62
+                                  DEF        100.0%       55.2%    -44.8pp           #58
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         11.4%       13.0%     -1.6pp           #60
+                                  DEF          9.8%        8.8%     -1.0pp          #113
+Rush explosive-play rate          OFF         10.3%       15.0%     -4.7pp           #63
+                                  DEF          4.0%       10.8%     +6.8pp          #118
+Pass explosive-play rate          OFF         12.9%        9.8%     +3.1pp           #73
+                                  DEF         15.4%        8.0%     -7.3pp           #91
+Yards per play                    OFF          6.92        6.29      +0.63           #51
+                                  DEF          4.62        4.54      -0.08           #87
+Rush yards per attempt            OFF          6.21        6.32      -0.12           #77
+                                  DEF          2.92        4.35      +1.43           #75
+Net pass yards per dropback       OFF          7.74        6.28      +1.45           #41
+                                  DEF          6.14        4.93      -1.21           #91
+Yards per successful play         OFF         11.62       11.78      -0.17           #38
+                                  DEF         14.43        9.56      -4.87          #123
+Rush yards per successful play    OFF          9.52       10.37      -0.84           #66
+                                  DEF          6.57        8.57      +1.99           #81
+Pass yards per successful play    OFF         14.62       14.48      +0.14           #27
+                                  DEF         22.29       11.30     -10.99          #119
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         45.91       34.39     +11.52           #47
+                                  DEF         22.27       32.38     +10.11           #43
+Points per resolved possession    OFF          2.18        2.02      +0.16           #28
+                                  DEF          2.00        1.74      -0.26           #56
+Scoring rate per possession       OFF         36.4%       34.9%     +1.5pp           #31
+                                  DEF         45.5%       33.9%    -11.6pp           #51
+Touchdown rate per possession     OFF         27.3%       24.3%     +2.9pp           #46
+                                  DEF         18.2%       21.7%     +3.5pp           #74
+Points per scoring opportunity    OFF          3.00        3.23      -0.23           #27
+                                  DEF          4.40        3.33      -1.07           #75
+Touchdown rate per scoring opportunityOFF         37.5%       40.4%     -2.9pp           #51
+                                  DEF         40.0%       39.6%     -0.4pp          #104
+Field-goal rate per scoring opportunityOFF         12.5%       20.3%     -7.8pp           #36
+                                  DEF         60.0%       23.0%    -37.0pp           #17
+Empty scoring-opportunity rate    OFF         50.0%       39.3%    -10.7pp           #26
+                                  DEF          0.0%       36.6%    -36.6pp           #54
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         60.0%       47.4%    +12.6pp           #80
+                                  DEF         22.2%       39.5%    +17.3pp          #136
+Red-zone touchdown rate           OFF         60.0%       53.4%     +6.6pp           #42
+                                  DEF         40.0%       51.7%    +11.7pp          #118
+Red-zone points per resolved possessionOFF          4.80        4.09      +0.71           #29
+                                  DEF          4.40        4.25      -0.15           #85
+Goal-to-go success rate           OFF         83.3%       45.9%    +37.4pp           #69
+                                  DEF         28.6%       40.1%    +11.6pp          #136
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          8.8%        5.3%     -3.6pp           #81
+                                  DEF          3.6%        5.3%     -1.7pp           #32
+Havoc rate allowed                OFF         12.5%        8.0%     -4.5pp          #102
+                                  DEF          7.5%       10.0%     -2.5pp           #53
+Average starting yards to goal    OFF         69.55       64.90      -4.65          #116
+                                  DEF         57.91       67.63      -9.72           #82
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                        +8.1pp       +16.4pp           #78           #50
+Rush success rate                   +8.7pp       +15.1pp           #91           #53
+Pass success rate                   +9.6pp       +17.3pp           #71           #51
+Explosive-play rate                 -1.6pp        -1.0pp           #60          #113
+Yards per play                       +0.63         -0.08           #51           #87
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 12 | WEEK 13 | REGULAR | AWAY
+MICHIGAN 45-20 MARYLAND
+GAME ID: 401752914
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Maryland                     OFFENSE #117 score  19.1 | DEFENSE #64  score  50.8 | OVERALL #98  score  35.0
+Michigan (game excluded)     OFFENSE #23  score  80.6 | DEFENSE #39  score  66.7 | OVERALL #24  score  73.6
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                        #118         #71         #24         #59
+Rush success rate                   #117         #84          #8         #51
+Pass success rate                   #114         #72         #66         #79
+Explosive-play rate                 #130         #51         #19         #23
+Yards per play                       #72         #59         #19         #18
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE            MARYLAND
+--------------------------------------------------------------------
+Offensive plays                           73                  67
+Possessions / drives                      10                   9
+Plays / drive                           7.30                7.44
+Yards / play                            6.06                4.75
+Yards / drive                          44.40               35.33
+Points / drive                          4.50                1.62
+Points / play                          0.616               0.194
+Scoring rate / drive                   70.0%               44.4%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         57.1%       45.8%    +11.4pp           #71
+                                  DEF         36.4%       38.4%     +2.1pp          #118
+Rush success rate                 OFF         57.8%       48.4%     +9.4pp           #84
+                                  DEF         27.3%       38.9%    +11.6pp          #117
+Pass success rate                 OFF         56.0%       40.8%    +15.2pp           #72
+                                  DEF         40.9%       40.7%     -0.2pp          #114
+Standard-down success rate        OFF         59.3%       52.6%     +6.7pp           #85
+                                  DEF         38.1%       42.3%     +4.2pp          #128
+Passing-down success rate         OFF         50.0%       27.8%    +22.2pp           #56
+                                  DEF         33.3%       32.4%     -0.9pp           #68
+First-down success rate           OFF         48.4%       46.6%     +1.8pp           #83
+                                  DEF         31.0%       41.6%    +10.6pp          #117
+Second-down success rate          OFF         52.0%       42.5%     +9.5pp           #67
+                                  DEF         42.9%       39.4%     -3.5pp          #106
+Third-down play success rate      OFF         85.7%       41.9%    +43.8pp           #99
+                                  DEF         33.3%       39.6%     +6.2pp           #93
+Third-down conversion rate        OFF         85.7%       41.9%    +43.8pp           #99
+                                  DEF         33.3%       39.6%     +6.2pp           #93
+Fourth-down conversion rate       OFF             —           —          —           #34
+                                  DEF         50.0%       52.6%     +2.6pp          #136
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         12.9%       11.9%     +1.0pp           #51
+                                  DEF          7.6%        8.8%     +1.2pp          #130
+Rush explosive-play rate          OFF          8.9%       14.4%     -5.5pp           #61
+                                  DEF         13.6%       11.2%     -2.4pp          #108
+Pass explosive-play rate          OFF         20.0%        8.4%    +11.6pp           #36
+                                  DEF          4.5%        8.5%     +3.9pp          #113
+Yards per play                    OFF          6.06        6.40      -0.35           #59
+                                  DEF          4.75        4.89      +0.14           #72
+Rush yards per attempt            OFF          4.89        6.46      -1.57           #90
+                                  DEF          4.45        4.13      -0.33          #102
+Net pass yards per dropback       OFF          8.24        6.42      +1.82           #55
+                                  DEF          4.89        5.43      +0.54           #82
+Yards per successful play         OFF         10.07       12.13      -2.06           #52
+                                  DEF         11.50       11.50      +0.00           #22
+Rush yards per successful play    OFF          7.77       10.97      -3.20          #102
+                                  DEF         11.50        9.11      -2.39           #49
+Pass yards per successful play    OFF         14.36       14.43      -0.07           #33
+                                  DEF         11.50       12.73      +1.23           #83
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         44.40       34.47      +9.93           #64
+                                  DEF         35.33       29.07      -6.26           #92
+Points per resolved possession    OFF          4.50        2.05      +2.45           #60
+                                  DEF          1.62        1.53      -0.10          #102
+Scoring rate per possession       OFF         70.0%       33.0%    +37.0pp           #59
+                                  DEF         44.4%       33.8%    -10.7pp           #87
+Touchdown rate per possession     OFF         60.0%       22.5%    +37.5pp           #69
+                                  DEF         22.2%       22.1%     -0.2pp          #110
+Points per scoring opportunity    OFF          5.00        3.22      +1.78           #78
+                                  DEF          4.33        3.41      -0.92          #101
+Touchdown rate per scoring opportunityOFF         66.7%       37.6%    +29.1pp           #75
+                                  DEF         50.0%       41.8%     -8.2pp          #118
+Field-goal rate per scoring opportunityOFF         11.1%       20.4%     -9.3pp           #39
+                                  DEF         50.0%       23.7%    -26.3pp           #10
+Empty scoring-opportunity rate    OFF         22.2%       42.1%    +19.9pp           #57
+                                  DEF          0.0%       33.6%    -33.6pp           #68
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF         50.0%       46.1%     +3.9pp           #78
+                                  DEF         30.0%       41.6%    +11.6pp          #130
+Red-zone touchdown rate           OFF         75.0%       51.0%    +24.0pp           #83
+                                  DEF         33.3%       54.6%    +21.2pp          #118
+Red-zone points per resolved possessionOFF          5.25        4.28      +0.97          #105
+                                  DEF          4.33        4.27      -0.06          #105
+Goal-to-go success rate           OFF         50.0%       43.2%     +6.8pp           #15
+                                  DEF         28.6%       43.2%    +14.6pp          #134
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          8.0%        5.6%     -2.4pp           #89
+                                  DEF          6.7%        4.0%     +2.7pp            #2
+Havoc rate allowed                OFF          6.8%        9.4%     +2.6pp           #46
+                                  DEF          9.0%        8.0%     +0.9pp            #3
+Average starting yards to goal    OFF         59.90       69.22      +9.32            #4
+                                  DEF         66.67       66.56      +0.10           #67
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                       +11.4pp        +2.1pp           #71          #118
+Rush success rate                   +9.4pp       +11.6pp           #84          #117
+Pass success rate                  +15.2pp        -0.2pp           #72          #114
+Explosive-play rate                 +1.0pp        +1.2pp           #51          #130
+Yards per play                       -0.35         +0.14           #59           #72
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+######################################################################################################################
+GAME 13 | WEEK 14 | REGULAR | HOME
+MICHIGAN 9-27 OHIO STATE
+GAME ID: 401752921
+######################################################################################################################
+
+======================================================================================================================
+1. WHO DID MICHIGAN ACTUALLY PLAY? — LOO OPPONENT STRENGTH
+======================================================================================================================
+Ohio State                   OFFENSE #15  score  85.5 | DEFENSE #8   score  93.2 | OVERALL #5   score  89.3
+Michigan (game excluded)     OFFENSE #14  score  85.5 | DEFENSE #35  score  69.9 | OVERALL #14  score  77.7
+
+CORE METRIC                      OPP OFF     OPP DEF    MICH OFF    MICH DEF
+----------------------------------------------------------------------------
+Success rate                          #2         #11         #16         #54
+Rush success rate                    #44          #6          #4         #38
+Pass success rate                     #1         #29         #45         #77
+Explosive-play rate                  #43          #3         #19         #21
+Yards per play                       #13          #2         #19         #18
+
+======================================================================================================================
+2. TEMPO / VOLUME / PER-PLAY / PER-DRIVE CONTEXT
+======================================================================================================================
+                                MICH OFFENSE          OHIO STATE
+--------------------------------------------------------------------
+Offensive plays                           41                  72
+Possessions / drives                       9                   9
+Plays / drive                           4.56                8.00
+Yards / play                            3.98                5.82
+Yards / drive                          18.11               46.56
+Points / drive                          1.00                2.22
+Points / play                          0.220               0.278
+Scoring rate / drive                   33.3%               44.4%
+
+======================================================================================================================
+3. MICHIGAN ACTUAL → EXPECTED → PERFORMANCE OVER EXPECTATION
+======================================================================================================================
+OFF = Michigan offense against opponent defense | DEF = Michigan defense against opponent offense
+
+----------------------------------------------------------------------------------------------------------------------
+DOWN-TO-DOWN EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Success rate                      OFF         25.6%       43.0%    -17.4pp           #11
+                                  DEF         52.2%       48.8%     -3.4pp            #2
+Rush success rate                 OFF         28.6%       44.7%    -16.2pp            #6
+                                  DEF         48.9%       41.5%     -7.4pp           #44
+Pass success rate                 OFF         22.2%       41.3%    -19.1pp           #29
+                                  DEF         58.3%       53.1%     -5.2pp            #1
+Standard-down success rate        OFF         42.1%       49.6%     -7.5pp           #17
+                                  DEF         53.8%       52.6%     -1.3pp            #1
+Passing-down success rate         OFF         10.0%       29.3%    -19.3pp            #9
+                                  DEF         47.1%       32.8%    -14.3pp           #10
+First-down success rate           OFF         35.3%       45.1%     -9.8pp           #23
+                                  DEF         53.6%       47.0%     -6.6pp            #8
+Second-down success rate          OFF         23.1%       43.0%    -19.9pp           #18
+                                  DEF         39.1%       46.3%     +7.2pp            #3
+Third-down play success rate      OFF         11.1%       41.8%    -30.7pp            #9
+                                  DEF         68.8%       42.4%    -26.3pp            #7
+Third-down conversion rate        OFF         11.1%       41.8%    -30.7pp            #9
+                                  DEF         68.8%       42.4%    -26.3pp            #7
+Fourth-down conversion rate       OFF             —           —          —           #22
+                                  DEF         50.0%       54.8%     +4.8pp           #38
+
+----------------------------------------------------------------------------------------------------------------------
+EXPLOSIVENESS & YARDAGE
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Explosive-play rate               OFF         10.3%       10.6%     -0.4pp            #3
+                                  DEF         10.1%       10.1%     -0.1pp           #43
+Rush explosive-play rate          OFF         14.3%       13.1%     +1.1pp           #11
+                                  DEF          8.9%       12.1%     +3.2pp           #46
+Pass explosive-play rate          OFF          5.6%        8.7%     -3.1pp            #2
+                                  DEF         12.5%        8.4%     -4.1pp           #51
+Yards per play                    OFF          3.98        5.06      -1.08            #2
+                                  DEF          5.82        5.80      -0.02           #13
+Rush yards per attempt            OFF          4.70        5.29      -0.59           #11
+                                  DEF          3.96        4.34      +0.38           #56
+Net pass yards per dropback       OFF          3.06        5.03      -1.97            #1
+                                  DEF          9.32        7.19      -2.13            #7
+Yards per successful play         OFF         15.20       10.52      +4.68            #1
+                                  DEF          9.61       10.25      +0.64           #84
+Rush yards per successful play    OFF         16.00        9.29      +6.71           #15
+                                  DEF          7.45        8.19      +0.74           #98
+Pass yards per successful play    OFF         14.00       13.10      +0.90            #2
+                                  DEF         13.00       11.81      -1.19          #101
+
+----------------------------------------------------------------------------------------------------------------------
+DRIVE & SCORING EFFICIENCY
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Yards per possession              OFF         18.11       30.30     -12.19            #5
+                                  DEF         46.56       35.77     -10.78           #11
+Points per resolved possession    OFF          1.00        1.70      -0.70            #3
+                                  DEF          2.22        2.49      +0.27            #7
+Scoring rate per possession       OFF         33.3%       33.9%     -0.5pp            #7
+                                  DEF         44.4%       37.0%     -7.4pp            #6
+Touchdown rate per possession     OFF          0.0%       23.7%    -23.7pp            #5
+                                  DEF         22.2%       25.2%     +3.0pp            #8
+Points per scoring opportunity    OFF          3.00        3.34      -0.34           #18
+                                  DEF          4.00        4.19      +0.19            #2
+Touchdown rate per scoring opportunityOFF          0.0%       42.3%    -42.3pp           #16
+                                  DEF         40.0%       44.0%     +4.0pp            #5
+Field-goal rate per scoring opportunityOFF        100.0%       21.3%    +78.7pp          #119
+                                  DEF         40.0%       21.6%    -18.4pp           #70
+Empty scoring-opportunity rate    OFF          0.0%       36.0%    +36.0pp           #43
+                                  DEF         20.0%       34.2%    -14.2pp            #3
+
+----------------------------------------------------------------------------------------------------------------------
+RED ZONE / FINISHING
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Red-zone play success rate        OFF          0.0%       46.6%    -46.6pp           #27
+                                  DEF         50.0%       45.3%     -4.7pp           #15
+Red-zone touchdown rate           OFF          0.0%       55.2%    -55.2pp           #10
+                                  DEF         33.3%       54.2%    +20.9pp           #12
+Red-zone points per resolved possessionOFF          3.00        4.11      -1.11            #4
+                                  DEF          4.33        4.68      +0.35            #8
+Goal-to-go success rate           OFF             —           —          —           #21
+                                  DEF         33.3%       45.0%    +11.7pp           #38
+
+----------------------------------------------------------------------------------------------------------------------
+PROTECTION / DISRUPTION / FIELD POSITION
+----------------------------------------------------------------------------------------------------------------------
+METRIC                            SIDE       ACTUAL    EXPECTED        POE   OPP UNIT RK
+----------------------------------------------------------------------------------------
+Sack rate allowed                 OFF          5.6%        6.1%     +0.6pp            #6
+                                  DEF          0.0%        5.7%     -5.7pp           #35
+Havoc rate allowed                OFF          7.3%        9.2%     +1.9pp           #30
+                                  DEF          9.7%        9.9%     -0.2pp           #42
+Average starting yards to goal    OFF         64.89       67.52      +2.63           #28
+                                  DEF         65.44       67.47      -2.02           #93
+
+======================================================================================================================
+4. FIVE-METRIC VALIDATED CORE — QUICK GAME SUMMARY
+======================================================================================================================
+METRIC                             OFF POE       DEF POE    OPP DEF RK    OPP OFF RK
+------------------------------------------------------------------------------------
+Success rate                       -17.4pp        -3.4pp           #11            #2
+Rush success rate                  -16.2pp        -7.4pp            #6           #44
+Pass success rate                  -19.1pp        -5.2pp           #29            #1
+Explosive-play rate                 -0.4pp        -0.1pp            #3           #43
+Yards per play                       -1.08         -0.02            #2           #13
+
+Interpretation: positive POE means Michigan exceeded what the opponent-adjusted matchup predicted.
+
+
+======================================================================================================================
+END OF MICHIGAN EXTREME GAME-BY-GAME FORENSICS
+======================================================================================================================
+Saved terminal output to: michigan_2025_extreme_breakdown.txt

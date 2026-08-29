@@ -1,0 +1,359 @@
+{
+  "definitionVersion": "schedule-adjusted-walk-forward-v1",
+  "fitHomeField": true,
+  "homeRidge": 20.0,
+  "metrics": {
+    "explosivePlayRate": {
+      "adjustedByRidge": {
+        "10": {
+          "bias": -0.00039255547792839244,
+          "mae": 0.03497837096781583,
+          "n": 1174,
+          "rmse": 0.04505905647947076,
+          "weighted_mae": 0.03449456394342025
+        },
+        "20": {
+          "bias": -0.00023803071251359516,
+          "mae": 0.03456348278266025,
+          "n": 1174,
+          "rmse": 0.0444287521003456,
+          "weighted_mae": 0.034057262058168766
+        },
+        "40": {
+          "bias": -2.2942638266502878e-05,
+          "mae": 0.03454080080152281,
+          "n": 1174,
+          "rmse": 0.04435997045754423,
+          "weighted_mae": 0.03399808334809494
+        },
+        "5": {
+          "bias": -0.00045275954030840685,
+          "mae": 0.03556148242383453,
+          "n": 1174,
+          "rmse": 0.04600967478568179,
+          "weighted_mae": 0.035085364086736154
+        },
+        "80": {
+          "bias": 0.0001947882058441963,
+          "mae": 0.035007262909982816,
+          "n": 1174,
+          "rmse": 0.04487132705150621,
+          "weighted_mae": 0.0344204186532668
+        }
+      },
+      "bestAdjustedMAE": 0.03454080080152281,
+      "bestAdjustedVsRawMAEPct": 9.579374787408376,
+      "bestAdjustedVsSimpleMAEPct": 7.883181526236223,
+      "bestRidgeByMAE": 40.0,
+      "family": "binomial",
+      "foldCount": 14,
+      "predictionCount": 1174,
+      "rawOffense": {
+        "bias": 0.0013850610060231678,
+        "mae": 0.038200134892136084,
+        "n": 1174,
+        "rmse": 0.04853082457379448,
+        "weighted_mae": 0.03767296259945785
+      },
+      "simpleMatchup": {
+        "bias": -0.0005557426865029146,
+        "mae": 0.03749673661532344,
+        "n": 1174,
+        "rmse": 0.04843520425804397,
+        "weighted_mae": 0.03699699453028909
+      },
+      "unit": "rate"
+    },
+    "passSuccessRate": {
+      "adjustedByRidge": {
+        "10": {
+          "bias": 0.005543244378538307,
+          "mae": 0.08983605242173974,
+          "n": 1174,
+          "rmse": 0.1130626521757079,
+          "weighted_mae": 0.0852582641059057
+        },
+        "20": {
+          "bias": 0.005773000155732741,
+          "mae": 0.08885290891707895,
+          "n": 1174,
+          "rmse": 0.11141413817040327,
+          "weighted_mae": 0.08414741186361425
+        },
+        "40": {
+          "bias": 0.005989367668055483,
+          "mae": 0.08853501513431325,
+          "n": 1174,
+          "rmse": 0.11088105293620831,
+          "weighted_mae": 0.08370589188532813
+        },
+        "5": {
+          "bias": 0.005346219136810762,
+          "mae": 0.09113904690985532,
+          "n": 1174,
+          "rmse": 0.11522967886019803,
+          "weighted_mae": 0.08666834935100581
+        },
+        "80": {
+          "bias": 0.006154022238614899,
+          "mae": 0.08908448872018479,
+          "n": 1174,
+          "rmse": 0.1116341446161419,
+          "weighted_mae": 0.08413659488212313
+        }
+      },
+      "bestAdjustedMAE": 0.08853501513431325,
+      "bestAdjustedVsRawMAEPct": 7.556332989650681,
+      "bestAdjustedVsSimpleMAEPct": 6.39108928708826,
+      "bestRidgeByMAE": 40.0,
+      "family": "binomial",
+      "foldCount": 14,
+      "predictionCount": 1174,
+      "rawOffense": {
+        "bias": 0.007213248555340254,
+        "mae": 0.09577185544186766,
+        "n": 1174,
+        "rmse": 0.11921133396139882,
+        "weighted_mae": 0.09112349098849547
+      },
+      "simpleMatchup": {
+        "bias": 0.0049414518418773555,
+        "mae": 0.09457968740373492,
+        "n": 1174,
+        "rmse": 0.12043264022790262,
+        "weighted_mae": 0.09028556658242291
+      },
+      "unit": "rate"
+    },
+    "rushSuccessRate": {
+      "adjustedByRidge": {
+        "10": {
+          "bias": 0.002840137149145221,
+          "mae": 0.0809004157203192,
+          "n": 1174,
+          "rmse": 0.10226467175097999,
+          "weighted_mae": 0.07849038069824803
+        },
+        "20": {
+          "bias": 0.0038129146074240353,
+          "mae": 0.07990570350913982,
+          "n": 1174,
+          "rmse": 0.1006933483480257,
+          "weighted_mae": 0.07747365777275218
+        },
+        "40": {
+          "bias": 0.004981324661599419,
+          "mae": 0.07961802356388456,
+          "n": 1174,
+          "rmse": 0.10005304526833159,
+          "weighted_mae": 0.07713431818593997
+        },
+        "5": {
+          "bias": 0.0021455410033238524,
+          "mae": 0.08233149019320406,
+          "n": 1174,
+          "rmse": 0.10419733639711284,
+          "weighted_mae": 0.07996809892281576
+        },
+        "80": {
+          "bias": 0.006157675253354834,
+          "mae": 0.08016632639029297,
+          "n": 1174,
+          "rmse": 0.10059322536481957,
+          "weighted_mae": 0.07762699037823154
+        }
+      },
+      "bestAdjustedMAE": 0.07961802356388456,
+      "bestAdjustedVsRawMAEPct": 8.202125328287856,
+      "bestAdjustedVsSimpleMAEPct": 7.616508166038731,
+      "bestRidgeByMAE": 40.0,
+      "family": "binomial",
+      "foldCount": 14,
+      "predictionCount": 1174,
+      "rawOffense": {
+        "bias": 0.006988647611624232,
+        "mae": 0.08673188115587076,
+        "n": 1174,
+        "rmse": 0.10971301540960662,
+        "weighted_mae": 0.08432186057516529
+      },
+      "simpleMatchup": {
+        "bias": 0.0016053864943153227,
+        "mae": 0.08618208944405371,
+        "n": 1174,
+        "rmse": 0.10877001459067061,
+        "weighted_mae": 0.0839694891976974
+      },
+      "unit": "rate"
+    },
+    "successRate": {
+      "adjustedByRidge": {
+        "10": {
+          "bias": 0.0033266608577469923,
+          "mae": 0.06104595130735409,
+          "n": 1174,
+          "rmse": 0.07722943661824454,
+          "weighted_mae": 0.06004319107833132
+        },
+        "20": {
+          "bias": 0.003688375246050625,
+          "mae": 0.060402404433031714,
+          "n": 1174,
+          "rmse": 0.07617588425653181,
+          "weighted_mae": 0.05934354598445257
+        },
+        "40": {
+          "bias": 0.004147622735121887,
+          "mae": 0.06025382208686545,
+          "n": 1174,
+          "rmse": 0.07571515688077345,
+          "weighted_mae": 0.05912921079866795
+        },
+        "5": {
+          "bias": 0.0030756819065632123,
+          "mae": 0.061916417683029155,
+          "n": 1174,
+          "rmse": 0.07840072494876867,
+          "weighted_mae": 0.060970277119997654
+        },
+        "80": {
+          "bias": 0.004641652024415573,
+          "mae": 0.060824374567976944,
+          "n": 1174,
+          "rmse": 0.07634242800142986,
+          "weighted_mae": 0.05960403349502988
+        }
+      },
+      "bestAdjustedMAE": 0.06025382208686545,
+      "bestAdjustedVsRawMAEPct": 12.062437732792054,
+      "bestAdjustedVsSimpleMAEPct": 7.515307736487199,
+      "bestRidgeByMAE": 40.0,
+      "family": "binomial",
+      "foldCount": 14,
+      "predictionCount": 1174,
+      "rawOffense": {
+        "bias": 0.006616657394126344,
+        "mae": 0.06851886785737543,
+        "n": 1174,
+        "rmse": 0.08578239700953014,
+        "weighted_mae": 0.06721680645792218
+      },
+      "simpleMatchup": {
+        "bias": 0.0035729933156582114,
+        "mae": 0.06515004874015987,
+        "n": 1174,
+        "rmse": 0.08234490924390524,
+        "weighted_mae": 0.06414249796382414
+      },
+      "unit": "rate"
+    },
+    "yardsPerPlay": {
+      "adjustedByRidge": {
+        "10": {
+          "bias": 0.0661248305178102,
+          "mae": 1.0702862724809974,
+          "n": 1174,
+          "rmse": 1.3479129448719485,
+          "weighted_mae": 1.0596573581050643
+        },
+        "20": {
+          "bias": 0.06840920331693658,
+          "mae": 1.056093315726594,
+          "n": 1174,
+          "rmse": 1.329906851446532,
+          "weighted_mae": 1.0446861738823112
+        },
+        "40": {
+          "bias": 0.07115916955286139,
+          "mae": 1.0388075038994082,
+          "n": 1174,
+          "rmse": 1.3085889675013864,
+          "weighted_mae": 1.0264016305355053
+        },
+        "5": {
+          "bias": 0.06428259876532395,
+          "mae": 1.0807508990005128,
+          "n": 1174,
+          "rmse": 1.3612375174952083,
+          "weighted_mae": 1.0705269586012112
+        },
+        "80": {
+          "bias": 0.07436363823641742,
+          "mae": 1.0222068819109704,
+          "n": 1174,
+          "rmse": 1.288423659690182,
+          "weighted_mae": 1.0083693490208054
+        }
+      },
+      "bestAdjustedMAE": 1.0222068819109704,
+      "bestAdjustedVsRawMAEPct": 8.635331364986339,
+      "bestAdjustedVsSimpleMAEPct": 6.166140500567925,
+      "bestRidgeByMAE": 80.0,
+      "family": "gaussian",
+      "foldCount": 14,
+      "predictionCount": 1174,
+      "rawOffense": {
+        "bias": 0.11680876356097782,
+        "mae": 1.1188207620984358,
+        "n": 1174,
+        "rmse": 1.4157175612055037,
+        "weighted_mae": 1.0974621606320547
+      },
+      "simpleMatchup": {
+        "bias": 0.0766493539574556,
+        "mae": 1.0893795559130308,
+        "n": 1174,
+        "rmse": 1.3713958197962088,
+        "weighted_mae": 1.0754168277929912
+      },
+      "unit": "yards"
+    }
+  },
+  "minPriorGames": 3,
+  "recommendedRidgeByMeanMAERatio": 40.0,
+  "ridgeSummary": [
+    {
+      "meanAdjustedToSimpleMAERatio": 0.9619552804381065,
+      "metricsBeatingRaw": 5,
+      "metricsBeatingSimple": 5,
+      "metricsCompared": 5,
+      "ridge": 5.0
+    },
+    {
+      "meanAdjustedToSimpleMAERatio": 0.9481752986934143,
+      "metricsBeatingRaw": 5,
+      "metricsBeatingSimple": 5,
+      "metricsCompared": 5,
+      "ridge": 10.0
+    },
+    {
+      "meanAdjustedToSimpleMAERatio": 0.9369937194791312,
+      "metricsBeatingRaw": 5,
+      "metricsBeatingSimple": 5,
+      "metricsCompared": 5,
+      "ridge": 20.0
+    },
+    {
+      "meanAdjustedToSimpleMAERatio": 0.9319032660606004,
+      "metricsBeatingRaw": 5,
+      "metricsBeatingSimple": 5,
+      "metricsCompared": 5,
+      "ridge": 40.0
+    },
+    {
+      "meanAdjustedToSimpleMAERatio": 0.9355294188235324,
+      "metricsBeatingRaw": 5,
+      "metricsBeatingSimple": 5,
+      "metricsCompared": 5,
+      "ridge": 80.0
+    }
+  ],
+  "ridges": [
+    5.0,
+    10.0,
+    20.0,
+    40.0,
+    80.0
+  ],
+  "season": 2025
+}
