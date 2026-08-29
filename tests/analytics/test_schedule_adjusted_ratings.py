@@ -107,6 +107,20 @@ def test_builder_uses_counts_not_stored_display_rate_and_deduplicates() -> None:
     assert observations[0].venue == 1.0
 
 
+def test_composite_scoring_rate_uses_actual_scoring_possessions_not_opportunities() -> None:
+    spec = METRIC_SPECS["scoringRatePerPossession"]
+    row = {
+        "gameId":"g1","team_id":1,"opponent_id":2,"team":"A","opponent":"B",
+        "possessions":13,"possessionTouchdowns":3,"possessionFieldGoals":2,
+        "otherScoringPossessions":0,"scoringOpportunities":8,"neutral_site":True,
+    }
+    observations = build_observations([row], spec)
+    assert len(observations) == 1
+    assert observations[0].numerator == pytest.approx(5.0)
+    assert observations[0].raw_value == pytest.approx(5 / 13)
+    assert observations[0].raw_value != pytest.approx(8 / 13)
+
+
 def _network_rows(target_successes: int) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
     games = [("1",1,"A",3,"C",28,60),("2",1,"A",4,"D",30,60),("3",2,"B",3,"C",23,60),("4",2,"B",4,"D",25,60),("5",3,"C",1,"A",24,60),("6",4,"D",2,"B",26,60)]
@@ -143,7 +157,8 @@ def test_registry_pairs_reproduce_real_2025_michigan_published_values() -> None:
     for name, spec in METRIC_SPECS.items():
         checked = 0
         for row in games:
-            numerator, denominator, stored = row.get(spec.numerator_field), row.get(spec.denominator_field), row.get(name)
+            numerator = spec.numerator_value(row)
+            denominator, stored = row.get(spec.denominator_field), row.get(name)
             if isinstance(numerator,(int,float)) and not isinstance(numerator,bool) and isinstance(denominator,(int,float)) and not isinstance(denominator,bool) and denominator > 0 and isinstance(stored,(int,float)) and not isinstance(stored,bool):
                 assert numerator / denominator == pytest.approx(stored, abs=1e-12), name
                 checked += 1
