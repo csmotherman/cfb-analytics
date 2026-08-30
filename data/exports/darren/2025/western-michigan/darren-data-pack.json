@@ -2590,7 +2590,78 @@
     {
       "gameId": "401752802",
       "homeAway": "away",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.125,
+            "expected": 0.10746160276382086,
+            "poe": -0.017538397236179143,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.09433962264150944,
+            "expected": 0.10630718213997167,
+            "poe": -0.011967559498462232,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.5416666666666666,
+            "expected": 0.3761853454216369,
+            "poe": -0.16548132124502973,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2647058823529412,
+            "expected": 0.39857873055576176,
+            "poe": -0.13387284820282058,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.45,
+            "expected": 0.41484692379262833,
+            "poe": -0.03515307620737168,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.21052631578947367,
+            "expected": 0.4514898219442619,
+            "poe": -0.24096350615478823,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.484375,
+            "expected": 0.3918165139767509,
+            "poe": -0.09255848602324912,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.24528301886792453,
+            "expected": 0.42854531316974664,
+            "poe": -0.18326229430182212,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.656716417910448,
+            "expected": 5.548371217234919,
+            "poe": -0.10834520067552855,
+            "supported": true
+          },
+          "offense": {
+            "actual": 2.857142857142857,
+            "expected": 5.292307450798101,
+            "poe": -2.435164593655244,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2623,7 +2694,78 @@
     {
       "gameId": "401762461",
       "homeAway": "home",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.19480519480519481,
+            "expected": 0.12329041831526909,
+            "poe": -0.07151477648992573,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.07608695652173914,
+            "expected": 0.11764870035107389,
+            "poe": -0.04156174382933475,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.32558139534883723,
+            "expected": 0.46101138601697444,
+            "poe": 0.1354299906681372,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2631578947368421,
+            "expected": 0.3797124021820972,
+            "poe": -0.11655450744525508,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.5882352941176471,
+            "expected": 0.4574960709097442,
+            "poe": -0.13073922320790288,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3972602739726027,
+            "expected": 0.5110706928912542,
+            "poe": -0.11381041891865146,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.44155844155844154,
+            "expected": 0.47127649490212165,
+            "poe": 0.029718053343680106,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3695652173913043,
+            "expected": 0.45328405658525417,
+            "poe": -0.08371883919394985,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 6.5256410256410255,
+            "expected": 7.077161172847512,
+            "poe": 0.5515201472064861,
+            "supported": true
+          },
+          "offense": {
+            "actual": 4.021739130434782,
+            "expected": 5.6229908231125005,
+            "poe": -1.6012516926777183,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2656,7 +2798,78 @@
     {
       "gameId": "401752829",
       "homeAway": "away",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.13114754098360656,
+            "expected": 0.11484237246655449,
+            "poe": -0.016305168517052077,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.05172413793103448,
+            "expected": 0.08625972763186981,
+            "poe": -0.03453558970083533,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.4642857142857143,
+            "expected": 0.43256718660225063,
+            "poe": -0.03171852768346367,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2962962962962963,
+            "expected": 0.4260482637348324,
+            "poe": -0.12975196743853612,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.6060606060606061,
+            "expected": 0.43413879458461657,
+            "poe": -0.1719218114759895,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.25806451612903225,
+            "expected": 0.43194374115358614,
+            "poe": -0.17387922502455389,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.5409836065573771,
+            "expected": 0.44052858751557145,
+            "poe": -0.10045501904180565,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.27586206896551724,
+            "expected": 0.4304919557768217,
+            "poe": -0.15462988681130446,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.870967741935484,
+            "expected": 6.005991376685832,
+            "poe": 0.13502363475034773,
+            "supported": true
+          },
+          "offense": {
+            "actual": 3.5172413793103448,
+            "expected": 4.238486223531507,
+            "poe": -0.7212448442211623,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2689,7 +2902,78 @@
     {
       "gameId": "401762820",
       "homeAway": "home",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.07246376811594203,
+            "expected": 0.12787418824351285,
+            "poe": 0.05541042012757082,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.05970149253731343,
+            "expected": 0.10035724313263716,
+            "poe": -0.04065575059532373,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.3,
+            "expected": 0.4159511176163056,
+            "poe": 0.11595111761630561,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.37142857142857144,
+            "expected": 0.3276803312052574,
+            "poe": 0.04374824022331403,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.3333333333333333,
+            "expected": 0.40313727733862015,
+            "poe": 0.06980394400528683,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4375,
+            "expected": 0.4182475475240658,
+            "poe": 0.019252452475934212,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.3188405797101449,
+            "expected": 0.4093841409830557,
+            "poe": 0.0905435612729108,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.40298507462686567,
+            "expected": 0.368238787658617,
+            "poe": 0.03474628696824866,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.072463768115942,
+            "expected": 6.184231100534178,
+            "poe": 2.1117673324182356,
+            "supported": true
+          },
+          "offense": {
+            "actual": 4.343283582089552,
+            "expected": 4.130740970356775,
+            "poe": 0.21254261173277733,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2722,7 +3006,78 @@
     {
       "gameId": "401762832",
       "homeAway": "away",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.04838709677419355,
+            "expected": 0.08120657780585386,
+            "poe": 0.03281948103166031,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.09090909090909091,
+            "expected": 0.12423924457354758,
+            "poe": -0.03333015366445667,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.325,
+            "expected": 0.3246024285624582,
+            "poe": -0.00039757143754182156,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.44,
+            "expected": 0.4499999248425186,
+            "poe": -0.009999924842518604,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.36363636363636365,
+            "expected": 0.3630312505402089,
+            "poe": -0.0006051130961547413,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5365853658536586,
+            "expected": 0.4683862211461275,
+            "poe": 0.06819914470753108,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.3387096774193548,
+            "expected": 0.3200593608033296,
+            "poe": -0.01865031661602523,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5,
+            "expected": 0.4757683507078442,
+            "poe": 0.02423164929215582,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.079365079365079,
+            "expected": 3.641944508277926,
+            "poe": -0.43742057108715304,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.636363636363637,
+            "expected": 5.9936705040649265,
+            "poe": -0.35730686770128983,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2755,7 +3110,78 @@
     {
       "gameId": "401762834",
       "homeAway": "home",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.020833333333333332,
+            "expected": 0.0922977736351233,
+            "poe": 0.07146444030178997,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.11428571428571428,
+            "expected": 0.13039177092068518,
+            "poe": -0.016106056634970903,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.14285714285714285,
+            "expected": 0.31986246014606207,
+            "poe": 0.17700531728891922,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5357142857142857,
+            "expected": 0.412894574624636,
+            "poe": 0.12281971108964967,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.2,
+            "expected": 0.33181825186953207,
+            "poe": 0.13181825186953205,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5238095238095238,
+            "expected": 0.45837901568631606,
+            "poe": 0.06543050812320778,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.16666666666666666,
+            "expected": 0.3065126376694538,
+            "poe": 0.13984597100278714,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5285714285714286,
+            "expected": 0.4439888511076184,
+            "poe": 0.0845825774638102,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 2.125,
+            "expected": 4.038034857335444,
+            "poe": 1.913034857335444,
+            "supported": true
+          },
+          "offense": {
+            "actual": 6.535211267605634,
+            "expected": 5.80447548652616,
+            "poe": 0.7307357810794741,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2788,7 +3214,78 @@
     {
       "gameId": "401762874",
       "homeAway": "away",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.1,
+            "expected": 0.11000910750770185,
+            "poe": 0.010009107507701842,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.10606060606060606,
+            "expected": 0.08907340772973733,
+            "poe": 0.01698719833086873,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.5172413793103449,
+            "expected": 0.33699399702803223,
+            "poe": -0.18024738228231263,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2903225806451613,
+            "expected": 0.39537190979619785,
+            "poe": -0.10504932915103654,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.3225806451612903,
+            "expected": 0.4125078327170354,
+            "poe": 0.08992718755574508,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5428571428571428,
+            "expected": 0.3934736583750887,
+            "poe": 0.14938348448205413,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.4166666666666667,
+            "expected": 0.36137331647523774,
+            "poe": -0.05529335019142895,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.42424242424242425,
+            "expected": 0.3956567052862108,
+            "poe": 0.02858571895621348,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 6.580645161290323,
+            "expected": 4.891584877999454,
+            "poe": -1.6890602832908685,
+            "supported": true
+          },
+          "offense": {
+            "actual": 4.909090909090909,
+            "expected": 4.845019513957768,
+            "poe": 0.06407139513314153,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2821,7 +3318,78 @@
     {
       "gameId": "401762850",
       "homeAway": "home",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.047619047619047616,
+            "expected": 0.1016188315772692,
+            "poe": 0.05399978395822158,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.109375,
+            "expected": 0.12381954700510833,
+            "poe": -0.014444547005108332,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.7777777777777778,
+            "expected": 0.3656359837363,
+            "poe": -0.41214179404147777,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.44,
+            "expected": 0.39722029260477815,
+            "poe": 0.042779707395221855,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.24242424242424243,
+            "expected": 0.37425638306432996,
+            "poe": 0.13183214064008753,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.46153846153846156,
+            "expected": 0.46122395567559116,
+            "poe": 0.0003145058628704067,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.35714285714285715,
+            "expected": 0.3575199014625409,
+            "poe": 0.0003770443196837725,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.453125,
+            "expected": 0.4345922901289141,
+            "poe": 0.018532709871085906,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.478260869565218,
+            "expected": 4.647385780828864,
+            "poe": -0.8308750887363541,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.2272727272727275,
+            "expected": 5.541158681244294,
+            "poe": -0.3138859539715666,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2854,7 +3422,78 @@
     {
       "gameId": "401762857",
       "homeAway": "home",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.10714285714285714,
+            "expected": 0.11623637654611767,
+            "poe": 0.00909351940326053,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.14285714285714285,
+            "expected": 0.126147324263609,
+            "poe": 0.01670981859353385,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.3157894736842105,
+            "expected": 0.40068733646562094,
+            "poe": 0.08489786278141043,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.35714285714285715,
+            "expected": 0.4022259633636081,
+            "poe": -0.04508310622075096,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.43243243243243246,
+            "expected": 0.3975859593111348,
+            "poe": -0.03484647312129768,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.47619047619047616,
+            "expected": 0.4613022606743906,
+            "poe": 0.014888215516085546,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.39285714285714285,
+            "expected": 0.3938356141674666,
+            "poe": 0.0009784713103237475,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.44642857142857145,
+            "expected": 0.43635515121837953,
+            "poe": 0.010073420210191919,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.107142857142857,
+            "expected": 5.404800558001848,
+            "poe": 0.29765770085899135,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.982142857142857,
+            "expected": 5.506000487697328,
+            "poe": 0.4761423694455287,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2887,7 +3526,78 @@
     {
       "gameId": "401762864",
       "homeAway": "away",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.12727272727272726,
+            "expected": 0.10045552805789792,
+            "poe": -0.026817199214829335,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.1791044776119403,
+            "expected": 0.09966860500707299,
+            "poe": 0.0794358726048673,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.23529411764705882,
+            "expected": 0.3191010601325824,
+            "poe": 0.08380694248552356,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.25,
+            "expected": 0.40517211372803785,
+            "poe": -0.15517211372803785,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.2894736842105263,
+            "expected": 0.39979509528835466,
+            "poe": 0.11032141107782834,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.6610169491525424,
+            "expected": 0.4185339123063506,
+            "poe": 0.24248303684619177,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.2727272727272727,
+            "expected": 0.34721156289852945,
+            "poe": 0.07448429017125674,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.6119402985074627,
+            "expected": 0.4181880224700551,
+            "poe": 0.19375227603740758,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.6909090909090905,
+            "expected": 4.502345277647747,
+            "poe": -0.18856381326134386,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.779411764705882,
+            "expected": 4.945545519703946,
+            "poe": 0.8338662450019365,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2920,7 +3630,78 @@
     {
       "gameId": "401762869",
       "homeAway": "away",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.2033898305084746,
+            "expected": 0.11179079685338414,
+            "poe": -0.09159903365509045,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.12698412698412698,
+            "expected": 0.11915941405254332,
+            "poe": 0.007824712931583655,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.47368421052631576,
+            "expected": 0.37334639010520176,
+            "poe": -0.100337820421114,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4,
+            "expected": 0.39768312692283186,
+            "poe": 0.002316873077168158,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.42857142857142855,
+            "expected": 0.4426883807963532,
+            "poe": 0.01411695222492465,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4583333333333333,
+            "expected": 0.45065228520914374,
+            "poe": 0.007681048124189571,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.4576271186440678,
+            "expected": 0.40115945627858984,
+            "poe": -0.056467662365477955,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4444444444444444,
+            "expected": 0.4373919022396236,
+            "poe": 0.007052542204820822,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 7.770491803278689,
+            "expected": 5.207509802882766,
+            "poe": -2.5629820003959223,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.841269841269841,
+            "expected": 5.806904227678592,
+            "poe": 0.03436561359124912,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": false,
       "opponent": {
         "adjustedProfile": {
@@ -2953,7 +3734,78 @@
     {
       "gameId": "401777329",
       "homeAway": "home",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.06153846153846154,
+            "expected": 0.10869469890976512,
+            "poe": 0.047156237371303575,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.12121212121212122,
+            "expected": 0.0924203702335818,
+            "poe": 0.02879175097853942,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.28205128205128205,
+            "expected": 0.3536496203419102,
+            "poe": 0.07159833829062817,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5,
+            "expected": 0.38834787986576624,
+            "poe": 0.11165212013423376,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.2692307692307692,
+            "expected": 0.40539937335294046,
+            "poe": 0.13616860412217124,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2692307692307692,
+            "expected": 0.44469413931345125,
+            "poe": -0.17546337008268204,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.27692307692307694,
+            "expected": 0.37056542961362055,
+            "poe": 0.0936423526905436,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3181818181818182,
+            "expected": 0.42160269721463245,
+            "poe": -0.10342087903281427,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.132352941176471,
+            "expected": 5.155753864912756,
+            "poe": 1.0234009237362853,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.91044776119403,
+            "expected": 4.828901525617712,
+            "poe": 1.081546235576318,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": true,
       "opponent": {
         "adjustedProfile": {
@@ -2986,7 +3838,78 @@
     {
       "gameId": "401778306",
       "homeAway": "home",
-      "metrics": {},
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.125,
+            "expected": 0.127963418615968,
+            "poe": 0.0029634186159679943,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.13559322033898305,
+            "expected": 0.11418529893472418,
+            "poe": 0.021407921404258873,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.2857142857142857,
+            "expected": 0.39928464846403194,
+            "poe": 0.11357036274974625,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5,
+            "expected": 0.3958826145393767,
+            "poe": 0.10411738546062332,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.5862068965517241,
+            "expected": 0.40465450293522365,
+            "poe": -0.18155239361650044,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4634146341463415,
+            "expected": 0.4415520741120237,
+            "poe": 0.0218625600343178,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.421875,
+            "expected": 0.39915534047067186,
+            "poe": -0.02271965952932814,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4745762711864407,
+            "expected": 0.4249539116587591,
+            "poe": 0.04962235952768157,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.9393939393939394,
+            "expected": 5.6178796544989265,
+            "poe": -0.321514284895013,
+            "supported": true
+          },
+          "offense": {
+            "actual": 6.85,
+            "expected": 5.282081206779828,
+            "poe": 1.567918793220172,
+            "supported": true
+          }
+        }
+      },
       "neutralSite": true,
       "opponent": {
         "adjustedProfile": {

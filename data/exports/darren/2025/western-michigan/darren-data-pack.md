@@ -109,6 +109,42 @@ Schedule-adjusted model: `schedule-adjusted-ratings-v1`, ridge 40, home ridge 20
 | 15 | Miami (OH) | N | W 23-13 | #112 | #54 | #88 |
 | 1 | Kennesaw State | N | W 41-6 | #46 | #113 | #73 |
 
+## Game-by-game leave-one-out offense POE
+
+| Week | Opponent | Success | Rush SR | Pass SR | Explosive | YPP |
+|---:|---|---:|---:|---:|---:|---:|
+| 1 | Michigan State | -18.3% | -24.1% | -13.4% | -1.2% | -2.44 |
+| 2 | North Texas | -8.4% | -11.4% | -11.7% | -4.2% | -1.60 |
+| 3 | Illinois | -15.5% | -17.4% | -13.0% | -3.5% | -0.72 |
+| 4 | Toledo | 3.5% | 1.9% | 4.4% | -4.1% | 0.21 |
+| 6 | Massachusetts | 2.4% | 6.8% | -1.0% | -3.3% | -0.36 |
+| 7 | Ball State | 8.5% | 6.5% | 12.3% | -1.6% | 0.73 |
+| 9 | Miami (OH) | 2.9% | 14.9% | -10.5% | 1.7% | 0.06 |
+| 10 | Central Michigan | 1.9% | 0.0% | 4.3% | -1.4% | -0.31 |
+| 12 | Ohio | 1.0% | 1.5% | -4.5% | 1.7% | 0.48 |
+| 13 | Northern Illinois | 19.4% | 24.2% | -15.5% | 7.9% | 0.83 |
+| 14 | Eastern Michigan | 0.7% | 0.8% | 0.2% | 0.8% | 0.03 |
+| 15 | Miami (OH) | -10.3% | -17.5% | 11.2% | 2.9% | 1.08 |
+| 1 | Kennesaw State | 5.0% | 2.2% | 10.4% | 2.1% | 1.57 |
+
+## Game-by-game leave-one-out defense POE
+
+| Week | Opponent | Success | Rush SR | Pass SR | Explosive | YPP |
+|---:|---|---:|---:|---:|---:|---:|
+| 1 | Michigan State | -9.3% | -3.5% | -16.5% | -1.8% | -0.11 |
+| 2 | North Texas | 3.0% | -13.1% | 13.5% | -7.2% | 0.55 |
+| 3 | Illinois | -10.0% | -17.2% | -3.2% | -1.6% | 0.14 |
+| 4 | Toledo | 9.1% | 7.0% | 11.6% | 5.5% | 2.11 |
+| 6 | Massachusetts | -1.9% | -0.1% | -0.0% | 3.3% | -0.44 |
+| 7 | Ball State | 14.0% | 13.2% | 17.7% | 7.1% | 1.91 |
+| 9 | Miami (OH) | -5.5% | 9.0% | -18.0% | 1.0% | -1.69 |
+| 10 | Central Michigan | 0.0% | 13.2% | -41.2% | 5.4% | -0.83 |
+| 12 | Ohio | 0.1% | -3.5% | 8.5% | 0.9% | 0.30 |
+| 13 | Northern Illinois | 7.4% | 11.0% | 8.4% | -2.7% | -0.19 |
+| 14 | Eastern Michigan | -5.6% | 1.4% | -10.0% | -9.2% | -2.56 |
+| 15 | Miami (OH) | 9.4% | 13.6% | 7.2% | 4.7% | 1.02 |
+| 1 | Kennesaw State | -2.3% | -18.2% | 11.4% | 0.3% | -0.32 |
+
 ## Data-quality guardrails
 
 - Only team-game rows with `gameValidationStatus` absent or `PASS` enter the raw tendency sample.
