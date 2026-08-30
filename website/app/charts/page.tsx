@@ -1,23 +1,23 @@
 import type {Metadata} from "next";
-import {creatorChartPack} from "../../lib/creator-chart-pack";
+import {creatorGameLibrary} from "../../lib/creator-game-library";
 import {CreatorCharts} from "./CreatorCharts";
 import styles from "./charts.module.css";
 
 export const metadata:Metadata={
-  title:"Chart Room",
-  description:"Creator-ready college football charts built from opponent-adjusted ratings, leave-one-game-out game grading, and national context.",
+  title:"2025 Michigan Game Chart Room",
+  description:"Audience-first, opponent-adjusted breakdowns for every Michigan game in 2025, including two-way performance versus expectation and opponent strength context.",
 };
 
 export default function ChartsPage(){
-  const pack=creatorChartPack(2025);
+  const library=creatorGameLibrary(2025);
 
-  if(!pack){
+  if(!library){
     return <div className={styles.empty}>
       <span>CHART ROOM</span>
-      <h1>Creator charts are being prepared.</h1>
+      <h1>Game dossiers are being prepared.</h1>
       <p>The opponent-adjusted season artifact is not available in this deployment yet.</p>
     </div>;
   }
 
-  return <CreatorCharts pack={pack}/>;
+  return <CreatorCharts library={library}/>;
 }
