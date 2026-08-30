@@ -1,0 +1,14 @@
+week,seasonType,opponent,opponentConference,homeAway,neutralSite,result,pointsFor,pointsAgainst,opponentAdjustedOffenseRank,opponentAdjustedDefenseRank,opponentAdjustedOverallRank,opponentAdjustedOffenseScore,opponentAdjustedDefenseScore,opponentAdjustedOverallScore
+1,regular,Michigan State,Big Ten,away,False,L,6.0,23.0,79,78,76,45.77777777777778,42.22222222222222,44.0
+2,regular,North Texas,American Athletic,home,False,L,30.0,33.0,1,84,29,97.62962962962963,40.148148148148145,68.88888888888889
+3,regular,Illinois,Big Ten,away,False,L,0.0,38.0,28,59,38,76.5925925925926,53.18518518518518,64.88888888888889
+4,regular,Toledo,Mid-American,home,False,W,14.0,13.0,37,13,16,68.44444444444444,85.77777777777779,77.11111111111111
+6,regular,Massachusetts,Mid-American,away,False,W,21.0,3.0,136,135,136,1.037037037037037,3.2592592592592595,2.1481481481481484
+7,regular,Ball State,Mid-American,home,False,W,42.0,0.0,135,125,135,1.037037037037037,11.851851851851851,6.444444444444444
+9,regular,Miami (OH),Mid-American,away,False,L,17.0,26.0,112,54,88,22.074074074074073,57.777777777777786,39.92592592592593
+10,regular,Central Michigan,Mid-American,home,False,W,24.0,21.0,101,104,111,29.92592592592593,30.518518518518515,30.22222222222222
+12,regular,Ohio,Mid-American,home,False,W,17.0,13.0,52,111,77,61.18518518518518,26.666666666666664,43.925925925925924
+13,regular,Northern Illinois,Mid-American,away,False,W,35.0,19.0,130,118,131,9.925925925925927,21.62962962962963,15.777777777777779
+14,regular,Eastern Michigan,Mid-American,away,False,W,31.0,21.0,61,128,101,54.51851851851852,11.25925925925926,32.888888888888886
+15,regular,Miami (OH),Mid-American,home,True,W,23.0,13.0,112,54,88,22.074074074074073,57.777777777777786,39.92592592592593
+1,postseason,Kennesaw State,Conference USA,home,True,W,41.0,6.0,46,113,73,63.55555555555556,26.37037037037037,44.96296296296296

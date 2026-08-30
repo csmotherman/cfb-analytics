@@ -1,0 +1,130 @@
+==============================================================================
+WESTERN MICHIGAN 2026 ROSTER CONTINUITY REPORT
+==============================================================================
+Current roster:             104
+Returning from 2025:       51 (49.0%)
+Transfer-ins on roster:     13
+Other new players:          40
+Portal entries into team:   14
+Portal entries out of team: 13
+
+AGE / EXPERIENCE NOTE
+---------------------
+CFBD /roster does not expose date of birth, so exact player ages cannot be calculated from this source. rosterYearDistribution uses CFBD's deprecated numeric `year` field only as an experience/eligibility proxy.
+
+ROSTER EXPERIENCE DISTRIBUTION
+------------------------------
+Roster year 1              33
+Roster year 2              26
+Roster year 3              21
+Roster year 4              24
+
+POSITION GROUP DISTRIBUTION
+---------------------------
+DB                         19
+DL                         20
+LB                         10
+OL                         18
+QB                          4
+RB                          7
+ST                          7
+TE                          9
+WR                         10
+
+POSITION GROUP x ROSTER SOURCE
+------------------------------
+GROUP        RETURN   TRANSFER  NEW OTHER   TOTAL
+DB                8          4          7      19
+DL                8          3          9      20
+LB                5          1          4      10
+OL               11          1          6      18
+QB                2          1          1       4
+RB                5          0          2       7
+ST                3          1          3       7
+TE                4          1          4       9
+WR                5          1          4      10
+
+TRANSFER-INS ON CURRENT ROSTER
+------------------------------
+S     Daeh McCullough              from Louisville             stars 3★  rating 0.8400
+S     Kouri Crump                  from VMI                    stars 3★  rating 0.8400
+S     Tahj Owens                   from Princeton              stars 3★  rating 0.8400
+CB    Willard Ferrell              from Presbyterian           stars 3★  rating 0.8400
+DT    Ahmed Tounkara               from Ohio State             stars 3★  rating 0.8000
+DE    Austin Alexander             from North Carolina         stars 3★  rating 0.8600
+DE    DeJuan Echoles Jr.           from Ball State             stars 3★  rating 0.8200
+LB    Brenden Anes                 from Tennessee              stars 3★  rating —
+OL    Ben Roebuck                  from Michigan               stars 3★  rating —
+QB    Trey Petty                   from Illinois               stars 3★  rating 0.8300
+LS    Drew Doyle                   from Virginia Tech          stars —   rating —
+TE    Adam Parks                   from New Mexico State       stars 2★  rating 0.7900
+WR    Emazon Littlejohn            from South Carolina         stars —   rating —
+
+RETURNING PLAYERS
+-----------------
+CB    Amarian Louis                  Roster year 3
+S     Braden Steely                  Roster year 2
+S     CJ Miles Jr.                   Roster year 2
+CB    Jarvarius Sims                 Roster year 4
+S     Joey Pope                      Roster year 3
+CB    Jordon Thomas                  Roster year 4
+DB    Joshua Franklin                Roster year 4
+S     Micah Davis                    Roster year 3
+DE    August Johanningsmeier         Roster year 4
+DL    Dakari Frazier                 Roster year 3
+DL    Dalton Gustwiller              Roster year 3
+DL    DeShawn Robinson               Roster year 3
+DL    Gian Carter                    Roster year 1
+DT    Jori Benson                    Roster year 4
+DE    Noah Bishop                    Roster year 2
+DE    Will Gerig                     Roster year 4
+LB    Andrew Baker                   Roster year 2
+LB    Dillon Moore                   Roster year 4
+LB    Domanick Moon                  Roster year 4
+LB    Freddy Brown                   Roster year 1
+LB    Gabe Welch                     Roster year 3
+OL    Chad Schuster                  Roster year 4
+OL    Gavin Dabo                     Roster year 2
+OL    Hunter Whitenack               Roster year 4
+OL    Jacob Krause                   Roster year 2
+OL    Jacob Wilk                     Roster year 1
+OL    Jake Chellman                  Roster year 2
+OL    Jeremy Schleicher              Roster year 2
+OL    KJ Kotalik                     Roster year 1
+OL    Liam Vaughan                   Roster year 1
+OL    Nolan Miller                   Roster year 1
+OL    Spencer Beckeman               Roster year 1
+QB    Broc Lowry                     Roster year 3
+QB    Mason Reynolds                 Roster year 2
+RB    Chase Dawkins                  Roster year 1
+RB    Cole Cabana                    Roster year 3
+RB    JR Hays                        Roster year 2
+RB    Jalen Buckley                  Roster year 4
+RB    Ofa Mataele                    Roster year 4
+PK    Palmer Domschke                Roster year 4
+P     Ryan Millmore                  Roster year 3
+LS    Will Peterson                  Roster year 1
+TE    Brady Rhoad                    Roster year 1
+TE    Brennan Wooten                 Roster year 4
+TE    Nathan Sines                   Roster year 3
+TE    Ryan Brotherton                Roster year 2
+WR    Aveion Chenault                Roster year 2
+WR    Baylin Brooks                  Roster year 3
+WR    Egypt Nelson                   Roster year 3
+WR    Keivin Boone-Nelson II         Roster year 4
+WR    Terence Marshall               Roster year 2
+
+IMPORTANT CAVEAT
+----------------
+Portal entry counts are portal records, not guaranteed final departures/arrivals. The current roster match is the stricter transfer-in count.
+
+Wrote JSON: data/research/roster-continuity/2026-western-michigan-roster-continuity.json
+Wrote CSV:  data/research/roster-continuity/2026-western-michigan-roster-continuity.csv
+
+CFBD RETURNING PRODUCTION CONTEXT
+---------------------------------
+percentPPA                 99.7%
+percentPassingPPA         100.0%
+percentReceivingPPA       100.0%
+percentRushingPPA         100.0%
+usage                     100.0%

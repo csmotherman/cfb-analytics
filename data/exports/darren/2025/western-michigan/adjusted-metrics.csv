@@ -1,0 +1,15 @@
+validation,metric,label,unit,leagueAverageRaw,subjectTeam,subjectOffenseAdjustedValue,subjectOffenseRank,subjectDefenseAdjustedValue,subjectDefenseRank,comparisonTeam,comparisonOffenseAdjustedValue,comparisonOffenseRank,comparisonDefenseAdjustedValue,comparisonDefenseRank
+validated,successRate,Success rate,rate,0.4216594592670715,Western Michigan,0.4032035120014911,95,0.39791204923748663,35,Michigan,0.4683438009588703,19,0.4180290976068199,58
+validated,rushSuccessRate,Rush success rate,rate,0.4261042485051432,Western Michigan,0.42651266088769624,65,0.41146267709795764,43,Michigan,0.48968319182439435,4,0.41252949581120996,47
+validated,passSuccessRate,Pass success rate,rate,0.4157834040495103,Western Michigan,0.383256378374325,118,0.38446812848285433,23,Michigan,0.4200235349033133,54,0.42753088359599584,79
+validated,explosivePlayRate,Explosive-play rate,rate,0.11336138125558136,Western Michigan,0.10859335845421299,80,0.10938219521380392,52,Michigan,0.13041383528966347,19,0.09922613521106834,22
+validated,yardsPerPlay,Yards per play,yards,5.754990593822217,Western Michigan,4.905349853755943,119,5.572268887589124,52,Michigan,6.554067454662091,21,4.828808006718218,18
+research-only,rushExplosivePlayRate,Rush explosive-play rate,rate,0.13272017225707358,Western Michigan,0.12838374443625225,84,0.1383534907776159,83,Michigan,0.14761866111471847,22,0.1189743419415527,22
+research-only,passExplosivePlayRate,Pass explosive-play rate,rate,0.09359550365227798,Western Michigan,0.08469309419956379,112,0.08270183616253393,13,Michigan,0.09910541928701311,39,0.08706905139537867,29
+research-only,rushYardsPerAttempt,Rush yards per attempt,yards,4.925462357476402,Western Michigan,4.7799627595388365,78,5.377626640609047,107,Michigan,6.155875184684982,7,4.387139625502899,27
+research-only,netPassYardsPerDropback,Net pass yards per dropback,yards,6.647176266974038,Western Michigan,5.219002187604069,126,5.655396540645851,28,Michigan,6.939305449773525,52,5.463057040144166,16
+research-only,standardDownSuccessRate,Standard-down success rate,rate,0.47489487982869316,Western Michigan,0.4837956034047435,54,0.44468318888786523,25,Michigan,0.5249271213860901,11,0.4666139665271839,51
+research-only,passingDownSuccessRate,Passing-down success rate,rate,0.30225286834100235,Western Michigan,0.26615684739371265,126,0.2962039538239699,55,Michigan,0.3044136962090875,66,0.3101500088270115,93
+research-only,thirdDownConversionRate,Third-down conversion rate,rate,0.40457223307024287,Western Michigan,0.39235402361969896,89,0.3723902564317449,11,Michigan,0.43367157359605685,22,0.3972903184739215,51
+research-only,sackRate,Sack rate allowed,rate,0.05551337249131438,Western Michigan,0.05751258345881405,91,0.0630521736787828,15,Michigan,0.05480041022074966,69,0.05710430426281299,50
+research-only,havocRateAllowed,Havoc rate allowed,rate,0.09667574508478027,Western Michigan,0.09343352492604184,52,0.0989662609960642,53,Michigan,0.08768004595391199,30,0.10231055980253512,33

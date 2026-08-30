@@ -1,0 +1,50 @@
+========================================================================================
+WESTERN MICHIGAN 2026 SELF-CALCULATED RETURNING PPA
+========================================================================================
+Production season:          2025
+Current roster players:     104
+2025 player-PPA rows:       17
+PPA contributors returning: 8 / 17
+Garbage time excluded:      True
+
+RETURNING PPA SHARE
+-------------------
+VIEW                                RETURNING / PRIOR     SHARE
+Overall player-attributed PPA      115.44 /    148.13 =   77.9%
+Passing PPA (QBs)                   36.37 /     32.97 =  110.3%
+Receiving-attributed PPA            19.85 /     62.85 =   31.6%
+Rushing PPA                         59.36 /     53.14 =  111.7%
+
+TOP 2025 PPA PRODUCERS WHO RETURN
+---------------------------------
+QB   Broc Lowry                   total PPA    84.35  match=id
+WR   Baylin Brooks                total PPA    19.90  match=id
+WR   Aveion Chenault              total PPA    11.64  match=id
+RB   Jalen Buckley                total PPA     6.00  match=id
+RB   Cole Cabana                  total PPA    -0.23  match=id
+TE   Ryan Brotherton              total PPA    -1.03  match=id
+RB   Ofa Mataele                  total PPA    -2.51  match=id
+WR   Terence Marshall             total PPA    -2.68  match=id
+
+TOP 2025 PPA PRODUCERS NOT ON 2026 ROSTER
+------------------------------------------
+WR   Tailique Williams            total PPA    17.76
+TE   Blake Bosma                  total PPA    11.28
+TE   Michael Brescia              total PPA     9.48
+WR   Christian Leary              total PPA     5.19
+TE   Mareyohn Hrabowski           total PPA     2.00
+TE   Cade Conley                  total PPA     1.01
+WR   Malique Dieudonne            total PPA     0.44
+RB   Devin Miles                  total PPA    -5.78
+QB   Brady Jones                  total PPA    -8.70
+
+INTERPRETATION NOTE
+-------------------
+- This report is computed from prior-season /ppa/players/season rows matched directly to the current roster. It does not use /player/returning.
+- Overall is the share of prior-season player-attributed totalPPA.all attached to players who remain on the current roster.
+- Passing PPA uses QB totalPPA.pass. Receiving-attributed PPA uses totalPPA.pass for RB/FB/WR/TE. Rushing PPA uses totalPPA.rush for offensive skill players.
+- Do not add passing, receiving-attributed, and rushing PPA together. Passing and receiving are separate attribution views and can describe the same play.
+- Signed PPA can make a returning share exceed 100% or fall below 0% when departed players had negative PPA. Always show the numerator and denominator beside the percentage.
+
+Wrote JSON: data/research/returning-ppa/2026-western-michigan-returning-ppa.json
+Wrote CSV:  data/research/returning-ppa/2026-western-michigan-returning-ppa-players.csv
