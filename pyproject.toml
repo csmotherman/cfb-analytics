@@ -24,6 +24,7 @@ publish = ["pyarrow>=18,<22"]
 cfb-raw = "cfb_analytics.raw.cli:main"
 cfb-drive-forensics = "cfb_analytics.derived.drive_forensics_cli:main"
 cfb-adjusted-ratings = "cfb_analytics.analytics.schedule_adjusted.cli:main"
+cfb-darren-pack = "cfb_analytics.analytics.schedule_adjusted.darren_data_pack:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
