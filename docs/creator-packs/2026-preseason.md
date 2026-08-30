@@ -1,113 +1,138 @@
-# 2026 Preseason Creator Chart Pack
+# 2026 Preseason Creator Game Library
 
 This document is the editorial companion to the public `/charts` route.
 
-The goal is not to hand creators a spreadsheet of metrics. The goal is to give them a small set of original, defensible stories that can be used in a video, podcast, article, or social post.
+The page is intentionally organized **game by game**. A creator or viewer first chooses a Michigan game from 2025, then gets an audience-first opponent-adjusted dossier for that matchup.
+
+The goal is not to show the most statistics. The goal is to answer the questions a viewer actually has:
+
+1. How good was the opponent?
+2. What should Michigan have done against that opponent?
+3. What did Michigan actually do?
+4. How far above or below expectation was the performance?
+5. How well did the opponent play relative to Michigan's own strength?
+6. What is the one football story the audience should remember?
 
 ## Analytical basis
 
 - Season basis: 2025.
-- Full-season team profiles: schedule-adjusted offense and defense ratings using ridge 40 and home ridge 20.
-- Game-level performance over expectation (POE): the target game is removed from the fit before the expected value is calculated.
-- Validated core metrics used for the main charts:
+- Full-season team context uses schedule-adjusted offense and defense ratings with ridge 40 and home ridge 20.
+- Game-level expectations use leave-one-game-out fitting: the target game is removed before expected performance is calculated.
+- The same game is graded from both directions:
+  - Michigan offense versus opponent defense.
+  - Opponent offense versus Michigan defense.
+- Validated core metrics:
   - Success rate
   - Rush success rate
   - Pass success rate
   - Explosive-play rate
   - Yards per play
-- Positive POE means the selected unit performed better than the schedule-adjusted expectation.
-- These charts describe 2025 performance and coaching fingerprints. They are not direct 2026 projections.
+- The public page avoids unexplained analyst shorthand. `pp` should not be the primary audience label. Use **percentage points**.
 
-## Chart 1 — Michigan game-by-game POE
+## Public language rules
 
-**Best use:** season retrospectives, Michigan 2026 setup videos, identifying games worth taking to film.
+### Percentage points
 
-The public chart lets the creator switch between offense/defense and all five validated metrics. Each game is graded against an expectation that excludes that game from the rating fit.
+If actual success rate is 45% and expected success rate is 40%, the public chart says:
 
-### Talking points
+> 5 percentage points better than expected.
 
-- Ohio State was not merely a difficult matchup. Michigan still performed 17.4 percentage points below offensive success-rate expectation, 16.2 points below rush-success expectation, and 19.1 points below pass-success expectation.
-- USC was the clearest defensive collapse through the air. Michigan's pass-success defense finished 22.7 percentage points worse than expectation even after USC's offensive strength was accounted for.
-- Wisconsin was Michigan's cleanest across-the-board offensive game among the validated core metrics: +9.8 pp success, +6.2 pp rush success, +15.2 pp pass success, +3.2 pp explosive rate, and +1.27 yards/play versus expectation.
-- Washington was a strong example of Michigan beating a quality matchup: +3.0 pp success, +7.8 pp pass success, +3.7 pp explosive rate, and +0.50 yards/play on offense.
+It should not say “+5 pp” without an explanation, and it should not call that a 5% increase.
 
-## Chart 2 — Oklahoma: efficiency without consistency
+### Expected
 
-**Best use:** Darren Talks Ball-style film breakdown or any segment explaining why box-score efficiency can mislead.
+Public definition:
 
-Michigan's offense against Oklahoma:
+> What the schedule-adjusted matchup model expected this team to produce after accounting for the strength of both teams. The target game itself is removed before the expectation is calculated.
 
-- Success-rate POE: -13.3 pp
-- Rush-success POE: -11.4 pp
-- Pass-success POE: -16.6 pp
-- Explosive-play POE: -2.8 pp
-- Yards-per-play POE: +0.50
+### Difference from expected
 
-The story is that a few productive plays can keep yards per play afloat while an offense repeatedly loses the down-to-down battle. This is exactly why SOAR should show multiple opponent-adjusted dimensions rather than a single efficiency rank.
+Public definition:
 
-## Chart 3 — Michigan offense vs Utah offense
+> Actual minus expected. It answers whether the unit played better or worse than the level the matchup called for.
 
-**Best use:** Jason Beck transition discussion.
+## Game dossier structure
 
-The chart compares Michigan and Utah by national percentile across the five validated opponent-adjusted offensive metrics.
+### 1. Matchup context
 
-The correct framing is not “Michigan becomes Utah.” It is:
+Before showing performance, establish the level of competition:
 
-> What statistical traits repeatedly showed up in the offense Beck operated, and which of Michigan's existing strengths or weaknesses are most compatible with that system?
+- Michigan adjusted offense rank.
+- Opponent adjusted defense rank.
+- Michigan adjusted defense rank.
+- Opponent adjusted offense rank.
+- Opponent overall adjusted rank.
 
-Pair the chart with film on run structure, quarterback involvement, passing answers, and how the offense creates explosive plays without sacrificing down-to-down efficiency.
+These full-season ranks are context. They are not the game grade itself.
 
-## Chart 4 — Michigan defense vs BYU defense
+### 2. Metric-by-metric strength table
 
-**Best use:** Jay Hill transition discussion.
+For each validated metric show:
 
-The chart compares Michigan and BYU by national percentile across the five validated opponent-adjusted defensive metrics.
+- Michigan offense national rank.
+- Opponent defense national rank.
+- Michigan defense national rank.
+- Opponent offense national rank.
 
-The correct framing is not “Michigan inherits BYU's ranking.” It is:
+The audience should know whether Michigan was facing an elite run defense, weak passing offense, explosive offense, etc. before seeing the game result.
 
-> Where did Hill's defense separate itself statistically, and which of those differences look system-driven versus personnel-driven?
+### 3. Michigan offense: actual versus expected
 
-The USC game is an obvious supporting case study because Michigan's pass-success defense was 22.7 percentage points worse than opponent-adjusted expectation.
+For Success Rate, Rush Success Rate, Pass Success Rate, and Explosive Play Rate, show actual and expected side by side.
 
-## Chart 5 — Big Ten power map
+This answers:
 
-**Best use:** College Football with Sam-style Big Ten tiers, power rankings, schedule discussions, and playoff-path videos.
+> Did Michigan's offense perform better than this opponent's defense should have allowed?
 
-The map plots every Big Ten team using:
+### 4. Yards per play
 
-- X-axis: 2025 opponent-adjusted offense score
-- Y-axis: 2025 opponent-adjusted defense score
+Yards per play gets its own visualization because it has a different unit and can sometimes contradict success rate.
 
-Top-right represents teams that were strong on both sides of the ball. This gives more context than a one-dimensional power ranking because a creator can immediately distinguish offense-led, defense-led, complete, and flawed teams.
+That contradiction is often a useful football story. A team can average acceptable yards per play because of a few large gains while still losing most downs.
 
-A full Big Ten table is included under the visual with national offense, defense, and overall ranks.
+### 5. Opponent offense: actual versus expected
 
-## Suggested creator use
+Repeat the same process from the other side.
 
-### Darren-style packet
+This answers:
 
-1. Michigan game-by-game POE
-2. Oklahoma efficiency-without-consistency chart
-3. Michigan vs Utah offensive fingerprint
-4. Michigan vs BYU defensive fingerprint
-5. USC pass-defense talking point
+> Did the opponent's offense perform better than Michigan's defensive strength should have allowed?
 
-### Sam-style packet
+This is essential. The audience should not hear only that Michigan's defense played poorly. They should see whether the opponent actually exceeded an expectation that already knew Michigan's defense was strong or weak.
 
-1. Big Ten power map
-2. Big Ten opponent-adjusted ranking table
-3. Michigan game-by-game POE
-4. Michigan vs Utah / BYU coaching handoff charts
-5. Washington and Ohio State opponent-adjusted case studies
+### 6. Two-way performance relative to expectation
 
-## Public-route behavior
+Put Michigan offense and opponent offense on the same chart, metric by metric.
 
-`/charts` is designed so a creator can:
+For example:
 
-- understand the chart without opening methodology first;
-- see the exact talking point directly below the visual;
-- download the desktop chart as an SVG for use in editing software;
-- use a mobile-friendly fallback when viewing on a phone;
-- distinguish full-season adjusted team strength from leave-one-game-out game POE.
+- Michigan Success Rate: 8 percentage points below expectation.
+- Opponent Success Rate: 6 percentage points above expectation.
 
-The route should never imply creator endorsement, partnership, or affiliation unless one is explicitly established.
+That immediately explains which team imposed itself on the matchup beyond what team strength alone predicted.
+
+### 7. Plain-English takeaway
+
+Each dossier ends with deterministic, data-backed sentences describing:
+
+- Michigan's largest rate over/underperformance.
+- Opponent's largest rate over/underperformance.
+- Michigan yards-per-play versus expectation.
+- Opponent yards-per-play versus expectation.
+- A warning when success rate and yards-per-play point in opposite directions.
+
+The takeaway should never invent causality. It should say what happened statistically and leave scheme/personnel causality for film or further analysis.
+
+## Creator use
+
+A creator should be able to open `/charts`, click one game, and build a segment from top to bottom without needing a separate spreadsheet.
+
+Suggested flow in a video:
+
+1. Show opponent strength context.
+2. Show Michigan offense actual versus expected.
+3. Show opponent offense actual versus expected.
+4. Use the two-way chart to summarize who exceeded expectations.
+5. Move to film to explain why.
+
+Every exported chart should remain useful to an audience who has never heard terms like ridge regression, latent offense effect, or performance over expectation.
