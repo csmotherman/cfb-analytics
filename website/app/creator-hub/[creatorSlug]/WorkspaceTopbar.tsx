@@ -10,6 +10,7 @@ export function WorkspaceTopbar({ creatorSlug, creatorName }: { creatorSlug: str
     ["Home", base],
     ["Videos", `${base}/videos`],
     ["Game Room", `${base}/games`],
+    ["Scouting", `${base}/scouting`],
     ["Requests", `${base}/requests`],
   ];
   const libraryActive = pathname?.startsWith(`${base}/library`);

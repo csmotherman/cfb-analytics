@@ -4,6 +4,7 @@ import VideoOutlinePage from "../videos/[videoSlug]/View";
 import RequestsPage from "../requests/View";
 import LibraryPage from "../library/[section]/View";
 import GameRoomPage from "../games/[gameId]/View";
+import ScoutingPage from "../scouting/[report]/View";
 
 export const dynamic = "force-dynamic";
 
@@ -45,6 +46,10 @@ export default async function CreatorWorkspaceRoute({
 
   if ((path.length === 1 || path.length === 2) && path[0] === "games") {
     return <GameRoomPage params={Promise.resolve({ creatorSlug, gameId: path[1] ?? "all" })} />;
+  }
+
+  if ((path.length === 1 || path.length === 2) && path[0] === "scouting") {
+    return <ScoutingPage params={Promise.resolve({ creatorSlug, report: path[1] ?? "all" })} />;
   }
 
   notFound();
