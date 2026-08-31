@@ -11,10 +11,14 @@ const PANEL = "#0b1e30";
 const LINE = "rgba(255,255,255,0.09)";
 const MAIZE = "#ffcb05";
 // Derived from Western Michigan's own CFBD-sourced brand colors
-// (lib/team-colors.ts: #532E1F brown, #F1C500 gold) -- a 50/50 blend of the
-// two, not an invented hue, chosen because the raw brown is too dark to
-// read as text on this near-black background.
-const BRONZE = "#a2790f";
+// (lib/team-colors.ts: #532E1F brown, #F1C500 gold), warmed toward orange
+// and lightened for two reasons: the raw brown is too dark to read as text
+// on this near-black background, and an even blend of the two sits too
+// close to MAIZE's own hue -- on the edge bars below, that made a
+// Western-favored row and a Michigan-favored row nearly indistinguishable
+// (two shades of "gold"). This value keeps enough bronze/amber identity
+// while reading as a clearly different color next to maize.
+const BRONZE = "#d9843f";
 const WHITE = "#f5f7fa";
 const DIM = "#9aa9b8";
 const FAINT = "#6f8192";
@@ -58,6 +62,29 @@ function RankBadge({ rank }: { rank: number }) {
   );
 }
 
+// National-rank percentile, the same rank-to-percentile transform used to
+// build this repo's own composite ratings (darren_data_pack.py's
+// build_composites: (137 - rank) / 136) -- not a new metric, just the
+// existing one made visual. The bar shows each side's SHARE of the two
+// percentiles, not the raw percentile itself, so a near-even matchup
+// renders as a near-even split rather than two nearly-full bars.
+function rankPercentile(rank: number): number {
+  return (137 - rank) / 136;
+}
+
+function EdgeBar({ michiganRank, opponentRank }: { michiganRank: number; opponentRank: number }) {
+  const michPct = rankPercentile(michiganRank);
+  const oppPct = rankPercentile(opponentRank);
+  const total = michPct + oppPct;
+  const michShare = total > 0 ? (michPct / total) * 100 : 50;
+  return (
+    <div style={{ display: "flex", width: 220, height: 5, borderRadius: 3, overflow: "hidden", backgroundColor: "rgba(255,255,255,0.1)" }}>
+      <div style={{ display: "flex", width: `${michShare}%`, height: "100%", backgroundColor: MAIZE }} />
+      <div style={{ display: "flex", width: `${100 - michShare}%`, height: "100%", backgroundColor: BRONZE }} />
+    </div>
+  );
+}
+
 function ValueRank({ v, align }: { v: CompareValue; align: "left" | "right" }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 8, width: 230, justifyContent: align === "left" ? "flex-start" : "flex-end" }}>
@@ -70,11 +97,14 @@ function ValueRank({ v, align }: { v: CompareValue; align: "left" | "right" }) {
 function TableRow({ row }: { row: CompareRow }) {
   const research = row.tier === "research";
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", height: 27, borderBottom: `1px solid ${LINE}`, opacity: research ? 0.74 : 1 }}>
+    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", height: 30, borderBottom: `1px solid ${LINE}`, opacity: research ? 0.74 : 1 }}>
       <ValueRank v={row.michigan} align="left" />
-      <div style={{ display: "flex", flex: 1, alignItems: "center", justifyContent: "center", gap: 6 }}>
-        <span style={{ fontFamily: "Inter", fontSize: 12.5, fontWeight: 700, color: research ? DIM : WHITE, letterSpacing: 0.4, textTransform: "uppercase" }}>{row.metric}</span>
-        {research && <span style={{ display: "flex", fontFamily: "Inter", fontSize: 9, fontWeight: 800, color: FAINT, border: `1px solid ${LINE}`, borderRadius: 3, padding: "1px 4px" }}>R</span>}
+      <div style={{ display: "flex", flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 3 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+          <span style={{ fontFamily: "Inter", fontSize: 11.5, fontWeight: 700, color: research ? DIM : WHITE, letterSpacing: 0.4, textTransform: "uppercase" }}>{row.metric}</span>
+          {research && <span style={{ display: "flex", fontFamily: "Inter", fontSize: 9, fontWeight: 800, color: FAINT, border: `1px solid ${LINE}`, borderRadius: 3, padding: "1px 4px" }}>R</span>}
+        </div>
+        <EdgeBar michiganRank={row.michigan.rank} opponentRank={row.opponent.rank} />
       </div>
       <ValueRank v={row.opponent} align="right" />
     </div>
@@ -122,7 +152,7 @@ function Rail({ name, teamColor, record, season }: { name: string; teamColor: st
 
 function SnapChip({ label, pct, tone }: { label: string; pct: number; tone: "good" | "bad" }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: 118, height: 64, borderRadius: 8, border: `1px solid ${tone === "good" ? GOOD_A : BAD_B}`, backgroundColor: tone === "good" ? "rgba(63,174,114,0.12)" : "rgba(192,70,63,0.12)" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: 110, height: 52, borderRadius: 8, border: `1px solid ${tone === "good" ? GOOD_A : BAD_B}`, backgroundColor: tone === "good" ? "rgba(63,174,114,0.12)" : "rgba(192,70,63,0.12)" }}>
       <span style={{ fontFamily: "Barlow Condensed", fontSize: 26, fontWeight: 700, color: tone === "good" ? GOOD_A : "#e08079" }}>{`${pct}%`}</span>
       <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 700, letterSpacing: 0.6, color: DIM, marginTop: 1 }}>{label}</span>
     </div>
@@ -131,7 +161,7 @@ function SnapChip({ label, pct, tone }: { label: string; pct: number; tone: "goo
 
 function ModelCell({ label, value, sub, accent }: { label: string; value: string; sub: string; accent?: boolean }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: "center", padding: "12px 8px", borderRight: `1px solid ${LINE}` }}>
+    <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: "center", padding: "8px 8px", borderRight: `1px solid ${LINE}` }}>
       <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, letterSpacing: 0.9, color: DIM }}>{label}</span>
       <span style={{ fontFamily: "Barlow Condensed", fontSize: 34, fontWeight: 700, color: accent ? MAIZE : WHITE, marginTop: 4 }}>{value}</span>
       <span style={{ fontFamily: "Inter", fontSize: 10.5, fontWeight: 600, color: DIM, marginTop: 2 }}>{sub}</span>
@@ -165,15 +195,15 @@ export async function GET() {
         <div style={{ display: "flex", width: "100%", height: 4, backgroundColor: MAIZE }} />
 
         {/* ZONE 1 -- header */}
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "22px 56px 16px" }}>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "14px 56px 8px" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={teamLogoUrl(data.michiganTeamId, 256)} width={96} height={96} alt="" />
+          <img src={teamLogoUrl(data.michiganTeamId, 256)} width={80} height={80} alt="" />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <div style={{ display: "flex", fontFamily: "Barlow Condensed", fontSize: 46, fontWeight: 700, color: WHITE }}>MICHIGAN <span style={{ color: DIM, margin: "0 12px" }}>vs</span> WESTERN MICHIGAN</div>
             <div style={{ display: "flex", fontFamily: "Inter", fontSize: 13, fontWeight: 700, color: MAIZE, letterSpacing: 2.4, marginTop: 6 }}>WEEK 1 · SATURDAY, SEPT. 5, 2026 · MICHIGAN STADIUM</div>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={teamLogoUrl(data.opponentTeamId, 256)} width={96} height={96} alt="" />
+          <img src={teamLogoUrl(data.opponentTeamId, 256)} width={80} height={80} alt="" />
         </div>
 
         {/* ZONE 2 -- model strip */}
@@ -181,7 +211,7 @@ export async function GET() {
           <ModelCell label="MFF WIN PROBABILITY" value={`${b.winProbMichiganPct}%`} sub="Michigan · 50,000-run sim" accent />
           <ModelCell label="PROJECTED MARGIN" value={`MICH +${b.projectedMargin.split("by ")[1] ?? b.projectedMargin}`} sub={b.projectedMarginRange.replace("range: Michigan by ", "Model range: +").replace(" to ", " to +")} />
           <ModelCell label="MARKET · BETMGM" value={data.market ? data.market.spread.replace("Michigan ", "MICH ") : "—"} sub={data.market ? `${data.market.winChance} implied · not our model` : ""} />
-          <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: "center", padding: "12px 8px" }}>
+          <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: "center", padding: "8px 8px" }}>
             <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, letterSpacing: 0.9, color: DIM }}>COMPOSITE EDGE</span>
             <span style={{ fontFamily: "Barlow Condensed", fontSize: 34, fontWeight: 700, color: MAIZE, marginTop: 4 }}>{data.compositeComparison.overallEdge}</span>
             <span style={{ fontFamily: "Inter", fontSize: 10.5, fontWeight: 600, color: DIM, marginTop: 2 }}>{`#${b.michiganSeason.overall.rank} Michigan vs #${b.opponentSeason.overall.rank} Western`}</span>
@@ -189,20 +219,21 @@ export async function GET() {
         </div>
 
         {/* ZONE 3 + 4 -- rails + tables */}
-        <div style={{ display: "flex", flexDirection: "row", flex: 1, padding: "18px 56px 0", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", flexDirection: "row", flex: 1, padding: "10px 56px 0", justifyContent: "space-between" }}>
           <Rail name="Michigan" teamColor={MAIZE} record={b.michiganRecord2025} season={b.michiganSeason} />
           <div style={{ display: "flex", flexDirection: "column", width: 960, padding: "0 20px" }}>
             <TableBlock leftTeam="MICHIGAN" leftColor={MAIZE} rightTeam="WESTERN MICHIGAN" rightColor={BRONZE} side="OFFENSE" rows={b.michiganOffenseVsOpponentDefense} />
             <TableBlock leftTeam="MICHIGAN" leftColor={MAIZE} rightTeam="WESTERN MICHIGAN" rightColor={BRONZE} side="DEFENSE" rows={b.opponentOffenseVsMichiganDefense} />
-            <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 6 }}>
-              <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 600, color: FAINT }}>R = research-tier opponent-adjusted metric (same model, not yet through full historical validation)</span>
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 5 }}>
+              <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 600, color: FAINT }}>Bar = share of national-rank edge (maize Michigan · bronze Western)</span>
+              <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 600, color: FAINT }}>R = research-tier opponent-adjusted metric</span>
             </div>
           </div>
           <Rail name="Western Michigan" teamColor={BRONZE} record={b.opponentRecord2025} season={b.opponentSeason} />
         </div>
 
         {/* ZONE 5 -- returning snap story */}
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", margin: "14px 56px 0", padding: "14px 22px", borderRadius: 8, border: `1px solid ${LINE}`, backgroundColor: PANEL }}>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", margin: "8px 56px 0", padding: "8px 20px", borderRadius: 8, border: `1px solid ${LINE}`, backgroundColor: PANEL }}>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span style={{ fontFamily: "Barlow Condensed", fontSize: 20, fontWeight: 700, color: WHITE }}>WESTERN MICHIGAN RETURNING SNAP CONTINUITY</span>
             <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 600, color: DIM, marginTop: 2 }}>CBS Sports · snap-weighted, not our headcount audit</span>
@@ -224,7 +255,7 @@ export async function GET() {
         </div>
 
         {/* CTA + footer */}
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "16px 56px 20px" }}>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "8px 56px 12px" }}>
           <span style={{ fontFamily: "Inter", fontSize: 10.5, fontWeight: 500, color: FAINT, maxWidth: 900 }}>Opponent-adjusted 2025 metrics · FBS national ranks · MFF roster continuity = official-roster headcount audit · Returning snaps via CBS Sports · Win probability &amp; margin = MFF preseason model · Market line is not our projection</span>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
             <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, letterSpacing: 1, color: DIM }}>FULL BREAKDOWN &amp; ANALYSIS</span>
