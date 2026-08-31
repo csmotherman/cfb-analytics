@@ -9,6 +9,7 @@ const FALLBACK: TeamColorPair = { primary: "#6b7280", secondary: "#9ca3af" };
 
 export const TEAM_COLORS: Record<number, TeamColorPair> = {
   130: { primary: "#00274C", secondary: "#FFCB05" }, // Michigan
+  2711: { primary: "#532E1F", secondary: "#F1C500" }, // Western Michigan
   167: { primary: "#BA0C2F", secondary: "#A7A8AA" }, // New Mexico
   251: { primary: "#BF5700", secondary: "#333F48" }, // Texas
   201: { primary: "#841617", secondary: "#FDF9D8" }, // Oklahoma
