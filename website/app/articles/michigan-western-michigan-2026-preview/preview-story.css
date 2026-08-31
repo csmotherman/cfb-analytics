@@ -137,7 +137,7 @@
 .wm-share-head p{max-width:620px;margin:0;color:var(--wm-muted);font:500 12px/1.5 var(--body);text-align:right}
 .wm-share-image{display:block;overflow:hidden;border:1px solid var(--wm-line);border-radius:12px;background:#07121f;transition:border-color .15s ease}
 .wm-share-image:hover{border-color:var(--wm-maize,#ffcb05)}
-.wm-share-image img{display:block;width:100%;height:auto;aspect-ratio:1600/990;object-fit:contain}
+.wm-share-image img{display:block;width:100%;height:auto;aspect-ratio:1600/1055;object-fit:contain}
 .wm-share-caption{margin:10px 2px 0;color:var(--wm-muted);font:600 12px/1.4 var(--body);text-align:center}
 
 @media(max-width:900px){
