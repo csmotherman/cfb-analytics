@@ -52,6 +52,20 @@ export type MatchupPreviewData = {
   offenseCompareRows: CompareRow[];
   defenseCompareRows: CompareRow[];
 
+  blueprint: {
+    michiganRecord2025: string;
+    opponentRecord2025: string;
+    winProbMichiganPct: number;
+    winProbOpponentPct: number;
+    projectedMargin: string;
+    projectedMarginRange: string;
+    projectionSource: string;
+    michiganOffenseVsOpponentDefense: CompareRow[];
+    opponentOffenseVsMichiganDefense: CompareRow[];
+    michiganSeason: { offense: CompareValue; defense: CompareValue; overall: CompareValue; offenseContinuityPct: number; defenseContinuityPct: number };
+    opponentSeason: { offense: CompareValue; defense: CompareValue; overall: CompareValue; offenseContinuityPct: number; defenseContinuityPct: number };
+  };
+
   continuity: {
     methodologyNote: string;
     michigan: { offense: ContinuitySide; defense: ContinuitySide };
@@ -156,6 +170,52 @@ export const michiganWesternMichigan2026: MatchupPreviewData = {
     { metric: "Explosive-play rate allowed", michigan: { value: "9.9%", rank: 22 }, opponent: { value: "10.9%", rank: 52 } },
     { metric: "Yards per play allowed", michigan: { value: "4.83", rank: 18 }, opponent: { value: "5.57", rank: 52 } },
   ],
+
+  blueprint: {
+    // 2025 final records: Michigan 9-4 (data/published/2025/teams/michigan/games.json),
+    // Western Michigan 10-4 (wmubroncos.com, MAC Champion).
+    michiganRecord2025: "9-4",
+    opponentRecord2025: "10-4",
+    // Win prob / margin: data/published/2026/michigan/preseason-2026-projection.json,
+    // game 401858428 -- the site's calibrated preseason simulation model (50,000 sims),
+    // NOT the validated-five opponent-adjusted model used everywhere else on this page.
+    // Kept in its own labeled block rather than blended into the adjusted-stat rows.
+    winProbMichiganPct: 95.6,
+    winProbOpponentPct: 4.4,
+    projectedMargin: "Michigan by 27.6",
+    projectedMarginRange: "range: Michigan by 7.3 to 47.9",
+    projectionSource: "Michigan Football Focus 2026 preseason simulation (50,000 runs)",
+    // Cross-matchup: each team's own offense against the other's defense,
+    // same validated-five metrics used throughout this page.
+    michiganOffenseVsOpponentDefense: [
+      { metric: "Success rate", michigan: { value: "46.8%", rank: 19 }, opponent: { value: "39.8%", rank: 35 } },
+      { metric: "Rush success", michigan: { value: "49.0%", rank: 4 }, opponent: { value: "41.1%", rank: 43 } },
+      { metric: "Pass success", michigan: { value: "42.0%", rank: 54 }, opponent: { value: "38.4%", rank: 23 } },
+      { metric: "Explosive-play rate", michigan: { value: "13.0%", rank: 19 }, opponent: { value: "10.9%", rank: 52 } },
+      { metric: "Yards per play", michigan: { value: "6.55", rank: 21 }, opponent: { value: "5.57", rank: 52 } },
+    ],
+    opponentOffenseVsMichiganDefense: [
+      { metric: "Success rate", michigan: { value: "41.8%", rank: 58 }, opponent: { value: "40.3%", rank: 95 } },
+      { metric: "Rush success", michigan: { value: "41.3%", rank: 47 }, opponent: { value: "42.7%", rank: 65 } },
+      { metric: "Pass success", michigan: { value: "42.8%", rank: 79 }, opponent: { value: "38.3%", rank: 118 } },
+      { metric: "Explosive-play rate", michigan: { value: "9.9%", rank: 22 }, opponent: { value: "10.9%", rank: 80 } },
+      { metric: "Yards per play", michigan: { value: "4.83", rank: 18 }, opponent: { value: "4.91", rank: 119 } },
+    ],
+    michiganSeason: {
+      offense: { value: "83.4/100", rank: 19 },
+      defense: { value: "67.6/100", rank: 38 },
+      overall: { value: "75.5/100", rank: 19 },
+      offenseContinuityPct: 63.0,
+      defenseContinuityPct: 61.1,
+    },
+    opponentSeason: {
+      offense: { value: "30.1/100", rank: 100 },
+      defense: { value: "70.4/100", rank: 34 },
+      overall: { value: "50.2/100", rank: 67 },
+      offenseContinuityPct: 56.2,
+      defenseContinuityPct: 42.9,
+    },
+  },
 
   continuity: {
     methodologyNote:

@@ -2,6 +2,7 @@ import type {CSSProperties} from "react";
 import type {Metadata} from "next";
 import Link from "next/link";
 import {ArticleMobileToc} from "../../../components/ArticleMobileToc";
+import {BlueprintActions} from "./BlueprintActions";
 import {teamLogoUrl} from "../../../lib/team-assets";
 import {teamColors} from "../../../lib/team-colors";
 import {michiganWesternMichigan2026 as data} from "../../../lib/michigan/matchup-preview-data";
@@ -233,6 +234,18 @@ export default function MichiganWesternMichiganPreview(){
           </section>
         </div>
       </div>
+
+      <section className="focus-article-sources" style={{marginTop:40}}>
+        <strong>THE MATCHUP BLUEPRINT</strong>
+        <p style={{fontSize:13,color:"#aebdca",lineHeight:1.6,margin:"8px 0 18px",maxWidth:820}}>Every number from this preview in one shareable image -- both teams&apos; 2025 opponent-adjusted offense and defense, our own roster-continuity audit, and the market/model context, side by side.</p>
+        <div style={{border:"1px solid #29465d",borderRadius:12,overflow:"hidden",maxWidth:1000,margin:"0 auto"}}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/articles/michigan-western-michigan-2026-preview/blueprint" alt="Michigan vs. Western Michigan matchup blueprint: 2025 opponent-adjusted offense and defense comparison, roster continuity, win probability and market line" width={1600} height={1260} style={{width:"100%",height:"auto",display:"block"}}/>
+        </div>
+        <div style={{maxWidth:1000,margin:"0 auto"}}>
+          <BlueprintActions src="/articles/michigan-western-michigan-2026-preview/blueprint" filename="michigan-western-michigan-2026-blueprint.png"/>
+        </div>
+      </section>
 
       <section className="focus-article-explore feature-explore">
         <div className="focus-article-section-heading"><span>KEEP EXPLORING</span><h2>Don't stop at the final whistle.</h2></div>
