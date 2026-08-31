@@ -5,7 +5,18 @@ import {ArticleMobileToc} from "../../../components/ArticleMobileToc";
 import {teamLogoUrl} from "../../../lib/team-assets";
 import {teamColors} from "../../../lib/team-colors";
 import {michiganWesternMichigan2026 as data} from "../../../lib/michigan/matchup-preview-data";
-import type {ContinuitySide} from "../../../lib/michigan/matchup-preview-data";
+import type {ContinuitySide,CompareRow} from "../../../lib/michigan/matchup-preview-data";
+
+// Michigan's bar uses the real brand maize (already the site's accent
+// color). The opponent's bar uses a neutral silver rather than Western's
+// literal brand brown -- WMU's brown is too low-contrast against this dark
+// navy card to read at a glance, so this follows the same convention this
+// codebase already uses for its other dark-background team comparison
+// (see analytics-lab.css's .utah-bar). Real team color still shows up via
+// the actual team logos next to each side.
+const MICHIGAN_BAR="#ffcb05";
+const OPPONENT_BAR="#ccced1";
+const percentileFromRank=(rank:number)=>((137-rank)/136)*100;
 
 const articleUrl="https://michiganfootballfocus.com/articles/michigan-western-michigan-2026-preview";
 const articleImage="https://michiganfootballfocus.com/images/articles/michigan-western.png";
@@ -20,7 +31,7 @@ export const metadata:Metadata={
 
 const sections=[
   ["one-sentence","The game in one sentence"],
-  ["who-is-western","Who is Western Michigan"],
+  ["2025-comparison","Michigan vs. Western: the 2025 numbers"],
   ["what-returns","What actually returns"],
   ["three-matchups","Three matchups that decide it"],
   ["how-western-competes","How Western makes this uncomfortable"],
@@ -41,21 +52,40 @@ function Stat({value,label,detail}:{value:string;label:string;detail?:string}){
   return <div className="feature-stat"><strong>{value}</strong><span>{label}</span>{detail&&<small>{detail}</small>}</div>;
 }
 
-function ContinuityColumn({name,teamId,offense,defense}:{name:string;teamId:number;offense:ContinuitySide;defense:ContinuitySide}){
-  const color=teamColors(teamId).primary;
+function ContinuityColumn({name,teamId,barColor,offense,defense}:{name:string;teamId:number;barColor:string;offense:ContinuitySide;defense:ContinuitySide}){
   return <div>
     <div className="continuity-col-head"><img src={teamLogoUrl(teamId,64)} alt=""/><span>{name.toUpperCase()}</span></div>
     <div className="continuity-side-label">Offense · {offense.overallPct.toFixed(1)}% roster continuity</div>
     {offense.positions.map(p=><div className="continuity-row" key={p.group}>
       <span>{p.group}</span>
-      <div className="continuity-track"><div className="continuity-fill" style={{"--fill":color,"--pct":`${p.pct}%`} as CSSProperties}/></div>
+      <div className="continuity-track"><div className="continuity-fill" style={{"--fill":barColor,"--pct":`${p.pct}%`} as CSSProperties}/></div>
       <b>{p.pct.toFixed(0)}%</b>
     </div>)}
     <div className="continuity-side-label">Defense · {defense.overallPct.toFixed(1)}% roster continuity</div>
     {defense.positions.map(p=><div className="continuity-row" key={p.group}>
       <span>{p.group}</span>
-      <div className="continuity-track"><div className="continuity-fill" style={{"--fill":color,"--pct":`${p.pct}%`} as CSSProperties}/></div>
+      <div className="continuity-track"><div className="continuity-fill" style={{"--fill":barColor,"--pct":`${p.pct}%`} as CSSProperties}/></div>
       <b>{p.pct.toFixed(0)}%</b>
+    </div>)}
+  </div>;
+}
+
+function CompareBoard({rows}:{rows:CompareRow[]}){
+  return <div className="stat-compare">
+    <div className="stat-compare-key">
+      <span><i style={{"--dot":MICHIGAN_BAR} as CSSProperties}/>MICHIGAN</span>
+      <span><i style={{"--dot":OPPONENT_BAR} as CSSProperties}/>WESTERN MICHIGAN</span>
+    </div>
+    {rows.map(r=><div className="stat-compare-row" key={r.metric}>
+      <div className="stat-compare-label">{r.metric}</div>
+      <div className="stat-compare-bar-wrap">
+        <div className="stat-compare-track-bg"><div className="stat-compare-fill" style={{"--fill":MICHIGAN_BAR,"--pct":`${percentileFromRank(r.michigan.rank)}%`} as CSSProperties}/></div>
+        <b>{r.michigan.value} <small>#{r.michigan.rank}</small></b>
+      </div>
+      <div className="stat-compare-bar-wrap">
+        <div className="stat-compare-track-bg"><div className="stat-compare-fill" style={{"--fill":OPPONENT_BAR,"--pct":`${percentileFromRank(r.opponent.rank)}%`} as CSSProperties}/></div>
+        <b>{r.opponent.value} <small>#{r.opponent.rank}</small></b>
+      </div>
     </div>)}
   </div>;
 }
@@ -76,12 +106,18 @@ export default function MichiganWesternMichiganPreview(){
         </div>
       </header>
 
+      <div className="feature-matchup-card">
+        <div><img src={teamLogoUrl(data.michiganTeamId,64)} alt=""/><span>MICHIGAN</span><strong>{`#${data.compositeComparison.michigan.overall.rank}`}</strong><small>{`${data.compositeComparison.michigan.overall.value} OVERALL`}</small></div>
+        <div className="feature-matchup-center"><span>COMPOSITE</span><b>{data.compositeComparison.overallEdge}</b><small>MICHIGAN OVERALL EDGE</small></div>
+        <div><img src={teamLogoUrl(data.opponentTeamId,64)} alt=""/><span>WESTERN</span><strong>{`#${data.compositeComparison.opponent.overall.rank}`}</strong><small>{`${data.compositeComparison.opponent.overall.value} OVERALL`}</small></div>
+      </div>
+
       <section className="feature-quick-read" aria-label="Quick read">
         <div className="feature-quick-label"><span>30-SECOND READ</span><strong>What kind of game this actually is.</strong></div>
         <div className="feature-stat-grid">
           <Stat value={data.opponentOffense.numbers[0].value} label="WMU RUSH DECISION RATE" detail="run-first by design"/>
-          <Stat value={data.opponentOffense.numbers[2].value} label="WMU ADJ. PASS SUCCESS RANK" detail="the pressure point"/>
-          <Stat value={data.opponentDefense.numbers[0].value} label="WMU ADJ. DEFENSE RANK" detail="2025's real strength"/>
+          <Stat value="#65 vs #118" label="WMU RUSH VS. PASS SUCCESS RANK" detail="the exploitable split"/>
+          <Stat value="#19 vs #34" label="MICH VS. WMU DEFENSE RANK" detail="both units are real"/>
           <Stat value="20% / 12%" label="WMU DL / LB SNAP CONTINUITY" detail="CBS Sports"/>
         </div>
       </section>
@@ -100,24 +136,25 @@ export default function MichiganWesternMichiganPreview(){
 
           <div className="feature-thesis" id="one-sentence"><span>THE PREVIEW IN ONE SENTENCE</span><strong>{data.heroThesis}</strong></div>
 
-          <section id="who-is-western" className="feature-story-section">
-            <div className="feature-section-number">01</div><div className="feature-section-kicker">2025 IDENTITY</div>
-            <h2>Who is Western Michigan?</h2>
-            <p>Start with what Western actually was in 2025, using our opponent-adjusted model rather than the raw box score -- the same schedule-adjusted pipeline that powers every ranking on this page, re-verified live for this preview.</p>
-            <div className="feature-number-row">
-              {data.opponentOffense.numbers.slice(0,3).map(n=><Stat key={n.label} {...n}/>)}
-            </div>
-            <p><strong>{data.opponentOffense.takeaway}</strong></p>
+          <section id="2025-comparison" className="feature-story-section">
+            <div className="feature-section-number">01</div><div className="feature-section-kicker">2025 BASELINE</div>
+            <h2>Michigan vs. Western Michigan: the 2025 numbers</h2>
+            <p>Every metric below comes from the same opponent-adjusted model, run for both teams at once and re-verified live for this preview. Bar length is each team's national percentile on that stat (out of 136 FBS teams) -- not the raw value -- so a rate stat and a yards-per-play stat land on one honestly comparable scale.</p>
+
+            <div className="feature-section-kicker" style={{marginTop:28}}>OFFENSE</div>
+            <CompareBoard rows={data.offenseCompareRows}/>
+            <p><strong>{data.michiganOffenseTakeaway}</strong> {data.opponentOffense.takeaway}</p>
+
+            <div className="feature-section-kicker" style={{marginTop:28}}>DEFENSE</div>
+            <CompareBoard rows={data.defenseCompareRows}/>
+            <p><strong>{data.michiganDefenseTakeaway}</strong> {data.opponentDefense.takeaway}</p>
+
             <div className="feature-versus-stat">
-              <div><small>ADJ. RUSH SUCCESS</small><strong>{data.opponentOffense.numbers[1].value}</strong><span>{data.opponentOffense.numbers[1].detail}</span></div>
+              <div><small>WMU ADJ. RUSH SUCCESS</small><strong>{data.opponentOffense.numbers[1].value}</strong><span>{data.opponentOffense.numbers[1].detail}</span></div>
               <b>VS</b>
-              <div><small>ADJ. PASS SUCCESS</small><strong>{data.opponentOffense.numbers[2].value}</strong><span>{data.opponentOffense.numbers[2].detail}</span></div>
+              <div><small>WMU ADJ. PASS SUCCESS</small><strong>{data.opponentOffense.numbers[2].value}</strong><span>{data.opponentOffense.numbers[2].detail}</span></div>
             </div>
-            <p>Flip to defense and the picture reverses.</p>
-            <div className="feature-number-row">
-              {data.opponentDefense.numbers.map(n=><Stat key={n.label} {...n}/>)}
-            </div>
-            <p><strong>{data.opponentDefense.takeaway}</strong></p>
+            <p>That split -- roughly average on the ground, bottom-quarter through the air -- is the widest internal gap on either team's offense, and it's the foundation for the first matchup below.</p>
           </section>
 
           <section id="what-returns" className="feature-story-section">
@@ -133,8 +170,8 @@ export default function MichiganWesternMichiganPreview(){
                 <div><strong>{data.continuity.opponent.defense.overallPct.toFixed(0)}%</strong><span>WESTERN DEFENSE</span></div>
               </div>
               <div className="continuity-grid">
-                <ContinuityColumn name="Michigan" teamId={data.michiganTeamId} offense={data.continuity.michigan.offense} defense={data.continuity.michigan.defense}/>
-                <ContinuityColumn name="Western Michigan" teamId={data.opponentTeamId} offense={data.continuity.opponent.offense} defense={data.continuity.opponent.defense}/>
+                <ContinuityColumn name="Michigan" teamId={data.michiganTeamId} barColor={MICHIGAN_BAR} offense={data.continuity.michigan.offense} defense={data.continuity.michigan.defense}/>
+                <ContinuityColumn name="Western Michigan" teamId={data.opponentTeamId} barColor={OPPONENT_BAR} offense={data.continuity.opponent.offense} defense={data.continuity.opponent.defense}/>
               </div>
               <div className="continuity-external">
                 <strong style={{color:"#fff"}}>Externally researched, snap-weighted (for comparison):</strong> {data.continuity.opponentExternal.source} has Western Michigan returning {data.continuity.opponentExternal.offenseOverallPct}% of offensive snaps and {data.continuity.opponentExternal.defenseOverallPct}% of defensive snaps overall -- {data.continuity.opponentExternal.offensePositions.map(p=>`${p.group} ${p.pct}%`).join(", ")} on offense; {data.continuity.opponentExternal.defensePositions.map(p=>`${p.group} ${p.pct}%`).join(", ")} on defense.

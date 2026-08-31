@@ -15,6 +15,9 @@
 
 export type StatPoint = { value: string; label: string; detail?: string };
 
+export type CompareValue = { value: string; rank: number };
+export type CompareRow = { metric: string; michigan: CompareValue; opponent: CompareValue };
+
 export type ContinuityPositionGroup = { group: string; pct: number };
 
 export type ContinuitySide = {
@@ -38,6 +41,16 @@ export type MatchupPreviewData = {
 
   opponentOffense: { numbers: StatPoint[]; takeaway: string };
   opponentDefense: { numbers: StatPoint[]; takeaway: string };
+  michiganOffenseTakeaway: string;
+  michiganDefenseTakeaway: string;
+
+  compositeComparison: {
+    michigan: { offense: CompareValue; defense: CompareValue; overall: CompareValue };
+    opponent: { offense: CompareValue; defense: CompareValue; overall: CompareValue };
+    overallEdge: string;
+  };
+  offenseCompareRows: CompareRow[];
+  defenseCompareRows: CompareRow[];
 
   continuity: {
     methodologyNote: string;
@@ -113,6 +126,36 @@ export const michiganWesternMichigan2026: MatchupPreviewData = {
     ],
     takeaway: "The defense was the stronger half of the team and made Western difficult to play cleanly against.",
   },
+  michiganOffenseTakeaway: "Michigan's offense was elite in exactly the way Western's wasn't -- an explosive, efficient unit on the ground and through the air.",
+  michiganDefenseTakeaway: "Michigan's defense was very good but not as dominant relative to the field as Western's -- the closest thing to an even matchup on this page.",
+
+  compositeComparison: {
+    michigan: {
+      offense: { value: "83.4/100", rank: 19 },
+      defense: { value: "67.6/100", rank: 38 },
+      overall: { value: "75.5/100", rank: 19 },
+    },
+    opponent: {
+      offense: { value: "30.1/100", rank: 100 },
+      defense: { value: "70.4/100", rank: 34 },
+      overall: { value: "50.2/100", rank: 67 },
+    },
+    overallEdge: "+25.3", // 75.5 - 50.2, Michigan's overall composite minus Western's
+  },
+  offenseCompareRows: [
+    { metric: "Success rate", michigan: { value: "46.8%", rank: 19 }, opponent: { value: "40.3%", rank: 95 } },
+    { metric: "Rush success", michigan: { value: "49.0%", rank: 4 }, opponent: { value: "42.7%", rank: 65 } },
+    { metric: "Pass success", michigan: { value: "42.0%", rank: 54 }, opponent: { value: "38.3%", rank: 118 } },
+    { metric: "Explosive-play rate", michigan: { value: "13.0%", rank: 19 }, opponent: { value: "10.9%", rank: 80 } },
+    { metric: "Yards per play", michigan: { value: "6.55", rank: 21 }, opponent: { value: "4.91", rank: 119 } },
+  ],
+  defenseCompareRows: [
+    { metric: "Success rate allowed", michigan: { value: "41.8%", rank: 58 }, opponent: { value: "39.8%", rank: 35 } },
+    { metric: "Rush success allowed", michigan: { value: "41.3%", rank: 47 }, opponent: { value: "41.1%", rank: 43 } },
+    { metric: "Pass success allowed", michigan: { value: "42.8%", rank: 79 }, opponent: { value: "38.4%", rank: 23 } },
+    { metric: "Explosive-play rate allowed", michigan: { value: "9.9%", rank: 22 }, opponent: { value: "10.9%", rank: 52 } },
+    { metric: "Yards per play allowed", michigan: { value: "4.83", rank: 18 }, opponent: { value: "5.57", rank: 52 } },
+  ],
 
   continuity: {
     methodologyNote:
