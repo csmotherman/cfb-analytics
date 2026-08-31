@@ -16,7 +16,7 @@
 export type StatPoint = { value: string; label: string; detail?: string };
 
 export type CompareValue = { value: string; rank: number };
-export type CompareRow = { metric: string; michigan: CompareValue; opponent: CompareValue };
+export type CompareRow = { metric: string; michigan: CompareValue; opponent: CompareValue; tier?: "validated" | "research" };
 
 export type ContinuityPositionGroup = { group: string; pct: number };
 
@@ -62,8 +62,8 @@ export type MatchupPreviewData = {
     projectionSource: string;
     michiganOffenseVsOpponentDefense: CompareRow[];
     opponentOffenseVsMichiganDefense: CompareRow[];
-    michiganSeason: { offense: CompareValue; defense: CompareValue; overall: CompareValue; offenseContinuityPct: number; defenseContinuityPct: number };
-    opponentSeason: { offense: CompareValue; defense: CompareValue; overall: CompareValue; offenseContinuityPct: number; defenseContinuityPct: number };
+    michiganSeason: { offense: CompareValue; defense: CompareValue; overall: CompareValue; offenseContinuityPct: number; defenseContinuityPct: number; rushDecisionRatePct: number };
+    opponentSeason: { offense: CompareValue; defense: CompareValue; overall: CompareValue; offenseContinuityPct: number; defenseContinuityPct: number; rushDecisionRatePct: number };
   };
 
   continuity: {
@@ -185,21 +185,33 @@ export const michiganWesternMichigan2026: MatchupPreviewData = {
     projectedMargin: "Michigan by 27.6",
     projectedMarginRange: "range: Michigan by 7.3 to 47.9",
     projectionSource: "Michigan Football Focus 2026 preseason simulation (50,000 runs)",
-    // Cross-matchup: each team's own offense against the other's defense,
-    // same validated-five metrics used throughout this page.
+    // Cross-matchup: each team's own offense against the other's defense.
+    // "validated" = the five validated schedule-adjusted metrics used
+    // throughout this page. "research" = same model/methodology, same
+    // darren-data-pack.md table, but not yet through the repo's full
+    // historical validation suite -- shown with a dimmer tier marker in the
+    // graphic rather than presented as equally certain.
     michiganOffenseVsOpponentDefense: [
-      { metric: "Success rate", michigan: { value: "46.8%", rank: 19 }, opponent: { value: "39.8%", rank: 35 } },
-      { metric: "Rush success", michigan: { value: "49.0%", rank: 4 }, opponent: { value: "41.1%", rank: 43 } },
-      { metric: "Pass success", michigan: { value: "42.0%", rank: 54 }, opponent: { value: "38.4%", rank: 23 } },
-      { metric: "Explosive-play rate", michigan: { value: "13.0%", rank: 19 }, opponent: { value: "10.9%", rank: 52 } },
-      { metric: "Yards per play", michigan: { value: "6.55", rank: 21 }, opponent: { value: "5.57", rank: 52 } },
+      { metric: "Success rate", michigan: { value: "46.8%", rank: 19 }, opponent: { value: "39.8%", rank: 35 }, tier: "validated" },
+      { metric: "Rush success", michigan: { value: "49.0%", rank: 4 }, opponent: { value: "41.1%", rank: 43 }, tier: "validated" },
+      { metric: "Pass success", michigan: { value: "42.0%", rank: 54 }, opponent: { value: "38.4%", rank: 23 }, tier: "validated" },
+      { metric: "Explosive-play rate", michigan: { value: "13.0%", rank: 19 }, opponent: { value: "10.9%", rank: 52 }, tier: "validated" },
+      { metric: "Yards per play", michigan: { value: "6.55", rank: 21 }, opponent: { value: "5.57", rank: 52 }, tier: "validated" },
+      { metric: "Rush explosive rate", michigan: { value: "14.8%", rank: 22 }, opponent: { value: "13.8%", rank: 83 }, tier: "research" },
+      { metric: "Pass explosive rate", michigan: { value: "9.9%", rank: 39 }, opponent: { value: "8.3%", rank: 13 }, tier: "research" },
+      { metric: "3rd-down conversion", michigan: { value: "43.4%", rank: 22 }, opponent: { value: "37.2%", rank: 11 }, tier: "research" },
+      { metric: "Sack rate allowed", michigan: { value: "5.5%", rank: 69 }, opponent: { value: "6.3%", rank: 15 }, tier: "research" },
     ],
     opponentOffenseVsMichiganDefense: [
-      { metric: "Success rate", michigan: { value: "41.8%", rank: 58 }, opponent: { value: "40.3%", rank: 95 } },
-      { metric: "Rush success", michigan: { value: "41.3%", rank: 47 }, opponent: { value: "42.7%", rank: 65 } },
-      { metric: "Pass success", michigan: { value: "42.8%", rank: 79 }, opponent: { value: "38.3%", rank: 118 } },
-      { metric: "Explosive-play rate", michigan: { value: "9.9%", rank: 22 }, opponent: { value: "10.9%", rank: 80 } },
-      { metric: "Yards per play", michigan: { value: "4.83", rank: 18 }, opponent: { value: "4.91", rank: 119 } },
+      { metric: "Success rate", michigan: { value: "41.8%", rank: 58 }, opponent: { value: "40.3%", rank: 95 }, tier: "validated" },
+      { metric: "Rush success", michigan: { value: "41.3%", rank: 47 }, opponent: { value: "42.7%", rank: 65 }, tier: "validated" },
+      { metric: "Pass success", michigan: { value: "42.8%", rank: 79 }, opponent: { value: "38.3%", rank: 118 }, tier: "validated" },
+      { metric: "Explosive-play rate", michigan: { value: "9.9%", rank: 22 }, opponent: { value: "10.9%", rank: 80 }, tier: "validated" },
+      { metric: "Yards per play", michigan: { value: "4.83", rank: 18 }, opponent: { value: "4.91", rank: 119 }, tier: "validated" },
+      { metric: "Rush explosive rate", michigan: { value: "11.9%", rank: 22 }, opponent: { value: "12.8%", rank: 84 }, tier: "research" },
+      { metric: "Pass explosive rate", michigan: { value: "8.7%", rank: 29 }, opponent: { value: "8.5%", rank: 112 }, tier: "research" },
+      { metric: "3rd-down conversion", michigan: { value: "39.7%", rank: 51 }, opponent: { value: "39.2%", rank: 89 }, tier: "research" },
+      { metric: "Sack rate allowed", michigan: { value: "5.7%", rank: 50 }, opponent: { value: "5.8%", rank: 91 }, tier: "research" },
     ],
     michiganSeason: {
       offense: { value: "83.4/100", rank: 19 },
@@ -207,6 +219,7 @@ export const michiganWesternMichigan2026: MatchupPreviewData = {
       overall: { value: "75.5/100", rank: 19 },
       offenseContinuityPct: 63.0,
       defenseContinuityPct: 61.1,
+      rushDecisionRatePct: 57.1,
     },
     opponentSeason: {
       offense: { value: "30.1/100", rank: 100 },
@@ -214,6 +227,7 @@ export const michiganWesternMichigan2026: MatchupPreviewData = {
       overall: { value: "50.2/100", rank: 67 },
       offenseContinuityPct: 56.2,
       defenseContinuityPct: 42.9,
+      rushDecisionRatePct: 65.1,
     },
   },
 

@@ -240,7 +240,7 @@ export default function MichiganWesternMichiganPreview(){
         <p style={{fontSize:13,color:"#aebdca",lineHeight:1.6,margin:"8px 0 18px",maxWidth:820}}>Every number from this preview in one shareable image -- both teams&apos; 2025 opponent-adjusted offense and defense, our own roster-continuity audit, and the market/model context, side by side.</p>
         <div style={{border:"1px solid #29465d",borderRadius:12,overflow:"hidden",maxWidth:1000,margin:"0 auto"}}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/articles/michigan-western-michigan-2026-preview/blueprint" alt="Michigan vs. Western Michigan matchup blueprint: 2025 opponent-adjusted offense and defense comparison, roster continuity, win probability and market line" width={1600} height={1260} style={{width:"100%",height:"auto",display:"block"}}/>
+          <img src="/articles/michigan-western-michigan-2026-preview/blueprint" alt="Michigan vs. Western Michigan matchup blueprint: 2025 opponent-adjusted offense and defense comparison, roster continuity, win probability and market line" width={1600} height={1470} style={{width:"100%",height:"auto",display:"block"}}/>
         </div>
         <div style={{maxWidth:1000,margin:"0 auto"}}>
           <BlueprintActions src="/articles/michigan-western-michigan-2026-preview/blueprint" filename="michigan-western-michigan-2026-blueprint.png"/>
