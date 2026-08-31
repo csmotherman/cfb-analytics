@@ -299,22 +299,6 @@
       "weightPounds": 220.0
     },
     {
-      "classLabel": "Junior",
-      "classRaw": "Jr.",
-      "eligibilityBucket": "Junior eligibility",
-      "height": "6-3",
-      "heightInches": 75,
-      "name": "Teegan Haines",
-      "number": "10",
-      "position": "LB",
-      "positionGroup": "LB",
-      "previousSchool": "Hutchinson CC",
-      "rosterSource": "college_newcomer",
-      "side": "Defense",
-      "weight": "210",
-      "weightPounds": 210.0
-    },
-    {
       "classLabel": "Redshirt Sophomore",
       "classRaw": "R-So.",
       "eligibilityBucket": "Sophomore eligibility",
@@ -950,6 +934,22 @@
       "positionGroup": "LB",
       "previousSchool": null,
       "rosterSource": "first_time_college",
+      "side": "Defense",
+      "weight": "210",
+      "weightPounds": 210.0
+    },
+    {
+      "classLabel": "Junior",
+      "classRaw": "Jr.",
+      "eligibilityBucket": "Junior eligibility",
+      "height": "6-3",
+      "heightInches": 75,
+      "name": "Teegan Haines",
+      "number": "39",
+      "position": "LB",
+      "positionGroup": "LB",
+      "previousSchool": "Hutchinson CC",
+      "rosterSource": "college_newcomer",
       "side": "Defense",
       "weight": "210",
       "weightPounds": 210.0
@@ -1687,10 +1687,10 @@
         "position": "WR",
         "receivingAttributedPPA": 16.193,
         "returning": false,
-        "rushingPPA": 1.564,
+        "rushingPPA": 5.078,
         "sourceTotalPPAPass": 16.193,
-        "sourceTotalPPARush": 1.564,
-        "totalPPA": 17.758
+        "sourceTotalPPARush": 5.078,
+        "totalPPA": 21.271
       },
       {
         "id": "4880449",
@@ -1791,10 +1791,10 @@
         "position": "RB",
         "receivingAttributedPPA": -4.784,
         "returning": false,
-        "rushingPPA": -0.99,
+        "rushingPPA": 0.495,
         "sourceTotalPPAPass": -4.784,
-        "sourceTotalPPARush": -0.99,
-        "totalPPA": -5.775
+        "sourceTotalPPARush": 0.495,
+        "totalPPA": -4.289
       },
       {
         "id": "5296163",
@@ -1815,14 +1815,27 @@
         "id": "5074245",
         "matchMethod": "name",
         "name": "Broc Lowry",
-        "passingPPA": 36.373,
+        "passingPPA": 33.546,
         "position": "QB",
         "receivingAttributedPPA": null,
         "returning": true,
-        "rushingPPA": 48.132,
-        "sourceTotalPPAPass": 36.373,
-        "sourceTotalPPARush": 48.132,
-        "totalPPA": 84.354
+        "rushingPPA": 53.829,
+        "sourceTotalPPAPass": 33.546,
+        "sourceTotalPPARush": 53.829,
+        "totalPPA": 87.224
+      },
+      {
+        "id": "5085006",
+        "matchMethod": "name",
+        "name": "Jalen Buckley",
+        "passingPPA": null,
+        "position": "RB",
+        "receivingAttributedPPA": -3.34,
+        "returning": true,
+        "rushingPPA": 36.718,
+        "sourceTotalPPAPass": -3.34,
+        "sourceTotalPPARush": 36.718,
+        "totalPPA": 33.378
       },
       {
         "id": "5075962",
@@ -1851,19 +1864,6 @@
         "totalPPA": 11.639
       },
       {
-        "id": "5085006",
-        "matchMethod": "name",
-        "name": "Jalen Buckley",
-        "passingPPA": null,
-        "position": "RB",
-        "receivingAttributedPPA": -3.34,
-        "returning": true,
-        "rushingPPA": 9.34,
-        "sourceTotalPPAPass": -3.34,
-        "sourceTotalPPARush": 9.34,
-        "totalPPA": 6.0
-      },
-      {
         "id": "4917858",
         "matchMethod": "name",
         "name": "Cole Cabana",
@@ -1877,19 +1877,6 @@
         "totalPPA": -0.226
       },
       {
-        "id": "5144956",
-        "matchMethod": "name",
-        "name": "Ryan Brotherton",
-        "passingPPA": null,
-        "position": "TE",
-        "receivingAttributedPPA": -1.034,
-        "returning": true,
-        "rushingPPA": 0.0,
-        "sourceTotalPPAPass": -1.034,
-        "sourceTotalPPARush": 0.0,
-        "totalPPA": -1.034
-      },
-      {
         "id": "5086095",
         "matchMethod": "name",
         "name": "Terence Marshall",
@@ -1901,6 +1888,19 @@
         "sourceTotalPPAPass": -2.684,
         "sourceTotalPPARush": 0.0,
         "totalPPA": -2.684
+      },
+      {
+        "id": "5144956",
+        "matchMethod": "name",
+        "name": "Ryan Brotherton",
+        "passingPPA": null,
+        "position": "TE",
+        "receivingAttributedPPA": -1.034,
+        "returning": true,
+        "rushingPPA": -1.752,
+        "sourceTotalPPAPass": -1.034,
+        "sourceTotalPPARush": -1.752,
+        "totalPPA": -2.786
       }
     ],
     "views": {
@@ -1914,31 +1914,31 @@
         "signedReturningShare": 0.37048350914037514
       },
       "overallPlayerAttributedPPA": {
-        "positivePPALost": 47.16099999999999,
-        "positivePriorPPA": 169.057,
-        "positiveReturningPPA": 121.896,
-        "positiveReturningShare": 0.72103491721727,
-        "signedPriorPPA": 148.132,
-        "signedReturningPPA": 117.952,
-        "signedReturningShare": 0.7962627926443983
+        "positivePPALost": 50.67400000000001,
+        "positivePriorPPA": 202.818,
+        "positiveReturningPPA": 152.144,
+        "positiveReturningShare": 0.75015038112988,
+        "signedPriorPPA": 181.627,
+        "signedReturningPPA": 146.448,
+        "signedReturningShare": 0.8063118368964967
       },
       "qbPassingPPA": {
         "positivePPALost": 0.0,
-        "positivePriorPPA": 36.373,
-        "positiveReturningPPA": 36.373,
+        "positivePriorPPA": 33.546,
+        "positiveReturningPPA": 33.546,
         "positiveReturningShare": 1.0,
-        "signedPriorPPA": 32.965999999999994,
-        "signedReturningPPA": 36.373,
-        "signedReturningShare": 1.1033489049323546
+        "signedPriorPPA": 30.139,
+        "signedReturningPPA": 33.546,
+        "signedReturningShare": 1.1130429012243273
       },
       "rushingPPA": {
-        "positivePPALost": 2.4840000000000018,
-        "positivePriorPPA": 61.153999999999996,
-        "positiveReturningPPA": 58.669999999999995,
-        "positiveReturningShare": 0.9593812342610458,
-        "signedPriorPPA": 53.138,
-        "signedReturningPPA": 58.443999999999996,
-        "signedReturningShare": 1.0998532123903797
+        "positivePPALost": 6.492999999999995,
+        "positivePriorPPA": 98.238,
+        "positiveReturningPPA": 91.745,
+        "positiveReturningShare": 0.933905413383823,
+        "signedPriorPPA": 89.46000000000001,
+        "signedReturningPPA": 89.76700000000001,
+        "signedReturningShare": 1.0034317013190253
       }
     }
   },
@@ -2107,10 +2107,12 @@
     "collegeNewcomers": 30,
     "defenseReturningShare": 0.42857142857142855,
     "firstTimeCollegeNewcomers": 22,
+    "newcomerUnclassified": 0,
+    "newcomerUnclassifiedShare": 0.0,
     "offenseReturningShare": 0.5625,
     "positiveNonQbPassPlayPpaReturningShare": 0.38839325713261746,
     "positiveQbPassPpaReturningShare": 1.0,
-    "positiveRushPpaReturningShare": 0.9593812342610458,
+    "positiveRushPpaReturningShare": 0.933905413383823,
     "redshirtedPlayers": 62,
     "rejoiningProgram": 1,
     "returnedFrom2025": 51,
@@ -2118,7 +2120,7 @@
     "rosterSize": 104,
     "seniorGraduatePlayers": 24,
     "seniorGraduateShare": 0.23076923076923078,
-    "signedPlayerPpaReturningShare": 0.7962627926443983,
+    "signedPlayerPpaReturningShare": 0.8063118368964967,
     "topLostPpaProducer": {
       "id": "4597248",
       "matchMethod": null,
@@ -2127,25 +2129,25 @@
       "position": "WR",
       "receivingAttributedPPA": 16.193,
       "returning": false,
-      "rushingPPA": 1.564,
+      "rushingPPA": 5.078,
       "sourceTotalPPAPass": 16.193,
-      "sourceTotalPPARush": 1.564,
-      "totalPPA": 17.758
+      "sourceTotalPPARush": 5.078,
+      "totalPPA": 21.271
     },
     "topReturningPpaProducer": {
       "id": "5074245",
       "matchMethod": "name",
       "name": "Broc Lowry",
-      "passingPPA": 36.373,
+      "passingPPA": 33.546,
       "position": "QB",
       "receivingAttributedPPA": null,
       "returning": true,
-      "rushingPPA": 48.132,
-      "sourceTotalPPAPass": 36.373,
-      "sourceTotalPPARush": 48.132,
-      "totalPPA": 84.354
+      "rushingPPA": 53.829,
+      "sourceTotalPPAPass": 33.546,
+      "sourceTotalPPARush": 53.829,
+      "totalPPA": 87.224
     },
-    "topReturningPpaProducerShareOfReturningSignedPpa": 0.7151553174172545,
+    "topReturningPpaProducerShareOfReturningSignedPpa": 0.595597071998252,
     "upperclassmen": 45,
     "upperclassmenShare": 0.4326923076923077
   },

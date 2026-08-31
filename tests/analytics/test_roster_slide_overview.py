@@ -70,6 +70,43 @@ def test_source_classification_precedence():
     }
 
 
+def test_parse_official_roster_table_supports_no_transfer_column_schema():
+    html = """
+    <html><body>
+      <table>
+        <tr><th>#</th><th>Name</th><th>Pos.</th><th>Ht.</th><th>Wt.</th><th>Yr.</th><th>Hometown / High School</th></tr>
+        <tr><td>0</td><td>Returning Player</td><td>QB</td><td>6-2</td><td>215</td><td>Jr.</td><td>Town / HS</td></tr>
+      </table>
+    </body></html>
+    """
+    rows = parse_official_roster_html(
+        html,
+        required={"name", "pos", "class", "ht", "wt"},
+        header_aliases={"yr": "class"},
+    )
+    assert len(rows) == 1
+    assert rows[0]["name"] == "Returning Player"
+    assert rows[0]["classLabel"] == "Junior"
+    assert rows[0]["previousSchool"] is None
+
+
+def test_source_classification_without_previous_school_flags_newcomers_as_unclassified():
+    current = [
+        _row("Returner", "QB", "Jr."),
+        _row("New Guy", "WR", "So."),
+    ]
+    previous = [_row("Returner", "QB", "So.")]
+    older: list[dict] = []
+
+    rows = classify_roster_sources(current, previous, older, previous_school_available=False)
+    by_name = {row["name"]: row["rosterSource"] for row in rows}
+
+    assert by_name == {
+        "Returner": "returning_2025",
+        "New Guy": "newcomer_unclassified",
+    }
+
+
 def test_slide_overview_reconciles_and_uses_positive_ppa_retention():
     current = [
         _row("Returner", "QB", "Jr."),

@@ -150,19 +150,36 @@ def _pct(value: float | None) -> str:
     return "n/a" if value is None else f"{100 * value:.1f}%"
 
 
-def parse_official_roster_html(html: str) -> list[dict[str, Any]]:
+def parse_official_roster_html(
+    html: str,
+    *,
+    required: set[str] | None = None,
+    header_aliases: dict[str, str] | None = None,
+) -> list[dict[str, Any]]:
+    """Parse an official-site roster table.
+
+    Some athletics sites (e.g. wmubroncos.com) publish a "Previous School"
+    column that makes transfer/newcomer classification straightforward.
+    Others (e.g. mgoblue.com) publish only Name/Pos./Ht./Wt./Yr., with no
+    transfer-origin column at all. `required` and `header_aliases` let a
+    caller parse the latter shape (e.g. required={"name","pos","yr","ht","wt"},
+    header_aliases={"yr": "class"}) without weakening the default, fully
+    audited wmubroncos-style path used elsewhere.
+    """
+    required = required or {"name", "pos", "class", "ht", "wt", "previousschool"}
+    header_aliases = header_aliases or {}
     parser = _TableParser()
     parser.feed(html)
 
     for table in parser.tables:
         if len(table) < 2:
             continue
-        header = [_header_key(value) for value in table[0]]
-        required = {"name", "pos", "class", "ht", "wt", "previousschool"}
+        header = [header_aliases.get(_header_key(value), _header_key(value)) for value in table[0]]
         if not required.issubset(set(header)):
             continue
 
         indexes = {key: header.index(key) for key in required}
+        previous_school_idx = header.index("previousschool") if "previousschool" in header else None
         number_idx = header.index("number") if "number" in header else 0
         rows: list[dict[str, Any]] = []
         for cells in table[1:]:
@@ -175,7 +192,7 @@ def parse_official_roster_html(html: str) -> list[dict[str, Any]]:
             raw_class = cells[indexes["class"]].strip()
             height = cells[indexes["ht"]].strip()
             weight = cells[indexes["wt"]].strip()
-            previous_school = cells[indexes["previousschool"]].strip()
+            previous_school = cells[previous_school_idx].strip() if previous_school_idx is not None and previous_school_idx < len(cells) else ""
             number = cells[number_idx].strip() if number_idx < len(cells) else ""
             group = _position_group(position)
             label = _class_label(raw_class)
@@ -202,7 +219,12 @@ def parse_official_roster_html(html: str) -> list[dict[str, Any]]:
     raise RuntimeError("Could not find an official roster table with Name/Pos./Class/Ht./Wt./Previous School columns.")
 
 
-def fetch_official_roster(url: str) -> list[dict[str, Any]]:
+def fetch_official_roster(
+    url: str,
+    *,
+    required: set[str] | None = None,
+    header_aliases: dict[str, str] | None = None,
+) -> list[dict[str, Any]]:
     response = httpx.get(
         url,
         timeout=60.0,
@@ -210,7 +232,7 @@ def fetch_official_roster(url: str) -> list[dict[str, Any]]:
         headers={"User-Agent": "cfb-analytics-roster-audit/1.0"},
     )
     response.raise_for_status()
-    rows = parse_official_roster_html(response.text)
+    rows = parse_official_roster_html(response.text, required=required, header_aliases=header_aliases)
     names = [_norm(row["name"]) for row in rows]
     if len(rows) < 40:
         raise RuntimeError(f"Official roster parse returned only {len(rows)} rows from {url}; refusing to publish.")
@@ -224,7 +246,18 @@ def classify_roster_sources(
     current: list[dict[str, Any]],
     previous: list[dict[str, Any]],
     older: list[dict[str, Any]],
+    *,
+    previous_school_available: bool = True,
 ) -> list[dict[str, Any]]:
+    """Classify each current-roster player by where they came from.
+
+    `previous_school_available` must be set False for official roster pages
+    that don't publish a "Previous School" column (e.g. mgoblue.com). In that
+    case a non-returning, non-rejoining player can't be reliably split into
+    college_newcomer vs. first_time_college -- rather than guessing, they are
+    labeled "newcomer_unclassified" so the gap is visible in the output
+    instead of silently defaulting to "first_time_college".
+    """
     previous_names = {_norm(row["name"]) for row in previous}
     older_names = {_norm(row["name"]) for row in older}
 
@@ -235,6 +268,8 @@ def classify_roster_sources(
             source = "returning_2025"
         elif key in older_names:
             source = "rejoining_program"
+        elif not previous_school_available:
+            source = "newcomer_unclassified"
         elif row.get("previousSchool"):
             source = "college_newcomer"
         else:
@@ -286,8 +321,9 @@ def build_slide_overview(
     team: str,
     season: int,
     roster_urls: dict[str, str],
+    previous_school_available: bool = True,
 ) -> dict[str, Any]:
-    players = classify_roster_sources(current, previous, older)
+    players = classify_roster_sources(current, previous, older, previous_school_available=previous_school_available)
     total = len(players)
     source_counts = Counter(row["rosterSource"] for row in players)
     class_counts = Counter(row["classLabel"] for row in players)
@@ -304,7 +340,8 @@ def build_slide_overview(
     college_new = source_counts.get("college_newcomer", 0)
     first_time = source_counts.get("first_time_college", 0)
     rejoining = source_counts.get("rejoining_program", 0)
-    if returning + college_new + first_time + rejoining != total:
+    newcomer_unclassified = source_counts.get("newcomer_unclassified", 0)
+    if returning + college_new + first_time + rejoining + newcomer_unclassified != total:
         raise RuntimeError("Roster source classification does not reconcile to current roster total.")
 
     upperclassmen = sum(
@@ -352,6 +389,8 @@ def build_slide_overview(
         "collegeNewcomerShare": _share(college_new, total),
         "firstTimeCollegeNewcomers": first_time,
         "rejoiningProgram": rejoining,
+        "newcomerUnclassified": newcomer_unclassified,
+        "newcomerUnclassifiedShare": _share(newcomer_unclassified, total),
         "upperclassmen": upperclassmen,
         "upperclassmenShare": _share(upperclassmen, total),
         "seniorGraduatePlayers": senior_grad,
@@ -407,7 +446,14 @@ def build_slide_overview(
             "Exact age is not reported by the official roster, so the report uses official class/eligibility labels rather than invented ages.",
             "Signed PPA retention can exceed 100% when departed players had negative PPA. Positive-PPA retention is also reported for audience-facing use.",
             "Non-QB pass-play PPA is CFBD totalPPA.pass on RB/FB/WR/TE player rows. It should not be added to QB passing PPA because player-attribution views can overlap on the same passing play.",
-        ],
+        ]
+        + (
+            [
+                "This team's official roster page does not publish a Previous School column, so non-returning players could not be split into college_newcomer vs. first_time_college -- they are grouped as newcomer_unclassified instead of guessing. Returning-vs-not-returning headcount is unaffected by this gap."
+            ]
+            if newcomer_unclassified
+            else []
+        ),
     }
 
 
@@ -518,16 +564,37 @@ def main() -> None:
     parser.add_argument("--season", type=int, default=DEFAULT_SEASON)
     parser.add_argument("--roster-url-template", default=DEFAULT_ROSTER_URL_TEMPLATE)
     parser.add_argument("--output-dir", type=Path, default=Path("data/research/roster-overview"))
+    parser.add_argument(
+        "--roster-schema",
+        choices=["standard", "no-transfer-column"],
+        default="standard",
+        help=(
+            "'standard' expects Name/Pos./Class/Ht./Wt./Previous School (wmubroncos.com-style). "
+            "'no-transfer-column' is for official sites that publish Name/Pos./Ht./Wt./Yr. with no "
+            "transfer-origin column at all (e.g. mgoblue.com) -- newcomers are labeled "
+            "newcomer_unclassified instead of guessing college_newcomer vs. first_time_college."
+        ),
+    )
     args = parser.parse_args()
+
+    if args.roster_schema == "no-transfer-column":
+        parse_kwargs: dict[str, Any] = {
+            "required": {"name", "pos", "class", "ht", "wt"},
+            "header_aliases": {"yr": "class"},
+        }
+        previous_school_available = False
+    else:
+        parse_kwargs = {}
+        previous_school_available = True
 
     urls = {
         "current": args.roster_url_template.format(year=args.season),
         "previous": args.roster_url_template.format(year=args.season - 1),
         "older": args.roster_url_template.format(year=args.season - 2),
     }
-    current = fetch_official_roster(urls["current"])
-    previous = fetch_official_roster(urls["previous"])
-    older = fetch_official_roster(urls["older"])
+    current = fetch_official_roster(urls["current"], **parse_kwargs)
+    previous = fetch_official_roster(urls["previous"], **parse_kwargs)
+    older = fetch_official_roster(urls["older"], **parse_kwargs)
 
     production_season = args.season - 1
     with CfbdClient() as client:
@@ -559,6 +626,7 @@ def main() -> None:
         team=args.team,
         season=args.season,
         roster_urls=urls,
+        previous_school_available=previous_school_available,
     )
     _print_report(report)
 
