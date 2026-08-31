@@ -66,3 +66,7 @@ export function preseasonPowerNational(): PreseasonPowerNational | null {
 export function michiganPreseasonProjection(): MichiganPreseasonProjection | null {
   return readJson<MichiganPreseasonProjection>("data", "published", "2026", "michigan", "preseason-2026-projection.json");
 }
+
+export function preseasonProjectionForGame(gameId: string | number): PreseasonProjectionGame | null {
+  return michiganPreseasonProjection()?.games.find((game) => game.gameId === String(gameId)) ?? null;
+}

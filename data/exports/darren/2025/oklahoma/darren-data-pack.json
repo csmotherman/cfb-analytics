@@ -1,0 +1,3974 @@
+{
+  "adjustedMetrics": [
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.4180290976068199,
+          "exposure": 813.0,
+          "fieldSize": 136,
+          "rank": 58
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.4683438009588703,
+          "exposure": 806.0,
+          "fieldSize": 136,
+          "rank": 19
+        }
+      },
+      "family": "binomial",
+      "label": "Success rate",
+      "leagueAverageRaw": 0.4216594592670715,
+      "metric": "successRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.03988477021502931,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.3205034019180694,
+          "exposure": 750.0,
+          "fieldSize": 136,
+          "rank": 1
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.4172151320511733,
+          "exposure": 759.0,
+          "fieldSize": 136,
+          "rank": 75
+        }
+      },
+      "unit": "rate",
+      "validation": "validated"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.41252949581120996,
+          "exposure": 387.0,
+          "fieldSize": 136,
+          "rank": 47
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.48968319182439435,
+          "exposure": 460.0,
+          "fieldSize": 136,
+          "rank": 4
+        }
+      },
+      "family": "binomial",
+      "label": "Rush success rate",
+      "leagueAverageRaw": 0.4261042485051432,
+      "metric": "rushSuccessRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.04144533198068102,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.3200968825763069,
+          "exposure": 345.0,
+          "fieldSize": 136,
+          "rank": 1
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.409214403607918,
+          "exposure": 360.0,
+          "fieldSize": 136,
+          "rank": 96
+        }
+      },
+      "unit": "rate",
+      "validation": "validated"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.42753088359599584,
+          "exposure": 426.0,
+          "fieldSize": 136,
+          "rank": 79
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.4200235349033133,
+          "exposure": 346.0,
+          "fieldSize": 136,
+          "rank": 54
+        }
+      },
+      "family": "binomial",
+      "label": "Pass success rate",
+      "leagueAverageRaw": 0.4157834040495103,
+      "metric": "passSuccessRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.04484219816112062,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.35729158693830143,
+          "exposure": 405.0,
+          "fieldSize": 136,
+          "rank": 8
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.4178709063485834,
+          "exposure": 399.0,
+          "fieldSize": 136,
+          "rank": 57
+        }
+      },
+      "unit": "rate",
+      "validation": "validated"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.09922613521106834,
+          "exposure": 813.0,
+          "fieldSize": 136,
+          "rank": 22
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.13041383528966347,
+          "exposure": 806.0,
+          "fieldSize": 136,
+          "rank": 19
+        }
+      },
+      "family": "binomial",
+      "label": "Explosive-play rate",
+      "leagueAverageRaw": 0.11336138125558136,
+      "metric": "explosivePlayRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.05257398229708415,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.08939157248661539,
+          "exposure": 751.0,
+          "fieldSize": 136,
+          "rank": 6
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.11192717086984715,
+          "exposure": 759.0,
+          "fieldSize": 136,
+          "rank": 70
+        }
+      },
+      "unit": "rate",
+      "validation": "validated"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 4.828808006718218,
+          "exposure": 837.0,
+          "fieldSize": 136,
+          "rank": 18
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 6.554067454662091,
+          "exposure": 823.0,
+          "fieldSize": 136,
+          "rank": 21
+        }
+      },
+      "family": "gaussian",
+      "label": "Yards per play",
+      "leagueAverageRaw": 5.754990593822217,
+      "metric": "yardsPerPlay",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.11950238659825642,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 4.204498989237891,
+          "exposure": 763.0,
+          "fieldSize": 136,
+          "rank": 3
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 5.799311061067849,
+          "exposure": 778.0,
+          "fieldSize": 136,
+          "rank": 67
+        }
+      },
+      "unit": "yards",
+      "validation": "validated"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.1189743419415527,
+          "exposure": 387.0,
+          "fieldSize": 136,
+          "rank": 22
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.14761866111471847,
+          "exposure": 460.0,
+          "fieldSize": 136,
+          "rank": 22
+        }
+      },
+      "family": "binomial",
+      "label": "Rush explosive-play rate",
+      "leagueAverageRaw": 0.13272017225707358,
+      "metric": "rushExplosivePlayRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.049292821325976725,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.10211624049128772,
+          "exposure": 346.0,
+          "fieldSize": 136,
+          "rank": 1
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.1304269357403474,
+          "exposure": 360.0,
+          "fieldSize": 136,
+          "rank": 75
+        }
+      },
+      "unit": "rate",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.08706905139537867,
+          "exposure": 426.0,
+          "fieldSize": 136,
+          "rank": 29
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.09910541928701311,
+          "exposure": 346.0,
+          "fieldSize": 136,
+          "rank": 39
+        }
+      },
+      "family": "binomial",
+      "label": "Pass explosive-play rate",
+      "leagueAverageRaw": 0.09359550365227798,
+      "metric": "passExplosivePlayRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.06126375418140249,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.08919594835910986,
+          "exposure": 405.0,
+          "fieldSize": 136,
+          "rank": 45
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.0927337087421753,
+          "exposure": 399.0,
+          "fieldSize": 136,
+          "rank": 73
+        }
+      },
+      "unit": "rate",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 4.387139625502899,
+          "exposure": 396.0,
+          "fieldSize": 136,
+          "rank": 27
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 6.155875184684982,
+          "exposure": 470.0,
+          "fieldSize": 136,
+          "rank": 7
+        }
+      },
+      "family": "gaussian",
+      "label": "Rush yards per attempt",
+      "leagueAverageRaw": 4.925462357476402,
+      "metric": "rushYardsPerAttempt",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.10228678054634867,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 3.3760916163998163,
+          "exposure": 349.0,
+          "fieldSize": 136,
+          "rank": 2
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 4.810010999915827,
+          "exposure": 369.0,
+          "fieldSize": 136,
+          "rank": 75
+        }
+      },
+      "unit": "yards",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 5.463057040144166,
+          "exposure": 441.0,
+          "fieldSize": 136,
+          "rank": 16
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 6.939305449773525,
+          "exposure": 353.0,
+          "fieldSize": 136,
+          "rank": 52
+        }
+      },
+      "family": "gaussian",
+      "label": "Net pass yards per dropback",
+      "leagueAverageRaw": 6.647176266974038,
+      "metric": "netPassYardsPerDropback",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.1850048032622637,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 5.191913742128701,
+          "exposure": 414.0,
+          "fieldSize": 136,
+          "rank": 8
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 6.596951065961321,
+          "exposure": 409.0,
+          "fieldSize": 136,
+          "rank": 68
+        }
+      },
+      "unit": "yards",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.4666139665271839,
+          "exposure": 572.0,
+          "fieldSize": 136,
+          "rank": 51
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.5249271213860901,
+          "exposure": 578.0,
+          "fieldSize": 136,
+          "rank": 11
+        }
+      },
+      "family": "binomial",
+      "label": "Standard-down success rate",
+      "leagueAverageRaw": 0.47489487982869316,
+      "metric": "standardDownSuccessRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.03311125540187028,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.36946323385099344,
+          "exposure": 471.0,
+          "fieldSize": 136,
+          "rank": 1
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.4786735876022315,
+          "exposure": 512.0,
+          "fieldSize": 136,
+          "rank": 65
+        }
+      },
+      "unit": "rate",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.3101500088270115,
+          "exposure": 241.0,
+          "fieldSize": 136,
+          "rank": 93
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.3044136962090875,
+          "exposure": 228.0,
+          "fieldSize": 136,
+          "rank": 66
+        }
+      },
+      "family": "binomial",
+      "label": "Passing-down success rate",
+      "leagueAverageRaw": 0.30225286834100235,
+      "metric": "passingDownSuccessRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.060528892763659504,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.273477653862062,
+          "exposure": 279.0,
+          "fieldSize": 136,
+          "rank": 12
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.28340307123789,
+          "exposure": 247.0,
+          "fieldSize": 136,
+          "rank": 109
+        }
+      },
+      "unit": "rate",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.3972903184739215,
+          "exposure": 166.0,
+          "fieldSize": 136,
+          "rank": 51
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.43367157359605685,
+          "exposure": 154.0,
+          "fieldSize": 136,
+          "rank": 22
+        }
+      },
+      "family": "binomial",
+      "label": "Third-down conversion rate",
+      "leagueAverageRaw": 0.40457223307024287,
+      "metric": "thirdDownConversionRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.0475767618631252,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.35090256252610835,
+          "exposure": 170.0,
+          "fieldSize": 136,
+          "rank": 2
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.4037734271915554,
+          "exposure": 159.0,
+          "fieldSize": 136,
+          "rank": 74
+        }
+      },
+      "unit": "rate",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.05710430426281299,
+          "exposure": 441.0,
+          "fieldSize": 136,
+          "rank": 50
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.05480041022074966,
+          "exposure": 353.0,
+          "fieldSize": 136,
+          "rank": 69
+        }
+      },
+      "family": "binomial",
+      "label": "Sack rate allowed",
+      "leagueAverageRaw": 0.05551337249131438,
+      "metric": "sackRate",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.06025773873022715,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.0683482159075477,
+          "exposure": 414.0,
+          "fieldSize": 136,
+          "rank": 2
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.06084595809600091,
+          "exposure": 409.0,
+          "fieldSize": 136,
+          "rank": 107
+        }
+      },
+      "unit": "rate",
+      "validation": "research-only"
+    },
+    {
+      "comparison": {
+        "defense": {
+          "adjustedValue": 0.10231055980253512,
+          "exposure": 836.0,
+          "fieldSize": 136,
+          "rank": 33
+        },
+        "id": "130",
+        "name": "Michigan",
+        "offense": {
+          "adjustedValue": 0.08768004595391199,
+          "exposure": 822.0,
+          "fieldSize": 136,
+          "rank": 30
+        }
+      },
+      "family": "binomial",
+      "label": "Havoc rate allowed",
+      "leagueAverageRaw": 0.09667574508478027,
+      "metric": "havocRateAllowed",
+      "model": {
+        "converged": true,
+        "definitionVersion": "schedule-adjusted-ratings-v1",
+        "homeFieldEffect": 0.025785145836532287,
+        "homeRidge": 20.0,
+        "observations": 1616,
+        "ridge": 40.0
+      },
+      "subject": {
+        "defense": {
+          "adjustedValue": 0.14054883491051495,
+          "exposure": 764.0,
+          "fieldSize": 136,
+          "rank": 1
+        },
+        "id": "201",
+        "name": "Oklahoma",
+        "offense": {
+          "adjustedValue": 0.10308713262548275,
+          "exposure": 780.0,
+          "fieldSize": 136,
+          "rank": 101
+        }
+      },
+      "unit": "rate",
+      "validation": "research-only"
+    }
+  ],
+  "comparison": {
+    "classification": "fbs",
+    "conference": "Big Ten",
+    "id": "130",
+    "name": "Michigan",
+    "slug": "michigan"
+  },
+  "composites": {
+    "103": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 95,
+      "defenseScore": 34.51851851851852,
+      "id": "103",
+      "name": "Boston College",
+      "offenseFieldSize": 136,
+      "offenseRank": 62,
+      "offenseScore": 54.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 75,
+      "overallScore": 44.2962962962963
+    },
+    "113": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 135,
+      "defenseScore": 3.2592592592592595,
+      "id": "113",
+      "name": "Massachusetts",
+      "offenseFieldSize": 136,
+      "offenseRank": 136,
+      "offenseScore": 1.037037037037037,
+      "overallFieldSize": 136,
+      "overallRank": 136,
+      "overallScore": 2.1481481481481484
+    },
+    "12": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 27,
+      "defenseScore": 75.55555555555556,
+      "id": "12",
+      "name": "Arizona",
+      "offenseFieldSize": 136,
+      "offenseRank": 54,
+      "offenseScore": 59.11111111111111,
+      "overallFieldSize": 136,
+      "overallRank": 31,
+      "overallScore": 67.33333333333333
+    },
+    "120": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 71,
+      "defenseScore": 45.48148148148148,
+      "id": "120",
+      "name": "Maryland",
+      "offenseFieldSize": 136,
+      "offenseRank": 118,
+      "offenseScore": 18.074074074074073,
+      "overallFieldSize": 136,
+      "overallRank": 107,
+      "overallScore": 31.77777777777778
+    },
+    "127": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 78,
+      "defenseScore": 42.22222222222222,
+      "id": "127",
+      "name": "Michigan State",
+      "offenseFieldSize": 136,
+      "offenseRank": 79,
+      "offenseScore": 45.77777777777778,
+      "overallFieldSize": 136,
+      "overallRank": 76,
+      "overallScore": 44.0
+    },
+    "130": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 38,
+      "defenseScore": 67.55555555555556,
+      "id": "130",
+      "name": "Michigan",
+      "offenseFieldSize": 136,
+      "offenseRank": 19,
+      "offenseScore": 83.40740740740742,
+      "overallFieldSize": 136,
+      "overallRank": 19,
+      "overallScore": 75.4814814814815
+    },
+    "135": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 72,
+      "defenseScore": 44.44444444444444,
+      "id": "135",
+      "name": "Minnesota",
+      "offenseFieldSize": 136,
+      "offenseRank": 121,
+      "offenseScore": 14.666666666666668,
+      "overallFieldSize": 136,
+      "overallRank": 113,
+      "overallScore": 29.555555555555557
+    },
+    "142": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 6,
+      "defenseScore": 94.37037037037037,
+      "id": "142",
+      "name": "Missouri",
+      "offenseFieldSize": 136,
+      "offenseRank": 33,
+      "offenseScore": 72.74074074074073,
+      "overallFieldSize": 136,
+      "overallRank": 9,
+      "overallScore": 83.55555555555554
+    },
+    "145": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 33,
+      "defenseScore": 71.25925925925927,
+      "id": "145",
+      "name": "Ole Miss",
+      "offenseFieldSize": 136,
+      "offenseRank": 10,
+      "offenseScore": 89.92592592592592,
+      "overallFieldSize": 136,
+      "overallRank": 13,
+      "overallScore": 80.5925925925926
+    },
+    "150": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 110,
+      "defenseScore": 27.25925925925926,
+      "id": "150",
+      "name": "Duke",
+      "offenseFieldSize": 136,
+      "offenseRank": 27,
+      "offenseScore": 76.5925925925926,
+      "overallFieldSize": 136,
+      "overallRank": 64,
+      "overallScore": 51.925925925925924
+    },
+    "151": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 43,
+      "defenseScore": 63.11111111111111,
+      "id": "151",
+      "name": "East Carolina",
+      "offenseFieldSize": 136,
+      "offenseRank": 63,
+      "offenseScore": 54.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 52,
+      "overallScore": 58.592592592592595
+    },
+    "152": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 49,
+      "defenseScore": 60.44444444444444,
+      "id": "152",
+      "name": "NC State",
+      "offenseFieldSize": 136,
+      "offenseRank": 45,
+      "offenseScore": 63.70370370370371,
+      "overallFieldSize": 136,
+      "overallRank": 45,
+      "overallScore": 62.074074074074076
+    },
+    "153": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 55,
+      "defenseScore": 57.777777777777786,
+      "id": "153",
+      "name": "North Carolina",
+      "offenseFieldSize": 136,
+      "offenseRank": 104,
+      "offenseScore": 26.814814814814817,
+      "overallFieldSize": 136,
+      "overallRank": 80,
+      "overallScore": 42.296296296296305
+    },
+    "154": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 9,
+      "defenseScore": 92.14814814814815,
+      "id": "154",
+      "name": "Wake Forest",
+      "offenseFieldSize": 136,
+      "offenseRank": 88,
+      "offenseScore": 37.18518518518518,
+      "overallFieldSize": 136,
+      "overallRank": 39,
+      "overallScore": 64.66666666666667
+    },
+    "158": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 70,
+      "defenseScore": 46.22222222222222,
+      "id": "158",
+      "name": "Nebraska",
+      "offenseFieldSize": 136,
+      "offenseRank": 39,
+      "offenseScore": 66.07407407407408,
+      "overallFieldSize": 136,
+      "overallRank": 55,
+      "overallScore": 56.14814814814815
+    },
+    "164": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 131,
+      "defenseScore": 8.444444444444445,
+      "id": "164",
+      "name": "Rutgers",
+      "offenseFieldSize": 136,
+      "offenseRank": 31,
+      "offenseScore": 73.48148148148148,
+      "overallFieldSize": 136,
+      "overallRank": 83,
+      "overallScore": 40.96296296296296
+    },
+    "166": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 99,
+      "defenseScore": 33.18518518518518,
+      "id": "166",
+      "name": "New Mexico State",
+      "offenseFieldSize": 136,
+      "offenseRank": 127,
+      "offenseScore": 11.25925925925926,
+      "overallFieldSize": 136,
+      "overallRank": 125,
+      "overallScore": 22.22222222222222
+    },
+    "167": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 35,
+      "defenseScore": 69.03703703703704,
+      "id": "167",
+      "name": "New Mexico",
+      "offenseFieldSize": 136,
+      "offenseRank": 84,
+      "offenseScore": 41.33333333333333,
+      "overallFieldSize": 136,
+      "overallRank": 58,
+      "overallScore": 55.18518518518518
+    },
+    "183": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 105,
+      "defenseScore": 29.333333333333332,
+      "id": "183",
+      "name": "Syracuse",
+      "offenseFieldSize": 136,
+      "offenseRank": 108,
+      "offenseScore": 23.40740740740741,
+      "overallFieldSize": 136,
+      "overallRank": 115,
+      "overallScore": 26.37037037037037
+    },
+    "189": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 94,
+      "defenseScore": 34.66666666666667,
+      "id": "189",
+      "name": "Bowling Green",
+      "offenseFieldSize": 136,
+      "offenseRank": 126,
+      "offenseScore": 13.185185185185185,
+      "overallFieldSize": 136,
+      "overallRank": 120,
+      "overallScore": 23.925925925925927
+    },
+    "193": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 54,
+      "defenseScore": 57.777777777777786,
+      "id": "193",
+      "name": "Miami (OH)",
+      "offenseFieldSize": 136,
+      "offenseRank": 112,
+      "offenseScore": 22.074074074074073,
+      "overallFieldSize": 136,
+      "overallRank": 88,
+      "overallScore": 39.92592592592593
+    },
+    "194": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 4,
+      "defenseScore": 94.96296296296296,
+      "id": "194",
+      "name": "Ohio State",
+      "offenseFieldSize": 136,
+      "offenseRank": 14,
+      "offenseScore": 87.11111111111111,
+      "overallFieldSize": 136,
+      "overallRank": 3,
+      "overallScore": 91.03703703703704
+    },
+    "195": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 111,
+      "defenseScore": 26.666666666666664,
+      "id": "195",
+      "name": "Ohio",
+      "offenseFieldSize": 136,
+      "offenseRank": 52,
+      "offenseScore": 61.18518518518518,
+      "overallFieldSize": 136,
+      "overallRank": 77,
+      "overallScore": 43.925925925925924
+    },
+    "197": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 101,
+      "defenseScore": 32.592592592592595,
+      "id": "197",
+      "name": "Oklahoma State",
+      "offenseFieldSize": 136,
+      "offenseRank": 128,
+      "offenseScore": 10.518518518518519,
+      "overallFieldSize": 136,
+      "overallRank": 126,
+      "overallScore": 21.555555555555557
+    },
+    "2": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 17,
+      "defenseScore": 83.70370370370371,
+      "id": "2",
+      "name": "Auburn",
+      "offenseFieldSize": 136,
+      "offenseRank": 41,
+      "offenseScore": 64.59259259259258,
+      "overallFieldSize": 136,
+      "overallRank": 23,
+      "overallScore": 74.14814814814815
+    },
+    "2005": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 133,
+      "defenseScore": 4.0,
+      "id": "2005",
+      "name": "Air Force",
+      "offenseFieldSize": 136,
+      "offenseRank": 35,
+      "offenseScore": 69.92592592592592,
+      "overallFieldSize": 136,
+      "overallRank": 95,
+      "overallScore": 36.96296296296296
+    },
+    "2006": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 121,
+      "defenseScore": 18.814814814814817,
+      "id": "2006",
+      "name": "Akron",
+      "offenseFieldSize": 136,
+      "offenseRank": 122,
+      "offenseScore": 14.666666666666666,
+      "overallFieldSize": 136,
+      "overallRank": 129,
+      "overallScore": 16.74074074074074
+    },
+    "201": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 2,
+      "defenseScore": 97.92592592592592,
+      "id": "201",
+      "name": "Oklahoma",
+      "offenseFieldSize": 136,
+      "offenseRank": 76,
+      "offenseScore": 46.66666666666667,
+      "overallFieldSize": 136,
+      "overallRank": 25,
+      "overallScore": 72.2962962962963
+    },
+    "202": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 77,
+      "defenseScore": 42.51851851851852,
+      "id": "202",
+      "name": "Tulsa",
+      "offenseFieldSize": 136,
+      "offenseRank": 95,
+      "offenseScore": 31.555555555555554,
+      "overallFieldSize": 136,
+      "overallRank": 94,
+      "overallScore": 37.03703703703704
+    },
+    "2026": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 106,
+      "defenseScore": 28.74074074074074,
+      "id": "2026",
+      "name": "App State",
+      "offenseFieldSize": 136,
+      "offenseRank": 113,
+      "offenseScore": 21.037037037037038,
+      "overallFieldSize": 136,
+      "overallRank": 118,
+      "overallScore": 24.88888888888889
+    },
+    "2032": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 117,
+      "defenseScore": 23.11111111111111,
+      "id": "2032",
+      "name": "Arkansas State",
+      "offenseFieldSize": 136,
+      "offenseRank": 107,
+      "offenseScore": 23.40740740740741,
+      "overallFieldSize": 136,
+      "overallRank": 123,
+      "overallScore": 23.25925925925926
+    },
+    "204": {
+      "conference": "Pac-12",
+      "defenseFieldSize": 136,
+      "defenseRank": 81,
+      "defenseScore": 40.592592592592595,
+      "id": "204",
+      "name": "Oregon State",
+      "offenseFieldSize": 136,
+      "offenseRank": 87,
+      "offenseScore": 37.333333333333336,
+      "overallFieldSize": 136,
+      "overallRank": 91,
+      "overallScore": 38.96296296296296
+    },
+    "2050": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 125,
+      "defenseScore": 11.851851851851851,
+      "id": "2050",
+      "name": "Ball State",
+      "offenseFieldSize": 136,
+      "offenseRank": 135,
+      "offenseScore": 1.037037037037037,
+      "overallFieldSize": 136,
+      "overallRank": 135,
+      "overallScore": 6.444444444444444
+    },
+    "2084": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 60,
+      "defenseScore": 53.03703703703703,
+      "id": "2084",
+      "name": "Buffalo",
+      "offenseFieldSize": 136,
+      "offenseRank": 132,
+      "offenseScore": 9.62962962962963,
+      "overallFieldSize": 136,
+      "overallRank": 109,
+      "overallScore": 31.33333333333333
+    },
+    "21": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 19,
+      "defenseScore": 83.25925925925927,
+      "id": "21",
+      "name": "San Diego State",
+      "offenseFieldSize": 136,
+      "offenseRank": 67,
+      "offenseScore": 50.96296296296296,
+      "overallFieldSize": 136,
+      "overallRank": 33,
+      "overallScore": 67.11111111111111
+    },
+    "2116": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 66,
+      "defenseScore": 50.37037037037037,
+      "id": "2116",
+      "name": "UCF",
+      "offenseFieldSize": 136,
+      "offenseRank": 86,
+      "offenseScore": 38.81481481481482,
+      "overallFieldSize": 136,
+      "overallRank": 74,
+      "overallScore": 44.592592592592595
+    },
+    "2117": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 104,
+      "defenseScore": 30.518518518518515,
+      "id": "2117",
+      "name": "Central Michigan",
+      "offenseFieldSize": 136,
+      "offenseRank": 101,
+      "offenseScore": 29.92592592592593,
+      "overallFieldSize": 136,
+      "overallRank": 111,
+      "overallScore": 30.22222222222222
+    },
+    "213": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 39,
+      "defenseScore": 67.11111111111111,
+      "id": "213",
+      "name": "Penn State",
+      "offenseFieldSize": 136,
+      "offenseRank": 34,
+      "offenseScore": 71.55555555555556,
+      "overallFieldSize": 136,
+      "overallRank": 28,
+      "overallScore": 69.33333333333334
+    },
+    "2132": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 69,
+      "defenseScore": 46.37037037037037,
+      "id": "2132",
+      "name": "Cincinnati",
+      "offenseFieldSize": 136,
+      "offenseRank": 20,
+      "offenseScore": 81.92592592592592,
+      "overallFieldSize": 136,
+      "overallRank": 40,
+      "overallScore": 64.14814814814815
+    },
+    "218": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 120,
+      "defenseScore": 20.0,
+      "id": "218",
+      "name": "Temple",
+      "offenseFieldSize": 136,
+      "offenseRank": 96,
+      "offenseScore": 30.666666666666668,
+      "overallFieldSize": 136,
+      "overallRank": 117,
+      "overallScore": 25.333333333333336
+    },
+    "2199": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 128,
+      "defenseScore": 11.25925925925926,
+      "id": "2199",
+      "name": "Eastern Michigan",
+      "offenseFieldSize": 136,
+      "offenseRank": 61,
+      "offenseScore": 54.51851851851852,
+      "overallFieldSize": 136,
+      "overallRank": 101,
+      "overallScore": 32.888888888888886
+    },
+    "221": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 15,
+      "defenseScore": 85.33333333333334,
+      "id": "221",
+      "name": "Pittsburgh",
+      "offenseFieldSize": 136,
+      "offenseRank": 80,
+      "offenseScore": 45.18518518518518,
+      "overallFieldSize": 136,
+      "overallRank": 37,
+      "overallScore": 65.25925925925927
+    },
+    "2226": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 112,
+      "defenseScore": 26.37037037037037,
+      "id": "2226",
+      "name": "Florida Atlantic",
+      "offenseFieldSize": 136,
+      "offenseRank": 98,
+      "offenseScore": 30.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 114,
+      "overallScore": 28.22222222222222
+    },
+    "2229": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 108,
+      "defenseScore": 27.703703703703706,
+      "id": "2229",
+      "name": "Florida International",
+      "offenseFieldSize": 136,
+      "offenseRank": 115,
+      "offenseScore": 20.0,
+      "overallFieldSize": 136,
+      "overallRank": 121,
+      "overallScore": 23.851851851851855
+    },
+    "2247": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 127,
+      "defenseScore": 11.407407407407408,
+      "id": "2247",
+      "name": "Georgia State",
+      "offenseFieldSize": 136,
+      "offenseRank": 102,
+      "offenseScore": 29.185185185185183,
+      "overallFieldSize": 136,
+      "overallRank": 127,
+      "overallScore": 20.296296296296298
+    },
+    "228": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 24,
+      "defenseScore": 78.37037037037037,
+      "id": "228",
+      "name": "Clemson",
+      "offenseFieldSize": 136,
+      "offenseRank": 60,
+      "offenseScore": 54.51851851851852,
+      "overallFieldSize": 136,
+      "overallRank": 36,
+      "overallScore": 66.44444444444444
+    },
+    "2294": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 18,
+      "defenseScore": 83.70370370370371,
+      "id": "2294",
+      "name": "Iowa",
+      "offenseFieldSize": 136,
+      "offenseRank": 69,
+      "offenseScore": 50.51851851851852,
+      "overallFieldSize": 136,
+      "overallRank": 32,
+      "overallScore": 67.11111111111111
+    },
+    "23": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 109,
+      "defenseScore": 27.555555555555554,
+      "id": "23",
+      "name": "San Jos\u00e9 State",
+      "offenseFieldSize": 136,
+      "offenseRank": 64,
+      "offenseScore": 52.74074074074074,
+      "overallFieldSize": 136,
+      "overallRank": 86,
+      "overallScore": 40.148148148148145
+    },
+    "2305": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 73,
+      "defenseScore": 43.70370370370371,
+      "id": "2305",
+      "name": "Kansas",
+      "offenseFieldSize": 136,
+      "offenseRank": 16,
+      "offenseScore": 84.14814814814815,
+      "overallFieldSize": 136,
+      "overallRank": 41,
+      "overallScore": 63.92592592592593
+    },
+    "2306": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 42,
+      "defenseScore": 63.40740740740741,
+      "id": "2306",
+      "name": "Kansas State",
+      "offenseFieldSize": 136,
+      "offenseRank": 68,
+      "offenseScore": 50.666666666666664,
+      "overallFieldSize": 136,
+      "overallRank": 54,
+      "overallScore": 57.03703703703704
+    },
+    "2309": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 130,
+      "defenseScore": 9.037037037037036,
+      "id": "2309",
+      "name": "Kent State",
+      "offenseFieldSize": 136,
+      "offenseRank": 119,
+      "offenseScore": 17.185185185185183,
+      "overallFieldSize": 136,
+      "overallRank": 132,
+      "overallScore": 13.11111111111111
+    },
+    "2335": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 91,
+      "defenseScore": 36.2962962962963,
+      "id": "2335",
+      "name": "Liberty",
+      "offenseFieldSize": 136,
+      "offenseRank": 56,
+      "offenseScore": 57.18518518518518,
+      "overallFieldSize": 136,
+      "overallRank": 71,
+      "overallScore": 46.74074074074074
+    },
+    "2348": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 65,
+      "defenseScore": 50.81481481481482,
+      "id": "2348",
+      "name": "Louisiana Tech",
+      "offenseFieldSize": 136,
+      "offenseRank": 90,
+      "offenseScore": 35.25925925925926,
+      "overallFieldSize": 136,
+      "overallRank": 79,
+      "overallScore": 43.03703703703704
+    },
+    "235": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 58,
+      "defenseScore": 54.51851851851852,
+      "id": "235",
+      "name": "Memphis",
+      "offenseFieldSize": 136,
+      "offenseRank": 40,
+      "offenseScore": 65.48148148148148,
+      "overallFieldSize": 136,
+      "overallRank": 50,
+      "overallScore": 60.0
+    },
+    "238": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 62,
+      "defenseScore": 51.70370370370371,
+      "id": "238",
+      "name": "Vanderbilt",
+      "offenseFieldSize": 136,
+      "offenseRank": 4,
+      "offenseScore": 95.55555555555556,
+      "overallFieldSize": 136,
+      "overallRank": 24,
+      "overallScore": 73.62962962962963
+    },
+    "239": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 85,
+      "defenseScore": 39.7037037037037,
+      "id": "239",
+      "name": "Baylor",
+      "offenseFieldSize": 136,
+      "offenseRank": 36,
+      "offenseScore": 68.44444444444444,
+      "overallFieldSize": 136,
+      "overallRank": 61,
+      "overallScore": 54.074074074074076
+    },
+    "2390": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 3,
+      "defenseScore": 95.11111111111111,
+      "id": "2390",
+      "name": "Miami",
+      "offenseFieldSize": 136,
+      "offenseRank": 15,
+      "offenseScore": 84.88888888888889,
+      "overallFieldSize": 136,
+      "overallRank": 5,
+      "overallScore": 90.0
+    },
+    "2393": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 115,
+      "defenseScore": 23.40740740740741,
+      "id": "2393",
+      "name": "Middle Tennessee",
+      "offenseFieldSize": 136,
+      "offenseRank": 82,
+      "offenseScore": 42.96296296296296,
+      "overallFieldSize": 136,
+      "overallRank": 100,
+      "overallScore": 33.18518518518518
+    },
+    "24": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 52,
+      "defenseScore": 59.25925925925926,
+      "id": "24",
+      "name": "Stanford",
+      "offenseFieldSize": 136,
+      "offenseRank": 114,
+      "offenseScore": 20.88888888888889,
+      "overallFieldSize": 136,
+      "overallRank": 87,
+      "overallScore": 40.074074074074076
+    },
+    "242": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 74,
+      "defenseScore": 43.70370370370371,
+      "id": "242",
+      "name": "Rice",
+      "offenseFieldSize": 136,
+      "offenseRank": 134,
+      "offenseScore": 3.4074074074074074,
+      "overallFieldSize": 136,
+      "overallRank": 122,
+      "overallScore": 23.555555555555557
+    },
+    "2426": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 61,
+      "defenseScore": 52.88888888888889,
+      "id": "2426",
+      "name": "Navy",
+      "offenseFieldSize": 136,
+      "offenseRank": 23,
+      "offenseScore": 80.88888888888889,
+      "overallFieldSize": 136,
+      "overallRank": 35,
+      "overallScore": 66.88888888888889
+    },
+    "2429": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 126,
+      "defenseScore": 11.851851851851851,
+      "id": "2429",
+      "name": "Charlotte",
+      "offenseFieldSize": 136,
+      "offenseRank": 133,
+      "offenseScore": 4.296296296296296,
+      "overallFieldSize": 136,
+      "overallRank": 134,
+      "overallScore": 8.074074074074073
+    },
+    "2433": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 79,
+      "defenseScore": 41.925925925925924,
+      "id": "2433",
+      "name": "UL Monroe",
+      "offenseFieldSize": 136,
+      "offenseRank": 97,
+      "offenseScore": 30.518518518518515,
+      "overallFieldSize": 136,
+      "overallRank": 97,
+      "overallScore": 36.22222222222222
+    },
+    "2439": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 119,
+      "defenseScore": 20.59259259259259,
+      "id": "2439",
+      "name": "UNLV",
+      "offenseFieldSize": 136,
+      "offenseRank": 21,
+      "offenseScore": 81.92592592592592,
+      "overallFieldSize": 136,
+      "overallRank": 66,
+      "overallScore": 51.25925925925926
+    },
+    "2440": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 86,
+      "defenseScore": 38.37037037037037,
+      "id": "2440",
+      "name": "Nevada",
+      "offenseFieldSize": 136,
+      "offenseRank": 105,
+      "offenseScore": 26.666666666666668,
+      "overallFieldSize": 136,
+      "overallRank": 104,
+      "overallScore": 32.51851851851852
+    },
+    "245": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 23,
+      "defenseScore": 79.25925925925927,
+      "id": "245",
+      "name": "Texas A&M",
+      "offenseFieldSize": 136,
+      "offenseRank": 7,
+      "offenseScore": 91.40740740740742,
+      "overallFieldSize": 136,
+      "overallRank": 7,
+      "overallScore": 85.33333333333334
+    },
+    "2459": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 118,
+      "defenseScore": 21.62962962962963,
+      "id": "2459",
+      "name": "Northern Illinois",
+      "offenseFieldSize": 136,
+      "offenseRank": 130,
+      "offenseScore": 9.925925925925927,
+      "overallFieldSize": 136,
+      "overallRank": 131,
+      "overallScore": 15.777777777777779
+    },
+    "248": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 83,
+      "defenseScore": 40.148148148148145,
+      "id": "248",
+      "name": "Houston",
+      "offenseFieldSize": 136,
+      "offenseRank": 59,
+      "offenseScore": 54.96296296296297,
+      "overallFieldSize": 136,
+      "overallRank": 70,
+      "overallScore": 47.55555555555556
+    },
+    "2483": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 8,
+      "defenseScore": 93.48148148148148,
+      "id": "2483",
+      "name": "Oregon",
+      "offenseFieldSize": 136,
+      "offenseRank": 5,
+      "offenseScore": 94.07407407407406,
+      "overallFieldSize": 136,
+      "overallRank": 2,
+      "overallScore": 93.77777777777777
+    },
+    "249": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 84,
+      "defenseScore": 40.148148148148145,
+      "id": "249",
+      "name": "North Texas",
+      "offenseFieldSize": 136,
+      "offenseRank": 1,
+      "offenseScore": 97.62962962962963,
+      "overallFieldSize": 136,
+      "overallRank": 29,
+      "overallScore": 68.88888888888889
+    },
+    "25": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 68,
+      "defenseScore": 47.111111111111114,
+      "id": "25",
+      "name": "California",
+      "offenseFieldSize": 136,
+      "offenseRank": 93,
+      "offenseScore": 33.33333333333333,
+      "overallFieldSize": 136,
+      "overallRank": 85,
+      "overallScore": 40.22222222222222
+    },
+    "2509": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 116,
+      "defenseScore": 23.40740740740741,
+      "id": "2509",
+      "name": "Purdue",
+      "offenseFieldSize": 136,
+      "offenseRank": 65,
+      "offenseScore": 52.44444444444444,
+      "overallFieldSize": 136,
+      "overallRank": 93,
+      "overallScore": 37.925925925925924
+    },
+    "251": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 12,
+      "defenseScore": 86.81481481481481,
+      "id": "251",
+      "name": "Texas",
+      "offenseFieldSize": 136,
+      "offenseRank": 49,
+      "offenseScore": 62.96296296296297,
+      "overallFieldSize": 136,
+      "overallRank": 22,
+      "overallScore": 74.88888888888889
+    },
+    "252": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 30,
+      "defenseScore": 73.62962962962963,
+      "id": "252",
+      "name": "BYU",
+      "offenseFieldSize": 136,
+      "offenseRank": 26,
+      "offenseScore": 77.62962962962963,
+      "overallFieldSize": 136,
+      "overallRank": 18,
+      "overallScore": 75.62962962962963
+    },
+    "2534": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 134,
+      "defenseScore": 3.555555555555556,
+      "id": "2534",
+      "name": "Sam Houston",
+      "offenseFieldSize": 136,
+      "offenseRank": 124,
+      "offenseScore": 13.481481481481481,
+      "overallFieldSize": 136,
+      "overallRank": 133,
+      "overallScore": 8.518518518518519
+    },
+    "254": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 47,
+      "defenseScore": 61.62962962962963,
+      "id": "254",
+      "name": "Utah",
+      "offenseFieldSize": 136,
+      "offenseRank": 6,
+      "offenseScore": 92.59259259259258,
+      "overallFieldSize": 136,
+      "overallRank": 17,
+      "overallScore": 77.11111111111111
+    },
+    "256": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 5,
+      "defenseScore": 94.51851851851852,
+      "id": "256",
+      "name": "James Madison",
+      "offenseFieldSize": 136,
+      "offenseRank": 30,
+      "offenseScore": 73.48148148148148,
+      "overallFieldSize": 136,
+      "overallRank": 8,
+      "overallScore": 84.0
+    },
+    "2567": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 36,
+      "defenseScore": 68.44444444444444,
+      "id": "2567",
+      "name": "SMU",
+      "offenseFieldSize": 136,
+      "offenseRank": 29,
+      "offenseScore": 74.66666666666666,
+      "overallFieldSize": 136,
+      "overallRank": 26,
+      "overallScore": 71.55555555555554
+    },
+    "2572": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 87,
+      "defenseScore": 38.074074074074076,
+      "id": "2572",
+      "name": "Southern Miss",
+      "offenseFieldSize": 136,
+      "offenseRank": 106,
+      "offenseScore": 26.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 106,
+      "overallScore": 32.074074074074076
+    },
+    "2579": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 53,
+      "defenseScore": 59.11111111111111,
+      "id": "2579",
+      "name": "South Carolina",
+      "offenseFieldSize": 136,
+      "offenseRank": 66,
+      "offenseScore": 52.44444444444444,
+      "overallFieldSize": 136,
+      "overallRank": 56,
+      "overallScore": 55.77777777777777
+    },
+    "258": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 21,
+      "defenseScore": 80.88888888888889,
+      "id": "258",
+      "name": "Virginia",
+      "offenseFieldSize": 136,
+      "offenseRank": 83,
+      "offenseScore": 42.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 48,
+      "overallScore": 61.48148148148148
+    },
+    "259": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 92,
+      "defenseScore": 36.29629629629629,
+      "id": "259",
+      "name": "Virginia Tech",
+      "offenseFieldSize": 136,
+      "offenseRank": 53,
+      "offenseScore": 60.44444444444444,
+      "overallFieldSize": 136,
+      "overallRank": 69,
+      "overallScore": 48.37037037037037
+    },
+    "26": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 97,
+      "defenseScore": 33.925925925925924,
+      "id": "26",
+      "name": "UCLA",
+      "offenseFieldSize": 136,
+      "offenseRank": 75,
+      "offenseScore": 46.81481481481482,
+      "overallFieldSize": 136,
+      "overallRank": 84,
+      "overallScore": 40.37037037037037
+    },
+    "2623": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 98,
+      "defenseScore": 33.62962962962963,
+      "id": "2623",
+      "name": "Missouri State",
+      "offenseFieldSize": 136,
+      "offenseRank": 77,
+      "offenseScore": 46.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 90,
+      "overallScore": 39.851851851851855
+    },
+    "2628": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 31,
+      "defenseScore": 73.33333333333334,
+      "id": "2628",
+      "name": "TCU",
+      "offenseFieldSize": 136,
+      "offenseRank": 43,
+      "offenseScore": 63.85185185185185,
+      "overallFieldSize": 136,
+      "overallRank": 30,
+      "overallScore": 68.5925925925926
+    },
+    "2633": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 102,
+      "defenseScore": 32.44444444444444,
+      "id": "2633",
+      "name": "Tennessee",
+      "offenseFieldSize": 136,
+      "offenseRank": 18,
+      "offenseScore": 83.85185185185185,
+      "overallFieldSize": 136,
+      "overallRank": 53,
+      "overallScore": 58.148148148148145
+    },
+    "2636": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 32,
+      "defenseScore": 71.55555555555556,
+      "id": "2636",
+      "name": "UTSA",
+      "offenseFieldSize": 136,
+      "offenseRank": 50,
+      "offenseScore": 62.51851851851852,
+      "overallFieldSize": 136,
+      "overallRank": 34,
+      "overallScore": 67.03703703703704
+    },
+    "2638": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 51,
+      "defenseScore": 59.40740740740741,
+      "id": "2638",
+      "name": "UTEP",
+      "offenseFieldSize": 136,
+      "offenseRank": 129,
+      "offenseScore": 10.518518518518519,
+      "overallFieldSize": 136,
+      "overallRank": 98,
+      "overallScore": 34.96296296296296
+    },
+    "264": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 16,
+      "defenseScore": 84.0,
+      "id": "264",
+      "name": "Washington",
+      "offenseFieldSize": 136,
+      "offenseRank": 13,
+      "offenseScore": 87.85185185185185,
+      "overallFieldSize": 136,
+      "overallRank": 6,
+      "overallScore": 85.92592592592592
+    },
+    "2641": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 1,
+      "defenseScore": 98.96296296296296,
+      "id": "2641",
+      "name": "Texas Tech",
+      "offenseFieldSize": 136,
+      "offenseRank": 48,
+      "offenseScore": 63.11111111111111,
+      "overallFieldSize": 136,
+      "overallRank": 11,
+      "overallScore": 81.03703703703704
+    },
+    "2649": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 13,
+      "defenseScore": 85.77777777777779,
+      "id": "2649",
+      "name": "Toledo",
+      "offenseFieldSize": 136,
+      "offenseRank": 37,
+      "offenseScore": 68.44444444444444,
+      "overallFieldSize": 136,
+      "overallRank": 16,
+      "overallScore": 77.11111111111111
+    },
+    "265": {
+      "conference": "Pac-12",
+      "defenseFieldSize": 136,
+      "defenseRank": 40,
+      "defenseScore": 66.66666666666666,
+      "id": "265",
+      "name": "Washington State",
+      "offenseFieldSize": 136,
+      "offenseRank": 55,
+      "offenseScore": 58.222222222222214,
+      "overallFieldSize": 136,
+      "overallRank": 44,
+      "overallScore": 62.444444444444436
+    },
+    "2653": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 57,
+      "defenseScore": 55.55555555555556,
+      "id": "2653",
+      "name": "Troy",
+      "offenseFieldSize": 136,
+      "offenseRank": 131,
+      "offenseScore": 9.777777777777779,
+      "overallFieldSize": 136,
+      "overallRank": 102,
+      "overallScore": 32.66666666666667
+    },
+    "2655": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 89,
+      "defenseScore": 36.44444444444444,
+      "id": "2655",
+      "name": "Tulane",
+      "offenseFieldSize": 136,
+      "offenseRank": 47,
+      "offenseScore": 63.25925925925926,
+      "overallFieldSize": 136,
+      "overallRank": 68,
+      "overallScore": 49.85185185185185
+    },
+    "2711": {
+      "conference": "Mid-American",
+      "defenseFieldSize": 136,
+      "defenseRank": 34,
+      "defenseScore": 70.37037037037037,
+      "id": "2711",
+      "name": "Western Michigan",
+      "offenseFieldSize": 136,
+      "offenseRank": 100,
+      "offenseScore": 30.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 67,
+      "overallScore": 50.22222222222222
+    },
+    "275": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 48,
+      "defenseScore": 60.59259259259259,
+      "id": "275",
+      "name": "Wisconsin",
+      "offenseFieldSize": 136,
+      "offenseRank": 109,
+      "offenseScore": 22.666666666666664,
+      "overallFieldSize": 136,
+      "overallRank": 82,
+      "overallScore": 41.629629629629626
+    },
+    "2751": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 41,
+      "defenseScore": 66.37037037037037,
+      "id": "2751",
+      "name": "Wyoming",
+      "offenseFieldSize": 136,
+      "offenseRank": 125,
+      "offenseScore": 13.481481481481481,
+      "overallFieldSize": 136,
+      "overallRank": 89,
+      "overallScore": 39.925925925925924
+    },
+    "276": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 82,
+      "defenseScore": 40.44444444444444,
+      "id": "276",
+      "name": "Marshall",
+      "offenseFieldSize": 136,
+      "offenseRank": 51,
+      "offenseScore": 62.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 65,
+      "overallScore": 51.25925925925926
+    },
+    "277": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 64,
+      "defenseScore": 50.96296296296296,
+      "id": "277",
+      "name": "West Virginia",
+      "offenseFieldSize": 136,
+      "offenseRank": 123,
+      "offenseScore": 14.222222222222223,
+      "overallFieldSize": 136,
+      "overallRank": 103,
+      "overallScore": 32.592592592592595
+    },
+    "278": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 37,
+      "defenseScore": 68.29629629629629,
+      "id": "278",
+      "name": "Fresno State",
+      "offenseFieldSize": 136,
+      "offenseRank": 120,
+      "offenseScore": 15.851851851851853,
+      "overallFieldSize": 136,
+      "overallRank": 81,
+      "overallScore": 42.07407407407407
+    },
+    "290": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 136,
+      "defenseScore": 2.3703703703703702,
+      "id": "290",
+      "name": "Georgia Southern",
+      "offenseFieldSize": 136,
+      "offenseRank": 72,
+      "offenseScore": 49.33333333333333,
+      "overallFieldSize": 136,
+      "overallRank": 116,
+      "overallScore": 25.851851851851848
+    },
+    "295": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 25,
+      "defenseScore": 76.74074074074073,
+      "id": "295",
+      "name": "Old Dominion",
+      "offenseFieldSize": 136,
+      "offenseRank": 25,
+      "offenseScore": 78.51851851851852,
+      "overallFieldSize": 136,
+      "overallRank": 15,
+      "overallScore": 77.62962962962962
+    },
+    "30": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 63,
+      "defenseScore": 51.11111111111111,
+      "id": "30",
+      "name": "USC",
+      "offenseFieldSize": 136,
+      "offenseRank": 11,
+      "offenseScore": 89.77777777777777,
+      "overallFieldSize": 136,
+      "overallRank": 27,
+      "overallScore": 70.44444444444444
+    },
+    "309": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 123,
+      "defenseScore": 14.37037037037037,
+      "id": "309",
+      "name": "Louisiana",
+      "offenseFieldSize": 136,
+      "offenseRank": 99,
+      "offenseScore": 30.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 124,
+      "overallScore": 22.22222222222222
+    },
+    "324": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 124,
+      "defenseScore": 12.148148148148149,
+      "id": "324",
+      "name": "Coastal Carolina",
+      "offenseFieldSize": 136,
+      "offenseRank": 116,
+      "offenseScore": 19.40740740740741,
+      "overallFieldSize": 136,
+      "overallRank": 130,
+      "overallScore": 15.777777777777779
+    },
+    "326": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 93,
+      "defenseScore": 36.148148148148145,
+      "id": "326",
+      "name": "Texas State",
+      "offenseFieldSize": 136,
+      "offenseRank": 22,
+      "offenseScore": 81.18518518518519,
+      "overallFieldSize": 136,
+      "overallRank": 51,
+      "overallScore": 58.66666666666667
+    },
+    "328": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 76,
+      "defenseScore": 42.66666666666667,
+      "id": "328",
+      "name": "Utah State",
+      "offenseFieldSize": 136,
+      "offenseRank": 70,
+      "offenseScore": 50.51851851851852,
+      "overallFieldSize": 136,
+      "overallRank": 72,
+      "overallScore": 46.592592592592595
+    },
+    "333": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 14,
+      "defenseScore": 85.62962962962963,
+      "id": "333",
+      "name": "Alabama",
+      "offenseFieldSize": 136,
+      "offenseRank": 42,
+      "offenseScore": 64.29629629629629,
+      "overallFieldSize": 136,
+      "overallRank": 21,
+      "overallScore": 74.96296296296296
+    },
+    "338": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 113,
+      "defenseScore": 26.37037037037037,
+      "id": "338",
+      "name": "Kennesaw State",
+      "offenseFieldSize": 136,
+      "offenseRank": 46,
+      "offenseScore": 63.55555555555556,
+      "overallFieldSize": 136,
+      "overallRank": 73,
+      "overallScore": 44.96296296296296
+    },
+    "344": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 67,
+      "defenseScore": 49.48148148148148,
+      "id": "344",
+      "name": "Mississippi State",
+      "offenseFieldSize": 136,
+      "offenseRank": 58,
+      "offenseScore": 55.55555555555556,
+      "overallFieldSize": 136,
+      "overallRank": 63,
+      "overallScore": 52.51851851851852
+    },
+    "349": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 88,
+      "defenseScore": 37.03703703703704,
+      "id": "349",
+      "name": "Army",
+      "offenseFieldSize": 136,
+      "offenseRank": 110,
+      "offenseScore": 22.51851851851852,
+      "overallFieldSize": 136,
+      "overallRank": 112,
+      "overallScore": 29.77777777777778
+    },
+    "356": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 59,
+      "defenseScore": 53.18518518518518,
+      "id": "356",
+      "name": "Illinois",
+      "offenseFieldSize": 136,
+      "offenseRank": 28,
+      "offenseScore": 76.5925925925926,
+      "overallFieldSize": 136,
+      "overallRank": 38,
+      "overallScore": 64.88888888888889
+    },
+    "36": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 122,
+      "defenseScore": 18.074074074074076,
+      "id": "36",
+      "name": "Colorado State",
+      "offenseFieldSize": 136,
+      "offenseRank": 111,
+      "offenseScore": 22.22222222222222,
+      "overallFieldSize": 136,
+      "overallRank": 128,
+      "overallScore": 20.14814814814815
+    },
+    "38": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 80,
+      "defenseScore": 41.62962962962963,
+      "id": "38",
+      "name": "Colorado",
+      "offenseFieldSize": 136,
+      "offenseRank": 117,
+      "offenseScore": 19.11111111111111,
+      "overallFieldSize": 136,
+      "overallRank": 110,
+      "overallScore": 30.370370370370374
+    },
+    "41": {
+      "conference": "FBS Independents",
+      "defenseFieldSize": 136,
+      "defenseRank": 132,
+      "defenseScore": 7.555555555555555,
+      "id": "41",
+      "name": "UConn",
+      "offenseFieldSize": 136,
+      "offenseRank": 57,
+      "offenseScore": 57.03703703703703,
+      "overallFieldSize": 136,
+      "overallRank": 105,
+      "overallScore": 32.29629629629629
+    },
+    "48": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 103,
+      "defenseScore": 31.111111111111107,
+      "id": "48",
+      "name": "Delaware",
+      "offenseFieldSize": 136,
+      "offenseRank": 94,
+      "offenseScore": 32.148148148148145,
+      "overallFieldSize": 136,
+      "overallRank": 108,
+      "overallScore": 31.629629629629626
+    },
+    "5": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 129,
+      "defenseScore": 10.37037037037037,
+      "id": "5",
+      "name": "UAB",
+      "offenseFieldSize": 136,
+      "offenseRank": 85,
+      "offenseScore": 39.25925925925926,
+      "overallFieldSize": 136,
+      "overallRank": 119,
+      "overallScore": 24.814814814814817
+    },
+    "52": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 46,
+      "defenseScore": 61.925925925925924,
+      "id": "52",
+      "name": "Florida State",
+      "offenseFieldSize": 136,
+      "offenseRank": 12,
+      "offenseScore": 88.59259259259258,
+      "overallFieldSize": 136,
+      "overallRank": 20,
+      "overallScore": 75.25925925925925
+    },
+    "55": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 107,
+      "defenseScore": 28.444444444444446,
+      "id": "55",
+      "name": "Jacksonville State",
+      "offenseFieldSize": 136,
+      "offenseRank": 73,
+      "offenseScore": 48.74074074074075,
+      "overallFieldSize": 136,
+      "overallRank": 92,
+      "overallScore": 38.592592592592595
+    },
+    "57": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 56,
+      "defenseScore": 55.85185185185185,
+      "id": "57",
+      "name": "Florida",
+      "offenseFieldSize": 136,
+      "offenseRank": 38,
+      "offenseScore": 67.11111111111111,
+      "overallFieldSize": 136,
+      "overallRank": 47,
+      "overallScore": 61.48148148148148
+    },
+    "58": {
+      "conference": "American Athletic",
+      "defenseFieldSize": 136,
+      "defenseRank": 22,
+      "defenseScore": 80.29629629629629,
+      "id": "58",
+      "name": "South Florida",
+      "offenseFieldSize": 136,
+      "offenseRank": 17,
+      "offenseScore": 84.0,
+      "overallFieldSize": 136,
+      "overallRank": 10,
+      "overallScore": 82.14814814814815
+    },
+    "59": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 96,
+      "defenseScore": 34.22222222222222,
+      "id": "59",
+      "name": "Georgia Tech",
+      "offenseFieldSize": 136,
+      "offenseRank": 8,
+      "offenseScore": 91.25925925925927,
+      "overallFieldSize": 136,
+      "overallRank": 43,
+      "overallScore": 62.74074074074075
+    },
+    "6": {
+      "conference": "Sun Belt",
+      "defenseFieldSize": 136,
+      "defenseRank": 100,
+      "defenseScore": 32.74074074074074,
+      "id": "6",
+      "name": "South Alabama",
+      "offenseFieldSize": 136,
+      "offenseRank": 92,
+      "offenseScore": 34.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 99,
+      "overallScore": 33.407407407407405
+    },
+    "61": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 11,
+      "defenseScore": 89.03703703703704,
+      "id": "61",
+      "name": "Georgia",
+      "offenseFieldSize": 136,
+      "offenseRank": 32,
+      "offenseScore": 72.88888888888889,
+      "overallFieldSize": 136,
+      "overallRank": 12,
+      "overallScore": 80.96296296296296
+    },
+    "62": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 90,
+      "defenseScore": 36.2962962962963,
+      "id": "62",
+      "name": "Hawai'i",
+      "offenseFieldSize": 136,
+      "offenseRank": 89,
+      "offenseScore": 36.148148148148145,
+      "overallFieldSize": 136,
+      "overallRank": 96,
+      "overallScore": 36.22222222222222
+    },
+    "66": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 50,
+      "defenseScore": 60.29629629629629,
+      "id": "66",
+      "name": "Iowa State",
+      "offenseFieldSize": 136,
+      "offenseRank": 44,
+      "offenseScore": 63.70370370370371,
+      "overallFieldSize": 136,
+      "overallRank": 46,
+      "overallScore": 62.0
+    },
+    "68": {
+      "conference": "Mountain West",
+      "defenseFieldSize": 136,
+      "defenseRank": 29,
+      "defenseScore": 73.92592592592592,
+      "id": "68",
+      "name": "Boise State",
+      "offenseFieldSize": 136,
+      "offenseRank": 91,
+      "offenseScore": 34.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 62,
+      "overallScore": 54.0
+    },
+    "77": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 75,
+      "defenseScore": 43.11111111111111,
+      "id": "77",
+      "name": "Northwestern",
+      "offenseFieldSize": 136,
+      "offenseRank": 81,
+      "offenseScore": 43.851851851851855,
+      "overallFieldSize": 136,
+      "overallRank": 78,
+      "overallScore": 43.48148148148148
+    },
+    "8": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 114,
+      "defenseScore": 24.444444444444446,
+      "id": "8",
+      "name": "Arkansas",
+      "offenseFieldSize": 136,
+      "offenseRank": 2,
+      "offenseScore": 97.48148148148148,
+      "overallFieldSize": 136,
+      "overallRank": 49,
+      "overallScore": 60.96296296296296
+    },
+    "84": {
+      "conference": "Big Ten",
+      "defenseFieldSize": 136,
+      "defenseRank": 7,
+      "defenseScore": 93.77777777777779,
+      "id": "84",
+      "name": "Indiana",
+      "offenseFieldSize": 136,
+      "offenseRank": 3,
+      "offenseScore": 95.55555555555556,
+      "overallFieldSize": 136,
+      "overallRank": 1,
+      "overallScore": 94.66666666666667
+    },
+    "87": {
+      "conference": "FBS Independents",
+      "defenseFieldSize": 136,
+      "defenseRank": 10,
+      "defenseScore": 90.96296296296296,
+      "id": "87",
+      "name": "Notre Dame",
+      "offenseFieldSize": 136,
+      "offenseRank": 9,
+      "offenseScore": 90.66666666666666,
+      "overallFieldSize": 136,
+      "overallRank": 4,
+      "overallScore": 90.81481481481481
+    },
+    "9": {
+      "conference": "Big 12",
+      "defenseFieldSize": 136,
+      "defenseRank": 28,
+      "defenseScore": 75.40740740740742,
+      "id": "9",
+      "name": "Arizona State",
+      "offenseFieldSize": 136,
+      "offenseRank": 71,
+      "offenseScore": 50.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 42,
+      "overallScore": 62.74074074074075
+    },
+    "96": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 45,
+      "defenseScore": 62.96296296296297,
+      "id": "96",
+      "name": "Kentucky",
+      "offenseFieldSize": 136,
+      "offenseRank": 74,
+      "offenseScore": 48.29629629629629,
+      "overallFieldSize": 136,
+      "overallRank": 57,
+      "overallScore": 55.62962962962963
+    },
+    "97": {
+      "conference": "ACC",
+      "defenseFieldSize": 136,
+      "defenseRank": 26,
+      "defenseScore": 76.0,
+      "id": "97",
+      "name": "Louisville",
+      "offenseFieldSize": 136,
+      "offenseRank": 24,
+      "offenseScore": 79.25925925925927,
+      "overallFieldSize": 136,
+      "overallRank": 14,
+      "overallScore": 77.62962962962963
+    },
+    "98": {
+      "conference": "Conference USA",
+      "defenseFieldSize": 136,
+      "defenseRank": 44,
+      "defenseScore": 63.11111111111111,
+      "id": "98",
+      "name": "Western Kentucky",
+      "offenseFieldSize": 136,
+      "offenseRank": 78,
+      "offenseScore": 46.074074074074076,
+      "overallFieldSize": 136,
+      "overallRank": 60,
+      "overallScore": 54.592592592592595
+    },
+    "99": {
+      "conference": "SEC",
+      "defenseFieldSize": 136,
+      "defenseRank": 20,
+      "defenseScore": 82.07407407407408,
+      "id": "99",
+      "name": "LSU",
+      "offenseFieldSize": 136,
+      "offenseRank": 103,
+      "offenseScore": 27.111111111111107,
+      "overallFieldSize": 136,
+      "overallRank": 59,
+      "overallScore": 54.592592592592595
+    }
+  },
+  "games": [
+    {
+      "gameId": "401752690",
+      "homeAway": "home",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.07272727272727272,
+            "expected": 0.10095818439240939,
+            "poe": 0.028230911665136665,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.125,
+            "expected": 0.0997881888222637,
+            "poe": 0.0252118111777363,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.2,
+            "expected": 0.3659177729073873,
+            "poe": 0.1659177729073873,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.42857142857142855,
+            "expected": 0.44222210975390885,
+            "poe": -0.013650681182480306,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.26666666666666666,
+            "expected": 0.3807637726249463,
+            "poe": 0.11409710595827965,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4864864864864865,
+            "expected": 0.3931225427231417,
+            "poe": 0.09336394376334484,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.23636363636363636,
+            "expected": 0.36932353950565305,
+            "poe": 0.1329599031420167,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4583333333333333,
+            "expected": 0.4168040176020695,
+            "poe": 0.04152931573126384,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.321428571428571,
+            "expected": 4.817122774357594,
+            "poe": -0.5043057970709768,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.712328767123288,
+            "expected": 4.841731098795028,
+            "poe": 0.8705976683282595,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "Big Ten",
+          "defenseFieldSize": 136,
+          "defenseRank": 38,
+          "defenseScore": 67.55555555555556,
+          "id": "130",
+          "name": "Michigan",
+          "offenseFieldSize": 136,
+          "offenseRank": 19,
+          "offenseScore": 83.40740740740742,
+          "overallFieldSize": 136,
+          "overallRank": 19,
+          "overallScore": 75.4814814814815
+        },
+        "classification": "fbs",
+        "conference": "Big Ten",
+        "id": "130",
+        "name": "Michigan"
+      },
+      "score": {
+        "pointsAgainst": 13.0,
+        "pointsFor": 24.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 2
+    },
+    {
+      "gameId": "401752703",
+      "homeAway": "away",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.019230769230769232,
+            "expected": 0.09086808787292402,
+            "poe": 0.07163731864215479,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.20270270270270271,
+            "expected": 0.11283828010209115,
+            "poe": 0.08986442260061156,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.20689655172413793,
+            "expected": 0.3841509648998075,
+            "poe": 0.17725441317566956,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5277777777777778,
+            "expected": 0.3887745636388969,
+            "poe": 0.1390032141388809,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.17391304347826086,
+            "expected": 0.3242467570293597,
+            "poe": 0.1503337135510988,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5526315789473685,
+            "expected": 0.4214138699064675,
+            "poe": 0.13121770904090096,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.19230769230769232,
+            "expected": 0.33128614198473916,
+            "poe": 0.13897844967704684,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5405405405405406,
+            "expected": 0.4154942659064664,
+            "poe": 0.1250462746340742,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 2.2115384615384617,
+            "expected": 3.9452329938399413,
+            "poe": 1.7336945323014796,
+            "supported": true
+          },
+          "offense": {
+            "actual": 6.837837837837838,
+            "expected": 6.378928414823851,
+            "poe": 0.45890942301398674,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "American Athletic",
+          "defenseFieldSize": 136,
+          "defenseRank": 120,
+          "defenseScore": 20.0,
+          "id": "218",
+          "name": "Temple",
+          "offenseFieldSize": 136,
+          "offenseRank": 96,
+          "offenseScore": 30.666666666666668,
+          "overallFieldSize": 136,
+          "overallRank": 117,
+          "overallScore": 25.333333333333336
+        },
+        "classification": "fbs",
+        "conference": "American Athletic",
+        "id": "218",
+        "name": "Temple"
+      },
+      "score": {
+        "pointsAgainst": 3.0,
+        "pointsFor": 42.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 3
+    },
+    {
+      "gameId": "401752714",
+      "homeAway": "home",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.08955223880597014,
+            "expected": 0.08499432696889146,
+            "poe": -0.004557911837078682,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.06557377049180328,
+            "expected": 0.10770904646935453,
+            "poe": -0.04213527597755125,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.3170731707317073,
+            "expected": 0.34489305061290165,
+            "poe": 0.02781987988119433,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5135135135135135,
+            "expected": 0.4179327507637414,
+            "poe": 0.09558076274977206,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.2692307692307692,
+            "expected": 0.3603633169316338,
+            "poe": 0.0911325477008646,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2916666666666667,
+            "expected": 0.3476825435253858,
+            "poe": -0.056015876858719116,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.29850746268656714,
+            "expected": 0.3435954018959989,
+            "poe": 0.04508793920943177,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4262295081967213,
+            "expected": 0.3696826130135631,
+            "poe": 0.0565468951831582,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.5,
+            "expected": 4.120347853665318,
+            "poe": -0.37965214633468225,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.032786885245901,
+            "expected": 4.821492143033061,
+            "poe": 0.21129474221284017,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 17,
+          "defenseScore": 83.70370370370371,
+          "id": "2",
+          "name": "Auburn",
+          "offenseFieldSize": 136,
+          "offenseRank": 41,
+          "offenseScore": 64.59259259259258,
+          "overallFieldSize": 136,
+          "overallRank": 23,
+          "overallScore": 74.14814814814815
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "2",
+        "name": "Auburn"
+      },
+      "score": {
+        "pointsAgainst": 17.0,
+        "pointsFor": 24.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 4
+    },
+    {
+      "gameId": "401752729",
+      "homeAway": "home",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.06,
+            "expected": 0.08003984816145804,
+            "poe": 0.02003984816145804,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.16417910447761194,
+            "expected": 0.128198652931359,
+            "poe": 0.035980451546252956,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.22727272727272727,
+            "expected": 0.32582508529746884,
+            "poe": 0.09855235802474158,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4482758620689655,
+            "expected": 0.47081319919107334,
+            "poe": -0.022537337122107814,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.10714285714285714,
+            "expected": 0.27765809504664846,
+            "poe": 0.1705152379037913,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5789473684210527,
+            "expected": 0.4551773543081263,
+            "poe": 0.12377001411292637,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.16,
+            "expected": 0.27252375962732245,
+            "poe": 0.11252375962732244,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5223880597014925,
+            "expected": 0.48469010466395696,
+            "poe": 0.037697955037535535,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 2.92,
+            "expected": 3.843035295234704,
+            "poe": 0.9230352952347043,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.447761194029851,
+            "expected": 6.911793816685499,
+            "poe": -1.4640326226556484,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "Mid-American",
+          "defenseFieldSize": 136,
+          "defenseRank": 130,
+          "defenseScore": 9.037037037037036,
+          "id": "2309",
+          "name": "Kent State",
+          "offenseFieldSize": 136,
+          "offenseRank": 119,
+          "offenseScore": 17.185185185185183,
+          "overallFieldSize": 136,
+          "overallRank": 132,
+          "overallScore": 13.11111111111111
+        },
+        "classification": "fbs",
+        "conference": "Mid-American",
+        "id": "2309",
+        "name": "Kent State"
+      },
+      "score": {
+        "pointsAgainst": 0.0,
+        "pointsFor": 44.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 6
+    },
+    {
+      "gameId": "401752736",
+      "homeAway": "away",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.06451612903225806,
+            "expected": 0.09850782253333239,
+            "poe": 0.033991693501074324,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.109375,
+            "expected": 0.09341900322240526,
+            "poe": 0.01595599677759474,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.35714285714285715,
+            "expected": 0.35124230169066617,
+            "poe": -0.005900555452190981,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.36585365853658536,
+            "expected": 0.40553298611737376,
+            "poe": -0.039679327580788404,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.35294117647058826,
+            "expected": 0.3244352942378788,
+            "poe": -0.028505882232709445,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.391304347826087,
+            "expected": 0.3644671186105652,
+            "poe": 0.026837229215521785,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.3548387096774194,
+            "expected": 0.3197147985420366,
+            "poe": -0.03512391113538277,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.375,
+            "expected": 0.37583148080618606,
+            "poe": -0.0008314808061860579,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.870967741935484,
+            "expected": 4.807765171551424,
+            "poe": -0.06320257038406041,
+            "supported": true
+          },
+          "offense": {
+            "actual": 3.757575757575758,
+            "expected": 4.945996060111705,
+            "poe": -1.1884203025359472,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": true,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 12,
+          "defenseScore": 86.81481481481481,
+          "id": "251",
+          "name": "Texas",
+          "offenseFieldSize": 136,
+          "offenseRank": 49,
+          "offenseScore": 62.96296296296297,
+          "overallFieldSize": 136,
+          "overallRank": 22,
+          "overallScore": 74.88888888888889
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "251",
+        "name": "Texas"
+      },
+      "score": {
+        "pointsAgainst": 23.0,
+        "pointsFor": 6.0,
+        "result": "L"
+      },
+      "seasonType": "regular",
+      "week": 7
+    },
+    {
+      "gameId": "401752744",
+      "homeAway": "away",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.04838709677419355,
+            "expected": 0.11046766969748595,
+            "poe": 0.0620805729232924,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.09230769230769231,
+            "expected": 0.10123123316519919,
+            "poe": -0.008923540857506879,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.34285714285714286,
+            "expected": 0.35184013573120254,
+            "poe": 0.008982992874059681,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.5,
+            "expected": 0.4263921176674752,
+            "poe": 0.0736078823325248,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.2962962962962963,
+            "expected": 0.3255072643827865,
+            "poe": 0.029210968086490208,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.38461538461538464,
+            "expected": 0.3785830093868375,
+            "poe": 0.00603237522854716,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.3225806451612903,
+            "expected": 0.3201027737708229,
+            "poe": -0.002477871390467401,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4307692307692308,
+            "expected": 0.4006688121805562,
+            "poe": 0.03010041858867457,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 3.7142857142857144,
+            "expected": 4.9839123522116235,
+            "poe": 1.2696266379259091,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.121212121212121,
+            "expected": 5.1658359839221175,
+            "poe": -0.04462386270999641,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 53,
+          "defenseScore": 59.11111111111111,
+          "id": "2579",
+          "name": "South Carolina",
+          "offenseFieldSize": 136,
+          "offenseRank": 66,
+          "offenseScore": 52.44444444444444,
+          "overallFieldSize": 136,
+          "overallRank": 56,
+          "overallScore": 55.77777777777777
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "2579",
+        "name": "South Carolina"
+      },
+      "score": {
+        "pointsAgainst": 7.0,
+        "pointsFor": 26.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 8
+    },
+    {
+      "gameId": "401752750",
+      "homeAway": "home",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.12790697674418605,
+            "expected": 0.09829041572800275,
+            "poe": -0.029616561016183304,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.08620689655172414,
+            "expected": 0.11397846670390259,
+            "poe": -0.027771570152178446,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.3695652173913043,
+            "expected": 0.41131753262456383,
+            "poe": 0.04175231523325951,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2857142857142857,
+            "expected": 0.401671963193282,
+            "poe": -0.11595767747899632,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.28205128205128205,
+            "expected": 0.34498784928023246,
+            "poe": 0.06293656722895041,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.391304347826087,
+            "expected": 0.42239324661012057,
+            "poe": -0.031088898784033592,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.32941176470588235,
+            "expected": 0.36854811061778475,
+            "poe": 0.039136345911902404,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3275862068965517,
+            "expected": 0.4079278293742738,
+            "poe": -0.08034162247772209,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.930232558139535,
+            "expected": 5.5445246466627855,
+            "poe": 0.6142920885232508,
+            "supported": true
+          },
+          "offense": {
+            "actual": 6.389830508474576,
+            "expected": 5.422252173317385,
+            "poe": 0.9675783351571914,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 33,
+          "defenseScore": 71.25925925925927,
+          "id": "145",
+          "name": "Ole Miss",
+          "offenseFieldSize": 136,
+          "offenseRank": 10,
+          "offenseScore": 89.92592592592592,
+          "overallFieldSize": 136,
+          "overallRank": 13,
+          "overallScore": 80.5925925925926
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "145",
+        "name": "Ole Miss"
+      },
+      "score": {
+        "pointsAgainst": 34.0,
+        "pointsFor": 26.0,
+        "result": "L"
+      },
+      "seasonType": "regular",
+      "week": 9
+    },
+    {
+      "gameId": "401752757",
+      "homeAway": "away",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.0821917808219178,
+            "expected": 0.09294645766181357,
+            "poe": 0.010754676839895769,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.06779661016949153,
+            "expected": 0.11312793473825689,
+            "poe": -0.04533132456876536,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.5116279069767442,
+            "expected": 0.40036106370552027,
+            "poe": -0.11126684327122394,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4642857142857143,
+            "expected": 0.416895466871559,
+            "poe": 0.04739024741415532,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.3,
+            "expected": 0.391887290947339,
+            "poe": 0.091887290947339,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.45161290322580644,
+            "expected": 0.4396222224844397,
+            "poe": 0.011990680741366722,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.4246575342465753,
+            "expected": 0.385103759778471,
+            "poe": -0.03955377446810432,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4576271186440678,
+            "expected": 0.43326180225891786,
+            "poe": 0.024365316385149938,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.987012987012987,
+            "expected": 5.261555149911575,
+            "poe": -0.7254578371014118,
+            "supported": true
+          },
+          "offense": {
+            "actual": 5.114754098360656,
+            "expected": 5.760344110212777,
+            "poe": -0.6455900118521205,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 102,
+          "defenseScore": 32.44444444444444,
+          "id": "2633",
+          "name": "Tennessee",
+          "offenseFieldSize": 136,
+          "offenseRank": 18,
+          "offenseScore": 83.85185185185185,
+          "overallFieldSize": 136,
+          "overallRank": 53,
+          "overallScore": 58.148148148148145
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "2633",
+        "name": "Tennessee"
+      },
+      "score": {
+        "pointsAgainst": 27.0,
+        "pointsFor": 33.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 10
+    },
+    {
+      "gameId": "401752765",
+      "homeAway": "away",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.08333333333333333,
+            "expected": 0.09470586172563429,
+            "poe": 0.011372528392300962,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.0851063829787234,
+            "expected": 0.09476005700426568,
+            "poe": -0.009653674025542278,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.4883720930232558,
+            "expected": 0.3842109835508193,
+            "poe": -0.10416110947243651,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4090909090909091,
+            "expected": 0.37588249295295695,
+            "poe": 0.03320841613795217,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.4482758620689655,
+            "expected": 0.30620465725766666,
+            "poe": -0.14207120481129887,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2,
+            "expected": 0.3818538361600332,
+            "poe": -0.1818538361600332,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.4722222222222222,
+            "expected": 0.3317914285894909,
+            "poe": -0.1404307936327313,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.2978723404255319,
+            "expected": 0.3726961191267287,
+            "poe": -0.07482377870119677,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 5.583333333333333,
+            "expected": 4.797901277557687,
+            "poe": -0.7854320557756465,
+            "supported": true
+          },
+          "offense": {
+            "actual": 4.3,
+            "expected": 4.788714906718731,
+            "poe": -0.4887149067187311,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 14,
+          "defenseScore": 85.62962962962963,
+          "id": "333",
+          "name": "Alabama",
+          "offenseFieldSize": 136,
+          "offenseRank": 42,
+          "offenseScore": 64.29629629629629,
+          "overallFieldSize": 136,
+          "overallRank": 21,
+          "overallScore": 74.96296296296296
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "333",
+        "name": "Alabama"
+      },
+      "score": {
+        "pointsAgainst": 21.0,
+        "pointsFor": 23.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 12
+    },
+    {
+      "gameId": "401752778",
+      "homeAway": "home",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.07462686567164178,
+            "expected": 0.0968283522155462,
+            "poe": 0.022201486543904414,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.06896551724137931,
+            "expected": 0.09999205556624546,
+            "poe": -0.031026538324866154,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.3611111111111111,
+            "expected": 0.33877456845432496,
+            "poe": -0.02233654265678614,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3103448275862069,
+            "expected": 0.3845338799989801,
+            "poe": -0.07418905241277318,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.2903225806451613,
+            "expected": 0.35140822374297026,
+            "poe": 0.06108564309780895,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3103448275862069,
+            "expected": 0.3723617074862872,
+            "poe": -0.06201687990008031,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.3283582089552239,
+            "expected": 0.3354447844169271,
+            "poe": 0.007086575461703215,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3103448275862069,
+            "expected": 0.3642983362149536,
+            "poe": -0.053953508628746705,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.7101449275362315,
+            "expected": 4.471024894214405,
+            "poe": -0.23912003332182685,
+            "supported": true
+          },
+          "offense": {
+            "actual": 4.451612903225806,
+            "expected": 4.7317649937717645,
+            "poe": -0.28015209054595847,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 6,
+          "defenseScore": 94.37037037037037,
+          "id": "142",
+          "name": "Missouri",
+          "offenseFieldSize": 136,
+          "offenseRank": 33,
+          "offenseScore": 72.74074074074073,
+          "overallFieldSize": 136,
+          "overallRank": 9,
+          "overallScore": 83.55555555555554
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "142",
+        "name": "Missouri"
+      },
+      "score": {
+        "pointsAgainst": 6.0,
+        "pointsFor": 17.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 13
+    },
+    {
+      "gameId": "401752789",
+      "homeAway": "home",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.038461538461538464,
+            "expected": 0.07371339651482856,
+            "poe": 0.03525185805329009,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.1111111111111111,
+            "expected": 0.1087452004481419,
+            "poe": 0.002365910662969206,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.28,
+            "expected": 0.34171439882821386,
+            "poe": 0.061714398828213834,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.4444444444444444,
+            "expected": 0.40237697194661604,
+            "poe": 0.042067472497828384,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.2222222222222222,
+            "expected": 0.29522492068839384,
+            "poe": 0.07300269846617163,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.14814814814814814,
+            "expected": 0.4158908041337461,
+            "poe": -0.26774265598559793,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.25,
+            "expected": 0.3009385592498564,
+            "poe": 0.05093855924985641,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.31746031746031744,
+            "expected": 0.4008677947877668,
+            "poe": -0.08340747732744935,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 3.9814814814814814,
+            "expected": 3.921100932408514,
+            "poe": -0.060380549072967415,
+            "supported": true
+          },
+          "offense": {
+            "actual": 6.246153846153846,
+            "expected": 4.610411401712943,
+            "poe": 1.6357424444409032,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 20,
+          "defenseScore": 82.07407407407408,
+          "id": "99",
+          "name": "LSU",
+          "offenseFieldSize": 136,
+          "offenseRank": 103,
+          "offenseScore": 27.111111111111107,
+          "overallFieldSize": 136,
+          "overallRank": 59,
+          "overallScore": 54.592592592592595
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "99",
+        "name": "LSU"
+      },
+      "score": {
+        "pointsAgainst": 13.0,
+        "pointsFor": 17.0,
+        "result": "W"
+      },
+      "seasonType": "regular",
+      "week": 14
+    },
+    {
+      "gameId": "401779840",
+      "homeAway": "home",
+      "metrics": {
+        "explosivePlayRate": {
+          "defense": {
+            "actual": 0.1320754716981132,
+            "expected": 0.08145127874636252,
+            "poe": -0.05062419295175069,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.07042253521126761,
+            "expected": 0.1074888373614191,
+            "poe": -0.0370663021501515,
+            "supported": true
+          }
+        },
+        "passSuccessRate": {
+          "defense": {
+            "actual": 0.25,
+            "expected": 0.3900230594887748,
+            "poe": 0.1400230594887748,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.3111111111111111,
+            "expected": 0.4153436225475919,
+            "poe": -0.10423251143648077,
+            "supported": true
+          }
+        },
+        "rushSuccessRate": {
+          "defense": {
+            "actual": 0.23809523809523808,
+            "expected": 0.3071831192589728,
+            "poe": 0.06908788116373471,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.34615384615384615,
+            "expected": 0.39010602204958167,
+            "poe": -0.043952175895735524,
+            "supported": true
+          }
+        },
+        "successRate": {
+          "defense": {
+            "actual": 0.24528301886792453,
+            "expected": 0.34220751173856023,
+            "poe": 0.0969244928706357,
+            "supported": true
+          },
+          "offense": {
+            "actual": 0.323943661971831,
+            "expected": 0.394821906821748,
+            "poe": -0.070878244849917,
+            "supported": true
+          }
+        },
+        "yardsPerPlay": {
+          "defense": {
+            "actual": 4.777777777777778,
+            "expected": 4.667669855638805,
+            "poe": -0.11010792213897247,
+            "supported": true
+          },
+          "offense": {
+            "actual": 4.891891891891892,
+            "expected": 4.99235906919333,
+            "poe": -0.10046717730143762,
+            "supported": true
+          }
+        }
+      },
+      "neutralSite": false,
+      "opponent": {
+        "adjustedProfile": {
+          "conference": "SEC",
+          "defenseFieldSize": 136,
+          "defenseRank": 14,
+          "defenseScore": 85.62962962962963,
+          "id": "333",
+          "name": "Alabama",
+          "offenseFieldSize": 136,
+          "offenseRank": 42,
+          "offenseScore": 64.29629629629629,
+          "overallFieldSize": 136,
+          "overallRank": 21,
+          "overallScore": 74.96296296296296
+        },
+        "classification": "fbs",
+        "conference": "SEC",
+        "id": "333",
+        "name": "Alabama"
+      },
+      "score": {
+        "pointsAgainst": 34.0,
+        "pointsFor": 24.0,
+        "result": "L"
+      },
+      "seasonType": "postseason",
+      "week": 1
+    }
+  ],
+  "homeRidge": 20.0,
+  "ridge": 40.0,
+  "season": 2025,
+  "subject": {
+    "classification": "fbs",
+    "conference": "SEC",
+    "id": "201",
+    "name": "Oklahoma",
+    "slug": "oklahoma"
+  },
+  "tendencies": {
+    "comparison": {
+      "defense": {
+        "explosivePlayRateAllowed": 0.09225092250922509,
+        "havocRateGenerated": 0.10645933014354067,
+        "netPassYardsPerDropbackAllowed": 5.687074829931973,
+        "opponentDropbackRate": 0.5268817204301075,
+        "opponentDropbacksPerGame": 33.92307692307692,
+        "opponentRushAttemptsPerGame": 30.46153846153846,
+        "opponentRushDecisionRate": 0.4731182795698925,
+        "passExplosivePlayRateAllowed": 0.07981220657276995,
+        "passSuccessRateAllowed": 0.4460093896713615,
+        "playsFacedPerGame": 64.3076923076923,
+        "pointsAllowedPerGame": 20.384615384615383,
+        "possessionsFacedPerGame": 10.76923076923077,
+        "rushExplosivePlayRateAllowed": 0.10594315245478036,
+        "rushSuccessRateAllowed": 0.40310077519379844,
+        "rushYardsPerAttemptAllowed": 4.313131313131313,
+        "sackRateGenerated": 0.061224489795918366,
+        "successRateAllowed": 0.42558425584255843,
+        "thirdDownConversionRateAllowed": 0.39156626506024095,
+        "yardsPerPlayAllowed": 5.037037037037037
+      },
+      "games": 13,
+      "losses": 4,
+      "offense": {
+        "dropbackRate": 0.4289185905224787,
+        "dropbacksPerGame": 27.153846153846153,
+        "explosivePlayRate": 0.1327543424317618,
+        "havocRateAllowed": 0.0851581508515815,
+        "netPassYardsPerDropback": 6.53257790368272,
+        "passExplosivePlayRate": 0.10404624277456648,
+        "passSuccessRate": 0.4161849710982659,
+        "passingDownShare": 0.28287841191067,
+        "passingDownSuccessRate": 0.3026315789473684,
+        "playsPerGame": 63.23076923076923,
+        "pointsPerGame": 27.53846153846154,
+        "possessionsPerGame": 11.23076923076923,
+        "rushAttemptsPerGame": 36.15384615384615,
+        "rushDecisionRate": 0.5710814094775213,
+        "rushExplosivePlayRate": 0.15434782608695652,
+        "rushSuccessRate": 0.508695652173913,
+        "rushYardsPerAttempt": 6.008510638297873,
+        "sackRateAllowed": 0.056657223796033995,
+        "standardDownShare": 0.71712158808933,
+        "standardDownSuccessRate": 0.5346020761245674,
+        "successRate": 0.46898263027295284,
+        "thirdDownConversionRate": 0.461038961038961,
+        "yardsPerPlay": 6.233292831105711
+      },
+      "wins": 9
+    },
+    "subject": {
+      "defense": {
+        "explosivePlayRateAllowed": 0.07723035952063914,
+        "havocRateGenerated": 0.15837696335078533,
+        "netPassYardsPerDropbackAllowed": 5.519323671497585,
+        "opponentDropbackRate": 0.5425950196592398,
+        "opponentDropbacksPerGame": 34.5,
+        "opponentRushAttemptsPerGame": 29.083333333333332,
+        "opponentRushDecisionRate": 0.45740498034076016,
+        "passExplosivePlayRateAllowed": 0.08641975308641975,
+        "passSuccessRateAllowed": 0.3432098765432099,
+        "playsFacedPerGame": 63.666666666666664,
+        "pointsAllowedPerGame": 16.5,
+        "possessionsFacedPerGame": 12.333333333333334,
+        "rushExplosivePlayRateAllowed": 0.06647398843930635,
+        "rushSuccessRateAllowed": 0.2753623188405797,
+        "rushYardsPerAttemptAllowed": 3.4412607449856734,
+        "sackRateGenerated": 0.09178743961352658,
+        "successRateAllowed": 0.312,
+        "thirdDownConversionRateAllowed": 0.29411764705882354,
+        "yardsPerPlayAllowed": 4.568807339449541
+      },
+      "games": 12,
+      "losses": 3,
+      "offense": {
+        "dropbackRate": 0.525706940874036,
+        "dropbacksPerGame": 34.083333333333336,
+        "explosivePlayRate": 0.1067193675889328,
+        "havocRateAllowed": 0.11153846153846154,
+        "netPassYardsPerDropback": 6.117359413202934,
+        "passExplosivePlayRate": 0.09022556390977443,
+        "passSuccessRate": 0.41353383458646614,
+        "passingDownShare": 0.3254281949934124,
+        "passingDownSuccessRate": 0.27125506072874495,
+        "playsPerGame": 65.0,
+        "pointsPerGame": 25.5,
+        "possessionsPerGame": 12.333333333333334,
+        "rushAttemptsPerGame": 30.75,
+        "rushDecisionRate": 0.47429305912596403,
+        "rushExplosivePlayRate": 0.125,
+        "rushSuccessRate": 0.39444444444444443,
+        "rushYardsPerAttempt": 4.409214092140921,
+        "sackRateAllowed": 0.07090464547677261,
+        "standardDownShare": 0.6745718050065876,
+        "standardDownSuccessRate": 0.46875,
+        "successRate": 0.4044795783926219,
+        "thirdDownConversionRate": 0.4025157232704403,
+        "yardsPerPlay": 5.30719794344473
+      },
+      "wins": 9
+    }
+  },
+  "validation": {
+    "researchOnlyMetrics": [
+      "rushExplosivePlayRate",
+      "passExplosivePlayRate",
+      "rushYardsPerAttempt",
+      "netPassYardsPerDropback",
+      "standardDownSuccessRate",
+      "passingDownSuccessRate",
+      "thirdDownConversionRate",
+      "sackRate",
+      "havocRateAllowed"
+    ],
+    "validatedMetrics": [
+      "successRate",
+      "rushSuccessRate",
+      "passSuccessRate",
+      "explosivePlayRate",
+      "yardsPerPlay"
+    ]
+  },
+  "version": "darren-data-pack-v1"
+}

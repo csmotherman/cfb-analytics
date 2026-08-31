@@ -1,0 +1,210 @@
+{
+  "analysisModel": "schedule-adjusted-ratings-v1",
+  "analysisSeason": 2025,
+  "definitionVersion": "matchup-graphic-data-v1",
+  "gameId": "401858428",
+  "kickoffISO": "2026-09-05T23:30:00.000Z",
+  "michigan": {
+    "fieldPosition": {
+      "games": 13,
+      "methodology": "simple mean of averageStartOwnYardLine across the team's published FBS-validated games",
+      "ownYardLine": 33.4
+    },
+    "metrics": {
+      "explosivePlayRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 22,
+          "value": 0.09922613521106834
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 19,
+          "value": 0.13041383528966347
+        },
+        "tier": "validated"
+      },
+      "passSuccessRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 79,
+          "value": 0.42753088359599584
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 54,
+          "value": 0.4200235349033133
+        },
+        "tier": "validated"
+      },
+      "rushSuccessRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 47,
+          "value": 0.41252949581120996
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 4,
+          "value": 0.48968319182439435
+        },
+        "tier": "validated"
+      },
+      "successRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 58,
+          "value": 0.4180290976068199
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 19,
+          "value": 0.4683438009588703
+        },
+        "tier": "validated"
+      },
+      "thirdDownConversionRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 51,
+          "value": 0.3972903184739215
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 22,
+          "value": 0.43367157359605685
+        },
+        "tier": "research-only"
+      }
+    },
+    "name": "Michigan",
+    "quality": {
+      "defense": {
+        "fieldSize": 136,
+        "rank": 38,
+        "score": 67.6
+      },
+      "name": "Michigan",
+      "offense": {
+        "fieldSize": 136,
+        "rank": 19,
+        "score": 83.4
+      },
+      "overall": {
+        "fieldSize": 136,
+        "rank": 19,
+        "score": 75.5
+      }
+    },
+    "record": "9-4",
+    "teamId": 130,
+    "tendencies": {
+      "dropbackRate": 0.4289185905224787,
+      "possessionsPerGame": 11.23076923076923,
+      "rushDecisionRate": 0.5710814094775213
+    }
+  },
+  "opponent": {
+    "fieldPosition": {
+      "games": 13,
+      "methodology": "simple mean of averageStartOwnYardLine across the team's published FBS-validated games",
+      "ownYardLine": 34.8
+    },
+    "metrics": {
+      "explosivePlayRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 52,
+          "value": 0.10938219521380392
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 80,
+          "value": 0.10859335845421299
+        },
+        "tier": "validated"
+      },
+      "passSuccessRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 23,
+          "value": 0.38446812848285433
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 118,
+          "value": 0.383256378374325
+        },
+        "tier": "validated"
+      },
+      "rushSuccessRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 43,
+          "value": 0.41146267709795764
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 65,
+          "value": 0.42651266088769624
+        },
+        "tier": "validated"
+      },
+      "successRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 35,
+          "value": 0.39791204923748663
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 95,
+          "value": 0.4032035120014911
+        },
+        "tier": "validated"
+      },
+      "thirdDownConversionRate": {
+        "defense": {
+          "fieldSize": 136,
+          "rank": 11,
+          "value": 0.3723902564317449
+        },
+        "offense": {
+          "fieldSize": 136,
+          "rank": 89,
+          "value": 0.39235402361969896
+        },
+        "tier": "research-only"
+      }
+    },
+    "name": "Western Michigan",
+    "quality": {
+      "defense": {
+        "fieldSize": 136,
+        "rank": 34,
+        "score": 70.4
+      },
+      "name": "Western Michigan",
+      "offense": {
+        "fieldSize": 136,
+        "rank": 100,
+        "score": 30.1
+      },
+      "overall": {
+        "fieldSize": 136,
+        "rank": 67,
+        "score": 50.2
+      }
+    },
+    "record": "9-4",
+    "teamId": 2711,
+    "tendencies": {
+      "dropbackRate": 0.3492990654205608,
+      "possessionsPerGame": 10.692307692307692,
+      "rushDecisionRate": 0.6507009345794392
+    }
+  },
+  "season": 2026,
+  "venue": "Michigan Stadium",
+  "week": 1
+}

@@ -29,3 +29,33 @@ export function teamColors(teamId: number | null | undefined): TeamColorPair {
   if (teamId == null) return FALLBACK;
   return TEAM_COLORS[teamId] ?? FALLBACK;
 }
+
+function relativeLuminance(hex: string): number {
+  const clean = hex.replace("#", "");
+  const r = parseInt(clean.substring(0, 2), 16) / 255;
+  const g = parseInt(clean.substring(2, 4), 16) / 255;
+  const b = parseInt(clean.substring(4, 6), 16) / 255;
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+/**
+ * Several real team color pairs have a secondary that's pure/near white
+ * (Michigan State, Northwestern) or cream (Oklahoma, Nebraska), or a
+ * primary/secondary that's pure black (Purdue) -- any of those wash out
+ * or vanish on a dark navy card. This picks whichever of the two actual
+ * team colors reads as a visible, distinct accent on a dark background,
+ * rather than always defaulting to secondary. Falls back to secondary
+ * unmodified if neither color is in the unusable range (the common case).
+ */
+export function accentColor({ primary, secondary }: TeamColorPair): string {
+  // Upper bound is 0.85, not a rounder-looking 0.75: Michigan's own maize
+  // (0.783), USC's gold (0.783) and Maryland's gold (0.802) are all
+  // legitimate, clearly-visible accent colors that must stay in range --
+  // only true near-white/cream (0.87+, e.g. Oklahoma's 0.970, Wisconsin's
+  // 0.871) should get bumped to primary instead.
+  const secondaryLuminance = relativeLuminance(secondary);
+  const usable = secondaryLuminance > 0.12 && secondaryLuminance < 0.85;
+  if (usable) return secondary;
+  const primaryLuminance = relativeLuminance(primary);
+  return primaryLuminance > 0.12 && primaryLuminance < 0.85 ? primary : secondary;
+}

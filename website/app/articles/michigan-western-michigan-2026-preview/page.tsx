@@ -9,13 +9,13 @@ import type {CompareRow} from "../../../lib/michigan/matchup-preview-data";
 import "./preview-story.css";
 
 const articleUrl="https://michiganfootballfocus.com/articles/michigan-western-michigan-2026-preview";
-const articleImage=`${articleUrl}/blueprint`;
+const articleImage="https://michiganfootballfocus.com/matchup-graphic/401858428";
 const socialDescription="Western Michigan returns the pieces that make its run-first offense work. The defense was the better unit in 2025, but the front seven now carries the biggest continuity question. Here's the Week 1 matchup story.";
 
 export const metadata:Metadata={
   title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",
   description:"A story-first Michigan vs. Western Michigan Week 1 preview using 2025 opponent-adjusted efficiency, roster continuity, returning snaps research and the Michigan Football Focus model.",
-  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",description:socialDescription,images:[{url:articleImage,width:1600,height:1055,alt:"Michigan vs. Western Michigan full statistical matchup sheet"}]},
+  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",description:socialDescription,images:[{url:articleImage,width:1600,height:1620,alt:"Michigan vs. Western Michigan matchup graphic"}]},
   twitter:{card:"summary_large_image",title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",description:socialDescription,images:[articleImage]}
 };
 
@@ -190,12 +190,12 @@ export default function MichiganWesternMichiganPreview(){
       </div>
 
       <section className="wm-share-section">
-        <div className="wm-share-head"><div><div className="wm-section-label">THE FULL MATCHUP SHEET</div><h2>Every number, side by side.</h2></div><p>The article above tells the story. This is the dense analytical reference sheet underneath it -- both teams' 2025 opponent-adjusted offense and defense, our roster-continuity audit, CBS's returning-snap research and the model/market context, all in one image.</p></div>
-        <a className="wm-share-image" href="/articles/michigan-western-michigan-2026-preview/blueprint" target="_blank" rel="noreferrer">
-          <img src="/articles/michigan-western-michigan-2026-preview/blueprint" alt="Michigan vs. Western Michigan full statistical matchup sheet: 2025 opponent-adjusted offense and defense, roster continuity, returning snaps and model/market context" width={1600} height={1055}/>
+        <div className="wm-share-head"><div><div className="wm-section-label">THE MATCHUP GRAPHIC</div><h2>Team quality, identity, edges and the verdict.</h2></div><p>Same MFF matchup-graphic template we run for every opponent: national rank for both teams, how each wants to play, five where's-the-edge categories, what happens in each direction with the ball, and the model/market verdict.</p></div>
+        <a className="wm-share-image" href="/matchup-graphic/401858428" target="_blank" rel="noreferrer">
+          <img src="/matchup-graphic/401858428" alt="Michigan vs. Western Michigan matchup graphic: team quality ranks, play-calling identity, five matchup edges, and the MFF verdict" width={1600} height={1620}/>
         </a>
-        <p className="wm-share-caption">Full statistical matchup — tap to open full size.</p>
-        <BlueprintActions src="/articles/michigan-western-michigan-2026-preview/blueprint" filename="michigan-western-michigan-2026-matchup-sheet.png"/>
+        <p className="wm-share-caption">Full matchup graphic — tap to open full size.</p>
+        <BlueprintActions src="/matchup-graphic/401858428" filename="michigan-western-michigan-2026-matchup-graphic.png"/>
       </section>
 
       <section className="focus-article-explore feature-explore">

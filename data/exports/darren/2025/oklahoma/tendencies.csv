@@ -1,0 +1,38 @@
+section,metric,label,unit,subjectTeam,subjectValue,comparisonTeam,comparisonValue
+offense,pointsPerGame,Points/game,number,Oklahoma,25.5,Michigan,27.53846153846154
+offense,playsPerGame,Offensive plays/game,number,Oklahoma,65.0,Michigan,63.23076923076923
+offense,possessionsPerGame,Possessions/game,number,Oklahoma,12.333333333333334,Michigan,11.23076923076923
+offense,rushAttemptsPerGame,Rush attempts/game,number,Oklahoma,30.75,Michigan,36.15384615384615
+offense,dropbacksPerGame,Dropbacks/game,number,Oklahoma,34.083333333333336,Michigan,27.153846153846153
+offense,rushDecisionRate,Rush decision rate,rate,Oklahoma,0.47429305912596403,Michigan,0.5710814094775213
+offense,dropbackRate,Dropback rate,rate,Oklahoma,0.525706940874036,Michigan,0.4289185905224787
+offense,standardDownShare,Standard-down share,rate,Oklahoma,0.6745718050065876,Michigan,0.71712158808933
+offense,passingDownShare,Passing-down share,rate,Oklahoma,0.3254281949934124,Michigan,0.28287841191067
+offense,successRate,Raw success rate,rate,Oklahoma,0.4044795783926219,Michigan,0.46898263027295284
+offense,rushSuccessRate,Raw rush success rate,rate,Oklahoma,0.39444444444444443,Michigan,0.508695652173913
+offense,passSuccessRate,Raw pass success rate,rate,Oklahoma,0.41353383458646614,Michigan,0.4161849710982659
+offense,explosivePlayRate,Raw explosive rate,rate,Oklahoma,0.1067193675889328,Michigan,0.1327543424317618
+offense,rushExplosivePlayRate,Raw rush explosive rate,rate,Oklahoma,0.125,Michigan,0.15434782608695652
+offense,passExplosivePlayRate,Raw pass explosive rate,rate,Oklahoma,0.09022556390977443,Michigan,0.10404624277456648
+offense,yardsPerPlay,Raw yards/play,number,Oklahoma,5.30719794344473,Michigan,6.233292831105711
+offense,rushYardsPerAttempt,Raw rush YPA,number,Oklahoma,4.409214092140921,Michigan,6.008510638297873
+offense,netPassYardsPerDropback,Raw net pass Y/dropback,number,Oklahoma,6.117359413202934,Michigan,6.53257790368272
+offense,thirdDownConversionRate,Raw third-down conversion,rate,Oklahoma,0.4025157232704403,Michigan,0.461038961038961
+offense,sackRateAllowed,Sack rate allowed,rate,Oklahoma,0.07090464547677261,Michigan,0.056657223796033995
+offense,havocRateAllowed,Havoc rate allowed,rate,Oklahoma,0.11153846153846154,Michigan,0.0851581508515815
+defense,pointsAllowedPerGame,Points allowed/game,number,Oklahoma,16.5,Michigan,20.384615384615383
+defense,playsFacedPerGame,Defensive plays/game,number,Oklahoma,63.666666666666664,Michigan,64.3076923076923
+defense,opponentRushDecisionRate,Opponent rush decision rate,rate,Oklahoma,0.45740498034076016,Michigan,0.4731182795698925
+defense,opponentDropbackRate,Opponent dropback rate,rate,Oklahoma,0.5425950196592398,Michigan,0.5268817204301075
+defense,successRateAllowed,Raw success rate allowed,rate,Oklahoma,0.312,Michigan,0.42558425584255843
+defense,rushSuccessRateAllowed,Raw rush success allowed,rate,Oklahoma,0.2753623188405797,Michigan,0.40310077519379844
+defense,passSuccessRateAllowed,Raw pass success allowed,rate,Oklahoma,0.3432098765432099,Michigan,0.4460093896713615
+defense,explosivePlayRateAllowed,Raw explosive rate allowed,rate,Oklahoma,0.07723035952063914,Michigan,0.09225092250922509
+defense,rushExplosivePlayRateAllowed,Raw rush explosive allowed,rate,Oklahoma,0.06647398843930635,Michigan,0.10594315245478036
+defense,passExplosivePlayRateAllowed,Raw pass explosive allowed,rate,Oklahoma,0.08641975308641975,Michigan,0.07981220657276995
+defense,yardsPerPlayAllowed,Raw yards/play allowed,number,Oklahoma,4.568807339449541,Michigan,5.037037037037037
+defense,rushYardsPerAttemptAllowed,Raw rush YPA allowed,number,Oklahoma,3.4412607449856734,Michigan,4.313131313131313
+defense,netPassYardsPerDropbackAllowed,Raw net pass Y/dropback allowed,number,Oklahoma,5.519323671497585,Michigan,5.687074829931973
+defense,thirdDownConversionRateAllowed,Raw third-down conversion allowed,rate,Oklahoma,0.29411764705882354,Michigan,0.39156626506024095
+defense,sackRateGenerated,Sack rate generated,rate,Oklahoma,0.09178743961352658,Michigan,0.061224489795918366
+defense,havocRateGenerated,Havoc rate generated,rate,Oklahoma,0.15837696335078533,Michigan,0.10645933014354067
