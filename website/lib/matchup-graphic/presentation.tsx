@@ -20,15 +20,36 @@ import { teamLogoUrl } from "../team-assets";
 import { teamAbbreviation } from "../team-colors";
 import type { EdgeCategoryId, MatchupGraphicData, PhaseEdgeRow, PossessionPhase } from "./types";
 
-const CREAM = "#F5F0E6";
-const CREAM_TEXT = "#F5F0E6";
+const CREAM = "#F4EFE4"; // main page cream
+const CREAM_TEXT = "#F4EFE4";
+const CARD_CREAM = "#FBF8F1"; // raised/card surfaces, e.g. the possession panels
 const OFFWHITE = "#FAF8F2";
 const NAVY = "#00274C"; // official Michigan navy
+const MEDIUM_BLUE = "#315A7D";
 const MAIZE = "#FFCB05"; // tiny accent only -- never body text on cream
 const SLATE = "#3D5166"; // darkened for legibility at small sizes on cream -- see team-colors contrast note below
 const LIGHT_BLUE_GRAY = "#D7E0E8";
+const SOFT_BLUE = "#DCE6EC"; // Michigan-side slider/track tint
+const WARM_TAUPE = "#D9D0C2"; // opponent-side slider tint, opponent PASS bar
+const DARK_WARM_GRAY = "#625E58"; // neutral/even marker and text
 const LINE = "rgba(0,39,76,0.14)"; // navy at low opacity -- the one border system, used everywhere
 const CHIP_BORDER = "rgba(0,39,76,0.22)";
+
+// Michigan is always cool/navy family; the opponent is always this same
+// restrained warm family regardless of which real team it is -- a
+// consistent MFF identity week to week, the same reason the site never
+// pulls a real opponent's brand color into the data. "Opponent" here is
+// a fixed second color slot, not Western Michigan's actual brand brown.
+const OPPONENT_ACCENT = "#6C3F2A"; // opponent RUN bar, opponent-edge text, opponent slider marker
+const OPPONENT_HEADER = "#593827"; // opponent possession-panel header bar (muted vs. OPPONENT_ACCENT so it doesn't fight the navy header next to it)
+const MICHIGAN_TINT = "#F0F4F4"; // barely-perceptible wash behind Michigan's snapshot column
+const OPPONENT_TINT = "#F4EFE8"; // barely-perceptible wash behind the opponent's snapshot column
+const MICH_EDGE_TINT = "#E6EEF3";
+const MICH_EDGE_TINT_STRONG = "#D3E3EC";
+const OPPONENT_EDGE_TINT = "#EEE4DC";
+const OPPONENT_EDGE_TINT_STRONG = "#E3D2C4";
+const EVEN_EDGE_TINT = "#E9E6E0";
+const READ_BG = "#EAE3D8"; // warm off-white for THE READ, distinct from the cool edge tints above
 
 // Uses the real team abbreviation (e.g. "WMU", "OU") rather than a
 // generic "OPP" -- an edge label must always explicitly name a team.
@@ -42,6 +63,17 @@ function shortVerdict(tier: PhaseEdgeRow["tier"], direction: PhaseEdgeRow["direc
   if (tier === "strong") return `STRONG ${team} EDGE`;
   if (tier === "moderate") return `${team} EDGE`;
   return `SLIGHT ${team} EDGE`;
+}
+
+// Team ownership (Michigan = cool blue family, opponent = warm brown
+// family, even = neutral) communicated through fill and border, not
+// through statistical quality -- this is deliberately the only axis of
+// color variation here. "Strong" tier gets a richer tint/border of the
+// *same* hue rather than a different color.
+function edgeChipStyle(tier: PhaseEdgeRow["tier"], direction: PhaseEdgeRow["direction"]): { bg: string; text: string; border: string } {
+  if (direction === "even" || tier === "insufficient") return { bg: EVEN_EDGE_TINT, text: DARK_WARM_GRAY, border: CHIP_BORDER };
+  if (direction === "michigan") return { bg: tier === "strong" ? MICH_EDGE_TINT_STRONG : MICH_EDGE_TINT, text: NAVY, border: tier === "strong" ? MEDIUM_BLUE : CHIP_BORDER };
+  return { bg: tier === "strong" ? OPPONENT_EDGE_TINT_STRONG : OPPONENT_EDGE_TINT, text: OPPONENT_ACCENT, border: tier === "strong" ? OPPONENT_ACCENT : CHIP_BORDER };
 }
 
 // ---- tiny presentation-only derivation (no new analysis) ----
@@ -179,10 +211,10 @@ function VDivider({ height }: { height: number }) {
 
 // ---- zone 2: team snapshot ----
 
-function TeamColumn({ name, quality, runPct, align }: { name: string; quality: MatchupGraphicData["michigan"]["quality"]; runPct: number; align: "left" | "right" }) {
+function TeamColumn({ name, quality, runPct, align, tintBg, runColor, passColor }: { name: string; quality: MatchupGraphicData["michigan"]["quality"]; runPct: number; align: "left" | "right"; tintBg: string; runColor: string; passColor: string }) {
   const passPct = 100 - runPct;
   return (
-    <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: align === "left" ? "flex-start" : "flex-end" }}>
+    <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: align === "left" ? "flex-start" : "flex-end", justifyContent: "center", backgroundColor: tintBg, padding: "6px 22px" }}>
       <span style={{ fontFamily: "Barlow Condensed", fontSize: 26, fontWeight: 700, color: NAVY }}>{name.toUpperCase()}</span>
       <div style={{ display: "flex", flexDirection: "row", alignItems: "baseline", gap: 10, marginTop: 2 }}>
         <span style={{ fontFamily: "Barlow Condensed", fontSize: 60, fontWeight: 700, color: NAVY, lineHeight: 1 }}>{`#${quality.overall.rank}`}</span>
@@ -203,8 +235,8 @@ function TeamColumn({ name, quality, runPct, align }: { name: string; quality: M
         <span style={{ fontFamily: "Inter", fontSize: 20, fontWeight: 600, color: SLATE }}>{`${passPct}% PASS`}</span>
       </div>
       <div style={{ display: "flex", flexDirection: "row", width: 320, height: 11, borderRadius: 3, overflow: "hidden", marginTop: 5 }}>
-        <div style={{ display: "flex", width: `${runPct}%`, backgroundColor: NAVY }} />
-        <div style={{ display: "flex", width: `${passPct}%`, backgroundColor: LIGHT_BLUE_GRAY }} />
+        <div style={{ display: "flex", width: `${runPct}%`, backgroundColor: runColor }} />
+        <div style={{ display: "flex", width: `${passPct}%`, backgroundColor: passColor }} />
       </div>
     </div>
   );
@@ -270,12 +302,12 @@ function FieldPositionMini({ data, michAbbr, oppAbbr }: { data: MatchupGraphicDa
 
 function TeamSnapshotZone({ data, michAbbr, oppAbbr }: { data: MatchupGraphicData; michAbbr: string; oppAbbr: string }) {
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }}>
-      <TeamColumn name={data.michigan.name} quality={data.michigan.quality} runPct={Math.round(data.michigan.tendencies.rushDecisionRate * 100)} align="left" />
-      <div style={{ display: "flex", padding: "6px 26px 0" }}><VDivider height={150} /></div>
-      <FieldPositionMini data={data} michAbbr={michAbbr} oppAbbr={oppAbbr} />
-      <div style={{ display: "flex", padding: "6px 26px 0" }}><VDivider height={150} /></div>
-      <TeamColumn name={data.opponent.name} quality={data.opponent.quality} runPct={Math.round(data.opponent.tendencies.rushDecisionRate * 100)} align="right" />
+    <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch", justifyContent: "space-between" }}>
+      <TeamColumn name={data.michigan.name} quality={data.michigan.quality} runPct={Math.round(data.michigan.tendencies.rushDecisionRate * 100)} align="left" tintBg={MICHIGAN_TINT} runColor={NAVY} passColor={SOFT_BLUE} />
+      <div style={{ display: "flex", alignItems: "center", padding: "0 26px" }}><VDivider height={150} /></div>
+      <div style={{ display: "flex", alignItems: "center" }}><FieldPositionMini data={data} michAbbr={michAbbr} oppAbbr={oppAbbr} /></div>
+      <div style={{ display: "flex", alignItems: "center", padding: "0 26px" }}><VDivider height={150} /></div>
+      <TeamColumn name={data.opponent.name} quality={data.opponent.quality} runPct={Math.round(data.opponent.tendencies.rushDecisionRate * 100)} align="right" tintBg={OPPONENT_TINT} runColor={OPPONENT_ACCENT} passColor={WARM_TAUPE} />
     </div>
   );
 }
@@ -296,27 +328,33 @@ function PhaseRow({ row, opponentAbbr }: { row: PhaseEdgeRow; opponentAbbr: stri
   const hasData = row.tier !== "insufficient";
   const markerPct = 50 - (row.score ?? 0) / 2;
   const Glyph = CATEGORY_GLYPH[row.id];
+  const chip = edgeChipStyle(row.tier, row.direction);
+  const markerColor = row.direction === "michigan" ? NAVY : row.direction === "opponent" ? OPPONENT_ACCENT : DARK_WARM_GRAY;
   return (
     <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 12, padding: "6px 0", borderTop: `1px solid ${LINE}` }}>
       <IconBadge><Glyph /></IconBadge>
       <span style={{ display: "flex", width: 150, flexShrink: 0, fontFamily: "Barlow Condensed", fontSize: 17, fontWeight: 700, color: NAVY, letterSpacing: 0.2 }}>{row.label}</span>
       <RankChip rank={row.offense.rank} size="sm" />
-      <div style={{ display: "flex", flex: 1, position: "relative", height: 3, backgroundColor: LIGHT_BLUE_GRAY, borderRadius: 2 }}>
-        <div style={{ display: "flex", position: "absolute", left: "50%", top: -4.5, width: 1, height: 12, backgroundColor: "rgba(0,39,76,0.35)" }} />
-        {hasData && <div style={{ display: "flex", position: "absolute", left: `${markerPct}%`, top: -5.5, width: 14, height: 14, borderRadius: 7, backgroundColor: NAVY, marginLeft: -7, border: `2px solid ${CREAM}` }} />}
+      <div style={{ display: "flex", flex: 1, position: "relative", height: 3 }}>
+        <div style={{ display: "flex", flexDirection: "row", width: "100%", height: "100%", borderRadius: 2, overflow: "hidden" }}>
+          <div style={{ display: "flex", width: "50%", height: "100%", backgroundColor: SOFT_BLUE }} />
+          <div style={{ display: "flex", width: "50%", height: "100%", backgroundColor: WARM_TAUPE }} />
+        </div>
+        <div style={{ display: "flex", position: "absolute", left: "50%", top: -4.5, width: 1, height: 12, backgroundColor: DARK_WARM_GRAY }} />
+        {hasData && <div style={{ display: "flex", position: "absolute", left: `${markerPct}%`, top: -5.5, width: 14, height: 14, borderRadius: 7, backgroundColor: markerColor, marginLeft: -7, border: `2px solid ${CARD_CREAM}` }} />}
       </div>
       <RankChip rank={row.defense.rank} size="sm" />
-      <div style={{ display: "flex", minWidth: 148, justifyContent: "center", backgroundColor: OFFWHITE, border: `1.5px solid ${NAVY}`, borderRadius: 5, padding: "4px 10px" }}>
-        <span style={{ fontFamily: "Barlow Condensed", fontSize: 15, fontWeight: 700, letterSpacing: 0.2, color: NAVY }}>{hasData ? shortVerdict(row.tier, row.direction, opponentAbbr) : "NO DATA"}</span>
+      <div style={{ display: "flex", minWidth: 148, justifyContent: "center", backgroundColor: chip.bg, border: `1.5px solid ${chip.border}`, borderRadius: 5, padding: "4px 10px" }}>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 15, fontWeight: 700, letterSpacing: 0.2, color: chip.text }}>{hasData ? shortVerdict(row.tier, row.direction, opponentAbbr) : "NO DATA"}</span>
       </div>
     </div>
   );
 }
 
-function PhasePanel({ phase, title, subtitle, opponentAbbr }: { phase: PossessionPhase; title: string; subtitle: string; opponentAbbr: string }) {
+function PhasePanel({ phase, title, subtitle, opponentAbbr, headerColor }: { phase: PossessionPhase; title: string; subtitle: string; opponentAbbr: string; headerColor: string }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", flex: 1, border: `1px solid ${CHIP_BORDER}`, borderRadius: 8, overflow: "hidden", backgroundColor: CREAM }}>
-      <div style={{ display: "flex", backgroundColor: NAVY, padding: "10px 20px", justifyContent: "center" }}>
+    <div style={{ display: "flex", flexDirection: "column", flex: 1, border: `1px solid ${CHIP_BORDER}`, borderRadius: 8, overflow: "hidden", backgroundColor: CARD_CREAM }}>
+      <div style={{ display: "flex", backgroundColor: headerColor, padding: "10px 20px", justifyContent: "center" }}>
         <span style={{ fontFamily: "Barlow Condensed", fontSize: 25, fontWeight: 700, color: CREAM_TEXT, lineHeight: 1 }}>{title}</span>
       </div>
       <div style={{ display: "flex", flexDirection: "column", padding: "8px 22px 10px" }}>
@@ -327,7 +365,7 @@ function PhasePanel({ phase, title, subtitle, opponentAbbr }: { phase: Possessio
           <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 800, letterSpacing: 0.6, color: SLATE }}>{`${opponentAbbr} ADVANTAGE`}</span>
         </div>
         {phase.rows.map((row) => <PhaseRow key={row.id} row={row} opponentAbbr={opponentAbbr} />)}
-        <div style={{ display: "flex", flexDirection: "column", marginTop: 4, padding: "6px 16px", borderRadius: 6, backgroundColor: LIGHT_BLUE_GRAY }}>
+        <div style={{ display: "flex", flexDirection: "column", marginTop: 4, padding: "6px 16px", borderRadius: 6, backgroundColor: READ_BG }}>
           <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 800, letterSpacing: 1, color: NAVY }}>THE READ</span>
           <span style={{ fontFamily: "Barlow Condensed", fontSize: 19, fontWeight: 700, color: NAVY, marginTop: 2, lineHeight: 1.15 }}>{phase.whatItMeans}</span>
         </div>
@@ -355,7 +393,7 @@ function PredictionOutlookZone({ data }: { data: MatchupGraphicData }) {
             )}
             {data.prediction.winProbabilityPct != null && <div style={{ display: "flex", width: 1, height: 46, backgroundColor: "rgba(245,240,230,0.25)", margin: "0 40px" }} />}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 700, letterSpacing: 0.6, color: "rgba(245,240,230,0.65)" }}>MFF PROJECTION</span>
+              <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 700, letterSpacing: 0.6, color: MAIZE }}>MFF PROJECTION</span>
               <span style={{ fontFamily: "Barlow Condensed", fontSize: 52, fontWeight: 700, color: CREAM_TEXT, lineHeight: 1 }}>{data.prediction.marginLabel}</span>
             </div>
             {data.prediction.marketNote && <div style={{ display: "flex", width: 1, height: 46, backgroundColor: "rgba(245,240,230,0.25)", margin: "0 40px" }} />}
@@ -416,10 +454,10 @@ export function MatchupGraphic({ data }: { data: MatchupGraphicData }) {
 
       <Header data={data} />
 
-      <div style={{ display: "flex", flexDirection: "column", padding: "10px 40px 0" }}>
+      <div style={{ display: "flex", flexDirection: "column", padding: "7px 40px 0" }}>
         <TeamSnapshotZone data={data} michAbbr={michAbbr} oppAbbr={oppAbbr} />
 
-        <div style={{ display: "flex", width: "100%", height: 2, backgroundColor: NAVY, margin: "11px 0" }} />
+        <div style={{ display: "flex", width: "100%", height: 2, backgroundColor: NAVY, margin: "8px 0" }} />
 
         <div style={{ display: "flex", flexDirection: "row", gap: 28 }}>
           <PhasePanel
@@ -427,12 +465,14 @@ export function MatchupGraphic({ data }: { data: MatchupGraphicData }) {
             title="WHEN MICHIGAN HAS THE BALL"
             subtitle={`MICHIGAN OFFENSE vs ${oppAbbr} DEFENSE`}
             opponentAbbr={oppAbbr}
+            headerColor={NAVY}
           />
           <PhasePanel
             phase={data.whenOpponentHasBall}
             title={`WHEN ${data.opponent.name.toUpperCase()} HAS THE BALL`}
             subtitle={`${oppAbbr} OFFENSE vs MICHIGAN DEFENSE`}
             opponentAbbr={oppAbbr}
+            headerColor={OPPONENT_HEADER}
           />
         </div>
       </div>
