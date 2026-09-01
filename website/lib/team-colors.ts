@@ -30,6 +30,41 @@ export function teamColors(teamId: number | null | undefined): TeamColorPair {
   return TEAM_COLORS[teamId] ?? FALLBACK;
 }
 
+// Real, standard broadcast/box-score abbreviations for the same realistic
+// opponent set as TEAM_COLORS above -- not derived, hand-checked against
+// how each program is actually abbreviated (e.g. Oklahoma is "OU", not an
+// algorithmic "OKL"). Space-constrained layouts (the matchup graphic's
+// field-position panel and edge labels) need a short, real, recognizable
+// team tag rather than a generic "OPP".
+const TEAM_ABBREVIATIONS: Record<number, string> = {
+  130: "MICH", // Michigan
+  2711: "WMU", // Western Michigan
+  167: "UNM", // New Mexico
+  251: "TEX", // Texas
+  201: "OU", // Oklahoma
+  2117: "CMU", // Central Michigan
+  158: "NEB", // Nebraska
+  275: "WIS", // Wisconsin
+  30: "USC", // USC
+  264: "WASH", // Washington
+  127: "MSU", // Michigan State
+  2509: "PUR", // Purdue
+  77: "NW", // Northwestern
+  120: "MD", // Maryland
+  194: "OSU", // Ohio State
+};
+
+/**
+ * Falls back to the first word's first 4 letters (e.g. "Iowa" -> "IOWA",
+ * "Oregon" -> "OREG") for any team not in the hand-checked map above --
+ * a reasonable generic short tag rather than guessing a specific real
+ * abbreviation we haven't verified.
+ */
+export function teamAbbreviation(teamId: number | null | undefined, name: string): string {
+  if (teamId != null && TEAM_ABBREVIATIONS[teamId]) return TEAM_ABBREVIATIONS[teamId];
+  return name.split(" ")[0].slice(0, 4).toUpperCase();
+}
+
 function relativeLuminance(hex: string): number {
   const clean = hex.replace("#", "");
   const r = parseInt(clean.substring(0, 2), 16) / 255;
