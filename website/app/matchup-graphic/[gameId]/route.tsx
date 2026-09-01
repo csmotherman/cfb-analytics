@@ -7,7 +7,7 @@ import { MatchupGraphic } from "../../../lib/matchup-graphic/presentation";
 // no edge-runtime equivalent. This is also Next's own recommended runtime
 // for ImageResponse now (the edge runtime is deprecated).
 const GRAPHIC_WIDTH = 1600;
-const GRAPHIC_HEIGHT = 1620;
+const GRAPHIC_HEIGHT = 1100;
 
 async function loadGoogleFont(family: string, weight: number): Promise<ArrayBuffer | null> {
   try {
