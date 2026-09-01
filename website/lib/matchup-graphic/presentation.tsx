@@ -11,15 +11,21 @@
 // header, team snapshot, two possession panels side by side, a closing
 // navy prediction strip, and a small cream footer.
 //
+// Every zone is built on one strict grid, symmetric around x=800 (the
+// canvas's true center), with fixed pixel widths rather than flex-
+// computed ones. The two "mirrored" halves of the graphic (Michigan
+// panel/opponent panel, left team/right team, left/right prediction
+// blocks) are never two independently-styled JSX blocks -- each pair is
+// ONE component (TeamSummary, MatchupPanel) rendered twice with only a
+// side/data prop differing, so the two halves are geometrically
+// identical by construction and can't drift out of alignment with each
+// other as opponents change.
+//
 // Color system: cream page, Michigan navy for essentially all text and
 // structure, maize used only as tiny accents (a seal line, one divider,
 // the wordmark). Deliberately neutral otherwise -- no opponent-specific
-// color anywhere in the base template (see git log: an earlier round
-// gave the opponent a fixed warm-brown family, which read well for one
-// matchup but wasn't actually template-neutral -- a team with no natural
-// "warm" association would make the choice look arbitrary). Opponent
-// identity comes from the real logo and the team name text, not paint.
-// No quality-based rank coloring either.
+// color anywhere in the base template. Opponent identity comes from the
+// real logo and the team name text, not paint.
 import { teamLogoUrl } from "../team-assets";
 import { teamAbbreviation } from "../team-colors";
 import type { MatchupGraphicData, PhaseEdgeRow, PossessionPhase } from "./types";
@@ -36,6 +42,46 @@ const NEUTRAL_SURFACE = "#E9E5DE"; // very light warm gray: secondary surfaces (
 const NEUTRAL_DARK = "#5C6570"; // neutral dark gray: slider center tick, EVEN marker/text
 const LINE = "rgba(0,39,76,0.14)"; // navy at low opacity -- the one border system, used everywhere
 const CHIP_BORDER = "rgba(0,39,76,0.22)";
+
+// ---- the grid ----
+//
+// Canvas is 1600 wide with a 40px margin each side (1520px usable,
+// centered on x=800). Every zone below divides that same 1520px into
+// fixed pieces that sum exactly, so nothing is flex-computed and
+// nothing needs an eyeballed nudge to line up.
+
+const CANVAS_WIDTH = 1600;
+
+// Top section: TEAM | gap | FIELD POSITION | gap | TEAM.
+// 426 + 27 + 614 + 27 + 426 = 1520.
+const TOP_SIDE_WIDTH = 426;
+const TOP_CENTER_WIDTH = 614;
+const TOP_GAP = 27;
+
+// Matchup panel row: PANEL | gap | PANEL.
+// 746 + 28 + 746 = 1520.
+const PANEL_WIDTH = 746;
+const PANEL_GAP = 28;
+const PANEL_H_PADDING = 22;
+
+// Row grid inside a panel, shared by MatchupRow AND the owner-label/
+// legend header rows above the rows, so a rank chip and everything
+// that labels it share one center axis:
+// 80 + 14 + 300 + 14 + 80 + 14 + 200 = 702, exactly PANEL_WIDTH minus
+// its own left+right padding (746 - 44).
+const ROW_OFFENSE_COL = 80;
+const ROW_METRIC_COL = 300;
+const ROW_DEFENSE_COL = 80;
+const ROW_EDGE_COL = 200;
+const ROW_GAP = 14;
+const ROW_HEIGHT = 48;
+
+// Centers of the two rank columns, in the row grid's own coordinate
+// space (relative to the panel's padded content area) -- used to plant
+// the owner labels in Header row and MatchupRow's rank chips on the
+// same axis despite the label text being wider than an 80px column.
+const OFFENSE_COL_CENTER = ROW_OFFENSE_COL / 2;
+const DEFENSE_COL_CENTER = ROW_OFFENSE_COL + ROW_GAP + ROW_METRIC_COL + ROW_GAP + ROW_DEFENSE_COL / 2;
 
 // Uses the real team abbreviation (e.g. "WMU", "OU") rather than a
 // generic "OPP" -- an edge label must always explicitly name a team.
@@ -98,31 +144,35 @@ function OutlineIconBadge({ children }: { children: React.ReactNode }) {
 
 // ---- header (zone 1) ----
 
-// Logos are wrapped in equal-width boxes (the wider of the two real
-// logo widths) so the title block sits at the true center of the
-// 1600px canvas regardless of the two teams' logos having different
-// natural widths -- a plain space-between row would visually shift the
-// title toward whichever side has the narrower logo.
-const HEADER_LOGO_SLOT = 120;
+// The title/subtitle block never touches the logos' geometry at all --
+// it's a plain width:100% column with its own centered text, so it's
+// exactly centered on the canvas (x=800) no matter what the two logos
+// look like. The logos are anchored independently, symmetric about the
+// same 40px canvas margin used everywhere else (45 = 40 + 5px breathing
+// room; the opponent logo's *right* edge sits the same 45px from the
+// right canvas edge: 1600 - 45 = 1555).
+const HEADER_HEIGHT = 98;
+const MICH_LOGO_SIZE = 92;
+const OPP_LOGO_SIZE = 100;
 
 function Header({ data }: { data: MatchupGraphicData }) {
   const kickoff = new Date(data.kickoffISO);
   const dateLabel = kickoff.toLocaleDateString("en-US", { timeZone: "America/New_York", weekday: "long", month: "long", day: "numeric", year: "numeric" });
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: NAVY, padding: "3px 40px" }}>
-      <div style={{ display: "flex", width: HEADER_LOGO_SLOT, justifyContent: "flex-start" }}>
+    <div style={{ display: "flex", flexDirection: "column", position: "relative", width: "100%", height: HEADER_HEIGHT, backgroundColor: NAVY, justifyContent: "center" }}>
+      <div style={{ display: "flex", position: "absolute", left: 45, top: (HEADER_HEIGHT - MICH_LOGO_SIZE) / 2 }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={teamLogoUrl(data.michigan.teamId, 256)} width={92} height={92} alt="" />
+        <img src={teamLogoUrl(data.michigan.teamId, 256)} width={MICH_LOGO_SIZE} height={MICH_LOGO_SIZE} alt="" />
       </div>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "baseline", fontFamily: "Barlow Condensed", fontSize: 58, fontWeight: 700, color: CREAM_TEXT, lineHeight: 1 }}>
+      <div style={{ display: "flex", position: "absolute", left: 1555 - OPP_LOGO_SIZE, top: (HEADER_HEIGHT - OPP_LOGO_SIZE) / 2 }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={teamLogoUrl(data.opponent.teamId, 256)} width={OPP_LOGO_SIZE} height={OPP_LOGO_SIZE} alt="" />
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
+        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "center", width: "100%", fontFamily: "Barlow Condensed", fontSize: 58, fontWeight: 700, color: CREAM_TEXT, lineHeight: 1 }}>
           MICHIGAN<span style={{ display: "flex", fontFamily: "Inter", fontSize: 28, fontWeight: 600, color: "rgba(245,240,230,0.55)", margin: "0 16px" }}>vs</span>{data.opponent.name.toUpperCase()}
         </div>
-        <div style={{ display: "flex", fontFamily: "Inter", fontSize: 18, fontWeight: 700, color: "rgba(245,240,230,0.8)", letterSpacing: 1.2, marginTop: 6 }}>{`WEEK ${data.week} · ${dateLabel.toUpperCase()} · ${data.venue.toUpperCase()}`}</div>
-      </div>
-      <div style={{ display: "flex", width: HEADER_LOGO_SLOT, justifyContent: "flex-end" }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={teamLogoUrl(data.opponent.teamId, 256)} width={100} height={100} alt="" />
+        <div style={{ display: "flex", justifyContent: "center", width: "100%", fontFamily: "Inter", fontSize: 18, fontWeight: 700, color: "rgba(245,240,230,0.8)", letterSpacing: 1.2, marginTop: 6 }}>{`WEEK ${data.week} · ${dateLabel.toUpperCase()} · ${data.venue.toUpperCase()}`}</div>
       </div>
     </div>
   );
@@ -133,7 +183,7 @@ function Header({ data }: { data: MatchupGraphicData }) {
 // scale.
 function RankChip({ rank }: { rank: number }) {
   return (
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: OFFWHITE, border: `1.5px solid ${CHIP_BORDER}`, borderRadius: 6, padding: "4px 13px", minWidth: 56 }}>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: OFFWHITE, border: `1.5px solid ${CHIP_BORDER}`, borderRadius: 6, padding: "4px 10px", minWidth: 52 }}>
       <span style={{ fontFamily: "Barlow Condensed", fontSize: 23, fontWeight: 700, color: NAVY }}>{`#${rank}`}</span>
     </div>
   );
@@ -145,13 +195,16 @@ function VDivider({ height }: { height: number }) {
 
 // ---- zone 2: team snapshot ----
 
-// Identical background, identical run/pass colors, identical padding
-// for both teams -- the only variable between the two call sites is
-// which data and which side text aligns to.
-function TeamColumn({ name, quality, runPct, align }: { name: string; quality: MatchupGraphicData["michigan"]["quality"]; runPct: number; align: "left" | "right" }) {
+// ONE component for both sides of the top section. Fixed 426px width
+// (not flex:1) so its size is a grid fact, not a computed one; `side`
+// is the only thing that differs between the two call sites -- same
+// background, same padding, same typography, same rank sizes, same bar
+// width on both sides.
+function TeamSummary({ name, quality, runPct, side }: { name: string; quality: MatchupGraphicData["michigan"]["quality"]; runPct: number; side: "left" | "right" }) {
   const passPct = 100 - runPct;
+  const alignItems = side === "left" ? "flex-start" : "flex-end";
   return (
-    <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: align === "left" ? "flex-start" : "flex-end", justifyContent: "center", backgroundColor: CARD_CREAM, padding: "4px 22px" }}>
+    <div style={{ display: "flex", flexDirection: "column", width: TOP_SIDE_WIDTH, alignItems, justifyContent: "center", backgroundColor: CARD_CREAM, padding: "4px 22px" }}>
       <span style={{ fontFamily: "Barlow Condensed", fontSize: 26, fontWeight: 700, color: NAVY }}>{name.toUpperCase()}</span>
       <div style={{ display: "flex", flexDirection: "row", alignItems: "baseline", gap: 10, marginTop: 2 }}>
         <span style={{ fontFamily: "Barlow Condensed", fontSize: 60, fontWeight: 700, color: NAVY, lineHeight: 1 }}>{`#${quality.overall.rank}`}</span>
@@ -196,7 +249,9 @@ function FieldPositionMarker({ abbr, leftPct, lift }: { abbr: string; leftPct: n
 // Every sub-element (title, ticks, track, readout, edge badge) is an
 // explicit fixed width, and every one is centered via the parent's own
 // alignItems:"center" -- so they all share the same horizontal center
-// axis regardless of their own differing widths.
+// axis regardless of their own differing widths. This whole block is
+// itself centered inside the 614px center column by TeamSnapshotZone,
+// which is what lands it exactly on x=800.
 function FieldPositionMini({ data, michAbbr, oppAbbr }: { data: MatchupGraphicData; michAbbr: string; oppAbbr: string }) {
   const mich = data.michigan.fieldPosition;
   const opp = data.opponent.fieldPosition;
@@ -242,17 +297,21 @@ function FieldPositionMini({ data, michAbbr, oppAbbr }: { data: MatchupGraphicDa
   );
 }
 
-// Both TeamColumns are flex:1 (equal width by construction) with
-// identical divider spacing on each side of the center column, so the
-// field-position block is centered in the true middle third of the row.
+// Five explicit-width children (426 / 27 / 614 / 27 / 426) summing to
+// exactly 1520px -- no flex:1, no gap shorthand standing in for a real
+// number. The two dividers are their own 27px-wide slots so the gap
+// itself always contains a visible, centered rule rather than blank
+// flex spacing.
 function TeamSnapshotZone({ data, michAbbr, oppAbbr }: { data: MatchupGraphicData; michAbbr: string; oppAbbr: string }) {
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch", justifyContent: "space-between" }}>
-      <TeamColumn name={data.michigan.name} quality={data.michigan.quality} runPct={Math.round(data.michigan.tendencies.rushDecisionRate * 100)} align="left" />
-      <div style={{ display: "flex", alignItems: "center", padding: "0 26px" }}><VDivider height={150} /></div>
-      <div style={{ display: "flex", alignItems: "center" }}><FieldPositionMini data={data} michAbbr={michAbbr} oppAbbr={oppAbbr} /></div>
-      <div style={{ display: "flex", alignItems: "center", padding: "0 26px" }}><VDivider height={150} /></div>
-      <TeamColumn name={data.opponent.name} quality={data.opponent.quality} runPct={Math.round(data.opponent.tendencies.rushDecisionRate * 100)} align="right" />
+    <div style={{ display: "flex", flexDirection: "row" }}>
+      <TeamSummary name={data.michigan.name} quality={data.michigan.quality} runPct={Math.round(data.michigan.tendencies.rushDecisionRate * 100)} side="left" />
+      <div style={{ display: "flex", width: TOP_GAP, alignItems: "center", justifyContent: "center" }}><VDivider height={150} /></div>
+      <div style={{ display: "flex", width: TOP_CENTER_WIDTH, alignItems: "center", justifyContent: "center" }}>
+        <FieldPositionMini data={data} michAbbr={michAbbr} oppAbbr={oppAbbr} />
+      </div>
+      <div style={{ display: "flex", width: TOP_GAP, alignItems: "center", justifyContent: "center" }}><VDivider height={150} /></div>
+      <TeamSummary name={data.opponent.name} quality={data.opponent.quality} runPct={Math.round(data.opponent.tendencies.rushDecisionRate * 100)} side="right" />
     </div>
   );
 }
@@ -263,36 +322,27 @@ function TeamSnapshotZone({ data, michAbbr, oppAbbr }: { data: MatchupGraphicDat
 // renders right (row.offense / row.defense, never a "michigan"/
 // "opponent" pair) -- that's what makes the two panels' internal layout
 // identical while the teams occupying each side flip between them.
-//
-// The four column widths below (96 / flex:1 / 96 / 168) are shared by
-// PhaseRow AND the ownership-header row in PhasePanel, so a rank chip
-// and the label naming who owns it sit on the exact same center axis.
-// The owner labels use the same MICH/{abbr} short form as the legend
-// and edge chips rather than "MICHIGAN OFFENSE" -- Satori doesn't
-// symmetrically center a flex child wider than its box (confirmed by
-// measuring rendered pixels), it anchors at the box's own start edge,
-// so a label much wider than this 96px column would read as
-// left-shifted relative to the rank chip actually centered in it.
-const RANK_COL = 96;
-const EDGE_COL = 168;
-const ROW_GAP = 14;
 
 // `flip` mirrors the marker's position (row.score is always
 // Michigan-centric, but which side is "offense" flips between panels)
 // so "left side of the slider" always means "the team in the offense
 // column," matching the rank chip beside it. This is an alignment fact,
-// not a color one -- the track itself is a single neutral color now.
-function PhaseRow({ row, opponentAbbr, flip }: { row: PhaseEdgeRow; opponentAbbr: string; flip: boolean }) {
+// not a color one -- the track itself is a single neutral color.
+//
+// Fixed ROW_HEIGHT (not content-driven padding) so all five rows in
+// both panels are pixel-identical in height, with no per-row margins --
+// that's what guarantees row N sits at the same y in both panels.
+function MatchupRow({ row, opponentAbbr, flip }: { row: PhaseEdgeRow; opponentAbbr: string; flip: boolean }) {
   const hasData = row.tier !== "insufficient";
   const rawMarkerPct = 50 - (row.score ?? 0) / 2;
   const markerPct = flip ? 100 - rawMarkerPct : rawMarkerPct;
   const markerColor = row.direction === "even" ? NEUTRAL_DARK : NAVY;
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: ROW_GAP, padding: "4px 0", borderTop: `1px solid ${LINE}` }}>
-      <div style={{ display: "flex", width: RANK_COL, justifyContent: "center" }}>
+    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: ROW_GAP, height: ROW_HEIGHT, borderTop: `1px solid ${LINE}` }}>
+      <div style={{ display: "flex", width: ROW_OFFENSE_COL, justifyContent: "center" }}>
         <RankChip rank={row.offense.rank} />
       </div>
-      <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
+      <div style={{ display: "flex", flexDirection: "column", width: ROW_METRIC_COL }}>
         <span style={{ fontFamily: "Barlow Condensed", fontSize: 21, fontWeight: 700, color: NAVY, letterSpacing: 0.2 }}>{row.label}</span>
         <div style={{ display: "flex", position: "relative", height: 4, marginTop: 5 }}>
           <div style={{ display: "flex", width: "100%", height: "100%", borderRadius: 2, backgroundColor: NEUTRAL_TRACK }} />
@@ -300,62 +350,88 @@ function PhaseRow({ row, opponentAbbr, flip }: { row: PhaseEdgeRow; opponentAbbr
           {hasData && <div style={{ display: "flex", position: "absolute", left: `${markerPct}%`, top: -5.5, width: 15, height: 15, borderRadius: 7.5, backgroundColor: markerColor, marginLeft: -7.5, border: `2px solid ${CARD_CREAM}` }} />}
         </div>
       </div>
-      <div style={{ display: "flex", width: RANK_COL, justifyContent: "center" }}>
+      <div style={{ display: "flex", width: ROW_DEFENSE_COL, justifyContent: "center" }}>
         <RankChip rank={row.defense.rank} />
       </div>
-      <div style={{ display: "flex", width: EDGE_COL, justifyContent: "center", backgroundColor: OFFWHITE, border: `1.5px solid ${CHIP_BORDER}`, borderRadius: 5, padding: "6px 8px" }}>
+      <div style={{ display: "flex", width: ROW_EDGE_COL, justifyContent: "center", backgroundColor: OFFWHITE, border: `1.5px solid ${CHIP_BORDER}`, borderRadius: 5, padding: "6px 8px" }}>
         <span style={{ fontFamily: "Barlow Condensed", fontSize: 15, fontWeight: 700, letterSpacing: 0.2, color: NAVY, textAlign: "center" }}>{hasData ? shortVerdict(row.tier, row.direction, opponentAbbr) : "NO DATA"}</span>
       </div>
     </div>
   );
 }
 
-// `orientation` is the one piece of panel-role data everything else in
-// this component derives from -- which real team sits in the offense
-// column (left) here is the only thing that differs between the two
-// panels, so column labels, the legend, and the slider's flip all read
-// off this one flag rather than being written twice by hand.
-function PhasePanel({ phase, title, opponentAbbr, orientation }: { phase: PossessionPhase; title: string; opponentAbbr: string; orientation: "michigan-left" | "opponent-left" }) {
-  const flip = orientation === "opponent-left";
-  const leftOwnerLabel = flip ? `${opponentAbbr} OFFENSE` : "MICH OFFENSE";
-  const rightOwnerLabel = flip ? "MICH DEFENSE" : `${opponentAbbr} DEFENSE`;
+// Satori does not symmetrically center a flex child that's wider than
+// its box -- confirmed by measuring rendered pixels, it anchors the
+// child at the box's own start edge instead of splitting the overflow
+// evenly. "MICHIGAN OFFENSE" is far wider than the 80px rank column it
+// must be centered over, so centering it can't go through
+// justifyContent on an 80px box. Instead this renders it in a
+// comfortably wide (220px) box, absolutely positioned so *that box's*
+// center -- not the rank column's box -- lands exactly on centerX; a
+// wide box centering a smaller child is the ordinary, already-proven
+// case, so the label's own text still centers correctly inside it.
+function OwnerLabel({ label, centerX }: { label: string; centerX: number }) {
+  const boxWidth = 220;
+  return (
+    <div style={{ display: "flex", position: "absolute", top: 0, left: centerX - boxWidth / 2, width: boxWidth, justifyContent: "center" }}>
+      <span style={{ fontFamily: "Inter", fontSize: 12.5, fontWeight: 800, letterSpacing: 0.4, color: NAVY, whiteSpace: "nowrap" }}>{label}</span>
+    </div>
+  );
+}
+
+// ONE component for both possession panels. Everything -- which real
+// team is "offense," the panel title, the owner labels, the legend, and
+// the slider flip -- is derived from `phase` alone (offenseTeamName /
+// defenseTeamName), so the two call sites differ only in which phase
+// object they pass. Width, padding, header height, row height, and
+// column widths are identical by construction, not by two copies
+// happening to agree.
+function MatchupPanel({ phase, opponentAbbr }: { phase: PossessionPhase; opponentAbbr: string }) {
+  const flip = phase.defenseTeamName === "Michigan";
+  const leftOwnerLabel = flip ? `${opponentAbbr} OFFENSE` : "MICHIGAN OFFENSE";
+  const rightOwnerLabel = flip ? "MICHIGAN DEFENSE" : `${opponentAbbr} DEFENSE`;
   const legendLeft = flip ? opponentAbbr : "MICH";
   const legendRight = flip ? "MICH" : opponentAbbr;
+  const title = `WHEN ${phase.offenseTeamName.toUpperCase()} HAS THE BALL`;
   return (
-    <div style={{ display: "flex", flexDirection: "column", flex: 1, border: `1px solid ${CHIP_BORDER}`, borderRadius: 8, overflow: "hidden", backgroundColor: CARD_CREAM }}>
-      <div style={{ display: "flex", backgroundColor: NAVY, padding: "8px 20px", justifyContent: "center" }}>
+    // No overflow:hidden here -- the owner labels below are deliberately
+    // wider than the narrow rank column they're centered over (see
+    // OwnerLabel), and on the side closest to this panel's own edge that
+    // overflow can extend past the panel's own boundary. overflow:hidden
+    // would silently clip it. The header bar gets its own top-corner
+    // radius instead, so the rounded-corner look doesn't depend on
+    // clipping the panel's contents.
+    <div style={{ display: "flex", flexDirection: "column", width: PANEL_WIDTH, border: `1px solid ${CHIP_BORDER}`, borderRadius: 8, backgroundColor: CARD_CREAM }}>
+      <div style={{ display: "flex", width: "100%", backgroundColor: NAVY, padding: "8px 20px", justifyContent: "center", borderTopLeftRadius: 7, borderTopRightRadius: 7 }}>
         <span style={{ fontFamily: "Barlow Condensed", fontSize: 25, fontWeight: 700, color: CREAM_TEXT, lineHeight: 1 }}>{title}</span>
       </div>
-      <div style={{ display: "flex", flexDirection: "column", padding: "6px 22px 6px" }}>
-        {/* Same 4-column widths as PhaseRow below, so each owner label's
-            center lands exactly on its rank column's center. Text is
-            allowed to overflow its 96px anchor symmetrically (no
-            overflow:hidden) rather than being confined to it -- "MICHIGAN
-            OFFENSE" is wider than 96px, but its *center* still matches
-            the rank chip's center, which is the actual goal. */}
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: ROW_GAP }}>
-          <div style={{ display: "flex", width: RANK_COL, justifyContent: "center" }}>
-            <span style={{ fontFamily: "Inter", fontSize: 12.5, fontWeight: 800, letterSpacing: 0.4, color: NAVY, whiteSpace: "nowrap" }}>{leftOwnerLabel}</span>
-          </div>
-          <div style={{ display: "flex", flex: 1 }} />
-          <div style={{ display: "flex", width: RANK_COL, justifyContent: "center" }}>
-            <span style={{ fontFamily: "Inter", fontSize: 12.5, fontWeight: 800, letterSpacing: 0.4, color: NAVY, whiteSpace: "nowrap" }}>{rightOwnerLabel}</span>
-          </div>
-          <div style={{ display: "flex", width: EDGE_COL }} />
+      <div style={{ display: "flex", flexDirection: "column", padding: `4px ${PANEL_H_PADDING}px` }}>
+        <div style={{ display: "flex", position: "relative", width: PANEL_WIDTH - PANEL_H_PADDING * 2, height: 14 }}>
+          <OwnerLabel label={leftOwnerLabel} centerX={OFFENSE_COL_CENTER} />
+          <OwnerLabel label={rightOwnerLabel} centerX={DEFENSE_COL_CENTER} />
         </div>
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "baseline", justifyContent: "center", gap: 10, marginTop: 3 }}>
-          <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 800, letterSpacing: 0.4, color: SLATE }}>{legendLeft}</span>
-          <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 600, color: SLATE }}>&larr;</span>
-          <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, letterSpacing: 0.6, color: SLATE }}>EVEN</span>
-          <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 600, color: SLATE }}>&rarr;</span>
-          <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 800, letterSpacing: 0.4, color: SLATE }}>{legendRight}</span>
+        {/* Same 4-column grid as MatchupRow below (via placeholder
+            spacer divs), so the legend sits centered specifically over
+            the metric column -- not the whole panel, which has a
+            different, off-center midpoint once the rank/edge columns
+            are unequal widths. */}
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: ROW_GAP, marginTop: 2 }}>
+          <div style={{ display: "flex", width: ROW_OFFENSE_COL }} />
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "baseline", justifyContent: "center", width: ROW_METRIC_COL, gap: 10 }}>
+            <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 800, letterSpacing: 0.4, color: SLATE }}>{legendLeft}</span>
+            <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 600, color: SLATE }}>&larr;</span>
+            <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, letterSpacing: 0.6, color: SLATE }}>EVEN</span>
+            <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 600, color: SLATE }}>&rarr;</span>
+            <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 800, letterSpacing: 0.4, color: SLATE }}>{legendRight}</span>
+          </div>
+          <div style={{ display: "flex", width: ROW_DEFENSE_COL }} />
+          <div style={{ display: "flex", width: ROW_EDGE_COL }} />
         </div>
-        {phase.rows.map((row) => <PhaseRow key={row.id} row={row} opponentAbbr={opponentAbbr} flip={flip} />)}
-        {/* Fixed minHeight so both panels' READ boxes match exactly --
-            the two sentences are genuinely different lengths (one
-            regularly wraps to two lines, one doesn't), so equal padding
-            alone doesn't guarantee equal height. */}
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", minHeight: 74, marginTop: 4, padding: "6px 16px", borderRadius: 6, backgroundColor: NEUTRAL_SURFACE }}>
+        {phase.rows.map((row) => <MatchupRow key={row.id} row={row} opponentAbbr={opponentAbbr} flip={flip} />)}
+        {/* Fixed height (not minHeight) so both panels' READ boxes match
+            exactly regardless of how long either generated sentence is --
+            the amount of text must never change the box's own height. */}
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: 72, marginTop: 3, padding: "6px 16px", borderRadius: 6, backgroundColor: NEUTRAL_SURFACE }}>
           <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 800, letterSpacing: 1, color: NAVY }}>THE READ</span>
           <span style={{ fontFamily: "Barlow Condensed", fontSize: 19, fontWeight: 700, color: NAVY, marginTop: 2, lineHeight: 1.15 }}>{phase.whatItMeans}</span>
         </div>
@@ -366,16 +442,21 @@ function PhasePanel({ phase, title, opponentAbbr, orientation }: { phase: Posses
 
 // ---- zone 4: prediction ----
 
-// Left and right blocks live in equal-width flex:1 regions (content
-// justified toward the center, so each block visually hugs the
-// projection in the middle) -- this guarantees the MFF projection sits
-// at the strip's true horizontal center regardless of how wide the win
-// probability and market blocks are, the same fix as the header logos.
+// Three literal equal-width (flex:1) columns -- win probability / MFF
+// projection / market -- rather than two flex regions hugging a
+// content-sized center. This is what guarantees the projection's own
+// center lands exactly on x=800 regardless of how wide its text is:
+// with a symmetric 40px outer margin and three equal columns, column 2
+// always spans the same fixed span of the strip no matter what it
+// contains. The divider lines are a border on the center column itself
+// (stretched to the row's full height) rather than a separately
+// positioned/sized element -- they fall exactly on the column
+// boundaries by construction.
 function PredictionOutlookZone({ data }: { data: MatchupGraphicData }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", width: "100%", backgroundColor: NAVY, padding: "10px 40px 8px" }}>
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "center", width: "100%" }}>
-        <div style={{ display: "flex", flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "flex-end" }}>
+    <div style={{ display: "flex", flexDirection: "column", width: "100%", backgroundColor: NAVY, padding: "7px 40px 6px" }}>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch", width: "100%" }}>
+        <div style={{ display: "flex", flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
           {data.prediction.type === "model" && data.prediction.winProbabilityPct != null && (
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
               <OutlineIconBadge><TrendGlyph /></OutlineIconBadge>
@@ -383,11 +464,10 @@ function PredictionOutlookZone({ data }: { data: MatchupGraphicData }) {
                 <span style={{ fontFamily: "Barlow Condensed", fontSize: 40, fontWeight: 700, color: CREAM_TEXT, lineHeight: 1 }}>{`${data.prediction.winProbabilityPct}%`}</span>
                 <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 700, letterSpacing: 0.6, color: "rgba(245,240,230,0.65)" }}>WIN PROBABILITY</span>
               </div>
-              <div style={{ display: "flex", width: 1, height: 46, backgroundColor: "rgba(245,240,230,0.25)", marginLeft: 40 }} />
             </div>
           )}
         </div>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div style={{ display: "flex", flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center", borderLeft: "1px solid rgba(245,240,230,0.25)", borderRight: "1px solid rgba(245,240,230,0.25)" }}>
           {data.prediction.type === "model" && (
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
               <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 700, letterSpacing: 0.6, color: "rgba(245,240,230,0.65)" }}>MFF PROJECTION</span>
@@ -405,10 +485,9 @@ function PredictionOutlookZone({ data }: { data: MatchupGraphicData }) {
             <span style={{ fontFamily: "Barlow Condensed", fontSize: 34, fontWeight: 700, color: "rgba(245,240,230,0.55)" }}>PREDICTION NOT AVAILABLE</span>
           )}
         </div>
-        <div style={{ display: "flex", flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "flex-start" }}>
+        <div style={{ display: "flex", flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
           {data.prediction.type === "model" && data.prediction.marketNote != null && (
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-              <div style={{ display: "flex", width: 1, height: 46, backgroundColor: "rgba(245,240,230,0.25)", marginRight: 40 }} />
               <OutlineIconBadge><DollarGlyph /></OutlineIconBadge>
               <div style={{ display: "flex", flexDirection: "column", marginLeft: 12 }}>
                 <span style={{ fontFamily: "Barlow Condensed", fontSize: 34, fontWeight: 700, color: CREAM_TEXT, lineHeight: 1 }}>{data.prediction.marketNote.replace("Market: ", "")}</span>
@@ -429,7 +508,7 @@ function PredictionOutlookZone({ data }: { data: MatchupGraphicData }) {
 
 function Footer() {
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "6px 40px", backgroundColor: CREAM }}>
+    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "5px 40px", backgroundColor: CREAM }}>
       <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 600, color: SLATE }}>2025 OPPONENT-ADJUSTED METRICS · FBS RANKS · MFF MODEL · MARKET LABELED SEPARATELY</span>
       <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 10 }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -447,7 +526,7 @@ export function MatchupGraphic({ data }: { data: MatchupGraphicData }) {
   const michAbbr = "MICH";
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", width: 1600, backgroundColor: CREAM, fontFamily: "Inter", border: `1px solid ${LINE}` }}>
+    <div style={{ display: "flex", flexDirection: "column", width: CANVAS_WIDTH, backgroundColor: CREAM, fontFamily: "Inter", border: `1px solid ${LINE}` }}>
       {/* Maize appears only as tiny accents -- this seal line, one divider above THE BOTTOM LINE, one under the field-position edge badge, and the wordmark image. */}
       <div style={{ display: "flex", width: "100%", height: 3, backgroundColor: MAIZE }} />
 
@@ -456,21 +535,11 @@ export function MatchupGraphic({ data }: { data: MatchupGraphicData }) {
       <div style={{ display: "flex", flexDirection: "column", padding: "3px 40px 0" }}>
         <TeamSnapshotZone data={data} michAbbr={michAbbr} oppAbbr={oppAbbr} />
 
-        <div style={{ display: "flex", width: "100%", height: 2, backgroundColor: NAVY, margin: "6px 0" }} />
+        <div style={{ display: "flex", width: "100%", height: 2, backgroundColor: NAVY, margin: "4px 0" }} />
 
-        <div style={{ display: "flex", flexDirection: "row", gap: 28 }}>
-          <PhasePanel
-            phase={data.whenMichiganHasBall}
-            title="WHEN MICHIGAN HAS THE BALL"
-            orientation="michigan-left"
-            opponentAbbr={oppAbbr}
-          />
-          <PhasePanel
-            phase={data.whenOpponentHasBall}
-            title={`WHEN ${data.opponent.name.toUpperCase()} HAS THE BALL`}
-            orientation="opponent-left"
-            opponentAbbr={oppAbbr}
-          />
+        <div style={{ display: "flex", flexDirection: "row", gap: PANEL_GAP }}>
+          <MatchupPanel phase={data.whenMichiganHasBall} opponentAbbr={oppAbbr} />
+          <MatchupPanel phase={data.whenOpponentHasBall} opponentAbbr={oppAbbr} />
         </div>
       </div>
 
