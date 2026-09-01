@@ -1,70 +1,72 @@
 // PRESENTATION layer: pure JSX. Takes a fully-analyzed MatchupGraphicData
 // and renders it -- there is deliberately no team name, statistic, edge
 // score, or sentence hardcoded anywhere in this file. Every word on the
-// graphic comes from `data`, `michiganColors`/`opponentColors`
+// graphic comes from `data`, `teamColors`/`accentColorOnLight`
 // (lib/team-colors.ts, keyed by teamId), or `teamLogoUrl`
 // (lib/team-assets.ts, keyed by teamId) -- swap the gameId this is built
 // from and the whole graphic becomes a different team's story with zero
 // JSX changes.
 //
-// The only logic in this file is tiny, purely presentational derivations
-// (a field-position readout string, one "the read" sentence) built from
-// data analysis.ts already computed -- no new stats, no new edge math.
+// Visual direction: a bright cream editorial "scouting sheet," not a dark
+// dashboard. Dark navy is used only as an accent -- header, section
+// labels, dividers, the prediction strip, the footer -- everything else
+// stays on the cream page background so the numbers stay easy to read.
 import { teamLogoUrl } from "../team-assets";
-import { accentColor, teamColors } from "../team-colors";
-import type { EdgeCategoryId, MatchupEdge, MatchupGraphicData, PossessionCard } from "./types";
+import { accentColorOnLight, teamColors } from "../team-colors";
+import type { EdgeDirection, EdgeTier, MatchupGraphicData, PhaseEdgeRow, PossessionPhase } from "./types";
 
-const BG = "#071421";
-const BG_2 = "#0a1c2c";
-const PANEL = "#0c2033";
-const LINE = "rgba(255,255,255,0.09)";
-const MAIZE = "#ffcb05";
-const WHITE = "#f5f7fa";
-const DIM = "#9aa9b8";
-const FAINT = "#6f8192";
+const CREAM = "#F5F0E6";
+const CREAM_TEXT = "#F5F0E6";
+const NAVY = "#0B1F33";
+const MAIZE = "#FFCB05";
+const SLATE = "#6E7781";
+const LINE = "rgba(11,31,51,0.14)";
+const PASS_BAR = "#9AA9B8";
 
-function CornerMark({ top, left }: { top: boolean; left: boolean }) {
-  const legLen = 14;
-  const thick = 2;
-  const vSide: Record<string, number> = top ? { top: 0 } : { bottom: 0 };
-  const hSide: Record<string, number> = left ? { left: 0 } : { right: 0 };
-  return (
-    <div style={{ display: "flex", position: "absolute", ...vSide, ...hSide, width: legLen, height: legLen }}>
-      <div style={{ display: "flex", position: "absolute", ...vSide, ...hSide, width: legLen, height: thick, backgroundColor: MAIZE, opacity: 0.65 }} />
-      <div style={{ display: "flex", position: "absolute", ...vSide, ...hSide, width: thick, height: legLen, backgroundColor: MAIZE, opacity: 0.65 }} />
-    </div>
-  );
+function hexToRgba(hex: string, alpha: number): string {
+  const clean = hex.replace("#", "");
+  const r = parseInt(clean.substring(0, 2), 16);
+  const g = parseInt(clean.substring(2, 4), 16);
+  const b = parseInt(clean.substring(4, 6), 16);
+  return `rgba(${r},${g},${b},${alpha})`;
 }
 
-function SectionLabel({ children }: { children: string }) {
-  return <span style={{ display: "flex", fontFamily: "Inter", fontSize: 12, fontWeight: 800, letterSpacing: 1.6, color: DIM }}>{children}</span>;
+// National-rank quality color -- a fixed, team-agnostic scale (top 25 =
+// green ... 101+ = red), unrelated to the maize/opponent-accent edge
+// colors below. This encodes "how good is this rank" in absolute terms;
+// the edge colors encode "which team" -- two different questions, so two
+// separate, non-overlapping color systems.
+function rankChipColors(rank: number): { bg: string; text: string } {
+  if (rank <= 25) return { bg: "rgba(22,101,52,0.14)", text: "#1a6b3c" };
+  if (rank <= 50) return { bg: "rgba(15,118,110,0.14)", text: "#0f6d64" };
+  if (rank <= 75) return { bg: "rgba(110,119,129,0.17)", text: "#5b636c" };
+  if (rank <= 100) return { bg: "rgba(194,120,3,0.15)", text: "#9c5c04" };
+  return { bg: "rgba(153,27,27,0.14)", text: "#96201f" };
 }
 
-// ---- tiny presentation-only derivations (no new analysis) ----
+function verdictColors(direction: EdgeDirection, opponentAccent: string): { bg: string; text: string; dot: string } {
+  if (direction === "michigan") return { bg: "rgba(255,203,5,0.24)", text: NAVY, dot: MAIZE };
+  if (direction === "opponent") return { bg: hexToRgba(opponentAccent, 0.16), text: NAVY, dot: opponentAccent };
+  return { bg: "rgba(110,119,129,0.14)", text: SLATE, dot: SLATE };
+}
 
-function fieldPositionReadout(mich: MatchupGraphicData["michigan"]["fieldPosition"], opp: MatchupGraphicData["opponent"]["fieldPosition"], michiganName: string, opponentName: string): string {
-  if (!mich || !opp) return "—";
+function shortVerdict(tier: EdgeTier, direction: EdgeDirection): string {
+  if (tier === "insufficient") return "NO DATA";
+  if (direction === "even") return "EVEN";
+  const team = direction === "michigan" ? "MICH" : "OPP";
+  if (tier === "strong") return `STRONG ${team} EDGE`;
+  if (tier === "moderate") return `${team} EDGE`;
+  return `SLIGHT ${team} EDGE`;
+}
+
+// ---- tiny presentation-only derivation (no new analysis) ----
+
+function fieldPositionEdge(mich: MatchupGraphicData["michigan"]["fieldPosition"], opp: MatchupGraphicData["opponent"]["fieldPosition"], michiganName: string, opponentName: string): string {
+  if (!mich || !opp) return "FIELD POSITION: DATA UNAVAILABLE";
   const diff = mich.ownYardLine - opp.ownYardLine; // higher own-yard-line = starts further from own goal = better
-  if (Math.abs(diff) < 1) return "NEARLY EVEN";
+  if (Math.abs(diff) < 1) return "FIELD POSITION: EVEN";
   const better = diff > 0 ? michiganName : opponentName;
-  return `${better.toUpperCase()} +${Math.abs(diff).toFixed(1)} YDS`;
-}
-
-const CATEGORY_PHRASE: Record<EdgeCategoryId, string> = {
-  efficiency: "in overall efficiency",
-  run: "on the ground",
-  pass: "through the air",
-  explosiveness: "in explosive plays",
-  situational: "on third down",
-};
-
-function matchupRead(edges: MatchupEdge[], michiganName: string, opponentName: string): string {
-  const scored = edges.filter((e) => e.score != null && e.direction !== "even");
-  if (scored.length === 0) return "This matchup grades out close to even across the board.";
-  const strongest = scored.reduce((a, b) => (Math.abs(b.score as number) > Math.abs(a.score as number) ? b : a));
-  const team = strongest.direction === "michigan" ? michiganName : opponentName;
-  const verb = strongest.direction === "michigan" ? "clearest advantage comes" : "strongest matchup advantage comes";
-  return `${team}'s ${verb} ${CATEGORY_PHRASE[strongest.id]}.`;
+  return `EDGE: ${better.toUpperCase()} +${Math.abs(diff).toFixed(1)} YDS`;
 }
 
 // ---- header ----
@@ -73,214 +75,226 @@ function Header({ data }: { data: MatchupGraphicData }) {
   const kickoff = new Date(data.kickoffISO);
   const dateLabel = kickoff.toLocaleDateString("en-US", { timeZone: "America/New_York", weekday: "long", month: "long", day: "numeric", year: "numeric" });
   return (
-    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "20px 56px 6px" }}>
+    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: NAVY, padding: "24px 56px" }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={teamLogoUrl(data.michigan.teamId, 256)} width={92} height={92} alt="" />
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "baseline", fontFamily: "Barlow Condensed", fontSize: 50, fontWeight: 700, color: WHITE }}>
-          MICHIGAN<span style={{ display: "flex", fontFamily: "Inter", fontSize: 23, fontWeight: 600, color: FAINT, margin: "0 14px" }}>vs</span>{data.opponent.name.toUpperCase()}
+        <div style={{ display: "flex", alignItems: "baseline", fontFamily: "Barlow Condensed", fontSize: 46, fontWeight: 700, color: CREAM_TEXT }}>
+          MICHIGAN<span style={{ display: "flex", fontFamily: "Inter", fontSize: 20, fontWeight: 600, color: "rgba(245,240,230,0.55)", margin: "0 16px" }}>vs</span>{data.opponent.name.toUpperCase()}
         </div>
-        <div style={{ display: "flex", fontFamily: "Inter", fontSize: 12, fontWeight: 700, color: MAIZE, letterSpacing: 2.2, marginTop: 4 }}>{`WEEK ${data.week} · ${dateLabel.toUpperCase()} · ${data.venue.toUpperCase()}`}</div>
+        <div style={{ display: "flex", fontFamily: "Inter", fontSize: 13, fontWeight: 700, color: MAIZE, letterSpacing: 2.2, marginTop: 8 }}>{`WEEK ${data.week} · ${dateLabel.toUpperCase()} · ${data.venue.toUpperCase()}`}</div>
       </div>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={teamLogoUrl(data.opponent.teamId, 256)} width={110} height={110} alt="" />
+      <img src={teamLogoUrl(data.opponent.teamId, 256)} width={92} height={92} alt="" />
     </div>
   );
 }
 
-// ---- team card + field position row ----
-
-function RankPair({ rank, label }: { rank: number; label: string }) {
+function SectionLabel({ children }: { children: string }) {
   return (
-    <div style={{ display: "flex", alignItems: "baseline", gap: 5 }}>
-      <span style={{ fontFamily: "Barlow Condensed", fontSize: 20, fontWeight: 700, color: WHITE }}>{`#${rank}`}</span>
-      <span style={{ fontFamily: "Inter", fontSize: 10.5, fontWeight: 700, color: DIM }}>{label}</span>
+    <div style={{ display: "flex", alignSelf: "flex-start", backgroundColor: NAVY, borderRadius: 3, padding: "7px 14px", marginBottom: 16 }}>
+      <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 800, letterSpacing: 1.8, color: CREAM_TEXT }}>{children}</span>
     </div>
   );
 }
 
-function TeamCard({ team, accent, teamId, align }: { team: MatchupGraphicData["michigan"]; accent: string; teamId: number; align: "left" | "right" }) {
-  const bgLogoSide = align === "left" ? { right: -18 } : { left: -18 };
+function RankChip({ rank }: { rank: number }) {
+  const { bg, text } = rankChipColors(rank);
   return (
-    <div style={{ display: "flex", position: "relative", flexDirection: "column", flex: 1, borderRadius: 8, border: `1px solid ${LINE}`, backgroundColor: PANEL, padding: "14px 20px", overflow: "hidden" }}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={teamLogoUrl(teamId, 256)} width={130} height={130} alt="" style={{ position: "absolute", opacity: 0.07, top: -18, ...bgLogoSide }} />
-      <span style={{ display: "flex", fontFamily: "Barlow Condensed", fontSize: 19, fontWeight: 700, color: accent, letterSpacing: 0.3 }}>{team.name.toUpperCase()}</span>
-      <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginTop: 2 }}>
-        <span style={{ fontFamily: "Barlow Condensed", fontSize: 44, fontWeight: 700, color: WHITE, lineHeight: 1 }}>{`#${team.quality.overall.rank}`}</span>
-        <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, color: DIM }}>OVERALL</span>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: bg, borderRadius: 6, padding: "5px 12px", minWidth: 46 }}>
+      <span style={{ fontFamily: "Barlow Condensed", fontSize: 22, fontWeight: 700, color: text }}>{`#${rank}`}</span>
+    </div>
+  );
+}
+
+// ---- team quality ----
+
+function TeamQuality({ data, opponentAccent }: { data: MatchupGraphicData; opponentAccent: string }) {
+  const rows = [
+    { label: "OVERALL", mich: data.michigan.quality.overall.rank, opp: data.opponent.quality.overall.rank },
+    { label: "OFFENSE", mich: data.michigan.quality.offense.rank, opp: data.opponent.quality.offense.rank },
+    { label: "DEFENSE", mich: data.michigan.quality.defense.rank, opp: data.opponent.quality.defense.rank },
+  ];
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <SectionLabel>TEAM QUALITY</SectionLabel>
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "0 2px 10px" }}>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 20, fontWeight: 700, color: NAVY }}>{data.michigan.name.toUpperCase()}</span>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 20, fontWeight: 700, color: opponentAccent }}>{data.opponent.name.toUpperCase()}</span>
       </div>
-      <div style={{ display: "flex", gap: 18, marginTop: 8 }}>
-        <RankPair rank={team.quality.offense.rank} label="OFF" />
-        <RankPair rank={team.quality.defense.rank} label="DEF" />
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", marginTop: 10, paddingTop: 10, borderTop: `1px solid ${LINE}` }}>
-        <span style={{ display: "flex", fontFamily: "Inter", fontSize: 9.5, fontWeight: 700, letterSpacing: 0.8, color: DIM }}>PLAY CALLS</span>
-        <div style={{ display: "flex", alignItems: "baseline", gap: 7, marginTop: 2 }}>
-          <span style={{ fontFamily: "Barlow Condensed", fontSize: 21, fontWeight: 700, color: accent }}>{`${Math.round(team.tendencies.rushDecisionRate * 100)}% RUN`}</span>
-          <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 600, color: DIM }}>{`${100 - Math.round(team.tendencies.rushDecisionRate * 100)}% PASS`}</span>
+      {rows.map((r) => (
+        <div key={r.label} style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "12px 2px", borderTop: `1px solid ${LINE}` }}>
+          <RankChip rank={r.mich} />
+          <span style={{ display: "flex", flex: 1, justifyContent: "center", fontFamily: "Inter", fontSize: 16, fontWeight: 700, color: NAVY, letterSpacing: 1.4 }}>{r.label}</span>
+          <RankChip rank={r.opp} />
         </div>
+      ))}
+    </div>
+  );
+}
+
+// ---- how they play ----
+
+function PlayCallColumn({ name, nameColor, barColor, runPct, passPct }: { name: string; nameColor: string; barColor: string; runPct: number; passPct: number }) {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
+      <span style={{ fontFamily: "Barlow Condensed", fontSize: 18, fontWeight: 700, color: nameColor }}>{name.toUpperCase()}</span>
+      <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginTop: 4 }}>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 27, fontWeight: 700, color: NAVY }}>{`${runPct}% RUN`}</span>
+        <span style={{ fontFamily: "Inter", fontSize: 15, fontWeight: 600, color: SLATE }}>{`${passPct}% PASS`}</span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "row", width: "100%", height: 14, borderRadius: 4, overflow: "hidden", marginTop: 9 }}>
+        <div style={{ display: "flex", width: `${runPct}%`, backgroundColor: barColor }} />
+        <div style={{ display: "flex", width: `${passPct}%`, backgroundColor: PASS_BAR }} />
       </div>
     </div>
   );
 }
 
-function FieldPositionPanel({ michiganColor, opponentColor, data }: { michiganColor: string; opponentColor: string; data: MatchupGraphicData }) {
+function HowTheyPlay({ data, opponentAccent }: { data: MatchupGraphicData; opponentAccent: string }) {
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <SectionLabel>PLAY-CALL SPLIT</SectionLabel>
+      <div style={{ display: "flex", flexDirection: "row", gap: 48 }}>
+        <PlayCallColumn name={data.michigan.name} nameColor={NAVY} barColor={MAIZE} runPct={Math.round(data.michigan.tendencies.rushDecisionRate * 100)} passPct={100 - Math.round(data.michigan.tendencies.rushDecisionRate * 100)} />
+        <PlayCallColumn name={data.opponent.name} nameColor={opponentAccent} barColor={opponentAccent} runPct={Math.round(data.opponent.tendencies.rushDecisionRate * 100)} passPct={100 - Math.round(data.opponent.tendencies.rushDecisionRate * 100)} />
+      </div>
+    </div>
+  );
+}
+
+// ---- field position ----
+
+function FieldPositionMarker({ color, leftPct }: { color: string; leftPct: number }) {
+  return (
+    <div style={{ display: "flex", position: "absolute", left: `${leftPct}%`, top: -7, width: 16, height: 16, borderRadius: 8, backgroundColor: NAVY, alignItems: "center", justifyContent: "center", marginLeft: -8 }}>
+      <div style={{ display: "flex", width: 9, height: 9, borderRadius: 5, backgroundColor: color }} />
+    </div>
+  );
+}
+
+function FieldPositionSection({ data, opponentAccent }: { data: MatchupGraphicData; opponentAccent: string }) {
   const mich = data.michigan.fieldPosition;
   const opp = data.opponent.fieldPosition;
-  const pct = (yardLine: number) => Math.max(3, Math.min(97, (yardLine / 50) * 100));
+  const pct = (yardLine: number) => Math.max(2, Math.min(98, (yardLine / 50) * 100));
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: 260, padding: "6px 14px" }}>
-      <SectionLabel>FIELD POSITION</SectionLabel>
-      <div style={{ display: "flex", justifyContent: "space-between", width: "100%", marginTop: 16 }}>
-        <span style={{ fontFamily: "Inter", fontSize: 9, fontWeight: 700, color: FAINT }}>OWN GOAL</span>
-        <span style={{ fontFamily: "Inter", fontSize: 9, fontWeight: 700, color: FAINT }}>20</span>
-        <span style={{ fontFamily: "Inter", fontSize: 9, fontWeight: 700, color: FAINT }}>40</span>
-        <span style={{ fontFamily: "Inter", fontSize: 9, fontWeight: 700, color: FAINT }}>50</span>
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <SectionLabel>AVERAGE STARTING FIELD POSITION</SectionLabel>
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "0 1px" }}>
+        {["OWN GOAL", "20", "30", "40", "50"].map((t) => (
+          <span key={t} style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, color: SLATE }}>{t}</span>
+        ))}
       </div>
-      <div style={{ display: "flex", position: "relative", width: "100%", height: 5, borderRadius: 3, backgroundColor: "rgba(255,255,255,0.1)", marginTop: 4 }}>
-        {mich && <div style={{ display: "flex", position: "absolute", left: `${pct(mich.ownYardLine)}%`, top: -6, width: 3, height: 17, backgroundColor: michiganColor, borderRadius: 2 }} />}
-        {opp && <div style={{ display: "flex", position: "absolute", left: `${pct(opp.ownYardLine)}%`, top: -6, width: 3, height: 17, backgroundColor: opponentColor, borderRadius: 2 }} />}
+      <div style={{ display: "flex", position: "relative", width: "100%", height: 3, backgroundColor: LINE, marginTop: 10 }}>
+        {mich && <FieldPositionMarker color={MAIZE} leftPct={pct(mich.ownYardLine)} />}
+        {opp && <FieldPositionMarker color={opponentAccent} leftPct={pct(opp.ownYardLine)} />}
       </div>
-      <div style={{ display: "flex", justifyContent: "space-between", width: "100%", marginTop: 16 }}>
-        <span style={{ fontFamily: "Barlow Condensed", fontSize: 16, fontWeight: 700, color: michiganColor }}>{mich ? `OWN ${mich.ownYardLine.toFixed(1)}` : "—"}</span>
-        <span style={{ fontFamily: "Barlow Condensed", fontSize: 16, fontWeight: 700, color: opponentColor }}>{opp ? `OWN ${opp.ownYardLine.toFixed(1)}` : "—"}</span>
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", marginTop: 26 }}>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 17, fontWeight: 700, color: NAVY }}>{`${data.michigan.name.toUpperCase()}: ${mich ? `OWN ${mich.ownYardLine.toFixed(1)}` : "—"}`}</span>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 17, fontWeight: 700, color: opponentAccent }}>{`${data.opponent.name.toUpperCase()}: ${opp ? `OWN ${opp.ownYardLine.toFixed(1)}` : "—"}`}</span>
       </div>
-      <div style={{ display: "flex", marginTop: 10, padding: "5px 14px", borderRadius: 6, backgroundColor: "rgba(255,255,255,0.05)" }}>
-        <span style={{ fontFamily: "Barlow Condensed", fontSize: 14, fontWeight: 700, color: WHITE }}>{fieldPositionReadout(mich, opp, data.michigan.name, data.opponent.name)}</span>
+      <div style={{ display: "flex", alignSelf: "center", marginTop: 16, backgroundColor: NAVY, borderRadius: 4, padding: "7px 18px" }}>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 15, fontWeight: 700, color: CREAM_TEXT, letterSpacing: 0.4 }}>{fieldPositionEdge(mich, opp, data.michigan.name, data.opponent.name)}</span>
       </div>
     </div>
   );
 }
 
-// ---- where's the edge: five compact cards ----
+// ---- possession phase (main centerpiece) ----
 
-function EdgeCard({ edge, michiganColor, opponentColor }: { edge: MatchupEdge; michiganColor: string; opponentColor: string }) {
-  const score = edge.score ?? 0;
-  const markerPct = 50 - score / 2; // Michigan favored -> left; see presentation notes below
-  const verdictColor = edge.direction === "michigan" ? michiganColor : edge.direction === "opponent" ? opponentColor : DIM;
+function PhaseRow({ row, opponentAccent }: { row: PhaseEdgeRow; opponentAccent: string }) {
+  const vcolors = verdictColors(row.direction, opponentAccent);
+  const hasData = row.tier !== "insufficient";
+  const markerPct = 50 - (row.score ?? 0) / 2;
   return (
-    <div style={{ display: "flex", flex: 1, flexDirection: "column", alignItems: "center", padding: "12px 8px", borderRadius: 8, border: `1px solid ${LINE}`, backgroundColor: PANEL }}>
-      <span style={{ fontFamily: "Barlow Condensed", fontSize: 15, fontWeight: 700, color: WHITE, textAlign: "center", letterSpacing: 0.2 }}>{edge.label}</span>
-      {edge.id === "efficiency" && <span style={{ fontFamily: "Inter", fontSize: 8.5, fontWeight: 600, color: FAINT, marginTop: 1 }}>Success Rate</span>}
-      <span style={{ fontFamily: "Inter", fontSize: 10.5, fontWeight: 800, color: verdictColor, marginTop: 8, textAlign: "center", letterSpacing: 0.2 }}>{edge.verdictLabel}</span>
-      <div style={{ display: "flex", position: "relative", width: "84%", height: 4, marginTop: 9, borderRadius: 2, backgroundColor: "rgba(255,255,255,0.12)" }}>
-        <div style={{ display: "flex", position: "absolute", left: "50%", top: -3, width: 1, height: 10, backgroundColor: LINE }} />
-        {edge.score != null && <div style={{ display: "flex", position: "absolute", left: `${markerPct}%`, top: -3, width: 10, height: 10, borderRadius: 5, backgroundColor: WHITE, border: `2px solid ${verdictColor}`, marginLeft: -5 }} />}
-      </div>
-      {edge.score != null ? (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: 9, gap: 2 }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
-            <span style={{ fontFamily: "Inter", fontSize: 9.5, fontWeight: 700, color: FAINT }}>{`MICH OFF #${edge.michigan.rank}`}</span>
-            <span style={{ fontFamily: "Inter", fontSize: 8, fontWeight: 500, color: FAINT }}>{`${(edge.michigan.value * 100).toFixed(1)}%`}</span>
-          </div>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
-            <span style={{ fontFamily: "Inter", fontSize: 9.5, fontWeight: 700, color: FAINT }}>{`OPP OFF #${edge.opponent.rank}`}</span>
-            <span style={{ fontFamily: "Inter", fontSize: 8, fontWeight: 500, color: FAINT }}>{`${(edge.opponent.value * 100).toFixed(1)}%`}</span>
-          </div>
+    <div style={{ display: "flex", flexDirection: "column", padding: "12px 2px", borderTop: `1px solid ${LINE}` }}>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "baseline", gap: 9, width: 150 }}>
+          <RankChip rank={row.offense.rank} />
+          {hasData && <span style={{ fontFamily: "Inter", fontSize: 12.5, fontWeight: 600, color: SLATE }}>{`${(row.offense.value * 100).toFixed(1)}%`}</span>}
         </div>
-      ) : (
-        <span style={{ fontFamily: "Inter", fontSize: 9.5, fontWeight: 700, color: FAINT, marginTop: 9 }}>DATA UNAVAILABLE</span>
-      )}
-    </div>
-  );
-}
-
-// ---- possession cards ----
-
-function shortTag(teamName: string): string {
-  return teamName === "Michigan" ? "MICH" : "OPP";
-}
-
-function PossessionCardView({ card, headingColor }: { card: PossessionCard; headingColor: string }) {
-  const isMichiganDefending = card.defenseTeamName === "Michigan";
-  const offenseTag = shortTag(card.offenseTeamName);
-  const defenseTag = shortTag(card.defenseTeamName);
-  return (
-    <div style={{ display: "flex", flex: 1, flexDirection: "column", borderRadius: 8, border: `1px solid ${LINE}`, backgroundColor: PANEL, overflow: "hidden" }}>
-      <div style={{ display: "flex", width: "100%", height: 3, backgroundColor: headingColor }} />
-      <div style={{ display: "flex", flexDirection: "column", padding: "14px 20px 16px" }}>
-        <span style={{ fontFamily: "Barlow Condensed", fontSize: 19, fontWeight: 700, color: WHITE }}>{`WHEN ${card.offenseTeamName.toUpperCase()} HAS THE BALL`}</span>
-        <div style={{ display: "flex", alignItems: "baseline", gap: 9, marginTop: 6 }}>
-          <span style={{ fontFamily: "Barlow Condensed", fontSize: 32, fontWeight: 700, color: headingColor }}>{`${card.playCalling.runPct}% RUN`}</span>
-          <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 600, color: DIM }}>{`${card.playCalling.passPct}% PASS`}</span>
+        <span style={{ display: "flex", flex: 1, justifyContent: "center", fontFamily: "Inter", fontSize: 16, fontWeight: 700, color: NAVY, letterSpacing: 0.6, textAlign: "center" }}>{row.label}</span>
+        <div style={{ display: "flex", flexDirection: "row-reverse", alignItems: "baseline", gap: 9, width: 150 }}>
+          <RankChip rank={row.defense.rank} />
+          {hasData && <span style={{ fontFamily: "Inter", fontSize: 12.5, fontWeight: 600, color: SLATE }}>{`${(row.defense.value * 100).toFixed(1)}%`}</span>}
         </div>
-
-        {card.bestEdge && (
-          <div style={{ display: "flex", flexDirection: "column", marginTop: 12, paddingTop: 11, borderTop: `1px solid ${LINE}` }}>
-            <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 800, letterSpacing: 1, color: DIM }}>BEST MATCHUP</span>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginTop: 3 }}>
-              <span style={{ fontFamily: "Barlow Condensed", fontSize: 22, fontWeight: 700, color: WHITE }}>{card.bestEdge.label}</span>
-              <span style={{ fontFamily: "Barlow Condensed", fontSize: 16, fontWeight: 700, color: headingColor }}>{`${card.offenseTeamName.toUpperCase()} →`}</span>
-            </div>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 5, marginTop: 2 }}>
-              <span style={{ fontFamily: "Inter", fontSize: 10.5, fontWeight: 700, color: FAINT }}>{`${offenseTag} OFF #${card.bestEdge.attacker.rank}`}</span>
-              <span style={{ fontFamily: "Inter", fontSize: 9, fontWeight: 500, color: FAINT }}>{`${(card.bestEdge.attacker.value * 100).toFixed(1)}%`}</span>
-              <span style={{ fontFamily: "Inter", fontSize: 10.5, fontWeight: 700, color: FAINT }}>{`· ${defenseTag} DEF #${card.bestEdge.defender.rank} allowed`}</span>
-              <span style={{ fontFamily: "Inter", fontSize: 9, fontWeight: 500, color: FAINT }}>{`${(card.bestEdge.defender.value * 100).toFixed(1)}%`}</span>
-            </div>
-            <span style={{ fontFamily: "Barlow Condensed", fontSize: 15, fontWeight: 700, color: WHITE, marginTop: 7, lineHeight: 1.2 }}>{card.bestEdge.sentence}</span>
-          </div>
-        )}
-
-        {card.resistance && (
-          <div style={{ display: "flex", flexDirection: "column", marginTop: 10, paddingTop: 10, borderTop: `1px solid ${LINE}` }}>
-            <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 800, letterSpacing: 1, color: DIM }}>{isMichiganDefending ? "MICHIGAN COUNTER" : `WATCH: ${card.defenseTeamName.toUpperCase()}`}</span>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 7, marginTop: 3 }}>
-              <span style={{ fontFamily: "Barlow Condensed", fontSize: 16, fontWeight: 700, color: WHITE }}>{card.resistance.label}</span>
-              <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 700, color: DIM }}>{`${defenseTag} #${card.resistance.rank}`}</span>
-              <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 500, color: FAINT }}>{`${(card.resistance.value * 100).toFixed(1)}%`}</span>
-            </div>
-          </div>
-        )}
+      </div>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 12, marginTop: 8 }}>
+        <div style={{ display: "flex", position: "relative", width: 64, height: 3, borderRadius: 2, backgroundColor: "rgba(11,31,51,0.13)" }}>
+          {hasData && <div style={{ display: "flex", position: "absolute", left: `${markerPct}%`, top: -3, width: 9, height: 9, borderRadius: 5, backgroundColor: vcolors.dot, marginLeft: -4.5 }} />}
+        </div>
+        <div style={{ display: "flex", backgroundColor: vcolors.bg, borderRadius: 3, padding: "4px 11px" }}>
+          <span style={{ fontFamily: "Inter", fontSize: 14, fontWeight: 800, letterSpacing: 0.5, color: vcolors.text }}>{shortVerdict(row.tier, row.direction)}</span>
+        </div>
       </div>
     </div>
   );
 }
 
-// ---- prediction hero footer ----
-
-function PredictionFooter({ data }: { data: MatchupGraphicData }) {
-  const read = matchupRead(data.edges, data.michigan.name, data.opponent.name);
+function PhaseSection({ phase, title, headingColor, opponentAccent, offenseLabel, defenseLabel }: { phase: PossessionPhase; title: string; headingColor: string; opponentAccent: string; offenseLabel: string; defenseLabel: string }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", borderRadius: 8, border: `1px solid ${LINE}`, backgroundImage: "linear-gradient(135deg, rgba(255,203,5,.07), rgba(12,32,51,.94))", padding: "16px 30px" }}>
-      <span style={{ display: "flex", alignSelf: "center", fontFamily: "Inter", fontSize: 13, fontWeight: 800, letterSpacing: 2, color: DIM }}>MFF MATCHUP VERDICT</span>
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 36, fontWeight: 700, color: NAVY }}>{title}</span>
+        <div style={{ display: "flex", width: 96, height: 4, backgroundColor: headingColor, marginTop: 6, borderRadius: 2 }} />
+      </div>
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", marginTop: 20, padding: "0 2px" }}>
+        <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 800, letterSpacing: 1, color: SLATE }}>{offenseLabel}</span>
+        <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 800, letterSpacing: 1, color: SLATE }}>{defenseLabel}</span>
+      </div>
+      {phase.rows.map((row) => <PhaseRow key={row.id} row={row} opponentAccent={opponentAccent} />)}
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 16, paddingTop: 16, borderTop: `2px solid ${NAVY}` }}>
+        <span style={{ fontFamily: "Inter", fontSize: 11.5, fontWeight: 800, letterSpacing: 1.4, color: NAVY }}>WHAT IT MEANS</span>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 21, fontWeight: 700, color: NAVY, marginTop: 5, lineHeight: 1.25 }}>{phase.whatItMeans}</span>
+      </div>
+    </div>
+  );
+}
+
+// ---- prediction ----
+
+function PredictionOutlook({ data }: { data: MatchupGraphicData }) {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", width: "100%", backgroundColor: NAVY, borderRadius: 6, padding: "24px 40px", alignItems: "center" }}>
+      <span style={{ fontFamily: "Inter", fontSize: 14, fontWeight: 800, letterSpacing: 2.6, color: "rgba(245,240,230,0.62)" }}>MATCHUP OUTLOOK</span>
 
       {data.prediction.type === "model" && (
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 46, marginTop: 8 }}>
-          {data.prediction.winProbabilityPct != null && (
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontFamily: "Barlow Condensed", fontSize: 30, fontWeight: 700, color: MAIZE }}>{`${data.prediction.winProbabilityPct}%`}</span>
-              <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 700, color: DIM, letterSpacing: 0.4 }}>WIN PROBABILITY</span>
-            </div>
-          )}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <span style={{ fontFamily: "Barlow Condensed", fontSize: 46, fontWeight: 700, color: WHITE, lineHeight: 1 }}>{data.prediction.marginLabel}</span>
-            <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 700, color: DIM, letterSpacing: 0.4, marginTop: 2 }}>{data.prediction.label}</span>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <span style={{ fontFamily: "Barlow Condensed", fontSize: 54, fontWeight: 700, color: CREAM_TEXT, marginTop: 8, lineHeight: 1 }}>{data.prediction.marginLabel}</span>
+          <div style={{ display: "flex", flexDirection: "row", gap: 30, marginTop: 12 }}>
+            {data.prediction.winProbabilityPct != null && (
+              <span style={{ fontFamily: "Inter", fontSize: 16, fontWeight: 700, color: MAIZE }}>{`${data.prediction.winProbabilityPct}% WIN PROBABILITY`}</span>
+            )}
+            {data.prediction.marketNote && (
+              <span style={{ fontFamily: "Inter", fontSize: 16, fontWeight: 600, color: "rgba(245,240,230,0.72)" }}>{data.prediction.marketNote}</span>
+            )}
           </div>
-          {data.prediction.marketNote && (
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <span style={{ fontFamily: "Barlow Condensed", fontSize: 22, fontWeight: 700, color: WHITE }}>{data.prediction.marketNote.replace("Market: ", "")}</span>
-              <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 700, color: DIM, letterSpacing: 0.4 }}>MARKET</span>
-            </div>
-          )}
         </div>
       )}
 
       {data.prediction.type === "market" && (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: 8 }}>
-          <span style={{ fontFamily: "Barlow Condensed", fontSize: 46, fontWeight: 700, color: WHITE, lineHeight: 1 }}>{data.prediction.spreadLabel}</span>
-          <span style={{ fontFamily: "Inter", fontSize: 11, fontWeight: 700, color: DIM, letterSpacing: 0.4, marginTop: 4 }}>{`${data.prediction.label} · ${data.prediction.book}`}</span>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <span style={{ fontFamily: "Inter", fontSize: 13, fontWeight: 800, letterSpacing: 1.8, color: MAIZE, marginTop: 10 }}>MARKET EXPECTATION</span>
+          <span style={{ fontFamily: "Barlow Condensed", fontSize: 54, fontWeight: 700, color: CREAM_TEXT, marginTop: 8, lineHeight: 1 }}>{data.prediction.spreadLabel}</span>
+          <span style={{ fontFamily: "Inter", fontSize: 15, fontWeight: 600, color: "rgba(245,240,230,0.72)", marginTop: 8 }}>{data.prediction.book}</span>
         </div>
       )}
 
       {data.prediction.type === "unavailable" && (
-        <span style={{ display: "flex", alignSelf: "center", fontFamily: "Barlow Condensed", fontSize: 28, fontWeight: 700, color: DIM, marginTop: 10 }}>PREDICTION NOT AVAILABLE</span>
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 38, fontWeight: 700, color: "rgba(245,240,230,0.55)", marginTop: 16 }}>NO PREDICTION AVAILABLE</span>
       )}
+    </div>
+  );
+}
 
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: 14, paddingTop: 12, borderTop: `1px solid ${LINE}` }}>
-        <span style={{ fontFamily: "Inter", fontSize: 9.5, fontWeight: 800, letterSpacing: 1.2, color: MAIZE }}>THE READ</span>
-        <span style={{ fontFamily: "Barlow Condensed", fontSize: 18, fontWeight: 700, color: WHITE, marginTop: 4, textAlign: "center" }}>{read}</span>
+function Footer() {
+  return (
+    <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "22px 0 30px", marginTop: 8 }}>
+      <span style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 600, color: SLATE }}>2025 opponent-adjusted metrics · FBS ranks · MFF model · Market line labeled separately</span>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="https://michiganfootballfocus.com/brand/michigan-football-focus.png" width={78} height={26} alt="" />
+        <span style={{ fontFamily: "Barlow Condensed", fontSize: 20, fontWeight: 700, color: NAVY }}>MICHIGANFOOTBALLFOCUS.COM</span>
       </div>
     </div>
   );
@@ -289,61 +303,51 @@ function PredictionFooter({ data }: { data: MatchupGraphicData }) {
 // ---- root ----
 
 export function MatchupGraphic({ data }: { data: MatchupGraphicData }) {
-  const michiganColors = teamColors(data.michigan.teamId);
   const opponentColors = teamColors(data.opponent.teamId);
-  const michiganAccent = accentColor(michiganColors);
-  const opponentAccent = accentColor(opponentColors);
+  const opponentAccent = accentColorOnLight(opponentColors);
 
   return (
-    <div style={{ display: "flex", position: "relative", flexDirection: "column", width: 1600, backgroundImage: `linear-gradient(165deg, ${BG_2} 0%, ${BG} 55%)`, fontFamily: "Inter", border: "1px solid rgba(255,203,5,0.28)" }}>
-      <div style={{ display: "flex", width: "100%", height: 3, backgroundColor: MAIZE }} />
-      <CornerMark top left /><CornerMark top left={false} /><CornerMark top={false} left /><CornerMark top={false} left={false} />
-
+    <div style={{ display: "flex", flexDirection: "column", width: 1600, backgroundColor: CREAM, fontFamily: "Inter", border: `1px solid ${LINE}` }}>
       <Header data={data} />
 
-      <div style={{ display: "flex", flexDirection: "column", padding: "8px 56px 0" }}>
-        {/* Team cards + field position */}
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch", gap: 14 }}>
-          <TeamCard team={data.michigan} accent={michiganAccent} teamId={data.michigan.teamId} align="left" />
-          <FieldPositionPanel michiganColor={michiganAccent} opponentColor={opponentAccent} data={data} />
-          <TeamCard team={data.opponent} accent={opponentAccent} teamId={data.opponent.teamId} align="right" />
+      <div style={{ display: "flex", flexDirection: "column", padding: "30px 60px 0" }}>
+        <TeamQuality data={data} opponentAccent={opponentAccent} />
+
+        <div style={{ display: "flex", flexDirection: "column", marginTop: 32 }}>
+          <HowTheyPlay data={data} opponentAccent={opponentAccent} />
         </div>
 
-        {/* Where's the edge */}
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "baseline", margin: "18px 0 10px" }}>
-          <SectionLabel>WHERE&apos;S THE EDGE?</SectionLabel>
-          <span style={{ fontFamily: "Inter", fontSize: 9, fontWeight: 600, color: FAINT }}>Success Rate = share of plays that stay on schedule</span>
-        </div>
-        <div style={{ display: "flex", flexDirection: "row", gap: 10 }}>
-          {data.edges.map((edge) => <EdgeCard key={edge.id} edge={edge} michiganColor={michiganAccent} opponentColor={opponentAccent} />)}
+        <div style={{ display: "flex", flexDirection: "column", marginTop: 32 }}>
+          <FieldPositionSection data={data} opponentAccent={opponentAccent} />
         </div>
 
-        {/* The two phases of the game */}
-        <div style={{ display: "flex", margin: "20px 0 10px" }}>
-          <SectionLabel>THE TWO PHASES OF THE GAME</SectionLabel>
-        </div>
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch", gap: 0 }}>
-          <PossessionCardView card={data.whenMichiganHasBall} headingColor={michiganAccent} />
-          <div style={{ display: "flex", width: 50, alignItems: "center", justifyContent: "center" }}>
-            <span style={{ fontFamily: "Barlow Condensed", fontSize: 22, fontWeight: 700, color: FAINT }}>VS</span>
-          </div>
-          <PossessionCardView card={data.whenOpponentHasBall} headingColor={opponentAccent} />
+        <div style={{ display: "flex", width: "100%", height: 2, backgroundColor: NAVY, margin: "36px 0 32px" }} />
+
+        <PhaseSection
+          phase={data.whenMichiganHasBall}
+          title="WHEN MICHIGAN HAS THE BALL"
+          headingColor={MAIZE}
+          opponentAccent={opponentAccent}
+          offenseLabel="MICHIGAN OFFENSE"
+          defenseLabel={`${data.opponent.name.toUpperCase()} DEFENSE`}
+        />
+
+        <div style={{ display: "flex", width: "100%", height: 2, backgroundColor: NAVY, margin: "32px 0" }} />
+
+        <PhaseSection
+          phase={data.whenOpponentHasBall}
+          title={`WHEN ${data.opponent.name.toUpperCase()} HAS THE BALL`}
+          headingColor={opponentAccent}
+          opponentAccent={opponentAccent}
+          offenseLabel={`${data.opponent.name.toUpperCase()} OFFENSE`}
+          defenseLabel="MICHIGAN DEFENSE"
+        />
+
+        <div style={{ display: "flex", flexDirection: "column", marginTop: 32 }}>
+          <PredictionOutlook data={data} />
         </div>
 
-        {/* Prediction */}
-        <div style={{ display: "flex", margin: "18px 0 0" }}>
-          <PredictionFooter data={data} />
-        </div>
-
-        {/* Footer */}
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "12px 0 18px", marginTop: 10, borderTop: `1px solid ${LINE}` }}>
-          <span style={{ fontFamily: "Inter", fontSize: 10, fontWeight: 600, color: DIM }}>2025 opponent-adjusted metrics · FBS ranks · MFF model · Market line labeled separately</span>
-          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://michiganfootballfocus.com/brand/michigan-football-focus.png" width={82} height={27} alt="" />
-            <span style={{ fontFamily: "Barlow Condensed", fontSize: 22, fontWeight: 700, color: MAIZE }}>MICHIGANFOOTBALLFOCUS.COM</span>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );

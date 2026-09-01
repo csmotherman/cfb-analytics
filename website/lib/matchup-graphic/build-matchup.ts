@@ -4,7 +4,7 @@
 // that's allowed to call both the raw reader and the analysis functions;
 // presentation.tsx never touches data-source.ts or does its own math.
 import { readMatchupGraphicSource } from "./data-source";
-import { buildMatchupEdges, buildPossessionCard, buildPredictionDisplay } from "./analysis";
+import { buildPossessionPhase, buildPredictionDisplay } from "./analysis";
 import type { MatchupGraphicData } from "./types";
 import { preseasonProjectionForGame } from "../preseason-power";
 import { marketLineFor } from "../market-lines";
@@ -29,9 +29,8 @@ export function buildMatchupGraphicData(gameId: string | number): MatchupGraphic
     venue: source.venue ?? "TBD",
     michigan: source.michigan,
     opponent: source.opponent,
-    edges: buildMatchupEdges(source.michigan, source.opponent),
-    whenMichiganHasBall: buildPossessionCard(source.michigan, source.opponent),
-    whenOpponentHasBall: buildPossessionCard(source.opponent, source.michigan),
+    whenMichiganHasBall: buildPossessionPhase(source.michigan, source.opponent, true, source.opponent.name),
+    whenOpponentHasBall: buildPossessionPhase(source.opponent, source.michigan, false, source.opponent.name),
     prediction: buildPredictionDisplay(
       projection && projection.dataAvailable ? { winProb: projection.winProb, predictedMargin: projection.predictedMargin, dataAvailable: true } : null,
       market ? { teamSpread: market.teamSpread, sportsbook: market.sportsbook } : null

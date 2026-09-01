@@ -5,7 +5,7 @@
 // math and the JSX can each change independently:
 //   data-source.ts   reads the published per-game JSON (raw ranked values)
 //   analysis.ts       pure functions: percentiles, edge scores, verdicts,
-//                      best-edge/resistance detection, prediction fallback
+//                      per-phase breakdowns, prediction fallback
 //   build-matchup.ts  orchestrates the two into one MatchupGraphicData
 //   presentation.tsx  the JSX -- takes MatchupGraphicData, has ZERO
 //                      opponent-specific logic or hardcoded team names
@@ -56,7 +56,7 @@ export type MatchupGraphicSource = {
 
 // ---- Analysis-layer output types ----
 
-/** "strong"/"moderate"/"slight" pair with a direction ("even" has no direction). Formatted into
+/** "strong"/"moderate"/"slight" pair with a direction ("even"/"insufficient" have no direction). Formatted into
  * a display string (e.g. "STRONG OKLAHOMA EDGE") by analysis.ts's formatEdgeVerdict, which is
  * where the real opponent name gets substituted in -- never a hardcoded team name in a type. */
 export type EdgeTier = "strong" | "moderate" | "slight" | "even" | "insufficient";
@@ -64,43 +64,37 @@ export type EdgeDirection = "michigan" | "opponent" | "even";
 
 export type EdgeCategoryId = "efficiency" | "run" | "pass" | "explosiveness" | "situational";
 
-export type MatchupEdge = {
+/**
+ * One category row inside a possession phase: the acting team's offense
+ * in this metric against the facing team's defense in this metric --
+ * never offense-vs-offense or defense-vs-defense. `score`/`tier`/`direction`
+ * are Michigan-centric (positive score = Michigan favored) so the same
+ * verdict vocabulary and color rule apply in both phases, even when
+ * Michigan is the one on defense. `offenseScore` is offense-centric
+ * (positive = the acting/offense team favored) and exists only to pick
+ * the offense's own best/worst category -- see analysis.ts.
+ */
+export type PhaseEdgeRow = {
   id: EdgeCategoryId;
   label: string;
-  score: number | null; // -100..100, positive = Michigan, null = insufficient data
+  offense: RankedValue & { value: number };
+  defense: RankedValue & { value: number };
+  score: number | null;
+  offenseScore: number | null;
   tier: EdgeTier;
   direction: EdgeDirection;
-  verdictLabel: string; // pre-formatted, e.g. "STRONG MICHIGAN EDGE" / "OKLAHOMA EDGE" / "INSUFFICIENT DATA"
-  michigan: RankedValue & { value: number };
-  opponent: RankedValue & { value: number };
+  verdictLabel: string;
 };
 
 export type PlayCallSplit = { runPct: number; passPct: number };
 
-export type BestEdge = {
-  metricId: GraphicMetricId;
-  label: string;
-  attacker: RankedValue & { value: number };
-  defender: RankedValue & { value: number };
-  score: number;
-  sentence: string;
-} | null;
-
-export type Resistance = {
-  metricId: GraphicMetricId;
-  label: string;
-  value: number;
-  rank: number;
-  sentence: string;
-} | null;
-
-/** "When [team] has the ball" card content. */
-export type PossessionCard = {
+/** "When [offenseTeamName] has the ball": offense's 5 metrics vs the facing defense's same 5, plus one deterministic summary sentence. */
+export type PossessionPhase = {
   offenseTeamName: string;
   defenseTeamName: string;
   playCalling: PlayCallSplit;
-  bestEdge: BestEdge;
-  resistance: Resistance;
+  rows: PhaseEdgeRow[];
+  whatItMeans: string;
 };
 
 export type PredictionDisplay =
@@ -117,8 +111,7 @@ export type MatchupGraphicData = {
   venue: string;
   michigan: TeamMatchupData;
   opponent: TeamMatchupData;
-  edges: MatchupEdge[];
-  whenMichiganHasBall: PossessionCard;
-  whenOpponentHasBall: PossessionCard;
+  whenMichiganHasBall: PossessionPhase;
+  whenOpponentHasBall: PossessionPhase;
   prediction: PredictionDisplay;
 };

@@ -39,23 +39,19 @@ function relativeLuminance(hex: string): number {
 }
 
 /**
- * Several real team color pairs have a secondary that's pure/near white
- * (Michigan State, Northwestern) or cream (Oklahoma, Nebraska), or a
- * primary/secondary that's pure black (Purdue) -- any of those wash out
- * or vanish on a dark navy card. This picks whichever of the two actual
- * team colors reads as a visible, distinct accent on a dark background,
- * rather than always defaulting to secondary. Falls back to secondary
- * unmodified if neither color is in the unusable range (the common case).
+ * For a light/cream background: pick whichever of the two team colors is
+ * dark enough to stay legible on a near-white card. Most programs' brand
+ * primary is already their dark, saturated color (WMU's brown, Oklahoma's
+ * crimson, Ohio State's scarlet), so this prefers primary and only drops
+ * to secondary when primary itself is too light to read (e.g. Purdue's
+ * tan primary -> falls back to its black secondary). This is the inverse
+ * of the old dark-background accent picker: on cream, a bright secondary
+ * like Michigan State's white or Oklahoma's cream secondary would vanish
+ * rather than pop, so "prefer the light one" would pick exactly wrong.
  */
-export function accentColor({ primary, secondary }: TeamColorPair): string {
-  // Upper bound is 0.85, not a rounder-looking 0.75: Michigan's own maize
-  // (0.783), USC's gold (0.783) and Maryland's gold (0.802) are all
-  // legitimate, clearly-visible accent colors that must stay in range --
-  // only true near-white/cream (0.87+, e.g. Oklahoma's 0.970, Wisconsin's
-  // 0.871) should get bumped to primary instead.
-  const secondaryLuminance = relativeLuminance(secondary);
-  const usable = secondaryLuminance > 0.12 && secondaryLuminance < 0.85;
-  if (usable) return secondary;
-  const primaryLuminance = relativeLuminance(primary);
-  return primaryLuminance > 0.12 && primaryLuminance < 0.85 ? primary : secondary;
+export function accentColorOnLight({ primary, secondary }: TeamColorPair): string {
+  const usable = (hex: string) => relativeLuminance(hex) < 0.55;
+  if (usable(primary)) return primary;
+  if (usable(secondary)) return secondary;
+  return primary;
 }

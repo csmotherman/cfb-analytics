@@ -3,19 +3,7 @@
 // returns plain values out, so it's independently testable and reusable
 // (a future non-image use of this data could call the exact same
 // functions). This is where "rank -> football sentence" happens.
-import type {
-  BestEdge,
-  EdgeCategoryId,
-  EdgeDirection,
-  EdgeTier,
-  GraphicMetricId,
-  MatchupEdge,
-  PlayCallSplit,
-  PossessionCard,
-  PredictionDisplay,
-  Resistance,
-  TeamMatchupData,
-} from "./types";
+import type { EdgeCategoryId, EdgeDirection, EdgeTier, GraphicMetricId, PhaseEdgeRow, PlayCallSplit, PossessionPhase, RankedValue, TeamMatchupData } from "./types";
 
 // National rank -> percentile, where 1.0 is the best team in the field
 // and 0.0 is the worst. Uses the field's own reported size rather than a
@@ -51,6 +39,12 @@ export function formatEdgeVerdict(score: number, opponentName: string): string {
   return `SLIGHT ${team} EDGE`;
 }
 
+export function playCallSplit(team: TeamMatchupData): PlayCallSplit {
+  const runPct = Math.round(team.tendencies.rushDecisionRate * 100);
+  return { runPct, passPct: 100 - runPct };
+}
+
+const CATEGORY_ORDER: EdgeCategoryId[] = ["efficiency", "run", "pass", "explosiveness", "situational"];
 const EDGE_CATEGORY_LABELS: Record<EdgeCategoryId, string> = {
   efficiency: "OVERALL EFFICIENCY",
   run: "RUN GAME",
@@ -66,121 +60,94 @@ const EDGE_CATEGORY_METRIC: Record<EdgeCategoryId, GraphicMetricId> = {
   situational: "thirdDownConversionRate",
 };
 
+function emptyRanked(): RankedValue & { value: number } {
+  return { value: 0, rank: 0, fieldSize: 0 };
+}
+
 /**
- * A category's edge is a blended UNIT comparison -- "who's the better run
- * team overall" -- averaging each team's own offensive and defensive
- * percentile in that metric, then comparing the two teams. This is
- * intentionally different from (and complements) the possession-card
- * edges below, which compare one team's offense directly against the
- * other's defense for a specific direction of play.
+ * Every row compares the acting team's OFFENSE metric against the facing
+ * team's DEFENSE metric in the same category -- never offense-vs-offense
+ * or defense-vs-defense (see types.ts's PhaseEdgeRow doc). `score` is
+ * always expressed Michigan-centric (positive = Michigan favored) so the
+ * verdict vocabulary and the maize/opponent-accent color rule work
+ * identically in both phases, even on the phase where Michigan is the
+ * defense. `offenseScore` keeps the un-flipped, offense-centric version
+ * (positive = the acting/offense team favored) so the offense's own
+ * best/worst category can be picked regardless of who that offense is.
  */
-export function buildMatchupEdges(michigan: TeamMatchupData, opponent: TeamMatchupData): MatchupEdge[] {
-  return (Object.keys(EDGE_CATEGORY_LABELS) as EdgeCategoryId[]).map((id) => {
+export function buildPhaseRows(offenseTeam: TeamMatchupData, defenseTeam: TeamMatchupData, offenseIsMichigan: boolean, opponentName: string): PhaseEdgeRow[] {
+  return CATEGORY_ORDER.map((id) => {
     const metricId = EDGE_CATEGORY_METRIC[id];
-    const michMetric = michigan.metrics[metricId];
-    const oppMetric = opponent.metrics[metricId];
-    if (!michMetric || !oppMetric) {
-      return { id, label: EDGE_CATEGORY_LABELS[id], score: null, tier: "insufficient" as const, direction: "even" as const, verdictLabel: "INSUFFICIENT DATA", michigan: { value: 0, rank: 0, fieldSize: 0 }, opponent: { value: 0, rank: 0, fieldSize: 0 } };
+    const off = offenseTeam.metrics[metricId]?.offense;
+    const def = defenseTeam.metrics[metricId]?.defense;
+    if (!off || !def) {
+      return { id, label: EDGE_CATEGORY_LABELS[id], offense: emptyRanked(), defense: emptyRanked(), score: null, offenseScore: null, tier: "insufficient" as const, direction: "even" as const, verdictLabel: "INSUFFICIENT DATA" };
     }
-    const michStrength = (percentileFromRank(michMetric.offense.rank, michMetric.offense.fieldSize) + percentileFromRank(michMetric.defense.rank, michMetric.defense.fieldSize)) / 2;
-    const oppStrength = (percentileFromRank(oppMetric.offense.rank, oppMetric.offense.fieldSize) + percentileFromRank(oppMetric.defense.rank, oppMetric.defense.fieldSize)) / 2;
-    const score = Math.round((michStrength - oppStrength) * 100);
+    const offenseScore = Math.round((percentileFromRank(off.rank, off.fieldSize) - percentileFromRank(def.rank, def.fieldSize)) * 100);
+    const score = offenseIsMichigan ? offenseScore : -offenseScore;
     return {
       id,
       label: EDGE_CATEGORY_LABELS[id],
+      offense: off,
+      defense: def,
       score,
+      offenseScore,
       tier: edgeTier(score),
       direction: edgeDirection(score),
-      verdictLabel: formatEdgeVerdict(score, opponent.name),
-      // "michigan"/"opponent" here surface each team's OFFENSE number for the category rail --
-      // the two teams' attacking numbers in this facet, side by side.
-      michigan: { value: michMetric.offense.value, rank: michMetric.offense.rank, fieldSize: michMetric.offense.fieldSize },
-      opponent: { value: oppMetric.offense.value, rank: oppMetric.offense.rank, fieldSize: oppMetric.offense.fieldSize },
+      verdictLabel: formatEdgeVerdict(score, opponentName),
     };
   });
 }
 
-export function playCallSplit(team: TeamMatchupData): PlayCallSplit {
-  const runPct = Math.round(team.tendencies.rushDecisionRate * 100);
-  return { runPct, passPct: 100 - runPct };
-}
-
-const DIRECTIONAL_METRICS: GraphicMetricId[] = ["rushSuccessRate", "passSuccessRate", "explosivePlayRate", "successRate"];
-const BEST_EDGE_LABEL: Record<GraphicMetricId, string> = {
-  successRate: "OVERALL EFFICIENCY",
-  rushSuccessRate: "RUN GAME",
-  passSuccessRate: "PASS GAME",
-  explosivePlayRate: "EXPLOSIVENESS",
-  thirdDownConversionRate: "3RD DOWN",
+const ADVANTAGE_PHRASE: Record<EdgeCategoryId, string> = {
+  efficiency: "in overall efficiency",
+  run: "on the ground",
+  pass: "through the air",
+  explosiveness: "in explosive plays",
+  situational: "on third down",
 };
-const BEST_EDGE_SENTENCE: Record<GraphicMetricId, (team: string) => string> = {
-  successRate: (team) => `${team} wins more snaps outright than this defense is used to allowing.`,
-  rushSuccessRate: (team) => `${team} should be able to stay ahead of schedule on the ground.`,
-  passSuccessRate: (team) => `${team}'s best matchup is through the air.`,
-  explosivePlayRate: (team) => `${team} has the stronger big-play profile in this matchup.`,
-  thirdDownConversionRate: (team) => `${team} has the edge on the down that ends drives.`,
+const BEST_PATH_NOUN: Record<EdgeCategoryId, string> = {
+  efficiency: "overall efficiency",
+  run: "the run game",
+  pass: "the passing game",
+  explosiveness: "explosive plays",
+  situational: "third down",
 };
-const RESISTANCE_LABEL: Record<GraphicMetricId, string> = {
-  successRate: "OVERALL DEFENSE",
-  rushSuccessRate: "RUN DEFENSE",
-  passSuccessRate: "PASS DEFENSE",
-  explosivePlayRate: "BIG-PLAY DEFENSE",
-  thirdDownConversionRate: "3RD-DOWN DEFENSE",
-};
-const RESISTANCE_SENTENCE: Record<GraphicMetricId, (team: string) => string> = {
-  successRate: (team) => `${team}'s defense is not to be taken lightly on early downs.`,
-  rushSuccessRate: (team) => `${team} can still make you earn it on the ground.`,
-  passSuccessRate: (team) => `${team}'s pass defense is a real problem to solve.`,
-  explosivePlayRate: (team) => `${team} limits the big play better than its offense suggests.`,
-  thirdDownConversionRate: (team) => `${team} gets off the field on 3rd down.`,
+const OWNS_NOUN: Record<EdgeCategoryId, string> = {
+  efficiency: "efficiency",
+  run: "running",
+  pass: "passing",
+  explosiveness: "explosive-play",
+  situational: "third-down",
 };
 
-/** offenseTeam's offense vs defenseTeam's defense, for every directional metric. Positive score favors offenseTeam. */
-function directionalEdges(offenseTeam: TeamMatchupData, defenseTeam: TeamMatchupData): Array<{ metricId: GraphicMetricId; score: number; attacker: { value: number; rank: number; fieldSize: number }; defender: { value: number; rank: number; fieldSize: number } }> {
-  return DIRECTIONAL_METRICS.map((metricId) => {
-    const off = offenseTeam.metrics[metricId]?.offense;
-    const def = defenseTeam.metrics[metricId]?.defense;
-    if (!off || !def) return null;
-    const score = Math.round((percentileFromRank(off.rank, off.fieldSize) - percentileFromRank(def.rank, def.fieldSize)) * 100);
-    return { metricId, score, attacker: off, defender: def };
-  }).filter((v): v is NonNullable<typeof v> => v !== null);
+/**
+ * A team's "best path" is whichever category it's least disadvantaged in
+ * -- not necessarily one it actually wins. Only call it a genuine
+ * "advantage" when the offense's own best category actually clears the
+ * even threshold; otherwise phrase it as a best path for the offense
+ * while naming what the defense actually owns, so a team can never be
+ * described as having an "advantage" it doesn't have (see analysis
+ * notes: possession-card copy must not conflate best option with edge).
+ */
+export function phaseWhatItMeans(rows: PhaseEdgeRow[], offenseTeamName: string, defenseTeamName: string): string {
+  const scored = rows.filter((r): r is PhaseEdgeRow & { offenseScore: number } => r.offenseScore != null);
+  if (scored.length === 0) return `${offenseTeamName} and ${defenseTeamName} don't have enough data here for a clear read.`;
+  const best = scored.reduce((a, b) => (b.offenseScore > a.offenseScore ? b : a));
+  const worst = scored.reduce((a, b) => (b.offenseScore < a.offenseScore ? b : a));
+  if (best.offenseScore > 5) return `${offenseTeamName}'s clearest advantage is ${ADVANTAGE_PHRASE[best.id]}.`;
+  if (worst.offenseScore < -5) return `${offenseTeamName}'s best path is ${BEST_PATH_NOUN[best.id]}, while ${defenseTeamName} owns the ${OWNS_NOUN[worst.id]} matchup.`;
+  return `${offenseTeamName} and ${defenseTeamName} grade out closely across the board.`;
 }
 
-function bestOffensiveEdge(offenseTeam: TeamMatchupData, defenseTeam: TeamMatchupData, offenseTeamName: string): BestEdge {
-  const edges = directionalEdges(offenseTeam, defenseTeam);
-  if (edges.length === 0) return null;
-  const best = edges.reduce((a, b) => (b.score > a.score ? b : a));
-  return {
-    metricId: best.metricId,
-    label: BEST_EDGE_LABEL[best.metricId],
-    attacker: best.attacker,
-    defender: best.defender,
-    score: best.score,
-    sentence: BEST_EDGE_SENTENCE[best.metricId](offenseTeamName),
-  };
-}
-
-/** The defending team's single best (lowest-rank) directional metric against this specific offense -- what to "watch out for." */
-function strongestResistance(offenseTeam: TeamMatchupData, defenseTeam: TeamMatchupData, defenseTeamName: string): Resistance {
-  const candidates = DIRECTIONAL_METRICS.map((metricId) => defenseTeam.metrics[metricId]?.defense && { metricId, def: defenseTeam.metrics[metricId].defense }).filter((v): v is { metricId: GraphicMetricId; def: { value: number; rank: number; fieldSize: number } } => Boolean(v));
-  if (candidates.length === 0) return null;
-  const best = candidates.reduce((a, b) => (b.def.rank < a.def.rank ? b : a));
-  return {
-    metricId: best.metricId,
-    label: RESISTANCE_LABEL[best.metricId],
-    value: best.def.value,
-    rank: best.def.rank,
-    sentence: RESISTANCE_SENTENCE[best.metricId](defenseTeamName),
-  };
-}
-
-export function buildPossessionCard(offenseTeam: TeamMatchupData, defenseTeam: TeamMatchupData): PossessionCard {
+export function buildPossessionPhase(offenseTeam: TeamMatchupData, defenseTeam: TeamMatchupData, offenseIsMichigan: boolean, opponentName: string): PossessionPhase {
+  const rows = buildPhaseRows(offenseTeam, defenseTeam, offenseIsMichigan, opponentName);
   return {
     offenseTeamName: offenseTeam.name,
     defenseTeamName: defenseTeam.name,
     playCalling: playCallSplit(offenseTeam),
-    bestEdge: bestOffensiveEdge(offenseTeam, defenseTeam, offenseTeam.name),
-    resistance: strongestResistance(offenseTeam, defenseTeam, defenseTeam.name),
+    rows,
+    whatItMeans: phaseWhatItMeans(rows, offenseTeam.name, defenseTeam.name),
   };
 }
 
@@ -189,13 +156,13 @@ export function buildPossessionCard(offenseTeam: TeamMatchupData, defenseTeam: T
 export type RawPrediction = { winProb: number | null; predictedMargin: number | null; dataAvailable: boolean } | null;
 export type RawMarket = { teamSpread: number; sportsbook: string } | null;
 
-export function buildPredictionDisplay(model: RawPrediction, market: RawMarket): PredictionDisplay {
+export function buildPredictionDisplay(model: RawPrediction, market: RawMarket) {
   if (model?.dataAvailable && model.predictedMargin != null) {
     const abs = Math.abs(model.predictedMargin).toFixed(1);
     const marginLabel = model.predictedMargin >= 0 ? `MICHIGAN BY ${abs}` : `OPPONENT BY ${abs}`;
     return {
-      type: "model",
-      label: "MFF PROJECTION",
+      type: "model" as const,
+      label: "MFF PROJECTION" as const,
       marginLabel,
       winProbabilityPct: model.winProb != null ? Math.round(model.winProb * 1000) / 10 : null,
       marketNote: market ? `Market: Michigan ${market.teamSpread >= 0 ? "+" : ""}${market.teamSpread}` : null,
@@ -203,7 +170,7 @@ export function buildPredictionDisplay(model: RawPrediction, market: RawMarket):
   }
   if (market) {
     const spreadLabel = `MICHIGAN ${market.teamSpread >= 0 ? "+" : ""}${market.teamSpread}`;
-    return { type: "market", label: "MARKET LINE", spreadLabel, book: market.sportsbook };
+    return { type: "market" as const, label: "MARKET LINE" as const, spreadLabel, book: market.sportsbook };
   }
-  return { type: "unavailable" };
+  return { type: "unavailable" as const };
 }
