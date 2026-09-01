@@ -4,7 +4,7 @@
 // that's allowed to call both the raw reader and the analysis functions;
 // presentation.tsx never touches data-source.ts or does its own math.
 import { readMatchupGraphicSource } from "./data-source";
-import { buildPossessionPhase, buildPredictionDisplay } from "./analysis";
+import { buildPossessionPhase, buildPredictionDisplay, matchupBottomLine } from "./analysis";
 import type { MatchupGraphicData } from "./types";
 import { preseasonProjectionForGame } from "../preseason-power";
 import { marketLineFor } from "../market-lines";
@@ -21,6 +21,9 @@ export function buildMatchupGraphicData(gameId: string | number): MatchupGraphic
   const projection = preseasonProjectionForGame(gameId);
   const market = marketLineFor(gameId);
 
+  const whenMichiganHasBall = buildPossessionPhase(source.michigan, source.opponent, true, source.opponent.name);
+  const whenOpponentHasBall = buildPossessionPhase(source.opponent, source.michigan, false, source.opponent.name);
+
   return {
     gameId: source.gameId,
     season: source.season,
@@ -29,11 +32,12 @@ export function buildMatchupGraphicData(gameId: string | number): MatchupGraphic
     venue: source.venue ?? "TBD",
     michigan: source.michigan,
     opponent: source.opponent,
-    whenMichiganHasBall: buildPossessionPhase(source.michigan, source.opponent, true, source.opponent.name),
-    whenOpponentHasBall: buildPossessionPhase(source.opponent, source.michigan, false, source.opponent.name),
+    whenMichiganHasBall,
+    whenOpponentHasBall,
     prediction: buildPredictionDisplay(
       projection && projection.dataAvailable ? { winProb: projection.winProb, predictedMargin: projection.predictedMargin, dataAvailable: true } : null,
       market ? { teamSpread: market.teamSpread, sportsbook: market.sportsbook } : null
     ),
+    bottomLine: matchupBottomLine(whenMichiganHasBall.rows, whenOpponentHasBall.rows, source.michigan.name, source.opponent.name),
   };
 }

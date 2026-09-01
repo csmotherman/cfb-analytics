@@ -192,7 +192,7 @@ export default function MichiganWesternMichiganPreview(){
       <section className="wm-share-section">
         <div className="wm-share-head"><div><div className="wm-section-label">THE MATCHUP GRAPHIC</div><h2>Team quality, identity, edges and the verdict.</h2></div><p>Same MFF matchup-graphic template we run for every opponent: national rank for both teams, how each wants to play, offense-vs-defense edges for both directions of the ball, and the model/market verdict.</p></div>
         <a className="wm-share-image" href="/matchup-graphic/401858428" target="_blank" rel="noreferrer">
-          <img src="/matchup-graphic/401858428" alt="Michigan vs. Western Michigan matchup graphic: team quality ranks, play-calling identity, offense-vs-defense matchup edges for both possession directions, and the MFF verdict" width={1600} height={2500}/>
+          <img src="/matchup-graphic/401858428" alt="Michigan vs. Western Michigan matchup graphic: team quality ranks, play-calling identity, offense-vs-defense matchup edges for both possession directions, and the MFF verdict" width={1600} height={2030}/>
         </a>
         <p className="wm-share-caption">Full matchup graphic — tap to open full size.</p>
         <BlueprintActions src="/matchup-graphic/401858428" filename="michigan-western-michigan-2026-matchup-graphic.png"/>

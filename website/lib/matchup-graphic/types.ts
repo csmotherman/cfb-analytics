@@ -114,4 +114,5 @@ export type MatchupGraphicData = {
   whenMichiganHasBall: PossessionPhase;
   whenOpponentHasBall: PossessionPhase;
   prediction: PredictionDisplay;
+  bottomLine: string;
 };

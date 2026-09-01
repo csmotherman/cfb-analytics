@@ -140,6 +140,35 @@ export function phaseWhatItMeans(rows: PhaseEdgeRow[], offenseTeamName: string, 
   return `${offenseTeamName} and ${defenseTeamName} grade out closely across the board.`;
 }
 
+/**
+ * One closing sentence for the prediction strip, built from the two
+ * phases' rows combined (score is already Michigan-centric in both, so
+ * they can be pooled directly). Picks a team's top TWO distinct edge
+ * categories when it has that many real ones -- distinct so a category
+ * that happens to favor the same team in both phases (e.g. Michigan's
+ * run game shows up as a Michigan edge in both "has the ball" rows)
+ * isn't named twice in the same sentence.
+ */
+export function matchupBottomLine(michiganPhaseRows: PhaseEdgeRow[], opponentPhaseRows: PhaseEdgeRow[], michiganName: string, opponentName: string): string {
+  const all = [...michiganPhaseRows, ...opponentPhaseRows].filter((r): r is PhaseEdgeRow & { score: number } => r.score != null);
+  const michEdges = all.filter((r) => r.direction === "michigan").sort((a, b) => b.score - a.score);
+  const oppEdges = all.filter((r) => r.direction === "opponent").sort((a, b) => a.score - b.score);
+  const distinctSecond = (first: PhaseEdgeRow, rest: PhaseEdgeRow[]) => rest.find((r) => r.id !== first.id);
+
+  if (michEdges.length > 0) {
+    const second = distinctSecond(michEdges[0], michEdges);
+    if (second) return `${michiganName} owns the stronger overall matchup, especially ${ADVANTAGE_PHRASE[michEdges[0].id]} and ${ADVANTAGE_PHRASE[second.id]}.`;
+    if (oppEdges.length > 0) return `${michiganName} has the edge ${ADVANTAGE_PHRASE[michEdges[0].id]}, but ${opponentName} can counter ${ADVANTAGE_PHRASE[oppEdges[0].id]}.`;
+    return `${michiganName} owns the stronger overall matchup, especially ${ADVANTAGE_PHRASE[michEdges[0].id]}.`;
+  }
+  if (oppEdges.length > 0) {
+    const second = distinctSecond(oppEdges[0], oppEdges);
+    if (second) return `${opponentName} owns the stronger overall matchup, especially ${ADVANTAGE_PHRASE[oppEdges[0].id]} and ${ADVANTAGE_PHRASE[second.id]}.`;
+    return `${opponentName} has the edge ${ADVANTAGE_PHRASE[oppEdges[0].id]}.`;
+  }
+  return `${michiganName} and ${opponentName} grade out closely across the board.`;
+}
+
 export function buildPossessionPhase(offenseTeam: TeamMatchupData, defenseTeam: TeamMatchupData, offenseIsMichigan: boolean, opponentName: string): PossessionPhase {
   const rows = buildPhaseRows(offenseTeam, defenseTeam, offenseIsMichigan, opponentName);
   return {
