@@ -64,29 +64,3 @@ export function teamAbbreviation(teamId: number | null | undefined, name: string
   if (teamId != null && TEAM_ABBREVIATIONS[teamId]) return TEAM_ABBREVIATIONS[teamId];
   return name.split(" ")[0].slice(0, 4).toUpperCase();
 }
-
-function relativeLuminance(hex: string): number {
-  const clean = hex.replace("#", "");
-  const r = parseInt(clean.substring(0, 2), 16) / 255;
-  const g = parseInt(clean.substring(2, 4), 16) / 255;
-  const b = parseInt(clean.substring(4, 6), 16) / 255;
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-}
-
-/**
- * For a light/cream background: pick whichever of the two team colors is
- * dark enough to stay legible on a near-white card. Most programs' brand
- * primary is already their dark, saturated color (WMU's brown, Oklahoma's
- * crimson, Ohio State's scarlet), so this prefers primary and only drops
- * to secondary when primary itself is too light to read (e.g. Purdue's
- * tan primary -> falls back to its black secondary). This is the inverse
- * of the old dark-background accent picker: on cream, a bright secondary
- * like Michigan State's white or Oklahoma's cream secondary would vanish
- * rather than pop, so "prefer the light one" would pick exactly wrong.
- */
-export function accentColorOnLight({ primary, secondary }: TeamColorPair): string {
-  const usable = (hex: string) => relativeLuminance(hex) < 0.55;
-  if (usable(primary)) return primary;
-  if (usable(secondary)) return secondary;
-  return primary;
-}
