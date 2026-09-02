@@ -1,84 +1,86 @@
-/* Real CSS now (this used to be Satori/next-og JSX, which has no Grid
-   support and doesn't correctly center an overflowing flex child) --
-   every column layout below is a real CSS Grid with literal pixel
-   tracks, and text centering just works, no absolute-position
-   workarounds needed. --mg-opponent-accent is the one per-render dynamic
-   value (the opponent's brand primary from team-colors.ts), set once as
-   a custom property on .canvas and referenced everywhere it's needed. */
+/* Matchup preview presentation: warm editorial surface, strict shared geometry,
+   and semantic edge colors. The component stays fully data-driven; CSS only
+   controls hierarchy, contrast, and symmetry. */
 
 .canvas {
   width: 1600px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  background: #F4EFE4;
+  background: #f3efe6;
+  color: #171717;
   font-family: var(--mg-body), Arial, sans-serif;
-  border: 1px solid rgba(0, 39, 76, 0.14);
-  border-radius: 6px;
+  border: 1px solid rgba(24, 24, 24, 0.12);
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 28px 80px rgba(22, 18, 12, 0.28);
 }
 
 .seal {
   width: 100%;
-  height: 3px;
-  background: #FFCB05;
+  height: 4px;
+  background: #ffcb05;
   flex-shrink: 0;
 }
 
 /* ---- header ---- */
 .header {
   position: relative;
-  height: 106px;
+  height: 112px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgba(0, 39, 76, 0.14);
+  background: linear-gradient(180deg, #fbf8f1 0%, #f7f3eb 100%);
+  border-bottom: 1px solid rgba(24, 24, 24, 0.1);
 }
 .headerBlock {
   position: absolute;
   inset: 0 auto 0 0;
-  width: 380px;
-  background: #00274C;
-  clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
+  width: 300px;
+  background: #00274c;
+  clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
 }
 .headerLogo {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  object-fit: contain;
 }
-.headerLogoMich { left: 45px; }
-.headerLogoOpp { right: 45px; }
+.headerLogoMich { left: 44px; }
+.headerLogoOpp { right: 46px; }
 .headerTitleWrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 980px;
 }
 .headerTitle {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 58px;
+  font-size: 60px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 0.95;
+  letter-spacing: -0.5px;
 }
-.headerTitleMich { color: #00274C; }
+.headerTitleMich { color: #111111; }
 .headerTitleVs {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 26px;
-  font-weight: 600;
-  color: #9A9182;
-  margin: 0 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #8b857b;
+  margin: 0 17px;
 }
-.headerTitleOpp { color: var(--mg-opponent-accent); }
+.headerTitleOpp { color: #111111; }
 .headerSubtitle {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
-  color: #3D5166;
-  letter-spacing: 1.2px;
-  margin-top: 7px;
+  color: #5f5a52;
+  letter-spacing: 1.35px;
+  margin-top: 9px;
 }
 
 /* ---- shared chips ---- */
@@ -86,44 +88,47 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #FAF8F2;
-  border: 1.5px solid rgba(0, 39, 76, 0.16);
-  border-radius: 6px;
-  padding: 4px 10px;
-  min-width: 52px;
+  min-width: 58px;
+  padding: 5px 11px;
+  background: #fffdf8;
+  border: 1px solid #cec7bb;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
 }
 .rankChip span {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 700;
-  color: #00274C;
+  color: #171717;
+  line-height: 1;
 }
 
-/* ---- zone 2: team snapshot ---- */
-/* padding puts the 426/614/426 grid tracks on the same 40px canvas
-   margin as every other zone -- 40 + 426+27+614+27+426 + 40 = 1600. */
+/* ---- zone 2: snapshot ---- */
 .snapshot {
   display: grid;
   grid-template-columns: 426px 614px 426px;
   column-gap: 27px;
   padding: 18px 40px;
-  border-top: 1px solid rgba(0, 39, 76, 0.14);
   flex-shrink: 0;
 }
 .teamSummary {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #FBF8F1;
-  padding: 14px 22px;
+  min-height: 190px;
+  padding: 16px 22px;
+  background: rgba(255, 253, 248, 0.68);
+  border: 1px solid #ded7cc;
+  border-radius: 10px;
 }
 .teamSummaryLeft { align-items: flex-start; }
 .teamSummaryRight { align-items: flex-end; }
 .teamName {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 26px;
+  font-size: 27px;
   font-weight: 700;
-  color: #00274C;
+  color: #171717;
+  letter-spacing: 0.15px;
 }
 .teamOverallRow {
   display: flex;
@@ -133,72 +138,74 @@
 }
 .teamOverallRank {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 60px;
+  font-size: 62px;
   font-weight: 700;
-  color: #00274C;
-  line-height: 1;
+  color: #171717;
+  line-height: 0.95;
 }
 .teamOverallLabel {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
-  color: #3D5166;
-  letter-spacing: 0.6px;
+  color: #666057;
+  letter-spacing: 0.65px;
 }
 .teamUnitsRow {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-top: 8px;
+  gap: 18px;
+  margin-top: 9px;
 }
 .teamUnit {
   display: flex;
-  align-items: baseline;
-  gap: 7px;
+  align-items: center;
+  gap: 8px;
 }
 .teamUnitLabel {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: #3D5166;
+  font-size: 14px;
+  font-weight: 800;
+  color: #5f5a52;
+  letter-spacing: 0.25px;
 }
 .teamSplitRow {
   display: flex;
   align-items: baseline;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 11px;
+  margin-top: 13px;
 }
 .teamSplitPrimary {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 31px;
+  font-size: 32px;
   font-weight: 700;
-  color: #00274C;
+  color: #171717;
 }
 .teamSplitSecondary {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #3D5166;
+  font-size: 19px;
+  font-weight: 700;
+  color: #6d675f;
 }
 .teamBar {
   display: flex;
   width: 320px;
-  height: 11px;
-  border-radius: 3px;
+  height: 10px;
+  border-radius: 999px;
   overflow: hidden;
   margin-top: 7px;
+  background: #ddd7cd;
 }
-.teamBarRun { background: #00274C; }
-.teamBarRunOpp { background: var(--mg-opponent-accent); }
-.teamBarPass { background: #DBD5C9; }
+.teamBarRun { background: #00274c; }
+.teamBarRunOpp { background: #343434; }
+.teamBarPass { background: #ddd7cd; }
 
 /* ---- field position ---- */
 .fieldPositionCell {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid rgba(0, 39, 76, 0.14);
-  border-right: 1px solid rgba(0, 39, 76, 0.14);
+  border-left: 1px solid #ddd5ca;
+  border-right: 1px solid #ddd5ca;
 }
 .fieldPosition {
   display: flex;
@@ -208,10 +215,10 @@
 }
 .fieldPositionTitle {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
-  letter-spacing: 1.2px;
-  color: #3D5166;
+  letter-spacing: 1.35px;
+  color: #5c574f;
 }
 .fieldPositionTicks {
   display: flex;
@@ -223,13 +230,13 @@
   font-family: var(--mg-body), Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
-  color: #3D5166;
+  color: #615c54;
 }
 .fieldPositionTrack {
   position: relative;
   width: 480px;
   height: 3px;
-  background: #DBD5C9;
+  background: #d8d1c5;
   margin: 8px 0 48px;
 }
 .fieldPositionTrackTick {
@@ -237,7 +244,7 @@
   top: -3px;
   width: 1px;
   height: 9px;
-  background: rgba(0, 39, 76, 0.25);
+  background: rgba(23, 23, 23, 0.28);
 }
 .fieldPositionMarker {
   position: absolute;
@@ -249,31 +256,32 @@
   width: 36px;
 }
 .fieldPositionDot {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 2px solid #F4EFE4;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid #f3efe6;
+  box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.15);
 }
-.fieldPositionDotMich { background: #00274C; }
-.fieldPositionDotOpp { background: var(--mg-opponent-accent); }
+.fieldPositionDotMich { background: #00274c; }
+.fieldPositionDotOpp { background: #171717; }
 .fieldPositionLift {
   width: 1px;
   height: 15px;
-  background: #6B6459;
+  background: #8b847a;
   margin-top: 2px;
 }
 .fieldPositionLabel {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
-  color: #00274C;
-  margin-top: 8px;
+  color: #171717;
+  margin-top: 7px;
 }
 .fieldPositionLabelLift { margin-top: 2px; }
 .fieldPositionReadout {
   display: flex;
   align-items: center;
-  width: 340px;
+  width: 350px;
 }
 .fieldPositionReadoutSide {
   display: flex;
@@ -284,96 +292,89 @@
 .fieldPositionDivider {
   width: 1px;
   height: 34px;
-  background: rgba(0, 39, 76, 0.14);
+  background: #d7d0c4;
 }
 .fieldPositionReadoutAbbr {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
-  color: #3D5166;
-  letter-spacing: 0.6px;
+  color: #6d675f;
+  letter-spacing: 0.8px;
 }
 .fieldPositionReadoutValue {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
-  color: #00274C;
+  color: #171717;
   margin-top: 2px;
 }
 .fieldPositionEdge {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 .fieldPositionEdgeBadge {
-  background: #FAF8F2;
-  border: 1.5px solid rgba(0, 39, 76, 0.16);
-  border-radius: 4px;
+  background: #171717;
+  border-radius: 6px;
   padding: 7px 18px;
 }
 .fieldPositionEdgeBadge span {
   font-family: var(--mg-display), Impact, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #00274C;
-  letter-spacing: 0.3px;
+  color: #fffdf8;
+  letter-spacing: 0.35px;
 }
 .fieldPositionEdgeUnderline {
-  width: 60px;
-  height: 2px;
-  background: #FFCB05;
-  margin-top: 5px;
-  border-radius: 1px;
+  width: 56px;
+  height: 3px;
+  background: #ffcb05;
+  margin-top: 6px;
+  border-radius: 999px;
 }
 
 /* ---- zone 3: possession panels ---- */
-/* padding puts the two 746px panels on the same 40px canvas margin as
-   every other zone -- 40 + 746+28+746 + 40 = 1600. */
 .panelRow {
   display: grid;
   grid-template-columns: 746px 746px;
   column-gap: 28px;
   padding: 18px 40px 22px;
-  border-top: 1px solid rgba(0, 39, 76, 0.14);
+  border-top: 1px solid #d8d1c6;
 }
-/* No overflow:hidden here -- the owner labels below (see .ownerLabel)
-   are deliberately wider than the narrow rank column they're centered
-   over, and on the side closest to this panel's own edge that overflow
-   can extend past the panel's own boundary. The header bar gets its own
-   top-corner radius instead, so the rounded-corner look doesn't depend
-   on clipping the panel's contents. */
 .panel {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 39, 76, 0.16);
-  border-radius: 8px;
-  background: #FBF8F1;
+  border: 1px solid #d4cdc2;
+  border-radius: 12px;
+  background: #fffdf8;
+  box-shadow: 0 8px 22px rgba(44, 36, 26, 0.06);
 }
 .panelHeader {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  min-height: 44px;
+  padding: 9px 20px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
 }
 .panelHeader span {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 700;
-  color: #F4EFE4;
+  color: #fffdf8;
   line-height: 1;
+  letter-spacing: 0.15px;
 }
-.panelHeaderMich { background: #00274C; }
-.panelHeaderOpp { background: var(--mg-opponent-accent); }
+.panelHeaderMich { background: #00274c; }
+.panelHeaderOpp { background: #292929; }
 .panelBody {
   display: flex;
   flex-direction: column;
   padding: 10px 22px 16px;
   flex: 1;
 }
-
 .ownerRow, .legendRow, .row {
   display: grid;
   grid-template-columns: 80px 300px 80px 200px;
@@ -382,16 +383,16 @@
 }
 .ownerLabel {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.4px;
-  color: #9A9182;
+  letter-spacing: 0.5px;
+  color: #625d55;
   text-align: center;
   white-space: nowrap;
 }
 .ownerLabelOffense { grid-column: 1; }
 .ownerLabelDefense { grid-column: 3; }
-.legendRow { margin-top: 8px; }
+.legendRow { margin-top: 7px; }
 .legend {
   grid-column: 2;
   display: flex;
@@ -401,36 +402,41 @@
 }
 .legendTeam {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
-  color: #3D5166;
+  color: #514c45;
 }
 .legendArrow {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: #3D5166;
+  font-size: 12px;
+  font-weight: 700;
+  color: #817a70;
 }
 .legendEven {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  color: #3D5166;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.75px;
+  color: #817a70;
 }
-
 .row {
   height: 52px;
-  border-top: 1px solid rgba(0, 39, 76, 0.14);
+  border-top: 1px solid #e5dfd5;
 }
-.rowRankCol { display: flex; justify-content: center; }
-.rowMetric { display: flex; flex-direction: column; }
+.rowRankCol {
+  display: flex;
+  justify-content: center;
+}
+.rowMetric {
+  display: flex;
+  flex-direction: column;
+}
 .rowMetricLabel {
   font-family: var(--mg-display), Impact, sans-serif;
   font-size: 21px;
   font-weight: 700;
-  color: #00274C;
-  letter-spacing: 0.2px;
+  color: #171717;
+  letter-spacing: 0.15px;
 }
 .rowSlider {
   position: relative;
@@ -440,53 +446,62 @@
 .rowSliderTrack {
   width: 100%;
   height: 100%;
-  border-radius: 2px;
-  background: #DBD5C9;
+  border-radius: 999px;
+  background: #ddd6cb;
 }
 .rowSliderTick {
   position: absolute;
   left: 50%;
-  top: -4.5px;
+  top: -4px;
   width: 1px;
-  height: 13px;
-  background: #6B6459;
+  height: 12px;
+  background: #8e877d;
   transform: translateX(-0.5px);
 }
 .rowSliderMarker {
   position: absolute;
-  top: -5.5px;
-  width: 15px;
-  height: 15px;
-  border-radius: 7.5px;
-  border: 2px solid #FBF8F1;
-  transform: translateX(-7.5px);
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fffdf8;
+  box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.12);
+  transform: translateX(-7px);
 }
-.markerMich { background: #00274C; }
-.markerOpp { background: var(--mg-opponent-accent); }
-.markerEven { background: #6B6459; }
-
+.markerMich { background: #2f7d4a; }
+.markerOpp { background: #b43a3a; }
+.markerEven { background: #777168; }
 .edgeChip {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  padding: 8px;
   height: 100%;
+  padding: 7px 10px;
+  border-radius: 7px;
+  border: 1px solid transparent;
 }
 .edgeChip span {
   font-family: var(--mg-display), Impact, sans-serif;
   font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.15px;
   text-align: center;
 }
-.edgeMich { background: #E8EEF4; }
-.edgeMich span { color: #00274C; }
-.edgeOpp { background: #F5EBE0; }
-.edgeOpp span { color: var(--mg-opponent-accent); }
-.edgeEven { background: #EFECE5; }
-.edgeEven span { color: #6B6459; }
-
+.edgeMich {
+  background: #eef7f0;
+  border-color: #bfd9c5;
+}
+.edgeMich span { color: #23663a; }
+.edgeOpp {
+  background: #fbefee;
+  border-color: #e8c5c1;
+}
+.edgeOpp span { color: #9f2f2f; }
+.edgeEven {
+  background: #f1eee8;
+  border-color: #d8d1c6;
+}
+.edgeEven span { color: #625d55; }
 .readBox {
   display: flex;
   flex-direction: column;
@@ -495,23 +510,24 @@
   min-height: 64px;
   margin-top: 10px;
   padding: 12px 16px;
-  border-radius: 6px;
-  background: #E9E5DE;
+  border-radius: 8px;
+  background: #f2ede5;
+  border-left: 4px solid #d1c8bb;
 }
 .readLabel {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 1px;
-  color: #00274C;
+  letter-spacing: 1.1px;
+  color: #625d55;
 }
 .readText {
   font-family: var(--mg-display), Impact, sans-serif;
   font-size: 19px;
   font-weight: 700;
-  color: #00274C;
+  color: #171717;
   margin-top: 4px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 /* ---- zone 4: prediction ---- */
@@ -519,9 +535,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: stretch;
-  background: #F4EFE4;
-  border-top: 1px solid rgba(0, 39, 76, 0.14);
-  padding: 18px 40px;
+  background: #f7f3eb;
+  border-top: 1px solid #d8d1c6;
+  padding: 16px 40px;
   flex-shrink: 0;
 }
 .predictionSide {
@@ -535,94 +551,102 @@
 }
 .iconBadge {
   display: flex;
-  width: 34px;
-  height: 34px;
-  border-radius: 17px;
-  border: 1.5px solid rgba(0, 39, 76, 0.16);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #d3ccc1;
+  background: #fffdf8;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.predictionText { margin-left: 12px; }
+.predictionText { margin-left: 13px; }
 .predictionValue {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 700;
-  color: #00274C;
+  color: #171717;
   line-height: 1;
 }
 .predictionLabel {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  color: #3D5166;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  color: #625d55;
+  margin-top: 3px;
 }
-.predictionCenter { display: flex; align-items: center; justify-content: center; }
+.predictionCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .predictionCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #00274C;
+  min-width: 420px;
+  background: #171717;
   border-radius: 10px;
-  padding: 14px 36px;
+  padding: 14px 36px 15px;
+  box-shadow: 0 8px 22px rgba(23, 23, 23, 0.12);
 }
 .predictionCardEyebrow {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  color: rgba(245, 240, 230, 0.65);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #c7c1b7;
 }
 .predictionCardValue {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 46px;
+  font-size: 48px;
   font-weight: 700;
-  color: #F4EFE4;
+  color: #fffdf8;
   line-height: 1;
+  margin-top: 2px;
 }
 .predictionCardMeta {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  color: rgba(245, 240, 230, 0.75);
+  color: #c9c3ba;
   margin-top: 4px;
 }
 .predictionCardMarket {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 1.4px;
-  color: #FFCB05;
+  letter-spacing: 1px;
+  color: #ffcb05;
 }
 .predictionUnavailable {
   font-family: var(--mg-display), Impact, sans-serif;
   font-size: 28px;
   font-weight: 700;
-  color: rgba(245, 240, 230, 0.55);
+  color: #d1cbc2;
 }
-
 .bottomLine {
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 10px;
-  background: #2A2823;
-  padding: 14px 40px;
+  background: #26231f;
+  padding: 12px 40px;
   flex-shrink: 0;
 }
 .bottomLineLabel {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 1px;
-  color: #FFCB05;
+  letter-spacing: 1.05px;
+  color: #ffcb05;
 }
 .bottomLineText {
   font-family: var(--mg-display), Impact, sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
-  color: #F4EFE4;
+  color: #fffdf8;
 }
 
 /* ---- footer ---- */
@@ -630,15 +654,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
-  background: #F4EFE4;
+  padding: 9px 40px 10px;
+  background: #f3efe6;
   flex-shrink: 0;
 }
 .footerText {
   font-family: var(--mg-body), Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: #3D5166;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6d675f;
 }
 .footerBrand {
   display: flex;
@@ -649,5 +673,5 @@
   font-family: var(--mg-display), Impact, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #00274C;
+  color: #171717;
 }
