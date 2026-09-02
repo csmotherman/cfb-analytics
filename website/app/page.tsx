@@ -1,3 +1,4 @@
+import type {Metadata} from "next";
 import Link from "next/link";
 import {gameDate,gameTime,homeData,opponentOf} from "../lib/home-data";
 import {formatMichiganSpread,marketLineFor} from "../lib/market-lines";
@@ -5,6 +6,62 @@ import {michiganPollSnapshot} from "../lib/polls";
 import {michiganPreseasonProjection,preseasonPowerNational} from "../lib/preseason-power";
 import {teamLogoUrl} from "../lib/team-assets";
 import modelStyles from "../styles/homeModel.module.css";
+
+const SITE_NAME="Michigan Football Focus";
+const SITE_URL=(process.env.NEXT_PUBLIC_SITE_URL||"https://michiganfootballfocus.com").replace(/\/$/,"");
+const HOME_TITLE="Michigan Football Focus | Wolverines News & Analytics";
+const HOME_DESCRIPTION="Michigan Football Focus covers Michigan Wolverines football news, 2026 projections, rankings, depth charts, players, schedules and advanced analytics.";
+
+export const metadata:Metadata={
+  title:{absolute:HOME_TITLE},
+  description:HOME_DESCRIPTION,
+  alternates:{canonical:"/"},
+  openGraph:{
+    type:"website",
+    locale:"en_US",
+    url:"/",
+    siteName:SITE_NAME,
+    title:HOME_TITLE,
+    description:HOME_DESCRIPTION,
+    images:[{url:"/og.png",alt:"Michigan Football Focus — Michigan Wolverines football news, projections and analytics"}],
+  },
+  twitter:{
+    card:"summary_large_image",
+    site:"@umfootballfocus",
+    creator:"@umfootballfocus",
+    title:HOME_TITLE,
+    description:HOME_DESCRIPTION,
+    images:[{url:"/og.png",alt:"Michigan Football Focus — Michigan Wolverines football news, projections and analytics"}],
+  },
+};
+
+const websiteJsonLd={
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":`${SITE_URL}/#website`,
+      url:`${SITE_URL}/`,
+      name:SITE_NAME,
+      alternateName:["michiganfootballfocus.com"],
+      description:HOME_DESCRIPTION,
+      inLanguage:"en-US",
+      publisher:{"@id":`${SITE_URL}/#organization`},
+    },
+    {
+      "@type":"Organization",
+      "@id":`${SITE_URL}/#organization`,
+      name:SITE_NAME,
+      url:`${SITE_URL}/`,
+      description:"Independent coverage and data-driven analysis of Michigan Wolverines football.",
+      logo:{
+        "@type":"ImageObject",
+        url:`${SITE_URL}/brand/michigan-football-focus.png`,
+      },
+      sameAs:["https://x.com/umfootballfocus"],
+    },
+  ],
+};
 
 const grade=(player:ReturnType<typeof homeData>["squad"][number])=>player.grade??"—";
 
@@ -50,6 +107,7 @@ export default function Home(){
   ].filter(Boolean) as ReturnType<typeof homeData>["squad"];
 
   return <div className="mock-home">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(websiteJsonLd)}}/>
     <div className="mock-shell">
       {next&&opponent&&<section className="mock-game-card">
         <div className="mock-hero-photo" aria-hidden="true">
