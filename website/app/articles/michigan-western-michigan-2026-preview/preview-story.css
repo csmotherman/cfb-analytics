@@ -135,10 +135,6 @@
 .wm-share-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}
 .wm-share-head h2{margin:6px 0 0;color:#fff;font:800 30px/1 var(--display)}
 .wm-share-head p{max-width:620px;margin:0;color:var(--wm-muted);font:500 12px/1.5 var(--body);text-align:right}
-.wm-share-image{display:block;overflow:hidden;border:1px solid var(--wm-line);border-radius:12px;background:#07121f;transition:border-color .15s ease}
-.wm-share-image:hover{border-color:var(--wm-maize,#ffcb05)}
-.wm-share-image img{display:block;width:100%;height:auto;aspect-ratio:1600/1620;object-fit:contain}
-.wm-share-caption{margin:10px 2px 0;color:var(--wm-muted);font:600 12px/1.4 var(--body);text-align:center}
 
 @media(max-width:900px){
   .wm-matchup-lockup{grid-template-columns:92px minmax(0,1fr) 92px;padding:24px 20px 15px}

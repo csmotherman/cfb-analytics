@@ -2,21 +2,19 @@ import type {CSSProperties} from "react";
 import type {Metadata} from "next";
 import Link from "next/link";
 import {ArticleMobileToc} from "../../../components/ArticleMobileToc";
-import {BlueprintActions} from "./BlueprintActions";
 import {teamLogoUrl} from "../../../lib/team-assets";
 import {michiganWesternMichigan2026 as data} from "../../../lib/michigan/matchup-preview-data";
 import type {CompareRow} from "../../../lib/michigan/matchup-preview-data";
 import "./preview-story.css";
 
 const articleUrl="https://michiganfootballfocus.com/articles/michigan-western-michigan-2026-preview";
-const articleImage="https://michiganfootballfocus.com/matchup-graphic/401858428";
 const socialDescription="Western Michigan returns the pieces that make its run-first offense work. The defense was the better unit in 2025, but the front seven now carries the biggest continuity question. Here's the Week 1 matchup story.";
 
 export const metadata:Metadata={
   title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",
   description:"A story-first Michigan vs. Western Michigan Week 1 preview using 2025 opponent-adjusted efficiency, roster continuity, returning snaps research and the Michigan Football Focus model.",
-  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",description:socialDescription,images:[{url:articleImage,width:1600,height:1620,alt:"Michigan vs. Western Michigan matchup graphic"}]},
-  twitter:{card:"summary_large_image",title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",description:socialDescription,images:[articleImage]}
+  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",description:socialDescription,images:["/og.png"]},
+  twitter:{card:"summary_large_image",title:"Michigan vs. Western Michigan: The Week 1 Matchup Story",description:socialDescription,images:["/og.png"]}
 };
 
 const sections=[
@@ -191,11 +189,7 @@ export default function MichiganWesternMichiganPreview(){
 
       <section className="wm-share-section">
         <div className="wm-share-head"><div><div className="wm-section-label">THE MATCHUP GRAPHIC</div><h2>Team quality, identity, edges and the verdict.</h2></div><p>Same MFF matchup-graphic template we run for every opponent: national rank for both teams, how each wants to play, offense-vs-defense edges for both directions of the ball, and the model/market verdict.</p></div>
-        <a className="wm-share-image" href="/matchup-graphic/401858428" target="_blank" rel="noreferrer">
-          <img src="/matchup-graphic/401858428" alt="Michigan vs. Western Michigan matchup graphic: team quality ranks, play-calling identity, offense-vs-defense matchup edges for both possession directions, and the MFF verdict" width={1600} height={900}/>
-        </a>
-        <p className="wm-share-caption">Full matchup graphic — tap to open full size.</p>
-        <BlueprintActions src="/matchup-graphic/401858428" filename="michigan-western-michigan-2026-matchup-graphic.png"/>
+        <Link href="/matchup-graphic/401858428" className="button">OPEN THE FULL MATCHUP GRAPHIC →</Link>
       </section>
 
       <section className="focus-article-explore feature-explore">
