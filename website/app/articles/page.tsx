@@ -5,6 +5,29 @@ import styles from "../../styles/articles.module.css";
 
 export const metadata:Metadata={title:"Michigan Football Articles",description:"Michigan football reporting connected directly to real data, player profiles and team evidence."};
 
+const dontJumpTheGun:MichiganStory={
+  slug:"dont-jump-the-gun-michigan-football-2026",
+  eyebrow:"WEEK 1 · PERSPECTIVE",
+  title:"Don't Jump the Gun: Why Michigan Is in a Better Spot Than It Looks",
+  coverQuestion:"What should one terrible Saturday actually change about how we see Michigan?",
+  deck:"Michigan's 13-12 escape against Western Michigan was unacceptable. It was also one game. The evidence says downgrade the Wolverines after Week 1 — don't reclassify them.",
+  published:"September 8, 2026",
+  readMinutes:14,
+  coverImage:"/images/articles/michigan-western.png",
+  tags:[
+    {type:"UNIT",slug:"offense",label:"Offense"},
+    {type:"UNIT",slug:"defense",label:"Defense"},
+    {type:"POSITION",slug:"qb",label:"QB"},
+    {type:"TOPIC",slug:"analytics",label:"Analytics"},
+    {type:"TOPIC",slug:"coaching",label:"Coaching"}
+  ],
+  body:[],
+  dataLinks:[
+    {label:"Michigan's 2025 offensive audit",href:"/articles/michigan-offense-2025-playcalling-audit",description:"See the larger Jason Beck baseline that one 2026 game cannot erase."},
+    {label:"SOAR analytics",href:"/analytics",description:"Explore the team efficiency data behind Michigan's broader outlook."}
+  ]
+};
+
 const westernMichiganPreview:MichiganStory={
   slug:"michigan-western-michigan-2026-preview",
   eyebrow:"WEEK 1 · GAME PREVIEW",
@@ -50,7 +73,7 @@ const playcallingAudit:MichiganStory={
 };
 
 export default function Articles(){
-  const stories=[playcallingAudit,westernMichiganPreview,...michiganStories()];
+  const stories=[dontJumpTheGun,playcallingAudit,westernMichiganPreview,...michiganStories()];
   return <div className={styles.page}>
     <header className={styles.hero}>
       <div className={`wrap ${styles.heroInner}`}>
