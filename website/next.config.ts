@@ -39,11 +39,18 @@ const nextConfig: NextConfig = {
       ".published-data/directory_history/players/current-by-team/michigan.json"
     ]
   },
+  //
+  // This must apply to every route, not just the ones that read published
+  // data directly: lib/server-data.ts's readJson() resolves its local-dev
+  // fallback path via path.join(process.cwd(), "..", "data", "published", ...)
+  // with a dynamic tail, which defeats Next's static file tracer. The tracer
+  // falls back to conservatively bundling the entire ../data/published tree
+  // (3,651 files, ~480MB) into any route that transitively imports it — and
+  // 19 routes do, including the homepage. Left unexcluded, each of those
+  // routes' serverless functions traces and packages that whole tree,
+  // which is what was driving multi-minute Vercel builds.
   outputFileTracingExcludes: {
-    "/analytics": [
-      "../data/published/**/*"
-    ],
-    "/players/*": [
+    "**": [
       "../data/published/**/*"
     ]
   }
