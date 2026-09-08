@@ -5,7 +5,7 @@ import { beckAuditData } from "../../../lib/michigan/beck-audit-data";
 import "./article.css";
 
 const articleUrl = "https://michiganfootballfocus.com/articles/dont-jump-the-gun-michigan-football-2026";
-const articleImage = "https://michiganfootballfocus.com/images/articles/michigan-western.png";
+const articleImage = "https://michiganfootballfocus.com/articles/dont-jump-the-gun-michigan-football-2026/opengraph-image";
 const socialDescription = "Michigan's 13-12 escape against Western Michigan was unacceptable. It was also one game. The evidence says downgrade the Wolverines after Week 1 — don't reclassify them.";
 
 export const metadata: Metadata = {
@@ -85,7 +85,7 @@ export default function DontJumpTheGunArticle() {
         <Link className="djg-back" href="/articles">← THE NOTEBOOK</Link>
 
         <header className="djg-hero">
-          <img src="/images/articles/michigan-western.png" alt="Michigan vs. Western Michigan" />
+          <img src="/articles/dont-jump-the-gun-michigan-football-2026/opengraph-image" alt="Don't Jump the Gun — Michigan football Week 1 perspective" />
           <div className="djg-hero-shade" />
           <div className="djg-hero-copy">
             <span className="djg-eyebrow">WEEK 1 · PERSPECTIVE</span>
