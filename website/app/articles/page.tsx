@@ -5,6 +5,49 @@ import styles from "../../styles/articles.module.css";
 
 export const metadata:Metadata={title:"Michigan Football Articles",description:"Michigan football reporting connected directly to real data, player profiles and team evidence."};
 
+const howMichiganBeatsOklahoma:MichiganStory={
+  slug:"how-michigan-beats-oklahoma-2026",
+  eyebrow:"WEEK 2 · GAME PREVIEW",
+  title:"How Michigan Beats Oklahoma — and How Oklahoma Makes Sure It Doesn't",
+  coverQuestion:"Can Michigan's offense find answers against the best defense it will see all year?",
+  deck:"Oklahoma's defense graded as the #2 opponent-adjusted unit in the country last season. Michigan needed a walk-off touchdown to beat a MAC team at home. Both facts are true. Here's how each team actually wins Saturday, and the metrics that separate signal from noise.",
+  published:"September 10, 2026",
+  readMinutes:12,
+  tags:[
+    {type:"UNIT",slug:"offense",label:"Offense"},
+    {type:"UNIT",slug:"defense",label:"Defense"},
+    {type:"POSITION",slug:"qb",label:"QB"},
+    {type:"TOPIC",slug:"game-preview",label:"Game Preview"},
+    {type:"TOPIC",slug:"analytics",label:"Analytics"}
+  ],
+  body:[],
+  dataLinks:[
+    {label:"Michigan vs. Oklahoma data preview",href:"/articles/michigan-oklahoma-2026-preview",description:"The full 2025 baseline, Week 1 tape and market context behind this story."},
+    {label:"Michigan vs. Oklahoma game hub",href:"/games/401856679",description:"Model projection, matchup details and market context."}
+  ]
+};
+
+const oklahomaPreview:MichiganStory={
+  slug:"michigan-oklahoma-2026-preview",
+  eyebrow:"WEEK 2 · GAME PREVIEW",
+  title:"Michigan vs. Oklahoma: The Week 2 Matchup Story",
+  coverQuestion:"Oklahoma's defense graded #2 nationally last season. Is this the closest matchup Michigan has played all year?",
+  deck:"A +3.2-point overall composite gap, not a blowout. The validated 2025 baseline, the Week 1 2026 tape and the market, kept labeled separately on purpose.",
+  published:"September 10, 2026",
+  readMinutes:9,
+  tags:[
+    {type:"UNIT",slug:"offense",label:"Offense"},
+    {type:"UNIT",slug:"defense",label:"Defense"},
+    {type:"TOPIC",slug:"game-preview",label:"Game Preview"},
+    {type:"TOPIC",slug:"analytics",label:"Analytics"}
+  ],
+  body:[],
+  dataLinks:[
+    {label:"Michigan vs. Oklahoma game hub",href:"/games/401856679",description:"View the model comparison and current market spread."},
+    {label:"Michigan analytics",href:"/analytics",description:"Explore the opponent-adjusted ratings behind the preview."}
+  ]
+};
+
 const dontJumpTheGun:MichiganStory={
   slug:"dont-jump-the-gun-michigan-football-2026",
   eyebrow:"WEEK 1 · PERSPECTIVE",
@@ -28,6 +71,29 @@ const dontJumpTheGun:MichiganStory={
   ]
 };
 
+const westernMichiganRecap:MichiganStory={
+  slug:"michigan-western-michigan-2026-recap",
+  eyebrow:"WEEK 1 RECAP · EPA & PENALTY AUDIT",
+  title:"Michigan vs. Western Michigan by EPA: What the Turnovers and Penalties Actually Cost",
+  coverQuestion:"Success rate liked Michigan's offense. Full-value EPA doesn't. And the defense that \"couldn't get off the field\" actually dominated per snap.",
+  deck:"An independent, from-scratch EPA model — trained on 1.5M+ plays across 11 seasons — prices every snap of both units. Michigan's two turnovers were worth more than every other offensive snap combined. Its defense allowed −0.34 EPA per play and zero touchdowns, then gave back 5.6 expected points on one series to two of its own penalties — including a flag that erased a real interception.",
+  published:"September 8, 2026",
+  readMinutes:10,
+  coverImage:"/images/articles/michigan-western.png",
+  tags:[
+    {type:"UNIT",slug:"offense",label:"Offense"},
+    {type:"UNIT",slug:"defense",label:"Defense"},
+    {type:"POSITION",slug:"qb",label:"QB"},
+    {type:"TOPIC",slug:"game-recap",label:"Game Recap"},
+    {type:"TOPIC",slug:"analytics",label:"Analytics"}
+  ],
+  body:[],
+  dataLinks:[
+    {label:"Michigan vs. Western Michigan game hub",href:"/games/401858428",description:"Full game data, model comparison and market context."},
+    {label:"Michigan analytics",href:"/analytics",description:"Explore the opponent-adjusted ratings behind the recap."}
+  ]
+};
+
 const westernMichiganPreview:MichiganStory={
   slug:"michigan-western-michigan-2026-preview",
   eyebrow:"WEEK 1 · GAME PREVIEW",
@@ -47,6 +113,28 @@ const westernMichiganPreview:MichiganStory={
   dataLinks:[
     {label:"Michigan vs. Western Michigan game hub",href:"/games/401858428",description:"View the Ridge comparison and current market spread."},
     {label:"Michigan analytics",href:"/analytics",description:"Explore the opponent-adjusted ratings behind the preview."}
+  ]
+};
+
+const bigGameGapAudit:MichiganStory={
+  slug:"michigan-2025-big-game-gap",
+  eyebrow:"DATA AUDIT · 2025 SEASON",
+  title:"Michigan's Big-Game Gap, and the Fourth Downs That Made It Worse",
+  coverQuestion:"How much of Michigan's marquee-game struggle was really about the opponent — and how many points did conservative fourth-down calls cost along the way?",
+  deck:"Opponent-adjusted with full-season ratings, Michigan's offense still collapsed in its three marquee games — and it was a passing problem, not a run-game one. A from-scratch expected-points model, trained on eleven seasons of play-by-play, grades every fourth-down decision the coaching staff made against what has actually worked at that distance and field position.",
+  published:"September 2, 2026",
+  readMinutes:12,
+  tags:[
+    {type:"UNIT",slug:"offense",label:"Offense"},
+    {type:"POSITION",slug:"qb",label:"QB"},
+    {type:"TOPIC",slug:"analytics",label:"Analytics"},
+    {type:"TOPIC",slug:"coaching",label:"Coaching"}
+  ],
+  body:[],
+  dataLinks:[
+    {label:"2025 Michigan offense analytics",href:"/analytics/offense?year=2025",description:"See the full opponent-adjusted efficiency breakdown behind this audit."},
+    {label:"Bryce Underwood profile",href:"/players/5141741",description:"Review Underwood's freshman production and 2026 roster profile."},
+    {label:"The 13.5-point mystery",href:"/articles/michigan-offense-2025-playcalling-audit",description:"The earlier down/distance audit this piece builds on."}
   ]
 };
 
@@ -73,7 +161,7 @@ const playcallingAudit:MichiganStory={
 };
 
 export default function Articles(){
-  const stories=[dontJumpTheGun,playcallingAudit,westernMichiganPreview,...michiganStories()];
+  const stories=[howMichiganBeatsOklahoma,oklahomaPreview,dontJumpTheGun,westernMichiganRecap,bigGameGapAudit,playcallingAudit,westernMichiganPreview,...michiganStories()];
   return <div className={styles.page}>
     <header className={styles.hero}>
       <div className={`wrap ${styles.heroInner}`}>

@@ -70,3 +70,25 @@ export function michiganPreseasonProjection(): MichiganPreseasonProjection | nul
 export function preseasonProjectionForGame(gameId: string | number): PreseasonProjectionGame | null {
   return michiganPreseasonProjection()?.games.find((game) => game.gameId === String(gameId)) ?? null;
 }
+
+export type MichiganCfpFieldOdds = {
+  season: number;
+  team: string;
+  teamId: number;
+  version: string;
+  valueType: "RESEARCH";
+  disclaimer: string;
+  publishedAtUtc: string;
+  nSims: number;
+  fieldPct: number;
+  conferenceChampionPct: number;
+  byePct: number;
+  atLargePct: number;
+  avgSeedWhenInField: number | null;
+  expectedWins: number;
+  medianWins: number;
+};
+
+export function michiganCfpFieldOdds(): MichiganCfpFieldOdds | null {
+  return readJson<MichiganCfpFieldOdds>("data", "published", "2026", "michigan", "cfp-field-odds.json");
+}

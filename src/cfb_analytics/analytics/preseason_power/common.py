@@ -16,6 +16,7 @@ REPO_ROOT = Path(__file__).resolve().parents[4]
 RAW_ROOT = REPO_ROOT / "data" / "raw"
 CANONICAL_ROOT = REPO_ROOT / "data" / "canonical"
 RESEARCH_OUTPUT_ROOT = REPO_ROOT / "data" / "research" / "preseason_power"
+COACHING_HISTORY_ROOT = REPO_ROOT / "data" / "research" / "coaching_history"
 
 # Seasons with a materialized data/canonical/season=Y/team_games.json (i.e. a
 # season we can both build a prior *from* and score Week 1 predictions
@@ -67,6 +68,47 @@ def load_recruiting_team_ranks(season: int) -> dict[str, dict[str, Any]]:
 @lru_cache(maxsize=None)
 def load_roster(season: int) -> list[dict[str, Any]]:
     path = RAW_ROOT / "cfbd_players" / f"season={season}" / "roster.json"
+    if not path.exists():
+        return []
+    return _load_json(path)
+
+
+@lru_cache(maxsize=None)
+def load_recruiting_players(season: int) -> list[dict[str, Any]]:
+    """Individual signees for the class entering `season` (CFBD /recruiting/players)."""
+    path = RAW_ROOT / "cfbd_players" / f"season={season}" / "recruiting_players.json"
+    if not path.exists():
+        return []
+    payload = _load_json(path)
+    rows = payload.get("payload", payload) if isinstance(payload, dict) else payload
+    return rows
+
+
+@lru_cache(maxsize=None)
+def load_coaching_history() -> list[dict[str, Any]]:
+    """Full FBS head-coach career history (CFBD /coaches): one row per coach, each with a
+    `seasons` list of {school, year, ...} entries back to their first FBS HC job.
+
+    Only coach IDENTITY and tenure (school, year) may be read from a season entry here.
+    wins/losses/srs/spOverall/spOffense/spDefense on an entry are that season's own final
+    result -- or, for the still-unplayed 2026 stub entries, CFBD's SP+ preseason
+    projection -- and this research track bans both target-season outcomes and SP+/AP/
+    Vegas inputs. See `load_coach_year3plus_records` for the leakage-safe rating fields.
+    """
+    path = COACHING_HISTORY_ROOT / "fbs_coaches_full_history.json"
+    if not path.exists():
+        return []
+    return _load_json(path)
+
+
+@lru_cache(maxsize=None)
+def load_coach_year3plus_records() -> list[dict[str, Any]]:
+    """Coach-season records restricted to yearAtSchool>=3 (an established system, past the
+    honeymoon/transition seasons). `offense`/`defense` on each entry are this repo's own
+    leakage-safe points-scale ratings (`historical_priors.season_points_ratings(year,
+    shrinkage=0.0)`), verified to match that function's live output exactly -- not SP+.
+    """
+    path = COACHING_HISTORY_ROOT / "coach_year3plus_records_2014_2025.json"
     if not path.exists():
         return []
     return _load_json(path)

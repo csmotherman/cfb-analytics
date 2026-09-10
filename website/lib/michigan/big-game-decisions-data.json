@@ -1,0 +1,2387 @@
+{
+  "team": "Michigan",
+  "season": 2025,
+  "qbName": "Bryce Underwood",
+  "games": [
+    {
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "oppRank": null,
+      "teamPoints": 34,
+      "oppPoints": 17,
+      "site": "home",
+      "success": {
+        "actual": 0.43548387096774194,
+        "expected": 0.4663585875142717,
+        "residual": -0.03087471654652979
+      },
+      "passSuccess": {
+        "actual": 0.42424242424242425,
+        "expected": 0.430357896375925,
+        "residual": -0.006115472133500721
+      },
+      "passYPD": {
+        "actual": 7.575757575757576,
+        "expected": 6.972632318111494,
+        "residual": 0.6031252576460817
+      }
+    },
+    {
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "oppRank": 18,
+      "teamPoints": 13,
+      "oppPoints": 24,
+      "site": "away",
+      "success": {
+        "actual": 0.23636363636363636,
+        "expected": 0.3512652394655944,
+        "residual": -0.11490160310195804
+      },
+      "passSuccess": {
+        "actual": 0.2,
+        "expected": 0.3460792887969703,
+        "residual": -0.1460792887969703
+      },
+      "passYPD": {
+        "actual": 5.48,
+        "expected": 5.482977129550662,
+        "residual": -0.002977129550661317
+      }
+    },
+    {
+      "week": 3,
+      "seasonType": "regular",
+      "opponent": "Central Michigan",
+      "oppRank": null,
+      "teamPoints": 63,
+      "oppPoints": 3,
+      "site": "home",
+      "success": {
+        "actual": 0.6447368421052632,
+        "expected": 0.5203634835504783,
+        "residual": 0.12437335855478482
+      },
+      "passSuccess": {
+        "actual": 0.6666666666666666,
+        "expected": 0.45314836210195114,
+        "residual": 0.2135183045647155
+      },
+      "passYPD": {
+        "actual": 9.791666666666666,
+        "expected": 7.410205040135981,
+        "residual": 2.381461626530685
+      }
+    },
+    {
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "oppRank": null,
+      "teamPoints": 30,
+      "oppPoints": 27,
+      "site": "away",
+      "success": {
+        "actual": 0.3888888888888889,
+        "expected": 0.478451068460062,
+        "residual": -0.08956217957117313
+      },
+      "passSuccess": {
+        "actual": 0.2916666666666667,
+        "expected": 0.3965232226676494,
+        "residual": -0.1048565560009827
+      },
+      "passYPD": {
+        "actual": 4.375,
+        "expected": 6.369725863756229,
+        "residual": -1.994725863756229
+      }
+    },
+    {
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "oppRank": null,
+      "teamPoints": 24,
+      "oppPoints": 10,
+      "site": "home",
+      "success": {
+        "actual": 0.5666666666666667,
+        "expected": 0.47589139676426784,
+        "residual": 0.09077526990239881
+      },
+      "passSuccess": {
+        "actual": 0.5714285714285714,
+        "expected": 0.422600086616726,
+        "residual": 0.1488284848118454
+      },
+      "passYPD": {
+        "actual": 8.821428571428571,
+        "expected": 6.439845196496973,
+        "residual": 2.3815833749315978
+      }
+    },
+    {
+      "week": 7,
+      "seasonType": "regular",
+      "opponent": "USC",
+      "oppRank": null,
+      "teamPoints": 13,
+      "oppPoints": 31,
+      "site": "away",
+      "success": {
+        "actual": 0.45454545454545453,
+        "expected": 0.4817473384532276,
+        "residual": -0.02720188390777306
+      },
+      "passSuccess": {
+        "actual": 0.4444444444444444,
+        "expected": 0.4101750746223003,
+        "residual": 0.034269369822144125
+      },
+      "passYPD": {
+        "actual": 6.851851851851852,
+        "expected": 6.259239328520113,
+        "residual": 0.5926125233317387
+      }
+    },
+    {
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "oppRank": null,
+      "teamPoints": 24,
+      "oppPoints": 7,
+      "site": "home",
+      "success": {
+        "actual": 0.47058823529411764,
+        "expected": 0.4367656275910597,
+        "residual": 0.03382260770305795
+      },
+      "passSuccess": {
+        "actual": 0.4827586206896552,
+        "expected": 0.39760472655475915,
+        "residual": 0.08515389413489605
+      },
+      "passYPD": {
+        "actual": 7.758620689655173,
+        "expected": 5.9547866306195845,
+        "residual": 1.8038340590355881
+      }
+    },
+    {
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "oppRank": null,
+      "teamPoints": 31,
+      "oppPoints": 20,
+      "site": "away",
+      "success": {
+        "actual": 0.4603174603174603,
+        "expected": 0.49046876673648265,
+        "residual": -0.03015130641902236
+      },
+      "passSuccess": {
+        "actual": 0.3333333333333333,
+        "expected": 0.4331435337169994,
+        "residual": -0.09981020038366606
+      },
+      "passYPD": {
+        "actual": 4.722222222222222,
+        "expected": 7.229028126433569,
+        "residual": -2.5068059042113466
+      }
+    },
+    {
+      "week": 10,
+      "seasonType": "regular",
+      "opponent": "Purdue",
+      "oppRank": null,
+      "teamPoints": 21,
+      "oppPoints": 16,
+      "site": "home",
+      "success": {
+        "actual": 0.5,
+        "expected": 0.4930724221287206,
+        "residual": 0.0069275778712794
+      },
+      "passSuccess": {
+        "actual": 0.36363636363636365,
+        "expected": 0.44194157234727877,
+        "residual": -0.07830520871091512
+      },
+      "passYPD": {
+        "actual": 5.791666666666667,
+        "expected": 8.3238207270017,
+        "residual": -2.5321540603350323
+      }
+    },
+    {
+      "week": 12,
+      "seasonType": "regular",
+      "opponent": "Northwestern",
+      "oppRank": null,
+      "teamPoints": 24,
+      "oppPoints": 22,
+      "site": "away",
+      "success": {
+        "actual": 0.5571428571428572,
+        "expected": 0.4998176342257675,
+        "residual": 0.057325222917089635
+      },
+      "passSuccess": {
+        "actual": 0.5161290322580645,
+        "expected": 0.4365342699819967,
+        "residual": 0.07959476227606782
+      },
+      "passYPD": {
+        "actual": 7.735294117647059,
+        "expected": 6.562386767940308,
+        "residual": 1.172907349706751
+      }
+    },
+    {
+      "week": 13,
+      "seasonType": "regular",
+      "opponent": "Maryland",
+      "oppRank": null,
+      "teamPoints": 45,
+      "oppPoints": 20,
+      "site": "away",
+      "success": {
+        "actual": 0.5714285714285714,
+        "expected": 0.49195383083019617,
+        "residual": 0.07947474059837523
+      },
+      "passSuccess": {
+        "actual": 0.56,
+        "expected": 0.43954836525018254,
+        "residual": 0.12045163474981752
+      },
+      "passYPD": {
+        "actual": 8.24,
+        "expected": 6.815846960054809,
+        "residual": 1.4241530399451916
+      }
+    },
+    {
+      "week": 14,
+      "seasonType": "regular",
+      "opponent": "Ohio State",
+      "oppRank": 1,
+      "teamPoints": 9,
+      "oppPoints": 27,
+      "site": "home",
+      "success": {
+        "actual": 0.2564102564102564,
+        "expected": 0.39946862666953326,
+        "residual": -0.14305837025927687
+      },
+      "passSuccess": {
+        "actual": 0.2222222222222222,
+        "expected": 0.3746387683416969,
+        "residual": -0.1524165461194747
+      },
+      "passYPD": {
+        "actual": 3.0555555555555554,
+        "expected": 4.716416124044686,
+        "residual": -1.6608605684891309
+      }
+    },
+    {
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "oppRank": 12,
+      "teamPoints": 27,
+      "oppPoints": 41,
+      "site": "away",
+      "success": {
+        "actual": 0.39473684210526316,
+        "expected": 0.4240637497354869,
+        "residual": -0.02932690763022372
+      },
+      "passSuccess": {
+        "actual": 0.2857142857142857,
+        "expected": 0.4003755722757323,
+        "residual": -0.11466128656144658
+      },
+      "passYPD": {
+        "actual": 3.9545454545454546,
+        "expected": 5.934054033655203,
+        "residual": -1.9795085791097482
+      }
+    }
+  ],
+  "epaByGame": [
+    {
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "plays": 62,
+      "avgEpa": 0.34652680802669056
+    },
+    {
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "plays": 56,
+      "avgEpa": -0.16671081827073808
+    },
+    {
+      "week": 3,
+      "seasonType": "regular",
+      "opponent": "Central Michigan",
+      "plays": 79,
+      "avgEpa": 0.639385111950632
+    },
+    {
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "plays": 53,
+      "avgEpa": 0.24419743237041686
+    },
+    {
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "plays": 59,
+      "avgEpa": 0.3321019854393485
+    },
+    {
+      "week": 7,
+      "seasonType": "regular",
+      "opponent": "USC",
+      "plays": 55,
+      "avgEpa": 0.06161507277294148
+    },
+    {
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "plays": 67,
+      "avgEpa": 0.18058720294249064
+    },
+    {
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "plays": 64,
+      "avgEpa": 0.01933921469253334
+    },
+    {
+      "week": 10,
+      "seasonType": "regular",
+      "opponent": "Purdue",
+      "plays": 60,
+      "avgEpa": 0.019656817736677507
+    },
+    {
+      "week": 12,
+      "seasonType": "regular",
+      "opponent": "Northwestern",
+      "plays": 72,
+      "avgEpa": 0.18118443790734923
+    },
+    {
+      "week": 13,
+      "seasonType": "regular",
+      "opponent": "Maryland",
+      "plays": 73,
+      "avgEpa": 0.42818113222102094
+    },
+    {
+      "week": 14,
+      "seasonType": "regular",
+      "opponent": "Ohio State",
+      "plays": 41,
+      "avgEpa": -0.43347908285710923
+    },
+    {
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "plays": 78,
+      "avgEpa": 0.05416469356147689
+    }
+  ],
+  "epaSummary": {
+    "rushAvgEpa": 0.24906699230274087,
+    "passAvgEpa": 0.09082109135758881,
+    "rankedAvgEpa": -0.1307634407000435,
+    "unrankedAvgEpa": 0.25891360183843715,
+    "rankedRushAvgEpa": 0.01186416495350912,
+    "unrankedRushAvgEpa": 0.30491633525004674,
+    "rankedPassAvgEpa": -0.2783664279461619,
+    "unrankedPassAvgEpa": 0.21108672264593184,
+    "totalPlays": 819
+  },
+  "fourthDowns": [
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 7.0,
+      "yardsToGoal": 35.0,
+      "actual": "fieldGoal",
+      "actualEv": 0.8706429332677819,
+      "recommended": "go",
+      "recommendedEv": 1.037870261597126,
+      "evLost": 0.16722732832934417,
+      "ev": {
+        "go": 1.037870261597126,
+        "fieldGoal": 0.8706429332677819,
+        "punt": -0.604994324631101
+      },
+      "goForItRate": 0.4014732965009208,
+      "fieldGoalMakeRate": 0.4779281930547381,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 1,
+      "clock": {
+        "minutes": 4,
+        "seconds": 1
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 80.0,
+      "actual": "punt",
+      "actualEv": -1.8494279176201374,
+      "recommended": "go",
+      "recommendedEv": -0.5833788095627926,
+      "evLost": 1.2660491080573446,
+      "ev": {
+        "go": -0.5833788095627926,
+        "punt": -1.8494279176201374
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 2,
+      "clock": {
+        "minutes": 2,
+        "seconds": 44
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 45.0,
+      "actual": "go",
+      "actualEv": 1.612896881618897,
+      "recommended": "go",
+      "recommendedEv": 1.612896881618897,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.612896881618897,
+        "fieldGoal": -0.5148148148148148,
+        "punt": -0.4918032786885246
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.3333333333333333,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 3,
+      "clock": {
+        "minutes": 13,
+        "seconds": 44
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 25.0,
+      "actual": "go",
+      "actualEv": 2.9285938063482555,
+      "recommended": "go",
+      "recommendedEv": 2.9285938063482555,
+      "evLost": 0.0,
+      "ev": {
+        "go": 2.9285938063482555,
+        "fieldGoal": 1.8067459951025633,
+        "punt": -2.395812562313061
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.6451689109378691,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 3,
+      "clock": {
+        "minutes": 10,
+        "seconds": 47
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 13.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.3573661883588217,
+      "recommended": "go",
+      "recommendedEv": 2.7937854288793185,
+      "evLost": 0.43641924052049674,
+      "ev": {
+        "go": 2.7937854288793185,
+        "fieldGoal": 2.3573661883588217,
+        "punt": -2.395812562313061
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": 0.8202598652550529,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 3,
+      "clock": {
+        "minutes": 9,
+        "seconds": 37
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 36.0,
+      "actual": "go",
+      "actualEv": 1.8090669612274788,
+      "recommended": "go",
+      "recommendedEv": 1.8090669612274788,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.8090669612274788,
+        "fieldGoal": 0.5146486059505684,
+        "punt": -0.24239791485664638
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.4779281930547381,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 4,
+      "clock": {
+        "minutes": 14,
+        "seconds": 48
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 19.0,
+      "actual": "go",
+      "actualEv": 3.1329066741197726,
+      "recommended": "go",
+      "recommendedEv": 3.1329066741197726,
+      "evLost": 0.0,
+      "ev": {
+        "go": 3.1329066741197726,
+        "fieldGoal": 2.013578465290805,
+        "punt": -2.3461160275319566
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.7424733672996757,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 4,
+      "clock": {
+        "minutes": 12,
+        "seconds": 7
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 30.0,
+      "actual": "go",
+      "actualEv": 1.341092015228989,
+      "recommended": "fieldGoal",
+      "recommendedEv": 1.5003473509910823,
+      "evLost": 0.1592553357620934,
+      "ev": {
+        "go": 1.341092015228989,
+        "fieldGoal": 1.5003473509910823,
+        "punt": -0.1187683284457478
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": 0.5811353211009175,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 4,
+      "clock": {
+        "minutes": 1,
+        "seconds": 20
+      }
+    },
+    {
+      "gameId": 401778330,
+      "down": 4,
+      "distance": 19.0,
+      "yardsToGoal": 36.0,
+      "actual": "go",
+      "actualEv": -0.1691854255776586,
+      "recommended": "fieldGoal",
+      "recommendedEv": 0.9280909647624777,
+      "evLost": 1.0972763903401361,
+      "ev": {
+        "go": -0.1691854255776586,
+        "fieldGoal": 0.9280909647624777,
+        "punt": -0.1187683284457478
+      },
+      "goForItRate": 0.17119838872104734,
+      "fieldGoalMakeRate": 0.4779281930547381,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "postseason",
+      "opponent": "Texas",
+      "period": 4,
+      "clock": {
+        "minutes": 0,
+        "seconds": 43
+      }
+    },
+    {
+      "gameId": 401752808,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 52.0,
+      "actual": "punt",
+      "actualEv": -0.6173752310536045,
+      "recommended": "go",
+      "recommendedEv": 0.7837872616150711,
+      "evLost": 1.4011624926686754,
+      "ev": {
+        "go": 0.7837872616150711,
+        "punt": -0.6173752310536045
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "period": 1,
+      "clock": {
+        "minutes": 0,
+        "seconds": 19
+      }
+    },
+    {
+      "gameId": 401752808,
+      "down": 4,
+      "distance": 7.0,
+      "yardsToGoal": 68.0,
+      "actual": "punt",
+      "actualEv": -0.7700934579439253,
+      "recommended": "punt",
+      "recommendedEv": -0.7700934579439253,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.5953447177255842,
+        "punt": -0.7700934579439253
+      },
+      "goForItRate": 0.4014732965009208,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "period": 2,
+      "clock": {
+        "minutes": 10,
+        "seconds": 22
+      }
+    },
+    {
+      "gameId": 401752808,
+      "down": 4,
+      "distance": 3.0,
+      "yardsToGoal": 3.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.784484816217107,
+      "recommended": "go",
+      "recommendedEv": 3.728915520448976,
+      "evLost": 0.9444307042318689,
+      "ev": {
+        "go": 3.728915520448976,
+        "fieldGoal": 2.784484816217107,
+        "punt": -2.18871692461308
+      },
+      "goForItRate": 0.5282623866015352,
+      "fieldGoalMakeRate": 0.9400621996041844,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "period": 2,
+      "clock": {
+        "minutes": 8,
+        "seconds": 21
+      }
+    },
+    {
+      "gameId": 401752808,
+      "down": 4,
+      "distance": 7.0,
+      "yardsToGoal": 21.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.1339691044275835,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.1339691044275835,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.841361578193439,
+        "fieldGoal": 2.1339691044275835,
+        "punt": -2.395812562313061
+      },
+      "goForItRate": 0.4014732965009208,
+      "fieldGoalMakeRate": 0.7424733672996757,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "period": 3,
+      "clock": {
+        "minutes": 10,
+        "seconds": 19
+      }
+    },
+    {
+      "gameId": 401752808,
+      "down": 4,
+      "distance": 8.0,
+      "yardsToGoal": 76.0,
+      "actual": "punt",
+      "actualEv": -0.7014356213548677,
+      "recommended": "punt",
+      "recommendedEv": -0.7014356213548677,
+      "evLost": 0.0,
+      "ev": {
+        "go": -2.4093868146095314,
+        "punt": -0.7014356213548677
+      },
+      "goForItRate": 0.3751412429378531,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "period": 3,
+      "clock": {
+        "minutes": 0,
+        "seconds": 10
+      }
+    },
+    {
+      "gameId": 401752808,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 88.0,
+      "actual": "punt",
+      "actualEv": -1.8778742973939704,
+      "recommended": "go",
+      "recommendedEv": -1.2523400072044415,
+      "evLost": 0.6255342901895289,
+      "ev": {
+        "go": -1.2523400072044415,
+        "punt": -1.8778742973939704
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "period": 4,
+      "clock": {
+        "minutes": 4,
+        "seconds": 53
+      }
+    },
+    {
+      "gameId": 401752808,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 35.0,
+      "actual": "go",
+      "actualEv": 1.6276829156395594,
+      "recommended": "go",
+      "recommendedEv": 1.6276829156395594,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.6276829156395594,
+        "fieldGoal": 1.1564509085653005,
+        "punt": -0.4224318658280922
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": 0.4779281930547381,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 1,
+      "seasonType": "regular",
+      "opponent": "New Mexico",
+      "period": 4,
+      "clock": {
+        "minutes": 2,
+        "seconds": 9
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 5.0,
+      "yardsToGoal": 47.0,
+      "actual": "punt",
+      "actualEv": -0.3008474576271186,
+      "recommended": "go",
+      "recommendedEv": 0.022110063661826773,
+      "evLost": 0.3229575212889454,
+      "ev": {
+        "go": 0.022110063661826773,
+        "fieldGoal": -0.5506318726407353,
+        "punt": -0.3008474576271186
+      },
+      "goForItRate": 0.4322946175637394,
+      "fieldGoalMakeRate": 0.3333333333333333,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 1,
+      "clock": {
+        "minutes": 6,
+        "seconds": 33
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 14.0,
+      "yardsToGoal": 38.0,
+      "actual": "punt",
+      "actualEv": -0.24239791485664638,
+      "recommended": "fieldGoal",
+      "recommendedEv": 0.11601250567422583,
+      "evLost": 0.35841042053087224,
+      "ev": {
+        "go": -0.24326212224820054,
+        "fieldGoal": 0.11601250567422583,
+        "punt": -0.24239791485664638
+      },
+      "goForItRate": 0.2513089005235602,
+      "fieldGoalMakeRate": 0.3941908713692946,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 1,
+      "clock": {
+        "minutes": 0,
+        "seconds": 56
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 5.0,
+      "yardsToGoal": 57.0,
+      "actual": "punt",
+      "actualEv": -0.6173752310536045,
+      "recommended": "punt",
+      "recommendedEv": -0.6173752310536045,
+      "evLost": 0.0,
+      "ev": {
+        "go": -0.7121789688346587,
+        "punt": -0.6173752310536045
+      },
+      "goForItRate": 0.4322946175637394,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 2,
+      "clock": {
+        "minutes": 14,
+        "seconds": 1
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 14.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.356110858629061,
+      "recommended": "go",
+      "recommendedEv": 2.5163171471440773,
+      "evLost": 0.1602062885150164,
+      "ev": {
+        "go": 2.5163171471440773,
+        "fieldGoal": 2.356110858629061,
+        "punt": -2.0440528634361232
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": 0.8202598652550529,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 2,
+      "clock": {
+        "minutes": 3,
+        "seconds": 17
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 12.0,
+      "yardsToGoal": 76.0,
+      "actual": "punt",
+      "actualEv": -0.9759786476868327,
+      "recommended": "punt",
+      "recommendedEv": -0.9759786476868327,
+      "evLost": 0.0,
+      "ev": {
+        "go": -2.908514527048493,
+        "punt": -0.9759786476868327
+      },
+      "goForItRate": 0.2459546925566343,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 3,
+      "clock": {
+        "minutes": 12,
+        "seconds": 7
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 16.0,
+      "yardsToGoal": 89.0,
+      "actual": "punt",
+      "actualEv": -2.1633594831564373,
+      "recommended": "punt",
+      "recommendedEv": -2.1633594831564373,
+      "evLost": 0.0,
+      "ev": {
+        "go": -4.029558310192086,
+        "punt": -2.1633594831564373
+      },
+      "goForItRate": 0.17119838872104734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 3,
+      "clock": {
+        "minutes": 8,
+        "seconds": 3
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 23.0,
+      "actual": "fieldGoal",
+      "actualEv": 1.7045835920660901,
+      "recommended": "go",
+      "recommendedEv": 2.3193932651412474,
+      "evLost": 0.6148096730751573,
+      "ev": {
+        "go": 2.3193932651412474,
+        "fieldGoal": 1.7045835920660901,
+        "punt": -2.3259478089611028
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": 0.6451689109378691,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 3,
+      "clock": {
+        "minutes": 6,
+        "seconds": 33
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 6.0,
+      "yardsToGoal": 17.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.3387434522181554,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.3387434522181554,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.7679354544505077,
+        "fieldGoal": 2.3387434522181554,
+        "punt": -2.340262582056893
+      },
+      "goForItRate": 0.41955617198335643,
+      "fieldGoalMakeRate": 0.8202598652550529,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 3,
+      "clock": {
+        "minutes": 1,
+        "seconds": 24
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 15.0,
+      "yardsToGoal": 68.0,
+      "actual": "punt",
+      "actualEv": -0.7700934579439253,
+      "recommended": "punt",
+      "recommendedEv": -0.7700934579439253,
+      "evLost": 0.0,
+      "ev": {
+        "go": -2.7710317012839534,
+        "punt": -0.7700934579439253
+      },
+      "goForItRate": 0.17119838872104734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 4,
+      "clock": {
+        "minutes": 10,
+        "seconds": 11
+      }
+    },
+    {
+      "gameId": 401752690,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 48.0,
+      "actual": "go",
+      "actualEv": 0.6612605988845519,
+      "recommended": "go",
+      "recommendedEv": 0.6612605988845519,
+      "evLost": 0.0,
+      "ev": {
+        "go": 0.6612605988845519,
+        "fieldGoal": 0.2937780963653236,
+        "punt": -0.1187683284457478
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.3903345724907063,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 2,
+      "seasonType": "regular",
+      "opponent": "Oklahoma",
+      "period": 4,
+      "clock": {
+        "minutes": 0,
+        "seconds": 37
+      }
+    },
+    {
+      "gameId": 401752839,
+      "down": 4,
+      "distance": 6.0,
+      "yardsToGoal": 29.0,
+      "actual": "fieldGoal",
+      "actualEv": 1.2238749112980891,
+      "recommended": "fieldGoal",
+      "recommendedEv": 1.2238749112980891,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.2022017503375864,
+        "fieldGoal": 1.2238749112980891,
+        "punt": -2.5403899721448466
+      },
+      "goForItRate": 0.41955617198335643,
+      "fieldGoalMakeRate": 0.5811353211009175,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 3,
+      "seasonType": "regular",
+      "opponent": "Central Michigan",
+      "period": 1,
+      "clock": {
+        "minutes": 3,
+        "seconds": 8
+      }
+    },
+    {
+      "gameId": 401752839,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 18.0,
+      "actual": "go",
+      "actualEv": 3.3122295804153383,
+      "recommended": "go",
+      "recommendedEv": 3.3122295804153383,
+      "evLost": 0.0,
+      "ev": {
+        "go": 3.3122295804153383,
+        "fieldGoal": 2.0648012157082944,
+        "punt": -2.5403899721448466
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.7424733672996757,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 3,
+      "seasonType": "regular",
+      "opponent": "Central Michigan",
+      "period": 3,
+      "clock": {
+        "minutes": 3,
+        "seconds": 12
+      }
+    },
+    {
+      "gameId": 401752839,
+      "down": 4,
+      "distance": 13.0,
+      "yardsToGoal": 50.0,
+      "actual": "go",
+      "actualEv": -0.5904061707399977,
+      "recommended": "punt",
+      "recommendedEv": -0.2208303507516106,
+      "evLost": 0.36957581998838707,
+      "ev": {
+        "go": -0.5904061707399977,
+        "punt": -0.2208303507516106
+      },
+      "goForItRate": 0.23770491803278687,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 3,
+      "seasonType": "regular",
+      "opponent": "Central Michigan",
+      "period": 4,
+      "clock": {
+        "minutes": 0,
+        "seconds": 26
+      }
+    },
+    {
+      "gameId": 401752846,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 87.0,
+      "actual": "punt",
+      "actualEv": -2.1633594831564373,
+      "recommended": "go",
+      "recommendedEv": -2.023475356651311,
+      "evLost": 0.13988412650512627,
+      "ev": {
+        "go": -2.023475356651311,
+        "punt": -2.1633594831564373
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "period": 1,
+      "clock": {
+        "minutes": 8,
+        "seconds": 44
+      }
+    },
+    {
+      "gameId": 401752846,
+      "down": 4,
+      "distance": 10.0,
+      "yardsToGoal": 28.0,
+      "actual": "fieldGoal",
+      "actualEv": 1.1625103884856895,
+      "recommended": "fieldGoal",
+      "recommendedEv": 1.1625103884856895,
+      "evLost": 0.0,
+      "ev": {
+        "go": 0.6511276564338643,
+        "fieldGoal": 1.1625103884856895,
+        "punt": -2.340262582056893
+      },
+      "goForItRate": 0.3321616871704745,
+      "fieldGoalMakeRate": 0.5811353211009175,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "period": 1,
+      "clock": {
+        "minutes": 1,
+        "seconds": 38
+      }
+    },
+    {
+      "gameId": 401752846,
+      "down": 4,
+      "distance": 12.0,
+      "yardsToGoal": 66.0,
+      "actual": "punt",
+      "actualEv": -0.7280345352971052,
+      "recommended": "punt",
+      "recommendedEv": -0.7280345352971052,
+      "evLost": 0.0,
+      "ev": {
+        "go": -2.091841740242531,
+        "punt": -0.7280345352971052
+      },
+      "goForItRate": 0.2459546925566343,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "period": 2,
+      "clock": {
+        "minutes": 5,
+        "seconds": 58
+      }
+    },
+    {
+      "gameId": 401752846,
+      "down": 4,
+      "distance": 4.0,
+      "yardsToGoal": 53.0,
+      "actual": "punt",
+      "actualEv": -0.813216821409066,
+      "recommended": "go",
+      "recommendedEv": -0.06978424778552972,
+      "evLost": 0.7434325736235363,
+      "ev": {
+        "go": -0.06978424778552972,
+        "punt": -0.813216821409066
+      },
+      "goForItRate": 0.4884143571104044,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "period": 3,
+      "clock": {
+        "minutes": 12,
+        "seconds": 34
+      }
+    },
+    {
+      "gameId": 401752846,
+      "down": 4,
+      "distance": 14.0,
+      "yardsToGoal": 38.0,
+      "actual": "fieldGoal",
+      "actualEv": 0.1216755288414868,
+      "recommended": "fieldGoal",
+      "recommendedEv": 0.1216755288414868,
+      "evLost": 0.0,
+      "ev": {
+        "go": -0.19330182998197643,
+        "fieldGoal": 0.1216755288414868,
+        "punt": -0.2800397219463754
+      },
+      "goForItRate": 0.2513089005235602,
+      "fieldGoalMakeRate": 0.3941908713692946,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "period": 3,
+      "clock": {
+        "minutes": 7,
+        "seconds": 43
+      }
+    },
+    {
+      "gameId": 401752846,
+      "down": 4,
+      "distance": 4.0,
+      "yardsToGoal": 69.0,
+      "actual": "punt",
+      "actualEv": -0.6582132564841499,
+      "recommended": "punt",
+      "recommendedEv": -0.6582132564841499,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.6360631184580479,
+        "punt": -0.6582132564841499
+      },
+      "goForItRate": 0.4884143571104044,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "period": 4,
+      "clock": {
+        "minutes": 14,
+        "seconds": 5
+      }
+    },
+    {
+      "gameId": 401752846,
+      "down": 4,
+      "distance": 3.0,
+      "yardsToGoal": 3.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.785282797927749,
+      "recommended": "go",
+      "recommendedEv": 3.5472934394776683,
+      "evLost": 0.7620106415499195,
+      "ev": {
+        "go": 3.5472934394776683,
+        "fieldGoal": 2.785282797927749,
+        "punt": -1.8494279176201374
+      },
+      "goForItRate": 0.5282623866015352,
+      "fieldGoalMakeRate": 0.9400621996041844,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 4,
+      "seasonType": "regular",
+      "opponent": "Nebraska",
+      "period": 4,
+      "clock": {
+        "minutes": 3,
+        "seconds": 54
+      }
+    },
+    {
+      "gameId": 401752856,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 77.0,
+      "actual": "punt",
+      "actualEv": -0.7014356213548677,
+      "recommended": "punt",
+      "recommendedEv": -0.7014356213548677,
+      "evLost": 0.0,
+      "ev": {
+        "go": -0.8231612989583322,
+        "punt": -0.7014356213548677
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "period": 1,
+      "clock": {
+        "minutes": 0,
+        "seconds": 54
+      }
+    },
+    {
+      "gameId": 401752856,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 72.0,
+      "actual": "punt",
+      "actualEv": -0.8399889837510328,
+      "recommended": "go",
+      "recommendedEv": -0.18718400242525113,
+      "evLost": 0.6528049813257817,
+      "ev": {
+        "go": -0.18718400242525113,
+        "punt": -0.8399889837510328
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "period": 2,
+      "clock": {
+        "minutes": 12,
+        "seconds": 43
+      }
+    },
+    {
+      "gameId": 401752856,
+      "down": 4,
+      "distance": 9.0,
+      "yardsToGoal": 22.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.0399318195344187,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.0399318195344187,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.2548268067259594,
+        "fieldGoal": 2.0399318195344187,
+        "punt": -2.2818991097922847
+      },
+      "goForItRate": 0.3505917159763314,
+      "fieldGoalMakeRate": 0.7424733672996757,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "period": 2,
+      "clock": {
+        "minutes": 5,
+        "seconds": 43
+      }
+    },
+    {
+      "gameId": 401752856,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 69.0,
+      "actual": "punt",
+      "actualEv": -0.3895813358900607,
+      "recommended": "punt",
+      "recommendedEv": -0.3895813358900607,
+      "evLost": 0.0,
+      "ev": {
+        "go": -0.8990892840815818,
+        "punt": -0.3895813358900607
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "period": 2,
+      "clock": {
+        "minutes": 1,
+        "seconds": 59
+      }
+    },
+    {
+      "gameId": 401752856,
+      "down": 4,
+      "distance": 9.0,
+      "yardsToGoal": 9.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.5587250245452875,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.5587250245452875,
+      "evLost": 0.0,
+      "ev": {
+        "go": 2.2143025170548105,
+        "fieldGoal": 2.5587250245452875,
+        "punt": -2.2653261402648357
+      },
+      "goForItRate": 0.3505917159763314,
+      "fieldGoalMakeRate": 0.8765785084584227,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "period": 3,
+      "clock": {
+        "minutes": 9,
+        "seconds": 26
+      }
+    },
+    {
+      "gameId": 401752856,
+      "down": 4,
+      "distance": 3.0,
+      "yardsToGoal": 56.0,
+      "actual": "punt",
+      "actualEv": -0.6733111849390919,
+      "recommended": "go",
+      "recommendedEv": -0.23634922632247424,
+      "evLost": 0.4369619586166177,
+      "ev": {
+        "go": -0.23634922632247424,
+        "punt": -0.6733111849390919
+      },
+      "goForItRate": 0.5282623866015352,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 6,
+      "seasonType": "regular",
+      "opponent": "Wisconsin",
+      "period": 3,
+      "clock": {
+        "minutes": 6,
+        "seconds": 50
+      }
+    },
+    {
+      "gameId": 401752868,
+      "down": 4,
+      "distance": 8.0,
+      "yardsToGoal": 73.0,
+      "actual": "punt",
+      "actualEv": -0.9576872536136662,
+      "recommended": "punt",
+      "recommendedEv": -0.9576872536136662,
+      "evLost": 0.0,
+      "ev": {
+        "go": -2.169666811228929,
+        "punt": -0.9576872536136662
+      },
+      "goForItRate": 0.3751412429378531,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 7,
+      "seasonType": "regular",
+      "opponent": "USC",
+      "period": 1,
+      "clock": {
+        "minutes": 7,
+        "seconds": 55
+      }
+    },
+    {
+      "gameId": 401752868,
+      "down": 4,
+      "distance": 20.0,
+      "yardsToGoal": 43.0,
+      "actual": "punt",
+      "actualEv": -0.39585605234460197,
+      "recommended": "punt",
+      "recommendedEv": -0.39585605234460197,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.246544626347898,
+        "fieldGoal": -0.592395682294184,
+        "punt": -0.39585605234460197
+      },
+      "goForItRate": 0.17119838872104734,
+      "fieldGoalMakeRate": 0.3333333333333333,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 7,
+      "seasonType": "regular",
+      "opponent": "USC",
+      "period": 2,
+      "clock": {
+        "minutes": 11,
+        "seconds": 57
+      }
+    },
+    {
+      "gameId": 401752868,
+      "down": 4,
+      "distance": 11.0,
+      "yardsToGoal": 76.0,
+      "actual": "punt",
+      "actualEv": -0.9759786476868327,
+      "recommended": "punt",
+      "recommendedEv": -0.9759786476868327,
+      "evLost": 0.0,
+      "ev": {
+        "go": -2.898968799692193,
+        "punt": -0.9759786476868327
+      },
+      "goForItRate": 0.2857142857142857,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 7,
+      "seasonType": "regular",
+      "opponent": "USC",
+      "period": 3,
+      "clock": {
+        "minutes": 12,
+        "seconds": 34
+      }
+    },
+    {
+      "gameId": 401752868,
+      "down": 4,
+      "distance": 10.0,
+      "yardsToGoal": 63.0,
+      "actual": "punt",
+      "actualEv": -0.5533526397861439,
+      "recommended": "punt",
+      "recommendedEv": -0.5533526397861439,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.3070384261564425,
+        "punt": -0.5533526397861439
+      },
+      "goForItRate": 0.3321616871704745,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 7,
+      "seasonType": "regular",
+      "opponent": "USC",
+      "period": 3,
+      "clock": {
+        "minutes": 7,
+        "seconds": 57
+      }
+    },
+    {
+      "gameId": 401752868,
+      "down": 4,
+      "distance": 5.0,
+      "yardsToGoal": 70.0,
+      "actual": "go",
+      "actualEv": -1.6159087313635956,
+      "recommended": "punt",
+      "recommendedEv": -0.5312174817898023,
+      "evLost": 1.0846912495737933,
+      "ev": {
+        "go": -1.6159087313635956,
+        "punt": -0.5312174817898023
+      },
+      "goForItRate": 0.4322946175637394,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 7,
+      "seasonType": "regular",
+      "opponent": "USC",
+      "period": 4,
+      "clock": {
+        "minutes": 3,
+        "seconds": 1
+      }
+    },
+    {
+      "gameId": 401752873,
+      "down": 4,
+      "distance": 4.0,
+      "yardsToGoal": 69.0,
+      "actual": "punt",
+      "actualEv": -0.6988032808928332,
+      "recommended": "punt",
+      "recommendedEv": -0.6988032808928332,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.794807810114333,
+        "punt": -0.6988032808928332
+      },
+      "goForItRate": 0.4884143571104044,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "period": 1,
+      "clock": {
+        "minutes": 13,
+        "seconds": 26
+      }
+    },
+    {
+      "gameId": 401752873,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 33.0,
+      "actual": "go",
+      "actualEv": 2.2738279686850946,
+      "recommended": "go",
+      "recommendedEv": 2.2738279686850946,
+      "evLost": 0.0,
+      "ev": {
+        "go": 2.2738279686850946,
+        "fieldGoal": 0.9278623500490927,
+        "punt": -0.3008474576271186
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.4779281930547381,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "period": 1,
+      "clock": {
+        "minutes": 5,
+        "seconds": 56
+      }
+    },
+    {
+      "gameId": 401752873,
+      "down": 4,
+      "distance": 10.0,
+      "yardsToGoal": 30.0,
+      "actual": "fieldGoal",
+      "actualEv": 1.3133135112821954,
+      "recommended": "fieldGoal",
+      "recommendedEv": 1.3133135112821954,
+      "evLost": 0.0,
+      "ev": {
+        "go": 0.6640007310227244,
+        "fieldGoal": 1.3133135112821954,
+        "punt": -0.32405345211581293
+      },
+      "goForItRate": 0.3321616871704745,
+      "fieldGoalMakeRate": 0.5811353211009175,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "period": 2,
+      "clock": {
+        "minutes": 5,
+        "seconds": 11
+      }
+    },
+    {
+      "gameId": 401752873,
+      "down": 4,
+      "distance": 2.0,
+      "yardsToGoal": 6.0,
+      "actual": "go",
+      "actualEv": 3.370966084303111,
+      "recommended": "go",
+      "recommendedEv": 3.370966084303111,
+      "evLost": 0.0,
+      "ev": {
+        "go": 3.370966084303111,
+        "fieldGoal": 2.7603425000327806,
+        "punt": -2.1633594831564373
+      },
+      "goForItRate": 0.5708185053380783,
+      "fieldGoalMakeRate": 0.9400621996041844,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "period": 3,
+      "clock": {
+        "minutes": 8,
+        "seconds": 22
+      }
+    },
+    {
+      "gameId": 401752873,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 73.0,
+      "actual": "punt",
+      "actualEv": -0.8249787595581988,
+      "recommended": "go",
+      "recommendedEv": -0.27677964510522324,
+      "evLost": 0.5481991144529755,
+      "ev": {
+        "go": -0.27677964510522324,
+        "punt": -0.8249787595581988
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "period": 3,
+      "clock": {
+        "minutes": 1,
+        "seconds": 30
+      }
+    },
+    {
+      "gameId": 401752873,
+      "down": 4,
+      "distance": 8.0,
+      "yardsToGoal": 8.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.5571268540228425,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.5571268540228425,
+      "evLost": 0.0,
+      "ev": {
+        "go": 2.413151628577203,
+        "fieldGoal": 2.5571268540228425,
+        "punt": -1.8778742973939704
+      },
+      "goForItRate": 0.3751412429378531,
+      "fieldGoalMakeRate": 0.8765785084584227,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 8,
+      "seasonType": "regular",
+      "opponent": "Washington",
+      "period": 4,
+      "clock": {
+        "minutes": 4,
+        "seconds": 10
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 1.0,
+      "yardsToGoal": 14.0,
+      "actual": "go",
+      "actualEv": 3.569653204371284,
+      "recommended": "go",
+      "recommendedEv": 3.569653204371284,
+      "evLost": 0.0,
+      "ev": {
+        "go": 3.569653204371284,
+        "fieldGoal": 2.3146118947082357,
+        "punt": -2.6396568160152527
+      },
+      "goForItRate": 0.6998360813807734,
+      "fieldGoalMakeRate": 0.8202598652550529,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 1,
+      "clock": {
+        "minutes": 12,
+        "seconds": 20
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 3.0,
+      "yardsToGoal": 3.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.7857014117386267,
+      "recommended": "go",
+      "recommendedEv": 3.651884159106769,
+      "evLost": 0.8661827473681423,
+      "ev": {
+        "go": 3.651884159106769,
+        "fieldGoal": 2.7857014117386267,
+        "punt": -2.2653261402648357
+      },
+      "goForItRate": 0.5282623866015352,
+      "fieldGoalMakeRate": 0.9400621996041844,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 1,
+      "clock": {
+        "minutes": 10,
+        "seconds": 7
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 8.0,
+      "yardsToGoal": 44.0,
+      "actual": "punt",
+      "actualEv": -0.2800397219463754,
+      "recommended": "go",
+      "recommendedEv": -0.17973366677418312,
+      "evLost": 0.10030605517219227,
+      "ev": {
+        "go": -0.17973366677418312,
+        "fieldGoal": -0.4422396554376251,
+        "punt": -0.2800397219463754
+      },
+      "goForItRate": 0.3751412429378531,
+      "fieldGoalMakeRate": 0.3333333333333333,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 1,
+      "clock": {
+        "minutes": 7,
+        "seconds": 40
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 10.0,
+      "yardsToGoal": 68.0,
+      "actual": "punt",
+      "actualEv": -0.5558976788252014,
+      "recommended": "punt",
+      "recommendedEv": -0.5558976788252014,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.855386945089148,
+        "punt": -0.5558976788252014
+      },
+      "goForItRate": 0.3321616871704745,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 1,
+      "clock": {
+        "minutes": 1,
+        "seconds": 40
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 17.0,
+      "yardsToGoal": 82.0,
+      "actual": "punt",
+      "actualEv": -2.0515513126491647,
+      "recommended": "punt",
+      "recommendedEv": -2.0515513126491647,
+      "evLost": 0.0,
+      "ev": {
+        "go": -3.7385483186595088,
+        "punt": -2.0515513126491647
+      },
+      "goForItRate": 0.17119838872104734,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 2,
+      "clock": {
+        "minutes": 6,
+        "seconds": 22
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 8.0,
+      "yardsToGoal": 81.0,
+      "actual": "punt",
+      "actualEv": -1.2050382653061225,
+      "recommended": "punt",
+      "recommendedEv": -1.2050382653061225,
+      "evLost": 0.0,
+      "ev": {
+        "go": -2.094952592705242,
+        "punt": -1.2050382653061225
+      },
+      "goForItRate": 0.3751412429378531,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 2,
+      "clock": {
+        "minutes": 1,
+        "seconds": 53
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 3.0,
+      "yardsToGoal": 70.0,
+      "actual": "punt",
+      "actualEv": -0.9576872536136662,
+      "recommended": "punt",
+      "recommendedEv": -0.9576872536136662,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.2710910379258813,
+        "punt": -0.9576872536136662
+      },
+      "goForItRate": 0.5282623866015352,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 3,
+      "clock": {
+        "minutes": 7,
+        "seconds": 24
+      }
+    },
+    {
+      "gameId": 401752881,
+      "down": 4,
+      "distance": 5.0,
+      "yardsToGoal": 73.0,
+      "actual": "punt",
+      "actualEv": -1.0328983143012507,
+      "recommended": "punt",
+      "recommendedEv": -1.0328983143012507,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.9775266698851646,
+        "punt": -1.0328983143012507
+      },
+      "goForItRate": 0.4322946175637394,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 9,
+      "seasonType": "regular",
+      "opponent": "Michigan State",
+      "period": 4,
+      "clock": {
+        "minutes": 10,
+        "seconds": 13
+      }
+    },
+    {
+      "gameId": 401752890,
+      "down": 4,
+      "distance": 6.0,
+      "yardsToGoal": 71.0,
+      "actual": "punt",
+      "actualEv": -0.9576872536136662,
+      "recommended": "punt",
+      "recommendedEv": -0.9576872536136662,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.9473746414861022,
+        "punt": -0.9576872536136662
+      },
+      "goForItRate": 0.41955617198335643,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 10,
+      "seasonType": "regular",
+      "opponent": "Purdue",
+      "period": 1,
+      "clock": {
+        "minutes": 8,
+        "seconds": 42
+      }
+    },
+    {
+      "gameId": 401752890,
+      "down": 4,
+      "distance": 6.0,
+      "yardsToGoal": 68.0,
+      "actual": "punt",
+      "actualEv": -0.6122685185185185,
+      "recommended": "punt",
+      "recommendedEv": -0.6122685185185185,
+      "evLost": 0.0,
+      "ev": {
+        "go": -1.5837036317624937,
+        "punt": -0.6122685185185185
+      },
+      "goForItRate": 0.41955617198335643,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 10,
+      "seasonType": "regular",
+      "opponent": "Purdue",
+      "period": 1,
+      "clock": {
+        "minutes": 3,
+        "seconds": 53
+      }
+    },
+    {
+      "gameId": 401752890,
+      "down": 4,
+      "distance": 10.0,
+      "yardsToGoal": 47.0,
+      "actual": "punt",
+      "actualEv": -0.3008474576271186,
+      "recommended": "punt",
+      "recommendedEv": -0.3008474576271186,
+      "evLost": 0.0,
+      "ev": {
+        "go": -0.4341076671080013,
+        "fieldGoal": -0.5506318726407353,
+        "punt": -0.3008474576271186
+      },
+      "goForItRate": 0.3321616871704745,
+      "fieldGoalMakeRate": 0.3333333333333333,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 10,
+      "seasonType": "regular",
+      "opponent": "Purdue",
+      "period": 3,
+      "clock": {
+        "minutes": 5,
+        "seconds": 30
+      }
+    },
+    {
+      "gameId": 401752905,
+      "down": 4,
+      "distance": 12.0,
+      "yardsToGoal": 16.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.3573661883588217,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.3573661883588217,
+      "evLost": 0.0,
+      "ev": {
+        "go": 0.9842245007937114,
+        "fieldGoal": 2.3573661883588217,
+        "punt": -2.395812562313061
+      },
+      "goForItRate": 0.2459546925566343,
+      "fieldGoalMakeRate": 0.8202598652550529,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 12,
+      "seasonType": "regular",
+      "opponent": "Northwestern",
+      "period": 1,
+      "clock": {
+        "minutes": 9,
+        "seconds": 28
+      }
+    },
+    {
+      "gameId": 401752905,
+      "down": 4,
+      "distance": 5.0,
+      "yardsToGoal": 42.0,
+      "actual": "fieldGoal",
+      "actualEv": 0.4525494326361249,
+      "recommended": "fieldGoal",
+      "recommendedEv": 0.4525494326361249,
+      "evLost": 0.0,
+      "ev": {
+        "go": 0.23690139994441806,
+        "fieldGoal": 0.4525494326361249,
+        "punt": -0.1187683284457478
+      },
+      "goForItRate": 0.4322946175637394,
+      "fieldGoalMakeRate": 0.3941908713692946,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 12,
+      "seasonType": "regular",
+      "opponent": "Northwestern",
+      "period": 2,
+      "clock": {
+        "minutes": 0,
+        "seconds": 2
+      }
+    },
+    {
+      "gameId": 401752914,
+      "down": 4,
+      "distance": 5.0,
+      "yardsToGoal": 20.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.1705504052719338,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.1705504052719338,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.474581487659318,
+        "fieldGoal": 2.1705504052719338,
+        "punt": -1.438863976083707
+      },
+      "goForItRate": 0.4322946175637394,
+      "fieldGoalMakeRate": 0.7424733672996757,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 13,
+      "seasonType": "regular",
+      "opponent": "Maryland",
+      "period": 2,
+      "clock": {
+        "minutes": 1,
+        "seconds": 53
+      }
+    },
+    {
+      "gameId": 401752914,
+      "down": 4,
+      "distance": 8.0,
+      "yardsToGoal": 28.0,
+      "actual": "fieldGoal",
+      "actualEv": 1.286135353960201,
+      "recommended": "fieldGoal",
+      "recommendedEv": 1.286135353960201,
+      "evLost": 0.0,
+      "ev": {
+        "go": 0.957405775113849,
+        "fieldGoal": 1.286135353960201,
+        "punt": -2.3067891781521186
+      },
+      "goForItRate": 0.3751412429378531,
+      "fieldGoalMakeRate": 0.5811353211009175,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 13,
+      "seasonType": "regular",
+      "opponent": "Maryland",
+      "period": 4,
+      "clock": {
+        "minutes": 7,
+        "seconds": 20
+      }
+    },
+    {
+      "gameId": 401752921,
+      "down": 4,
+      "distance": 8.0,
+      "yardsToGoal": 27.0,
+      "actual": "fieldGoal",
+      "actualEv": 1.4771752120152655,
+      "recommended": "fieldGoal",
+      "recommendedEv": 1.4771752120152655,
+      "evLost": 0.0,
+      "ev": {
+        "go": 1.0152128745762785,
+        "fieldGoal": 1.4771752120152655,
+        "punt": -2.6396568160152527
+      },
+      "goForItRate": 0.3751412429378531,
+      "fieldGoalMakeRate": 0.6451689109378691,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 14,
+      "seasonType": "regular",
+      "opponent": "Ohio State",
+      "period": 1,
+      "clock": {
+        "minutes": 12,
+        "seconds": 37
+      }
+    },
+    {
+      "gameId": 401752921,
+      "down": 4,
+      "distance": 6.0,
+      "yardsToGoal": 7.0,
+      "actual": "fieldGoal",
+      "actualEv": 2.7857014117386267,
+      "recommended": "fieldGoal",
+      "recommendedEv": 2.7857014117386267,
+      "evLost": 0.0,
+      "ev": {
+        "go": 2.54805988076383,
+        "fieldGoal": 2.7857014117386267,
+        "punt": -2.2653261402648357
+      },
+      "goForItRate": 0.41955617198335643,
+      "fieldGoalMakeRate": 0.9400621996041844,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 14,
+      "seasonType": "regular",
+      "opponent": "Ohio State",
+      "period": 1,
+      "clock": {
+        "minutes": 9,
+        "seconds": 42
+      }
+    },
+    {
+      "gameId": 401752921,
+      "down": 4,
+      "distance": 14.0,
+      "yardsToGoal": 30.0,
+      "actual": "fieldGoal",
+      "actualEv": 1.3133135112821954,
+      "recommended": "fieldGoal",
+      "recommendedEv": 1.3133135112821954,
+      "evLost": 0.0,
+      "ev": {
+        "go": 0.3786040763261743,
+        "fieldGoal": 1.3133135112821954,
+        "punt": -0.32405345211581293
+      },
+      "goForItRate": 0.2513089005235602,
+      "fieldGoalMakeRate": 0.5811353211009175,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 14,
+      "seasonType": "regular",
+      "opponent": "Ohio State",
+      "period": 2,
+      "clock": {
+        "minutes": 5,
+        "seconds": 24
+      }
+    },
+    {
+      "gameId": 401752921,
+      "down": 4,
+      "distance": 10.0,
+      "yardsToGoal": 54.0,
+      "actual": "punt",
+      "actualEv": -0.9984366857738406,
+      "recommended": "go",
+      "recommendedEv": -0.7503501373117052,
+      "evLost": 0.2480865484621354,
+      "ev": {
+        "go": -0.7503501373117052,
+        "punt": -0.9984366857738406
+      },
+      "goForItRate": 0.3321616871704745,
+      "fieldGoalMakeRate": null,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 14,
+      "seasonType": "regular",
+      "opponent": "Ohio State",
+      "period": 3,
+      "clock": {
+        "minutes": 8,
+        "seconds": 20
+      }
+    },
+    {
+      "gameId": 401752921,
+      "down": 4,
+      "distance": 12.0,
+      "yardsToGoal": 46.0,
+      "actual": "punt",
+      "actualEv": -0.3008474576271186,
+      "recommended": "punt",
+      "recommendedEv": -0.3008474576271186,
+      "evLost": 0.0,
+      "ev": {
+        "go": -0.852513739924933,
+        "fieldGoal": -0.5506318726407353,
+        "punt": -0.3008474576271186
+      },
+      "goForItRate": 0.2459546925566343,
+      "fieldGoalMakeRate": 0.3333333333333333,
+      "definitionVersion": "fourth-down-decision-v1-epa-v2",
+      "week": 14,
+      "seasonType": "regular",
+      "opponent": "Ohio State",
+      "period": 3,
+      "clock": {
+        "minutes": 5,
+        "seconds": 6
+      }
+    }
+  ],
+  "fourthDownSummary": {
+    "totalDecisions": 73,
+    "correctDecisions": 50,
+    "incorrectDecisions": 23,
+    "totalEvLost": 13.505874610148087,
+    "byActual": {
+      "go": {
+        "count": 14,
+        "correct": 10,
+        "evLost": 2.71079879566441
+      },
+      "fieldGoal": {
+        "count": 23,
+        "correct": 16,
+        "evLost": 3.9512866235899455
+      },
+      "punt": {
+        "count": 36,
+        "correct": 24,
+        "evLost": 6.843789190893732
+      }
+    }
+  }
+}

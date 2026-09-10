@@ -20,7 +20,16 @@ from typing import Callable
 import numpy as np
 
 from .common import COMPLETE_SEASONS, load_team_games, prior_seasons
-from .features import portal_features, qb_continuity_features, recruiting_features, returning_production_features, transfer_qb_features
+from .features import (
+    coach_career_prior_power,
+    coach_continuity_features,
+    make_experience_weighted_talent_feature,
+    portal_features,
+    qb_continuity_features,
+    recruiting_features,
+    returning_production_features,
+    transfer_qb_features,
+)
 from .historical_priors import season_points_ratings, season_srs_overall, season_team_summary
 
 FeatureFn = Callable[[str, str, int], float | None]
@@ -265,6 +274,27 @@ def transfer_qb_prior_passing_yards(home: str, away: str, season: int) -> float 
     return float(hf["transfer_qb_prior_passing_yards"]) - float(af["transfer_qb_prior_passing_yards"])
 
 
+def coach_new_flag(home: str, away: str, season: int) -> float | None:
+    hf, af = coach_continuity_features(home, season), coach_continuity_features(away, season)
+    if not hf.get("data_available") or not af.get("data_available"):
+        return None
+    return float(hf["coach_new_flag"]) - float(af["coach_new_flag"])
+
+
+def coach_tenure_years(home: str, away: str, season: int) -> float | None:
+    hf, af = coach_continuity_features(home, season), coach_continuity_features(away, season)
+    if not hf.get("data_available") or not af.get("data_available"):
+        return None
+    return float(hf["coach_tenure_years"]) - float(af["coach_tenure_years"])
+
+
+def coach_prior_overall(home: str, away: str, season: int) -> float | None:
+    hf, af = coach_career_prior_power(home, season), coach_career_prior_power(away, season)
+    if not hf.get("data_available") or not af.get("data_available"):
+        return None
+    return float(hf["coach_prior_overall"]) - float(af["coach_prior_overall"])
+
+
 # ---------------------------------------------------------------------------
 # Design matrix assembly
 # ---------------------------------------------------------------------------
@@ -335,4 +365,10 @@ def build_feature_registry(shrinkage: float = 3.0) -> dict[str, FeatureFn]:
         "portal_defense_net": portal_defense_net,
         "transfer_qb_incoming_flag": transfer_qb_incoming_flag,
         "transfer_qb_prior_passing_yards": transfer_qb_prior_passing_yards,
+        "talent_flat": make_experience_weighted_talent_feature("flat"),
+        "talent_linear": make_experience_weighted_talent_feature("linear"),
+        "talent_senior_boost": make_experience_weighted_talent_feature("senior_boost"),
+        "coach_new_flag": coach_new_flag,
+        "coach_tenure_years": coach_tenure_years,
+        "coach_prior_overall": coach_prior_overall,
     }

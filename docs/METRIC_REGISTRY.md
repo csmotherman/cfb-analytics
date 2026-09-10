@@ -473,6 +473,29 @@ Field-position eligibility is `1 <= yardsToGoal <= 100`; `yardsToGoal=0` is excl
 
 ## EPA / play-value research
 
+### Unadjusted early-season efficiency rankings v1
+
+**Status:** RESEARCH ONLY
+
+**Definition versions:** `early-season-efficiency-v1`, `epa-v2-ranking-transitions-v1`
+
+2026 FBS offense, defense-allowed and net rankings for locked success and
+explosive-play rates (overall/pass/rush), plus independent SOAR EPA
+(per play/pass/rush). Includes completed FCS matchups without opponent adjustment.
+The EP surface is fit on 2021–2025 only. The new research EPA cohort includes
+identifiable sacks and turnover records, excludes ambiguous scoring/duplicate
+states, and sets future EP to zero at halftime. It is distinct from the older
+matched EPA/PPA benchmark cohort and from locked dropback denominators.
+
+A research composite weights success percentiles 50%, explosive-play
+percentiles 25%, and EPA/play percentiles 25% on each side, with offense and
+defense weighted equally overall. A separate process-only score equally weights
+success and explosiveness. Weights are explicit judgment choices, not validated
+predictive coefficients. Missing EPA does not trigger silent reweighting.
+See `docs/EARLY_SEASON_EFFICIENCY.md` for complete eligibility, directions,
+coverage, scoring-conflict handling, provenance and limitations. Existing
+production classifiers and historical EPA benchmark claims are unchanged.
+
 ### EPA v2 research model
 
 **Status:** RESEARCH ONLY  

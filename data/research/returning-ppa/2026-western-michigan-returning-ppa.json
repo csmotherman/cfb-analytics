@@ -11,17 +11,17 @@
   ],
   "overallPlayerAttributedPPA": {
     "players": 17,
-    "priorSeasonPPA": 148.132,
-    "returningPPA": 115.441,
+    "priorSeasonPPA": 181.627,
+    "returningPPA": 143.937,
     "returningPlayers": 8,
-    "returningShare": 0.7793116949747523
+    "returningShare": 0.7924867998700634
   },
   "passingPPA": {
     "players": 2,
-    "priorSeasonPPA": 32.965999999999994,
-    "returningPPA": 36.373,
+    "priorSeasonPPA": 30.139,
+    "returningPPA": 33.546,
     "returningPlayers": 1,
-    "returningShare": 1.1033489049323546
+    "returningShare": 1.1130429012243273
   },
   "players": [
     {
@@ -45,10 +45,10 @@
       "position": "WR",
       "receivingAttributedPPA": 16.193,
       "returning": false,
-      "rushingPPA": 1.564,
+      "rushingPPA": 5.078,
       "sourceTotalPPAPass": 16.193,
-      "sourceTotalPPARush": 1.564,
-      "totalPPA": 17.758
+      "sourceTotalPPARush": 5.078,
+      "totalPPA": 21.271
     },
     {
       "id": "4683561",
@@ -132,14 +132,14 @@
       "id": "5074245",
       "matchMethod": "id",
       "name": "Broc Lowry",
-      "passingPPA": 36.373,
+      "passingPPA": 33.546,
       "position": "QB",
       "receivingAttributedPPA": null,
       "returning": true,
-      "rushingPPA": 48.132,
-      "sourceTotalPPAPass": 36.373,
-      "sourceTotalPPARush": 48.132,
-      "totalPPA": 84.354
+      "rushingPPA": 53.829,
+      "sourceTotalPPAPass": 33.546,
+      "sourceTotalPPARush": 53.829,
+      "totalPPA": 87.224
     },
     {
       "id": "5075962",
@@ -162,10 +162,10 @@
       "position": "RB",
       "receivingAttributedPPA": -3.34,
       "returning": true,
-      "rushingPPA": 9.34,
+      "rushingPPA": 36.718,
       "sourceTotalPPAPass": -3.34,
-      "sourceTotalPPARush": 9.34,
-      "totalPPA": 6.0
+      "sourceTotalPPARush": 36.718,
+      "totalPPA": 33.378
     },
     {
       "id": "5086095",
@@ -188,10 +188,10 @@
       "position": "TE",
       "receivingAttributedPPA": -1.034,
       "returning": true,
-      "rushingPPA": 0.0,
+      "rushingPPA": -1.752,
       "sourceTotalPPAPass": -1.034,
-      "sourceTotalPPARush": 0.0,
-      "totalPPA": -1.034
+      "sourceTotalPPARush": -1.752,
+      "totalPPA": -2.786
     },
     {
       "id": "5164351",
@@ -214,10 +214,10 @@
       "position": "RB",
       "receivingAttributedPPA": -4.784,
       "returning": false,
-      "rushingPPA": -0.99,
+      "rushingPPA": 0.495,
       "sourceTotalPPAPass": -4.784,
-      "sourceTotalPPARush": -0.99,
-      "totalPPA": -5.775
+      "sourceTotalPPARush": 0.495,
+      "totalPPA": -4.289
     },
     {
       "id": "5296163",
@@ -259,10 +259,10 @@
   "returningPPAContributors": 8,
   "rushingPPA": {
     "players": 17,
-    "priorSeasonPPA": 53.138,
-    "returningPPA": 59.364,
+    "priorSeasonPPA": 89.46000000000001,
+    "returningPPA": 90.687,
     "returningPlayers": 8,
-    "returningShare": 1.1171666227558432
+    "returningShare": 1.0137156270959087
   },
   "season": 2026,
   "team": "Western Michigan",
@@ -275,10 +275,10 @@
       "position": "WR",
       "receivingAttributedPPA": 16.193,
       "returning": false,
-      "rushingPPA": 1.564,
+      "rushingPPA": 5.078,
       "sourceTotalPPAPass": 16.193,
-      "sourceTotalPPARush": 1.564,
-      "totalPPA": 17.758
+      "sourceTotalPPARush": 5.078,
+      "totalPPA": 21.271
     },
     {
       "id": "4880449",
@@ -366,10 +366,10 @@
       "position": "RB",
       "receivingAttributedPPA": -4.784,
       "returning": false,
-      "rushingPPA": -0.99,
+      "rushingPPA": 0.495,
       "sourceTotalPPAPass": -4.784,
-      "sourceTotalPPARush": -0.99,
-      "totalPPA": -5.775
+      "sourceTotalPPARush": 0.495,
+      "totalPPA": -4.289
     },
     {
       "id": "5296163",
@@ -390,14 +390,27 @@
       "id": "5074245",
       "matchMethod": "id",
       "name": "Broc Lowry",
-      "passingPPA": 36.373,
+      "passingPPA": 33.546,
       "position": "QB",
       "receivingAttributedPPA": null,
       "returning": true,
-      "rushingPPA": 48.132,
-      "sourceTotalPPAPass": 36.373,
-      "sourceTotalPPARush": 48.132,
-      "totalPPA": 84.354
+      "rushingPPA": 53.829,
+      "sourceTotalPPAPass": 33.546,
+      "sourceTotalPPARush": 53.829,
+      "totalPPA": 87.224
+    },
+    {
+      "id": "5085006",
+      "matchMethod": "id",
+      "name": "Jalen Buckley",
+      "passingPPA": null,
+      "position": "RB",
+      "receivingAttributedPPA": -3.34,
+      "returning": true,
+      "rushingPPA": 36.718,
+      "sourceTotalPPAPass": -3.34,
+      "sourceTotalPPARush": 36.718,
+      "totalPPA": 33.378
     },
     {
       "id": "5075962",
@@ -426,19 +439,6 @@
       "totalPPA": 11.639
     },
     {
-      "id": "5085006",
-      "matchMethod": "id",
-      "name": "Jalen Buckley",
-      "passingPPA": null,
-      "position": "RB",
-      "receivingAttributedPPA": -3.34,
-      "returning": true,
-      "rushingPPA": 9.34,
-      "sourceTotalPPAPass": -3.34,
-      "sourceTotalPPARush": 9.34,
-      "totalPPA": 6.0
-    },
-    {
       "id": "4917858",
       "matchMethod": "id",
       "name": "Cole Cabana",
@@ -450,19 +450,6 @@
       "sourceTotalPPAPass": 0.0,
       "sourceTotalPPARush": -0.226,
       "totalPPA": -0.226
-    },
-    {
-      "id": "5144956",
-      "matchMethod": "id",
-      "name": "Ryan Brotherton",
-      "passingPPA": null,
-      "position": "TE",
-      "receivingAttributedPPA": -1.034,
-      "returning": true,
-      "rushingPPA": 0.0,
-      "sourceTotalPPAPass": -1.034,
-      "sourceTotalPPARush": 0.0,
-      "totalPPA": -1.034
     },
     {
       "id": "5296166",
@@ -489,6 +476,19 @@
       "sourceTotalPPAPass": -2.684,
       "sourceTotalPPARush": 0.0,
       "totalPPA": -2.684
+    },
+    {
+      "id": "5144956",
+      "matchMethod": "id",
+      "name": "Ryan Brotherton",
+      "passingPPA": null,
+      "position": "TE",
+      "receivingAttributedPPA": -1.034,
+      "returning": true,
+      "rushingPPA": -1.752,
+      "sourceTotalPPAPass": -1.034,
+      "sourceTotalPPARush": -1.752,
+      "totalPPA": -2.786
     }
   ]
 }

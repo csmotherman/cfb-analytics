@@ -27,6 +27,16 @@ DISCLAIMER = (
 )
 VERSION = "preseason-power-2026-v1"
 
+SIMULATOR_DISCLAIMER = (
+    "Independent research model, not the site's production prediction pipeline. "
+    "A team's odds of making the 12-team CFP field, from 2,000 simulated full "
+    "regular seasons built on the preseason power model above -- not a single "
+    "point prediction. The 2026 schedule is missing weeks 14-15 as of the last "
+    "data pull, and conference tiebreakers are simplified; see "
+    "docs/CFP_2026_SEASON_SIMULATOR_RESEARCH.md for full methodology and limitations."
+)
+SIMULATOR_VERSION = "season-simulator-2026-v1"
+
 
 def _write(path: Path, payload: object) -> str:
     body = (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode()
@@ -115,17 +125,40 @@ def publish_michigan_projection(research_root: Path, published_root: Path, direc
     return {"file": "michigan/preseason-2026-projection.json", "sha256": sha, "games": len(out_games)}
 
 
+def publish_michigan_cfp_field_odds(research_root: Path, published_root: Path) -> dict:
+    rows = _read_csv(research_root / "season_2026_full_simulation_team_summary.csv")
+    methodology = json.loads((research_root / "season_2026_simulation_methodology.json").read_text())
+    row = next(r for r in rows if r["team"] == "Michigan")
+    payload = {
+        "season": 2026, "team": "Michigan", "teamId": 130, "version": SIMULATOR_VERSION,
+        "valueType": "RESEARCH", "disclaimer": SIMULATOR_DISCLAIMER,
+        "publishedAtUtc": datetime.now(timezone.utc).isoformat(),
+        "nSims": methodology["n_sims"],
+        "fieldPct": _num(row["field_pct"]),
+        "conferenceChampionPct": _num(row["conference_champion_pct"]),
+        "byePct": _num(row["bye_pct"]),
+        "atLargePct": _num(row["at_large_pct"]),
+        "avgSeedWhenInField": _num(row["avg_seed_when_in_field"]),
+        "expectedWins": _num(row["expected_wins"]),
+        "medianWins": int(row["median_wins"]) if row.get("median_wins") not in (None, "") else None,
+    }
+    target = published_root / "2026" / "michigan" / "cfp-field-odds.json"
+    sha = _write(target, payload)
+    return {"file": "michigan/cfp-field-odds.json", "sha256": sha}
+
+
 def publish(research_root: Path, published_root: Path) -> dict:
     directory_rows = json.loads((published_root / "2026" / "directory" / "team-index.json").read_text())
     directory = {row["school"]: row for row in directory_rows}
     national = publish_national_power(research_root, published_root, directory)
     michigan = publish_michigan_projection(research_root, published_root, directory)
+    cfp_odds = publish_michigan_cfp_field_odds(research_root, published_root)
     manifest = {
         "version": VERSION, "season": 2026, "valueType": "RESEARCH",
         "publishedAtUtc": datetime.now(timezone.utc).isoformat(),
         "sourceDoc": "docs/PRESEASON_POWER_RATING_RESEARCH.md",
         "sourceModel": "src/cfb_analytics/analytics/preseason_power/",
-        "artifacts": [national, michigan],
+        "artifacts": [national, michigan, cfp_odds],
     }
     _write(published_root / "2026" / "national" / "preseason-power-manifest.json", manifest)
     return manifest

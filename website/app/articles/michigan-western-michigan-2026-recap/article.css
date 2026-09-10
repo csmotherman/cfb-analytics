@@ -1,0 +1,54 @@
+/* Week 1 recap: reuses the shared feature-* article system (article-focus.css)
+   for hero, TOC, thesis/pullquote/verdict blocks and the stat-compare bars.
+   This file only covers what's specific to this piece: the scoreboard
+   strip, the drive-by-drive log, and the penalty/turnover callout cards. */
+
+.wr-scoreboard{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;max-width:640px;margin:0 auto 20px;padding:16px 22px;border:1px solid #29465d;border-radius:14px;background:linear-gradient(135deg,#071d30,#061627)}
+.wr-scoreboard-team{display:flex;align-items:center;gap:12px}
+.wr-scoreboard-team:last-child{flex-direction:row-reverse;text-align:right}
+.wr-scoreboard-team img{width:40px;height:40px;object-fit:contain}
+.wr-scoreboard-team span{display:block;font:800 10px var(--display);letter-spacing:.04em;color:#aebdca}
+.wr-scoreboard-team strong{display:block;font:900 30px var(--display);color:#fff}
+.wr-scoreboard-mid{text-align:center;padding:0 10px;border-left:1px solid #2b455a;border-right:1px solid #2b455a}
+.wr-scoreboard-mid span{display:block;font:800 8px var(--display);letter-spacing:.1em;color:#ffcb05}
+.wr-scoreboard-mid b{display:block;font:900 20px var(--display);color:#fff;margin-top:3px}
+
+.wr-drive-list{display:grid;gap:8px;margin:24px 0}
+.wr-drive{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:14px 16px;border:1px solid #274359;border-radius:10px;background:#071a2c}
+.wr-drive-td{border-color:#3f7a4f;background:linear-gradient(90deg,rgba(63,122,79,.14),#071a2c 30%)}
+.wr-drive-to{border-color:#8a3f3f;background:linear-gradient(90deg,rgba(138,63,63,.14),#071a2c 30%)}
+.wr-drive-seq{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-right:1px solid #22384b;padding-right:14px}
+.wr-drive-seq span{font:800 8px var(--display);letter-spacing:.08em;color:#62798c}
+.wr-drive-seq strong{font:900 24px var(--display);color:#fff;line-height:1}
+.wr-drive-seq small{font:700 10px var(--body);color:#7c93a6;margin-top:2px}
+.wr-drive-body{min-width:0}
+.wr-drive-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:5px}
+.wr-drive-result{font:800 12px var(--display);letter-spacing:.04em;color:#fff}
+.wr-drive-td .wr-drive-result{color:#6bd889}
+.wr-drive-to .wr-drive-result{color:#ff8a8a}
+.wr-drive-plays{font:700 10px var(--body);color:#7c93a6}
+.wr-drive-epa{font:800 10px var(--display);letter-spacing:.02em;color:#ff8a8a;padding:2px 7px;border-radius:5px;background:rgba(255,138,138,.1)}
+.wr-drive-epa-pos{color:#6bd889;background:rgba(107,216,137,.1)}
+.wr-drive-track{margin-left:auto;font:700 10px var(--body);color:#ffcb05;letter-spacing:.02em}
+.wr-drive-body p{margin:0;font-size:13.5px;line-height:1.55;color:#c5d0d9}
+
+.wr-callout-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:22px 0}
+.wr-callout-card{padding:18px;border-radius:12px;border:1px solid #29465d;background:#071b2d}
+.wr-callout-card span{display:block;font:800 9px var(--display);letter-spacing:.08em;color:#ffcb05;margin-bottom:8px}
+.wr-callout-card strong{display:block;font:700 18px/1.25 var(--display);color:#fff;margin-bottom:8px}
+.wr-callout-card p{margin:0;font-size:13px;line-height:1.55;color:#b8c7d1}
+.wr-callout-danger{border-color:#5a2f2f;background:linear-gradient(135deg,#241012,#071b2d 55%)}
+.wr-callout-danger span{color:#ff8a8a}
+
+.wr-method-note{max-width:850px;margin:30px auto 0;padding:18px 20px;border-radius:10px;background:#061627;border:1px solid #22384b}
+.wr-method-note strong{display:block;font:800 9px var(--display);letter-spacing:.09em;color:#7c93a6;margin-bottom:8px}
+.wr-method-note p{margin:0;font-size:12px;line-height:1.6;color:#8298ab}
+
+@media(max-width:760px){
+  .wr-scoreboard{grid-template-columns:1fr auto 1fr;gap:8px;padding:14px}
+  .wr-scoreboard-team strong{font-size:22px}
+  .wr-callout-grid{grid-template-columns:1fr}
+  .wr-drive{grid-template-columns:48px 1fr;gap:10px;padding:12px}
+  .wr-drive-seq strong{font-size:19px}
+  .wr-drive-track{margin-left:0;flex-basis:100%}
+}

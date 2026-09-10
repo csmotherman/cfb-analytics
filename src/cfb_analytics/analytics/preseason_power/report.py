@@ -62,6 +62,14 @@ def build_ablation_table(registry: dict) -> list[dict]:
     rows.append(run("Model 6: BASE on portal-comparable seasons only", BASE, SEASONS_4))
     rows.append(run("Model 6: + portal net production (offense+defense) -- WORSE, excluded",
                      BASE + ["portal_offense_net", "portal_defense_net"], SEASONS_4))
+    rows.append(run("Model 7: + coach new-hire flag (on BASE)", BASE + ["coach_new_flag"], all_seasons))
+    rows.append(run("Model 7: + coach tenure years (on BASE)", BASE + ["coach_tenure_years"], all_seasons))
+    rows.append(run("Model 7: + coach career prior power (on BASE)", BASE + ["coach_prior_overall"], all_seasons))
+    rows.append(run("Model 7: RECOMMENDED + coach new-hire flag", FINAL_FEATURES + ["coach_new_flag"], all_seasons))
+    rows.append(run("Model 7: RECOMMENDED + coach tenure years", FINAL_FEATURES + ["coach_tenure_years"], all_seasons))
+    rows.append(run("Model 7: RECOMMENDED + coach career prior power", FINAL_FEATURES + ["coach_prior_overall"], all_seasons))
+    rows.append(run("Model 7: RECOMMENDED + coach new-hire flag + coach career prior power",
+                     FINAL_FEATURES + ["coach_new_flag", "coach_prior_overall"], all_seasons))
     return rows
 
 

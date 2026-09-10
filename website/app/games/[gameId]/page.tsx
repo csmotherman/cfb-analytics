@@ -84,7 +84,7 @@ export default async function GameHub({params}:Props){
 
   const michiganConference=home?(game.homeConference??"Big Ten"):(game.awayConference??"Big Ten");
   const opponentConference=home?(game.awayConference??"—"):(game.homeConference??"—");
-  const articleHref=String(game.id)==="401858428"?"/articles/michigan-western-michigan-2026-preview":"/articles";
+  const articleHref=String(game.id)==="401858428"?"/articles/michigan-western-michigan-2026-preview":String(game.id)==="401856679"?"/articles/michigan-oklahoma-2026-preview":"/articles";
   const modelWinPct=modelGame?.winProb!=null?Math.round(modelGame.winProb*100):null;
   const modelMargin=modelGame?.predictedMargin!=null?`${modelGame.predictedMargin>=0?"+":""}${modelGame.predictedMargin.toFixed(1)}`:null;
 

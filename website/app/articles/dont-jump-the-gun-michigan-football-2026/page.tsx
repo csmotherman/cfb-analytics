@@ -226,6 +226,7 @@ export default function DontJumpTheGunArticle() {
               </div>
               <p>If Michigan looks structurally better against Oklahoma, the Western game immediately begins to look more like a disastrous first rep than a season-defining truth. If the exact same problems repeat, then the concern gains another real piece of evidence.</p>
               <p>That is how evaluation is supposed to work: <strong>observe, update, observe again.</strong></p>
+              <p><Link href="/articles/how-michigan-beats-oklahoma-2026">Read the full Oklahoma preview and how-each-team-wins breakdown →</Link></p>
             </section>
 
             <section className="djg-final">

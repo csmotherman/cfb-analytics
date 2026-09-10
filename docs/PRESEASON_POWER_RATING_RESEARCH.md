@@ -4,6 +4,7 @@
 **Code:** `src/cfb_analytics/analytics/preseason_power/`
 **Outputs:** `data/research/preseason_power/`
 **Tests:** `tests/analytics/test_preseason_power_leakage.py`
+**Extended by:** `docs/CFP_2026_SEASON_SIMULATOR_RESEARCH.md` -- takes this Week 1 model full-season, simulating the whole 2026 schedule and the resulting 12-team CFP field.
 
 This document reports a walk-forward backtest of a true preseason power rating: for target season Y, every input is restricted to information that existed before Y's first game (prior-season results, the recruiting class entering Y, and QB roster continuity between Y-1 and Y). No AP poll, Coaches Poll, SP+, FPI, or betting line was used as a model input anywhere in this track. Betting lines were never consulted at all (this repo's `data/raw/market_lines` only covers 2014-2025 with partial open-line coverage; it was not read by this research).
 
@@ -18,10 +19,10 @@ This document reports a walk-forward backtest of a true preseason power rating: 
 | roster snapshot | 2013 | 2026 preseason roster present |
 | player_season_stats | 2013 | absent for 2026 (season unplayed) |
 | transfer portal | 2021 | 2026 offseason cycle present |
-| coaching history (by team-season) | **none** | only a single 2026 current-staff snapshot exists repo-wide |
+| coaching history (by team-season) | 1890 (identity/tenure); 2014 (established-era offense/defense) | `data/research/coaching_history/`, see Model 7 |
 | market lines | 2014 | partial open-line coverage; used only as an external note, never as a feature |
 
-**Model 7 (coaching continuity) could not be built.** There is no historical coach-by-team-season table anywhere in the repo (`data/raw/cfbd_directory/season=2026/coaches.json` is a single-season snapshot only). This is a real data gap, not a modeling choice -- adding it later requires ingesting a new historical coaching-history dataset.
+**Model 7 (coaching continuity) is now built** -- see the addendum below. `data/research/coaching_history/` supplies a full FBS head-coach career history (identity/tenure back to 1890) and a coach-season table restricted to established (year3+) tenures, joined to this repo's own leakage-safe points ratings (2014-2025).
 
 ## Method
 
@@ -92,7 +93,7 @@ On the 4 portal-available seasons (2022-2025, n=180, of which 63 games had a non
 
 **Worse in every variant -- not added to the recommended model.** The interesting part is *why*: the fitted coefficient's sign was correctly positive in all 4 walk-forward steps (a productive transfer QB genuinely correlates with outperforming), but its size was unstable year to year (+5.35, +2.59, +1.34, +3.59), and that instability cost more out-of-sample accuracy than the correct-direction signal recovered. This reads as a real, underlying football effect (transfer QB integration -- new receivers, new line, new scheme, no guarantee of even winning the job -- is inherently higher-variance than same-team continuity) rather than a data problem, unlike the generic portal result above. Current verdict: the Week 1 model does not have statistical grounds to credit a team extra for a productive incoming transfer QB beyond what recruiting and the (absence of a) returning-starter flag already capture -- Miami's 2026 rank reflects that.
 
-**Model 7 (coaching) was not built** -- no historical coaching-change data exists in the repo (see data audit).
+**Model 7 (coaching continuity) -- see the dedicated addendum below for the full result; the short version: continuity flags add nothing, but a coach's imported track record from his prior job is a real, if coverage-limited, signal.**
 
 ### Recommended model -- full walk-forward evaluation (2018-2025, n=312)
 
@@ -131,9 +132,56 @@ Out-of-sample residual std = **16.15 points** (not an assumed 14). Train/test sp
 
 Applying the recommended model to the real 2026 preseason (2023-2025 priors, the 2026 recruiting class, 2026 vs. 2025 roster QB continuity -- nothing from any 2026 game, since none have been played) produced a Top 25 with Ohio State, Oregon, Notre Dame, and Georgia at the top and Michigan at #9 -- an unforced result of the model, not a manually chosen placement. Outputs: `data/research/preseason_power/preseason_2026_top25.csv`, `preseason_2026_ratings.csv` (full FBS field), and `week1_2026_predictions.csv` (48 games, with Monte Carlo win probability / median margin / 10th-90th percentile / upset probability using the validated empirical residual pool). The Week 1 schedule was read *read-only* from `prospective/2026/features/week-01.json` (team names and neutral-site flag only -- no feature or rating value from that file was reused, keeping this track fully independent of the production model).
 
+### Addendum -- experience-weighted individual roster talent (Model 8)
+
+`recruiting_3yr` (the feature in the recommended model) is a **team-level class composite**: it only knows the incoming class entering season Y, not which of those recruits (or earlier classes) are still on the roster, or how far along they are. A 5-star true freshman and a 5-star senior are indistinguishable to it. Tested whether joining CFBD's roster (`recruitIds`) to individual recruit ratings (`recruiting/players`, field `rating`) and weighting each player's rating by `roster.year` (1=fr .. 4=sr) produces a better predictor -- the hypothesis being that a proven senior blue-chip should count for more than an unproven freshman one.
+
+New feature `experience_weighted_talent_features` (`features.py`), registered as `talent_flat` / `talent_linear` / `talent_senior_boost` (weight schemes `{1,1,1,1}`, `{1,2,3,4}`, `{1.0,1.4,1.8,2.2}` by class), aggregated two ways (average-per-rated-player, and sum-across-roster):
+
+| model | MAE | win% | Brier |
+|---|---|---|---|
+| Track A base: power_y1+y2+y3 + HFA | 13.95 | 75.9 | .1724 |
+| + recruiting_3yr (team composite, baseline) | 12.99 | 77.8 | .1607 |
+| + talent_flat (avg, unweighted control) | 13.88 | 75.9 | .1717 |
+| + talent_linear (avg, 1-4 weight) | 13.70 | 76.6 | .1692 |
+| + talent_senior_boost (avg, 1.0-2.2 weight) | 13.72 | 76.6 | .1700 |
+| + talent_sum_senior_boost (sum instead of average) | 13.99 | 75.9 | .1704 |
+| recruiting_3yr + talent_senior_boost + qb_returning_flag | 12.60 | 78.2 | .1588 |
+| recruiting_3yr + qb_returning_flag (RECOMMENDED, unchanged) | **12.60** | **78.2** | **.1584** |
+
+**Result: negative.** Every weighting scheme and both aggregations underperform the plain team-composite `recruiting_3yr` on its own (13.7-14.0 vs 12.99 MAE), and adding the best variant (`talent_senior_boost`) on top of the recommended model doesn't beat it -- MAE ties at 12.60 while Brier gets very slightly worse (.1588 vs .1584). The recommended model is unchanged.
+
+**Root cause, not just a null result:** `recruitIds` -> `recruiting/players.id` coverage is real but incomplete, and gets worse the further back a signing class is. Spot check (`rated_player_count / roster_count`): Ohio State 2025 70.2%, Toledo 2025 65.5%, Alabama 2025 59.1%, Alabama 2019 54.3%, Georgia 2015 44.3%. In the walk-forward, half the training seasons (2018-2021) are built on rosters with under ~55% of players resolving to a rated recruit -- unrated players (walk-ons, JUCO, missed joins) are silently scored as zero talent, which is systematically noisier the further back the season, exactly the same failure mode that sank the generic portal feature (Model 3-6 above) for the same name/ID-join reason. This reads as **the same underlying idea (seniority should matter) not yet supported by data plumbing precise enough to test it fairly** -- not evidence that experience-weighting recruiting talent is a bad idea in principle. A future revisit needs either better `recruitIds` coverage validation per season, or a coverage-aware weighting (e.g. discount low-coverage team-seasons rather than silently zeroing missing players).
+
+### Addendum -- coaching continuity (Model 7)
+
+The original report above (and the product contract's own gap list) named this as the one preseason signal that could not be tested at all: no historical coach-by-team-season table existed anywhere in the repo. `data/research/coaching_history/` closes that gap with two files: `fbs_coaches_full_history.json` (every FBS head coach's full career, `school`+`year` back to 1890 -- identity/tenure only; a season entry's own wins/losses/srs/spOverall are that season's outcome, or for the unplayed 2026 stub rows, CFBD's SP+ preseason projection, so neither is read as a feature) and `coach_year3plus_records_2014_2025.json` (coach-seasons restricted to `yearAtSchool>=3`, i.e. an established system past the honeymoon/transition years, with `offense`/`defense` fields that were spot-checked to match this repo's own `season_points_ratings(year, shrinkage=0.0)` exactly -- not SP+).
+
+Three features (`features.py`, registered in `model.py`):
+
+- `coach_new_flag` -- 1 if `target_season` is the coach's first year at this school.
+- `coach_tenure_years` -- consecutive years (present in the corpus) at this school entering `target_season`.
+- `coach_prior_overall` -- the career-average established (year3+) offense+defense of the coach currently on the sideline, from seasons strictly before `target_season` at ANY school he's coached. This is the one designed to matter for a coaching change: it imports the new hire's proven track record from his last job, rather than leaving the team scored only on the outgoing coach's `power_y1/y2/y3`.
+
+| model | MAE | win% | Brier | n |
+|---|---|---|---|---|
+| BASE: power_y1+y2+y3 + HFA (full sample) | 13.38 | 76.9 | .1653 | 316 |
+| + coach_new_flag (on BASE) | 13.43 | 76.6 | .1630 | 316 |
+| + coach_tenure_years (on BASE) | 13.43 | 76.9 | .1661 | 316 |
+| RECOMMENDED + coach_new_flag | 12.50 | 77.6 | .1550 | 312 |
+| RECOMMENDED + coach_tenure_years | 12.51 | 78.2 | .1569 | 312 |
+| RECOMMENDED, same subsample as coach_prior_overall below (fair baseline) | **12.38** | 78.6 | **.1516** | 56 |
+| RECOMMENDED + coach_prior_overall | **11.86** | 78.6 | .1580 | 56 |
+
+**Continuity flags add nothing** -- `coach_new_flag` and `coach_tenure_years` both tie or slightly worsen MAE/Brier on top of the recommended model (12.50/12.51 vs 12.46 baseline), same null pattern as the failed Model 8 talent weighting: knowing a coach is new, on its own, isn't informative without knowing whether he's any good.
+
+**`coach_prior_overall` is a real, coverage-limited positive signal.** Its coverage is only 46.6% of Week 1 team-games (a coach needs an established year3+ stint anywhere in the corpus before `target_season` -- most often missing for a coach in his first ever FBS head-coaching job), so the fair comparison is RECOMMENDED evaluated on the *same* 56-game subsample where the feature is defined, not the full 312-game sample. On that matched subsample the feature earns a real MAE improvement (12.38 -> 11.86, -0.52) with win% unchanged and Brier slightly worse (.1516 -> .1580). The fitted coefficient is positive and stable across every one of the 5 walk-forward steps it produces (2021: 0.437, 2022: 0.295, 2023: 0.500, 2024: 0.494, 2025: 0.432) -- not a small-sample fluke in one direction one year and the other the next.
+
+**Not folded into the primary model.** Naive full-sample imputation (0 when either team's coach has no established record, plus a companion availability-diff flag) was tested to try to recover the gain across all 312 games -- it does not survive: MAE goes to 12.51-12.59, worse than the unmodified recommended model. Diluting the signal with zeros for the majority-missing rows costs more than the true signal recovers, and folding `coach_prior_overall` in as a hard-required feature (the alternative to imputing) would cut the recommended model's production coverage roughly in half, which is unacceptable for a full-FBS 2026 field. Recommended model is unchanged. This reads as a genuine, real coaching-quality-import effect not yet supported by wide enough data coverage to use unconditionally -- the same shape of finding as the Model 8 talent root cause, but on the positive side of the ledger rather than the negative one. A future revisit needs either deeper coach-history coverage (more pre-2014 established seasons per coach) or a smarter coverage-aware blend (e.g. shrink toward 0 in proportion to games of established evidence, rather than an all-or-nothing gate).
+
 ## What this does not do
 
 - Does not modify `prospective/2026/` or any production pipeline.
 - Does not use AP/Coaches/SP+/FPI/betting lines as inputs.
-- Does not include coaching continuity (no historical data exists).
+- Coaching continuity is measured (Model 7, above): continuity flags don't help; a coach's imported prior track record does, on the ~47% of games where it's defined, but isn't part of the recommended model due to that coverage gap.
 - Portal is measured but excluded from the recommendation (net negative, likely a name-matching artifact -- see above).

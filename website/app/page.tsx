@@ -2,7 +2,7 @@ import Link from "next/link";
 import {gameDate,gameTime,homeData,opponentOf} from "../lib/home-data";
 import {formatMichiganSpread,marketLineFor} from "../lib/market-lines";
 import {michiganPollSnapshot} from "../lib/polls";
-import {michiganPreseasonProjection,preseasonPowerNational} from "../lib/preseason-power";
+import {michiganCfpFieldOdds,michiganPreseasonProjection,preseasonPowerNational} from "../lib/preseason-power";
 import {teamLogoUrl} from "../lib/team-assets";
 import modelStyles from "../styles/homeModel.module.css";
 
@@ -25,6 +25,8 @@ export default function Home(){
   const opponent=next?opponentOf(next):null;
   const market=next?marketLineFor(next.id):null;
   const cfpChance=outlook?`${Math.round(outlook.cfp.noVigImpliedProbability*100)}%`:"—";
+  const cfpFieldOdds=michiganCfpFieldOdds();
+  const cfpFieldPct=cfpFieldOdds?`${Math.round(cfpFieldOdds.fieldPct)}%`:"—";
   const projection=michiganPreseasonProjection();
   const rankings=preseasonPowerNational();
   const michiganPower=rankings?.teams.find(team=>team.teamId===130)??null;
@@ -81,6 +83,7 @@ export default function Home(){
           </article>
           <article><small>PROJECTED RECORD</small><strong>{projectedRecord}</strong><span>{projection?`${projection.winDistribution.expectedWins.toFixed(1)} expected wins`:"Coming soon"}</span></article>
           <article><small>MARKET CFP CHANCE</small><strong>{cfpChance}</strong><span>{outlook?"Market outlook":"Coming soon"}</span></article>
+          <article className="pulse-cfp-odds"><small>CFP FIELD ODDS</small><strong>{cfpFieldPct}</strong><span>{cfpFieldOdds?`Research model · ${cfpFieldOdds.nSims.toLocaleString()} simulations`:"Coming soon"}</span></article>
         </div>
       </section>
 
