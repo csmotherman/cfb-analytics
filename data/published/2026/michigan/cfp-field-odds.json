@@ -1,0 +1,17 @@
+{
+  "atLargePct": 43.65,
+  "avgSeedWhenInField": 6.36,
+  "byePct": 14.85,
+  "conferenceChampionPct": 6.65,
+  "disclaimer": "Independent research model, not the site's production prediction pipeline. A team's odds of making the 12-team CFP field, from 2,000 simulated full regular seasons built on the preseason power model above -- not a single point prediction. The 2026 schedule is missing weeks 14-15 as of the last data pull, and conference tiebreakers are simplified; see docs/CFP_2026_SEASON_SIMULATOR_RESEARCH.md for full methodology and limitations.",
+  "expectedWins": 8.77,
+  "fieldPct": 50.3,
+  "medianWins": 9,
+  "nSims": 2000,
+  "publishedAtUtc": "2026-09-03T13:53:39.846303+00:00",
+  "season": 2026,
+  "team": "Michigan",
+  "teamId": 130,
+  "valueType": "RESEARCH",
+  "version": "season-simulator-2026-v1"
+}

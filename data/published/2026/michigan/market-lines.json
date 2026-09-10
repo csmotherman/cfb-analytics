@@ -21,17 +21,17 @@
       "week": 1
     },
     {
-      "asOf": "2026-08-19",
+      "asOf": "2026-09-10",
       "gameId": "401856679",
-      "marketWinChance": 0.59,
+      "marketWinChance": 0.363,
       "opponent": "Oklahoma",
       "probabilityMethod": "logistic calibration of 2018-2025 clean closing spread to straight-up home result",
       "source": {
-        "name": "MLive preseason odds roundup",
-        "url": "https://www.mlive.com/sports-betting/michigan-wolverines-football-odds/"
+        "name": "Action Network odds tracker",
+        "url": "https://www.actionnetwork.com/ncaaf-game/oklahoma-michigan-score-odds-september-12-2026/287974"
       },
-      "sportsbook": "BetMGM",
-      "teamSpread": -2.5,
+      "sportsbook": "FanDuel",
+      "teamSpread": 5.5,
       "valueType": "MARKET",
       "week": 2
     },

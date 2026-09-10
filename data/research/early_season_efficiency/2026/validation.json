@@ -1,0 +1,27 @@
+{
+  "focusedTestsPassed": 25,
+  "checks": {
+    "unique_team_games": true,
+    "unique_epa_plays": true,
+    "all_games_have_play_data": true,
+    "offense_defense_mirrors": true,
+    "epa_pass_rush_denominators": true,
+    "epa_pass_rush_totals": true,
+    "epa_coverage_reconciles": true,
+    "season_counts_reconcile": true
+  },
+  "modelTrainingStates": 670536,
+  "trainingSeasons": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "trainingBeforeRankingSeason": true,
+  "teams": 138,
+  "completedGames": 99,
+  "compositeRankedTeams": 134,
+  "epaScoredPlays": 12401,
+  "modelCacheReusedOnRebuild": true
+}

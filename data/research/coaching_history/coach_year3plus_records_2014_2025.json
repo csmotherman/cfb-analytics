@@ -1,0 +1,7771 @@
+[
+  {
+    "coachId": 68,
+    "name": "Troy Calhoun",
+    "eligibleSeasons": [
+      {
+        "school": "Air Force",
+        "year": 2014,
+        "yearAtSchool": 8,
+        "offense": -3.082674665801055,
+        "defense": -0.07632512751058812
+      },
+      {
+        "school": "Air Force",
+        "year": 2015,
+        "yearAtSchool": 9,
+        "offense": 1.5200901373847284,
+        "defense": -0.8713631091399938
+      },
+      {
+        "school": "Air Force",
+        "year": 2016,
+        "yearAtSchool": 10,
+        "offense": 0.6381883040822662,
+        "defense": -0.75760837514322
+      },
+      {
+        "school": "Air Force",
+        "year": 2017,
+        "yearAtSchool": 11,
+        "offense": 0.8924835592201936,
+        "defense": -9.14853360001499
+      },
+      {
+        "school": "Air Force",
+        "year": 2018,
+        "yearAtSchool": 12,
+        "offense": -0.0038124659275559636,
+        "defense": -2.1886532612803005
+      },
+      {
+        "school": "Air Force",
+        "year": 2019,
+        "yearAtSchool": 13,
+        "offense": 2.2046799690937124,
+        "defense": 6.890997487518643
+      },
+      {
+        "school": "Air Force",
+        "year": 2021,
+        "yearAtSchool": 15,
+        "offense": 3.5674848843578832,
+        "defense": 5.188239494408172
+      },
+      {
+        "school": "Air Force",
+        "year": 2022,
+        "yearAtSchool": 16,
+        "offense": -3.9772367493109075,
+        "defense": 6.983246696505752
+      },
+      {
+        "school": "Air Force",
+        "year": 2023,
+        "yearAtSchool": 17,
+        "offense": -2.411586183775856,
+        "defense": 3.9132827777400854
+      },
+      {
+        "school": "Air Force",
+        "year": 2024,
+        "yearAtSchool": 18,
+        "offense": -11.516927352082295,
+        "defense": -1.3376994425178963
+      },
+      {
+        "school": "Air Force",
+        "year": 2025,
+        "yearAtSchool": 19,
+        "offense": -0.37989860465919656,
+        "defense": -8.25306290148316
+      }
+    ],
+    "avgOffense": -1.1408371970380076,
+    "avgDefense": 0.031138239916591256,
+    "n": 11,
+    "schools": [
+      "Air Force"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 47,
+    "name": "Terry Bowden",
+    "eligibleSeasons": [
+      {
+        "school": "Akron",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": -13.262235081847011,
+        "defense": -3.40026519295073
+      },
+      {
+        "school": "Akron",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": -9.938101949522329,
+        "defense": 2.6254992496521865
+      },
+      {
+        "school": "Akron",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": -4.994914672342794,
+        "defense": -10.92783026092461
+      },
+      {
+        "school": "Akron",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": -11.025874529035418,
+        "defense": -2.467908228361607
+      },
+      {
+        "school": "Akron",
+        "year": 2018,
+        "yearAtSchool": 7,
+        "offense": -11.806158149341524,
+        "defense": -3.4613029754101126
+      },
+      {
+        "school": "UL Monroe",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": -12.056130629229827,
+        "defense": -9.699621022662068
+      }
+    ],
+    "avgOffense": -10.513902501886484,
+    "avgDefense": -4.555238071776157,
+    "n": 6,
+    "schools": [
+      "Akron",
+      "UL Monroe"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2023
+    ]
+  },
+  {
+    "coachId": 406,
+    "name": "Nick Saban",
+    "eligibleSeasons": [
+      {
+        "school": "Alabama",
+        "year": 2014,
+        "yearAtSchool": 8,
+        "offense": 15.667236184694467,
+        "defense": 15.700487363020454
+      },
+      {
+        "school": "Alabama",
+        "year": 2015,
+        "yearAtSchool": 9,
+        "offense": 12.080339093719806,
+        "defense": 17.26167431697895
+      },
+      {
+        "school": "Alabama",
+        "year": 2016,
+        "yearAtSchool": 10,
+        "offense": 16.58799667466357,
+        "defense": 21.845226402726087
+      },
+      {
+        "school": "Alabama",
+        "year": 2017,
+        "yearAtSchool": 11,
+        "offense": 12.889654218041047,
+        "defense": 19.11345785500256
+      },
+      {
+        "school": "Alabama",
+        "year": 2018,
+        "yearAtSchool": 12,
+        "offense": 21.57752535290643,
+        "defense": 17.41864114601142
+      },
+      {
+        "school": "Alabama",
+        "year": 2019,
+        "yearAtSchool": 13,
+        "offense": 21.578592504834155,
+        "defense": 10.969983234363982
+      },
+      {
+        "school": "Alabama",
+        "year": 2021,
+        "yearAtSchool": 15,
+        "offense": 17.549679271264193,
+        "defense": 11.592837307871024
+      },
+      {
+        "school": "Alabama",
+        "year": 2022,
+        "yearAtSchool": 16,
+        "offense": 18.700543119046525,
+        "defense": 13.272998923445721
+      },
+      {
+        "school": "Alabama",
+        "year": 2023,
+        "yearAtSchool": 17,
+        "offense": 9.995530566639397,
+        "defense": 13.933414215189675
+      }
+    ],
+    "avgOffense": 16.291899665089954,
+    "avgDefense": 15.67874675162332,
+    "n": 9,
+    "schools": [
+      "Alabama"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 544,
+    "name": "Shawn Clark",
+    "eligibleSeasons": [
+      {
+        "school": "App State",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 3.376521624602756,
+        "defense": 2.82160341736257
+      },
+      {
+        "school": "App State",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 4.789590350439635,
+        "defense": -7.5116189642202835
+      },
+      {
+        "school": "App State",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": 3.9657020370017815,
+        "defense": -4.508187700321499
+      },
+      {
+        "school": "App State",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": -3.7548644402793165,
+        "defense": -8.609058153667618
+      }
+    ],
+    "avgOffense": 2.094237392941214,
+    "avgDefense": -4.4518153502117075,
+    "n": 4,
+    "schools": [
+      "App State"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 546,
+    "name": "Eli Drinkwitz",
+    "eligibleSeasons": [
+      {
+        "school": "Missouri",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": -0.2417469394201588,
+        "defense": 7.316382115038533
+      },
+      {
+        "school": "Missouri",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": 9.224637360835937,
+        "defense": 12.132340976665818
+      },
+      {
+        "school": "Missouri",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": 4.328435858134986,
+        "defense": 8.344525389787329
+      },
+      {
+        "school": "Missouri",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 4.157296004944345,
+        "defense": 10.043348826385719
+      }
+    ],
+    "avgOffense": 4.367155571123777,
+    "avgDefense": 9.45914932696935,
+    "n": 4,
+    "schools": [
+      "Missouri"
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 411,
+    "name": "Scott Satterfield",
+    "eligibleSeasons": [
+      {
+        "school": "App State",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -5.64765961530621,
+        "defense": 8.353637094662727
+      },
+      {
+        "school": "App State",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -2.058924066256352,
+        "defense": 2.9877089800827723
+      },
+      {
+        "school": "App State",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": 0.8819965286879017,
+        "defense": 7.296384527092946
+      },
+      {
+        "school": "Cincinnati",
+        "year": 2025,
+        "yearAtSchool": 3,
+        "offense": 3.4021343948164984,
+        "defense": 0.9893211665758934
+      },
+      {
+        "school": "Louisville",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 7.336792862125517,
+        "defense": 0.6530642320182047
+      },
+      {
+        "school": "Louisville",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 3.0009799989680546,
+        "defense": 9.585591707063537
+      }
+    ],
+    "avgOffense": 1.1525533505059014,
+    "avgDefense": 4.977617951249346,
+    "n": 6,
+    "schools": [
+      "App State",
+      "Cincinnati",
+      "Louisville"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2021,
+      2022,
+      2025
+    ]
+  },
+  {
+    "coachId": 50,
+    "name": "Brent Brennan",
+    "eligibleSeasons": [
+      {
+        "school": "San Jos\u00e9 State",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": -0.35064679502901874,
+        "defense": -9.004088770643259
+      },
+      {
+        "school": "San Jos\u00e9 State",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": -12.304435236334719,
+        "defense": -0.9380114403698934
+      },
+      {
+        "school": "San Jos\u00e9 State",
+        "year": 2022,
+        "yearAtSchool": 6,
+        "offense": -2.94894843932782,
+        "defense": -2.688620251996851
+      },
+      {
+        "school": "San Jos\u00e9 State",
+        "year": 2023,
+        "yearAtSchool": 7,
+        "offense": 0.06840623709086793,
+        "defense": -0.14226306585480147
+      }
+    ],
+    "avgOffense": -3.8839060584001723,
+    "avgDefense": -3.193245882216201,
+    "n": 4,
+    "schools": [
+      "San Jos\u00e9 State"
+    ],
+    "years": [
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 400,
+    "name": "Rich Rodriguez",
+    "eligibleSeasons": [
+      {
+        "school": "Arizona",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 7.496820226125279,
+        "defense": 6.098260337827187
+      },
+      {
+        "school": "Arizona",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 8.663236400223768,
+        "defense": -8.743859140657356
+      },
+      {
+        "school": "Arizona",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 1.0608954735360703,
+        "defense": -8.468265458626025
+      },
+      {
+        "school": "Arizona",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": 12.778933762326432,
+        "defense": -7.678776262810833
+      }
+    ],
+    "avgOffense": 7.499971465552887,
+    "avgDefense": -4.698160131066757,
+    "n": 4,
+    "schools": [
+      "Arizona"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 458,
+    "name": "Kevin Sumlin",
+    "eligibleSeasons": [
+      {
+        "school": "Texas A&M",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 11.043219081513644,
+        "defense": 1.987345429080552
+      },
+      {
+        "school": "Texas A&M",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 3.3095852900404017,
+        "defense": 9.888981376288909
+      },
+      {
+        "school": "Texas A&M",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 8.248888239121545,
+        "defense": 5.429746380411973
+      },
+      {
+        "school": "Texas A&M",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": 8.374948968123078,
+        "defense": -0.9710587161602635
+      }
+    ],
+    "avgOffense": 7.7441603946996675,
+    "avgDefense": 4.083753617405293,
+    "n": 4,
+    "schools": [
+      "Texas A&M"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 184,
+    "name": "Todd Graham",
+    "eligibleSeasons": [
+      {
+        "school": "Arizona State",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 11.408859780988276,
+        "defense": 6.038141742706543
+      },
+      {
+        "school": "Arizona State",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 10.511539378124278,
+        "defense": -1.4021938682742139
+      },
+      {
+        "school": "Arizona State",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 5.213811828214623,
+        "defense": -7.1622388945661974
+      },
+      {
+        "school": "Arizona State",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": 5.253920100018891,
+        "defense": -0.9652985434458479
+      }
+    ],
+    "avgOffense": 8.097032771836517,
+    "avgDefense": -0.8728973908949291,
+    "n": 4,
+    "schools": [
+      "Arizona State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 36,
+    "name": "Bret Bielema",
+    "eligibleSeasons": [
+      {
+        "school": "Arkansas",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 10.920335644855667,
+        "defense": 5.753617002649814
+      },
+      {
+        "school": "Arkansas",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 4.436723184246364,
+        "defense": 0.3991275697706519
+      },
+      {
+        "school": "Arkansas",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": 3.8620279047616717,
+        "defense": -6.546803595227204
+      },
+      {
+        "school": "Illinois",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 1.4008675175620109,
+        "defense": -2.511681161020836
+      },
+      {
+        "school": "Illinois",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 5.345768451178369,
+        "defense": 5.481161926339703
+      },
+      {
+        "school": "Illinois",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": 7.858761573731226,
+        "defense": 6.978282167553446
+      }
+    ],
+    "avgOffense": 5.637414046055885,
+    "avgDefense": 1.5922839850109292,
+    "n": 6,
+    "schools": [
+      "Arkansas",
+      "Illinois"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 570,
+    "name": "Sam Pittman",
+    "eligibleSeasons": [
+      {
+        "school": "Arkansas",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": 9.838367634127405,
+        "defense": 1.407401972033797
+      },
+      {
+        "school": "Arkansas",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": -0.3779027236468539,
+        "defense": 0.1495596406182869
+      },
+      {
+        "school": "Arkansas",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": 5.020885494452705,
+        "defense": 4.272683454764242
+      },
+      {
+        "school": "Arkansas",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 10.644086571487257,
+        "defense": -3.7072746992618084
+      }
+    ],
+    "avgOffense": 6.281359244105128,
+    "avgDefense": 0.5305925920386294,
+    "n": 4,
+    "schools": [
+      "Arkansas"
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 573,
+    "name": "Ryan Silverfield",
+    "eligibleSeasons": [
+      {
+        "school": "Memphis",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": 4.031203947471363,
+        "defense": 0.12220427313535182
+      },
+      {
+        "school": "Memphis",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": 8.5614684833744,
+        "defense": -5.444905988477639
+      },
+      {
+        "school": "Memphis",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": 3.46446411142225,
+        "defense": -2.1981442556996984
+      },
+      {
+        "school": "Memphis",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 1.320704894097556,
+        "defense": 0.22715474869699342
+      }
+    ],
+    "avgOffense": 4.344460359091392,
+    "avgDefense": -1.823422805586248,
+    "n": 4,
+    "schools": [
+      "Memphis"
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 10,
+    "name": "Blake Anderson",
+    "eligibleSeasons": [
+      {
+        "school": "Arkansas State",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -5.4994869236197665,
+        "defense": 2.5274592644009473
+      },
+      {
+        "school": "Arkansas State",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": 0.6058995725409176,
+        "defense": -5.2487911920669
+      },
+      {
+        "school": "Arkansas State",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": -4.1252430615012505,
+        "defense": -1.6754714559370663
+      },
+      {
+        "school": "Arkansas State",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": 0.5149172394517093,
+        "defense": -9.78584185690823
+      },
+      {
+        "school": "Utah State",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 1.6719656817304243,
+        "defense": -12.858422075395842
+      },
+      {
+        "school": "Utah State",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 2.3269225286910196,
+        "defense": -15.92670136534566
+      }
+    ],
+    "avgOffense": -0.750837493784491,
+    "avgDefense": -7.161294780208792,
+    "n": 6,
+    "schools": [
+      "Arkansas State",
+      "Utah State"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 548,
+    "name": "Hugh Freeze",
+    "eligibleSeasons": [
+      {
+        "school": "Auburn",
+        "year": 2025,
+        "yearAtSchool": 3,
+        "offense": 0.9974911806115558,
+        "defense": 10.33952884319599
+      },
+      {
+        "school": "Liberty",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 2.105805437866675,
+        "defense": 1.042258234361669
+      },
+      {
+        "school": "Liberty",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": -2.6149852581671285,
+        "defense": -2.947375312254828
+      },
+      {
+        "school": "Ole Miss",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 5.160146698388777,
+        "defense": 19.167255826502558
+      },
+      {
+        "school": "Ole Miss",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 13.498456417914788,
+        "defense": 7.881764634926747
+      },
+      {
+        "school": "Ole Miss",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 10.538657292937602,
+        "defense": -2.292234083991645
+      }
+    ],
+    "avgOffense": 4.947595294925378,
+    "avgDefense": 5.531866357123415,
+    "n": 6,
+    "schools": [
+      "Auburn",
+      "Liberty",
+      "Ole Miss"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2021,
+      2022,
+      2025
+    ]
+  },
+  {
+    "coachId": 202,
+    "name": "Bryan Harsin",
+    "eligibleSeasons": [
+      {
+        "school": "Boise State",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": 1.9995202638693703,
+        "defense": 4.8937936211184665
+      },
+      {
+        "school": "Boise State",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": 4.518193626999315,
+        "defense": 2.6145573681493754
+      },
+      {
+        "school": "Boise State",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": 7.4861524427790185,
+        "defense": 3.840026322273311
+      },
+      {
+        "school": "Boise State",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": 3.3850419037045127,
+        "defense": 3.651823035860224
+      }
+    ],
+    "avgOffense": 4.347227059338054,
+    "avgDefense": 3.750050086850344,
+    "n": 4,
+    "schools": [
+      "Boise State"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 237,
+    "name": "Butch Jones",
+    "eligibleSeasons": [
+      {
+        "school": "Arkansas State",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": -4.110617978183619,
+        "defense": -6.437111746992502
+      },
+      {
+        "school": "Arkansas State",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": -5.0491346501009104,
+        "defense": -8.616907636805285
+      },
+      {
+        "school": "Arkansas State",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": -9.139655956496584,
+        "defense": -5.304379892747463
+      },
+      {
+        "school": "Tennessee",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 11.584911160423884,
+        "defense": 8.342105257461805
+      },
+      {
+        "school": "Tennessee",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 12.728797900195245,
+        "defense": -1.6590546416095107
+      },
+      {
+        "school": "Tennessee",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": -6.172710414386697,
+        "defense": 0.0160530544306553
+      }
+    ],
+    "avgOffense": -0.026401656424780356,
+    "avgDefense": -2.2765492677103834,
+    "n": 6,
+    "schools": [
+      "Arkansas State",
+      "Tennessee"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 286,
+    "name": "Gus Malzahn",
+    "eligibleSeasons": [
+      {
+        "school": "Auburn",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 3.6869219322377096,
+        "defense": 7.133069885140482
+      },
+      {
+        "school": "Auburn",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 5.535935553145056,
+        "defense": 15.755215822592573
+      },
+      {
+        "school": "Auburn",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": 11.036545193595089,
+        "defense": 16.29106557969859
+      },
+      {
+        "school": "Auburn",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": 5.7261705139866255,
+        "defense": 13.57489804341222
+      },
+      {
+        "school": "Auburn",
+        "year": 2019,
+        "yearAtSchool": 7,
+        "offense": 10.532024355669517,
+        "defense": 15.009226520168733
+      },
+      {
+        "school": "UCF",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 3.2958291713190335,
+        "defense": 3.5658023834308414
+      },
+      {
+        "school": "UCF",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 6.060394987607147,
+        "defense": 1.0423878179895532
+      }
+    ],
+    "avgOffense": 6.5534031010800256,
+    "avgDefense": 10.338809436061856,
+    "n": 7,
+    "schools": [
+      "Auburn",
+      "UCF"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 323,
+    "name": "Jeff Monken",
+    "eligibleSeasons": [
+      {
+        "school": "Army",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -6.465242259523665,
+        "defense": 0.15563481128062334
+      },
+      {
+        "school": "Army",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -1.279139792604297,
+        "defense": 1.8404860056720012
+      },
+      {
+        "school": "Army",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": 0.017078117383516167,
+        "defense": 11.549652620917954
+      },
+      {
+        "school": "Army",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": -7.2932128709978805,
+        "defense": 1.9038309461424132
+      },
+      {
+        "school": "Army",
+        "year": 2021,
+        "yearAtSchool": 8,
+        "offense": 0.029249931552829067,
+        "defense": 3.60257895419642
+      },
+      {
+        "school": "Army",
+        "year": 2022,
+        "yearAtSchool": 9,
+        "offense": -4.644079035287664,
+        "defense": -0.46319938269532096
+      },
+      {
+        "school": "Army",
+        "year": 2023,
+        "yearAtSchool": 10,
+        "offense": -11.095368764608091,
+        "defense": 0.31534066685267725
+      },
+      {
+        "school": "Army",
+        "year": 2024,
+        "yearAtSchool": 11,
+        "offense": -1.4731594782977653,
+        "defense": 6.8532221009573915
+      },
+      {
+        "school": "Army",
+        "year": 2025,
+        "yearAtSchool": 12,
+        "offense": -6.7734299556316575,
+        "defense": 5.188945268703786
+      }
+    ],
+    "avgOffense": -4.330811567557186,
+    "avgDefense": 3.4384991102253273,
+    "n": 9,
+    "schools": [
+      "Army"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 309,
+    "name": "Bronco Mendenhall",
+    "eligibleSeasons": [
+      {
+        "school": "BYU",
+        "year": 2014,
+        "yearAtSchool": 10,
+        "offense": 5.621149468541457,
+        "defense": -2.702533766934862
+      },
+      {
+        "school": "BYU",
+        "year": 2015,
+        "yearAtSchool": 11,
+        "offense": 4.914494861024653,
+        "defense": 4.353435968061543
+      },
+      {
+        "school": "Virginia",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": -2.461992499536779,
+        "defense": 9.811005620037431
+      },
+      {
+        "school": "Virginia",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 5.657833289815241,
+        "defense": 0.6319924466869673
+      },
+      {
+        "school": "Virginia",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": 7.027537973927483,
+        "defense": -3.5239853530761986
+      }
+    ],
+    "avgOffense": 4.1518046187544115,
+    "avgDefense": 1.7139829829549762,
+    "n": 5,
+    "schools": [
+      "BYU",
+      "Virginia"
+    ],
+    "years": [
+      2014,
+      2015,
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 426,
+    "name": "Kalani Sitake",
+    "eligibleSeasons": [
+      {
+        "school": "BYU",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": -2.576575692920085,
+        "defense": 5.4105738239761925
+      },
+      {
+        "school": "BYU",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": -1.6397953067511692,
+        "defense": -0.7624157348143337
+      },
+      {
+        "school": "BYU",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": 5.008763451135608,
+        "defense": 3.225531391910456
+      },
+      {
+        "school": "BYU",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": 0.8859161354183059,
+        "defense": -0.4322505912326456
+      },
+      {
+        "school": "BYU",
+        "year": 2023,
+        "yearAtSchool": 8,
+        "offense": -1.8701401247175358,
+        "defense": -0.034006621540951076
+      },
+      {
+        "school": "BYU",
+        "year": 2024,
+        "yearAtSchool": 9,
+        "offense": 6.6149488772358245,
+        "defense": 9.533784947915384
+      },
+      {
+        "school": "BYU",
+        "year": 2025,
+        "yearAtSchool": 10,
+        "offense": 7.721236559561827,
+        "defense": 9.888469831956668
+      }
+    ],
+    "avgOffense": 2.0206219855661107,
+    "avgDefense": 3.832812435452967,
+    "n": 7,
+    "schools": [
+      "BYU"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 217,
+    "name": "Brady Hoke",
+    "eligibleSeasons": [
+      {
+        "school": "Michigan",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": -5.5490213101980315,
+        "defense": 9.00202871729062
+      },
+      {
+        "school": "San Diego State",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": -10.161552190005885,
+        "defense": 2.1691647410176476
+      },
+      {
+        "school": "San Diego State",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": -8.165987585675813,
+        "defense": -2.2935097249757197
+      }
+    ],
+    "avgOffense": -7.958853695293243,
+    "avgDefense": 2.9592279111108497,
+    "n": 3,
+    "schools": [
+      "Michigan",
+      "San Diego State"
+    ],
+    "years": [
+      2014,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 347,
+    "name": "Mike Neu",
+    "eligibleSeasons": [
+      {
+        "school": "Ball State",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": -7.9174894631554364,
+        "defense": -9.456765674274138
+      },
+      {
+        "school": "Ball State",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 0.08733171838874021,
+        "defense": -6.5159400644779355
+      },
+      {
+        "school": "Ball State",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": -7.171022461204922,
+        "defense": -4.573128690491662
+      },
+      {
+        "school": "Ball State",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": -9.299139593035477,
+        "defense": -5.01064680290976
+      },
+      {
+        "school": "Ball State",
+        "year": 2023,
+        "yearAtSchool": 8,
+        "offense": -15.08610718966547,
+        "defense": -3.1714979625394806
+      },
+      {
+        "school": "Ball State",
+        "year": 2024,
+        "yearAtSchool": 9,
+        "offense": -5.215568020783787,
+        "defense": -16.600932318007644
+      }
+    ],
+    "avgOffense": -7.433665834909392,
+    "avgDefense": -7.5548185854501035,
+    "n": 6,
+    "schools": [
+      "Ball State"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 562,
+    "name": "Dave Aranda",
+    "eligibleSeasons": [
+      {
+        "school": "Baylor",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": 5.552666248677234,
+        "defense": 3.30125601202587
+      },
+      {
+        "school": "Baylor",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": -0.3797590136737394,
+        "defense": -5.074254389135252
+      },
+      {
+        "school": "Baylor",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": 10.327507621271181,
+        "defense": 1.3607688900689499
+      },
+      {
+        "school": "Baylor",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 8.468072189279054,
+        "defense": -5.274981404014543
+      }
+    ],
+    "avgOffense": 5.992121761388432,
+    "avgDefense": -1.4218027227637438,
+    "n": 4,
+    "schools": [
+      "Baylor"
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 391,
+    "name": "Matt Rhule",
+    "eligibleSeasons": [
+      {
+        "school": "Baylor",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": 8.011607034378093,
+        "defense": 12.35090846505718
+      },
+      {
+        "school": "Nebraska",
+        "year": 2025,
+        "yearAtSchool": 3,
+        "offense": 4.52279713080893,
+        "defense": 3.8740213337743525
+      },
+      {
+        "school": "Temple",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": -0.03611649474067552,
+        "defense": 6.854692589053525
+      },
+      {
+        "school": "Temple",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 1.746916518950589,
+        "defense": 7.205192372019844
+      }
+    ],
+    "avgOffense": 3.561301047349234,
+    "avgDefense": 7.571203689976225,
+    "n": 4,
+    "schools": [
+      "Baylor",
+      "Nebraska",
+      "Temple"
+    ],
+    "years": [
+      2015,
+      2016,
+      2019,
+      2025
+    ]
+  },
+  {
+    "coachId": 377,
+    "name": "Chris Petersen",
+    "eligibleSeasons": [
+      {
+        "school": "Washington",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": 14.974806772129329,
+        "defense": 14.777793573262146
+      },
+      {
+        "school": "Washington",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": 8.423963823393906,
+        "defense": 13.451785270274716
+      },
+      {
+        "school": "Washington",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": -0.20651640542881367,
+        "defense": 14.185683161426379
+      },
+      {
+        "school": "Washington",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": 5.284475972554598,
+        "defense": 11.931740552323447
+      }
+    ],
+    "avgOffense": 7.119182540662255,
+    "avgDefense": 13.586750639321671,
+    "n": 4,
+    "schools": [
+      "Washington"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 1,
+    "name": "Steve Addazio",
+    "eligibleSeasons": [
+      {
+        "school": "Boston College",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": -13.916345085337968,
+        "defense": 15.49413436200012
+      },
+      {
+        "school": "Boston College",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": -8.112790306298736,
+        "defense": 3.3884261424480786
+      },
+      {
+        "school": "Boston College",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": 2.857201728369535,
+        "defense": 9.479547645561345
+      },
+      {
+        "school": "Boston College",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": 0.3538246468831482,
+        "defense": 5.2781196366306435
+      },
+      {
+        "school": "Boston College",
+        "year": 2019,
+        "yearAtSchool": 7,
+        "offense": 1.495348763962185,
+        "defense": -4.9629478113329375
+      }
+    ],
+    "avgOffense": -3.464552050484367,
+    "avgDefense": 5.73545599506145,
+    "n": 5,
+    "schools": [
+      "Boston College"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 18,
+    "name": "Dino Babers",
+    "eligibleSeasons": [
+      {
+        "school": "Syracuse",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 9.506667261544159,
+        "defense": 2.4035068787171396
+      },
+      {
+        "school": "Syracuse",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": -1.2281100169373071,
+        "defense": -5.656479967398259
+      },
+      {
+        "school": "Syracuse",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": -2.967036999673632,
+        "defense": 2.3177229093013727
+      },
+      {
+        "school": "Syracuse",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": 2.1076424984242825,
+        "defense": 3.8344059201681415
+      },
+      {
+        "school": "Syracuse",
+        "year": 2023,
+        "yearAtSchool": 8,
+        "offense": -7.608541220194727,
+        "defense": -0.18503687142038855
+      }
+    ],
+    "avgOffense": -0.03787569536744497,
+    "avgDefense": 0.5428237738736013,
+    "n": 5,
+    "schools": [
+      "Syracuse"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 85,
+    "name": "Dave Clawson",
+    "eligibleSeasons": [
+      {
+        "school": "Wake Forest",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -6.584397682753736,
+        "defense": 8.04434082933084
+      },
+      {
+        "school": "Wake Forest",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": 11.525675641874404,
+        "defense": 3.2079371526911546
+      },
+      {
+        "school": "Wake Forest",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": 4.48036265237036,
+        "defense": -4.489094937987397
+      },
+      {
+        "school": "Wake Forest",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": 2.8449393782364325,
+        "defense": -2.4181197712982114
+      },
+      {
+        "school": "Wake Forest",
+        "year": 2021,
+        "yearAtSchool": 8,
+        "offense": 15.258008012536175,
+        "defense": -1.7288696196824898
+      },
+      {
+        "school": "Wake Forest",
+        "year": 2022,
+        "yearAtSchool": 9,
+        "offense": 11.586648117265606,
+        "defense": -1.3304727655879849
+      },
+      {
+        "school": "Wake Forest",
+        "year": 2023,
+        "yearAtSchool": 10,
+        "offense": -4.623767724652538,
+        "defense": 0.5230277030793508
+      },
+      {
+        "school": "Wake Forest",
+        "year": 2024,
+        "yearAtSchool": 11,
+        "offense": -1.2228379972320411,
+        "defense": -4.33761706713766
+      }
+    ],
+    "avgOffense": 4.158078799705582,
+    "avgDefense": -0.3161085595740496,
+    "n": 8,
+    "schools": [
+      "Wake Forest"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 557,
+    "name": "Scot Loeffler",
+    "eligibleSeasons": [
+      {
+        "school": "Bowling Green",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": -12.18586924562501,
+        "defense": -8.03387484149009
+      },
+      {
+        "school": "Bowling Green",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": -9.188744026381386,
+        "defense": -7.587896394763495
+      },
+      {
+        "school": "Bowling Green",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": -4.176587630720011,
+        "defense": -2.803915211487194
+      },
+      {
+        "school": "Bowling Green",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": -4.7132730319313945,
+        "defense": 0.8317360105992796
+      }
+    ],
+    "avgOffense": -7.56611848366445,
+    "avgDefense": -4.398487609285374,
+    "n": 4,
+    "schools": [
+      "Bowling Green"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 313,
+    "name": "Urban Meyer",
+    "eligibleSeasons": [
+      {
+        "school": "Ohio State",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 20.232600646982892,
+        "defense": 9.160978560929872
+      },
+      {
+        "school": "Ohio State",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 8.330087102946402,
+        "defense": 14.81313903192604
+      },
+      {
+        "school": "Ohio State",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 14.739849905411019,
+        "defense": 18.44979191727804
+      },
+      {
+        "school": "Ohio State",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": 17.69871803842186,
+        "defense": 13.038891024067517
+      },
+      {
+        "school": "Ohio State",
+        "year": 2018,
+        "yearAtSchool": 7,
+        "offense": 18.197276323478963,
+        "defense": 3.479146927856219
+      }
+    ],
+    "avgOffense": 15.839706403448227,
+    "avgDefense": 11.788389492411538,
+    "n": 5,
+    "schools": [
+      "Ohio State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "coachId": 267,
+    "name": "Lance Leipold",
+    "eligibleSeasons": [
+      {
+        "school": "Buffalo",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": -4.547302333377049,
+        "defense": -2.3986205831359295
+      },
+      {
+        "school": "Buffalo",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": 3.251900505495853,
+        "defense": -3.527858940066891
+      },
+      {
+        "school": "Buffalo",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": -3.0554701174521437,
+        "defense": -0.47515158187797496
+      },
+      {
+        "school": "Kansas",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 9.448060846778061,
+        "defense": 3.3620634752382905
+      },
+      {
+        "school": "Kansas",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 6.123791203491734,
+        "defense": 4.331016859154291
+      },
+      {
+        "school": "Kansas",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": 5.191858385003965,
+        "defense": 0.3435595089549612
+      }
+    ],
+    "avgOffense": 2.7354730816567367,
+    "avgDefense": 0.27250145637779116,
+    "n": 6,
+    "schools": [
+      "Buffalo",
+      "Kansas"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 526,
+    "name": "Sonny Dykes",
+    "eligibleSeasons": [
+      {
+        "school": "California",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 11.151255397796312,
+        "defense": 0.9416985581758047
+      },
+      {
+        "school": "California",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 11.543446152028105,
+        "defense": -9.557139035270572
+      },
+      {
+        "school": "SMU",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": 7.753911467095225,
+        "defense": -3.584486344844007
+      },
+      {
+        "school": "TCU",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": 7.232966532660718,
+        "defense": 2.4421322052065046
+      },
+      {
+        "school": "TCU",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": 6.478137924008527,
+        "defense": 4.10885169009179
+      }
+    ],
+    "avgOffense": 8.831943494717777,
+    "avgDefense": -1.1297885853280958,
+    "n": 5,
+    "schools": [
+      "California",
+      "SMU",
+      "TCU"
+    ],
+    "years": [
+      2015,
+      2016,
+      2021,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 499,
+    "name": "Justin Wilcox",
+    "eligibleSeasons": [
+      {
+        "school": "California",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": -3.8510000315955732,
+        "defense": 9.646638928985451
+      },
+      {
+        "school": "California",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": -5.336438741399231,
+        "defense": 8.094302091594653
+      },
+      {
+        "school": "California",
+        "year": 2022,
+        "yearAtSchool": 6,
+        "offense": -3.864145291888868,
+        "defense": 2.3382450177472776
+      },
+      {
+        "school": "California",
+        "year": 2023,
+        "yearAtSchool": 7,
+        "offense": 7.73678746007268,
+        "defense": -2.5060245253521254
+      },
+      {
+        "school": "California",
+        "year": 2024,
+        "yearAtSchool": 8,
+        "offense": -2.7205299903361557,
+        "defense": 5.17560283642167
+      },
+      {
+        "school": "California",
+        "year": 2025,
+        "yearAtSchool": 9,
+        "offense": -0.4657702568343214,
+        "defense": -3.0806699302798273
+      }
+    ],
+    "avgOffense": -1.416849475330245,
+    "avgDefense": 3.2780157365195164,
+    "n": 6,
+    "schools": [
+      "California"
+    ],
+    "years": [
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 246,
+    "name": "Brian Kelly",
+    "eligibleSeasons": [
+      {
+        "school": "LSU",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": 10.016477079941291,
+        "defense": 8.709343355271367
+      },
+      {
+        "school": "LSU",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": -1.2729268089412242,
+        "defense": 11.30044380805272
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2014,
+        "yearAtSchool": 5,
+        "offense": 9.350538236928326,
+        "defense": 0.8528219755136256
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2015,
+        "yearAtSchool": 6,
+        "offense": 12.961984214644819,
+        "defense": 5.9850471456840335
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2016,
+        "yearAtSchool": 7,
+        "offense": 5.8915172768521655,
+        "defense": 2.1755536104168485
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2017,
+        "yearAtSchool": 8,
+        "offense": 13.15524212339445,
+        "defense": 10.273408158538986
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2018,
+        "yearAtSchool": 9,
+        "offense": 5.916838236395175,
+        "defense": 12.84927134380855
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2019,
+        "yearAtSchool": 10,
+        "offense": 9.484964510142389,
+        "defense": 12.500825802220493
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2021,
+        "yearAtSchool": 12,
+        "offense": 10.46512004917583,
+        "defense": 10.328365560089955
+      }
+    ],
+    "avgOffense": 8.441083879837024,
+    "avgDefense": 8.330564528844064,
+    "n": 9,
+    "schools": [
+      "LSU",
+      "Notre Dame"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 299,
+    "name": "Jim McElwain",
+    "eligibleSeasons": [
+      {
+        "school": "Central Michigan",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": -1.6617343887780838,
+        "defense": -3.0537543364101767
+      },
+      {
+        "school": "Central Michigan",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": -7.24680262287683,
+        "defense": -7.530878215398866
+      },
+      {
+        "school": "Central Michigan",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": -8.334255690135826,
+        "defense": -9.533915909110055
+      },
+      {
+        "school": "Central Michigan",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": -10.952149556985178,
+        "defense": -9.858307954429778
+      },
+      {
+        "school": "Colorado State",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 1.1267946131123194,
+        "defense": 1.9270825427920086
+      },
+      {
+        "school": "Florida",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": -1.5349293375676454,
+        "defense": 2.484738836406707
+      }
+    ],
+    "avgOffense": -4.767179497205207,
+    "avgDefense": -4.260839172691694,
+    "n": 6,
+    "schools": [
+      "Central Michigan",
+      "Colorado State",
+      "Florida"
+    ],
+    "years": [
+      2014,
+      2017,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 112,
+    "name": "Mark Dantonio",
+    "eligibleSeasons": [
+      {
+        "school": "Michigan State",
+        "year": 2014,
+        "yearAtSchool": 8,
+        "offense": 15.721306498775522,
+        "defense": 8.476101500192792
+      },
+      {
+        "school": "Michigan State",
+        "year": 2015,
+        "yearAtSchool": 9,
+        "offense": 3.714609054716568,
+        "defense": 11.353896176237791
+      },
+      {
+        "school": "Michigan State",
+        "year": 2016,
+        "yearAtSchool": 10,
+        "offense": 1.1450090079975985,
+        "defense": 3.754771878353906
+      },
+      {
+        "school": "Michigan State",
+        "year": 2017,
+        "yearAtSchool": 11,
+        "offense": 0.6909884664802026,
+        "defense": 12.993093954006389
+      },
+      {
+        "school": "Michigan State",
+        "year": 2018,
+        "yearAtSchool": 12,
+        "offense": -7.106015103519552,
+        "defense": 15.372005891784752
+      },
+      {
+        "school": "Michigan State",
+        "year": 2019,
+        "yearAtSchool": 13,
+        "offense": -0.7667742328192156,
+        "defense": 8.436447157051354
+      }
+    ],
+    "avgOffense": 2.2331872819385206,
+    "avgDefense": 10.06438609293783,
+    "n": 6,
+    "schools": [
+      "Michigan State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 164,
+    "name": "Luke Fickell",
+    "eligibleSeasons": [
+      {
+        "school": "Cincinnati",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": 0.4532108235604276,
+        "defense": 9.13578489120845
+      },
+      {
+        "school": "Cincinnati",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": 8.656123247744032,
+        "defense": 9.928606763892791
+      },
+      {
+        "school": "Cincinnati",
+        "year": 2022,
+        "yearAtSchool": 6,
+        "offense": -1.8449484054824001,
+        "defense": 6.890059641747548
+      },
+      {
+        "school": "Wisconsin",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": 0.817750159292165,
+        "defense": 7.3759862855556895
+      },
+      {
+        "school": "Wisconsin",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": -5.137308607144899,
+        "defense": 10.983612269240886
+      }
+    ],
+    "avgOffense": 0.5889654435938652,
+    "avgDefense": 8.862809970329073,
+    "n": 5,
+    "schools": [
+      "Cincinnati",
+      "Wisconsin"
+    ],
+    "years": [
+      2019,
+      2021,
+      2022,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 462,
+    "name": "Dabo Swinney",
+    "eligibleSeasons": [
+      {
+        "school": "Clemson",
+        "year": 2014,
+        "yearAtSchool": 7,
+        "offense": 0.26521610601185375,
+        "defense": 14.991549931322425
+      },
+      {
+        "school": "Clemson",
+        "year": 2015,
+        "yearAtSchool": 8,
+        "offense": 15.821084967195045,
+        "defense": 10.162111705329211
+      },
+      {
+        "school": "Clemson",
+        "year": 2016,
+        "yearAtSchool": 9,
+        "offense": 15.78750932121264,
+        "defense": 14.464546274852168
+      },
+      {
+        "school": "Clemson",
+        "year": 2017,
+        "yearAtSchool": 10,
+        "offense": 10.575841363273096,
+        "defense": 18.294228997530226
+      },
+      {
+        "school": "Clemson",
+        "year": 2018,
+        "yearAtSchool": 11,
+        "offense": 18.497419749832865,
+        "defense": 19.591590576875824
+      },
+      {
+        "school": "Clemson",
+        "year": 2019,
+        "yearAtSchool": 12,
+        "offense": 15.819157283278013,
+        "defense": 18.48171315040692
+      },
+      {
+        "school": "Clemson",
+        "year": 2021,
+        "yearAtSchool": 14,
+        "offense": 0.09652836629999587,
+        "defense": 14.690508380727819
+      },
+      {
+        "school": "Clemson",
+        "year": 2022,
+        "yearAtSchool": 15,
+        "offense": 7.809649523930155,
+        "defense": 8.9209170969682
+      },
+      {
+        "school": "Clemson",
+        "year": 2023,
+        "yearAtSchool": 16,
+        "offense": 3.7578485957431638,
+        "defense": 8.305558289899738
+      },
+      {
+        "school": "Clemson",
+        "year": 2024,
+        "yearAtSchool": 17,
+        "offense": 10.0722982735174,
+        "defense": 6.04020422399258
+      },
+      {
+        "school": "Clemson",
+        "year": 2025,
+        "yearAtSchool": 18,
+        "offense": 2.56458866544111,
+        "defense": 6.250189932057246
+      }
+    ],
+    "avgOffense": 9.187922019612303,
+    "avgDefense": 12.744828959996578,
+    "n": 11,
+    "schools": [
+      "Clemson"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 81,
+    "name": "Jamey Chadwell",
+    "eligibleSeasons": [
+      {
+        "school": "Coastal Carolina",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 4.1761286680098975,
+        "defense": -1.0421980524825079
+      },
+      {
+        "school": "Coastal Carolina",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": -0.45627761967429004,
+        "defense": -8.199515878755221
+      },
+      {
+        "school": "Liberty",
+        "year": 2025,
+        "yearAtSchool": 3,
+        "offense": -6.305924870701769,
+        "defense": -7.735148939541046
+      }
+    ],
+    "avgOffense": -0.8620246074553873,
+    "avgDefense": -5.658954290259592,
+    "n": 3,
+    "schools": [
+      "Coastal Carolina",
+      "Liberty"
+    ],
+    "years": [
+      2021,
+      2022,
+      2025
+    ]
+  },
+  {
+    "coachId": 280,
+    "name": "Mike MacIntyre",
+    "eligibleSeasons": [
+      {
+        "school": "Colorado",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": -4.769545717137398,
+        "defense": 3.164508117790004
+      },
+      {
+        "school": "Colorado",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 3.876478392062506,
+        "defense": 12.839958153685734
+      },
+      {
+        "school": "Colorado",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": -3.5851514911427755,
+        "defense": 1.432700151178236
+      },
+      {
+        "school": "Colorado",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": -2.2357876673542685,
+        "defense": 0.698457693752238
+      },
+      {
+        "school": "Florida International",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": -9.056936007491021,
+        "defense": -4.7198844554340535
+      }
+    ],
+    "avgOffense": -3.1541884982125916,
+    "avgDefense": 2.683147932194432,
+    "n": 5,
+    "schools": [
+      "Colorado",
+      "Florida International"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2024
+    ]
+  },
+  {
+    "coachId": 42,
+    "name": "Mike Bobo",
+    "eligibleSeasons": [
+      {
+        "school": "Colorado State",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": 1.9384828857853276,
+        "defense": -5.086554349996705
+      },
+      {
+        "school": "Colorado State",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": -6.0816612612222,
+        "defense": -8.778465170087363
+      },
+      {
+        "school": "Colorado State",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": -2.646436224336543,
+        "defense": -8.887640148828526
+      }
+    ],
+    "avgOffense": -2.2632048665911384,
+    "avgDefense": -7.584219889637532,
+    "n": 3,
+    "schools": [
+      "Colorado State"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 327,
+    "name": "Jim Mora",
+    "eligibleSeasons": [
+      {
+        "school": "UCLA",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 9.102181491561982,
+        "defense": 5.577237458507298
+      },
+      {
+        "school": "UCLA",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 5.209509331680974,
+        "defense": 6.544600276360924
+      },
+      {
+        "school": "UCLA",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": -1.7902270046349114,
+        "defense": 5.7261640689624205
+      },
+      {
+        "school": "UCLA",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": 6.561699219212011,
+        "defense": -3.9633537032512436
+      },
+      {
+        "school": "UConn",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": -3.3718997559996695,
+        "defense": 0.22254329553361538
+      },
+      {
+        "school": "UConn",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": 0.13838432118799518,
+        "defense": -7.466893088656987
+      }
+    ],
+    "avgOffense": 2.6416079338347305,
+    "avgDefense": 1.1067163845760046,
+    "n": 6,
+    "schools": [
+      "UCLA",
+      "UConn"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 353,
+    "name": "Jay Norvell",
+    "eligibleSeasons": [
+      {
+        "school": "Colorado State",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": -7.188748295423106,
+        "defense": -2.3713292958844754
+      },
+      {
+        "school": "Colorado State",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": -6.949360626558997,
+        "defense": -6.427905688072413
+      },
+      {
+        "school": "Nevada",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": -9.636166374728187,
+        "defense": -8.524366734763253
+      },
+      {
+        "school": "Nevada",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": 7.950487391305959,
+        "defense": -2.827795152969341
+      }
+    ],
+    "avgOffense": -3.9559469763510826,
+    "avgDefense": -5.03784921792237,
+    "n": 4,
+    "schools": [
+      "Colorado State",
+      "Nevada"
+    ],
+    "years": [
+      2019,
+      2021,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 111,
+    "name": "David Cutcliffe",
+    "eligibleSeasons": [
+      {
+        "school": "Duke",
+        "year": 2014,
+        "yearAtSchool": 7,
+        "offense": 4.151382487485393,
+        "defense": 3.9626735907869852
+      },
+      {
+        "school": "Duke",
+        "year": 2015,
+        "yearAtSchool": 8,
+        "offense": 4.410429093979418,
+        "defense": -0.40621455995876965
+      },
+      {
+        "school": "Duke",
+        "year": 2016,
+        "yearAtSchool": 9,
+        "offense": -2.1909425878577435,
+        "defense": 1.7602103323611646
+      },
+      {
+        "school": "Duke",
+        "year": 2017,
+        "yearAtSchool": 10,
+        "offense": 0.8483440847399416,
+        "defense": 8.790650321942652
+      },
+      {
+        "school": "Duke",
+        "year": 2018,
+        "yearAtSchool": 11,
+        "offense": 2.6806166440980044,
+        "defense": 2.6213303125413967
+      },
+      {
+        "school": "Duke",
+        "year": 2019,
+        "yearAtSchool": 12,
+        "offense": -2.504736058240266,
+        "defense": -0.2576434954945705
+      },
+      {
+        "school": "Duke",
+        "year": 2021,
+        "yearAtSchool": 14,
+        "offense": -9.762702027060097,
+        "defense": -11.561596304513948
+      }
+    ],
+    "avgOffense": -0.3382297661221928,
+    "avgDefense": 0.70134431395213,
+    "n": 7,
+    "schools": [
+      "Duke"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 222,
+    "name": "Skip Holtz",
+    "eligibleSeasons": [
+      {
+        "school": "Louisiana Tech",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 0.8746404061683242,
+        "defense": -3.1610123598518607
+      },
+      {
+        "school": "Louisiana Tech",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 7.890953529400638,
+        "defense": -6.4017438594681755
+      },
+      {
+        "school": "Louisiana Tech",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": -3.4367794938646767,
+        "defense": -3.100558955428913
+      },
+      {
+        "school": "Louisiana Tech",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": -9.466447474188993,
+        "defense": -0.6732473001848159
+      },
+      {
+        "school": "Louisiana Tech",
+        "year": 2019,
+        "yearAtSchool": 7,
+        "offense": -1.444155518998592,
+        "defense": -2.1751647313461033
+      },
+      {
+        "school": "Louisiana Tech",
+        "year": 2021,
+        "yearAtSchool": 9,
+        "offense": -3.9499386250632553,
+        "defense": -8.663470011916255
+      }
+    ],
+    "avgOffense": -1.5886211960910925,
+    "avgDefense": -4.02919953636602,
+    "n": 6,
+    "schools": [
+      "Louisiana Tech"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 552,
+    "name": "Mike Houston",
+    "eligibleSeasons": [
+      {
+        "school": "East Carolina",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 1.3463916594793608,
+        "defense": 0.15517822894419742
+      },
+      {
+        "school": "East Carolina",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 3.8835194775154527,
+        "defense": -1.9902805354906221
+      },
+      {
+        "school": "East Carolina",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": -12.552869027361098,
+        "defense": -0.399974375099155
+      },
+      {
+        "school": "East Carolina",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": -2.1507746755383614,
+        "defense": -6.283682116337588
+      }
+    ],
+    "avgOffense": -2.3684331414761615,
+    "avgDefense": -2.129689699495792,
+    "n": 4,
+    "schools": [
+      "East Carolina"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 98,
+    "name": "Chris Creighton",
+    "eligibleSeasons": [
+      {
+        "school": "Eastern Michigan",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -6.511802465900593,
+        "defense": -5.156483827950119
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -6.803974523988417,
+        "defense": 0.5530629627678043
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": -5.770202661186493,
+        "defense": 1.5126505971768007
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": -3.3163548304364654,
+        "defense": -8.391126472101886
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2021,
+        "yearAtSchool": 8,
+        "offense": -2.12555533931545,
+        "defense": -8.27403940364996
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2022,
+        "yearAtSchool": 9,
+        "offense": -3.7470013886455704,
+        "defense": -7.755033077816506
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2023,
+        "yearAtSchool": 10,
+        "offense": -15.158609748197119,
+        "defense": -7.5488917682233
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2024,
+        "yearAtSchool": 11,
+        "offense": -7.634258062605691,
+        "defense": -8.522325343411877
+      },
+      {
+        "school": "Eastern Michigan",
+        "year": 2025,
+        "yearAtSchool": 12,
+        "offense": -5.958968021175783,
+        "defense": -10.911520564912037
+      }
+    ],
+    "avgOffense": -6.336303004605732,
+    "avgDefense": -6.054856322013453,
+    "n": 9,
+    "schools": [
+      "Eastern Michigan"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 334,
+    "name": "Dan Mullen",
+    "eligibleSeasons": [
+      {
+        "school": "Florida",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": 2.735239014239789,
+        "defense": 6.1658944310900745
+      },
+      {
+        "school": "Mississippi State",
+        "year": 2014,
+        "yearAtSchool": 6,
+        "offense": 13.256346435720587,
+        "defense": 10.501203567874459
+      },
+      {
+        "school": "Mississippi State",
+        "year": 2015,
+        "yearAtSchool": 7,
+        "offense": 8.766948829622898,
+        "defense": 8.133196200925417
+      },
+      {
+        "school": "Mississippi State",
+        "year": 2016,
+        "yearAtSchool": 8,
+        "offense": 4.074197872522536,
+        "defense": -0.31895592519467475
+      },
+      {
+        "school": "Mississippi State",
+        "year": 2017,
+        "yearAtSchool": 9,
+        "offense": 6.118790679272424,
+        "defense": 9.780552211116815
+      }
+    ],
+    "avgOffense": 6.990304566275647,
+    "avgDefense": 6.852378097162418,
+    "n": 5,
+    "schools": [
+      "Florida",
+      "Mississippi State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2021
+    ]
+  },
+  {
+    "coachId": 341,
+    "name": "Will Muschamp",
+    "eligibleSeasons": [
+      {
+        "school": "Florida",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": 3.8054247573773043,
+        "defense": 9.815077044640091
+      },
+      {
+        "school": "South Carolina",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 6.92464503792144,
+        "defense": 4.583758736290178
+      },
+      {
+        "school": "South Carolina",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": -1.468188919802039,
+        "defense": 5.935825188706006
+      }
+    ],
+    "avgOffense": 3.0872936251655685,
+    "avgDefense": 6.778220323212092,
+    "n": 3,
+    "schools": [
+      "Florida",
+      "South Carolina"
+    ],
+    "years": [
+      2014,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 535,
+    "name": "Billy Napier",
+    "eligibleSeasons": [
+      {
+        "school": "Florida",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": 7.316373467441932,
+        "defense": 9.478637593034987
+      },
+      {
+        "school": "Florida",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": -0.6979376957140645,
+        "defense": 8.493987564989483
+      },
+      {
+        "school": "Louisiana",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": -0.38016082141384616,
+        "defense": 6.107600112287168
+      }
+    ],
+    "avgOffense": 2.079424983438007,
+    "avgDefense": 8.026741756770546,
+    "n": 3,
+    "schools": [
+      "Florida",
+      "Louisiana"
+    ],
+    "years": [
+      2021,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 250,
+    "name": "Lane Kiffin",
+    "eligibleSeasons": [
+      {
+        "school": "Florida Atlantic",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": 5.73894934008532,
+        "defense": 3.1108322143633935
+      },
+      {
+        "school": "Ole Miss",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": 9.462167994614433,
+        "defense": 3.074340898082334
+      },
+      {
+        "school": "Ole Miss",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": 9.343704702156575,
+        "defense": 7.05109872279692
+      },
+      {
+        "school": "Ole Miss",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": 12.293983961038586,
+        "defense": 13.708845102146865
+      },
+      {
+        "school": "Ole Miss",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 16.236233648073608,
+        "defense": 6.211479813977186
+      }
+    ],
+    "avgOffense": 10.615007929193704,
+    "avgDefense": 6.63131935027334,
+    "n": 5,
+    "schools": [
+      "Florida Atlantic",
+      "Ole Miss"
+    ],
+    "years": [
+      2019,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 464,
+    "name": "Willie Taggart",
+    "eligibleSeasons": [
+      {
+        "school": "Florida Atlantic",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": -4.306788592600833,
+        "defense": -5.132873600308249
+      },
+      {
+        "school": "South Florida",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 3.625321377351576,
+        "defense": 5.093779801274012
+      },
+      {
+        "school": "South Florida",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 12.71659968387684,
+        "defense": -5.195088490381466
+      }
+    ],
+    "avgOffense": 4.011710822875861,
+    "avgDefense": -1.7447274298052344,
+    "n": 3,
+    "schools": [
+      "Florida Atlantic",
+      "South Florida"
+    ],
+    "years": [
+      2015,
+      2016,
+      2022
+    ]
+  },
+  {
+    "coachId": 523,
+    "name": "Mario Cristobal",
+    "eligibleSeasons": [
+      {
+        "school": "Miami",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": 17.451246278183746,
+        "defense": 2.0875177944449783
+      },
+      {
+        "school": "Miami",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": 10.386519415172499,
+        "defense": 18.15576611967888
+      },
+      {
+        "school": "Oregon",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": 6.27315847998726,
+        "defense": 3.0310138353546785
+      }
+    ],
+    "avgOffense": 11.370308057781168,
+    "avgDefense": 7.758099249826179,
+    "n": 3,
+    "schools": [
+      "Miami",
+      "Oregon"
+    ],
+    "years": [
+      2021,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 166,
+    "name": "Jimbo Fisher",
+    "eligibleSeasons": [
+      {
+        "school": "Florida State",
+        "year": 2014,
+        "yearAtSchool": 5,
+        "offense": 10.884412228983134,
+        "defense": 4.702946745581026
+      },
+      {
+        "school": "Florida State",
+        "year": 2015,
+        "yearAtSchool": 6,
+        "offense": 5.897837962674711,
+        "defense": 11.821471281198477
+      },
+      {
+        "school": "Florida State",
+        "year": 2016,
+        "yearAtSchool": 7,
+        "offense": 10.710588906786326,
+        "defense": 8.195733878790564
+      },
+      {
+        "school": "Florida State",
+        "year": 2017,
+        "yearAtSchool": 8,
+        "offense": 0.2494069750869609,
+        "defense": 11.16263142131798
+      },
+      {
+        "school": "Texas A&M",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": 2.0394686637412955,
+        "defense": 12.525113563202055
+      },
+      {
+        "school": "Texas A&M",
+        "year": 2022,
+        "yearAtSchool": 5,
+        "offense": -2.5990202581030517,
+        "defense": 9.1022464660967
+      },
+      {
+        "school": "Texas A&M",
+        "year": 2023,
+        "yearAtSchool": 6,
+        "offense": 8.837267544601637,
+        "defense": 7.200183304841111
+      }
+    ],
+    "avgOffense": 5.145708860538716,
+    "avgDefense": 9.244332380146846,
+    "n": 7,
+    "schools": [
+      "Florida State",
+      "Texas A&M"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 354,
+    "name": "Mike Norvell",
+    "eligibleSeasons": [
+      {
+        "school": "Florida State",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": 11.798052993090076,
+        "defense": 7.2573764194775965
+      },
+      {
+        "school": "Florida State",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": 8.645942308914838,
+        "defense": 10.013738393565827
+      },
+      {
+        "school": "Florida State",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": -9.458760405596722,
+        "defense": 3.443615040386712
+      },
+      {
+        "school": "Florida State",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 7.055266081197255,
+        "defense": 5.206394125733774
+      },
+      {
+        "school": "Memphis",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 6.529557084187793,
+        "defense": -6.247367655199025
+      },
+      {
+        "school": "Memphis",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 13.190483084629976,
+        "defense": 1.6757954782762872
+      }
+    ],
+    "avgOffense": 6.293423524403869,
+    "avgDefense": 3.558258633706862,
+    "n": 6,
+    "schools": [
+      "Florida State",
+      "Memphis"
+    ],
+    "years": [
+      2018,
+      2019,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 619,
+    "name": "Tim DeRuyter",
+    "eligibleSeasons": [
+      {
+        "school": "Fresno State",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": -6.3700729424810145,
+        "defense": -5.935114825679562
+      },
+      {
+        "school": "Fresno State",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": -7.910598828501515,
+        "defense": -13.137710266711355
+      },
+      {
+        "school": "Fresno State",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": -15.794573818064475,
+        "defense": -5.889932875815975
+      }
+    ],
+    "avgOffense": -10.025081863015668,
+    "avgDefense": -8.32091932273563,
+    "n": 3,
+    "schools": [
+      "Fresno State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016
+    ]
+  },
+  {
+    "coachId": 393,
+    "name": "Mark Richt",
+    "eligibleSeasons": [
+      {
+        "school": "Georgia",
+        "year": 2014,
+        "yearAtSchool": 14,
+        "offense": 17.30371417168039,
+        "defense": 10.718817792577623
+      },
+      {
+        "school": "Georgia",
+        "year": 2015,
+        "yearAtSchool": 15,
+        "offense": 1.8052761552433867,
+        "defense": 9.911224899399608
+      },
+      {
+        "school": "Miami",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": -2.6590291605066665,
+        "defense": 9.469873701514192
+      }
+    ],
+    "avgOffense": 5.483320388805703,
+    "avgDefense": 10.033305464497142,
+    "n": 3,
+    "schools": [
+      "Georgia",
+      "Miami"
+    ],
+    "years": [
+      2014,
+      2015,
+      2018
+    ]
+  },
+  {
+    "coachId": 429,
+    "name": "Kirby Smart",
+    "eligibleSeasons": [
+      {
+        "school": "Georgia",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 14.967813655038317,
+        "defense": 14.097568015578217
+      },
+      {
+        "school": "Georgia",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 6.673432884883636,
+        "defense": 19.557446605408018
+      },
+      {
+        "school": "Georgia",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": 14.704424162106426,
+        "defense": 22.328880062387096
+      },
+      {
+        "school": "Georgia",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": 19.504602660543938,
+        "defense": 18.481247934596578
+      },
+      {
+        "school": "Georgia",
+        "year": 2023,
+        "yearAtSchool": 8,
+        "offense": 16.341549945467477,
+        "defense": 14.079734745535887
+      },
+      {
+        "school": "Georgia",
+        "year": 2024,
+        "yearAtSchool": 9,
+        "offense": 11.382384423626743,
+        "defense": 11.930418032054535
+      },
+      {
+        "school": "Georgia",
+        "year": 2025,
+        "yearAtSchool": 10,
+        "offense": 9.9511521329537,
+        "defense": 13.060048202290572
+      }
+    ],
+    "avgOffense": 13.360765694945748,
+    "avgDefense": 16.219334799692987,
+    "n": 7,
+    "schools": [
+      "Georgia"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 174,
+    "name": "Willie Fritz",
+    "eligibleSeasons": [
+      {
+        "school": "Tulane",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": -8.333913809098597,
+        "defense": -0.7064921424089626
+      },
+      {
+        "school": "Tulane",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 2.8818925614016764,
+        "defense": 1.6905127583047854
+      },
+      {
+        "school": "Tulane",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": -2.5954068114713693,
+        "defense": -4.546539958882471
+      },
+      {
+        "school": "Tulane",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": 6.338205495554025,
+        "defense": 5.3773145788393935
+      },
+      {
+        "school": "Tulane",
+        "year": 2023,
+        "yearAtSchool": 8,
+        "offense": -5.11122263277347,
+        "defense": 4.81135225276833
+      }
+    ],
+    "avgOffense": -1.3640890392775469,
+    "avgDefense": 1.325229497724215,
+    "n": 5,
+    "schools": [
+      "Tulane"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 210,
+    "name": "Clay Helton",
+    "eligibleSeasons": [
+      {
+        "school": "Georgia Southern",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": -1.899479252868538,
+        "defense": -2.8875320742182233
+      },
+      {
+        "school": "Georgia Southern",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": -4.144263981131573,
+        "defense": -10.915430928784827
+      },
+      {
+        "school": "USC",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": 7.097861628458912,
+        "defense": 6.900838567966373
+      },
+      {
+        "school": "USC",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": -1.013263609742314,
+        "defense": 3.16386192572431
+      },
+      {
+        "school": "USC",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": 10.626703588191965,
+        "defense": 0.5619998011823328
+      },
+      {
+        "school": "USC",
+        "year": 2021,
+        "yearAtSchool": 7,
+        "offense": 4.5680847009807835,
+        "defense": -3.0785032253679656
+      }
+    ],
+    "avgOffense": 2.5392738456482062,
+    "avgDefense": -1.0424609889163334,
+    "n": 6,
+    "schools": [
+      "Georgia Southern",
+      "USC"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019,
+      2021,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 151,
+    "name": "Shawn Elliott",
+    "eligibleSeasons": [
+      {
+        "school": "Georgia State",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": -1.9052534330851145,
+        "defense": -10.687808823729723
+      },
+      {
+        "school": "Georgia State",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": -3.1252137261005934,
+        "defense": -2.4376854498806613
+      },
+      {
+        "school": "Georgia State",
+        "year": 2022,
+        "yearAtSchool": 6,
+        "offense": -1.196822258295428,
+        "defense": -5.93562426547918
+      },
+      {
+        "school": "Georgia State",
+        "year": 2023,
+        "yearAtSchool": 7,
+        "offense": -3.9758168617552583,
+        "defense": -3.6088696879561954
+      },
+      {
+        "school": "Georgia State",
+        "year": 2024,
+        "yearAtSchool": 8,
+        "offense": -4.714502789683838,
+        "defense": -8.433580514763275
+      }
+    ],
+    "avgOffense": -2.9835218137840465,
+    "avgDefense": -6.220713748361807,
+    "n": 5,
+    "schools": [
+      "Georgia State"
+    ],
+    "years": [
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 234,
+    "name": "Paul Johnson",
+    "eligibleSeasons": [
+      {
+        "school": "Georgia Tech",
+        "year": 2014,
+        "yearAtSchool": 7,
+        "offense": 13.880882185173082,
+        "defense": 5.203221556131494
+      },
+      {
+        "school": "Georgia Tech",
+        "year": 2015,
+        "yearAtSchool": 8,
+        "offense": 1.5503581828793216,
+        "defense": 5.732171229516055
+      },
+      {
+        "school": "Georgia Tech",
+        "year": 2016,
+        "yearAtSchool": 9,
+        "offense": 2.7993699814939688,
+        "defense": 5.709416823582634
+      },
+      {
+        "school": "Georgia Tech",
+        "year": 2017,
+        "yearAtSchool": 10,
+        "offense": 7.125660360949498,
+        "defense": 3.514934932822466
+      },
+      {
+        "school": "Georgia Tech",
+        "year": 2018,
+        "yearAtSchool": 11,
+        "offense": 6.463788480277957,
+        "defense": -2.1263914103454
+      }
+    ],
+    "avgOffense": 6.364011838154766,
+    "avgDefense": 3.60667062634145,
+    "n": 5,
+    "schools": [
+      "Georgia Tech"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "coachId": 525,
+    "name": "Dana Dimel",
+    "eligibleSeasons": [
+      {
+        "school": "UTEP",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": -7.110689681210649,
+        "defense": -2.8534846400692726
+      },
+      {
+        "school": "UTEP",
+        "year": 2022,
+        "yearAtSchool": 5,
+        "offense": -10.486105430383738,
+        "defense": -5.2549613294091335
+      },
+      {
+        "school": "UTEP",
+        "year": 2023,
+        "yearAtSchool": 6,
+        "offense": -10.568868237732723,
+        "defense": -4.744610557296106
+      }
+    ],
+    "avgOffense": -9.388554449775704,
+    "avgDefense": -4.284352175591504,
+    "n": 3,
+    "schools": [
+      "UTEP"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 218,
+    "name": "Dana Holgorsen",
+    "eligibleSeasons": [
+      {
+        "school": "Houston",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 4.725145341840727,
+        "defense": 3.2827076902844263
+      },
+      {
+        "school": "Houston",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 6.156615957200625,
+        "defense": -3.275308630169373
+      },
+      {
+        "school": "Houston",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": -1.407612982687998,
+        "defense": -1.84364340462591
+      },
+      {
+        "school": "Houston",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": -8.42904069705826,
+        "defense": 6.854720894228382
+      },
+      {
+        "school": "West Virginia",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": 7.549945684103196,
+        "defense": 6.104842046219122
+      },
+      {
+        "school": "West Virginia",
+        "year": 2015,
+        "yearAtSchool": 5,
+        "offense": 5.2875911102796005,
+        "defense": 9.250653094666559
+      },
+      {
+        "school": "West Virginia",
+        "year": 2016,
+        "yearAtSchool": 6,
+        "offense": 3.3251910248579435,
+        "defense": 8.957236600235278
+      },
+      {
+        "school": "West Virginia",
+        "year": 2017,
+        "yearAtSchool": 7,
+        "offense": 8.22510622625647,
+        "defense": 0.23261801899512913
+      },
+      {
+        "school": "West Virginia",
+        "year": 2018,
+        "yearAtSchool": 8,
+        "offense": 15.522489008589648,
+        "defense": 5.820934948964723
+      }
+    ],
+    "avgOffense": 4.55060340815355,
+    "avgDefense": 3.9316401398664818,
+    "n": 9,
+    "schools": [
+      "Houston",
+      "West Virginia"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 5,
+    "name": "Tom Allen",
+    "eligibleSeasons": [
+      {
+        "school": "Indiana",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 2.9166518998027247,
+        "defense": 0.6780560835322691
+      },
+      {
+        "school": "Indiana",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 5.194610024961299,
+        "defense": 2.6510978553973246
+      },
+      {
+        "school": "Indiana",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": -7.271187849525495,
+        "defense": -1.209382544521015
+      },
+      {
+        "school": "Indiana",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": 0.7306109414508621,
+        "defense": -3.29968072847596
+      },
+      {
+        "school": "Indiana",
+        "year": 2023,
+        "yearAtSchool": 8,
+        "offense": -0.6555279009457666,
+        "defense": -2.9302572185785545
+      }
+    ],
+    "avgOffense": 0.18303142314872484,
+    "avgDefense": -0.8220333105291872,
+    "n": 5,
+    "schools": [
+      "Indiana"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 638,
+    "name": "Kevin Wilson",
+    "eligibleSeasons": [
+      {
+        "school": "Indiana",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": 0.5677857953024124,
+        "defense": -5.411469891378381
+      },
+      {
+        "school": "Indiana",
+        "year": 2015,
+        "yearAtSchool": 5,
+        "offense": 9.918867087987119,
+        "defense": -7.050231553733927
+      },
+      {
+        "school": "Indiana",
+        "year": 2016,
+        "yearAtSchool": 6,
+        "offense": 0.09563790523035481,
+        "defense": 2.687254991572366
+      }
+    ],
+    "avgOffense": 3.527430262839962,
+    "avgDefense": -3.2581488178466476,
+    "n": 3,
+    "schools": [
+      "Indiana"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016
+    ]
+  },
+  {
+    "coachId": 162,
+    "name": "Kirk Ferentz",
+    "eligibleSeasons": [
+      {
+        "school": "Iowa",
+        "year": 2014,
+        "yearAtSchool": 16,
+        "offense": 0.034497861020388765,
+        "defense": 4.679316575227344
+      },
+      {
+        "school": "Iowa",
+        "year": 2015,
+        "yearAtSchool": 17,
+        "offense": 4.906829660349789,
+        "defense": 7.900235233455292
+      },
+      {
+        "school": "Iowa",
+        "year": 2016,
+        "yearAtSchool": 18,
+        "offense": 1.1595319360106937,
+        "defense": 11.542108066597425
+      },
+      {
+        "school": "Iowa",
+        "year": 2017,
+        "yearAtSchool": 19,
+        "offense": 7.35649039506543,
+        "defense": 11.3211416059281
+      },
+      {
+        "school": "Iowa",
+        "year": 2018,
+        "yearAtSchool": 20,
+        "offense": 6.7054834910244985,
+        "defense": 12.871771524401579
+      },
+      {
+        "school": "Iowa",
+        "year": 2019,
+        "yearAtSchool": 21,
+        "offense": 1.8148305863835832,
+        "defense": 16.988100594361267
+      },
+      {
+        "school": "Iowa",
+        "year": 2021,
+        "yearAtSchool": 23,
+        "offense": 0.5105348511294624,
+        "defense": 10.284239100709872
+      },
+      {
+        "school": "Iowa",
+        "year": 2022,
+        "yearAtSchool": 24,
+        "offense": -2.6229263246171404,
+        "defense": 13.712081602624972
+      },
+      {
+        "school": "Iowa",
+        "year": 2023,
+        "yearAtSchool": 25,
+        "offense": -8.415083347886778,
+        "defense": 13.510183274509146
+      },
+      {
+        "school": "Iowa",
+        "year": 2024,
+        "yearAtSchool": 26,
+        "offense": 6.284831896296531,
+        "defense": 9.12126012386865
+      },
+      {
+        "school": "Iowa",
+        "year": 2025,
+        "yearAtSchool": 27,
+        "offense": 7.618525343107843,
+        "defense": 15.196875833415731
+      }
+    ],
+    "avgOffense": 2.3048678498076636,
+    "avgDefense": 11.557028503190853,
+    "n": 11,
+    "schools": [
+      "Iowa"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 70,
+    "name": "Matt Campbell",
+    "eligibleSeasons": [
+      {
+        "school": "Iowa State",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 2.766110600833496,
+        "defense": 11.44902937337387
+      },
+      {
+        "school": "Iowa State",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 9.489759462849591,
+        "defense": 7.639942059000877
+      },
+      {
+        "school": "Iowa State",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": 9.155406209700745,
+        "defense": 9.114527105569376
+      },
+      {
+        "school": "Iowa State",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": -5.1502539153436775,
+        "defense": 12.789286471443061
+      },
+      {
+        "school": "Iowa State",
+        "year": 2023,
+        "yearAtSchool": 8,
+        "offense": 2.5247543167865136,
+        "defense": 7.187633305152577
+      },
+      {
+        "school": "Iowa State",
+        "year": 2024,
+        "yearAtSchool": 9,
+        "offense": 8.158649332672274,
+        "defense": 6.944889820486121
+      },
+      {
+        "school": "Iowa State",
+        "year": 2025,
+        "yearAtSchool": 10,
+        "offense": 2.2725382935810337,
+        "defense": 6.841721736999565
+      },
+      {
+        "school": "Toledo",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": 2.412471004931758,
+        "defense": -8.965409644911583
+      },
+      {
+        "school": "Toledo",
+        "year": 2015,
+        "yearAtSchool": 5,
+        "offense": 4.052457968719062,
+        "defense": 7.063860992673855
+      }
+    ],
+    "avgOffense": 3.964654808303422,
+    "avgDefense": 6.673942357754191,
+    "n": 9,
+    "schools": [
+      "Iowa State",
+      "Toledo"
+    ],
+    "years": [
+      2014,
+      2015,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 315,
+    "name": "Les Miles",
+    "eligibleSeasons": [
+      {
+        "school": "LSU",
+        "year": 2014,
+        "yearAtSchool": 10,
+        "offense": 2.4679137835231573,
+        "defense": 15.477189588805016
+      },
+      {
+        "school": "LSU",
+        "year": 2015,
+        "yearAtSchool": 11,
+        "offense": 7.233442819116874,
+        "defense": 10.969232685345625
+      },
+      {
+        "school": "LSU",
+        "year": 2016,
+        "yearAtSchool": 12,
+        "offense": 4.50231464509459,
+        "defense": 19.33527142739708
+      }
+    ],
+    "avgOffense": 4.734557082578207,
+    "avgDefense": 15.260564567182573,
+    "n": 3,
+    "schools": [
+      "LSU"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016
+    ]
+  },
+  {
+    "coachId": 553,
+    "name": "Chris Klieman",
+    "eligibleSeasons": [
+      {
+        "school": "Kansas State",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 1.9188002984361652,
+        "defense": 11.505361991343914
+      },
+      {
+        "school": "Kansas State",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 10.043506057096325,
+        "defense": 11.457178457459493
+      },
+      {
+        "school": "Kansas State",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": 14.708418192557899,
+        "defense": 8.24807675756162
+      },
+      {
+        "school": "Kansas State",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": 6.854385384784444,
+        "defense": 5.712484773829018
+      },
+      {
+        "school": "Kansas State",
+        "year": 2025,
+        "yearAtSchool": 7,
+        "offense": 6.341645680126908,
+        "defense": 3.4700371758914543
+      }
+    ],
+    "avgOffense": 7.973351122600349,
+    "avgDefense": 8.0786278312171,
+    "n": 5,
+    "schools": [
+      "Kansas State"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 436,
+    "name": "Bill Snyder",
+    "eligibleSeasons": [
+      {
+        "school": "Kansas State",
+        "year": 2014,
+        "yearAtSchool": 6,
+        "offense": 9.445450583363435,
+        "defense": 11.048955775221643
+      },
+      {
+        "school": "Kansas State",
+        "year": 2015,
+        "yearAtSchool": 7,
+        "offense": 1.9899180624194008,
+        "defense": -0.410709501075352
+      },
+      {
+        "school": "Kansas State",
+        "year": 2016,
+        "yearAtSchool": 8,
+        "offense": 3.7144064524640967,
+        "defense": 8.292097190475296
+      },
+      {
+        "school": "Kansas State",
+        "year": 2017,
+        "yearAtSchool": 9,
+        "offense": 3.6525348893546488,
+        "defense": 6.236577118578777
+      },
+      {
+        "school": "Kansas State",
+        "year": 2018,
+        "yearAtSchool": 10,
+        "offense": -1.3609755789177185,
+        "defense": 8.079216588548656
+      }
+    ],
+    "avgOffense": 3.488266881736773,
+    "avgDefense": 6.649227434349804,
+    "n": 5,
+    "schools": [
+      "Kansas State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "coachId": 208,
+    "name": "Paul Haynes",
+    "eligibleSeasons": [
+      {
+        "school": "Kent State",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": -19.56115570946013,
+        "defense": -3.2817081285293925
+      },
+      {
+        "school": "Kent State",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": -11.63398201229549,
+        "defense": -2.5834867127505805
+      },
+      {
+        "school": "Kent State",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": -18.84544317512858,
+        "defense": -8.107179056093857
+      }
+    ],
+    "avgOffense": -16.680193632294735,
+    "avgDefense": -4.657457965791277,
+    "n": 3,
+    "schools": [
+      "Kent State"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 291,
+    "name": "Doug Martin",
+    "eligibleSeasons": [
+      {
+        "school": "New Mexico State",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": -5.35004290536391,
+        "defense": -21.986348292208675
+      },
+      {
+        "school": "New Mexico State",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": -7.013144076619604,
+        "defense": -13.493738622017098
+      },
+      {
+        "school": "New Mexico State",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": -4.196073020079004,
+        "defense": -8.979210891499804
+      },
+      {
+        "school": "New Mexico State",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": -9.906119635265764,
+        "defense": -16.84399313407102
+      },
+      {
+        "school": "New Mexico State",
+        "year": 2019,
+        "yearAtSchool": 7,
+        "offense": -9.878457135198332,
+        "defense": -16.827459715723773
+      },
+      {
+        "school": "New Mexico State",
+        "year": 2021,
+        "yearAtSchool": 9,
+        "offense": -7.804870527249899,
+        "defense": -15.410010812423131
+      }
+    ],
+    "avgOffense": -7.358117883296085,
+    "avgDefense": -15.590126911323917,
+    "n": 6,
+    "schools": [
+      "New Mexico State"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 455,
+    "name": "Mark Stoops",
+    "eligibleSeasons": [
+      {
+        "school": "Kentucky",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": -0.16839967827531993,
+        "defense": -0.6563710338961138
+      },
+      {
+        "school": "Kentucky",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 2.6129837164201777,
+        "defense": -1.2610861727095126
+      },
+      {
+        "school": "Kentucky",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": 0.1318066371680203,
+        "defense": 1.4816361266398843
+      },
+      {
+        "school": "Kentucky",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": 1.9322507520260341,
+        "defense": 15.544068508344996
+      },
+      {
+        "school": "Kentucky",
+        "year": 2019,
+        "yearAtSchool": 7,
+        "offense": -1.1920661292201928,
+        "defense": 8.495527792897542
+      },
+      {
+        "school": "Kentucky",
+        "year": 2021,
+        "yearAtSchool": 9,
+        "offense": 6.404155110538161,
+        "defense": 7.944016665066529
+      },
+      {
+        "school": "Kentucky",
+        "year": 2022,
+        "yearAtSchool": 10,
+        "offense": -2.6530354482403222,
+        "defense": 11.29373565132159
+      },
+      {
+        "school": "Kentucky",
+        "year": 2023,
+        "yearAtSchool": 11,
+        "offense": 7.338458426397075,
+        "defense": 1.9214572530299074
+      },
+      {
+        "school": "Kentucky",
+        "year": 2024,
+        "yearAtSchool": 12,
+        "offense": -1.0487254077926484,
+        "defense": 8.733767470780586
+      },
+      {
+        "school": "Kentucky",
+        "year": 2025,
+        "yearAtSchool": 13,
+        "offense": 0.6654283516350875,
+        "defense": 4.0611877101720175
+      }
+    ],
+    "avgOffense": 1.4022856330656073,
+    "avgDefense": 5.7557939971647425,
+    "n": 10,
+    "schools": [
+      "Kentucky"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 365,
+    "name": "Ed Orgeron",
+    "eligibleSeasons": [
+      {
+        "school": "LSU",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 10.812547225049524,
+        "defense": 9.53634054066937
+      },
+      {
+        "school": "LSU",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 25.78869476637402,
+        "defense": 11.942760265159805
+      },
+      {
+        "school": "LSU",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": 3.715547853596452,
+        "defense": 3.91880711737355
+      }
+    ],
+    "avgOffense": 13.43892994834,
+    "avgDefense": 8.465969307734241,
+    "n": 3,
+    "schools": [
+      "LSU"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 1727,
+    "name": "Michael Desormeaux",
+    "eligibleSeasons": [
+      {
+        "school": "Louisiana",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 0.5560555381392486,
+        "defense": -7.0409364211009775
+      },
+      {
+        "school": "Louisiana",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": -1.4467324937100807,
+        "defense": -1.5729543178822647
+      },
+      {
+        "school": "Louisiana",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": -6.602592780056968,
+        "defense": -9.276321154661838
+      }
+    ],
+    "avgOffense": -2.4977565785426,
+    "avgDefense": -5.96340396454836,
+    "n": 3,
+    "schools": [
+      "Louisiana"
+    ],
+    "years": [
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 226,
+    "name": "Mark Hudspeth",
+    "eligibleSeasons": [
+      {
+        "school": "Louisiana",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": -4.753421039023764,
+        "defense": -2.5950559035392207
+      },
+      {
+        "school": "Louisiana",
+        "year": 2015,
+        "yearAtSchool": 5,
+        "offense": -10.664259815197925,
+        "defense": -10.504881244351939
+      },
+      {
+        "school": "Louisiana",
+        "year": 2016,
+        "yearAtSchool": 6,
+        "offense": -10.003807706677302,
+        "defense": -2.312678143129035
+      },
+      {
+        "school": "Louisiana",
+        "year": 2017,
+        "yearAtSchool": 7,
+        "offense": -8.375016129400182,
+        "defense": -15.38849559396054
+      }
+    ],
+    "avgOffense": -8.449126172574793,
+    "avgDefense": -7.700277721245183,
+    "n": 4,
+    "schools": [
+      "Louisiana"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 53,
+    "name": "Jeff Brohm",
+    "eligibleSeasons": [
+      {
+        "school": "Louisville",
+        "year": 2025,
+        "yearAtSchool": 3,
+        "offense": 5.38801362602549,
+        "defense": 6.611907923942163
+      },
+      {
+        "school": "Purdue",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": 2.432211566893066,
+        "defense": -0.8883679403099969
+      },
+      {
+        "school": "Purdue",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": 5.510768896811349,
+        "defense": 8.146901627991369
+      },
+      {
+        "school": "Purdue",
+        "year": 2022,
+        "yearAtSchool": 6,
+        "offense": 3.7596340604321417,
+        "defense": 0.19480174296147965
+      },
+      {
+        "school": "Western Kentucky",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": 11.61683023672328,
+        "defense": 0.7337744527027011
+      }
+    ],
+    "avgOffense": 5.7414916773770655,
+    "avgDefense": 2.959803561457543,
+    "n": 5,
+    "schools": [
+      "Louisville",
+      "Purdue",
+      "Western Kentucky"
+    ],
+    "years": [
+      2016,
+      2019,
+      2021,
+      2022,
+      2025
+    ]
+  },
+  {
+    "coachId": 219,
+    "name": "Doc Holliday",
+    "eligibleSeasons": [
+      {
+        "school": "Marshall",
+        "year": 2014,
+        "yearAtSchool": 5,
+        "offense": 12.214622216035679,
+        "defense": 2.5673440720620526
+      },
+      {
+        "school": "Marshall",
+        "year": 2015,
+        "yearAtSchool": 6,
+        "offense": -4.126504623685965,
+        "defense": 2.853976723719861
+      },
+      {
+        "school": "Marshall",
+        "year": 2016,
+        "yearAtSchool": 7,
+        "offense": -12.841194448414864,
+        "defense": -10.648182771814183
+      },
+      {
+        "school": "Marshall",
+        "year": 2017,
+        "yearAtSchool": 8,
+        "offense": -5.61428887102032,
+        "defense": 1.0052226272477487
+      },
+      {
+        "school": "Marshall",
+        "year": 2018,
+        "yearAtSchool": 9,
+        "offense": -4.402092817705984,
+        "defense": 1.0219237591735144
+      },
+      {
+        "school": "Marshall",
+        "year": 2019,
+        "yearAtSchool": 10,
+        "offense": -5.7804982837616325,
+        "defense": 0.2256755770974564
+      }
+    ],
+    "avgOffense": -3.424992804758848,
+    "avgDefense": -0.4956733354189249,
+    "n": 6,
+    "schools": [
+      "Marshall"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 145,
+    "name": "Randy Edsall",
+    "eligibleSeasons": [
+      {
+        "school": "Maryland",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": 4.584263646616415,
+        "defense": -4.056768798220579
+      },
+      {
+        "school": "Maryland",
+        "year": 2015,
+        "yearAtSchool": 5,
+        "offense": -0.18400844320297088,
+        "defense": -2.594150151319937
+      },
+      {
+        "school": "UConn",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": -12.047237475756791,
+        "defense": -14.332742500607246
+      },
+      {
+        "school": "UConn",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": -13.13693252514061,
+        "defense": -15.30771361549869
+      }
+    ],
+    "avgOffense": -5.19597869937099,
+    "avgDefense": -9.072843766411612,
+    "n": 4,
+    "schools": [
+      "Maryland",
+      "UConn"
+    ],
+    "years": [
+      2014,
+      2015,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 556,
+    "name": "Mike Locksley",
+    "eligibleSeasons": [
+      {
+        "school": "Maryland",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 4.285640752841281,
+        "defense": -4.035745911903018
+      },
+      {
+        "school": "Maryland",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 2.963576373450857,
+        "defense": 6.709762629451726
+      },
+      {
+        "school": "Maryland",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": 7.532325784261154,
+        "defense": 3.6054123793945116
+      },
+      {
+        "school": "Maryland",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": 2.158856810112851,
+        "defense": 0.17445562308185744
+      },
+      {
+        "school": "Maryland",
+        "year": 2025,
+        "yearAtSchool": 7,
+        "offense": -1.0158317588847607,
+        "defense": 2.6218391110626933
+      }
+    ],
+    "avgOffense": 3.1849135923562764,
+    "avgDefense": 1.815144766217554,
+    "n": 5,
+    "schools": [
+      "Maryland"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 495,
+    "name": "Mark Whipple",
+    "eligibleSeasons": [
+      {
+        "school": "Massachusetts",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -6.540204074766616,
+        "defense": -12.059322612370174
+      },
+      {
+        "school": "Massachusetts",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -1.6998486254924638,
+        "defense": -9.454602649658137
+      },
+      {
+        "school": "Massachusetts",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": -1.2212490084091197,
+        "defense": -19.348500511190124
+      }
+    ],
+    "avgOffense": -3.153767236222733,
+    "avgDefense": -13.620808591072812,
+    "n": 3,
+    "schools": [
+      "Massachusetts"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "coachId": 178,
+    "name": "Justin Fuente",
+    "eligibleSeasons": [
+      {
+        "school": "Memphis",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 4.400977908325918,
+        "defense": 2.3773121267841306
+      },
+      {
+        "school": "Memphis",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 8.669756055035295,
+        "defense": 2.374507090627411
+      },
+      {
+        "school": "Virginia Tech",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": 1.3216848366688696,
+        "defense": -4.213041870742954
+      },
+      {
+        "school": "Virginia Tech",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": 5.020419750207921,
+        "defense": 0.5806844194992279
+      },
+      {
+        "school": "Virginia Tech",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": -3.779295939637269,
+        "defense": 2.2400536697700137
+      }
+    ],
+    "avgOffense": 3.126708522120147,
+    "avgDefense": 0.6719030871875659,
+    "n": 5,
+    "schools": [
+      "Memphis",
+      "Virginia Tech"
+    ],
+    "years": [
+      2014,
+      2015,
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 290,
+    "name": "Chuck Martin",
+    "eligibleSeasons": [
+      {
+        "school": "Miami (OH)",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -9.072451184871179,
+        "defense": -0.451679330424935
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -8.48211105363655,
+        "defense": -2.622017559156013
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": -2.0479247739335364,
+        "defense": -0.7346840991916842
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": -7.338234749737366,
+        "defense": -3.46812470332839
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2021,
+        "yearAtSchool": 8,
+        "offense": -4.01267055044059,
+        "defense": -1.2321681323241098
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2022,
+        "yearAtSchool": 9,
+        "offense": -10.073021255693305,
+        "defense": -2.3741876607301227
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2023,
+        "yearAtSchool": 10,
+        "offense": -9.587436659873122,
+        "defense": 5.120647468748656
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2024,
+        "yearAtSchool": 11,
+        "offense": -5.603023823958598,
+        "defense": 3.6178352341436626
+      },
+      {
+        "school": "Miami (OH)",
+        "year": 2025,
+        "yearAtSchool": 12,
+        "offense": -5.702693189356762,
+        "defense": -3.056627353513653
+      }
+    ],
+    "avgOffense": -6.8799519157223346,
+    "avgDefense": -0.5778895706418432,
+    "n": 9,
+    "schools": [
+      "Miami (OH)"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 195,
+    "name": "Jim Harbaugh",
+    "eligibleSeasons": [
+      {
+        "school": "Michigan",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": 2.636174166724026,
+        "defense": 11.595447722310647
+      },
+      {
+        "school": "Michigan",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": 10.428341785605792,
+        "defense": 11.786277664663544
+      },
+      {
+        "school": "Michigan",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": 10.318207229206884,
+        "defense": 11.932965208707456
+      },
+      {
+        "school": "Michigan",
+        "year": 2021,
+        "yearAtSchool": 7,
+        "offense": 12.98372074139701,
+        "defense": 12.688390258820117
+      },
+      {
+        "school": "Michigan",
+        "year": 2022,
+        "yearAtSchool": 8,
+        "offense": 15.97712154300742,
+        "defense": 11.796616386575181
+      },
+      {
+        "school": "Michigan",
+        "year": 2023,
+        "yearAtSchool": 9,
+        "offense": 14.027934830060161,
+        "defense": 17.501576776648584
+      }
+    ],
+    "avgOffense": 11.061916716000216,
+    "avgDefense": 12.883545669620922,
+    "n": 6,
+    "schools": [
+      "Michigan"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 497,
+    "name": "Kyle Whittingham",
+    "eligibleSeasons": [
+      {
+        "school": "Utah",
+        "year": 2014,
+        "yearAtSchool": 11,
+        "offense": 4.710001887863212,
+        "defense": 7.097496154361675
+      },
+      {
+        "school": "Utah",
+        "year": 2015,
+        "yearAtSchool": 12,
+        "offense": 3.409595541747571,
+        "defense": 10.579550408283353
+      },
+      {
+        "school": "Utah",
+        "year": 2016,
+        "yearAtSchool": 13,
+        "offense": 2.5621701468284566,
+        "defense": 6.855737584364672
+      },
+      {
+        "school": "Utah",
+        "year": 2017,
+        "yearAtSchool": 14,
+        "offense": 1.347354315579421,
+        "defense": 7.302274354814719
+      },
+      {
+        "school": "Utah",
+        "year": 2018,
+        "yearAtSchool": 15,
+        "offense": 2.9699431167448456,
+        "defense": 8.973418073656447
+      },
+      {
+        "school": "Utah",
+        "year": 2019,
+        "yearAtSchool": 16,
+        "offense": 6.816833508858894,
+        "defense": 15.214147846599339
+      },
+      {
+        "school": "Utah",
+        "year": 2021,
+        "yearAtSchool": 18,
+        "offense": 10.764070131368953,
+        "defense": 8.121159230997952
+      },
+      {
+        "school": "Utah",
+        "year": 2022,
+        "yearAtSchool": 19,
+        "offense": 10.241955949466035,
+        "defense": 8.995023544355545
+      },
+      {
+        "school": "Utah",
+        "year": 2023,
+        "yearAtSchool": 20,
+        "offense": -0.6745514857981056,
+        "defense": 13.100698327415348
+      },
+      {
+        "school": "Utah",
+        "year": 2024,
+        "yearAtSchool": 21,
+        "offense": -3.873394635949974,
+        "defense": 8.764724738847061
+      },
+      {
+        "school": "Utah",
+        "year": 2025,
+        "yearAtSchool": 22,
+        "offense": 16.363419829163387,
+        "defense": 8.951872555563824
+      }
+    ],
+    "avgOffense": 4.967036209624791,
+    "avgDefense": 9.450554801750902,
+    "n": 11,
+    "schools": [
+      "Utah"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 167,
+    "name": "Pat Fitzgerald",
+    "eligibleSeasons": [
+      {
+        "school": "Northwestern",
+        "year": 2014,
+        "yearAtSchool": 9,
+        "offense": -3.0945899365980702,
+        "defense": 4.179546548974148
+      },
+      {
+        "school": "Northwestern",
+        "year": 2015,
+        "yearAtSchool": 10,
+        "offense": -6.620314988784107,
+        "defense": 10.809062273486184
+      },
+      {
+        "school": "Northwestern",
+        "year": 2016,
+        "yearAtSchool": 11,
+        "offense": 3.2358666932655744,
+        "defense": 8.893217476821937
+      },
+      {
+        "school": "Northwestern",
+        "year": 2017,
+        "yearAtSchool": 12,
+        "offense": 4.963411104800525,
+        "defense": 9.908729096442176
+      },
+      {
+        "school": "Northwestern",
+        "year": 2018,
+        "yearAtSchool": 13,
+        "offense": 0.31879667161854186,
+        "defense": 7.501595159268293
+      },
+      {
+        "school": "Northwestern",
+        "year": 2019,
+        "yearAtSchool": 14,
+        "offense": -9.26394876473847,
+        "defense": 7.609300182085018
+      },
+      {
+        "school": "Northwestern",
+        "year": 2021,
+        "yearAtSchool": 16,
+        "offense": -6.230009700804036,
+        "defense": -3.184133147368656
+      },
+      {
+        "school": "Northwestern",
+        "year": 2022,
+        "yearAtSchool": 17,
+        "offense": -7.460038558115857,
+        "defense": 2.2181852061718987
+      }
+    ],
+    "avgOffense": -3.0188534349194875,
+    "avgDefense": 5.991937849485125,
+    "n": 8,
+    "schools": [
+      "Northwestern"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "coachId": 559,
+    "name": "Jonathan Smith",
+    "eligibleSeasons": [
+      {
+        "school": "Oregon State",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": 5.987732888676319,
+        "defense": 0.7433292516243772
+      },
+      {
+        "school": "Oregon State",
+        "year": 2022,
+        "yearAtSchool": 5,
+        "offense": 3.45254844114921,
+        "defense": 11.262787141177416
+      },
+      {
+        "school": "Oregon State",
+        "year": 2023,
+        "yearAtSchool": 6,
+        "offense": 7.906536608009186,
+        "defense": 7.6978258974031455
+      }
+    ],
+    "avgOffense": 5.7822726459449045,
+    "avgDefense": 6.567980763401646,
+    "n": 3,
+    "schools": [
+      "Oregon State"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 292,
+    "name": "Derek Mason",
+    "eligibleSeasons": [
+      {
+        "school": "Vanderbilt",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -4.239949464214632,
+        "defense": 7.7633104561477495
+      },
+      {
+        "school": "Vanderbilt",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -1.6044226977098268,
+        "defense": -4.296851810197671
+      },
+      {
+        "school": "Vanderbilt",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": 5.505194360050344,
+        "defense": 6.025583002197877
+      },
+      {
+        "school": "Vanderbilt",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": -7.7278815294539545,
+        "defense": -4.584799255574554
+      }
+    ],
+    "avgOffense": -2.0167648328320174,
+    "avgDefense": 1.2268105981433504,
+    "n": 4,
+    "schools": [
+      "Vanderbilt"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 450,
+    "name": "Rick Stockstill",
+    "eligibleSeasons": [
+      {
+        "school": "Middle Tennessee",
+        "year": 2014,
+        "yearAtSchool": 9,
+        "offense": -3.0702093512416737,
+        "defense": -3.7786678657133423
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2015,
+        "yearAtSchool": 10,
+        "offense": 0.7798413841652585,
+        "defense": -4.056343697589145
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2016,
+        "yearAtSchool": 11,
+        "offense": 2.8785643718523515,
+        "defense": -14.737437538747171
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2017,
+        "yearAtSchool": 12,
+        "offense": -8.31086561036389,
+        "defense": -2.4679041242218442
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2018,
+        "yearAtSchool": 13,
+        "offense": -2.4713989945601753,
+        "defense": -0.29391254133179456
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2019,
+        "yearAtSchool": 14,
+        "offense": -2.5269199613472515,
+        "defense": -5.853096596569463
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2021,
+        "yearAtSchool": 16,
+        "offense": -4.681489869081327,
+        "defense": -3.212441812501427
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2022,
+        "yearAtSchool": 17,
+        "offense": -5.085586585785537,
+        "defense": -8.30967747494112
+      },
+      {
+        "school": "Middle Tennessee",
+        "year": 2023,
+        "yearAtSchool": 18,
+        "offense": -5.166510864072705,
+        "defense": -5.070362982080712
+      }
+    ],
+    "avgOffense": -3.0727306089372166,
+    "avgDefense": -5.3088716259662245,
+    "n": 9,
+    "schools": [
+      "Middle Tennessee"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 168,
+    "name": "P.J. Fleck",
+    "eligibleSeasons": [
+      {
+        "school": "Minnesota",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": 11.316076385231552,
+        "defense": 6.206617346815516
+      },
+      {
+        "school": "Minnesota",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": 1.2696844463284465,
+        "defense": 10.105274840870988
+      },
+      {
+        "school": "Minnesota",
+        "year": 2022,
+        "yearAtSchool": 6,
+        "offense": 1.274867031113939,
+        "defense": 11.526582496622446
+      },
+      {
+        "school": "Minnesota",
+        "year": 2023,
+        "yearAtSchool": 7,
+        "offense": -2.2803985177585493,
+        "defense": -0.5424825085499214
+      },
+      {
+        "school": "Minnesota",
+        "year": 2024,
+        "yearAtSchool": 8,
+        "offense": 2.7882202980930217,
+        "defense": 12.197569809788051
+      },
+      {
+        "school": "Minnesota",
+        "year": 2025,
+        "yearAtSchool": 9,
+        "offense": -1.4574501370422217,
+        "defense": 3.9325514834432336
+      },
+      {
+        "school": "Western Michigan",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 4.911437982015521,
+        "defense": -1.4707539805646
+      },
+      {
+        "school": "Western Michigan",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 8.202510447680549,
+        "defense": 4.428906572200811
+      }
+    ],
+    "avgOffense": 3.2531184919577822,
+    "avgDefense": 5.798033257578315,
+    "n": 8,
+    "schools": [
+      "Minnesota",
+      "Western Michigan"
+    ],
+    "years": [
+      2015,
+      2016,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 264,
+    "name": "Mike Leach",
+    "eligibleSeasons": [
+      {
+        "school": "Mississippi State",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": 8.552242634831828,
+        "defense": 8.264793289275966
+      },
+      {
+        "school": "Washington State",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 6.1172126054077465,
+        "defense": -6.06161075789103
+      },
+      {
+        "school": "Washington State",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 4.400236849511982,
+        "defense": 4.250411103737319
+      },
+      {
+        "school": "Washington State",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 10.493499162520608,
+        "defense": 8.148448989398666
+      },
+      {
+        "school": "Washington State",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": 4.923932231984342,
+        "defense": 3.016721235032061
+      },
+      {
+        "school": "Washington State",
+        "year": 2018,
+        "yearAtSchool": 7,
+        "offense": 10.24794402155963,
+        "defense": 3.884006346191814
+      },
+      {
+        "school": "Washington State",
+        "year": 2019,
+        "yearAtSchool": 8,
+        "offense": 11.659411483976076,
+        "defense": -2.9910588564805822
+      }
+    ],
+    "avgOffense": 8.056354141398888,
+    "avgDefense": 2.6445301927520304,
+    "n": 7,
+    "schools": [
+      "Mississippi State",
+      "Washington State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2022
+    ]
+  },
+  {
+    "coachId": 130,
+    "name": "Dave Doeren",
+    "eligibleSeasons": [
+      {
+        "school": "NC State",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 7.2524617400200135,
+        "defense": 1.37936010902397
+      },
+      {
+        "school": "NC State",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": -0.13807132110405013,
+        "defense": 8.529195940766366
+      },
+      {
+        "school": "NC State",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": 8.316745171284671,
+        "defense": 6.40866123081164
+      },
+      {
+        "school": "NC State",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": 6.047068543219929,
+        "defense": 3.4739261400054224
+      },
+      {
+        "school": "NC State",
+        "year": 2019,
+        "yearAtSchool": 7,
+        "offense": -9.29334602908055,
+        "defense": -3.198659985672897
+      },
+      {
+        "school": "NC State",
+        "year": 2021,
+        "yearAtSchool": 9,
+        "offense": 5.247944087736378,
+        "defense": 8.927919363908877
+      },
+      {
+        "school": "NC State",
+        "year": 2022,
+        "yearAtSchool": 10,
+        "offense": -3.4030743109149046,
+        "defense": 9.441850167566527
+      },
+      {
+        "school": "NC State",
+        "year": 2023,
+        "yearAtSchool": 11,
+        "offense": 0.9418940756485521,
+        "defense": 7.91312721959397
+      },
+      {
+        "school": "NC State",
+        "year": 2024,
+        "yearAtSchool": 12,
+        "offense": 2.2033862917961833,
+        "defense": -3.7705313914494445
+      },
+      {
+        "school": "NC State",
+        "year": 2025,
+        "yearAtSchool": 13,
+        "offense": 6.415050775883185,
+        "defense": 2.496413295777708
+      }
+    ],
+    "avgOffense": 2.3590059024489407,
+    "avgDefense": 4.160126209033214,
+    "n": 10,
+    "schools": [
+      "NC State"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 351,
+    "name": "Ken Niumatalolo",
+    "eligibleSeasons": [
+      {
+        "school": "Navy",
+        "year": 2014,
+        "yearAtSchool": 8,
+        "offense": 0.6383799587200496,
+        "defense": -2.1944193978650546
+      },
+      {
+        "school": "Navy",
+        "year": 2015,
+        "yearAtSchool": 9,
+        "offense": 7.101304310558632,
+        "defense": 6.543923959093668
+      },
+      {
+        "school": "Navy",
+        "year": 2016,
+        "yearAtSchool": 10,
+        "offense": 6.380741543923221,
+        "defense": -1.843966738004533
+      },
+      {
+        "school": "Navy",
+        "year": 2017,
+        "yearAtSchool": 11,
+        "offense": 2.5773275261166315,
+        "defense": 4.619983137784992
+      },
+      {
+        "school": "Navy",
+        "year": 2018,
+        "yearAtSchool": 12,
+        "offense": -6.431786860533073,
+        "defense": -4.691387432515668
+      },
+      {
+        "school": "Navy",
+        "year": 2019,
+        "yearAtSchool": 13,
+        "offense": 8.755548462892833,
+        "defense": 5.139533952257416
+      },
+      {
+        "school": "Navy",
+        "year": 2021,
+        "yearAtSchool": 15,
+        "offense": -6.382522423458053,
+        "defense": 0.9367547784155865
+      },
+      {
+        "school": "Navy",
+        "year": 2022,
+        "yearAtSchool": 16,
+        "offense": -3.649856205311963,
+        "defense": 3.197693980147002
+      }
+    ],
+    "avgOffense": 1.1236420391135347,
+    "avgDefense": 1.463514529914176,
+    "n": 8,
+    "schools": [
+      "Navy"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "coachId": 439,
+    "name": "Frank Solich",
+    "eligibleSeasons": [
+      {
+        "school": "Ohio",
+        "year": 2014,
+        "yearAtSchool": 10,
+        "offense": -15.687868522391758,
+        "defense": -1.28958404940555
+      },
+      {
+        "school": "Ohio",
+        "year": 2015,
+        "yearAtSchool": 11,
+        "offense": -4.800658407870863,
+        "defense": -1.9362307323560082
+      },
+      {
+        "school": "Ohio",
+        "year": 2016,
+        "yearAtSchool": 12,
+        "offense": -9.268410555450666,
+        "defense": 1.4568368959714482
+      },
+      {
+        "school": "Ohio",
+        "year": 2017,
+        "yearAtSchool": 13,
+        "offense": 5.11263288996648,
+        "defense": -2.9818916600630483
+      },
+      {
+        "school": "Ohio",
+        "year": 2018,
+        "yearAtSchool": 14,
+        "offense": 8.321466903610158,
+        "defense": -1.0274841666809178
+      },
+      {
+        "school": "Ohio",
+        "year": 2019,
+        "yearAtSchool": 15,
+        "offense": 1.1229736819399272,
+        "defense": -6.47254354765715
+      }
+    ],
+    "avgOffense": -2.5333106683661204,
+    "avgDefense": -2.041816210031871,
+    "n": 6,
+    "schools": [
+      "Ohio"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 114,
+    "name": "Bob Davie",
+    "eligibleSeasons": [
+      {
+        "school": "New Mexico",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": -3.3855629403613006,
+        "defense": -11.635976541380932
+      },
+      {
+        "school": "New Mexico",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": -7.84555654007209,
+        "defense": -3.1978796799544575
+      },
+      {
+        "school": "New Mexico",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 1.5691303299595132,
+        "defense": -8.213501161079556
+      },
+      {
+        "school": "New Mexico",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": -10.989083519462366,
+        "defense": -6.3304158382382765
+      },
+      {
+        "school": "New Mexico",
+        "year": 2018,
+        "yearAtSchool": 7,
+        "offense": -6.667146757704094,
+        "defense": -9.913914471496353
+      },
+      {
+        "school": "New Mexico",
+        "year": 2019,
+        "yearAtSchool": 8,
+        "offense": -10.088196381751699,
+        "defense": -11.38139463369671
+      }
+    ],
+    "avgOffense": -6.2344026348986725,
+    "avgDefense": -8.44551372097438,
+    "n": 6,
+    "schools": [
+      "New Mexico"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 274,
+    "name": "Rocky Long",
+    "eligibleSeasons": [
+      {
+        "school": "San Diego State",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": -10.812687476566111,
+        "defense": 4.675245970473009
+      },
+      {
+        "school": "San Diego State",
+        "year": 2015,
+        "yearAtSchool": 5,
+        "offense": -1.9291090599908614,
+        "defense": 7.43701426763397
+      },
+      {
+        "school": "San Diego State",
+        "year": 2016,
+        "yearAtSchool": 6,
+        "offense": 1.0377799863389798,
+        "defense": 4.436688345437308
+      },
+      {
+        "school": "San Diego State",
+        "year": 2017,
+        "yearAtSchool": 7,
+        "offense": -1.15329278268493,
+        "defense": 4.93607207201435
+      },
+      {
+        "school": "San Diego State",
+        "year": 2018,
+        "yearAtSchool": 8,
+        "offense": -10.196700234996523,
+        "defense": 5.3019653282348225
+      },
+      {
+        "school": "San Diego State",
+        "year": 2019,
+        "yearAtSchool": 9,
+        "offense": -11.91466755104778,
+        "defense": 11.181183500166917
+      }
+    ],
+    "avgOffense": -5.8281128531578705,
+    "avgDefense": 6.3280282473267295,
+    "n": 6,
+    "schools": [
+      "San Diego State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 407,
+    "name": "Tony Sanchez",
+    "eligibleSeasons": [
+      {
+        "school": "UNLV",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": -3.228720348773182,
+        "defense": -7.527130466324869
+      },
+      {
+        "school": "UNLV",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": -3.276948140773211,
+        "defense": -13.807929047143316
+      },
+      {
+        "school": "UNLV",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": -8.913695006256818,
+        "defense": -9.590273265242551
+      }
+    ],
+    "avgOffense": -5.139787831934403,
+    "avgDefense": -10.308444259570246,
+    "n": 3,
+    "schools": [
+      "UNLV"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 57,
+    "name": "Mack Brown",
+    "eligibleSeasons": [
+      {
+        "school": "North Carolina",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 8.801382591858737,
+        "defense": -3.3072433787616937
+      },
+      {
+        "school": "North Carolina",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 7.418391714484329,
+        "defense": -3.0109424256046244
+      },
+      {
+        "school": "North Carolina",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": 8.072361804921188,
+        "defense": -1.0810063260224259
+      },
+      {
+        "school": "North Carolina",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": 3.869803451090622,
+        "defense": -3.349799036986704
+      }
+    ],
+    "avgOffense": 7.0404848905887185,
+    "avgDefense": -2.6872477918438618,
+    "n": 4,
+    "schools": [
+      "North Carolina"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 161,
+    "name": "Larry Fedora",
+    "eligibleSeasons": [
+      {
+        "school": "North Carolina",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 7.32144957921145,
+        "defense": -9.582566749803428
+      },
+      {
+        "school": "North Carolina",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": 15.364245482995441,
+        "defense": 5.686673736976744
+      },
+      {
+        "school": "North Carolina",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": 5.483768858584212,
+        "defense": 5.509282717702208
+      },
+      {
+        "school": "North Carolina",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": -0.3435204994696838,
+        "defense": -1.7923520954123786
+      },
+      {
+        "school": "North Carolina",
+        "year": 2018,
+        "yearAtSchool": 7,
+        "offense": -0.6027985417366267,
+        "defense": -6.676153308021056
+      }
+    ],
+    "avgOffense": 5.444628975916959,
+    "avgDefense": -1.3710231397115822,
+    "n": 5,
+    "schools": [
+      "North Carolina"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "coachId": 58,
+    "name": "Neal Brown",
+    "eligibleSeasons": [
+      {
+        "school": "Troy",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": -1.5628278495422137,
+        "defense": 1.0762610532895664
+      },
+      {
+        "school": "Troy",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": -5.992049070841194,
+        "defense": 1.8908131049672212
+      },
+      {
+        "school": "West Virginia",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": -2.3124201652123193,
+        "defense": 6.267893887453951
+      },
+      {
+        "school": "West Virginia",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 4.934314955914342,
+        "defense": -2.2934800415554615
+      },
+      {
+        "school": "West Virginia",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": 4.728460731496383,
+        "defense": 3.421362180317783
+      },
+      {
+        "school": "West Virginia",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": 2.9222613751750663,
+        "defense": -1.2166599782496392
+      }
+    ],
+    "avgOffense": 0.45295666283167735,
+    "avgDefense": 1.5243650343705701,
+    "n": 6,
+    "schools": [
+      "Troy",
+      "West Virginia"
+    ],
+    "years": [
+      2017,
+      2018,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 272,
+    "name": "Seth Littrell",
+    "eligibleSeasons": [
+      {
+        "school": "North Texas",
+        "year": 2018,
+        "yearAtSchool": 3,
+        "offense": -1.7221279064677901,
+        "defense": -2.3533336884950598
+      },
+      {
+        "school": "North Texas",
+        "year": 2019,
+        "yearAtSchool": 4,
+        "offense": -3.325282629783806,
+        "defense": -9.154016096765087
+      },
+      {
+        "school": "North Texas",
+        "year": 2021,
+        "yearAtSchool": 6,
+        "offense": -6.096115699545578,
+        "defense": -4.131979313445907
+      },
+      {
+        "school": "North Texas",
+        "year": 2022,
+        "yearAtSchool": 7,
+        "offense": -0.6341832247215828,
+        "defense": -7.275303778379635
+      }
+    ],
+    "avgOffense": -2.9444273651296893,
+    "avgDefense": -5.728658219271422,
+    "n": 4,
+    "schools": [
+      "North Texas"
+    ],
+    "years": [
+      2018,
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "coachId": 72,
+    "name": "Rod Carey",
+    "eligibleSeasons": [
+      {
+        "school": "Northern Illinois",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": -3.463137453999362,
+        "defense": -4.0967551189795
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": -0.3613623298361633,
+        "defense": -1.236799867812139
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": -2.425976664268645,
+        "defense": -3.6449348629741496
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": -3.2235395931924664,
+        "defense": 1.8251660499386853
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2018,
+        "yearAtSchool": 7,
+        "offense": -9.06293190422462,
+        "defense": 3.9573323199510804
+      },
+      {
+        "school": "Temple",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": -13.800864860774546,
+        "defense": -15.221824895786632
+      }
+    ],
+    "avgOffense": -5.389635467715967,
+    "avgDefense": -3.0696360626104426,
+    "n": 6,
+    "schools": [
+      "Northern Illinois",
+      "Temple"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2021
+    ]
+  },
+  {
+    "coachId": 549,
+    "name": "Thomas Hammock",
+    "eligibleSeasons": [
+      {
+        "school": "Northern Illinois",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": -0.48581474730143387,
+        "defense": -9.519841773591295
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": -4.20144640586677,
+        "defense": -11.584808271679623
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": -6.652620564943589,
+        "defense": -3.581802621079448
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": -9.164318015525755,
+        "defense": 4.724436231625211
+      },
+      {
+        "school": "Northern Illinois",
+        "year": 2025,
+        "yearAtSchool": 7,
+        "offense": -13.037329665007533,
+        "defense": -4.482492042057122
+      }
+    ],
+    "avgOffense": -6.708305879729016,
+    "avgDefense": -4.888901695356456,
+    "n": 5,
+    "schools": [
+      "Northern Illinois"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 1732,
+    "name": "Marcus Freeman",
+    "eligibleSeasons": [
+      {
+        "school": "Notre Dame",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 14.833313962927065,
+        "defense": 10.822613741790564
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 14.946114864274335,
+        "defense": 14.394249382513038
+      },
+      {
+        "school": "Notre Dame",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": 18.485740840414884,
+        "defense": 12.706650240673873
+      }
+    ],
+    "avgOffense": 16.088389889205427,
+    "avgDefense": 12.64117112165916,
+    "n": 3,
+    "schools": [
+      "Notre Dame"
+    ],
+    "years": [
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 524,
+    "name": "Ryan Day",
+    "eligibleSeasons": [
+      {
+        "school": "Ohio State",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": 22.18339394694746,
+        "defense": 6.565103501968799
+      },
+      {
+        "school": "Ohio State",
+        "year": 2022,
+        "yearAtSchool": 5,
+        "offense": 21.869307272602143,
+        "defense": 8.88249314186002
+      },
+      {
+        "school": "Ohio State",
+        "year": 2023,
+        "yearAtSchool": 6,
+        "offense": 8.400142970201799,
+        "defense": 19.196208968754092
+      },
+      {
+        "school": "Ohio State",
+        "year": 2024,
+        "yearAtSchool": 7,
+        "offense": 15.004171762713847,
+        "defense": 18.764177749207096
+      },
+      {
+        "school": "Ohio State",
+        "year": 2025,
+        "yearAtSchool": 8,
+        "offense": 11.687728075983618,
+        "defense": 21.503183081122188
+      }
+    ],
+    "avgOffense": 15.828948805689773,
+    "avgDefense": 14.982233288582439,
+    "n": 5,
+    "schools": [
+      "Ohio State"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 394,
+    "name": "Lincoln Riley",
+    "eligibleSeasons": [
+      {
+        "school": "Oklahoma",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": 17.074314144025678,
+        "defense": 6.186612064966346
+      },
+      {
+        "school": "Oklahoma",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": 11.909295315030821,
+        "defense": 3.505096972090067
+      },
+      {
+        "school": "USC",
+        "year": 2024,
+        "yearAtSchool": 3,
+        "offense": 10.041127292884275,
+        "defense": 7.395489869593318
+      },
+      {
+        "school": "USC",
+        "year": 2025,
+        "yearAtSchool": 4,
+        "offense": 13.888201461293905,
+        "defense": 7.781917481229216
+      }
+    ],
+    "avgOffense": 13.22823455330867,
+    "avgDefense": 6.217279096969737,
+    "n": 4,
+    "schools": [
+      "Oklahoma",
+      "USC"
+    ],
+    "years": [
+      2019,
+      2021,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 454,
+    "name": "Bob Stoops",
+    "eligibleSeasons": [
+      {
+        "school": "Oklahoma",
+        "year": 2014,
+        "yearAtSchool": 16,
+        "offense": 11.677819977499006,
+        "defense": 7.537324942673916
+      },
+      {
+        "school": "Oklahoma",
+        "year": 2015,
+        "yearAtSchool": 17,
+        "offense": 16.0807496993996,
+        "defense": 12.157699996198025
+      },
+      {
+        "school": "Oklahoma",
+        "year": 2016,
+        "yearAtSchool": 18,
+        "offense": 17.517990642519333,
+        "defense": 3.574286149491152
+      }
+    ],
+    "avgOffense": 15.092186773139312,
+    "avgDefense": 7.756437029454364,
+    "n": 3,
+    "schools": [
+      "Oklahoma"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016
+    ]
+  },
+  {
+    "coachId": 190,
+    "name": "Mike Gundy",
+    "eligibleSeasons": [
+      {
+        "school": "Oklahoma State",
+        "year": 2014,
+        "yearAtSchool": 10,
+        "offense": 2.9558484890415304,
+        "defense": 1.628728687470855
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2015,
+        "yearAtSchool": 11,
+        "offense": 13.353936255701045,
+        "defense": 0.14545825465680898
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2016,
+        "yearAtSchool": 12,
+        "offense": 8.77551395902257,
+        "defense": 5.036702100232066
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2017,
+        "yearAtSchool": 13,
+        "offense": 20.75811915104831,
+        "defense": 0.7744853354025993
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2018,
+        "yearAtSchool": 14,
+        "offense": 12.190102514351786,
+        "defense": 0.29785526926150413
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2019,
+        "yearAtSchool": 15,
+        "offense": 7.084261099283782,
+        "defense": 5.7051666922869
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2021,
+        "yearAtSchool": 17,
+        "offense": 8.573729398333633,
+        "defense": 13.81618028323541
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2022,
+        "yearAtSchool": 18,
+        "offense": 4.168990665344408,
+        "defense": 1.5892935681351772
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2023,
+        "yearAtSchool": 19,
+        "offense": 7.1111072800178965,
+        "defense": 1.7246407830980537
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2024,
+        "yearAtSchool": 20,
+        "offense": 0.803555953960965,
+        "defense": -5.393703423253609
+      },
+      {
+        "school": "Oklahoma State",
+        "year": 2025,
+        "yearAtSchool": 21,
+        "offense": -9.460068216487192,
+        "defense": -4.526108479370981
+      }
+    ],
+    "avgOffense": 6.9377360499653395,
+    "avgDefense": 1.8907908246504348,
+    "n": 11,
+    "schools": [
+      "Oklahoma State"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 571,
+    "name": "Ricky Rahne",
+    "eligibleSeasons": [
+      {
+        "school": "Old Dominion",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": -10.615471954647195,
+        "defense": -1.5812613264944377
+      },
+      {
+        "school": "Old Dominion",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": -5.445349991701815,
+        "defense": -2.2197783985306323
+      },
+      {
+        "school": "Old Dominion",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": -0.5951270100629091,
+        "defense": -1.6420527535652192
+      },
+      {
+        "school": "Old Dominion",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": -0.393061624107802,
+        "defense": 4.753123268525181
+      }
+    ],
+    "avgOffense": -4.26225264512993,
+    "avgDefense": -0.172492302516277,
+    "n": 4,
+    "schools": [
+      "Old Dominion"
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 500,
+    "name": "Bobby Wilder",
+    "eligibleSeasons": [
+      {
+        "school": "Old Dominion",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": -2.2020696725767435,
+        "defense": -5.615867833897426
+      },
+      {
+        "school": "Old Dominion",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -12.829754938601582,
+        "defense": -9.611347288276628
+      },
+      {
+        "school": "Old Dominion",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": -6.880539373014312,
+        "defense": -15.249453055682237
+      },
+      {
+        "school": "Old Dominion",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": -15.73295723481243,
+        "defense": -5.4571315095722985
+      }
+    ],
+    "avgOffense": -9.411330304751267,
+    "avgDefense": -8.983449921857147,
+    "n": 4,
+    "schools": [
+      "Old Dominion"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "coachId": 531,
+    "name": "Chip Kelly",
+    "eligibleSeasons": [
+      {
+        "school": "UCLA",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": 11.41883295432778,
+        "defense": 1.0067249031839658
+      },
+      {
+        "school": "UCLA",
+        "year": 2022,
+        "yearAtSchool": 5,
+        "offense": 11.007472961453074,
+        "defense": -1.2589725275549504
+      },
+      {
+        "school": "UCLA",
+        "year": 2023,
+        "yearAtSchool": 6,
+        "offense": -1.4616095785919392,
+        "defense": 10.783142378650274
+      }
+    ],
+    "avgOffense": 6.988232112396305,
+    "avgDefense": 3.5102982514264296,
+    "n": 3,
+    "schools": [
+      "UCLA"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "coachId": 172,
+    "name": "James Franklin",
+    "eligibleSeasons": [
+      {
+        "school": "Penn State",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": 13.660850486391077,
+        "defense": 6.62401630759666
+      },
+      {
+        "school": "Penn State",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": 18.25333028073476,
+        "defense": 13.129628500863562
+      },
+      {
+        "school": "Penn State",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": 9.729106204526172,
+        "defense": 9.239099761208886
+      },
+      {
+        "school": "Penn State",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": 9.239015502733695,
+        "defense": 14.852446846731494
+      },
+      {
+        "school": "Penn State",
+        "year": 2021,
+        "yearAtSchool": 8,
+        "offense": 1.7345202932901345,
+        "defense": 13.231194705875287
+      },
+      {
+        "school": "Penn State",
+        "year": 2022,
+        "yearAtSchool": 9,
+        "offense": 11.853929589583823,
+        "defense": 11.796761355374136
+      },
+      {
+        "school": "Penn State",
+        "year": 2023,
+        "yearAtSchool": 10,
+        "offense": 11.612153597078231,
+        "defense": 14.791425778742076
+      },
+      {
+        "school": "Penn State",
+        "year": 2024,
+        "yearAtSchool": 11,
+        "offense": 10.372199805258207,
+        "defense": 14.282764014114981
+      },
+      {
+        "school": "Penn State",
+        "year": 2025,
+        "yearAtSchool": 12,
+        "offense": 9.059157491251657,
+        "defense": 9.243699359718896
+      }
+    ],
+    "avgOffense": 10.612695916760861,
+    "avgDefense": 11.91011518113622,
+    "n": 9,
+    "schools": [
+      "Penn State"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 82,
+    "name": "Paul Chryst",
+    "eligibleSeasons": [
+      {
+        "school": "Pittsburgh",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": 3.4138536411223557,
+        "defense": -0.7958088571067097
+      },
+      {
+        "school": "Wisconsin",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": 10.18953051901562,
+        "defense": 16.3101621105613
+      },
+      {
+        "school": "Wisconsin",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": 3.931550748669007,
+        "defense": 5.994618697841821
+      },
+      {
+        "school": "Wisconsin",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": 12.21718336211956,
+        "defense": 16.08033484254562
+      },
+      {
+        "school": "Wisconsin",
+        "year": 2021,
+        "yearAtSchool": 7,
+        "offense": 4.278618228134475,
+        "defense": 12.79320777449695
+      },
+      {
+        "school": "Wisconsin",
+        "year": 2022,
+        "yearAtSchool": 8,
+        "offense": 3.3060721986396846,
+        "defense": 6.389044729333414
+      }
+    ],
+    "avgOffense": 6.222801449616783,
+    "avgDefense": 9.461926549612066,
+    "n": 6,
+    "schools": [
+      "Pittsburgh",
+      "Wisconsin"
+    ],
+    "years": [
+      2014,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "coachId": 343,
+    "name": "Pat Narduzzi",
+    "eligibleSeasons": [
+      {
+        "school": "Pittsburgh",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": -0.5541974332847299,
+        "defense": 5.655996367839729
+      },
+      {
+        "school": "Pittsburgh",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": 1.1219344703710687,
+        "defense": 4.183831489741283
+      },
+      {
+        "school": "Pittsburgh",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": -6.8930499978984,
+        "defense": 6.611515131494233
+      },
+      {
+        "school": "Pittsburgh",
+        "year": 2021,
+        "yearAtSchool": 7,
+        "offense": 9.50123896295907,
+        "defense": 4.550549243170145
+      },
+      {
+        "school": "Pittsburgh",
+        "year": 2022,
+        "yearAtSchool": 8,
+        "offense": 4.683657108008999,
+        "defense": 3.616397610018017
+      },
+      {
+        "school": "Pittsburgh",
+        "year": 2023,
+        "yearAtSchool": 9,
+        "offense": -5.383956532306274,
+        "defense": 0.2671173453053253
+      },
+      {
+        "school": "Pittsburgh",
+        "year": 2024,
+        "yearAtSchool": 10,
+        "offense": 3.109648983112528,
+        "defense": -0.2787727045297737
+      },
+      {
+        "school": "Pittsburgh",
+        "year": 2025,
+        "yearAtSchool": 11,
+        "offense": 8.383733991813891,
+        "defense": 2.5552280002227756
+      }
+    ],
+    "avgOffense": 1.746126194097019,
+    "avgDefense": 3.395232810407717,
+    "n": 8,
+    "schools": [
+      "Pittsburgh"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 21,
+    "name": "David Bailiff",
+    "eligibleSeasons": [
+      {
+        "school": "Rice",
+        "year": 2014,
+        "yearAtSchool": 8,
+        "offense": -2.780481721025024,
+        "defense": -2.6810951255722717
+      },
+      {
+        "school": "Rice",
+        "year": 2015,
+        "yearAtSchool": 9,
+        "offense": -9.255535378763122,
+        "defense": -14.180717719150334
+      },
+      {
+        "school": "Rice",
+        "year": 2016,
+        "yearAtSchool": 10,
+        "offense": -11.522615771328455,
+        "defense": -11.144549892979018
+      },
+      {
+        "school": "Rice",
+        "year": 2017,
+        "yearAtSchool": 11,
+        "offense": -14.453834419011935,
+        "defense": -13.336213620953673
+      }
+    ],
+    "avgOffense": -9.503116822532133,
+    "avgDefense": -10.335644089663823,
+    "n": 4,
+    "schools": [
+      "Rice"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 520,
+    "name": "Mike Bloomgren",
+    "eligibleSeasons": [
+      {
+        "school": "Rice",
+        "year": 2021,
+        "yearAtSchool": 4,
+        "offense": -11.424288018302818,
+        "defense": -8.707026639113646
+      },
+      {
+        "school": "Rice",
+        "year": 2022,
+        "yearAtSchool": 5,
+        "offense": -8.983912134049882,
+        "defense": -10.417393994531423
+      },
+      {
+        "school": "Rice",
+        "year": 2023,
+        "yearAtSchool": 6,
+        "offense": -1.7727844334020555,
+        "defense": -6.223605800127277
+      },
+      {
+        "school": "Rice",
+        "year": 2024,
+        "yearAtSchool": 7,
+        "offense": -10.682668363068064,
+        "defense": -2.2320187946960526
+      }
+    ],
+    "avgOffense": -8.215913237205704,
+    "avgDefense": -6.8950113071171,
+    "n": 4,
+    "schools": [
+      "Rice"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "coachId": 414,
+    "name": "Greg Schiano",
+    "eligibleSeasons": [
+      {
+        "school": "Rutgers",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": -8.903480560379048,
+        "defense": -0.8254701363474832
+      },
+      {
+        "school": "Rutgers",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": -0.06156282027197635,
+        "defense": 5.922709616539103
+      },
+      {
+        "school": "Rutgers",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": 6.266696035128441,
+        "defense": 1.5737046700730686
+      },
+      {
+        "school": "Rutgers",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 6.968023304838873,
+        "defense": -3.05973156225713
+      }
+    ],
+    "avgOffense": 1.0674189898290725,
+    "avgDefense": 0.9028031470018896,
+    "n": 4,
+    "schools": [
+      "Rutgers"
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 239,
+    "name": "Joey Jones",
+    "eligibleSeasons": [
+      {
+        "school": "South Alabama",
+        "year": 2014,
+        "yearAtSchool": 3,
+        "offense": -12.308555613874223,
+        "defense": -2.014354442076823
+      },
+      {
+        "school": "South Alabama",
+        "year": 2015,
+        "yearAtSchool": 4,
+        "offense": -8.340181838429197,
+        "defense": -12.498194524240729
+      },
+      {
+        "school": "South Alabama",
+        "year": 2016,
+        "yearAtSchool": 5,
+        "offense": -9.352202230127867,
+        "defense": -2.92941914048161
+      },
+      {
+        "school": "South Alabama",
+        "year": 2017,
+        "yearAtSchool": 6,
+        "offense": -16.6745575716955,
+        "defense": -2.8857149722681643
+      }
+    ],
+    "avgOffense": -11.668874313531697,
+    "avgDefense": -5.081920769766832,
+    "n": 4,
+    "schools": [
+      "South Alabama"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 1719,
+    "name": "Shane Beamer",
+    "eligibleSeasons": [
+      {
+        "school": "South Carolina",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 1.9876446802725884,
+        "defense": 5.150768608325397
+      },
+      {
+        "school": "South Carolina",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 7.951496867090174,
+        "defense": 13.23866946679377
+      },
+      {
+        "school": "South Carolina",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": 0.8272220256970865,
+        "defense": 8.44074733386326
+      }
+    ],
+    "avgOffense": 3.5887878576866163,
+    "avgDefense": 8.943395136327476,
+    "n": 3,
+    "schools": [
+      "South Carolina"
+    ],
+    "years": [
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 421,
+    "name": "David Shaw",
+    "eligibleSeasons": [
+      {
+        "school": "Stanford",
+        "year": 2014,
+        "yearAtSchool": 4,
+        "offense": -0.8854591100026332,
+        "defense": 17.0877839046647
+      },
+      {
+        "school": "Stanford",
+        "year": 2015,
+        "yearAtSchool": 5,
+        "offense": 12.447767629012178,
+        "defense": 9.49149700510547
+      },
+      {
+        "school": "Stanford",
+        "year": 2016,
+        "yearAtSchool": 6,
+        "offense": -0.27742894822053293,
+        "defense": 13.510800640371933
+      },
+      {
+        "school": "Stanford",
+        "year": 2017,
+        "yearAtSchool": 7,
+        "offense": 7.502501968601805,
+        "defense": 8.266613515517339
+      },
+      {
+        "school": "Stanford",
+        "year": 2018,
+        "yearAtSchool": 8,
+        "offense": 3.5710360123772498,
+        "defense": 5.338083408259274
+      },
+      {
+        "school": "Stanford",
+        "year": 2019,
+        "yearAtSchool": 9,
+        "offense": -2.6251890840035252,
+        "defense": 2.8837490274869717
+      },
+      {
+        "school": "Stanford",
+        "year": 2021,
+        "yearAtSchool": 11,
+        "offense": -2.8091682750419285,
+        "defense": -1.7693155862084877
+      },
+      {
+        "school": "Stanford",
+        "year": 2022,
+        "yearAtSchool": 12,
+        "offense": -4.2428028131901545,
+        "defense": -1.048419024420387
+      }
+    ],
+    "avgOffense": 1.5851571724415572,
+    "avgDefense": 6.720099111347102,
+    "n": 8,
+    "schools": [
+      "Stanford"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "coachId": 373,
+    "name": "Gary Patterson",
+    "eligibleSeasons": [
+      {
+        "school": "TCU",
+        "year": 2014,
+        "yearAtSchool": 15,
+        "offense": 21.756788667494018,
+        "defense": 11.923904073605726
+      },
+      {
+        "school": "TCU",
+        "year": 2015,
+        "yearAtSchool": 16,
+        "offense": 10.852621157962561,
+        "defense": 5.385028997424823
+      },
+      {
+        "school": "TCU",
+        "year": 2016,
+        "yearAtSchool": 17,
+        "offense": 0.3939395040192112,
+        "defense": 5.953523225104446
+      },
+      {
+        "school": "TCU",
+        "year": 2017,
+        "yearAtSchool": 18,
+        "offense": 4.933075504418583,
+        "defense": 15.230289181154813
+      },
+      {
+        "school": "TCU",
+        "year": 2018,
+        "yearAtSchool": 19,
+        "offense": -3.7448811838384675,
+        "defense": 10.663696422267932
+      },
+      {
+        "school": "TCU",
+        "year": 2019,
+        "yearAtSchool": 20,
+        "offense": 5.2388757645880295,
+        "defense": 6.431170036563885
+      },
+      {
+        "school": "TCU",
+        "year": 2021,
+        "yearAtSchool": 22,
+        "offense": 4.090910411953889,
+        "defense": -5.819007500746176
+      }
+    ],
+    "avgOffense": 6.217332832371118,
+    "avgDefense": 7.109800633625064,
+    "n": 7,
+    "schools": [
+      "TCU"
+    ],
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "coachId": 529,
+    "name": "Josh Heupel",
+    "eligibleSeasons": [
+      {
+        "school": "Tennessee",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 9.694846447180437,
+        "defense": 8.802454958938496
+      },
+      {
+        "school": "Tennessee",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 9.316644573405666,
+        "defense": 12.769166048862479
+      },
+      {
+        "school": "Tennessee",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": 13.666263157985973,
+        "defense": -0.217253154256212
+      }
+    ],
+    "avgOffense": 10.892584726190693,
+    "avgDefense": 7.118122617848254,
+    "n": 3,
+    "schools": [
+      "Tennessee"
+    ],
+    "years": [
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 1581,
+    "name": "Steve Sarkisian",
+    "eligibleSeasons": [
+      {
+        "school": "Texas",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": 12.459845043783492,
+        "defense": 13.175335797596615
+      },
+      {
+        "school": "Texas",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 12.153418064716364,
+        "defense": 16.095368069376725
+      },
+      {
+        "school": "Texas",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": 7.3881493887815255,
+        "defense": 9.619000259067573
+      }
+    ],
+    "avgOffense": 10.667137499093794,
+    "avgDefense": 12.963234708680304,
+    "n": 3,
+    "schools": [
+      "Texas"
+    ],
+    "years": [
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 255,
+    "name": "Kliff Kingsbury",
+    "eligibleSeasons": [
+      {
+        "school": "Texas Tech",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 18.251681586145818,
+        "defense": -10.93391346035387
+      },
+      {
+        "school": "Texas Tech",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": 13.621142513056649,
+        "defense": -12.840155805625523
+      },
+      {
+        "school": "Texas Tech",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": 8.390200051053371,
+        "defense": -0.6972448093377146
+      },
+      {
+        "school": "Texas Tech",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": 8.32991094527118,
+        "defense": 1.5271428714158675
+      }
+    ],
+    "avgOffense": 12.148233773881755,
+    "avgDefense": -5.7360428009753095,
+    "n": 4,
+    "schools": [
+      "Texas Tech"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "coachId": 491,
+    "name": "Matt Wells",
+    "eligibleSeasons": [
+      {
+        "school": "Texas Tech",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 5.2540402484376925,
+        "defense": -0.03016177113777041
+      },
+      {
+        "school": "Utah State",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": 2.913430506742584,
+        "defense": -2.4089758425636285
+      },
+      {
+        "school": "Utah State",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": -6.808397446915684,
+        "defense": -3.234569622659835
+      },
+      {
+        "school": "Utah State",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": -2.7164818825465455,
+        "defense": -2.9866039183423063
+      },
+      {
+        "school": "Utah State",
+        "year": 2018,
+        "yearAtSchool": 6,
+        "offense": 13.538929146583143,
+        "defense": 1.394998979158216
+      }
+    ],
+    "avgOffense": 2.436304114460238,
+    "avgDefense": -1.4530624351090649,
+    "n": 5,
+    "schools": [
+      "Texas Tech",
+      "Utah State"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2021
+    ]
+  },
+  {
+    "coachId": 71,
+    "name": "Jason Candle",
+    "eligibleSeasons": [
+      {
+        "school": "Toledo",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": 3.3997069212291207,
+        "defense": -2.567708669444317
+      },
+      {
+        "school": "Toledo",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": 7.633643493020863,
+        "defense": -9.83613716888522
+      },
+      {
+        "school": "Toledo",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": -7.72248008007684,
+        "defense": -11.234200151326904
+      },
+      {
+        "school": "Toledo",
+        "year": 2021,
+        "yearAtSchool": 7,
+        "offense": -1.733604597094318,
+        "defense": -0.08105776447473523
+      },
+      {
+        "school": "Toledo",
+        "year": 2022,
+        "yearAtSchool": 8,
+        "offense": -0.6199040779188777,
+        "defense": -5.048224077907186
+      },
+      {
+        "school": "Toledo",
+        "year": 2023,
+        "yearAtSchool": 9,
+        "offense": -1.441823748498102,
+        "defense": -1.9775760004227332
+      },
+      {
+        "school": "Toledo",
+        "year": 2024,
+        "yearAtSchool": 10,
+        "offense": -3.850827844605514,
+        "defense": -2.3770936538778025
+      },
+      {
+        "school": "Toledo",
+        "year": 2025,
+        "yearAtSchool": 11,
+        "offense": -0.7405819915050021,
+        "defense": 4.867358409144209
+      }
+    ],
+    "avgOffense": -0.6344839906810837,
+    "avgDefense": -3.531829884649336,
+    "n": 8,
+    "schools": [
+      "Toledo"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 324,
+    "name": "Philip Montgomery",
+    "eligibleSeasons": [
+      {
+        "school": "Tulsa",
+        "year": 2017,
+        "yearAtSchool": 3,
+        "offense": -0.9503894974981655,
+        "defense": -8.105075491555723
+      },
+      {
+        "school": "Tulsa",
+        "year": 2018,
+        "yearAtSchool": 4,
+        "offense": -10.535377308273773,
+        "defense": -2.8061622598349243
+      },
+      {
+        "school": "Tulsa",
+        "year": 2019,
+        "yearAtSchool": 5,
+        "offense": -0.8751003007885166,
+        "defense": 0.7561780137950032
+      },
+      {
+        "school": "Tulsa",
+        "year": 2021,
+        "yearAtSchool": 7,
+        "offense": -1.9459453099452213,
+        "defense": 1.124020938045391
+      },
+      {
+        "school": "Tulsa",
+        "year": 2022,
+        "yearAtSchool": 8,
+        "offense": -0.5646788406344346,
+        "defense": -6.602508764834641
+      }
+    ],
+    "avgOffense": -2.974298251428022,
+    "avgDefense": -3.126709512876979,
+    "n": 5,
+    "schools": [
+      "Tulsa"
+    ],
+    "years": [
+      2017,
+      2018,
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "coachId": 259,
+    "name": "Sean Kugler",
+    "eligibleSeasons": [
+      {
+        "school": "UTEP",
+        "year": 2015,
+        "yearAtSchool": 3,
+        "offense": -16.801374116508978,
+        "defense": -10.454958552485994
+      },
+      {
+        "school": "UTEP",
+        "year": 2016,
+        "yearAtSchool": 4,
+        "offense": -14.566371074823984,
+        "defense": -11.877617151556045
+      },
+      {
+        "school": "UTEP",
+        "year": 2017,
+        "yearAtSchool": 5,
+        "offense": -21.227460622568074,
+        "defense": -11.468357851584356
+      }
+    ],
+    "avgOffense": -17.531735271300345,
+    "avgDefense": -11.266977851875465,
+    "n": 3,
+    "schools": [
+      "UTEP"
+    ],
+    "years": [
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "coachId": 574,
+    "name": "Jeff Traylor",
+    "eligibleSeasons": [
+      {
+        "school": "UTSA",
+        "year": 2022,
+        "yearAtSchool": 3,
+        "offense": 4.341750615595214,
+        "defense": -2.3557804011203096
+      },
+      {
+        "school": "UTSA",
+        "year": 2023,
+        "yearAtSchool": 4,
+        "offense": 0.4816315093157759,
+        "defense": -0.7787480785571688
+      },
+      {
+        "school": "UTSA",
+        "year": 2024,
+        "yearAtSchool": 5,
+        "offense": 0.3657494411112454,
+        "defense": -8.737110486530009
+      },
+      {
+        "school": "UTSA",
+        "year": 2025,
+        "yearAtSchool": 6,
+        "offense": 5.736524075130674,
+        "defense": -3.77313320583493
+      }
+    ],
+    "avgOffense": 2.7314139102882273,
+    "avgDefense": -3.9111930430106043,
+    "n": 4,
+    "schools": [
+      "UTSA"
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 1721,
+    "name": "Clark Lea",
+    "eligibleSeasons": [
+      {
+        "school": "Vanderbilt",
+        "year": 2023,
+        "yearAtSchool": 3,
+        "offense": -1.7101509466660716,
+        "defense": -6.894592270239599
+      },
+      {
+        "school": "Vanderbilt",
+        "year": 2024,
+        "yearAtSchool": 4,
+        "offense": 4.410186571905492,
+        "defense": 6.000665175687729
+      },
+      {
+        "school": "Vanderbilt",
+        "year": 2025,
+        "yearAtSchool": 5,
+        "offense": 16.866239227769547,
+        "defense": 4.554215210527471
+      }
+    ],
+    "avgOffense": 6.522091617669656,
+    "avgDefense": 1.2200960386585338,
+    "n": 3,
+    "schools": [
+      "Vanderbilt"
+    ],
+    "years": [
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 551,
+    "name": "Tyson Helton",
+    "eligibleSeasons": [
+      {
+        "school": "Western Kentucky",
+        "year": 2021,
+        "yearAtSchool": 3,
+        "offense": 12.305276842032312,
+        "defense": -5.387751563736444
+      },
+      {
+        "school": "Western Kentucky",
+        "year": 2022,
+        "yearAtSchool": 4,
+        "offense": 3.930827767701097,
+        "defense": -0.6276306521290267
+      },
+      {
+        "school": "Western Kentucky",
+        "year": 2023,
+        "yearAtSchool": 5,
+        "offense": 0.1300134721654125,
+        "defense": -6.172786880367383
+      },
+      {
+        "school": "Western Kentucky",
+        "year": 2024,
+        "yearAtSchool": 6,
+        "offense": -7.227053491947636,
+        "defense": -4.643523235124834
+      },
+      {
+        "school": "Western Kentucky",
+        "year": 2025,
+        "yearAtSchool": 7,
+        "offense": -4.7110380192781465,
+        "defense": -4.9679600858003665
+      }
+    ],
+    "avgOffense": 0.8856053141346077,
+    "avgDefense": -4.359930483431611,
+    "n": 5,
+    "schools": [
+      "Western Kentucky"
+    ],
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "coachId": 268,
+    "name": "Tim Lester",
+    "eligibleSeasons": [
+      {
+        "school": "Western Michigan",
+        "year": 2019,
+        "yearAtSchool": 3,
+        "offense": -1.8949406827952324,
+        "defense": -3.823579811921555
+      },
+      {
+        "school": "Western Michigan",
+        "year": 2021,
+        "yearAtSchool": 5,
+        "offense": 1.0132700513662116,
+        "defense": -4.524535019265101
+      },
+      {
+        "school": "Western Michigan",
+        "year": 2022,
+        "yearAtSchool": 6,
+        "offense": -14.694206246402747,
+        "defense": -2.2752582457970747
+      }
+    ],
+    "avgOffense": -5.1919589592772555,
+    "avgDefense": -3.5411243589945767,
+    "n": 3,
+    "schools": [
+      "Western Michigan"
+    ],
+    "years": [
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "coachId": 44,
+    "name": "Craig Bohl",
+    "eligibleSeasons": [
+      {
+        "school": "Wyoming",
+        "year": 2016,
+        "yearAtSchool": 3,
+        "offense": 4.9512856324889105,
+        "defense": -6.776281243493694
+      },
+      {
+        "school": "Wyoming",
+        "year": 2017,
+        "yearAtSchool": 4,
+        "offense": -8.806947162431436,
+        "defense": 5.613458704897077
+      },
+      {
+        "school": "Wyoming",
+        "year": 2018,
+        "yearAtSchool": 5,
+        "offense": -9.857382097059961,
+        "defense": 7.048624775345793
+      },
+      {
+        "school": "Wyoming",
+        "year": 2019,
+        "yearAtSchool": 6,
+        "offense": -4.8758060206532035,
+        "defense": 5.095175044600964
+      },
+      {
+        "school": "Wyoming",
+        "year": 2021,
+        "yearAtSchool": 8,
+        "offense": -4.742671648012925,
+        "defense": -0.43428615706818924
+      },
+      {
+        "school": "Wyoming",
+        "year": 2022,
+        "yearAtSchool": 9,
+        "offense": -8.575469632038198,
+        "defense": -2.2947593334596874
+      },
+      {
+        "school": "Wyoming",
+        "year": 2023,
+        "yearAtSchool": 10,
+        "offense": -3.560976703278203,
+        "defense": 3.3377787961811
+      }
+    ],
+    "avgOffense": -5.066852518712145,
+    "avgDefense": 1.6556729410004805,
+    "n": 7,
+    "schools": [
+      "Wyoming"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  }
+]
