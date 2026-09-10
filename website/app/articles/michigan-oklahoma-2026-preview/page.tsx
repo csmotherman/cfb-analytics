@@ -7,20 +7,20 @@ import type {CompareRow, StatPoint} from "../../../lib/michigan/oklahoma-2026-pr
 import "../michigan-western-michigan-2026-preview/preview-story.css";
 
 const articleUrl="https://michiganfootballfocus.com/articles/michigan-oklahoma-2026-preview";
-const socialDescription="Oklahoma brings the #2 opponent-adjusted defense in the country into Michigan Stadium. Michigan brings the offense that lost to it by 11 last September. Here's the validated 2025 baseline, the Week 1 tape and the market, kept separate on purpose.";
+const socialDescription="Oklahoma brings the #2 defense from MFF's validated 2025 FBS sample into Michigan Stadium. Michigan brings a defense that allowed no touchdowns in Week 1 and an offense that turned it over three times. Here is the fact-checked matchup, current personnel picture and market read.";
 
 export const metadata:Metadata={
-  title:"Michigan vs. Oklahoma: The Week 2 Matchup Story",
-  description:"A story-first Michigan vs. Oklahoma Week 2 preview using 2025 opponent-adjusted efficiency, Week 1 2026 tape and the Michigan Football Focus model.",
-  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Michigan vs. Oklahoma: The Week 2 Matchup Story",description:socialDescription,images:["/og.png"]},
-  twitter:{card:"summary_large_image",title:"Michigan vs. Oklahoma: The Week 2 Matchup Story",description:socialDescription,images:["/og.png"]}
+  title:"Michigan vs. Oklahoma 2026 Preview: Matchups, Analytics & Prediction",
+  description:"A fact-checked Michigan vs. Oklahoma Week 2 preview using validated 2025 opponent-adjusted efficiency, official 2026 Week 1 box scores, current personnel reporting and market context.",
+  openGraph:{type:"article",url:articleUrl,siteName:"Michigan Football Focus",title:"Michigan vs. Oklahoma 2026 Preview: Matchups, Analytics & Prediction",description:socialDescription,images:["/og.png"]},
+  twitter:{card:"summary_large_image",title:"Michigan vs. Oklahoma 2026 Preview: Matchups, Analytics & Prediction",description:socialDescription,images:["/og.png"]}
 };
 
 const sections=[
   ["identity","The matchup in 30 seconds"],
   ["baseline","2025 opponent-adjusted baseline"],
-  ["week1","Week 1, 2026: two different openers"],
-  ["matchups","Three matchups that decide it"],
+  ["week1","What Week 1 actually said"],
+  ["matchups","Four matchups that decide it"],
   ["paths","How each team gets its game"],
   ["short-list","Numbers worth remembering"],
   ["methodology","Sources & methodology"],
@@ -70,16 +70,16 @@ export default function MichiganOklahomaPreview(){
         </div>
         <div className="wm-hero-thesis">{data.heroThesis}</div>
         <div className="wm-model-rail">
-          <div className="wm-model-accent"><small>Preseason win probability</small><strong>{data.preseasonModel.winProbMichiganPct}%</strong><span>Michigan</span></div>
-          <div><small>Preseason projected margin</small><strong>{data.preseasonModel.projectedMargin.replace("Michigan by ","+")}</strong><span>Michigan perspective</span></div>
-          <div><small>2025 overall composite</small><strong>#{data.compositeComparison.michigan.overall.rank} vs #{data.compositeComparison.opponent.overall.rank}</strong><span>validated composite</span></div>
-          <div><small>market</small><strong>{data.market.spread}</strong><span>{data.market.book}</span></div>
+          <div className="wm-model-accent"><small>Preseason win probability</small><strong>{data.preseasonModel.winProbMichiganPct}%</strong><span>Michigan · before Week 1</span></div>
+          <div><small>Preseason projected margin</small><strong>{data.preseasonModel.projectedMargin.replace("Michigan by ","+")}</strong><span>not a current prediction</span></div>
+          <div><small>2025 overall composite</small><strong>#{data.compositeComparison.michigan.overall.rank} vs #{data.compositeComparison.opponent.overall.rank}</strong><span>validated FBS sample</span></div>
+          <div><small>current market</small><strong>{data.market.spread}</strong><span>{data.market.book} · {data.market.asOf}</span></div>
         </div>
       </header>
 
       <section id="identity" className="wm-story-intro">
-        <div><div className="wm-section-label">THE 30-SECOND READ</div><h2>Understand the game before the data.</h2></div>
-        <p><strong>Start with what's actually true underneath the noise.</strong> Oklahoma's defense was the #2 opponent-adjusted unit in the country last season, and Michigan's offense (#19) runs directly into it. The preseason model liked Michigan by a field goal before either team played a snap. The market has since flipped to Oklahoma by 5.5 to 6.5. Both readings can be correct at once — they're just measuring different things.</p>
+        <div><div className="wm-section-label">THE 30-SECOND READ</div><h2>Start with the evidence that survives scrutiny.</h2></div>
+        <p><strong>Oklahoma owns the best unit in this game: the #2 defense in MFF's validated 2025 FBS sample.</strong> Michigan's Week 1 offense turned the ball over three times and went 3-for-10 on third down. But Michigan's defense allowed Western Michigan only 221 yards and no touchdowns, and Oklahoma's 51-0 included an 88-yard punt-return touchdown. The market has flipped eight points from Oklahoma +2.5 at open to Oklahoma -5.5 now. That is a major repricing, not proof that the Week 1 scoreboards tell the whole story.</p>
       </section>
 
       <div className="wm-scouting-grid">
@@ -96,7 +96,7 @@ export default function MichiganOklahomaPreview(){
 
         <div className="wm-story-body">
           <section id="baseline" className="wm-story-section">
-            <SectionHead number="01" kicker="2025 OPPONENT-ADJUSTED BASELINE" title="The tightest matchup gap Michigan has played all year." summary={data.baseline.intro}/>
+            <SectionHead number="01" kicker="2025 OPPONENT-ADJUSTED BASELINE" title="The 2025 baseline is closer than the Week 1 scoreboard." summary={data.baseline.intro}/>
             <div className="wm-matchup-board">
               <div className="wm-unit-card">
                 <header><span>WHEN MICHIGAN HAS THE BALL</span><b>MICH O · OU D</b></header>
@@ -111,7 +111,7 @@ export default function MichiganOklahomaPreview(){
           </section>
 
           <section id="week1" className="wm-story-section">
-            <SectionHead number="02" kicker="WEEK 1, 2026" title="Two different openers." summary={data.week1.intro}/>
+            <SectionHead number="02" kicker="WEEK 1, 2026" title="What the official box scores actually say." summary={data.week1.intro}/>
             <div className="wm-continuity-grid">
               <div className="wm-continuity-card">
                 <span>{data.week1.oklahoma.line.toUpperCase()}</span>
@@ -129,7 +129,7 @@ export default function MichiganOklahomaPreview(){
           </section>
 
           <section id="matchups" className="wm-story-section">
-            <SectionHead number="03" kicker="THE GAME INSIDE THE GAME" title="Three matchups that decide whether this feels routine or uncomfortable."/>
+            <SectionHead number="03" kicker="THE GAME INSIDE THE GAME" title="Four matchup levers that will decide the game."/>
             <div className="wm-matchup-list">
               {data.matchups.map((matchup,index)=><article className="wm-decision-card" key={matchup.id}>
                 <div className="wm-decision-top"><div className="wm-decision-index">{index+1}</div><div><span>{matchup.kicker}</span><h3>{matchup.title}</h3><div className="wm-decision-question">{matchup.question}</div></div></div>
@@ -140,23 +140,23 @@ export default function MichiganOklahomaPreview(){
           </section>
 
           <section id="paths" className="wm-story-section">
-            <SectionHead number="04" kicker="TWO DIFFERENT GAMES" title="The team that gets its preferred script probably tells us the result early."/>
+            <SectionHead number="04" kicker="TWO DIFFERENT GAMES" title="The scripts are clear. The execution is not."/>
             <div className="wm-path-grid">
-              <div className="wm-path-card"><span>OKLAHOMA'S PATH</span><h3>Lean on the defense.</h3>{data.howOklahomaWins.map((line,i)=><b key={i}>{line}</b>)}</div>
-              <div className="wm-path-card wm-michigan-path"><span>MICHIGAN'S PATH</span><h3>Survive the front, cash the chances.</h3>{data.howMichiganWins.map((line,i)=><b key={i}>{line}</b>)}</div>
+              <div className="wm-path-card"><span>OKLAHOMA'S PATH</span><h3>Let the defense create the game.</h3>{data.howOklahomaWins.map((line,i)=><b key={i}>{line}</b>)}</div>
+              <div className="wm-path-card wm-michigan-path"><span>MICHIGAN'S PATH</span><h3>Win enough early downs to give Underwood a chance.</h3>{data.howMichiganWins.map((line,i)=><b key={i}>{line}</b>)}</div>
             </div>
           </section>
 
           <section id="short-list" className="wm-story-section">
             <SectionHead number="05" kicker="THE SHORT LIST" title="Six numbers worth remembering after you close the tab."/>
             <div className="wm-number-grid">{data.numbersThatMatter.slice(0,6).map(number=><div className="wm-number-card" key={number.label}><strong>{number.value}</strong><span>{number.label}</span><p>{number.why}</p></div>)}</div>
-            <div className="wm-verdict"><span>OUR READ</span><strong>{data.verdict}</strong></div>
+            <div className="wm-verdict"><span>EDITORIAL READ</span><strong>{data.verdict}</strong></div>
           </section>
 
           <section id="methodology" className="wm-story-section wm-methodology">
-            <SectionHead number="06" kicker="DON'T BLEND DIFFERENT NUMBERS" title="Sources & methodology" summary="The 2025 validated model, the Week 1 2026 tape, the preseason simulation and the betting market answer different questions. They stay labeled separately here on purpose."/>
+            <SectionHead number="06" kicker="DON'T BLEND DIFFERENT NUMBERS" title="Sources & methodology" summary="The validated 2025 model, official Week 1 box scores, preseason simulation and current betting market answer different questions. They stay labeled separately here on purpose."/>
             <details><summary>Validated 2025 opponent-adjusted efficiency</summary><p>{data.methodology.validated}</p></details>
-            <details><summary>Week 1, 2026 tape</summary><p>{data.methodology.week1}</p></details>
+            <details><summary>Week 1, 2026 official evidence</summary><p>{data.methodology.week1}</p></details>
             <details><summary>Preseason simulation</summary><p>{data.methodology.preseason}</p></details>
             <details><summary>Market context</summary><p>{data.methodology.market}</p></details>
           </section>
@@ -171,7 +171,7 @@ export default function MichiganOklahomaPreview(){
       <section className="focus-article-explore feature-explore">
         <div className="focus-article-section-heading"><span>KEEP EXPLORING</span><h2>Go deeper than the preview.</h2></div>
         <div className="focus-article-link-grid">
-          <Link href="/articles/how-michigan-beats-oklahoma-2026"><strong>How Michigan beats Oklahoma — and how Oklahoma makes sure it doesn't</strong><p>The full narrative breakdown: how each team wins, and the metrics that actually explain why.</p><span>READ THE STORY →</span></Link>
+          <Link href="/articles/dont-jump-the-gun-michigan-football-2026"><strong>Don't Jump the Gun on Michigan after Week 1</strong><p>Why one ugly opener matters without becoming the entire evaluation of the 2026 Wolverines.</p><span>READ THE STORY →</span></Link>
           <Link href="/games/401856679"><strong>Michigan vs. Oklahoma game hub</strong><p>Model projection, matchup details and market context.</p><span>OPEN GAME HUB →</span></Link>
           <Link href="/analytics"><strong>Michigan analytics</strong><p>Explore the opponent-adjusted ratings behind the preview.</p><span>EXPLORE DATA →</span></Link>
         </div>
