@@ -5,6 +5,27 @@ import styles from "../../styles/articles.module.css";
 
 export const metadata:Metadata={title:"Michigan Football Articles",description:"Michigan football reporting connected directly to real data, player profiles and team evidence."};
 
+const utepPreview:MichiganStory={
+  slug:"michigan-utep-2026-preview",
+  eyebrow:"WEEK 3 · GAME PREVIEW",
+  title:"Michigan vs. UTEP: Stats, Matchups & Prediction",
+  coverQuestion:"Michigan is favored by 36.5. Can an offense still outside the top 75 nationally finally look explosive?",
+  deck:"Real 2026 opponent-adjusted data through two games, UTEP's limited sample, the site's frozen preseason model and the current market -- kept labeled separately on purpose.",
+  published:"September 14, 2026",
+  readMinutes:8,
+  tags:[
+    {type:"UNIT",slug:"offense",label:"Offense"},
+    {type:"UNIT",slug:"defense",label:"Defense"},
+    {type:"TOPIC",slug:"game-preview",label:"Game Preview"},
+    {type:"TOPIC",slug:"analytics",label:"Analytics"}
+  ],
+  body:[],
+  dataLinks:[
+    {label:"Michigan vs. UTEP game hub",href:"/games/401858450",description:"View the model comparison and current market spread."},
+    {label:"Michigan analytics",href:"/analytics",description:"Explore the opponent-adjusted ratings behind the preview."}
+  ]
+};
+
 const howMichiganBeatsOklahoma:MichiganStory={
   slug:"how-michigan-beats-oklahoma-2026",
   eyebrow:"WEEK 2 · GAME PREVIEW",
@@ -161,7 +182,7 @@ const playcallingAudit:MichiganStory={
 };
 
 export default function Articles(){
-  const stories=[howMichiganBeatsOklahoma,oklahomaPreview,dontJumpTheGun,westernMichiganRecap,bigGameGapAudit,playcallingAudit,westernMichiganPreview,...michiganStories()];
+  const stories=[utepPreview,howMichiganBeatsOklahoma,oklahomaPreview,dontJumpTheGun,westernMichiganRecap,bigGameGapAudit,playcallingAudit,westernMichiganPreview,...michiganStories()];
   return <div className={styles.page}>
     <header className={styles.hero}>
       <div className={`wrap ${styles.heroInner}`}>
