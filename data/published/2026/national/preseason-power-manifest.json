@@ -3,19 +3,19 @@
     {
       "file": "national/preseason-power.json",
       "rows": 133,
-      "sha256": "20c496a298dd0dbad2a0b5fda50805f6073b0eb27b23e77bbf16c4ce18465fb9"
+      "sha256": "da501f71ae384f48a8c15df3d38d81440b20c47483711f94411966956f8a1440"
     },
     {
       "file": "michigan/preseason-2026-projection.json",
       "games": 12,
-      "sha256": "33af446f9b18978ae57ef4072fcb135021106281b234e8124d22a5ec1de7d1c4"
+      "sha256": "0c4adc28b46e1c87689ef70426c85fccf4baa944eddd9d2cd527dbbb769f7804"
     },
     {
       "file": "michigan/cfp-field-odds.json",
-      "sha256": "b69acaf4427fc507330d93f378577d58652310ef3a1701f9d33682d3e4e639d4"
+      "sha256": "d6cee5a4c50c7ce7b355611069b65dc585ed8990e1a9ecf8f9db08db30463937"
     }
   ],
-  "publishedAtUtc": "2026-09-03T13:53:39.846886+00:00",
+  "publishedAtUtc": "2026-09-14T19:30:17.359462+00:00",
   "season": 2026,
   "sourceDoc": "docs/PRESEASON_POWER_RATING_RESEARCH.md",
   "sourceModel": "src/cfb_analytics/analytics/preseason_power/",

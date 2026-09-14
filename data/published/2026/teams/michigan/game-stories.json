@@ -1,0 +1,864 @@
+[
+  {
+    "driveFunnel": {
+      "defense": {
+        "definitionVersion": "drive-funnel-v1",
+        "otherScoringPossessions": null,
+        "possessions": null,
+        "redZonePossessions": null,
+        "resolvedPointPossessions": null,
+        "scoringOpportunities": 7,
+        "touchdowns": null
+      },
+      "offense": {
+        "definitionVersion": "drive-funnel-v1",
+        "otherScoringPossessions": null,
+        "possessions": 10,
+        "redZonePossessions": null,
+        "resolvedPointPossessions": null,
+        "scoringOpportunities": 1,
+        "touchdowns": null
+      }
+    },
+    "driveTimeline": [
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 1,
+        "endYardsToGoal": 1,
+        "offense": "Michigan",
+        "playCount": 11,
+        "points": 6,
+        "result": "TOUCHDOWN",
+        "scoredBy": "Michigan",
+        "startPeriod": 1,
+        "startYardsToGoal": 65,
+        "yardsGained": 80
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 2,
+        "endYardsToGoal": 33,
+        "offense": "Western Michigan",
+        "playCount": 6,
+        "points": 3,
+        "result": "FIELD_GOAL",
+        "scoredBy": "Western Michigan",
+        "startPeriod": 1,
+        "startYardsToGoal": 65,
+        "yardsGained": 49
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 3,
+        "endYardsToGoal": 58,
+        "offense": "Michigan",
+        "playCount": 4,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 1,
+        "startYardsToGoal": 65,
+        "yardsGained": 7
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 4,
+        "endYardsToGoal": 79,
+        "offense": "Western Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 1,
+        "startYardsToGoal": 82,
+        "yardsGained": 3
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 5,
+        "endYardsToGoal": 19,
+        "offense": "Western Michigan",
+        "playCount": 4,
+        "points": 0,
+        "result": "TURNOVER_ON_DOWNS",
+        "scoredBy": null,
+        "startPeriod": 1,
+        "startYardsToGoal": 27,
+        "yardsGained": 8
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 6,
+        "endYardsToGoal": 78,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 80,
+        "yardsGained": 2
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 7,
+        "endYardsToGoal": 54,
+        "offense": "Western Michigan",
+        "playCount": 6,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 69,
+        "yardsGained": 15
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 8,
+        "endYardsToGoal": 78,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 84,
+        "yardsGained": 6
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 9,
+        "endYardsToGoal": 42,
+        "offense": "Western Michigan",
+        "playCount": 5,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 72,
+        "yardsGained": 10
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 10,
+        "endYardsToGoal": 91,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 92,
+        "yardsGained": 2
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 11,
+        "endYardsToGoal": 40,
+        "offense": "Western Michigan",
+        "playCount": 6,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 57,
+        "yardsGained": 17
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 12,
+        "endYardsToGoal": 27,
+        "offense": "Michigan",
+        "playCount": 4,
+        "points": null,
+        "result": "UNKNOWN",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 98,
+        "yardsGained": 20
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 13,
+        "endYardsToGoal": 27,
+        "offense": "Western Michigan",
+        "playCount": 1,
+        "points": 3,
+        "result": "FIELD_GOAL",
+        "scoredBy": "Western Michigan",
+        "startPeriod": 2,
+        "startYardsToGoal": 26,
+        "yardsGained": -1
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 14,
+        "endYardsToGoal": 69,
+        "offense": "Western Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 3,
+        "startYardsToGoal": 65,
+        "yardsGained": 6
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 15,
+        "endYardsToGoal": 44,
+        "offense": "Michigan",
+        "playCount": 7,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 3,
+        "startYardsToGoal": 73,
+        "yardsGained": 49
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 16,
+        "endYardsToGoal": 21,
+        "offense": "Western Michigan",
+        "playCount": 19,
+        "points": 3,
+        "result": "FIELD_GOAL",
+        "scoredBy": "Western Michigan",
+        "startPeriod": 3,
+        "startYardsToGoal": 92,
+        "yardsGained": 76
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 17,
+        "endYardsToGoal": 75,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 65,
+        "yardsGained": 7
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 18,
+        "endYardsToGoal": 44,
+        "offense": "Western Michigan",
+        "playCount": 9,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 72,
+        "yardsGained": 28
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 19,
+        "endYardsToGoal": 82,
+        "offense": "Michigan",
+        "playCount": 2,
+        "points": 0,
+        "result": "FUMBLE",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 93,
+        "yardsGained": 16
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 20,
+        "endYardsToGoal": 14,
+        "offense": "Western Michigan",
+        "playCount": 3,
+        "points": 3,
+        "result": "FIELD_GOAL",
+        "scoredBy": "Western Michigan",
+        "startPeriod": 4,
+        "startYardsToGoal": 31,
+        "yardsGained": 19
+      },
+      {
+        "defense": "Western Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 21,
+        "endYardsToGoal": 47,
+        "offense": "Michigan",
+        "playCount": 6,
+        "points": 6,
+        "result": "TOUCHDOWN",
+        "scoredBy": "Michigan",
+        "startPeriod": 4,
+        "startYardsToGoal": 65,
+        "yardsGained": 75
+      }
+    ],
+    "gameId": "401858428",
+    "halfSplit": {
+      "michigan": {
+        "definitionVersion": "half-split-v1",
+        "firstHalf": {
+          "eligiblePlays": 25,
+          "successRate": 0.48,
+          "successfulPlays": 12
+        },
+        "secondHalf": {
+          "eligiblePlays": 17,
+          "successRate": 0.47058823529411764,
+          "successfulPlays": 8
+        },
+        "team": "Michigan"
+      },
+      "opponent": {
+        "definitionVersion": "half-split-v1",
+        "firstHalf": {
+          "eligiblePlays": 30,
+          "successRate": 0.23333333333333334,
+          "successfulPlays": 7
+        },
+        "secondHalf": {
+          "eligiblePlays": 32,
+          "successRate": 0.375,
+          "successfulPlays": 12
+        },
+        "team": "Western Michigan"
+      }
+    },
+    "homeAway": "home",
+    "michiganTeamId": 130,
+    "opponent": "Western Michigan",
+    "opponentSlug": "western-michigan",
+    "opponentTeamId": 2711,
+    "pointsAgainst": 12,
+    "pointsFor": 13,
+    "season": 2026,
+    "stories": [
+      {
+        "context": {
+          "gameValue": 0.47619047619047616,
+          "nationallyRanked": true,
+          "opponentBaseline": null,
+          "opponentGamesUsed": 0
+        },
+        "definitionVersion": "opponent-adjusted-delta-v1",
+        "delta": null,
+        "evidence": [
+          "Michigan this game: 47.6%",
+          "Western Michigan normal (season, excl. this game, 0 games): n/a",
+          "Difference vs. expectation: n/a"
+        ],
+        "headline": "Michigan's overall efficiency was close to normal against Western Michigan",
+        "id": "efficiency-offense-successRate",
+        "metric": "successRate",
+        "metricStatus": "LOCKED",
+        "percentile": {
+          "percentile": null,
+          "rank": null,
+          "sampleSize": 0,
+          "sampleSizeCaveat": "Only 0 other western-michigan games this season -- too thin to rank against."
+        },
+        "polarity": "neutral",
+        "side": "offense",
+        "signalClass": "STRONG_SIGNAL",
+        "topic": "efficiency",
+        "videoAngle": "Michigan's overall success rate was n/a points better than what Western Michigan normally allows.",
+        "whyItMatters": "Neither side had a clear down-to-down efficiency edge."
+      }
+    ],
+    "valueType": "ACTUAL",
+    "week": 1,
+    "win": true
+  },
+  {
+    "driveFunnel": {
+      "defense": {
+        "definitionVersion": "drive-funnel-v1",
+        "otherScoringPossessions": null,
+        "possessions": null,
+        "redZonePossessions": null,
+        "resolvedPointPossessions": null,
+        "scoringOpportunities": 3,
+        "touchdowns": null
+      },
+      "offense": {
+        "definitionVersion": "drive-funnel-v1",
+        "otherScoringPossessions": null,
+        "possessions": 11,
+        "redZonePossessions": null,
+        "resolvedPointPossessions": null,
+        "scoringOpportunities": 6,
+        "touchdowns": null
+      }
+    },
+    "driveTimeline": [
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 1,
+        "endYardsToGoal": 62,
+        "offense": "Oklahoma",
+        "playCount": 5,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 1,
+        "startYardsToGoal": 65,
+        "yardsGained": 13
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 2,
+        "endYardsToGoal": 43,
+        "offense": "Michigan",
+        "playCount": 9,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 1,
+        "startYardsToGoal": 78,
+        "yardsGained": 37
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 3,
+        "endYardsToGoal": 60,
+        "offense": "Oklahoma",
+        "playCount": 9,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 1,
+        "startYardsToGoal": 88,
+        "yardsGained": 23
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 4,
+        "endYardsToGoal": 38,
+        "offense": "Michigan",
+        "playCount": 6,
+        "points": 6,
+        "result": "TOUCHDOWN",
+        "scoredBy": "Michigan",
+        "startPeriod": 1,
+        "startYardsToGoal": 91,
+        "yardsGained": 87
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 5,
+        "endYardsToGoal": 35,
+        "offense": "Oklahoma",
+        "playCount": 5,
+        "points": 0,
+        "result": "FUMBLE",
+        "scoredBy": null,
+        "startPeriod": 1,
+        "startYardsToGoal": 65,
+        "yardsGained": 40
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 6,
+        "endYardsToGoal": 40,
+        "offense": "Michigan",
+        "playCount": 5,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 71,
+        "yardsGained": 15
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 7,
+        "endYardsToGoal": 96,
+        "offense": "Oklahoma",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 99,
+        "yardsGained": 3
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 8,
+        "endYardsToGoal": 22,
+        "offense": "Michigan",
+        "playCount": 10,
+        "points": 3,
+        "result": "FIELD_GOAL",
+        "scoredBy": "Michigan",
+        "startPeriod": 2,
+        "startYardsToGoal": 56,
+        "yardsGained": 44
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 9,
+        "endYardsToGoal": 47,
+        "offense": "Oklahoma",
+        "playCount": 8,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 65,
+        "yardsGained": 28
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 10,
+        "endYardsToGoal": 91,
+        "offense": "Michigan",
+        "playCount": 1,
+        "points": 0,
+        "result": "END_OF_HALF",
+        "scoredBy": null,
+        "startPeriod": 2,
+        "startYardsToGoal": 91,
+        "yardsGained": 4
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 11,
+        "endYardsToGoal": 67,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 3,
+        "startYardsToGoal": 65,
+        "yardsGained": 8
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 12,
+        "endYardsToGoal": 22,
+        "offense": "Oklahoma",
+        "playCount": 8,
+        "points": 6,
+        "result": "TOUCHDOWN",
+        "scoredBy": "Oklahoma",
+        "startPeriod": 3,
+        "startYardsToGoal": 90,
+        "yardsGained": 80
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 13,
+        "endYardsToGoal": 43,
+        "offense": "Michigan",
+        "playCount": 11,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 3,
+        "startYardsToGoal": 65,
+        "yardsGained": 43
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 14,
+        "endYardsToGoal": 16,
+        "offense": "Oklahoma",
+        "playCount": 7,
+        "points": 3,
+        "result": "FIELD_GOAL",
+        "scoredBy": "Oklahoma",
+        "startPeriod": 3,
+        "startYardsToGoal": 99,
+        "yardsGained": 55
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 15,
+        "endYardsToGoal": 71,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 65,
+        "yardsGained": 4
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 16,
+        "endYardsToGoal": 84,
+        "offense": "Oklahoma",
+        "playCount": 2,
+        "points": 0,
+        "result": "INTERCEPTION",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 85,
+        "yardsGained": 1
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 17,
+        "endYardsToGoal": 1,
+        "offense": "Michigan",
+        "playCount": 2,
+        "points": 6,
+        "result": "TOUCHDOWN",
+        "scoredBy": "Michigan",
+        "startPeriod": 4,
+        "startYardsToGoal": 6,
+        "yardsGained": 6
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 18,
+        "endYardsToGoal": 63,
+        "offense": "Oklahoma",
+        "playCount": 5,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 65,
+        "yardsGained": 22
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 19,
+        "endYardsToGoal": 91,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "PUNT",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 99,
+        "yardsGained": 8
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 20,
+        "endYardsToGoal": 47,
+        "offense": "Oklahoma",
+        "playCount": 4,
+        "points": 0,
+        "result": "TURNOVER_ON_DOWNS",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 50,
+        "yardsGained": 3
+      },
+      {
+        "defense": "Oklahoma",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 21,
+        "endYardsToGoal": 47,
+        "offense": "Michigan",
+        "playCount": 3,
+        "points": 0,
+        "result": "TURNOVER_ON_DOWNS",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 53,
+        "yardsGained": 6
+      },
+      {
+        "defense": "Michigan",
+        "definitionVersion": "drive-result-inferred-v1",
+        "driveNumber": 22,
+        "endYardsToGoal": 65,
+        "offense": "Oklahoma",
+        "playCount": 4,
+        "points": 0,
+        "result": "END_OF_GAME",
+        "scoredBy": null,
+        "startPeriod": 4,
+        "startYardsToGoal": 85,
+        "yardsGained": 15
+      }
+    ],
+    "gameId": "401856679",
+    "halfSplit": {
+      "michigan": {
+        "definitionVersion": "half-split-v1",
+        "firstHalf": {
+          "eligiblePlays": 29,
+          "successRate": 0.27586206896551724,
+          "successfulPlays": 8
+        },
+        "secondHalf": {
+          "eligiblePlays": 25,
+          "successRate": 0.32,
+          "successfulPlays": 8
+        },
+        "team": "Michigan"
+      },
+      "opponent": {
+        "definitionVersion": "half-split-v1",
+        "firstHalf": {
+          "eligiblePlays": 29,
+          "successRate": 0.4482758620689655,
+          "successfulPlays": 13
+        },
+        "secondHalf": {
+          "eligiblePlays": 26,
+          "successRate": 0.2692307692307692,
+          "successfulPlays": 7
+        },
+        "team": "Oklahoma"
+      }
+    },
+    "homeAway": "home",
+    "michiganTeamId": 130,
+    "opponent": "Oklahoma",
+    "opponentSlug": "oklahoma",
+    "opponentTeamId": 201,
+    "pointsAgainst": 10,
+    "pointsFor": 17,
+    "season": 2026,
+    "stories": [
+      {
+        "context": {
+          "gameValue": 2.8333333333333335,
+          "nationallyRanked": true,
+          "opponentBaseline": 0.0,
+          "opponentGamesUsed": 1
+        },
+        "definitionVersion": "opponent-adjusted-delta-v1",
+        "delta": 2.8333333333333335,
+        "evidence": [
+          "Michigan this game: 2.83",
+          "Oklahoma normal (season, excl. this game, 1 games): 0.00",
+          "Difference vs. expectation: +2.83"
+        ],
+        "headline": "Michigan finished drives at an elite rate",
+        "id": "drive_quality-offense-pointsPerOpportunity",
+        "metric": "pointsPerOpportunity",
+        "metricStatus": "LOCKED",
+        "percentile": {
+          "percentile": null,
+          "rank": null,
+          "sampleSize": 1,
+          "sampleSizeCaveat": "Only 1 other oklahoma games this season -- too thin to rank against."
+        },
+        "polarity": "strength",
+        "side": "offense",
+        "signalClass": "STRONG_SIGNAL",
+        "topic": "drive_quality",
+        "videoAngle": "Points per scoring opportunity: 2.83 vs. Oklahoma's normal 0.00.",
+        "whyItMatters": "Points per scoring opportunity measures whether a team cashes in once it crosses the 40 -- a high rate means few wasted trips."
+      },
+      {
+        "context": {
+          "gameValue": 0.36363636363636365,
+          "nationallyRanked": true,
+          "opponentBaseline": 0.5614035087719298,
+          "opponentGamesUsed": 1
+        },
+        "definitionVersion": "opponent-adjusted-delta-v1",
+        "delta": 0.19776714513556615,
+        "evidence": [
+          "Michigan this game: 36.4%",
+          "Oklahoma normal (season, excl. this game, 1 games): 56.1%",
+          "Difference vs. expectation: +19.8 points"
+        ],
+        "headline": "Michigan's defense held Oklahoma below its normal offense",
+        "id": "efficiency-defense-successRateAllowed",
+        "metric": "successRateAllowed",
+        "metricStatus": "LOCKED",
+        "percentile": {
+          "percentile": null,
+          "rank": null,
+          "sampleSize": 1,
+          "sampleSizeCaveat": "Only 1 other oklahoma games this season -- too thin to rank against."
+        },
+        "polarity": "strength",
+        "side": "defense",
+        "signalClass": "STRONG_SIGNAL",
+        "topic": "efficiency",
+        "videoAngle": "Michigan's defense allowed a success rate +19.8 points better than Oklahoma's own season normal.",
+        "whyItMatters": "Michigan's defense forced a lower success rate than this opponent usually manages."
+      },
+      {
+        "context": {
+          "gameValue": 0.07407407407407407,
+          "nationallyRanked": true,
+          "opponentBaseline": 0.08,
+          "opponentGamesUsed": 1
+        },
+        "definitionVersion": "opponent-adjusted-delta-v1",
+        "delta": -0.005925925925925932,
+        "evidence": [
+          "Michigan this game: 7.4%",
+          "Oklahoma normal (season, excl. this game, 1 games): 8.0%",
+          "Difference vs. expectation: -0.6 points"
+        ],
+        "headline": "Michigan's offense was neither especially explosive nor especially consistent",
+        "id": "explosiveness-offense-explosivePlayRate",
+        "metric": "explosivePlayRate",
+        "metricStatus": "LOCKED",
+        "percentile": {
+          "percentile": null,
+          "rank": null,
+          "sampleSize": 1,
+          "sampleSizeCaveat": "Only 1 other oklahoma games this season -- too thin to rank against."
+        },
+        "polarity": "neutral",
+        "side": "offense",
+        "signalClass": "STRONG_SIGNAL",
+        "topic": "explosiveness",
+        "videoAngle": "Explosive-play rate was -0.6 points vs. what Oklahoma normally allows.",
+        "whyItMatters": "Both explosiveness and down-to-down success were close to normal for this opponent."
+      }
+    ],
+    "valueType": "ACTUAL",
+    "week": 2,
+    "win": true
+  }
+]

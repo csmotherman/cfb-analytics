@@ -1,1 +1,1698 @@
-[]
+[
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 1
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Aisea Moa",
+    "playerId": "4896290",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 1,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 0
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Bobby Kanka",
+    "playerId": "5141554",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 1,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 0
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Cameron Brandt",
+    "playerId": "4923036",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 7
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 1
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Chase Taylor",
+    "playerId": "5167194",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 1,
+        "QB HUR": 0,
+        "SACKS": 0.5,
+        "SOLO": 3,
+        "TD": 0,
+        "TFL": 0.5,
+        "TOT": 7
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Deyvid Palepale",
+    "playerId": "5128064",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 1
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 10
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Dominic Nichols",
+    "playerId": "5079636",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 3,
+        "SACKS": 2,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 3,
+        "TOT": 10
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Enow Etta",
+    "playerId": "4870704",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 1,
+        "TOT": 5
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 11
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "John Henry Daley",
+    "playerId": "5160962",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 1,
+        "SACKS": 1,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 3,
+        "TOT": 11
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Jonah Lea'Ea",
+    "playerId": "4891197",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 5
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 1.5
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Nate Marshall",
+    "playerId": "5141534",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 1.5,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 2,
+        "TOT": 4
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Nathaniel Owusu-Boateng",
+    "playerId": "5141620",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 1
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 16
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 7
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Nathaniel Staehling",
+    "playerId": "5087172",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 7,
+        "TD": 0,
+        "TFL": 0.5,
+        "TOT": 16
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Trey Pierce",
+    "playerId": "5156353",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 2,
+        "SACKS": 0,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 1,
+        "TOT": 5
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 21
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 11
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Troy Bowles",
+    "playerId": "4870632",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 11,
+        "TD": 0,
+        "TFL": 2,
+        "TOT": 21
+      },
+      "fumbles": {
+        "FUM": 0,
+        "LOST": 0,
+        "REC": 1
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "kicking",
+        "stat": "FGM",
+        "value": 1
+      },
+      {
+        "category": "kicking",
+        "stat": "FGA",
+        "value": 1
+      },
+      {
+        "category": "kicking",
+        "stat": "PCT",
+        "value": 1
+      },
+      {
+        "category": "kicking",
+        "stat": "LONG",
+        "value": 40
+      },
+      {
+        "category": "kicking",
+        "stat": "XPM",
+        "value": 3
+      },
+      {
+        "category": "kicking",
+        "stat": "XPA",
+        "value": 3
+      },
+      {
+        "category": "kicking",
+        "stat": "PTS",
+        "value": 6
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Trey Butkowski",
+    "playerId": "5296243",
+    "position": "PK",
+    "positionFamily": "KICKER",
+    "season": 2026,
+    "side": "SPECIAL_TEAMS",
+    "stats": {
+      "kicking": {
+        "FGA": 1,
+        "FGM": 1,
+        "LONG": 40,
+        "PCT": 1,
+        "PTS": 6,
+        "XPA": 3,
+        "XPM": 3
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "punting",
+        "stat": "NO",
+        "value": 13
+      },
+      {
+        "category": "punting",
+        "stat": "YDS",
+        "value": 564
+      },
+      {
+        "category": "punting",
+        "stat": "YPP",
+        "value": 43.4
+      },
+      {
+        "category": "punting",
+        "stat": "LONG",
+        "value": 51
+      },
+      {
+        "category": "punting",
+        "stat": "In 20",
+        "value": 8
+      },
+      {
+        "category": "punting",
+        "stat": "TB",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Cameron Brown",
+    "playerId": "5265648",
+    "position": "P",
+    "positionFamily": "PUNTER",
+    "season": 2026,
+    "side": "SPECIAL_TEAMS",
+    "stats": {
+      "punting": {
+        "In 20": 8,
+        "LONG": 51,
+        "NO": 13,
+        "TB": 0,
+        "YDS": 564,
+        "YPP": 43.4
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "passing",
+        "stat": "COMPLETIONS",
+        "value": 21
+      },
+      {
+        "category": "passing",
+        "stat": "ATT",
+        "value": 39
+      },
+      {
+        "category": "passing",
+        "stat": "PCT",
+        "value": 0.538
+      },
+      {
+        "category": "passing",
+        "stat": "YDS",
+        "value": 281
+      },
+      {
+        "category": "passing",
+        "stat": "TD",
+        "value": 1
+      },
+      {
+        "category": "passing",
+        "stat": "INT",
+        "value": 1
+      },
+      {
+        "category": "passing",
+        "stat": "YPA",
+        "value": 7.2
+      },
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 27
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 134
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 2
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Bryce Underwood",
+    "playerId": "5141741",
+    "position": "QB",
+    "positionFamily": "QB",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "fumbles": {
+        "FUM": 2,
+        "LOST": 1,
+        "REC": 0
+      },
+      "passing": {
+        "ATT": 39,
+        "COMPLETIONS": 21,
+        "INT": 1,
+        "PCT": 0.538,
+        "TD": 1,
+        "YDS": 281,
+        "YPA": 7.2
+      },
+      "rushing": {
+        "CAR": 27,
+        "LONG": 38,
+        "TD": 2,
+        "YDS": 134,
+        "YPC": 5
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 3
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 12
+      },
+      {
+        "category": "rushing",
+        "stat": "YPC",
+        "value": 4
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 7
+      },
+      {
+        "category": "kickReturns",
+        "stat": "NO",
+        "value": 2
+      },
+      {
+        "category": "kickReturns",
+        "stat": "YDS",
+        "value": 42
+      },
+      {
+        "category": "kickReturns",
+        "stat": "AVG",
+        "value": 21
+      },
+      {
+        "category": "kickReturns",
+        "stat": "LONG",
+        "value": 24
+      },
+      {
+        "category": "kickReturns",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Bryson Kuzdzal",
+    "playerId": "5156348",
+    "position": "RB",
+    "positionFamily": "RB",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "kickReturns": {
+        "AVG": 21,
+        "LONG": 24,
+        "NO": 2,
+        "TD": 0,
+        "YDS": 42
+      },
+      "rushing": {
+        "CAR": 3,
+        "LONG": 7,
+        "TD": 0,
+        "YDS": 12,
+        "YPC": 4
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 22
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 76
+      },
+      {
+        "category": "rushing",
+        "stat": "YPC",
+        "value": 3.5
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 1
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 15
+      },
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 2
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 17
+      },
+      {
+        "category": "receiving",
+        "stat": "YPR",
+        "value": 8.5
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Jordan Marshall",
+    "playerId": "5079574",
+    "position": "RB",
+    "positionFamily": "RB",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "receiving": {
+        "LONG": 16,
+        "REC": 2,
+        "TD": 0,
+        "YDS": 17,
+        "YPR": 8.5
+      },
+      "rushing": {
+        "CAR": 22,
+        "LONG": 15,
+        "TD": 1,
+        "YDS": 76,
+        "YPC": 3.5
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 13
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 21
+      },
+      {
+        "category": "rushing",
+        "stat": "YPC",
+        "value": 1.6
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 7
+      },
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 4
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 40
+      },
+      {
+        "category": "receiving",
+        "stat": "YPR",
+        "value": 10
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "fumbles",
+        "stat": "FUM",
+        "value": 1
+      },
+      {
+        "category": "fumbles",
+        "stat": "LOST",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Savion Hiter",
+    "playerId": "5159046",
+    "position": "RB",
+    "positionFamily": "RB",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "fumbles": {
+        "FUM": 1,
+        "LOST": 0,
+        "REC": 0
+      },
+      "receiving": {
+        "LONG": 19,
+        "REC": 4,
+        "TD": 0,
+        "YDS": 40,
+        "YPR": 10
+      },
+      "rushing": {
+        "CAR": 13,
+        "LONG": 7,
+        "TD": 0,
+        "YDS": 21,
+        "YPC": 1.6
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 5
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 28
+      },
+      {
+        "category": "receiving",
+        "stat": "YPR",
+        "value": 5.6
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 12
+      },
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 1
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 15
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "fumbles",
+        "stat": "FUM",
+        "value": 1
+      },
+      {
+        "category": "fumbles",
+        "stat": "LOST",
+        "value": 1
+      },
+      {
+        "category": "puntReturns",
+        "stat": "NO",
+        "value": 2
+      },
+      {
+        "category": "puntReturns",
+        "stat": "YDS",
+        "value": 9
+      },
+      {
+        "category": "puntReturns",
+        "stat": "AVG",
+        "value": 4.5
+      },
+      {
+        "category": "puntReturns",
+        "stat": "LONG",
+        "value": 10
+      },
+      {
+        "category": "puntReturns",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Andrew Marsh",
+    "playerId": "5141572",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "fumbles": {
+        "FUM": 1,
+        "LOST": 1,
+        "REC": 0
+      },
+      "puntReturns": {
+        "AVG": 4.5,
+        "LONG": 10,
+        "NO": 2,
+        "TD": 0,
+        "YDS": 9
+      },
+      "receiving": {
+        "LONG": 12,
+        "REC": 5,
+        "TD": 0,
+        "YDS": 28,
+        "YPR": 5.6
+      },
+      "rushing": {
+        "CAR": 1,
+        "LONG": 15,
+        "TD": 0,
+        "YDS": 15,
+        "YPC": 15
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 8
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 174
+      },
+      {
+        "category": "receiving",
+        "stat": "YPR",
+        "value": 21.8
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 1
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 47
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "JJ Buchanan",
+    "playerId": "5214557",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "receiving": {
+        "LONG": 47,
+        "REC": 8,
+        "TD": 1,
+        "YDS": 174,
+        "YPR": 21.8
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 2
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 22
+      },
+      {
+        "category": "receiving",
+        "stat": "YPR",
+        "value": 11
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 13
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Jalen Hoffman",
+    "playerId": "5156349",
+    "position": "TE",
+    "positionFamily": "RECEIVER",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "receiving": {
+        "LONG": 13,
+        "REC": 2,
+        "TD": 0,
+        "YDS": 22,
+        "YPR": 11
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [],
+    "hasBoxScoreStats": false,
+    "player": "Kendrick Bell",
+    "playerId": "5108220",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "season": 2026,
+    "side": "OFFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 1
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 15
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 11
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Chris Bracy",
+    "playerId": "5078910",
+    "position": "S",
+    "positionFamily": "SECONDARY",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 11,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 15
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 12
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 7
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "interceptions",
+        "stat": "INT",
+        "value": 1
+      },
+      {
+        "category": "interceptions",
+        "stat": "YDS",
+        "value": 24
+      },
+      {
+        "category": "interceptions",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 1
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Jyaire Hill",
+    "playerId": "4918449",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 1,
+        "SACKS": 0,
+        "SOLO": 7,
+        "TD": 0,
+        "TFL": 1,
+        "TOT": 12
+      },
+      "interceptions": {
+        "AVG": 24,
+        "INT": 1,
+        "TD": 0,
+        "YDS": 24
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Rod Moore",
+    "playerId": "4603101",
+    "position": "S",
+    "positionFamily": "SECONDARY",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 5
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 6
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 6
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Smith Snowden",
+    "playerId": "4918445",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 1,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 6,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 6
+      }
+    },
+    "team": "Michigan"
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 9
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "hasBoxScoreStats": true,
+    "player": "Zeke Berry",
+    "playerId": "4794102",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "season": 2026,
+    "side": "DEFENSE",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 5,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 9
+      }
+    },
+    "team": "Michigan"
+  }
+]

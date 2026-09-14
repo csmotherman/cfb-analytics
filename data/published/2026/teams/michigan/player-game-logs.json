@@ -1,1 +1,3108 @@
-[]
+[
+  {
+    "displayStats": [],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": " Team",
+    "playerId": "-6635",
+    "position": null,
+    "positionFamily": "ATH",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "UNKNOWN",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "passing": {
+        "AVG": 0,
+        "C/ATT": "0/1",
+        "INT": 0,
+        "TD": 0,
+        "YDS": 0
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 1
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Aisea Moa",
+    "playerId": "4896290",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 1,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 0
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 2
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 15
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 11
+      },
+      {
+        "category": "fumbles",
+        "stat": "FUM",
+        "value": 1
+      },
+      {
+        "category": "fumbles",
+        "stat": "LOST",
+        "value": 1
+      },
+      {
+        "category": "puntReturns",
+        "stat": "NO",
+        "value": 2
+      },
+      {
+        "category": "puntReturns",
+        "stat": "YDS",
+        "value": 9
+      },
+      {
+        "category": "puntReturns",
+        "stat": "AVG",
+        "value": 4.5
+      },
+      {
+        "category": "puntReturns",
+        "stat": "LONG",
+        "value": 10
+      },
+      {
+        "category": "puntReturns",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Andrew Marsh",
+    "playerId": "5141572",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "fumbles": {
+        "FUM": 1,
+        "LOST": 1,
+        "REC": 0
+      },
+      "puntReturns": {
+        "AVG": 4.5,
+        "LONG": 10,
+        "NO": 2,
+        "TD": 0,
+        "YDS": 9
+      },
+      "receiving": {
+        "AVG": 7.5,
+        "LONG": 11,
+        "REC": 2,
+        "TD": 0,
+        "YDS": 15
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "passing",
+        "stat": "YDS",
+        "value": 170
+      },
+      {
+        "category": "passing",
+        "stat": "TD",
+        "value": 1
+      },
+      {
+        "category": "passing",
+        "stat": "INT",
+        "value": 1
+      },
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 9
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 47
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 1
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Bryce Underwood",
+    "playerId": "5141741",
+    "position": "QB",
+    "positionFamily": "QB",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "fumbles": {
+        "FUM": 1,
+        "LOST": 1,
+        "REC": 0
+      },
+      "passing": {
+        "AVG": 7.7,
+        "C/ATT": "12/22",
+        "INT": 1,
+        "TD": 1,
+        "YDS": 170
+      },
+      "rushing": {
+        "AVG": 5.2,
+        "CAR": 9,
+        "LONG": 13,
+        "TD": 1,
+        "YDS": 47
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "kickReturns",
+        "stat": "NO",
+        "value": 1
+      },
+      {
+        "category": "kickReturns",
+        "stat": "YDS",
+        "value": 18
+      },
+      {
+        "category": "kickReturns",
+        "stat": "AVG",
+        "value": 18
+      },
+      {
+        "category": "kickReturns",
+        "stat": "LONG",
+        "value": 18
+      },
+      {
+        "category": "kickReturns",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Bryson Kuzdzal",
+    "playerId": "5156348",
+    "position": "RB",
+    "positionFamily": "RB",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "kickReturns": {
+        "AVG": 18,
+        "LONG": 18,
+        "NO": 1,
+        "TD": 0,
+        "YDS": 18
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Cameron Brandt",
+    "playerId": "4923036",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "punting",
+        "stat": "NO",
+        "value": 6
+      },
+      {
+        "category": "punting",
+        "stat": "YDS",
+        "value": 268
+      },
+      {
+        "category": "punting",
+        "stat": "LONG",
+        "value": 50
+      },
+      {
+        "category": "punting",
+        "stat": "In 20",
+        "value": 2
+      },
+      {
+        "category": "punting",
+        "stat": "TB",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Cameron Brown",
+    "playerId": "5265648",
+    "position": "P",
+    "positionFamily": "PUNTER",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "SPECIAL_TEAMS",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "punting": {
+        "AVG": 44.7,
+        "In 20": 2,
+        "LONG": 50,
+        "NO": 6,
+        "TB": 0,
+        "YDS": 268
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Chase Taylor",
+    "playerId": "5167194",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 3
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 9
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 6
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Chris Bracy",
+    "playerId": "5078910",
+    "position": "S",
+    "positionFamily": "SECONDARY",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 6,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 9
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Deyvid Palepale",
+    "playerId": "5128064",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 1
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 9
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 2.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 1.5
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Dominic Nichols",
+    "playerId": "5079636",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 2,
+        "SACKS": 1.5,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 2.5,
+        "TOT": 9
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Enow Etta",
+    "playerId": "4870704",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 6
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 126
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 1
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 47
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "JJ Buchanan",
+    "playerId": "5214557",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "receiving": {
+        "AVG": 21,
+        "LONG": 47,
+        "REC": 6,
+        "TD": 1,
+        "YDS": 126
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 1
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 13
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 13
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Jalen Hoffman",
+    "playerId": "5156349",
+    "position": "TE",
+    "positionFamily": "RECEIVER",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "receiving": {
+        "AVG": 13,
+        "LONG": 13,
+        "REC": 1,
+        "TD": 0,
+        "YDS": 13
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "John Henry Daley",
+    "playerId": "5160962",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 1,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 3
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Jonah Lea'Ea",
+    "playerId": "4891197",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 3
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 11
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 44
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 15
+      },
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 2
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 17
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Jordan Marshall",
+    "playerId": "5079574",
+    "position": "RB",
+    "positionFamily": "RB",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "receiving": {
+        "AVG": 8.5,
+        "LONG": 16,
+        "REC": 2,
+        "TD": 0,
+        "YDS": 17
+      },
+      "rushing": {
+        "AVG": 4,
+        "CAR": 11,
+        "LONG": 15,
+        "TD": 0,
+        "YDS": 44
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 7
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 1
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Jyaire Hill",
+    "playerId": "4918449",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 1,
+        "SACKS": 0,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 1,
+        "TOT": 7
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Nate Marshall",
+    "playerId": "5141534",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0.5,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0.5,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 9
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Nathaniel Staehling",
+    "playerId": "5087172",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 5,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 9
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Rod Moore",
+    "playerId": "4603101",
+    "position": "S",
+    "positionFamily": "SECONDARY",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 5
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 15
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 7
+      },
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 1
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": -1
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Savion Hiter",
+    "playerId": "5159046",
+    "position": "RB",
+    "positionFamily": "RB",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "receiving": {
+        "AVG": -1,
+        "LONG": 0,
+        "REC": 1,
+        "TD": 0,
+        "YDS": -1
+      },
+      "rushing": {
+        "AVG": 3,
+        "CAR": 5,
+        "LONG": 7,
+        "TD": 0,
+        "YDS": 15
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Smith Snowden",
+    "playerId": "4918445",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 1,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 4
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "kicking",
+        "stat": "PCT",
+        "value": 0
+      },
+      {
+        "category": "kicking",
+        "stat": "LONG",
+        "value": 0
+      },
+      {
+        "category": "kicking",
+        "stat": "PTS",
+        "value": 1
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Trey Butkowski",
+    "playerId": "5296243",
+    "position": "PK",
+    "positionFamily": "KICKER",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "SPECIAL_TEAMS",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "kicking": {
+        "FG": "0/0",
+        "LONG": 0,
+        "PCT": 0,
+        "PTS": 1,
+        "XP": "1/1"
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Trey Pierce",
+    "playerId": "5156353",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 2,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 3
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 12
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 7
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Troy Bowles",
+    "playerId": "4870632",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 7,
+        "TD": 0,
+        "TFL": 2,
+        "TOT": 12
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401858428",
+    "homeAway": "home",
+    "opponent": "Western Michigan",
+    "player": "Zeke Berry",
+    "playerId": "4794102",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "result": "W 13-12",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-05T23:30:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 5
+      }
+    },
+    "team": "Michigan",
+    "week": 1
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 3
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 13
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 12
+      },
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 1
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 15
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Andrew Marsh",
+    "playerId": "5141572",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "receiving": {
+        "AVG": 4.3,
+        "LONG": 12,
+        "REC": 3,
+        "TD": 0,
+        "YDS": 13
+      },
+      "rushing": {
+        "AVG": 15,
+        "CAR": 1,
+        "LONG": 15,
+        "TD": 0,
+        "YDS": 15
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Bobby Kanka",
+    "playerId": "5141554",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 1,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 0
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "passing",
+        "stat": "YDS",
+        "value": 111
+      },
+      {
+        "category": "passing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "passing",
+        "stat": "INT",
+        "value": 0
+      },
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 18
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 87
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 1
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Bryce Underwood",
+    "playerId": "5141741",
+    "position": "QB",
+    "positionFamily": "QB",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "fumbles": {
+        "FUM": 1,
+        "LOST": 0,
+        "REC": 0
+      },
+      "passing": {
+        "AVG": 6.5,
+        "C/ATT": "9/17",
+        "INT": 0,
+        "QBR": 74.4,
+        "TD": 0,
+        "YDS": 111
+      },
+      "rushing": {
+        "AVG": 4.8,
+        "CAR": 18,
+        "LONG": 38,
+        "TD": 1,
+        "YDS": 87
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 3
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 12
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 7
+      },
+      {
+        "category": "kickReturns",
+        "stat": "NO",
+        "value": 1
+      },
+      {
+        "category": "kickReturns",
+        "stat": "YDS",
+        "value": 24
+      },
+      {
+        "category": "kickReturns",
+        "stat": "AVG",
+        "value": 24
+      },
+      {
+        "category": "kickReturns",
+        "stat": "LONG",
+        "value": 24
+      },
+      {
+        "category": "kickReturns",
+        "stat": "TD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Bryson Kuzdzal",
+    "playerId": "5156348",
+    "position": "RB",
+    "positionFamily": "RB",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "kickReturns": {
+        "AVG": 24,
+        "LONG": 24,
+        "NO": 1,
+        "TD": 0,
+        "YDS": 24
+      },
+      "rushing": {
+        "AVG": 4,
+        "CAR": 3,
+        "LONG": 7,
+        "TD": 0,
+        "YDS": 12
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "punting",
+        "stat": "NO",
+        "value": 7
+      },
+      {
+        "category": "punting",
+        "stat": "YDS",
+        "value": 296
+      },
+      {
+        "category": "punting",
+        "stat": "LONG",
+        "value": 51
+      },
+      {
+        "category": "punting",
+        "stat": "In 20",
+        "value": 6
+      },
+      {
+        "category": "punting",
+        "stat": "TB",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Cameron Brown",
+    "playerId": "5265648",
+    "position": "P",
+    "positionFamily": "PUNTER",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "SPECIAL_TEAMS",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "punting": {
+        "AVG": 42.3,
+        "In 20": 6,
+        "LONG": 51,
+        "NO": 7,
+        "TB": 0,
+        "YDS": 296
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 1
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Chase Taylor",
+    "playerId": "5167194",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 1,
+        "QB HUR": 0,
+        "SACKS": 0.5,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0.5,
+        "TOT": 4
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 6
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Chris Bracy",
+    "playerId": "5078910",
+    "position": "S",
+    "positionFamily": "SECONDARY",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 5,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 6
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Dominic Nichols",
+    "playerId": "5079636",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 1,
+        "SACKS": 0.5,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0.5,
+        "TOT": 1
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Enow Etta",
+    "playerId": "4870704",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 1,
+        "TOT": 3
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 2
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 48
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 36
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "JJ Buchanan",
+    "playerId": "5214557",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "receiving": {
+        "AVG": 24,
+        "LONG": 36,
+        "REC": 2,
+        "TD": 0,
+        "YDS": 48
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 1
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 9
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "receiving",
+        "stat": "LONG",
+        "value": 9
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Jalen Hoffman",
+    "playerId": "5156349",
+    "position": "TE",
+    "positionFamily": "RECEIVER",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "receiving": {
+        "AVG": 9,
+        "LONG": 9,
+        "REC": 1,
+        "TD": 0,
+        "YDS": 9
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 8
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "John Henry Daley",
+    "playerId": "5160962",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 1,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 3,
+        "TOT": 8
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Jonah Lea'Ea",
+    "playerId": "4891197",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 0,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 11
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 32
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 1
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 8
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Jordan Marshall",
+    "playerId": "5079574",
+    "position": "RB",
+    "positionFamily": "RB",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "rushing": {
+        "AVG": 2.9,
+        "CAR": 11,
+        "LONG": 8,
+        "TD": 1,
+        "YDS": 32
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 5
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "interceptions",
+        "stat": "INT",
+        "value": 1
+      },
+      {
+        "category": "interceptions",
+        "stat": "YDS",
+        "value": 24
+      },
+      {
+        "category": "interceptions",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Jyaire Hill",
+    "playerId": "4918449",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 3,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 5
+      },
+      "interceptions": {
+        "INT": 1,
+        "TD": 0,
+        "YDS": 24
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Kendrick Bell",
+    "playerId": "5108220",
+    "position": "WR",
+    "positionFamily": "RECEIVER",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 1
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 1.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Nate Marshall",
+    "playerId": "5141534",
+    "position": "DE",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 1,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 1.5,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Nathaniel Owusu-Boateng",
+    "playerId": "5141620",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 1,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 1
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 7
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0.5
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Nathaniel Staehling",
+    "playerId": "5087172",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0.5,
+        "TOT": 7
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Rod Moore",
+    "playerId": "4603101",
+    "position": "S",
+    "positionFamily": "SECONDARY",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 3
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "rushing",
+        "stat": "CAR",
+        "value": 8
+      },
+      {
+        "category": "rushing",
+        "stat": "YDS",
+        "value": 6
+      },
+      {
+        "category": "rushing",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "rushing",
+        "stat": "LONG",
+        "value": 5
+      },
+      {
+        "category": "receiving",
+        "stat": "REC",
+        "value": 3
+      },
+      {
+        "category": "receiving",
+        "stat": "YDS",
+        "value": 41
+      },
+      {
+        "category": "receiving",
+        "stat": "TD",
+        "value": 0
+      },
+      {
+        "category": "fumbles",
+        "stat": "FUM",
+        "value": 1
+      },
+      {
+        "category": "fumbles",
+        "stat": "LOST",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Savion Hiter",
+    "playerId": "5159046",
+    "position": "RB",
+    "positionFamily": "RB",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "OFFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "fumbles": {
+        "FUM": 1,
+        "LOST": 0,
+        "REC": 0
+      },
+      "receiving": {
+        "AVG": 13.7,
+        "LONG": 19,
+        "REC": 3,
+        "TD": 0,
+        "YDS": 41
+      },
+      "rushing": {
+        "AVG": 0.8,
+        "CAR": 8,
+        "LONG": 5,
+        "TD": 0,
+        "YDS": 6
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Smith Snowden",
+    "playerId": "4918445",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "kicking",
+        "stat": "PCT",
+        "value": 100
+      },
+      {
+        "category": "kicking",
+        "stat": "LONG",
+        "value": 40
+      },
+      {
+        "category": "kicking",
+        "stat": "PTS",
+        "value": 5
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Trey Butkowski",
+    "playerId": "5296243",
+    "position": "PK",
+    "positionFamily": "KICKER",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "SPECIAL_TEAMS",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "kicking": {
+        "FG": "1/1",
+        "LONG": 40,
+        "PCT": 100,
+        "PTS": 5,
+        "XP": "2/2"
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 2
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 1
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Trey Pierce",
+    "playerId": "5156353",
+    "position": "DT",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 2,
+        "TD": 0,
+        "TFL": 1,
+        "TOT": 2
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 9
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Troy Bowles",
+    "playerId": "4870632",
+    "position": "LB",
+    "positionFamily": "FRONT_SEVEN",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 4,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 9
+      },
+      "fumbles": {
+        "FUM": 0,
+        "LOST": 0,
+        "REC": 1
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  },
+  {
+    "displayStats": [
+      {
+        "category": "defensive",
+        "stat": "TOT",
+        "value": 4
+      },
+      {
+        "category": "defensive",
+        "stat": "SOLO",
+        "value": 3
+      },
+      {
+        "category": "defensive",
+        "stat": "PD",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "TFL",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "SACKS",
+        "value": 0
+      },
+      {
+        "category": "defensive",
+        "stat": "QB HUR",
+        "value": 0
+      }
+    ],
+    "gameId": "401856679",
+    "homeAway": "home",
+    "opponent": "Oklahoma",
+    "player": "Zeke Berry",
+    "playerId": "4794102",
+    "position": "CB",
+    "positionFamily": "SECONDARY",
+    "result": "W 17-10",
+    "season": 2026,
+    "seasonType": "regular",
+    "side": "DEFENSE",
+    "startDate": "2026-09-12T16:00:00.000Z",
+    "stats": {
+      "defensive": {
+        "PD": 0,
+        "QB HUR": 0,
+        "SACKS": 0,
+        "SOLO": 3,
+        "TD": 0,
+        "TFL": 0,
+        "TOT": 4
+      }
+    },
+    "team": "Michigan",
+    "week": 2
+  }
+]

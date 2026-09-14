@@ -4,21 +4,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "4495746",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -28,7 +26,7 @@
       "grade": "C",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 46.3,
+      "percentile": 47.3,
       "rating": null,
       "stars": null
     },
@@ -37,6 +35,16 @@
       "Earn and sustain a larger role across the full season."
     ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 5.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -116,7 +124,7 @@
     ],
     "playerId": "4603101",
     "strengths": [
-      "Has verified college box-score production across 4 season-team samples."
+      "Has verified college box-score production across 5 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -124,15 +132,25 @@
     "expectation": "Prevent explosive passes and force quarterbacks to keep working through long drives.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "A",
+      "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 85.8,
+      "percentile": 68.5,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 9.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -208,8 +226,8 @@
     ],
     "playerId": "4794102",
     "strengths": [
-      "Produced at the 89th percentile among FBS secondary players.",
-      "Already handled secondary usage at the 81th percentile nationally."
+      "Produced at the 62th percentile among FBS secondary players.",
+      "Already handled secondary usage at the 80th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -217,16 +235,15 @@
     "expectation": "Win the decision-making moments: stay efficient on early downs and create answers when the schedule forces Michigan to throw.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "C",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 52.1,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -416,15 +433,33 @@
     "expectation": "Fit the run cleanly, limit yards after contact and stay reliable in space on passing downs.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": "A",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 70.5,
+      "percentile": 94.6,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "TFL",
+            "value": 2.0
+          },
+          {
+            "label": "Tackles",
+            "value": 21.0
+          },
+          {
+            "label": "Fumble recoveries",
+            "value": 1.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -460,8 +495,8 @@
     ],
     "playerId": "4870632",
     "strengths": [
-      "Produced at the 70th percentile among FBS lb players.",
-      "Already handled lb usage at the 72th percentile nationally."
+      "Produced at the 94th percentile among FBS lb players.",
+      "Already handled lb usage at the 96th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -472,12 +507,26 @@
       "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 71.5,
+      "percentile": 67.6,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "TFL",
+            "value": 1.0
+          },
+          {
+            "label": "Tackles",
+            "value": 5.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -539,8 +588,8 @@
     ],
     "playerId": "4870704",
     "strengths": [
-      "Produced at the 74th percentile among FBS front players.",
-      "Already handled front usage at the 67th percentile nationally."
+      "Produced at the 65th percentile among FBS front players.",
+      "Already handled front usage at the 73th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -580,14 +629,16 @@
     "expectation": "Fit the run cleanly, limit yards after contact and stay reliable in space on passing downs.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 67.7,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Establish measurable game usage before a production grade can be assigned."
+    ],
     "pastSeasons": [
       {
         "season": 2025,
@@ -638,8 +689,7 @@
     ],
     "playerId": "4878106",
     "strengths": [
-      "Produced at the 68th percentile among FBS lb players.",
-      "Already handled lb usage at the 68th percentile nationally."
+      "Has verified college box-score production across 3 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -647,15 +697,27 @@
     "expectation": "Control early downs and create disruption without forcing the defense to manufacture pressure.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "A",
+      "grade": "C",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 85.7,
+      "percentile": 56.8,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Turn existing opportunities into more position-level production."
+    ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 5.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -709,8 +771,8 @@
     ],
     "playerId": "4891197",
     "strengths": [
-      "Produced at the 82th percentile among FBS front players.",
-      "Already handled front usage at the 92th percentile nationally."
+      "Already handled front usage at the 73th percentile nationally.",
+      "Has verified college box-score production across 4 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -718,18 +780,27 @@
     "expectation": "Fit the run cleanly, limit yards after contact and stay reliable in space on passing downs.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "C",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 57.6,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Pass breakups",
+            "value": 1.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -783,7 +854,7 @@
     ],
     "playerId": "4896290",
     "strengths": [
-      "Has verified college box-score production across 3 season-team samples."
+      "Has verified college box-score production across 4 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -791,16 +862,15 @@
     "expectation": "Connect the run and pass games: hold up at the point of attack and become a trustworthy middle-of-field target.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 39.2,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -852,15 +922,29 @@
     "expectation": "Prevent explosive passes and force quarterbacks to keep working through long drives.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "A",
+      "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 89.5,
+      "percentile": 64.4,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Pass breakups",
+            "value": 1.0
+          },
+          {
+            "label": "Tackles",
+            "value": 6.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -938,8 +1022,8 @@
     ],
     "playerId": "4918445",
     "strengths": [
-      "Produced at the 93th percentile among FBS secondary players.",
-      "Already handled secondary usage at the 84th percentile nationally."
+      "Produced at the 65th percentile among FBS secondary players.",
+      "Already handled secondary usage at the 64th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -950,12 +1034,34 @@
       "grade": "A",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 84.8,
+      "percentile": 91.1,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "QB hurries",
+            "value": 1.0
+          },
+          {
+            "label": "TFL",
+            "value": 1.0
+          },
+          {
+            "label": "Tackles",
+            "value": 12.0
+          },
+          {
+            "label": "Interceptions",
+            "value": 1.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -1025,8 +1131,8 @@
     ],
     "playerId": "4918449",
     "strengths": [
-      "Produced at the 86th percentile among FBS secondary players.",
-      "Already handled secondary usage at the 83th percentile nationally."
+      "Produced at the 92th percentile among FBS secondary players.",
+      "Already handled secondary usage at the 89th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -1054,15 +1160,28 @@
     "expectation": "Set the edge on run downs and turn obvious passing situations into pressure.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": "D",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 74.5,
+      "percentile": 26.1,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Turn existing opportunities into more position-level production.",
+      "Earn and sustain a larger role across the full season."
+    ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 2.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -1128,8 +1247,7 @@
     ],
     "playerId": "4923036",
     "strengths": [
-      "Produced at the 72th percentile among FBS front players.",
-      "Already handled front usage at the 78th percentile nationally."
+      "Has verified college box-score production across 4 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -1137,15 +1255,25 @@
     "expectation": "Erase explosive plays while communicating cleanly enough for the front to attack.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "S",
+      "grade": "A",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 98.1,
+      "percentile": 85.8,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 15.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -1211,8 +1339,8 @@
     ],
     "playerId": "5078910",
     "strengths": [
-      "Produced at the 99th percentile among FBS secondary players.",
-      "Already handled secondary usage at the 97th percentile nationally."
+      "Produced at the 81th percentile among FBS secondary players.",
+      "Already handled secondary usage at the 95th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -1220,14 +1348,16 @@
     "expectation": "Erase explosive plays while communicating cleanly enough for the front to attack.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 77.9,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Establish measurable game usage before a production grade can be assigned."
+    ],
     "pastSeasons": [
       {
         "season": 2025,
@@ -1276,8 +1406,7 @@
     ],
     "playerId": "5079392",
     "strengths": [
-      "Produced at the 76th percentile among FBS secondary players.",
-      "Already handled secondary usage at the 81th percentile nationally."
+      "Has verified college box-score production across 2 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -1285,16 +1414,15 @@
     "expectation": "Create separation and dependable third-down targets so the offense can finish more of the drives it starts well.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "C",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 51.7,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -1374,16 +1502,15 @@
     "expectation": "Connect the run and pass games: hold up at the point of attack and become a trustworthy middle-of-field target.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 36.0,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -1433,16 +1560,15 @@
     "expectation": "Turn Michigan's run-first structure into dependable early-down gains while adding value as a receiver and protector.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 25.4,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -1492,15 +1618,41 @@
     "expectation": "Turn Michigan's run-first structure into dependable early-down gains while adding value as a receiver and protector.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "A",
+      "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 92.9,
+      "percentile": 73.7,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Receptions",
+            "value": 2.0
+          },
+          {
+            "label": "Rec yards",
+            "value": 17.0
+          },
+          {
+            "label": "Carries",
+            "value": 22.0
+          },
+          {
+            "label": "Rush TD",
+            "value": 1.0
+          },
+          {
+            "label": "Rush yards",
+            "value": 76.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -1544,8 +1696,8 @@
     ],
     "playerId": "5079574",
     "strengths": [
-      "Produced at the 94th percentile among FBS rb players.",
-      "Already handled rb usage at the 90th percentile nationally."
+      "Produced at the 71th percentile among FBS rb players.",
+      "Already handled rb usage at the 80th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -1553,15 +1705,37 @@
     "expectation": "Set the edge on run downs and turn obvious passing situations into pressure.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": "S",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 77.3,
+      "percentile": 97.5,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "QB hurries",
+            "value": 3.0
+          },
+          {
+            "label": "Sacks",
+            "value": 2.0
+          },
+          {
+            "label": "TFL",
+            "value": 3.0
+          },
+          {
+            "label": "Tackles",
+            "value": 10.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -1597,8 +1771,8 @@
     ],
     "playerId": "5079636",
     "strengths": [
-      "Produced at the 79th percentile among FBS front players.",
-      "Already handled front usage at the 73th percentile nationally."
+      "Produced at the 99th percentile among FBS front players.",
+      "Already handled front usage at the 95th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -1606,16 +1780,15 @@
     "expectation": "Erase explosive plays while communicating cleanly enough for the front to attack.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "C",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 41.2,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -1775,16 +1948,15 @@
     "expectation": "Protect field position and give the defense long fields in schedule-defining games.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 36.7,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -1858,16 +2030,15 @@
     "expectation": "Erase explosive plays while communicating cleanly enough for the front to attack.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "F",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 6.0,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -2001,17 +2172,29 @@
     "expectation": "Fit the run cleanly, limit yards after contact and stay reliable in space on passing downs.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": null,
+      "grade": "A",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": null,
+      "percentile": 85.1,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [
-      "Establish measurable game usage before a production grade can be assigned."
-    ],
+    "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "TFL",
+            "value": 0.5
+          },
+          {
+            "label": "Tackles",
+            "value": 16.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2039,7 +2222,8 @@
     ],
     "playerId": "5087172",
     "strengths": [
-      "Has verified college box-score production across 2 season-team samples."
+      "Produced at the 82th percentile among FBS lb players.",
+      "Already handled lb usage at the 90th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -2047,14 +2231,16 @@
     "expectation": "Connect the run and pass games: hold up at the point of attack and become a trustworthy middle-of-field target.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 61.9,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Establish measurable game usage before a production grade can be assigned."
+    ],
     "pastSeasons": [
       {
         "season": 2025,
@@ -2091,8 +2277,7 @@
     ],
     "playerId": "5088628",
     "strengths": [
-      "Produced at the 62th percentile among FBS receiver players.",
-      "Already handled receiver usage at the 62th percentile nationally."
+      "Has verified college box-score production across 2 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -2120,18 +2305,27 @@
     "expectation": "Create separation and dependable third-down targets so the offense can finish more of the drives it starts well.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 35.2,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 1.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2179,7 +2373,7 @@
     ],
     "playerId": "5108220",
     "strengths": [
-      "Has verified college box-score production across 2 season-team samples."
+      "Has verified college box-score production across 3 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -2227,6 +2421,39 @@
     "expectation": "Control early downs and create disruption without forcing the defense to manufacture pressure.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
+      "grade": "F",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
+      "percentile": 9.8,
+      "rating": null,
+      "stars": null
+    },
+    "growthAreas": [
+      "Turn existing opportunities into more position-level production.",
+      "Earn and sustain a larger role across the full season."
+    ],
+    "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 1.0
+          }
+        ],
+        "team": "Michigan"
+      }
+    ],
+    "playerId": "5128064",
+    "strengths": [
+      "Has verified college box-score production across 1 season-team sample."
+    ],
+    "valueType": "PROJECTED"
+  },
+  {
+    "expectation": "Create separation and dependable third-down targets so the offense can finish more of the drives it starts well.",
+    "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
+    "focus": {
       "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
@@ -2235,28 +2462,7 @@
       "stars": null
     },
     "growthAreas": [
-      "Establish measurable game usage before a production grade can be assigned.",
-      "No non-zero public college box-score statistics are available yet."
-    ],
-    "pastSeasons": [],
-    "playerId": "5128064",
-    "strengths": [],
-    "valueType": "PROJECTED"
-  },
-  {
-    "expectation": "Create separation and dependable third-down targets so the offense can finish more of the drives it starts well.",
-    "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
-    "focus": {
-      "grade": "F",
-      "kind": "PRODUCTION",
-      "label": "2025 production",
-      "percentile": 5.7,
-      "rating": null,
-      "stars": null
-    },
-    "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -2344,18 +2550,33 @@
     "expectation": "Set the edge on run downs and turn obvious passing situations into pressure.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "C",
+      "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 45.0,
+      "percentile": 79.7,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
-    ],
+    "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Sacks",
+            "value": 1.5
+          },
+          {
+            "label": "TFL",
+            "value": 2.0
+          },
+          {
+            "label": "Tackles",
+            "value": 4.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2373,7 +2594,8 @@
     ],
     "playerId": "5141534",
     "strengths": [
-      "Has verified college box-score production across 1 season-team sample."
+      "Produced at the 89th percentile among FBS front players.",
+      "Already handled front usage at the 63th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -2381,18 +2603,27 @@
     "expectation": "Control early downs and create disruption without forcing the defense to manufacture pressure.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 21.4,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "QB hurries",
+            "value": 1.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2410,7 +2641,7 @@
     ],
     "playerId": "5141554",
     "strengths": [
-      "Has verified college box-score production across 1 season-team sample."
+      "Has verified college box-score production across 2 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -2418,15 +2649,39 @@
     "expectation": "Create separation and dependable third-down targets so the offense can finish more of the drives it starts well.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "A",
+      "grade": "C",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 91.6,
+      "percentile": 52.3,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Turn existing opportunities into more position-level production."
+    ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Receptions",
+            "value": 5.0
+          },
+          {
+            "label": "Rec yards",
+            "value": 28.0
+          },
+          {
+            "label": "Carries",
+            "value": 1.0
+          },
+          {
+            "label": "Rush yards",
+            "value": 15.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2464,8 +2719,8 @@
     ],
     "playerId": "5141572",
     "strengths": [
-      "Produced at the 92th percentile among FBS receiver players.",
-      "Already handled receiver usage at the 91th percentile nationally."
+      "Already handled receiver usage at the 68th percentile nationally.",
+      "Has verified college box-score production across 2 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -2493,10 +2748,10 @@
     "expectation": "Fit the run cleanly, limit yards after contact and stay reliable in space on passing downs.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": "F",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 26.7,
+      "percentile": 7.2,
       "rating": null,
       "stars": null
     },
@@ -2505,6 +2760,16 @@
       "Earn and sustain a larger role across the full season."
     ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Tackles",
+            "value": 1.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2522,7 +2787,7 @@
     ],
     "playerId": "5141620",
     "strengths": [
-      "Has verified college box-score production across 1 season-team sample."
+      "Has verified college box-score production across 2 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -2530,14 +2795,16 @@
     "expectation": "Erase explosive plays while communicating cleanly enough for the front to attack.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 63.8,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Establish measurable game usage before a production grade can be assigned."
+    ],
     "pastSeasons": [
       {
         "season": 2025,
@@ -2556,8 +2823,7 @@
     ],
     "playerId": "5141734",
     "strengths": [
-      "Produced at the 64th percentile among FBS secondary players.",
-      "Already handled secondary usage at the 64th percentile nationally."
+      "Has verified college box-score production across 1 season-team sample."
     ],
     "valueType": "PROJECTED"
   },
@@ -2565,15 +2831,49 @@
     "expectation": "Win the decision-making moments: stay efficient on early downs and create answers when the schedule forces Michigan to throw.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "A",
+      "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 86.8,
+      "percentile": 73.8,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Pass attempts",
+            "value": 39.0
+          },
+          {
+            "label": "INT",
+            "value": 1.0
+          },
+          {
+            "label": "Pass TD",
+            "value": 1.0
+          },
+          {
+            "label": "Pass yards",
+            "value": 281.0
+          },
+          {
+            "label": "Carries",
+            "value": 27.0
+          },
+          {
+            "label": "Rush TD",
+            "value": 2.0
+          },
+          {
+            "label": "Rush yards",
+            "value": 134.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2615,8 +2915,8 @@
     ],
     "playerId": "5141741",
     "strengths": [
-      "Produced at the 86th percentile among FBS qb players.",
-      "Already handled qb usage at the 89th percentile nationally."
+      "Produced at the 74th percentile among FBS qb players.",
+      "Already handled qb usage at the 73th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -2624,16 +2924,15 @@
     "expectation": "Erase explosive plays while communicating cleanly enough for the front to attack.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "F",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 15.5,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -2737,15 +3036,32 @@
     "expectation": "Turn Michigan's run-first structure into dependable early-down gains while adding value as a receiver and protector.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "B",
+      "grade": "F",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 68.6,
+      "percentile": 16.7,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Turn existing opportunities into more position-level production.",
+      "Earn and sustain a larger role across the full season."
+    ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Carries",
+            "value": 3.0
+          },
+          {
+            "label": "Rush yards",
+            "value": 12.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2789,8 +3105,7 @@
     ],
     "playerId": "5156348",
     "strengths": [
-      "Produced at the 68th percentile among FBS rb players.",
-      "Already handled rb usage at the 69th percentile nationally."
+      "Has verified college box-score production across 3 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -2798,17 +3113,32 @@
     "expectation": "Connect the run and pass games: hold up at the point of attack and become a trustworthy middle-of-field target.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": null,
+      "grade": "D",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": null,
+      "percentile": 33.0,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Establish measurable game usage before a production grade can be assigned."
+      "Turn existing opportunities into more position-level production.",
+      "Earn and sustain a larger role across the full season."
     ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Receptions",
+            "value": 2.0
+          },
+          {
+            "label": "Rec yards",
+            "value": 22.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2822,7 +3152,7 @@
     ],
     "playerId": "5156349",
     "strengths": [
-      "Has verified college box-score production across 1 season-team sample."
+      "Has verified college box-score production across 2 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -2853,12 +3183,30 @@
       "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 77.8,
+      "percentile": 75.4,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "QB hurries",
+            "value": 2.0
+          },
+          {
+            "label": "TFL",
+            "value": 1.0
+          },
+          {
+            "label": "Tackles",
+            "value": 5.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -2900,8 +3248,8 @@
     ],
     "playerId": "5156353",
     "strengths": [
-      "Produced at the 72th percentile among FBS front players.",
-      "Already handled front usage at the 88th percentile nationally."
+      "Produced at the 77th percentile among FBS front players.",
+      "Already handled front usage at the 73th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -2910,42 +3258,63 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5159013",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
     "expectation": "Turn Michigan's run-first structure into dependable early-down gains while adding value as a receiver and protector.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "S",
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
-      "percentile": null,
-      "rating": 0.9933,
-      "stars": 5
+      "grade": "C",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
+      "percentile": 49.9,
+      "rating": null,
+      "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
-      "No non-zero public college box-score statistics are available yet."
+      "Turn existing opportunities into more position-level production."
     ],
-    "pastSeasons": [],
+    "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Receptions",
+            "value": 4.0
+          },
+          {
+            "label": "Rec yards",
+            "value": 40.0
+          },
+          {
+            "label": "Carries",
+            "value": 13.0
+          },
+          {
+            "label": "Rush yards",
+            "value": 21.0
+          }
+        ],
+        "team": "Michigan"
+      }
+    ],
     "playerId": "5159046",
     "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
+      "Already handled rb usage at the 65th percentile nationally.",
+      "Has verified college box-score production across 1 season-team sample."
     ],
     "valueType": "PROJECTED"
   },
@@ -2954,21 +3323,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5159073",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -2976,21 +3343,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5160473",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -2998,21 +3363,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5160491",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3022,12 +3385,34 @@
       "grade": "S",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 98.7,
+      "percentile": 96.7,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "QB hurries",
+            "value": 1.0
+          },
+          {
+            "label": "Sacks",
+            "value": 1.0
+          },
+          {
+            "label": "TFL",
+            "value": 3.0
+          },
+          {
+            "label": "Tackles",
+            "value": 11.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -3081,7 +3466,7 @@
     ],
     "playerId": "5160962",
     "strengths": [
-      "Produced at the 100th percentile among FBS front players.",
+      "Produced at the 97th percentile among FBS front players.",
       "Already handled front usage at the 97th percentile nationally."
     ],
     "valueType": "PROJECTED"
@@ -3091,21 +3476,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5161819",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3113,39 +3496,56 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5162850",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
     "expectation": "Fit the run cleanly, limit yards after contact and stay reliable in space on passing downs.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "C",
+      "grade": "B",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 48.5,
+      "percentile": 65.4,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
-    ],
+    "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Pass breakups",
+            "value": 1.0
+          },
+          {
+            "label": "Sacks",
+            "value": 0.5
+          },
+          {
+            "label": "TFL",
+            "value": 0.5
+          },
+          {
+            "label": "Tackles",
+            "value": 7.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -3159,7 +3559,8 @@
     ],
     "playerId": "5167194",
     "strengths": [
-      "Has verified college box-score production across 1 season-team sample."
+      "Produced at the 68th percentile among FBS lb players.",
+      "Already handled lb usage at the 62th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -3208,21 +3609,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5207605",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3250,21 +3649,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5209293",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3272,21 +3669,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5209314",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3294,21 +3689,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5209346",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3316,21 +3709,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5209376",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3338,21 +3729,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5209412",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3360,21 +3749,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5209416",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3404,12 +3791,30 @@
       "grade": "A",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 82.2,
+      "percentile": 89.7,
       "rating": null,
       "stars": null
     },
     "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Receptions",
+            "value": 8.0
+          },
+          {
+            "label": "Rec TD",
+            "value": 1.0
+          },
+          {
+            "label": "Rec yards",
+            "value": 174.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -3431,8 +3836,8 @@
     ],
     "playerId": "5214557",
     "strengths": [
-      "Produced at the 86th percentile among FBS receiver players.",
-      "Already handled receiver usage at the 76th percentile nationally."
+      "Produced at the 92th percentile among FBS receiver players.",
+      "Already handled receiver usage at the 85th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -3532,16 +3937,15 @@
     "expectation": "Turn Michigan's run-first structure into dependable early-down gains while adding value as a receiver and protector.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "D",
+      "grade": null,
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 30.1,
+      "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Turn existing opportunities into more position-level production.",
-      "Earn and sustain a larger role across the full season."
+      "Establish measurable game usage before a production grade can be assigned."
     ],
     "pastSeasons": [
       {
@@ -3629,17 +4033,33 @@
     "expectation": "Protect field position and give the defense long fields in schedule-defining games.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "C",
+      "grade": "A",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 57.4,
+      "percentile": 90.7,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [
-      "Earn and sustain a larger role across the full season."
-    ],
+    "growthAreas": [],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "Inside 20",
+            "value": 8.0
+          },
+          {
+            "label": "Punts",
+            "value": 13.0
+          },
+          {
+            "label": "Punt yards",
+            "value": 564.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -3661,8 +4081,8 @@
     ],
     "playerId": "5265648",
     "strengths": [
-      "Produced at the 60th percentile among FBS punter players.",
-      "Has verified college box-score production across 1 season-team sample."
+      "Produced at the 97th percentile among FBS punter players.",
+      "Already handled punter usage at the 79th percentile nationally."
     ],
     "valueType": "PROJECTED"
   },
@@ -3671,21 +4091,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5269403",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3693,21 +4111,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5274327",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3715,21 +4131,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5276673",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3737,21 +4151,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5276971",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3759,21 +4171,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5276986",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3781,21 +4191,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5279127",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3803,21 +4211,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5281455",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3825,21 +4231,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5290675",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -3902,15 +4306,36 @@
     "expectation": "Turn preseason opportunity into dependable, assignment-sound snaps that help the unit travel.",
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
-      "grade": "A",
+      "grade": "D",
       "kind": "PRODUCTION",
       "label": "2025 production",
-      "percentile": 91.0,
+      "percentile": 24.9,
       "rating": null,
       "stars": null
     },
-    "growthAreas": [],
+    "growthAreas": [
+      "Turn existing opportunities into more position-level production.",
+      "Earn and sustain a larger role across the full season."
+    ],
     "pastSeasons": [
+      {
+        "season": 2026,
+        "stats": [
+          {
+            "label": "FG attempts",
+            "value": 1.0
+          },
+          {
+            "label": "FG made",
+            "value": 1.0
+          },
+          {
+            "label": "XP made",
+            "value": 3.0
+          }
+        ],
+        "team": "Michigan"
+      },
       {
         "season": 2025,
         "stats": [
@@ -3932,8 +4357,7 @@
     ],
     "playerId": "5296243",
     "strengths": [
-      "Produced at the 92th percentile among FBS kicker players.",
-      "Already handled kicker usage at the 88th percentile nationally."
+      "Has verified college box-score production across 2 season-team samples."
     ],
     "valueType": "PROJECTED"
   },
@@ -3982,21 +4406,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391394",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4004,21 +4426,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391395",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4026,21 +4446,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391396",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4048,21 +4466,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391397",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4070,21 +4486,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391398",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4092,21 +4506,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391399",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4114,21 +4526,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391400",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4136,21 +4546,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391401",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4158,21 +4566,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391402",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   },
   {
@@ -4180,21 +4586,19 @@
     "expectationBasis": "Position role plus 2025 usage/production and Michigan's verified 2025 team needs; not a statistical forecast.",
     "focus": {
       "grade": null,
-      "kind": "PROSPECT",
-      "label": "Prospect profile",
+      "kind": "PRODUCTION",
+      "label": "2025 production",
       "percentile": null,
       "rating": null,
       "stars": null
     },
     "growthAreas": [
-      "Translate high-school traits to college speed, assignments and weekly preparation.",
+      "Establish measurable game usage before a production grade can be assigned.",
       "No non-zero public college box-score statistics are available yet."
     ],
     "pastSeasons": [],
     "playerId": "5391403",
-    "strengths": [
-      "Recruiting profile provides the best available baseline before college usage exists."
-    ],
+    "strengths": [],
     "valueType": "PROJECTED"
   }
 ]
