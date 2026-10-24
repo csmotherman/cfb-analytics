@@ -1,6 +1,13 @@
 name: Season data refresh
 
 on:
+  # Authenticated, explicit source-data refresh after review and merge.
+  # A marker push does not modify metrics; the normal validation/publish chain
+  # still runs in full and fails closed on broken source or missing evidence.
+  push:
+    branches: [main]
+    paths:
+      - ".github/refresh-now"
   schedule:
     # Tue-Sat, off-peak-ish and off the round minute/hour marks GitHub's
     # scheduler gets congested at. Day-of-week: 2=Tue ... 6=Sat.

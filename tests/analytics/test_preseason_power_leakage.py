@@ -37,33 +37,106 @@ def test_prior_seasons_skips_missing_2020():
     assert prior_seasons(2021, n=3) == [2019, 2018, 2017]
 
 
-def test_returning_production_only_reads_prior_season_stats():
-    """Returning-production features for target season Y must be built from
-    roster(Y), roster(Y-1), and player_season_stats(Y-1) only -- never
-    player_season_stats(Y), which would encode target-season outcomes."""
+
+@pytest.fixture
+def preseason_personnel_sources(monkeypatch):
+    """Historical CFBD raw files are intentionally gitignored and unavailable in clean CI.
+
+    Replace external evidence with season-labelled synthetic rows, preserving
+    the real feature paths and asserting any target-year stats read is a leak.
+    """
+    from cfb_analytics.analytics.preseason_power import features as features_module
+
+    calls = {"roster": [], "player_stats": []}
+    rosters = {
+        2023: [{"id": 101, "team": "Michigan"}, {"id": 202, "team": "Michigan"}],
+        2024: [{"id": 202, "team": "Michigan"}, {"id": 303, "team": "Michigan"}],
+    }
+    prior_stats = [
+        {"playerId": 101, "team": "Michigan", "player": "Prior starter",
+         "position": "QB", "category": "passing", "statType": "ATT", "stat": "300"},
+        {"playerId": 202, "team": "Michigan", "player": "Returning backup",
+         "position": "QB", "category": "passing", "statType": "ATT", "stat": "100"},
+    ]
+
+    def load_roster(season):
+        calls["roster"].append(season)
+        assert season in (2023, 2024), f"unexpected roster year: {season}"
+        return rosters[season]
+
+    def load_player_season_stats(season):
+        calls["player_stats"].append(season)
+        assert season == 2023, f"target/future season player stats would leak: {season}"
+        return prior_stats
+
+    monkeypatch.setattr(features_module, "load_roster", load_roster)
+    monkeypatch.setattr(features_module, "load_player_season_stats", load_player_season_stats)
+    funcs = (
+        features_module._team_roster_ids,
+        features_module._team_prior_production,
+        features_module.returning_production_features,
+        features_module.qb_continuity_features,
+    )
+    for func in funcs:
+        func.cache_clear()
+    yield calls
+    for func in funcs:
+        func.cache_clear()
+
+
+def test_returning_production_only_reads_prior_season_stats(preseason_personnel_sources):
+    """Use 2024/2023 rosters, but only 2023 performance for 2024 features."""
+    calls = preseason_personnel_sources
     feats = returning_production_features("Michigan", 2024)
     assert feats["data_available"] is True
-    # A production share must be a plausible fraction, not an outcome-scale number
-    # (a leak via target-season totals would typically blow this bound).
+    assert feats["returning_players_count"] == 1
+    assert feats["prior_roster_count"] == 2
+    assert feats["returning_passing_ATT_share"] == pytest.approx(0.25)
+    assert set(calls["roster"]) == {2023, 2024}
+    assert calls["player_stats"] == [2023]
     for key, value in feats.items():
         if key.startswith("returning_") and key.endswith("_share") and value is not None:
-            assert -0.01 <= value <= 1.01, f"{key}={value} outside a returning-share's plausible range"
+            assert 0 <= value <= 1, f"{key}={value} outside valid production share"
 
 
-def test_qb_continuity_uses_prior_season_starter_only():
+def test_qb_continuity_uses_prior_season_starter_only(preseason_personnel_sources):
+    """The prior starter (300 ATT) departed; the 100-ATT backup returned."""
+    calls = preseason_personnel_sources
     feats = qb_continuity_features("Michigan", 2024)
     assert feats["data_available"] is True
-    assert feats["qb_returning_flag"] in (0, 1)
-    # JJ McCarthy left for the NFL after the 2023 title season -- Michigan's
-    # 2024 QB continuity flag must reflect that, not any 2024 QB's play.
     assert feats["qb_returning_flag"] == 0
+    assert feats["qb_prior_passing_yards"] == 0.0
+    assert calls["roster"] == [2024]
+    assert calls["player_stats"] == [2023]
 
 
-def test_recruiting_features_never_reach_into_target_or_future_classes():
-    feats = recruiting_features("Georgia", 2023)
-    # 3yr avg for target season 2023 must only ever combine classes 2021-2023,
-    # never 2024+.
-    assert feats["recruiting_current"] is not None
+def test_recruiting_features_never_reach_into_target_or_future_classes(monkeypatch):
+    """Only the three classes known entering 2023 may affect that preseason."""
+    from cfb_analytics.analytics.preseason_power import features as features_module
+
+    calls = []
+    classes = {
+        2021: {"Georgia": {"points": 150.0, "rank": 5}},
+        2022: {"Georgia": {"points": 200.0, "rank": 3}},
+        2023: {"Georgia": {"points": 250.0, "rank": 1}},
+    }
+
+    def ranks(season):
+        calls.append(season)
+        assert season in classes, f"future or unapproved recruiting class used: {season}"
+        return classes[season]
+
+    monkeypatch.setattr(features_module, "load_recruiting_team_ranks", ranks)
+    features_module.recruiting_features.cache_clear()
+    try:
+        feats = recruiting_features("Georgia", 2023)
+        assert feats["recruiting_current"] == 250.0
+        assert feats["recruiting_current_rank"] == 1
+        assert feats["recruiting_2yr_avg"] == pytest.approx(225.0)
+        assert feats["recruiting_3yr_avg"] == pytest.approx(200.0)
+        assert set(calls) == {2021, 2022, 2023}
+    finally:
+        features_module.recruiting_features.cache_clear()
 
 
 def test_portal_features_never_use_target_season_player_stats():
