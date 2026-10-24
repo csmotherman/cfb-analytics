@@ -107,9 +107,28 @@ def acquire_week(
     return manifests
 
 
+def cached_partition_has_unfinished_games(root: Path, season: int, season_type: str, week: int) -> bool:
+    """An open/future week cannot be frozen by a verified but stale cache.
+
+    Reusing a verified games.json is safe for a completed week; it is *not*
+    safe when any matchup was unplayed at acquisition time. Those weeks must
+    re-fetch games AND drives/plays together so the derived model sees a
+    consistent, newly completed population. Missing/corrupt manifests are
+    already recovered individually by acquire_week.
+    """
+    directory = partition_dir(root, season, season_type, week)
+    if not verify_manifest(directory, "games"):
+        return False
+    games = json.loads((directory / "games.json").read_text(encoding="utf-8"))
+    if not isinstance(games, list):
+        raise ValueError(f"Unexpected cached games payload: {directory / 'games.json'}")
+    return not games or any(g.get("completed") is not True for g in games)
+
+
 def acquire_season(client: CfbdClient, root: Path, season: int, *, refresh: bool = False) -> list[dict]:
     calendar = get_calendar(client, season)
     results: list[dict] = []
     for season_type, week in calendar_partitions(calendar):
-        results.extend(acquire_week(client, root, season, season_type, week, refresh=refresh))
+        open_cached_week = cached_partition_has_unfinished_games(root, season, season_type, week)
+        results.extend(acquire_week(client, root, season, season_type, week, refresh=refresh or open_cached_week))
     return results
