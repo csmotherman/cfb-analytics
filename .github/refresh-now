@@ -1,0 +1,6 @@
+SOAR Analytics 2026 full season data refresh
+Requested local date: 2026-10-24 (America/Detroit)
+Target: October 24 Week 8, Indiana at Michigan (game 401858496).
+Refresh authoritative CFBD FBS-vs-FBS games, drives, play-by-play and derived statistics through Week 8 using existing season-data-refresh.yml.
+Do not fabricate missing games, scores, play data, projections or new Weeks 5-8 predictions.
+The refreshed artifacts should be committed only after pytest and website data, product, typecheck and build validations pass.
